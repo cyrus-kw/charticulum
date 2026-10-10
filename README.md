@@ -1,2 +1,2 @@
-**Charticulum**(Chart Your Curriculum)<br />
+**Charticulum**(Chart Your Curriculum)
 _The Visual Academic Planner_
