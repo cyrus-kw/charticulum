@@ -41,6 +41,15 @@ describe("mergeRequirementSets", () => {
     ).toBe(false);
   });
 
+  it("allows only override kinds every set allows", () => {
+    const merged = mergeRequirementSets([
+      { ...genEd, allowedOverrides: ["substitute", "waive-requisite"] },
+      { ...major, allowedOverrides: ["substitute", "waive-requirement"] },
+    ]);
+    expect(merged.allowedOverrides).toEqual(["substitute"]);
+    expect(mergeRequirementSets([genEd, major]).allowedOverrides).toBeUndefined();
+  });
+
   it("fills in defaults when nothing is set", () => {
     expect(mergeRequirementSets([])).toEqual({
       requiredObjectIds: [],

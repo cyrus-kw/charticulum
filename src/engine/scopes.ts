@@ -1,4 +1,4 @@
-import type { Category, RequirementSet, Requirements } from "./types.js";
+import type { Category, OverrideKind, RequirementSet, Requirements } from "./types.js";
 
 // Used when no set says otherwise.
 export const DEFAULT_MAX_CREDITS_PER_TERM = 18;
@@ -10,6 +10,7 @@ export const DEFAULT_MAX_CREDITS_PER_TERM = 18;
 // - minimums: the highest
 // - credit limit per term: the lowest
 // - double counting: allowed only if no set forbids it
+// - override kinds: only those every set allows
 export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
   const ordered = [
     ...sets.filter((set) => set.scope === "global"),
@@ -22,6 +23,7 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
   let maxCreditsPerTerm: number | undefined;
   let allowDoubleCounting = true;
   let minGpa: number | undefined;
+  let allowedOverrides: OverrideKind[] | undefined;
 
   for (const set of ordered) {
     for (const id of set.requiredObjectIds ?? []) required.add(id);
@@ -39,6 +41,11 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     }
     if (set.allowDoubleCounting === false) allowDoubleCounting = false;
     if (set.minGpa !== undefined) minGpa = Math.max(minGpa ?? 0, set.minGpa);
+    if (set.allowedOverrides) {
+      allowedOverrides = allowedOverrides
+        ? allowedOverrides.filter((kind) => set.allowedOverrides!.includes(kind))
+        : [...set.allowedOverrides];
+    }
   }
 
   return {
@@ -49,5 +56,6 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     allowDoubleCounting,
     // Only include the key when some set gave a value.
     ...(minGpa !== undefined && { minGpa }),
+    ...(allowedOverrides && { allowedOverrides }),
   };
 }

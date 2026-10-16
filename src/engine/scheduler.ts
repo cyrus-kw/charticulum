@@ -1,12 +1,15 @@
 import { isOffered, slotLabel, termCalendar, type CalendarSlot } from "./availability.js";
 import { earliestSatisfyingTerm } from "./catalog.js";
 import { externalPlacements } from "./equivalents.js";
+import { applyOverrides } from "./overrides.js";
 import {
   EXTERNAL_TERM,
   type Catalog,
   type Chart,
   type ChartIssue,
   type CompletedExternal,
+  type Grade,
+  type Override,
   type Requirements,
   type Season,
 } from "./types.js";
@@ -18,6 +21,9 @@ export interface BuildOptions {
   maxTerms?: number;
   // When given, terms get seasons and years, and availability is respected.
   calendar?: { start: CalendarSlot; seasons: Season[] };
+  // Exceptions to apply while building; copied onto the built chart.
+  overrides?: Override[];
+  grades?: Record<string, Grade>;
 }
 
 export interface BuildResult {
@@ -31,6 +37,20 @@ export function buildChart(
   catalog: Catalog,
   requirements: Requirements,
   options: BuildOptions = {},
+): BuildResult {
+  const { overrides, grades } = options;
+  const effective = applyOverrides(catalog, requirements, overrides ?? [], grades);
+  const { chart, issues } = scheduleChart(effective.catalog, effective.requirements, options);
+  return {
+    chart: { ...chart, ...(overrides && { overrides }), ...(grades && { grades }) },
+    issues: [...effective.issues, ...issues],
+  };
+}
+
+function scheduleChart(
+  catalog: Catalog,
+  requirements: Requirements,
+  options: BuildOptions,
 ): BuildResult {
   const { name = "Generated chart", completedExternal = [], maxTerms = 16, calendar } = options;
   const slots = calendar ? termCalendar(calendar.start, calendar.seasons, maxTerms) : [];

@@ -99,7 +99,37 @@ export interface Chart {
   completedExternal: CompletedExternal[];
   // Grades earned so far, by object id. Planned objects have no grade yet.
   grades?: Record<string, Grade>;
+  overrides?: Override[];
 }
+
+// ---------------------------------------------------------------------------
+// Overrides: recorded exceptions to the rules, e.g. an advisor waiving a
+// prerequisite. An override can depend on a grade.
+// ---------------------------------------------------------------------------
+
+export type OverrideKind = "waive-requirement" | "waive-requisite" | "substitute";
+
+export interface OverrideCondition {
+  objectId: string;
+  minGrade: Grade;
+}
+
+interface OverrideBase {
+  id: string;
+  reason: string;
+  // Missing means the override always applies.
+  condition?: OverrideCondition;
+}
+
+// A "discriminated union": the `kind` field tells TypeScript which of the
+// three shapes an Override is, so it knows which other fields exist.
+export type Override =
+  // objectId is no longer required.
+  | (OverrideBase & { kind: "waive-requirement"; objectId: string })
+  // objectId no longer needs requisiteId.
+  | (OverrideBase & { kind: "waive-requisite"; objectId: string; requisiteId: string })
+  // substituteId counts as objectId.
+  | (OverrideBase & { kind: "substitute"; objectId: string; substituteId: string });
 
 // ---------------------------------------------------------------------------
 // Required objects and satisfactions (r-o-s). MVP version: one flat set of
@@ -117,6 +147,8 @@ export interface Requirements {
   allowDoubleCounting: boolean;
   // Lowest acceptable GPA across graded objects (4.0 scale).
   minGpa?: number;
+  // School policy: which override kinds are accepted. Missing means all.
+  allowedOverrides?: OverrideKind[];
 }
 
 // Global sets apply to every chart (e.g. general education); local sets
@@ -148,6 +180,9 @@ export type IssueCode =
   | "MISSING_REQUIRED_OBJECT"
   | "CATEGORY_SHORTFALL"
   | "TOTAL_CREDITS_SHORTFALL"
+  | "OVERRIDE_NOT_ALLOWED"
+  | "OVERRIDE_CONDITION_NOT_MET"
+  | "OVERRIDE_UNKNOWN_OBJECT"
   | "REQUISITE_CYCLE"
   | "OBJECT_EXCEEDS_TERM_LIMIT"
   | "UNSCHEDULABLE";
