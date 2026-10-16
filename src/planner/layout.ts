@@ -82,25 +82,46 @@ interface Link {
   broken: boolean;
 }
 
+// What a layout remembers so the next one can keep things where they were:
+// each course's column and height, and each line color.
+export interface LayoutMemory {
+  column: Map<string, number>;
+  y: Map<string, number>;
+  colors: Map<string, string>;
+}
+
+// Reuse the previous arrangement only when at least this share of courses
+// are still in the same term. Otherwise (a newly built plan, a different
+// program) lay everything out fresh.
+const REUSE_SHARE = 0.5;
+
 export function chartLayout(
   catalog: Catalog,
   chart: Chart,
   issues: ChartIssue[],
   creditsByTerm: Record<number, number>,
   maxCredits: number,
-): { nodes: PlannerNode[]; edges: PlannerEdge[] } {
+  // The previous layout's memory, so moving one course doesn't reshuffle
+  // the others or change their colors.
+  previous?: LayoutMemory,
+): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory } {
   // 1. What's placed where, and every requisite link between placed objects.
   const columns = chart.terms.map((term) => term.objectIds.filter((id) => catalog.has(id)));
   const columnOf = new Map<string, number>();
   columns.forEach((ids, column) => ids.forEach((id) => columnOf.set(id, column)));
   const links = requisiteLinks(catalog, chart, columnOf);
 
-  // 2. Order each column and place cards vertically.
-  const ordered = orderColumns(columns, links, columnOf);
-  const y = placeVertically(ordered, links, columnOf);
+  // 2. Order each column and place cards vertically: fresh, or keeping
+  //    every course that stayed in its term where it was.
+  const stayed = [...columnOf].filter(([id, column]) => previous?.column.get(id) === column).map(([id]) => id);
+  const reuse = previous !== undefined && stayed.length >= REUSE_SHARE * columnOf.size;
+  const kept = new Map(reuse ? stayed.map((id) => [id, previous.y.get(id)!]) : []);
+  const stable = reuse ? stableOrder(columns, links, kept) : undefined;
+  const ordered = stable ? stable.order : orderColumns(columns, links, columnOf);
+  const y = placeVertically(ordered, links, columnOf, stable?.heights);
 
-  // 3. Colors for courses that have outgoing lines.
-  const colors = assignColors(ordered, links, y);
+  // 3. Colors for courses that have outgoing lines; a course keeps its color.
+  const colors = assignColors(ordered, links, y, reuse ? previous.colors : undefined);
 
   // 4. Nodes: one stripe per term (drawn under the lines), then the cards.
   const bottom = Math.max(ROW_HEIGHT, ...[...y.values()].map((v) => v + NODE_HEIGHT));
@@ -182,7 +203,7 @@ export function chartLayout(
     };
   });
 
-  return { nodes, edges };
+  return { nodes, edges, memory: { column: columnOf, y, colors } };
 }
 
 // One link from each placed requisite (or an equivalent standing in for it)
@@ -316,6 +337,46 @@ function countCrossings(order: string[][], links: Link[], columnOf: Map<string, 
   return count;
 }
 
+// Order each column keeping courses that stayed in their term exactly where
+// they were. A course that's new to a column (just moved there, or just
+// added) takes the free spot nearest the courses it's linked to: a gap
+// between cards, above them, or below them. So nothing already there is
+// pushed aside. Returns the order and the heights to keep (including the
+// spots chosen for newcomers).
+function stableOrder(
+  columns: string[][],
+  links: Link[],
+  kept: Map<string, number>,
+): { order: string[][]; heights: Map<string, number> } {
+  const heights = new Map(kept);
+  const half = ROW_HEIGHT / 2;
+  const order = columns.map((ids) => {
+    const placed = ids.filter((id) => kept.has(id)).map((id) => ({ id, y: kept.get(id)! }));
+    for (const id of ids.filter((other) => !kept.has(other))) {
+      const linked = links
+        .flatMap((l) => (l.source === id ? [l.target] : l.target === id ? [l.source] : []))
+        .filter((other) => kept.has(other))
+        .map((other) => kept.get(other)!);
+      const tops = placed.map((p) => p.y).sort((u, v) => u - v);
+      const wanted = linked.length ? linked.reduce((u, v) => u + v, 0) / linked.length : (tops.at(-1) ?? -ROW_HEIGHT) + ROW_HEIGHT;
+      // Every free stretch where a card fits, as [lowest, highest] tops.
+      const free: [number, number][] = [];
+      let from = 0;
+      for (const top of tops) {
+        if (top - from >= ROW_HEIGHT) free.push([from, top - ROW_HEIGHT]);
+        from = Math.max(from, top + ROW_HEIGHT);
+      }
+      free.push([from, Infinity]);
+      const spots = free.map(([low, high]) => Math.min(Math.max(Math.round(wanted / half) * half, low), high));
+      const y = spots.reduce((best, spot) => (Math.abs(spot - wanted) < Math.abs(best - wanted) ? spot : best));
+      placed.push({ id, y });
+      heights.set(id, y);
+    }
+    return placed.sort((u, v) => u.y - v.y).map((p) => p.id);
+  });
+  return { order, heights };
+}
+
 // Vertical positions. A card sits level with the average of its requisites
 // when there's room, so lines run as flat as possible; cards never overlap
 // and keep the order chosen above.
@@ -323,6 +384,8 @@ function placeVertically(
   order: string[][],
   links: Link[],
   columnOf: Map<string, number>,
+  // Heights to keep (from the previous layout), where there's room.
+  kept: Map<string, number> = new Map(),
 ): Map<string, number> {
   const y = new Map<string, number>();
   order.forEach((ids, column) => {
@@ -331,7 +394,8 @@ function placeVertically(
       const earlier = links
         .filter((l) => l.target === id && columnOf.get(l.source)! < column && y.has(l.source))
         .map((l) => y.get(l.source)!);
-      const wanted = earlier.length ? earlier.reduce((a, b) => a + b, 0) / earlier.length : next;
+      const aligned = earlier.length ? earlier.reduce((a, b) => a + b, 0) / earlier.length : next;
+      const wanted = kept.get(id) ?? aligned;
       const top = Math.max(next, Math.round(wanted / (ROW_HEIGHT / 2)) * (ROW_HEIGHT / 2));
       y.set(id, top);
       next = top + ROW_HEIGHT;
@@ -342,7 +406,14 @@ function placeVertically(
 
 // Give each course with outgoing lines a color, avoiding colors already
 // used by nearby courses so neighboring lines are easy to tell apart.
-function assignColors(order: string[][], links: Link[], y: Map<string, number>): Map<string, string> {
+// Courses that already had a color keep it, so lines stay easy to follow
+// by eye as the plan changes.
+function assignColors(
+  order: string[][],
+  links: Link[],
+  y: Map<string, number>,
+  keep?: Map<string, string>,
+): Map<string, string> {
   const sources = new Set(links.map((l) => l.source));
   const colors = new Map<string, string>();
   const used = new Map<string, number>(COURSE_COLORS.map((c) => [c, 0]));
@@ -350,7 +421,17 @@ function assignColors(order: string[][], links: Link[], y: Map<string, number>):
 
   order.forEach((ids, column) => {
     for (const id of ids) {
-      if (!sources.has(id)) continue;
+      const color = keep?.get(id);
+      if (!sources.has(id) || !color) continue;
+      colors.set(id, color);
+      used.set(color, (used.get(color) ?? 0) + 1);
+      placed.push({ column, y: y.get(id)!, color });
+    }
+  });
+
+  order.forEach((ids, column) => {
+    for (const id of ids) {
+      if (!sources.has(id) || colors.has(id)) continue;
       const near = placed.filter(
         (p) => Math.abs(p.column - column) <= 1 && Math.abs(p.y - y.get(id)!) <= 3 * ROW_HEIGHT,
       );

@@ -379,3 +379,118 @@ describe("chartLayout edge cases", () => {
     expect(courses(nodes).map((n) => n.id)).toEqual(["A"]);
   });
 });
+
+describe("layout stability across changes", () => {
+  // The sample major + minor, laid out once, then changed with memory.
+  function setup() {
+    let state = initialState(loadSampleSchool(), "bs-cs");
+    state = plannerReducer(state, { type: "addProgram", ref: { templateId: "minor-stats", version: "2026-27" } });
+    state = plannerReducer(state, { type: "build" });
+    const layoutOf = (s: typeof state, memory?: Parameters<typeof chartLayout>[5]) => {
+      const v = derive(s);
+      return chartLayout(s.school.catalog, v.chart, v.check.issues, v.check.report.creditsByTerm, 12, memory);
+    };
+    return { state, layoutOf };
+  }
+  const positions = (nodes: PlannerNode[]) =>
+    new Map(courses(nodes).map((n) => [n.id, n.position]));
+  const colorsOf = (nodes: PlannerNode[]) =>
+    new Map(courses(nodes).flatMap((n) => (n.type === "course" && n.data.color ? [[n.id, n.data.color]] : [])));
+  const columnOrder = (nodes: PlannerNode[], x: number) =>
+    courses(nodes)
+      .filter((n) => n.position.x === x)
+      .sort((a, b) => a.position.y - b.position.y)
+      .map((n) => n.id);
+
+  it("keeps every other course where it was when one course moves", () => {
+    const { state, layoutOf } = setup();
+    const before = layoutOf(state);
+    const fromTerm = state.chart.terms.find((t) => t.objectIds.includes("HIST110"))!.index;
+    const toTerm = state.chart.terms.at(-1)!.index;
+    expect(toTerm).not.toBe(fromTerm);
+    const moved = plannerReducer(state, { type: "move", objectId: "HIST110", termIndex: toTerm });
+    const after = layoutOf(moved, before.memory);
+
+    const was = positions(before.nodes);
+    const now = positions(after.nodes);
+    const destinationX = now.get("HIST110")!.x;
+    for (const [id, position] of was) {
+      if (id === "HIST110" || position.x === destinationX) continue;
+      expect(now.get(id), id).toEqual(position);
+    }
+    // In the destination term, the courses already there keep their order.
+    const destinationBefore = columnOrder(before.nodes, destinationX);
+    expect(columnOrder(after.nodes, destinationX).filter((id) => id !== "HIST110")).toEqual(destinationBefore);
+  });
+
+  it("keeps every course's color when one course moves", () => {
+    const { state, layoutOf } = setup();
+    const before = layoutOf(state);
+    const moved = plannerReducer(state, { type: "move", objectId: "CS390", termIndex: state.chart.terms.at(-1)!.index });
+    const after = layoutOf(moved, before.memory);
+    for (const [id, color] of colorsOf(before.nodes)) expect(colorsOf(after.nodes).get(id), id).toBe(color);
+  });
+
+  it("is reshuffled without memory (so the memory is what keeps it steady)", () => {
+    const { state, layoutOf } = setup();
+    const before = layoutOf(state);
+    const moved = plannerReducer(state, { type: "move", objectId: "HIST110", termIndex: state.chart.terms.at(-1)!.index });
+    const fresh = layoutOf(moved);
+    const steady = layoutOf(moved, before.memory);
+    const changed = (layout: typeof fresh) =>
+      [...positions(before.nodes)].filter(([id, p]) => id !== "HIST110" && positions(layout.nodes).get(id)!.y !== p.y).length;
+    expect(changed(steady)).toBeLessThanOrEqual(changed(fresh));
+  });
+
+  it("lays out fresh when most of the plan changes", () => {
+    const { state, layoutOf } = setup();
+    const before = layoutOf(state);
+    // Every course one term later: nothing stayed, so nothing is kept.
+    const shifted = {
+      ...state.chart,
+      terms: [
+        ...state.chart.terms.map((t, i) => ({
+          ...t,
+          objectIds: i <= 1 ? [] : state.chart.terms[i - 1].objectIds,
+        })),
+        { ...state.chart.terms.at(-1)!, index: state.chart.terms.at(-1)!.index + 1, label: "Later", objectIds: state.chart.terms.at(-1)!.objectIds },
+      ],
+    };
+    const other = plannerReducer(state, { type: "loadChart", chart: shifted, savedId: "x" });
+    expect(positions(layoutOf(other, before.memory).nodes)).toEqual(positions(layoutOf(other).nodes));
+  });
+
+  it("puts a moved course in a free spot without pushing others aside", () => {
+    // Term 1: A, B, C. Term 2: D (needs B). Term 3: P, Q, R (packed).
+    const catalog = createCatalog([
+      obj("A"), obj("B"), obj("C"),
+      obj("D", { previous: ["B"] }),
+      obj("P"), obj("Q"), obj("R"),
+    ]);
+    const before = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "Q", "R"]]), [], {}, 18);
+    const after = chartLayout(catalog, chartOf([[], ["A", "B", "C"], [], ["P", "Q", "R", "D"]]), [], {}, 18, before.memory);
+    const y = (nodes: PlannerNode[], id: string) => nodes.find((n) => n.id === id)!.position.y;
+    // No gap in term 3, so D goes below; nothing else moves.
+    for (const id of ["A", "B", "C", "P", "Q", "R"]) expect(y(after.nodes, id), id).toBe(y(before.nodes, id));
+    expect(y(after.nodes, "D")).toBeGreaterThan(y(before.nodes, "R"));
+  });
+
+  it("fills a gap level with the course it's linked to", () => {
+    // Term 1: A, B, C. Term 2: D (needs B). Term 3: P, X, R. Term 4: empty.
+    const catalog = createCatalog([
+      obj("A"), obj("B"), obj("C"),
+      obj("D", { previous: ["B"] }),
+      obj("P"), obj("X"), obj("R"),
+    ]);
+    const first = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "X", "R"], []]), [], {}, 18);
+    // Move X out of term 3: its spot is left free (P and R don't move).
+    const second = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "R"], ["X"]]), [], {}, 18, first.memory);
+    const y = (nodes: PlannerNode[], id: string) => nodes.find((n) => n.id === id)!.position.y;
+    expect([y(second.nodes, "P"), y(second.nodes, "R")]).toEqual([y(first.nodes, "P"), y(first.nodes, "R")]);
+    // Move D into term 3: it takes the free spot, level with B.
+    const third = chartLayout(catalog, chartOf([[], ["A", "B", "C"], [], ["P", "R", "D"], ["X"]]), [], {}, 18, second.memory);
+    expect(y(third.nodes, "D")).toBe(y(first.nodes, "X"));
+    expect(y(third.nodes, "D")).toBe(y(first.nodes, "B"));
+    for (const id of ["A", "B", "C", "P", "R", "X"]) expect(y(third.nodes, id), id).toBe(y(second.nodes, id));
+  });
+});

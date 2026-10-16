@@ -38,6 +38,7 @@ import {
   NODE_WIDTH,
   termIndexAt,
   type CourseNode,
+  type LayoutMemory,
   type PlannerEdge,
   type PlannerNode,
   type Rect,
@@ -320,10 +321,16 @@ export function ChartFlow({
   onSelect,
   fitKey = "",
 }: ChartFlowProps) {
+  // The previous layout's arrangement, so a change (like moving one course)
+  // keeps everything else where it was and every course its color.
+  const memory = useRef<LayoutMemory | undefined>(undefined);
   const layout = useMemo(
-    () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits),
+    () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current),
     [catalog, chart, issues, creditsByTerm, maxCredits],
   );
+  useEffect(() => {
+    memory.current = layout.memory;
+  }, [layout]);
 
   const colorScheme = useColorScheme();
   const termData = useMemo(
