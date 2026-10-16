@@ -416,8 +416,8 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   const vertical = source.x < target.x + target.width && target.x < source.x + source.width;
 
   if (anySide) {
-    const start = facingSideMiddle(source, t);
-    return { start, end: facingSideMiddle(target, start) };
+    const { start, end } = snappedEndpoints(source, target);
+    return { start, end };
   }
 
   if (vertical) {
@@ -434,16 +434,58 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   };
 }
 
-// The middle of whichever side of `r` a line from its center toward `toward`
-// crosses: compare how far that line travels across vs. down, relative to
-// the card's shape.
-function facingSideMiddle(r: Rect, toward: { x: number; y: number }): { x: number; y: number } {
+export type Side = "left" | "right" | "top" | "bottom";
+
+// How much more clearly the other way must win before an end switches
+// between a left/right side and a top/bottom side. Without it, an end
+// flickers back and forth when a card is held near the switch point.
+export const SIDE_STICKINESS = 0.3;
+
+// Which side of `r` a line from its center toward `toward` crosses: compare
+// how far that line travels across vs. down, relative to the card's shape.
+// Given the side it was on before, it only switches between left/right and
+// top/bottom once the other way wins by SIDE_STICKINESS.
+export function sideFacing(r: Rect, toward: { x: number; y: number }, previous?: Side): Side {
   const c = center(r);
   const across = Math.abs(toward.x - c.x) / (r.width / 2);
   const down = Math.abs(toward.y - c.y) / (r.height / 2);
-  return across >= down
-    ? { x: toward.x > c.x ? r.x + r.width : r.x, y: c.y }
-    : { x: c.x, y: toward.y > c.y ? r.y + r.height : r.y };
+  let horizontal = across >= down;
+  if (previous === "left" || previous === "right") horizontal = across * (1 + SIDE_STICKINESS) >= down;
+  if (previous === "top" || previous === "bottom") horizontal = across >= down * (1 + SIDE_STICKINESS);
+  if (horizontal) return toward.x > c.x ? "right" : "left";
+  return toward.y > c.y ? "bottom" : "top";
+}
+
+export function sideMiddle(r: Rect, side: Side): { x: number; y: number } {
+  const c = center(r);
+  switch (side) {
+    case "left":
+      return { x: r.x, y: c.y };
+    case "right":
+      return { x: r.x + r.width, y: c.y };
+    case "top":
+      return { x: c.x, y: r.y };
+    case "bottom":
+      return { x: c.x, y: r.y + r.height };
+  }
+}
+
+// Which side's middle a border point is (for points from sideMiddle).
+export function sideAt(r: Rect, p: { x: number; y: number }): Side {
+  const near = (a: number, b: number) => Math.abs(a - b) < 1e-6;
+  if (near(p.x, r.x)) return "left";
+  if (near(p.x, r.x + r.width)) return "right";
+  return near(p.y, r.y) ? "top" : "bottom";
+}
+
+// Both ends of a line while a card is being dragged: each snaps to the
+// middle of the side facing the other card. Pass the sides the ends were
+// on last time to keep them from flickering (see SIDE_STICKINESS).
+export function snappedEndpoints(source: Rect, target: Rect, previous: { start?: Side; end?: Side } = {}) {
+  const startSide = sideFacing(source, center(target), previous.start);
+  const start = sideMiddle(source, startSide);
+  const endSide = sideFacing(target, start, previous.end);
+  return { start, end: sideMiddle(target, endSide), startSide, endSide };
 }
 
 // Positions along a card's border, measured as a distance clockwise from

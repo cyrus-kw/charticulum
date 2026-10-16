@@ -13,6 +13,7 @@ import {
   useInternalNode,
   useNodesState,
   useReactFlow,
+  useViewport,
   type EdgeProps,
   type EdgeTypes,
   type InternalNode,
@@ -28,6 +29,9 @@ import {
   perimeterOffset,
   perimeterPoint,
   perimeterStep,
+  sideAt,
+  snappedEndpoints,
+  type Side,
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
@@ -64,7 +68,7 @@ function nodeRect(node: InternalNode): Rect {
   };
 }
 
-const GLIDE_MS = 180;
+const GLIDE_MS = 220;
 
 // Ease a position along a card's border toward `goal`, taking the short way
 // around (so it rounds corners instead of cutting across). Interrupting a
@@ -107,7 +111,20 @@ function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<Planne
   const sourceRect = sourceNode && nodeRect(sourceNode);
   const targetRect = targetNode && nodeRect(targetNode);
   const dragging = Boolean(sourceNode?.dragging || targetNode?.dragging);
-  const ends = sourceRect && targetRect ? edgeEndpoints(sourceRect, targetRect, dragging) : null;
+
+  // The sides the ends were on last time, so they don't flicker between
+  // sides when a card is held near a switch point.
+  const lastSides = useRef<{ start?: Side; end?: Side }>({});
+  const ends =
+    sourceRect && targetRect
+      ? dragging
+        ? snappedEndpoints(sourceRect, targetRect, lastSides.current)
+        : edgeEndpoints(sourceRect, targetRect)
+      : null;
+  useEffect(() => {
+    if (!ends || !sourceRect || !targetRect) return;
+    lastSides.current = { start: sideAt(sourceRect, ends.start), end: sideAt(targetRect, ends.end) };
+  });
 
   // Hooks must run on every render, so these use stand-in values until
   // both cards exist.
@@ -181,25 +198,41 @@ function CourseCard({ data, selected }: NodeProps<CourseNode>) {
   );
 }
 
+// A term's header. The shaded band behind the term is drawn by TermBands,
+// so it can fill the canvas from top to bottom.
 function TermStripe({ data }: NodeProps<TermNode>) {
   const over = !data.external && data.credits > data.maxCredits;
   return (
-    <div
-      style={{ width: COLUMN_WIDTH, height: data.height }}
-      className={cn(
-        "pt-3 text-center",
-        data.external
-          ? "bg-sky-50 dark:bg-sky-950/40"
-          : data.shaded
-            ? "bg-zinc-100 dark:bg-white/5"
-            : "bg-transparent",
-      )}
-    >
+    <div style={{ width: COLUMN_WIDTH, height: data.height }} className="pt-3 text-center">
       <div className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
       <div className={cn("text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-500 dark:text-zinc-400")}>
         {data.credits}
         {!data.external && ` / ${data.maxCredits}`} credits
       </div>
+    </div>
+  );
+}
+
+// The alternating term bands, filling the whole height of the canvas. They
+// follow panning and zooming sideways, and sit under the lines and cards.
+function TermBands({ terms }: { terms: TermNode["data"][] }) {
+  const { x, zoom } = useViewport();
+  return (
+    <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
+      {terms.map((term, column) => (
+        <div
+          key={column}
+          className={cn(
+            "absolute top-0 bottom-0",
+            term.external
+              ? "bg-sky-50 dark:bg-sky-950/40"
+              : term.shaded
+                ? "bg-zinc-100 dark:bg-white/5"
+                : "bg-transparent",
+          )}
+          style={{ left: x + column * COLUMN_WIDTH * zoom, width: COLUMN_WIDTH * zoom }}
+        />
+      ))}
     </div>
   );
 }
@@ -284,6 +317,10 @@ export function ChartFlow({
   );
 
   const colorScheme = useColorScheme();
+  const termData = useMemo(
+    () => layout.nodes.flatMap((n) => (n.type === "term" ? [n.data] : [])),
+    [layout],
+  );
 
   // Trace the course being pointed at, or else the selected one.
   const [hoveredId, setHoveredId] = useState<string | null>(null);
@@ -357,6 +394,7 @@ export function ChartFlow({
       </FlowPanel>
       <Controls showInteractive={false} />
       <FitOnChange fitKey={fitKey} />
+      <TermBands terms={termData} />
     </ReactFlow>
   );
 }

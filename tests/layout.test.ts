@@ -9,6 +9,11 @@ import {
   perimeterPoint,
   perimeterStep,
   relatedTo,
+  sideAt,
+  sideFacing,
+  sideMiddle,
+  snappedEndpoints,
+  type Side,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
   COURSE_COLORS,
@@ -225,6 +230,59 @@ describe("edgeEndpoints", () => {
 
     it("matches the normal rule when the cards are simply side by side", () => {
       expect(at(300, 0)).toEqual(edgeEndpoints(box(0, 0), box(300, 0)));
+    });
+  });
+
+  describe("side stickiness", () => {
+    const card = box(0, 0); // center (50, 20); half-size 50 x 20
+    // A point exactly on the switch line: as far across as down, relative
+    // to the card's shape (100 across vs. 40 down from the center).
+    const onTheLine = { x: 150, y: 60 };
+
+    it("picks the clearer way with no history", () => {
+      expect(sideFacing(card, { x: 300, y: 30 })).toBe("right");
+      expect(sideFacing(card, { x: 60, y: 300 })).toBe("bottom");
+    });
+
+    it("stays on its side until the other way clearly wins", () => {
+      // Slightly more down than across: switches with no history...
+      const justPast = { x: 150, y: 64 };
+      expect(sideFacing(card, justPast)).toBe("bottom");
+      // ...but not if it was on the right side.
+      expect(sideFacing(card, justPast, "right")).toBe("right");
+      // Clearly more down than across: it does switch.
+      expect(sideFacing(card, { x: 150, y: 90 }, "right")).toBe("bottom");
+      // And the same holds the other way.
+      expect(sideFacing(card, { x: 160, y: 60 }, "bottom")).toBe("bottom");
+      expect(sideFacing(card, { x: 220, y: 60 }, "bottom")).toBe("right");
+      expect(sideFacing(card, onTheLine)).toBe("right");
+    });
+
+    it("doesn't flicker when a card wiggles at the switch point", () => {
+      // The other card's center is 300 across and 120 down from this one's:
+      // exactly on the switch line (300/50 = 120/20). Wiggle it up and down.
+      const wiggled = (i: number) => box(300, 120 + (i % 2 === 0 ? -6 : 6));
+      const countSwitches = (remember: boolean) => {
+        let previous: { start?: Side; end?: Side } = {};
+        let last: string | undefined;
+        let switches = 0;
+        for (let i = 0; i < 40; i++) {
+          const snapped = snappedEndpoints(box(0, 0), wiggled(i), remember ? previous : {});
+          const sides = `${snapped.startSide}-${snapped.endSide}`;
+          if (last && last !== sides) switches++;
+          last = sides;
+          previous = { start: snapped.startSide, end: snapped.endSide };
+        }
+        return switches;
+      };
+      expect(countSwitches(false)).toBeGreaterThan(10); // without memory: flickers
+      expect(countSwitches(true)).toBe(0); // with it: steady
+    });
+
+    it("finds the side a snapped point is on", () => {
+      for (const side of ["left", "right", "top", "bottom"] as const) {
+        expect(sideAt(card, sideMiddle(card, side))).toBe(side);
+      }
     });
   });
 
