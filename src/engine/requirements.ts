@@ -15,6 +15,8 @@ export interface RequirementReport {
   totalCredits: number;
   creditsByCategory: Partial<Record<Category, number>>;
   missingRequired: string[];
+  // Credits counted toward more than one category.
+  sharedCredits: number;
   // Undefined until something is graded.
   gpa?: number;
   issues: ChartIssue[];
@@ -31,6 +33,7 @@ export function evaluateRequirements(
   const creditsByCategory: Partial<Record<Category, number>> = {};
   const counted = new Set<string>();
   let totalCredits = 0;
+  let sharedCredits = 0;
 
   for (const term of chart.terms) {
     creditsByTerm[term.index] = 0;
@@ -51,6 +54,7 @@ export function evaluateRequirements(
       for (const category of categories) {
         creditsByCategory[category] = (creditsByCategory[category] ?? 0) + object.credits;
       }
+      if (categories.length > 1) sharedCredits += object.credits;
     }
 
     // Term 0 is credit earned elsewhere, so the per-term limit doesn't apply.
@@ -100,6 +104,13 @@ export function evaluateRequirements(
     });
   }
 
+  if (requirements.maxSharedCredits !== undefined && sharedCredits > requirements.maxSharedCredits) {
+    issues.push({
+      code: "SHARED_CREDITS_OVER_LIMIT",
+      message: `${sharedCredits} credits count toward more than one category; at most ${requirements.maxSharedCredits} may.`,
+    });
+  }
+
   const gpa = chartGpa(catalog, chart);
   if (requirements.minGpa !== undefined && gpa !== undefined && gpa < requirements.minGpa) {
     issues.push({
@@ -108,5 +119,13 @@ export function evaluateRequirements(
     });
   }
 
-  return { creditsByTerm, totalCredits, creditsByCategory, missingRequired, gpa, issues };
+  return {
+    creditsByTerm,
+    totalCredits,
+    creditsByCategory,
+    missingRequired,
+    sharedCredits,
+    gpa,
+    issues,
+  };
 }

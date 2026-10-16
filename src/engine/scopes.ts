@@ -8,7 +8,7 @@ export const DEFAULT_MAX_CREDITS_PER_TERM = 18;
 // the stricter rule wins:
 // - required objects: all of them
 // - minimums: the highest
-// - credit limit per term: the lowest
+// - credit limit per term and shared-credit limit: the lowest
 // - double counting: allowed only if no set forbids it
 // - override kinds: only those every set allows
 export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
@@ -24,6 +24,7 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
   let allowDoubleCounting = true;
   let minGpa: number | undefined;
   let allowedOverrides: OverrideKind[] | undefined;
+  let maxSharedCredits: number | undefined;
 
   for (const set of ordered) {
     for (const id of set.requiredObjectIds ?? []) required.add(id);
@@ -46,6 +47,9 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
         ? allowedOverrides.filter((kind) => set.allowedOverrides!.includes(kind))
         : [...set.allowedOverrides];
     }
+    if (set.maxSharedCredits !== undefined) {
+      maxSharedCredits = Math.min(maxSharedCredits ?? Infinity, set.maxSharedCredits);
+    }
   }
 
   return {
@@ -57,5 +61,6 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     // Only include the key when some set gave a value.
     ...(minGpa !== undefined && { minGpa }),
     ...(allowedOverrides && { allowedOverrides }),
+    ...(maxSharedCredits !== undefined && { maxSharedCredits }),
   };
 }

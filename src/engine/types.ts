@@ -100,6 +100,28 @@ export interface Chart {
   // Grades earned so far, by object id. Planned objects have no grade yet.
   grades?: Record<string, Grade>;
   overrides?: Override[];
+  // The school templates (and their versions) this chart was forked from.
+  pinnedTemplates?: TemplateRef[];
+}
+
+// ---------------------------------------------------------------------------
+// Templates: school-defined charts, versioned by academic year.
+// ---------------------------------------------------------------------------
+
+export interface TemplateRef {
+  templateId: string;
+  // An academic year such as "2026-27".
+  version: string;
+}
+
+export interface ChartTemplate {
+  id: string;
+  version: string;
+  name: string;
+  // This program's local r-o-s.
+  requirementSets: RequirementSet[];
+  // The school's suggested plan.
+  terms: Term[];
 }
 
 // ---------------------------------------------------------------------------
@@ -149,6 +171,9 @@ export interface Requirements {
   minGpa?: number;
   // School policy: which override kinds are accepted. Missing means all.
   allowedOverrides?: OverrideKind[];
+  // School policy: most credits that may count toward more than one
+  // category (e.g. shared between a major and a minor). Missing = no limit.
+  maxSharedCredits?: number;
 }
 
 // Global sets apply to every chart (e.g. general education); local sets
@@ -180,6 +205,8 @@ export type IssueCode =
   | "MISSING_REQUIRED_OBJECT"
   | "CATEGORY_SHORTFALL"
   | "TOTAL_CREDITS_SHORTFALL"
+  | "SHARED_CREDITS_OVER_LIMIT"
+  | "TEMPLATE_NOT_FOUND"
   | "OVERRIDE_NOT_ALLOWED"
   | "OVERRIDE_CONDITION_NOT_MET"
   | "OVERRIDE_UNKNOWN_OBJECT"
