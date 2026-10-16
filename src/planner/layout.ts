@@ -464,19 +464,30 @@ export function sideAt(r: Rect, p: { x: number; y: number }): Side {
   return near(p.y, r.y) ? "top" : "bottom";
 }
 
+// While a card is dragged, the least horizontal gap between two cards for a
+// line to join their left and right sides. Closer than that (e.g. a card
+// dragged just past a column edge, almost level with a card in the next
+// term), a side-to-side line would run nearly straight up and down along
+// the cards' edges, so they join top to bottom instead.
+export const MIN_SIDE_GAP = 40;
+
 // Both ends of a line while a card is being dragged, at side middles: the
 // facing left and right sides, or the facing top and bottom when the cards
-// are over the same term's column. Pass the sides from last time so a card
-// held on a column edge doesn't flicker (see TERM_SWITCH_MARGIN).
+// are over the same term's column (or too close across for a side-to-side
+// line; see MIN_SIDE_GAP). Pass the sides from last time so a card held on
+// a switch point doesn't flicker (see TERM_SWITCH_MARGIN).
 export function draggingEndpoints(source: Rect, target: Rect, previous: { start?: Side; end?: Side } = {}) {
   const s = center(source);
   const t = center(target);
-  const wasSameTerm = previous.start === "top" || previous.start === "bottom";
+  const wasVertical = previous.start === "top" || previous.start === "bottom";
+  const margin = wasVertical ? TERM_SWITCH_MARGIN : 0;
   const sameTerm =
-    columnAt(s.x) === columnAt(t.x) ||
-    (wasSameTerm && Math.abs(s.x - t.x) < COLUMN_WIDTH / 2 + TERM_SWITCH_MARGIN);
+    columnAt(s.x) === columnAt(t.x) || (wasVertical && Math.abs(s.x - t.x) < COLUMN_WIDTH / 2 + margin);
+  // Space between the cards across (negative when they overlap).
+  const gap = Math.max(target.x - (source.x + source.width), source.x - (target.x + target.width));
+  const tooCloseAcross = gap < MIN_SIDE_GAP + margin;
 
-  const [startSide, endSide]: [Side, Side] = sameTerm
+  const [startSide, endSide]: [Side, Side] = sameTerm || tooCloseAcross
     ? t.y > s.y
       ? ["bottom", "top"]
       : ["top", "bottom"]

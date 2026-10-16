@@ -11,6 +11,7 @@ import {
   perimeterStepToward,
   relatedTo,
   sideAt,
+  MIN_SIDE_GAP,
   TERM_SWITCH_MARGIN,
   sideMiddle,
   draggingEndpoints,
@@ -198,11 +199,37 @@ describe("edgeEndpoints", () => {
       expect(drag(card(1, 200), card(1, 0))).toMatchObject({ startSide: "top", endSide: "bottom" });
     });
 
-    it("counts a dragged card as in a term when its center is over that column", () => {
-      // Dragged partway right, center still over column 1.
-      expect(drag(card(1, 0), box(212 + 150, 300))).toMatchObject({ startSide: "bottom", endSide: "top" });
-      // Center now over column 2.
-      expect(drag(card(1, 0), box(212 + 170, 300))).toMatchObject({ startSide: "right", endSide: "left" });
+    it("switches to the sides once there's a clear gap across", () => {
+      const anchor = card(1, 0); // x 268..368
+      // Just over the column edge but only 14px across: still top to bottom.
+      expect(drag(anchor, box(382, 300))).toMatchObject({ startSide: "bottom", endSide: "top" });
+      // A clear gap: side to side.
+      expect(drag(anchor, box(368 + MIN_SIDE_GAP + 2, 300))).toMatchObject({ startSide: "right", endSide: "left" });
+    });
+
+    it("joins top to bottom when cards in different terms are nearly level across", () => {
+      // The screenshot case: MATH201 dragged just past a column edge, its left
+      // side 6px from CS201's right side, far above it.
+      const cs201 = box(36, 478);
+      const math201 = box(36 + 100 + 6, 10);
+      expect(drag(math201, cs201)).toMatchObject({ startSide: "bottom", endSide: "top" });
+      // With a real gap between them, back to the sides.
+      expect(drag(box(36 + 100 + MIN_SIDE_GAP + 1, 10), cs201)).toMatchObject({ startSide: "left", endSide: "right" });
+    });
+
+    it("never leaves a near-vertical side-to-side line", () => {
+      // Sweep a card across past another, far below it: whenever the line uses
+      // left/right sides, it must lean at least MIN_SIDE_GAP across.
+      const anchor = box(0, 0);
+      let previous: { start?: Side; end?: Side } = {};
+      for (let x = -400; x <= 400; x += 4) {
+        const other = box(x, 500);
+        const ends = drag(anchor, other, previous);
+        if (ends.startSide === "left" || ends.startSide === "right") {
+          expect(Math.abs(ends.end.x - ends.start.x), `x=${x}`).toBeGreaterThanOrEqual(MIN_SIDE_GAP);
+        }
+        previous = { start: ends.startSide, end: ends.endSide };
+      }
     });
 
     it("puts each end at the middle of its side", () => {
@@ -213,11 +240,11 @@ describe("edgeEndpoints", () => {
       expect(end).toEqual(sideMiddle(target, "left"));
     });
 
-    it("doesn't flicker when a card is held on a column edge", () => {
-      // Wiggle a card's center across the edge between columns 1 and 2
-      // (x = 424), below a card in column 1.
+    it("doesn't flicker when a card is held at the switch point", () => {
+      // Wiggle a card back and forth across the gap where lines switch from
+      // top-to-bottom to side-to-side.
       const anchor = card(1, 0);
-      const wiggled = (i: number) => box(424 + (i % 2 === 0 ? -8 : 8) - 50, 300);
+      const wiggled = (i: number) => box(368 + MIN_SIDE_GAP + (i % 2 === 0 ? -8 : 8), 300);
       const countSwitches = (remember: boolean) => {
         let previous: { start?: Side; end?: Side } = {};
         let last: string | undefined;
@@ -235,11 +262,11 @@ describe("edgeEndpoints", () => {
       expect(countSwitches(true)).toBe(0); // with it: steady
     });
 
-    it("does switch once the card is clearly in the next term", () => {
+    it("does switch once the gap is clearly wide enough", () => {
       const anchor = card(1, 0);
       const joined = { start: "bottom" as Side, end: "top" as Side };
-      expect(drag(anchor, box(424 + 10 - 50, 300), joined).startSide).toBe("bottom");
-      expect(drag(anchor, box(424 + TERM_SWITCH_MARGIN + 10 - 50, 300), joined).startSide).toBe("right");
+      expect(drag(anchor, box(368 + MIN_SIDE_GAP + 10, 300), joined).startSide).toBe("bottom");
+      expect(drag(anchor, box(368 + MIN_SIDE_GAP + TERM_SWITCH_MARGIN + 10, 300), joined).startSide).toBe("right");
     });
 
     it("finds which side a border point is on", () => {
