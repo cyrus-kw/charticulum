@@ -405,8 +405,8 @@ const center = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
 // stacked in the same column (e.g. a lab under its lecture) join from the
 // middle of the facing top and bottom instead.
 //
-// With `anySide` (used while a card is being dragged), the ends snap only
-// to left and right sides; see draggingEndpoints.
+// With `anySide` (used while a card is being dragged), "same term" means
+// the cards' centers are over the same column; see draggingEndpoints.
 export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   const s = center(source);
   const t = center(target);
@@ -434,10 +434,13 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
 export type Side = "left" | "right" | "top" | "bottom";
 type Point = { x: number; y: number };
 
-// While a card is dragged, how far past the other card it must go before a
-// line flips which way it runs (right-to-left vs. left-to-right). Without
-// it, a card held level with the other flickers between the two.
-export const SIDE_SWITCH_MARGIN = 24;
+// While a card is dragged, how far past the edge of a term's column it must
+// go before a top-to-bottom link (same term) switches to a side-to-side one.
+// Without it, a card held right on a column edge flickers between the two.
+export const TERM_SWITCH_MARGIN = 24;
+
+// The term column a point on the canvas falls in.
+const columnAt = (x: number) => Math.floor(x / COLUMN_WIDTH);
 
 export function sideMiddle(r: Rect, side: Side): { x: number; y: number } {
   const c = center(r);
@@ -461,22 +464,26 @@ export function sideAt(r: Rect, p: { x: number; y: number }): Side {
   return near(p.y, r.y) ? "top" : "bottom";
 }
 
-// Both ends of a line while a card is being dragged. They snap only to the
-// middles of left and right sides, never top or bottom (moving between
-// them, the ends glide around the border; see useBorderGlide). A line
-// keeps the way it runs until one card is clearly past the other; pass the
-// sides from last time for that (see SIDE_SWITCH_MARGIN).
+// Both ends of a line while a card is being dragged, at side middles: the
+// facing left and right sides, or the facing top and bottom when the cards
+// are over the same term's column. Pass the sides from last time so a card
+// held on a column edge doesn't flicker (see TERM_SWITCH_MARGIN).
 export function draggingEndpoints(source: Rect, target: Rect, previous: { start?: Side; end?: Side } = {}) {
   const s = center(source);
   const t = center(target);
-  let runsRight: boolean;
-  if (previous.start === "right") runsRight = t.x > s.x - SIDE_SWITCH_MARGIN;
-  else if (previous.start === "left") runsRight = t.x > s.x + SIDE_SWITCH_MARGIN;
-  else runsRight = t.x >= s.x;
+  const wasSameTerm = previous.start === "top" || previous.start === "bottom";
+  const sameTerm =
+    columnAt(s.x) === columnAt(t.x) ||
+    (wasSameTerm && Math.abs(s.x - t.x) < COLUMN_WIDTH / 2 + TERM_SWITCH_MARGIN);
 
-  const startSide = runsRight ? "right" : "left";
-  const endSide = runsRight ? "left" : "right";
-  return { start: sideMiddle(source, startSide), end: sideMiddle(target, endSide), startSide, endSide } as const;
+  const [startSide, endSide]: [Side, Side] = sameTerm
+    ? t.y > s.y
+      ? ["bottom", "top"]
+      : ["top", "bottom"]
+    : t.x > s.x
+      ? ["right", "left"]
+      : ["left", "right"];
+  return { start: sideMiddle(source, startSide), end: sideMiddle(target, endSide), startSide, endSide };
 }
 
 // Of the two ways around a border from `from` to `to`, the one whose

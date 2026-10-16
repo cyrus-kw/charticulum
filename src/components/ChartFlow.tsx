@@ -109,8 +109,9 @@ function useBorderGlide(goal: number, rect: Rect | undefined, toward: { x: numbe
 
 // A straight line between the middles of the facing sides of two cards,
 // whichever way the cards are arranged (even backwards or stacked). While
-// either card is being dragged, both ends snap only to left and right side
-// middles, flowing smoothly around their card's border when they switch.
+// either card is being dragged, the ends go to the facing left and right
+// sides (top and bottom when over the same term), flowing smoothly around
+// their card's border when they switch.
 function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
