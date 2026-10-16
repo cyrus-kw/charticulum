@@ -23,6 +23,13 @@ export {
 export { buildChart, type BuildOptions, type BuildResult } from "./scheduler";
 export { formatChart } from "./format";
 export {
+  mergeEquivalencyRows,
+  parseCsv,
+  parseEquivalencyCsv,
+  type CsvResult,
+  type EquivalencyRow,
+} from "./equivalencyCsv";
+export {
   chartSchema,
   loadSchool,
   parseSchoolData,

@@ -5,7 +5,7 @@ import type { ChartStore, SavedChart, SaveChartInput, SavedChartSummary } from "
 const STORAGE_KEY = "charticulum.charts.v1";
 
 // Even reading `localStorage` can throw when a browser blocks storage.
-function defaultStorage(): Storage | null {
+export function defaultStorage(): Storage | null {
   try {
     return globalThis.localStorage ?? null;
   } catch {

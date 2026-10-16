@@ -1,6 +1,15 @@
 // The fictional "Example State University" as one SchoolData document:
 // the same format a real school's JSON import uses.
-import { slotLabel, termCalendar, type CourseObject, type Season, type Term } from "../engine/index";
+import {
+  loadSchool,
+  parseSchoolData,
+  slotLabel,
+  termCalendar,
+  type CourseObject,
+  type LoadedSchool,
+  type Season,
+  type Term,
+} from "../engine/index";
 import type { SchoolDataInput } from "../engine/school";
 import { sampleCatalog } from "./sampleCurriculum";
 
@@ -141,3 +150,10 @@ export const sampleSchoolData: SchoolDataInput = {
     { institution: "Valley Community College", externalId: "HIST-10", objectId: "HIST110" },
   ],
 };
+
+// The sample school, checked and ready for the engine.
+export function loadSampleSchool(): LoadedSchool {
+  const parsed = parseSchoolData(sampleSchoolData);
+  if (!parsed.ok) throw new Error(`Sample school data is invalid:\n${parsed.errors.join("\n")}`);
+  return loadSchool(parsed.data);
+}

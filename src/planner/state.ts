@@ -43,6 +43,7 @@ export interface PlannerState {
 
 export type PlannerAction =
   | { type: "loadSchool"; school: LoadedSchool }
+  | { type: "updateSchool"; school: LoadedSchool }
   | { type: "loadChart"; chart: Chart; savedId: string }
   | { type: "saved"; savedId: string | null }
   | { type: "startProgram"; ref: TemplateRef }
@@ -96,6 +97,19 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
   switch (action.type) {
     case "loadSchool":
       return initialState(action.school);
+
+    // New data for the same school (e.g. a transfer table was added):
+    // keep the student's plan. A different school starts over.
+    case "updateSchool": {
+      if (action.school.data.school.id !== school.data.school.id) return initialState(action.school);
+      const { selectedId } = state;
+      return {
+        ...state,
+        school: action.school,
+        builderIssues: [],
+        selectedId: selectedId && action.school.catalog.has(selectedId) ? selectedId : null,
+      };
+    }
 
     case "loadChart":
       return { ...state, chart: action.chart, selectedId: null, builderIssues: [], savedId: action.savedId };

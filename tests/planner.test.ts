@@ -118,6 +118,30 @@ describe("plannerReducer", () => {
     expect(state.savedId).toBeNull();
   });
 
+  it("keeps the plan when the same school's data is updated", () => {
+    let state = plannerReducer(sampleState(), { type: "move", objectId: "ART100", termIndex: 1 });
+    state = plannerReducer(state, { type: "select", objectId: "ART100" });
+    const data = {
+      ...state.school.data,
+      equivalencyTable: [
+        ...state.school.data.equivalencyTable,
+        { institution: "AP", externalId: "ART-HIST", objectId: "ART100" },
+      ],
+    };
+    const updated = plannerReducer(state, { type: "updateSchool", school: loadSchool(data) });
+    expect(updated.chart).toBe(state.chart);
+    expect(updated.selectedId).toBe("ART100");
+    expect(updated.school.catalog.get("ART100")?.externalEquivalents).toHaveLength(1);
+  });
+
+  it("starts over when updated data is for a different school", () => {
+    const state = sampleState();
+    const other = { ...state.school.data, school: { id: "other", name: "Other U" } };
+    const updated = plannerReducer(state, { type: "updateSchool", school: loadSchool(other) });
+    expect(updated.school.data.school.id).toBe("other");
+    expect(updated.savedId).toBeNull();
+  });
+
   it("switching programs keeps outside credit", () => {
     let state = plannerReducer(sampleState(), {
       type: "addExternal",

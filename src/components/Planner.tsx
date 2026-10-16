@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useReducer } from "react";
-import { loadSchool, parseSchoolData } from "../engine/index";
-import { sampleSchoolData } from "../fixtures/sampleSchool";
+import { useEffect, useMemo, useReducer } from "react";
+import { loadSchool } from "../engine/index";
+import { loadSampleSchool } from "../fixtures/sampleSchool";
 import { derive, initialState, plannerReducer } from "../planner/state";
+import { recallSchool } from "../storage/schoolMemory";
 import { ChartFlow } from "./ChartFlow";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
@@ -15,16 +16,20 @@ import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Button, inputClass } from "./ui";
 
-function sampleSchool() {
-  const parsed = parseSchoolData(sampleSchoolData);
-  if (!parsed.ok) throw new Error(`Sample school data is invalid:\n${parsed.errors.join("\n")}`);
-  return loadSchool(parsed.data);
-}
-
 export function Planner() {
   // useReducer holds the planner state; dispatch(action) updates it.
   // The third argument builds the first state once, on first render.
-  const [state, dispatch] = useReducer(plannerReducer, undefined, () => initialState(sampleSchool(), "bs-cs"));
+  const [state, dispatch] = useReducer(plannerReducer, undefined, () =>
+    initialState(loadSampleSchool(), "bs-cs"),
+  );
+
+  // After the page loads, switch to a school this browser imported before.
+  // (Browser storage doesn't exist on the server, so this can't happen in
+  // the first render; doing it there would make server and browser disagree.)
+  useEffect(() => {
+    const remembered = recallSchool();
+    if (remembered) dispatch({ type: "loadSchool", school: loadSchool(remembered) });
+  }, []);
   // Recompute the checks only when the state actually changes.
   const view = useMemo(() => derive(state), [state]);
   const panelProps = { state, view, dispatch };
