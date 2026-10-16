@@ -105,6 +105,18 @@ export interface Requirements {
   allowDoubleCounting: boolean;
 }
 
+// Global sets apply to every chart (e.g. general education); local sets
+// belong to one chart (e.g. a major or minor).
+export type RequirementScope = "global" | "local";
+
+// A named group of rules. Every rule field is optional, since a set
+// usually covers only part of the picture.
+export interface RequirementSet extends Partial<Requirements> {
+  id: string;
+  name: string;
+  scope: RequirementScope;
+}
+
 // ---------------------------------------------------------------------------
 // Issues: what the engine reports back (progressive error correction).
 // ---------------------------------------------------------------------------
