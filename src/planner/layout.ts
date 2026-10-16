@@ -399,26 +399,28 @@ export interface Rect {
 
 const center = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
 
-// Where a line from the rectangle's center toward `toward` leaves the
-// rectangle: always on the side facing that point.
-export function borderPoint(rect: Rect, toward: { x: number; y: number }): { x: number; y: number } {
-  const c = center(rect);
-  const dx = toward.x - c.x;
-  const dy = toward.y - c.y;
-  if (dx === 0 && dy === 0) return c;
-  // Shrink the direction until it just reaches the nearer of the vertical
-  // or horizontal sides.
-  const scale = Math.min(
-    dx === 0 ? Infinity : rect.width / 2 / Math.abs(dx),
-    dy === 0 ? Infinity : rect.height / 2 / Math.abs(dy),
-  );
-  return { x: c.x + dx * scale, y: c.y + dy * scale };
-}
-
-// The two ends of a straight line joining two cards, each on the side of
-// its card that faces the other card.
+// The two ends of a straight line joining two cards. Like a printed
+// flowchart, lines between terms run from the middle of one card's left or
+// right side to the middle of the facing side of the other card. Cards
+// stacked in the same column (e.g. a lab under its lecture) join from the
+// middle of the facing top and bottom instead.
 export function edgeEndpoints(source: Rect, target: Rect) {
-  return { start: borderPoint(source, center(target)), end: borderPoint(target, center(source)) };
+  const s = center(source);
+  const t = center(target);
+  const stacked = source.x < target.x + target.width && target.x < source.x + source.width;
+
+  if (stacked) {
+    const targetBelow = t.y > s.y;
+    return {
+      start: { x: s.x, y: targetBelow ? source.y + source.height : source.y },
+      end: { x: t.x, y: targetBelow ? target.y : target.y + target.height },
+    };
+  }
+  const targetRight = t.x > s.x;
+  return {
+    start: { x: targetRight ? source.x + source.width : source.x, y: s.y },
+    end: { x: targetRight ? target.x : target.x + target.width, y: t.y },
+  };
 }
 
 // Which term a card was dropped on, from where its center ended up.

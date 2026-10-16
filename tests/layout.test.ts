@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 import { createCatalog } from "../src/engine/index";
 import { loadSampleSchool } from "../src/fixtures/sampleSchool";
 import {
-  borderPoint,
   chartLayout,
   edgeEndpoints,
   relatedTo,
@@ -149,9 +148,9 @@ describe("edgeEndpoints", () => {
 
   it("joins the other pair of sides when the line runs backwards", () => {
     // The case from the screenshot: the requisite sits to the right.
-    expect(edgeEndpoints(box(300, 0), box(0, 100))).toMatchObject({
-      start: { x: 300 },
-      end: { x: 100 },
+    expect(edgeEndpoints(box(300, 0), box(0, 100))).toEqual({
+      start: { x: 300, y: 20 },
+      end: { x: 100, y: 120 },
     });
   });
 
@@ -159,26 +158,22 @@ describe("edgeEndpoints", () => {
     expect(edgeEndpoints(box(0, 0), box(0, 100))).toEqual({ start: { x: 50, y: 40 }, end: { x: 50, y: 100 } });
   });
 
-  it("always ends exactly on the border, on the side facing the other card", () => {
-    const a = box(0, 0);
-    for (const [x, y] of [[300, 10], [-250, 60], [20, -200], [180, 160], [-60, 90]]) {
-      const b = box(x, y);
-      const { start, end } = edgeEndpoints(a, b);
-      const onBorder = (p: { x: number; y: number }, r: ReturnType<typeof box>) =>
-        (Math.abs(p.x - r.x) < 1e-9 || Math.abs(p.x - (r.x + r.width)) < 1e-9) && p.y >= r.y - 1e-9 && p.y <= r.y + r.height + 1e-9 ||
-        (Math.abs(p.y - r.y) < 1e-9 || Math.abs(p.y - (r.y + r.height)) < 1e-9) && p.x >= r.x - 1e-9 && p.x <= r.x + r.width + 1e-9;
-      expect(onBorder(start, a), `start for ${x},${y}`).toBe(true);
-      expect(onBorder(end, b), `end for ${x},${y}`).toBe(true);
-      // Seen from its own card's center, each end points toward the other card.
-      const towardB = (start.x - 50) * (x + 50 - 50) + (start.y - 20) * (y + 20 - 20);
-      const towardA = (end.x - (x + 50)) * (50 - (x + 50)) + (end.y - (y + 20)) * (20 - (y + 20));
-      expect(towardB, `start for ${x},${y}`).toBeGreaterThan(0);
-      expect(towardA, `end for ${x},${y}`).toBeGreaterThan(0);
-    }
+  it("uses side midpoints even for steep lines between terms", () => {
+    // Far below and to the right: still right side to left side.
+    expect(edgeEndpoints(box(0, 0), box(300, 400))).toEqual({ start: { x: 100, y: 20 }, end: { x: 300, y: 420 } });
+    expect(edgeEndpoints(box(300, 400), box(0, 0))).toEqual({ start: { x: 300, y: 420 }, end: { x: 100, y: 20 } });
   });
 
-  it("handles cards in the same spot without dividing by zero", () => {
-    expect(borderPoint(box(0, 0), { x: 50, y: 20 })).toEqual({ x: 50, y: 20 });
+  it("uses top and bottom only when cards overlap side to side", () => {
+    // Slightly offset, as while dragging within a column.
+    expect(edgeEndpoints(box(0, 200), box(30, 0))).toEqual({ start: { x: 50, y: 200 }, end: { x: 80, y: 40 } });
+    // Just past each other: back to the sides.
+    expect(edgeEndpoints(box(0, 200), box(100, 0)).start).toEqual({ x: 100, y: 220 });
+  });
+
+  it("gives finite points for cards in the same spot", () => {
+    const { start, end } = edgeEndpoints(box(0, 0), box(0, 0));
+    expect([start.x, start.y, end.x, end.y].every(Number.isFinite)).toBe(true);
   });
 });
 

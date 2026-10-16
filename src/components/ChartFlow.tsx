@@ -60,8 +60,8 @@ function nodeRect(node: InternalNode): Rect {
   };
 }
 
-// A straight line that always meets each card on the side facing the other
-// card, whichever way the cards are arranged (even backwards or stacked).
+// A straight line between the middles of the facing sides of two cards,
+// whichever way the cards are arranged (even backwards or stacked).
 function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
