@@ -405,28 +405,19 @@ const center = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
 // stacked in the same column (e.g. a lab under its lecture) join from the
 // middle of the facing top and bottom instead.
 //
-// With `anySide` (used while a card is being dragged), the origin stays put
-// but the arrowhead slides around the target card's border: it snaps to the
-// middle of whichever side (left, right, top, or bottom) the line would
-// enter if it aimed at the target's center.
+// With `anySide` (used while a card is being dragged), both ends slide
+// around their card's border: each snaps to the middle of whichever side
+// (left, right, top, or bottom) faces the other card. The origin uses the
+// line between the two centers; the arrowhead then uses the line from the
+// origin toward the target's center.
 export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   const s = center(source);
   const t = center(target);
   const vertical = source.x < target.x + target.width && target.x < source.x + source.width;
 
   if (anySide) {
-    const start = vertical
-      ? { x: s.x, y: t.y > s.y ? source.y + source.height : source.y }
-      : { x: t.x > s.x ? source.x + source.width : source.x, y: s.y };
-    // Which side the line from `start` toward the target's center crosses:
-    // compare how far it travels across vs. down, relative to the card's shape.
-    const across = Math.abs(start.x - t.x) / (target.width / 2);
-    const down = Math.abs(start.y - t.y) / (target.height / 2);
-    const end =
-      across >= down
-        ? { x: start.x < t.x ? target.x : target.x + target.width, y: t.y }
-        : { x: t.x, y: start.y < t.y ? target.y : target.y + target.height };
-    return { start, end };
+    const start = facingSideMiddle(source, t);
+    return { start, end: facingSideMiddle(target, start) };
   }
 
   if (vertical) {
@@ -441,6 +432,18 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
     start: { x: targetRight ? source.x + source.width : source.x, y: s.y },
     end: { x: targetRight ? target.x : target.x + target.width, y: t.y },
   };
+}
+
+// The middle of whichever side of `r` a line from its center toward `toward`
+// crosses: compare how far that line travels across vs. down, relative to
+// the card's shape.
+function facingSideMiddle(r: Rect, toward: { x: number; y: number }): { x: number; y: number } {
+  const c = center(r);
+  const across = Math.abs(toward.x - c.x) / (r.width / 2);
+  const down = Math.abs(toward.y - c.y) / (r.height / 2);
+  return across >= down
+    ? { x: toward.x > c.x ? r.x + r.width : r.x, y: c.y }
+    : { x: c.x, y: toward.y > c.y ? r.y + r.height : r.y };
 }
 
 // Positions along a card's border, measured as a distance clockwise from

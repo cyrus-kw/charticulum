@@ -99,8 +99,8 @@ function useBorderGlide(goal: number, total: number): number {
 
 // A straight line between the middles of the facing sides of two cards,
 // whichever way the cards are arranged (even backwards or stacked). While
-// either card is being dragged, the arrowhead snaps to the middle of the
-// target side it points into, and glides around the border to get there.
+// either card is being dragged, both ends snap to the middle of the side
+// facing the other card, and glide around their card's border to get there.
 function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
@@ -111,12 +111,19 @@ function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<Planne
 
   // Hooks must run on every render, so these use stand-in values until
   // both cards exist.
-  const goal = ends && targetRect ? perimeterOffset(targetRect, ends.end) : 0;
-  const offset = useBorderGlide(goal, targetRect ? perimeterLength(targetRect) : 1);
+  const tailOffset = useBorderGlide(
+    ends && sourceRect ? perimeterOffset(sourceRect, ends.start) : 0,
+    sourceRect ? perimeterLength(sourceRect) : 1,
+  );
+  const headOffset = useBorderGlide(
+    ends && targetRect ? perimeterOffset(targetRect, ends.end) : 0,
+    targetRect ? perimeterLength(targetRect) : 1,
+  );
 
-  if (!ends || !targetRect) return null;
-  const head = perimeterPoint(targetRect, offset);
-  return <BaseEdge id={id} path={`M ${ends.start.x},${ends.start.y} L ${head.x},${head.y}`} markerEnd={markerEnd} style={style} />;
+  if (!sourceRect || !targetRect) return null;
+  const tail = perimeterPoint(sourceRect, tailOffset);
+  const head = perimeterPoint(targetRect, headOffset);
+  return <BaseEdge id={id} path={`M ${tail.x},${tail.y} L ${head.x},${head.y}`} markerEnd={markerEnd} style={style} />;
 }
 
 // Re-fit the chart to the canvas whenever `fitKey` changes (e.g. a sidebar
