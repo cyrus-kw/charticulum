@@ -32,6 +32,15 @@ export interface ExternalEquivalent {
   externalId: string;
 }
 
+export type Season = "winter" | "spring" | "summer" | "fall";
+
+// When an object is offered. A missing field means "no restriction".
+export interface Availability {
+  seasons?: Season[];
+  // Offered only in odd or even calendar years.
+  yearParity?: "odd" | "even";
+}
+
 // One plannable thing: a course, internship, milestone, or proficiency.
 // Its fields are its attributes (the "a" in the o-a system).
 export interface CourseObject {
@@ -45,6 +54,8 @@ export interface CourseObject {
   externalEquivalents: ExternalEquivalent[];
   // Which requirement categories this object counts toward.
   categories: Category[];
+  // Missing means offered every term.
+  availability?: Availability;
 }
 
 // All known objects, looked up by id. A Map is a built-in key -> value store.
@@ -61,6 +72,9 @@ export interface Term {
   index: number;
   label: string;
   objectIds: string[];
+  // Optional calendar position, used for availability checks.
+  season?: Season;
+  year?: number;
 }
 
 // Something the student finished at another institution.
@@ -101,6 +115,7 @@ export type IssueCode =
   | "PREVIOUS_REQUISITE_NOT_MET"
   | "CONCURRENT_REQUISITE_NOT_MET"
   | "UNBACKED_EXTERNAL_TERM"
+  | "NOT_OFFERED"
   | "TERM_OVER_CREDIT_LIMIT"
   | "MISSING_REQUIRED_OBJECT"
   | "CATEGORY_SHORTFALL"

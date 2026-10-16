@@ -6,6 +6,7 @@ import {
   formatChart,
 } from "../src/engine/index.js";
 import {
+  sampleCalendar,
   sampleCatalog,
   sampleDraftChart,
   sampleRequirements,
@@ -19,6 +20,7 @@ const built = buildChart(sampleCatalog, sampleRequirements, {
     { institution: "AP", externalId: "CALC-AB" },
     { institution: "Valley Community College", externalId: "ENGL-1A" },
   ],
+  calendar: sampleCalendar,
 });
 for (const issue of built.issues) console.log(`Builder: [${issue.code}] ${issue.message}`);
 console.log(

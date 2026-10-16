@@ -6,6 +6,7 @@ import {
   formatChart,
 } from "../src/engine/index.js";
 import {
+  sampleCalendar,
   sampleCatalog,
   sampleDraftChart,
   sampleRequirements,
@@ -17,6 +18,7 @@ describe("sample curriculum", () => {
   it("builds a chart that meets every requirement", () => {
     const { chart, issues } = buildChart(sampleCatalog, sampleRequirements, {
       completedExternal,
+      calendar: sampleCalendar,
     });
     expect(issues).toEqual([]);
     expect(checkChart(sampleCatalog, chart, sampleRequirements).valid).toBe(true);

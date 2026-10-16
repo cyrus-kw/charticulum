@@ -36,13 +36,18 @@ export const sampleCatalog = createCatalog([
   course("CS301", "Software Engineering", 4, {
     requisites: prev("CS201", "CS210"),
     categories: ["major"],
+    availability: { seasons: ["spring"] },
   }),
   course("CS390", "Industry Internship", 3, {
     kind: "experience",
     requisites: prev("CS201"),
     categories: ["elective"],
   }),
-  course("CS400", "Capstone Project", 4, { requisites: prev("CS301"), categories: ["major"] }),
+  course("CS400", "Capstone Project", 4, {
+    requisites: prev("CS301"),
+    categories: ["major"],
+    availability: { seasons: ["fall"] },
+  }),
   course("MATH101", "Calculus I", 4, {
     categories: ["major", "general-education"],
     externalEquivalents: [{ institution: "AP", externalId: "CALC-AB" }],
@@ -87,6 +92,12 @@ export const sampleRequirements: Requirements = {
   minTotalCredits: 40,
   maxCreditsPerTerm: 12,
   allowDoubleCounting: true,
+};
+
+// Two terms a year, starting Fall 2026.
+export const sampleCalendar = {
+  start: { season: "fall" as const, year: 2026 },
+  seasons: ["fall" as const, "spring" as const],
 };
 
 // A student's hand-made draft with a few deliberate mistakes, to show

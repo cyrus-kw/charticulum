@@ -1,3 +1,4 @@
+import { isOffered, slotLabel, termCalendar, type CalendarSlot } from "./availability.js";
 import { earliestSatisfyingTerm } from "./catalog.js";
 import { externalPlacements } from "./equivalents.js";
 import {
@@ -7,6 +8,7 @@ import {
   type ChartIssue,
   type CompletedExternal,
   type Requirements,
+  type Season,
 } from "./types.js";
 
 export interface BuildOptions {
@@ -14,6 +16,8 @@ export interface BuildOptions {
   completedExternal?: CompletedExternal[];
   // Safety cap so a bad catalog can't make the loop run forever.
   maxTerms?: number;
+  // When given, terms get seasons and years, and availability is respected.
+  calendar?: { start: CalendarSlot; seasons: Season[] };
 }
 
 export interface BuildResult {
@@ -28,7 +32,8 @@ export function buildChart(
   requirements: Requirements,
   options: BuildOptions = {},
 ): BuildResult {
-  const { name = "Generated chart", completedExternal = [], maxTerms = 16 } = options;
+  const { name = "Generated chart", completedExternal = [], maxTerms = 16, calendar } = options;
+  const slots = calendar ? termCalendar(calendar.start, calendar.seasons, maxTerms) : [];
   const issues: ChartIssue[] = [];
 
   // Term 0: credit the student already has from elsewhere.
@@ -86,7 +91,14 @@ export function buildChart(
   const terms: Chart["terms"] = [
     { index: EXTERNAL_TERM, label: "Term 0 (External)", objectIds: termZeroIds },
   ];
+  // An empty term only means "stuck" once a full two-year cycle of seasons
+  // has passed with nothing placed (an object may be offered only in odd
+  // years). Without a calendar, a single empty term means stuck.
+  const giveUpAfter = calendar ? calendar.seasons.length * 2 : 1;
+  let emptyInARow = 0;
+
   for (let index = 1; index <= maxTerms && remaining.length > 0; index++) {
+    const slot: CalendarSlot | undefined = slots[index - 1];
     const objectIds: string[] = [];
     let credits = 0;
 
@@ -98,6 +110,7 @@ export function buildChart(
       for (const id of [...remaining]) {
         const object = catalog.get(id)!;
         if (credits + object.credits > requirements.maxCreditsPerTerm) continue;
+        if (slot && !isOffered(object, slot)) continue;
 
         const previousMet = object.requisites.previous.every((req) => {
           const doneIn = earliestSatisfyingTerm(catalog, placements, req);
@@ -117,10 +130,19 @@ export function buildChart(
       }
     }
 
-    // Nothing could be placed, so nothing ever will be: stop.
-    if (objectIds.length === 0) break;
-    terms.push({ index, label: `Term ${index}`, objectIds });
+    terms.push(
+      slot
+        ? { index, label: slotLabel(slot), objectIds, season: slot.season, year: slot.year }
+        : { index, label: `Term ${index}`, objectIds },
+    );
+
+    emptyInARow = objectIds.length === 0 ? emptyInARow + 1 : 0;
+    if (emptyInARow >= giveUpAfter) break;
   }
+
+  // Drop empty terms from the end; empty ones in the middle stay so the
+  // calendar has no gaps.
+  while (terms.length > 1 && terms[terms.length - 1].objectIds.length === 0) terms.pop();
 
   for (const id of remaining) {
     issues.push({

@@ -1,3 +1,4 @@
+import { isOffered } from "./availability.js";
 import { earliestSatisfyingTerm, placementTerms } from "./catalog.js";
 import { isBackedByExternal } from "./equivalents.js";
 import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "./types.js";
@@ -42,6 +43,15 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
         issues.push({
           code: "UNBACKED_EXTERNAL_TERM",
           message: `${id} is in Term 0 but no completed external work counts as it.`,
+          objectId: id,
+          termIndex: term.index,
+        });
+      }
+
+      if (term.index !== EXTERNAL_TERM && !isOffered(object, term)) {
+        issues.push({
+          code: "NOT_OFFERED",
+          message: `${id} is not offered in ${term.label}.`,
           objectId: id,
           termIndex: term.index,
         });
