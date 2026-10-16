@@ -1,8 +1,8 @@
 import type { ChartCheck } from "./check";
 import type { Catalog, Chart } from "./types";
 
-// Turn a chart into plain text, one block per term. This is a stand-in
-// for the visual flowchart that the chart-visualizer will draw later.
+// Turn a chart into plain text, one block per term. Used by the terminal
+// demo (npm run demo); the web app draws charts with React Flow instead.
 export function formatChart(catalog: Catalog, chart: Chart, check?: ChartCheck): string {
   const lines: string[] = [chart.name, "=".repeat(chart.name.length)];
 
