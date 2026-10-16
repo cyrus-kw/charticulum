@@ -56,6 +56,7 @@ export function ExternalCreditPanel({ state, dispatch }: PanelProps) {
         }}
       >
         <input
+          autoComplete="off"
           className={inputClass}
           placeholder="Institution"
           aria-label="Institution"
@@ -64,6 +65,7 @@ export function ExternalCreditPanel({ state, dispatch }: PanelProps) {
           onChange={(e) => setInstitution(e.target.value)}
         />
         <input
+          autoComplete="off"
           className={inputClass}
           placeholder="Course / exam"
           aria-label="Course or exam id"

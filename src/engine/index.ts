@@ -23,6 +23,7 @@ export {
 export { buildChart, type BuildOptions, type BuildResult } from "./scheduler";
 export { formatChart } from "./format";
 export {
+  chartSchema,
   loadSchool,
   parseSchoolData,
   schoolDataSchema,

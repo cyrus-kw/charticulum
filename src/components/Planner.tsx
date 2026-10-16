@@ -10,6 +10,7 @@ import { DetailsPanel } from "./panels/DetailsPanel";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
 import { IssuesPanel } from "./panels/IssuesPanel";
 import { ProgramPanel } from "./panels/ProgramPanel";
+import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Button, inputClass } from "./ui";
@@ -38,6 +39,7 @@ export function Planner() {
           <p className="text-xs text-zinc-500">Chart your curriculum</p>
         </div>
         <input
+          autoComplete="off"
           className={`${inputClass} w-64 max-w-full`}
           aria-label="Chart name"
           value={state.chart.name}
@@ -61,6 +63,7 @@ export function Planner() {
           key={`left-${schoolKey}`}
           className="max-h-[40dvh] overflow-y-auto border-zinc-200 lg:max-h-none lg:w-80 lg:shrink-0 lg:border-r dark:border-zinc-800"
         >
+          <SavePanel {...panelProps} />
           <ProgramPanel {...panelProps} />
           <ExternalCreditPanel {...panelProps} />
           <CatalogPanel {...panelProps} />

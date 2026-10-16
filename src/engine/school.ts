@@ -66,6 +66,31 @@ const template = z.object({
   terms: z.array(term),
 });
 
+// A saved student chart. Saved charts come back from storage or over the
+// network, so they're checked like any other outside data.
+const overrideBase = {
+  id,
+  reason: z.string(),
+  condition: z.object({ objectId: id, minGrade: grade }).optional(),
+};
+
+export const chartSchema = z.object({
+  name: z.string().max(200),
+  terms: z.array(term),
+  completedExternal: z.array(z.object({ institution: z.string(), externalId: id })),
+  grades: z.record(id, grade).optional(),
+  overrides: z
+    .array(
+      z.discriminatedUnion("kind", [
+        z.object({ ...overrideBase, kind: z.literal("waive-requirement"), objectId: id }),
+        z.object({ ...overrideBase, kind: z.literal("waive-requisite"), objectId: id, requisiteId: id }),
+        z.object({ ...overrideBase, kind: z.literal("substitute"), objectId: id, substituteId: id }),
+      ]),
+    )
+    .optional(),
+  pinnedTemplates: z.array(z.object({ templateId: id, version: z.string() })).optional(),
+});
+
 export const schoolDataSchema = z.object({
   formatVersion: z.literal(1),
   school: z.object({ id, name: z.string() }),

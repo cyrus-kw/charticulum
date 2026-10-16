@@ -4,5 +4,7 @@ dist/
 next-env.d.ts
 *.tsbuildinfo
 .env*.local
+.env
+src/generated/
 .vercel/
 *.log

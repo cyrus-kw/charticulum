@@ -105,6 +105,19 @@ describe("plannerReducer", () => {
     expect(derive(state).check.valid).toBe(false);
   });
 
+  it("tracks which saved copy the chart belongs to", () => {
+    let state = sampleState();
+    expect(state.savedId).toBeNull();
+    state = plannerReducer(state, { type: "saved", savedId: "abc" });
+    expect(state.savedId).toBe("abc");
+    const other = { ...state.chart, name: "Other plan" };
+    state = plannerReducer(state, { type: "loadChart", chart: other, savedId: "xyz" });
+    expect([state.savedId, state.chart.name]).toEqual(["xyz", "Other plan"]);
+    // A different school means a different plan, so it starts unsaved.
+    state = plannerReducer(state, { type: "loadSchool", school: state.school });
+    expect(state.savedId).toBeNull();
+  });
+
   it("switching programs keeps outside credit", () => {
     let state = plannerReducer(sampleState(), {
       type: "addExternal",

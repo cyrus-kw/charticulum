@@ -27,6 +27,7 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
     <Panel title="Catalog">
       <div className="mb-2 flex gap-2">
         <input
+          autoComplete="off"
           className={`${inputClass} flex-1`}
           placeholder="Search"
           aria-label="Search the catalog"

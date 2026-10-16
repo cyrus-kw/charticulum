@@ -41,9 +41,13 @@ export function Button({ variant = "secondary", className, ...props }: ButtonPro
   );
 }
 
+// Form fields here always show app state. autoComplete="off" stops Firefox
+// from restoring old values on reload, which would make the screen
+// disagree with the app.
 export function Select({ className, ...props }: SelectHTMLAttributes<HTMLSelectElement>) {
   return (
     <select
+      autoComplete="off"
       className={cn(
         "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900",
         className,

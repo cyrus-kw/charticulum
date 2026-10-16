@@ -37,11 +37,14 @@ export interface PlannerState {
   selectedId: string | null;
   // Problems the builder hit on its last run, if any.
   builderIssues: ChartIssue[];
+  // The saved copy this chart belongs to; null until it's first saved.
+  savedId: string | null;
 }
 
 export type PlannerAction =
   | { type: "loadSchool"; school: LoadedSchool }
-  | { type: "loadChart"; chart: Chart }
+  | { type: "loadChart"; chart: Chart; savedId: string }
+  | { type: "saved"; savedId: string | null }
   | { type: "startProgram"; ref: TemplateRef }
   | { type: "addProgram"; ref: TemplateRef }
   | { type: "build" }
@@ -63,7 +66,7 @@ export function initialState(school: LoadedSchool, programId?: string): PlannerS
   const chart: Chart = template
     ? forkTemplate(template)
     : { name: "My plan", terms: [emptyTermZero()], completedExternal: [] };
-  return { school, chart, selectedId: null, builderIssues: [] };
+  return { school, chart, selectedId: null, builderIssues: [], savedId: null };
 }
 
 const emptyTermZero = (): Term => ({ index: EXTERNAL_TERM, label: "Term 0 (External)", objectIds: [] });
@@ -95,7 +98,10 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
       return initialState(action.school);
 
     case "loadChart":
-      return { ...state, chart: action.chart, selectedId: null, builderIssues: [] };
+      return { ...state, chart: action.chart, selectedId: null, builderIssues: [], savedId: action.savedId };
+
+    case "saved":
+      return { ...state, savedId: action.savedId };
 
     case "startProgram": {
       const template = findTemplate(school.library, action.ref);

@@ -1,0 +1,28 @@
+// Database tables. Prisma reads this file to create the tables (migrations)
+// and to generate a typed client for querying them (src/generated/prisma).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// A student's saved plan.
+model Chart {
+  id        String   @id @default(cuid())
+  // Until sign-in exists, every chart belongs to the single local user.
+  ownerId   String   @default("local")
+  // Which school's data the chart was made with.
+  schoolId  String
+  name      String
+  // The chart itself (terms, outside credit, grades, overrides, pinned
+  // templates), checked by the engine's chartSchema before saving.
+  data      Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([ownerId, schoolId])
+}
