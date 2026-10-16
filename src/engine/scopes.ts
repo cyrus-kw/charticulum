@@ -1,4 +1,4 @@
-import type { Category, OverrideKind, RequirementSet, Requirements } from "./types.js";
+import type { Category, OverrideKind, RequirementSet, Requirements } from "./types";
 
 // Used when no set says otherwise.
 export const DEFAULT_MAX_CREDITS_PER_TERM = 18;

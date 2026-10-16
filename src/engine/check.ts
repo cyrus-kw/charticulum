@@ -1,7 +1,7 @@
-import { applyOverrides } from "./overrides.js";
-import { evaluateRequirements, type RequirementReport } from "./requirements.js";
-import type { Catalog, Chart, ChartIssue, Override, Requirements } from "./types.js";
-import { validateChart } from "./validate.js";
+import { applyOverrides } from "./overrides";
+import { evaluateRequirements, type RequirementReport } from "./requirements";
+import type { Catalog, Chart, ChartIssue, Override, Requirements } from "./types";
+import { validateChart } from "./validate";
 
 export interface ChartCheck {
   valid: boolean;

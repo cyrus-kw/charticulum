@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { isOffered, slotLabel, termCalendar } from "../src/engine/availability.js";
-import { createCatalog } from "../src/engine/catalog.js";
-import { buildChart } from "../src/engine/scheduler.js";
-import { validateChart } from "../src/engine/validate.js";
-import { chartOf, obj, requirements } from "./helpers.js";
+import { isOffered, slotLabel, termCalendar } from "../src/engine/availability";
+import { createCatalog } from "../src/engine/catalog";
+import { buildChart } from "../src/engine/scheduler";
+import { validateChart } from "../src/engine/validate";
+import { chartOf, obj, requirements } from "./helpers";
 
 describe("isOffered", () => {
   const fallOnly = obj("A", { availability: { seasons: ["fall"] } });

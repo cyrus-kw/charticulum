@@ -1,4 +1,4 @@
-import type { CourseObject, Season, Term } from "./types.js";
+import type { CourseObject, Season, Term } from "./types";
 
 // Where each season falls in a calendar year (winter = January).
 const CALENDAR_ORDER: Record<Season, number> = { winter: 0, spring: 1, summer: 2, fall: 3 };

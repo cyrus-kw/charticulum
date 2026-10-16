@@ -1,6 +1,6 @@
 // A small, made-up curriculum for demos and tests. "Example State
 // University" is fictional; the courses are generic placeholders.
-import { createCatalog, type Chart, type CourseObject, type Requirements } from "../engine/index.js";
+import { createCatalog, type Chart, type CourseObject, type Requirements } from "../engine/index";
 
 // Shorthand for the many fields that are usually empty.
 function course(

@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { chartGpa, meetsGrade } from "../src/engine/grades.js";
-import { evaluateRequirements } from "../src/engine/requirements.js";
-import { mergeRequirementSets } from "../src/engine/scopes.js";
-import { validateChart } from "../src/engine/validate.js";
-import { chartOf, obj, requirements } from "./helpers.js";
+import { createCatalog } from "../src/engine/catalog";
+import { chartGpa, meetsGrade } from "../src/engine/grades";
+import { evaluateRequirements } from "../src/engine/requirements";
+import { mergeRequirementSets } from "../src/engine/scopes";
+import { validateChart } from "../src/engine/validate";
+import { chartOf, obj, requirements } from "./helpers";
 
 const catalog = createCatalog([
   obj("CS101", { credits: 4, internalEquivalents: ["CS101H"] }),

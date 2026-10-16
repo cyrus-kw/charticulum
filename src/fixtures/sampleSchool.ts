@@ -1,8 +1,8 @@
 // The fictional "Example State University" as one SchoolData document:
 // the same format a real school's JSON import uses.
-import { slotLabel, termCalendar, type CourseObject, type Season, type Term } from "../engine/index.js";
-import type { SchoolDataInput } from "../engine/school.js";
-import { sampleCatalog } from "./sampleCurriculum.js";
+import { slotLabel, termCalendar, type CourseObject, type Season, type Term } from "../engine/index";
+import type { SchoolDataInput } from "../engine/school";
+import { sampleCatalog } from "./sampleCurriculum";
 
 const statsCourses: CourseObject[] = [
   {

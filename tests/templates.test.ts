@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { checkChart } from "../src/engine/check.js";
-import { evaluateRequirements } from "../src/engine/requirements.js";
-import { mergeRequirementSets } from "../src/engine/scopes.js";
+import { createCatalog } from "../src/engine/catalog";
+import { checkChart } from "../src/engine/check";
+import { evaluateRequirements } from "../src/engine/requirements";
+import { mergeRequirementSets } from "../src/engine/scopes";
 import {
   findTemplate,
   forkTemplate,
@@ -11,9 +11,9 @@ import {
   publishTemplate,
   resolveRequirements,
   type TemplateLibrary,
-} from "../src/engine/templates.js";
-import type { ChartTemplate, RequirementSet } from "../src/engine/types.js";
-import { chartOf, obj, requirements } from "./helpers.js";
+} from "../src/engine/templates";
+import type { ChartTemplate, RequirementSet } from "../src/engine/types";
+import { chartOf, obj, requirements } from "./helpers";
 
 const catalog = createCatalog([
   obj("CS101", { categories: ["major"] }),

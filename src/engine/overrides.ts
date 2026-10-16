@@ -1,4 +1,4 @@
-import { meetsGrade } from "./grades.js";
+import { meetsGrade } from "./grades";
 import type {
   Catalog,
   ChartIssue,
@@ -6,7 +6,7 @@ import type {
   Grade,
   Override,
   Requirements,
-} from "./types.js";
+} from "./types";
 
 export interface OverrideResult {
   // Adjusted copies; the originals passed in are not changed.

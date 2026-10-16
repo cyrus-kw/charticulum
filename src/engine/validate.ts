@@ -1,8 +1,8 @@
-import { isOffered } from "./availability.js";
-import { earliestSatisfyingTerm, placementTerms, satisfies } from "./catalog.js";
-import { isBackedByExternal } from "./equivalents.js";
-import { meetsGrade } from "./grades.js";
-import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "./types.js";
+import { isOffered } from "./availability";
+import { earliestSatisfyingTerm, placementTerms, satisfies } from "./catalog";
+import { isBackedByExternal } from "./equivalents";
+import { meetsGrade } from "./grades";
+import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "./types";
 
 // Check a chart against the object-attribute rules and return every
 // problem found. An empty list means the placements are consistent.
@@ -68,6 +68,7 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
             message: `${id} needs ${requisiteId} completed in an earlier term.`,
             objectId: id,
             termIndex: term.index,
+            requisiteId,
           });
         }
       }
@@ -80,6 +81,7 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
             message: `${id} needs ${requisiteId} in the same term or earlier.`,
             objectId: id,
             termIndex: term.index,
+            requisiteId,
           });
         }
       }
@@ -101,6 +103,7 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
             message: `${id} needs at least a ${minimum} in ${requisiteId}.`,
             objectId: id,
             termIndex: term.index,
+            requisiteId,
           });
         }
       }

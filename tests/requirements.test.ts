@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { evaluateRequirements } from "../src/engine/requirements.js";
-import { chartOf, obj, requirements } from "./helpers.js";
+import { createCatalog } from "../src/engine/catalog";
+import { evaluateRequirements } from "../src/engine/requirements";
+import { chartOf, obj, requirements } from "./helpers";
 
 const catalog = createCatalog([
   obj("CS101", { categories: ["major"], credits: 4 }),

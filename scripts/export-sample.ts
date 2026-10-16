@@ -2,8 +2,8 @@
 // the app as a starting point for a real school's data.
 // Run with: npm run sample:json
 import { mkdirSync, writeFileSync } from "node:fs";
-import { parseSchoolData } from "../src/engine/index.js";
-import { sampleSchoolData } from "../src/fixtures/sampleSchool.js";
+import { parseSchoolData } from "../src/engine/index";
+import { sampleSchoolData } from "../src/fixtures/sampleSchool";
 
 const result = parseSchoolData(sampleSchoolData);
 if (!result.ok) {

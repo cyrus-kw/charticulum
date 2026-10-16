@@ -1,4 +1,4 @@
-import type { Catalog, Chart, CourseObject } from "./types.js";
+import type { Catalog, Chart, CourseObject } from "./types";
 
 // Build a Catalog from a list of objects. Throws if two share an id,
 // because every later lookup assumes ids are unique.

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { DEFAULT_MAX_CREDITS_PER_TERM, mergeRequirementSets } from "../src/engine/scopes.js";
-import type { RequirementSet } from "../src/engine/types.js";
+import { DEFAULT_MAX_CREDITS_PER_TERM, mergeRequirementSets } from "../src/engine/scopes";
+import type { RequirementSet } from "../src/engine/types";
 
 const genEd: RequirementSet = {
   id: "ge",

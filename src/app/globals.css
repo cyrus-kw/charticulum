@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #09090b;
+  }
+}
+
+/* Requisite arrows. Colors match EDGE_COLOR / BROKEN_EDGE_COLOR in layout.ts. */
+.react-flow__edge.requisite-edge .react-flow__edge-path {
+  stroke: #64748b;
+  stroke-width: 1.5;
+}
+
+.react-flow__edge.requisite-edge-broken .react-flow__edge-path {
+  stroke: #e11d48;
+  stroke-width: 2;
+}

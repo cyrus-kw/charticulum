@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { checkChart } from "../src/engine/check.js";
-import { buildChart } from "../src/engine/scheduler.js";
-import { obj, requirements } from "./helpers.js";
+import { createCatalog } from "../src/engine/catalog";
+import { checkChart } from "../src/engine/check";
+import { buildChart } from "../src/engine/scheduler";
+import { obj, requirements } from "./helpers";
 
 // Term number for each object in a built chart.
 const termOf = (chart: ReturnType<typeof buildChart>["chart"]) =>

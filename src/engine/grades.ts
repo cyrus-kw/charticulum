@@ -1,4 +1,4 @@
-import type { Catalog, Chart, Grade } from "./types.js";
+import type { Catalog, Chart, Grade } from "./types";
 
 // Points per letter grade on a 4.0 scale.
 export const GRADE_POINTS: Record<Grade, number> = {

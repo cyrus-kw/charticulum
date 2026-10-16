@@ -1,4 +1,4 @@
-import { mergeRequirementSets } from "./scopes.js";
+import { mergeRequirementSets } from "./scopes";
 import type {
   Chart,
   ChartIssue,
@@ -7,7 +7,7 @@ import type {
   Requirements,
   TemplateRef,
   Term,
-} from "./types.js";
+} from "./types";
 
 // Every published template version. Versions never change once
 // published: a new academic year is a new entry.

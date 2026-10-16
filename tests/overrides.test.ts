@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { checkChart } from "../src/engine/check.js";
-import { applyOverrides } from "../src/engine/overrides.js";
-import { buildChart } from "../src/engine/scheduler.js";
-import type { Override } from "../src/engine/types.js";
-import { chartOf, obj, requirements } from "./helpers.js";
+import { createCatalog } from "../src/engine/catalog";
+import { checkChart } from "../src/engine/check";
+import { applyOverrides } from "../src/engine/overrides";
+import { buildChart } from "../src/engine/scheduler";
+import type { Override } from "../src/engine/types";
+import { chartOf, obj, requirements } from "./helpers";
 
 const catalog = createCatalog([
   obj("CS101"),

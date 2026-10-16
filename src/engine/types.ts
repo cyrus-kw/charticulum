@@ -220,4 +220,6 @@ export interface ChartIssue {
   // The "?" means the field is optional: it may be missing.
   objectId?: string;
   termIndex?: number;
+  // For requisite problems: which requisite isn't met.
+  requisiteId?: string;
 }

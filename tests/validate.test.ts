@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { validateChart } from "../src/engine/validate.js";
-import { chartOf, obj } from "./helpers.js";
+import { createCatalog } from "../src/engine/catalog";
+import { validateChart } from "../src/engine/validate";
+import { chartOf, obj } from "./helpers";
 
 const catalog = createCatalog([
   obj("CS101", { internalEquivalents: ["CS101H"] }),
@@ -79,6 +79,6 @@ describe("validateChart", () => {
 
   it("includes the term and object on each issue", () => {
     const [issue] = validateChart(catalog, chartOf([[], ["CS102"]]));
-    expect(issue).toMatchObject({ objectId: "CS102", termIndex: 1 });
+    expect(issue).toMatchObject({ objectId: "CS102", termIndex: 1, requisiteId: "CS101" });
   });
 });

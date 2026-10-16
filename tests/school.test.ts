@@ -6,9 +6,9 @@ import {
   latestTemplate,
   mergeCharts,
   resolveRequirements,
-} from "../src/engine/index.js";
-import { loadSchool, parseSchoolData, type SchoolData } from "../src/engine/school.js";
-import { sampleSchoolData } from "../src/fixtures/sampleSchool.js";
+} from "../src/engine/index";
+import { loadSchool, parseSchoolData, type SchoolData } from "../src/engine/school";
+import { sampleSchoolData } from "../src/fixtures/sampleSchool";
 
 function loadSample() {
   const result = parseSchoolData(sampleSchoolData);

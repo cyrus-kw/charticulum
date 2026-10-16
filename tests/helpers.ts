@@ -1,4 +1,4 @@
-import type { Chart, CourseObject, Requirements } from "../src/engine/types.js";
+import type { Chart, CourseObject, Requirements } from "../src/engine/types";
 
 // Build a CourseObject with sensible defaults so tests only spell out
 // the fields they care about. `Partial<CourseObject>` makes every field

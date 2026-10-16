@@ -1,5 +1,5 @@
-import type { ChartCheck } from "./check.js";
-import type { Catalog, Chart } from "./types.js";
+import type { ChartCheck } from "./check";
+import type { Catalog, Chart } from "./types";
 
 // Turn a chart into plain text, one block per term. This is a stand-in
 // for the visual flowchart that the chart-visualizer will draw later.

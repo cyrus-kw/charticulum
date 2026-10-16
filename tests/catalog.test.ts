@@ -4,8 +4,8 @@ import {
   earliestSatisfyingTerm,
   placementTerms,
   satisfies,
-} from "../src/engine/catalog.js";
-import { chartOf, obj } from "./helpers.js";
+} from "../src/engine/catalog";
+import { chartOf, obj } from "./helpers";
 
 describe("createCatalog", () => {
   it("looks objects up by id", () => {

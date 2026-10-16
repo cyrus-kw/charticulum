@@ -1,5 +1,5 @@
-import { earliestSatisfyingTerm, placementTerms } from "./catalog.js";
-import { chartGpa } from "./grades.js";
+import { earliestSatisfyingTerm, placementTerms } from "./catalog";
+import { chartGpa } from "./grades";
 import {
   EXTERNAL_TERM,
   type Catalog,
@@ -7,7 +7,7 @@ import {
   type Chart,
   type ChartIssue,
   type Requirements,
-} from "./types.js";
+} from "./types";
 
 export interface RequirementReport {
   // Term index -> credits placed in that term.

@@ -4,7 +4,7 @@ import {
   type Chart,
   type CompletedExternal,
   type CourseObject,
-} from "./types.js";
+} from "./types";
 
 // Is this object backed by something the student completed elsewhere?
 export function isBackedByExternal(

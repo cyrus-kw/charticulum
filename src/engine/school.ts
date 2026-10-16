@@ -1,9 +1,9 @@
 // School data: everything one school publishes (catalog, rules, templates,
 // calendar, and policy) as a single JSON document that can be imported.
 import { z } from "zod";
-import { createCatalog } from "./catalog.js";
-import { publishTemplate, type TemplateLibrary } from "./templates.js";
-import type { Catalog, CourseObject, RequirementSet } from "./types.js";
+import { createCatalog } from "./catalog";
+import { publishTemplate, type TemplateLibrary } from "./templates";
+import type { Catalog, CourseObject, RequirementSet } from "./types";
 
 // ---------------------------------------------------------------------------
 // Schema. Zod checks data at runtime (TypeScript types only exist while

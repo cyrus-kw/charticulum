@@ -1,7 +1,7 @@
-import { isOffered, slotLabel, termCalendar, type CalendarSlot } from "./availability.js";
-import { earliestSatisfyingTerm } from "./catalog.js";
-import { externalPlacements } from "./equivalents.js";
-import { applyOverrides } from "./overrides.js";
+import { isOffered, slotLabel, termCalendar, type CalendarSlot } from "./availability";
+import { earliestSatisfyingTerm } from "./catalog";
+import { externalPlacements } from "./equivalents";
+import { applyOverrides } from "./overrides";
 import {
   EXTERNAL_TERM,
   type Catalog,
@@ -12,7 +12,7 @@ import {
   type Override,
   type Requirements,
   type Season,
-} from "./types.js";
+} from "./types";
 
 export interface BuildOptions {
   name?: string;

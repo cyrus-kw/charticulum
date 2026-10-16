@@ -4,13 +4,13 @@ import {
   buildChart,
   checkChart,
   formatChart,
-} from "../src/engine/index.js";
+} from "../src/engine/index";
 import {
   sampleCalendar,
   sampleCatalog,
   sampleDraftChart,
   sampleRequirements,
-} from "../src/fixtures/sampleCurriculum.js";
+} from "../src/fixtures/sampleCurriculum";
 
 describe("sample curriculum", () => {
   const completedExternal = [{ institution: "AP", externalId: "CALC-AB" }];

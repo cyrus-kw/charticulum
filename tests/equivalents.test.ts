@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/catalog.js";
-import { checkChart } from "../src/engine/check.js";
-import { applyExternalEquivalents, externalPlacements } from "../src/engine/equivalents.js";
-import { chartOf, obj, requirements } from "./helpers.js";
+import { createCatalog } from "../src/engine/catalog";
+import { checkChart } from "../src/engine/check";
+import { applyExternalEquivalents, externalPlacements } from "../src/engine/equivalents";
+import { chartOf, obj, requirements } from "./helpers";
 
 const catalog = createCatalog([
   obj("MATH101", {
