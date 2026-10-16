@@ -25,12 +25,11 @@ import type { Catalog, Chart, ChartIssue } from "../engine/index";
 import {
   chartLayout,
   edgeEndpoints,
-  perimeterLength,
   perimeterOffset,
   perimeterPoint,
-  perimeterStep,
+  perimeterStepToward,
   sideAt,
-  snappedEndpoints,
+  draggingEndpoints,
   type Side,
   relatedTo,
   BROKEN_EDGE_COLOR,
@@ -70,20 +69,27 @@ function nodeRect(node: InternalNode): Rect {
 
 const GLIDE_MS = 220;
 
-// Ease a position along a card's border toward `goal`, taking the short way
-// around (so it rounds corners instead of cutting across). Interrupting a
-// glide just starts the next one from wherever it got to.
-function useBorderGlide(goal: number, total: number): number {
+// Ease an end's position along its card's border toward `goal`. It moves
+// around the border (so it flows around corners instead of cutting across),
+// going the way that passes nearer `toward`, the other end of its line.
+// Interrupting a glide just starts the next one from wherever it got to.
+function useBorderGlide(goal: number, rect: Rect | undefined, toward: { x: number; y: number } | undefined): number {
   const [offset, setOffset] = useState(goal);
   const current = useRef(goal);
+  // The latest card box and other end, read when a glide starts.
+  const latest = useRef({ rect, toward });
+  useEffect(() => {
+    latest.current = { rect, toward };
+  });
 
   useEffect(() => {
-    const from = current.current;
-    const step = perimeterStep(from, goal, total);
     const settle = (value: number) => {
       current.current = value;
       setOffset(value);
     };
+    const { rect: box, toward: other } = latest.current;
+    const from = current.current;
+    const step = box && other ? perimeterStepToward(box, from, goal, other) : goal - from;
     if (Math.abs(step) < 0.5 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       settle(goal);
       return;
@@ -96,15 +102,15 @@ function useBorderGlide(goal: number, total: number): number {
       if (t < 1) frame = requestAnimationFrame(tick);
     });
     return () => cancelAnimationFrame(frame);
-  }, [goal, total]);
+  }, [goal]);
 
   return offset;
 }
 
 // A straight line between the middles of the facing sides of two cards,
 // whichever way the cards are arranged (even backwards or stacked). While
-// either card is being dragged, both ends snap to the middle of the side
-// facing the other card, and glide around their card's border to get there.
+// either card is being dragged, both ends snap only to left and right side
+// middles, flowing smoothly around their card's border when they switch.
 function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
@@ -118,7 +124,7 @@ function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<Planne
   const ends =
     sourceRect && targetRect
       ? dragging
-        ? snappedEndpoints(sourceRect, targetRect, lastSides.current)
+        ? draggingEndpoints(sourceRect, targetRect, lastSides.current)
         : edgeEndpoints(sourceRect, targetRect)
       : null;
   useEffect(() => {
@@ -130,11 +136,13 @@ function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<Planne
   // both cards exist.
   const tailOffset = useBorderGlide(
     ends && sourceRect ? perimeterOffset(sourceRect, ends.start) : 0,
-    sourceRect ? perimeterLength(sourceRect) : 1,
+    sourceRect,
+    ends?.end,
   );
   const headOffset = useBorderGlide(
     ends && targetRect ? perimeterOffset(targetRect, ends.end) : 0,
-    targetRect ? perimeterLength(targetRect) : 1,
+    targetRect,
+    ends?.start,
   );
 
   if (!sourceRect || !targetRect) return null;

@@ -405,16 +405,15 @@ const center = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
 // stacked in the same column (e.g. a lab under its lecture) join from the
 // middle of the facing top and bottom instead.
 //
-// With `anySide` (used while a card is being dragged), "same term" means
-// the cards' centers are over the same column, rather than the cards
-// overlapping; see snappedEndpoints.
+// With `anySide` (used while a card is being dragged), the ends snap only
+// to left and right sides; see draggingEndpoints.
 export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   const s = center(source);
   const t = center(target);
   const vertical = source.x < target.x + target.width && target.x < source.x + source.width;
 
   if (anySide) {
-    const { start, end } = snappedEndpoints(source, target);
+    const { start, end } = draggingEndpoints(source, target);
     return { start, end };
   }
 
@@ -433,14 +432,12 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
 }
 
 export type Side = "left" | "right" | "top" | "bottom";
+type Point = { x: number; y: number };
 
-// While a card is dragged, how far past the edge of a term's column it must
-// go before a top-to-bottom link (same term) switches to a side-to-side one.
-// Without it, a card held right on a column edge flickers between the two.
-export const TERM_SWITCH_MARGIN = 24;
-
-// The term column a point on the canvas falls in.
-const columnAt = (x: number) => Math.floor(x / COLUMN_WIDTH);
+// While a card is dragged, how far past the other card it must go before a
+// line flips which way it runs (right-to-left vs. left-to-right). Without
+// it, a card held level with the other flickers between the two.
+export const SIDE_SWITCH_MARGIN = 24;
 
 export function sideMiddle(r: Rect, side: Side): { x: number; y: number } {
   const c = center(r);
@@ -456,7 +453,7 @@ export function sideMiddle(r: Rect, side: Side): { x: number; y: number } {
   }
 }
 
-// Which side's middle a border point is (for points from sideMiddle).
+// Which side of a card a point on its border is on.
 export function sideAt(r: Rect, p: { x: number; y: number }): Side {
   const near = (a: number, b: number) => Math.abs(a - b) < 1e-6;
   if (near(p.x, r.x)) return "left";
@@ -464,26 +461,37 @@ export function sideAt(r: Rect, p: { x: number; y: number }): Side {
   return near(p.y, r.y) ? "top" : "bottom";
 }
 
-// Both ends of a line while a card is being dragged. Cards in the same term
-// (column) join top to bottom; otherwise lines only use left and right
-// sides. Pass the sides from last time so a card held on a column edge
-// doesn't flicker (see TERM_SWITCH_MARGIN).
-export function snappedEndpoints(source: Rect, target: Rect, previous: { start?: Side; end?: Side } = {}) {
+// Both ends of a line while a card is being dragged. They snap only to the
+// middles of left and right sides, never top or bottom (moving between
+// them, the ends glide around the border; see useBorderGlide). A line
+// keeps the way it runs until one card is clearly past the other; pass the
+// sides from last time for that (see SIDE_SWITCH_MARGIN).
+export function draggingEndpoints(source: Rect, target: Rect, previous: { start?: Side; end?: Side } = {}) {
   const s = center(source);
   const t = center(target);
-  const wasSameTerm = previous.start === "top" || previous.start === "bottom";
-  const sameTerm =
-    columnAt(s.x) === columnAt(t.x) ||
-    (wasSameTerm && Math.abs(s.x - t.x) < COLUMN_WIDTH / 2 + TERM_SWITCH_MARGIN);
+  let runsRight: boolean;
+  if (previous.start === "right") runsRight = t.x > s.x - SIDE_SWITCH_MARGIN;
+  else if (previous.start === "left") runsRight = t.x > s.x + SIDE_SWITCH_MARGIN;
+  else runsRight = t.x >= s.x;
 
-  const [startSide, endSide]: [Side, Side] = sameTerm
-    ? t.y > s.y
-      ? ["bottom", "top"]
-      : ["top", "bottom"]
-    : t.x > s.x
-      ? ["right", "left"]
-      : ["left", "right"];
-  return { start: sideMiddle(source, startSide), end: sideMiddle(target, endSide), startSide, endSide };
+  const startSide = runsRight ? "right" : "left";
+  const endSide = runsRight ? "left" : "right";
+  return { start: sideMiddle(source, startSide), end: sideMiddle(target, endSide), startSide, endSide } as const;
+}
+
+// Of the two ways around a border from `from` to `to`, the one whose
+// halfway point is nearer `toward`. Used so an end switching sides flows
+// around the edge facing the other end of its line.
+export function perimeterStepToward(r: Rect, from: number, to: number, toward: Point): number {
+  const total = perimeterLength(r);
+  const short = perimeterStep(from, to, total);
+  if (Math.abs(short) < 1e-9) return 0;
+  const long = short > 0 ? short - total : short + total;
+  const distance = (step: number) => {
+    const p = perimeterPoint(r, from + step / 2);
+    return Math.hypot(p.x - toward.x, p.y - toward.y);
+  };
+  return distance(long) < distance(short) ? long : short;
 }
 
 // Positions along a card's border, measured as a distance clockwise from
