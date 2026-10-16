@@ -4,6 +4,10 @@ import { loadSampleSchool } from "../src/fixtures/sampleSchool";
 import {
   chartLayout,
   edgeEndpoints,
+  perimeterLength,
+  perimeterOffset,
+  perimeterPoint,
+  perimeterStep,
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
@@ -209,6 +213,40 @@ describe("edgeEndpoints", () => {
 
     it("matches the normal rule when the cards are simply side by side", () => {
       expect(at(300, 0)).toEqual(edgeEndpoints(box(0, 0), box(300, 0)));
+    });
+  });
+
+  describe("positions along the border", () => {
+    const r = box(10, 20); // 100 wide, 40 tall: border is 280 long
+
+    it("measures clockwise from the top-left corner", () => {
+      expect(perimeterLength(r)).toBe(280);
+      expect(perimeterOffset(r, { x: 60, y: 20 })).toBe(50); // top middle
+      expect(perimeterOffset(r, { x: 110, y: 40 })).toBe(120); // right middle
+      expect(perimeterOffset(r, { x: 60, y: 60 })).toBe(190); // bottom middle
+      expect(perimeterOffset(r, { x: 10, y: 40 })).toBe(260); // left middle
+    });
+
+    it("turns offsets back into points, wrapping around", () => {
+      for (const offset of [0, 50, 100, 120, 140, 190, 240, 260]) {
+        expect(perimeterOffset(r, perimeterPoint(r, offset))).toBeCloseTo(offset);
+      }
+      expect(perimeterPoint(r, 280 + 50)).toEqual(perimeterPoint(r, 50));
+      expect(perimeterPoint(r, -20)).toEqual({ x: 10, y: 40 }); // up the left side
+    });
+
+    it("goes the short way around", () => {
+      expect(perimeterStep(50, 120, 280)).toBe(70); // top to right: clockwise
+      expect(perimeterStep(50, 260, 280)).toBe(-70); // top to left: back past the corner
+      expect(perimeterStep(260, 50, 280)).toBe(70); // left to top: forward past the corner
+    });
+
+    it("finds every snapped arrowhead on its card's border", () => {
+      for (const [x, y] of [[300, 100], [150, 300], [-300, -100], [150, -300]]) {
+        const target = box(x, y);
+        const { end } = edgeEndpoints(box(0, 0), target, true);
+        expect(perimeterPoint(target, perimeterOffset(target, end))).toEqual(end);
+      }
     });
   });
 

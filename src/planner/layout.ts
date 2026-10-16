@@ -443,6 +443,41 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   };
 }
 
+// Positions along a card's border, measured as a distance clockwise from
+// its top-left corner: along the top, down the right side, back along the
+// bottom, and up the left side. Used to glide an arrowhead around a card.
+export function perimeterLength(r: Rect): number {
+  return 2 * (r.width + r.height);
+}
+
+// The distance along the border of a point on the border.
+export function perimeterOffset(r: Rect, p: { x: number; y: number }): number {
+  const { width: w, height: h } = r;
+  const near = (a: number, b: number) => Math.abs(a - b) < 1e-6;
+  if (near(p.y, r.y)) return p.x - r.x; // top
+  if (near(p.x, r.x + w)) return w + (p.y - r.y); // right
+  if (near(p.y, r.y + h)) return w + h + (r.x + w - p.x); // bottom
+  return 2 * w + h + (r.y + h - p.y); // left
+}
+
+// The point at a distance along the border (any number; it wraps around).
+export function perimeterPoint(r: Rect, offset: number): { x: number; y: number } {
+  const { width: w, height: h } = r;
+  const total = perimeterLength(r);
+  const d = ((offset % total) + total) % total;
+  if (d <= w) return { x: r.x + d, y: r.y };
+  if (d <= w + h) return { x: r.x + w, y: r.y + (d - w) };
+  if (d <= 2 * w + h) return { x: r.x + w - (d - w - h), y: r.y + h };
+  return { x: r.x, y: r.y + h - (d - 2 * w - h) };
+}
+
+// The shortest way around the border from one offset to another: a
+// change between -half and +half the border's length.
+export function perimeterStep(from: number, to: number, total: number): number {
+  const step = (((to - from) % total) + total) % total;
+  return step > total / 2 ? step - total : step;
+}
+
 // Which term a card was dropped on, from where its center ended up.
 // Never Term 0.
 export function termIndexAt(chart: Chart, x: number): number {

@@ -19,11 +19,15 @@ import {
   type NodeProps,
   type NodeTypes,
 } from "@xyflow/react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Catalog, Chart, ChartIssue } from "../engine/index";
 import {
   chartLayout,
   edgeEndpoints,
+  perimeterLength,
+  perimeterOffset,
+  perimeterPoint,
+  perimeterStep,
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
@@ -60,17 +64,59 @@ function nodeRect(node: InternalNode): Rect {
   };
 }
 
+const GLIDE_MS = 180;
+
+// Ease a position along a card's border toward `goal`, taking the short way
+// around (so it rounds corners instead of cutting across). Interrupting a
+// glide just starts the next one from wherever it got to.
+function useBorderGlide(goal: number, total: number): number {
+  const [offset, setOffset] = useState(goal);
+  const current = useRef(goal);
+
+  useEffect(() => {
+    const from = current.current;
+    const step = perimeterStep(from, goal, total);
+    const settle = (value: number) => {
+      current.current = value;
+      setOffset(value);
+    };
+    if (Math.abs(step) < 0.5 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      settle(goal);
+      return;
+    }
+    const started = performance.now();
+    let frame = requestAnimationFrame(function tick(now) {
+      const t = Math.min(1, (now - started) / GLIDE_MS);
+      const eased = 1 - (1 - t) ** 3; // fast at first, then easing in
+      settle(from + step * eased);
+      if (t < 1) frame = requestAnimationFrame(tick);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [goal, total]);
+
+  return offset;
+}
+
 // A straight line between the middles of the facing sides of two cards,
 // whichever way the cards are arranged (even backwards or stacked). While
-// either card is being dragged, the arrowhead slides around the target
-// card's border, snapping to the middle of the side it points into.
+// either card is being dragged, the arrowhead snaps to the middle of the
+// target side it points into, and glides around the border to get there.
 function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
-  if (!sourceNode || !targetNode) return null;
-  const dragging = Boolean(sourceNode.dragging || targetNode.dragging);
-  const { start, end } = edgeEndpoints(nodeRect(sourceNode), nodeRect(targetNode), dragging);
-  return <BaseEdge id={id} path={`M ${start.x},${start.y} L ${end.x},${end.y}`} markerEnd={markerEnd} style={style} />;
+  const sourceRect = sourceNode && nodeRect(sourceNode);
+  const targetRect = targetNode && nodeRect(targetNode);
+  const dragging = Boolean(sourceNode?.dragging || targetNode?.dragging);
+  const ends = sourceRect && targetRect ? edgeEndpoints(sourceRect, targetRect, dragging) : null;
+
+  // Hooks must run on every render, so these use stand-in values until
+  // both cards exist.
+  const goal = ends && targetRect ? perimeterOffset(targetRect, ends.end) : 0;
+  const offset = useBorderGlide(goal, targetRect ? perimeterLength(targetRect) : 1);
+
+  if (!ends || !targetRect) return null;
+  const head = perimeterPoint(targetRect, offset);
+  return <BaseEdge id={id} path={`M ${ends.start.x},${ends.start.y} L ${head.x},${head.y}`} markerEnd={markerEnd} style={style} />;
 }
 
 // Re-fit the chart to the canvas whenever `fitKey` changes (e.g. a sidebar
