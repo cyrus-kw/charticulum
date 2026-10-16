@@ -10,7 +10,7 @@ import {
   perimeterStep,
   relatedTo,
   sideAt,
-  sideFacing,
+  TERM_SWITCH_MARGIN,
   sideMiddle,
   snappedEndpoints,
   type Side,
@@ -180,94 +180,50 @@ describe("edgeEndpoints", () => {
     expect(edgeEndpoints(box(0, 200), box(100, 0)).start).toEqual({ x: 100, y: 220 });
   });
 
-  describe("while dragging (both ends on any side)", () => {
-    const at = (x: number, y: number) => edgeEndpoints(box(0, 0), box(x, y), true);
+  describe("while dragging", () => {
+    // Cards sit centered in 212-wide term columns, like on the canvas.
+    const card = (column: number, y: number) => box(column * 212 + 56, y);
+    const drag = (source: ReturnType<typeof box>, target: ReturnType<typeof box>, previous = {}) =>
+      snappedEndpoints(source, target, previous);
 
-    it("uses left/right sides when the cards are more across than down", () => {
-      expect(at(300, 100)).toEqual({ start: { x: 100, y: 20 }, end: { x: 300, y: 120 } });
-      expect(at(-300, -100)).toEqual({ start: { x: 0, y: 20 }, end: { x: -200, y: -80 } });
+    it("uses only left and right sides between different terms, however steep", () => {
+      expect(drag(card(0, 0), card(1, 600))).toMatchObject({ startSide: "right", endSide: "left" });
+      expect(drag(card(2, 0), card(1, -600))).toMatchObject({ startSide: "left", endSide: "right" });
+      expect(drag(card(0, 0), card(3, 10))).toMatchObject({ startSide: "right", endSide: "left" });
     });
 
-    it("uses top/bottom sides at both ends when they're more down than across", () => {
-      expect(at(150, 300)).toEqual({ start: { x: 50, y: 40 }, end: { x: 200, y: 300 } });
-      expect(at(150, -300)).toEqual({ start: { x: 50, y: 0 }, end: { x: 200, y: -260 } });
+    it("joins top to bottom within the same term", () => {
+      expect(drag(card(1, 0), card(1, 200))).toMatchObject({ startSide: "bottom", endSide: "top" });
+      expect(drag(card(1, 200), card(1, 0))).toMatchObject({ startSide: "top", endSide: "bottom" });
     });
 
-    it("slides both ends around their borders as a card circles, always to a side's middle", () => {
-      // Which side of a 100x40 box at (rx, ry) the point is the middle of.
-      const middleOf = (p: { x: number; y: number }, rx: number, ry: number) =>
-        p.x === rx && p.y === ry + 20
-          ? "left"
-          : p.x === rx + 100 && p.y === ry + 20
-            ? "right"
-            : p.y === ry && p.x === rx + 50
-              ? "top"
-              : p.y === ry + 40 && p.x === rx + 50
-                ? "bottom"
-                : "NOT A MIDDLE";
-      const startSides = new Set<string>();
-      const endSides = new Set<string>();
-      for (let angle = 0; angle < 360; angle += 15) {
-        const x = Math.round(400 * Math.cos((angle * Math.PI) / 180));
-        const y = Math.round(300 * Math.sin((angle * Math.PI) / 180));
-        const { start, end } = at(x, y);
-        startSides.add(middleOf(start, 0, 0));
-        endSides.add(middleOf(end, x, y));
-      }
-      expect([...startSides].sort()).toEqual(["bottom", "left", "right", "top"]);
-      expect([...endSides].sort()).toEqual(["bottom", "left", "right", "top"]);
+    it("counts a dragged card as in a term when its center is over that column", () => {
+      // Dragged partway into column 1, center still over column 1.
+      const dragged = box(212 + 150, 300);
+      expect(drag(card(1, 0), dragged)).toMatchObject({ startSide: "bottom", endSide: "top" });
+      // Center now over column 2.
+      expect(drag(card(1, 0), box(212 + 170, 300))).toMatchObject({ startSide: "right", endSide: "left" });
     });
 
-    it("puts the two ends on facing sides", () => {
-      const opposite = { left: "right", right: "left", top: "bottom", bottom: "top" } as const;
-      for (const [x, y] of [[300, 100], [150, 300], [-300, -100], [150, -300], [-120, 250]]) {
-        const { start, end } = at(x, y);
-        const startSide = start.x === 0 ? "left" : start.x === 100 ? "right" : start.y === 0 ? "top" : "bottom";
-        const endSide = end.x === x ? "left" : end.x === x + 100 ? "right" : end.y === y ? "top" : "bottom";
-        expect(endSide, `${x},${y}`).toBe(opposite[startSide]);
-      }
+    it("snaps each end to the middle of its side", () => {
+      const source = card(0, 0);
+      const target = card(1, 500);
+      const { start, end } = drag(source, target);
+      expect(start).toEqual(sideMiddle(source, "right"));
+      expect(end).toEqual(sideMiddle(target, "left"));
     });
 
-    it("matches the normal rule when the cards are simply side by side", () => {
-      expect(at(300, 0)).toEqual(edgeEndpoints(box(0, 0), box(300, 0)));
-    });
-  });
-
-  describe("side stickiness", () => {
-    const card = box(0, 0); // center (50, 20); half-size 50 x 20
-    // A point exactly on the switch line: as far across as down, relative
-    // to the card's shape (100 across vs. 40 down from the center).
-    const onTheLine = { x: 150, y: 60 };
-
-    it("picks the clearer way with no history", () => {
-      expect(sideFacing(card, { x: 300, y: 30 })).toBe("right");
-      expect(sideFacing(card, { x: 60, y: 300 })).toBe("bottom");
-    });
-
-    it("stays on its side until the other way clearly wins", () => {
-      // Slightly more down than across: switches with no history...
-      const justPast = { x: 150, y: 64 };
-      expect(sideFacing(card, justPast)).toBe("bottom");
-      // ...but not if it was on the right side.
-      expect(sideFacing(card, justPast, "right")).toBe("right");
-      // Clearly more down than across: it does switch.
-      expect(sideFacing(card, { x: 150, y: 90 }, "right")).toBe("bottom");
-      // And the same holds the other way.
-      expect(sideFacing(card, { x: 160, y: 60 }, "bottom")).toBe("bottom");
-      expect(sideFacing(card, { x: 220, y: 60 }, "bottom")).toBe("right");
-      expect(sideFacing(card, onTheLine)).toBe("right");
-    });
-
-    it("doesn't flicker when a card wiggles at the switch point", () => {
-      // The other card's center is 300 across and 120 down from this one's:
-      // exactly on the switch line (300/50 = 120/20). Wiggle it up and down.
-      const wiggled = (i: number) => box(300, 120 + (i % 2 === 0 ? -6 : 6));
+    it("doesn't flicker when a card is held on a column edge", () => {
+      // Wiggle a card's center back and forth across the edge between
+      // columns 1 and 2 (x = 424), below a card in column 1.
+      const anchor = card(1, 0);
+      const wiggled = (i: number) => box(424 + (i % 2 === 0 ? -8 : 8) - 50, 300);
       const countSwitches = (remember: boolean) => {
         let previous: { start?: Side; end?: Side } = {};
         let last: string | undefined;
         let switches = 0;
         for (let i = 0; i < 40; i++) {
-          const snapped = snappedEndpoints(box(0, 0), wiggled(i), remember ? previous : {});
+          const snapped = drag(anchor, wiggled(i), remember ? previous : {});
           const sides = `${snapped.startSide}-${snapped.endSide}`;
           if (last && last !== sides) switches++;
           last = sides;
@@ -279,9 +235,17 @@ describe("edgeEndpoints", () => {
       expect(countSwitches(true)).toBe(0); // with it: steady
     });
 
+    it("does switch once the card is clearly in the next term", () => {
+      const anchor = card(1, 0);
+      const joined = { start: "bottom" as Side, end: "top" as Side };
+      expect(drag(anchor, box(424 + 10 - 50, 300), joined).startSide).toBe("bottom");
+      expect(drag(anchor, box(424 + TERM_SWITCH_MARGIN + 10 - 50, 300), joined).startSide).toBe("right");
+    });
+
     it("finds the side a snapped point is on", () => {
+      const r = box(0, 0);
       for (const side of ["left", "right", "top", "bottom"] as const) {
-        expect(sideAt(card, sideMiddle(card, side))).toBe(side);
+        expect(sideAt(r, sideMiddle(r, side))).toBe(side);
       }
     });
   });
