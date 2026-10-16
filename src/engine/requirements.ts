@@ -1,4 +1,5 @@
 import { earliestSatisfyingTerm, placementTerms } from "./catalog.js";
+import { chartGpa } from "./grades.js";
 import {
   EXTERNAL_TERM,
   type Catalog,
@@ -14,6 +15,8 @@ export interface RequirementReport {
   totalCredits: number;
   creditsByCategory: Partial<Record<Category, number>>;
   missingRequired: string[];
+  // Undefined until something is graded.
+  gpa?: number;
   issues: ChartIssue[];
 }
 
@@ -97,5 +100,13 @@ export function evaluateRequirements(
     });
   }
 
-  return { creditsByTerm, totalCredits, creditsByCategory, missingRequired, issues };
+  const gpa = chartGpa(catalog, chart);
+  if (requirements.minGpa !== undefined && gpa !== undefined && gpa < requirements.minGpa) {
+    issues.push({
+      code: "GPA_BELOW_MINIMUM",
+      message: `GPA is ${gpa.toFixed(2)}; at least ${requirements.minGpa.toFixed(2)} is required.`,
+    });
+  }
+
+  return { creditsByTerm, totalCredits, creditsByCategory, missingRequired, gpa, issues };
 }

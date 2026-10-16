@@ -1,6 +1,7 @@
 import { isOffered } from "./availability.js";
-import { earliestSatisfyingTerm, placementTerms } from "./catalog.js";
+import { earliestSatisfyingTerm, placementTerms, satisfies } from "./catalog.js";
 import { isBackedByExternal } from "./equivalents.js";
+import { meetsGrade } from "./grades.js";
 import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "./types.js";
 
 // Check a chart against the object-attribute rules and return every
@@ -75,6 +76,27 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
           issues.push({
             code: "CONCURRENT_REQUISITE_NOT_MET",
             message: `${id} needs ${requisiteId} in the same term or earlier.`,
+            objectId: id,
+            termIndex: term.index,
+          });
+        }
+      }
+
+      // Minimum grades. An object that isn't graded yet is still planned,
+      // so it passes for now; one passing grade among equivalents is enough.
+      for (const [requisiteId, minimum] of Object.entries(object.requisites.minGrades ?? {})) {
+        const satisfyingIds = [...placements.keys()].filter((placedId) =>
+          satisfies(catalog, requisiteId, placedId),
+        );
+        if (satisfyingIds.length === 0) continue; // already reported above
+        const passed = satisfyingIds.some((placedId) => {
+          const grade = chart.grades?.[placedId];
+          return grade === undefined || meetsGrade(grade, minimum);
+        });
+        if (!passed) {
+          issues.push({
+            code: "REQUISITE_GRADE_TOO_LOW",
+            message: `${id} needs at least a ${minimum} in ${requisiteId}.`,
             objectId: id,
             termIndex: term.index,
           });

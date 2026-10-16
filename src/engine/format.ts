@@ -22,11 +22,12 @@ export function formatChart(catalog: Catalog, chart: Chart, check?: ChartCheck):
   }
 
   if (check) {
-    const { totalCredits, creditsByCategory } = check.report;
+    const { totalCredits, creditsByCategory, gpa } = check.report;
     const categories = Object.entries(creditsByCategory)
       .map(([category, credits]) => `${category} ${credits}`)
       .join(", ");
     lines.push("", `Total: ${totalCredits} credits`, `Categories: ${categories || "none"}`);
+    if (gpa !== undefined) lines.push(`GPA: ${gpa.toFixed(2)}`);
     lines.push(check.valid ? "Issues: none" : `Issues (${check.issues.length}):`);
     for (const issue of check.issues) lines.push(`  [${issue.code}] ${issue.message}`);
   }

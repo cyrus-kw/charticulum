@@ -21,6 +21,7 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
   let minTotalCredits = 0;
   let maxCreditsPerTerm: number | undefined;
   let allowDoubleCounting = true;
+  let minGpa: number | undefined;
 
   for (const set of ordered) {
     for (const id of set.requiredObjectIds ?? []) required.add(id);
@@ -37,6 +38,7 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
       maxCreditsPerTerm = Math.min(maxCreditsPerTerm ?? Infinity, set.maxCreditsPerTerm);
     }
     if (set.allowDoubleCounting === false) allowDoubleCounting = false;
+    if (set.minGpa !== undefined) minGpa = Math.max(minGpa ?? 0, set.minGpa);
   }
 
   return {
@@ -45,5 +47,7 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     minTotalCredits,
     maxCreditsPerTerm: maxCreditsPerTerm ?? DEFAULT_MAX_CREDITS_PER_TERM,
     allowDoubleCounting,
+    // Only include the key when some set gave a value.
+    ...(minGpa !== undefined && { minGpa }),
   };
 }

@@ -9,5 +9,6 @@ export { evaluateRequirements, type RequirementReport } from "./requirements.js"
 export { applyExternalEquivalents, externalPlacements } from "./equivalents.js";
 export { checkChart, type ChartCheck } from "./check.js";
 export { DEFAULT_MAX_CREDITS_PER_TERM, mergeRequirementSets } from "./scopes.js";
+export { GRADE_POINTS, chartGpa, meetsGrade } from "./grades.js";
 export { buildChart, type BuildOptions, type BuildResult } from "./scheduler.js";
 export { formatChart } from "./format.js";

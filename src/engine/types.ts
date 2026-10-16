@@ -18,11 +18,21 @@ export type Category =
   | "elective"
   | "focus";
 
+export type Grade =
+  | "A" | "A-"
+  | "B+" | "B" | "B-"
+  | "C+" | "C" | "C-"
+  | "D+" | "D" | "D-"
+  | "F";
+
 export interface Requisites {
   // Must be completed in an EARLIER term.
   previous: string[];
   // Must be taken in the SAME term or earlier.
   concurrent: string[];
+  // Lowest acceptable grade for a requisite, e.g. { CS101: "C" }.
+  // Requisites without an entry accept any grade.
+  minGrades?: Record<string, Grade>;
 }
 
 // An object at another institution that counts as this one
@@ -87,6 +97,8 @@ export interface Chart {
   name: string;
   terms: Term[];
   completedExternal: CompletedExternal[];
+  // Grades earned so far, by object id. Planned objects have no grade yet.
+  grades?: Record<string, Grade>;
 }
 
 // ---------------------------------------------------------------------------
@@ -103,6 +115,8 @@ export interface Requirements {
   // School policy: may one object count toward several categories?
   // If false, it only counts toward the first category it lists.
   allowDoubleCounting: boolean;
+  // Lowest acceptable GPA across graded objects (4.0 scale).
+  minGpa?: number;
 }
 
 // Global sets apply to every chart (e.g. general education); local sets
@@ -126,6 +140,8 @@ export type IssueCode =
   | "DUPLICATE_PLACEMENT"
   | "PREVIOUS_REQUISITE_NOT_MET"
   | "CONCURRENT_REQUISITE_NOT_MET"
+  | "REQUISITE_GRADE_TOO_LOW"
+  | "GPA_BELOW_MINIMUM"
   | "UNBACKED_EXTERNAL_TERM"
   | "NOT_OFFERED"
   | "TERM_OVER_CREDIT_LIMIT"

@@ -8,9 +8,10 @@ export function obj(
   overrides: Partial<Omit<CourseObject, "requisites">> & {
     previous?: string[];
     concurrent?: string[];
+    minGrades?: CourseObject["requisites"]["minGrades"];
   } = {},
 ): CourseObject {
-  const { previous = [], concurrent = [], ...rest } = overrides;
+  const { previous = [], concurrent = [], minGrades, ...rest } = overrides;
   return {
     id,
     kind: "course",
@@ -20,7 +21,7 @@ export function obj(
     externalEquivalents: [],
     categories: [],
     ...rest,
-    requisites: { previous, concurrent },
+    requisites: { previous, concurrent, ...(minGrades && { minGrades }) },
   };
 }
 
