@@ -61,12 +61,15 @@ function nodeRect(node: InternalNode): Rect {
 }
 
 // A straight line between the middles of the facing sides of two cards,
-// whichever way the cards are arranged (even backwards or stacked).
+// whichever way the cards are arranged (even backwards or stacked). While
+// either card is being dragged, the arrowhead slides around the target
+// card's border, snapping to the middle of the side it points into.
 function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
   if (!sourceNode || !targetNode) return null;
-  const { start, end } = edgeEndpoints(nodeRect(sourceNode), nodeRect(targetNode));
+  const dragging = Boolean(sourceNode.dragging || targetNode.dragging);
+  const { start, end } = edgeEndpoints(nodeRect(sourceNode), nodeRect(targetNode), dragging);
   return <BaseEdge id={id} path={`M ${start.x},${start.y} L ${end.x},${end.y}`} markerEnd={markerEnd} style={style} />;
 }
 
@@ -237,19 +240,23 @@ export function ChartFlow({
     [focusId, layout],
   );
 
-  // React Flow tracks node positions itself while dragging. Whenever the
-  // chart (or the traced course) changes, reset them to the computed layout.
-  const styledNodes = useMemo(
-    () =>
-      layout.nodes.map((n) =>
+  // React Flow keeps its own copy of the cards so it can move them while
+  // dragging. Two separate updates feed it:
+  const [nodes, setNodes, onNodesChange] = useNodesState<PlannerNode>(layout.nodes);
+  // 1. A new layout (the chart changed): reset every card to its place.
+  useEffect(() => setNodes(layout.nodes), [layout, setNodes]);
+  // 2. Selection and tracing only change how cards look. Update just that,
+  //    keeping each card's current position and React Flow's measurements,
+  //    so a card being dragged isn't yanked back or its lines lost.
+  useEffect(() => {
+    setNodes((current) =>
+      current.map((n) =>
         n.type === "course"
           ? { ...n, selected: n.id === selectedId, className: related && !related.has(n.id) ? "is-dimmed" : "" }
           : n,
       ),
-    [layout, selectedId, related],
-  );
-  const [nodes, setNodes, onNodesChange] = useNodesState<PlannerNode>(styledNodes);
-  useEffect(() => setNodes(styledNodes), [styledNodes, setNodes]);
+    );
+  }, [layout, selectedId, related, setNodes]);
 
   const edges = useMemo(
     () =>
@@ -271,8 +278,10 @@ export function ChartFlow({
       onNodeDragStart={() => setHoveredId(null)}
       onNodeDragStop={(_, node) => {
         if (node.type !== "course") return;
-        // Snap back first; if the move is valid the chart update re-lays it out.
-        setNodes(styledNodes);
+        // Snap cards back to their places first (keeping their looks); if the
+        // move is valid, the chart update then lays it out anew.
+        const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
+        setNodes((current) => current.map((n) => ({ ...n, position: home.get(n.id) ?? n.position })));
         onMove(node.id, termIndexAt(chart, node.position.x));
       }}
       onNodeClick={(_, node) => {

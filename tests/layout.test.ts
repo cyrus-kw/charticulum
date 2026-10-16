@@ -171,6 +171,47 @@ describe("edgeEndpoints", () => {
     expect(edgeEndpoints(box(0, 200), box(100, 0)).start).toEqual({ x: 100, y: 220 });
   });
 
+  describe("while dragging (arrowhead on any side)", () => {
+    const at = (x: number, y: number) => edgeEndpoints(box(0, 0), box(x, y), true);
+
+    it("keeps the origin where it normally is", () => {
+      for (const [x, y] of [[300, 100], [150, 300], [-300, -100], [150, -300], [0, 200]]) {
+        expect(at(x, y).start, `${x},${y}`).toEqual(edgeEndpoints(box(0, 0), box(x, y)).start);
+      }
+    });
+
+    it("enters the target from the side when the line comes in across", () => {
+      expect(at(300, 100).end).toEqual({ x: 300, y: 120 });
+      expect(at(-300, -100).end).toEqual({ x: -200, y: -80 });
+    });
+
+    it("enters through the top or bottom when the line comes in steeply", () => {
+      expect(at(150, 300)).toEqual({ start: { x: 100, y: 20 }, end: { x: 200, y: 300 } });
+      expect(at(150, -300)).toEqual({ start: { x: 100, y: 20 }, end: { x: 200, y: -260 } });
+    });
+
+    it("slides around the border as the card moves, always to a side's middle", () => {
+      // Circle a card around the other and record which side the end lands on.
+      const sideOf = (p: { x: number; y: number }, r: { x: number; y: number }) =>
+        p.x === r.x ? "left" : p.x === r.x + 100 ? "right" : p.y === r.y ? "top" : "bottom";
+      const seen = new Set<string>();
+      for (let angle = 0; angle < 360; angle += 15) {
+        const r = { x: Math.round(400 * Math.cos((angle * Math.PI) / 180)), y: Math.round(300 * Math.sin((angle * Math.PI) / 180)) };
+        const { end } = at(r.x, r.y);
+        const side = sideOf(end, r);
+        seen.add(side);
+        // Middle of that side.
+        if (side === "left" || side === "right") expect(end.y).toBe(r.y + 20);
+        else expect(end.x).toBe(r.x + 50);
+      }
+      expect([...seen].sort()).toEqual(["bottom", "left", "right", "top"]);
+    });
+
+    it("matches the normal rule when the cards are simply side by side", () => {
+      expect(at(300, 0)).toEqual(edgeEndpoints(box(0, 0), box(300, 0)));
+    });
+  });
+
   it("gives finite points for cards in the same spot", () => {
     const { start, end } = edgeEndpoints(box(0, 0), box(0, 0));
     expect([start.x, start.y, end.x, end.y].every(Number.isFinite)).toBe(true);
