@@ -2,7 +2,9 @@ import { describe, expect, it } from "vitest";
 import { createCatalog } from "../src/engine/index";
 import { loadSampleSchool } from "../src/fixtures/sampleSchool";
 import {
+  borderPoint,
   chartLayout,
+  edgeEndpoints,
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
@@ -82,18 +84,16 @@ describe("chartLayout look", () => {
     }
   });
 
-  it("uses straight lines, dashed for concurrent requisites", () => {
+  it("uses floating straight lines, dashed for concurrent requisites", () => {
     const { edges } = sampleLayout();
-    expect(edges.every((e) => e.type === "straight")).toBe(true);
+    expect(edges.every((e) => e.type === "floating")).toBe(true);
     const lab = edges.find((e) => e.id === "CS102->CS102L")!;
     expect(lab.style?.strokeDasharray).toBeDefined();
     expect(edges.find((e) => e.id === "CS101->CS102")!.style?.strokeDasharray).toBeUndefined();
   });
 
-  it("joins a lecture and its lab top-to-bottom, next to each other", () => {
-    const { edges, nodes } = sampleLayout();
-    const lab = edges.find((e) => e.id === "CS102->CS102L")!;
-    expect([lab.sourceHandle, lab.targetHandle]).toEqual(["s-bottom", "t-top"]);
+  it("keeps a lecture and its lab next to each other", () => {
+    const { nodes } = sampleLayout();
     const y = (id: string) => nodes.find((n) => n.id === id)!.position.y;
     expect(y("CS102L") - y("CS102")).toBe(ROW_HEIGHT);
   });
@@ -137,6 +137,48 @@ describe("chartLayout look", () => {
     expect(data("CS101")?.onlyIn).toBeUndefined();
     expect(data("STAT200")?.needsMinGrade).toBe(true); // STAT300 needs a C in it
     expect(data("ENG101")?.generalEducation).toBe(true);
+  });
+});
+
+describe("edgeEndpoints", () => {
+  const box = (x: number, y: number) => ({ x, y, width: 100, height: 40 });
+
+  it("joins facing sides for cards side by side", () => {
+    expect(edgeEndpoints(box(0, 0), box(300, 0))).toEqual({ start: { x: 100, y: 20 }, end: { x: 300, y: 20 } });
+  });
+
+  it("joins the other pair of sides when the line runs backwards", () => {
+    // The case from the screenshot: the requisite sits to the right.
+    expect(edgeEndpoints(box(300, 0), box(0, 100))).toMatchObject({
+      start: { x: 300 },
+      end: { x: 100 },
+    });
+  });
+
+  it("joins bottom to top for stacked cards", () => {
+    expect(edgeEndpoints(box(0, 0), box(0, 100))).toEqual({ start: { x: 50, y: 40 }, end: { x: 50, y: 100 } });
+  });
+
+  it("always ends exactly on the border, on the side facing the other card", () => {
+    const a = box(0, 0);
+    for (const [x, y] of [[300, 10], [-250, 60], [20, -200], [180, 160], [-60, 90]]) {
+      const b = box(x, y);
+      const { start, end } = edgeEndpoints(a, b);
+      const onBorder = (p: { x: number; y: number }, r: ReturnType<typeof box>) =>
+        (Math.abs(p.x - r.x) < 1e-9 || Math.abs(p.x - (r.x + r.width)) < 1e-9) && p.y >= r.y - 1e-9 && p.y <= r.y + r.height + 1e-9 ||
+        (Math.abs(p.y - r.y) < 1e-9 || Math.abs(p.y - (r.y + r.height)) < 1e-9) && p.x >= r.x - 1e-9 && p.x <= r.x + r.width + 1e-9;
+      expect(onBorder(start, a), `start for ${x},${y}`).toBe(true);
+      expect(onBorder(end, b), `end for ${x},${y}`).toBe(true);
+      // Seen from its own card's center, each end points toward the other card.
+      const towardB = (start.x - 50) * (x + 50 - 50) + (start.y - 20) * (y + 20 - 20);
+      const towardA = (end.x - (x + 50)) * (50 - (x + 50)) + (end.y - (y + 20)) * (20 - (y + 20));
+      expect(towardB, `start for ${x},${y}`).toBeGreaterThan(0);
+      expect(towardA, `end for ${x},${y}`).toBeGreaterThan(0);
+    }
+  });
+
+  it("handles cards in the same spot without dividing by zero", () => {
+    expect(borderPoint(box(0, 0), { x: 50, y: 20 })).toEqual({ x: 50, y: 20 });
   });
 });
 

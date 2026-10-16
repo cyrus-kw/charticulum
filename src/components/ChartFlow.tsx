@@ -4,12 +4,18 @@
 // requisites as straight colored lines. Drag a card to another term to move
 // it; point at (or select) a card to trace everything it's connected to.
 import {
+  BaseEdge,
   Controls,
   Handle,
   Panel as FlowPanel,
   Position,
   ReactFlow,
+  useInternalNode,
   useNodesState,
+  useReactFlow,
+  type EdgeProps,
+  type EdgeTypes,
+  type InternalNode,
   type NodeProps,
   type NodeTypes,
 } from "@xyflow/react";
@@ -17,6 +23,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Catalog, Chart, ChartIssue } from "../engine/index";
 import {
   chartLayout,
+  edgeEndpoints,
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
@@ -24,26 +31,54 @@ import {
   NODE_WIDTH,
   termIndexAt,
   type CourseNode,
+  type PlannerEdge,
   type PlannerNode,
+  type Rect,
   type TermNode,
 } from "../planner/layout";
 import { cn } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
 
-// Lines attach to the sides for links between terms, and to the top or
-// bottom for links within one term (see layout.ts).
+// React Flow needs an attachment point on each card, but the floating edge
+// below works out where lines really meet the card, so these stay hidden.
 function Handles() {
   return (
     <>
-      <Handle id="t-left" type="target" position={Position.Left} isConnectable={false} style={hidden} />
-      <Handle id="t-top" type="target" position={Position.Top} isConnectable={false} style={hidden} />
-      <Handle id="t-bottom" type="target" position={Position.Bottom} isConnectable={false} style={hidden} />
-      <Handle id="s-right" type="source" position={Position.Right} isConnectable={false} style={hidden} />
-      <Handle id="s-top" type="source" position={Position.Top} isConnectable={false} style={hidden} />
-      <Handle id="s-bottom" type="source" position={Position.Bottom} isConnectable={false} style={hidden} />
+      <Handle type="target" position={Position.Left} isConnectable={false} style={hidden} />
+      <Handle type="source" position={Position.Right} isConnectable={false} style={hidden} />
     </>
   );
+}
+
+// A card's current box on the canvas (it moves while being dragged).
+function nodeRect(node: InternalNode): Rect {
+  return {
+    ...node.internals.positionAbsolute,
+    width: node.measured.width ?? node.width ?? NODE_WIDTH,
+    height: node.measured.height ?? node.height ?? NODE_HEIGHT,
+  };
+}
+
+// A straight line that always meets each card on the side facing the other
+// card, whichever way the cards are arranged (even backwards or stacked).
+function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
+  const sourceNode = useInternalNode(source);
+  const targetNode = useInternalNode(target);
+  if (!sourceNode || !targetNode) return null;
+  const { start, end } = edgeEndpoints(nodeRect(sourceNode), nodeRect(targetNode));
+  return <BaseEdge id={id} path={`M ${start.x},${start.y} L ${end.x},${end.y}`} markerEnd={markerEnd} style={style} />;
+}
+
+// Re-fit the chart to the canvas whenever `fitKey` changes (e.g. a sidebar
+// opens or closes). Waits a frame so the canvas has its new size.
+function FitOnChange({ fitKey }: { fitKey: string }) {
+  const { fitView } = useReactFlow();
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => void fitView({ padding: 0.05, duration: 200 }));
+    return () => cancelAnimationFrame(frame);
+  }, [fitKey, fitView]);
+  return null;
 }
 
 function CourseCard({ data, selected }: NodeProps<CourseNode>) {
@@ -115,6 +150,7 @@ function TermStripe({ data }: NodeProps<TermNode>) {
 
 // Defined outside the component so React Flow sees the same object each render.
 const nodeTypes: NodeTypes = { course: CourseCard, term: TermStripe };
+const edgeTypes: EdgeTypes = { floating: FloatingEdge };
 
 function Legend() {
   const line = (dashed: boolean, color = "currentColor") => (
@@ -171,9 +207,21 @@ export interface ChartFlowProps {
   selectedId: string | null;
   onMove: (objectId: string, termIndex: number) => void;
   onSelect: (objectId: string | null) => void;
+  // Change this to re-fit the chart, e.g. when the canvas is resized.
+  fitKey?: string;
 }
 
-export function ChartFlow({ catalog, chart, issues, creditsByTerm, maxCredits, selectedId, onMove, onSelect }: ChartFlowProps) {
+export function ChartFlow({
+  catalog,
+  chart,
+  issues,
+  creditsByTerm,
+  maxCredits,
+  selectedId,
+  onMove,
+  onSelect,
+  fitKey = "",
+}: ChartFlowProps) {
   const layout = useMemo(
     () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits),
     [catalog, chart, issues, creditsByTerm, maxCredits],
@@ -218,6 +266,7 @@ export function ChartFlow({ catalog, chart, issues, creditsByTerm, maxCredits, s
       nodes={nodes}
       edges={edges}
       nodeTypes={nodeTypes}
+      edgeTypes={edgeTypes}
       onNodesChange={onNodesChange}
       onNodeDragStart={() => setHoveredId(null)}
       onNodeDragStop={(_, node) => {
@@ -245,6 +294,7 @@ export function ChartFlow({ catalog, chart, issues, creditsByTerm, maxCredits, s
         <Legend />
       </FlowPanel>
       <Controls showInteractive={false} />
+      <FitOnChange fitKey={fitKey} />
     </ReactFlow>
   );
 }

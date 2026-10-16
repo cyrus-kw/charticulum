@@ -18,9 +18,9 @@ import {
 
 export const COLUMN_WIDTH = 212;
 export const NODE_WIDTH = 120;
-export const NODE_HEIGHT = 46;
-export const ROW_HEIGHT = 68;
-export const HEADER_HEIGHT = 64;
+export const NODE_HEIGHT = 52;
+export const ROW_HEIGHT = 88;
+export const HEADER_HEIGHT = 72;
 const FOOTER_HEIGHT = 24;
 // Cards are centered in their stripe, leaving a wide gap for lines.
 const NODE_OFFSET = (COLUMN_WIDTH - NODE_WIDTH) / 2;
@@ -161,19 +161,16 @@ export function chartLayout(
     }
   });
 
-  // 5. Straight lines. Within one term (a lab and its lecture), connect
-  //    top and bottom instead, so the line doesn't cross the cards.
+  // 5. Straight lines between card borders. They're drawn by the "floating"
+  //    edge in ChartFlow, which aims each line from card center to card
+  //    center and stops it at each card's nearest side (see edgeEndpoints).
   const edges: PlannerEdge[] = links.map((link) => {
-    const sameColumn = columnOf.get(link.source) === columnOf.get(link.target);
-    const sourceAbove = y.get(link.source)! < y.get(link.target)!;
     const color = link.broken ? BROKEN_EDGE_COLOR : (colors.get(link.source) ?? COURSE_COLORS[0]);
     return {
       id: `${link.source}->${link.target}`,
       source: link.source,
       target: link.target,
-      type: "straight",
-      sourceHandle: sameColumn ? (sourceAbove ? "s-bottom" : "s-top") : "s-right",
-      targetHandle: sameColumn ? (sourceAbove ? "t-top" : "t-bottom") : "t-left",
+      type: "floating",
       className: link.broken ? "requisite-edge requisite-edge-broken" : "requisite-edge",
       style: {
         stroke: color,
@@ -288,15 +285,18 @@ function orderColumns(
 // as placeVertically would place them for this order.
 function countCrossings(order: string[][], links: Link[], columnOf: Map<string, number>): number {
   const y = placeVertically(order, links, columnOf);
+  const rect = (id: string): Rect => ({
+    x: columnOf.get(id)! * COLUMN_WIDTH + NODE_OFFSET,
+    y: y.get(id)!,
+    width: NODE_WIDTH,
+    height: NODE_HEIGHT,
+  });
   const segments = links
     .filter((l) => columnOf.get(l.source) !== columnOf.get(l.target))
-    .map((l) => ({
-      ends: [l.source, l.target],
-      x1: columnOf.get(l.source)! * COLUMN_WIDTH + NODE_OFFSET + NODE_WIDTH,
-      y1: y.get(l.source)!,
-      x2: columnOf.get(l.target)! * COLUMN_WIDTH + NODE_OFFSET,
-      y2: y.get(l.target)!,
-    }));
+    .map((l) => {
+      const { start, end } = edgeEndpoints(rect(l.source), rect(l.target));
+      return { ends: [l.source, l.target], x1: start.x, y1: start.y, x2: end.x, y2: end.y };
+    });
   // Which side of line a->b the point c is on: -1, 0, or 1.
   const side = (ax: number, ay: number, bx: number, by: number, cx: number, cy: number) =>
     Math.sign((bx - ax) * (cy - ay) - (by - ay) * (cx - ax));
@@ -388,6 +388,37 @@ export function relatedTo(edges: Pick<Edge, "source" | "target">[], id: string):
     return seen;
   };
   return new Set([id, ...reach(true), ...reach(false)]);
+}
+
+export interface Rect {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+const center = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
+
+// Where a line from the rectangle's center toward `toward` leaves the
+// rectangle: always on the side facing that point.
+export function borderPoint(rect: Rect, toward: { x: number; y: number }): { x: number; y: number } {
+  const c = center(rect);
+  const dx = toward.x - c.x;
+  const dy = toward.y - c.y;
+  if (dx === 0 && dy === 0) return c;
+  // Shrink the direction until it just reaches the nearer of the vertical
+  // or horizontal sides.
+  const scale = Math.min(
+    dx === 0 ? Infinity : rect.width / 2 / Math.abs(dx),
+    dy === 0 ? Infinity : rect.height / 2 / Math.abs(dy),
+  );
+  return { x: c.x + dx * scale, y: c.y + dy * scale };
+}
+
+// The two ends of a straight line joining two cards, each on the side of
+// its card that faces the other card.
+export function edgeEndpoints(source: Rect, target: Rect) {
+  return { start: borderPoint(source, center(target)), end: borderPoint(target, center(source)) };
 }
 
 // Which term a card was dropped on, from where its center ended up.

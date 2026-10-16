@@ -14,7 +14,8 @@ import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
-import { Button, inputClass } from "./ui";
+import { Badge, Button, inputClass } from "./ui";
+import { usePanels } from "./usePanels";
 
 export function Planner() {
   // useReducer holds the planner state; dispatch(action) updates it.
@@ -35,10 +36,20 @@ export function Planner() {
   const panelProps = { state, view, dispatch };
   // Remount panels when the school changes so their local inputs reset.
   const schoolKey = state.school.data.school.id;
+  const panels = usePanels();
+  const issueCount = view.check.issues.length + view.templateIssues.length + state.builderIssues.length;
 
   return (
     <div className="flex h-dvh flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <header className="flex flex-wrap items-center gap-3 border-b border-zinc-200 px-4 py-2 dark:border-zinc-800">
+        <Button
+          variant="ghost"
+          aria-controls="tools-panel"
+          aria-expanded={panels.open.left}
+          onClick={() => panels.toggle("left")}
+        >
+          {panels.open.left ? "Hide tools" : "Show tools"}
+        </Button>
         <div className="mr-2">
           <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
           <p className="text-xs text-zinc-500">Chart your curriculum</p>
@@ -60,12 +71,25 @@ export function Planner() {
           >
             Build for me
           </Button>
+          <Button
+            variant="ghost"
+            aria-controls="details-panel"
+            aria-expanded={panels.open.right}
+            onClick={() => panels.toggle("right")}
+          >
+            {panels.open.right ? "Hide details" : "Show details"}
+            {!panels.open.right && issueCount > 0 && <Badge tone="bad">{issueCount}</Badge>}
+          </Button>
         </div>
       </header>
 
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
+        {/* `hidden` keeps the panels mounted, so what's typed in them survives. */}
         <aside
+          id="tools-panel"
           key={`left-${schoolKey}`}
+          hidden={!panels.open.left}
+          aria-label="Plan tools"
           className="max-h-[40dvh] overflow-y-auto border-zinc-200 lg:max-h-none lg:w-80 lg:shrink-0 lg:border-r dark:border-zinc-800"
         >
           <SavePanel {...panelProps} />
@@ -85,10 +109,16 @@ export function Planner() {
             selectedId={state.selectedId}
             onMove={(objectId, termIndex) => dispatch({ type: "move", objectId, termIndex })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
+            fitKey={`${panels.open.left}-${panels.open.right}`}
           />
         </main>
 
-        <aside className="overflow-y-auto border-zinc-200 lg:w-96 lg:shrink-0 lg:border-l dark:border-zinc-800">
+        <aside
+          id="details-panel"
+          hidden={!panels.open.right}
+          aria-label="Details"
+          className="overflow-y-auto border-zinc-200 lg:w-96 lg:shrink-0 lg:border-l dark:border-zinc-800"
+        >
           <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
           <IssuesPanel {...panelProps} />
           <SummaryPanel {...panelProps} />
