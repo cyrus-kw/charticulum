@@ -1,4 +1,10 @@
-import type { Catalog, CompletedExternal, CourseObject } from "./types.js";
+import {
+  EXTERNAL_TERM,
+  type Catalog,
+  type Chart,
+  type CompletedExternal,
+  type CourseObject,
+} from "./types.js";
 
 // Is this object backed by something the student completed elsewhere?
 export function isBackedByExternal(
@@ -25,4 +31,29 @@ export function externalPlacements(
     if (isBackedByExternal(object, completedExternal)) ids.push(object.id);
   }
   return ids;
+}
+
+// Return a copy of the chart with Term 0 filled from the student's
+// completed external work. Anything Term 0 now covers is removed from
+// later terms, since the student doesn't need to take it again.
+// The original chart is left unchanged.
+export function applyExternalEquivalents(catalog: Catalog, chart: Chart): Chart {
+  const termZeroIds = externalPlacements(catalog, chart.completedExternal);
+  const covered = new Set(termZeroIds);
+
+  const laterTerms = chart.terms
+    .filter((term) => term.index !== EXTERNAL_TERM)
+    .map((term) => ({
+      ...term,
+      objectIds: term.objectIds.filter((id) => !covered.has(id)),
+    }));
+
+  const existingTermZero = chart.terms.find((term) => term.index === EXTERNAL_TERM);
+  const termZero = {
+    index: EXTERNAL_TERM,
+    label: existingTermZero?.label ?? "Term 0 (External)",
+    objectIds: termZeroIds,
+  };
+
+  return { ...chart, terms: [termZero, ...laterTerms] };
 }
