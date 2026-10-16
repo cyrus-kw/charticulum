@@ -37,19 +37,21 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
       }
       seen.add(id);
 
-      if (
-        term.index === EXTERNAL_TERM &&
-        !isBackedByExternal(object, chart.completedExternal)
-      ) {
-        issues.push({
-          code: "UNBACKED_EXTERNAL_TERM",
-          message: `${id} is in Term 0 but no completed external work counts as it.`,
-          objectId: id,
-          termIndex: term.index,
-        });
+      // Term 0 is work already done elsewhere: it only has to be backed by
+      // that work. Its requisites and availability here don't apply.
+      if (term.index === EXTERNAL_TERM) {
+        if (!isBackedByExternal(object, chart.completedExternal)) {
+          issues.push({
+            code: "UNBACKED_EXTERNAL_TERM",
+            message: `${id} is in Term 0 but no completed external work counts as it.`,
+            objectId: id,
+            termIndex: term.index,
+          });
+        }
+        continue;
       }
 
-      if (term.index !== EXTERNAL_TERM && !isOffered(object, term)) {
+      if (!isOffered(object, term)) {
         issues.push({
           code: "NOT_OFFERED",
           message: `${id} is not offered in ${term.label}.`,

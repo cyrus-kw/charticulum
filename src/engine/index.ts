@@ -22,3 +22,12 @@ export {
 } from "./templates.js";
 export { buildChart, type BuildOptions, type BuildResult } from "./scheduler.js";
 export { formatChart } from "./format.js";
+export {
+  loadSchool,
+  parseSchoolData,
+  schoolDataSchema,
+  type LoadedSchool,
+  type ParseResult,
+  type SchoolData,
+  type SchoolDataInput,
+} from "./school.js";

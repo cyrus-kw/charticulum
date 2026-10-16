@@ -63,6 +63,20 @@ describe("validateChart", () => {
     expect(codes(chart)).toEqual([]);
   });
 
+  it("doesn't check requisites of objects in Term 0", () => {
+    const withAp = createCatalog([
+      obj("MATH101"),
+      obj("STAT200", {
+        previous: ["MATH101"],
+        externalEquivalents: [{ institution: "AP", externalId: "STATS" }],
+      }),
+    ]);
+    const chart = chartOf([["STAT200"]], {
+      completedExternal: [{ institution: "AP", externalId: "STATS" }],
+    });
+    expect(validateChart(withAp, chart)).toEqual([]);
+  });
+
   it("includes the term and object on each issue", () => {
     const [issue] = validateChart(catalog, chartOf([[], ["CS102"]]));
     expect(issue).toMatchObject({ objectId: "CS102", termIndex: 1 });
