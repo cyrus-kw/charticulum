@@ -14,13 +14,26 @@ body {
   }
 }
 
-/* Requisite arrows. Colors match EDGE_COLOR / BROKEN_EDGE_COLOR in layout.ts. */
-.react-flow__edge.requisite-edge .react-flow__edge-path {
-  stroke: #64748b;
-  stroke-width: 1.5;
+/* Term stripes are background only: clicks and drags pass through to the
+   canvas, so panning and deselecting work anywhere. !important because
+   React Flow sets pointer-events inline on nodes that have handlers. */
+.react-flow__node.term-stripe {
+  pointer-events: none !important;
 }
 
-.react-flow__edge.requisite-edge-broken .react-flow__edge-path {
-  stroke: #e11d48;
-  stroke-width: 2;
+/* While a course is traced, everything unrelated fades back. */
+.react-flow__node.is-dimmed {
+  opacity: 0.25;
+}
+
+.react-flow__node,
+.react-flow__edge-path {
+  transition: opacity 120ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .react-flow__node,
+  .react-flow__edge-path {
+    transition: none;
+  }
 }

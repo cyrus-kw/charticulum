@@ -1,79 +1,107 @@
 "use client";
 
-// The flowchart: terms as columns, objects as cards, requisites as arrows.
-// Dragging a card to another column moves it to that term.
+// The flowchart: terms as shaded stripes, objects as small cards, and
+// requisites as straight colored lines. Drag a card to another term to move
+// it; point at (or select) a card to trace everything it's connected to.
 import {
-  Background,
   Controls,
   Handle,
+  Panel as FlowPanel,
   Position,
   ReactFlow,
   useNodesState,
   type NodeProps,
   type NodeTypes,
 } from "@xyflow/react";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Catalog, Chart, ChartIssue } from "../engine/index";
 import {
   chartLayout,
-  columnHeight,
+  relatedTo,
+  BROKEN_EDGE_COLOR,
+  COLUMN_WIDTH,
   NODE_HEIGHT,
   NODE_WIDTH,
-  TERM_WIDTH,
   termIndexAt,
   type CourseNode,
   type PlannerNode,
   type TermNode,
 } from "../planner/layout";
-import { Badge, cn } from "./ui";
+import { cn } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
 
+// Lines attach to the sides for links between terms, and to the top or
+// bottom for links within one term (see layout.ts).
+function Handles() {
+  return (
+    <>
+      <Handle id="t-left" type="target" position={Position.Left} isConnectable={false} style={hidden} />
+      <Handle id="t-top" type="target" position={Position.Top} isConnectable={false} style={hidden} />
+      <Handle id="t-bottom" type="target" position={Position.Bottom} isConnectable={false} style={hidden} />
+      <Handle id="s-right" type="source" position={Position.Right} isConnectable={false} style={hidden} />
+      <Handle id="s-top" type="source" position={Position.Top} isConnectable={false} style={hidden} />
+      <Handle id="s-bottom" type="source" position={Position.Bottom} isConnectable={false} style={hidden} />
+    </>
+  );
+}
+
 function CourseCard({ data, selected }: NodeProps<CourseNode>) {
-  const { object, grade, issues, external } = data;
+  const { object, grade, issues, external, color, onlyIn, needsMinGrade, generalEducation } = data;
+  const markers = `${needsMinGrade ? "*" : ""}${generalEducation ? "+" : ""}`;
   return (
     <div
-      style={{ width: NODE_WIDTH, height: NODE_HEIGHT }}
+      style={{ width: NODE_WIDTH, height: NODE_HEIGHT, ...(color && { borderColor: color }) }}
       className={cn(
-        "overflow-hidden rounded-lg border bg-white px-3 py-2 text-zinc-900 shadow-sm dark:bg-zinc-900 dark:text-zinc-100",
-        issues.length > 0 ? "border-rose-500" : "border-zinc-300 dark:border-zinc-700",
+        "relative flex flex-col justify-center rounded-md border-2 px-2 text-zinc-900 shadow-sm dark:text-zinc-100",
+        onlyIn === "fall"
+          ? "bg-orange-100 dark:bg-amber-950"
+          : onlyIn === "spring"
+            ? "bg-green-100 dark:bg-green-950"
+            : "bg-white dark:bg-zinc-900",
+        !color && "border-zinc-300 dark:border-zinc-600",
         external && "border-dashed",
-        selected && "ring-2 ring-sky-500",
+        selected && "outline-2 outline-offset-2 outline-sky-500",
         !external && "cursor-grab active:cursor-grabbing",
       )}
-      title={issues.map((i) => i.message).join("\n") || undefined}
+      title={[`${object.id}: ${object.title}`, ...issues.map((i) => i.message)].join("\n")}
     >
-      <Handle type="target" position={Position.Left} isConnectable={false} style={hidden} />
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="font-mono text-xs font-semibold">{object.id}</span>
-        <span className="text-xs text-zinc-500 dark:text-zinc-400">{object.credits} cr</span>
+      <Handles />
+      <div className="flex items-baseline justify-between gap-1">
+        <span className="font-mono text-xs font-semibold">
+          {object.id}
+          {markers}
+        </span>
+        <span className="text-[11px] whitespace-nowrap text-zinc-500 tabular-nums dark:text-zinc-400">
+          {grade && <span className="mr-1 font-semibold text-emerald-700 dark:text-emerald-400">{grade}</span>}
+          {object.credits} cr
+        </span>
       </div>
-      <div className="truncate text-sm">{object.title}</div>
-      <div className="mt-1 flex flex-wrap gap-1">
-        {object.kind !== "course" && <Badge>{object.kind}</Badge>}
-        {external && <Badge tone="info">outside credit</Badge>}
-        {grade && <Badge tone="good">{grade}</Badge>}
-        {issues.length > 0 && (
-          <Badge tone="bad">
-            {issues.length} issue{issues.length > 1 ? "s" : ""}
-          </Badge>
-        )}
-      </div>
-      <Handle type="source" position={Position.Right} isConnectable={false} style={hidden} />
+      <div className="truncate text-[10px] leading-tight text-zinc-600 dark:text-zinc-400">{object.title}</div>
+      {issues.length > 0 && (
+        <span
+          aria-label={`${issues.length} issue${issues.length > 1 ? "s" : ""}`}
+          className="absolute -top-2 -right-2 flex size-4 items-center justify-center rounded-full bg-rose-600 text-[10px] font-bold text-white"
+        >
+          {issues.length}
+        </span>
+      )}
     </div>
   );
 }
 
-function TermColumn({ data }: NodeProps<TermNode>) {
+function TermStripe({ data }: NodeProps<TermNode>) {
   const over = !data.external && data.credits > data.maxCredits;
   return (
     <div
-      style={{ width: TERM_WIDTH, height: columnHeight(data.rows) }}
+      style={{ width: COLUMN_WIDTH, height: data.height }}
       className={cn(
-        "rounded-xl border px-3 pt-2",
+        "pt-3 text-center",
         data.external
-          ? "border-dashed border-sky-300 bg-sky-50/60 dark:border-sky-900 dark:bg-sky-950/30"
-          : "border-zinc-200 bg-zinc-50/80 dark:border-zinc-800 dark:bg-zinc-900/40",
+          ? "bg-sky-50 dark:bg-sky-950/40"
+          : data.shaded
+            ? "bg-zinc-100 dark:bg-white/5"
+            : "bg-transparent",
       )}
     >
       <div className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
@@ -86,7 +114,53 @@ function TermColumn({ data }: NodeProps<TermNode>) {
 }
 
 // Defined outside the component so React Flow sees the same object each render.
-const nodeTypes: NodeTypes = { course: CourseCard, term: TermColumn };
+const nodeTypes: NodeTypes = { course: CourseCard, term: TermStripe };
+
+function Legend() {
+  const line = (dashed: boolean, color = "currentColor") => (
+    <svg width="28" height="8" aria-hidden className="shrink-0">
+      <line x1="0" y1="4" x2="28" y2="4" stroke={color} strokeWidth="2" strokeDasharray={dashed ? "5 3" : undefined} />
+    </svg>
+  );
+  const swatch = (className: string) => <span className={cn("inline-block size-3 shrink-0 rounded-sm border", className)} />;
+  const item = "flex items-center gap-1.5";
+  return (
+    <div className="flex max-w-full flex-wrap items-center gap-x-4 gap-y-1 rounded-md border border-zinc-200 bg-white/90 px-3 py-1.5 text-[11px] text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/90 dark:text-zinc-300">
+      <span className={item}>{line(false)} take first</span>
+      <span className={item}>{line(true)} take together</span>
+      <span className={item}>{line(false, BROKEN_EDGE_COLOR)} out of order</span>
+      <span className={item}>
+        {swatch("border-orange-300 bg-orange-100 dark:border-amber-800 dark:bg-amber-950")} fall only
+      </span>
+      <span className={item}>
+        {swatch("border-green-300 bg-green-100 dark:border-green-800 dark:bg-green-950")} spring only
+      </span>
+      <span className={item}>
+        <b className="font-mono">*</b> minimum grade
+      </span>
+      <span className={item}>
+        <b className="font-mono">+</b> gen ed
+      </span>
+      <span className="text-zinc-500">Point at a course to trace it.</span>
+    </div>
+  );
+}
+
+// The viewer's light/dark preference. React Flow has a "system" mode, but
+// with server rendering it can get stuck on light: the server can't know
+// the preference, and React keeps the server's class when the page loads.
+// Starting as "light" everywhere and switching after load avoids that.
+function useColorScheme(): "light" | "dark" {
+  const [scheme, setScheme] = useState<"light" | "dark">("light");
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-color-scheme: dark)");
+    const update = () => setScheme(query.matches ? "dark" : "light");
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+  return scheme;
+}
 
 export interface ChartFlowProps {
   catalog: Catalog;
@@ -105,36 +179,71 @@ export function ChartFlow({ catalog, chart, issues, creditsByTerm, maxCredits, s
     [catalog, chart, issues, creditsByTerm, maxCredits],
   );
 
+  const colorScheme = useColorScheme();
+
+  // Trace the course being pointed at, or else the selected one.
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const focusId = hoveredId ?? selectedId;
+  const related = useMemo(
+    () => (focusId && layout.nodes.some((n) => n.id === focusId) ? relatedTo(layout.edges, focusId) : null),
+    [focusId, layout],
+  );
+
   // React Flow tracks node positions itself while dragging. Whenever the
-  // chart changes, reset them to the computed layout.
-  const [nodes, setNodes, onNodesChange] = useNodesState<PlannerNode>(layout.nodes);
-  useEffect(() => {
-    setNodes(layout.nodes.map((n) => (n.type === "course" ? { ...n, selected: n.id === selectedId } : n)));
-  }, [layout, selectedId, setNodes]);
+  // chart (or the traced course) changes, reset them to the computed layout.
+  const styledNodes = useMemo(
+    () =>
+      layout.nodes.map((n) =>
+        n.type === "course"
+          ? { ...n, selected: n.id === selectedId, className: related && !related.has(n.id) ? "is-dimmed" : "" }
+          : n,
+      ),
+    [layout, selectedId, related],
+  );
+  const [nodes, setNodes, onNodesChange] = useNodesState<PlannerNode>(styledNodes);
+  useEffect(() => setNodes(styledNodes), [styledNodes, setNodes]);
+
+  const edges = useMemo(
+    () =>
+      layout.edges.map((e) =>
+        related && !(related.has(e.source) && related.has(e.target))
+          ? { ...e, style: { ...e.style, opacity: 0.12 } }
+          : e,
+      ),
+    [layout, related],
+  );
 
   return (
     <ReactFlow
       nodes={nodes}
-      edges={layout.edges}
+      edges={edges}
       nodeTypes={nodeTypes}
       onNodesChange={onNodesChange}
+      onNodeDragStart={() => setHoveredId(null)}
       onNodeDragStop={(_, node) => {
         if (node.type !== "course") return;
         // Snap back first; if the move is valid the chart update re-lays it out.
-        setNodes(layout.nodes);
+        setNodes(styledNodes);
         onMove(node.id, termIndexAt(chart, node.position.x));
       }}
       onNodeClick={(_, node) => {
         if (node.type === "course") onSelect(node.id);
       }}
+      onNodeMouseEnter={(_, node) => {
+        if (node.type === "course") setHoveredId(node.id);
+      }}
+      onNodeMouseLeave={() => setHoveredId(null)}
       onPaneClick={() => onSelect(null)}
       nodesConnectable={false}
       edgesFocusable={false}
-      colorMode="system"
+      colorMode={colorScheme}
       minZoom={0.2}
       fitView
+      fitViewOptions={{ padding: 0.05 }}
     >
-      <Background gap={24} />
+      <FlowPanel position="top-left">
+        <Legend />
+      </FlowPanel>
       <Controls showInteractive={false} />
     </ReactFlow>
   );
