@@ -1,5 +1,5 @@
 // Small shared building blocks so panels look and behave the same.
-import type { ButtonHTMLAttributes, ReactNode, SelectHTMLAttributes } from "react";
+import { Children, type ButtonHTMLAttributes, type ReactNode, type SelectHTMLAttributes } from "react";
 import type { Season } from "../engine/index";
 
 // Join class names, skipping false/undefined ones:
@@ -71,8 +71,8 @@ export const SEASON_TINT: Partial<Record<Season, string>> = {
   spring: "bg-emerald-100 dark:bg-emerald-950",
 };
 
-// A small tag: capitals like panel titles, but regular weight. Every tag
-// looks alike.
+// A small tag, in title case ("Every Term", "4 Credits"). Every tag looks
+// alike. Text given to it is title-cased here, so callers needn't.
 export function Badge({
   children,
   tone = "neutral",
@@ -84,7 +84,7 @@ export function Badge({
     <span
       className={cn(
         "inline-flex items-center rounded px-1.5 py-0.5 leading-none",
-        "text-xs font-normal tracking-wide uppercase",
+        "text-xs font-normal",
         tone === "neutral" && "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",
@@ -93,9 +93,14 @@ export function Badge({
         tone === "spring" && cn(SEASON_TINT.spring, "text-emerald-800 dark:text-emerald-300"),
       )}
     >
-      {children}
+      {Children.map(children, (child) => (typeof child === "string" ? titleCase(child) : child))}
     </span>
   );
+}
+
+// Capitalize the first letter of each word: "every term" -> "Every Term".
+export function titleCase(text: string): string {
+  return text.replace(/(^|[\s-])(\p{Ll})/gu, (_, before: string, letter: string) => before + letter.toUpperCase());
 }
 
 // Ask for a reason before recording an exception. Returns null if cancelled.
