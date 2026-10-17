@@ -69,36 +69,89 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
         </div>
       </div>
 
-      <dl className="mb-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
-        {/* Requisites only when the course has any. */}
-        {requisites.previous.length > 0 && (
-          <>
-            <dt className="text-zinc-500">Prerequisites</dt>
+      {/* Course information on the left; its term and grade on the right.
+          Labels sit above their values to fit both side by side. */}
+      <div className="mb-3 grid grid-cols-2 gap-3 text-sm">
+        <dl className="space-y-1.5">
+          {/* Requisites only when the course has any. */}
+          {requisites.previous.length > 0 && (
+            <div>
+              <dt className="text-xs text-zinc-500">Prerequisites</dt>
+              <dd>
+                {requisites.previous
+                  .map((r) => (requisites.minGrades?.[r] ? `${courseCode(r)} (${requisites.minGrades[r]}+)` : courseCode(r)))
+                  .join(", ")}
+              </dd>
+            </div>
+          )}
+          {requisites.concurrent.length > 0 && (
+            <div>
+              <dt className="text-xs text-zinc-500">Concurrents</dt>
+              <dd>{requisites.concurrent.map(courseCode).join(", ")}</dd>
+            </div>
+          )}
+          <div>
+            <dt className="text-xs text-zinc-500">Offered</dt>
             <dd>
-              {requisites.previous
-                .map((r) => (requisites.minGrades?.[r] ? `${courseCode(r)} (${requisites.minGrades[r]}+)` : courseCode(r)))
-                .join(", ")}
+              {availability?.seasons?.join(", ") ?? "every term"}
+              {availability?.yearParity && `, ${availability.yearParity} years`}
             </dd>
-          </>
+          </div>
+          {object.internalEquivalents.length > 0 && (
+            <div>
+              <dt className="text-xs text-zinc-500">Same as</dt>
+              <dd>{object.internalEquivalents.map(courseCode).join(", ")}</dd>
+            </div>
+          )}
+        </dl>
+
+        {external ? (
+          <p className="text-zinc-500">Pre-Credit from outside work. Remove it under Pre-Credit.</p>
+        ) : (
+          <div className="space-y-1.5">
+            <div>
+              <label htmlFor="detail-term" className="block text-xs text-zinc-500">
+                Term
+              </label>
+              <Select
+                id="detail-term"
+                className="w-full"
+                value={term?.index ?? ""}
+                onChange={(e) => dispatch({ type: "move", objectId: id, termIndex: Number(e.target.value) })}
+              >
+                {!term && <option value="">Not in plan</option>}
+                {view.chart.terms
+                  .filter((t) => t.index !== EXTERNAL_TERM)
+                  .map((t) => (
+                    <option key={t.index} value={t.index}>
+                      {t.label}
+                    </option>
+                  ))}
+              </Select>
+            </div>
+            <div>
+              <label htmlFor="detail-grade" className="block text-xs text-zinc-500">
+                Grade
+              </label>
+              <Select
+                id="detail-grade"
+                className="w-full"
+                value={state.chart.grades?.[id] ?? ""}
+                onChange={(e) =>
+                  dispatch({ type: "setGrade", objectId: id, grade: (e.target.value || null) as Grade | null })
+                }
+              >
+                <option value="">Not graded yet</option>
+                {GRADES.map((g) => (
+                  <option key={g} value={g}>
+                    {g}
+                  </option>
+                ))}
+              </Select>
+            </div>
+          </div>
         )}
-        {requisites.concurrent.length > 0 && (
-          <>
-            <dt className="text-zinc-500">Concurrents</dt>
-            <dd>{requisites.concurrent.map(courseCode).join(", ")}</dd>
-          </>
-        )}
-        <dt className="text-zinc-500">Offered</dt>
-        <dd>
-          {availability?.seasons?.join(", ") ?? "every term"}
-          {availability?.yearParity && `, ${availability.yearParity} years`}
-        </dd>
-        {object.internalEquivalents.length > 0 && (
-          <>
-            <dt className="text-zinc-500">Same as</dt>
-            <dd>{object.internalEquivalents.join(", ")}</dd>
-          </>
-        )}
-      </dl>
+      </div>
 
       {issues.length > 0 && (
         <ul className="mb-3 space-y-1 text-sm text-rose-700 dark:text-rose-400">
@@ -108,51 +161,8 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
         </ul>
       )}
 
-      {external ? (
-        <p className="text-sm text-zinc-500">Pre-Credit from outside work. Remove it under Pre-Credit.</p>
-      ) : (
+      {!external && (
         <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <label htmlFor="detail-term" className="w-14 text-sm text-zinc-500">
-              Term
-            </label>
-            <Select
-              id="detail-term"
-              className="flex-1"
-              value={term?.index ?? ""}
-              onChange={(e) => dispatch({ type: "move", objectId: id, termIndex: Number(e.target.value) })}
-            >
-              {!term && <option value="">Not in plan</option>}
-              {view.chart.terms
-                .filter((t) => t.index !== EXTERNAL_TERM)
-                .map((t) => (
-                  <option key={t.index} value={t.index}>
-                    {t.label}
-                  </option>
-                ))}
-            </Select>
-          </div>
-          <div className="flex items-center gap-2">
-            <label htmlFor="detail-grade" className="w-14 text-sm text-zinc-500">
-              Grade
-            </label>
-            <Select
-              id="detail-grade"
-              className="flex-1"
-              value={state.chart.grades?.[id] ?? ""}
-              onChange={(e) =>
-                dispatch({ type: "setGrade", objectId: id, grade: (e.target.value || null) as Grade | null })
-              }
-            >
-              <option value="">Not graded yet</option>
-              {GRADES.map((g) => (
-                <option key={g} value={g}>
-                  {g}
-                </option>
-              ))}
-            </Select>
-          </div>
-
           {unmetRequired.length > 0 && (
             <div className="flex items-center gap-2">
               <Select
@@ -184,7 +194,6 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
               </Button>
             </div>
           )}
-
         </div>
       )}
     </Panel>
