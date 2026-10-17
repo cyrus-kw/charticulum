@@ -16,7 +16,7 @@ import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Badge, Button, inputClass } from "./ui";
-import { DetailsIcon, SidePanel, ToolsIcon } from "./SidePanel";
+import { DetailsIcon, PanelIcon, SidePanel, ToolsIcon } from "./SidePanel";
 import { usePanels } from "./usePanels";
 
 export function Planner() {
@@ -139,6 +139,23 @@ export function Planner() {
             onUndo={() => dispatch({ type: "undo" })}
             onRedo={() => dispatch({ type: "redo" })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
+            // Collapsed sidebars float as icons on the chart's top corners.
+            topLeft={
+              !panels.open.left && (
+                <PanelIcon id="tools-panel" title="Tools" icon={<ToolsIcon />} onOpen={() => panels.toggle("left")} />
+              )
+            }
+            topRight={
+              !panels.open.right && (
+                <PanelIcon
+                  id="details-panel"
+                  title="Details"
+                  icon={<DetailsIcon />}
+                  badge={issueCount > 0 ? <Badge tone="bad">{issueCount}</Badge> : undefined}
+                  onOpen={() => panels.toggle("right")}
+                />
+              )
+            }
           />
         </main>
 
@@ -149,7 +166,6 @@ export function Planner() {
           open={panels.open.right}
           width={panels.open.rightWidth}
           icon={<DetailsIcon />}
-          badge={issueCount > 0 ? <Badge tone="bad">{issueCount}</Badge> : undefined}
           onToggle={() => panels.toggle("right")}
           onResize={(width, done) => panels.setWidth("right", width, done)}
         >

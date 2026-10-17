@@ -35,7 +35,8 @@ database instead, see [Database](#database).
   its full name. Scroll to move up and down, Shift + scroll to move sideways.
 - **Sidebars** resize by dragging their edge next to the chart (which
   widens or compresses the chart), and collapse to an icon with « / » or
-  by dragging them nearly shut. **Undo / Redo** sit at the chart's top left
+  by dragging them nearly shut; collapsed, they float as icons on the
+  chart's top corners. **Undo / Redo** sit at the chart's top left
   (Ctrl/⌘ + Z, Ctrl/⌘ + Shift + Z).
 - **Build for me** lays out a full plan that meets every rule.
 - **Pre-Credit** (AP exams, transfer courses) fills the first column

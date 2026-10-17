@@ -1,8 +1,8 @@
 "use client";
 
 // A sidebar that can be resized by dragging its inner edge and collapsed to
-// a slim strip with an icon. Its contents stay mounted while collapsed, so
-// what's typed in them survives.
+// a floating icon on the chart (see PanelIcon). Its contents stay mounted
+// while collapsed, so what's typed in them survives.
 import { type ReactNode, type KeyboardEvent, type PointerEvent } from "react";
 import { cn } from "./ui";
 import { PANEL_COLLAPSE_BELOW, PANEL_MAX_WIDTH, PANEL_MIN_WIDTH } from "./usePanels";
@@ -16,7 +16,6 @@ export function SidePanel({
   open,
   width,
   icon,
-  badge,
   onToggle,
   onResize,
   children,
@@ -27,8 +26,6 @@ export function SidePanel({
   open: boolean;
   width: number;
   icon: ReactNode;
-  // Shown on the icon while collapsed (e.g. an issue count).
-  badge?: ReactNode;
   onToggle: () => void;
   // `done` is true at the end of a drag (or a keyboard step).
   onResize: (width: number, done: boolean) => void;
@@ -71,33 +68,9 @@ export function SidePanel({
   };
 
   const collapseLabel = `Collapse ${title.toLowerCase()}`;
-  const expandLabel = `Show ${title.toLowerCase()}`;
 
   return (
     <div className={cn("flex min-h-0 shrink-0", side === "right" && "lg:flex-row-reverse")}>
-      {!open && (
-        // The collapsed strip: just the icon.
-        <div
-          className={cn(
-            "flex items-start gap-2 border-zinc-200 p-1.5 dark:border-zinc-800",
-            side === "left" ? "border-b lg:border-r lg:border-b-0" : "border-t lg:border-t-0 lg:border-l",
-          )}
-        >
-          <button
-            type="button"
-            onClick={onToggle}
-            aria-controls={id}
-            aria-expanded={false}
-            aria-label={expandLabel}
-            title={expandLabel}
-            className="relative flex size-8 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-300 dark:hover:bg-zinc-800"
-          >
-            {icon}
-            {badge && <span className="absolute -top-1 -right-1">{badge}</span>}
-          </button>
-        </div>
-      )}
-
       <aside
         id={id}
         hidden={!open}
@@ -147,6 +120,39 @@ export function SidePanel({
         />
       )}
     </div>
+  );
+}
+
+// A collapsed sidebar: a small button floating on the chart, in the same
+// style as the chart's other controls. Clicking it reopens the sidebar.
+export function PanelIcon({
+  id,
+  title,
+  icon,
+  badge,
+  onOpen,
+}: {
+  id: string;
+  title: string;
+  icon: ReactNode;
+  // E.g. an issue count.
+  badge?: ReactNode;
+  onOpen: () => void;
+}) {
+  const label = `Show ${title.toLowerCase()}`;
+  return (
+    <button
+      type="button"
+      onClick={onOpen}
+      aria-controls={id}
+      aria-expanded={false}
+      aria-label={label}
+      title={label}
+      className="relative flex size-7 items-center justify-center rounded-md border border-zinc-200 bg-white text-zinc-700 shadow-sm hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+    >
+      {icon}
+      {badge && <span className="absolute -top-2 -right-2">{badge}</span>}
+    </button>
   );
 }
 

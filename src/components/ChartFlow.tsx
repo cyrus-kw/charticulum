@@ -19,7 +19,7 @@ import {
   type NodeTypes,
   type ReactFlowInstance,
 } from "@xyflow/react";
-import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import type { Catalog, Chart, ChartIssue } from "../engine/index";
 import {
   chartLayout,
@@ -399,6 +399,10 @@ export interface ChartFlowProps {
   // Identifies this version of the plan (the same object whenever undo or
   // redo brings it back), so its exact arrangement can be restored.
   planVersion?: object;
+  // Extra controls floating on the chart's top corners (e.g. the icons of
+  // collapsed sidebars).
+  topLeft?: ReactNode;
+  topRight?: ReactNode;
   // Undo/redo (buttons in the top-left corner).
   canUndo?: boolean;
   canRedo?: boolean;
@@ -417,6 +421,8 @@ export function ChartFlow({
   onSelect,
   layoutVersion = 0,
   planVersion = chart,
+  topLeft,
+  topRight,
   canUndo = false,
   canRedo = false,
   onUndo = () => {},
@@ -789,9 +795,11 @@ export function ChartFlow({
         <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
           <Legend />
         </FlowPanel>
-        <FlowPanel position="top-left">
+        <FlowPanel position="top-left" className="flex items-center gap-2">
+          {topLeft}
           <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
         </FlowPanel>
+        {topRight && <FlowPanel position="top-right">{topRight}</FlowPanel>}
         <FlowPanel position="bottom-left">
           <ZoomControls
             zoom={zoom}
