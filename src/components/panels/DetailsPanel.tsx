@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { satisfies, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel, Select } from "../ui";
+import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
 
 const GRADES = Object.keys(GRADE_POINTS) as Grade[];
@@ -35,9 +36,18 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
     <Panel
       title="Selected"
       actions={
-        <Button variant="ghost" onClick={() => dispatch({ type: "select", objectId: null })}>
-          Close
-        </Button>
+        // Pre-Credit is removed under Pre-Credit, not here.
+        !external && (
+          <button
+            type="button"
+            aria-label={`Remove ${object.id} from plan`}
+            title="Remove from plan"
+            onClick={() => dispatch({ type: "remove", objectId: id })}
+            className="flex h-7 w-7 items-center justify-center rounded-md text-zinc-500 hover:bg-rose-50 hover:text-rose-700 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-400 dark:hover:bg-rose-950 dark:hover:text-rose-400"
+          >
+            <TrashIcon />
+          </button>
+        )
       }
     >
       <div className="mb-2">
@@ -163,9 +173,6 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             </div>
           )}
 
-          <Button variant="danger" onClick={() => dispatch({ type: "remove", objectId: id })}>
-            Remove from plan
-          </Button>
         </div>
       )}
     </Panel>
