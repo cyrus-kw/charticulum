@@ -26,6 +26,32 @@ const FOOTER_HEIGHT = 24;
 // Cards are centered in their stripe, leaving a wide gap for lines.
 const NODE_OFFSET = (COLUMN_WIDTH - NODE_WIDTH) / 2;
 
+// The chart's horizontal sizes: how wide each term column is, and the cards
+// in it. Zooming changes these (not the text or the row heights), so
+// zooming in spreads the chart out sideways and zooming out compresses it.
+export interface Geometry {
+  columnWidth: number;
+  nodeWidth: number;
+}
+export const DEFAULT_GEOMETRY: Geometry = { columnWidth: COLUMN_WIDTH, nodeWidth: NODE_WIDTH };
+
+const MIN_NODE_WIDTH = 64;
+const MAX_NODE_WIDTH = 200;
+// Cards narrower than this show only the course code.
+export const COMPACT_BELOW = 112;
+
+// The sizes for a given column width: cards take about 60% of the column,
+// leaving the rest for lines, within sensible limits.
+export function geometryFor(columnWidth: number): Geometry {
+  const nodeWidth = Math.round(Math.min(Math.max(columnWidth * 0.6, MIN_NODE_WIDTH), MAX_NODE_WIDTH));
+  return { columnWidth, nodeWidth: Math.min(nodeWidth, columnWidth - 16) };
+}
+
+// A course id written for people: "CS101" becomes "CS 101".
+export function courseCode(id: string): string {
+  return id.replace(/^([A-Za-z]+)(\d)/, "$1 $2");
+}
+
 // Line colors, one per course that other courses depend on. Red is left out
 // on purpose: it only ever means "this link is out of order".
 export const COURSE_COLORS = [
@@ -69,6 +95,8 @@ export type EdgeData = {
   concurrent: boolean;
   broken: boolean;
   color: string;
+  // The column width the chart is drawn at (for the drag rules).
+  columnWidth: number;
 };
 
 export type CourseNode = Node<CourseNodeData, "course">;
@@ -108,7 +136,10 @@ export function chartLayout(
   // The previous layout's memory, so moving one course doesn't reshuffle
   // the others or change their colors.
   previous?: LayoutMemory,
+  geometry: Geometry = DEFAULT_GEOMETRY,
 ): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory } {
+  const { columnWidth, nodeWidth } = geometry;
+  const nodeOffset = (columnWidth - nodeWidth) / 2;
   // 1. What's placed where, and every requisite link between placed objects.
   const columns = chart.terms.map((term) => term.objectIds.filter((id) => catalog.has(id)));
   const columnOf = new Map<string, number>();
@@ -144,7 +175,7 @@ export function chartLayout(
   const nodes: PlannerNode[] = chart.terms.map((term, column) => ({
     id: `term-${term.index}`,
     type: "term",
-    position: { x: column * COLUMN_WIDTH, y: 0 },
+    position: { x: column * columnWidth, y: 0 },
     data: {
       label: term.index === EXTERNAL_TERM ? EXTERNAL_TERM_LABEL : term.label,
       credits: creditsByTerm[term.index] ?? 0,
@@ -155,7 +186,7 @@ export function chartLayout(
     },
     // Fixed sizes let React Flow draw nodes before measuring them
     // (including in the server-rendered HTML).
-    width: COLUMN_WIDTH,
+    width: columnWidth,
     height: stripeHeight,
     draggable: false,
     selectable: false,
@@ -173,7 +204,7 @@ export function chartLayout(
       nodes.push({
         id,
         type: "course",
-        position: { x: column * COLUMN_WIDTH + NODE_OFFSET, y: HEADER_HEIGHT + y.get(id)! },
+        position: { x: column * columnWidth + nodeOffset, y: HEADER_HEIGHT + y.get(id)! },
         data: {
           object,
           ...(chart.grades?.[id] && { grade: chart.grades[id] }),
@@ -184,7 +215,7 @@ export function chartLayout(
           needsMinGrade: minGradeIds.has(id),
           generalEducation: object.categories.includes("general-education"),
         },
-        width: NODE_WIDTH,
+        width: nodeWidth,
         height: NODE_HEIGHT,
         // Pre-Credit is filled automatically from outside credit.
         draggable: !external,
@@ -210,7 +241,7 @@ export function chartLayout(
         ...(link.concurrent && { strokeDasharray: "6 4" }),
       },
       markerEnd: { type: "arrowclosed" as const, color, width: 16, height: 16 },
-      data: { concurrent: link.concurrent, broken: link.broken, color },
+      data: { concurrent: link.concurrent, broken: link.broken, color, columnWidth },
     };
   });
 
@@ -499,7 +530,7 @@ type Point = { x: number; y: number };
 export const TERM_SWITCH_MARGIN = 24;
 
 // The term column a point on the canvas falls in.
-const columnAt = (x: number) => Math.floor(x / COLUMN_WIDTH);
+const columnAt = (x: number, columnWidth: number) => Math.floor(x / columnWidth);
 
 export function sideMiddle(r: Rect, side: Side): { x: number; y: number } {
   const c = center(r);
@@ -535,13 +566,19 @@ export const MIN_SIDE_GAP = 40;
 // are over the same term's column (or too close across for a side-to-side
 // line; see MIN_SIDE_GAP). Pass the sides from last time so a card held on
 // a switch point doesn't flicker (see TERM_SWITCH_MARGIN).
-export function draggingEndpoints(source: Rect, target: Rect, previous: { start?: Side; end?: Side } = {}) {
+export function draggingEndpoints(
+  source: Rect,
+  target: Rect,
+  previous: { start?: Side; end?: Side } = {},
+  columnWidth = COLUMN_WIDTH,
+) {
   const s = center(source);
   const t = center(target);
   const wasVertical = previous.start === "top" || previous.start === "bottom";
   const margin = wasVertical ? TERM_SWITCH_MARGIN : 0;
   const sameTerm =
-    columnAt(s.x) === columnAt(t.x) || (wasVertical && Math.abs(s.x - t.x) < COLUMN_WIDTH / 2 + margin);
+    columnAt(s.x, columnWidth) === columnAt(t.x, columnWidth) ||
+    (wasVertical && Math.abs(s.x - t.x) < columnWidth / 2 + margin);
   // Space between the cards across and down (negative when they overlap).
   const gapX = Math.max(target.x - (source.x + source.width), source.x - (target.x + target.width));
   const gapY = Math.max(target.y - (source.y + source.height), source.y - (target.y + target.height));
@@ -612,10 +649,10 @@ export function perimeterStep(from: number, to: number, total: number): number {
 
 // Which term a card was dropped on, from where its center ended up.
 // Never Pre-Credit (it's filled from outside work), whether it's shown or not.
-export function termIndexAt(chart: Chart, x: number): number {
+export function termIndexAt(chart: Chart, x: number, geometry: Geometry = DEFAULT_GEOMETRY): number {
   const choosable = chart.terms.map((term, column) => ({ term, column })).filter(({ term }) => term.index !== EXTERNAL_TERM);
   if (choosable.length === 0) return 1;
-  const column = Math.floor((x + NODE_WIDTH / 2) / COLUMN_WIDTH);
+  const column = Math.floor((x + geometry.nodeWidth / 2) / geometry.columnWidth);
   const first = choosable[0].column;
   const last = choosable[choosable.length - 1].column;
   return chart.terms[Math.min(Math.max(column, first), last)].index;

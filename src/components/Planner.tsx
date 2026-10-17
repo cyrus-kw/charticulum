@@ -121,7 +121,6 @@ export function Planner() {
             selectedId={state.selectedId}
             onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
-            fitKey={`${panels.open.left}-${panels.open.right}-${panels.open.preCredit}`}
           />
         </main>
 

@@ -5,22 +5,21 @@
 // it; point at (or select) a card to trace everything it's connected to.
 import {
   BaseEdge,
-  Controls,
   Handle,
   Panel as FlowPanel,
   Position,
   ReactFlow,
   useInternalNode,
   useNodesState,
-  useReactFlow,
   useViewport,
   type EdgeProps,
   type EdgeTypes,
   type InternalNode,
   type NodeProps,
   type NodeTypes,
+  type ReactFlowInstance,
 } from "@xyflow/react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import type { Catalog, Chart, ChartIssue } from "../engine/index";
 import {
   chartLayout,
@@ -34,11 +33,15 @@ import {
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
+  COMPACT_BELOW,
+  courseCode,
+  geometryFor,
   HEADER_HEIGHT,
   NODE_HEIGHT,
   NODE_WIDTH,
   termIndexAt,
   type CourseNode,
+  type Geometry,
   type LayoutMemory,
   type PlannerEdge,
   type PlannerNode,
@@ -115,7 +118,7 @@ function useBorderGlide(goal: number, rect: Rect | undefined, toward: { x: numbe
 // either card is being dragged, the ends go to the facing left and right
 // sides (top and bottom when over the same term), flowing smoothly around
 // their card's border when they switch.
-function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<PlannerEdge>) {
+function FloatingEdge({ id, source, target, markerEnd, style, data }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
   const sourceRect = sourceNode && nodeRect(sourceNode);
@@ -128,7 +131,7 @@ function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<Planne
   const ends =
     sourceRect && targetRect
       ? dragging
-        ? draggingEndpoints(sourceRect, targetRect, lastSides.current)
+        ? draggingEndpoints(sourceRect, targetRect, lastSides.current, data?.columnWidth)
         : edgeEndpoints(sourceRect, targetRect)
       : null;
   useEffect(() => {
@@ -155,23 +158,15 @@ function FloatingEdge({ id, source, target, markerEnd, style }: EdgeProps<Planne
   return <BaseEdge id={id} path={`M ${tail.x},${tail.y} L ${head.x},${head.y}`} markerEnd={markerEnd} style={style} />;
 }
 
-// Re-fit the chart to the canvas whenever `fitKey` changes (e.g. a sidebar
-// opens or closes). Waits a frame so the canvas has its new size.
-function FitOnChange({ fitKey }: { fitKey: string }) {
-  const { fitView } = useReactFlow();
-  useEffect(() => {
-    const frame = requestAnimationFrame(() => void fitView({ padding: 0.05, duration: 200 }));
-    return () => cancelAnimationFrame(frame);
-  }, [fitKey, fitView]);
-  return null;
-}
-
-function CourseCard({ data, selected }: NodeProps<CourseNode>) {
+function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
   const { object, grade, issues, external, color, onlyIn, needsMinGrade, generalEducation } = data;
   const markers = `${needsMinGrade ? "*" : ""}${generalEducation ? "+" : ""}`;
+  const cardWidth = width ?? NODE_WIDTH;
+  // Compressed (zoomed out): just the course code, e.g. "CS 101".
+  const compact = cardWidth < COMPACT_BELOW;
   return (
     <div
-      style={{ width: NODE_WIDTH, height: NODE_HEIGHT, ...(color && { borderColor: color }) }}
+      style={{ width: cardWidth, height: NODE_HEIGHT, ...(color && { borderColor: color }) }}
       className={cn(
         "relative flex flex-col justify-center rounded-md border-2 px-2 text-zinc-900 shadow-sm dark:text-zinc-100",
         onlyIn === "fall"
@@ -183,21 +178,31 @@ function CourseCard({ data, selected }: NodeProps<CourseNode>) {
         external && "border-dashed",
         selected && "outline-2 outline-offset-2 outline-sky-500",
         !external && "cursor-grab active:cursor-grabbing",
+        compact && "items-center px-1",
       )}
-      title={[`${object.id}: ${object.title}`, ...issues.map((i) => i.message)].join("\n")}
+      title={[`${courseCode(object.id)}: ${object.title} (${object.credits} cr)`, ...issues.map((i) => i.message)].join("\n")}
     >
       <Handles />
-      <div className="flex items-baseline justify-between gap-1">
-        <span className="font-mono text-xs font-semibold">
-          {object.id}
+      {compact ? (
+        <span className="truncate font-mono text-xs font-semibold">
+          {courseCode(object.id)}
           {markers}
         </span>
-        <span className="text-[11px] whitespace-nowrap text-zinc-500 tabular-nums dark:text-zinc-400">
-          {grade && <span className="mr-1 font-semibold text-emerald-700 dark:text-emerald-400">{grade}</span>}
-          {object.credits} cr
-        </span>
-      </div>
-      <div className="truncate text-[10px] leading-tight text-zinc-600 dark:text-zinc-400">{object.title}</div>
+      ) : (
+        <>
+          <div className="flex items-baseline justify-between gap-1">
+            <span className="truncate font-mono text-xs font-semibold">
+              {courseCode(object.id)}
+              {markers}
+            </span>
+            <span className="text-[11px] whitespace-nowrap text-zinc-500 tabular-nums dark:text-zinc-400">
+              {grade && <span className="mr-1 font-semibold text-emerald-700 dark:text-emerald-400">{grade}</span>}
+              {object.credits} cr
+            </span>
+          </div>
+          <div className="truncate text-[10px] leading-tight text-zinc-600 dark:text-zinc-400">{object.title}</div>
+        </>
+      )}
       {issues.length > 0 && (
         <span
           aria-label={`${issues.length} issue${issues.length > 1 ? "s" : ""}`}
@@ -212,12 +217,12 @@ function CourseCard({ data, selected }: NodeProps<CourseNode>) {
 
 // A term's header. The shaded band behind the term is drawn by TermBands,
 // so it can fill the canvas from top to bottom.
-function TermStripe({ data }: NodeProps<TermNode>) {
+function TermStripe({ data, width }: NodeProps<TermNode>) {
   const over = !data.external && data.credits > data.maxCredits;
   return (
-    <div style={{ width: COLUMN_WIDTH, height: data.height }} className="pt-3 text-center">
-      <div className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
-      <div className={cn("text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-500 dark:text-zinc-400")}>
+    <div style={{ width: width ?? COLUMN_WIDTH, height: data.height }} className="px-1 pt-3 text-center">
+      <div className="truncate text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
+      <div className={cn("truncate text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-500 dark:text-zinc-400")}>
         {data.credits}
         {!data.external && ` / ${data.maxCredits}`} credits
       </div>
@@ -227,8 +232,8 @@ function TermStripe({ data }: NodeProps<TermNode>) {
 
 // The alternating term bands, filling the whole height of the canvas. They
 // follow panning and zooming sideways, and sit under the lines and cards.
-function TermBands({ terms }: { terms: TermNode["data"][] }) {
-  const { x, zoom } = useViewport();
+function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWidth: number }) {
+  const { x } = useViewport();
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
       {terms.map((term, column) => (
@@ -242,12 +247,55 @@ function TermBands({ terms }: { terms: TermNode["data"][] }) {
                 ? "bg-zinc-100 dark:bg-white/5"
                 : "bg-transparent",
           )}
-          style={{ left: x + column * COLUMN_WIDTH * zoom, width: COLUMN_WIDTH * zoom }}
+          style={{ left: x + column * columnWidth, width: columnWidth }}
         />
       ))}
     </div>
   );
 }
+
+// Horizontal zoom buttons. Zooming spreads the terms out sideways or
+// compresses them; text and rows keep their size.
+function ZoomControls({ zoom, onZoom, onFit }: { zoom: number; onZoom: (factor: number) => void; onFit: () => void }) {
+  const button =
+    "flex h-7 min-w-7 items-center justify-center px-2 text-sm text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 dark:text-zinc-200 dark:hover:bg-zinc-800";
+  return (
+    <div className="flex items-center divide-x divide-zinc-200 overflow-hidden rounded-md border border-zinc-200 bg-white shadow-sm dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
+      <button type="button" className={button} aria-label="Compress the chart" disabled={zoom <= 1} onClick={() => onZoom(1 / ZOOM_STEP)}>
+        −
+      </button>
+      <span className="px-2 text-xs text-zinc-500 tabular-nums">{Math.round(zoom * 100)}%</span>
+      <button type="button" className={button} aria-label="Spread the chart out" disabled={zoom >= MAX_ZOOM} onClick={() => onZoom(ZOOM_STEP)}>
+        +
+      </button>
+      <button type="button" className={button} onClick={onFit}>
+        Fit
+      </button>
+    </div>
+  );
+}
+
+// The size of an element, kept up to date as it changes.
+function useElementSize(ref: RefObject<HTMLElement | null>) {
+  const [size, setSize] = useState<{ width: number; height: number } | null>(null);
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    const observer = new ResizeObserver(([entry]) =>
+      setSize({ width: entry.contentRect.width, height: entry.contentRect.height }),
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [ref]);
+  return size;
+}
+
+// Horizontal zoom: 1 means the terms exactly fill the canvas width; up to
+// MAX_ZOOM times wider. Columns never get narrower than MIN_COLUMN_WIDTH
+// (with many terms the chart then scrolls sideways even at 1).
+const MAX_ZOOM = 4;
+const ZOOM_STEP = 1.25;
+const MIN_COLUMN_WIDTH = 96;
 
 // Defined outside the component so React Flow sees the same object each render.
 const nodeTypes: NodeTypes = { course: CourseCard, term: TermStripe };
@@ -309,8 +357,6 @@ export interface ChartFlowProps {
   // `position`: where in the term's top-to-bottom order it was dropped.
   onMove: (objectId: string, termIndex: number, position: number) => void;
   onSelect: (objectId: string | null) => void;
-  // Change this to re-fit the chart, e.g. when the canvas is resized.
-  fitKey?: string;
 }
 
 export function ChartFlow({
@@ -322,8 +368,16 @@ export function ChartFlow({
   selectedId,
   onMove,
   onSelect,
-  fitKey = "",
 }: ChartFlowProps) {
+  // The chart fills the canvas: measure it, and size the term columns to
+  // fit across it, times the horizontal zoom.
+  const wrapper = useRef<HTMLDivElement>(null);
+  const size = useElementSize(wrapper);
+  const [zoom, setZoom] = useState(1);
+  const columns = Math.max(chart.terms.length, 1);
+  const fillWidth = size ? Math.max(size.width / columns, MIN_COLUMN_WIDTH) : COLUMN_WIDTH;
+  const geometry: Geometry = useMemo(() => geometryFor(fillWidth * zoom), [fillWidth, zoom]);
+
   // The previous layout's arrangement, so a change (like moving one course)
   // keeps everything else where it was and every course its color.
   const memory = useRef<LayoutMemory | undefined>(undefined);
@@ -336,8 +390,8 @@ export function ChartFlow({
     start: Map<string, { x: number; y: number }>;
   } | null>(null);
   const layout = useMemo(
-    () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current),
-    [catalog, chart, issues, creditsByTerm, maxCredits],
+    () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry),
+    [catalog, chart, issues, creditsByTerm, maxCredits, geometry],
   );
   useEffect(() => {
     memory.current = layout.memory;
@@ -385,101 +439,175 @@ export function ChartFlow({
     [layout, related],
   );
 
+  // How big the drawn chart is, and where the view may go: never past its
+  // edges (and it always starts from the top-left corner).
+  const contentWidth = columns * geometry.columnWidth;
+  const contentHeight = termData[0]?.height ?? 0;
+  const flow = useRef<ReactFlowInstance<PlannerNode, PlannerEdge> | null>(null);
+  const clampView = useCallback(
+    (x: number, y: number) => ({
+      x: Math.min(0, Math.max(x, (size?.width ?? 0) - contentWidth)),
+      y: Math.min(0, Math.max(y, (size?.height ?? 0) - contentHeight)),
+      zoom: 1,
+    }),
+    [size, contentWidth, contentHeight],
+  );
+
+  // Zoom by a factor, keeping the point at `anchorX` (canvas pixels) in
+  // place. The view is moved once the new layout is drawn.
+  const pendingAnchor = useRef<{ anchorX: number; columns: number } | null>(null);
+  const zoomBy = useCallback(
+    (factor: number, anchorX = (size?.width ?? 0) / 2) => {
+      const view = flow.current?.getViewport() ?? { x: 0, y: 0 };
+      // The anchor's position in the chart, measured in columns.
+      pendingAnchor.current = { anchorX, columns: (anchorX - view.x) / geometry.columnWidth };
+      setZoom((z) => Math.min(MAX_ZOOM, Math.max(1, z * factor)));
+    },
+    [size, geometry.columnWidth],
+  );
+  useEffect(() => {
+    const view = flow.current?.getViewport();
+    if (!flow.current || !view) return;
+    const anchor = pendingAnchor.current;
+    pendingAnchor.current = null;
+    const x = anchor ? anchor.anchorX - anchor.columns * geometry.columnWidth : view.x;
+    void flow.current.setViewport(clampView(x, view.y));
+  }, [geometry, clampView]);
+
+  // Ctrl/Cmd + scroll, or a trackpad pinch, zooms horizontally. (Plain
+  // scrolling moves the view; React Flow handles that.)
+  useEffect(() => {
+    const element = wrapper.current;
+    if (!element) return;
+    const onWheel = (event: WheelEvent) => {
+      if (!event.ctrlKey && !event.metaKey) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const bounds = element.getBoundingClientRect();
+      zoomBy(Math.exp(-event.deltaY * 0.002), event.clientX - bounds.left);
+    };
+    element.addEventListener("wheel", onWheel, { passive: false, capture: true });
+    return () => element.removeEventListener("wheel", onWheel, { capture: true });
+  }, [zoomBy]);
+
   return (
-    <ReactFlow
-      nodes={nodes}
-      edges={edges}
-      nodeTypes={nodeTypes}
-      edgeTypes={edgeTypes}
-      onNodesChange={onNodesChange}
-      onNodeDragStart={(_, node) => {
-        setHoveredId(null);
-        if (node.type !== "course") return;
-        // Courses taken together with this one in its term move with it.
-        const term = chart.terms.find((t) => t.objectIds.includes(node.id));
-        const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
-        const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
-        drag.current = { id: node.id, termIndex: term?.index, block, start: home };
-      }}
-      onNodeDrag={(_, node) => {
-        const current = drag.current;
-        if (!current || current.block.length < 2) return;
-        // Partners follow while the card is over its own term (reordering);
-        // over another term only the dragged course moves, so they stay home.
-        const start = current.start.get(node.id)!;
-        const follow = termIndexAt(chart, node.position.x) === current.termIndex;
-        const dx = node.position.x - start.x;
-        const dy = node.position.y - start.y;
-        setNodes((nodes) =>
-          nodes.map((n) => {
-            if (n.id === node.id || !current.block.includes(n.id)) return n;
-            const home = current.start.get(n.id)!;
-            return { ...n, position: follow ? { x: home.x + dx, y: home.y + dy } : home };
-          }),
-        );
-      }}
-      onNodeDragStop={(_, node) => {
-        const current = drag.current;
-        drag.current = null;
-        if (node.type !== "course" || !current) return;
-        const termIndex = termIndexAt(chart, node.position.x);
-        const target = chart.terms.find((t) => t.index === termIndex);
-        const column = chart.terms.findIndex((t) => t.index === termIndex);
-        const moving = termIndex === current.termIndex ? current.block : [node.id];
-        const start = current.start.get(node.id)!;
-        const dy = node.position.y - start.y;
+    <div ref={wrapper} className="relative h-full w-full">
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        nodeTypes={nodeTypes}
+        edgeTypes={edgeTypes}
+        onNodesChange={onNodesChange}
+        onNodeDragStart={(_, node) => {
+          setHoveredId(null);
+          if (node.type !== "course") return;
+          // Courses taken together with this one in its term move with it.
+          const term = chart.terms.find((t) => t.objectIds.includes(node.id));
+          const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
+          const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
+          drag.current = { id: node.id, termIndex: term?.index, block, start: home };
+        }}
+        onNodeDrag={(_, node) => {
+          const current = drag.current;
+          if (!current || current.block.length < 2) return;
+          // Partners follow while the card is over its own term (reordering);
+          // over another term only the dragged course moves, so they stay home.
+          const start = current.start.get(node.id)!;
+          const follow = termIndexAt(chart, node.position.x, geometry) === current.termIndex;
+          const dx = node.position.x - start.x;
+          const dy = node.position.y - start.y;
+          setNodes((nodes) =>
+            nodes.map((n) => {
+              if (n.id === node.id || !current.block.includes(n.id)) return n;
+              const home = current.start.get(n.id)!;
+              return { ...n, position: follow ? { x: home.x + dx, y: home.y + dy } : home };
+            }),
+          );
+        }}
+        onNodeDragStop={(_, node) => {
+          const current = drag.current;
+          drag.current = null;
+          if (node.type !== "course" || !current) return;
+          const termIndex = termIndexAt(chart, node.position.x, geometry);
+          const target = chart.terms.find((t) => t.index === termIndex);
+          const column = chart.terms.findIndex((t) => t.index === termIndex);
+          const moving = termIndex === current.termIndex ? current.block : [node.id];
+          const start = current.start.get(node.id)!;
+          const dy = node.position.y - start.y;
 
-        // Where in the term's order it goes: by where the block's middle was
-        // dropped, among the cards there (never inside another block).
-        const homeMiddle = (id: string) => {
-          const at = current.start.get(id);
-          return at && (at.y + NODE_HEIGHT / 2);
-        };
-        const movingMiddles = moving.map((id) => homeMiddle(id)! + dy);
-        const dropMiddle = (Math.min(...movingMiddles) + Math.max(...movingMiddles)) / 2;
-        const position = target ? dropIndex(catalog, target.objectIds, moving, dropMiddle, homeMiddle) : 0;
+          // Where in the term's order it goes: by where the block's middle was
+          // dropped, among the cards there (never inside another block).
+          const homeMiddle = (id: string) => {
+            const at = current.start.get(id);
+            return at && (at.y + NODE_HEIGHT / 2);
+          };
+          const movingMiddles = moving.map((id) => homeMiddle(id)! + dy);
+          const dropMiddle = (Math.min(...movingMiddles) + Math.max(...movingMiddles)) / 2;
+          const position = target ? dropIndex(catalog, target.objectIds, moving, dropMiddle, homeMiddle) : 0;
 
-        if (memory.current && column >= 0) {
-          if (termIndex === current.termIndex) {
-            // Reordered within its term: pack that term from the top, so
-            // the other cards close up with no gaps.
-            memory.current.pack = new Set([column]);
-          } else {
-            // Moved to another term: remember where it was dropped, so it
-            // lands there if there's room (other terms stay as they are).
-            for (const id of moving) {
-              memory.current.column.set(id, column);
-              memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
+          if (memory.current && column >= 0) {
+            if (termIndex === current.termIndex) {
+              // Reordered within its term: pack that term from the top, so
+              // the other cards close up with no gaps.
+              memory.current.pack = new Set([column]);
+            } else {
+              // Moved to another term: remember where it was dropped, so it
+              // lands there if there's room (other terms stay as they are).
+              for (const id of moving) {
+                memory.current.column.set(id, column);
+                memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
+              }
             }
           }
-        }
 
-        // Snap cards back to their places first (keeping their looks); if the
-        // move is valid, the chart update then lays it out anew.
-        setNodes((nodes) => nodes.map((n) => ({ ...n, position: current.start.get(n.id) ?? n.position })));
-        onMove(node.id, termIndex, position);
-      }}
-      onNodeClick={(_, node) => {
-        if (node.type === "course") onSelect(node.id);
-      }}
-      onNodeMouseEnter={(_, node) => {
-        if (node.type === "course") setHoveredId(node.id);
-      }}
-      onNodeMouseLeave={() => setHoveredId(null)}
-      onPaneClick={() => onSelect(null)}
-      nodesConnectable={false}
-      edgesFocusable={false}
-      colorMode={colorScheme}
-      minZoom={0.2}
-      fitView
-      fitViewOptions={{ padding: 0.05 }}
-    >
-      <FlowPanel position="top-left">
-        <Legend />
-      </FlowPanel>
-      <Controls showInteractive={false} />
-      <FitOnChange fitKey={fitKey} />
-      <TermBands terms={termData} />
-    </ReactFlow>
+          // Snap cards back to their places first (keeping their looks); if the
+          // move is valid, the chart update then lays it out anew.
+          setNodes((nodes) => nodes.map((n) => ({ ...n, position: current.start.get(n.id) ?? n.position })));
+          onMove(node.id, termIndex, position);
+        }}
+        onNodeClick={(_, node) => {
+          if (node.type === "course") onSelect(node.id);
+        }}
+        onNodeMouseEnter={(_, node) => {
+          if (node.type === "course") setHoveredId(node.id);
+        }}
+        onNodeMouseLeave={() => setHoveredId(null)}
+        onPaneClick={() => onSelect(null)}
+        nodesConnectable={false}
+        edgesFocusable={false}
+        colorMode={colorScheme}
+        onInit={(instance) => {
+          flow.current = instance;
+        }}
+        // The canvas never scales: zooming changes the column widths instead.
+        defaultViewport={{ x: 0, y: 0, zoom: 1 }}
+        minZoom={1}
+        maxZoom={1}
+        zoomOnScroll={false}
+        zoomOnPinch={false}
+        zoomOnDoubleClick={false}
+        panOnScroll
+        translateExtent={[
+          [0, 0],
+          [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, size?.height ?? 0)],
+        ]}
+      >
+        {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
+        <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
+          <Legend />
+        </FlowPanel>
+        <FlowPanel position="bottom-left">
+          <ZoomControls
+            zoom={zoom}
+            onZoom={(factor) => zoomBy(factor)}
+            onFit={() => {
+              pendingAnchor.current = { anchorX: 0, columns: 0 };
+              setZoom(1);
+            }}
+          />
+        </FlowPanel>
+        <TermBands terms={termData} columnWidth={geometry.columnWidth} />
+      </ReactFlow>
+    </div>
   );
 }

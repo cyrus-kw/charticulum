@@ -10,6 +10,10 @@ import { loadSampleSchool } from "../src/fixtures/sampleSchool";
 import {
   arrangeChart,
   chartLayout,
+  courseCode,
+  geometryFor,
+  termIndexAt,
+  COMPACT_BELOW,
   edgeEndpoints,
   perimeterLength,
   perimeterOffset,
@@ -549,5 +553,53 @@ describe("layout stability across changes", () => {
       .sort((a, b) => a.position.y - b.position.y)
       .map((n) => n.id);
     expect(order).toEqual(["R", "P", "Q"]);
+  });
+});
+
+describe("horizontal zoom geometry", () => {
+  it("sizes cards to about 60% of the column, within limits", () => {
+    expect(geometryFor(200)).toEqual({ columnWidth: 200, nodeWidth: 120 });
+    expect(geometryFor(96).nodeWidth).toBe(64); // never narrower
+    expect(geometryFor(800).nodeWidth).toBe(200); // never wider
+    for (const width of [96, 150, 212, 400, 900]) {
+      const { nodeWidth } = geometryFor(width);
+      expect(width - nodeWidth, `gap at ${width}`).toBeGreaterThanOrEqual(16);
+    }
+  });
+
+  it("goes compact (course code only) once cards are narrow", () => {
+    expect(geometryFor(150).nodeWidth).toBeLessThan(COMPACT_BELOW);
+    expect(geometryFor(212).nodeWidth).toBeGreaterThanOrEqual(COMPACT_BELOW);
+  });
+
+  it("writes course codes with a space", () => {
+    expect(courseCode("CS101")).toBe("CS 101");
+    expect(courseCode("MATH201")).toBe("MATH 201");
+    expect(courseCode("CS102L")).toBe("CS 102L");
+    expect(courseCode("SPAN-PROF")).toBe("SPAN-PROF");
+  });
+
+  it("spreads columns out without changing heights", () => {
+    const state = initialState(loadSampleSchool(), "bs-cs");
+    const view = derive(state);
+    const at = (columnWidth: number) =>
+      chartLayout(state.school.catalog, view.chart, [], {}, 12, undefined, geometryFor(columnWidth));
+    const narrow = at(120);
+    const wide = at(360);
+    for (const n of courses(narrow.nodes)) {
+      const w = wide.nodes.find((m) => m.id === n.id)!;
+      expect(w.position.y, n.id).toBe(n.position.y);
+      expect(w.width).toBe(geometryFor(360).nodeWidth);
+    }
+    const term = (layout: typeof narrow, i: number) => layout.nodes.find((n) => n.id === `term-${i}`)!;
+    expect(term(wide, 2).position.x).toBe(2 * 360);
+    expect(term(narrow, 2).position.x).toBe(2 * 120);
+  });
+
+  it("finds the drop term at any zoom", () => {
+    const chart = chartOf([[], [], [], []]);
+    const g = geometryFor(300);
+    expect(termIndexAt(chart, 2 * 300 + 40, g)).toBe(2);
+    expect(termIndexAt(chart, 0, g)).toBe(1); // never Pre-Credit
   });
 });

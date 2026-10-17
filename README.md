@@ -29,6 +29,10 @@ database instead, see [Database](#database).
   red, and the Issues panel explains, when an order is wrong.
 - **Reorder a term** by dragging a card up or down; it lands where you drop
   it. Courses taken together (a lecture and its lab) move as one block.
+- **Zoom** (the + / − buttons, or Ctrl/⌘ + scroll) spreads the chart out
+  sideways or compresses it; at 100% the terms exactly fill the window.
+  Compressed cards show just the course code ("CS 101"); point at one for
+  its full name. Scroll to move up and down, Shift + scroll to move sideways.
 - **Build for me** lays out a full plan that meets every rule.
 - **Pre-Credit** (AP exams, transfer courses) fills the first column
   automatically; hide it from the chart with the header button.
