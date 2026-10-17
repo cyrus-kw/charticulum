@@ -442,17 +442,32 @@ export function ChartFlow({
   );
 
   // How big the drawn chart is, and where the view may go: never past its
-  // edges (and it always starts from the top-left corner).
+  // edges.
   const contentWidth = columns * geometry.columnWidth;
   const contentHeight = termData[0]?.height ?? 0;
   const flow = useRef<ReactFlowInstance<PlannerNode, PlannerEdge> | null>(null);
+  // A plan shorter than the canvas sits in its vertical middle; a taller
+  // one starts at the top and scrolls. It's centered when first drawn, when
+  // the canvas is resized, and for a whole new plan, but not after each
+  // edit: moving one course shouldn't shift every card. (It does move up
+  // if the plan grows past the bottom.)
+  const lastCenter = useRef<{ height: number; offset: number } | null>(null);
+  const centerOffset = useMemo(() => {
+    const height = size?.height ?? 0;
+    const room = Math.max(0, height - contentHeight);
+    const recenter = !lastCenter.current || lastCenter.current.height !== height || layout.fresh;
+    return recenter ? room / 2 : Math.min(lastCenter.current!.offset, room);
+  }, [size?.height, contentHeight, layout]);
+  useEffect(() => {
+    lastCenter.current = { height: size?.height ?? 0, offset: centerOffset };
+  }, [size?.height, centerOffset]);
   const clampView = useCallback(
     (x: number, y: number) => ({
       x: Math.min(0, Math.max(x, (size?.width ?? 0) - contentWidth)),
-      y: Math.min(0, Math.max(y, (size?.height ?? 0) - contentHeight)),
+      y: centerOffset > 0 ? centerOffset : Math.min(0, Math.max(y, (size?.height ?? 0) - contentHeight)),
       zoom: 1,
     }),
-    [size, contentWidth, contentHeight],
+    [size, contentWidth, contentHeight, centerOffset],
   );
 
   // Zoom by a factor, keeping the point at `anchorX` (canvas pixels) in
@@ -603,8 +618,8 @@ export function ChartFlow({
         zoomOnDoubleClick={false}
         panOnScroll
         translateExtent={[
-          [0, 0],
-          [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, size?.height ?? 0)],
+          [0, -centerOffset],
+          [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, (size?.height ?? 0) - centerOffset)],
         ]}
       >
         {/* Leaves room for the zoom controls on the left; wraps if narrow. */}

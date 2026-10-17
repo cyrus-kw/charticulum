@@ -137,7 +137,7 @@ export function chartLayout(
   // the others or change their colors.
   previous?: LayoutMemory,
   geometry: Geometry = DEFAULT_GEOMETRY,
-): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory } {
+): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory; fresh: boolean } {
   const { columnWidth, nodeWidth } = geometry;
   const nodeOffset = (columnWidth - nodeWidth) / 2;
   // 1. What's placed where, and every requisite link between placed objects.
@@ -245,7 +245,8 @@ export function chartLayout(
     };
   });
 
-  return { nodes, edges, memory: { column: columnOf, y, colors } };
+  // `fresh`: laid out from scratch (a new plan), not kept from last time.
+  return { nodes, edges, memory: { column: columnOf, y, colors }, fresh: !reuse };
 }
 
 // One link from each placed requisite (or an equivalent standing in for it)
