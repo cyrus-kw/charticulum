@@ -16,7 +16,7 @@ import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Badge, Button, inputClass } from "./ui";
-import { DetailsIcon, PanelIcon, SidePanel, ToolsIcon } from "./SidePanel";
+import { PanelToggle, SidePanel } from "./SidePanel";
 import { usePanels } from "./usePanels";
 
 export function Planner() {
@@ -112,7 +112,6 @@ export function Planner() {
           side="left"
           open={panels.open.left}
           width={panels.open.leftWidth}
-          icon={<ToolsIcon />}
           onToggle={() => panels.toggle("left")}
           onResize={(width, done) => panels.setWidth("left", width, done)}
         >
@@ -139,20 +138,22 @@ export function Planner() {
             onUndo={() => dispatch({ type: "undo" })}
             onRedo={() => dispatch({ type: "redo" })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
-            // Collapsed sidebars float as icons on the chart's top corners.
+            // A collapsed sidebar's toggle floats on the chart, at the same
+            // spot it had in the sidebar's corner.
             topLeft={
               !panels.open.left && (
-                <PanelIcon id="tools-panel" title="Tools" icon={<ToolsIcon />} onOpen={() => panels.toggle("left")} />
+                <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
               )
             }
             topRight={
               !panels.open.right && (
-                <PanelIcon
+                <PanelToggle
                   id="details-panel"
                   title="Details"
-                  icon={<DetailsIcon />}
+                  side="right"
+                  open={false}
                   badge={issueCount > 0 ? <Badge tone="bad">{issueCount}</Badge> : undefined}
-                  onOpen={() => panels.toggle("right")}
+                  onToggle={() => panels.toggle("right")}
                 />
               )
             }
@@ -165,7 +166,6 @@ export function Planner() {
           side="right"
           open={panels.open.right}
           width={panels.open.rightWidth}
-          icon={<DetailsIcon />}
           onToggle={() => panels.toggle("right")}
           onResize={(width, done) => panels.setWidth("right", width, done)}
         >

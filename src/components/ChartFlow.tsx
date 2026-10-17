@@ -795,7 +795,7 @@ export function ChartFlow({
         <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
           <Legend />
         </FlowPanel>
-        <FlowPanel position="top-left" className="flex items-center gap-2">
+        <FlowPanel position="top-left" className="flex items-start gap-2">
           {topLeft}
           <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
         </FlowPanel>

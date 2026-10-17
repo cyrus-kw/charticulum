@@ -34,10 +34,10 @@ database instead, see [Database](#database).
   Compressed cards show just the course code ("CS 101"); point at one for
   its full name. Scroll to move up and down, Shift + scroll to move sideways.
 - **Sidebars** resize by dragging their edge next to the chart (which
-  widens or compresses the chart), and collapse to an icon with « / » or
-  by dragging them nearly shut; collapsed, they float as icons on the
-  chart's top corners. **Undo / Redo** sit at the chart's top left
-  (Ctrl/⌘ + Z, Ctrl/⌘ + Shift + Z).
+  widens or compresses the chart). The sidebar button in each one's top
+  corner slides it shut (or drag it nearly shut); the button stays in the
+  same spot on the chart to slide it back open. **Undo / Redo** sit at the
+  chart's top left (Ctrl/⌘ + Z, Ctrl/⌘ + Shift + Z).
 - **Build for me** lays out a full plan that meets every rule.
 - **Pre-Credit** (AP exams, transfer courses) fills the first column
   automatically; hide it from the chart with the header button.
