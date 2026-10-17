@@ -407,7 +407,6 @@ function Legend() {
       <span className={item}>
         <b className="font-mono">+</b> gen ed
       </span>
-      <span className="text-zinc-500">Point at a course to trace it.</span>
     </div>
   );
 }
