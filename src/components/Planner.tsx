@@ -63,7 +63,9 @@ export function Planner() {
     if (remembered) dispatch({ type: "loadSchool", school: loadSchool(remembered) });
   }, []);
   // Recompute the checks only when the state actually changes.
-  const view = useMemo(() => derive(state), [state]);
+  // Only the school and chart feed `derive` (see its comment for why).
+  const { school, chart } = state;
+  const view = useMemo(() => derive({ school, chart }), [school, chart]);
   const panelProps = { state, view, dispatch };
   // Remount panels when the school changes so their local inputs reset.
   const schoolKey = state.school.data.school.id;

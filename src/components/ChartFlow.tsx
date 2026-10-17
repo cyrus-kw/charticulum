@@ -689,6 +689,9 @@ export function ChartFlow({
             previewIndex: null,
             previewKey: null,
           };
+          // The course being moved is the selected one, so its details show.
+          // (No click follows a real drag, so this isn't undone by one.)
+          onSelect(node.id);
           // Trace the course being moved (not whatever it passes over), and
           // keep it above the other cards while it moves.
           setHoveredId(node.id);

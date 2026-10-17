@@ -262,7 +262,11 @@ export interface PlannerView {
   templateIssues: ChartIssue[];
 }
 
-export function derive(state: PlannerState): PlannerView {
+// It reads only the school and the chart (the type makes sure of that), so
+// the Planner recomputes it only when one of those changes, not on every
+// edit. Selecting a course in particular mustn't redo it: a fresh view
+// means a fresh layout, which would yank a card being dragged back home.
+export function derive(state: Pick<PlannerState, "school" | "chart">): PlannerView {
   const { school } = state;
   const chart = applyExternalEquivalents(school.catalog, state.chart);
   const resolved = resolveRequirements(school.library, school.globalSets, chart);
