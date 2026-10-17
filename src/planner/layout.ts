@@ -63,6 +63,21 @@ export function courseCode(id: string): string {
   return id.replace(/^([A-Za-z]+)(\d)/, "$1 $2");
 }
 
+// The same, for every course code inside a sentence (an issue message, say):
+// "CS390 needs CS201" -> "CS 390 needs CS 201". Only ids in the catalog are
+// touched, whole words only, longest first (so CS102L isn't read as CS102).
+const codePatterns = new WeakMap<Catalog, RegExp | null>();
+export function withCourseCodes(text: string, catalog: Catalog): string {
+  if (!codePatterns.has(catalog)) {
+    const ids = [...catalog.keys()]
+      .sort((a, b) => b.length - a.length)
+      .map((id) => id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    codePatterns.set(catalog, ids.length ? new RegExp(`(?<![\\w-])(?:${ids.join("|")})(?![\\w-])`, "g") : null);
+  }
+  const pattern = codePatterns.get(catalog);
+  return pattern ? text.replace(pattern, courseCode) : text;
+}
+
 // Line colors, one per course that other courses depend on. Red is left out
 // on purpose: it only ever means "this link is out of order".
 export const COURSE_COLORS = [
@@ -208,7 +223,10 @@ export function chartLayout(
         data: {
           object,
           ...(chart.grades?.[id] && { grade: chart.grades[id] }),
-          issues: issues.filter((issue) => issue.objectId === id),
+          // Messages with course codes written as on the card ("CS 201").
+          issues: issues
+            .filter((issue) => issue.objectId === id)
+            .map((issue) => ({ ...issue, message: withCourseCodes(issue.message, catalog) })),
           external,
           ...(colors.has(id) && { color: colors.get(id) }),
           ...(seasons?.length === 1 && { onlyIn: seasons[0] }),

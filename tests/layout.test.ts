@@ -13,6 +13,7 @@ import {
   courseCode,
   geometryFor,
   termIndexAt,
+  withCourseCodes,
   COMPACT_BELOW,
   MAX_ZOOM_PERCENT,
   snapZoom,
@@ -587,6 +588,21 @@ describe("horizontal zoom geometry", () => {
   it("goes compact (course code only) once cards are narrow", () => {
     expect(geometryFor(150).nodeWidth).toBeLessThan(COMPACT_BELOW);
     expect(geometryFor(212).nodeWidth).toBeGreaterThanOrEqual(COMPACT_BELOW);
+  });
+
+  it("writes the course codes inside a sentence with a space", () => {
+    const catalog = createCatalog([obj("CS102"), obj("CS102L"), obj("MATH201"), obj("SOPH-REV")]);
+    expect(withCourseCodes("CS102L needs CS102 in the same term or earlier.", catalog)).toBe(
+      "CS 102L needs CS 102 in the same term or earlier.",
+    );
+    expect(withCourseCodes("MATH201 needs at least a C in CS102.", catalog)).toBe("MATH 201 needs at least a C in CS 102.");
+    // Not in the catalog, or part of a longer word: left alone.
+    expect(withCourseCodes("Fall 2027 has 14 credits; CS999 and XCS102 too.", catalog)).toBe(
+      "Fall 2027 has 14 credits; CS999 and XCS102 too.",
+    );
+    expect(withCourseCodes("Required milestone SOPH-REV is not in the chart.", catalog)).toBe(
+      "Required milestone SOPH-REV is not in the chart.",
+    );
   });
 
   it("writes course codes with a space", () => {

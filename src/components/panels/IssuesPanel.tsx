@@ -2,6 +2,7 @@
 
 import type { ChartIssue } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel } from "../ui";
+import { withCourseCodes } from "../../planner/layout";
 import type { PanelProps } from "./types";
 
 const REQUISITE_CODES = new Set([
@@ -78,7 +79,7 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
                 onClick={() => issue.objectId && dispatch({ type: "select", objectId: issue.objectId })}
               >
                 {source && <span className="font-semibold">{source}: </span>}
-                {issue.message}
+                {withCourseCodes(issue.message, state.school.catalog)}
               </button>
               <div className="mt-1 flex flex-wrap gap-1 empty:hidden">{fixes(issue)}</div>
             </li>

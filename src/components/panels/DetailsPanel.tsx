@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { satisfies, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel, Select } from "../ui";
-import { courseCode } from "../../planner/layout";
+import { courseCode, withCourseCodes } from "../../planner/layout";
 import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
 
@@ -103,7 +103,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
       {issues.length > 0 && (
         <ul className="mb-3 space-y-1 text-sm text-rose-700 dark:text-rose-400">
           {issues.map((issue, i) => (
-            <li key={i}>{issue.message}</li>
+            <li key={i}>{withCourseCodes(issue.message, catalog)}</li>
           ))}
         </ul>
       )}

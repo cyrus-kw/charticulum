@@ -6,12 +6,30 @@ import {
   mergeEquivalencyRows,
   parseEquivalencyCsv,
   parseSchoolData,
+  type ObjectKind,
   type SchoolData,
 } from "../../engine/index";
 import { loadSampleSchool } from "../../fixtures/sampleSchool";
 import { forgetSchool, rememberSchool } from "../../storage/schoolMemory";
 import { Button, Panel } from "../ui";
 import type { PanelProps } from "./types";
+
+const KIND_PLURALS: Record<ObjectKind, string> = {
+  course: "courses",
+  experience: "experiences",
+  milestone: "milestones",
+  proficiency: "proficiencies",
+};
+
+// "14 courses · 2 experiences · 1 milestone": the catalog by type, with
+// types the school doesn't use left out.
+function countsByKind(objects: { kind: ObjectKind }[]): string {
+  return (Object.keys(KIND_PLURALS) as ObjectKind[])
+    .map((kind) => [kind, objects.filter((o) => o.kind === kind).length] as const)
+    .filter(([, count]) => count > 0)
+    .map(([kind, count]) => `${count} ${count === 1 ? kind : KIND_PLURALS[kind]}`)
+    .join(" · ");
+}
 
 const SAMPLE_PATH = "/samples/example-state-university.json";
 const SAMPLE_CSV_PATH = "/samples/transfer-table.csv";
@@ -82,7 +100,7 @@ export function SchoolPanel({ state, dispatch }: PanelProps) {
       <p className="mb-2 text-sm">
         {data.school.name}
         <span className="block text-xs text-zinc-500">
-          {data.objects.length} objects · {data.templates.length} templates · {data.equivalencyTable.length}{" "}
+          {countsByKind(data.objects)} · {data.templates.length} templates · {data.equivalencyTable.length}{" "}
           equivalency rows
         </span>
       </p>
