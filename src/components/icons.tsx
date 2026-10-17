@@ -100,12 +100,3 @@ export function TrashIcon() {
     </Icon>
   );
 }
-
-// A tick: all good. Smaller when it sits in a tag.
-export function CheckIcon({ size = 16 }: { size?: number }) {
-  return (
-    <Icon size={size}>
-      <path d="M20 6 9 17l-5-5" />
-    </Icon>
-  );
-}
