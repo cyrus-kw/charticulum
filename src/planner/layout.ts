@@ -40,6 +40,17 @@ const MAX_NODE_WIDTH = 200;
 // Cards narrower than this show only the course code.
 export const COMPACT_BELOW = 112;
 
+// Horizontal zoom, as a whole percentage: 100 means the terms exactly fill
+// the canvas width. It moves in steps of ZOOM_STEP, up to MAX_ZOOM_PERCENT.
+export const ZOOM_STEP = 5;
+export const MAX_ZOOM_PERCENT = 400;
+
+// A zoom the user asked for (typed, or a step from the buttons) as one the
+// chart allows: rounded up to the next step, and never below 100.
+export function snapZoom(percent: number): number {
+  return Math.min(MAX_ZOOM_PERCENT, Math.max(100, Math.ceil(percent / ZOOM_STEP) * ZOOM_STEP));
+}
+
 // The sizes for a given column width: cards take about 60% of the column,
 // leaving the rest for lines, within sensible limits.
 export function geometryFor(columnWidth: number): Geometry {

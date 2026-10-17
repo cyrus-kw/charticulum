@@ -37,10 +37,13 @@ import {
   courseCode,
   geometryFor,
   HEADER_HEIGHT,
+  MAX_ZOOM_PERCENT,
   NODE_HEIGHT,
   NODE_WIDTH,
   ROW_HEIGHT,
+  snapZoom,
   termIndexAt,
+  ZOOM_STEP,
   type CourseNode,
   type Geometry,
   type LayoutMemory,
@@ -290,14 +293,52 @@ function HistoryControls({
 
 // Horizontal zoom buttons. Zooming spreads the terms out sideways or
 // compresses them; text and rows keep their size.
-function ZoomControls({ zoom, onZoom, onFit }: { zoom: number; onZoom: (factor: number) => void; onFit: () => void }) {
+function ZoomControls({
+  zoom,
+  onZoom,
+  onFit,
+}: {
+  // A whole percentage.
+  zoom: number;
+  onZoom: (percent: number) => void;
+  onFit: () => void;
+}) {
+  // What's typed in the box; applied on Enter or leaving the box.
+  const [draft, setDraft] = useState<string | null>(null);
+  const apply = () => {
+    const typed = Number.parseFloat(draft ?? "");
+    if (Number.isFinite(typed)) onZoom(snapZoom(typed));
+    setDraft(null);
+  };
   return (
     <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Compress the chart" title="Compress" disabled={zoom <= 1} onClick={() => onZoom(1 / ZOOM_STEP)}>
+      <button type="button" className={button} aria-label="Compress the chart" title="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - ZOOM_STEP)}>
         <MinusIcon />
       </button>
-      <span className="px-2 text-xs text-zinc-500 tabular-nums">{Math.round(zoom * 100)}%</span>
-      <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM} onClick={() => onZoom(ZOOM_STEP)}>
+      <label className="flex h-7 items-center px-1.5 text-xs text-zinc-500 tabular-nums">
+        <input
+          type="text"
+          inputMode="numeric"
+          autoComplete="off"
+          aria-label="Zoom percent"
+          title={`Zoom: 100–${MAX_ZOOM_PERCENT}%, in steps of ${ZOOM_STEP}`}
+          className="w-[3ch] bg-transparent text-right outline-none focus:text-zinc-900 dark:focus:text-zinc-100"
+          value={draft ?? String(zoom)}
+          onChange={(e) => setDraft(e.target.value)}
+          onFocus={(e) => e.target.select()}
+          onBlur={apply}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") e.currentTarget.blur();
+            else if (e.key === "Escape") {
+              setDraft(null);
+              // Leave without applying what was typed.
+              requestAnimationFrame(() => (e.target as HTMLInputElement).blur());
+            }
+          }}
+        />
+        %
+      </label>
+      <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + ZOOM_STEP)}>
         <PlusIcon />
       </button>
       <button type="button" className={button} aria-label="Fit to width" title="Fit to width" onClick={onFit}>
@@ -322,12 +363,11 @@ function useElementSize(ref: RefObject<HTMLElement | null>) {
   return size;
 }
 
-// Horizontal zoom: 1 means the terms exactly fill the canvas width; up to
-// MAX_ZOOM times wider. Columns never get narrower than MIN_COLUMN_WIDTH
-// (with many terms the chart then scrolls sideways even at 1).
-const MAX_ZOOM = 4;
-const ZOOM_STEP = 1.25;
+// Columns never get narrower than this (with many terms the chart then
+// scrolls sideways even at 100%). See snapZoom for the zoom steps.
 const MIN_COLUMN_WIDTH = 96;
+// Ctrl/Cmd + scroll: this much scrolling (in pixels) is one zoom step.
+const WHEEL_PER_STEP = 100;
 // Cards being dragged sit above the rest.
 const DRAGGING_Z = 1000;
 // How long the other cards take to slide aside while reordering.
@@ -433,10 +473,11 @@ export function ChartFlow({
   // fit across it, times the horizontal zoom.
   const wrapper = useRef<HTMLDivElement>(null);
   const size = useElementSize(wrapper);
-  const [zoom, setZoom] = useState(1);
+  // A whole percentage (see snapZoom).
+  const [zoom, setZoom] = useState(100);
   const columns = Math.max(chart.terms.length, 1);
   const fillWidth = size ? Math.max(size.width / columns, MIN_COLUMN_WIDTH) : COLUMN_WIDTH;
-  const geometry: Geometry = useMemo(() => geometryFor(fillWidth * zoom), [fillWidth, zoom]);
+  const geometry: Geometry = useMemo(() => geometryFor((fillWidth * zoom) / 100), [fillWidth, zoom]);
 
   // The previous layout's arrangement, so a change (like moving one course)
   // keeps everything else where it was and every course its color.
@@ -590,17 +631,20 @@ export function ChartFlow({
     [size, contentWidth, contentHeight, centerOffset],
   );
 
-  // Zoom by a factor, keeping the point at `anchorX` (canvas pixels) in
-  // place. The view is moved once the new layout is drawn.
+  // Zoom to a percentage (snapped to the allowed steps), keeping the point
+  // at `anchorX` (canvas pixels) in place. The view is moved once the new
+  // layout is drawn.
   const pendingAnchor = useRef<{ anchorX: number; columns: number } | null>(null);
-  const zoomBy = useCallback(
-    (factor: number, anchorX = (size?.width ?? 0) / 2) => {
+  const zoomTo = useCallback(
+    (percent: number, anchorX = (size?.width ?? 0) / 2) => {
+      const next = snapZoom(percent);
+      if (next === zoom) return;
       const view = flow.current?.getViewport() ?? { x: 0, y: 0 };
       // The anchor's position in the chart, measured in columns.
       pendingAnchor.current = { anchorX, columns: (anchorX - view.x) / geometry.columnWidth };
-      setZoom((z) => Math.min(MAX_ZOOM, Math.max(1, z * factor)));
+      setZoom(next);
     },
-    [size, geometry.columnWidth],
+    [size, geometry.columnWidth, zoom],
   );
   useEffect(() => {
     const view = flow.current?.getViewport();
@@ -611,8 +655,10 @@ export function ChartFlow({
     void flow.current.setViewport(clampView(x, view.y));
   }, [geometry, clampView]);
 
-  // Ctrl/Cmd + scroll, or a trackpad pinch, zooms horizontally. (Plain
-  // scrolling moves the view; React Flow handles that.)
+  // Ctrl/Cmd + scroll, or a trackpad pinch, zooms horizontally, one step
+  // per WHEEL_PER_STEP of scrolling. (Plain scrolling moves the view; React
+  // Flow handles that.)
+  const wheelTotal = useRef(0);
   useEffect(() => {
     const element = wrapper.current;
     if (!element) return;
@@ -620,12 +666,18 @@ export function ChartFlow({
       if (!event.ctrlKey && !event.metaKey) return;
       event.preventDefault();
       event.stopPropagation();
+      // Scrolled by lines or pages (some mice): roughly in pixels.
+      const scale = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? 800 : 1;
+      wheelTotal.current += event.deltaY * scale;
+      const steps = Math.trunc(wheelTotal.current / WHEEL_PER_STEP);
+      if (steps === 0) return;
+      wheelTotal.current -= steps * WHEEL_PER_STEP;
       const bounds = element.getBoundingClientRect();
-      zoomBy(Math.exp(-event.deltaY * 0.002), event.clientX - bounds.left);
+      zoomTo(zoom - steps * ZOOM_STEP, event.clientX - bounds.left);
     };
     element.addEventListener("wheel", onWheel, { passive: false, capture: true });
     return () => element.removeEventListener("wheel", onWheel, { capture: true });
-  }, [zoomBy]);
+  }, [zoomTo, zoom]);
 
   return (
     <div ref={wrapper} className="relative h-full w-full">
@@ -836,11 +888,8 @@ export function ChartFlow({
         <FlowPanel position="bottom-left">
           <ZoomControls
             zoom={zoom}
-            onZoom={(factor) => zoomBy(factor)}
-            onFit={() => {
-              pendingAnchor.current = { anchorX: 0, columns: 0 };
-              setZoom(1);
-            }}
+            onZoom={(percent) => zoomTo(percent)}
+            onFit={() => zoomTo(100, 0)}
           />
         </FlowPanel>
         <TermBands terms={termData} columnWidth={geometry.columnWidth} />

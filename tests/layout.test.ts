@@ -14,6 +14,9 @@ import {
   geometryFor,
   termIndexAt,
   COMPACT_BELOW,
+  MAX_ZOOM_PERCENT,
+  snapZoom,
+  ZOOM_STEP,
   edgeEndpoints,
   perimeterLength,
   perimeterOffset,
@@ -547,6 +550,26 @@ describe("layout stability across changes", () => {
       .sort((a, b) => a.position.y - b.position.y)
       .map((n) => n.id);
     expect(order).toEqual(["R", "P", "Q"]);
+  });
+});
+
+describe("zoom steps", () => {
+  it("rounds a typed zoom up to the next multiple of 5, from 100 up to the max", () => {
+    expect(snapZoom(156)).toBe(160);
+    expect(snapZoom(160)).toBe(160);
+    expect(snapZoom(101)).toBe(105);
+    expect(snapZoom(102.5)).toBe(105);
+    expect(snapZoom(50)).toBe(100);
+    expect(snapZoom(0)).toBe(100);
+    expect(snapZoom(-20)).toBe(100);
+    expect(snapZoom(9999)).toBe(MAX_ZOOM_PERCENT);
+  });
+
+  it("keeps button steps on the grid", () => {
+    let zoom = 100;
+    for (let i = 0; i < 3; i++) zoom = snapZoom(zoom + ZOOM_STEP);
+    expect(zoom).toBe(115);
+    expect(snapZoom(100 - ZOOM_STEP)).toBe(100);
   });
 });
 
