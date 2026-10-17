@@ -10,7 +10,9 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
 export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
   return (
     <section className="border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
-      <div className="mb-2 flex items-center justify-between gap-2">
+      {/* A fixed height, so a button here (like Close) doesn't push the
+          title down; the button just overhangs a little. */}
+      <div className="mb-2 flex h-5 items-center justify-between gap-2">
         <h2 className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">{title}</h2>
         {actions}
       </div>
