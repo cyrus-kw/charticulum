@@ -22,7 +22,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
   if (!id || !object)
     return (
       <Panel title="Selected">
-        <p className="text-sm text-zinc-500">Click a course to see its details.</p>
+        <p className="text-sm text-zinc-500">Click on a course to see its details.</p>
       </Panel>
     );
 
