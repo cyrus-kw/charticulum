@@ -32,7 +32,17 @@ const NODE_OFFSET = (COLUMN_WIDTH - NODE_WIDTH) / 2;
 export interface Geometry {
   columnWidth: number;
   nodeWidth: number;
+  // The canvas height to spread rows over, so the chart fills it top to
+  // bottom (cards keep their size; the space between rows grows). Missing
+  // means normal row spacing.
+  fillHeight?: number;
 }
+
+// Rows spread out at most this many times their normal spacing, so a term
+// with few courses doesn't scatter them far apart.
+export const MAX_ROW_STRETCH = 2.5;
+// Space kept clear at the bottom of the canvas for the legend and controls.
+export const BOTTOM_RESERVE = 64;
 export const DEFAULT_GEOMETRY: Geometry = { columnWidth: COLUMN_WIDTH, nodeWidth: NODE_WIDTH };
 
 const MIN_NODE_WIDTH = 64;
@@ -137,7 +147,7 @@ export function chartLayout(
   // the others or change their colors.
   previous?: LayoutMemory,
   geometry: Geometry = DEFAULT_GEOMETRY,
-): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory } {
+): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory; rowScale: number } {
   const { columnWidth, nodeWidth } = geometry;
   const nodeOffset = (columnWidth - nodeWidth) / 2;
   // 1. What's placed where, and every requisite link between placed objects.
@@ -166,7 +176,16 @@ export function chartLayout(
   const colors = assignColors(ordered, links, y, reuse ? previous.colors : undefined);
 
   // 4. Nodes: one stripe per term (drawn under the lines), then the cards.
-  const bottom = Math.max(ROW_HEIGHT, ...[...y.values()].map((v) => v + NODE_HEIGHT));
+  // Heights so far are at normal row spacing. To fill the canvas, stretch
+  // the space between rows (up to MAX_ROW_STRETCH); cards stay the same size.
+  const lowest = Math.max(0, ...y.values());
+  const rowScale = geometry.fillHeight
+    ? Math.min(
+        MAX_ROW_STRETCH,
+        Math.max(1, (geometry.fillHeight - HEADER_HEIGHT - BOTTOM_RESERVE - NODE_HEIGHT) / Math.max(lowest, ROW_HEIGHT)),
+      )
+    : 1;
+  const bottom = Math.max(ROW_HEIGHT, lowest * rowScale + NODE_HEIGHT);
   const stripeHeight = HEADER_HEIGHT + bottom + FOOTER_HEIGHT;
   const minGradeIds = new Set(
     [...catalog.values()].flatMap((o) => Object.keys(o.requisites.minGrades ?? {})),
@@ -204,7 +223,7 @@ export function chartLayout(
       nodes.push({
         id,
         type: "course",
-        position: { x: column * columnWidth + nodeOffset, y: HEADER_HEIGHT + y.get(id)! },
+        position: { x: column * columnWidth + nodeOffset, y: HEADER_HEIGHT + y.get(id)! * rowScale },
         data: {
           object,
           ...(chart.grades?.[id] && { grade: chart.grades[id] }),
@@ -245,7 +264,9 @@ export function chartLayout(
     };
   });
 
-  return { nodes, edges, memory: { column: columnOf, y, colors } };
+  // Memory keeps heights at normal spacing, so a stretch (which depends on
+  // the window size) never scrambles the arrangement.
+  return { nodes, edges, memory: { column: columnOf, y, colors }, rowScale };
 }
 
 // One link from each placed requisite (or an equivalent standing in for it)
