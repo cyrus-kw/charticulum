@@ -50,6 +50,7 @@ import {
   type TermNode,
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
+import { FitWidthIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
 import { cn } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
@@ -277,11 +278,11 @@ function HistoryControls({
 }) {
   return (
     <div className={controlGroup}>
-      <button type="button" className={cn(button, "gap-1")} title="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
-        <span aria-hidden>↶</span> Undo
+      <button type="button" className={button} aria-label="Undo" title="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
+        <UndoIcon />
       </button>
-      <button type="button" className={cn(button, "gap-1")} title="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
-        Redo <span aria-hidden>↷</span>
+      <button type="button" className={button} aria-label="Redo" title="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
+        <RedoIcon />
       </button>
     </div>
   );
@@ -292,15 +293,15 @@ function HistoryControls({
 function ZoomControls({ zoom, onZoom, onFit }: { zoom: number; onZoom: (factor: number) => void; onFit: () => void }) {
   return (
     <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Compress the chart" disabled={zoom <= 1} onClick={() => onZoom(1 / ZOOM_STEP)}>
-        −
+      <button type="button" className={button} aria-label="Compress the chart" title="Compress" disabled={zoom <= 1} onClick={() => onZoom(1 / ZOOM_STEP)}>
+        <MinusIcon />
       </button>
       <span className="px-2 text-xs text-zinc-500 tabular-nums">{Math.round(zoom * 100)}%</span>
-      <button type="button" className={button} aria-label="Spread the chart out" disabled={zoom >= MAX_ZOOM} onClick={() => onZoom(ZOOM_STEP)}>
-        +
+      <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM} onClick={() => onZoom(ZOOM_STEP)}>
+        <PlusIcon />
       </button>
-      <button type="button" className={button} onClick={onFit}>
-        Fit
+      <button type="button" className={button} aria-label="Fit to width" title="Fit to width" onClick={onFit}>
+        <FitWidthIcon />
       </button>
     </div>
   );

@@ -7,6 +7,7 @@
 // same button floats at that spot on the chart (see PanelToggle). The
 // contents stay mounted while collapsed, so what's typed in them survives.
 import { useState, type KeyboardEvent, type PointerEvent, type ReactNode } from "react";
+import { SidebarIcon } from "./icons";
 import { cn } from "./ui";
 import { PANEL_COLLAPSE_BELOW, PANEL_MAX_WIDTH, PANEL_MIN_WIDTH } from "./usePanels";
 
@@ -14,7 +15,8 @@ const KEY_STEP = 16;
 // The toggle sits this far from the corner, open or collapsed. It matches
 // React Flow's panel margin, so the floating copy lands in the same spot.
 const TOGGLE_INSET = 15;
-const TOGGLE_SIZE = 28;
+// The same height as the chart's button groups (28px buttons + 1px borders).
+const TOGGLE_SIZE = 30;
 export const PANEL_HEADER_HEIGHT = TOGGLE_INSET * 2 + TOGGLE_SIZE;
 
 export function SidePanel({
@@ -171,15 +173,5 @@ export function PanelToggle({
       <SidebarIcon side={side} />
       {!open && badge && <span className="absolute -top-2 -right-2">{badge}</span>}
     </button>
-  );
-}
-
-// A rounded box with a divider near one side, like claude.ai's sidebar icon.
-function SidebarIcon({ side }: { side: "left" | "right" }) {
-  return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
-      <rect x="2" y="2.5" width="12" height="11" rx="2" />
-      <path d={side === "left" ? "M6 2.5v11" : "M10 2.5v11"} />
-    </svg>
   );
 }
