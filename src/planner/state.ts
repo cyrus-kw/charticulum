@@ -7,6 +7,8 @@
 // produces a new object, which is how React knows something changed.
 import {
   applyExternalEquivalents,
+  compareSlots,
+  slotBeside,
   buildChart,
   checkChart,
   forkTemplate,
@@ -26,6 +28,7 @@ import {
   type LoadedSchool,
   type Override,
   type Requirements,
+  type Season,
   type TemplateRef,
   type Term,
 } from "../engine/index";
@@ -63,6 +66,8 @@ export type PlannerAction =
   | { type: "move"; objectId: string; termIndex: number; position?: number }
   | { type: "remove"; objectId: string }
   | { type: "addTerm" }
+  | { type: "removeTerm"; termIndex: number }
+  | { type: "insertTerm"; termIndex: number; side: TermSide; season: Season }
   | { type: "setGrade"; objectId: string; grade: Grade | null }
   | { type: "addExternal"; work: CompletedExternal }
   | { type: "removeExternal"; work: CompletedExternal }
@@ -97,6 +102,76 @@ export function nextTerm(chart: Chart, seasons: LoadedSchool["data"]["calendar"]
     return { index, label: slotLabel(slot), season: slot.season, year: slot.year, objectIds: [] };
   }
   return { index, label: `Term ${index}`, objectIds: [] };
+}
+
+// Number the terms 1, 2, 3, ... in order, with no gaps (Pre-Credit stays
+// 0). A plain "Term 4" label is renamed to match its new number; a term
+// with a season and year keeps its label.
+function renumber(terms: Term[]): Term[] {
+  let next = 1;
+  return terms.map((t) => {
+    if (t.index === EXTERNAL_TERM) return t;
+    const index = next++;
+    const label = t.label === `Term ${t.index}` ? `Term ${index}` : t.label;
+    return { ...t, index, label };
+  });
+}
+
+// Can this term be removed? Not Pre-Credit, and not the only term left.
+export function canRemoveTerm(chart: Chart, termIndex: number): boolean {
+  const planned = chart.terms.filter((t) => t.index !== EXTERNAL_TERM);
+  return planned.length > 1 && planned.some((t) => t.index === termIndex);
+}
+
+// The chart without one term. Its courses come off the chart with it, and
+// the terms after it are renumbered. Each term keeps its season and year,
+// so removing Spring 2027 leaves a plan that skips that semester.
+export function removeTerm(chart: Chart, termIndex: number): Chart {
+  if (!canRemoveTerm(chart, termIndex)) return chart;
+  return { ...chart, terms: renumber(chart.terms.filter((t) => t.index !== termIndex)) };
+}
+
+export type TermSide = "before" | "after";
+
+// The new, empty term that adding `season` right before or after a term
+// would make (the nearest such season in the calendar), or why it can't
+// be added there. The terms stay in calendar order, so the new one has to
+// fit between the term and its neighbor: after Spring 2027, with Fall 2027
+// next, only Summer 2027 fits. Pre-Credit can't have terms beside it.
+export function termBeside(
+  chart: Chart,
+  termIndex: number,
+  side: TermSide,
+  season: Season,
+): { term: Term } | { reason: string } {
+  const planned = chart.terms.filter((t) => t.index !== EXTERNAL_TERM);
+  const at = planned.findIndex((t) => t.index === termIndex);
+  if (at === -1) return { reason: "Terms can only be added beside a planned term." };
+  const from = planned[at];
+  const name = season[0].toUpperCase() + season.slice(1);
+  // Without a season and year there's no calendar to place it in.
+  if (!from.season || from.year === undefined) {
+    return { term: { index: -1, label: name, season, objectIds: [] } };
+  }
+  const slot = slotBeside({ season: from.season, year: from.year }, season, side);
+  const neighbor = planned[side === "after" ? at + 1 : at - 1];
+  if (neighbor?.season && neighbor.year !== undefined) {
+    const order = compareSlots(slot, { season: neighbor.season, year: neighbor.year });
+    if (order === 0) return { reason: `${slotLabel(slot)} is already in the plan.` };
+    if (side === "after" ? order > 0 : order < 0) {
+      return { reason: `${slotLabel(slot)} would come ${side} ${neighbor.label}.` };
+    }
+  }
+  return { term: { index: -1, label: slotLabel(slot), season: slot.season, year: slot.year, objectIds: [] } };
+}
+
+// The chart with a new, empty term right before or after another one (see
+// termBeside). Unchanged if the term can't go there.
+export function insertTerm(chart: Chart, termIndex: number, side: TermSide, season: Season): Chart {
+  const beside = termBeside(chart, termIndex, side, season);
+  if (!("term" in beside)) return chart;
+  const at = chart.terms.findIndex((t) => t.index === termIndex) + (side === "after" ? 1 : 0);
+  return { ...chart, terms: renumber([...chart.terms.slice(0, at), beside.term, ...chart.terms.slice(at)]) };
 }
 
 export function plannerReducer(state: PlannerState, action: PlannerAction): PlannerState {
@@ -220,6 +295,20 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
 
     case "addTerm":
       return withChart({ ...chart, terms: [...chart.terms, nextTerm(chart, school.data.calendar.seasons)] });
+
+    case "removeTerm": {
+      const next = removeTerm(chart, action.termIndex);
+      if (next === chart) return state;
+      // Unselect a course that left the chart with its term.
+      const removed = chart.terms.find((t) => t.index === action.termIndex)?.objectIds ?? [];
+      const selectedId = state.selectedId && removed.includes(state.selectedId) ? null : state.selectedId;
+      return { ...withChart(next), selectedId };
+    }
+
+    case "insertTerm": {
+      const next = insertTerm(chart, action.termIndex, action.side, action.season);
+      return next === chart ? state : withChart(next);
+    }
 
     case "setGrade": {
       const grades = { ...chart.grades };

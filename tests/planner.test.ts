@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 import { loadSchool, parseSchoolData } from "../src/engine/index";
 import { sampleSchoolData } from "../src/fixtures/sampleSchool";
 import { chartLayout, termIndexAt, COLUMN_WIDTH } from "../src/planner/layout";
-import { derive, initialState, nextTerm, plannerReducer, type PlannerState } from "../src/planner/state";
+import { derive, initialState, nextTerm, plannerReducer, removeTerm, termBeside, type PlannerState } from "../src/planner/state";
+import { chartOf } from "./helpers";
 
 function sampleState(): PlannerState {
   const parsed = parseSchoolData(sampleSchoolData);
@@ -74,6 +75,85 @@ describe("plannerReducer", () => {
   it("adds the next calendar term", () => {
     const state = plannerReducer(sampleState(), { type: "addTerm" });
     expect(state.chart.terms.at(-1)?.label).toBe("Spring 2029");
+  });
+
+  it("removes a term and its courses, renumbering the rest", () => {
+    // Term 2 is Spring 2027 in the sample plan.
+    let state = plannerReducer(sampleState(), { type: "select", objectId: "CS102" });
+    state = plannerReducer(state, { type: "removeTerm", termIndex: 2 });
+    expect(state.chart.terms.map((t) => [t.index, t.label])).toEqual([
+      [0, "Pre-Credit"],
+      [1, "Fall 2026"],
+      [2, "Fall 2027"],
+      [3, "Spring 2028"],
+      [4, "Fall 2028"],
+    ]);
+    // The rest keep their season and year (the plan now skips a semester).
+    expect(state.chart.terms[2]).toMatchObject({ season: "fall", year: 2027 });
+    expect(termWith(state, "CS102")).toBeUndefined();
+    expect(state.selectedId).toBeNull();
+    expect(derive(state).check.issues.map((i) => i.code)).toContain("MISSING_REQUIRED_OBJECT");
+  });
+
+  it("renames plain numbered terms to match their new number", () => {
+    const chart = removeTerm(chartOf([[], ["A"], ["B"], ["C"]]), 1);
+    expect(chart.terms.map((t) => [t.index, t.label, t.objectIds])).toEqual([
+      [0, "Term 0", []],
+      [1, "Term 1", ["B"]],
+      [2, "Term 2", ["C"]],
+    ]);
+  });
+
+  it("won't remove Pre-Credit or the last remaining term", () => {
+    const state = sampleState();
+    expect(plannerReducer(state, { type: "removeTerm", termIndex: 0 })).toBe(state);
+    const one = chartOf([[], ["A"]]);
+    expect(removeTerm(one, 1)).toBe(one);
+    expect(removeTerm(one, 7)).toBe(one);
+  });
+
+  it("adds a semester right after another, in the gap before the next", () => {
+    // Sample plan: Fall 2026, Spring 2027, Fall 2027, Spring 2028, Fall 2028.
+    const state = plannerReducer(sampleState(), { type: "insertTerm", termIndex: 2, side: "after", season: "summer" });
+    expect(state.chart.terms.map((t) => [t.index, t.label])).toEqual([
+      [0, "Pre-Credit"],
+      [1, "Fall 2026"],
+      [2, "Spring 2027"],
+      [3, "Summer 2027"],
+      [4, "Fall 2027"],
+      [5, "Spring 2028"],
+      [6, "Fall 2028"],
+    ]);
+    expect(state.chart.terms[3]).toMatchObject({ season: "summer", year: 2027, objectIds: [] });
+    // The courses keep their semesters.
+    expect(state.chart.terms[4].objectIds).toContain("CS201");
+  });
+
+  it("only offers semesters that fit between a term and its neighbor", () => {
+    const chart = sampleState().chart;
+    // After Spring 2027 (Fall 2027 is next).
+    expect(termBeside(chart, 2, "after", "fall")).toEqual({ reason: "Fall 2027 is already in the plan." });
+    expect(termBeside(chart, 2, "after", "winter")).toEqual({ reason: "Winter 2028 would come after Fall 2027." });
+    // Before Fall 2026 (the first term), anything earlier fits.
+    expect(termBeside(chart, 1, "before", "summer")).toMatchObject({ term: { label: "Summer 2026" } });
+    expect(termBeside(chart, 1, "before", "fall")).toMatchObject({ term: { label: "Fall 2025" } });
+    // After the last term, Fall 2028.
+    expect(termBeside(chart, 5, "after", "winter")).toMatchObject({ term: { label: "Winter 2029" } });
+    // Nothing goes beside Pre-Credit.
+    expect(termBeside(chart, 0, "after", "fall")).toHaveProperty("reason");
+  });
+
+  it("fills a gap left by a removed semester", () => {
+    let state = plannerReducer(sampleState(), { type: "removeTerm", termIndex: 2 });
+    state = plannerReducer(state, { type: "insertTerm", termIndex: 2, side: "before", season: "spring" });
+    expect(state.chart.terms.map((t) => t.label)).toEqual([
+      "Pre-Credit", "Fall 2026", "Spring 2027", "Fall 2027", "Spring 2028", "Fall 2028",
+    ]);
+  });
+
+  it("ignores a semester that doesn't fit", () => {
+    const state = sampleState();
+    expect(plannerReducer(state, { type: "insertTerm", termIndex: 2, side: "after", season: "fall" })).toBe(state);
   });
 
   it("moves outside credit into Pre-Credit", () => {

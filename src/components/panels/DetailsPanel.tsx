@@ -106,7 +106,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             <dd className={tagList}>
               {availability.seasons.length > 0 ? (
                 availability.seasons.map((season) => (
-                  <Badge key={season} tone={season === "winter" ? "neutral" : season}>
+                  <Badge key={season} tone={season}>
                     {season}
                   </Badge>
                 ))

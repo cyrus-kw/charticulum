@@ -53,8 +53,9 @@ export interface ExternalEquivalent {
 
 export type Season = "winter" | "spring" | "summer" | "fall";
 
-// The seasons a course runs in when a school doesn't say otherwise.
-export const EVERY_TERM: Season[] = ["spring", "summer", "fall"];
+// The seasons a course runs in when a school doesn't say otherwise, in
+// calendar order (winter is January).
+export const EVERY_TERM: Season[] = ["winter", "spring", "summer", "fall"];
 
 // When an object is offered. Seasons are always listed out (rather than
 // leaving the field out to mean "any"), so the data says exactly what it

@@ -100,6 +100,16 @@ describe("chartLayout look", () => {
     );
   });
 
+  it("gives each term header its season", () => {
+    const catalog = createCatalog([]);
+    const chart = chartOf([[], [], [], [], []]);
+    chart.terms[2] = { ...chart.terms[2], season: "summer", year: 2027 };
+    chart.terms[4] = { ...chart.terms[4], season: "winter", year: 2028 };
+    const { nodes } = chartLayout(catalog, chart, [], {}, 12);
+    const terms = nodes.flatMap((n) => (n.type === "term" ? [n.data] : []));
+    expect(terms.map((t) => t.season)).toEqual([undefined, undefined, "summer", undefined, "winter"]);
+  });
+
   it("colors lines by the course they start from, never in the broken red", () => {
     const { edges, nodes } = sampleLayout();
     for (const edge of edges) {

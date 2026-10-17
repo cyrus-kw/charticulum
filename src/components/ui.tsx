@@ -74,7 +74,9 @@ export const inputClass =
 
 // The tint for courses offered in only one season: the chart's cards and
 // the tags in the details use the same.
-export const SEASON_TINT: Partial<Record<Season, string>> = {
+export const SEASON_TINT: Record<Season, string> = {
+  // Baby blue, the same as an "info" tag.
+  winter: "bg-sky-100 dark:bg-sky-950",
   // In dark mode a deep orange, as dark as the spring and summer shades.
   fall: "bg-orange-100 dark:bg-[#4f2a08]",
   // The same green as a "good" tag (e.g. the Issues count at 0).
@@ -92,7 +94,7 @@ export function Badge({
   square = false,
 }: {
   children: ReactNode;
-  tone?: "neutral" | "bad" | "good" | "info" | "fall" | "spring" | "summer";
+  tone?: "neutral" | "bad" | "good" | "info" | Season;
   // A square for an icon or a single digit (wider only if it must be).
   square?: boolean;
 }) {
@@ -106,6 +108,7 @@ export function Badge({
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",
         tone === "info" && "bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300",
+        tone === "winter" && cn(SEASON_TINT.winter, "text-sky-800 dark:text-sky-300"),
         tone === "fall" && cn(SEASON_TINT.fall, "text-orange-800 dark:text-orange-300"),
         tone === "spring" && cn(SEASON_TINT.spring, "text-emerald-800 dark:text-emerald-300"),
         tone === "summer" && cn(SEASON_TINT.summer, "text-yellow-800 dark:text-yellow-300"),

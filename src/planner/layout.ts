@@ -108,10 +108,15 @@ export type CourseNodeData = {
 };
 
 export type TermNodeData = {
+  // The term's number in the chart (term.index).
+  index: number;
   label: string;
   credits: number;
   maxCredits: number;
   external: boolean;
+  // The term's season, if it has one: its header is tinted in the
+  // season's color, so each term reads as fall, spring, summer, or winter.
+  season?: Season;
   // Every other stripe is shaded so terms are easy to tell apart.
   shaded: boolean;
   height: number;
@@ -192,10 +197,12 @@ export function chartLayout(
     type: "term",
     position: { x: column * columnWidth, y: 0 },
     data: {
+      index: term.index,
       label: term.index === EXTERNAL_TERM ? EXTERNAL_TERM_LABEL : term.label,
       credits: creditsByTerm[term.index] ?? 0,
       maxCredits,
       external: term.index === EXTERNAL_TERM,
+      ...(term.season && { season: term.season }),
       shaded: column % 2 === 1,
       height: stripeHeight,
     },

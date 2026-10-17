@@ -3,7 +3,7 @@
 // so the files can be reorganized without breaking anything outside.
 export * from "./types";
 export { createCatalog, satisfies } from "./catalog";
-export { isOffered, slotLabel, termCalendar, type CalendarSlot } from "./availability";
+export { compareSlots, isOffered, slotBeside, slotLabel, termCalendar, type CalendarSlot } from "./availability";
 export { validateChart } from "./validate";
 export { evaluateRequirements, type RequirementReport } from "./requirements";
 export { applyExternalEquivalents, externalPlacements } from "./equivalents";

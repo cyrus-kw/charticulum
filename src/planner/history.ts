@@ -15,6 +15,8 @@ const UNDOABLE = new Set<PlannerAction["type"]>([
   "move",
   "remove",
   "addTerm",
+  "removeTerm",
+  "insertTerm",
   "setGrade",
   "addExternal",
   "removeExternal",

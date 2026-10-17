@@ -19,8 +19,8 @@ import {
   type NodeTypes,
   type ReactFlowInstance,
 } from "@xyflow/react";
-import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
-import type { Catalog, Chart, ChartIssue } from "../engine/index";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
+import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "../engine/index";
 import {
   chartLayout,
   edgeEndpoints,
@@ -54,6 +54,7 @@ import {
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
 import { FitIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
+import { ADD_MENU_WIDTH, AddTermMenu, canAddInGap, TermMenu, type TermChange, type TermGap } from "./TermMenu";
 import { useTheme } from "./theme";
 import { cn, SEASON_TINT } from "./ui";
 
@@ -219,25 +220,128 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
   );
 }
 
+// What a term header needs from the chart for its + buttons: the chart (to
+// tell whether a semester fits), the header the pointer is over (a + only
+// shows beside it), and how to open the add menu. React Flow draws the header itself (from nodeTypes below), so these
+// can't be passed in as props; a context hands them down instead.
+const TermHeaderContext = createContext<{
+  chart: Chart;
+  hoveredHeader: number | null;
+  // The + the pointer is on (see gapKey), if any.
+  hoveredPlus: string | null;
+  setHoveredPlus: (key: string | null) => void;
+  onAdd?: (gap: TermGap, anchor: DOMRect) => void;
+} | null>(null);
+
+// Names a gap, so the + the pointer is on can be told apart from the rest.
+const gapKey = (gap: TermGap) => `${gap.after}:${gap.before}`;
+
+// A + on a term header's edge: opens the menu to add a semester in that
+// gap (between two terms, or at either end of the chart). It only shows
+// while the pointer is over a header next to it (and, while the pointer
+// is on a +, only that one shows), and never where nothing would fit.
+// `place` says where it sits: on the line between two columns, or just
+// inside the chart's left or right end (so it isn't cut off).
+function AddButton({ gap, neighbors, place }: { gap: TermGap; neighbors: number[]; place: "between" | "left" | "right" }) {
+  const context = useContext(TermHeaderContext);
+  if (!context?.onAdd) return null;
+  const { chart, hoveredHeader, hoveredPlus, setHoveredPlus, onAdd } = context;
+  const key = gapKey(gap);
+  const shown = hoveredPlus !== null ? hoveredPlus === key : hoveredHeader !== null && neighbors.includes(hoveredHeader);
+  if (!shown || !canAddInGap(chart, gap)) return null;
+  const label = (index: number | null) => chart.terms.find((t) => t.index === index)?.label;
+  const name =
+    gap.after !== null && gap.before !== null
+      ? `Add a semester between ${label(gap.after)} and ${label(gap.before)}`
+      : gap.after !== null
+        ? `Add a semester after ${label(gap.after)}`
+        : `Add before ${label(gap.before)}`;
+  return (
+    // The stripe ignores the pointer (see globals.css), so the button turns
+    // it back on for itself. "nodrag nopan" tells React Flow a click here
+    // is a click, not the start of a drag or a pan.
+    <button
+      type="button"
+      title={name}
+      aria-label={name}
+      onClick={(e) => onAdd(gap, e.currentTarget.getBoundingClientRect())}
+      onPointerEnter={() => setHoveredPlus(key)}
+      onPointerLeave={() => setHoveredPlus(null)}
+      className={cn(
+        "nodrag nopan pointer-events-auto absolute top-1/2 z-10 flex size-5 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 shadow-sm hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white",
+        place === "between" && "left-0 -translate-x-1/2",
+        place === "left" && "left-1",
+        place === "right" && "right-1",
+      )}
+    >
+      <span className="scale-75">
+        <PlusIcon />
+      </span>
+    </button>
+  );
+}
+
+// A planned term's + buttons: one on its left edge (between it and the
+// column before it, or the chart's left end), and, for the last term, one
+// on its right edge.
+function TermAddButtons({ termIndex }: { termIndex: number }) {
+  const context = useContext(TermHeaderContext);
+  if (!context) return null;
+  const { terms } = context.chart;
+  const at = terms.findIndex((t) => t.index === termIndex);
+  const previous = terms[at - 1];
+  // Nothing goes between Pre-Credit and the first term but semesters, so
+  // that gap counts as the left end (see TermGap).
+  const after = previous && previous.index !== EXTERNAL_TERM ? previous.index : null;
+  const last = at === terms.length - 1;
+  return (
+    <>
+      <AddButton
+        gap={{ after, before: termIndex }}
+        neighbors={previous ? [previous.index, termIndex] : [termIndex]}
+        place={previous ? "between" : "left"}
+      />
+      {last && <AddButton gap={{ after: termIndex, before: null }} neighbors={[termIndex]} place="right" />}
+    </>
+  );
+}
+
 // A term's header. The shaded band behind the term is drawn by TermBands,
 // so it can fill the canvas from top to bottom.
 function TermStripe({ data, width }: NodeProps<TermNode>) {
   const over = !data.external && data.credits > data.maxCredits;
   return (
-    <div style={{ width: width ?? COLUMN_WIDTH, height: data.height }} className="px-1 pt-3 text-center">
-      <div className="truncate text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
-      <div className={cn("truncate text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-500 dark:text-zinc-400")}>
-        {data.credits}
-        {!data.external && ` / ${data.maxCredits}`} credits
+    <div style={{ width: width ?? COLUMN_WIDTH, height: data.height }}>
+      {/* The title and credits. The season color behind them is drawn by
+          TermBands, with the stripes, so its edges line up with theirs
+          exactly. The + buttons sit on this row's edges; each header is
+          drawn after the one to its left, so a + shows on top of both. */}
+      <div className="relative px-2 pt-3 text-center" style={{ height: TITLE_HEIGHT }}>
+        {!data.external && <TermAddButtons termIndex={data.index} />}
+        <div className="truncate text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
+        <div className={cn("truncate text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-600 dark:text-zinc-400")}>
+          {data.credits}
+          {!data.external && ` / ${data.maxCredits}`} credits
+        </div>
       </div>
     </div>
   );
 }
 
-// The alternating term bands, filling the whole height of the canvas. They
-// follow panning and zooming sideways, and sit under the lines and cards.
+// The height of the row of term titles (title and credits), in pixels.
+const TITLE_HEIGHT = 54;
+
+// The alternating term bands, filling the whole height of the canvas, and
+// the season color behind each term's title. They follow panning and
+// zooming, and sit under the lines and cards (and the titles' text).
+//
+// The title colors are drawn here rather than in the term headers so that
+// they're placed exactly like the stripes: React Flow places the headers
+// itself, and the browser can round its positions a fraction of a pixel
+// differently, which showed as a title block not quite lining up with its
+// stripe.
 function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWidth: number }) {
-  const { x } = useViewport();
+  const { x, y } = useViewport();
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
       {terms.map((term, column) => (
@@ -254,6 +358,22 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
           style={{ left: x + column * columnWidth, width: columnWidth }}
         />
       ))}
+      {terms.map(
+        (term, column) =>
+          term.season &&
+          !term.external && (
+            <div
+              key={`title-${column}`}
+              className={cn("absolute", SEASON_TINT[term.season])}
+              // 1px wider than the column, under the next title's color:
+              // columns can start at a fraction of a pixel, and without the
+              // overlap the blurred edges leave a thin dark seam between
+              // two titles. (The stripes can't overlap like this: they're
+              // see-through, so an overlap would show as a lighter line.)
+              style={{ left: x + column * columnWidth, top: y, width: columnWidth + 1, height: TITLE_HEIGHT }}
+            />
+          ),
+      )}
     </div>
   );
 }
@@ -394,6 +514,9 @@ function Legend() {
       <span className={item}>{line(false, BROKEN_EDGE_COLOR)} out of order</span>
       {/* Swatches use the cards' own tints, so the two always match. */}
       <span className={item}>
+        {swatch(cn(SEASON_TINT.winter, "border-sky-300 dark:border-sky-800"))} winter only
+      </span>
+      <span className={item}>
         {swatch(cn(SEASON_TINT.fall, "border-orange-300 dark:border-orange-800"))} fall only
       </span>
       <span className={item}>
@@ -422,6 +545,9 @@ export interface ChartFlowProps {
   // `position`: where in the term's top-to-bottom order it was dropped.
   onMove: (objectId: string, termIndex: number, position: number) => void;
   onSelect: (objectId: string | null) => void;
+  // Add or remove a term (from the menu a term's column opens when
+  // right-clicked).
+  onTermChange?: (change: TermChange) => void;
   // Changes when a whole new plan appears: lay it out fresh.
   layoutVersion?: number;
   // Identifies this version of the plan (the same object whenever undo or
@@ -433,8 +559,6 @@ export interface ChartFlowProps {
   topRight?: ReactNode;
   // Shown just right of undo/redo (the plan's name).
   title?: ReactNode;
-  // A row of buttons above the top-right boxes, lined up on the right.
-  toolbar?: ReactNode;
   // Undo/redo (buttons in the top-left corner).
   canUndo?: boolean;
   canRedo?: boolean;
@@ -451,12 +575,12 @@ export function ChartFlow({
   selectedId,
   onMove,
   onSelect,
+  onTermChange,
   layoutVersion = 0,
   planVersion = chart,
   topLeft,
   topRight,
   title,
-  toolbar,
   canUndo = false,
   canRedo = false,
   onUndo = () => {},
@@ -600,6 +724,44 @@ export function ChartFlow({
   const contentWidth = columns * geometry.columnWidth;
   const contentHeight = termData[0]?.height ?? 0;
   const flow = useRef<ReactFlowInstance<PlannerNode, PlannerEdge> | null>(null);
+
+  // The menu opened by right-clicking a term's column, and where.
+  const [termMenu, setTermMenu] = useState<{ termIndex: number; x: number; y: number } | null>(null);
+  // The menu opened by a + between two terms, and where (under the +).
+  const [addMenu, setAddMenu] = useState<{ gap: TermGap; x: number; y: number } | null>(null);
+  // The term whose header (title row) the pointer is over, if any.
+  const [hoveredHeader, setHoveredHeader] = useState<number | null>(null);
+  const [hoveredPlus, setHoveredPlus] = useState<string | null>(null);
+  const termHeader = useMemo(
+    () => ({
+      chart,
+      hoveredHeader,
+      hoveredPlus,
+      setHoveredPlus,
+      onAdd: onTermChange
+        ? (gap: TermGap, anchor: DOMRect) => {
+            // Centered under the +, but kept over the chart (not the
+            // sidebar) when the + is at the chart's left or right end.
+            const bounds = wrapper.current?.getBoundingClientRect();
+            const half = ADD_MENU_WIDTH / 2 + 8;
+            let x = anchor.left + anchor.width / 2;
+            if (bounds) x = Math.min(Math.max(x, bounds.left + half), bounds.right - half);
+            setAddMenu({ gap, x, y: anchor.bottom + 6 });
+          }
+        : undefined,
+    }),
+    [chart, hoveredHeader, hoveredPlus, onTermChange],
+  );
+  // The term whose column is at this point on the screen. The stripes
+  // ignore the pointer (so the chart can be panned by dragging them), so
+  // the point is turned into a column number instead.
+  // With `headerOnly`, only a point in the row of term titles counts.
+  const termAtPointer = (clientX: number, clientY: number, headerOnly = false): number | null => {
+    const point = flow.current?.screenToFlowPosition({ x: clientX, y: clientY });
+    if (!point) return null;
+    if (headerOnly && (point.y < 0 || point.y > HEADER_HEIGHT)) return null;
+    return chart.terms[Math.floor(point.x / geometry.columnWidth)]?.index ?? null;
+  };
   // A plan shorter than the canvas sits in its vertical middle; a taller
   // one starts at the top and scrolls. It's centered when first drawn, when
   // the canvas is resized, and for a whole new plan, but not after each
@@ -673,227 +835,246 @@ export function ChartFlow({
   }, [zoomTo, zoom]);
 
   return (
-    <div ref={wrapper} className="relative h-full w-full">
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        nodeTypes={nodeTypes}
-        edgeTypes={edgeTypes}
-        onNodesChange={onNodesChange}
-        onNodeDragStart={(_, node) => {
-          if (node.type !== "course") return;
-          // Courses taken together with this one in its term move with it.
-          const term = chart.terms.find((t) => t.objectIds.includes(node.id));
-          const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
-          const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
-          drag.current = {
-            id: node.id,
-            termIndex: term?.index,
-            termIds: term?.objectIds ?? [],
-            block,
-            start: home,
-            previewIndex: null,
-            previewKey: null,
-          };
-          // The course being moved is the selected one, so its details show.
-          // (No click follows a real drag, so this isn't undone by one.)
-          onSelect(node.id);
-          // Trace the course being moved (not whatever it passes over), and
-          // keep it above the other cards while it moves.
-          setHoveredId(node.id);
-          setNodes((nodes) => nodes.map((n) => (block.includes(n.id) ? { ...n, zIndex: DRAGGING_Z } : n)));
+    <TermHeaderContext.Provider value={termHeader}>
+      <div
+        ref={wrapper}
+        className="relative h-full w-full"
+        onPointerMove={(e) => setHoveredHeader(drag.current ? null : termAtPointer(e.clientX, e.clientY, true))}
+        onPointerLeave={() => setHoveredHeader(null)}
+        onContextMenu={(e) => {
+          // Right-clicking a term's column (not a card or a floating
+          // panel) opens the term menu instead of the browser's own.
+          const target = e.target as HTMLElement;
+          if (!onTermChange || target.closest(".react-flow__node-course, .react-flow__panel")) return;
+          const termIndex = termAtPointer(e.clientX, e.clientY);
+          if (termIndex === null) return;
+          e.preventDefault();
+          setTermMenu({ termIndex, x: e.clientX, y: e.clientY });
         }}
-        onNodeDrag={(_, node) => {
-          const current = drag.current;
-          if (!current) return;
-          const start = current.start.get(node.id)!;
-          const overOwnTerm = termIndexAt(chart, node.position.x, geometry) === current.termIndex;
-          const dx = node.position.x - start.x;
-          const dy = node.position.y - start.y;
+      >
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          nodeTypes={nodeTypes}
+          edgeTypes={edgeTypes}
+          onNodesChange={onNodesChange}
+          onNodeDragStart={(_, node) => {
+            if (node.type !== "course") return;
+            // Courses taken together with this one in its term move with it.
+            const term = chart.terms.find((t) => t.objectIds.includes(node.id));
+            const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
+            const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
+            drag.current = {
+              id: node.id,
+              termIndex: term?.index,
+              termIds: term?.objectIds ?? [],
+              block,
+              start: home,
+              previewIndex: null,
+              previewKey: null,
+            };
+            // The course being moved is the selected one, so its details show.
+            // (No click follows a real drag, so this isn't undone by one.)
+            onSelect(node.id);
+            // Trace the course being moved (not whatever it passes over), and
+            // keep it above the other cards while it moves.
+            setHoveredId(node.id);
+            setNodes((nodes) => nodes.map((n) => (block.includes(n.id) ? { ...n, zIndex: DRAGGING_Z } : n)));
+          }}
+          onNodeDrag={(_, node) => {
+            const current = drag.current;
+            if (!current) return;
+            const start = current.start.get(node.id)!;
+            const overOwnTerm = termIndexAt(chart, node.position.x, geometry) === current.termIndex;
+            const dx = node.position.x - start.x;
+            const dy = node.position.y - start.y;
 
-          // Partners (a lecture and its lab) follow while the card is over
-          // its own term; over another term only the dragged course moves,
-          // and they slide with the rest of the term (below).
-          if (current.block.length > 1 && overOwnTerm) {
-            setNodes((nodes) =>
-              nodes.map((n) => {
-                if (n.id === node.id || !current.block.includes(n.id)) return n;
-                const home = current.start.get(n.id)!;
-                return { ...n, position: { x: home.x + dx, y: home.y + dy } };
-              }),
-            );
-          }
-
-          // The other cards slide to show where it would land. Over its own
-          // term, they open a space there. Over another term, that term
-          // opens a row where it would go and its own term closes up behind
-          // it: the same rule as the drop, so it lands where the space is.
-          let tops: Map<string, number>;
-          let key: string;
-          if (overOwnTerm) {
-            const top = Math.min(...current.block.map((id) => current.start.get(id)!.y)) + dy;
-            const preview = reorderPreview(
-              catalog,
-              current.termIds,
-              current.block,
-              top,
-              { top: HEADER_HEIGHT, rowHeight: ROW_HEIGHT },
-              current.previewIndex,
-            );
-            current.previewIndex = preview.index;
-            key = `own:${preview.index}`;
-            tops = packedTops(preview.order, HEADER_HEIGHT, ROW_HEIGHT);
-          } else {
-            current.previewIndex = null;
-            const termIndex = termIndexAt(chart, node.position.x, geometry);
-            const { target, position } = crossTermDrop(current, node.position.y, termIndex);
-            key = target ? `${termIndex}:${position}` : "none";
-            tops = packedTops(
-              current.termIds.filter((id) => id !== current.id),
-              HEADER_HEIGHT,
-              ROW_HEIGHT,
-            );
-            if (target) {
-              const order = target.objectIds.filter((id) => id !== current.id);
-              order.splice(position, 0, current.id);
-              for (const [id, y] of packedTops(order, HEADER_HEIGHT, ROW_HEIGHT)) tops.set(id, y);
+            // Partners (a lecture and its lab) follow while the card is over
+            // its own term; over another term only the dragged course moves,
+            // and they slide with the rest of the term (below).
+            if (current.block.length > 1 && overOwnTerm) {
+              setNodes((nodes) =>
+                nodes.map((n) => {
+                  if (n.id === node.id || !current.block.includes(n.id)) return n;
+                  const home = current.start.get(n.id)!;
+                  return { ...n, position: { x: home.x + dx, y: home.y + dy } };
+                }),
+              );
             }
-          }
-          if (key === current.previewKey) return;
-          current.previewKey = key;
-          // Every other card goes to its preview spot, or back home.
-          const following = overOwnTerm ? current.block : [current.id];
-          const targets = new Map<string, Point>();
-          for (const id of chart.terms.flatMap((t) => t.objectIds)) {
-            const home = current.start.get(id);
-            if (home && !following.includes(id)) targets.set(id, { x: home.x, y: tops.get(id) ?? home.y });
-          }
-          slideTo(targets);
-        }}
-        onNodeDragStop={(_, node) => {
-          const current = drag.current;
-          drag.current = null;
-          if (node.type !== "course" || !current) return;
-          const termIndex = termIndexAt(chart, node.position.x, geometry);
-          setHoveredId(null);
 
-          if (termIndex === current.termIndex) {
-            // The same rule as the preview, so it lands where the space opened.
-            const dy = node.position.y - current.start.get(node.id)!.y;
-            const top = Math.min(...current.block.map((id) => current.start.get(id)!.y)) + dy;
-            const preview = reorderPreview(
-              catalog,
-              current.termIds,
-              current.block,
-              top,
-              { top: HEADER_HEIGHT, rowHeight: ROW_HEIGHT },
-              current.previewIndex,
-            );
-            const resetZ = (nodes: PlannerNode[]) =>
-              nodes.map((n) => (current.block.includes(n.id) ? { ...n, zIndex: 1 } : n));
-            // Same place in the order, and the term already has no gaps:
-            // nothing to do, so everything slides back. (If it has gaps,
-            // dropping closes them up, like the preview showed.)
-            const packed = packedTops(preview.order, HEADER_HEIGHT, ROW_HEIGHT);
-            const alreadyPacked = current.termIds.every((id) => current.start.get(id)!.y === packed.get(id));
-            if (preview.index === preview.originalIndex && alreadyPacked) {
+            // The other cards slide to show where it would land. Over its own
+            // term, they open a space there. Over another term, that term
+            // opens a row where it would go and its own term closes up behind
+            // it: the same rule as the drop, so it lands where the space is.
+            let tops: Map<string, number>;
+            let key: string;
+            if (overOwnTerm) {
+              const top = Math.min(...current.block.map((id) => current.start.get(id)!.y)) + dy;
+              const preview = reorderPreview(
+                catalog,
+                current.termIds,
+                current.block,
+                top,
+                { top: HEADER_HEIGHT, rowHeight: ROW_HEIGHT },
+                current.previewIndex,
+              );
+              current.previewIndex = preview.index;
+              key = `own:${preview.index}`;
+              tops = packedTops(preview.order, HEADER_HEIGHT, ROW_HEIGHT);
+            } else {
+              current.previewIndex = null;
+              const termIndex = termIndexAt(chart, node.position.x, geometry);
+              const { target, position } = crossTermDrop(current, node.position.y, termIndex);
+              key = target ? `${termIndex}:${position}` : "none";
+              tops = packedTops(
+                current.termIds.filter((id) => id !== current.id),
+                HEADER_HEIGHT,
+                ROW_HEIGHT,
+              );
+              if (target) {
+                const order = target.objectIds.filter((id) => id !== current.id);
+                order.splice(position, 0, current.id);
+                for (const [id, y] of packedTops(order, HEADER_HEIGHT, ROW_HEIGHT)) tops.set(id, y);
+              }
+            }
+            if (key === current.previewKey) return;
+            current.previewKey = key;
+            // Every other card goes to its preview spot, or back home.
+            const following = overOwnTerm ? current.block : [current.id];
+            const targets = new Map<string, Point>();
+            for (const id of chart.terms.flatMap((t) => t.objectIds)) {
+              const home = current.start.get(id);
+              if (home && !following.includes(id)) targets.set(id, { x: home.x, y: tops.get(id) ?? home.y });
+            }
+            slideTo(targets);
+          }}
+          onNodeDragStop={(_, node) => {
+            const current = drag.current;
+            drag.current = null;
+            if (node.type !== "course" || !current) return;
+            const termIndex = termIndexAt(chart, node.position.x, geometry);
+            setHoveredId(null);
+
+            if (termIndex === current.termIndex) {
+              // The same rule as the preview, so it lands where the space opened.
+              const dy = node.position.y - current.start.get(node.id)!.y;
+              const top = Math.min(...current.block.map((id) => current.start.get(id)!.y)) + dy;
+              const preview = reorderPreview(
+                catalog,
+                current.termIds,
+                current.block,
+                top,
+                { top: HEADER_HEIGHT, rowHeight: ROW_HEIGHT },
+                current.previewIndex,
+              );
+              const resetZ = (nodes: PlannerNode[]) =>
+                nodes.map((n) => (current.block.includes(n.id) ? { ...n, zIndex: 1 } : n));
+              // Same place in the order, and the term already has no gaps:
+              // nothing to do, so everything slides back. (If it has gaps,
+              // dropping closes them up, like the preview showed.)
+              const packed = packedTops(preview.order, HEADER_HEIGHT, ROW_HEIGHT);
+              const alreadyPacked = current.termIds.every((id) => current.start.get(id)!.y === packed.get(id));
+              if (preview.index === preview.originalIndex && alreadyPacked) {
+                setNodes(resetZ);
+                slideTo(new Map(current.termIds.map((id) => [id, current.start.get(id)!])));
+                return;
+              }
+              // Placed: the term is packed from the top in its new order,
+              // exactly where the space opened.
+              cancelAnimationFrame(shiftFrame.current);
               setNodes(resetZ);
-              slideTo(new Map(current.termIds.map((id) => [id, current.start.get(id)!])));
+              onMove(node.id, termIndex, preview.index);
               return;
             }
-            // Placed: the term is packed from the top in its new order,
-            // exactly where the space opened.
+            // Moved to another term: only the dragged course goes, into the
+            // order by where it was dropped (never inside a block there).
             cancelAnimationFrame(shiftFrame.current);
-            setNodes(resetZ);
-            onMove(node.id, termIndex, preview.index);
-            return;
-          }
-          // Moved to another term: only the dragged course goes, into the
-          // order by where it was dropped (never inside a block there).
-          cancelAnimationFrame(shiftFrame.current);
-          const { target, position } = crossTermDrop(current, node.position.y, termIndex);
-          if (target) {
-            // The new layout puts every card where the preview showed it.
-            setNodes((nodes) => nodes.map((n) => (n.id === node.id ? { ...n, zIndex: 1 } : n)));
-            onMove(node.id, termIndex, position);
-            return;
-          }
-          // Nowhere to go: every card back to its place.
-          setNodes((nodes) =>
-            nodes.map((n) =>
-              current.start.has(n.id)
-                ? { ...n, position: current.start.get(n.id)!, zIndex: n.type === "course" ? 1 : n.zIndex }
-                : n,
-            ),
-          );
-        }}
-        // Click a course to select it; click it again to deselect it.
-        onNodeClick={(_, node) => {
-          if (node.type === "course") onSelect(node.id === selectedId ? null : node.id);
-        }}
-        // While dragging, cards passed over don't count as pointed at.
-        onNodeMouseEnter={(_, node) => {
-          if (node.type === "course" && !drag.current) setHoveredId(node.id);
-        }}
-        onNodeMouseLeave={() => {
-          if (!drag.current) setHoveredId(null);
-        }}
-        onPaneClick={() => onSelect(null)}
-        nodesConnectable={false}
-        edgesFocusable={false}
-        colorMode={colorScheme}
-        onInit={(instance) => {
-          flow.current = instance;
-        }}
-        // The canvas never scales: zooming changes the column widths instead.
-        defaultViewport={{ x: 0, y: 0, zoom: 1 }}
-        minZoom={1}
-        maxZoom={1}
-        zoomOnScroll={false}
-        zoomOnPinch={false}
-        zoomOnDoubleClick={false}
-        panOnScroll
-        translateExtent={[
-          [0, -centerOffset],
-          [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, (size?.height ?? 0) - centerOffset)],
-        ]}
-      >
-        {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
-        <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
-          <Legend />
-        </FlowPanel>
-        <FlowPanel position="top-left" className="flex items-start gap-2">
-          {topLeft}
-          <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
-          {title}
-        </FlowPanel>
-        {(toolbar || topRight) && (
-          // The toolbar on top, its buttons on the right; below it a row of
-          // boxes, top aligned. Each box scrolls on its own if it's taller
-          // than the chart ("nowheel" keeps the wheel from moving the chart
-          // underneath). Only the buttons and boxes catch clicks: the space
-          // around them lets clicks through to the chart.
-          <FlowPanel
-            position="top-right"
-            className="nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] flex-col items-end gap-2 !pointer-events-none"
-          >
-            {toolbar && <div className="pointer-events-auto flex shrink-0 flex-wrap justify-end gap-2">{toolbar}</div>}
-            {topRight && (
+            const { target, position } = crossTermDrop(current, node.position.y, termIndex);
+            if (target) {
+              // The new layout puts every card where the preview showed it.
+              setNodes((nodes) => nodes.map((n) => (n.id === node.id ? { ...n, zIndex: 1 } : n)));
+              onMove(node.id, termIndex, position);
+              return;
+            }
+            // Nowhere to go: every card back to its place.
+            setNodes((nodes) =>
+              nodes.map((n) =>
+                current.start.has(n.id)
+                  ? { ...n, position: current.start.get(n.id)!, zIndex: n.type === "course" ? 1 : n.zIndex }
+                  : n,
+              ),
+            );
+          }}
+          // Click a course to select it; click it again to deselect it.
+          onNodeClick={(_, node) => {
+            if (node.type === "course") onSelect(node.id === selectedId ? null : node.id);
+          }}
+          // While dragging, cards passed over don't count as pointed at.
+          onNodeMouseEnter={(_, node) => {
+            if (node.type === "course" && !drag.current) setHoveredId(node.id);
+          }}
+          onNodeMouseLeave={() => {
+            if (!drag.current) setHoveredId(null);
+          }}
+          onPaneClick={() => onSelect(null)}
+          nodesConnectable={false}
+          edgesFocusable={false}
+          colorMode={colorScheme}
+          onInit={(instance) => {
+            flow.current = instance;
+          }}
+          // The canvas never scales: zooming changes the column widths instead.
+          defaultViewport={{ x: 0, y: 0, zoom: 1 }}
+          minZoom={1}
+          maxZoom={1}
+          zoomOnScroll={false}
+          zoomOnPinch={false}
+          zoomOnDoubleClick={false}
+          panOnScroll
+          translateExtent={[
+            [0, -centerOffset],
+            [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, (size?.height ?? 0) - centerOffset)],
+          ]}
+        >
+          {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
+          <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
+            <Legend />
+          </FlowPanel>
+          <FlowPanel position="top-left" className="flex items-start gap-2">
+            {topLeft}
+            <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
+            {title}
+          </FlowPanel>
+          {topRight && (
+            // A row of boxes, top aligned. Each box scrolls on its own if
+            // it's taller than the chart ("nowheel" keeps the wheel from
+            // moving the chart underneath). Only the boxes catch clicks: the
+            // space around them lets clicks through to the chart.
+            <FlowPanel
+              position="top-right"
+              className="nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] flex-col items-end gap-2 !pointer-events-none"
+            >
               <div className="flex min-h-0 flex-1 items-start gap-2 *:pointer-events-auto *:max-h-full *:overflow-y-auto">
                 {topRight}
               </div>
-            )}
+            </FlowPanel>
+          )}
+          <FlowPanel position="bottom-left">
+            <ZoomControls
+              zoom={zoom}
+              onZoom={(percent) => zoomTo(percent)}
+              onFit={() => zoomTo(100, 0)}
+            />
           </FlowPanel>
-        )}
-        <FlowPanel position="bottom-left">
-          <ZoomControls
-            zoom={zoom}
-            onZoom={(percent) => zoomTo(percent)}
-            onFit={() => zoomTo(100, 0)}
-          />
-        </FlowPanel>
-        <TermBands terms={termData} columnWidth={geometry.columnWidth} />
-      </ReactFlow>
-    </div>
+          <TermBands terms={termData} columnWidth={geometry.columnWidth} />
+        </ReactFlow>
+      </div>
+      {termMenu && onTermChange && (
+        <TermMenu {...termMenu} chart={chart} onChange={onTermChange} onClose={() => setTermMenu(null)} />
+      )}
+      {addMenu && onTermChange && (
+        <AddTermMenu {...addMenu} chart={chart} onChange={onTermChange} onClose={() => setAddMenu(null)} />
+      )}
+    </TermHeaderContext.Provider>
   );
 }

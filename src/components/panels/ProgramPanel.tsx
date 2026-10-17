@@ -23,6 +23,17 @@ export function ProgramPanel({ state, dispatch }: PanelProps) {
 
   return (
     <Panel title="Programs">
+      {/* The builder lays out every course of the plan's programs so all
+          their rules are met, replacing the current plan. */}
+      <Button
+        variant="primary"
+        className="mb-3 w-full"
+        onClick={() => {
+          if (window.confirm("Replace the current plan with one the builder lays out?")) dispatch({ type: "build" });
+        }}
+      >
+        Build for me
+      </Button>
       <ul className="mb-3 space-y-1 text-sm">
         {pinned.length === 0 && <li className="text-zinc-500">No program yet.</li>}
         {pinned.map((ref) => {

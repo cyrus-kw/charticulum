@@ -43,6 +43,19 @@ export function termCalendar(start: CalendarSlot, seasons: Season[], count: numb
   return slots;
 }
 
+// The nearest `season` before or after a slot: after Spring 2027, summer
+// is Summer 2027 but winter is Winter 2028; before it, fall is Fall 2026.
+export function slotBeside(slot: CalendarSlot, season: Season, side: "before" | "after"): CalendarSlot {
+  const order = CALENDAR_ORDER[season] - CALENDAR_ORDER[slot.season];
+  if (side === "after") return { season, year: order > 0 ? slot.year : slot.year + 1 };
+  return { season, year: order < 0 ? slot.year : slot.year - 1 };
+}
+
+// Which of two slots comes first: negative if `a` is earlier, 0 if equal.
+export function compareSlots(a: CalendarSlot, b: CalendarSlot): number {
+  return a.year - b.year || CALENDAR_ORDER[a.season] - CALENDAR_ORDER[b.season];
+}
+
 export function slotLabel(slot: CalendarSlot): string {
   return `${slot.season[0].toUpperCase()}${slot.season.slice(1)} ${slot.year}`;
 }
