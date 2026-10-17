@@ -10,7 +10,9 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
 
 export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
   return (
-    <section className="border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
+    // A divider between sections; the last one has nothing below it, so
+    // it skips its divider (last:border-b-0).
+    <section className="border-b border-zinc-200 px-4 py-3 last:border-b-0 dark:border-zinc-800">
       {/* A fixed height, so a button here (like Close) doesn't push the
           title down; the button just overhangs a little. */}
       <div className="mb-2 flex h-5 items-center justify-between gap-2">

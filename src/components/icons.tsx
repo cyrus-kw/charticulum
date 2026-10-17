@@ -41,6 +41,16 @@ export function SidebarIcon({ side, open }: { side: "left" | "right"; open: bool
   );
 }
 
+// "Go somewhere else": an arrow leaving the top right of a box.
+export function OpenIcon() {
+  return (
+    <Icon>
+      <path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" />
+      <path d="M15 4h5v5M10 14 20 4" />
+    </Icon>
+  );
+}
+
 // A sun (switch to light mode).
 export function SunIcon() {
   return (

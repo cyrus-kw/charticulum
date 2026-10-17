@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useReducer } from "react";
+import Link from "next/link";
 import { EXTERNAL_TERM, loadSchool } from "../engine/index";
 import { loadSampleSchool } from "../fixtures/sampleSchool";
 import { historyReducer, startHistory } from "../planner/history";
 import { derive, initialState } from "../planner/state";
 import { recallSchool } from "../storage/schoolMemory";
 import { ChartFlow } from "./ChartFlow";
-import { MoonIcon, SunIcon } from "./icons";
+import { MoonIcon, OpenIcon, SunIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
@@ -17,14 +18,14 @@ import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Button, cn } from "./ui";
-import { PanelToggle, SidePanel } from "./SidePanel";
+import { HEADER_BUTTON, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
 import { setTheme, useTheme } from "./theme";
 import { usePanels } from "./usePanels";
 
 // A box lying on the chart, in the same style as its other controls. The
 // box's own border closes off the panel inside.
 const chartBox =
-  "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900 [&>section]:border-b-0";
+  "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900";
 
 export function Planner() {
   // useReducer holds the planner state; dispatch(action) updates it.
@@ -96,9 +97,23 @@ export function Planner() {
           onToggle={() => panels.toggle("left")}
           onResize={(width, done) => panels.setWidth(width, done)}
           heading={
-            <div>
-              <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
-              <p className="text-xs text-zinc-500">Chart your curriculum</p>
+            // flex-1 fills the header, so the dashboard button lands at the
+            // far right, framing the wordmark with the sidebar button.
+            <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
+              <div>
+                <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
+                <p className="text-xs text-zinc-500">Chart your curriculum</p>
+              </div>
+              {/* Link (not <a>) moves to the page without reloading the app. */}
+              <Link
+                href="/dashboard"
+                aria-label="Open dashboard"
+                title="Open dashboard"
+                style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
+                className={HEADER_BUTTON}
+              >
+                <OpenIcon />
+              </Link>
             </div>
           }
         >

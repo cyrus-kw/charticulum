@@ -16,7 +16,11 @@ const KEY_STEP = 16;
 // React Flow's panel margin, so the floating copy lands in the same spot.
 const TOGGLE_INSET = 15;
 // The same height as the chart's button groups (28px buttons + 1px borders).
-const TOGGLE_SIZE = 30;
+export const TOGGLE_SIZE = 30;
+// The toggle's look, shared with other buttons in the sidebar's header
+// (like the dashboard link) so they all match.
+export const HEADER_BUTTON =
+  "flex shrink-0 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-300 dark:hover:bg-zinc-800";
 export const PANEL_HEADER_HEIGHT = TOGGLE_INSET * 2 + TOGGLE_SIZE;
 
 export function SidePanel({
@@ -84,7 +88,9 @@ export function SidePanel({
   };
 
   return (
-    <div className={cn("flex min-h-0 shrink-0", side === "right" && "lg:flex-row-reverse")}>
+    // relative + z-10: the drag handle below sticks out over the chart's
+    // edge, and must sit on top of it to be grabbed there.
+    <div className={cn("relative z-10 flex min-h-0 shrink-0", side === "right" && "lg:flex-row-reverse")}>
       <aside
         id={id}
         aria-label={title}
@@ -104,8 +110,11 @@ export function SidePanel({
           <div
             // +1 for the bottom border, so the toggle is TOGGLE_INSET from the top.
             style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
+            // sticky top-0: the header stays put while the rest scrolls
+            // under it. It needs a solid background (the page's) and z-10
+            // to cover what scrolls beneath.
             className={cn(
-              "flex items-center gap-3 border-b border-zinc-200 dark:border-zinc-800",
+              "sticky top-0 z-10 flex items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
               side === "right" && "flex-row-reverse",
             )}
           >
@@ -122,6 +131,9 @@ export function SidePanel({
 
       {open && (
         // The drag handle on the edge facing the chart (wide screens only).
+        // It's invisible and takes no space: an 8px strip centered on the
+        // sidebar's border line, so pointing at the line shows the resize
+        // cursor without a visible bar beside it.
         <div
           role="separator"
           aria-orientation="vertical"
@@ -133,7 +145,10 @@ export function SidePanel({
           tabIndex={0}
           onPointerDown={startDrag}
           onKeyDown={onKey}
-          className="hidden w-1.5 shrink-0 cursor-col-resize transition-colors hover:bg-sky-500/30 focus-visible:bg-sky-500/50 focus-visible:outline-none lg:block"
+          className={cn(
+            "absolute inset-y-0 hidden w-2 cursor-col-resize focus-visible:bg-sky-500/50 focus-visible:outline-none lg:block",
+            side === "left" ? "right-0 translate-x-1/2" : "left-0 -translate-x-1/2",
+          )}
         />
       )}
     </div>
@@ -170,7 +185,8 @@ export function PanelToggle({
       title={label}
       style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
       className={cn(
-        "group relative flex shrink-0 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-300 dark:hover:bg-zinc-800",
+        "group relative",
+        HEADER_BUTTON,
         // Floating on the chart it needs a background to stand out.
         !open && "border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
       )}

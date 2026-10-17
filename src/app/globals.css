@@ -26,6 +26,32 @@ body {
   background: var(--color-page);
 }
 
+/* One thin, quiet scrollbar everywhere (sidebar, panels, lists), instead
+   of each browser's wide default. The thumb is see-through grey so it
+   works on light and dark backgrounds alike; the track is invisible. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(113 113 122 / 0.4) transparent;
+}
+
+/* Safari ignores the two lines above, so it gets the same look this way. */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(113 113 122 / 0.4);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(113 113 122 / 0.7);
+}
+
 .dark body {
   background: #09090b;
 }
