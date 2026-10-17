@@ -3,11 +3,11 @@
 // color. Add new icons here rather than drawing them inline.
 import type { ReactNode } from "react";
 
-function Icon({ children, flip = false }: { children: ReactNode; flip?: boolean }) {
+function Icon({ children, flip = false, size = 16 }: { children: ReactNode; flip?: boolean; size?: number }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -74,6 +74,15 @@ export function FitIcon() {
     <Icon>
       <path d="m3 6 6 6-6 6" />
       <path d="m21 6-6 6 6 6" />
+    </Icon>
+  );
+}
+
+// A tick: done, met. Drawn smaller inline with text.
+export function CheckIcon({ size = 16 }: { size?: number }) {
+  return (
+    <Icon size={size}>
+      <path d="M20 6 9 17l-5-5" />
     </Icon>
   );
 }

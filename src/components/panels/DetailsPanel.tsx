@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { satisfies, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
-import { askReason, Badge, Button, newId, Panel, Select } from "../ui";
+import { askReason, Badge, Button, CATEGORY_LABELS, newId, Panel, Select } from "../ui";
 import type { PanelProps } from "./types";
 
 const GRADES = Object.keys(GRADE_POINTS) as Grade[];
@@ -42,7 +42,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           <Badge>{object.credits} credits</Badge>
           {object.categories.map((c) => (
             <Badge key={c} tone="info">
-              {c}
+              {CATEGORY_LABELS[c]}
             </Badge>
           ))}
         </div>
