@@ -492,17 +492,6 @@ describe("layout stability across changes", () => {
     for (const [id, color] of colorsOf(before.nodes)) expect(colorsOf(after.nodes).get(id), id).toBe(color);
   });
 
-  it("is reshuffled without memory (so the memory is what keeps it steady)", () => {
-    const { state, layoutOf } = setup();
-    const before = layoutOf(state);
-    const moved = plannerReducer(state, { type: "move", objectId: "HIST110", termIndex: state.chart.terms.at(-1)!.index });
-    const fresh = layoutOf(moved);
-    const steady = layoutOf(moved, before.memory);
-    const changed = (layout: typeof fresh) =>
-      [...positions(before.nodes)].filter(([id, p]) => id !== "HIST110" && positions(layout.nodes).get(id)!.y !== p.y).length;
-    expect(changed(steady)).toBeLessThanOrEqual(changed(fresh));
-  });
-
   it("lays out fresh when most of the plan changes", () => {
     const { state, layoutOf } = setup();
     const before = layoutOf(state);
@@ -521,50 +510,33 @@ describe("layout stability across changes", () => {
     expect(positions(layoutOf(other, before.memory).nodes)).toEqual(positions(layoutOf(other).nodes));
   });
 
-  it("puts a moved course in a free spot without pushing others aside", () => {
-    // Term 1: A, B, C. Term 2: D (needs B). Term 3: P, Q, R (packed).
-    const catalog = createCatalog([
-      obj("A"), obj("B"), obj("C"),
-      obj("D", { previous: ["B"] }),
-      obj("P"), obj("Q"), obj("R"),
-    ]);
-    const before = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "Q", "R"]]), [], {}, 18);
-    const after = chartLayout(catalog, chartOf([[], ["A", "B", "C"], [], ["P", "Q", "R", "D"]]), [], {}, 18, before.memory);
-    const y = (nodes: PlannerNode[], id: string) => nodes.find((n) => n.id === id)!.position.y;
-    // No gap in term 3, so D goes below; nothing else moves.
-    for (const id of ["A", "B", "C", "P", "Q", "R"]) expect(y(after.nodes, id), id).toBe(y(before.nodes, id));
-    expect(y(after.nodes, "D")).toBeGreaterThan(y(before.nodes, "R"));
+  it("closes the gap a moved course leaves, moving only the cards below it", () => {
+    // Term 2: A, X, B, C. X moves to term 3 (P, Q), between P and Q.
+    const catalog = createCatalog([obj("A"), obj("X"), obj("B"), obj("C"), obj("P"), obj("Q"), obj("Z")]);
+    const before = chartLayout(catalog, chartOf([[], ["Z"], ["A", "X", "B", "C"], ["P", "Q"]]), [], {}, 18);
+    const after = chartLayout(catalog, chartOf([[], ["Z"], ["A", "B", "C"], ["P", "X", "Q"]]), [], {}, 18, before.memory);
+    const rows = (layout: typeof before, ids: string[]) =>
+      ids.map((id) => (layout.nodes.find((n) => n.id === id)!.position.y - HEADER_HEIGHT) / ROW_HEIGHT);
+    expect(rows(after, ["A", "B", "C"])).toEqual([0, 1, 2]); // B and C move up
+    expect(rows(after, ["P", "X", "Q"])).toEqual([0, 1, 2]); // Q moves down
+    expect(rows(after, ["Z", "A", "P"])).toEqual(rows(before, ["Z", "A", "P"])); // above: unmoved
   });
 
-  it("puts a dropped course at the height it was dropped, if there's room", () => {
-    // Term 3 starts as P, X, R; X moves out, leaving a gap; D is dropped into it.
-    const catalog = createCatalog([obj("A"), obj("B"), obj("C"), obj("D"), obj("P"), obj("X"), obj("R")]);
-    const first = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "X", "R"], []]), [], {}, 18);
-    const second = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "R"], ["X"]]), [], {}, 18, first.memory);
-    const y = (layout: typeof first, id: string) => layout.nodes.find((n) => n.id === id)!.position.y;
-    // ChartFlow records where a card was dropped in the memory.
-    const memory = { ...second.memory, column: new Map(second.memory.column), y: new Map(second.memory.y) };
-    memory.column.set("D", 3);
-    memory.y.set("D", y(first, "X") - HEADER_HEIGHT);
-    const third = chartLayout(catalog, chartOf([[], ["A", "B", "C"], [], ["P", "D", "R"], ["X"]]), [], {}, 18, memory);
-    expect(y(third, "D")).toBe(y(first, "X"));
-    for (const id of ["A", "B", "C", "P", "R", "X"]) expect(y(third, id), id).toBe(y(second, id));
-  });
-
-  it("packs a reordered term from the top, with no gaps, leaving other terms alone", () => {
-    // Term 1: A, B, C, D (D's requisite sits low, so D starts with a gap above it).
-    const catalog = createCatalog([obj("Z0"), obj("Z1"), obj("Z2"), obj("Z3"), obj("A"), obj("B"), obj("C"), obj("D", { previous: ["Z3"] })]);
-    const before = chartLayout(catalog, chartOf([[], ["Z0", "Z1", "Z2", "Z3"], ["A", "B", "D"]]), [], {}, 18);
-    const y = (layout: typeof before, id: string) => layout.nodes.find((n) => n.id === id)!.position.y;
-    // Drag A to the bottom of term 2 (column 2): pack that term.
-    const memory = { ...before.memory, pack: new Set([2]) };
-    const after = chartLayout(catalog, chartOf([[], ["Z0", "Z1", "Z2", "Z3"], ["B", "D", "A"]]), [], {}, 18, memory);
-    const term2 = ["B", "D", "A"].map((id) => y(after, id) - HEADER_HEIGHT);
-    expect(term2).toEqual([0, ROW_HEIGHT, 2 * ROW_HEIGHT]);
-    for (const id of ["Z0", "Z1", "Z2", "Z3"]) expect(y(after, id), id).toBe(y(before, id));
-    // Packing happens once; the next layout keeps the packed heights.
-    const again = chartLayout(catalog, chartOf([[], ["Z0", "Z1", "Z2", "Z3"], ["B", "D", "A"]]), [], {}, 18, after.memory);
-    expect(["B", "D", "A"].map((id) => y(again, id))).toEqual(["B", "D", "A"].map((id) => y(after, id)));
+  it("never leaves a gap, whatever the memory says", () => {
+    const { state, layoutOf } = setup();
+    let memory = layoutOf(state).memory;
+    let s = state;
+    // Shuffle a few courses around, keeping the memory each time.
+    for (const [id, step] of [["HIST110", -1], ["CS210", 1], ["HIST110", 1], ["CS210", -1]] as const) {
+      const term = s.chart.terms.find((t) => t.objectIds.includes(id))!;
+      s = plannerReducer(s, { type: "move", objectId: id, termIndex: term.index + step });
+      const layout = layoutOf(s, memory);
+      memory = layout.memory;
+      for (const t of derive(s).chart.terms) {
+        const ys = t.objectIds.map((oid) => layout.nodes.find((n) => n.id === oid)!.position.y - HEADER_HEIGHT);
+        expect(ys, `${t.label} after moving ${id}`).toEqual(ys.map((_, k) => k * ROW_HEIGHT));
+      }
+    }
   });
 
   it("lays out a reordered term afresh", () => {

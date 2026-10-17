@@ -111,15 +111,11 @@ interface Link {
   broken: boolean;
 }
 
-// What a layout remembers so the next one can keep things where they were:
-// each course's column and height, and each line color.
+// What a layout remembers so the next one can keep things steady: each
+// course's column (to tell an edit from a new plan) and each line color.
 export interface LayoutMemory {
   column: Map<string, number>;
-  y: Map<string, number>;
   colors: Map<string, string>;
-  // Terms (by column) to pack from the top on the next layout, with no
-  // gaps: set when a term is reordered by dragging. Used once.
-  pack?: Set<number>;
 }
 
 // Reuse the previous arrangement only when at least this share of courses
@@ -147,20 +143,13 @@ export function chartLayout(
   const links = requisiteLinks(catalog, chart, columnOf);
 
   // 2. Cards go top to bottom in each term's order as stored in the chart
-  //    (the user's order; see arrangeChart for a fresh plan's). Courses that
-  //    stayed in their term keep their height from last time, so changes
-  //    elsewhere don't move them.
+  //    (the user's order; see arrangeChart for a fresh plan's), packed from
+  //    the top with no gaps. The order only changes where the user changes
+  //    it, so a move shifts just the cards below it, by one row.
   const stayed = [...columnOf].filter(([id, column]) => previous?.column.get(id) === column).map(([id]) => id);
   const reuse = previous !== undefined && stayed.length >= REUSE_SHARE * columnOf.size;
-  const kept = new Map(reuse ? stayed.map((id) => [id, previous.y.get(id)!]) : []);
-  // A term whose order was changed (a course dragged up or down) is laid
-  // out afresh, so it doesn't keep heights from the old order.
-  columns.forEach((ids) => {
-    const heights = ids.filter((id) => kept.has(id)).map((id) => kept.get(id)!);
-    if (heights.some((h, i) => i > 0 && h < heights[i - 1])) ids.forEach((id) => kept.delete(id));
-  });
   const ordered = columns;
-  const y = placeVertically(ordered, kept, reuse ? previous.pack : undefined);
+  const y = placeVertically(ordered);
 
   // 3. Colors for courses that have outgoing lines; a course keeps its color.
   const colors = assignColors(ordered, links, y, reuse ? previous.colors : undefined);
@@ -246,7 +235,7 @@ export function chartLayout(
   });
 
   // `fresh`: laid out from scratch (a new plan), not kept from last time.
-  return { nodes, edges, memory: { column: columnOf, y, colors }, fresh: !reuse };
+  return { nodes, edges, memory: { column: columnOf, colors }, fresh: !reuse };
 }
 
 // One link from each placed requisite (or an equivalent standing in for it)
@@ -421,26 +410,10 @@ function segmentHitsRect(s: { x1: number; y1: number; x2: number; y2: number }, 
 }
 
 // Vertical positions. Each term is packed from the top, in its order, on
-// whole rows (so courses line up across terms). Cards keep the heights
-// they had before (`kept`) where there's room, so editing one course
-// doesn't move the others; cards never overlap and keep their order.
-function placeVertically(
-  order: string[][],
-  // Heights to keep (from the previous layout), where there's room.
-  kept: Map<string, number> = new Map(),
-  // Columns to pack from the top regardless of kept heights.
-  pack: Set<number> = new Set(),
-): Map<string, number> {
+// whole rows (so courses line up across terms), with no gaps.
+function placeVertically(order: string[][]): Map<string, number> {
   const y = new Map<string, number>();
-  order.forEach((ids, column) => {
-    let next = 0;
-    for (const id of ids) {
-      const wanted = pack.has(column) ? next : (kept.get(id) ?? next);
-      const top = Math.max(next, Math.round(wanted / ROW_HEIGHT) * ROW_HEIGHT);
-      y.set(id, top);
-      next = top + ROW_HEIGHT;
-    }
-  });
+  for (const ids of order) ids.forEach((id, row) => y.set(id, row * ROW_HEIGHT));
   return y;
 }
 

@@ -471,14 +471,6 @@ export function ChartFlow({
     memory.current = layout.memory;
     arrangements.current.set(planVersion, layout.memory);
   }, [layout, planVersion]);
-  // Change the memory for the next layout without touching the saved
-  // arrangement of the current plan version.
-  const editMemory = (change: (next: LayoutMemory) => void) => {
-    if (!memory.current) return;
-    const next = { ...memory.current, column: new Map(memory.current.column), y: new Map(memory.current.y) };
-    change(next);
-    memory.current = next;
-  };
 
   const colorScheme = useColorScheme();
   const termData = useMemo(
@@ -722,8 +714,6 @@ export function ChartFlow({
             // Placed: the term is packed from the top in its new order,
             // exactly where the space opened.
             cancelAnimationFrame(shiftFrame.current);
-            const column = chart.terms.findIndex((t) => t.index === termIndex);
-            if (column >= 0) editMemory((m) => (m.pack = new Set([column])));
             setNodes(resetZ);
             onMove(node.id, termIndex, preview.index);
             return;
@@ -732,7 +722,6 @@ export function ChartFlow({
           // order by where it was dropped (never inside a block there).
           cancelAnimationFrame(shiftFrame.current);
           const target = chart.terms.find((t) => t.index === termIndex);
-          const column = chart.terms.findIndex((t) => t.index === termIndex);
           const start = current.start.get(node.id)!;
           const dy = node.position.y - start.y;
           const homeMiddle = (id: string) => {
@@ -741,15 +730,6 @@ export function ChartFlow({
           };
           const dropMiddle = start.y + dy + NODE_HEIGHT / 2;
           const position = target ? dropIndex(catalog, target.objectIds, [node.id], dropMiddle, homeMiddle) : 0;
-
-          // Remember where it was dropped, so it lands there if there's room
-          // (other terms stay as they are).
-          if (column >= 0) {
-            editMemory((m) => {
-              m.column.set(node.id, column);
-              m.y.set(node.id, start.y + dy - HEADER_HEIGHT);
-            });
-          }
 
           // Snap cards back to their places first (keeping their looks); if the
           // move is valid, the chart update then lays it out anew.
