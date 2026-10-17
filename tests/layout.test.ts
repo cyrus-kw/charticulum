@@ -9,8 +9,6 @@ import {
 import { loadSampleSchool } from "../src/fixtures/sampleSchool";
 import {
   arrangeChart,
-  BOTTOM_RESERVE,
-  MAX_ROW_STRETCH,
   chartLayout,
   courseCode,
   geometryFor,
@@ -603,43 +601,5 @@ describe("horizontal zoom geometry", () => {
     const g = geometryFor(300);
     expect(termIndexAt(chart, 2 * 300 + 40, g)).toBe(2);
     expect(termIndexAt(chart, 0, g)).toBe(1); // never Pre-Credit
-  });
-});
-
-describe("filling the canvas height", () => {
-  const state = initialState(loadSampleSchool(), "bs-cs");
-  const view = derive(state);
-  const at = (fillHeight?: number) =>
-    chartLayout(state.school.catalog, view.chart, [], {}, 12, undefined, {
-      ...geometryFor(212),
-      ...(fillHeight && { fillHeight }),
-    });
-  const lowestBottom = (layout: ReturnType<typeof at>) =>
-    Math.max(...courses(layout.nodes).map((n) => n.position.y + NODE_HEIGHT));
-
-  it("spreads rows down to the bottom, clear of the legend strip", () => {
-    const normal = at();
-    const filled = at(900);
-    expect(filled.rowScale).toBeGreaterThan(1);
-    expect(lowestBottom(filled)).toBeLessThanOrEqual(900 - BOTTOM_RESERVE + 0.5);
-    expect(lowestBottom(filled)).toBeGreaterThan(lowestBottom(normal));
-    // The top row stays put; cards keep their size and order.
-    for (const n of courses(normal.nodes)) {
-      const f = filled.nodes.find((m) => m.id === n.id)!;
-      if (n.position.y === HEADER_HEIGHT) expect(f.position.y).toBe(HEADER_HEIGHT);
-      expect(f.height).toBe(n.height);
-    }
-  });
-
-  it("never stretches past MAX_ROW_STRETCH", () => {
-    expect(at(10_000).rowScale).toBe(MAX_ROW_STRETCH);
-  });
-
-  it("doesn't squeeze rows when the canvas is short", () => {
-    expect(at(200).rowScale).toBe(1);
-  });
-
-  it("keeps its memory at normal spacing", () => {
-    expect(at(900).memory.y).toEqual(at().memory.y);
   });
 });

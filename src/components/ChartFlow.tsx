@@ -378,10 +378,7 @@ export function ChartFlow({
   const [zoom, setZoom] = useState(1);
   const columns = Math.max(chart.terms.length, 1);
   const fillWidth = size ? Math.max(size.width / columns, MIN_COLUMN_WIDTH) : COLUMN_WIDTH;
-  const geometry: Geometry = useMemo(
-    () => ({ ...geometryFor(fillWidth * zoom), ...(size && { fillHeight: size.height }) }),
-    [fillWidth, zoom, size],
-  );
+  const geometry: Geometry = useMemo(() => geometryFor(fillWidth * zoom), [fillWidth, zoom]);
 
   // The previous layout's arrangement, so a change (like moving one course)
   // keeps everything else where it was and every course its color.
@@ -563,8 +560,7 @@ export function ChartFlow({
               // lands there if there's room (other terms stay as they are).
               for (const id of moving) {
                 memory.current.column.set(id, column);
-                // At normal row spacing, like the rest of the memory.
-              memory.current.y.set(id, (current.start.get(id)!.y + dy - HEADER_HEIGHT) / layout.rowScale);
+                memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
               }
             }
           }
