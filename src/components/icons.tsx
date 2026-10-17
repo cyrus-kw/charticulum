@@ -77,12 +77,15 @@ export function PlusIcon() {
 }
 
 // Two chevrons pointing in toward the middle (><): squeeze the chart back
-// to fit the width.
+// to fit the width. It spans x 5–19, the same width as the plus beside it.
+// Its stroke is a little thicker than the other icons' because slanted
+// lines at 16px get spread over neighbouring pixels and look fainter than
+// the plus's straight ones.
 export function FitIcon() {
   return (
     <Icon>
-      <path d="m3 6 6 6-6 6" />
-      <path d="m21 6-6 6 6 6" />
+      <path d="m5 7 5 5-5 5" strokeWidth="2.5" />
+      <path d="m19 7-5 5 5 5" strokeWidth="2.5" />
     </Icon>
   );
 }
