@@ -67,7 +67,8 @@ export const inputClass =
 // the tags in the details use the same.
 export const SEASON_TINT: Partial<Record<Season, string>> = {
   fall: "bg-orange-100 dark:bg-amber-950",
-  spring: "bg-green-100 dark:bg-green-950",
+  // The same green as a "good" tag (e.g. the Issues count at 0).
+  spring: "bg-emerald-100 dark:bg-emerald-950",
 };
 
 // A small tag: capitals like panel titles, but regular weight. Every tag
@@ -89,7 +90,7 @@ export function Badge({
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",
         tone === "info" && "bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300",
         tone === "fall" && cn(SEASON_TINT.fall, "text-orange-800 dark:text-amber-300"),
-        tone === "spring" && cn(SEASON_TINT.spring, "text-green-800 dark:text-green-300"),
+        tone === "spring" && cn(SEASON_TINT.spring, "text-emerald-800 dark:text-emerald-300"),
       )}
     >
       {children}

@@ -395,7 +395,7 @@ function Legend() {
         {swatch("border-orange-300 bg-orange-100 dark:border-amber-800 dark:bg-amber-950")} fall only
       </span>
       <span className={item}>
-        {swatch("border-green-300 bg-green-100 dark:border-green-800 dark:bg-green-950")} spring only
+        {swatch("border-emerald-300 bg-emerald-100 dark:border-emerald-800 dark:bg-emerald-950")} spring only
       </span>
       <span className={item}>
         <b className="font-mono">*</b> minimum grade
