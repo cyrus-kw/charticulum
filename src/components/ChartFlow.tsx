@@ -392,11 +392,15 @@ function Legend() {
       <span className={item}>{line(false)} prerequisite</span>
       <span className={item}>{line(true)} concurrent</span>
       <span className={item}>{line(false, BROKEN_EDGE_COLOR)} out of order</span>
+      {/* Swatches use the cards' own tints, so the two always match. */}
       <span className={item}>
-        {swatch("border-orange-300 bg-orange-100 dark:border-amber-800 dark:bg-amber-950")} fall only
+        {swatch(cn(SEASON_TINT.fall, "border-orange-300 dark:border-orange-800"))} fall only
       </span>
       <span className={item}>
-        {swatch("border-emerald-300 bg-emerald-100 dark:border-emerald-800 dark:bg-emerald-950")} spring only
+        {swatch(cn(SEASON_TINT.spring, "border-emerald-300 dark:border-emerald-800"))} spring only
+      </span>
+      <span className={item}>
+        {swatch(cn(SEASON_TINT.summer, "border-yellow-300 dark:border-yellow-700"))} summer only
       </span>
       <span className={item}>
         <b className="font-mono">*</b> minimum grade

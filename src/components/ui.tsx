@@ -66,12 +66,16 @@ export const inputClass =
 // The tint for courses offered in only one season: the chart's cards and
 // the tags in the details use the same.
 export const SEASON_TINT: Partial<Record<Season, string>> = {
-  fall: "bg-orange-100 dark:bg-amber-950",
+  // In dark mode a deep orange, as dark as the spring and summer shades.
+  fall: "bg-orange-100 dark:bg-[#4f2a08]",
   // The same green as a "good" tag (e.g. the Issues count at 0).
   spring: "bg-emerald-100 dark:bg-emerald-950",
+  // Baby yellow (a soft pastel); in dark mode a deep yellow, since the
+  // stock dark yellows look brown.
+  summer: "bg-[#fff5ba] dark:bg-[#4a3f05]",
 };
 
-// A small tag, in title case ("Every Term", "4 Credits"). Every tag looks
+// A small tag, in title case ("Spring", "4 Credits"). Every tag looks
 // alike. Text given to it is title-cased here, so callers needn't.
 export function Badge({
   children,
@@ -79,7 +83,7 @@ export function Badge({
   square = false,
 }: {
   children: ReactNode;
-  tone?: "neutral" | "bad" | "good" | "info" | "fall" | "spring";
+  tone?: "neutral" | "bad" | "good" | "info" | "fall" | "spring" | "summer";
   // A square for an icon or a single digit (wider only if it must be).
   square?: boolean;
 }) {
@@ -93,8 +97,9 @@ export function Badge({
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",
         tone === "info" && "bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300",
-        tone === "fall" && cn(SEASON_TINT.fall, "text-orange-800 dark:text-amber-300"),
+        tone === "fall" && cn(SEASON_TINT.fall, "text-orange-800 dark:text-orange-300"),
         tone === "spring" && cn(SEASON_TINT.spring, "text-emerald-800 dark:text-emerald-300"),
+        tone === "summer" && cn(SEASON_TINT.summer, "text-yellow-800 dark:text-yellow-300"),
       )}
     >
       {Children.map(children, (child) => (typeof child === "string" ? titleCase(child) : child))}
@@ -102,7 +107,7 @@ export function Badge({
   );
 }
 
-// Capitalize the first letter of each word: "every term" -> "Every Term".
+// Capitalize the first letter of each word: "odd years" -> "Odd Years".
 export function titleCase(text: string): string {
   return text.replace(/(^|[\s-])(\p{Ll})/gu, (_, before: string, letter: string) => before + letter.toUpperCase());
 }
