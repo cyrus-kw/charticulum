@@ -67,7 +67,7 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
 
   return (
     <Panel title="Issues" actions={
-        <Badge tone={all.length ? "bad" : "good"}>
+        <Badge tone={all.length ? "bad" : "good"} square>
           {all.length || (
             <span role="img" aria-label="No issues">
               <CheckIcon size={12} />

@@ -76,14 +76,18 @@ export const SEASON_TINT: Partial<Record<Season, string>> = {
 export function Badge({
   children,
   tone = "neutral",
+  square = false,
 }: {
   children: ReactNode;
   tone?: "neutral" | "bad" | "good" | "info" | "fall" | "spring";
+  // A square for an icon or a single digit (wider only if it must be).
+  square?: boolean;
 }) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded px-1.5 py-0.5 leading-none",
+        "inline-flex items-center rounded leading-none",
+        square ? "h-4 min-w-4 justify-center px-0.5" : "px-1.5 py-0.5",
         "text-xs font-normal",
         tone === "neutral" && "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
