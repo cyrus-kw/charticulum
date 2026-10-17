@@ -66,3 +66,14 @@ export function PlusIcon() {
     </Icon>
   );
 }
+
+// Two chevrons pointing in toward the middle (><): squeeze the chart back
+// to fit the width.
+export function FitIcon() {
+  return (
+    <Icon>
+      <path d="m5 7 5 5-5 5" />
+      <path d="m19 7-5 5 5 5" />
+    </Icon>
+  );
+}
