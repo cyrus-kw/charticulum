@@ -91,7 +91,7 @@ export function SidePanel({
         // exactly where its floating copy will.
         style={{ ["--panel-w" as string]: open ? `${width}px` : "0px", ["--panel-inner" as string]: `${width - 1}px` }}
         className={cn(
-          "overflow-hidden border-zinc-200 lg:w-(--panel-w) dark:border-zinc-800",
+          "overflow-hidden border-line lg:w-(--panel-w) dark:border-zinc-800",
           !dragging && "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
           open ? (side === "left" ? "lg:border-r" : "lg:border-l") : "max-lg:hidden",
         )}

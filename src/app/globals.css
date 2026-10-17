@@ -1,17 +1,33 @@
 @import "tailwindcss";
 
+/* dark: styles apply when <html> has the "dark" class, which the light/dark
+   switch sets (see src/components/theme.ts), instead of always following
+   the system setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light mode's softer surfaces (pure white and black felt too harsh).
+   Tailwind turns each into classes: --color-page gives bg-page, etc. */
+@theme {
+  --color-page: #f8fafd; /* the page behind everything */
+  --color-band: #f0f4f9; /* every other term column */
+  --color-line: #c4c7c5; /* dividers and card outlines */
+  --color-ink: #1f1f1f; /* main text: near-black, not black */
+}
+
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
 }
 
 body {
-  background: #ffffff;
+  background: var(--color-page);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #09090b;
-  }
+.dark body {
+  background: #09090b;
 }
 
 /* Term stripes are background only: clicks and drags pass through to the

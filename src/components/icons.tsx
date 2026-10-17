@@ -41,6 +41,27 @@ export function SidebarIcon({ side, open }: { side: "left" | "right"; open: bool
   );
 }
 
+// A sun (switch to light mode).
+export function SunIcon() {
+  return (
+    <Icon>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+    </Icon>
+  );
+}
+
+// A crescent moon (switch to dark mode): a big arc around the outside and a
+// smaller arc cutting into its top right. The smaller the inner arc, the
+// fatter the crescent; much thinner and it turns to mush at 16px.
+export function MoonIcon() {
+  return (
+    <Icon>
+      <path d="M20.5 12.7A8.5 8.5 0 1 1 11.3 3.5A6.5 6.5 0 0 0 20.5 12.7z" />
+    </Icon>
+  );
+}
+
 // A U-turn arrow: back for undo, forward (flipped) for redo.
 export function UndoIcon() {
   return (

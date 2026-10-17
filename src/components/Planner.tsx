@@ -7,6 +7,7 @@ import { historyReducer, startHistory } from "../planner/history";
 import { derive, initialState } from "../planner/state";
 import { recallSchool } from "../storage/schoolMemory";
 import { ChartFlow } from "./ChartFlow";
+import { MoonIcon, SunIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
@@ -17,6 +18,7 @@ import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Button, cn, inputClass } from "./ui";
 import { PanelToggle, SidePanel } from "./SidePanel";
+import { setTheme, useTheme } from "./theme";
 import { usePanels } from "./usePanels";
 
 // A box lying on the chart, in the same style as its other controls. The
@@ -66,6 +68,7 @@ export function Planner() {
   // Remount panels when the school changes so their local inputs reset.
   const schoolKey = state.school.data.school.id;
   const panels = usePanels();
+  const theme = useTheme();
   // The chart as drawn: without the Pre-Credit column if it's hidden. (Its
   // credit still counts; only the picture changes.)
   const shownChart = useMemo(
@@ -77,8 +80,8 @@ export function Planner() {
   );
 
   return (
-    <div className="flex h-dvh flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
-      <header className="flex flex-wrap items-center gap-3 border-b border-zinc-200 px-4 py-2 dark:border-zinc-800">
+    <div className="flex h-dvh flex-col bg-page text-ink dark:bg-zinc-950 dark:text-zinc-100">
+      <header className="flex flex-wrap items-center gap-3 border-b border-line px-4 py-2 dark:border-zinc-800">
         <div className="mr-2">
           <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
           <p className="text-xs text-zinc-500">Chart your curriculum</p>
@@ -102,6 +105,14 @@ export function Planner() {
             }}
           >
             Build for me
+          </Button>
+          {/* Shows the mode it switches to: a moon in light mode, a sun in dark. */}
+          <Button
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            title={theme === "dark" ? "Light mode" : "Dark mode"}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </Button>
         </div>
       </header>

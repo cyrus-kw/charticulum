@@ -54,6 +54,7 @@ import {
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
 import { FitIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
+import { useTheme } from "./theme";
 import { cn, SEASON_TINT } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
@@ -173,12 +174,12 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
     <div
       style={{ width: cardWidth, height: NODE_HEIGHT, ...(color && { borderColor: color }) }}
       className={cn(
-        "relative flex flex-col justify-center rounded-md border-2 px-2 text-zinc-900 shadow-sm dark:text-zinc-100",
+        "relative flex flex-col justify-center rounded-md border-2 px-2 text-ink shadow-sm dark:text-zinc-100",
         (onlyIn && SEASON_TINT[onlyIn]) || "bg-white dark:bg-zinc-900",
         // Selected: a ring just inside the border, so nothing reaches past
         // the card's edge where arrowheads touch it.
         selected && "inset-ring-2 inset-ring-sky-500",
-        !color && "border-zinc-300 dark:border-zinc-600",
+        !color && "border-line dark:border-zinc-600",
         external && "border-dashed",
         !external && "cursor-grab active:cursor-grabbing",
         compact && "items-center px-1",
@@ -247,7 +248,7 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
             term.external
               ? "bg-sky-50 dark:bg-sky-950/40"
               : term.shaded
-                ? "bg-zinc-100 dark:bg-white/5"
+                ? "bg-band dark:bg-white/5"
                 : "bg-transparent",
           )}
           style={{ left: x + column * columnWidth, width: columnWidth }}
@@ -407,22 +408,6 @@ function Legend() {
   );
 }
 
-// The viewer's light/dark preference. React Flow has a "system" mode, but
-// with server rendering it can get stuck on light: the server can't know
-// the preference, and React keeps the server's class when the page loads.
-// Starting as "light" everywhere and switching after load avoids that.
-function useColorScheme(): "light" | "dark" {
-  const [scheme, setScheme] = useState<"light" | "dark">("light");
-  useEffect(() => {
-    const query = window.matchMedia("(prefers-color-scheme: dark)");
-    const update = () => setScheme(query.matches ? "dark" : "light");
-    update();
-    query.addEventListener("change", update);
-    return () => query.removeEventListener("change", update);
-  }, []);
-  return scheme;
-}
-
 export interface ChartFlowProps {
   catalog: Catalog;
   chart: Chart;
@@ -514,7 +499,7 @@ export function ChartFlow({
     arrangements.current.set(planVersion, layout.memory);
   }, [layout, planVersion]);
 
-  const colorScheme = useColorScheme();
+  const colorScheme = useTheme();
   const termData = useMemo(
     () => layout.nodes.flatMap((n) => (n.type === "term" ? [n.data] : [])),
     [layout],
