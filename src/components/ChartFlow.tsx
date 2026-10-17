@@ -779,8 +779,9 @@ export function ChartFlow({
             ),
           );
         }}
+        // Click a course to select it; click it again to deselect it.
         onNodeClick={(_, node) => {
-          if (node.type === "course") onSelect(node.id);
+          if (node.type === "course") onSelect(node.id === selectedId ? null : node.id);
         }}
         // While dragging, cards passed over don't count as pointed at.
         onNodeMouseEnter={(_, node) => {
