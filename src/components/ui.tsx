@@ -47,12 +47,19 @@ export function Button({ variant = "secondary", className, ...props }: ButtonPro
 // Form fields here always show app state. autoComplete="off" stops Firefox
 // from restoring old values on reload, which would make the screen
 // disagree with the app.
-export function Select({ className, ...props }: SelectHTMLAttributes<HTMLSelectElement>) {
+// `compact` shrinks the box to the size of a tag (Badge), for dropdowns that
+// sit beside tags, like Term and Grade in the course details.
+export function Select({
+  className,
+  compact = false,
+  ...props
+}: SelectHTMLAttributes<HTMLSelectElement> & { compact?: boolean }) {
   return (
     <select
       autoComplete="off"
       className={cn(
-        "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900",
+        "min-w-0 rounded-md border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-900",
+        compact ? "mt-0.5 h-5 px-1 py-0 text-xs" : "px-2 py-1.5 text-sm",
         className,
       )}
       {...props}

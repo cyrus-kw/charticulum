@@ -8,8 +8,9 @@ import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
 
 const GRADES = Object.keys(GRADE_POINTS) as Grade[];
-// A row of tags under a label.
-const tagList = "mt-0.5 flex flex-wrap gap-1";
+// A row of tags under a label. It is as tall as a compact dropdown (h-5), so
+// the left column's rows line up with Term and Grade on the right.
+const tagList = "mt-0.5 flex min-h-5 flex-wrap items-center gap-1";
 
 // Everything about the selected object, plus ways to change it. The term
 // picker is a keyboard-friendly alternative to dragging.
@@ -139,6 +140,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
               <Select
                 id="detail-term"
                 className="w-full"
+                compact
                 value={term?.index ?? ""}
                 onChange={(e) => dispatch({ type: "move", objectId: id, termIndex: Number(e.target.value) })}
               >
@@ -159,6 +161,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
               <Select
                 id="detail-grade"
                 className="w-full"
+                compact
                 value={state.chart.grades?.[id] ?? ""}
                 onChange={(e) =>
                   dispatch({ type: "setGrade", objectId: id, grade: (e.target.value || null) as Grade | null })
