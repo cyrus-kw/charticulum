@@ -46,6 +46,26 @@ describe("chart handlers", () => {
     expect((await handlers.list(new Request("http://test/api/charts?schoolId=s"))).status).toBe(503);
   });
 
+  it("explains a database that is down or not set up", async () => {
+    // A repository whose every call fails the way Prisma does.
+    const failing = (code: string): ChartRepository => {
+      const fail = () => Promise.reject(Object.assign(new Error("db"), { code }));
+      return { list: fail, get: fail, save: fail, remove: fail };
+    };
+    const quiet = console.error;
+    console.error = () => {}; // the handler logs the error; keep test output clean
+    try {
+      const down = await chartHandlers(() => failing("ECONNREFUSED")).list(new Request("http://test/api/charts?schoolId=s"));
+      expect(down.status).toBe(503);
+      expect((await down.json()).error).toMatch(/Couldn't reach the database while loading your saved plans/);
+
+      const unmigrated = await chartHandlers(() => failing("P2021")).save(post({ schoolId: "s", chart }));
+      expect((await unmigrated.json()).error).toMatch(/db:migrate/);
+    } finally {
+      console.error = quiet;
+    }
+  });
+
   it("creates, updates, lists, loads, and deletes", async () => {
     const handlers = chartHandlers(() => repo);
     const repo = memoryChartRepository();

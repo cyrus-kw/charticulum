@@ -15,12 +15,33 @@ const saveBody = z.object({
 
 const error = (status: number, message: string) => Response.json({ error: message }, { status });
 
+// Error codes that mean the server couldn't reach the database at all:
+// it isn't running, or the address in DATABASE_URL is wrong. The E-codes
+// come from Node's network layer; P1001 is Prisma's "can't reach" code.
+const UNREACHABLE = new Set(["ECONNREFUSED", "ENOTFOUND", "ETIMEDOUT", "ECONNRESET", "P1001"]);
+// Prisma's code for "that table doesn't exist": the database is running
+// but its migrations were never applied.
+const TABLE_MISSING = "P2021";
+
+// Turn an unexpected error into a message the person can act on. `doing`
+// names what failed, e.g. "saving your chart".
+function failure(e: unknown, doing: string): Response {
+  const code = (e as { code?: unknown } | null)?.code;
+  if (typeof code === "string" && UNREACHABLE.has(code)) {
+    return error(503, `Couldn't reach the database while ${doing}. Is it running? (npm run db:local)`);
+  }
+  if (code === TABLE_MISSING) {
+    return error(503, `The database isn't set up yet, so ${doing} failed. Run npm run db:migrate.`);
+  }
+  return error(500, `Something went wrong ${doing}.`);
+}
+
 export function chartHandlers(
   getRepository: () => ChartRepository | null,
   // Who is asking. One local user for now; sign-in will replace this.
   getOwner: (request: Request) => string = () => LOCAL_OWNER,
 ) {
-  const withRepository = async (run: (repo: ChartRepository) => Promise<Response>) => {
+  const withRepository = async (doing: string, run: (repo: ChartRepository) => Promise<Response>) => {
     const repo = getRepository();
     if (!repo) return error(503, "This server has no database configured.");
     try {
@@ -28,20 +49,20 @@ export function chartHandlers(
     } catch (e) {
       if (e instanceof ChartNotFoundError) return error(404, e.message);
       console.error(e);
-      return error(500, "Something went wrong saving your chart.");
+      return failure(e, doing);
     }
   };
 
   return {
     list: (request: Request) =>
-      withRepository(async (repo) => {
+      withRepository("loading your saved plans", async (repo) => {
         const schoolId = new URL(request.url).searchParams.get("schoolId");
         if (!schoolId) return error(400, "schoolId is required.");
         return Response.json(await repo.list(getOwner(request), schoolId));
       }),
 
     save: (request: Request) =>
-      withRepository(async (repo) => {
+      withRepository("saving your chart", async (repo) => {
         const text = await request.text();
         if (text.length > MAX_BODY_BYTES) return error(413, "That chart is too large.");
         let json: unknown;
@@ -57,13 +78,13 @@ export function chartHandlers(
       }),
 
     get: (request: Request, id: string) =>
-      withRepository(async (repo) => {
+      withRepository("opening that plan", async (repo) => {
         const saved = await repo.get(getOwner(request), id);
         return saved ? Response.json(saved) : error(404, `No saved chart with id ${id}.`);
       }),
 
     remove: (request: Request, id: string) =>
-      withRepository(async (repo) => {
+      withRepository("deleting that plan", async (repo) => {
         const removed = await repo.remove(getOwner(request), id);
         return removed ? new Response(null, { status: 204 }) : error(404, `No saved chart with id ${id}.`);
       }),
