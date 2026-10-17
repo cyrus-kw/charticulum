@@ -257,13 +257,41 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
   );
 }
 
+// Shared look for the small button groups on the chart (zoom, undo/redo).
+const controlGroup =
+  "flex items-center divide-x divide-zinc-200 overflow-hidden rounded-md border border-zinc-200 bg-white shadow-sm dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900";
+const button =
+  "flex h-7 min-w-7 items-center justify-center px-2 text-sm text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 dark:text-zinc-200 dark:hover:bg-zinc-800";
+
+// Undo and redo for changes to the plan.
+function HistoryControls({
+  canUndo,
+  canRedo,
+  onUndo,
+  onRedo,
+}: {
+  canUndo: boolean;
+  canRedo: boolean;
+  onUndo: () => void;
+  onRedo: () => void;
+}) {
+  return (
+    <div className={controlGroup}>
+      <button type="button" className={cn(button, "gap-1")} title="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
+        <span aria-hidden>↶</span> Undo
+      </button>
+      <button type="button" className={cn(button, "gap-1")} title="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
+        Redo <span aria-hidden>↷</span>
+      </button>
+    </div>
+  );
+}
+
 // Horizontal zoom buttons. Zooming spreads the terms out sideways or
 // compresses them; text and rows keep their size.
 function ZoomControls({ zoom, onZoom, onFit }: { zoom: number; onZoom: (factor: number) => void; onFit: () => void }) {
-  const button =
-    "flex h-7 min-w-7 items-center justify-center px-2 text-sm text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 dark:text-zinc-200 dark:hover:bg-zinc-800";
   return (
-    <div className="flex items-center divide-x divide-zinc-200 overflow-hidden rounded-md border border-zinc-200 bg-white shadow-sm dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
+    <div className={controlGroup}>
       <button type="button" className={button} aria-label="Compress the chart" disabled={zoom <= 1} onClick={() => onZoom(1 / ZOOM_STEP)}>
         −
       </button>
@@ -368,6 +396,14 @@ export interface ChartFlowProps {
   onSelect: (objectId: string | null) => void;
   // Changes when a whole new plan appears: lay it out fresh.
   layoutVersion?: number;
+  // Identifies this version of the plan (the same object whenever undo or
+  // redo brings it back), so its exact arrangement can be restored.
+  planVersion?: object;
+  // Undo/redo (buttons in the top-left corner).
+  canUndo?: boolean;
+  canRedo?: boolean;
+  onUndo?: () => void;
+  onRedo?: () => void;
 }
 
 export function ChartFlow({
@@ -380,6 +416,11 @@ export function ChartFlow({
   onMove,
   onSelect,
   layoutVersion = 0,
+  planVersion = chart,
+  canUndo = false,
+  canRedo = false,
+  onUndo = () => {},
+  onRedo = () => {},
 }: ChartFlowProps) {
   // The chart fills the canvas: measure it, and size the term columns to
   // fit across it, times the horizontal zoom.
@@ -405,18 +446,32 @@ export function ChartFlow({
     // card isn't over its own term).
     previewIndex: number | null;
   } | null>(null);
-  // A new plan (see layoutVersion) starts without the old arrangement.
+  // Where to start from: the arrangement this exact version of the plan
+  // had before (when undo/redo brings it back), else the latest one, or
+  // nothing for a whole new plan (see layoutVersion).
   const memoryVersion = useRef(layoutVersion);
+  const arrangements = useRef(new WeakMap<object, LayoutMemory>());
   const layout = useMemo(() => {
-    if (memoryVersion.current !== layoutVersion) memory.current = undefined;
+    const before = arrangements.current.get(planVersion);
+    if (before) memory.current = before;
+    else if (memoryVersion.current !== layoutVersion) memory.current = undefined;
     return chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry);
-  }, [catalog, chart, issues, creditsByTerm, maxCredits, geometry, layoutVersion]);
+  }, [catalog, chart, issues, creditsByTerm, maxCredits, geometry, layoutVersion, planVersion]);
   useEffect(() => {
     memoryVersion.current = layoutVersion;
   }, [layoutVersion]);
   useEffect(() => {
     memory.current = layout.memory;
-  }, [layout]);
+    arrangements.current.set(planVersion, layout.memory);
+  }, [layout, planVersion]);
+  // Change the memory for the next layout without touching the saved
+  // arrangement of the current plan version.
+  const editMemory = (change: (next: LayoutMemory) => void) => {
+    if (!memory.current) return;
+    const next = { ...memory.current, column: new Map(memory.current.column), y: new Map(memory.current.y) };
+    change(next);
+    memory.current = next;
+  };
 
   const colorScheme = useColorScheme();
   const termData = useMemo(
@@ -661,7 +716,7 @@ export function ChartFlow({
             // exactly where the space opened.
             cancelAnimationFrame(shiftFrame.current);
             const column = chart.terms.findIndex((t) => t.index === termIndex);
-            if (memory.current && column >= 0) memory.current.pack = new Set([column]);
+            if (column >= 0) editMemory((m) => (m.pack = new Set([column])));
             setNodes(resetZ);
             onMove(node.id, termIndex, preview.index);
             return;
@@ -682,9 +737,11 @@ export function ChartFlow({
 
           // Remember where it was dropped, so it lands there if there's room
           // (other terms stay as they are).
-          if (memory.current && column >= 0) {
-            memory.current.column.set(node.id, column);
-            memory.current.y.set(node.id, start.y + dy - HEADER_HEIGHT);
+          if (column >= 0) {
+            editMemory((m) => {
+              m.column.set(node.id, column);
+              m.y.set(node.id, start.y + dy - HEADER_HEIGHT);
+            });
           }
 
           // Snap cards back to their places first (keeping their looks); if the
@@ -731,6 +788,9 @@ export function ChartFlow({
         {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
         <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
           <Legend />
+        </FlowPanel>
+        <FlowPanel position="top-left">
+          <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
         </FlowPanel>
         <FlowPanel position="bottom-left">
           <ZoomControls

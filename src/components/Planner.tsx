@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useReducer } from "react";
 import { EXTERNAL_TERM, loadSchool } from "../engine/index";
 import { loadSampleSchool } from "../fixtures/sampleSchool";
-import { derive, initialState, plannerReducer } from "../planner/state";
+import { historyReducer, startHistory } from "../planner/history";
+import { derive, initialState } from "../planner/state";
 import { recallSchool } from "../storage/schoolMemory";
 import { ChartFlow } from "./ChartFlow";
 import { CatalogPanel } from "./panels/CatalogPanel";
@@ -20,9 +21,31 @@ import { usePanels } from "./usePanels";
 export function Planner() {
   // useReducer holds the planner state; dispatch(action) updates it.
   // The third argument builds the first state once, on first render.
-  const [state, dispatch] = useReducer(plannerReducer, undefined, () =>
-    initialState(loadSampleSchool(), "bs-cs"),
+  // The planner state, with undo/redo history around it.
+  const [history, dispatch] = useReducer(historyReducer, undefined, () =>
+    startHistory(initialState(loadSampleSchool(), "bs-cs")),
   );
+  const state = history.present;
+
+  // Ctrl/Cmd+Z undoes; Ctrl/Cmd+Shift+Z or Ctrl+Y redoes. Not while typing
+  // in a text box, where those keys edit the text.
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (!(event.ctrlKey || event.metaKey)) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.closest("input, textarea, select, [contenteditable='true']")) return;
+      const key = event.key.toLowerCase();
+      if (key === "z" && !event.shiftKey) {
+        event.preventDefault();
+        dispatch({ type: "undo" });
+      } else if ((key === "z" && event.shiftKey) || key === "y") {
+        event.preventDefault();
+        dispatch({ type: "redo" });
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   // After the page loads, switch to a school this browser imported before.
   // (Browser storage doesn't exist on the server, so this can't happen in
@@ -121,6 +144,11 @@ export function Planner() {
             selectedId={state.selectedId}
             onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
             layoutVersion={state.layoutVersion}
+            planVersion={state.chart}
+            canUndo={history.past.length > 0}
+            canRedo={history.future.length > 0}
+            onUndo={() => dispatch({ type: "undo" })}
+            onRedo={() => dispatch({ type: "redo" })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
           />
         </main>
