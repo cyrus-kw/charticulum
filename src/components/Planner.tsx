@@ -75,7 +75,6 @@ export function Planner() {
         : { ...view.chart, terms: view.chart.terms.filter((t) => t.index !== EXTERNAL_TERM) },
     [view.chart, panels.open.preCredit],
   );
-  const selected = state.selectedId !== null && state.school.catalog.has(state.selectedId);
 
   return (
     <div className="flex h-dvh flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
@@ -150,15 +149,13 @@ export function Planner() {
                 <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
               )
             }
-            // On the chart's top right, left to right: the selected course
-            // (if any), the plan's issues, its requirements. Separate boxes.
+            // On the chart's top right, left to right: the selected course,
+            // the plan's issues, its requirements. Separate boxes.
             topRight={
               <>
-                {selected && (
-                  <div className={cn(chartBox, "w-80")}>
-                    <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
-                  </div>
-                )}
+                <div className={cn(chartBox, "w-80")}>
+                  <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
+                </div>
                 <div className={cn(chartBox, "w-72")}>
                   <IssuesPanel {...panelProps} />
                 </div>

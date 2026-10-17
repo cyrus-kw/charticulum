@@ -14,7 +14,13 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
   const id = state.selectedId;
   const object = id ? catalog.get(id) : undefined;
   const [substituteFor, setSubstituteFor] = useState("");
-  if (!id || !object) return null;
+  // Nothing selected: the box stays, with a hint.
+  if (!id || !object)
+    return (
+      <Panel title="Selected">
+        <p className="text-sm text-zinc-500">Click a course to see its details. Click it again to deselect it.</p>
+      </Panel>
+    );
 
   const term = view.chart.terms.find((t) => t.objectIds.includes(id));
   const external = term?.index === EXTERNAL_TERM;
