@@ -296,6 +296,8 @@ function useElementSize(ref: RefObject<HTMLElement | null>) {
 const MAX_ZOOM = 4;
 const ZOOM_STEP = 1.25;
 const MIN_COLUMN_WIDTH = 96;
+// Cards being dragged sit above the rest.
+const DRAGGING_Z = 1000;
 
 // Defined outside the component so React Flow sees the same object each render.
 const nodeTypes: NodeTypes = { course: CourseCard, term: TermStripe };
@@ -499,13 +501,16 @@ export function ChartFlow({
         edgeTypes={edgeTypes}
         onNodesChange={onNodesChange}
         onNodeDragStart={(_, node) => {
-          setHoveredId(null);
           if (node.type !== "course") return;
           // Courses taken together with this one in its term move with it.
           const term = chart.terms.find((t) => t.objectIds.includes(node.id));
           const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
           const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
           drag.current = { id: node.id, termIndex: term?.index, block, start: home };
+          // Trace the course being moved (not whatever it passes over), and
+          // keep it above the other cards while it moves.
+          setHoveredId(node.id);
+          setNodes((nodes) => nodes.map((n) => (block.includes(n.id) ? { ...n, zIndex: DRAGGING_Z } : n)));
         }}
         onNodeDrag={(_, node) => {
           const current = drag.current;
@@ -562,16 +567,26 @@ export function ChartFlow({
 
           // Snap cards back to their places first (keeping their looks); if the
           // move is valid, the chart update then lays it out anew.
-          setNodes((nodes) => nodes.map((n) => ({ ...n, position: current.start.get(n.id) ?? n.position })));
+          setNodes((nodes) =>
+            nodes.map((n) =>
+              current.start.has(n.id)
+                ? { ...n, position: current.start.get(n.id)!, zIndex: n.type === "course" ? 1 : n.zIndex }
+                : n,
+            ),
+          );
+          setHoveredId(null);
           onMove(node.id, termIndex, position);
         }}
         onNodeClick={(_, node) => {
           if (node.type === "course") onSelect(node.id);
         }}
+        // While dragging, cards passed over don't count as pointed at.
         onNodeMouseEnter={(_, node) => {
-          if (node.type === "course") setHoveredId(node.id);
+          if (node.type === "course" && !drag.current) setHoveredId(node.id);
         }}
-        onNodeMouseLeave={() => setHoveredId(null)}
+        onNodeMouseLeave={() => {
+          if (!drag.current) setHoveredId(null);
+        }}
         onPaneClick={() => onSelect(null)}
         nodesConnectable={false}
         edgesFocusable={false}
