@@ -18,7 +18,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
   if (!id || !object)
     return (
       <Panel title="Selected">
-        <p className="text-sm text-zinc-500">Click a course to see its details. Click it again to deselect it.</p>
+        <p className="text-sm text-zinc-500">Click a course to see its details.</p>
       </Panel>
     );
 
