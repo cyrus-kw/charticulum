@@ -1,6 +1,14 @@
 import { describe, expect, it } from "vitest";
 import { createCatalog } from "../src/engine/index";
-import { blocksOf, concurrentBlock, dropIndex, keepBlocksTogether } from "../src/planner/ordering";
+import {
+  blocksOf,
+  concurrentBlock,
+  dropIndex,
+  keepBlocksTogether,
+  packedTops,
+  reorderPreview,
+  REORDER_STICKINESS,
+} from "../src/planner/ordering";
 import { obj } from "./helpers";
 
 const catalog = createCatalog([
@@ -56,5 +64,58 @@ describe("keepBlocksTogether", () => {
   it("pulls a block back together at its first course", () => {
     expect(keepBlocksTogether(catalog, ["LEC", "A", "LAB", "B"])).toEqual(["LEC", "LAB", "A", "B"]);
     expect(keepBlocksTogether(catalog, ["A", "B"])).toEqual(["A", "B"]);
+  });
+});
+
+describe("reorderPreview", () => {
+  // Rows 100 apart from the top (y = 0).
+  const layout = { top: 0, rowHeight: 100 };
+  const term = ["A", "LEC", "LAB", "B"];
+  const order = (block: string[], top: number, current?: number | null) =>
+    reorderPreview(catalog, term, block, top, layout, current).order;
+
+  it("puts the block at the slot nearest its top edge", () => {
+    expect(order(["B"], 0)).toEqual(["B", "A", "LEC", "LAB"]);
+    expect(order(["B"], 40)).toEqual(["B", "A", "LEC", "LAB"]);
+    expect(order(["B"], 60)).toEqual(["A", "B", "LEC", "LAB"]);
+    expect(order(["B"], 900)).toEqual(["A", "LEC", "LAB", "B"]);
+  });
+
+  it("never opens a space inside a lecture and its lab", () => {
+    // Slot 2 would be between LEC and LAB: it goes before or after the pair.
+    expect(order(["B"], 140)).toEqual(["A", "B", "LEC", "LAB"]);
+    expect(order(["B"], 260)).toEqual(["A", "LEC", "LAB", "B"]);
+  });
+
+  it("moves a block as one", () => {
+    expect(order(["LEC", "LAB"], 900)).toEqual(["A", "B", "LEC", "LAB"]);
+  });
+
+  it("treats a block released where it started as not moved", () => {
+    // LEC+LAB start at slot 1 (top 100).
+    const preview = reorderPreview(catalog, term, ["LEC", "LAB"], 100, layout);
+    expect(preview.index).toBe(preview.originalIndex);
+  });
+
+  it("is sticky: the space only moves once the block is clearly nearer another spot", () => {
+    // Currently at slot 0; halfway (50) isn't enough...
+    expect(order(["B"], 55, 0)).toEqual(["B", "A", "LEC", "LAB"]);
+    expect(order(["B"], 79, 0)).toEqual(["B", "A", "LEC", "LAB"]);
+    // ...but past 0.5 + REORDER_STICKINESS rows it moves.
+    expect(order(["B"], 100 * (0.5 + REORDER_STICKINESS) + 1, 0)).toEqual(["A", "B", "LEC", "LAB"]);
+    // Wiggling around the halfway point doesn't flip back and forth.
+    let current: number | null = null;
+    const seen = new Set<number>();
+    for (const top of [45, 55, 45, 55, 45, 55]) {
+      current = reorderPreview(catalog, term, ["B"], top, layout, current).index;
+      seen.add(current);
+    }
+    expect(seen.size).toBe(1);
+  });
+});
+
+describe("packedTops", () => {
+  it("stacks courses one row apart from the top", () => {
+    expect([...packedTops(["A", "B", "C"], 72, 88)]).toEqual([["A", 72], ["B", 160], ["C", 248]]);
   });
 });

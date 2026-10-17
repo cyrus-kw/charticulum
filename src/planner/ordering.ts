@@ -75,3 +75,39 @@ export function keepBlocksTogether(catalog: Catalog, termIds: string[]): string[
   }
   return result;
 }
+
+// While a block is dragged within its own term, how far (as a fraction of
+// a row) past the halfway point it must go before the space moves on.
+// Without it, the other cards shuffle at the slightest wobble.
+export const REORDER_STICKINESS = 0.3;
+
+// While a block is dragged within its own term: where it would go, and the
+// term's new order. Its top edge, measured in rows from the top of the
+// term, picks the nearest slot that doesn't split another block. Once a
+// spot is chosen (`current`), it stays until the block is clearly nearer
+// another spot (see REORDER_STICKINESS).
+export function reorderPreview(
+  catalog: Catalog,
+  termIds: string[],
+  block: string[],
+  dragTopY: number,
+  layout: { top: number; rowHeight: number },
+  current?: number | null,
+): { index: number; order: string[]; originalIndex: number } {
+  const rest = termIds.filter((id) => !block.includes(id));
+  // Where the block may go: before any block of the rest, or at the end.
+  const allowed = [0];
+  for (const unit of blocksOf(catalog, rest)) allowed.push(allowed[allowed.length - 1] + unit.length);
+  const wanted = (dragTopY - layout.top) / layout.rowHeight;
+  const nearest = allowed.reduce((best, i) => (Math.abs(i - wanted) < Math.abs(best - wanted) ? i : best));
+  const keep =
+    current !== undefined && current !== null && allowed.includes(current) && Math.abs(current - wanted) < 0.5 + REORDER_STICKINESS;
+  const index = keep ? current : nearest;
+  const order = [...rest.slice(0, index), ...block, ...rest.slice(index)];
+  return { index, order, originalIndex: termIds.indexOf(block[0]) };
+}
+
+// Where each course sits when a term is packed from the top in `order`.
+export function packedTops(order: string[], top: number, rowHeight: number): Map<string, number> {
+  return new Map(order.map((id, k) => [id, top + k * rowHeight]));
+}

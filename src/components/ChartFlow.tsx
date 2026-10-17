@@ -39,6 +39,7 @@ import {
   HEADER_HEIGHT,
   NODE_HEIGHT,
   NODE_WIDTH,
+  ROW_HEIGHT,
   termIndexAt,
   type CourseNode,
   type Geometry,
@@ -48,7 +49,7 @@ import {
   type Rect,
   type TermNode,
 } from "../planner/layout";
-import { concurrentBlock, dropIndex } from "../planner/ordering";
+import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
 import { cn } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
@@ -298,6 +299,10 @@ const ZOOM_STEP = 1.25;
 const MIN_COLUMN_WIDTH = 96;
 // Cards being dragged sit above the rest.
 const DRAGGING_Z = 1000;
+// How long the other cards take to slide aside while reordering.
+const SHIFT_MS = 150;
+
+type Point = { x: number; y: number };
 
 // Defined outside the component so React Flow sees the same object each render.
 const nodeTypes: NodeTypes = { course: CourseCard, term: TermStripe };
@@ -388,8 +393,12 @@ export function ChartFlow({
   const drag = useRef<{
     id: string;
     termIndex: number | undefined;
+    termIds: string[];
     block: string[];
-    start: Map<string, { x: number; y: number }>;
+    start: Map<string, Point>;
+    // Where the block would go in its own term right now (null when the
+    // card isn't over its own term).
+    previewIndex: number | null;
   } | null>(null);
   const layout = useMemo(
     () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry),
@@ -417,7 +426,10 @@ export function ChartFlow({
   // dragging. Two separate updates feed it:
   const [nodes, setNodes, onNodesChange] = useNodesState<PlannerNode>(layout.nodes);
   // 1. A new layout (the chart changed): reset every card to its place.
-  useEffect(() => setNodes(layout.nodes), [layout, setNodes]);
+  useEffect(() => {
+    cancelAnimationFrame(shiftFrame.current);
+    setNodes(layout.nodes);
+  }, [layout, setNodes]);
   // 2. Selection and tracing only change how cards look. Update just that,
   //    keeping each card's current position and React Flow's measurements,
   //    so a card being dragged isn't yanked back or its lines lost.
@@ -439,6 +451,34 @@ export function ChartFlow({
           : e,
       ),
     [layout, related],
+  );
+
+  // Slide cards to new positions (the other cards making room while a
+  // course is reordered, or going back if it isn't placed).
+  const shiftFrame = useRef(0);
+  const slideTo = useCallback(
+    (targets: Map<string, Point>) => {
+      cancelAnimationFrame(shiftFrame.current);
+      if (targets.size === 0) return;
+      const from = new Map([...targets].map(([id, to]) => [id, flow.current?.getNode(id)?.position ?? to]));
+      const instant = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const started = performance.now();
+      const tick = (now: number) => {
+        const t = instant ? 1 : Math.min(1, (now - started) / SHIFT_MS);
+        const eased = 1 - (1 - t) ** 3;
+        setNodes((nodes) =>
+          nodes.map((n) => {
+            const to = targets.get(n.id);
+            if (!to) return n;
+            const f = from.get(n.id)!;
+            return { ...n, position: { x: f.x + (to.x - f.x) * eased, y: f.y + (to.y - f.y) * eased } };
+          }),
+        );
+        if (t < 1) shiftFrame.current = requestAnimationFrame(tick);
+      };
+      shiftFrame.current = requestAnimationFrame(tick);
+    },
+    [setNodes],
   );
 
   // How big the drawn chart is, and where the view may go: never past its
@@ -521,7 +561,14 @@ export function ChartFlow({
           const term = chart.terms.find((t) => t.objectIds.includes(node.id));
           const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
           const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
-          drag.current = { id: node.id, termIndex: term?.index, block, start: home };
+          drag.current = {
+            id: node.id,
+            termIndex: term?.index,
+            termIds: term?.objectIds ?? [],
+            block,
+            start: home,
+            previewIndex: null,
+          };
           // Trace the course being moved (not whatever it passes over), and
           // keep it above the other cards while it moves.
           setHoveredId(node.id);
@@ -529,55 +576,101 @@ export function ChartFlow({
         }}
         onNodeDrag={(_, node) => {
           const current = drag.current;
-          if (!current || current.block.length < 2) return;
-          // Partners follow while the card is over its own term (reordering);
-          // over another term only the dragged course moves, so they stay home.
+          if (!current) return;
           const start = current.start.get(node.id)!;
-          const follow = termIndexAt(chart, node.position.x, geometry) === current.termIndex;
+          const overOwnTerm = termIndexAt(chart, node.position.x, geometry) === current.termIndex;
           const dx = node.position.x - start.x;
           const dy = node.position.y - start.y;
-          setNodes((nodes) =>
-            nodes.map((n) => {
-              if (n.id === node.id || !current.block.includes(n.id)) return n;
-              const home = current.start.get(n.id)!;
-              return { ...n, position: follow ? { x: home.x + dx, y: home.y + dy } : home };
-            }),
-          );
+
+          // Partners (a lecture and its lab) follow while the card is over
+          // its own term; over another term only the dragged course moves.
+          if (current.block.length > 1) {
+            setNodes((nodes) =>
+              nodes.map((n) => {
+                if (n.id === node.id || !current.block.includes(n.id)) return n;
+                const home = current.start.get(n.id)!;
+                return { ...n, position: overOwnTerm ? { x: home.x + dx, y: home.y + dy } : home };
+              }),
+            );
+          }
+
+          // Over its own term, the other courses slide aside to open a space
+          // where it would land; anywhere else, they go back to where they were.
+          const others = current.termIds.filter((id) => !current.block.includes(id));
+          if (overOwnTerm) {
+            const top = Math.min(...current.block.map((id) => current.start.get(id)!.y)) + dy;
+            const preview = reorderPreview(
+              catalog,
+              current.termIds,
+              current.block,
+              top,
+              { top: HEADER_HEIGHT, rowHeight: ROW_HEIGHT },
+              current.previewIndex,
+            );
+            if (preview.index === current.previewIndex) return;
+            current.previewIndex = preview.index;
+            const tops = packedTops(preview.order, HEADER_HEIGHT, ROW_HEIGHT);
+            slideTo(new Map(others.map((id) => [id, { x: current.start.get(id)!.x, y: tops.get(id)! }])));
+          } else if (current.previewIndex !== null) {
+            current.previewIndex = null;
+            slideTo(new Map(others.map((id) => [id, current.start.get(id)!])));
+          }
         }}
         onNodeDragStop={(_, node) => {
           const current = drag.current;
           drag.current = null;
           if (node.type !== "course" || !current) return;
           const termIndex = termIndexAt(chart, node.position.x, geometry);
+          setHoveredId(null);
+
+          if (termIndex === current.termIndex) {
+            // The same rule as the preview, so it lands where the space opened.
+            const dy = node.position.y - current.start.get(node.id)!.y;
+            const top = Math.min(...current.block.map((id) => current.start.get(id)!.y)) + dy;
+            const preview = reorderPreview(
+              catalog,
+              current.termIds,
+              current.block,
+              top,
+              { top: HEADER_HEIGHT, rowHeight: ROW_HEIGHT },
+              current.previewIndex,
+            );
+            const resetZ = (nodes: PlannerNode[]) =>
+              nodes.map((n) => (current.block.includes(n.id) ? { ...n, zIndex: 1 } : n));
+            if (preview.index === preview.originalIndex) {
+              // Not placed anywhere new: everything slides back.
+              setNodes(resetZ);
+              slideTo(new Map(current.termIds.map((id) => [id, current.start.get(id)!])));
+              return;
+            }
+            // Placed: the term is packed from the top in its new order,
+            // exactly where the space opened.
+            cancelAnimationFrame(shiftFrame.current);
+            const column = chart.terms.findIndex((t) => t.index === termIndex);
+            if (memory.current && column >= 0) memory.current.pack = new Set([column]);
+            setNodes(resetZ);
+            onMove(node.id, termIndex, preview.index);
+            return;
+          }
+          // Moved to another term: only the dragged course goes, into the
+          // order by where it was dropped (never inside a block there).
+          cancelAnimationFrame(shiftFrame.current);
           const target = chart.terms.find((t) => t.index === termIndex);
           const column = chart.terms.findIndex((t) => t.index === termIndex);
-          const moving = termIndex === current.termIndex ? current.block : [node.id];
           const start = current.start.get(node.id)!;
           const dy = node.position.y - start.y;
-
-          // Where in the term's order it goes: by where the block's middle was
-          // dropped, among the cards there (never inside another block).
           const homeMiddle = (id: string) => {
             const at = current.start.get(id);
-            return at && (at.y + NODE_HEIGHT / 2);
+            return at && at.y + NODE_HEIGHT / 2;
           };
-          const movingMiddles = moving.map((id) => homeMiddle(id)! + dy);
-          const dropMiddle = (Math.min(...movingMiddles) + Math.max(...movingMiddles)) / 2;
-          const position = target ? dropIndex(catalog, target.objectIds, moving, dropMiddle, homeMiddle) : 0;
+          const dropMiddle = start.y + dy + NODE_HEIGHT / 2;
+          const position = target ? dropIndex(catalog, target.objectIds, [node.id], dropMiddle, homeMiddle) : 0;
 
+          // Remember where it was dropped, so it lands there if there's room
+          // (other terms stay as they are).
           if (memory.current && column >= 0) {
-            if (termIndex === current.termIndex) {
-              // Reordered within its term: pack that term from the top, so
-              // the other cards close up with no gaps.
-              memory.current.pack = new Set([column]);
-            } else {
-              // Moved to another term: remember where it was dropped, so it
-              // lands there if there's room (other terms stay as they are).
-              for (const id of moving) {
-                memory.current.column.set(id, column);
-                memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
-              }
-            }
+            memory.current.column.set(node.id, column);
+            memory.current.y.set(node.id, start.y + dy - HEADER_HEIGHT);
           }
 
           // Snap cards back to their places first (keeping their looks); if the
@@ -589,7 +682,6 @@ export function ChartFlow({
                 : n,
             ),
           );
-          setHoveredId(null);
           onMove(node.id, termIndex, position);
         }}
         onNodeClick={(_, node) => {
