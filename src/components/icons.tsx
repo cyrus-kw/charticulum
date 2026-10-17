@@ -132,15 +132,3 @@ export function TrashIcon() {
   );
 }
 
-// A "v" chevron for something that folds open and shut. It points down
-// while shut ("there's more below") and turns to point up while open.
-export function ChevronIcon({ open }: { open: boolean }) {
-  return (
-    // inline-flex: a plain inline span can't be rotated.
-    <span className={open ? "inline-flex rotate-180 transition-transform" : "inline-flex transition-transform"}>
-      <Icon size={14}>
-        <path d="m6 9 6 6 6-6" />
-      </Icon>
-    </span>
-  );
-}

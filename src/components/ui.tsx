@@ -7,7 +7,6 @@ import {
   type SelectHTMLAttributes,
 } from "react";
 import type { Season } from "../engine/index";
-import { ChevronIcon } from "./icons";
 
 // Join class names, skipping false/undefined ones:
 // cn("a", isOn && "b") -> "a b" or "a".
@@ -15,53 +14,18 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export function Panel({
-  title,
-  children,
-  actions,
-  fold,
-}: {
-  title: string;
-  children: ReactNode;
-  actions?: ReactNode;
-  // Makes the section fold shut to just its title row: the whole row is a
-  // button, with a chevron at its end. Shut, its contents aren't shown.
-  fold?: { open: boolean; onToggle: () => void };
-}) {
-  const heading = "text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400";
-  const shut = fold && !fold.open;
+export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
   return (
     // A divider between sections; the last one has nothing below it, so
     // it skips its divider (last:border-b-0).
     <section className="border-b border-zinc-200 px-4 py-3 last:border-b-0 dark:border-zinc-800">
-      {fold ? (
-        // The button is inside the heading (not the other way round), so
-        // screen readers still find it in the list of headings.
-        <h2 className={cn(heading, !shut && "mb-2")}>
-          <button
-            type="button"
-            aria-expanded={fold.open}
-            onClick={fold.onToggle}
-            // -mx-1 px-1: the hover shade reaches a little past the text
-            // without moving it.
-            className="-mx-1 flex h-5 w-[calc(100%+0.5rem)] items-center justify-between gap-2 rounded px-1 uppercase hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:hover:bg-zinc-800"
-          >
-            {title}
-            <span className="flex items-center gap-1.5 normal-case">
-              {actions}
-              <ChevronIcon open={fold.open} />
-            </span>
-          </button>
-        </h2>
-      ) : (
-        // A fixed height, so a button here (like Close) doesn't push the
-        // title down; the button just overhangs a little.
-        <div className="mb-2 flex h-5 items-center justify-between gap-2">
-          <h2 className={heading}>{title}</h2>
-          {actions}
-        </div>
-      )}
-      {!shut && children}
+      {/* A fixed height, so a button here (like Close) doesn't push the
+          title down; the button just overhangs a little. */}
+      <div className="mb-2 flex h-5 items-center justify-between gap-2">
+        <h2 className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">{title}</h2>
+        {actions}
+      </div>
+      {children}
     </section>
   );
 }

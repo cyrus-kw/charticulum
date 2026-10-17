@@ -1085,7 +1085,7 @@ export function ChartFlow({
                 {title}
               </div>
               {topRight && (
-                <div className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto @min-[1260px]:*:max-h-(--box-room) @max-[1260px]:grid @max-[1260px]:max-h-full @max-[1260px]:grid-flow-col @max-[1260px]:grid-rows-[auto_1fr] @max-[1260px]:overflow-y-auto @max-[1260px]:*:last:row-span-2">
+                <div className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto *:max-h-(--box-room) @max-[1260px]:grid @max-[1260px]:max-h-full @max-[1260px]:grid-flow-col @max-[1260px]:grid-rows-[auto_1fr] @max-[1260px]:overflow-y-auto @max-[1260px]:*:last:row-span-2">
                   {topRight}
                 </div>
               )}

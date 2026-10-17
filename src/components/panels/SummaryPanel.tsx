@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { CATEGORY_NAMES, type Category, type Override } from "../../engine/index";
 import { Badge, Button, cn, Panel } from "../ui";
 import type { PanelProps } from "./types";
@@ -37,89 +36,89 @@ function describe(override: Override): string {
   }
 }
 
-// Progress toward every requirement, and the exceptions in effect. It
-// starts folded to one line ("4/4 Met"), so it takes little room on
-// the chart; click it to see the meters.
+// Progress toward every requirement, and the exceptions in effect. GPA
+// stays in the title row; the meters and exceptions below it scroll when
+// the box is capped in height (see the Requirements box in Planner.tsx).
 export function SummaryPanel({ state, view, dispatch }: PanelProps) {
-  const [open, setOpen] = useState(false);
   const { report, appliedOverrides } = view.check;
   const { requirements } = view;
   const minimums = Object.entries(requirements.minCreditsByCategory) as [Category, number][];
   const overrides = state.chart.overrides ?? [];
 
-  // One true/false per requirement shown below, for the folded summary.
-  // GPA only counts once there are grades (until then it can't be met or
-  // missed).
-  const checks = [
-    report.totalCredits >= requirements.minTotalCredits,
-    ...minimums.map(([category, minimum]) => (report.creditsByCategory[category] ?? 0) >= minimum),
-    ...(requirements.minGpa !== undefined && report.gpa !== undefined ? [report.gpa >= requirements.minGpa] : []),
-    ...(requirements.maxSharedCredits !== undefined ? [report.sharedCredits <= requirements.maxSharedCredits] : []),
-  ];
-  const met = checks.filter(Boolean).length;
+  // GPA sits in the title row, its number a tag: green when it's fine (3.45),
+  // red under the minimum, where it also says what the minimum is
+  // ("1.80 (min 2.00)"). Until there are grades there's no GPA yet, so
+  // it's a grey tag with a dash.
+  const { minGpa } = requirements;
+  const below = minGpa !== undefined && report.gpa !== undefined && report.gpa < minGpa;
+  const gpa = report.gpa === undefined ? "–" : report.gpa.toFixed(2);
 
   return (
     <Panel
       title="Requirements"
-      fold={{ open, onToggle: () => setOpen(!open) }}
       actions={
-        <Badge tone={met === checks.length ? "good" : "bad"}>
-          {`${met}/${checks.length} met`}
-        </Badge>
+        (minGpa !== undefined || report.gpa !== undefined) && (
+          // "GPA" in the panel title's small capitals, but regular weight
+          // and in the main text color (white in dark mode), then the
+          // number as a tag.
+          <span className="flex items-center gap-1.5">
+            <span className="text-xs font-normal tracking-wide text-ink uppercase dark:text-zinc-100">GPA</span>
+            <Badge tone={below ? "bad" : report.gpa === undefined ? "neutral" : "good"}>
+              {`${gpa}${below ? ` (min ${minGpa.toFixed(2)})` : ""}`}
+            </Badge>
+          </span>
+        )
       }
     >
-      <div className="space-y-2">
-        <Meter label="Total Credits" value={report.totalCredits} target={requirements.minTotalCredits} />
-        {minimums.map(([category, minimum]) => (
-          <Meter key={category} label={CATEGORY_NAMES[category]} value={report.creditsByCategory[category] ?? 0} target={minimum} />
-        ))}
-        {requirements.minGpa !== undefined && (
-          <div className="flex justify-between text-sm">
-            <span>GPA</span>
-            <span className="tabular-nums">
-              {report.gpa === undefined ? "no grades yet" : report.gpa.toFixed(2)} (min {requirements.minGpa.toFixed(2)})
-            </span>
-          </div>
-        )}
-        {requirements.maxSharedCredits !== undefined && (
-          <div className="flex justify-between text-sm">
-            <span>Shared Credits</span>
-            <span
-              className={cn(
-                "tabular-nums",
-                report.sharedCredits > requirements.maxSharedCredits && "text-rose-700 dark:text-rose-400",
-              )}
-            >
-              {report.sharedCredits} (max {requirements.maxSharedCredits})
-            </span>
+      {/* The meters scroll, the same way as the Issues list: it reaches into
+          the panel's right padding (-mr-4) and puts it back (pr-4), so the
+          scrollbar sits by the box's edge without covering any words. */}
+      <div className="-mr-4 min-h-0 overflow-y-auto pr-4">
+        <div className="space-y-2">
+          <Meter label="Total Credits" value={report.totalCredits} target={requirements.minTotalCredits} />
+          {minimums.map(([category, minimum]) => (
+            <Meter key={category} label={CATEGORY_NAMES[category]} value={report.creditsByCategory[category] ?? 0} target={minimum} />
+          ))}
+          {requirements.maxSharedCredits !== undefined && (
+            <div className="flex justify-between text-sm">
+              <span>Shared Credits</span>
+              <span
+                className={cn(
+                  "tabular-nums",
+                  report.sharedCredits > requirements.maxSharedCredits && "text-rose-700 dark:text-rose-400",
+                )}
+              >
+                {report.sharedCredits} (max {requirements.maxSharedCredits})
+              </span>
+            </div>
+          )}
+        </div>
+
+        {overrides.length > 0 && (
+          <div className="mt-3">
+            <h3 className="mb-1 text-xs font-semibold text-zinc-500">Exceptions</h3>
+            <ul className="space-y-1 text-sm">
+              {overrides.map((o) => {
+                const active = appliedOverrides.some((a) => a.id === o.id);
+                return (
+                  <li key={o.id} className="flex items-start justify-between gap-2">
+                    <span>
+                      {describe(o)}
+                      <span className="block text-xs text-zinc-500">
+                        {o.reason}
+                        {!active && " · not in effect"}
+                      </span>
+                    </span>
+                    <Button variant="danger" onClick={() => dispatch({ type: "removeOverride", id: o.id })}>
+                      Remove
+                    </Button>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         )}
       </div>
-
-      {overrides.length > 0 && (
-        <div className="mt-3">
-          <h3 className="mb-1 text-xs font-semibold text-zinc-500">Exceptions</h3>
-          <ul className="space-y-1 text-sm">
-            {overrides.map((o) => {
-              const active = appliedOverrides.some((a) => a.id === o.id);
-              return (
-                <li key={o.id} className="flex items-start justify-between gap-2">
-                  <span>
-                    {describe(o)}
-                    <span className="block text-xs text-zinc-500">
-                      {o.reason}
-                      {!active && " · not in effect"}
-                    </span>
-                  </span>
-                  <Button variant="danger" onClick={() => dispatch({ type: "removeOverride", id: o.id })}>
-                    Remove
-                  </Button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
     </Panel>
   );
 }

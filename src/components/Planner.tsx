@@ -222,8 +222,9 @@ export function Planner() {
                   <IssuesPanel {...panelProps} />
                 </div>
                 {/* Credit meters, GPA, and exceptions, right beside the
-                    issues they explain. */}
-                <div className={cn(chartBox, "w-72")}>
+                    issues they explain. Columns all the way down, like the
+                    Issues box, so GPA stays put and the meters scroll. */}
+                <div className={cn(chartBox, "flex w-72 flex-col *:flex *:min-h-0 *:flex-col")}>
                   <SummaryPanel {...panelProps} />
                 </div>
               </>
