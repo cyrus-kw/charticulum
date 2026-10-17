@@ -120,6 +120,7 @@ export function Planner() {
             maxCredits={view.requirements.maxCreditsPerTerm}
             selectedId={state.selectedId}
             onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
+            layoutVersion={state.layoutVersion}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
           />
         </main>

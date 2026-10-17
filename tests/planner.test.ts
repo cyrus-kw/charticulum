@@ -171,6 +171,22 @@ describe("plannerReducer", () => {
     expect(updated.savedId).toBeNull();
   });
 
+  it("marks a whole new plan for a fresh layout, but not ordinary edits", () => {
+    let state = sampleState();
+    const v = state.layoutVersion;
+    state = plannerReducer(state, { type: "move", objectId: "HIST110", termIndex: 1 });
+    state = plannerReducer(state, { type: "setGrade", objectId: "CS101", grade: "A" });
+    expect(state.layoutVersion).toBe(v);
+    state = plannerReducer(state, { type: "build" });
+    expect(state.layoutVersion).toBe(v + 1);
+    state = plannerReducer(state, { type: "addProgram", ref: { templateId: "minor-stats", version: "2026-27" } });
+    expect(state.layoutVersion).toBe(v + 2);
+    state = plannerReducer(state, { type: "startProgram", ref: { templateId: "bs-cs", version: "2025-26" } });
+    expect(state.layoutVersion).toBe(v + 3);
+    state = plannerReducer(state, { type: "loadChart", chart: state.chart, savedId: "x" });
+    expect(state.layoutVersion).toBe(v + 4);
+  });
+
   it("switching programs keeps outside credit", () => {
     let state = plannerReducer(sampleState(), {
       type: "addExternal",

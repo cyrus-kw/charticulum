@@ -366,6 +366,8 @@ export interface ChartFlowProps {
   // `position`: where in the term's top-to-bottom order it was dropped.
   onMove: (objectId: string, termIndex: number, position: number) => void;
   onSelect: (objectId: string | null) => void;
+  // Changes when a whole new plan appears: lay it out fresh.
+  layoutVersion?: number;
 }
 
 export function ChartFlow({
@@ -377,6 +379,7 @@ export function ChartFlow({
   selectedId,
   onMove,
   onSelect,
+  layoutVersion = 0,
 }: ChartFlowProps) {
   // The chart fills the canvas: measure it, and size the term columns to
   // fit across it, times the horizontal zoom.
@@ -402,10 +405,15 @@ export function ChartFlow({
     // card isn't over its own term).
     previewIndex: number | null;
   } | null>(null);
-  const layout = useMemo(
-    () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry),
-    [catalog, chart, issues, creditsByTerm, maxCredits, geometry],
-  );
+  // A new plan (see layoutVersion) starts without the old arrangement.
+  const memoryVersion = useRef(layoutVersion);
+  const layout = useMemo(() => {
+    if (memoryVersion.current !== layoutVersion) memory.current = undefined;
+    return chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry);
+  }, [catalog, chart, issues, creditsByTerm, maxCredits, geometry, layoutVersion]);
+  useEffect(() => {
+    memoryVersion.current = layoutVersion;
+  }, [layoutVersion]);
   useEffect(() => {
     memory.current = layout.memory;
   }, [layout]);
@@ -639,8 +647,12 @@ export function ChartFlow({
             );
             const resetZ = (nodes: PlannerNode[]) =>
               nodes.map((n) => (current.block.includes(n.id) ? { ...n, zIndex: 1 } : n));
-            if (preview.index === preview.originalIndex) {
-              // Not placed anywhere new: everything slides back.
+            // Same place in the order, and the term already has no gaps:
+            // nothing to do, so everything slides back. (If it has gaps,
+            // dropping closes them up, like the preview showed.)
+            const packed = packedTops(preview.order, HEADER_HEIGHT, ROW_HEIGHT);
+            const alreadyPacked = current.termIds.every((id) => current.start.get(id)!.y === packed.get(id));
+            if (preview.index === preview.originalIndex && alreadyPacked) {
               setNodes(resetZ);
               slideTo(new Map(current.termIds.map((id) => [id, current.start.get(id)!])));
               return;

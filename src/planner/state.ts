@@ -42,6 +42,10 @@ export interface PlannerState {
   builderIssues: ChartIssue[];
   // The saved copy this chart belongs to; null until it's first saved.
   savedId: string | null;
+  // Goes up whenever a whole new plan appears (built, started from a
+  // program, merged with another, or opened), so the chart lays it out
+  // fresh instead of keeping cards where the old plan had them.
+  layoutVersion: number;
 }
 
 export type PlannerAction =
@@ -72,7 +76,7 @@ export function initialState(school: LoadedSchool, programId?: string): PlannerS
   const chart: Chart = template
     ? arrangeChart(school.catalog, forkTemplate(template))
     : { name: "My plan", terms: [emptyTermZero()], completedExternal: [] };
-  return { school, chart, selectedId: null, builderIssues: [], savedId: null };
+  return { school, chart, selectedId: null, builderIssues: [], savedId: null, layoutVersion: 0 };
 }
 
 const emptyTermZero = (): Term => ({ index: EXTERNAL_TERM, label: EXTERNAL_TERM_LABEL, objectIds: [] });
@@ -117,7 +121,14 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
     }
 
     case "loadChart":
-      return { ...state, chart: action.chart, selectedId: null, builderIssues: [], savedId: action.savedId };
+      return {
+        ...state,
+        chart: action.chart,
+        selectedId: null,
+        builderIssues: [],
+        savedId: action.savedId,
+        layoutVersion: state.layoutVersion + 1,
+      };
 
     case "saved":
       return { ...state, savedId: action.savedId };
@@ -132,6 +143,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         chart: arrangeChart(school.catalog, { ...fork, completedExternal: chart.completedExternal }),
         selectedId: null,
         builderIssues: [],
+        layoutVersion: state.layoutVersion + 1,
       };
     }
 
@@ -142,7 +154,10 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         (ref) => ref.templateId === action.ref.templateId,
       );
       if (alreadyPinned) return state;
-      return withChart(arrangeChart(school.catalog, { ...mergeCharts(chart, forkTemplate(template)), name: chart.name }));
+      return {
+        ...withChart(arrangeChart(school.catalog, { ...mergeCharts(chart, forkTemplate(template)), name: chart.name })),
+        layoutVersion: state.layoutVersion + 1,
+      };
     }
 
     case "build": {
@@ -162,6 +177,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         }),
         builderIssues: built.issues,
         selectedId: null,
+        layoutVersion: state.layoutVersion + 1,
       };
     }
 
