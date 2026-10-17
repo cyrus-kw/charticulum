@@ -19,6 +19,11 @@ import { Button, cn, inputClass } from "./ui";
 import { PanelToggle, SidePanel } from "./SidePanel";
 import { usePanels } from "./usePanels";
 
+// A box lying on the chart, in the same style as its other controls. The
+// box's own border closes off the panel inside.
+const chartBox =
+  "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900 [&>section]:border-b-0";
+
 export function Planner() {
   // useReducer holds the planner state; dispatch(action) updates it.
   // The third argument builds the first state once, on first render.
@@ -145,21 +150,22 @@ export function Planner() {
                 <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
               )
             }
-            // The plan's issues and requirements, always on the chart; a
-            // selected course's details join them on the left.
+            // On the chart's top right, left to right: the selected course
+            // (if any), the plan's issues, its requirements. Separate boxes.
             topRight={
-              <div className={cn("grid", selected && "lg:grid-cols-2")}>
+              <>
                 {selected && (
-                  <div className="min-w-0 border-zinc-200 lg:w-80 lg:border-r dark:border-zinc-800 lg:[&>section]:border-b-0">
+                  <div className={cn(chartBox, "w-80")}>
                     <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
                   </div>
                 )}
-                {/* The box's own border closes off the last section. */}
-                <div className="min-w-0 lg:w-80 [&>section:last-child]:border-b-0">
+                <div className={cn(chartBox, "w-72")}>
                   <IssuesPanel {...panelProps} />
+                </div>
+                <div className={cn(chartBox, "w-72")}>
                   <SummaryPanel {...panelProps} />
                 </div>
-              </div>
+              </>
             }
           />
         </main>

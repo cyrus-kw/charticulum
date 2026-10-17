@@ -818,13 +818,15 @@ export function ChartFlow({
           <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
         </FlowPanel>
         {topRight && (
-          // Scrolls on its own if it's taller than the chart ("nowheel"
-          // keeps the wheel from moving the chart underneath).
+          // A row of boxes, top aligned. Each scrolls on its own if it's
+          // taller than the chart ("nowheel" keeps the wheel from moving the
+          // chart underneath). The row itself lets clicks through to the
+          // chart below the boxes.
           <FlowPanel
             position="top-right"
             className={cn(
-              "nowheel max-h-[calc(100%-30px)] max-w-[calc(100%-30px)] overflow-y-auto",
-              "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
+              "nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] items-start gap-2 !pointer-events-none",
+              "*:pointer-events-auto *:max-h-full *:overflow-y-auto",
             )}
           >
             {topRight}
