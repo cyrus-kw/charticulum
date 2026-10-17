@@ -46,7 +46,7 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
   return (
     <Panel title="Requirements">
       <div className="space-y-2">
-        <Meter label="Total credits" value={report.totalCredits} target={requirements.minTotalCredits} />
+        <Meter label="Total Credits" value={report.totalCredits} target={requirements.minTotalCredits} />
         {minimums.map(([category, minimum]) => (
           <Meter key={category} label={CATEGORY_NAMES[category]} value={report.creditsByCategory[category] ?? 0} target={minimum} />
         ))}
@@ -60,7 +60,7 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
         )}
         {requirements.maxSharedCredits !== undefined && (
           <div className="flex justify-between text-sm">
-            <span>Shared credits</span>
+            <span>Shared Credits</span>
             <span
               className={cn(
                 "tabular-nums",

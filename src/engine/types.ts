@@ -22,7 +22,7 @@ export type Category =
 export const CATEGORY_NAMES: Record<Category, string> = {
   major: "Major",
   minor: "Minor",
-  "general-education": "General education",
+  "general-education": "General Education",
   elective: "Elective",
   focus: "Focus",
 };
