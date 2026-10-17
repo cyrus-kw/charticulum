@@ -1,21 +1,11 @@
 // Small shared building blocks so panels look and behave the same.
 import type { ButtonHTMLAttributes, ReactNode, SelectHTMLAttributes } from "react";
-import type { Category } from "../engine/index";
 
 // Join class names, skipping false/undefined ones:
 // cn("a", isOn && "b") -> "a b" or "a".
 export function cn(...classes: (string | false | null | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
 }
-
-// How each requirement category is written for people.
-export const CATEGORY_LABELS: Record<Category, string> = {
-  major: "Major",
-  minor: "Minor",
-  "general-education": "Gen ed",
-  elective: "Elective",
-  focus: "Focus",
-};
 
 export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
   return (

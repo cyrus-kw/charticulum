@@ -11,7 +11,7 @@ const REQUISITE_CODES = new Set([
 ]);
 
 // Every problem with the plan, with one-click fixes where there's an
-// obvious one (progressive error correction). Shown only when there are any.
+// obvious one (progressive error correction).
 export function IssuesPanel({ state, view, dispatch }: PanelProps) {
   const placed = new Set(view.chart.terms.flatMap((t) => t.objectIds));
   const lastTerm = view.chart.terms.at(-1)?.index ?? 1;
@@ -63,27 +63,28 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
     return null;
   };
 
-  // All clear: nothing to show (Requirements says so).
-  if (all.length === 0) return null;
-
   return (
-    <Panel title="Issues" actions={<Badge tone="bad">{all.length}</Badge>}>
-      <ul className="space-y-2">
-        {all.map(({ issue, source }, i) => (
-          <li key={i} className="text-sm">
-            <button
-              type="button"
-              className="text-left hover:underline disabled:no-underline"
-              disabled={!issue.objectId || !placed.has(issue.objectId)}
-              onClick={() => issue.objectId && dispatch({ type: "select", objectId: issue.objectId })}
-            >
-              {source && <span className="font-semibold">{source}: </span>}
-              {issue.message}
-            </button>
-            <div className="mt-1 flex flex-wrap gap-1 empty:hidden">{fixes(issue)}</div>
-          </li>
-        ))}
-      </ul>
+    <Panel title="Issues" actions={<Badge tone={all.length ? "bad" : "good"}>{all.length || "All clear"}</Badge>}>
+      {all.length === 0 ? (
+        <p className="text-sm text-zinc-500">This plan meets every rule and requirement.</p>
+      ) : (
+        <ul className="space-y-2">
+          {all.map(({ issue, source }, i) => (
+            <li key={i} className="text-sm">
+              <button
+                type="button"
+                className="text-left hover:underline disabled:no-underline"
+                disabled={!issue.objectId || !placed.has(issue.objectId)}
+                onClick={() => issue.objectId && dispatch({ type: "select", objectId: issue.objectId })}
+              >
+                {source && <span className="font-semibold">{source}: </span>}
+                {issue.message}
+              </button>
+              <div className="mt-1 flex flex-wrap gap-1 empty:hidden">{fixes(issue)}</div>
+            </li>
+          ))}
+        </ul>
+      )}
     </Panel>
   );
 }
