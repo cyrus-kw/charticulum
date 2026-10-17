@@ -57,7 +57,9 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
         </div>
         <div className="mt-1 flex flex-wrap gap-1">
           <Badge>{object.kind}</Badge>
-          <Badge>{object.credits} credits</Badge>
+          <Badge>
+            {object.credits} {object.credits === 1 ? "credit" : "credits"}
+          </Badge>
           {object.categories.map((c) => (
             <Badge key={c} tone="info">
               {c}
@@ -67,16 +69,23 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
       </div>
 
       <dl className="mb-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
-        <dt className="text-zinc-500">Needs first</dt>
-        <dd>
-          {requisites.previous.length
-            ? requisites.previous
+        {/* Requisites only when the course has any. */}
+        {requisites.previous.length > 0 && (
+          <>
+            <dt className="text-zinc-500">Prerequisites</dt>
+            <dd>
+              {requisites.previous
                 .map((r) => (requisites.minGrades?.[r] ? `${r} (${requisites.minGrades[r]}+)` : r))
-                .join(", ")
-            : "—"}
-        </dd>
-        <dt className="text-zinc-500">Take with</dt>
-        <dd>{requisites.concurrent.join(", ") || "—"}</dd>
+                .join(", ")}
+            </dd>
+          </>
+        )}
+        {requisites.concurrent.length > 0 && (
+          <>
+            <dt className="text-zinc-500">Concurrents</dt>
+            <dd>{requisites.concurrent.join(", ")}</dd>
+          </>
+        )}
         <dt className="text-zinc-500">Offered</dt>
         <dd>
           {availability?.seasons?.join(", ") ?? "every term"}
