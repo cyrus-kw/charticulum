@@ -52,15 +52,19 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
       }
     >
       <div className="mb-2">
-        {/* "CS 201: Algorithms" */}
-        <div className="text-base">
-          <span className="font-semibold">{courseCode(object.id)}</span>: {object.title}
+        {/* "CS 201: Algorithms", with its credits on the right (as on the card). */}
+        <div className="flex items-baseline justify-between gap-2">
+          <div className="text-base">
+            <span className="font-semibold">{courseCode(object.id)}</span>: {object.title}
+          </div>
+          <span className="shrink-0">
+            <Badge>
+              {object.credits} {object.credits === 1 ? "credit" : "credits"}
+            </Badge>
+          </span>
         </div>
         <div className="mt-1 flex flex-wrap gap-1">
           <Badge>{object.kind}</Badge>
-          <Badge>
-            {object.credits} {object.credits === 1 ? "credit" : "credits"}
-          </Badge>
           {object.categories.map((c) => (
             <Badge key={c} tone="info">
               {CATEGORY_NAMES[c]}
