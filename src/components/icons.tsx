@@ -67,13 +67,14 @@ export function PlusIcon() {
   );
 }
 
-// Two chevrons pointing in toward the middle (><): squeeze the chart back
+// Two chevrons pointing in at a center line (>|<): squeeze the chart back
 // to fit the width.
 export function FitIcon() {
   return (
     <Icon>
-      <path d="m5 7 5 5-5 5" />
-      <path d="m19 7-5 5 5 5" />
+      <path d="m3 7 5 5-5 5" />
+      <path d="m21 7-5 5 5 5" />
+      <path d="M12 4v16" />
     </Icon>
   );
 }
