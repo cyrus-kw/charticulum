@@ -18,6 +18,10 @@ const TOGGLE_INSET = 15;
 // The same height as the chart's button groups (28px buttons + 1px borders).
 const TOGGLE_SIZE = 30;
 export const PANEL_HEADER_HEIGHT = TOGGLE_INSET * 2 + TOGGLE_SIZE;
+// A floating panel sits this far in from the chart's corner. Its header is
+// padded less, by this plus its 1px border, to keep the toggle in place.
+const FLOAT_GAP = 8;
+const FLOAT_PAD = TOGGLE_INSET - FLOAT_GAP - 1;
 
 export function SidePanel({
   id,
@@ -25,6 +29,7 @@ export function SidePanel({
   side,
   open,
   width,
+  floating = false,
   onToggle,
   onResize,
   children,
@@ -34,6 +39,9 @@ export function SidePanel({
   side: "left" | "right";
   open: boolean;
   width: number;
+  // Float as a card over the chart's top corner (wide screens), instead of
+  // taking room beside it. The parent must be the chart's positioned box.
+  floating?: boolean;
   onToggle: () => void;
   // `done` is true at the end of a drag (or a keyboard step).
   onResize: (width: number, done: boolean) => void;
@@ -80,6 +88,58 @@ export function SidePanel({
     event.preventDefault();
   };
 
+  const handle = (
+    // The drag handle on the edge facing the chart (wide screens only).
+    <div
+      role="separator"
+      aria-orientation="vertical"
+      aria-label={`Resize ${title.toLowerCase()}`}
+      aria-controls={id}
+      aria-valuenow={width}
+      aria-valuemin={PANEL_MIN_WIDTH}
+      aria-valuemax={PANEL_MAX_WIDTH}
+      tabIndex={0}
+      onPointerDown={startDrag}
+      onKeyDown={onKey}
+      className={cn(
+        "hidden w-1.5 shrink-0 cursor-col-resize transition-colors hover:bg-sky-500/30 focus-visible:bg-sky-500/50 focus-visible:outline-none lg:block",
+        floating && "absolute inset-y-2 z-10 rounded-full",
+        floating && (side === "left" ? "-right-0.5" : "-left-0.5"),
+      )}
+    />
+  );
+
+  if (floating) {
+    return (
+      <aside
+        id={id}
+        aria-label={title}
+        inert={!open}
+        style={{ ["--panel-w" as string]: `${width}px`, top: FLOAT_GAP, [side]: FLOAT_GAP }}
+        className={cn(
+          "flex flex-col border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950",
+          "max-lg:border-t lg:absolute lg:z-10 lg:w-(--panel-w) lg:max-w-[calc(100%-16px)] lg:max-h-[calc(100%-16px)] lg:rounded-xl lg:border lg:shadow-lg",
+          !open && "hidden",
+        )}
+      >
+        <div
+          style={{ height: TOGGLE_SIZE + FLOAT_PAD * 2 + 1, paddingInline: FLOAT_PAD }}
+          className={cn(
+            "flex shrink-0 items-center gap-3 border-b border-zinc-200 dark:border-zinc-800",
+            side === "right" && "flex-row-reverse",
+          )}
+        >
+          <PanelToggle id={id} title={title} side={side} open onToggle={onToggle} />
+          <span className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
+            {title}
+          </span>
+        </div>
+        <div className="max-h-[40dvh] min-h-0 overflow-y-auto lg:max-h-none">{children}</div>
+        {handle}
+      </aside>
+    );
+  }
+
   return (
     <div className={cn("flex min-h-0 shrink-0", side === "right" && "lg:flex-row-reverse")}>
       <aside
@@ -89,7 +149,10 @@ export function SidePanel({
         inert={!open}
         // The inner width leaves room for the 1px border, so the toggle sits
         // exactly where its floating copy will.
-        style={{ ["--panel-w" as string]: open ? `${width}px` : "0px", ["--panel-inner" as string]: `${width - 1}px` }}
+        style={{
+          ["--panel-w" as string]: open ? `${width}px` : "0px",
+          ["--panel-inner" as string]: `${width - 1}px`,
+        }}
         className={cn(
           "overflow-hidden border-zinc-200 lg:w-(--panel-w) dark:border-zinc-800",
           !dragging && "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
@@ -100,7 +163,10 @@ export function SidePanel({
         <div className="h-full max-h-[40dvh] overflow-y-auto lg:max-h-none lg:w-(--panel-inner)">
           <div
             // +1 for the bottom border, so the toggle is TOGGLE_INSET from the top.
-            style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
+            style={{
+              height: PANEL_HEADER_HEIGHT + 1,
+              paddingInline: TOGGLE_INSET,
+            }}
             className={cn(
               "flex items-center gap-3 border-b border-zinc-200 dark:border-zinc-800",
               side === "right" && "flex-row-reverse",
@@ -115,22 +181,7 @@ export function SidePanel({
         </div>
       </aside>
 
-      {open && (
-        // The drag handle on the edge facing the chart (wide screens only).
-        <div
-          role="separator"
-          aria-orientation="vertical"
-          aria-label={`Resize ${title.toLowerCase()}`}
-          aria-controls={id}
-          aria-valuenow={width}
-          aria-valuemin={PANEL_MIN_WIDTH}
-          aria-valuemax={PANEL_MAX_WIDTH}
-          tabIndex={0}
-          onPointerDown={startDrag}
-          onKeyDown={onKey}
-          className="hidden w-1.5 shrink-0 cursor-col-resize transition-colors hover:bg-sky-500/30 focus-visible:bg-sky-500/50 focus-visible:outline-none lg:block"
-        />
-      )}
+      {open && handle}
     </div>
   );
 }

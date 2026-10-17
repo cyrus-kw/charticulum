@@ -15,7 +15,7 @@ import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
-import { Badge, Button, inputClass } from "./ui";
+import { Badge, Button, cn, inputClass } from "./ui";
 import { PanelToggle, SidePanel } from "./SidePanel";
 import { usePanels } from "./usePanels";
 
@@ -70,6 +70,8 @@ export function Planner() {
         : { ...view.chart, terms: view.chart.terms.filter((t) => t.index !== EXTERNAL_TERM) },
     [view.chart, panels.open.preCredit],
   );
+  const selected = state.selectedId !== null && state.school.catalog.has(state.selectedId);
+  const detailColumns = selected ? 2 : 1;
   const issueCount = view.check.issues.length + view.templateIssues.length + state.builderIssues.length;
 
   return (
@@ -122,57 +124,76 @@ export function Planner() {
           <SchoolPanel {...panelProps} />
         </SidePanel>
 
-        <main className="min-h-[50dvh] min-w-0 flex-1" aria-label="Chart">
-          <ChartFlow
-            catalog={state.school.catalog}
-            chart={shownChart}
-            issues={view.check.issues}
-            creditsByTerm={view.check.report.creditsByTerm}
-            maxCredits={view.requirements.maxCreditsPerTerm}
-            selectedId={state.selectedId}
-            onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
-            layoutVersion={state.layoutVersion}
-            planVersion={state.chart}
-            canUndo={history.past.length > 0}
-            canRedo={history.future.length > 0}
-            onUndo={() => dispatch({ type: "undo" })}
-            onRedo={() => dispatch({ type: "redo" })}
-            onSelect={(objectId) => dispatch({ type: "select", objectId })}
-            // A collapsed sidebar's toggle floats on the chart, at the same
-            // spot it had in the sidebar's corner.
-            topLeft={
-              !panels.open.left && (
-                <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
-              )
-            }
-            topRight={
-              !panels.open.right && (
-                <PanelToggle
-                  id="details-panel"
-                  title="Details"
-                  side="right"
-                  open={false}
-                  badge={issueCount > 0 ? <Badge tone="bad">{issueCount}</Badge> : undefined}
-                  onToggle={() => panels.toggle("right")}
-                />
-              )
-            }
-          />
-        </main>
+        {/* The chart, with the details panel floating over its top right. */}
+        <div className="relative flex min-h-0 min-w-0 flex-1 flex-col">
+          <main className="min-h-[50dvh] min-w-0 flex-1" aria-label="Chart">
+            <ChartFlow
+              catalog={state.school.catalog}
+              chart={shownChart}
+              issues={view.check.issues}
+              creditsByTerm={view.check.report.creditsByTerm}
+              maxCredits={view.requirements.maxCreditsPerTerm}
+              selectedId={state.selectedId}
+              onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
+              layoutVersion={state.layoutVersion}
+              planVersion={state.chart}
+              canUndo={history.past.length > 0}
+              canRedo={history.future.length > 0}
+              onUndo={() => dispatch({ type: "undo" })}
+              onRedo={() => dispatch({ type: "redo" })}
+              onSelect={(objectId) => {
+                dispatch({ type: "select", objectId });
+                // Clicking a course shows its details, even if the panel was shut.
+                if (objectId && !panels.open.right) panels.toggle("right");
+              }}
+              // A collapsed sidebar's toggle floats on the chart, at the same
+              // spot it had in the sidebar's corner.
+              topLeft={
+                !panels.open.left && (
+                  <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
+                )
+              }
+              topRight={
+                !panels.open.right && (
+                  <PanelToggle
+                    id="details-panel"
+                    title="Details"
+                    side="right"
+                    open={false}
+                    badge={issueCount > 0 ? <Badge tone="bad">{issueCount}</Badge> : undefined}
+                    onToggle={() => panels.toggle("right")}
+                  />
+                )
+              }
+            />
+          </main>
 
-        <SidePanel
-          id="details-panel"
-          title="Details"
-          side="right"
-          open={panels.open.right}
-          width={panels.open.rightWidth}
-          onToggle={() => panels.toggle("right")}
-          onResize={(width, done) => panels.setWidth("right", width, done)}
-        >
-          <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
-          <IssuesPanel {...panelProps} />
-          <SummaryPanel {...panelProps} />
-        </SidePanel>
+          {/* Selected course | chart stats, side by side; each column is the
+              panel's width, so selecting a course widens it. */}
+          <SidePanel
+            id="details-panel"
+            title="Details"
+            side="right"
+            floating
+            open={panels.open.right}
+            width={panels.open.rightWidth * detailColumns}
+            onToggle={() => panels.toggle("right")}
+            onResize={(width, done) => panels.setWidth("right", width / detailColumns, done)}
+          >
+            <div className={cn("grid", detailColumns === 2 && "lg:grid-cols-2")}>
+              {selected && (
+                <div className="min-w-0 border-zinc-200 lg:border-r dark:border-zinc-800 lg:[&>section]:border-b-0">
+                  <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
+                </div>
+              )}
+              {/* The card's own border closes off the last section. */}
+              <div className="min-w-0 lg:[&>section:last-child]:border-b-0">
+                <IssuesPanel {...panelProps} />
+                <SummaryPanel {...panelProps} />
+              </div>
+            </div>
+          </SidePanel>
+        </div>
       </div>
     </div>
   );
