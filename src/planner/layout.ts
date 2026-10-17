@@ -215,7 +215,7 @@ export function chartLayout(
     const external = chart.terms[column].index === EXTERNAL_TERM;
     for (const id of ids) {
       const object = catalog.get(id)!;
-      const seasons = object.availability?.seasons;
+      const seasons = object.availability.seasons;
       nodes.push({
         id,
         type: "course",
@@ -229,7 +229,7 @@ export function chartLayout(
             .map((issue) => ({ ...issue, message: withCourseCodes(issue.message, catalog) })),
           external,
           ...(colors.has(id) && { color: colors.get(id) }),
-          ...(seasons?.length === 1 && { onlyIn: seasons[0] }),
+          ...(seasons.length === 1 && { onlyIn: seasons[0] }),
           needsMinGrade: minGradeIds.has(id),
           generalEducation: object.categories.includes("general-education"),
         },

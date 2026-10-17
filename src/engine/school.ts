@@ -3,7 +3,7 @@
 import { z } from "zod";
 import { createCatalog } from "./catalog";
 import { publishTemplate, type TemplateLibrary } from "./templates";
-import type { Catalog, CourseObject, RequirementSet } from "./types";
+import { EVERY_TERM, type Catalog, type CourseObject, type RequirementSet } from "./types";
 
 // ---------------------------------------------------------------------------
 // Schema. Zod checks data at runtime (TypeScript types only exist while
@@ -31,9 +31,11 @@ const courseObject = z.object({
   internalEquivalents: z.array(id).default([]),
   externalEquivalents: z.array(z.object({ institution: z.string(), externalId: id })).default([]),
   categories: z.array(category).default([]),
+  // Files may leave availability (or its seasons) out; it's then filled in
+  // as every term, so the rest of the app always sees the seasons listed.
   availability: z
-    .object({ seasons: z.array(season).optional(), yearParity: z.enum(["odd", "even"]).optional() })
-    .optional(),
+    .object({ seasons: z.array(season).default(EVERY_TERM), yearParity: z.enum(["odd", "even"]).optional() })
+    .default({ seasons: EVERY_TERM }),
 });
 
 const requirementSet = z.object({

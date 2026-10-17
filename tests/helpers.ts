@@ -1,4 +1,4 @@
-import type { Chart, CourseObject, Requirements } from "../src/engine/types";
+import { EVERY_TERM, type Chart, type CourseObject, type Requirements } from "../src/engine/types";
 
 // Build a CourseObject with sensible defaults so tests only spell out
 // the fields they care about. `Partial<CourseObject>` makes every field
@@ -20,6 +20,7 @@ export function obj(
     internalEquivalents: [],
     externalEquivalents: [],
     categories: [],
+    availability: { seasons: EVERY_TERM },
     ...rest,
     requisites: { previous, concurrent, ...(minGrades && { minGrades }) },
   };

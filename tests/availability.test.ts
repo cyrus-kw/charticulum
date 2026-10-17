@@ -2,12 +2,13 @@ import { describe, expect, it } from "vitest";
 import { isOffered, slotLabel, termCalendar } from "../src/engine/availability";
 import { createCatalog } from "../src/engine/catalog";
 import { buildChart } from "../src/engine/scheduler";
+import { EVERY_TERM } from "../src/engine/types";
 import { validateChart } from "../src/engine/validate";
 import { chartOf, obj, requirements } from "./helpers";
 
 describe("isOffered", () => {
   const fallOnly = obj("A", { availability: { seasons: ["fall"] } });
-  const oddYears = obj("B", { availability: { yearParity: "odd" } });
+  const oddYears = obj("B", { availability: { seasons: EVERY_TERM, yearParity: "odd" } });
 
   it("checks the season", () => {
     expect(isOffered(fallOnly, { season: "fall" })).toBe(true);
@@ -19,9 +20,14 @@ describe("isOffered", () => {
     expect(isOffered(oddYears, { year: 2026 })).toBe(false);
   });
 
-  it("treats objects and terms without calendar data as offered", () => {
+  it("treats terms without calendar data as offered", () => {
     expect(isOffered(obj("C"), { season: "summer" })).toBe(true);
     expect(isOffered(fallOnly, {})).toBe(true);
+  });
+
+  it("treats an object with no seasons (TBA) as not offered", () => {
+    const tba = obj("D", { availability: { seasons: [] } });
+    expect(isOffered(tba, { season: "fall" })).toBe(false);
   });
 });
 

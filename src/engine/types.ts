@@ -53,9 +53,14 @@ export interface ExternalEquivalent {
 
 export type Season = "winter" | "spring" | "summer" | "fall";
 
-// When an object is offered. A missing field means "no restriction".
+// The seasons a course runs in when a school doesn't say otherwise.
+export const EVERY_TERM: Season[] = ["spring", "summer", "fall"];
+
+// When an object is offered. Seasons are always listed out (rather than
+// leaving the field out to mean "any"), so the data says exactly what it
+// means. An empty list means the school hasn't scheduled it yet ("TBA").
 export interface Availability {
-  seasons?: Season[];
+  seasons: Season[];
   // Offered only in odd or even calendar years.
   yearParity?: "odd" | "even";
 }
@@ -73,8 +78,7 @@ export interface CourseObject {
   externalEquivalents: ExternalEquivalent[];
   // Which requirement categories this object counts toward.
   categories: Category[];
-  // Missing means offered every term.
-  availability?: Availability;
+  availability: Availability;
 }
 
 // All known objects, looked up by id. A Map is a built-in key -> value store.

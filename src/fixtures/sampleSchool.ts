@@ -1,6 +1,7 @@
 // The fictional "Example State University" as one SchoolData document:
 // the same format a real school's JSON import uses.
 import {
+  EVERY_TERM,
   loadSchool,
   parseSchoolData,
   slotLabel,
@@ -23,6 +24,7 @@ const statsCourses: CourseObject[] = [
     internalEquivalents: [],
     externalEquivalents: [],
     categories: ["minor", "general-education"],
+    availability: { seasons: EVERY_TERM },
   },
   {
     id: "STAT300",
@@ -33,6 +35,7 @@ const statsCourses: CourseObject[] = [
     internalEquivalents: [],
     externalEquivalents: [],
     categories: ["minor"],
+    availability: { seasons: EVERY_TERM },
   },
   {
     id: "STAT310",
