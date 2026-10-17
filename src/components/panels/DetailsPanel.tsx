@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { satisfies, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel, Select } from "../ui";
+import { courseCode } from "../../planner/layout";
 import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
 
@@ -51,9 +52,9 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
       }
     >
       <div className="mb-2">
-        {/* "CS201: Algorithms" */}
+        {/* "CS 201: Algorithms" */}
         <div className="text-base">
-          <span className="font-mono font-semibold">{object.id}</span>: {object.title}
+          <span className="font-mono font-semibold">{courseCode(object.id)}</span>: {object.title}
         </div>
         <div className="mt-1 flex flex-wrap gap-1">
           <Badge>{object.kind}</Badge>
@@ -75,7 +76,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             <dt className="text-zinc-500">Prerequisites</dt>
             <dd>
               {requisites.previous
-                .map((r) => (requisites.minGrades?.[r] ? `${r} (${requisites.minGrades[r]}+)` : r))
+                .map((r) => (requisites.minGrades?.[r] ? `${courseCode(r)} (${requisites.minGrades[r]}+)` : courseCode(r)))
                 .join(", ")}
             </dd>
           </>
@@ -83,7 +84,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
         {requisites.concurrent.length > 0 && (
           <>
             <dt className="text-zinc-500">Concurrents</dt>
-            <dd>{requisites.concurrent.join(", ")}</dd>
+            <dd>{requisites.concurrent.map(courseCode).join(", ")}</dd>
           </>
         )}
         <dt className="text-zinc-500">Offered</dt>
