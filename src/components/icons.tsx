@@ -66,14 +66,3 @@ export function PlusIcon() {
     </Icon>
   );
 }
-
-// Arrows pointing out to both sides between two edges: fit to the width.
-export function FitWidthIcon() {
-  return (
-    <Icon>
-      <path d="M3 5v14M21 5v14" />
-      <path d="M7 12h10" />
-      <path d="m10 9-3 3 3 3M14 9l3 3-3 3" />
-    </Icon>
-  );
-}

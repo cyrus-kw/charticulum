@@ -50,7 +50,7 @@ import {
   type TermNode,
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
-import { FitWidthIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
+import { MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
 import { cn } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
@@ -300,8 +300,8 @@ function ZoomControls({ zoom, onZoom, onFit }: { zoom: number; onZoom: (factor: 
       <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM} onClick={() => onZoom(ZOOM_STEP)}>
         <PlusIcon />
       </button>
-      <button type="button" className={button} aria-label="Fit to width" title="Fit to width" onClick={onFit}>
-        <FitWidthIcon />
+      <button type="button" className={button} title="Fit to width" onClick={onFit}>
+        Fit
       </button>
     </div>
   );
