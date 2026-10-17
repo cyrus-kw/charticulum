@@ -3,11 +3,11 @@
 // color. Add new icons here rather than drawing them inline.
 import type { ReactNode } from "react";
 
-function Icon({ children, flip = false }: { children: ReactNode; flip?: boolean }) {
+function Icon({ children, flip = false, size = 16 }: { children: ReactNode; flip?: boolean; size?: number }) {
   return (
     <svg
-      width="16"
-      height="16"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -85,6 +85,15 @@ export function TrashIcon() {
       <path d="M3 6h18" />
       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
       <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+    </Icon>
+  );
+}
+
+// A tick: all good. Smaller when it sits in a tag.
+export function CheckIcon({ size = 16 }: { size?: number }) {
+  return (
+    <Icon size={size}>
+      <path d="M20 6 9 17l-5-5" />
     </Icon>
   );
 }

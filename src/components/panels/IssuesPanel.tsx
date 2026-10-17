@@ -3,6 +3,7 @@
 import type { ChartIssue } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel } from "../ui";
 import { withCourseCodes } from "../../planner/layout";
+import { CheckIcon } from "../icons";
 import type { PanelProps } from "./types";
 
 const REQUISITE_CODES = new Set([
@@ -65,7 +66,15 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
   };
 
   return (
-    <Panel title="Issues" actions={<Badge tone={all.length ? "bad" : "good"}>{all.length}</Badge>}>
+    <Panel title="Issues" actions={
+        <Badge tone={all.length ? "bad" : "good"}>
+          {all.length || (
+            <span role="img" aria-label="No issues">
+              <CheckIcon size={12} />
+            </span>
+          )}
+        </Badge>
+      }>
       {all.length === 0 ? (
         <p className="text-sm text-zinc-500">This plan meets every rule and requirement.</p>
       ) : (
