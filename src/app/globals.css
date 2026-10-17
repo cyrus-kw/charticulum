@@ -79,3 +79,21 @@ body {
     transition: none;
   }
 }
+
+/* The sidebar button that floats on the chart waits until the sidebar has
+   slid shut (200ms, the sidebar's lg:duration-200) before it shows. Until
+   then the sidebar's own button is still on screen, and two would show at
+   once. It stays hidden for the length of this animation, then appears.
+   On narrow screens the sidebar doesn't slide, so there's no wait. */
+@keyframes wait-for-panel {
+  from,
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 64rem) and (prefers-reduced-motion: no-preference) {
+  .after-panel-slide {
+    animation: wait-for-panel 200ms;
+  }
+}

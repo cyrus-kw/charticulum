@@ -187,8 +187,9 @@ export function PanelToggle({
       className={cn(
         "group relative",
         HEADER_BUTTON,
-        // Floating on the chart it needs a background to stand out.
-        !open && "border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
+        // Floating on the chart it needs a background to stand out, and
+        // waits for the sidebar to finish sliding shut (see globals.css).
+        !open && "after-panel-slide border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
       )}
     >
       <SidebarIcon side={side} open={open} />
