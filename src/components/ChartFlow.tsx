@@ -170,15 +170,14 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
       style={{ width: cardWidth, height: NODE_HEIGHT, ...(color && { borderColor: color }) }}
       className={cn(
         "relative flex flex-col justify-center rounded-md border-2 px-2 text-zinc-900 shadow-sm dark:text-zinc-100",
-        // Selected: a light blue fill and a ring just inside the border, so
-        // nothing reaches past the card's edge where arrowheads touch it.
-        selected
-          ? "bg-sky-50 inset-ring-2 inset-ring-sky-500 dark:bg-sky-950"
-          : onlyIn === "fall"
-            ? "bg-orange-100 dark:bg-amber-950"
-            : onlyIn === "spring"
-              ? "bg-green-100 dark:bg-green-950"
-              : "bg-white dark:bg-zinc-900",
+        onlyIn === "fall"
+          ? "bg-orange-100 dark:bg-amber-950"
+          : onlyIn === "spring"
+            ? "bg-green-100 dark:bg-green-950"
+            : "bg-white dark:bg-zinc-900",
+        // Selected: a ring just inside the border, so nothing reaches past
+        // the card's edge where arrowheads touch it.
+        selected && "inset-ring-2 inset-ring-sky-500",
         !color && "border-zinc-300 dark:border-zinc-600",
         external && "border-dashed",
         !external && "cursor-grab active:cursor-grabbing",
