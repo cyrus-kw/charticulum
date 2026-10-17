@@ -8,6 +8,8 @@ import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
 
 const GRADES = Object.keys(GRADE_POINTS) as Grade[];
+// A row of tags under a label.
+const tagList = "mt-0.5 flex flex-wrap gap-1";
 
 // Everything about the selected object, plus ways to change it. The term
 // picker is a keyboard-friendly alternative to dragging.
@@ -77,23 +79,30 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           {requisites.previous.length > 0 && (
             <div>
               <dt className="text-xs text-zinc-500">Prerequisites</dt>
-              <dd>
-                {requisites.previous
-                  .map((r) => (requisites.minGrades?.[r] ? `${courseCode(r)} (${requisites.minGrades[r]}+)` : courseCode(r)))
-                  .join(", ")}
+              <dd className={tagList}>
+                {requisites.previous.map((r) => (
+                  <Badge key={r}>
+                    {courseCode(r)}
+                    {requisites.minGrades?.[r] && ` (${requisites.minGrades[r]}+)`}
+                  </Badge>
+                ))}
               </dd>
             </div>
           )}
           {requisites.concurrent.length > 0 && (
             <div>
               <dt className="text-xs text-zinc-500">Concurrents</dt>
-              <dd>{requisites.concurrent.map(courseCode).join(", ")}</dd>
+              <dd className={tagList}>
+                {requisites.concurrent.map((r) => (
+                  <Badge key={r}>{courseCode(r)}</Badge>
+                ))}
+              </dd>
             </div>
           )}
           <div>
             <dt className="text-xs text-zinc-500">Offered</dt>
             {/* Tags, tinted like the chart's fall-only / spring-only cards. */}
-            <dd className="mt-0.5 flex flex-wrap gap-1">
+            <dd className={tagList}>
               {availability?.seasons?.length ? (
                 availability.seasons.map((season) => (
                   <Badge key={season} tone={season === "fall" || season === "spring" ? season : "neutral"}>
@@ -109,7 +118,11 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           {object.internalEquivalents.length > 0 && (
             <div>
               <dt className="text-xs text-zinc-500">Same as</dt>
-              <dd>{object.internalEquivalents.map(courseCode).join(", ")}</dd>
+              <dd className={tagList}>
+                {object.internalEquivalents.map((r) => (
+                  <Badge key={r}>{courseCode(r)}</Badge>
+                ))}
+              </dd>
             </div>
           )}
         </dl>
