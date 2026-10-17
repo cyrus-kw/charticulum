@@ -76,7 +76,7 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
         </Badge>
       }>
       {all.length === 0 ? (
-        <p className="text-sm text-zinc-500">This plan meets every rule and requirement.</p>
+        <p className="text-sm text-zinc-500">This plan meets every requirement.</p>
       ) : (
         <ul className="space-y-2">
           {all.map(({ issue, source }, i) => (
