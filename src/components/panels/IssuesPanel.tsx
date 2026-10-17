@@ -64,7 +64,7 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
   };
 
   return (
-    <Panel title="Issues" actions={<Badge tone={all.length ? "bad" : "good"}>{all.length || "None"}</Badge>}>
+    <Panel title="Issues" actions={<Badge tone={all.length ? "bad" : "good"}>{all.length || "Clear"}</Badge>}>
       {all.length === 0 ? (
         <p className="text-sm text-zinc-500">This plan meets every rule and requirement.</p>
       ) : (
