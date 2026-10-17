@@ -16,7 +16,7 @@ import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
-import { Button, cn, inputClass } from "./ui";
+import { Button, cn } from "./ui";
 import { PanelToggle, SidePanel } from "./SidePanel";
 import { setTheme, useTheme } from "./theme";
 import { usePanels } from "./usePanels";
@@ -83,42 +83,6 @@ export function Planner() {
 
   return (
     <div className="flex h-dvh flex-col bg-page text-ink dark:bg-zinc-950 dark:text-zinc-100">
-      <header className="flex flex-wrap items-center gap-3 border-b border-line px-4 py-2 dark:border-zinc-800">
-        <div className="mr-2">
-          <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
-          <p className="text-xs text-zinc-500">Chart your curriculum</p>
-        </div>
-        <input
-          autoComplete="off"
-          className={`${inputClass} w-64 max-w-full`}
-          aria-label="Chart name"
-          value={state.chart.name}
-          onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
-        />
-        <div className="ml-auto flex flex-wrap gap-2">
-          <Button aria-pressed={panels.open.preCredit} onClick={() => panels.toggle("preCredit")}>
-            {panels.open.preCredit ? "Hide Pre-Credit" : "Show Pre-Credit"}
-          </Button>
-          <Button onClick={() => dispatch({ type: "addTerm" })}>Add term</Button>
-          <Button
-            variant="primary"
-            onClick={() => {
-              if (window.confirm("Replace the current plan with one the builder lays out?")) dispatch({ type: "build" });
-            }}
-          >
-            Build for me
-          </Button>
-          {/* Shows the mode it switches to: a moon in light mode, a sun in dark. */}
-          <Button
-            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-            title={theme === "dark" ? "Light mode" : "Dark mode"}
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          >
-            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
-          </Button>
-        </div>
-      </header>
-
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
         {/* Sidebars resize by dragging their inner edge, which also widens
             or compresses the chart, and collapse to an icon. */}
@@ -131,6 +95,12 @@ export function Planner() {
           width={panels.open.leftWidth}
           onToggle={() => panels.toggle("left")}
           onResize={(width, done) => panels.setWidth(width, done)}
+          heading={
+            <div>
+              <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
+              <p className="text-xs text-zinc-500">Chart your curriculum</p>
+            </div>
+          }
         >
           <SavePanel {...panelProps} />
           <ProgramPanel {...panelProps} />
@@ -161,6 +131,50 @@ export function Planner() {
               !panels.open.left && (
                 <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
               )
+            }
+            // The plan's name, beside undo/redo. As tall as those buttons.
+            title={
+              <input
+                autoComplete="off"
+                className={cn(chartBox, "h-[30px] w-64 px-2 text-sm font-medium")}
+                aria-label="Chart name"
+                value={state.chart.name}
+                onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
+              />
+            }
+            // Plan-wide buttons, above the boxes on the right. The same
+            // height as the chart's other buttons.
+            toolbar={
+              <>
+                <Button
+                  className="h-[30px]"
+                  aria-pressed={panels.open.preCredit}
+                  onClick={() => panels.toggle("preCredit")}
+                >
+                  {panels.open.preCredit ? "Hide Pre-Credit" : "Show Pre-Credit"}
+                </Button>
+                <Button className="h-[30px]" onClick={() => dispatch({ type: "addTerm" })}>
+                  Add term
+                </Button>
+                <Button
+                  className="h-[30px]"
+                  variant="primary"
+                  onClick={() => {
+                    if (window.confirm("Replace the current plan with one the builder lays out?")) dispatch({ type: "build" });
+                  }}
+                >
+                  Build for me
+                </Button>
+                {/* Shows the mode it switches to: a moon in light mode, a sun in dark. */}
+                <Button
+                  className="h-[30px]"
+                  aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+                  title={theme === "dark" ? "Light mode" : "Dark mode"}
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                >
+                  {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+                </Button>
+              </>
             }
             // On the chart's top right, left to right: the selected course,
             // the plan's issues, its requirements. Separate boxes, all the

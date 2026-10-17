@@ -431,6 +431,10 @@ export interface ChartFlowProps {
   // collapsed sidebars).
   topLeft?: ReactNode;
   topRight?: ReactNode;
+  // Shown just right of undo/redo (the plan's name).
+  title?: ReactNode;
+  // A row of buttons above the top-right boxes, lined up on the right.
+  toolbar?: ReactNode;
   // Undo/redo (buttons in the top-left corner).
   canUndo?: boolean;
   canRedo?: boolean;
@@ -451,6 +455,8 @@ export function ChartFlow({
   planVersion = chart,
   topLeft,
   topRight,
+  title,
+  toolbar,
   canUndo = false,
   canRedo = false,
   onUndo = () => {},
@@ -859,20 +865,24 @@ export function ChartFlow({
         <FlowPanel position="top-left" className="flex items-start gap-2">
           {topLeft}
           <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
+          {title}
         </FlowPanel>
-        {topRight && (
-          // A row of boxes, top aligned. Each scrolls on its own if it's
-          // taller than the chart ("nowheel" keeps the wheel from moving the
-          // chart underneath). The row itself lets clicks through to the
-          // chart below the boxes.
+        {(toolbar || topRight) && (
+          // The toolbar on top, its buttons on the right; below it a row of
+          // boxes, top aligned. Each box scrolls on its own if it's taller
+          // than the chart ("nowheel" keeps the wheel from moving the chart
+          // underneath). Only the buttons and boxes catch clicks: the space
+          // around them lets clicks through to the chart.
           <FlowPanel
             position="top-right"
-            className={cn(
-              "nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] items-start gap-2 !pointer-events-none",
-              "*:pointer-events-auto *:max-h-full *:overflow-y-auto",
-            )}
+            className="nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] flex-col items-end gap-2 !pointer-events-none"
           >
-            {topRight}
+            {toolbar && <div className="pointer-events-auto flex shrink-0 flex-wrap justify-end gap-2">{toolbar}</div>}
+            {topRight && (
+              <div className="flex min-h-0 flex-1 items-start gap-2 *:pointer-events-auto *:max-h-full *:overflow-y-auto">
+                {topRight}
+              </div>
+            )}
           </FlowPanel>
         )}
         <FlowPanel position="bottom-left">

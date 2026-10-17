@@ -27,10 +27,13 @@ export function SidePanel({
   width,
   onToggle,
   onResize,
+  heading,
   children,
 }: {
   id: string;
   title: string;
+  // Shown beside the toggle in place of the title (e.g. the app's name).
+  heading?: ReactNode;
   side: "left" | "right";
   open: boolean;
   width: number;
@@ -107,9 +110,11 @@ export function SidePanel({
             )}
           >
             <PanelToggle id={id} title={title} side={side} open onToggle={onToggle} />
-            <span className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
-              {title}
-            </span>
+            {heading ?? (
+              <span className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
+                {title}
+              </span>
+            )}
           </div>
           {children}
         </div>
