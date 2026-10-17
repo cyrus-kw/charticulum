@@ -52,6 +52,19 @@ describe("evaluateRequirements", () => {
     expect(codes(report)).toEqual(["MISSING_REQUIRED_OBJECT"]);
   });
 
+  it("names a missing required object by its type", () => {
+    const withMilestone = createCatalog([...catalog.values(), obj("REVIEW", { kind: "milestone", credits: 0 })]);
+    const report = evaluateRequirements(
+      withMilestone,
+      chartOf([[], []]),
+      requirements({ requiredObjectIds: ["CS101", "REVIEW"] }),
+    );
+    expect(report.issues.map((i) => i.message)).toEqual([
+      "Required course CS101 is not in the chart.",
+      "Required milestone REVIEW is not in the chart.",
+    ]);
+  });
+
   it("counts an internal equivalent toward a required object", () => {
     const report = evaluateRequirements(
       catalog,

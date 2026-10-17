@@ -77,7 +77,8 @@ export function evaluateRequirements(
   for (const id of missingRequired) {
     issues.push({
       code: "MISSING_REQUIRED_OBJECT",
-      message: `Required object ${id} is not in the chart.`,
+      // Named by its type: "Required course CS390…", "Required milestone…".
+      message: `Required ${catalog.get(id)?.kind ?? "item"} ${id} is not in the chart.`,
       objectId: id,
     });
   }
