@@ -21,36 +21,6 @@ npm run demo       # terminal-only demo of the chart engine
 Without a database, plans are saved in your browser. To save them to a
 database instead, see [Database](#database).
 
-## Using the app
-
-- **Programs**: start from a school's program (pinned to its version, e.g.
-  2026-27), or add a minor, which merges its plan and rules into yours.
-- **Drag a card** to another term, or select it and pick a term. Arrows turn
-  red, and the Issues panel explains, when an order is wrong.
-- **Reorder a term** by dragging a card up or down; it lands where you drop
-  it. Courses taken together (a lecture and its lab) move as one block.
-- **Zoom** spreads the chart out sideways or compresses it: the + / −
-  buttons in steps of 20%, Ctrl/⌘ + scroll in steps of 5%. At 100% the
-  terms exactly fill the window. Click the percentage to type one (it rounds up to the next
-  5%, from 100% to 400%).
-  Compressed cards show just the course code ("CS 101"); point at one for
-  its full name. Scroll to move up and down, Shift + scroll to move sideways.
-- **Tools sidebar** resizes by dragging its edge next to the chart (which
-  widens or compresses the chart). The sidebar button in its top corner
-  slides it shut (or drag it nearly shut); the button stays in the same
-  spot on the chart to slide it back open.
-- **Issues and requirements** sit on the chart's top right. Click a course
-  and its details show beside them. **Undo / Redo** sit at the
-  chart's top left (Ctrl/⌘ + Z, Ctrl/⌘ + Shift + Z).
-- **Build for me** lays out a full plan that meets every rule.
-- **Pre-Credit** (AP exams, transfer courses) fills the first column
-  automatically; hide it from the chart with the header button.
-- **Grades** on a selected card count toward GPA and minimum-grade requisites.
-- **Exceptions**: waive a requirement or requisite, or substitute one course
-  for another. School policy decides which kinds are allowed.
-- **School**: import another school's data (JSON), add a transfer/AP table
-  (CSV), or export the current data. Samples are in `public/samples/`.
-
 ## How it's organized
 
 | Folder | What's there |
@@ -108,11 +78,3 @@ To run the database tests too: `TEST_DATABASE_URL="postgres://..." npm test`.
 **On Vercel**: add a Postgres database from the Vercel dashboard (Storage tab),
 which sets `DATABASE_URL` for you. Then create the tables once with
 `DATABASE_URL="<that url>" npm run db:deploy`.
-
-## Not built yet
-
-- **Sign-in.** Everyone is one local user; charts are stored per owner, so
-  adding accounts means replacing `getOwner` in `src/server/chartHandlers.ts`.
-- **Imported schools live in the browser.** They're remembered across
-  reloads but not saved to the database or shared between devices.
-- **A school data editor.** Schools edit JSON and CSV files for now.
