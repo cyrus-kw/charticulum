@@ -388,8 +388,8 @@ function Legend() {
   const item = "flex items-center gap-1.5";
   return (
     <div className="flex max-w-full flex-wrap items-center gap-x-4 gap-y-1 rounded-md border border-zinc-200 bg-white/90 px-3 py-1.5 text-[11px] text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/90 dark:text-zinc-300">
-      <span className={item}>{line(false)} take first</span>
-      <span className={item}>{line(true)} take together</span>
+      <span className={item}>{line(false)} prerequisite</span>
+      <span className={item}>{line(true)} concurrent</span>
       <span className={item}>{line(false, BROKEN_EDGE_COLOR)} out of order</span>
       <span className={item}>
         {swatch("border-orange-300 bg-orange-100 dark:border-amber-800 dark:bg-amber-950")} fall only
