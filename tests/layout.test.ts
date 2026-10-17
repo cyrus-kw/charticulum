@@ -217,6 +217,20 @@ describe("edgeEndpoints", () => {
       expect(drag(box(36 + 100 + MIN_SIDE_GAP + 1, 10), cs201)).toMatchObject({ startSide: "left", endSide: "right" });
     });
 
+    it("keeps cards that sit side by side joined at their sides, however close", () => {
+      // The second screenshot, mid-drag: MATH201 near the right edge of one
+      // term, 34px across from CS201 and SOPH-REV in the next term, and
+      // overlapping them vertically.
+      const math201 = box(300, 50); // center over column 1
+      const cs201 = box(400 + 34, 0); // center over column 2
+      const sophRev = box(400 + 34, 90);
+      expect(drag(math201, cs201)).toMatchObject({ startSide: "right", endSide: "left" });
+      expect(drag(math201, sophRev)).toMatchObject({ startSide: "right", endSide: "left" });
+      // Even if they were joined top to bottom a moment ago.
+      const joined = { start: "top" as Side, end: "bottom" as Side };
+      expect(drag(math201, cs201, joined)).toMatchObject({ startSide: "right", endSide: "left" });
+    });
+
     it("never leaves a near-vertical side-to-side line", () => {
       // Sweep a card across past another, far below it: whenever the line uses
       // left/right sides, it must lean at least MIN_SIDE_GAP across.

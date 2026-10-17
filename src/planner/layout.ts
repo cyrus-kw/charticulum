@@ -564,9 +564,13 @@ export function draggingEndpoints(source: Rect, target: Rect, previous: { start?
   const margin = wasVertical ? TERM_SWITCH_MARGIN : 0;
   const sameTerm =
     columnAt(s.x) === columnAt(t.x) || (wasVertical && Math.abs(s.x - t.x) < COLUMN_WIDTH / 2 + margin);
-  // Space between the cards across (negative when they overlap).
-  const gap = Math.max(target.x - (source.x + source.width), source.x - (target.x + target.width));
-  const tooCloseAcross = gap < MIN_SIDE_GAP + margin;
+  // Space between the cards across and down (negative when they overlap).
+  const gapX = Math.max(target.x - (source.x + source.width), source.x - (target.x + target.width));
+  const gapY = Math.max(target.y - (source.y + source.height), source.y - (target.y + target.height));
+  // Too close across for a side-to-side line, but only when the cards are
+  // also farther apart down than across: cards side by side (even close
+  // together) still join their facing left and right sides.
+  const tooCloseAcross = gapX < MIN_SIDE_GAP + margin && gapY > gapX - margin;
 
   const [startSide, endSide]: [Side, Side] = sameTerm || tooCloseAcross
     ? t.y > s.y
