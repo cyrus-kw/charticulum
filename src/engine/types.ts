@@ -18,6 +18,15 @@ export type Category =
   | "elective"
   | "focus";
 
+// How each category is written for people.
+export const CATEGORY_NAMES: Record<Category, string> = {
+  major: "Major",
+  minor: "Minor",
+  "general-education": "General education",
+  elective: "Elective",
+  focus: "Focus",
+};
+
 export type Grade =
   | "A" | "A-"
   | "B+" | "B" | "B-"

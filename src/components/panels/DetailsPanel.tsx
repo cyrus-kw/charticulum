@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { satisfies, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
+import { satisfies, CATEGORY_NAMES, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel, Select } from "../ui";
 import { courseCode, withCourseCodes } from "../../planner/layout";
 import { TrashIcon } from "../icons";
@@ -63,7 +63,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           </Badge>
           {object.categories.map((c) => (
             <Badge key={c} tone="info">
-              {c}
+              {CATEGORY_NAMES[c]}
             </Badge>
           ))}
         </div>

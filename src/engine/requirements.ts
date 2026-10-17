@@ -1,6 +1,7 @@
 import { earliestSatisfyingTerm, placementTerms } from "./catalog";
 import { chartGpa } from "./grades";
 import {
+  CATEGORY_NAMES,
   EXTERNAL_TERM,
   type Catalog,
   type Category,
@@ -93,7 +94,7 @@ export function evaluateRequirements(
     if (earned < minimum) {
       issues.push({
         code: "CATEGORY_SHORTFALL",
-        message: `${category} has ${earned} credits; ${minimum} are required.`,
+        message: `${CATEGORY_NAMES[category]} has ${earned} credits; ${minimum} are required.`,
       });
     }
   }

@@ -1,6 +1,6 @@
 "use client";
 
-import type { Category, Override } from "../../engine/index";
+import { CATEGORY_NAMES, type Category, type Override } from "../../engine/index";
 import { Button, cn, Panel } from "../ui";
 import type { PanelProps } from "./types";
 
@@ -48,7 +48,7 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
       <div className="space-y-2">
         <Meter label="Total credits" value={report.totalCredits} target={requirements.minTotalCredits} />
         {minimums.map(([category, minimum]) => (
-          <Meter key={category} label={category} value={report.creditsByCategory[category] ?? 0} target={minimum} />
+          <Meter key={category} label={CATEGORY_NAMES[category]} value={report.creditsByCategory[category] ?? 0} target={minimum} />
         ))}
         {requirements.minGpa !== undefined && (
           <div className="flex justify-between text-sm">
