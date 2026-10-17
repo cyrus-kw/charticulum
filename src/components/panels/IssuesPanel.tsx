@@ -1,7 +1,7 @@
 "use client";
 
 import type { ChartIssue } from "../../engine/index";
-import { askReason, Badge, Button, newId, Panel, panelTitleText } from "../ui";
+import { askReason, Badge, Button, newId, Panel } from "../ui";
 import type { PanelProps } from "./types";
 
 const REQUISITE_CODES = new Set([
@@ -64,12 +64,7 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
   };
 
   return (
-    <Panel title="Issues" actions={
-        // In the same lettering as the title beside it.
-        <Badge tone={all.length ? "bad" : "good"} className={panelTitleText}>
-          {all.length || "All clear"}
-        </Badge>
-      }>
+    <Panel title="Issues" actions={<Badge tone={all.length ? "bad" : "good"}>{all.length || "All clear"}</Badge>}>
       {all.length === 0 ? (
         <p className="text-sm text-zinc-500">This plan meets every rule and requirement.</p>
       ) : (

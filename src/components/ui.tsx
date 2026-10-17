@@ -65,21 +65,14 @@ export function Select({ className, ...props }: SelectHTMLAttributes<HTMLSelectE
 export const inputClass =
   "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900";
 
-export function Badge({
-  children,
-  tone = "neutral",
-  className,
-}: {
-  children: ReactNode;
-  tone?: "neutral" | "bad" | "good" | "info";
-  className?: string;
-}) {
+// A small tag, in the same lettering as panel titles so tags look alike
+// everywhere.
+export function Badge({ children, tone = "neutral" }: { children: ReactNode; tone?: "neutral" | "bad" | "good" | "info" }) {
   return (
     <span
       className={cn(
         "inline-flex items-center rounded px-1.5 py-0.5 leading-none",
-        // Its own lettering, unless given another.
-        className ?? "text-[11px] font-medium",
+        panelTitleText,
         tone === "neutral" && "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",

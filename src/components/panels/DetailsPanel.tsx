@@ -51,8 +51,10 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
       }
     >
       <div className="mb-2">
-        <div className="font-mono text-sm font-semibold">{object.id}</div>
-        <div className="text-base">{object.title}</div>
+        {/* "CS201: Algorithms" */}
+        <div className="text-base">
+          <span className="font-mono font-semibold">{object.id}</span>: {object.title}
+        </div>
         <div className="mt-1 flex flex-wrap gap-1">
           <Badge>{object.kind}</Badge>
           <Badge>{object.credits} credits</Badge>
