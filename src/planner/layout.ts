@@ -406,7 +406,8 @@ function placeVertically(
         .map((l) => y.get(l.source)!);
       const aligned = earlier.length ? earlier.reduce((a, b) => a + b, 0) / earlier.length : next;
       const wanted = kept.get(id) ?? aligned;
-      const top = Math.max(next, Math.round(wanted / (ROW_HEIGHT / 2)) * (ROW_HEIGHT / 2));
+      // Snap to whole rows, so courses line up across terms.
+      const top = Math.max(next, Math.round(wanted / ROW_HEIGHT) * ROW_HEIGHT);
       y.set(id, top);
       next = top + ROW_HEIGHT;
     }

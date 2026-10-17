@@ -603,3 +603,20 @@ describe("horizontal zoom geometry", () => {
     expect(termIndexAt(chart, 0, g)).toBe(1); // never Pre-Credit
   });
 });
+
+describe("row grid", () => {
+  it("puts every course on a whole row, so courses line up across terms", () => {
+    let state = initialState(loadSampleSchool(), "bs-cs");
+    state = plannerReducer(state, { type: "addProgram", ref: { templateId: "minor-stats", version: "2026-27" } });
+    const layoutOf = (s: typeof state, memory?: Parameters<typeof chartLayout>[5]) => {
+      const v = derive(s);
+      return chartLayout(s.school.catalog, v.chart, v.check.issues, v.check.report.creditsByTerm, 12, memory);
+    };
+    const onGrid = (layout: ReturnType<typeof layoutOf>) =>
+      courses(layout.nodes).every((n) => (n.position.y - HEADER_HEIGHT) % ROW_HEIGHT === 0);
+    const before = layoutOf(state);
+    expect(onGrid(before)).toBe(true);
+    const moved = plannerReducer(state, { type: "move", objectId: "CS301", termIndex: state.chart.terms.at(-1)!.index });
+    expect(onGrid(layoutOf(moved, before.memory))).toBe(true);
+  });
+});
