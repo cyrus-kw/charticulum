@@ -134,6 +134,7 @@ export function Planner() {
         >
           <SavePanel {...panelProps} />
           <ProgramPanel {...panelProps} />
+          <SummaryPanel {...panelProps} />
           <ExternalCreditPanel {...panelProps} />
           <CatalogPanel {...panelProps} />
           <SchoolPanel {...panelProps} />
@@ -179,19 +180,19 @@ export function Planner() {
                 onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
               />
             }
-            // On the chart's top right, left to right: the selected course,
-            // the plan's issues, its requirements. Separate boxes, all the
-            // same width, so they're evenly spaced and shrink alike.
+            // On the chart's top right, left to right: the selected course
+            // and the plan's issues. Separate boxes, the same width, so
+            // they're evenly spaced and shrink alike.
             topRight={
               <>
                 <div className={cn(chartBox, "w-72")}>
                   <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
                 </div>
-                <div className={cn(chartBox, "w-72")}>
+                {/* Columns all the way down (the box, then the panel inside
+                    it), so when the box is capped in height, the issue list
+                    shrinks and scrolls while the title and count stay. */}
+                <div className={cn(chartBox, "flex w-72 flex-col *:flex *:min-h-0 *:flex-col")}>
                   <IssuesPanel {...panelProps} />
-                </div>
-                <div className={cn(chartBox, "w-72")}>
-                  <SummaryPanel {...panelProps} />
                 </div>
               </>
             }

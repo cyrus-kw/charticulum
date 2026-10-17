@@ -72,7 +72,14 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
       {all.length === 0 ? (
         <p className="text-sm text-zinc-500">This plan meets every requirement.</p>
       ) : (
-        <ul className="space-y-2">
+        // A long list scrolls inside the box, under the title and count,
+        // instead of growing down over the chart. (min-h-0 lets it shrink
+        // to fit the box; see the Issues box in Planner.tsx.) The list
+        // reaches into the panel's right padding (-mr-4) and puts the same
+        // padding back inside (pr-4): the text stays where it was, and the
+        // scrollbar lands in that padding by the box's edge, where it
+        // can't cover any words.
+        <ul className="-mr-4 min-h-0 space-y-2 overflow-y-auto pr-4">
           {all.map(({ issue, source }, i) => (
             <li key={i} className="text-sm">
               <button

@@ -492,6 +492,13 @@ const WHEEL_PER_STEP = 100;
 const DRAGGING_Z = 1000;
 // How long the other cards take to slide aside while reordering.
 const SHIFT_MS = 150;
+// The top-right boxes stop this far above the term titles...
+const BOX_GAP = 8;
+// ...but are never shorter than this, so they stay usable when the plan
+// fills the whole window and there's no empty space above it.
+const MIN_BOX_HEIGHT = 200;
+// React Flow's margin around its panels (the space from the chart's edge).
+const PANEL_MARGIN = 15;
 
 type Point = { x: number; y: number };
 
@@ -1046,15 +1053,20 @@ export function ChartFlow({
             {title}
           </FlowPanel>
           {topRight && (
-            // A row of boxes, top aligned. Each box scrolls on its own if
-            // it's taller than the chart ("nowheel" keeps the wheel from
-            // moving the chart underneath). Only the boxes catch clicks: the
-            // space around them lets clicks through to the chart.
+            // A row of boxes, top aligned. Each box is only as tall as the
+            // empty space above the term titles (--box-room), so it never
+            // covers the chart; anything longer scrolls inside the box
+            // ("nowheel" keeps the wheel from moving the chart underneath).
+            // centerOffset is how far down the chart starts. Only the boxes
+            // catch clicks: the space around them lets clicks through.
             <FlowPanel
               position="top-right"
+              style={{
+                ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - PANEL_MARGIN - BOX_GAP)}px`,
+              }}
               className="nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] flex-col items-end gap-2 !pointer-events-none"
             >
-              <div className="flex min-h-0 flex-1 items-start gap-2 *:pointer-events-auto *:max-h-full *:overflow-y-auto">
+              <div className="flex min-h-0 flex-1 items-start gap-2 *:pointer-events-auto *:max-h-[min(100%,var(--box-room))] *:overflow-y-auto">
                 {topRight}
               </div>
             </FlowPanel>
