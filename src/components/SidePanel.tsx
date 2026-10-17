@@ -165,12 +165,12 @@ export function PanelToggle({
       title={label}
       style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
       className={cn(
-        "relative flex shrink-0 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-300 dark:hover:bg-zinc-800",
+        "group relative flex shrink-0 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-300 dark:hover:bg-zinc-800",
         // Floating on the chart it needs a background to stand out.
         !open && "border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
       )}
     >
-      <SidebarIcon side={side} />
+      <SidebarIcon side={side} open={open} />
       {!open && badge && <span className="absolute -top-2 -right-2">{badge}</span>}
     </button>
   );
