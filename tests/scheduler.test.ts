@@ -60,7 +60,7 @@ describe("buildChart", () => {
     expect(chart.terms[1].objectIds).toEqual(["A"]);
   });
 
-  it("uses Term 0 credit instead of scheduling the object", () => {
+  it("uses Pre-Credit credit instead of scheduling the object", () => {
     const catalog = createCatalog([
       obj("MATH101", { externalEquivalents: [{ institution: "AP", externalId: "CALC-AB" }] }),
       obj("MATH102", { previous: ["MATH101"] }),

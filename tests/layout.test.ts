@@ -1,7 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { createCatalog } from "../src/engine/index";
+import {
+  applyExternalEquivalents,
+  createCatalog,
+  forkTemplate,
+  latestTemplate,
+  mergeCharts,
+} from "../src/engine/index";
 import { loadSampleSchool } from "../src/fixtures/sampleSchool";
 import {
+  arrangeChart,
   chartLayout,
   edgeEndpoints,
   perimeterLength,
@@ -19,6 +26,7 @@ import {
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
   COURSE_COLORS,
+  HEADER_HEIGHT,
   NODE_HEIGHT,
   NODE_WIDTH,
   ROW_HEIGHT,
@@ -121,19 +129,32 @@ describe("chartLayout look", () => {
     }
   });
 
-  it("crosses fewer lines than plain list order", () => {
-    const { edges, nodes, chart } = sampleLayout(["minor-stats"]);
-    const placed = new Map(courses(nodes).map((n) => [n.id, n.position]));
-    // Plain list order: each card in the row it's listed in.
-    const listed = new Map<string, { x: number; y: number }>();
-    chart.terms.forEach((term, column) =>
-      term.objectIds.forEach((id, row) => listed.set(id, { x: column * COLUMN_WIDTH, y: row * ROW_HEIGHT })),
+  it("arranges a new plan to cross fewer lines than the template's list order", () => {
+    // The same major + minor, merged without arranging (the raw template order).
+    const school = loadSampleSchool();
+    const major = forkTemplate(latestTemplate(school.library, "bs-cs")!);
+    const minor = forkTemplate(latestTemplate(school.library, "minor-stats")!);
+    const raw = applyExternalEquivalents(school.catalog, mergeCharts(major, minor));
+    const arranged = arrangeChart(school.catalog, raw);
+    const count = (chart: typeof raw) => {
+      const { nodes, edges } = chartLayout(school.catalog, chart, [], {}, 12);
+      const placed = new Map(courses(nodes).map((n) => [n.id, n.position]));
+      const between = edges.filter((e) => placed.get(e.source)!.x !== placed.get(e.target)!.x);
+      return crossings(between, (id) => placed.get(id)!);
+    };
+    expect(count(arranged)).toBeLessThan(count(raw));
+    // Arranging only reorders within terms.
+    arranged.terms.forEach((term, i) =>
+      expect([...term.objectIds].sort()).toEqual([...raw.terms[i].objectIds].sort()),
     );
-    const between = edges.filter((e) => placed.get(e.source)!.x !== placed.get(e.target)!.x);
-    const ours = crossings(between, (id) => placed.get(id)!);
-    const naive = crossings(between, (id) => listed.get(id)!);
-    expect(ours).toBeLessThanOrEqual(naive);
-    expect(ours).toBeLessThan(naive || 1);
+  });
+
+  it("follows each term's order from the chart, top to bottom", () => {
+    const { nodes, chart } = sampleLayout();
+    for (const term of chart.terms) {
+      const ys = term.objectIds.map((id) => nodes.find((n) => n.id === id)!.position.y);
+      ys.slice(1).forEach((y, i) => expect(y).toBeGreaterThan(ys[i]));
+    }
   });
 
   it("marks one-season courses, minimum-grade courses, and gen eds", () => {
@@ -489,22 +510,28 @@ describe("layout stability across changes", () => {
     expect(y(after.nodes, "D")).toBeGreaterThan(y(before.nodes, "R"));
   });
 
-  it("fills a gap level with the course it's linked to", () => {
-    // Term 1: A, B, C. Term 2: D (needs B). Term 3: P, X, R. Term 4: empty.
-    const catalog = createCatalog([
-      obj("A"), obj("B"), obj("C"),
-      obj("D", { previous: ["B"] }),
-      obj("P"), obj("X"), obj("R"),
-    ]);
+  it("puts a dropped course at the height it was dropped, if there's room", () => {
+    // Term 3 starts as P, X, R; X moves out, leaving a gap; D is dropped into it.
+    const catalog = createCatalog([obj("A"), obj("B"), obj("C"), obj("D"), obj("P"), obj("X"), obj("R")]);
     const first = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "X", "R"], []]), [], {}, 18);
-    // Move X out of term 3: its spot is left free (P and R don't move).
     const second = chartLayout(catalog, chartOf([[], ["A", "B", "C"], ["D"], ["P", "R"], ["X"]]), [], {}, 18, first.memory);
-    const y = (nodes: PlannerNode[], id: string) => nodes.find((n) => n.id === id)!.position.y;
-    expect([y(second.nodes, "P"), y(second.nodes, "R")]).toEqual([y(first.nodes, "P"), y(first.nodes, "R")]);
-    // Move D into term 3: it takes the free spot, level with B.
-    const third = chartLayout(catalog, chartOf([[], ["A", "B", "C"], [], ["P", "R", "D"], ["X"]]), [], {}, 18, second.memory);
-    expect(y(third.nodes, "D")).toBe(y(first.nodes, "X"));
-    expect(y(third.nodes, "D")).toBe(y(first.nodes, "B"));
-    for (const id of ["A", "B", "C", "P", "R", "X"]) expect(y(third.nodes, id), id).toBe(y(second.nodes, id));
+    const y = (layout: typeof first, id: string) => layout.nodes.find((n) => n.id === id)!.position.y;
+    // ChartFlow records where a card was dropped in the memory.
+    const memory = { ...second.memory, column: new Map(second.memory.column), y: new Map(second.memory.y) };
+    memory.column.set("D", 3);
+    memory.y.set("D", y(first, "X") - HEADER_HEIGHT);
+    const third = chartLayout(catalog, chartOf([[], ["A", "B", "C"], [], ["P", "D", "R"], ["X"]]), [], {}, 18, memory);
+    expect(y(third, "D")).toBe(y(first, "X"));
+    for (const id of ["A", "B", "C", "P", "R", "X"]) expect(y(third, id), id).toBe(y(second, id));
+  });
+
+  it("lays out a reordered term afresh", () => {
+    const catalog = createCatalog([obj("P"), obj("Q"), obj("R")]);
+    const before = chartLayout(catalog, chartOf([[], ["P", "Q", "R"]]), [], {}, 18);
+    const after = chartLayout(catalog, chartOf([[], ["R", "P", "Q"]]), [], {}, 18, before.memory);
+    const order = courses(after.nodes)
+      .sort((a, b) => a.position.y - b.position.y)
+      .map((n) => n.id);
+    expect(order).toEqual(["R", "P", "Q"]);
   });
 });

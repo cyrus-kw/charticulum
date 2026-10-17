@@ -28,10 +28,39 @@ describe("plannerReducer", () => {
     expect(codes).toContain("NOT_OFFERED"); // CS301 is spring-only; Term 1 is fall
   });
 
-  it("refuses moves into Term 0 or unknown terms", () => {
+  it("refuses moves into Pre-Credit or unknown terms", () => {
     const state = sampleState();
     expect(plannerReducer(state, { type: "move", objectId: "CS101", termIndex: 0 })).toBe(state);
     expect(plannerReducer(state, { type: "move", objectId: "CS101", termIndex: 99 })).toBe(state);
+  });
+
+  it("moves a course to a given position in a term", () => {
+    const state = sampleState();
+    const term = state.chart.terms.find((t) => t.objectIds.includes("HIST110"))!;
+    const others = term.objectIds.filter((id) => id !== "HIST110");
+    const top = plannerReducer(state, { type: "move", objectId: "HIST110", termIndex: term.index, position: 0 });
+    expect(top.chart.terms.find((t) => t.index === term.index)!.objectIds).toEqual(["HIST110", ...others]);
+    const bottom = plannerReducer(top, { type: "move", objectId: "HIST110", termIndex: term.index });
+    expect(bottom.chart.terms.find((t) => t.index === term.index)!.objectIds).toEqual([...others, "HIST110"]);
+  });
+
+  it("moves a lecture and its lab together within their term", () => {
+    const state = sampleState();
+    const term = state.chart.terms.find((t) => t.objectIds.includes("CS102L"))!;
+    const reordered = plannerReducer(state, { type: "move", objectId: "CS102L", termIndex: term.index, position: 99 });
+    const ids = reordered.chart.terms.find((t) => t.index === term.index)!.objectIds;
+    // Both went to the bottom, still together, in their order.
+    const block = term.objectIds.filter((id) => id === "CS102" || id === "CS102L");
+    expect(ids.slice(-2)).toEqual(block);
+  });
+
+  it("moves only the dragged course to another term", () => {
+    const state = sampleState();
+    const from = state.chart.terms.find((t) => t.objectIds.includes("CS102L"))!;
+    const to = state.chart.terms.find((t) => t.index === from.index + 1)!;
+    const moved = plannerReducer(state, { type: "move", objectId: "CS102L", termIndex: to.index, position: 0 });
+    expect(moved.chart.terms.find((t) => t.index === to.index)!.objectIds[0]).toBe("CS102L");
+    expect(moved.chart.terms.find((t) => t.index === from.index)!.objectIds).toContain("CS102");
   });
 
   it("removes an object and clears the selection", () => {
@@ -47,7 +76,7 @@ describe("plannerReducer", () => {
     expect(state.chart.terms.at(-1)?.label).toBe("Spring 2029");
   });
 
-  it("moves outside credit into Term 0", () => {
+  it("moves outside credit into Pre-Credit", () => {
     const state = plannerReducer(sampleState(), {
       type: "addExternal",
       work: { institution: "AP", externalId: "CS-A" },
@@ -188,7 +217,7 @@ describe("chartLayout", () => {
     expect(broken.edges.find((e) => e.id === "CS101->CS102")?.className).toContain("broken");
   });
 
-  it("maps a drop position to a term, never Term 0", () => {
+  it("maps a drop position to a term, never Pre-Credit", () => {
     expect(termIndexAt(view.chart, 0)).toBe(1);
     expect(termIndexAt(view.chart, 2 * COLUMN_WIDTH + 30)).toBe(2);
     expect(termIndexAt(view.chart, 999 * COLUMN_WIDTH)).toBe(view.chart.terms.at(-1)!.index);

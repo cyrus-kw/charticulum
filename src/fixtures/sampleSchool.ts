@@ -52,7 +52,7 @@ function plan(startYear: number, termObjectIds: string[][]): Term[] {
   const seasons: Season[] = ["fall", "spring"];
   const slots = termCalendar({ season: "fall", year: startYear }, seasons, termObjectIds.length);
   return [
-    { index: 0, label: "Term 0 (External)", objectIds: [] },
+    { index: 0, label: "Pre-Credit", objectIds: [] },
     ...termObjectIds.map((objectIds, i) => ({
       index: i + 1,
       label: slotLabel(slots[i]),

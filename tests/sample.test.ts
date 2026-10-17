@@ -40,7 +40,7 @@ describe("formatChart", () => {
       draft,
       checkChart(sampleCatalog, draft, sampleRequirements),
     );
-    expect(text).toContain("Term 0 (External)");
+    expect(text).toContain("Pre-Credit");
     expect(text).toMatch(/CS101\s+Intro to Programming\s+4/);
     expect(text).toContain("[PREVIOUS_REQUISITE_NOT_MET]");
   });
@@ -50,7 +50,7 @@ describe("formatChart", () => {
       name: "odd chart",
       completedExternal: [],
       terms: [
-        { index: 0, label: "Term 0", objectIds: [] },
+        { index: 0, label: "Pre-Credit", objectIds: [] },
         { index: 1, label: "Term 1", objectIds: ["GHOST"] },
       ],
     });

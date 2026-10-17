@@ -25,7 +25,7 @@ export function obj(
   };
 }
 
-// Build a chart from a list of terms, where index 0 of the list is Term 0.
+// Build a chart from a list of terms, where index 0 of the list is Pre-Credit.
 export function chartOf(termObjectIds: string[][], extra: Partial<Chart> = {}): Chart {
   return {
     name: "test chart",

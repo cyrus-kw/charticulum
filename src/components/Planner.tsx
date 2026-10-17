@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useReducer } from "react";
-import { loadSchool } from "../engine/index";
+import { EXTERNAL_TERM, loadSchool } from "../engine/index";
 import { loadSampleSchool } from "../fixtures/sampleSchool";
 import { derive, initialState, plannerReducer } from "../planner/state";
 import { recallSchool } from "../storage/schoolMemory";
@@ -37,6 +37,15 @@ export function Planner() {
   // Remount panels when the school changes so their local inputs reset.
   const schoolKey = state.school.data.school.id;
   const panels = usePanels();
+  // The chart as drawn: without the Pre-Credit column if it's hidden. (Its
+  // credit still counts; only the picture changes.)
+  const shownChart = useMemo(
+    () =>
+      panels.open.preCredit
+        ? view.chart
+        : { ...view.chart, terms: view.chart.terms.filter((t) => t.index !== EXTERNAL_TERM) },
+    [view.chart, panels.open.preCredit],
+  );
   const issueCount = view.check.issues.length + view.templateIssues.length + state.builderIssues.length;
 
   return (
@@ -62,6 +71,9 @@ export function Planner() {
           onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
         />
         <div className="ml-auto flex flex-wrap gap-2">
+          <Button aria-pressed={panels.open.preCredit} onClick={() => panels.toggle("preCredit")}>
+            {panels.open.preCredit ? "Hide Pre-Credit" : "Show Pre-Credit"}
+          </Button>
           <Button onClick={() => dispatch({ type: "addTerm" })}>Add term</Button>
           <Button
             variant="primary"
@@ -102,14 +114,14 @@ export function Planner() {
         <main className="min-h-[50dvh] flex-1" aria-label="Chart">
           <ChartFlow
             catalog={state.school.catalog}
-            chart={view.chart}
+            chart={shownChart}
             issues={view.check.issues}
             creditsByTerm={view.check.report.creditsByTerm}
             maxCredits={view.requirements.maxCreditsPerTerm}
             selectedId={state.selectedId}
-            onMove={(objectId, termIndex) => dispatch({ type: "move", objectId, termIndex })}
+            onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
-            fitKey={`${panels.open.left}-${panels.open.right}`}
+            fitKey={`${panels.open.left}-${panels.open.right}-${panels.open.preCredit}`}
           />
         </main>
 

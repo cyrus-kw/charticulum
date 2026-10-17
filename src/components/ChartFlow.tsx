@@ -34,6 +34,7 @@ import {
   relatedTo,
   BROKEN_EDGE_COLOR,
   COLUMN_WIDTH,
+  HEADER_HEIGHT,
   NODE_HEIGHT,
   NODE_WIDTH,
   termIndexAt,
@@ -44,6 +45,7 @@ import {
   type Rect,
   type TermNode,
 } from "../planner/layout";
+import { concurrentBlock, dropIndex } from "../planner/ordering";
 import { cn } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
@@ -304,7 +306,8 @@ export interface ChartFlowProps {
   creditsByTerm: Record<number, number>;
   maxCredits: number;
   selectedId: string | null;
-  onMove: (objectId: string, termIndex: number) => void;
+  // `position`: where in the term's top-to-bottom order it was dropped.
+  onMove: (objectId: string, termIndex: number, position: number) => void;
   onSelect: (objectId: string | null) => void;
   // Change this to re-fit the chart, e.g. when the canvas is resized.
   fitKey?: string;
@@ -324,6 +327,14 @@ export function ChartFlow({
   // The previous layout's arrangement, so a change (like moving one course)
   // keeps everything else where it was and every course its color.
   const memory = useRef<LayoutMemory | undefined>(undefined);
+  // The card being dragged: its term, the block moving with it, and where
+  // every card started.
+  const drag = useRef<{
+    id: string;
+    termIndex: number | undefined;
+    block: string[];
+    start: Map<string, { x: number; y: number }>;
+  } | null>(null);
   const layout = useMemo(
     () => chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current),
     [catalog, chart, issues, creditsByTerm, maxCredits],
@@ -381,14 +392,65 @@ export function ChartFlow({
       nodeTypes={nodeTypes}
       edgeTypes={edgeTypes}
       onNodesChange={onNodesChange}
-      onNodeDragStart={() => setHoveredId(null)}
-      onNodeDragStop={(_, node) => {
+      onNodeDragStart={(_, node) => {
+        setHoveredId(null);
         if (node.type !== "course") return;
+        // Courses taken together with this one in its term move with it.
+        const term = chart.terms.find((t) => t.objectIds.includes(node.id));
+        const block = term ? concurrentBlock(catalog, term.objectIds, node.id) : [node.id];
+        const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
+        drag.current = { id: node.id, termIndex: term?.index, block, start: home };
+      }}
+      onNodeDrag={(_, node) => {
+        const current = drag.current;
+        if (!current || current.block.length < 2) return;
+        // Partners follow while the card is over its own term (reordering);
+        // over another term only the dragged course moves, so they stay home.
+        const start = current.start.get(node.id)!;
+        const follow = termIndexAt(chart, node.position.x) === current.termIndex;
+        const dx = node.position.x - start.x;
+        const dy = node.position.y - start.y;
+        setNodes((nodes) =>
+          nodes.map((n) => {
+            if (n.id === node.id || !current.block.includes(n.id)) return n;
+            const home = current.start.get(n.id)!;
+            return { ...n, position: follow ? { x: home.x + dx, y: home.y + dy } : home };
+          }),
+        );
+      }}
+      onNodeDragStop={(_, node) => {
+        const current = drag.current;
+        drag.current = null;
+        if (node.type !== "course" || !current) return;
+        const termIndex = termIndexAt(chart, node.position.x);
+        const target = chart.terms.find((t) => t.index === termIndex);
+        const column = chart.terms.findIndex((t) => t.index === termIndex);
+        const moving = termIndex === current.termIndex ? current.block : [node.id];
+        const start = current.start.get(node.id)!;
+        const dy = node.position.y - start.y;
+
+        // Where in the term's order it goes: by where the block's middle was
+        // dropped, among the cards there (never inside another block).
+        const homeMiddle = (id: string) => {
+          const at = current.start.get(id);
+          return at && (at.y + NODE_HEIGHT / 2);
+        };
+        const movingMiddles = moving.map((id) => homeMiddle(id)! + dy);
+        const dropMiddle = (Math.min(...movingMiddles) + Math.max(...movingMiddles)) / 2;
+        const position = target ? dropIndex(catalog, target.objectIds, moving, dropMiddle, homeMiddle) : 0;
+
+        // Remember where it was dropped, so it lands there if there's room.
+        if (memory.current && column >= 0) {
+          for (const id of moving) {
+            memory.current.column.set(id, column);
+            memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
+          }
+        }
+
         // Snap cards back to their places first (keeping their looks); if the
         // move is valid, the chart update then lays it out anew.
-        const home = new Map(layout.nodes.map((n) => [n.id, n.position]));
-        setNodes((current) => current.map((n) => ({ ...n, position: home.get(n.id) ?? n.position })));
-        onMove(node.id, termIndexAt(chart, node.position.x));
+        setNodes((nodes) => nodes.map((n) => ({ ...n, position: current.start.get(n.id) ?? n.position })));
+        onMove(node.id, termIndex, position);
       }}
       onNodeClick={(_, node) => {
         if (node.type === "course") onSelect(node.id);

@@ -52,18 +52,18 @@ describe("validateChart", () => {
     ]);
   });
 
-  it("flags Term 0 objects with no backing external work", () => {
+  it("flags Pre-Credit objects with no backing external work", () => {
     expect(codes(chartOf([["MATH101"]]))).toEqual(["UNBACKED_EXTERNAL_TERM"]);
   });
 
-  it("accepts Term 0 objects backed by external work", () => {
+  it("accepts Pre-Credit objects backed by external work", () => {
     const chart = chartOf([["MATH101"]], {
       completedExternal: [{ institution: "AP", externalId: "CALC-AB" }],
     });
     expect(codes(chart)).toEqual([]);
   });
 
-  it("doesn't check requisites of objects in Term 0", () => {
+  it("doesn't check requisites of objects in Pre-Credit", () => {
     const withAp = createCatalog([
       obj("MATH101"),
       obj("STAT200", {

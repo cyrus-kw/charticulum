@@ -33,7 +33,7 @@ describe("evaluateRequirements", () => {
     expect(codes(report)).toEqual(["TERM_OVER_CREDIT_LIMIT"]);
   });
 
-  it("does not apply the credit limit to Term 0", () => {
+  it("does not apply the credit limit to Pre-Credit", () => {
     const report = evaluateRequirements(
       catalog,
       chartOf([["CS101", "CS102", "STAT200"]]),

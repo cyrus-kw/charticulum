@@ -17,6 +17,7 @@ import {
   slotLabel,
   termCalendar,
   EXTERNAL_TERM,
+  EXTERNAL_TERM_LABEL,
   type Chart,
   type ChartCheck,
   type ChartIssue,
@@ -28,10 +29,12 @@ import {
   type TemplateRef,
   type Term,
 } from "../engine/index";
+import { arrangeChart } from "./layout";
+import { concurrentBlock } from "./ordering";
 
 export interface PlannerState {
   school: LoadedSchool;
-  // The student's chart as they edited it. Term 0 is filled in from
+  // The student's chart as they edited it. Pre-Credit is filled in from
   // completedExternal when the chart is checked (see derive below).
   chart: Chart;
   selectedId: string | null;
@@ -51,7 +54,9 @@ export type PlannerAction =
   | { type: "build" }
   | { type: "rename"; name: string }
   | { type: "select"; objectId: string | null }
-  | { type: "move"; objectId: string; termIndex: number }
+  // `position`: where in the term's top-to-bottom order (an index among
+  // the term's other courses); missing means at the bottom.
+  | { type: "move"; objectId: string; termIndex: number; position?: number }
   | { type: "remove"; objectId: string }
   | { type: "addTerm" }
   | { type: "setGrade"; objectId: string; grade: Grade | null }
@@ -65,12 +70,12 @@ export function initialState(school: LoadedSchool, programId?: string): PlannerS
     ? latestTemplate(school.library, programId)
     : school.library[school.library.length - 1];
   const chart: Chart = template
-    ? forkTemplate(template)
+    ? arrangeChart(school.catalog, forkTemplate(template))
     : { name: "My plan", terms: [emptyTermZero()], completedExternal: [] };
   return { school, chart, selectedId: null, builderIssues: [], savedId: null };
 }
 
-const emptyTermZero = (): Term => ({ index: EXTERNAL_TERM, label: "Term 0 (External)", objectIds: [] });
+const emptyTermZero = (): Term => ({ index: EXTERNAL_TERM, label: EXTERNAL_TERM_LABEL, objectIds: [] });
 
 const sameWork = (a: CompletedExternal, b: CompletedExternal) =>
   a.institution === b.institution && a.externalId === b.externalId;
@@ -124,7 +129,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
       const fork = forkTemplate(template, chart.name);
       return {
         ...state,
-        chart: { ...fork, completedExternal: chart.completedExternal },
+        chart: arrangeChart(school.catalog, { ...fork, completedExternal: chart.completedExternal }),
         selectedId: null,
         builderIssues: [],
       };
@@ -137,7 +142,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         (ref) => ref.templateId === action.ref.templateId,
       );
       if (alreadyPinned) return state;
-      return withChart({ ...mergeCharts(chart, forkTemplate(template)), name: chart.name });
+      return withChart(arrangeChart(school.catalog, { ...mergeCharts(chart, forkTemplate(template)), name: chart.name }));
     }
 
     case "build": {
@@ -151,7 +156,10 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
       });
       return {
         ...state,
-        chart: { ...built.chart, ...(chart.pinnedTemplates && { pinnedTemplates: chart.pinnedTemplates }) },
+        chart: arrangeChart(school.catalog, {
+          ...built.chart,
+          ...(chart.pinnedTemplates && { pinnedTemplates: chart.pinnedTemplates }),
+        }),
         builderIssues: built.issues,
         selectedId: null,
       };
@@ -164,15 +172,27 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
       return { ...state, selectedId: action.objectId };
 
     case "move": {
-      // Term 0 only holds outside credit, which is placed automatically.
+      // Pre-Credit only holds outside credit, which is placed automatically.
       if (action.termIndex === EXTERNAL_TERM) return state;
       if (!school.catalog.has(action.objectId)) return state;
       if (!chart.terms.some((t) => t.index === action.termIndex)) return state;
-      const terms = without(chart.terms, action.objectId).map((term) =>
-        term.index === action.termIndex
-          ? { ...term, objectIds: [...term.objectIds, action.objectId] }
-          : term,
-      );
+      // Within its own term, a course moves with the courses taken together
+      // with it (e.g. a lecture and its lab) as one block. Moving to another
+      // term, it goes alone.
+      const from = chart.terms.find((t) => t.objectIds.includes(action.objectId));
+      const moving =
+        from?.index === action.termIndex
+          ? concurrentBlock(school.catalog, from.objectIds, action.objectId)
+          : [action.objectId];
+      const terms = chart.terms
+        .map((term) => ({ ...term, objectIds: term.objectIds.filter((id) => !moving.includes(id)) }))
+        .map((term) => {
+          if (term.index !== action.termIndex) return term;
+          const ids = [...term.objectIds];
+          const at = Math.min(Math.max(action.position ?? ids.length, 0), ids.length);
+          ids.splice(at, 0, ...moving);
+          return { ...term, objectIds: ids };
+        });
       return withChart({ ...chart, terms });
     }
 
@@ -217,7 +237,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
 }
 
 // Everything the UI shows that is computed from the state rather than
-// stored: the chart with Term 0 applied, its rules, and the check results.
+// stored: the chart with Pre-Credit applied, its rules, and the check results.
 export interface PlannerView {
   chart: Chart;
   requirements: Requirements;

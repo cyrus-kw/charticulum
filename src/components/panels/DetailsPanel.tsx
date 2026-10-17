@@ -81,7 +81,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
       )}
 
       {external ? (
-        <p className="text-sm text-zinc-500">Credited from outside work. Remove it under Outside credit.</p>
+        <p className="text-sm text-zinc-500">Pre-Credit from outside work. Remove it under Pre-Credit.</p>
       ) : (
         <div className="space-y-2">
           <div className="flex items-center gap-2">

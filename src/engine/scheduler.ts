@@ -4,6 +4,7 @@ import { externalPlacements } from "./equivalents";
 import { applyOverrides } from "./overrides";
 import {
   EXTERNAL_TERM,
+  EXTERNAL_TERM_LABEL,
   type Catalog,
   type Chart,
   type ChartIssue,
@@ -56,7 +57,7 @@ function scheduleChart(
   const slots = calendar ? termCalendar(calendar.start, calendar.seasons, maxTerms) : [];
   const issues: ChartIssue[] = [];
 
-  // Term 0: credit the student already has from elsewhere.
+  // Pre-Credit: credit the student already has from elsewhere.
   const termZeroIds = externalPlacements(catalog, completedExternal);
   const placements = new Map<string, number>(
     termZeroIds.map((id) => [id, EXTERNAL_TERM]),
@@ -109,7 +110,7 @@ function scheduleChart(
 
   // 5. Fill terms one at a time.
   const terms: Chart["terms"] = [
-    { index: EXTERNAL_TERM, label: "Term 0 (External)", objectIds: termZeroIds },
+    { index: EXTERNAL_TERM, label: EXTERNAL_TERM_LABEL, objectIds: termZeroIds },
   ];
   // An empty term only means "stuck" once a full two-year cycle of seasons
   // has passed with nothing placed (an object may be offered only in odd

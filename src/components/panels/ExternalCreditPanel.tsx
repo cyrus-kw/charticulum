@@ -5,7 +5,7 @@ import { Button, inputClass, Panel } from "../ui";
 import type { PanelProps } from "./types";
 
 // AP exams, transfer courses, and other work done elsewhere. Anything the
-// school recognizes lands in Term 0 automatically.
+// school recognizes lands in Pre-Credit automatically.
 export function ExternalCreditPanel({ state, dispatch }: PanelProps) {
   const { catalog } = state.school;
   const [institution, setInstitution] = useState("");
@@ -30,7 +30,7 @@ export function ExternalCreditPanel({ state, dispatch }: PanelProps) {
   };
 
   return (
-    <Panel title="Outside credit">
+    <Panel title="Pre-Credit (AP, transfer)">
       <ul className="mb-2 space-y-1 text-sm">
         {state.chart.completedExternal.length === 0 && <li className="text-zinc-500">None added.</li>}
         {state.chart.completedExternal.map((work) => {

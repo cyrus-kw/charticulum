@@ -75,8 +75,10 @@ export type Catalog = Map<string, CourseObject>;
 // Charts
 // ---------------------------------------------------------------------------
 
-// Term 0 is reserved for external equivalents (credit earned elsewhere).
+// The first term (index 0) is Pre-Credit: work the student already did
+// elsewhere (AP exams, transfer courses) that counts here.
 export const EXTERNAL_TERM = 0;
+export const EXTERNAL_TERM_LABEL = "Pre-Credit";
 
 export interface Term {
   index: number;

@@ -57,7 +57,7 @@ export function evaluateRequirements(
       if (categories.length > 1) sharedCredits += object.credits;
     }
 
-    // Term 0 is credit earned elsewhere, so the per-term limit doesn't apply.
+    // Pre-Credit is credit earned elsewhere, so the per-term limit doesn't apply.
     if (
       term.index !== EXTERNAL_TERM &&
       creditsByTerm[term.index] > requirements.maxCreditsPerTerm

@@ -27,8 +27,11 @@ database instead, see [Database](#database).
   2026-27), or add a minor, which merges its plan and rules into yours.
 - **Drag a card** to another term, or select it and pick a term. Arrows turn
   red, and the Issues panel explains, when an order is wrong.
+- **Reorder a term** by dragging a card up or down; it lands where you drop
+  it. Courses taken together (a lecture and its lab) move as one block.
 - **Build for me** lays out a full plan that meets every rule.
-- **Outside credit** (AP, transfer courses) lands in Term 0 automatically.
+- **Pre-Credit** (AP exams, transfer courses) fills the first column
+  automatically; hide it from the chart with the header button.
 - **Grades** on a selected card count toward GPA and minimum-grade requisites.
 - **Exceptions**: waive a requirement or requisite, or substitute one course
   for another. School policy decides which kinds are allowed.
@@ -54,7 +57,7 @@ database instead, see [Database](#database).
 | File | Does |
 |---|---|
 | `types.ts` | Objects, charts, terms, requirements, overrides, templates, issues |
-| `validate.ts` | Requisites (previous/concurrent/minimum grade), availability, Term 0 |
+| `validate.ts` | Requisites (previous/concurrent/minimum grade), availability, Pre-Credit |
 | `requirements.ts` | Credits per term and category, required objects, GPA, shared credits |
 | `scopes.ts` | Combines global and local requirement sets; the stricter rule wins |
 | `overrides.ts` | Applies waivers and substitutions, with grade conditions and policy |

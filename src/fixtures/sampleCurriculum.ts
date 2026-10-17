@@ -106,7 +106,7 @@ export const sampleDraftChart: Chart = {
   name: "Student draft (with mistakes)",
   completedExternal: [{ institution: "AP", externalId: "CALC-AB" }],
   terms: [
-    { index: 0, label: "Term 0 (External)", objectIds: ["MATH101"] },
+    { index: 0, label: "Pre-Credit", objectIds: ["MATH101"] },
     { index: 1, label: "Term 1", objectIds: ["CS101", "CS102", "ENG101"] },
     { index: 2, label: "Term 2", objectIds: ["CS102L", "MATH201", "HIST110"] },
     { index: 3, label: "Term 3", objectIds: ["CS201", "CS210", "PHIL121"] },

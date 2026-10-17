@@ -37,13 +37,13 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
       }
       seen.add(id);
 
-      // Term 0 is work already done elsewhere: it only has to be backed by
+      // Pre-Credit is work already done elsewhere: it only has to be backed by
       // that work. Its requisites and availability here don't apply.
       if (term.index === EXTERNAL_TERM) {
         if (!isBackedByExternal(object, chart.completedExternal)) {
           issues.push({
             code: "UNBACKED_EXTERNAL_TERM",
-            message: `${id} is in Term 0 but no completed external work counts as it.`,
+            message: `${id} is in Pre-Credit but no completed external work counts as it.`,
             objectId: id,
             termIndex: term.index,
           });

@@ -27,7 +27,7 @@ describe("externalPlacements", () => {
 });
 
 describe("applyExternalEquivalents", () => {
-  it("fills Term 0 and removes covered objects from later terms", () => {
+  it("fills Pre-Credit and removes covered objects from later terms", () => {
     const chart = chartOf([[], ["MATH101", "ENG101"]], { completedExternal: [apCalc] });
     const applied = applyExternalEquivalents(catalog, chart);
     expect(applied.terms[0].objectIds).toEqual(["MATH101"]);
@@ -40,9 +40,9 @@ describe("applyExternalEquivalents", () => {
     expect(chart.terms[1].objectIds).toEqual(["MATH101"]);
   });
 
-  it("adds Term 0 if the chart had none", () => {
+  it("adds Pre-Credit if the chart had none", () => {
     const chart = {
-      name: "no term 0",
+      name: "no pre-credit",
       terms: [{ index: 1, label: "Term 1", objectIds: ["MATH102"] }],
       completedExternal: [apCalc],
     };
@@ -50,7 +50,7 @@ describe("applyExternalEquivalents", () => {
     expect(applied.terms.map((t) => t.index)).toEqual([0, 1]);
   });
 
-  it("lets Term 0 satisfy requisites and requirements", () => {
+  it("lets Pre-Credit satisfy requisites and requirements", () => {
     const chart = chartOf([[], ["MATH102"]], { completedExternal: [apCalc] });
     const result = checkChart(
       catalog,

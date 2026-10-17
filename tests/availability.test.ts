@@ -56,7 +56,7 @@ describe("availability in validation and building", () => {
     );
     expect(issues).toEqual([]);
     expect(chart.terms.map((t) => [t.label, t.objectIds])).toEqual([
-      ["Term 0 (External)", []],
+      ["Pre-Credit", []],
       ["Fall 2026", ["INTRO"]],
       ["Spring 2027", []],
       ["Fall 2027", ["FALLONLY"]],

@@ -8,6 +8,7 @@ import type { Edge, Node } from "@xyflow/react";
 import {
   satisfies,
   EXTERNAL_TERM,
+  EXTERNAL_TERM_LABEL,
   type Catalog,
   type Chart,
   type ChartIssue,
@@ -111,14 +112,21 @@ export function chartLayout(
   columns.forEach((ids, column) => ids.forEach((id) => columnOf.set(id, column)));
   const links = requisiteLinks(catalog, chart, columnOf);
 
-  // 2. Order each column and place cards vertically: fresh, or keeping
-  //    every course that stayed in its term where it was.
+  // 2. Cards go top to bottom in each term's order as stored in the chart
+  //    (the user's order; see arrangeChart for a fresh plan's). Courses that
+  //    stayed in their term keep their height from last time, so changes
+  //    elsewhere don't move them.
   const stayed = [...columnOf].filter(([id, column]) => previous?.column.get(id) === column).map(([id]) => id);
   const reuse = previous !== undefined && stayed.length >= REUSE_SHARE * columnOf.size;
   const kept = new Map(reuse ? stayed.map((id) => [id, previous.y.get(id)!]) : []);
-  const stable = reuse ? stableOrder(columns, links, kept) : undefined;
-  const ordered = stable ? stable.order : orderColumns(columns, links, columnOf);
-  const y = placeVertically(ordered, links, columnOf, stable?.heights);
+  // A term whose order was changed (a course dragged up or down) is laid
+  // out afresh, so it doesn't keep heights from the old order.
+  columns.forEach((ids) => {
+    const heights = ids.filter((id) => kept.has(id)).map((id) => kept.get(id)!);
+    if (heights.some((h, i) => i > 0 && h < heights[i - 1])) ids.forEach((id) => kept.delete(id));
+  });
+  const ordered = columns;
+  const y = placeVertically(ordered, links, columnOf, kept);
 
   // 3. Colors for courses that have outgoing lines; a course keeps its color.
   const colors = assignColors(ordered, links, y, reuse ? previous.colors : undefined);
@@ -135,7 +143,7 @@ export function chartLayout(
     type: "term",
     position: { x: column * COLUMN_WIDTH, y: 0 },
     data: {
-      label: term.label,
+      label: term.index === EXTERNAL_TERM ? EXTERNAL_TERM_LABEL : term.label,
       credits: creditsByTerm[term.index] ?? 0,
       maxCredits,
       external: term.index === EXTERNAL_TERM,
@@ -175,7 +183,7 @@ export function chartLayout(
         },
         width: NODE_WIDTH,
         height: NODE_HEIGHT,
-        // Term 0 is filled automatically from outside credit.
+        // Pre-Credit is filled automatically from outside credit.
         draggable: !external,
         zIndex: 1,
       });
@@ -335,46 +343,6 @@ function countCrossings(order: string[][], links: Link[], columnOf: Map<string, 
     }
   }
   return count;
-}
-
-// Order each column keeping courses that stayed in their term exactly where
-// they were. A course that's new to a column (just moved there, or just
-// added) takes the free spot nearest the courses it's linked to: a gap
-// between cards, above them, or below them. So nothing already there is
-// pushed aside. Returns the order and the heights to keep (including the
-// spots chosen for newcomers).
-function stableOrder(
-  columns: string[][],
-  links: Link[],
-  kept: Map<string, number>,
-): { order: string[][]; heights: Map<string, number> } {
-  const heights = new Map(kept);
-  const half = ROW_HEIGHT / 2;
-  const order = columns.map((ids) => {
-    const placed = ids.filter((id) => kept.has(id)).map((id) => ({ id, y: kept.get(id)! }));
-    for (const id of ids.filter((other) => !kept.has(other))) {
-      const linked = links
-        .flatMap((l) => (l.source === id ? [l.target] : l.target === id ? [l.source] : []))
-        .filter((other) => kept.has(other))
-        .map((other) => kept.get(other)!);
-      const tops = placed.map((p) => p.y).sort((u, v) => u - v);
-      const wanted = linked.length ? linked.reduce((u, v) => u + v, 0) / linked.length : (tops.at(-1) ?? -ROW_HEIGHT) + ROW_HEIGHT;
-      // Every free stretch where a card fits, as [lowest, highest] tops.
-      const free: [number, number][] = [];
-      let from = 0;
-      for (const top of tops) {
-        if (top - from >= ROW_HEIGHT) free.push([from, top - ROW_HEIGHT]);
-        from = Math.max(from, top + ROW_HEIGHT);
-      }
-      free.push([from, Infinity]);
-      const spots = free.map(([low, high]) => Math.min(Math.max(Math.round(wanted / half) * half, low), high));
-      const y = spots.reduce((best, spot) => (Math.abs(spot - wanted) < Math.abs(best - wanted) ? spot : best));
-      placed.push({ id, y });
-      heights.set(id, y);
-    }
-    return placed.sort((u, v) => u.y - v.y).map((p) => p.id);
-  });
-  return { order, heights };
 }
 
 // Vertical positions. A card sits level with the average of its requisites
@@ -633,9 +601,31 @@ export function perimeterStep(from: number, to: number, total: number): number {
 }
 
 // Which term a card was dropped on, from where its center ended up.
-// Never Term 0.
+// Never Pre-Credit (it's filled from outside work), whether it's shown or not.
 export function termIndexAt(chart: Chart, x: number): number {
+  const choosable = chart.terms.map((term, column) => ({ term, column })).filter(({ term }) => term.index !== EXTERNAL_TERM);
+  if (choosable.length === 0) return 1;
   const column = Math.floor((x + NODE_WIDTH / 2) / COLUMN_WIDTH);
-  const clamped = Math.min(Math.max(column, 1), chart.terms.length - 1);
-  return chart.terms[clamped]?.index ?? 1;
+  const first = choosable[0].column;
+  const last = choosable[choosable.length - 1].column;
+  return chart.terms[Math.min(Math.max(column, first), last)].index;
+}
+
+// A fresh plan's top-to-bottom order in each term: the order with the
+// fewest crossing lines (see orderColumns), courses taken together kept
+// next to each other. Run when a plan is created or built; after that the
+// order is the user's, and the layout follows it.
+export function arrangeChart(catalog: Catalog, chart: Chart): Chart {
+  const columns = chart.terms.map((term) => term.objectIds.filter((id) => catalog.has(id)));
+  const columnOf = new Map<string, number>();
+  columns.forEach((ids, column) => ids.forEach((id) => columnOf.set(id, column)));
+  const order = orderColumns(columns, requisiteLinks(catalog, chart, columnOf), columnOf);
+  return {
+    ...chart,
+    terms: chart.terms.map((term, column) => ({
+      ...term,
+      // Anything not in the catalog stays, at the end.
+      objectIds: [...order[column], ...term.objectIds.filter((id) => !catalog.has(id))],
+    })),
+  };
 }
