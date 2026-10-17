@@ -133,20 +133,42 @@ describe("chartLayout look", () => {
     }
   });
 
-  it("arranges a new plan to cross fewer lines than the template's list order", () => {
+  it("arranges a new plan so no line runs behind a card, with fewer problems overall", () => {
     // The same major + minor, merged without arranging (the raw template order).
     const school = loadSampleSchool();
     const major = forkTemplate(latestTemplate(school.library, "bs-cs")!);
     const minor = forkTemplate(latestTemplate(school.library, "minor-stats")!);
     const raw = applyExternalEquivalents(school.catalog, mergeCharts(major, minor));
     const arranged = arrangeChart(school.catalog, raw);
-    const count = (chart: typeof raw) => {
+    const score = (chart: typeof raw) => {
       const { nodes, edges } = chartLayout(school.catalog, chart, [], {}, 12);
       const placed = new Map(courses(nodes).map((n) => [n.id, n.position]));
       const between = edges.filter((e) => placed.get(e.source)!.x !== placed.get(e.target)!.x);
-      return crossings(between, (id) => placed.get(id)!);
+      // Lines running behind an unrelated card, checked by sampling points.
+      let behind = 0;
+      for (const e of between) {
+        const a = placed.get(e.source)!;
+        const b = placed.get(e.target)!;
+        const [x1, y1, x2, y2] = [a.x + NODE_WIDTH, a.y + NODE_HEIGHT / 2, b.x, b.y + NODE_HEIGHT / 2];
+        const hit = [...placed].some(
+          ([id, c]) =>
+            id !== e.source &&
+            id !== e.target &&
+            Array.from({ length: 49 }, (_, i) => (i + 1) / 50).some((t) => {
+              const x = x1 + (x2 - x1) * t;
+              const y = y1 + (y2 - y1) * t;
+              return x > c.x && x < c.x + NODE_WIDTH && y > c.y && y < c.y + NODE_HEIGHT;
+            }),
+        );
+        if (hit) behind++;
+      }
+      return { crossings: crossings(between, (id) => placed.get(id)!), behind };
     };
-    expect(count(arranged)).toBeLessThan(count(raw));
+    const before = score(raw);
+    const after = score(arranged);
+    expect(after.behind).toBe(0);
+    // Running behind a card counts as 3 crossings, as in the arranging.
+    expect(after.crossings + 3 * after.behind).toBeLessThan(before.crossings + 3 * before.behind);
     // Arranging only reorders within terms.
     arranged.terms.forEach((term, i) =>
       expect([...term.objectIds].sort()).toEqual([...raw.terms[i].objectIds].sort()),
@@ -618,5 +640,18 @@ describe("row grid", () => {
     expect(onGrid(before)).toBe(true);
     const moved = plannerReducer(state, { type: "move", objectId: "CS301", termIndex: state.chart.terms.at(-1)!.index });
     expect(onGrid(layoutOf(moved, before.memory))).toBe(true);
+  });
+});
+
+describe("packed from the top", () => {
+  it("starts every term on the top row with no gaps in a fresh plan", () => {
+    let state = initialState(loadSampleSchool(), "bs-cs");
+    state = plannerReducer(state, { type: "addProgram", ref: { templateId: "minor-stats", version: "2026-27" } });
+    const view = derive(state);
+    const { nodes } = chartLayout(state.school.catalog, view.chart, [], {}, 12);
+    for (const term of view.chart.terms) {
+      const ys = term.objectIds.map((id) => nodes.find((n) => n.id === id)!.position.y - HEADER_HEIGHT);
+      expect(ys, term.label).toEqual(ys.map((_, k) => k * ROW_HEIGHT));
+    }
   });
 });

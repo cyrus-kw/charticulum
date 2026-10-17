@@ -160,7 +160,7 @@ export function chartLayout(
     if (heights.some((h, i) => i > 0 && h < heights[i - 1])) ids.forEach((id) => kept.delete(id));
   });
   const ordered = columns;
-  const y = placeVertically(ordered, links, columnOf, kept, reuse ? previous.pack : undefined);
+  const y = placeVertically(ordered, kept, reuse ? previous.pack : undefined);
 
   // 3. Colors for courses that have outgoing lines; a course keeps its color.
   const colors = assignColors(ordered, links, y, reuse ? previous.colors : undefined);
@@ -348,7 +348,7 @@ function orderColumns(
 // How many pairs of lines between different terms cross, with cards placed
 // as placeVertically would place them for this order.
 function countCrossings(order: string[][], links: Link[], columnOf: Map<string, number>): number {
-  const y = placeVertically(order, links, columnOf);
+  const y = placeVertically(order);
   const rect = (id: string): Rect => ({
     x: columnOf.get(id)! * COLUMN_WIDTH + NODE_OFFSET,
     y: y.get(id)!,
@@ -377,36 +377,65 @@ function countCrossings(order: string[][], links: Link[], columnOf: Map<string, 
       if (crossesQ && crossesP) count++;
     }
   }
+
+  // A line running behind an unrelated card is worse than a crossing: it
+  // looks like it goes through that course.
+  const cards = [...columnOf.keys()].map((id) => ({ id, box: rect(id) }));
+  for (const segment of segments) {
+    for (const card of cards) {
+      if (segment.ends.includes(card.id)) continue;
+      if (segmentHitsRect(segment, card.box)) count += THROUGH_CARD_PENALTY;
+    }
+  }
   return count;
 }
 
-// Vertical positions. A card sits level with the average of its requisites
-// when there's room, so lines run as flat as possible; cards never overlap
-// and keep the order chosen above.
+// How many crossings a line running behind a card counts as.
+const THROUGH_CARD_PENALTY = 3;
+
+// Does the segment pass through the inside of the box? Touching an edge
+// doesn't count. (Liang-Barsky clipping.)
+function segmentHitsRect(s: { x1: number; y1: number; x2: number; y2: number }, r: Rect): boolean {
+  const dx = s.x2 - s.x1;
+  const dy = s.y2 - s.y1;
+  let t0 = 0;
+  let t1 = 1;
+  const clip = (denominator: number, numerator: number) => {
+    if (denominator === 0) return numerator > 0;
+    const t = numerator / denominator;
+    if (denominator < 0) {
+      if (t > t1) return false;
+      if (t > t0) t0 = t;
+    } else {
+      if (t < t0) return false;
+      if (t < t1) t1 = t;
+    }
+    return true;
+  };
+  const inside =
+    clip(-dx, s.x1 - r.x) &&
+    clip(dx, r.x + r.width - s.x1) &&
+    clip(-dy, s.y1 - r.y) &&
+    clip(dy, r.y + r.height - s.y1);
+  return inside && t1 - t0 > 1e-6;
+}
+
+// Vertical positions. Each term is packed from the top, in its order, on
+// whole rows (so courses line up across terms). Cards keep the heights
+// they had before (`kept`) where there's room, so editing one course
+// doesn't move the others; cards never overlap and keep their order.
 function placeVertically(
   order: string[][],
-  links: Link[],
-  columnOf: Map<string, number>,
   // Heights to keep (from the previous layout), where there's room.
   kept: Map<string, number> = new Map(),
-  // Columns to pack from the top instead, one card right after another.
+  // Columns to pack from the top regardless of kept heights.
   pack: Set<number> = new Set(),
 ): Map<string, number> {
   const y = new Map<string, number>();
   order.forEach((ids, column) => {
     let next = 0;
     for (const id of ids) {
-      if (pack.has(column)) {
-        y.set(id, next);
-        next += ROW_HEIGHT;
-        continue;
-      }
-      const earlier = links
-        .filter((l) => l.target === id && columnOf.get(l.source)! < column && y.has(l.source))
-        .map((l) => y.get(l.source)!);
-      const aligned = earlier.length ? earlier.reduce((a, b) => a + b, 0) / earlier.length : next;
-      const wanted = kept.get(id) ?? aligned;
-      // Snap to whole rows, so courses line up across terms.
+      const wanted = pack.has(column) ? next : (kept.get(id) ?? next);
       const top = Math.max(next, Math.round(wanted / ROW_HEIGHT) * ROW_HEIGHT);
       y.set(id, top);
       next = top + ROW_HEIGHT;
