@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { CATEGORY_NAMES, type Category, type Override } from "../../engine/index";
-import { Button, cn, Panel } from "../ui";
+import { Badge, Button, cn, Panel } from "../ui";
 import type { PanelProps } from "./types";
 
 function Meter({ label, value, target, format = String }: { label: string; value: number; target: number; format?: (n: number) => string }) {
@@ -36,15 +37,37 @@ function describe(override: Override): string {
   }
 }
 
-// Progress toward every requirement, and the exceptions in effect.
+// Progress toward every requirement, and the exceptions in effect. It
+// starts folded to one line ("4/4 Met"), so it takes little room on
+// the chart; click it to see the meters.
 export function SummaryPanel({ state, view, dispatch }: PanelProps) {
+  const [open, setOpen] = useState(false);
   const { report, appliedOverrides } = view.check;
   const { requirements } = view;
   const minimums = Object.entries(requirements.minCreditsByCategory) as [Category, number][];
   const overrides = state.chart.overrides ?? [];
 
+  // One true/false per requirement shown below, for the folded summary.
+  // GPA only counts once there are grades (until then it can't be met or
+  // missed).
+  const checks = [
+    report.totalCredits >= requirements.minTotalCredits,
+    ...minimums.map(([category, minimum]) => (report.creditsByCategory[category] ?? 0) >= minimum),
+    ...(requirements.minGpa !== undefined && report.gpa !== undefined ? [report.gpa >= requirements.minGpa] : []),
+    ...(requirements.maxSharedCredits !== undefined ? [report.sharedCredits <= requirements.maxSharedCredits] : []),
+  ];
+  const met = checks.filter(Boolean).length;
+
   return (
-    <Panel title="Requirements">
+    <Panel
+      title="Requirements"
+      fold={{ open, onToggle: () => setOpen(!open) }}
+      actions={
+        <Badge tone={met === checks.length ? "good" : "bad"}>
+          {`${met}/${checks.length} met`}
+        </Badge>
+      }
+    >
       <div className="space-y-2">
         <Meter label="Total Credits" value={report.totalCredits} target={requirements.minTotalCredits} />
         {minimums.map(([category, minimum]) => (

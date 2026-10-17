@@ -1,6 +1,13 @@
 // Small shared building blocks so panels look and behave the same.
-import { Children, type ButtonHTMLAttributes, type ReactNode, type SelectHTMLAttributes } from "react";
+import {
+  Children,
+  type ButtonHTMLAttributes,
+  type KeyboardEvent,
+  type ReactNode,
+  type SelectHTMLAttributes,
+} from "react";
 import type { Season } from "../engine/index";
+import { ChevronIcon } from "./icons";
 
 // Join class names, skipping false/undefined ones:
 // cn("a", isOn && "b") -> "a b" or "a".
@@ -8,18 +15,53 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
+export function Panel({
+  title,
+  children,
+  actions,
+  fold,
+}: {
+  title: string;
+  children: ReactNode;
+  actions?: ReactNode;
+  // Makes the section fold shut to just its title row: the whole row is a
+  // button, with a chevron at its end. Shut, its contents aren't shown.
+  fold?: { open: boolean; onToggle: () => void };
+}) {
+  const heading = "text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400";
+  const shut = fold && !fold.open;
   return (
     // A divider between sections; the last one has nothing below it, so
     // it skips its divider (last:border-b-0).
     <section className="border-b border-zinc-200 px-4 py-3 last:border-b-0 dark:border-zinc-800">
-      {/* A fixed height, so a button here (like Close) doesn't push the
-          title down; the button just overhangs a little. */}
-      <div className="mb-2 flex h-5 items-center justify-between gap-2">
-        <h2 className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">{title}</h2>
-        {actions}
-      </div>
-      {children}
+      {fold ? (
+        // The button is inside the heading (not the other way round), so
+        // screen readers still find it in the list of headings.
+        <h2 className={cn(heading, !shut && "mb-2")}>
+          <button
+            type="button"
+            aria-expanded={fold.open}
+            onClick={fold.onToggle}
+            // -mx-1 px-1: the hover shade reaches a little past the text
+            // without moving it.
+            className="-mx-1 flex h-5 w-[calc(100%+0.5rem)] items-center justify-between gap-2 rounded px-1 uppercase hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:hover:bg-zinc-800"
+          >
+            {title}
+            <span className="flex items-center gap-1.5 normal-case">
+              {actions}
+              <ChevronIcon open={fold.open} />
+            </span>
+          </button>
+        </h2>
+      ) : (
+        // A fixed height, so a button here (like Close) doesn't push the
+        // title down; the button just overhangs a little.
+        <div className="mb-2 flex h-5 items-center justify-between gap-2">
+          <h2 className={heading}>{title}</h2>
+          {actions}
+        </div>
+      )}
+      {!shut && children}
     </section>
   );
 }
@@ -116,6 +158,95 @@ export function Badge({
     >
       {Children.map(children, (child) => (typeof child === "string" ? titleCase(child) : child))}
     </span>
+  );
+}
+
+// A row of tabs with the content of the chosen one below. Every tab's
+// content stays mounted (just hidden), so what's typed in one (like a
+// search) is still there after switching away and back.
+// Keyboard: Left/Right arrows move between tabs, as screen readers expect.
+export function Tabs<T extends string>({
+  id,
+  label,
+  tabs,
+  value,
+  onChange,
+  stickyTop,
+}: {
+  // Prefix for the ids that tie each tab to its content.
+  id: string;
+  // What the tab row is, for screen readers ("Tools").
+  label: string;
+  tabs: { value: T; label: string; content: ReactNode }[];
+  value: T;
+  onChange: (value: T) => void;
+  // Keep the tab row in view this far from the top while the rest scrolls
+  // (e.g. just below a sticky header).
+  stickyTop?: number;
+}) {
+  const onKey = (event: KeyboardEvent<HTMLDivElement>) => {
+    const step = event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
+    if (step === 0) return;
+    event.preventDefault();
+    const at = tabs.findIndex((t) => t.value === value);
+    // Wraps around: right from the last tab goes to the first.
+    const next = tabs[(at + step + tabs.length) % tabs.length];
+    onChange(next.value);
+    document.getElementById(`${id}-tab-${next.value}`)?.focus();
+  };
+
+  return (
+    <>
+      <div
+        role="tablist"
+        aria-label={label}
+        onKeyDown={onKey}
+        style={stickyTop === undefined ? undefined : { top: stickyTop }}
+        // A solid background (the page's) and z-10 cover what scrolls
+        // under it, like the sticky header above.
+        className={cn(
+          "flex border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
+          stickyTop !== undefined && "sticky z-10",
+        )}
+      >
+        {tabs.map((tab) => {
+          const selected = tab.value === value;
+          return (
+            <button
+              key={tab.value}
+              type="button"
+              role="tab"
+              id={`${id}-tab-${tab.value}`}
+              aria-selected={selected}
+              aria-controls={`${id}-panel-${tab.value}`}
+              // Only the chosen tab is a Tab stop; arrows reach the others.
+              tabIndex={selected ? 0 : -1}
+              onClick={() => onChange(tab.value)}
+              className={cn(
+                // -mb-px: the chosen tab's underline sits on the row's border.
+                "-mb-px flex-1 border-b-2 px-2 py-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sky-500",
+                selected
+                  ? "border-sky-600 text-zinc-900 dark:border-sky-400 dark:text-zinc-100"
+                  : "border-transparent text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200",
+              )}
+            >
+              {tab.label}
+            </button>
+          );
+        })}
+      </div>
+      {tabs.map((tab) => (
+        <div
+          key={tab.value}
+          role="tabpanel"
+          id={`${id}-panel-${tab.value}`}
+          aria-labelledby={`${id}-tab-${tab.value}`}
+          hidden={tab.value !== value}
+        >
+          {tab.content}
+        </div>
+      ))}
+    </>
   );
 }
 

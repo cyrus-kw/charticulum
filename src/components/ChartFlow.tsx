@@ -1047,30 +1047,50 @@ export function ChartFlow({
           <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
             <Legend />
           </FlowPanel>
-          <FlowPanel position="top-left" className="flex items-start gap-2">
-            {topLeft}
-            <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
-            {title}
-          </FlowPanel>
-          {topRight && (
-            // A row of boxes, top aligned. Each box is only as tall as the
-            // empty space above the term titles (--box-room), so it never
-            // covers the chart; anything longer scrolls inside the box
-            // ("nowheel" keeps the wheel from moving the chart underneath).
-            // centerOffset is how far down the chart starts. Only the boxes
-            // catch clicks: the space around them lets clicks through.
-            <FlowPanel
-              position="top-right"
-              style={{
-                ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - PANEL_MARGIN - BOX_GAP)}px`,
-              }}
-              className="nowheel flex h-[calc(100%-30px)] max-w-[calc(100%-30px)] flex-col items-end gap-2 !pointer-events-none"
-            >
-              <div className="flex min-h-0 flex-1 items-start gap-2 *:pointer-events-auto *:max-h-[min(100%,var(--box-room))] *:overflow-y-auto">
-                {topRight}
+          {/* Everything along the chart's top: undo/redo and the plan's
+              name on the left, the boxes (topRight) on the right.
+
+              Wide: one row. Each box is only as tall as the empty space
+              above the term titles (--box-room), so it never covers the
+              chart; anything longer scrolls inside the box. centerOffset is
+              how far down the chart starts.
+
+              Narrow (the canvas, not the window, is under 1260px, about
+              what the row needs): undo/redo stays on the left. On the
+              right, the last box (Requirements) stays at the top right and
+              the others stack in a column to its left, top to bottom in
+              their left-to-right order. That's a grid filled column by
+              column (grid-flow-col) with two rows; the last box spans both
+              rows, so when it's open and tall, the second row (1fr) grows
+              instead of pushing the stacked boxes apart. It all scrolls if
+              it's taller than the chart. "@container" makes the
+              @max-[1260px] classes below measure this panel's width.
+              Narrower still, the boxes wrap below undo/redo (flex-wrap),
+              kept on the right by ml-auto.
+
+              "nowheel" keeps the wheel from moving the chart underneath.
+              Only the controls and boxes catch clicks: the space around
+              them lets clicks through to the chart. */}
+          <FlowPanel
+            position="top-left"
+            style={{
+              ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - PANEL_MARGIN - BOX_GAP)}px`,
+            }}
+            className="nowheel @container h-[calc(100%-30px)] w-[calc(100%-30px)] !pointer-events-none"
+          >
+            <div className="flex h-full flex-wrap items-start justify-between gap-2">
+              <div className="pointer-events-auto flex shrink-0 items-start gap-2">
+                {topLeft}
+                <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
+                {title}
               </div>
-            </FlowPanel>
-          )}
+              {topRight && (
+                <div className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto @min-[1260px]:*:max-h-(--box-room) @max-[1260px]:grid @max-[1260px]:max-h-full @max-[1260px]:grid-flow-col @max-[1260px]:grid-rows-[auto_1fr] @max-[1260px]:overflow-y-auto @max-[1260px]:*:last:row-span-2">
+                  {topRight}
+                </div>
+              )}
+            </div>
+          </FlowPanel>
           <FlowPanel position="bottom-left">
             <ZoomControls
               zoom={zoom}

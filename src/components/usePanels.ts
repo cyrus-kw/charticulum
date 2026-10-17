@@ -1,7 +1,7 @@
 "use client";
 
-// Whether the Tools sidebar is open and how wide it is, and whether the
-// Pre-Credit column is shown. Remembered in this browser as a convenience;
+// Whether the Tools sidebar is open, how wide it is, and which of its tabs
+// is showing, and whether the Pre-Credit column is shown. Remembered in this browser as a convenience;
 // if storage is unavailable, everything starts shown at default widths.
 import { useCallback, useEffect, useState } from "react";
 
@@ -12,14 +12,19 @@ export const PANEL_MAX_WIDTH = 560;
 // Dragged narrower than this, a sidebar collapses to its icon.
 export const PANEL_COLLAPSE_BELOW = 160;
 
+// The Tools sidebar's tabs: the plan (programs, requirements, ...) or the
+// school's courses and data.
+export type ToolsTab = "plan" | "catalog";
+
 export interface PanelsOpen {
   left: boolean;
   // Show the Pre-Credit column in the chart.
   preCredit: boolean;
   leftWidth: number;
+  tab: ToolsTab;
 }
 
-const DEFAULTS: PanelsOpen = { left: true, preCredit: true, leftWidth: 320 };
+const DEFAULTS: PanelsOpen = { left: true, preCredit: true, leftWidth: 320, tab: "plan" };
 
 export const clampPanelWidth = (width: number) =>
   Math.round(Math.min(PANEL_MAX_WIDTH, Math.max(PANEL_MIN_WIDTH, width)));
@@ -46,6 +51,7 @@ export function usePanels() {
           // Saved before these settings existed: their defaults.
           preCredit: saved.preCredit !== false,
           leftWidth: typeof saved.leftWidth === "number" ? clampPanelWidth(saved.leftWidth) : DEFAULTS.leftWidth,
+          tab: saved.tab === "catalog" ? "catalog" : "plan",
         });
       }
     } catch {
@@ -71,5 +77,13 @@ export function usePanels() {
     });
   }, []);
 
-  return { open, toggle, setWidth };
+  const setTab = useCallback((tab: ToolsTab) => {
+    setOpen((current) => {
+      const next = { ...current, tab };
+      save(next);
+      return next;
+    });
+  }, []);
+
+  return { open, toggle, setWidth, setTab };
 }

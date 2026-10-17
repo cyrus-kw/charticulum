@@ -17,8 +17,8 @@ import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
-import { cn } from "./ui";
-import { HEADER_BUTTON, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
+import { cn, Tabs } from "./ui";
+import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
 import { setTheme, useTheme } from "./theme";
 import { usePanels } from "./usePanels";
 
@@ -132,12 +132,38 @@ export function Planner() {
             </div>
           }
         >
-          <SavePanel {...panelProps} />
-          <ProgramPanel {...panelProps} />
-          <SummaryPanel {...panelProps} />
-          <ExternalCreditPanel {...panelProps} />
-          <CatalogPanel {...panelProps} />
-          <SchoolPanel {...panelProps} />
+          {/* Two tabs: the plan itself, and the school's courses and data.
+              The tab row stays in view just under the header. */}
+          <Tabs
+            id="tools"
+            label="Tools"
+            value={panels.open.tab}
+            onChange={panels.setTab}
+            stickyTop={PANEL_HEADER_HEIGHT + 1}
+            tabs={[
+              {
+                value: "plan",
+                label: "Plan",
+                content: (
+                  <>
+                    <SavePanel {...panelProps} />
+                    <ProgramPanel {...panelProps} />
+                    <ExternalCreditPanel {...panelProps} />
+                  </>
+                ),
+              },
+              {
+                value: "catalog",
+                label: "Catalog",
+                content: (
+                  <>
+                    <CatalogPanel {...panelProps} />
+                    <SchoolPanel {...panelProps} />
+                  </>
+                ),
+              },
+            ]}
+          />
         </SidePanel>
 
         <main className="min-h-[50dvh] min-w-0 flex-1" aria-label="Chart">
@@ -180,8 +206,9 @@ export function Planner() {
                 onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
               />
             }
-            // On the chart's top right, left to right: the selected course
-            // and the plan's issues. Separate boxes, the same width, so
+            // On the chart's top right, left to right: the selected course,
+            // the plan's issues, and the requirements. Separate boxes, the
+            // same width, so
             // they're evenly spaced and shrink alike.
             topRight={
               <>
@@ -193,6 +220,11 @@ export function Planner() {
                     shrinks and scrolls while the title and count stay. */}
                 <div className={cn(chartBox, "flex w-72 flex-col *:flex *:min-h-0 *:flex-col")}>
                   <IssuesPanel {...panelProps} />
+                </div>
+                {/* Credit meters, GPA, and exceptions, right beside the
+                    issues they explain. */}
+                <div className={cn(chartBox, "w-72")}>
+                  <SummaryPanel {...panelProps} />
                 </div>
               </>
             }
