@@ -7,13 +7,16 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
+// The lettering of a panel's title, for things that should match it.
+export const panelTitleText = "text-xs font-semibold tracking-wide uppercase";
+
 export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
   return (
     <section className="border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
       {/* A fixed height, so a button here (like Close) doesn't push the
           title down; the button just overhangs a little. */}
       <div className="mb-2 flex h-5 items-center justify-between gap-2">
-        <h2 className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">{title}</h2>
+        <h2 className={cn(panelTitleText, "text-zinc-500 dark:text-zinc-400")}>{title}</h2>
         {actions}
       </div>
       {children}
@@ -62,11 +65,21 @@ export function Select({ className, ...props }: SelectHTMLAttributes<HTMLSelectE
 export const inputClass =
   "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900";
 
-export function Badge({ children, tone = "neutral" }: { children: ReactNode; tone?: "neutral" | "bad" | "good" | "info" }) {
+export function Badge({
+  children,
+  tone = "neutral",
+  className,
+}: {
+  children: ReactNode;
+  tone?: "neutral" | "bad" | "good" | "info";
+  className?: string;
+}) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded px-1.5 py-0.5 text-[11px] leading-none font-medium",
+        "inline-flex items-center rounded px-1.5 py-0.5 leading-none",
+        // Its own lettering, unless given another.
+        className ?? "text-[11px] font-medium",
         tone === "neutral" && "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",

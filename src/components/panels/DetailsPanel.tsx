@@ -43,7 +43,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             aria-label={`Remove ${object.id} from plan`}
             title="Remove from plan"
             onClick={() => dispatch({ type: "remove", objectId: id })}
-            className="flex h-7 w-7 items-center justify-center rounded-md text-zinc-500 hover:bg-rose-50 hover:text-rose-700 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-400 dark:hover:bg-rose-950 dark:hover:text-rose-400"
+            className="flex h-7 w-7 items-center justify-center rounded-md text-rose-600 hover:bg-rose-50 hover:text-rose-700 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-rose-400 dark:hover:bg-rose-950 dark:hover:text-rose-300"
           >
             <TrashIcon />
           </button>
