@@ -439,11 +439,18 @@ export function ChartFlow({
         const dropMiddle = (Math.min(...movingMiddles) + Math.max(...movingMiddles)) / 2;
         const position = target ? dropIndex(catalog, target.objectIds, moving, dropMiddle, homeMiddle) : 0;
 
-        // Remember where it was dropped, so it lands there if there's room.
         if (memory.current && column >= 0) {
-          for (const id of moving) {
-            memory.current.column.set(id, column);
-            memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
+          if (termIndex === current.termIndex) {
+            // Reordered within its term: pack that term from the top, so
+            // the other cards close up with no gaps.
+            memory.current.pack = new Set([column]);
+          } else {
+            // Moved to another term: remember where it was dropped, so it
+            // lands there if there's room (other terms stay as they are).
+            for (const id of moving) {
+              memory.current.column.set(id, column);
+              memory.current.y.set(id, current.start.get(id)!.y + dy - HEADER_HEIGHT);
+            }
           }
         }
 

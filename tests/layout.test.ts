@@ -525,6 +525,22 @@ describe("layout stability across changes", () => {
     for (const id of ["A", "B", "C", "P", "R", "X"]) expect(y(third, id), id).toBe(y(second, id));
   });
 
+  it("packs a reordered term from the top, with no gaps, leaving other terms alone", () => {
+    // Term 1: A, B, C, D (D's requisite sits low, so D starts with a gap above it).
+    const catalog = createCatalog([obj("Z0"), obj("Z1"), obj("Z2"), obj("Z3"), obj("A"), obj("B"), obj("C"), obj("D", { previous: ["Z3"] })]);
+    const before = chartLayout(catalog, chartOf([[], ["Z0", "Z1", "Z2", "Z3"], ["A", "B", "D"]]), [], {}, 18);
+    const y = (layout: typeof before, id: string) => layout.nodes.find((n) => n.id === id)!.position.y;
+    // Drag A to the bottom of term 2 (column 2): pack that term.
+    const memory = { ...before.memory, pack: new Set([2]) };
+    const after = chartLayout(catalog, chartOf([[], ["Z0", "Z1", "Z2", "Z3"], ["B", "D", "A"]]), [], {}, 18, memory);
+    const term2 = ["B", "D", "A"].map((id) => y(after, id) - HEADER_HEIGHT);
+    expect(term2).toEqual([0, ROW_HEIGHT, 2 * ROW_HEIGHT]);
+    for (const id of ["Z0", "Z1", "Z2", "Z3"]) expect(y(after, id), id).toBe(y(before, id));
+    // Packing happens once; the next layout keeps the packed heights.
+    const again = chartLayout(catalog, chartOf([[], ["Z0", "Z1", "Z2", "Z3"], ["B", "D", "A"]]), [], {}, 18, after.memory);
+    expect(["B", "D", "A"].map((id) => y(again, id))).toEqual(["B", "D", "A"].map((id) => y(after, id)));
+  });
+
   it("lays out a reordered term afresh", () => {
     const catalog = createCatalog([obj("P"), obj("Q"), obj("R")]);
     const before = chartLayout(catalog, chartOf([[], ["P", "Q", "R"]]), [], {}, 18);

@@ -89,6 +89,9 @@ export interface LayoutMemory {
   column: Map<string, number>;
   y: Map<string, number>;
   colors: Map<string, string>;
+  // Terms (by column) to pack from the top on the next layout, with no
+  // gaps: set when a term is reordered by dragging. Used once.
+  pack?: Set<number>;
 }
 
 // Reuse the previous arrangement only when at least this share of courses
@@ -126,7 +129,7 @@ export function chartLayout(
     if (heights.some((h, i) => i > 0 && h < heights[i - 1])) ids.forEach((id) => kept.delete(id));
   });
   const ordered = columns;
-  const y = placeVertically(ordered, links, columnOf, kept);
+  const y = placeVertically(ordered, links, columnOf, kept, reuse ? previous.pack : undefined);
 
   // 3. Colors for courses that have outgoing lines; a course keeps its color.
   const colors = assignColors(ordered, links, y, reuse ? previous.colors : undefined);
@@ -354,11 +357,18 @@ function placeVertically(
   columnOf: Map<string, number>,
   // Heights to keep (from the previous layout), where there's room.
   kept: Map<string, number> = new Map(),
+  // Columns to pack from the top instead, one card right after another.
+  pack: Set<number> = new Set(),
 ): Map<string, number> {
   const y = new Map<string, number>();
   order.forEach((ids, column) => {
     let next = 0;
     for (const id of ids) {
+      if (pack.has(column)) {
+        y.set(id, next);
+        next += ROW_HEIGHT;
+        continue;
+      }
       const earlier = links
         .filter((l) => l.target === id && columnOf.get(l.source)! < column && y.has(l.source))
         .map((l) => y.get(l.source)!);
