@@ -312,7 +312,7 @@ function ZoomControls({
   };
   return (
     <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Compress the chart" title="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - ZOOM_STEP)}>
+      <button type="button" className={button} aria-label="Compress the chart" title="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
         <MinusIcon />
       </button>
       <label className="flex h-7 items-center px-1.5 text-xs text-zinc-500 tabular-nums">
@@ -338,7 +338,7 @@ function ZoomControls({
         />
         %
       </label>
-      <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + ZOOM_STEP)}>
+      <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + BUTTON_ZOOM_STEP)}>
         <PlusIcon />
       </button>
       <button type="button" className={button} aria-label="Fit to width" title="Fit to width" onClick={onFit}>
@@ -366,6 +366,9 @@ function useElementSize(ref: RefObject<HTMLElement | null>) {
 // Columns never get narrower than this (with many terms the chart then
 // scrolls sideways even at 100%). See snapZoom for the zoom steps.
 const MIN_COLUMN_WIDTH = 96;
+// The + / − buttons zoom this much at a time (a typed zoom or Ctrl/Cmd +
+// scroll goes in finer steps of ZOOM_STEP).
+const BUTTON_ZOOM_STEP = 20;
 // Ctrl/Cmd + scroll: this much scrolling (in pixels) is one zoom step.
 const WHEEL_PER_STEP = 100;
 // Cards being dragged sit above the rest.

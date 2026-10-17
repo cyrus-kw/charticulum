@@ -29,9 +29,9 @@ database instead, see [Database](#database).
   red, and the Issues panel explains, when an order is wrong.
 - **Reorder a term** by dragging a card up or down; it lands where you drop
   it. Courses taken together (a lecture and its lab) move as one block.
-- **Zoom** (the + / − buttons, or Ctrl/⌘ + scroll) spreads the chart out
-  sideways or compresses it, in steps of 5%; at 100% the terms exactly fill
-  the window. Click the percentage to type one (it rounds up to the next
+- **Zoom** spreads the chart out sideways or compresses it: the + / −
+  buttons in steps of 20%, Ctrl/⌘ + scroll in steps of 5%. At 100% the
+  terms exactly fill the window. Click the percentage to type one (it rounds up to the next
   5%, from 100% to 400%).
   Compressed cards show just the course code ("CS 101"); point at one for
   its full name. Scroll to move up and down, Shift + scroll to move sideways.
