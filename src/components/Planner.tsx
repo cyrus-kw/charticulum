@@ -150,10 +150,11 @@ export function Planner() {
               )
             }
             // On the chart's top right, left to right: the selected course,
-            // the plan's issues, its requirements. Separate boxes.
+            // the plan's issues, its requirements. Separate boxes, all the
+            // same width, so they're evenly spaced and shrink alike.
             topRight={
               <>
-                <div className={cn(chartBox, "w-80")}>
+                <div className={cn(chartBox, "w-72")}>
                   <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
                 </div>
                 <div className={cn(chartBox, "w-72")}>
