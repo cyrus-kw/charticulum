@@ -16,6 +16,7 @@ import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { Badge, Button, inputClass } from "./ui";
+import { DetailsIcon, SidePanel, ToolsIcon } from "./SidePanel";
 import { usePanels } from "./usePanels";
 
 export function Planner() {
@@ -74,14 +75,6 @@ export function Planner() {
   return (
     <div className="flex h-dvh flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <header className="flex flex-wrap items-center gap-3 border-b border-zinc-200 px-4 py-2 dark:border-zinc-800">
-        <Button
-          variant="ghost"
-          aria-controls="tools-panel"
-          aria-expanded={panels.open.left}
-          onClick={() => panels.toggle("left")}
-        >
-          {panels.open.left ? "Hide tools" : "Show tools"}
-        </Button>
         <div className="mr-2">
           <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
           <p className="text-xs text-zinc-500">Chart your curriculum</p>
@@ -106,35 +99,31 @@ export function Planner() {
           >
             Build for me
           </Button>
-          <Button
-            variant="ghost"
-            aria-controls="details-panel"
-            aria-expanded={panels.open.right}
-            onClick={() => panels.toggle("right")}
-          >
-            {panels.open.right ? "Hide details" : "Show details"}
-            {!panels.open.right && issueCount > 0 && <Badge tone="bad">{issueCount}</Badge>}
-          </Button>
         </div>
       </header>
 
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
-        {/* `hidden` keeps the panels mounted, so what's typed in them survives. */}
-        <aside
-          id="tools-panel"
+        {/* Sidebars resize by dragging their inner edge, which also widens
+            or compresses the chart, and collapse to an icon. */}
+        <SidePanel
           key={`left-${schoolKey}`}
-          hidden={!panels.open.left}
-          aria-label="Plan tools"
-          className="max-h-[40dvh] overflow-y-auto border-zinc-200 lg:max-h-none lg:w-80 lg:shrink-0 lg:border-r dark:border-zinc-800"
+          id="tools-panel"
+          title="Tools"
+          side="left"
+          open={panels.open.left}
+          width={panels.open.leftWidth}
+          icon={<ToolsIcon />}
+          onToggle={() => panels.toggle("left")}
+          onResize={(width, done) => panels.setWidth("left", width, done)}
         >
           <SavePanel {...panelProps} />
           <ProgramPanel {...panelProps} />
           <ExternalCreditPanel {...panelProps} />
           <CatalogPanel {...panelProps} />
           <SchoolPanel {...panelProps} />
-        </aside>
+        </SidePanel>
 
-        <main className="min-h-[50dvh] flex-1" aria-label="Chart">
+        <main className="min-h-[50dvh] min-w-0 flex-1" aria-label="Chart">
           <ChartFlow
             catalog={state.school.catalog}
             chart={shownChart}
@@ -153,16 +142,21 @@ export function Planner() {
           />
         </main>
 
-        <aside
+        <SidePanel
           id="details-panel"
-          hidden={!panels.open.right}
-          aria-label="Details"
-          className="overflow-y-auto border-zinc-200 lg:w-96 lg:shrink-0 lg:border-l dark:border-zinc-800"
+          title="Details"
+          side="right"
+          open={panels.open.right}
+          width={panels.open.rightWidth}
+          icon={<DetailsIcon />}
+          badge={issueCount > 0 ? <Badge tone="bad">{issueCount}</Badge> : undefined}
+          onToggle={() => panels.toggle("right")}
+          onResize={(width, done) => panels.setWidth("right", width, done)}
         >
           <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
           <IssuesPanel {...panelProps} />
           <SummaryPanel {...panelProps} />
-        </aside>
+        </SidePanel>
       </div>
     </div>
   );
