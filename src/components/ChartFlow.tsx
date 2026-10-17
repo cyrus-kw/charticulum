@@ -800,7 +800,19 @@ export function ChartFlow({
           {topLeft}
           <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
         </FlowPanel>
-        {topRight && <FlowPanel position="top-right">{topRight}</FlowPanel>}
+        {topRight && (
+          // Scrolls on its own if it's taller than the chart ("nowheel"
+          // keeps the wheel from moving the chart underneath).
+          <FlowPanel
+            position="top-right"
+            className={cn(
+              "nowheel max-h-[calc(100%-30px)] max-w-[calc(100%-30px)] overflow-y-auto",
+              "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
+            )}
+          >
+            {topRight}
+          </FlowPanel>
+        )}
         <FlowPanel position="bottom-left">
           <ZoomControls
             zoom={zoom}

@@ -33,13 +33,12 @@ database instead, see [Database](#database).
   sideways or compresses it; at 100% the terms exactly fill the window.
   Compressed cards show just the course code ("CS 101"); point at one for
   its full name. Scroll to move up and down, Shift + scroll to move sideways.
-- **Sidebars**: Tools sits on the left; drag its edge to resize it (which
-  widens or compresses the chart). **Details** floats over the chart's top
-  right: the plan's issues and requirements, and, when you click a course,
-  that course's info beside them. Drag its left edge to resize it. The
-  sidebar button in each one's top corner shuts it (or drag it nearly
-  shut); the button stays in the same spot on the chart to open it again.
-  **Undo / Redo** sit at the
+- **Tools sidebar** resizes by dragging its edge next to the chart (which
+  widens or compresses the chart). The sidebar button in its top corner
+  slides it shut (or drag it nearly shut); the button stays in the same
+  spot on the chart to slide it back open.
+- **Issues and requirements** sit on the chart's top right. Click a course
+  and its details show beside them. **Undo / Redo** sit at the
   chart's top left (Ctrl/⌘ + Z, Ctrl/⌘ + Shift + Z).
 - **Build for me** lays out a full plan that meets every rule.
 - **Pre-Credit** (AP exams, transfer courses) fills the first column

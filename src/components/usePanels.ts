@@ -1,6 +1,6 @@
 "use client";
 
-// Which sidebars are open and how wide they are, and whether the
+// Whether the Tools sidebar is open and how wide it is, and whether the
 // Pre-Credit column is shown. Remembered in this browser as a convenience;
 // if storage is unavailable, everything starts shown at default widths.
 import { useCallback, useEffect, useState } from "react";
@@ -14,14 +14,12 @@ export const PANEL_COLLAPSE_BELOW = 160;
 
 export interface PanelsOpen {
   left: boolean;
-  right: boolean;
   // Show the Pre-Credit column in the chart.
   preCredit: boolean;
   leftWidth: number;
-  rightWidth: number;
 }
 
-const DEFAULTS: PanelsOpen = { left: true, right: true, preCredit: true, leftWidth: 320, rightWidth: 384 };
+const DEFAULTS: PanelsOpen = { left: true, preCredit: true, leftWidth: 320 };
 
 export const clampPanelWidth = (width: number) =>
   Math.round(Math.min(PANEL_MAX_WIDTH, Math.max(PANEL_MIN_WIDTH, width)));
@@ -42,14 +40,12 @@ export function usePanels() {
   useEffect(() => {
     try {
       const saved = JSON.parse(localStorage.getItem(KEY) ?? "null");
-      if (saved && typeof saved.left === "boolean" && typeof saved.right === "boolean") {
+      if (saved && typeof saved.left === "boolean") {
         setOpen({
           left: saved.left,
-          right: saved.right,
           // Saved before these settings existed: their defaults.
           preCredit: saved.preCredit !== false,
           leftWidth: typeof saved.leftWidth === "number" ? clampPanelWidth(saved.leftWidth) : DEFAULTS.leftWidth,
-          rightWidth: typeof saved.rightWidth === "number" ? clampPanelWidth(saved.rightWidth) : DEFAULTS.rightWidth,
         });
       }
     } catch {
@@ -57,7 +53,7 @@ export function usePanels() {
     }
   }, []);
 
-  const toggle = useCallback((setting: "left" | "right" | "preCredit") => {
+  const toggle = useCallback((setting: "left" | "preCredit") => {
     setOpen((current) => {
       const next = { ...current, [setting]: !current[setting] };
       save(next);
@@ -65,11 +61,11 @@ export function usePanels() {
     });
   }, []);
 
-  // Set a sidebar's width. `done` saves it (at the end of a drag); while
+  // Set the sidebar's width. `done` saves it (at the end of a drag); while
   // dragging it just updates.
-  const setWidth = useCallback((side: "left" | "right", width: number, done: boolean) => {
+  const setWidth = useCallback((width: number, done: boolean) => {
     setOpen((current) => {
-      const next = { ...current, [side === "left" ? "leftWidth" : "rightWidth"]: clampPanelWidth(width) };
+      const next = { ...current, leftWidth: clampPanelWidth(width) };
       if (done) save(next);
       return next;
     });
