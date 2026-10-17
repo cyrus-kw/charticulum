@@ -54,7 +54,7 @@ import {
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
 import { FitIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
-import { cn } from "./ui";
+import { cn, SEASON_TINT } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
 
@@ -174,11 +174,7 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
       style={{ width: cardWidth, height: NODE_HEIGHT, ...(color && { borderColor: color }) }}
       className={cn(
         "relative flex flex-col justify-center rounded-md border-2 px-2 text-zinc-900 shadow-sm dark:text-zinc-100",
-        onlyIn === "fall"
-          ? "bg-orange-100 dark:bg-amber-950"
-          : onlyIn === "spring"
-            ? "bg-green-100 dark:bg-green-950"
-            : "bg-white dark:bg-zinc-900",
+        (onlyIn && SEASON_TINT[onlyIn]) || "bg-white dark:bg-zinc-900",
         // Selected: a ring just inside the border, so nothing reaches past
         // the card's edge where arrowheads touch it.
         selected && "inset-ring-2 inset-ring-sky-500",

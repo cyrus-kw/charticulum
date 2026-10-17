@@ -1,5 +1,6 @@
 // Small shared building blocks so panels look and behave the same.
 import type { ButtonHTMLAttributes, ReactNode, SelectHTMLAttributes } from "react";
+import type { Season } from "../engine/index";
 
 // Join class names, skipping false/undefined ones:
 // cn("a", isOn && "b") -> "a b" or "a".
@@ -62,9 +63,22 @@ export function Select({ className, ...props }: SelectHTMLAttributes<HTMLSelectE
 export const inputClass =
   "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900";
 
+// The tint for courses offered in only one season: the chart's cards and
+// the tags in the details use the same.
+export const SEASON_TINT: Partial<Record<Season, string>> = {
+  fall: "bg-orange-100 dark:bg-amber-950",
+  spring: "bg-green-100 dark:bg-green-950",
+};
+
 // A small tag: capitals like panel titles, but regular weight. Every tag
 // looks alike.
-export function Badge({ children, tone = "neutral" }: { children: ReactNode; tone?: "neutral" | "bad" | "good" | "info" }) {
+export function Badge({
+  children,
+  tone = "neutral",
+}: {
+  children: ReactNode;
+  tone?: "neutral" | "bad" | "good" | "info" | "fall" | "spring";
+}) {
   return (
     <span
       className={cn(
@@ -74,6 +88,8 @@ export function Badge({ children, tone = "neutral" }: { children: ReactNode; ton
         tone === "bad" && "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300",
         tone === "good" && "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300",
         tone === "info" && "bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300",
+        tone === "fall" && cn(SEASON_TINT.fall, "text-orange-800 dark:text-amber-300"),
+        tone === "spring" && cn(SEASON_TINT.spring, "text-green-800 dark:text-green-300"),
       )}
     >
       {children}

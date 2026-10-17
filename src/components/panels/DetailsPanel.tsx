@@ -92,9 +92,18 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           )}
           <div>
             <dt className="text-xs text-zinc-500">Offered</dt>
-            <dd>
-              {availability?.seasons?.join(", ") ?? "every term"}
-              {availability?.yearParity && `, ${availability.yearParity} years`}
+            {/* Tags, tinted like the chart's fall-only / spring-only cards. */}
+            <dd className="mt-0.5 flex flex-wrap gap-1">
+              {availability?.seasons?.length ? (
+                availability.seasons.map((season) => (
+                  <Badge key={season} tone={season === "fall" || season === "spring" ? season : "neutral"}>
+                    {season}
+                  </Badge>
+                ))
+              ) : (
+                <Badge>every term</Badge>
+              )}
+              {availability?.yearParity && <Badge>{availability.yearParity} years</Badge>}
             </dd>
           </div>
           {object.internalEquivalents.length > 0 && (
