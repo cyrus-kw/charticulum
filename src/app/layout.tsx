@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "@xyflow/react/dist/style.css";
-import { themeScript } from "../components/themeScript";
+import { ThemeScript } from "../components/ThemeScript";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     // so React would otherwise warn that the class differs from the server's.
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <ThemeScript />
       </head>
       <body className="antialiased">{children}</body>
     </html>
