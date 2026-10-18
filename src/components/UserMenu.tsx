@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, type FormEvent, type MouseEvent } from "react";
-import Link from "next/link";
+import { useEffect, useRef, useState, type FormEvent, type MouseEvent } from "react";
 import { signOutAction } from "../app/auth/actions";
 import { ChevronDownIcon, SettingsIcon, SignOutIcon } from "./icons";
+import { SettingsDialog } from "./SettingsDialog";
+import { Settings } from "./site/Settings";
 import { cn, DANGER_ICON_BUTTON, ICON_BUTTON } from "./ui";
 
 // "Ana Lucía Pérez" → "Ana P": the first name and the last name's
@@ -19,7 +20,7 @@ export type MenuUser = { name: string; email: string; role?: "user" | "admin" };
 
 // The signed-in account, which opens a small menu: your name and email,
 // with icon buttons for Settings (a gear; floats over the page) and Sign out
-// beside them.
+// beside them. This menu also opens and closes the Settings panel.
 // Two looks:
 // - "circle": just the circle with your initial, in the site's top bar;
 //   the menu drops down below it.
@@ -39,6 +40,9 @@ export function UserMenu({
   confirmLeave?: () => boolean;
 }) {
   const ref = useRef<HTMLDetailsElement>(null);
+  // Whether the Settings panel is open. Only in this page's memory, so a
+  // refresh closes it.
+  const [settingsOpen, setSettingsOpen] = useState(false);
   // Close it when clicking anywhere outside it.
   useEffect(() => {
     const close = (event: PointerEvent) => {
@@ -59,69 +63,78 @@ export function UserMenu({
   );
 
   return (
-    // "group" lets the chevron inside turn over while the menu is open
-    // (Tailwind's group-open: reacts to the <details> being open).
-    <details ref={ref} className={cn("group relative", look === "row" && "min-w-0 flex-1")}>
-      <summary
-        aria-label="Account menu"
-        data-tooltip={user.name}
-        className={cn(
-          "flex cursor-pointer list-none items-center select-none [&::-webkit-details-marker]:hidden",
-          look === "circle"
-            ? "rounded-full hover:opacity-90"
-            : // w-fit: the highlight hugs the circle, name, and chevron,
-              // the same distance from each, instead of stretching to the
-              // dashboard button.
-              "w-fit max-w-full gap-2.5 rounded-md p-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800",
-        )}
-      >
-        {initial}
-        {look === "row" && (
-          <>
-            {/* min-w-0 + truncate: a long name ends in "…" instead of
-                pushing the dashboard button off the edge. */}
-            <span className="min-w-0 truncate text-sm">
-              <span className="font-medium">{shortName(user.name)}</span>
-              {user.role === "admin" && <span className="text-zinc-500"> · Admin</span>}
-            </span>
-            <span className="shrink-0 text-zinc-500 transition-transform group-open:rotate-180">
-              <ChevronDownIcon />
-            </span>
-          </>
-        )}
-      </summary>
-      <div
-        className={cn(
-          "absolute z-20 flex w-64 items-center gap-1 rounded-md border border-zinc-200 bg-white py-1.5 pr-1.5 pl-3 shadow-md dark:border-zinc-800 dark:bg-zinc-900",
-          look === "circle" ? "top-full right-0 mt-2" : "bottom-full left-0 mb-2",
-        )}
-      >
-        {/* min-w-0 + truncate: a long name or email ends in "…" and
-            leaves room for the buttons. */}
-        <div className="min-w-0 flex-1">
-          <div className="truncate text-sm font-medium">{user.name}</div>
-          <div className="truncate text-xs text-zinc-500">{user.email}</div>
-        </div>
-        {/* Settings floats over this page rather than leaving it, so
-            unsaved changes in the planner are safe: no need to ask. The
-            menu closes behind it. scroll={false}: the page stays where it was. */}
-        <Link
-          href="/settings"
-          scroll={false}
-          onClick={() => ref.current?.removeAttribute("open")}
-          aria-label="Settings"
-          data-tooltip="Settings"
-          className={ICON_BUTTON}
+    <>
+      {/* "group" lets the chevron inside turn over while the menu is open
+        (Tailwind's group-open: reacts to the <details> being open). */}
+      <details ref={ref} className={cn("group relative", look === "row" && "min-w-0 flex-1")}>
+        <summary
+          aria-label="Account menu"
+          data-tooltip={user.name}
+          className={cn(
+            "flex cursor-pointer list-none items-center select-none [&::-webkit-details-marker]:hidden",
+            look === "circle"
+              ? "rounded-full hover:opacity-90"
+              : // w-fit: the highlight hugs the circle, name, and chevron,
+                // the same distance from each, instead of stretching to the
+                // dashboard button.
+                "w-fit max-w-full gap-2.5 rounded-md p-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800",
+          )}
         >
-          <SettingsIcon />
-        </Link>
-        {/* Rose, like the course trash button: it takes you out. */}
-        <form action={signOutAction} onSubmit={guard}>
-          <button type="submit" aria-label="Sign out" data-tooltip="Sign out" className={DANGER_ICON_BUTTON}>
-            <SignOutIcon />
+          {initial}
+          {look === "row" && (
+            <>
+              {/* min-w-0 + truncate: a long name ends in "…" instead of
+                pushing the dashboard button off the edge. */}
+              <span className="min-w-0 truncate text-sm">
+                <span className="font-medium">{shortName(user.name)}</span>
+                {user.role === "admin" && <span className="text-zinc-500"> · Admin</span>}
+              </span>
+              <span className="shrink-0 text-zinc-500 transition-transform group-open:rotate-180">
+                <ChevronDownIcon />
+              </span>
+            </>
+          )}
+        </summary>
+        <div
+          className={cn(
+            "absolute z-20 flex w-64 items-center gap-1 rounded-md border border-zinc-200 bg-white py-1.5 pr-1.5 pl-3 shadow-md dark:border-zinc-800 dark:bg-zinc-900",
+            look === "circle" ? "top-full right-0 mt-2" : "bottom-full left-0 mb-2",
+          )}
+        >
+          {/* min-w-0 + truncate: a long name or email ends in "…" and
+            leaves room for the buttons. */}
+          <div className="min-w-0 flex-1">
+            <div className="truncate text-sm font-medium">{user.name}</div>
+            <div className="truncate text-xs text-zinc-500">{user.email}</div>
+          </div>
+          {/* Settings floats over this page rather than leaving it, so
+            unsaved changes in the planner are safe: no need to ask. The
+            menu closes behind it. */}
+          <button
+            type="button"
+            onClick={() => {
+              ref.current?.removeAttribute("open");
+              setSettingsOpen(true);
+            }}
+            aria-label="Settings"
+            data-tooltip="Settings"
+            className={ICON_BUTTON}
+          >
+            <SettingsIcon />
           </button>
-        </form>
-      </div>
-    </details>
+          {/* Rose, like the course trash button: it takes you out. */}
+          <form action={signOutAction} onSubmit={guard}>
+            <button type="submit" aria-label="Sign out" data-tooltip="Sign out" className={DANGER_ICON_BUTTON}>
+              <SignOutIcon />
+            </button>
+          </form>
+        </div>
+      </details>
+      {settingsOpen && (
+        <SettingsDialog onClose={() => setSettingsOpen(false)}>
+          <Settings user={user} />
+        </SettingsDialog>
+      )}
+    </>
   );
 }

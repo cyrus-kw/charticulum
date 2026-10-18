@@ -1,45 +1,49 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { useRouter } from "next/navigation";
+import { createPortal } from "react-dom";
 import { CloseIcon } from "./icons";
 import { ICON_BUTTON } from "./ui";
 
-// The floating Settings panel, over whatever page was open (the page stays
-// as it was behind it, unsaved planner changes included). It's at the
-// address /settings, so Back closes it, like on claude.ai.
+// The floating Settings panel, over whatever page is open. The page stays
+// as it was behind it (unsaved planner changes included), and the address
+// doesn't change, so a refresh simply shows the page without it.
 //
-// Closing (the X, Escape, or clicking the dimmed page around it) goes
-// back to the page underneath. Opened directly at /settings (a refresh, a
-// new tab), there's no page to go back to, so `closeHref` says where to go.
-export function SettingsDialog({ children, closeHref }: { children: ReactNode; closeHref?: string }) {
-  const router = useRouter();
+// Closing: the X, Escape, or clicking the dimmed page around it.
+export function SettingsDialog({ children, onClose }: { children: ReactNode; onClose: () => void }) {
   const panel = useRef<HTMLDivElement>(null);
-  const close = () => (closeHref ? router.push(closeHref) : router.back());
+  // Kept in a ref so the effect below, which runs once, always calls the
+  // latest onClose.
+  const close = useRef(onClose);
+  close.current = onClose;
 
   useEffect(() => {
-    // Start keyboard focus inside the panel, so Tab moves through it.
+    // Remember what had keyboard focus (the Settings button), start focus
+    // inside the panel so Tab moves through it, and put it back on close.
+    const before = document.activeElement as HTMLElement | null;
     panel.current?.focus();
     // The page behind shouldn't scroll while the panel is open.
-    const before = document.body.style.overflow;
+    const overflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && !event.defaultPrevented) close();
+      if (event.key === "Escape" && !event.defaultPrevented) close.current();
     };
     window.addEventListener("keydown", onKeyDown);
     return () => {
-      document.body.style.overflow = before;
+      document.body.style.overflow = overflow;
       window.removeEventListener("keydown", onKeyDown);
+      before?.focus();
     };
-    // Runs once, when the panel opens.
   }, []);
 
-  return (
+  // createPortal draws it straight into <body>, so it sits above everything
+  // on the page, whichever box (the sidebar, the top bar) opened it.
+  return createPortal(
     // The dimmed page. A click on it (not on the panel) closes.
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4 motion-safe:animate-[fade-in_150ms_ease-out]"
       onClick={(event) => {
-        if (event.target === event.currentTarget) close();
+        if (event.target === event.currentTarget) onClose();
       }}
     >
       <div
@@ -55,12 +59,13 @@ export function SettingsDialog({ children, closeHref }: { children: ReactNode; c
           <h2 id="settings-title" className="text-base font-semibold">
             Settings
           </h2>
-          <button type="button" onClick={close} aria-label="Close" data-tooltip="Close" className={ICON_BUTTON}>
+          <button type="button" onClick={onClose} aria-label="Close" data-tooltip="Close" className={ICON_BUTTON}>
             <CloseIcon />
           </button>
         </div>
         <div className="min-h-0 overflow-y-auto">{children}</div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

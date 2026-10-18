@@ -14,7 +14,7 @@ export default async function SiteLayout({ children }: { children: ReactNode }) 
     // A column at least as tall as the window; flex-1 lets the main part
     // grow, so the footer stays at the bottom even on a short page.
     <div className="flex min-h-dvh flex-col bg-page text-ink dark:bg-zinc-950 dark:text-zinc-100">
-      <SiteHeader user={{ name: user.name, email: user.email }} />
+      <SiteHeader user={{ name: user.name, email: user.email, role: user.role }} />
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">{children}</main>
       <SiteFooter />
     </div>

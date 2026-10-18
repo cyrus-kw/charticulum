@@ -3,9 +3,9 @@
 // signed-in user's own account.
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { checkCode, cleanName, MAX_NAME, normalizeEmail, requestCode } from "../../../server/auth";
-import { requireDatabase } from "../../../server/db";
-import { authDeps, clearSessionCookie, requireUser } from "../../../server/session";
+import { checkCode, cleanName, MAX_NAME, normalizeEmail, requestCode } from "../../server/auth";
+import { requireDatabase } from "../../server/db";
+import { authDeps, clearSessionCookie, requireUser } from "../../server/session";
 
 const text = (form: FormData, name: string) => {
   const value = form.get(name);

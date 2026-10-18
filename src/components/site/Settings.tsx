@@ -3,7 +3,7 @@ import { Panel } from "../ui";
 
 // What's in the Settings panel: your profile, and deleting the account.
 // (Nothing can be exported: charts and schools stay in the app.) (Sign out is in the account menu, beside the Settings gear.)
-export function Settings({ user }: { user: { name: string; email: string; role: string } }) {
+export function Settings({ user }: { user: { name: string; email: string; role?: string } }) {
   return (
     <>
       <Panel title="Profile">

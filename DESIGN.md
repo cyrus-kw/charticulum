@@ -147,7 +147,7 @@ Reuse these instead of restyling by hand; they live in
   tall (the sections scroll; the title row stays). White box, `zinc-200`
   border, `rounded-md`, `shadow-lg`. A title row with an X (`ICON_BUTTON`)
   at the right, then `Panel` sections. Escape, the X, or clicking the dimmed
-  page closes it.
+  page closes it; it has no address, so a refresh closes it too.
 
 ## Icons
 

@@ -14,6 +14,7 @@
 //   { "click": "text=Add term" }            click an element or a spot
 //   { "rightClick": [800, 400] }            right-click an element or a spot
 //   { "press": "Escape" }                   press a key
+//   { "reload": true }                      reload the page, like F5
 //   { "wait": 300 }                         wait (milliseconds)
 //   { "shot": "after-hover.png" }           save a screenshot of the window
 //   { "shot": "menu.png", "of": "[role=menu]" }  ...or of just one element
@@ -34,6 +35,7 @@ type Step =
   | { click: Target }
   | { rightClick: Target }
   | { press: string }
+  | { reload: true }
   | { wait: number }
   | { shot: string; of?: string; clip?: [number, number, number, number] };
 
@@ -98,6 +100,7 @@ async function main() {
         else if ("click" in step) await pointAt(page, step.click, "click");
         else if ("rightClick" in step) await pointAt(page, step.rightClick, "rightClick");
         else if ("press" in step) await page.keyboard.press(step.press);
+        else if ("reload" in step) await page.reload({ waitUntil: "networkidle" });
         else if ("wait" in step) await page.waitForTimeout(step.wait);
         else if ("shot" in step) {
           const path = join(outDir, step.shot);
