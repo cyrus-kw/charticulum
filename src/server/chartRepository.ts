@@ -4,9 +4,6 @@ import { chartSchema, type Chart } from "../engine/index";
 import type { Prisma, PrismaClient } from "../generated/prisma/client";
 import type { SaveChartInput, SavedChart, SavedChartSummary } from "../storage/types";
 
-// Until sign-in exists there is one user, and everything belongs to them.
-export const LOCAL_OWNER = "local";
-
 export class ChartNotFoundError extends Error {
   constructor(id: string) {
     super(`No saved chart with id ${id}.`);
@@ -14,7 +11,9 @@ export class ChartNotFoundError extends Error {
 }
 
 export interface ChartRepository {
-  list(ownerId: string, schoolId: string): Promise<SavedChartSummary[]>;
+  // The owner's charts, most recently changed first. Pass a schoolId to
+  // list only that school's charts.
+  list(ownerId: string, schoolId?: string): Promise<SavedChartSummary[]>;
   get(ownerId: string, id: string): Promise<SavedChart | null>;
   // Throws ChartNotFoundError when updating an id the owner doesn't have.
   save(ownerId: string, input: SaveChartInput): Promise<SavedChartSummary>;
@@ -40,6 +39,7 @@ export function prismaChartRepository(prisma: PrismaClient): ChartRepository {
   return {
     async list(ownerId, schoolId) {
       const rows = await prisma.chart.findMany({
+        // A missing schoolId (undefined) is left out of the filter by Prisma.
         where: { ownerId, schoolId },
         orderBy: { updatedAt: "desc" },
         select: { id: true, name: true, schoolId: true, updatedAt: true },
@@ -87,7 +87,7 @@ export function memoryChartRepository(): ChartRepository {
   return {
     async list(ownerId, schoolId) {
       return [...rows.values()]
-        .filter((r) => r.ownerId === ownerId && r.schoolId === schoolId)
+        .filter((r) => r.ownerId === ownerId && (schoolId === undefined || r.schoolId === schoolId))
         .sort((a, b) => b.updatedAt.getTime() - a.updatedAt.getTime())
         .map(summary);
     },

@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useReducer } from "react";
+import { useEffect, useMemo, useReducer, useState } from "react";
 import Link from "next/link";
-import { EXTERNAL_TERM, loadSchool } from "../engine/index";
-import { loadSampleSchool } from "../fixtures/sampleSchool";
+import { EXTERNAL_TERM, loadSchool, type SchoolData } from "../engine/index";
 import { historyReducer, startHistory } from "../planner/history";
-import { derive, initialState } from "../planner/state";
-import { recallSchool } from "../storage/schoolMemory";
+import { derive, openedState } from "../planner/state";
+import type { SavedChart } from "../storage/types";
 import { ChartFlow } from "./ChartFlow";
-import { MoonIcon, OpenIcon, SunIcon } from "./icons";
+import { OpenIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
@@ -19,7 +18,7 @@ import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { cn, Tabs } from "./ui";
 import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
-import { setTheme, useTheme } from "./theme";
+import { ThemeToggle } from "./ThemeToggle";
 import { usePanels } from "./usePanels";
 
 // A box lying on the chart, in the same style as its other controls. The
@@ -27,14 +26,31 @@ import { usePanels } from "./usePanels";
 const chartBox =
   "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900";
 
-export function Planner() {
+// The planner for one saved chart. The page loads the chart and its
+// school's data on the server and hands them over.
+export function Planner({ school: schoolData, saved }: { school: SchoolData; saved: SavedChart }) {
   // useReducer holds the planner state; dispatch(action) updates it.
   // The third argument builds the first state once, on first render.
   // The planner state, with undo/redo history around it.
   const [history, dispatch] = useReducer(historyReducer, undefined, () =>
-    startHistory(initialState(loadSampleSchool(), "bs-cs")),
+    startHistory(openedState(loadSchool(schoolData), saved.chart, saved.id)),
   );
   const state = history.present;
+
+  // The chart as last saved. Every edit makes a new chart object, so
+  // "unsaved" is simply "not the same object". (Undoing back to the saved
+  // version brings back that same object, so it counts as saved again.)
+  const [savedChart, setSavedChart] = useState(saved.chart);
+  const unsaved = state.chart !== savedChart;
+
+  // Closing the tab or reloading with unsaved changes: the browser asks
+  // "Leave site?" first.
+  useEffect(() => {
+    if (!unsaved) return;
+    const warn = (event: BeforeUnloadEvent) => event.preventDefault();
+    window.addEventListener("beforeunload", warn);
+    return () => window.removeEventListener("beforeunload", warn);
+  }, [unsaved]);
 
   // Ctrl/Cmd+Z undoes; Ctrl/Cmd+Shift+Z or Ctrl+Y redoes. Not while typing
   // in a text box, where those keys edit the text.
@@ -56,13 +72,6 @@ export function Planner() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // After the page loads, switch to a school this browser imported before.
-  // (Browser storage doesn't exist on the server, so this can't happen in
-  // the first render; doing it there would make server and browser disagree.)
-  useEffect(() => {
-    const remembered = recallSchool();
-    if (remembered) dispatch({ type: "loadSchool", school: loadSchool(remembered) });
-  }, []);
   // Recompute the checks only when the state actually changes.
   // Only the school and chart feed `derive` (see its comment for why).
   const { school, chart } = state;
@@ -71,7 +80,6 @@ export function Planner() {
   // Remount panels when the school changes so their local inputs reset.
   const schoolKey = state.school.data.school.id;
   const panels = usePanels();
-  const theme = useTheme();
   // The chart as drawn: without the Pre-Credit column if it's hidden. (Its
   // credit still counts; only the picture changes.)
   const shownChart = useMemo(
@@ -106,21 +114,15 @@ export function Planner() {
                 <p className="text-xs text-zinc-500">Chart your curriculum</p>
               </div>
               <div className="flex items-center">
-                {/* Light/dark mode. Shows the mode it switches to: a moon
-                    in light mode, a sun in dark. */}
-                <button
-                  type="button"
-                  aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-                  title={theme === "dark" ? "Light mode" : "Dark mode"}
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                  style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
-                  className={HEADER_BUTTON}
-                >
-                  {theme === "dark" ? <SunIcon /> : <MoonIcon />}
-                </button>
+                <ThemeToggle />
                 {/* Link (not <a>) moves to the page without reloading the app. */}
                 <Link
                   href="/dashboard"
+                  // Leaving for the dashboard isn't a page reload, so the
+                  // browser won't ask; ask here instead.
+                  onClick={(event) => {
+                    if (unsaved && !window.confirm("Leave without saving your changes?")) event.preventDefault();
+                  }}
                   aria-label="Open dashboard"
                   title="Open dashboard"
                   style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
@@ -146,7 +148,7 @@ export function Planner() {
                 label: "Plan",
                 content: (
                   <>
-                    <SavePanel {...panelProps} />
+                    <SavePanel {...panelProps} unsaved={unsaved} onSaved={setSavedChart} />
                     <ProgramPanel {...panelProps} />
                     <ExternalCreditPanel {...panelProps} />
                   </>

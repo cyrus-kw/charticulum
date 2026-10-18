@@ -1,41 +1,8 @@
 "use client";
 
-import { useState, type ChangeEvent } from "react";
-import {
-  loadSchool,
-  mergeEquivalencyRows,
-  parseEquivalencyCsv,
-  parseSchoolData,
-  type ObjectKind,
-  type SchoolData,
-} from "../../engine/index";
-import { loadSampleSchool } from "../../fixtures/sampleSchool";
-import { forgetSchool, rememberSchool } from "../../storage/schoolMemory";
-import { Button, Panel } from "../ui";
+import Link from "next/link";
+import { Button, countsByKind, Panel } from "../ui";
 import type { PanelProps } from "./types";
-
-const KIND_PLURALS: Record<ObjectKind, string> = {
-  course: "courses",
-  experience: "experiences",
-  milestone: "milestones",
-  proficiency: "proficiencies",
-};
-
-// "14 courses · 2 experiences · 1 milestone": the catalog by type, with
-// types the school doesn't use left out.
-function countsByKind(objects: { kind: ObjectKind }[]): string {
-  return (Object.keys(KIND_PLURALS) as ObjectKind[])
-    .map((kind) => [kind, objects.filter((o) => o.kind === kind).length] as const)
-    .filter(([, count]) => count > 0)
-    .map(([kind, count]) => `${count} ${count === 1 ? kind : KIND_PLURALS[kind]}`)
-    .join(" · ");
-}
-
-const SAMPLE_PATH = "/samples/example-state-university.json";
-const SAMPLE_CSV_PATH = "/samples/transfer-table.csv";
-
-const fileInputClass =
-  "block w-full text-sm file:mr-2 file:rounded-md file:border file:border-zinc-300 file:bg-white file:px-2 file:py-1 dark:file:border-zinc-700 dark:file:bg-zinc-900";
 
 // Hand the viewer a file to save.
 function download(name: string, text: string, type: string) {
@@ -45,56 +12,10 @@ function download(name: string, text: string, type: string) {
   URL.revokeObjectURL(url);
 }
 
-// Swap in another school's data, add a transfer table, or export the data.
-export function SchoolPanel({ state, dispatch }: PanelProps) {
+// The school this chart uses, with a way to download its data. Importing
+// and editing schools happens on the Schools page.
+export function SchoolPanel({ state }: PanelProps) {
   const { data } = state.school;
-  const [errors, setErrors] = useState<string[]>([]);
-  const [notice, setNotice] = useState<string | null>(null);
-
-  const report = (problems: string[], heading: string) => {
-    setNotice(null);
-    setErrors([heading, ...problems]);
-  };
-
-  const importSchool = async (file: File) => {
-    let json: unknown;
-    try {
-      json = JSON.parse(await file.text());
-    } catch {
-      return report([], `${file.name} is not valid JSON.`);
-    }
-    const result = parseSchoolData(json);
-    if (!result.ok) return report(result.errors, "That file has problems:");
-    if (!window.confirm(`Load ${result.data.school.name}? This replaces your current plan.`)) return;
-    rememberSchool(result.data);
-    setErrors([]);
-    setNotice(`Loaded ${result.data.school.name}.`);
-    dispatch({ type: "loadSchool", school: loadSchool(result.data) });
-  };
-
-  const importTransferTable = async (file: File) => {
-    const csv = parseEquivalencyCsv(await file.text());
-    if (!csv.ok) return report(csv.errors, "That table has problems:");
-    const before = data.equivalencyTable.length;
-    const next: SchoolData = {
-      ...data,
-      equivalencyTable: mergeEquivalencyRows(data.equivalencyTable, csv.rows),
-    };
-    // Check the combined data, e.g. that every row names a real object.
-    const result = parseSchoolData(next);
-    if (!result.ok) return report(result.errors, "That table has problems:");
-    rememberSchool(result.data);
-    setErrors([]);
-    setNotice(`Added ${result.data.equivalencyTable.length - before} equivalency row(s).`);
-    dispatch({ type: "updateSchool", school: loadSchool(result.data) });
-  };
-
-  const onFile = (handle: (file: File) => Promise<void>) => (e: ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) void handle(file);
-    e.target.value = "";
-  };
-
   return (
     <Panel title="School">
       <p className="mb-2 text-sm">
@@ -104,20 +25,7 @@ export function SchoolPanel({ state, dispatch }: PanelProps) {
           equivalency rows
         </span>
       </p>
-
-      <label className="mb-3 block text-sm">
-        <span className="mb-1 block text-xs text-zinc-500">Import school data (JSON)</span>
-        <input type="file" accept="application/json,.json" className={fileInputClass} onChange={onFile(importSchool)} />
-      </label>
-
-      <label className="mb-3 block text-sm">
-        <span className="mb-1 block text-xs text-zinc-500">
-          Add a transfer / AP table (CSV: institution,externalId,objectId)
-        </span>
-        <input type="file" accept="text/csv,.csv" className={fileInputClass} onChange={onFile(importTransferTable)} />
-      </label>
-
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap items-center gap-3">
         <Button
           onClick={() =>
             download(`${data.school.id}.json`, JSON.stringify(data, null, 2) + "\n", "application/json")
@@ -125,44 +33,10 @@ export function SchoolPanel({ state, dispatch }: PanelProps) {
         >
           Export this school
         </Button>
-        <Button
-          variant="ghost"
-          onClick={() => {
-            if (!window.confirm("Switch back to the sample school? This replaces your current plan.")) return;
-            forgetSchool();
-            setErrors([]);
-            setNotice(null);
-            dispatch({ type: "loadSchool", school: loadSampleSchool() });
-          }}
-        >
-          Use sample school
-        </Button>
+        <Link href="/schools" className="text-sm text-sky-700 underline dark:text-sky-400">
+          All schools
+        </Link>
       </div>
-      <div className="mt-2 flex flex-wrap gap-x-3 text-sm">
-        <a className="text-sky-700 underline dark:text-sky-400" href={SAMPLE_PATH} download>
-          Sample school (JSON)
-        </a>
-        <a className="text-sky-700 underline dark:text-sky-400" href={SAMPLE_CSV_PATH} download>
-          Sample transfer table (CSV)
-        </a>
-      </div>
-
-      {notice && (
-        <p role="status" className="mt-2 text-sm text-emerald-700 dark:text-emerald-400">
-          {notice}
-        </p>
-      )}
-      {errors.length > 0 && (
-        <div role="alert" className="mt-2 text-sm text-rose-700 dark:text-rose-400">
-          <p className="font-semibold">{errors[0]}</p>
-          <ul className="list-disc pl-5">
-            {errors.slice(1, 11).map((e) => (
-              <li key={e}>{e}</li>
-            ))}
-            {errors.length > 11 && <li>…and {errors.length - 11} more</li>}
-          </ul>
-        </div>
-      )}
     </Panel>
   );
 }

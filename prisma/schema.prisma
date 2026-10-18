@@ -10,11 +10,58 @@ datasource db {
   provider = "postgresql"
 }
 
+// A person with an account. Accounts are made by signing in with an email
+// link; there are no passwords.
+model User {
+  id        String   @id @default(cuid())
+  // Always stored lowercase, so "Ana@X.com" and "ana@x.com" are one account.
+  email     String   @unique
+  name      String
+  // "user", or "admin" (may add and change schools).
+  role      String   @default("user")
+  createdAt DateTime @default(now())
+  charts    Chart[]
+  sessions  Session[]
+}
+
+// One signed-in browser. The browser's cookie holds a random secret; the
+// database keeps only its hash (a scrambled fingerprint), so someone who
+// reads the database still can't sign in as anyone.
+model Session {
+  // The hash of the cookie's secret.
+  id        String   @id
+  userId    String
+  // onDelete: Cascade: deleting a user deletes their sessions too.
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+// A one-time code sent by email: to sign in, or to confirm a new email
+// address for an existing account. Like sessions, only the hash is kept.
+model EmailToken {
+  id        String   @id @default(cuid())
+  email     String
+  // Set when changing an account's email: the account to move to `email`.
+  userId    String?
+  // The hash of the 6-digit code.
+  codeHash  String
+  // Wrong guesses so far; after too many, the code stops working.
+  attempts  Int      @default(0)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([email, createdAt])
+}
+
 // A student's saved plan.
 model Chart {
   id        String   @id @default(cuid())
-  // Until sign-in exists, every chart belongs to the single local user.
-  ownerId   String   @default("local")
+  ownerId   String
+  // A chart belongs to one user and is deleted with them.
+  owner     User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
   // Which school's data the chart was made with.
   schoolId  String
   name      String
@@ -25,4 +72,19 @@ model Chart {
   updatedAt DateTime @updatedAt
 
   @@index([ownerId, schoolId])
+}
+
+// A school's published data (catalog, rules, program templates), shared by
+// everyone. Program templates carry their own versions (e.g. 2026-27)
+// inside the data, so a chart pinned to an older version keeps working as
+// long as the school's file still includes it.
+model School {
+  // The id inside the data (data.school.id), e.g. "example-state".
+  id        String   @id
+  name      String
+  // The whole school file, checked by the engine's schoolDataSchema before
+  // saving.
+  data      Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

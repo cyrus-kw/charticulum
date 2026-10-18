@@ -18,8 +18,7 @@ npm run build      # production build (what Vercel runs)
 npm run demo       # terminal-only demo of the chart engine
 ```
 
-Without a database, plans are saved in your browser. To save them to a
-database instead, see [Database](#database).
+The app needs a database to save plans and schools; see [Database](#database).
 
 ## How it's organized
 
@@ -28,9 +27,9 @@ database instead, see [Database](#database).
 | `src/engine/` | The chart engine: pure TypeScript with no UI, fully tested |
 | `src/planner/` | App state (a reducer) and flowchart layout, also pure and tested |
 | `src/components/` | React components: the flowchart and the side panels |
-| `src/app/` | Next.js pages and API routes |
-| `src/server/` | Saving charts to the database |
-| `src/storage/` | Where the browser saves (database or this browser) |
+| `src/app/` | Next.js pages (home, dashboard, schools, chart), server actions, and API routes |
+| `src/server/` | Saving charts and schools to the database, and what each page does with them |
+| `src/storage/` | How the planner in the browser saves through the API |
 | `src/fixtures/` | The fictional sample school |
 | `prisma/` | Database schema and migrations |
 | `tests/` | Vitest tests |
@@ -60,9 +59,9 @@ objects that don't exist, with errors pointing at the exact field.
 
 ## Database
 
-Saving uses Postgres through [Prisma](https://www.prisma.io). The app checks
-`DATABASE_URL` when it starts: if it's set, plans save to the database; if
-not, they save in the browser.
+Saving uses Postgres through [Prisma](https://www.prisma.io), at the address
+in `DATABASE_URL`. Charts and imported schools are stored there; the sample
+school is built in, so an empty database still has one school.
 
 **Locally** (no Docker needed):
 
@@ -74,6 +73,11 @@ npm run dev
 ```
 
 To run the database tests too: `TEST_DATABASE_URL="postgres://..." npm test`.
+
+**Accounts**: you sign in with a 6-digit code sent by email. For now the
+email is printed in the terminal running the app, so copy the code from
+there. Put `ADMIN_EMAILS="you@example.com"` in `.env` to make your account
+an admin (admins import and change schools).
 
 **On Vercel**: add a Postgres database from the Vercel dashboard (Storage tab),
 which sets `DATABASE_URL` for you. Then create the tables once with

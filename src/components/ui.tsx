@@ -6,7 +6,7 @@ import {
   type ReactNode,
   type SelectHTMLAttributes,
 } from "react";
-import type { Season } from "../engine/index";
+import type { ObjectKind, Season } from "../engine/index";
 
 // Join class names, skipping false/undefined ones:
 // cn("a", isOn && "b") -> "a b" or "a".
@@ -230,3 +230,20 @@ export const newId = () =>
   typeof crypto !== "undefined" && "randomUUID" in crypto
     ? crypto.randomUUID()
     : `id-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+const KIND_PLURALS: Record<ObjectKind, string> = {
+  course: "courses",
+  experience: "experiences",
+  milestone: "milestones",
+  proficiency: "proficiencies",
+};
+
+// "14 courses · 2 experiences · 1 milestone": the catalog by type, with
+// types the school doesn't use left out.
+export function countsByKind(objects: { kind: ObjectKind }[]): string {
+  return (Object.keys(KIND_PLURALS) as ObjectKind[])
+    .map((kind) => [kind, objects.filter((o) => o.kind === kind).length] as const)
+    .filter(([, count]) => count > 0)
+    .map(([kind, count]) => `${count} ${count === 1 ? kind : KIND_PLURALS[kind]}`)
+    .join(" · ");
+}

@@ -2,33 +2,17 @@ import { describe, expect, it } from "vitest";
 import type { Chart } from "../src/engine/index";
 import { chartHandlers } from "../src/server/chartHandlers";
 import { memoryChartRepository, type ChartRepository } from "../src/server/chartRepository";
-import { browserChartStore, chooseChartStore, serverChartStore } from "../src/storage/stores";
+import { serverChartStore } from "../src/storage/stores";
 import { chartOf } from "./helpers";
 
 const chart: Chart = chartOf([[], ["CS101"]], { name: "My plan", grades: { CS101: "A" } });
 
-// A fake localStorage, so the browser store can be tested in Node.
-function fakeStorage(): Storage {
-  const data = new Map<string, string>();
-  return {
-    get length() {
-      return data.size;
-    },
-    clear: () => data.clear(),
-    getItem: (k) => data.get(k) ?? null,
-    key: (i) => [...data.keys()][i] ?? null,
-    removeItem: (k) => void data.delete(k),
-    setItem: (k, v) => void data.set(k, v),
-  };
-}
-
 // fetch that goes straight to the route handlers, no server needed.
 function fetchInto(repo: ChartRepository | null, owner = "local"): typeof fetch {
-  const handlers = chartHandlers(() => repo, () => owner);
+  const handlers = chartHandlers(() => repo, async () => owner);
   return async (input, init) => {
     const request = new Request(new URL(String(input), "http://test"), init);
     const { pathname } = new URL(request.url);
-    if (pathname === "/api/storage") return Response.json({ database: repo !== null });
     const id = pathname.match(/^\/api\/charts\/(.+)$/)?.[1];
     if (id && request.method === "GET") return handlers.get(request, decodeURIComponent(id));
     if (id && request.method === "DELETE") return handlers.remove(request, decodeURIComponent(id));
@@ -37,13 +21,24 @@ function fetchInto(repo: ChartRepository | null, owner = "local"): typeof fetch 
   };
 }
 
+// Who the handlers think is asking: someone signed in, or nobody.
+const signedIn = async () => "me";
+const nobody = async () => null;
+
 describe("chart handlers", () => {
   const post = (body: unknown) =>
     new Request("http://test/api/charts", { method: "POST", body: JSON.stringify(body) });
 
   it("returns 503 when there is no database", async () => {
-    const handlers = chartHandlers(() => null);
+    const handlers = chartHandlers(() => null, signedIn);
     expect((await handlers.list(new Request("http://test/api/charts?schoolId=s"))).status).toBe(503);
+  });
+
+  it("returns 401 when nobody is signed in", async () => {
+    const handlers = chartHandlers(() => memoryChartRepository(), nobody);
+    const response = await handlers.list(new Request("http://test/api/charts?schoolId=s"));
+    expect(response.status).toBe(401);
+    expect((await response.json()).error).toMatch(/Sign in/);
   });
 
   it("explains a database that is down or not set up", async () => {
@@ -55,11 +50,11 @@ describe("chart handlers", () => {
     const quiet = console.error;
     console.error = () => {}; // the handler logs the error; keep test output clean
     try {
-      const down = await chartHandlers(() => failing("ECONNREFUSED")).list(new Request("http://test/api/charts?schoolId=s"));
+      const down = await chartHandlers(() => failing("ECONNREFUSED"), signedIn).list(new Request("http://test/api/charts?schoolId=s"));
       expect(down.status).toBe(503);
       expect((await down.json()).error).toMatch(/Couldn't reach the database while loading your saved plans/);
 
-      const unmigrated = await chartHandlers(() => failing("P2021")).save(post({ schoolId: "s", chart }));
+      const unmigrated = await chartHandlers(() => failing("P2021"), signedIn).save(post({ schoolId: "s", chart }));
       expect((await unmigrated.json()).error).toMatch(/db:migrate/);
     } finally {
       console.error = quiet;
@@ -67,7 +62,7 @@ describe("chart handlers", () => {
   });
 
   it("creates, updates, lists, loads, and deletes", async () => {
-    const handlers = chartHandlers(() => repo);
+    const handlers = chartHandlers(() => repo, signedIn);
     const repo = memoryChartRepository();
 
     const created = await handlers.save(post({ schoolId: "s", chart }));
@@ -88,7 +83,7 @@ describe("chart handlers", () => {
   });
 
   it("rejects bad input", async () => {
-    const handlers = chartHandlers(() => memoryChartRepository());
+    const handlers = chartHandlers(() => memoryChartRepository(), signedIn);
     expect((await handlers.save(post({ schoolId: "s" }))).status).toBe(400);
     expect((await handlers.save(post({ schoolId: "s", chart: { ...chart, terms: "nope" } }))).status).toBe(400);
     const notJson = new Request("http://test/api/charts", { method: "POST", body: "{" });
@@ -98,15 +93,15 @@ describe("chart handlers", () => {
   });
 
   it("rejects oversized bodies", async () => {
-    const handlers = chartHandlers(() => memoryChartRepository());
+    const handlers = chartHandlers(() => memoryChartRepository(), signedIn);
     const huge = { schoolId: "s", chart: { ...chart, name: "x".repeat(1_100_000) } };
     expect((await handlers.save(post(huge))).status).toBe(413);
   });
 
   it("keeps each owner's charts separate", async () => {
     const repo = memoryChartRepository();
-    const alice = chartHandlers(() => repo, () => "alice");
-    const bob = chartHandlers(() => repo, () => "bob");
+    const alice = chartHandlers(() => repo, async () => "alice");
+    const bob = chartHandlers(() => repo, async () => "bob");
     const { id } = (await (await alice.save(post({ schoolId: "s", chart }))).json()) as { id: string };
 
     expect((await bob.get(new Request("http://test"), id)).status).toBe(404);
@@ -116,12 +111,9 @@ describe("chart handlers", () => {
   });
 });
 
-describe.each([
-  ["browser", () => browserChartStore(fakeStorage())],
-  ["server", () => serverChartStore(fetchInto(memoryChartRepository()))],
-])("%s chart store", (_name, makeStore) => {
+describe("server chart store", () => {
   it("saves, lists per school, loads, updates, and removes", async () => {
-    const store = makeStore();
+    const store = serverChartStore(fetchInto(memoryChartRepository()));
     const first = await store.save({ schoolId: "s", chart });
     await store.save({ schoolId: "other", chart: { ...chart, name: "Elsewhere" } });
 
@@ -137,32 +129,12 @@ describe.each([
   });
 });
 
-describe("browserChartStore", () => {
-  it("ignores corrupted saved data instead of crashing", async () => {
-    const storage = fakeStorage();
-    storage.setItem("charticulum.charts.v1", "{not json");
-    expect(await browserChartStore(storage).list("s")).toEqual([]);
-    storage.setItem("charticulum.charts.v1", JSON.stringify([{ id: "x", schoolId: "s", chart: { bad: true } }]));
-    expect(await browserChartStore(storage).list("s")).toEqual([]);
-  });
-
-  it("lists nothing and explains failed saves when storage is unavailable", async () => {
-    const store = browserChartStore(null);
-    expect(await store.list("s")).toEqual([]);
-    await expect(store.save({ schoolId: "s", chart })).rejects.toThrow(/won't let Charticulum save/);
-  });
-});
-
-describe("chooseChartStore", () => {
-  it("uses the server when it has a database", async () => {
-    expect((await chooseChartStore(fetchInto(memoryChartRepository()))).kind).toBe("server");
-  });
-
-  it("falls back to the browser otherwise", async () => {
-    expect((await chooseChartStore(fetchInto(null))).kind).toBe("browser");
-    const offline: typeof fetch = async () => {
-      throw new Error("offline");
-    };
-    expect((await chooseChartStore(offline)).kind).toBe("browser");
+describe("memoryChartRepository", () => {
+  it("lists every school's charts when no school is given", async () => {
+    const repo = memoryChartRepository();
+    await repo.save("me", { schoolId: "a", chart });
+    await repo.save("me", { schoolId: "b", chart: { ...chart, name: "Second" } });
+    await repo.save("someone else", { schoolId: "a", chart });
+    expect((await repo.list("me")).map((c) => c.name)).toEqual(["Second", "My plan"]);
   });
 });

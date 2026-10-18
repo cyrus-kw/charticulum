@@ -8,6 +8,7 @@ import {
   termCalendar,
   type CourseObject,
   type LoadedSchool,
+  type SchoolData,
   type Season,
   type Term,
 } from "../engine/index";
@@ -154,9 +155,14 @@ export const sampleSchoolData: SchoolDataInput = {
   ],
 };
 
-// The sample school, checked and ready for the engine.
-export function loadSampleSchool(): LoadedSchool {
+// The sample school's data, checked (defaults filled in).
+export function sampleSchool(): SchoolData {
   const parsed = parseSchoolData(sampleSchoolData);
   if (!parsed.ok) throw new Error(`Sample school data is invalid:\n${parsed.errors.join("\n")}`);
-  return loadSchool(parsed.data);
+  return parsed.data;
+}
+
+// The sample school, checked and ready for the engine.
+export function loadSampleSchool(): LoadedSchool {
+  return loadSchool(sampleSchool());
 }

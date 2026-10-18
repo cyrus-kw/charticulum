@@ -84,6 +84,19 @@ export function initialState(school: LoadedSchool, programId?: string): PlannerS
   return { school, chart, selectedId: null, builderIssues: [], savedId: null, layoutVersion: 0 };
 }
 
+// The planner opened on a saved chart.
+export function openedState(school: LoadedSchool, chart: Chart, savedId: string): PlannerState {
+  return { school, chart, selectedId: null, builderIssues: [], savedId, layoutVersion: 0 };
+}
+
+// A brand-new chart: the program's suggested plan (pinned to that
+// version), or an empty plan if no program is given or it isn't found.
+export function newChart(school: LoadedSchool, ref?: TemplateRef, name?: string): Chart {
+  const template = ref && findTemplate(school.library, ref);
+  if (template) return arrangeChart(school.catalog, forkTemplate(template, name || undefined));
+  return { name: name || "My plan", terms: [emptyTermZero()], completedExternal: [] };
+}
+
 const emptyTermZero = (): Term => ({ index: EXTERNAL_TERM, label: EXTERNAL_TERM_LABEL, objectIds: [] });
 
 const sameWork = (a: CompletedExternal, b: CompletedExternal) =>

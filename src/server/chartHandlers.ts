@@ -2,7 +2,7 @@
 // pass requests through to these, so they can be tested without a server.
 import { z } from "zod";
 import { chartSchema } from "../engine/index";
-import { ChartNotFoundError, LOCAL_OWNER, type ChartRepository } from "./chartRepository";
+import { ChartNotFoundError, type ChartRepository } from "./chartRepository";
 
 // Reject request bodies over 1 MB; a real chart is a few kilobytes.
 const MAX_BODY_BYTES = 1_000_000;
@@ -38,14 +38,20 @@ function failure(e: unknown, doing: string): Response {
 
 export function chartHandlers(
   getRepository: () => ChartRepository | null,
-  // Who is asking. One local user for now; sign-in will replace this.
-  getOwner: (request: Request) => string = () => LOCAL_OWNER,
+  // Who is asking: the signed-in user's id, or null if nobody is.
+  getOwner: (request: Request) => Promise<string | null>,
 ) {
-  const withRepository = async (doing: string, run: (repo: ChartRepository) => Promise<Response>) => {
+  const withRepository = async (
+    request: Request,
+    doing: string,
+    run: (repo: ChartRepository, owner: string) => Promise<Response>,
+  ) => {
     const repo = getRepository();
     if (!repo) return error(503, "This server has no database configured.");
     try {
-      return await run(repo);
+      const owner = await getOwner(request);
+      if (!owner) return error(401, "Sign in to do that (your session may have ended).");
+      return await run(repo, owner);
     } catch (e) {
       if (e instanceof ChartNotFoundError) return error(404, e.message);
       console.error(e);
@@ -55,14 +61,14 @@ export function chartHandlers(
 
   return {
     list: (request: Request) =>
-      withRepository("loading your saved plans", async (repo) => {
+      withRepository(request, "loading your saved plans", async (repo, owner) => {
         const schoolId = new URL(request.url).searchParams.get("schoolId");
         if (!schoolId) return error(400, "schoolId is required.");
-        return Response.json(await repo.list(getOwner(request), schoolId));
+        return Response.json(await repo.list(owner, schoolId));
       }),
 
     save: (request: Request) =>
-      withRepository("saving your chart", async (repo) => {
+      withRepository(request, "saving your chart", async (repo, owner) => {
         const text = await request.text();
         if (text.length > MAX_BODY_BYTES) return error(413, "That chart is too large.");
         let json: unknown;
@@ -73,19 +79,19 @@ export function chartHandlers(
         }
         const parsed = saveBody.safeParse(json);
         if (!parsed.success) return error(400, parsed.error.issues.map((i) => i.message).join("; "));
-        const saved = await repo.save(getOwner(request), parsed.data);
+        const saved = await repo.save(owner, parsed.data);
         return Response.json(saved, { status: parsed.data.id ? 200 : 201 });
       }),
 
     get: (request: Request, id: string) =>
-      withRepository("opening that plan", async (repo) => {
-        const saved = await repo.get(getOwner(request), id);
+      withRepository(request, "opening that plan", async (repo, owner) => {
+        const saved = await repo.get(owner, id);
         return saved ? Response.json(saved) : error(404, `No saved chart with id ${id}.`);
       }),
 
     remove: (request: Request, id: string) =>
-      withRepository("deleting that plan", async (repo) => {
-        const removed = await repo.remove(getOwner(request), id);
+      withRepository(request, "deleting that plan", async (repo, owner) => {
+        const removed = await repo.remove(owner, id);
         return removed ? new Response(null, { status: 204 }) : error(404, `No saved chart with id ${id}.`);
       }),
   };

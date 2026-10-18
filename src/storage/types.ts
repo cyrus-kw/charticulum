@@ -20,10 +20,8 @@ export interface SaveChartInput {
   chart: Chart;
 }
 
-// Somewhere charts can be saved. The app picks one at startup: the
-// database when the server has one, otherwise this browser's storage.
+// Saving and loading charts from the browser (see stores.ts).
 export interface ChartStore {
-  kind: "browser" | "server";
   list(schoolId: string): Promise<SavedChartSummary[]>;
   load(id: string): Promise<SavedChart | null>;
   save(input: SaveChartInput): Promise<SavedChartSummary>;

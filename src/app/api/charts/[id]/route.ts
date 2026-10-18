@@ -2,8 +2,10 @@
 // DELETE /api/charts/:id  delete it
 import { chartHandlers } from "../../../../server/chartHandlers";
 import { getChartRepository } from "../../../../server/db";
+import { currentUser } from "../../../../server/session";
 
-const handlers = chartHandlers(getChartRepository);
+// Charts belong to the signed-in user.
+const handlers = chartHandlers(getChartRepository, async () => (await currentUser())?.id ?? null);
 
 type Context = { params: Promise<{ id: string }> };
 
