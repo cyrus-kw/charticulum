@@ -185,7 +185,13 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
         !external && "cursor-grab active:cursor-grabbing",
         compact && "items-center px-1",
       )}
-      data-tooltip={[`${courseCode(object.id)}: ${object.title} (${object.credits} cr)`, ...issues.map((i) => i.message)].join("\n")}
+      // Only compressed cards get a label: they show just the code, so
+      // pointing at one tells you the rest. A full-size card already shows it.
+      data-tooltip={
+        compact
+          ? [`${courseCode(object.id)}: ${object.title} (${object.credits} cr)`, ...issues.map((i) => i.message)].join("\n")
+          : undefined
+      }
     >
       <Handles />
       {compact ? (

@@ -154,6 +154,8 @@ and a tooltip.
   element or above it near the window's bottom, and slide to stay on
   screen. A `\n` starts a new line.
 - They hide on click, drag, scroll, or Escape, and don't show on touch.
+  Nothing shows while a button is held (e.g. mid-drag), and a pressed
+  element's label waits until the pointer has moved off it.
 
 ## Hover, focus, and disabled
 
@@ -179,7 +181,8 @@ arrowheads gliding around a card). Everything that moves respects
   term's title is tinted with its season.
 - Cards are white (or their season's tint if offered in only one season),
   with the course code on top and the name below. Zoomed out, a card
-  shows just the code.
+  shows just the code, and pointing at it shows the full name, credits,
+  and issues; full-size cards have no tooltip, since they already show it.
 - Arrows are straight lines in the course's color, solid for
   prerequisites and dashed for courses taken together; red and thicker
   when out of order.

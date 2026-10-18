@@ -33,6 +33,10 @@ export function Tooltips() {
   useEffect(() => {
     let current: HTMLElement | null = null;
     let timer: number | undefined;
+    // The element last pressed (clicked or dragged). Its label waits until
+    // the pointer has moved off it, so it doesn't pop up right after a
+    // click or as a dragged card is let go.
+    let pressed: HTMLElement | null = null;
 
     function show(el: HTMLElement | null, delay: number) {
       if (el === current) return;
@@ -51,7 +55,19 @@ export function Tooltips() {
     // moving off a button onto something without a tooltip hides it.
     // Touch screens skip it: a tap would show a label that never goes away.
     const onOver = (e: PointerEvent) => {
-      if (e.pointerType !== "touch") show(tooltipOf(e.target), SHOW_DELAY);
+      if (e.pointerType === "touch") return;
+      // e.buttons is 0 unless a mouse button is held down. While dragging
+      // a card, the card moves along under the pointer, so pointerover
+      // keeps firing on it; no label while anything is held.
+      if (e.buttons !== 0) return;
+      const el = tooltipOf(e.target);
+      if (el && el === pressed) return;
+      pressed = null;
+      show(el, SHOW_DELAY);
+    };
+    const onDown = (e: PointerEvent) => {
+      pressed = tooltipOf(e.target);
+      hide();
     };
     // relatedTarget is null when the pointer leaves the window.
     const onOut = (e: PointerEvent) => {
@@ -73,7 +89,9 @@ export function Tooltips() {
     document.addEventListener("focusout", hide);
     // Clicking, dragging, or scrolling: the label would be in the way, or
     // left behind in the wrong spot.
-    document.addEventListener("pointerdown", hide);
+    // Capture (true): hear the press before anything inside the page can
+    // stop it from spreading, as the chart does when a drag starts.
+    document.addEventListener("pointerdown", onDown, true);
     document.addEventListener("wheel", hide, { passive: true });
     document.addEventListener("scroll", hide, true);
     document.addEventListener("keydown", onKey);
@@ -83,7 +101,7 @@ export function Tooltips() {
       document.removeEventListener("pointerout", onOut);
       document.removeEventListener("focusin", onFocus);
       document.removeEventListener("focusout", hide);
-      document.removeEventListener("pointerdown", hide);
+      document.removeEventListener("pointerdown", onDown, true);
       document.removeEventListener("wheel", hide);
       document.removeEventListener("scroll", hide, true);
       document.removeEventListener("keydown", onKey);
