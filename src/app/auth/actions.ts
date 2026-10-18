@@ -19,6 +19,12 @@ export async function requestSignInAction(_previous: SignInState, form: FormData
   return result.ok ? { sentTo: email.trim().toLowerCase() } : { error: result.error };
 }
 
+// "Resend code": the same as step one, for the address already typed.
+export async function resendCodeAction(email: string): Promise<{ error?: string }> {
+  const result = await requestCode(authDeps(), { email });
+  return result.ok ? {} : { error: result.error };
+}
+
 export type CodeState = { error?: string; needName?: boolean } | null;
 
 // Step two: check the code (and, for a new account, the name), then sign in.

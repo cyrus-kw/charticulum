@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
+import { SignIn } from "../components/site/AuthForms";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { currentUser } from "../server/session";
 
-// The front door: what Charticulum is, and the way in. Signed-in visitors
+// The front door: what Charticulum is, and signing in. Signed-in visitors
 // go straight to their dashboard.
 export default async function HomePage() {
   if (await currentUser()) redirect("/dashboard");
@@ -18,12 +18,7 @@ export default async function HomePage() {
           Chart your curriculum. Courses are cards in term columns, requisites are arrows, and every school rule is
           checked as you plan.
         </p>
-        <Link
-          href="/sign-in"
-          className="rounded-md bg-sky-600 px-4 py-2 font-medium text-white hover:bg-sky-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500"
-        >
-          Sign in to start planning
-        </Link>
+        <SignIn showTerminalHint={process.env.NODE_ENV !== "production"} />
       </main>
     </div>
   );

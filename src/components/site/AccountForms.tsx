@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useTransition } from "react";
+import { useActionState, useState, useTransition } from "react";
 import {
   confirmEmailChangeAction,
   deleteAccountAction,
@@ -9,7 +9,7 @@ import {
   type FormResult,
 } from "../../app/(site)/account/actions";
 import { Button, inputClass } from "../ui";
-import { CODE_INPUT } from "./AuthForms";
+import { CODE_LENGTH, CodeBoxes, emptyCode } from "./CodeBoxes";
 
 function Message({ result }: { result: FormResult }) {
   if (!result) return null;
@@ -73,21 +73,26 @@ export function EmailForm({ email }: { email: string }) {
   const [request, requestAction, requesting] = useActionState(requestEmailChangeAction, null);
   const [confirm, confirmAction, confirming] = useActionState(confirmEmailChangeAction, null);
   const sentTo = request?.sentTo;
+  // Kept in state so a wrong guess doesn't empty the boxes (React empties
+  // a form after each submit).
+  const [code, setCode] = useState(emptyCode);
 
   if (confirm?.done) return <Message result={{ ok: true, message: confirm.done }} />;
   if (sentTo) {
     return (
       <form action={confirmAction} className="space-y-2">
         <input type="hidden" name="email" value={sentTo} />
-        <label className="grid gap-1 text-sm">
-          <span className="text-xs text-zinc-500">Code sent to {sentTo}</span>
-          <div className="flex gap-2">
-            <input name="code" {...CODE_INPUT} className={`${inputClass} flex-1 tracking-widest`} />
-            <Button type="submit" disabled={confirming}>
-              Confirm
-            </Button>
+        <div className="grid gap-1">
+          <span id="email-code-label" className="text-xs text-zinc-500">
+            Enter the code sent to <strong className="font-semibold">{sentTo}</strong>
+          </span>
+          <div role="group" aria-labelledby="email-code-label" className="max-w-xs">
+            <CodeBoxes name="code" value={code} onChange={setCode} autoFocus />
           </div>
-        </label>
+        </div>
+        <Button type="submit" disabled={confirming || code.join("").length < CODE_LENGTH}>
+          Confirm
+        </Button>
         {confirm?.error && <Message result={{ ok: false, error: confirm.error }} />}
         <p className="text-xs text-zinc-500">Until you confirm, your email stays {email}.</p>
       </form>

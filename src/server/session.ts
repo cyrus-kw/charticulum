@@ -34,10 +34,10 @@ export const currentUser = cache(async (): Promise<User | null> => {
 });
 
 // For pages and actions that need someone signed in: send everyone else
-// to the sign-in page. (redirect() stops the page right there.)
+// to the home page to sign in. (redirect() stops the page right there.)
 export async function requireUser(): Promise<User> {
   const user = await currentUser();
-  if (!user) redirect("/sign-in");
+  if (!user) redirect("/");
   return user;
 }
 
