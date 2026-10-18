@@ -2,7 +2,7 @@ import { meetsGrade } from "./grades";
 import type {
   Catalog,
   ChartIssue,
-  CourseObject,
+  CurriculumObject,
   Grade,
   Override,
   Requirements,
@@ -30,9 +30,9 @@ export function applyOverrides(
   const issues: ChartIssue[] = [];
 
   // Copy an object before changing it, so the original catalog is untouched.
-  const editable = (id: string): CourseObject => {
+  const editable = (id: string): CurriculumObject => {
     const original = adjusted.get(id)!;
-    const copy: CourseObject = {
+    const copy: CurriculumObject = {
       ...original,
       internalEquivalents: [...original.internalEquivalents],
       requisites: {

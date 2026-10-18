@@ -1,4 +1,4 @@
-import type { CourseObject, Season, Term } from "./types";
+import type { CurriculumObject, Season, Term } from "./types";
 
 // Where each season falls in a calendar year (winter = January).
 const CALENDAR_ORDER: Record<Season, number> = { winter: 0, spring: 1, summer: 2, fall: 3 };
@@ -6,7 +6,7 @@ const CALENDAR_ORDER: Record<Season, number> = { winter: 0, spring: 1, summer: 2
 // Is the object offered in this term? Terms without a season or year
 // can't be checked, so they count as offered. An object with no seasons
 // (TBA) isn't offered in any term that has one.
-export function isOffered(object: CourseObject, term: Pick<Term, "season" | "year">): boolean {
+export function isOffered(object: CurriculumObject, term: Pick<Term, "season" | "year">): boolean {
   const availability = object.availability;
 
   if (term.season && !availability.seasons.includes(term.season)) {

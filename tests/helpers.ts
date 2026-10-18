@@ -1,16 +1,16 @@
-import { EVERY_TERM, type Chart, type CourseObject, type Requirements } from "../src/engine/types";
+import { EVERY_TERM, type Chart, type CurriculumObject, type Requirements } from "../src/engine/types";
 
-// Build a CourseObject with sensible defaults so tests only spell out
-// the fields they care about. `Partial<CourseObject>` makes every field
+// Build a CurriculumObject with sensible defaults so tests only spell out
+// the fields they care about. `Partial<CurriculumObject>` makes every field
 // optional; the "..." spread copies the overrides on top of the defaults.
 export function obj(
   id: string,
-  overrides: Partial<Omit<CourseObject, "requisites">> & {
+  overrides: Partial<Omit<CurriculumObject, "requisites">> & {
     previous?: string[];
     concurrent?: string[];
-    minGrades?: CourseObject["requisites"]["minGrades"];
+    minGrades?: CurriculumObject["requisites"]["minGrades"];
   } = {},
-): CourseObject {
+): CurriculumObject {
   const { previous = [], concurrent = [], minGrades, ...rest } = overrides;
   return {
     id,

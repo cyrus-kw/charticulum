@@ -1,14 +1,14 @@
 // A small, made-up curriculum for demos and tests. "Example State
 // University" is fictional; the courses are generic placeholders.
-import { createCatalog, EVERY_TERM, type Chart, type CourseObject, type Requirements } from "../engine/index";
+import { createCatalog, EVERY_TERM, type Chart, type CurriculumObject, type Requirements } from "../engine/index";
 
 // Shorthand for the many fields that are usually empty.
 function course(
   id: string,
   title: string,
   credits: number,
-  fields: Partial<CourseObject> = {},
-): CourseObject {
+  fields: Partial<CurriculumObject> = {},
+): CurriculumObject {
   return {
     id,
     kind: "course",

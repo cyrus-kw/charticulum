@@ -12,7 +12,7 @@ import {
   type Catalog,
   type Chart,
   type ChartIssue,
-  type CourseObject,
+  type CurriculumObject,
   type Grade,
   type Season,
 } from "../engine/index";
@@ -94,7 +94,7 @@ export const BROKEN_EDGE_COLOR = "#e11d48";
 // React Flow requires node data to be a plain object type, so these use
 // `type` rather than `interface`.
 export type CourseNodeData = {
-  object: CourseObject;
+  object: CurriculumObject;
   grade?: Grade;
   issues: ChartIssue[];
   external: boolean;

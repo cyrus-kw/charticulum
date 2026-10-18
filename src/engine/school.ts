@@ -3,7 +3,7 @@
 import { z } from "zod";
 import { createCatalog } from "./catalog";
 import { publishTemplate, type TemplateLibrary } from "./templates";
-import { EVERY_TERM, type Catalog, type CourseObject, type RequirementSet } from "./types";
+import { EVERY_TERM, type Catalog, type CurriculumObject, type RequirementSet } from "./types";
 
 // ---------------------------------------------------------------------------
 // Schema. Zod checks data at runtime (TypeScript types only exist while
@@ -185,7 +185,7 @@ export interface LoadedSchool {
 
 export function loadSchool(data: SchoolData): LoadedSchool {
   // Fold the equivalency table into each object's external equivalents.
-  const objects: CourseObject[] = data.objects.map((object) => ({
+  const objects: CurriculumObject[] = data.objects.map((object) => ({
     ...object,
     externalEquivalents: [
       ...object.externalEquivalents,

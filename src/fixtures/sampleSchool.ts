@@ -6,7 +6,7 @@ import {
   parseSchoolData,
   slotLabel,
   termCalendar,
-  type CourseObject,
+  type CurriculumObject,
   type LoadedSchool,
   type SchoolData,
   type Season,
@@ -15,7 +15,7 @@ import {
 import type { SchoolDataInput } from "../engine/school";
 import { sampleCatalog } from "./sampleCurriculum";
 
-const statsCourses: CourseObject[] = [
+const statsCourses: CurriculumObject[] = [
   {
     id: "STAT200",
     kind: "course",

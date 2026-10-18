@@ -4,12 +4,12 @@ import {
   type Catalog,
   type Chart,
   type CompletedExternal,
-  type CourseObject,
+  type CurriculumObject,
 } from "./types";
 
 // Is this object backed by something the student completed elsewhere?
 export function isBackedByExternal(
-  object: CourseObject,
+  object: CurriculumObject,
   completedExternal: CompletedExternal[],
 ): boolean {
   return object.externalEquivalents.some((equivalent) =>

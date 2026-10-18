@@ -68,7 +68,7 @@ export interface Availability {
 
 // One plannable thing: a course, internship, milestone, or proficiency.
 // Its fields are its attributes (the "a" in the o-a system).
-export interface CourseObject {
+export interface CurriculumObject {
   id: string;
   kind: ObjectKind;
   title: string;
@@ -83,7 +83,7 @@ export interface CourseObject {
 }
 
 // All known objects, looked up by id. A Map is a built-in key -> value store.
-export type Catalog = Map<string, CourseObject>;
+export type Catalog = Map<string, CurriculumObject>;
 
 // ---------------------------------------------------------------------------
 // Charts

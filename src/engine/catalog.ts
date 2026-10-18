@@ -1,8 +1,8 @@
-import type { Catalog, Chart, CourseObject } from "./types";
+import type { Catalog, Chart, CurriculumObject } from "./types";
 
 // Build a Catalog from a list of objects. Throws if two share an id,
 // because every later lookup assumes ids are unique.
-export function createCatalog(objects: CourseObject[]): Catalog {
+export function createCatalog(objects: CurriculumObject[]): Catalog {
   const catalog: Catalog = new Map();
   for (const object of objects) {
     if (catalog.has(object.id)) {
