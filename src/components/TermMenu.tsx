@@ -138,7 +138,7 @@ export function AddTermMenu({
           <button
             type="button"
             role="menuitem"
-            title="Show the Pre-Credit column (AP exams, transfer courses)"
+            data-tooltip="Show the Pre-Credit column (AP exams, transfer courses)"
             onClick={() => choose({ type: "showPreCredit" })}
             className="col-span-2 rounded bg-sky-50 px-2 py-1 text-left text-xs text-zinc-800 hover:brightness-95 dark:bg-sky-950/40 dark:text-zinc-100 dark:hover:brightness-125"
           >
@@ -154,7 +154,7 @@ export function AddTermMenu({
               type="button"
               role="menuitem"
               disabled={!fits}
-              title={fits ? `Add ${beside.term.label}` : beside.reason}
+              data-tooltip={fits ? `Add ${beside.term.label}` : beside.reason}
               onClick={() => choose(change)}
               className={cn(
                 "truncate rounded px-2 py-1 text-left text-xs text-zinc-800 dark:text-zinc-100",
@@ -200,7 +200,7 @@ export function TermMenu({
         type="button"
         role="menuitem"
         disabled={!removable}
-        title={
+        data-tooltip={
           preCredit
             ? "Hides the column; your AP and transfer credit still counts."
             : removable

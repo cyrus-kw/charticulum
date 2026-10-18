@@ -185,7 +185,7 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
         !external && "cursor-grab active:cursor-grabbing",
         compact && "items-center px-1",
       )}
-      title={[`${courseCode(object.id)}: ${object.title} (${object.credits} cr)`, ...issues.map((i) => i.message)].join("\n")}
+      data-tooltip={[`${courseCode(object.id)}: ${object.title} (${object.credits} cr)`, ...issues.map((i) => i.message)].join("\n")}
     >
       <Handles />
       {compact ? (
@@ -262,7 +262,7 @@ function AddButton({ gap, neighbors, place }: { gap: TermGap; neighbors: number[
     // is a click, not the start of a drag or a pan.
     <button
       type="button"
-      title={name}
+      data-tooltip={name}
       aria-label={name}
       onClick={(e) => onAdd(gap, e.currentTarget.getBoundingClientRect())}
       onPointerEnter={() => setHoveredPlus(key)}
@@ -398,10 +398,10 @@ function HistoryControls({
 }) {
   return (
     <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Undo" title="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
+      <button type="button" className={button} aria-label="Undo" data-tooltip="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
         <UndoIcon />
       </button>
-      <button type="button" className={button} aria-label="Redo" title="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
+      <button type="button" className={button} aria-label="Redo" data-tooltip="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
         <RedoIcon />
       </button>
     </div>
@@ -429,7 +429,7 @@ function ZoomControls({
   };
   return (
     <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Compress the chart" title="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
+      <button type="button" className={button} aria-label="Compress the chart" data-tooltip="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
         <MinusIcon />
       </button>
       <label className="flex h-7 items-center px-1.5 text-xs text-zinc-500 tabular-nums">
@@ -438,7 +438,7 @@ function ZoomControls({
           inputMode="numeric"
           autoComplete="off"
           aria-label="Zoom percent"
-          title={`Zoom: 100–${MAX_ZOOM_PERCENT}%, in steps of ${ZOOM_STEP}`}
+          data-tooltip={`Zoom: 100–${MAX_ZOOM_PERCENT}%, in steps of ${ZOOM_STEP}`}
           className="w-[3ch] bg-transparent text-right outline-none focus:text-zinc-900 dark:focus:text-zinc-100"
           value={draft ?? String(zoom)}
           onChange={(e) => setDraft(e.target.value)}
@@ -455,10 +455,10 @@ function ZoomControls({
         />
         %
       </label>
-      <button type="button" className={button} aria-label="Spread the chart out" title="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + BUTTON_ZOOM_STEP)}>
+      <button type="button" className={button} aria-label="Spread the chart out" data-tooltip="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + BUTTON_ZOOM_STEP)}>
         <PlusIcon />
       </button>
-      <button type="button" className={button} aria-label="Fit to width" title="Fit to width" onClick={onFit}>
+      <button type="button" className={button} aria-label="Fit to width" data-tooltip="Fit to width" onClick={onFit}>
         <FitIcon />
       </button>
     </div>

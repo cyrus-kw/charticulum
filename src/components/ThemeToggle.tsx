@@ -12,7 +12,7 @@ export function ThemeToggle() {
     <button
       type="button"
       aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-      title={theme === "dark" ? "Light mode" : "Dark mode"}
+      data-tooltip={theme === "dark" ? "Light mode" : "Dark mode"}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
       className={HEADER_BUTTON}

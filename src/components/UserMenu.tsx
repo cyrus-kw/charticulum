@@ -63,7 +63,7 @@ export function UserMenu({
     <details ref={ref} className={cn("group relative", look === "row" && "min-w-0 flex-1")}>
       <summary
         aria-label="Account menu"
-        title={user.name}
+        data-tooltip={user.name}
         className={cn(
           "flex cursor-pointer list-none items-center select-none [&::-webkit-details-marker]:hidden",
           look === "circle"

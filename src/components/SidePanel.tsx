@@ -230,7 +230,7 @@ export function PanelToggle({
       aria-controls={id}
       aria-expanded={open}
       aria-label={label}
-      title={label}
+      data-tooltip={label}
       style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
       className={cn(
         "group relative",

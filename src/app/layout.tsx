@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "@xyflow/react/dist/style.css";
 import { ThemeScript } from "../components/ThemeScript";
+import { Tooltips } from "../components/Tooltips";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,7 +18,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <ThemeScript />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        {/* Draws the label for anything with a data-tooltip, on every page. */}
+        <Tooltips />
+      </body>
     </html>
   );
 }

@@ -131,7 +131,7 @@ export function Planner({
               <Link
                 href="/dashboard"
                 onClick={guardLeave}
-                title="Open dashboard"
+                data-tooltip="Open dashboard"
               >
                 <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
                 <p className="text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</p>
@@ -147,7 +147,7 @@ export function Planner({
                 href="/dashboard"
                 onClick={guardLeave}
                 aria-label="Open dashboard"
-                title="Open dashboard"
+                data-tooltip="Open dashboard"
                 style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
                 className={HEADER_BUTTON}
               >
