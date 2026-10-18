@@ -132,6 +132,37 @@ export function TrashIcon() {
   );
 }
 
+// A gear with six broad teeth: settings (the Account page). Six rather
+// than the usual eight, so it doesn't look busier or darker than the
+// other icons at 16px.
+export function SettingsIcon() {
+  return (
+    <Icon>
+      <path d="M9.28 4.9L9.92 2.22A10 10 0 0 1 14.08 2.22L14.72 4.9A7.6 7.6 0 0 1 16.78 6.09L19.43 5.31A10 10 0 0 1 21.51 8.91L19.51 10.81A7.6 7.6 0 0 1 19.51 13.19L21.51 15.09A10 10 0 0 1 19.43 18.69L16.78 17.91A7.6 7.6 0 0 1 14.72 19.1L14.08 21.78A10 10 0 0 1 9.92 21.78L9.28 19.1A7.6 7.6 0 0 1 7.22 17.91L4.57 18.69A10 10 0 0 1 2.49 15.09L4.49 13.19A7.6 7.6 0 0 1 4.49 10.81L2.49 8.91A10 10 0 0 1 4.57 5.31L7.22 6.09A7.6 7.6 0 0 1 9.28 4.9Z" />
+      <circle cx="12" cy="12" r="3" />
+    </Icon>
+  );
+}
+
+// An arrow leaving through a door: sign out. The door is as tall as the
+// trash can (2 to 22), so the two look the same size side by side.
+export function SignOutIcon() {
+  return (
+    <Icon>
+      <path d="M9 22H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4" />
+      <path d="m16 17 5-5-5-5M21 12H9" />
+    </Icon>
+  );
+}
+
+// An X: close.
+export function CloseIcon() {
+  return (
+    <Icon>
+      <path d="M18 6 6 18M6 6l12 12" />
+    </Icon>
+  );
+}
 
 // A chevron pointing down: "this opens a menu".
 export function ChevronDownIcon() {

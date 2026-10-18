@@ -62,7 +62,7 @@ export function Planner({
     return () => window.removeEventListener("beforeunload", warn);
   }, [unsaved]);
 
-  // Moving to another page of the site (the dashboard, Account, Sign out)
+  // Moving to another page of the site (the dashboard, Sign out)
   // isn't a page reload, so the browser won't ask; ask here instead.
   const confirmLeave = () => !unsaved || window.confirm("Leave without saving your changes?");
   // For links: preventDefault cancels the click, so the page stays.
@@ -76,7 +76,8 @@ export function Planner({
     const onKey = (event: KeyboardEvent) => {
       if (!(event.ctrlKey || event.metaKey)) return;
       const target = event.target as HTMLElement | null;
-      if (target?.closest("input, textarea, select, [contenteditable='true']")) return;
+      // Nor while a floating panel (Settings) covers the chart.
+      if (target?.closest("input, textarea, select, [contenteditable='true'], [aria-modal='true']")) return;
       const key = event.key.toLowerCase();
       if (key === "z" && !event.shiftKey) {
         event.preventDefault();

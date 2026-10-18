@@ -3,8 +3,8 @@
 import { useEffect, useRef, type FormEvent, type MouseEvent } from "react";
 import Link from "next/link";
 import { signOutAction } from "../app/auth/actions";
-import { ChevronDownIcon } from "./icons";
-import { cn } from "./ui";
+import { ChevronDownIcon, SettingsIcon, SignOutIcon } from "./icons";
+import { cn, DANGER_ICON_BUTTON, ICON_BUTTON } from "./ui";
 
 // "Ana Lucía Pérez" → "Ana P": the first name and the last name's
 // initial, to keep the sidebar tidy. A single name stays as it is.
@@ -17,7 +17,9 @@ function shortName(name: string): string {
 
 export type MenuUser = { name: string; email: string; role?: "user" | "admin" };
 
-// The signed-in account, which opens a small menu (Account, Sign out).
+// The signed-in account, which opens a small menu: your name and email,
+// with icon buttons for Settings (a gear; floats over the page) and Sign out
+// beside them.
 // Two looks:
 // - "circle": just the circle with your initial, in the site's top bar;
 //   the menu drops down below it.
@@ -36,7 +38,6 @@ export function UserMenu({
   // unsaved changes). Returning false stays put.
   confirmLeave?: () => boolean;
 }) {
-  const item = "block w-full rounded px-2 py-1.5 text-left text-sm hover:bg-zinc-100 dark:hover:bg-zinc-800";
   const ref = useRef<HTMLDetailsElement>(null);
   // Close it when clicking anywhere outside it.
   useEffect(() => {
@@ -91,20 +92,33 @@ export function UserMenu({
       </summary>
       <div
         className={cn(
-          "absolute z-20 w-56 rounded-md border border-zinc-200 bg-white p-1 shadow-md dark:border-zinc-800 dark:bg-zinc-900",
+          "absolute z-20 flex w-64 items-center gap-1 rounded-md border border-zinc-200 bg-white py-1.5 pr-1.5 pl-3 shadow-md dark:border-zinc-800 dark:bg-zinc-900",
           look === "circle" ? "top-full right-0 mt-2" : "bottom-full left-0 mb-2",
         )}
       >
-        <div className="border-b border-zinc-200 px-2 py-1.5 dark:border-zinc-800">
+        {/* min-w-0 + truncate: a long name or email ends in "…" and
+            leaves room for the buttons. */}
+        <div className="min-w-0 flex-1">
           <div className="truncate text-sm font-medium">{user.name}</div>
           <div className="truncate text-xs text-zinc-500">{user.email}</div>
         </div>
-        <Link href="/account" onClick={guard} className={item}>
-          Account
+        {/* Settings floats over this page rather than leaving it, so
+            unsaved changes in the planner are safe: no need to ask. The
+            menu closes behind it. scroll={false}: the page stays where it was. */}
+        <Link
+          href="/settings"
+          scroll={false}
+          onClick={() => ref.current?.removeAttribute("open")}
+          aria-label="Settings"
+          data-tooltip="Settings"
+          className={ICON_BUTTON}
+        >
+          <SettingsIcon />
         </Link>
+        {/* Rose, like the course trash button: it takes you out. */}
         <form action={signOutAction} onSubmit={guard}>
-          <button type="submit" className={item}>
-            Sign out
+          <button type="submit" aria-label="Sign out" data-tooltip="Sign out" className={DANGER_ICON_BUTTON}>
+            <SignOutIcon />
           </button>
         </form>
       </div>

@@ -7,7 +7,7 @@ import {
   requestEmailChangeAction,
   updateNameAction,
   type FormResult,
-} from "../../app/(site)/account/actions";
+} from "../../app/(site)/settings/actions";
 import { Button, inputClass } from "../ui";
 import { CODE_LENGTH, CodeBoxes, emptyCode } from "./CodeBoxes";
 

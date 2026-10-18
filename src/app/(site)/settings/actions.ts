@@ -1,5 +1,5 @@
 "use server";
-// Server actions for the Account page. Each one acts only on the
+// Server actions for Settings. Each one acts only on the
 // signed-in user's own account.
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";

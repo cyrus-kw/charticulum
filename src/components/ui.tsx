@@ -52,6 +52,20 @@ export function Button({ variant = "secondary", className, ...props }: ButtonPro
   );
 }
 
+// Small square icon-only buttons inside boxes and menus (28px). The
+// plain one is grey; the danger one is rose, for removing or leaving
+// (the course trash button, Sign out). Icon-only buttons also need an
+// aria-label and a data-tooltip.
+const ICON_BUTTON_BASE = "flex size-7 shrink-0 items-center justify-center rounded-md";
+export const ICON_BUTTON = cn(
+  ICON_BUTTON_BASE,
+  "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100",
+);
+export const DANGER_ICON_BUTTON = cn(
+  ICON_BUTTON_BASE,
+  "text-rose-600 hover:bg-rose-50 hover:text-rose-700 dark:text-rose-400 dark:hover:bg-rose-950 dark:hover:text-rose-300",
+);
+
 // How a form field looks while it's being typed in: a sky border with a
 // soft sky glow around it (instead of the browser's own black outline).
 // "focus:" rather than "focus-visible:" because a text box is in use

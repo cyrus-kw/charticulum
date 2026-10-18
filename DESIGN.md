@@ -132,18 +132,31 @@ Reuse these instead of restyling by hand; they live in
 - **`Tabs`**: tabs with a sky underline on the chosen one.
 - **`HEADER_BUTTON`** (`SidePanel.tsx`): the look of square icon buttons:
   grey icon, light grey background on hover.
+- **`ICON_BUTTON` / `DANGER_ICON_BUTTON`**: 28px icon-only buttons inside
+  boxes and menus. Grey for ordinary actions (the account menu's Settings gear);
+  rose for removing or leaving (a course's trash button, Sign out).
 - **Chart button groups** (`controlGroup` in `ChartFlow.tsx`): a white
   box with dividers between icon buttons, e.g. undo | redo.
 - **Popups** (account menu, tooltips): white box, `zinc-200` border,
   `rounded-md`, `shadow-md`; dark `zinc-900` with a `zinc-800` border.
   Menu items are `px-2 py-1.5 text-sm` with a `zinc-100` hover.
+  The account menu is one row: name and email (truncated) on the left,
+  then the Settings gear and Sign out icons.
+- **Floating panels** (`SettingsDialog.tsx`): centered over a `black/30`
+  dimmed page that fades in, up to `max-w-lg` wide and 85% of the window
+  tall (the sections scroll; the title row stays). White box, `zinc-200`
+  border, `rounded-md`, `shadow-lg`. A title row with an X (`ICON_BUTTON`)
+  at the right, then `Panel` sections. Escape, the X, or clicking the dimmed
+  page closes it.
 
 ## Icons
 
 All icons live in `src/components/icons.tsx` and are drawn the same way:
 a 24-unit grid shown at 16px, 2-unit strokes, rounded ends and corners,
 outline only (no fills), in the text color. Add new ones there; never
-draw an icon inline or use an icon font. Brand icons (GitHub) are traced
+draw an icon inline or use an icon font. Icons fill about 20 of the 24
+units (2 to 22) so they look the same size side by side, and keep detail
+coarse enough to read at 16px (the gear has six teeth, not eight). Brand icons (GitHub) are traced
 as outlines too, so they match.
 
 The browser-tab icon is `src/app/icon.svg`: two white course cards joined
@@ -212,7 +225,7 @@ arrowheads gliding around a card). Everything that moves respects
 
 ## Site pages
 
-The dashboard, Schools, and Account pages share a top bar (wordmark,
+The dashboard and Schools pages share a top bar (wordmark,
 links, theme button, account circle) and a footer (© 2026 Charticulum,
 with email and GitHub icons at the right end). The planner has neither
 and fills the window; its sidebar carries the wordmark at the top and

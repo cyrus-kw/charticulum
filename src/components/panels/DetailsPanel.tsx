@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { satisfies, CATEGORY_NAMES, EXTERNAL_TERM, GRADE_POINTS, type Grade } from "../../engine/index";
-import { askReason, Badge, Button, newId, Panel, Select } from "../ui";
+import { askReason, Badge, Button, DANGER_ICON_BUTTON, newId, Panel, Select } from "../ui";
 import { courseCode, withCourseCodes } from "../../planner/layout";
 import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
@@ -47,7 +47,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             aria-label={`Remove ${object.id} from plan`}
             data-tooltip="Remove from plan"
             onClick={() => dispatch({ type: "remove", objectId: id })}
-            className="flex h-7 w-7 items-center justify-center rounded-md text-rose-600 hover:bg-rose-50 hover:text-rose-700 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-rose-400 dark:hover:bg-rose-950 dark:hover:text-rose-300"
+            className={DANGER_ICON_BUTTON}
           >
             <TrashIcon />
           </button>

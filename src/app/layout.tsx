@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   description: "Chart your curriculum. See how it all fits together.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+// `modal`: the @modal slot, where floating panels like Settings are drawn
+// over the page (see src/app/@modal).
+export default function RootLayout({ children, modal }: { children: ReactNode; modal: ReactNode }) {
   return (
     // The theme script adds a "dark" class to <html> before React loads,
     // so React would otherwise warn that the class differs from the server's.
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="antialiased">
         {children}
+        {modal}
         {/* Draws the label for anything with a data-tooltip, on every page. */}
         <Tooltips />
       </body>
