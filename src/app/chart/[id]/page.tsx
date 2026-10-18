@@ -19,5 +19,11 @@ export default async function ChartPage({ params }: Props) {
   // Someone else's chart looks the same as a missing one, so its
   // existence isn't revealed.
   if (!opened) notFound();
-  return <Planner school={opened.school} saved={opened.saved} />;
+  return (
+    <Planner
+      school={opened.school}
+      saved={opened.saved}
+      user={{ name: user.name, email: user.email, role: user.role }}
+    />
+  );
 }

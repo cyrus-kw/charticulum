@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useReducer, useState } from "react";
+import { useEffect, useMemo, useReducer, useState, type MouseEvent } from "react";
 import Link from "next/link";
 import { EXTERNAL_TERM, loadSchool, type SchoolData } from "../engine/index";
 import { historyReducer, startHistory } from "../planner/history";
@@ -19,6 +19,7 @@ import { SummaryPanel } from "./panels/SummaryPanel";
 import { cn, Tabs } from "./ui";
 import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
 import { ThemeToggle } from "./ThemeToggle";
+import { UserMenu, type MenuUser } from "./UserMenu";
 import { usePanels } from "./usePanels";
 
 // A box lying on the chart, in the same style as its other controls. The
@@ -28,7 +29,16 @@ const chartBox =
 
 // The planner for one saved chart. The page loads the chart and its
 // school's data on the server and hands them over.
-export function Planner({ school: schoolData, saved }: { school: SchoolData; saved: SavedChart }) {
+export function Planner({
+  school: schoolData,
+  saved,
+  user,
+}: {
+  school: SchoolData;
+  saved: SavedChart;
+  // Who's signed in, shown at the bottom of the sidebar.
+  user: MenuUser;
+}) {
   // useReducer holds the planner state; dispatch(action) updates it.
   // The third argument builds the first state once, on first render.
   // The planner state, with undo/redo history around it.
@@ -51,6 +61,14 @@ export function Planner({ school: schoolData, saved }: { school: SchoolData; sav
     window.addEventListener("beforeunload", warn);
     return () => window.removeEventListener("beforeunload", warn);
   }, [unsaved]);
+
+  // Moving to another page of the site (the dashboard, Account, Sign out)
+  // isn't a page reload, so the browser won't ask; ask here instead.
+  const confirmLeave = () => !unsaved || window.confirm("Leave without saving your changes?");
+  // For links: preventDefault cancels the click, so the page stays.
+  const guardLeave = (event: MouseEvent) => {
+    if (!confirmLeave()) event.preventDefault();
+  };
 
   // Ctrl/Cmd+Z undoes; Ctrl/Cmd+Shift+Z or Ctrl+Y redoes. Not while typing
   // in a text box, where those keys edit the text.
@@ -105,33 +123,37 @@ export function Planner({ school: schoolData, saved }: { school: SchoolData; sav
           onToggle={() => panels.toggle("left")}
           onResize={(width, done) => panels.setWidth(width, done)}
           heading={
-            // flex-1 fills the header, so the theme and dashboard buttons
-            // land at the far right, framing the wordmark with the sidebar
-            // button.
+            // flex-1 fills the header, so the theme button lands at the far
+            // right, framing the wordmark with the sidebar button.
             <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
-              <div>
+              {/* The wordmark leads to the dashboard too, like on the
+                  site's other pages. */}
+              <Link
+                href="/dashboard"
+                onClick={guardLeave}
+                title="Open dashboard"
+              >
                 <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
                 <p className="text-xs text-zinc-500">Chart your curriculum</p>
-              </div>
-              <div className="flex items-center">
-                <ThemeToggle />
-                {/* Link (not <a>) moves to the page without reloading the app. */}
-                <Link
-                  href="/dashboard"
-                  // Leaving for the dashboard isn't a page reload, so the
-                  // browser won't ask; ask here instead.
-                  onClick={(event) => {
-                    if (unsaved && !window.confirm("Leave without saving your changes?")) event.preventDefault();
-                  }}
-                  aria-label="Open dashboard"
-                  title="Open dashboard"
-                  style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
-                  className={HEADER_BUTTON}
-                >
-                  <OpenIcon />
-                </Link>
-              </div>
+              </Link>
+              <ThemeToggle />
             </div>
+          }
+          footer={
+            <>
+              <UserMenu user={user} look="row" confirmLeave={confirmLeave} />
+              {/* Link (not <a>) moves to the page without reloading the app. */}
+              <Link
+                href="/dashboard"
+                onClick={guardLeave}
+                aria-label="Open dashboard"
+                title="Open dashboard"
+                style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
+                className={HEADER_BUTTON}
+              >
+                <OpenIcon />
+              </Link>
+            </>
           }
         >
           {/* Two tabs: the plan itself, and the school's courses and data.

@@ -32,12 +32,16 @@ export function SidePanel({
   onToggle,
   onResize,
   heading,
+  footer,
   children,
 }: {
   id: string;
   title: string;
   // Shown beside the toggle in place of the title (e.g. the app's name).
   heading?: ReactNode;
+  // Pinned to the bottom of the sidebar (e.g. the account), below
+  // whatever scrolls.
+  footer?: ReactNode;
   side: "left" | "right";
   open: boolean;
   width: number;
@@ -105,8 +109,10 @@ export function SidePanel({
           open ? (side === "left" ? "lg:border-r" : "lg:border-l") : "max-lg:hidden",
         )}
       >
-        {/* A fixed width inside, so the contents slide rather than squish. */}
-        <div className="h-full max-h-[40dvh] overflow-y-auto lg:max-h-none lg:w-(--panel-inner)">
+        {/* A fixed width inside, so the contents slide rather than squish.
+            flex-col: the footer can then sit at the bottom even when the
+            contents above it are short. */}
+        <div className="flex h-full max-h-[40dvh] flex-col overflow-y-auto lg:max-h-none lg:w-(--panel-inner)">
           <div
             // +1 for the bottom border, so the toggle is TOGGLE_INSET from the top.
             style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
@@ -125,7 +131,21 @@ export function SidePanel({
               </span>
             )}
           </div>
-          {children}
+          {/* flex-1 takes up the spare height, pushing the footer down. */}
+          <div className="flex-1">{children}</div>
+          {footer && (
+            // sticky bottom-0: when the contents are long, the footer
+            // stays in view and they scroll under it. It's as tall as the
+            // header (+1 for its top border), so its middle lines up with
+            // the chart's bottom controls (the zoom buttons), which sit
+            // TOGGLE_INSET from the bottom and are TOGGLE_SIZE tall.
+            <div
+              style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
+              className="sticky bottom-0 z-10 flex shrink-0 items-center gap-3 border-t border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950"
+            >
+              {footer}
+            </div>
+          )}
         </div>
       </aside>
 

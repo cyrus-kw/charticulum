@@ -132,3 +132,12 @@ export function TrashIcon() {
   );
 }
 
+
+// A chevron pointing down: "this opens a menu".
+export function ChevronDownIcon() {
+  return (
+    <Icon size={14}>
+      <path d="m6 9 6 6 6-6" />
+    </Icon>
+  );
+}
