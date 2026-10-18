@@ -227,6 +227,16 @@ arrowheads gliding around a card). Everything that moves respects
 
 The dashboard and Schools pages share a top bar (wordmark,
 links, theme button, account circle) and a footer (© 2026 Charticulum,
-with email and GitHub icons at the right end). The planner has neither
+with email and GitHub icons at the right end). The signed-out home page
+has the same bar (just the wordmark and theme button) and footer; its
+body is two columns: the slogan, "See how it all fits together.", and sign-in on the
+left (2/5 of the width), and a demo chart on the right (3/5, wide
+enough for full-size cards), their tops lined up. The demo
+(`DemoChart`) is the real chart, not a copy: `ChartFlow` with `bare`
+(no undo/redo, zoom, or legend; as tall as the plan; the wheel scrolls
+the page) on three terms of the sample school, moved by the planner's
+own reducer and checked by the engine. Below it, a line gives the first
+issue in rose (or a hint), with Reset beside it. It moves below the
+words under 1024px and is left out on phones. The planner has neither
 and fills the window; its sidebar carries the wordmark at the top and
 the account at the bottom instead.

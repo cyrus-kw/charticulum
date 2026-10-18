@@ -580,6 +580,10 @@ export interface ChartFlowProps {
   canRedo?: boolean;
   onUndo?: () => void;
   onRedo?: () => void;
+  // Just the chart, for the home page's demo: no undo/redo, zoom, or
+  // legend; exactly as tall as the plan; and the mouse wheel scrolls the
+  // page instead of the chart.
+  bare?: boolean;
 }
 
 export function ChartFlow({
@@ -601,6 +605,7 @@ export function ChartFlow({
   canRedo = false,
   onUndo = () => {},
   onRedo = () => {},
+  bare = false,
 }: ChartFlowProps) {
   // The chart fills the canvas: measure it, and size the term columns to
   // fit across it, times the horizontal zoom.
@@ -848,7 +853,7 @@ export function ChartFlow({
   const wheelTotal = useRef(0);
   useEffect(() => {
     const element = wrapper.current;
-    if (!element) return;
+    if (!element || bare) return;
     const onWheel = (event: WheelEvent) => {
       if (!event.ctrlKey && !event.metaKey) return;
       event.preventDefault();
@@ -864,13 +869,14 @@ export function ChartFlow({
     };
     element.addEventListener("wheel", onWheel, { passive: false, capture: true });
     return () => element.removeEventListener("wheel", onWheel, { capture: true });
-  }, [zoomTo, zoom]);
+  }, [zoomTo, zoom, bare]);
 
   return (
     <TermHeaderContext.Provider value={termHeader}>
       <div
         ref={wrapper}
-        className="relative h-full w-full"
+        className={cn("relative w-full", !bare && "h-full")}
+        style={bare ? { height: contentHeight } : undefined}
         onPointerMove={(e) => setHoveredHeader(drag.current ? null : termAtPointer(e.clientX, e.clientY, true))}
         onPointerLeave={() => setHoveredHeader(null)}
         onContextMenu={(e) => {
@@ -1062,14 +1068,20 @@ export function ChartFlow({
           zoomOnScroll={false}
           zoomOnPinch={false}
           zoomOnDoubleClick={false}
-          panOnScroll
+          panOnScroll={!bare}
+          panOnDrag={!bare}
+          preventScrolling={!bare}
           translateExtent={[
             [0, -centerOffset],
             [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, (size?.height ?? 0) - centerOffset)],
           ]}
         >
           {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
-          <FlowPanel position="bottom-right" style={{ maxWidth: "calc(100% - 220px)" }}>
+          <FlowPanel
+            position="bottom-right"
+            style={{ maxWidth: "calc(100% - 220px)" }}
+            className={cn(bare && "hidden")}
+          >
             <Legend />
           </FlowPanel>
           {/* Everything along the chart's top: undo/redo and the plan's
@@ -1103,7 +1115,10 @@ export function ChartFlow({
             style={{
               ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - boxTop - BOX_GAP)}px`,
             }}
-            className="nowheel @container h-[calc(100%-30px)] w-[calc(100%-30px)] !pointer-events-none"
+            className={cn(
+              "nowheel @container h-[calc(100%-30px)] w-[calc(100%-30px)] !pointer-events-none",
+              bare && "hidden",
+            )}
           >
             <div className="flex h-full flex-wrap content-start items-start justify-between gap-2">
               {/* Takes the free space left of the boxes (flex-1), so the
@@ -1122,7 +1137,7 @@ export function ChartFlow({
               )}
             </div>
           </FlowPanel>
-          <FlowPanel position="bottom-left">
+          <FlowPanel position="bottom-left" className={cn(bare && "hidden")}>
             <ZoomControls
               zoom={zoom}
               onZoom={(percent) => zoomTo(percent)}

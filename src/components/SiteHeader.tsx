@@ -12,8 +12,9 @@ const LINKS = [
 ];
 
 // The bar across the top of the site's pages (not the planner, which uses
-// the whole window). The page you're on is highlighted.
-export function SiteHeader({ user }: { user: MenuUser }) {
+// the whole window). The page you're on is highlighted. Signed out (the
+// home page), it has just the wordmark and the theme button.
+export function SiteHeader({ user }: { user?: MenuUser }) {
   // usePathname: the address being shown, e.g. "/schools".
   const pathname = usePathname();
   return (
@@ -21,12 +22,13 @@ export function SiteHeader({ user }: { user: MenuUser }) {
       {/* Tighter gaps on phones (under Tailwind's "sm", 640px), so the
           wordmark, links, and buttons all fit on one line. */}
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:gap-6">
-        <Link href="/dashboard" className="shrink-0 leading-tight">
+        <Link href={user ? "/dashboard" : "/"} className="shrink-0 leading-tight">
           <span className="block text-base font-semibold">Charticulum</span>
           <span className="block text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</span>
         </Link>
         <nav aria-label="Site" className="flex min-w-0 flex-1 gap-1">
-          {LINKS.map(({ href, label }) => (
+          {user &&
+            LINKS.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
@@ -42,7 +44,7 @@ export function SiteHeader({ user }: { user: MenuUser }) {
         </nav>
         <ThemeToggle />
         {/* key: a new menu (closed) on each page. */}
-        <UserMenu key={pathname} user={user} look="circle" />
+        {user && <UserMenu key={pathname} user={user} look="circle" />}
       </div>
     </header>
   );

@@ -13,6 +13,9 @@
 //   { "hover": [800, 120] }                 ...or at a spot (x, y in pixels)
 //   { "click": "text=Add term" }            click an element or a spot
 //   { "rightClick": [800, 400] }            right-click an element or a spot
+//   { "drag": "text=CS 101", "to": [900, 400] }  drag an element (or a spot) to a spot...
+//   { "drag": "text=CS 101", "to": [900, 400], "hold": true }  ...and keep holding the button
+//   { "release": true }                     let go of a held drag
 //   { "press": "Escape" }                   press a key
 //   { "reload": true }                      reload the page, like F5
 //   { "wait": 300 }                         wait (milliseconds)
@@ -34,6 +37,8 @@ type Step =
   | { hover: Target }
   | { click: Target }
   | { rightClick: Target }
+  | { drag: Target; to: [number, number]; hold?: boolean }
+  | { release: true }
   | { press: string }
   | { reload: true }
   | { wait: number }
@@ -99,6 +104,20 @@ async function main() {
         if ("hover" in step) await pointAt(page, step.hover, "hover");
         else if ("click" in step) await pointAt(page, step.click, "click");
         else if ("rightClick" in step) await pointAt(page, step.rightClick, "rightClick");
+        else if ("drag" in step) {
+          // Press on the middle of the element (or the spot), then move in
+          // small steps, as a hand would, so drag handlers see every move.
+          let from = step.drag;
+          if (!Array.isArray(from)) {
+            const box = await page.locator(from).first().boundingBox();
+            if (!box) throw new Error(`Nothing to drag: ${from}`);
+            from = [box.x + box.width / 2, box.y + box.height / 2];
+          }
+          await page.mouse.move(from[0], from[1]);
+          await page.mouse.down();
+          await page.mouse.move(step.to[0], step.to[1], { steps: 20 });
+          if (!step.hold) await page.mouse.up();
+        } else if ("release" in step) await page.mouse.up();
         else if ("press" in step) await page.keyboard.press(step.press);
         else if ("reload" in step) await page.reload({ waitUntil: "networkidle" });
         else if ("wait" in step) await page.waitForTimeout(step.wait);
