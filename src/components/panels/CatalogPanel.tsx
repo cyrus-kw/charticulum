@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { satisfies } from "../../engine/index";
+import { courseCode } from "../../planner/layout";
 import { Badge, Button, inputClass, Panel, Select } from "../ui";
 import type { PanelProps } from "./types";
 
@@ -20,7 +21,8 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
   const q = query.trim().toLowerCase();
   const unplaced = [...catalog.values()]
     .filter((o) => !placed.includes(o.id))
-    .filter((o) => !q || o.id.toLowerCase().includes(q) || o.title.toLowerCase().includes(q))
+    // Matches the code as stored ("CS390") or as shown ("CS 390"), or the title.
+    .filter((o) => !q || [o.id, courseCode(o.id), o.title].some((text) => text.toLowerCase().includes(q)))
     .sort((a, b) => Number(required.has(b.id)) - Number(required.has(a.id)) || a.id.localeCompare(b.id));
 
   return (
@@ -42,13 +44,14 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
           ))}
         </Select>
       </div>
-      <ul className="space-y-1">
+      {/* A thin line between courses, so each code reads with its title. */}
+      <ul className="divide-y divide-zinc-100 dark:divide-zinc-800">
         {unplaced.length === 0 && <li className="text-sm text-zinc-500">Nothing left to add.</li>}
         {unplaced.map((o) => (
-          <li key={o.id} className="flex items-center gap-2 text-sm">
+          <li key={o.id} className="flex items-center gap-2 py-1.5 text-sm">
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-1.5">
-                <span className="font-mono text-xs font-semibold">{o.id}</span>
+                <span className="font-mono text-xs font-semibold">{courseCode(o.id)}</span>
                 {required.has(o.id) && !isPlaced(o.id) && <Badge tone="bad">required</Badge>}
               </div>
               <div className="truncate text-zinc-600 dark:text-zinc-400">
@@ -56,7 +59,7 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
               </div>
             </div>
             <Button
-              aria-label={`Add ${o.id}`}
+              aria-label={`Add ${courseCode(o.id)}`}
               disabled={terms.length === 0}
               onClick={() => dispatch({ type: "move", objectId: o.id, termIndex: targetTerm })}
             >

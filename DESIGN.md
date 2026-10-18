@@ -202,7 +202,13 @@ arrowheads gliding around a card). Everything that moves respects
   when out of order.
 - When a course is traced, everything unrelated fades to 25%.
 - Floating on the chart: undo/redo and the plan's name top left; Selected,
-  Issues, and Requirements top right as separate boxes of the same width.
+  Issues, and Requirements top right as separate boxes of the same width
+  (256px). They sit in one row down to a 1000px-wide chart (a 1440px
+  laptop with the sidebar open); the plan's name box gives up width
+  first (256px down to 128px).
+- A card never cuts its course code short: if the code and credits don't
+  both fit, the credits hide. Course codes are written with a space
+  ("CS 101", `courseCode`) everywhere they're shown, catalog included.
 
 ## Site pages
 

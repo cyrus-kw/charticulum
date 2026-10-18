@@ -220,11 +220,13 @@ export function Planner({
                 <PanelToggle id="tools-panel" side="left" open={false} onToggle={() => panels.toggle("left")} />
               )
             }
-            // The plan's name, beside undo/redo. As tall as those buttons.
+            // The plan's name, beside undo/redo. As tall as those buttons; up
+            // to 256px wide, shrinking (to 128px at least) when the boxes on
+            // the right need the room.
             title={
               <input
                 autoComplete="off"
-                className={cn(chartBox, FIELD_FOCUS, "h-[30px] w-64 px-2 text-sm font-medium")}
+                className={cn(chartBox, FIELD_FOCUS, "h-[30px] w-64 min-w-32 shrink px-2 text-sm font-medium")}
                 aria-label="Chart name"
                 value={state.chart.name}
                 onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
@@ -236,19 +238,19 @@ export function Planner({
             // they're evenly spaced and shrink alike.
             topRight={
               <>
-                <div className={cn(chartBox, "w-72")}>
+                <div className={cn(chartBox, "w-64")}>
                   <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
                 </div>
                 {/* Columns all the way down (the box, then the panel inside
                     it), so when the box is capped in height, the issue list
                     shrinks and scrolls while the title and count stay. */}
-                <div className={cn(chartBox, "flex w-72 flex-col *:flex *:min-h-0 *:flex-col")}>
+                <div className={cn(chartBox, "flex w-64 flex-col *:flex *:min-h-0 *:flex-col")}>
                   <IssuesPanel {...panelProps} />
                 </div>
                 {/* Credit meters, GPA, and exceptions, right beside the
                     issues they explain. Columns all the way down, like the
                     Issues box, so GPA stays put and the meters scroll. */}
-                <div className={cn(chartBox, "flex w-72 flex-col *:flex *:min-h-0 *:flex-col")}>
+                <div className={cn(chartBox, "flex w-64 flex-col *:flex *:min-h-0 *:flex-col")}>
                   <SummaryPanel {...panelProps} />
                 </div>
               </>

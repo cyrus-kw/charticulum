@@ -201,7 +201,10 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
         </span>
       ) : (
         <>
-          <div className="flex items-baseline justify-between gap-1">
+          {/* The code matters most, so it never gets cut short. If the code
+              and credits don't both fit, the credits wrap onto a second
+              line, which this one-line-tall row (h-4) hides. */}
+          <div className="flex h-4 flex-wrap items-baseline justify-between gap-x-1 overflow-hidden leading-4">
             <span className="truncate font-mono text-xs font-semibold">
               {courseCode(object.id)}
               {markers}
@@ -386,7 +389,7 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
 
 // Shared look for the small button groups on the chart (zoom, undo/redo).
 const controlGroup =
-  "flex items-center divide-x divide-zinc-200 overflow-hidden rounded-md border border-zinc-200 bg-white shadow-sm dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900";
+  "flex shrink-0 items-center divide-x divide-zinc-200 overflow-hidden rounded-md border border-zinc-200 bg-white shadow-sm dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900";
 const button =
   "flex h-7 min-w-7 items-center justify-center px-2 text-sm text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 dark:text-zinc-200 dark:hover:bg-zinc-800";
 
@@ -1077,7 +1080,7 @@ export function ChartFlow({
               chart; anything longer scrolls inside the box. centerOffset is
               how far down the chart starts.
 
-              Narrow (the canvas, not the window, is under 1260px, about
+              Narrow (the canvas, not the window, is under 1000px, about
               what the row needs): undo/redo stays on the left. On the
               right, the last box (Requirements) stays at the top right and
               the others stack in a column to its left, top to bottom in
@@ -1086,7 +1089,7 @@ export function ChartFlow({
               rows, so when it's open and tall, the second row (1fr) grows
               instead of pushing the stacked boxes apart. It all scrolls if
               it's taller than the chart. "@container" makes the
-              @max-[1260px] classes below measure this panel's width.
+              @max-[1000px] classes below measure this panel's width.
               Narrower still, the boxes wrap below undo/redo (flex-wrap),
               kept on the right by ml-auto. content-start packs the wrapped
               rows at the top; without it the browser spreads them over the
@@ -1103,13 +1106,17 @@ export function ChartFlow({
             className="nowheel @container h-[calc(100%-30px)] w-[calc(100%-30px)] !pointer-events-none"
           >
             <div className="flex h-full flex-wrap content-start items-start justify-between gap-2">
-              <div className="pointer-events-auto flex shrink-0 items-start gap-2">
+              {/* Takes the free space left of the boxes (flex-1), so the
+                  plan's name can widen into it or shrink when it's short.
+                  min-w-52: below that, the boxes wrap instead. Only its
+                  controls catch clicks, not the empty space it spans. */}
+              <div className="flex min-w-52 flex-1 items-start gap-2 *:pointer-events-auto">
                 {topLeft}
                 <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
                 {title}
               </div>
               {topRight && (
-                <div ref={boxes} className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto *:max-h-(--box-room) @max-[1260px]:grid @max-[1260px]:max-h-full @max-[1260px]:grid-flow-col @max-[1260px]:grid-rows-[auto_1fr] @max-[1260px]:overflow-y-auto @max-[1260px]:*:last:row-span-2">
+                <div ref={boxes} className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto *:max-h-(--box-room) @max-[1000px]:grid @max-[1000px]:max-h-full @max-[1000px]:grid-flow-col @max-[1000px]:grid-rows-[auto_1fr] @max-[1000px]:overflow-y-auto @max-[1000px]:*:last:row-span-2">
                   {topRight}
                 </div>
               )}

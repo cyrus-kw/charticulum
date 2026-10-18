@@ -167,7 +167,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
                   dispatch({ type: "setGrade", objectId: id, grade: (e.target.value || null) as Grade | null })
                 }
               >
-                <option value="">Not graded yet</option>
+                <option value="">No grade</option>
                 {GRADES.map((g) => (
                   <option key={g} value={g}>
                     {g}
