@@ -12,6 +12,9 @@ import { cn } from "./ui";
 import { PANEL_COLLAPSE_BELOW, PANEL_MAX_WIDTH, PANEL_MIN_WIDTH } from "./usePanels";
 
 const KEY_STEP = 16;
+// How far (px) the pointer can wander while pressing the edge and still
+// count as a click rather than a drag.
+const CLICK_SLOP = 3;
 // The toggle sits this far from the corner, open or collapsed. It matches
 // React Flow's panel margin, so the floating copy lands in the same spot.
 const TOGGLE_INSET = 15;
@@ -62,10 +65,14 @@ export function SidePanel({
   // Shown open: open, and not previewing a collapse.
   const shown = open && !collapsing;
 
-  // Dragging the edge: wider toward the chart.
+  // Dragging the edge: wider toward the chart. Clicking it (pressing and
+  // letting go without moving) hides the sidebar instead.
   const startDrag = (event: PointerEvent<HTMLDivElement>) => {
     event.preventDefault();
     const startX = event.clientX;
+    // Turns true once the pointer has moved a few pixels: from then on
+    // it's a drag, not a click. (A hand rarely holds perfectly still.)
+    let moved = false;
     const widthFor = (x: number) => width + (side === "left" ? x - startX : startX - x);
     const body = document.body.style;
     const before = { userSelect: body.userSelect, cursor: body.cursor };
@@ -75,6 +82,8 @@ export function SidePanel({
     // A plain variable (not state) so `move` sees the latest value at once.
     let shut = false;
     const move = (e: globalThis.PointerEvent) => {
+      if (Math.abs(e.clientX - startX) > CLICK_SLOP) moved = true;
+      if (!moved) return;
       const next = widthFor(e.clientX);
       const nowShut = next < PANEL_COLLAPSE_BELOW;
       if (nowShut !== shut) {
@@ -93,7 +102,9 @@ export function SidePanel({
       setDragging(false);
       setCollapsing(false);
       const final = widthFor(e.clientX);
-      if (final < PANEL_COLLAPSE_BELOW) {
+      if (!moved) {
+        onToggle(); // a click: hide the sidebar
+      } else if (final < PANEL_COLLAPSE_BELOW) {
         onResize(width, true); // reopen later at the width it had
         onToggle();
       } else {
@@ -107,7 +118,9 @@ export function SidePanel({
   const onKey = (event: KeyboardEvent<HTMLDivElement>) => {
     const outward = side === "left" ? "ArrowRight" : "ArrowLeft";
     const inward = side === "left" ? "ArrowLeft" : "ArrowRight";
-    if (event.key === outward) onResize(width + KEY_STEP, true);
+    // Enter or Space does what a click does: hide the sidebar.
+    if (event.key === "Enter" || event.key === " ") onToggle();
+    else if (event.key === outward) onResize(width + KEY_STEP, true);
     else if (event.key === inward) onResize(width - KEY_STEP, true);
     else return;
     event.preventDefault();
@@ -152,7 +165,7 @@ export function SidePanel({
               side === "right" && "flex-row-reverse",
             )}
           >
-            <PanelToggle id={id} title={title} side={side} open onToggle={onToggle} />
+            <PanelToggle id={id} side={side} open onToggle={onToggle} />
             {heading ?? (
               <span className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
                 {title}
@@ -178,14 +191,20 @@ export function SidePanel({
       </aside>
 
       {open && (
-        // The drag handle on the edge facing the chart (wide screens only).
+        // The drag handle on the edge facing the chart (wide screens only);
+        // clicking it hides the sidebar.
         // It's invisible and takes no space: an 8px strip centered on the
         // sidebar's border line, so pointing at the line shows the resize
         // cursor without a visible bar beside it.
         <div
           role="separator"
           aria-orientation="vertical"
-          aria-label={`Resize ${title.toLowerCase()}`}
+          aria-label={`Resize ${title.toLowerCase()}; press Enter to hide it`}
+          // Its label follows the pointer, just to the right of it: the
+          // strip runs the full height of the window, so a label below it
+          // would be off screen.
+          data-tooltip="Drag to resize"
+          data-tooltip-at="pointer"
           aria-controls={id}
           aria-valuenow={width}
           aria-valuemin={PANEL_MIN_WIDTH}
@@ -208,21 +227,19 @@ export function SidePanel({
 // collapsed.
 export function PanelToggle({
   id,
-  title,
   side,
   open,
   badge,
   onToggle,
 }: {
   id: string;
-  title: string;
   side: "left" | "right";
   open: boolean;
   // Shown while collapsed, e.g. an issue count.
   badge?: ReactNode;
   onToggle: () => void;
 }) {
-  const label = `${open ? "Collapse" : "Show"} ${title.toLowerCase()}`;
+  const label = open ? "Hide sidebar" : "Show sidebar";
   return (
     <button
       type="button"

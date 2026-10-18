@@ -217,7 +217,7 @@ export function Planner({
             // spot it had in the sidebar's corner.
             topLeft={
               !panels.open.left && (
-                <PanelToggle id="tools-panel" title="Tools" side="left" open={false} onToggle={() => panels.toggle("left")} />
+                <PanelToggle id="tools-panel" side="left" open={false} onToggle={() => panels.toggle("left")} />
               )
             }
             // The plan's name, beside undo/redo. As tall as those buttons.

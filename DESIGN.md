@@ -107,7 +107,9 @@ dark page never flashes white.
   (matches React Flow's panel margin), and the sidebar button sits at the
   same spot whether the sidebar is open or shut.
 - **8px gap** between the boxes on the chart's top right.
-- Sidebar width: 250–560px; dragging it under 160px closes it.
+- Sidebar width: 250–560px; dragging it under 160px closes it. Its edge
+  has no visible handle, just the resize cursor and a "Drag to resize"
+  label that follows the pointer; clicking the edge hides the sidebar.
 - Site pages are centered at `max-w-5xl` with a 16px side gutter
   (`px-4`).
 
@@ -153,6 +155,8 @@ and a tooltip.
 - They appear after 300ms of pointing (straight away with Tab), below the
   element or above it near the window's bottom, and slide to stay on
   screen. A `\n` starts a new line.
+- `data-tooltip-at="pointer"` puts the label just right of the pointer
+  and makes it follow along, for tall things like the sidebar's edge.
 - They hide on click, drag, scroll, or Escape, and don't show on touch.
   Nothing shows while a button is held (e.g. mid-drag), and a pressed
   element's label waits until the pointer has moved off it.

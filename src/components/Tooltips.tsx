@@ -8,7 +8,12 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 //
 //   <button data-tooltip="Undo (Ctrl+Z)">…</button>
 //
-// and this component, mounted once in the root layout, does the rest. One
+// and this component, mounted once in the root layout, does the rest.
+// Add data-tooltip-at="pointer" to put the label just right of the pointer
+// and have it follow along, for tall things like the sidebar's edge, where
+// "below" would be off screen.
+//
+// One
 // shared label (rather than one per button) is drawn on top of the whole
 // page, so it's never cut off by a scrolling sidebar or the chart, and it
 // can move to stay inside the window.
@@ -16,15 +21,26 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 const SHOW_DELAY = 300; // ms of pointing before it appears, like the browser's
 const GAP = 6; // px between the element and the label
 const EDGE = 8; // px the label keeps from the window's edges
+const POINTER_GAP = 14; // px from the pointer to a label placed beside it
 
 // The nearest element (this one or one it's inside) that has a tooltip.
 function tooltipOf(target: EventTarget | null): HTMLElement | null {
   return target instanceof Element ? target.closest<HTMLElement>("[data-tooltip]") : null;
 }
 
+interface Tip {
+  text: string;
+  target: HTMLElement;
+  // Placed beside the pointer (data-tooltip-at="pointer"); false after
+  // reaching the element with Tab, since then there's no pointer.
+  atPointer: boolean;
+}
+
 export function Tooltips() {
   // The element being pointed at (or reached with Tab), and its text.
-  const [tip, setTip] = useState<{ text: string; target: HTMLElement } | null>(null);
+  const [tip, setTip] = useState<Tip | null>(null);
+  // Where the pointer is, kept only while a label follows it.
+  const [pointer, setPointer] = useState<{ x: number; y: number } | null>(null);
   // Where to draw the label; null until it has been measured.
   const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
   const box = useRef<HTMLDivElement>(null);
@@ -37,16 +53,25 @@ export function Tooltips() {
     // the pointer has moved off it, so it doesn't pop up right after a
     // click or as a dragged card is let go.
     let pressed: HTMLElement | null = null;
+    // Where the pointer is (a plain variable, updated on every move), and
+    // whether the label showing follows it.
+    let at = { x: 0, y: 0 };
+    let following = false;
 
-    function show(el: HTMLElement | null, delay: number) {
+    function show(el: HTMLElement | null, delay: number, byKeyboard = false) {
       if (el === current) return;
       window.clearTimeout(timer);
       current = el;
+      following = false;
       setTip(null);
       if (!el) return;
       timer = window.setTimeout(() => {
         const text = el.dataset.tooltip;
-        if (text && el.isConnected) setTip({ text, target: el });
+        if (!text || !el.isConnected) return;
+        // dataset.tooltipAt is the data-tooltip-at attribute.
+        following = el.dataset.tooltipAt === "pointer" && !byKeyboard;
+        if (following) setPointer({ ...at });
+        setTip({ text, target: el, atPointer: following });
       }, delay);
     }
     const hide = () => show(null, 0);
@@ -65,6 +90,11 @@ export function Tooltips() {
       pressed = null;
       show(el, SHOW_DELAY);
     };
+    const onMove = (e: PointerEvent) => {
+      at = { x: e.clientX, y: e.clientY };
+      // Only a following label needs redrawing as the pointer moves.
+      if (following) setPointer(at);
+    };
     const onDown = (e: PointerEvent) => {
       pressed = tooltipOf(e.target);
       hide();
@@ -77,13 +107,14 @@ export function Tooltips() {
     // click, which also focuses it; :focus-visible tells the two apart).
     const onFocus = (e: FocusEvent) => {
       const el = tooltipOf(e.target);
-      if (el && el === e.target && el.matches(":focus-visible")) show(el, 0);
+      if (el && el === e.target && el.matches(":focus-visible")) show(el, 0, true);
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") hide();
     };
 
     document.addEventListener("pointerover", onOver);
+    document.addEventListener("pointermove", onMove, { passive: true });
     document.addEventListener("pointerout", onOut);
     document.addEventListener("focusin", onFocus);
     document.addEventListener("focusout", hide);
@@ -98,6 +129,7 @@ export function Tooltips() {
     return () => {
       window.clearTimeout(timer);
       document.removeEventListener("pointerover", onOver);
+      document.removeEventListener("pointermove", onMove);
       document.removeEventListener("pointerout", onOut);
       document.removeEventListener("focusin", onFocus);
       document.removeEventListener("focusout", hide);
@@ -111,7 +143,8 @@ export function Tooltips() {
   // Place the label once it's drawn (useLayoutEffect runs before the
   // browser paints, so it never shows in the wrong spot): centered under
   // the element, above it if there's no room below, and slid sideways to
-  // stay inside the window.
+  // stay inside the window. A label that follows the pointer sits just
+  // right of it instead (left of it if there's no room on the right).
   useLayoutEffect(() => {
     if (!tip || !box.current) {
       setPos(null);
@@ -119,12 +152,18 @@ export function Tooltips() {
     }
     const at = tip.target.getBoundingClientRect();
     const { width, height } = box.current.getBoundingClientRect();
+    // Keep a position between the window's edges (less the label's size).
+    const fit = (value: number, size: number, room: number) => Math.min(Math.max(value, EDGE), room - size - EDGE);
+    if (tip.atPointer && pointer) {
+      const right = pointer.x + POINTER_GAP;
+      const left = right + width <= window.innerWidth - EDGE ? right : pointer.x - POINTER_GAP - width;
+      setPos({ left, top: fit(pointer.y - height / 2, height, window.innerHeight) });
+      return;
+    }
     const below = at.bottom + GAP;
     const top = below + height <= window.innerHeight - EDGE ? below : at.top - GAP - height;
-    const centered = at.left + at.width / 2 - width / 2;
-    const left = Math.min(Math.max(centered, EDGE), window.innerWidth - width - EDGE);
-    setPos({ left, top });
-  }, [tip]);
+    setPos({ left: fit(at.left + at.width / 2 - width / 2, width, window.innerWidth), top: fit(top, height, window.innerHeight) });
+  }, [tip, pointer]);
 
   if (!tip) return null;
   return (
