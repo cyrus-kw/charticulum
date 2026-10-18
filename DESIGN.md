@@ -110,6 +110,9 @@ dark page never flashes white.
 - Sidebar width: 250–560px; dragging it under 160px closes it. Its edge
   has no visible handle, just the resize cursor and a "Drag to resize"
   label that follows the pointer; clicking the edge hides the sidebar.
+- Under 1024px (`max-lg:`) the sidebar is a drawer over the chart instead:
+  full height, `shadow-lg` while open, always leaving 3rem of chart
+  showing, over a `black/30` dim layer that fades in. It slides in 200ms.
 - Site pages are centered at `max-w-5xl` with a 16px side gutter
   (`px-4`).
 

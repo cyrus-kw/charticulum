@@ -6,10 +6,10 @@
 // in the sidebar's top corner; collapsed, the sidebar slides shut and the
 // same button floats at that spot on the chart (see PanelToggle). The
 // contents stay mounted while collapsed, so what's typed in them survives.
-import { useState, type KeyboardEvent, type PointerEvent, type ReactNode } from "react";
+import { useEffect, useState, type KeyboardEvent, type PointerEvent, type ReactNode } from "react";
 import { SidebarIcon } from "./icons";
 import { cn } from "./ui";
-import { PANEL_COLLAPSE_BELOW, PANEL_MAX_WIDTH, PANEL_MIN_WIDTH } from "./usePanels";
+import { NARROW_QUERY, PANEL_COLLAPSE_BELOW, PANEL_MAX_WIDTH, PANEL_MIN_WIDTH } from "./usePanels";
 
 const KEY_STEP = 16;
 // How far (px) the pointer can wander while pressing the edge and still
@@ -64,6 +64,18 @@ export function SidePanel({
   const [snapping, setSnapping] = useState(false);
   // Shown open: open, and not previewing a collapse.
   const shown = open && !collapsing;
+
+  // On a narrow window, where the sidebar is a drawer over the chart,
+  // Escape closes it. (A menu inside that handles Escape itself marks the
+  // key as handled with preventDefault, and then it's left alone.)
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (event: globalThis.KeyboardEvent) => {
+      if (event.key === "Escape" && !event.defaultPrevented && window.matchMedia(NARROW_QUERY).matches) onToggle();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [open, onToggle]);
 
   // Dragging the edge: wider toward the chart. Clicking it (pressing and
   // letting go without moving) hides the sidebar instead.
@@ -127,98 +139,133 @@ export function SidePanel({
   };
 
   return (
-    // relative + z-10: the drag handle below sticks out over the chart's
-    // edge, and must sit on top of it to be grabbed there.
-    <div className={cn("relative z-10 flex min-h-0 shrink-0", side === "right" && "lg:flex-row-reverse")}>
-      <aside
-        id={id}
-        aria-label={title}
-        // Collapsed: out of reach for keyboard and screen readers too.
-        inert={!open}
-        // The inner width leaves room for the 1px border, so the toggle sits
-        // exactly where its floating copy will.
-        style={{ ["--panel-w" as string]: shown ? `${width}px` : "0px", ["--panel-inner" as string]: `${width - 1}px` }}
-        className={cn(
-          "overflow-hidden border-line lg:w-(--panel-w) dark:border-zinc-800",
-          (!dragging || snapping) && "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
-          shown && (side === "left" ? "lg:border-r" : "lg:border-l"),
-          !open && "max-lg:hidden",
-        )}
-        // Only the sidebar's own width slide counts, not transitions of
-        // things inside it (their "transitionend" events bubble up here).
-        onTransitionEnd={(event) => {
-          if (event.target === event.currentTarget && event.propertyName === "width") setSnapping(false);
-        }}
-      >
-        {/* A fixed width inside, so the contents slide rather than squish.
-            flex-col: the footer can then sit at the bottom even when the
-            contents above it are short. */}
-        <div className="flex h-full max-h-[40dvh] flex-col overflow-y-auto lg:max-h-none lg:w-(--panel-inner)">
-          <div
-            // +1 for the bottom border, so the toggle is TOGGLE_INSET from the top.
-            style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
-            // sticky top-0: the header stays put while the rest scrolls
-            // under it. It needs a solid background (the page's) and z-10
-            // to cover what scrolls beneath.
-            className={cn(
-              "sticky top-0 z-10 flex items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
-              side === "right" && "flex-row-reverse",
-            )}
-          >
-            <PanelToggle id={id} side={side} open onToggle={onToggle} />
-            {heading ?? (
-              <span className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
-                {title}
-              </span>
-            )}
-          </div>
-          {/* flex-1 takes up the spare height, pushing the footer down. */}
-          <div className="flex-1">{children}</div>
-          {footer && (
-            // sticky bottom-0: when the contents are long, the footer
-            // stays in view and they scroll under it. It's as tall as the
-            // header (+1 for its top border), so its middle lines up with
-            // the chart's bottom controls (the zoom buttons), which sit
-            // TOGGLE_INSET from the bottom and are TOGGLE_SIZE tall.
-            <div
-              style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
-              className="sticky bottom-0 z-10 flex shrink-0 items-center gap-3 border-t border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950"
-            >
-              {footer}
-            </div>
-          )}
-        </div>
-      </aside>
-
+    <>
+      {/* Narrow windows only: a dim layer over the chart while the drawer
+          is open. Clicking it closes the drawer. */}
       {open && (
-        // The drag handle on the edge facing the chart (wide screens only);
-        // clicking it hides the sidebar.
-        // It's invisible and takes no space: an 8px strip centered on the
-        // sidebar's border line, so pointing at the line shows the resize
-        // cursor without a visible bar beside it.
         <div
-          role="separator"
-          aria-orientation="vertical"
-          aria-label={`Resize ${title.toLowerCase()}; press Enter to hide it`}
-          // Its label follows the pointer, just to the right of it: the
-          // strip runs the full height of the window, so a label below it
-          // would be off screen.
-          data-tooltip="Drag to resize"
-          data-tooltip-at="pointer"
-          aria-controls={id}
-          aria-valuenow={width}
-          aria-valuemin={PANEL_MIN_WIDTH}
-          aria-valuemax={PANEL_MAX_WIDTH}
-          tabIndex={0}
-          onPointerDown={startDrag}
-          onKeyDown={onKey}
-          className={cn(
-            "absolute inset-y-0 hidden w-2 cursor-col-resize focus-visible:bg-sky-500/50 focus-visible:outline-none lg:block",
-            side === "left" ? "right-0 translate-x-1/2" : "left-0 -translate-x-1/2",
-          )}
+          aria-hidden
+          onClick={onToggle}
+          className="fixed inset-0 z-30 bg-black/30 lg:hidden motion-safe:animate-[fade-in_200ms_ease-out]"
         />
       )}
-    </div>
+      {/* Wide windows: beside the chart. relative + z-10: the drag handle
+        below sticks out over the chart's edge, and must sit on top of it
+        to be grabbed there.
+        Narrow windows (max-lg:): a drawer fixed over the chart at full
+        height, sliding in from its side. Closed, it slides fully out of
+        view (translate) rather than vanishing, so it can slide back in. */}
+      <div
+        className={cn(
+          "relative z-10 flex min-h-0 shrink-0",
+          side === "right" && "lg:flex-row-reverse",
+          "max-lg:fixed max-lg:inset-y-0 max-lg:z-40 max-lg:transition-transform max-lg:duration-200 max-lg:ease-out motion-reduce:transition-none",
+          side === "left" ? "max-lg:left-0" : "max-lg:right-0",
+          !open && (side === "left" ? "max-lg:-translate-x-full" : "max-lg:translate-x-full"),
+        )}
+      >
+        <aside
+          id={id}
+          aria-label={title}
+          // Collapsed: out of reach for keyboard and screen readers too.
+          inert={!open}
+          // The inner width leaves room for the 1px border, so the toggle sits
+          // exactly where its floating copy will.
+          // --panel-full: the width as a drawer, which keeps its width while
+          // closed so it has something to slide by.
+          style={{
+            ["--panel-w" as string]: shown ? `${width}px` : "0px",
+            ["--panel-inner" as string]: `${width - 1}px`,
+            ["--panel-full" as string]: `${width}px`,
+          }}
+          className={cn(
+            "overflow-hidden border-line lg:w-(--panel-w) dark:border-zinc-800",
+            // As a drawer: its saved width, but always leaving a strip of
+            // chart (3rem) showing beside it, on a solid background. The
+            // shadow only while open: closed, it would peek in at the edge.
+            "max-lg:w-(--panel-full) max-lg:max-w-[calc(100vw-3rem)] max-lg:bg-page max-lg:dark:bg-zinc-950",
+            open && "max-lg:shadow-lg",
+            side === "left" ? "max-lg:border-r" : "max-lg:border-l",
+            (!dragging || snapping) &&
+              "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
+            shown && (side === "left" ? "lg:border-r" : "lg:border-l"),
+          )}
+          // Only the sidebar's own width slide counts, not transitions of
+          // things inside it (their "transitionend" events bubble up here).
+          onTransitionEnd={(event) => {
+            if (event.target === event.currentTarget && event.propertyName === "width") setSnapping(false);
+          }}
+        >
+          {/* A fixed width inside, so the contents slide rather than squish.
+            flex-col: the footer can then sit at the bottom even when the
+            contents above it are short. */}
+          <div className="flex h-full flex-col overflow-y-auto lg:w-(--panel-inner)">
+            <div
+              // +1 for the bottom border, so the toggle is TOGGLE_INSET from the top.
+              style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
+              // sticky top-0: the header stays put while the rest scrolls
+              // under it. It needs a solid background (the page's) and z-10
+              // to cover what scrolls beneath.
+              className={cn(
+                "sticky top-0 z-10 flex items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
+                side === "right" && "flex-row-reverse",
+              )}
+            >
+              <PanelToggle id={id} side={side} open onToggle={onToggle} />
+              {heading ?? (
+                <span className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
+                  {title}
+                </span>
+              )}
+            </div>
+            {/* flex-1 takes up the spare height, pushing the footer down. */}
+            <div className="flex-1">{children}</div>
+            {footer && (
+              // sticky bottom-0: when the contents are long, the footer
+              // stays in view and they scroll under it. It's as tall as the
+              // header (+1 for its top border), so its middle lines up with
+              // the chart's bottom controls (the zoom buttons), which sit
+              // TOGGLE_INSET from the bottom and are TOGGLE_SIZE tall.
+              <div
+                style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
+                className="sticky bottom-0 z-10 flex shrink-0 items-center gap-3 border-t border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950"
+              >
+                {footer}
+              </div>
+            )}
+          </div>
+        </aside>
+
+        {open && (
+          // The drag handle on the edge facing the chart (wide screens only);
+          // clicking it hides the sidebar.
+          // It's invisible and takes no space: an 8px strip centered on the
+          // sidebar's border line, so pointing at the line shows the resize
+          // cursor without a visible bar beside it.
+          <div
+            role="separator"
+            aria-orientation="vertical"
+            aria-label={`Resize ${title.toLowerCase()}; press Enter to hide it`}
+            // Its label follows the pointer, just to the right of it: the
+            // strip runs the full height of the window, so a label below it
+            // would be off screen.
+            data-tooltip="Drag to resize"
+            data-tooltip-at="pointer"
+            aria-controls={id}
+            aria-valuenow={width}
+            aria-valuemin={PANEL_MIN_WIDTH}
+            aria-valuemax={PANEL_MAX_WIDTH}
+            tabIndex={0}
+            onPointerDown={startDrag}
+            onKeyDown={onKey}
+            className={cn(
+              "absolute inset-y-0 hidden w-2 cursor-col-resize focus-visible:bg-sky-500/50 focus-visible:outline-none lg:block",
+              side === "left" ? "right-0 translate-x-1/2" : "left-0 -translate-x-1/2",
+            )}
+          />
+        )}
+      </div>
+    </>
   );
 }
 

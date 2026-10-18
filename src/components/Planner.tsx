@@ -190,7 +190,7 @@ export function Planner({
           />
         </SidePanel>
 
-        <main className="min-h-[50dvh] min-w-0 flex-1" aria-label="Chart">
+        <main className="min-h-0 min-w-0 flex-1" aria-label="Chart">
           <ChartFlow
             catalog={state.school.catalog}
             chart={shownChart}

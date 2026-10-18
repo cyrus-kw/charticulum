@@ -95,6 +95,13 @@ body {
    then the sidebar's own button is still on screen, and two would show at
    once. It stays hidden for the length of this animation, then appears.
    On narrow screens the sidebar doesn't slide, so there's no wait. */
+/* The dim layer behind the sidebar drawer on narrow windows fades in. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
 @keyframes wait-for-panel {
   from,
   to {
