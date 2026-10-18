@@ -17,16 +17,11 @@ function getPrisma(): PrismaClient | null {
   return globalForPrisma.prisma;
 }
 
-// These return null without a database, so API routes can answer with a
-// clear error instead of crashing.
+// Returns null without a database, so API routes can answer with a clear
+// error instead of crashing.
 export function getChartRepository(): ChartRepository | null {
   const prisma = getPrisma();
   return prisma && prismaChartRepository(prisma);
-}
-
-export function getSchoolRepository(): SchoolRepository | null {
-  const prisma = getPrisma();
-  return prisma && withSampleSchool(prismaSchoolRepository(prisma));
 }
 
 // For pages and server actions, which can't do anything useful without a

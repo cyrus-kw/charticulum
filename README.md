@@ -16,7 +16,6 @@ npm test           # run the test suite
 npm run typecheck  # check TypeScript types
 npm run build      # production build (what Vercel runs)
 npm run demo       # terminal-only demo of the chart engine
-npm run sample:json  # rewrite the sample school's JSON file
 ```
 
 The app needs a database to save plans and schools; see [Database](#database).
@@ -34,7 +33,7 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `src/fixtures/` | The fictional sample school |
 | `prisma/` | Database schema and migrations |
 | `tests/` | Vitest tests (`*.db.test.ts` need a real database) |
-| `scripts/` | The terminal demo, the sample JSON export, and a headless-browser screenshot tool |
+| `scripts/` | The terminal demo and a headless-browser screenshot tool |
 
 The app's look (colors, sizes, icons, tooltips) and the rules for keeping
 it consistent are in [DESIGN.md](DESIGN.md).
@@ -64,8 +63,7 @@ it consistent are in [DESIGN.md](DESIGN.md).
 
 A school is one JSON document: catalog objects, global requirement sets,
 versioned program templates, a term calendar, and an equivalency table. See
-`public/samples/example-state-university.json` (regenerate it with
-`npm run sample:json`). Imports are checked for shape and for references to
+the built-in sample school, `src/fixtures/sampleSchool.ts`. Imports are checked for shape and for references to
 objects that don't exist, with errors pointing at the exact field.
 
 ## Database

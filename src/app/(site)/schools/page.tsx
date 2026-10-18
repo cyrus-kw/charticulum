@@ -8,7 +8,6 @@ import { requireUser } from "../../../server/session";
 export const metadata: Metadata = { title: "Schools · Charticulum" };
 
 const box = "rounded-md border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900";
-const link = "text-sm text-sky-700 underline dark:text-sky-400";
 
 // Every school's data, shared by all users. Only admins can import or
 // change a school (the server actions check too).
@@ -26,12 +25,7 @@ export default async function SchoolsPage() {
         <ul className="space-y-3">
           {schools.map(({ id, name, updatedAt, data }) => (
             <li key={id} className={box}>
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h2 className="font-medium">{name}</h2>
-                <a className={link} href={`/api/schools/${encodeURIComponent(id)}`} download>
-                  Export (JSON)
-                </a>
-              </div>
+              <h2 className="font-medium">{name}</h2>
               {data && (
                 <p className="text-xs text-zinc-500">
                   {countsByKind(data.objects)} · {data.templates.length} programs · {data.equivalencyTable.length}{" "}
@@ -60,14 +54,6 @@ export default async function SchoolsPage() {
               as the new file still includes that version.
             </p>
             <ImportSchoolForm />
-            <div className="flex flex-wrap gap-x-3">
-              <a className={link} href="/samples/example-state-university.json" download>
-                Sample school (JSON)
-              </a>
-              <a className={link} href="/samples/transfer-table.csv" download>
-                Sample transfer table (CSV)
-              </a>
-            </div>
           </div>
         </section>
       )}

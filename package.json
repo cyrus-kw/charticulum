@@ -18,8 +18,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "demo": "tsx scripts/demo.ts",
-    "sample:json": "tsx scripts/export-sample.ts"
+    "demo": "tsx scripts/demo.ts"
   },
   "repository": {
     "type": "git",

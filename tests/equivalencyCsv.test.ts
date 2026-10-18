@@ -56,7 +56,7 @@ describe("the shipped sample table", () => {
     const { readFileSync } = await import("node:fs");
     const { parseSchoolData } = await import("../src/engine/index");
     const { sampleSchoolData } = await import("../src/fixtures/sampleSchool");
-    const csv = parseEquivalencyCsv(readFileSync("public/samples/transfer-table.csv", "utf8"));
+    const csv = parseEquivalencyCsv(readFileSync("tests/fixtures/transfer-table.csv", "utf8"));
     if (!csv.ok) throw new Error(csv.errors.join("\n"));
     const merged = { ...sampleSchoolData, equivalencyTable: csv.rows };
     expect(parseSchoolData(merged).ok).toBe(true);
