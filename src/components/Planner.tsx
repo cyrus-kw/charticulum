@@ -16,7 +16,7 @@ import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
-import { cn, Tabs } from "./ui";
+import { cn, FIELD_FOCUS, Tabs } from "./ui";
 import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
 import { ThemeToggle } from "./ThemeToggle";
 import { UserMenu, type MenuUser } from "./UserMenu";
@@ -224,7 +224,7 @@ export function Planner({
             title={
               <input
                 autoComplete="off"
-                className={cn(chartBox, "h-[30px] w-64 px-2 text-sm font-medium")}
+                className={cn(chartBox, FIELD_FOCUS, "h-[30px] w-64 px-2 text-sm font-medium")}
                 aria-label="Chart name"
                 value={state.chart.name}
                 onChange={(e) => dispatch({ type: "rename", name: e.target.value })}

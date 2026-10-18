@@ -780,16 +780,32 @@ export function ChartFlow({
   // the canvas is resized, and for a whole new plan, but not after each
   // edit: moving one course shouldn't shift every card. (It does move up
   // if the plan grows past the bottom.)
-  const lastCenter = useRef<{ height: number; offset: number } | null>(null);
-  const centerOffset = useMemo(() => {
+  //
+  // On a narrow canvas the top-right boxes wrap below undo/redo, so they
+  // start lower (boxTop) and would hang over the term titles. Then the plan
+  // is centered in the space below that shift instead, moving it down by
+  // as much as the boxes moved. Only where the boxes start counts, not how
+  // tall they are, so selecting a course (which grows its box) never moves
+  // the plan.
+  const boxes = useRef<HTMLDivElement>(null);
+  const lastCenter = useRef<{ width: number; height: number; offset: number; boxTop: number } | null>(null);
+  const { centerOffset, boxTop } = useMemo(() => {
+    const width = size?.width ?? 0;
     const height = size?.height ?? 0;
     const room = Math.max(0, height - contentHeight);
-    const recenter = !lastCenter.current || lastCenter.current.height !== height || layout.fresh;
-    return recenter ? room / 2 : Math.min(lastCenter.current!.offset, room);
-  }, [size?.height, contentHeight, layout]);
+    const last = lastCenter.current;
+    const recenter = !last || last.width !== width || last.height !== height || layout.fresh;
+    if (!recenter) return { centerOffset: Math.min(last.offset, room), boxTop: last.boxTop };
+    // Read from the page as it's drawn now. The boxes wrap by CSS alone,
+    // so by the time the canvas has a new size they're already in place.
+    const canvas = wrapper.current?.getBoundingClientRect();
+    const box = boxes.current?.getBoundingClientRect();
+    const top = canvas && box ? box.top - canvas.top : PANEL_MARGIN;
+    return { centerOffset: Math.min(room, room / 2 + top - PANEL_MARGIN), boxTop: top };
+  }, [size?.width, size?.height, contentHeight, layout]);
   useEffect(() => {
-    lastCenter.current = { height: size?.height ?? 0, offset: centerOffset };
-  }, [size?.height, centerOffset]);
+    lastCenter.current = { width: size?.width ?? 0, height: size?.height ?? 0, offset: centerOffset, boxTop };
+  }, [size?.width, size?.height, centerOffset, boxTop]);
   const clampView = useCallback(
     (x: number, y: number) => ({
       x: Math.min(0, Math.max(x, (size?.width ?? 0) - contentWidth)),
@@ -1072,7 +1088,9 @@ export function ChartFlow({
               it's taller than the chart. "@container" makes the
               @max-[1260px] classes below measure this panel's width.
               Narrower still, the boxes wrap below undo/redo (flex-wrap),
-              kept on the right by ml-auto.
+              kept on the right by ml-auto. content-start packs the wrapped
+              rows at the top; without it the browser spreads them over the
+              panel's full height, dropping the boxes into the chart's middle.
 
               "nowheel" keeps the wheel from moving the chart underneath.
               Only the controls and boxes catch clicks: the space around
@@ -1080,18 +1098,18 @@ export function ChartFlow({
           <FlowPanel
             position="top-left"
             style={{
-              ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - PANEL_MARGIN - BOX_GAP)}px`,
+              ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - boxTop - BOX_GAP)}px`,
             }}
             className="nowheel @container h-[calc(100%-30px)] w-[calc(100%-30px)] !pointer-events-none"
           >
-            <div className="flex h-full flex-wrap items-start justify-between gap-2">
+            <div className="flex h-full flex-wrap content-start items-start justify-between gap-2">
               <div className="pointer-events-auto flex shrink-0 items-start gap-2">
                 {topLeft}
                 <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
                 {title}
               </div>
               {topRight && (
-                <div className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto *:max-h-(--box-room) @max-[1260px]:grid @max-[1260px]:max-h-full @max-[1260px]:grid-flow-col @max-[1260px]:grid-rows-[auto_1fr] @max-[1260px]:overflow-y-auto @max-[1260px]:*:last:row-span-2">
+                <div ref={boxes} className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto *:max-h-(--box-room) @max-[1260px]:grid @max-[1260px]:max-h-full @max-[1260px]:grid-flow-col @max-[1260px]:grid-rows-[auto_1fr] @max-[1260px]:overflow-y-auto @max-[1260px]:*:last:row-span-2">
                   {topRight}
                 </div>
               )}

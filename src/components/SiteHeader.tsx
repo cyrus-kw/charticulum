@@ -18,19 +18,21 @@ export function SiteHeader({ user }: { user: MenuUser }) {
   const pathname = usePathname();
   return (
     <header className="border-b border-zinc-200 dark:border-zinc-800">
-      <div className="mx-auto flex h-14 max-w-5xl items-center gap-6 px-4">
-        <Link href="/dashboard" className="leading-tight">
+      {/* Tighter gaps on phones (under Tailwind's "sm", 640px), so the
+          wordmark, links, and buttons all fit on one line. */}
+      <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:gap-6">
+        <Link href="/dashboard" className="shrink-0 leading-tight">
           <span className="block text-base font-semibold">Charticulum</span>
-          <span className="block text-xs text-zinc-500">Chart your curriculum</span>
+          <span className="block text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</span>
         </Link>
-        <nav aria-label="Site" className="flex flex-1 gap-1">
+        <nav aria-label="Site" className="flex min-w-0 flex-1 gap-1">
           {LINKS.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               aria-current={pathname === href ? "page" : undefined}
               className={cn(
-                "rounded-md px-3 py-1.5 text-sm text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
+                "rounded-md px-2 py-1.5 text-sm sm:px-3 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
                 pathname === href && "bg-zinc-100 font-medium text-ink dark:bg-zinc-800 dark:text-zinc-100",
               )}
             >

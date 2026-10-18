@@ -52,7 +52,7 @@ export function NewChartForm({ schools }: { schools: SchoolChoice[] }) {
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" variant="primary" disabled={pending}>
+    <Button type="submit" variant="primary" className="h-9" disabled={pending}>
       {pending ? "Creating…" : "New chart"}
     </Button>
   );

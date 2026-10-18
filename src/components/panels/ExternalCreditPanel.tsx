@@ -67,7 +67,7 @@ export function ExternalCreditPanel({ state, dispatch }: PanelProps) {
         <input
           autoComplete="off"
           className={inputClass}
-          placeholder="Course / exam"
+          placeholder="Course"
           aria-label="Course or exam id"
           list="known-external-ids"
           value={externalId}

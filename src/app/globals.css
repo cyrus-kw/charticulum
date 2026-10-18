@@ -26,6 +26,16 @@ body {
   background: var(--color-page);
 }
 
+/* Anything reached with the Tab key (buttons, links, menu items) shows the
+   same sky outline, so keyboard users can always see where they are.
+   In the "base" layer so a component's own focus style still wins. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-sky-500);
+    outline-offset: 2px;
+  }
+}
+
 /* One thin, quiet scrollbar everywhere (sidebar, panels, lists), instead
    of each browser's wide default. The thumb is see-through grey so it
    works on light and dark backgrounds alike; the track is invisible. */

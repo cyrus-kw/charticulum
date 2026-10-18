@@ -52,6 +52,12 @@ export function Button({ variant = "secondary", className, ...props }: ButtonPro
   );
 }
 
+// How a form field looks while it's being typed in: a sky border with a
+// soft sky glow around it (instead of the browser's own black outline).
+// "focus:" rather than "focus-visible:" because a text box is in use
+// whenever it has focus, however it got there.
+export const FIELD_FOCUS = "focus:border-sky-500 focus:outline-2 focus:outline-sky-500/40";
+
 // Form fields here always show app state. autoComplete="off" stops Firefox
 // from restoring old values on reload, which would make the screen
 // disagree with the app.
@@ -67,6 +73,7 @@ export function Select({
       autoComplete="off"
       className={cn(
         "min-w-0 rounded-md border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-900",
+        FIELD_FOCUS,
         compact ? "mt-0.5 h-5 px-1 py-0 text-xs" : "px-2 py-1.5 text-sm",
         className,
       )}
@@ -75,8 +82,10 @@ export function Select({
   );
 }
 
-export const inputClass =
-  "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900";
+export const inputClass = cn(
+  "min-w-0 rounded-md border border-zinc-300 bg-white px-2 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-900",
+  FIELD_FOCUS,
+);
 
 // The tint for courses offered in only one season: the chart's cards and
 // the tags in the details use the same.

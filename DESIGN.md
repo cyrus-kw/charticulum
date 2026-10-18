@@ -143,6 +143,9 @@ outline only (no fills), in the text color. Add new ones there; never
 draw an icon inline or use an icon font. Brand icons (GitHub) are traced
 as outlines too, so they match.
 
+The browser-tab icon is `src/app/icon.svg`: two white course cards joined
+by a requisite arrow on a `sky-600` rounded square.
+
 Controls are icon-only where the icon is clear (undo/redo, zoom, sidebar,
 theme, trash, footer links). Every icon-only control has an `aria-label`
 and a tooltip.
@@ -168,7 +171,11 @@ and a tooltip.
   chips (like the add-term choices) use `brightness-95` (dark
   `brightness-125`).
 - Focus: a 2px `sky-500` outline, only for keyboard focus
-  (`focus-visible`).
+  (`focus-visible`). `globals.css` gives every element this by default,
+  so new buttons and links get it without extra classes.
+- Text boxes and dropdowns being typed in: a `sky-500` border with a soft
+  `sky-500/40` outline (`FIELD_FOCUS` in `ui.tsx`; `inputClass` and
+  `Select` already include it).
 - Disabled: faded (`opacity-35` to `50`) with a not-allowed cursor; a
   disabled choice still says why in its tooltip.
 

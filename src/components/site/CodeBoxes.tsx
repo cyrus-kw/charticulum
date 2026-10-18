@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, type ClipboardEvent, type KeyboardEvent } from "react";
-import { cn } from "../ui";
+import { cn, FIELD_FOCUS } from "../ui";
 
 export const CODE_LENGTH = 6;
 
@@ -95,7 +95,8 @@ export function CodeBoxes({
           className={cn(
             // Same corners and border as the app's other text boxes.
             "h-12 w-full min-w-0 rounded-md border border-zinc-300 bg-white text-center text-xl font-medium tabular-nums",
-            "focus:border-sky-500 focus:outline-2 focus:outline-sky-500/40 dark:border-zinc-700 dark:bg-zinc-900",
+            FIELD_FOCUS,
+            "dark:border-zinc-700 dark:bg-zinc-900",
             readOnly && "text-zinc-500",
           )}
         />

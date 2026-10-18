@@ -18,6 +18,7 @@
 //   { "shot": "after-hover.png" }           save a screenshot of the window
 //   { "shot": "menu.png", "of": "[role=menu]" }  ...or of just one element
 //   { "shot": "top.png", "clip": [0, 0, 800, 300] }  ...or of an area (x, y, width, height)
+// Set APP_SESSION to a session cookie's secret to browse signed in.
 // Errors the page logs to the browser console are printed at the end.
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
@@ -82,6 +83,11 @@ async function main() {
           deviceScaleFactor: scale,
           colorScheme: dark ? "dark" : "light",
         });
+        // Signed in: APP_SESSION holds a session cookie's secret (kept out
+        // of this file, since anyone with it is signed in as that person).
+        if (process.env.APP_SESSION) {
+          await context.addCookies([{ name: "charticulum_session", value: process.env.APP_SESSION, url: BASE_URL }]);
+        }
         page = await context.newPage();
         page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
         page.on("pageerror", (e) => errors.push(e.message));
