@@ -134,7 +134,7 @@ export function Planner({
                 title="Open dashboard"
               >
                 <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
-                <p className="text-xs text-zinc-500">Chart your curriculum</p>
+                <p className="text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</p>
               </Link>
               <ThemeToggle />
             </div>

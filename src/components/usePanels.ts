@@ -7,7 +7,11 @@ import { useCallback, useEffect, useState } from "react";
 
 const KEY = "charticulum.panels.v1";
 
-export const PANEL_MIN_WIDTH = 220;
+// Narrow enough to give the chart room, wide enough that the header's
+// slogan ("Chart your curriculum") stays on one line: it needs about 230px
+// (the buttons, gaps, and ~115px of text), plus some spare for fonts that
+// run wider on other systems.
+export const PANEL_MIN_WIDTH = 250;
 export const PANEL_MAX_WIDTH = 560;
 // Dragged narrower than this, a sidebar collapses to its icon.
 export const PANEL_COLLAPSE_BELOW = 160;

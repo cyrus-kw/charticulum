@@ -52,9 +52,17 @@ export function SidePanel({
 }) {
   // While dragging, resizing follows the pointer exactly (no slide).
   const [dragging, setDragging] = useState(false);
+  // Dragged narrower than PANEL_COLLAPSE_BELOW: the sidebar shows itself
+  // shut, as a preview. Letting go there closes it for real; dragging
+  // back out opens it again (like the claude.ai sidebar).
+  const [collapsing, setCollapsing] = useState(false);
+  // True while the preview slides shut or open, so that one movement is
+  // animated even mid-drag. Cleared when the slide finishes.
+  const [snapping, setSnapping] = useState(false);
+  // Shown open: open, and not previewing a collapse.
+  const shown = open && !collapsing;
 
-  // Dragging the edge: wider toward the chart. Let go narrower than
-  // PANEL_COLLAPSE_BELOW and it collapses instead.
+  // Dragging the edge: wider toward the chart.
   const startDrag = (event: PointerEvent<HTMLDivElement>) => {
     event.preventDefault();
     const startX = event.clientX;
@@ -64,12 +72,26 @@ export function SidePanel({
     body.userSelect = "none";
     body.cursor = "col-resize";
     setDragging(true);
-    const move = (e: globalThis.PointerEvent) => onResize(widthFor(e.clientX), false);
+    // A plain variable (not state) so `move` sees the latest value at once.
+    let shut = false;
+    const move = (e: globalThis.PointerEvent) => {
+      const next = widthFor(e.clientX);
+      const nowShut = next < PANEL_COLLAPSE_BELOW;
+      if (nowShut !== shut) {
+        // Crossed the line: slide shut (or back open).
+        shut = nowShut;
+        setCollapsing(nowShut);
+        setSnapping(true);
+      }
+      // While shut, the width it reopens at stays as it was.
+      if (!nowShut) onResize(next, false);
+    };
     const end = (e: globalThis.PointerEvent) => {
       window.removeEventListener("pointermove", move);
       body.userSelect = before.userSelect;
       body.cursor = before.cursor;
       setDragging(false);
+      setCollapsing(false);
       const final = widthFor(e.clientX);
       if (final < PANEL_COLLAPSE_BELOW) {
         onResize(width, true); // reopen later at the width it had
@@ -102,12 +124,18 @@ export function SidePanel({
         inert={!open}
         // The inner width leaves room for the 1px border, so the toggle sits
         // exactly where its floating copy will.
-        style={{ ["--panel-w" as string]: open ? `${width}px` : "0px", ["--panel-inner" as string]: `${width - 1}px` }}
+        style={{ ["--panel-w" as string]: shown ? `${width}px` : "0px", ["--panel-inner" as string]: `${width - 1}px` }}
         className={cn(
           "overflow-hidden border-line lg:w-(--panel-w) dark:border-zinc-800",
-          !dragging && "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
-          open ? (side === "left" ? "lg:border-r" : "lg:border-l") : "max-lg:hidden",
+          (!dragging || snapping) && "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
+          shown && (side === "left" ? "lg:border-r" : "lg:border-l"),
+          !open && "max-lg:hidden",
         )}
+        // Only the sidebar's own width slide counts, not transitions of
+        // things inside it (their "transitionend" events bubble up here).
+        onTransitionEnd={(event) => {
+          if (event.target === event.currentTarget && event.propertyName === "width") setSnapping(false);
+        }}
       >
         {/* A fixed width inside, so the contents slide rather than squish.
             flex-col: the footer can then sit at the bottom even when the
