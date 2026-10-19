@@ -21,7 +21,7 @@ import {
   ZOOM_STEP,
   edgeEndpoints,
   laneAssignments,
-  requisiteDepths,
+  requisiteAncestors,
   laneShift,
   perimeterLength,
   perimeterOffset,
@@ -216,16 +216,23 @@ describe("chartLayout look", () => {
 });
 
 describe("lanes for links within a term", () => {
-  // Links as [id, column, row of one card, row of the other, depth].
-  const lanesOf = (links: [string, number, number, number, number?][]) =>
+  // Links as [id, column, row of one card, row of the other], each
+  // starting from the course before "->"; `edges` are the requisite lines
+  // on the chart, for which course comes before which.
+  const lanesOf = (links: [string, number, number, number][], edges: { source: string; target: string }[] = []) =>
     Object.fromEntries(
       [
         ...laneAssignments(
-          links.map(([id, column, a, b, depth = 0]) => ({ id, track: `column ${column}`, top: a * ROW_HEIGHT, bottom: b * ROW_HEIGHT, depth })),
+          links.map(([id, column, a, b]) => ({
+            id,
+            track: `column ${column}`,
+            top: a * ROW_HEIGHT,
+            bottom: b * ROW_HEIGHT,
+            source: id.split("->")[0],
+          })),
+          requisiteAncestors(edges),
         ),
-      ].map(
-        ([id, { lane, lanes }]) => [id, `${lane}/${lanes}`],
-      ),
+      ].map(([id, { lane, lanes }]) => [id, `${lane}/${lanes}`]),
     );
 
   it("gives links that would overlap their own lanes, shorter ones first", () => {
@@ -237,27 +244,47 @@ describe("lanes for links within a term", () => {
     });
   });
 
-  it("orders lanes left to right along the requisite chain", () => {
-    // The screenshot: CS 301 above CS 400 above CS 210, where CS 210 ->
-    // CS 301 -> CS 400. The line from CS 210 (earlier) goes left, even
-    // though it's the longer one.
+  it("puts a requisite's line left of the line from the course that needs it", () => {
+    // CS 301 above CS 400 above CS 210, where CS 210 -> CS 301 -> CS 400.
+    // The line from CS 210 (earlier) goes left, even though it's longer.
     const edges = [
       { source: "CS210", target: "CS301" },
       { source: "CS301", target: "CS400" },
     ];
-    const depths = requisiteDepths(edges);
-    expect(Object.fromEntries(depths)).toEqual({ CS210: 0, CS301: 1, CS400: 2 });
-    expect(
-      lanesOf([
-        ["CS301->CS400", 1, 0, 1, depths.get("CS301")],
-        ["CS210->CS301", 1, 2, 0, depths.get("CS210")],
-      ]),
-    ).toEqual({ "CS210->CS301": "0/2", "CS301->CS400": "1/2" });
+    expect(lanesOf([["CS301->CS400", 1, 0, 1], ["CS210->CS301", 1, 2, 0]], edges)).toEqual({
+      "CS210->CS301": "0/2",
+      "CS301->CS400": "1/2",
+    });
   });
 
-  it("doesn't hang on requisites that loop", () => {
-    const depths = requisiteDepths([{ source: "A", target: "B" }, { source: "B", target: "A" }]);
-    expect([...depths.values()].every(Number.isFinite)).toBe(true);
+  it("orders lines from courses that don't depend on each other by length", () => {
+    // CS 201 above CS 210 above CS 301, which needs both. CS 201 needs more
+    // (MATH 201 too), but neither needs the other: the shorter line, from
+    // CS 210, goes left.
+    const edges = [
+      { source: "CS102", target: "CS201" },
+      { source: "MATH101", target: "MATH201" },
+      { source: "MATH201", target: "CS201" },
+      { source: "CS102", target: "CS210" },
+      { source: "CS201", target: "CS301" },
+      { source: "CS210", target: "CS301" },
+    ];
+    expect(lanesOf([["CS201->CS301", 1, 0, 2], ["CS210->CS301", 1, 1, 2]], edges)).toEqual({
+      "CS210->CS301": "0/2",
+      "CS201->CS301": "1/2",
+    });
+  });
+
+  it("finds requisites all the way back, and doesn't hang on ones that loop", () => {
+    const chain = requisiteAncestors([{ source: "A", target: "B" }, { source: "B", target: "C" }]);
+    expect([...chain.get("C")!].sort()).toEqual(["A", "B"]);
+    const loop = requisiteAncestors([{ source: "A", target: "B" }, { source: "B", target: "A" }]);
+    expect(loop.size).toBe(2);
+    // Lanes still come out for a loop.
+    expect(lanesOf([["A->B", 1, 0, 2], ["B->A", 1, 2, 1]], [{ source: "A", target: "B" }, { source: "B", target: "A" }])).toEqual({
+      "B->A": "0/2",
+      "A->B": "1/2",
+    });
   });
 
   it("keeps a link by itself in the middle, even if elsewhere in the term needs lanes", () => {
@@ -275,14 +302,18 @@ describe("lanes for links within a term", () => {
   });
 
   it("does the same for lines straight across a row, earlier courses higher", () => {
-    // The screenshot: CS 400, CS 210, CS 301 left to right in one row, with
-    // CS 210 -> CS 400, CS 210 -> CS 301, and CS 301 -> CS 400 behind CS 210.
+    // CS 400, CS 210, CS 301 left to right in one row, with CS 210 ->
+    // CS 400, CS 210 -> CS 301, and CS 301 -> CS 400 behind CS 210.
     const spans = [
-      { id: "CS210->CS400", track: "row 0", top: 212, bottom: 0, depth: 0 },
-      { id: "CS210->CS301", track: "row 0", top: 212, bottom: 424, depth: 0 },
-      { id: "CS301->CS400", track: "row 0", top: 424, bottom: 0, depth: 1 },
+      { id: "CS210->CS400", track: "row 0", top: 212, bottom: 0, source: "CS210" },
+      { id: "CS210->CS301", track: "row 0", top: 212, bottom: 424, source: "CS210" },
+      { id: "CS301->CS400", track: "row 0", top: 424, bottom: 0, source: "CS301" },
     ];
-    expect(Object.fromEntries(laneAssignments(spans))).toEqual({
+    const ancestors = requisiteAncestors([
+      { source: "CS210", target: "CS301" },
+      { source: "CS301", target: "CS400" },
+    ]);
+    expect(Object.fromEntries(laneAssignments(spans, ancestors))).toEqual({
       "CS210->CS400": { lane: 0, lanes: 2 },
       "CS210->CS301": { lane: 0, lanes: 2 },
       "CS301->CS400": { lane: 1, lanes: 2 },

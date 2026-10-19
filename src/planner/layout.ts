@@ -485,50 +485,55 @@ function placeVertically(order: string[][]): Map<string, number> {
 // names the term column (for a line straight up or down) or the row of
 // cards (for a line straight across) it runs along; `top` and `bottom` are
 // where its two cards are along it, in either order (their tops in a
-// column, their left edges in a row); `depth` is how far along its chain
-// of requisites the link starts (see requisiteDepths).
+// column, their left edges in a row); `source` is the course the link
+// starts from.
 export interface LaneSpan {
   id: string;
   track: string;
   top: number;
   bottom: number;
-  depth: number;
+  source: string;
 }
 
-// How far along its chain of requisites each course is: 0 for one that
-// needs nothing on the chart, 1 for one that needs only those, and so on
-// (the longest chain leading to it). Lanes are ordered by this, so lines
-// read left to right in the order the courses are taken.
-export function requisiteDepths(edges: Pick<Edge, "source" | "target">[]): Map<string, number> {
+// Everything each course needs, all the way back along its requisite
+// lines: for A -> B -> C, C needs B and A. Lanes use it to tell whether
+// one line's course comes before another's in the same chain.
+export function requisiteAncestors(edges: Pick<Edge, "source" | "target">[]): Map<string, Set<string>> {
   const needs = new Map<string, string[]>();
   for (const e of edges) needs.set(e.target, [...(needs.get(e.target) ?? []), e.source]);
-  const depth = new Map<string, number>();
+  const ancestors = new Map<string, Set<string>>();
   const visiting = new Set<string>();
-  const depthOf = (id: string): number => {
-    if (depth.has(id)) return depth.get(id)!;
+  const ancestorsOf = (id: string): Set<string> => {
+    if (ancestors.has(id)) return ancestors.get(id)!;
     // A loop in the requisites (bad school data) shouldn't hang the chart.
-    if (visiting.has(id)) return 0;
+    if (visiting.has(id)) return new Set();
     visiting.add(id);
-    const d = Math.max(-1, ...(needs.get(id) ?? []).map(depthOf)) + 1;
+    const all = new Set<string>();
+    for (const need of needs.get(id) ?? []) {
+      all.add(need);
+      for (const further of ancestorsOf(need)) all.add(further);
+    }
     visiting.delete(id);
-    depth.set(id, d);
-    return d;
+    ancestors.set(id, all);
+    return all;
   };
-  for (const e of edges) {
-    depthOf(e.source);
-    depthOf(e.target);
-  }
-  return depth;
+  for (const e of edges) ancestorsOf(e.target);
+  return ancestors;
 }
 
 // Lanes for links that run straight along a term's column or a row of
 // cards (see EdgeData), by link id. Two links whose stretches of the same
 // column or row overlap get different lanes, so their lines run side by
-// side instead of on top of each other, in requisite order: a line from an
-// earlier course in the chain sits further left (in a column) or higher
-// (in a row). Sharing just an end card is fine: one line arrives at one
-// side of it and the other leaves from the opposite side.
-export function laneAssignments(spans: LaneSpan[]): Map<string, { lane: number; lanes: number }> {
+// side instead of on top of each other, left to right in a column (top to
+// bottom in a row). Where one line's course is a requisite (directly or
+// further back, see requisiteAncestors) of the other's, it comes first;
+// lines whose courses don't depend on each other go by length, shorter
+// first. Sharing just an end card is fine: one line arrives at one side of
+// it and the other leaves from the opposite side.
+export function laneAssignments(
+  spans: LaneSpan[],
+  ancestors: Map<string, Set<string>> = new Map(),
+): Map<string, { lane: number; lanes: number }> {
   const byTrack = new Map<string, LaneSpan[]>();
   for (const span of spans) {
     const [top, bottom] = [span.top, span.bottom].sort((a, b) => a - b);
@@ -551,21 +556,37 @@ export function laneAssignments(spans: LaneSpan[]): Map<string, { lane: number; 
       reach = Math.max(reach, span.bottom);
     }
     for (const group of groups) {
-      // Earlier in the requisite chain first, so it takes a lane further
-      // left; from the same course, the shorter line first.
-      group.sort((a, b) => a.depth - b.depth || a.bottom - a.top - (b.bottom - b.top) || a.top - b.top);
-      const placed: { top: number; bottom: number; lane: number }[] = [];
-      for (const span of group) {
+      const placed: { id: string; top: number; bottom: number; lane: number }[] = [];
+      for (const span of laneOrder(group, ancestors)) {
         const taken = new Set(placed.filter((p) => overlap(p, span)).map((p) => p.lane));
         let lane = 0;
         while (taken.has(lane)) lane++;
         placed.push({ ...span, lane });
       }
       const lanes = Math.max(...placed.map((p) => p.lane)) + 1;
-      group.forEach((span, i) => result.set(span.id, { lane: placed[i].lane, lanes }));
+      placed.forEach((span) => result.set(span.id, { lane: span.lane, lanes }));
     }
   }
   return result;
+}
+
+// The order lanes are handed out in a group of overlapping links (the
+// first gets the leftmost free lane). A link whose course is a requisite
+// of another link's course always goes before it. Otherwise the shortest
+// link that's free to go next goes next (then the one nearer the top), so
+// links from courses that don't depend on each other go by length.
+function laneOrder(group: LaneSpan[], ancestors: Map<string, Set<string>>): LaneSpan[] {
+  const comesBefore = (a: LaneSpan, b: LaneSpan) => ancestors.get(b.source)?.has(a.source) ?? false;
+  const length = (span: LaneSpan) => span.bottom - span.top;
+  const left = [...group].sort((a, b) => length(a) - length(b) || a.top - b.top);
+  const order: LaneSpan[] = [];
+  while (left.length > 0) {
+    // The first (shortest) link with nothing left that must come before
+    // it; if requisites loop (bad school data), just the shortest.
+    const next = left.findIndex((span) => !left.some((other) => other !== span && comesBefore(other, span)));
+    order.push(...left.splice(Math.max(next, 0), 1));
+  }
+  return order;
 }
 
 // Give each course with outgoing lines a color, avoiding colors already

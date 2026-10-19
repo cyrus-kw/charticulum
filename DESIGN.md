@@ -221,14 +221,15 @@ arrowheads gliding around a card). Everything that moves respects
   between. Where several would lie on top of each other, each gets its
   own lane: its ends move sideways along the cards' top and bottom
   edges, 16px apart (closer on narrow cards), spread evenly around the
-  middle, left to right in requisite order (the line from the earlier
-  course in the chain is further left). A lone one stays in the middle. Lanes follow the cards as they
+  middle, left to right: when one line's course is a requisite (directly
+  or further back) of the other's, its line is further left; lines from
+  courses that don't depend on each other go by length, shorter left. A lone one stays in the middle. Lanes follow the cards as they
   move (mid-drag too), and the ends glide to a new lane the same way they
   glide around a card's border.
 - The same goes for arrows straight across a row (cards level with each
   other in different terms, e.g. a line running behind a card in the
   term between): overlapping ones are shifted above and below the middle
-  of the cards' sides, 16px apart, the earlier course's line on top.
+  of the cards' sides, 16px apart, in the same order top to bottom.
 - When a course is traced, everything unrelated fades to 25%.
 - A selected term's title box gets the same `sky-500` ring as a selected
   card. Right-clicking a card opens a one-item menu (Remove, in rose),

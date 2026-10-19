@@ -25,7 +25,7 @@ import {
   chartLayout,
   edgeEndpoints,
   laneAssignments,
-  requisiteDepths,
+  requisiteAncestors,
   laneShift,
   perimeterOffset,
   perimeterPoint,
@@ -789,7 +789,7 @@ export function ChartFlow({
   // where the cards are right now (`nodes` follows a card as it's dragged
   // and the others as they slide), so lines move aside or back to the
   // middle as cards move.
-  const depths = useMemo(() => requisiteDepths(layout.edges), [layout]);
+  const ancestors = useMemo(() => requisiteAncestors(layout.edges), [layout]);
   const lanes = useMemo(() => {
     const at = new Map(nodes.flatMap((n) => (n.type === "course" ? [[n.id, n.position] as const] : [])));
     const columnOf = (p: Point) => Math.floor((p.x + geometry.nodeWidth / 2) / geometry.columnWidth);
@@ -797,14 +797,15 @@ export function ChartFlow({
       layout.edges.flatMap((e) => {
         const [s, t] = [at.get(e.source), at.get(e.target)];
         if (!s || !t) return [];
-        const depth = depths.get(e.source) ?? 0;
-        if (columnOf(s) === columnOf(t)) return [{ id: e.id, track: `column ${columnOf(s)}`, top: s.y, bottom: t.y, depth }];
+        const source = e.source;
+        if (columnOf(s) === columnOf(t)) return [{ id: e.id, track: `column ${columnOf(s)}`, top: s.y, bottom: t.y, source }];
         // Level with each other (within a pixel), in different terms.
-        if (Math.abs(s.y - t.y) < 1) return [{ id: e.id, track: `row ${Math.round(s.y)}`, top: s.x, bottom: t.x, depth }];
+        if (Math.abs(s.y - t.y) < 1) return [{ id: e.id, track: `row ${Math.round(s.y)}`, top: s.x, bottom: t.x, source }];
         return [];
       }),
+      ancestors,
     );
-  }, [nodes, layout, geometry, depths]);
+  }, [nodes, layout, geometry, ancestors]);
   // Cards move on every frame of a drag, but lanes change only now and then:
   // rebuild the lines only when they do.
   const laneKey = [...lanes].map(([id, { lane, lanes: count }]) => `${id}:${lane}/${count}`).join(" ");
