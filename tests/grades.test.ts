@@ -42,6 +42,13 @@ describe("requisite minimum grades", () => {
   });
 });
 
+describe("failing grades", () => {
+  it("flags any course with an F, minimum or not", () => {
+    const issues = validateChart(catalog, chartOf([[], ["ORIENT"]], { grades: { ORIENT: "F" } }));
+    expect(issues.map((i) => [i.code, i.objectId])).toEqual([["FAILING_GRADE", "ORIENT"]]);
+  });
+});
+
 describe("GPA", () => {
   it("weights by credits and ignores 0-credit objects", () => {
     const chart = chartOf([[], ["CS101", "CS102", "ORIENT"]], {

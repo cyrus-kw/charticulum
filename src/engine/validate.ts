@@ -86,6 +86,17 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
         }
       }
 
+      // An F is a problem on the course itself, like a grade under a
+      // minimum: the course has to be taken again.
+      if (chart.grades?.[id] === "F") {
+        issues.push({
+          code: "FAILING_GRADE",
+          message: `${id} has an F and needs to be taken again.`,
+          objectId: id,
+          termIndex: term.index,
+        });
+      }
+
       // Minimum grades. An object that isn't graded yet is still planned,
       // so it passes for now; one passing grade among equivalents is enough.
       for (const [requisiteId, minimum] of Object.entries(object.requisites.minGrades ?? {})) {
