@@ -9,7 +9,9 @@ src/generated/
 .vercel/
 *.log
 
-# Claude Code project notes (kept local)
+# Project notes for Claude Code (kept local, not in git)
 CLAUDE.md
+DESIGN.md
+OUTLINE.md
 .vercel
 .env*

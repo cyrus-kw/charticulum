@@ -35,9 +35,6 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `tests/` | Vitest tests (`*.db.test.ts` need a real database) |
 | `scripts/` | The terminal demo and a headless-browser screenshot tool |
 
-The app's look (colors, sizes, icons, tooltips) and the rules for keeping
-it consistent are in [DESIGN.md](DESIGN.md).
-
 ### Engine pieces
 
 | File | Does |
