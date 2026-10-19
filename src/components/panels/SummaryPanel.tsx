@@ -36,9 +36,10 @@ function describe(override: Override): string {
   }
 }
 
-// Progress toward every requirement, and the exceptions in effect. GPA
-// stays in the title row; the meters and exceptions below it scroll when
-// the box is capped in height (see the Requirements box in Planner.tsx).
+// Progress toward every requirement, and the exceptions in effect. The
+// plan's problems show beside the box (IssuesPanel). GPA stays in the
+// title row; the meters and exceptions below it scroll when the box is
+// capped in height (see the Requirements box in Planner.tsx).
 export function SummaryPanel({ state, view, dispatch }: PanelProps) {
   const { report, appliedOverrides } = view.check;
   const { requirements } = view;
@@ -70,9 +71,9 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
         )
       }
     >
-      {/* The meters scroll, the same way as the Issues list: it reaches into
-          the panel's right padding (-mr-4) and puts it back (pr-4), so the
-          scrollbar sits by the box's edge without covering any words. */}
+      {/* The meters scroll: this reaches into the panel's right padding
+          (-mr-4) and puts it back (pr-4), so the scrollbar sits by the
+          box's edge without covering any words. */}
       <div className="-mr-4 min-h-0 overflow-y-auto pr-4">
         <div className="space-y-2">
           <Meter label="Total Credits" value={report.totalCredits} target={requirements.minTotalCredits} />
@@ -118,6 +119,7 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
             </ul>
           </div>
         )}
+
       </div>
     </Panel>
   );

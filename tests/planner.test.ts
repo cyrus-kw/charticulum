@@ -72,6 +72,26 @@ describe("plannerReducer", () => {
     expect(derive(state).check.issues.map((i) => i.code)).toContain("MISSING_REQUIRED_OBJECT");
   });
 
+  it("selects a term or a course, never both", () => {
+    let state = plannerReducer(sampleState(), { type: "select", objectId: "CS102" });
+    state = plannerReducer(state, { type: "selectTerm", termIndex: 2 });
+    expect([state.selectedId, state.selectedTerm]).toEqual([null, 2]);
+    state = plannerReducer(state, { type: "select", objectId: "CS102" });
+    expect([state.selectedId, state.selectedTerm]).toEqual(["CS102", null]);
+  });
+
+  it("keeps a selected term selected when terms before it are added or removed", () => {
+    // Term 3 is Fall 2027 in the sample plan.
+    let state = plannerReducer(sampleState(), { type: "selectTerm", termIndex: 3 });
+    state = plannerReducer(state, { type: "removeTerm", termIndex: 2 });
+    expect(state.chart.terms.find((t) => t.index === state.selectedTerm)?.label).toBe("Fall 2027");
+    state = plannerReducer(state, { type: "insertTerm", termIndex: 1, side: "after", season: "spring" });
+    expect(state.chart.terms.find((t) => t.index === state.selectedTerm)?.label).toBe("Fall 2027");
+    // Removing the selected term itself unselects it.
+    state = plannerReducer(state, { type: "removeTerm", termIndex: state.selectedTerm! });
+    expect(state.selectedTerm).toBeNull();
+  });
+
   it("adds the next calendar term", () => {
     const state = plannerReducer(sampleState(), { type: "addTerm" });
     expect(state.chart.terms.at(-1)?.label).toBe("Spring 2029");

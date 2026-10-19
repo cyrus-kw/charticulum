@@ -12,8 +12,8 @@ const LINKS = [
 ];
 
 // The line across the bottom of the site's pages. It's as tall as the
-// account row at the bottom of the planner's sidebar, so the two match.
-// The contact links sit at the far right, styled like the sidebar's buttons,
+// account row at the bottom of the planner's side panel, so the two match.
+// The contact links sit at the far right, styled like the side panel's buttons,
 // each with a small label that shows when pointed at.
 export function SiteFooter() {
   return (

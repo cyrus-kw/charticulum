@@ -41,6 +41,9 @@ export interface PlannerState {
   // completedExternal when the chart is checked (see derive below).
   chart: Chart;
   selectedId: string | null;
+  // The selected term (its index), if a term rather than a course is
+  // selected. Only one thing is selected at a time.
+  selectedTerm: number | null;
   // Problems the builder hit on its last run, if any.
   builderIssues: ChartIssue[];
   // The saved copy this chart belongs to; null until it's first saved.
@@ -61,6 +64,7 @@ export type PlannerAction =
   | { type: "build" }
   | { type: "rename"; name: string }
   | { type: "select"; objectId: string | null }
+  | { type: "selectTerm"; termIndex: number | null }
   // `position`: where in the term's top-to-bottom order (an index among
   // the term's other courses); missing means at the bottom.
   | { type: "move"; objectId: string; termIndex: number; position?: number }
@@ -81,12 +85,12 @@ export function initialState(school: LoadedSchool, programId?: string): PlannerS
   const chart: Chart = template
     ? arrangeChart(school.catalog, forkTemplate(template))
     : { name: "My plan", terms: [emptyTermZero()], completedExternal: [] };
-  return { school, chart, selectedId: null, builderIssues: [], savedId: null, layoutVersion: 0 };
+  return { school, chart, selectedId: null, selectedTerm: null, builderIssues: [], savedId: null, layoutVersion: 0 };
 }
 
 // The planner opened on a saved chart.
 export function openedState(school: LoadedSchool, chart: Chart, savedId: string): PlannerState {
-  return { school, chart, selectedId: null, builderIssues: [], savedId, layoutVersion: 0 };
+  return { school, chart, selectedId: null, selectedTerm: null, builderIssues: [], savedId, layoutVersion: 0 };
 }
 
 // A brand-new chart: the program's suggested plan (pinned to that
@@ -187,6 +191,15 @@ export function insertTerm(chart: Chart, termIndex: number, side: TermSide, seas
   return { ...chart, terms: renumber([...chart.terms.slice(0, at), beside.term, ...chart.terms.slice(at)]) };
 }
 
+// Adding or removing a term renumbers the terms after it, so a selected
+// term's number can change. Find it again by its label ("Fall 2027"),
+// which stays the same; null if it was the one removed.
+function followTerm(before: Chart, after: Chart, termIndex: number | null): number | null {
+  if (termIndex === null) return null;
+  const label = before.terms.find((t) => t.index === termIndex)?.label;
+  return after.terms.find((t) => t.label === label)?.index ?? null;
+}
+
 export function plannerReducer(state: PlannerState, action: PlannerAction): PlannerState {
   const { chart, school } = state;
   const withChart = (next: Chart): PlannerState => ({ ...state, chart: next });
@@ -213,6 +226,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         ...state,
         chart: action.chart,
         selectedId: null,
+        selectedTerm: null,
         builderIssues: [],
         savedId: action.savedId,
         layoutVersion: state.layoutVersion + 1,
@@ -230,6 +244,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         ...state,
         chart: arrangeChart(school.catalog, { ...fork, completedExternal: chart.completedExternal }),
         selectedId: null,
+        selectedTerm: null,
         builderIssues: [],
         layoutVersion: state.layoutVersion + 1,
       };
@@ -244,6 +259,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
       if (alreadyPinned) return state;
       return {
         ...withChart(arrangeChart(school.catalog, { ...mergeCharts(chart, forkTemplate(template)), name: chart.name })),
+        selectedTerm: null,
         layoutVersion: state.layoutVersion + 1,
       };
     }
@@ -265,6 +281,7 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         }),
         builderIssues: built.issues,
         selectedId: null,
+        selectedTerm: null,
         layoutVersion: state.layoutVersion + 1,
       };
     }
@@ -272,8 +289,12 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
     case "rename":
       return withChart({ ...chart, name: action.name });
 
+    // Selecting a course unselects any term, and the other way around.
     case "select":
-      return { ...state, selectedId: action.objectId };
+      return { ...state, selectedId: action.objectId, selectedTerm: null };
+
+    case "selectTerm":
+      return { ...state, selectedTerm: action.termIndex, selectedId: null };
 
     case "move": {
       // Pre-Credit only holds outside credit, which is placed automatically.
@@ -315,12 +336,12 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
       // Unselect a course that left the chart with its term.
       const removed = chart.terms.find((t) => t.index === action.termIndex)?.objectIds ?? [];
       const selectedId = state.selectedId && removed.includes(state.selectedId) ? null : state.selectedId;
-      return { ...withChart(next), selectedId };
+      return { ...withChart(next), selectedId, selectedTerm: followTerm(chart, next, state.selectedTerm) };
     }
 
     case "insertTerm": {
       const next = insertTerm(chart, action.termIndex, action.side, action.season);
-      return next === chart ? state : withChart(next);
+      return next === chart ? state : { ...withChart(next), selectedTerm: followTerm(chart, next, state.selectedTerm) };
     }
 
     case "setGrade": {

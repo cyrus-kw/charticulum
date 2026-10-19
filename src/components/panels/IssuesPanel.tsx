@@ -2,6 +2,7 @@
 
 import type { ChartIssue } from "../../engine/index";
 import { askReason, Badge, Button, newId, Panel } from "../ui";
+import { planIssues } from "../../planner/issues";
 import { withCourseCodes } from "../../planner/layout";
 import type { PanelProps } from "./types";
 
@@ -11,16 +12,31 @@ const REQUISITE_CODES = new Set([
   "REQUISITE_GRADE_TOO_LOW",
 ]);
 
-// Every problem with the plan, with one-click fixes where there's an
-// obvious one (progressive error correction).
-export function IssuesPanel({ state, view, dispatch }: PanelProps) {
-  const placed = new Set(view.chart.terms.flatMap((t) => t.objectIds));
-  const lastTerm = view.chart.terms.at(-1)?.index ?? 1;
-  const all: { issue: ChartIssue; source?: string }[] = [
+// A problem, and where it came from when that's not the plan itself (e.g.
+// "Builder" for what Build for me couldn't do).
+export interface ListedIssue {
+  issue: ChartIssue;
+  source?: string;
+}
+
+// The plan's problems beside Requirements: the pinned programs' problems,
+// what Build for me couldn't do, and the check's problems that aren't
+// about one term or course.
+export function listPlanIssues({ state, view }: Pick<PanelProps, "state" | "view">): ListedIssue[] {
+  return [
     ...view.templateIssues.map((issue) => ({ issue })),
     ...state.builderIssues.map((issue) => ({ issue, source: "Builder" })),
-    ...view.check.issues.map((issue) => ({ issue })),
+    ...planIssues(view.chart, view.check.issues).map((issue) => ({ issue })),
   ];
+}
+
+// A column of problems on the right side of Selected (the selected
+// course's or term's) and of Requirements (the plan's), joined to the box
+// by a line. Each comes with one-click fixes where there's an obvious one
+// (progressive error correction). Nothing shows without any.
+export function IssuesPanel({ issues, state, dispatch }: Pick<PanelProps, "state" | "dispatch"> & { issues: ListedIssue[] }) {
+  if (issues.length === 0) return null;
+  const lastTerm = state.chart.terms.at(-1)?.index ?? 1;
 
   const fixes = (issue: ChartIssue) => {
     const { objectId, requisiteId } = issue;
@@ -65,37 +81,29 @@ export function IssuesPanel({ state, view, dispatch }: PanelProps) {
   };
 
   return (
-    <Panel title="Issues" actions={
-        // A count is square; "None" is a word, so it gets a normal tag.
-        all.length ? <Badge tone="bad" square>{all.length}</Badge> : <Badge tone="good">None</Badge>
-      }>
-      {all.length === 0 ? (
-        <p className="text-sm text-zinc-500">This plan meets every requirement.</p>
-      ) : (
-        // A long list scrolls inside the box, under the title and count,
-        // instead of growing down over the chart. (min-h-0 lets it shrink
-        // to fit the box; see the Issues box in Planner.tsx.) The list
-        // reaches into the panel's right padding (-mr-4) and puts the same
-        // padding back inside (pr-4): the text stays where it was, and the
-        // scrollbar lands in that padding by the box's edge, where it
-        // can't cover any words.
-        <ul className="-mr-4 min-h-0 space-y-2 overflow-y-auto pr-4">
-          {all.map(({ issue, source }, i) => (
-            <li key={i} className="text-sm">
-              <button
-                type="button"
-                className="text-left hover:underline disabled:no-underline"
-                disabled={!issue.objectId || !placed.has(issue.objectId)}
-                onClick={() => issue.objectId && dispatch({ type: "select", objectId: issue.objectId })}
-              >
-                {source && <span className="font-semibold">{source}: </span>}
-                {withCourseCodes(issue.message, state.school.catalog)}
-              </button>
-              <div className="mt-1 flex flex-wrap gap-1 empty:hidden">{fixes(issue)}</div>
-            </li>
-          ))}
-        </ul>
-      )}
+    <Panel
+      title="Issues"
+      // The count as a red tag, square like the badges on the chart.
+      actions={
+        <Badge tone="bad" square>
+          {issues.length}
+        </Badge>
+      }
+    >
+      {/* A long list scrolls inside the box, under the title and count.
+          (min-h-0 lets it shrink to fit; see the boxes in Planner.tsx.) It
+          reaches into the panel's right padding (-mr-4) and puts it back
+          (pr-4), so the scrollbar sits by the box's edge without covering
+          any words. */}
+      <ul className="-mr-4 min-h-0 space-y-2 overflow-y-auto pr-4">
+        {issues.map(({ issue, source }, i) => (
+          <li key={i} className="text-sm text-rose-700 dark:text-rose-400">
+            {source && <span className="font-semibold">{source}: </span>}
+            {withCourseCodes(issue.message, state.school.catalog)}
+            <div className="mt-1 flex flex-wrap gap-1 empty:hidden">{fixes(issue)}</div>
+          </li>
+        ))}
+      </ul>
     </Panel>
   );
 }

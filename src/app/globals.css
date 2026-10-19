@@ -36,7 +36,7 @@ body {
   }
 }
 
-/* One thin, quiet scrollbar everywhere (sidebar, panels, lists), instead
+/* One thin, quiet scrollbar everywhere (side panel, panels, lists), instead
    of each browser's wide default. The thumb is see-through grey so it
    works on light and dark backgrounds alike; the track is invisible. */
 * {
@@ -90,12 +90,12 @@ body {
   }
 }
 
-/* The sidebar button that floats on the chart waits until the sidebar has
-   slid shut (200ms, the sidebar's lg:duration-200) before it shows. Until
-   then the sidebar's own button is still on screen, and two would show at
+/* The side panel button that floats on the chart waits until the side panel has
+   slid shut (200ms, the side panel's lg:duration-200) before it shows. Until
+   then the side panel's own button is still on screen, and two would show at
    once. It stays hidden for the length of this animation, then appears.
-   On narrow screens the sidebar doesn't slide, so there's no wait. */
-/* The dim layer behind the sidebar drawer on narrow windows fades in. */
+   On narrow screens the side panel doesn't slide, so there's no wait. */
+/* The dim layer behind the side panel drawer on narrow windows fades in. */
 @keyframes fade-in {
   from {
     opacity: 0;

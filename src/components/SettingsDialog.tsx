@@ -37,7 +37,7 @@ export function SettingsDialog({ children, onClose }: { children: ReactNode; onC
   }, []);
 
   // createPortal draws it straight into <body>, so it sits above everything
-  // on the page, whichever box (the sidebar, the top bar) opened it.
+  // on the page, whichever box (the side panel, the top bar) opened it.
   return createPortal(
     // The dimmed page. A click on it (not on the panel) closes.
     <div

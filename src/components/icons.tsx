@@ -22,13 +22,13 @@ function Icon({ children, flip = false, size = 16 }: { children: ReactNode; flip
   );
 }
 
-// A window with a sidebar on the left (flipped for the right). When the
+// A window with a side panel on the left (flipped for the right). When the
 // button holding it is pointed at, a chevron appears in the main part of
-// the window showing which way the sidebar will move: "<" to slide it shut,
-// ">" to slide it open. (The flip turns these around for a right sidebar.)
+// the window showing which way the side panel will move: "<" to slide it shut,
+// ">" to slide it open. (The flip turns these around for a right side panel.)
 // It only shows on hover because the button's parent has Tailwind's
 // "group" class, and "group-hover:" styles react to the parent's hover.
-export function SidebarIcon({ side, open }: { side: "left" | "right"; open: boolean }) {
+export function SidePanelIcon({ side, open }: { side: "left" | "right"; open: boolean }) {
   return (
     <Icon flip={side === "right"}>
       <rect x="3" y="4" width="18" height="16" rx="3" />

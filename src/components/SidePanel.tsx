@@ -1,13 +1,13 @@
 "use client";
 
-// A sidebar that can be resized by dragging its inner edge and collapsed
-// like the claude.ai sidebar: one toggle button (a "sidebar" icon) that
-// stays in the same spot whether the sidebar is open or not. Open, it sits
-// in the sidebar's top corner; collapsed, the sidebar slides shut and the
+// A side panel that can be resized by dragging its inner edge and collapsed
+// like the claude.ai sidebar: one toggle button (a "side panel" icon) that
+// stays in the same spot whether the side panel is open or not. Open, it sits
+// in the side panel's top corner; collapsed, the side panel slides shut and the
 // same button floats at that spot on the chart (see PanelToggle). The
 // contents stay mounted while collapsed, so what's typed in them survives.
 import { useEffect, useState, type KeyboardEvent, type PointerEvent, type ReactNode } from "react";
-import { SidebarIcon } from "./icons";
+import { SidePanelIcon } from "./icons";
 import { cn } from "./ui";
 import { NARROW_QUERY, PANEL_COLLAPSE_BELOW, PANEL_MAX_WIDTH, PANEL_MIN_WIDTH } from "./usePanels";
 
@@ -20,7 +20,7 @@ const CLICK_SLOP = 3;
 const TOGGLE_INSET = 15;
 // The same height as the chart's button groups (28px buttons + 1px borders).
 export const TOGGLE_SIZE = 30;
-// The toggle's look, shared with other buttons in the sidebar's header
+// The toggle's look, shared with other buttons in the side panel's header
 // (like the dashboard link) so they all match.
 export const HEADER_BUTTON =
   "flex shrink-0 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 focus-visible:outline-2 focus-visible:outline-sky-500 dark:text-zinc-300 dark:hover:bg-zinc-800";
@@ -42,7 +42,7 @@ export function SidePanel({
   title: string;
   // Shown beside the toggle in place of the title (e.g. the app's name).
   heading?: ReactNode;
-  // Pinned to the bottom of the sidebar (e.g. the account), below
+  // Pinned to the bottom of the side panel (e.g. the account), below
   // whatever scrolls.
   footer?: ReactNode;
   side: "left" | "right";
@@ -55,7 +55,7 @@ export function SidePanel({
 }) {
   // While dragging, resizing follows the pointer exactly (no slide).
   const [dragging, setDragging] = useState(false);
-  // Dragged narrower than PANEL_COLLAPSE_BELOW: the sidebar shows itself
+  // Dragged narrower than PANEL_COLLAPSE_BELOW: the side panel shows itself
   // shut, as a preview. Letting go there closes it for real; dragging
   // back out opens it again (like the claude.ai sidebar).
   const [collapsing, setCollapsing] = useState(false);
@@ -65,7 +65,7 @@ export function SidePanel({
   // Shown open: open, and not previewing a collapse.
   const shown = open && !collapsing;
 
-  // On a narrow window, where the sidebar is a drawer over the chart,
+  // On a narrow window, where the side panel is a drawer over the chart,
   // Escape closes it. (A menu inside that handles Escape itself marks the
   // key as handled with preventDefault, and then it's left alone.)
   useEffect(() => {
@@ -78,7 +78,7 @@ export function SidePanel({
   }, [open, onToggle]);
 
   // Dragging the edge: wider toward the chart. Clicking it (pressing and
-  // letting go without moving) hides the sidebar instead.
+  // letting go without moving) hides the side panel instead.
   const startDrag = (event: PointerEvent<HTMLDivElement>) => {
     event.preventDefault();
     const startX = event.clientX;
@@ -115,7 +115,7 @@ export function SidePanel({
       setCollapsing(false);
       const final = widthFor(e.clientX);
       if (!moved) {
-        onToggle(); // a click: hide the sidebar
+        onToggle(); // a click: hide the side panel
       } else if (final < PANEL_COLLAPSE_BELOW) {
         onResize(width, true); // reopen later at the width it had
         onToggle();
@@ -130,7 +130,7 @@ export function SidePanel({
   const onKey = (event: KeyboardEvent<HTMLDivElement>) => {
     const outward = side === "left" ? "ArrowRight" : "ArrowLeft";
     const inward = side === "left" ? "ArrowLeft" : "ArrowRight";
-    // Enter or Space does what a click does: hide the sidebar.
+    // Enter or Space does what a click does: hide the side panel.
     if (event.key === "Enter" || event.key === " ") onToggle();
     else if (event.key === outward) onResize(width + KEY_STEP, true);
     else if (event.key === inward) onResize(width - KEY_STEP, true);
@@ -166,7 +166,7 @@ export function SidePanel({
       >
         <aside
           id={id}
-          aria-label={title}
+          aria-label={`${title} side panel`}
           // Collapsed: out of reach for keyboard and screen readers too.
           inert={!open}
           // The inner width leaves room for the 1px border, so the toggle sits
@@ -190,7 +190,7 @@ export function SidePanel({
               "lg:transition-[width] lg:duration-200 lg:ease-out motion-reduce:transition-none",
             shown && (side === "left" ? "lg:border-r" : "lg:border-l"),
           )}
-          // Only the sidebar's own width slide counts, not transitions of
+          // Only the side panel's own width slide counts, not transitions of
           // things inside it (their "transitionend" events bubble up here).
           onTransitionEnd={(event) => {
             if (event.target === event.currentTarget && event.propertyName === "width") setSnapping(false);
@@ -238,14 +238,14 @@ export function SidePanel({
 
         {open && (
           // The drag handle on the edge facing the chart (wide screens only);
-          // clicking it hides the sidebar.
+          // clicking it hides the side panel.
           // It's invisible and takes no space: an 8px strip centered on the
-          // sidebar's border line, so pointing at the line shows the resize
+          // side panel's border line, so pointing at the line shows the resize
           // cursor without a visible bar beside it.
           <div
             role="separator"
             aria-orientation="vertical"
-            aria-label={`Resize ${title.toLowerCase()}; press Enter to hide it`}
+            aria-label={`Resize ${title.toLowerCase()} side panel; press Enter to hide it`}
             // Its label follows the pointer, just to the right of it: the
             // strip runs the full height of the window, so a label below it
             // would be off screen.
@@ -269,7 +269,7 @@ export function SidePanel({
   );
 }
 
-// The sidebar toggle. The same button is drawn in the sidebar's corner
+// The side panel toggle. The same button is drawn in the side panel's corner
 // when it's open and floating on the chart (at the same spot) when it's
 // collapsed.
 export function PanelToggle({
@@ -286,7 +286,7 @@ export function PanelToggle({
   badge?: ReactNode;
   onToggle: () => void;
 }) {
-  const label = open ? "Hide sidebar" : "Show sidebar";
+  const label = open ? "Hide side panel" : "Show side panel";
   return (
     <button
       type="button"
@@ -300,11 +300,11 @@ export function PanelToggle({
         "group relative",
         HEADER_BUTTON,
         // Floating on the chart it needs a background to stand out, and
-        // waits for the sidebar to finish sliding shut (see globals.css).
+        // waits for the side panel to finish sliding shut (see globals.css).
         !open && "after-panel-slide border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
       )}
     >
-      <SidebarIcon side={side} open={open} />
+      <SidePanelIcon side={side} open={open} />
       {!open && badge && <span className="absolute -top-2 -right-2">{badge}</span>}
     </button>
   );

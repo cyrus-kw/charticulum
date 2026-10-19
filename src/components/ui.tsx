@@ -148,6 +148,19 @@ export function Badge({
   );
 }
 
+// How one tab looks: a sky underline when chosen, grey text otherwise.
+// Shared by Tabs below and the site's top-bar links (Dashboard, Schools),
+// so every tab in the app looks the same. -mb-px: the chosen tab's
+// underline sits on the row's border line instead of just above it.
+export function tabClass(selected: boolean) {
+  return cn(
+    "-mb-px border-b-2 px-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sky-500",
+    selected
+      ? "border-sky-600 text-zinc-900 dark:border-sky-400 dark:text-zinc-100"
+      : "border-transparent text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200",
+  );
+}
+
 // A row of tabs with the content of the chosen one below. Every tab's
 // content stays mounted (just hidden), so what's typed in one (like a
 // search) is still there after switching away and back.
@@ -209,13 +222,7 @@ export function Tabs<T extends string>({
               // Only the chosen tab is a Tab stop; arrows reach the others.
               tabIndex={selected ? 0 : -1}
               onClick={() => onChange(tab.value)}
-              className={cn(
-                // -mb-px: the chosen tab's underline sits on the row's border.
-                "-mb-px flex-1 border-b-2 px-2 py-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sky-500",
-                selected
-                  ? "border-sky-600 text-zinc-900 dark:border-sky-400 dark:text-zinc-100"
-                  : "border-transparent text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200",
-              )}
+              className={cn(tabClass(selected), "flex-1 py-2")}
             >
               {tab.label}
             </button>

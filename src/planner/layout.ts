@@ -16,6 +16,7 @@ import {
   type Grade,
   type Season,
 } from "../engine/index";
+import { issueInTerm } from "./issues";
 
 export const COLUMN_WIDTH = 212;
 export const NODE_WIDTH = 120;
@@ -117,6 +118,9 @@ export type TermNodeData = {
   // The term's season, if it has one: its header is tinted in the
   // season's color, so each term reads as fall, spring, summer, or winter.
   season?: Season;
+  // How many problems the term and the courses in it have (see
+  // issueInTerm), shown as a red count beside its title.
+  issueCount: number;
   // Every other stripe is shaded so terms are easy to tell apart.
   shaded: boolean;
   height: number;
@@ -203,6 +207,7 @@ export function chartLayout(
       maxCredits,
       external: term.index === EXTERNAL_TERM,
       ...(term.season && { season: term.season }),
+      issueCount: issues.filter((issue) => issueInTerm(issue, term)).length,
       shaded: column % 2 === 1,
       height: stripeHeight,
     },

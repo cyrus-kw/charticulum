@@ -54,7 +54,7 @@ import {
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
 import { FitIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
-import { ADD_MENU_WIDTH, AddTermMenu, canAddInGap, TermMenu, type TermChange, type TermGap } from "./TermMenu";
+import { ADD_MENU_WIDTH, AddTermMenu, canAddInGap, CourseMenu, TermMenu, type TermChange, type TermGap } from "./TermMenu";
 import { useTheme } from "./theme";
 import { cn, SEASON_TINT } from "./ui";
 
@@ -240,6 +240,8 @@ const TermHeaderContext = createContext<{
   hoveredPlus: string | null;
   setHoveredPlus: (key: string | null) => void;
   onAdd?: (gap: TermGap, anchor: DOMRect) => void;
+  // The selected term, if any: its title gets the selected card's ring.
+  selectedTerm: number | null;
 } | null>(null);
 
 // Names a gap, so the + the pointer is on can be told apart from the rest.
@@ -319,15 +321,31 @@ function TermAddButtons({ termIndex }: { termIndex: number }) {
 // so it can fill the canvas from top to bottom.
 function TermStripe({ data, width }: NodeProps<TermNode>) {
   const over = !data.external && data.credits > data.maxCredits;
+  const selected = useContext(TermHeaderContext)?.selectedTerm === data.index;
   return (
     <div style={{ width: width ?? COLUMN_WIDTH, height: data.height }}>
       {/* The title and credits. The season color behind them is drawn by
           TermBands, with the stripes, so its edges line up with theirs
           exactly. The + buttons sit on this row's edges; each header is
           drawn after the one to its left, so a + shows on top of both. */}
-      <div className="relative px-2 pt-3 text-center" style={{ height: TITLE_HEIGHT }}>
+      <div
+        className={cn("relative px-2 pt-3 text-center", selected && "inset-ring-2 inset-ring-sky-500")}
+        style={{ height: TITLE_HEIGHT }}
+      >
         {!data.external && <TermAddButtons termIndex={data.index} />}
-        <div className="truncate text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</div>
+        {/* The title, then a red count of the problems in this term (with
+            it or its courses), like the count on a course card. */}
+        <div className="flex items-center justify-center gap-1">
+          <span className="truncate text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</span>
+          {data.issueCount > 0 && (
+            <span
+              aria-label={`${data.issueCount} issue${data.issueCount > 1 ? "s" : ""}`}
+              className="flex size-4 shrink-0 items-center justify-center rounded-full bg-rose-600 text-[10px] font-bold text-white"
+            >
+              {data.issueCount}
+            </span>
+          )}
+        </div>
         <div className={cn("truncate text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-600 dark:text-zinc-400")}>
           {data.credits}
           {!data.external && ` / ${data.maxCredits}`} credits
@@ -561,6 +579,13 @@ export interface ChartFlowProps {
   // `position`: where in the term's top-to-bottom order it was dropped.
   onMove: (objectId: string, termIndex: number, position: number) => void;
   onSelect: (objectId: string | null) => void;
+  // The selected term, and choosing one by clicking its title (null:
+  // none). Without onSelectTerm, term titles can't be selected.
+  selectedTerm?: number | null;
+  onSelectTerm?: (termIndex: number | null) => void;
+  // Take a course off the plan (from the menu a card opens when
+  // right-clicked). Without it, right-clicking a card does nothing special.
+  onRemove?: (objectId: string) => void;
   // Add or remove a term (from the menu a term's column opens when
   // right-clicked).
   onTermChange?: (change: TermChange) => void;
@@ -570,7 +595,7 @@ export interface ChartFlowProps {
   // redo brings it back), so its exact arrangement can be restored.
   planVersion?: object;
   // Extra controls floating on the chart's top corners (e.g. the icons of
-  // collapsed sidebars).
+  // collapsed side panels).
   topLeft?: ReactNode;
   topRight?: ReactNode;
   // Shown just right of undo/redo (the plan's name).
@@ -595,6 +620,9 @@ export function ChartFlow({
   selectedId,
   onMove,
   onSelect,
+  selectedTerm = null,
+  onSelectTerm,
+  onRemove,
   onTermChange,
   layoutVersion = 0,
   planVersion = chart,
@@ -746,6 +774,8 @@ export function ChartFlow({
   const contentHeight = termData[0]?.height ?? 0;
   const flow = useRef<ReactFlowInstance<PlannerNode, PlannerEdge> | null>(null);
 
+  // The menu opened by right-clicking a course card, and where.
+  const [courseMenu, setCourseMenu] = useState<{ objectId: string; x: number; y: number } | null>(null);
   // The menu opened by right-clicking a term's column, and where.
   const [termMenu, setTermMenu] = useState<{ termIndex: number; x: number; y: number } | null>(null);
   // The menu opened by a + between two terms, and where (under the +).
@@ -759,10 +789,11 @@ export function ChartFlow({
       hoveredHeader,
       hoveredPlus,
       setHoveredPlus,
+      selectedTerm,
       onAdd: onTermChange
         ? (gap: TermGap, anchor: DOMRect) => {
             // Centered under the +, but kept over the chart (not the
-            // sidebar) when the + is at the chart's left or right end.
+            // side panel) when the + is at the chart's left or right end.
             const bounds = wrapper.current?.getBoundingClientRect();
             const half = ADD_MENU_WIDTH / 2 + 8;
             let x = anchor.left + anchor.width / 2;
@@ -771,7 +802,7 @@ export function ChartFlow({
           }
         : undefined,
     }),
-    [chart, hoveredHeader, hoveredPlus, onTermChange],
+    [chart, hoveredHeader, hoveredPlus, selectedTerm, onTermChange],
   );
   // The term whose column is at this point on the screen. The stripes
   // ignore the pointer (so the chart can be panned by dragging them), so
@@ -875,7 +906,14 @@ export function ChartFlow({
     <TermHeaderContext.Provider value={termHeader}>
       <div
         ref={wrapper}
-        className={cn("relative w-full", !bare && "h-full")}
+        className={cn(
+          "relative w-full",
+          !bare && "h-full",
+          // Over a term's title, the pointer shows it can be clicked (the
+          // titles let the pointer through to the chart's pane, so the
+          // pane's own cursor is the one to change).
+          onSelectTerm && hoveredHeader !== null && "[&_.react-flow__pane]:cursor-pointer",
+        )}
         style={bare ? { height: contentHeight } : undefined}
         onPointerMove={(e) => setHoveredHeader(drag.current ? null : termAtPointer(e.clientX, e.clientY, true))}
         onPointerLeave={() => setHoveredHeader(null)}
@@ -1054,7 +1092,19 @@ export function ChartFlow({
           onNodeMouseLeave={() => {
             if (!drag.current) setHoveredId(null);
           }}
-          onPaneClick={() => onSelect(null)}
+          // A click on a term's title selects that term (again: unselects
+          // it); anywhere else on the chart unselects everything.
+          onPaneClick={(event) => {
+            const termIndex = onSelectTerm ? termAtPointer(event.clientX, event.clientY, true) : null;
+            if (onSelectTerm && termIndex !== null) onSelectTerm(termIndex === selectedTerm ? null : termIndex);
+            else onSelect(null);
+          }}
+          // Right-click a card for its menu (remove it from the plan).
+          onNodeContextMenu={(event, node) => {
+            if (node.type !== "course" || !onRemove) return;
+            event.preventDefault();
+            setCourseMenu({ objectId: node.id, x: event.clientX, y: event.clientY });
+          }}
           nodesConnectable={false}
           edgesFocusable={false}
           colorMode={colorScheme}
@@ -1147,6 +1197,15 @@ export function ChartFlow({
           <TermBands terms={termData} columnWidth={geometry.columnWidth} />
         </ReactFlow>
       </div>
+      {courseMenu && onRemove && (
+        <CourseMenu
+          {...courseMenu}
+          chart={chart}
+          code={courseCode(courseMenu.objectId)}
+          onRemove={onRemove}
+          onClose={() => setCourseMenu(null)}
+        />
+      )}
       {termMenu && onTermChange && (
         <TermMenu {...termMenu} chart={chart} onChange={onTermChange} onClose={() => setTermMenu(null)} />
       )}

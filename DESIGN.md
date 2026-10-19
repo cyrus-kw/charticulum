@@ -40,12 +40,12 @@ Dark mode uses Tailwind's zinc greys: page `zinc-950` (`#09090b`), boxes
 Color always means something; never use it just for decoration.
 
 - **Sky blue** is the accent: primary buttons (`sky-600`, hover `sky-700`),
-  the selected tab's underline, the selected card's ring (`sky-500`), focus
+  the selected tab's underline, the selected card's (or term title's) ring (`sky-500`), focus
   outlines (`sky-500`), the account circle, and "info" tags.
 - **Rose (red)** means a problem or a destructive action: broken requisite
   arrows (`#e11d48`), the issue count on a card, credits over a limit,
   Delete/Remove buttons and the trash icon, "bad" tags.
-- **Emerald (green)** means good: "good" tags (e.g. Issues at 0).
+- **Emerald (green)** means good: "good" tags (e.g. a GPA above the minimum).
 - **Seasons** each have a tint, shared by term titles, single-season course
   cards, and season tags (`SEASON_TINT` in `src/components/ui.tsx`):
 
@@ -76,7 +76,7 @@ dark page never flashes white.
   tooltips; `rounded` (smaller) on tags; `rounded-full` on the account
   circle and the card issue badge.
 - **Shadows**: `shadow-sm` on things resting on the chart (cards, button
-  groups, chart boxes, the floating sidebar button); `shadow-md` on things
+  groups, chart boxes, the floating side panel button); `shadow-md` on things
   that pop up (account menu, tooltips); `shadow-lg` on right-click menus.
 - **Borders** are 1px; course cards have a 2px border (in the course's line
   color when it has dependents). External (Pre-Credit) cards have a dashed
@@ -96,21 +96,21 @@ dark page never flashes white.
 
 ## Sizes and alignment
 
-- **The 30px row**: chart button groups, header buttons (sidebar toggle,
+- **The 30px row**: chart button groups, header buttons (side panel toggle,
   theme, dashboard link, footer icons), and the chart name box are all
   30px tall (`TOGGLE_SIZE`). Things meant to line up share this.
-- **The 61px band**: the sidebar's header, the sidebar's account row, and
+- **The 61px band**: the side panel's header, the side panel's account row, and
   the site footer are all `PANEL_HEADER_HEIGHT + 1` tall (15px inset, 30px
   button, 15px inset, plus a 1px border). The site's top bar is 56px
   (`h-14`).
 - **15px inset** from the chart's edges for everything floating on it
-  (matches React Flow's panel margin), and the sidebar button sits at the
-  same spot whether the sidebar is open or shut.
+  (matches React Flow's panel margin), and the side panel button sits at the
+  same spot whether the side panel is open or shut.
 - **8px gap** between the boxes on the chart's top right.
-- Sidebar width: 250–560px; dragging it under 160px closes it. Its edge
+- Side panel width: 250–560px; dragging it under 160px closes it. Its edge
   has no visible handle, just the resize cursor and a "Drag to resize"
-  label that follows the pointer; clicking the edge hides the sidebar.
-- Under 1024px (`max-lg:`) the sidebar is a drawer over the chart instead:
+  label that follows the pointer; clicking the edge hides the side panel.
+- Under 1024px (`max-lg:`) the side panel is a drawer over the chart instead:
   full height, `shadow-lg` while open, always leaving 3rem of chart
   showing, over a `black/30` dim layer that fades in. It slides in 200ms.
 - Site pages are centered at `max-w-5xl` with a 16px side gutter
@@ -129,7 +129,9 @@ Reuse these instead of restyling by hand; they live in
 - **`Badge`**: the small tag. Tones: neutral, bad, good, info, or a season.
   `square` for a single digit or icon.
 - **`Panel`**: a section with an uppercase heading and a divider below.
-- **`Tabs`**: tabs with a sky underline on the chosen one.
+- **`Tabs`**: tabs with a sky underline on the chosen one. The top bar's
+  Dashboard / Schools links look the same (`tabClass`), with the underline
+  on the bar's bottom border.
 - **`HEADER_BUTTON`** (`SidePanel.tsx`): the look of square icon buttons:
   grey icon, light grey background on hover.
 - **`ICON_BUTTON` / `DANGER_ICON_BUTTON`**: 28px icon-only buttons inside
@@ -162,7 +164,7 @@ as outlines too, so they match.
 The browser-tab icon is `src/app/icon.svg`: two white course cards joined
 by a requisite arrow on a `sky-600` rounded square.
 
-Controls are icon-only where the icon is clear (undo/redo, zoom, sidebar,
+Controls are icon-only where the icon is clear (undo/redo, zoom, side panel,
 theme, trash, footer links). Every icon-only control has an `aria-label`
 and a tooltip.
 
@@ -175,7 +177,7 @@ and a tooltip.
   element or above it near the window's bottom, and slide to stay on
   screen. A `\n` starts a new line.
 - `data-tooltip-at="pointer"` puts the label just right of the pointer
-  and makes it follow along, for tall things like the sidebar's edge.
+  and makes it follow along, for tall things like the side panel's edge.
 - They hide on click, drag, scroll, or Escape, and don't show on touch.
   Nothing shows while a button is held (e.g. mid-drag), and a pressed
   element's label waits until the pointer has moved off it.
@@ -197,7 +199,7 @@ and a tooltip.
 
 ## Motion
 
-Short and subtle: about 100–220ms (fades, the sidebar sliding shut,
+Short and subtle: about 100–220ms (fades, the side panel sliding shut,
 arrowheads gliding around a card). Everything that moves respects
 `prefers-reduced-motion`. Things that would be in the way while moving
 (like tooltips) simply hide.
@@ -214,10 +216,20 @@ arrowheads gliding around a card). Everything that moves respects
   prerequisites and dashed for courses taken together; red and thicker
   when out of order.
 - When a course is traced, everything unrelated fades to 25%.
-- Floating on the chart: undo/redo and the plan's name top left; Selected,
-  Issues, and Requirements top right as separate boxes of the same width
+- A selected term's title box gets the same `sky-500` ring as a selected
+  card. Right-clicking a card opens a one-item menu (Remove, in rose),
+  styled like the term column's menu.
+- Problems have no box of their own: an Issues column (256px, a `Panel`
+  titled "Issues" with a square rose count tag; rose messages) is joined
+  to the right of Selected or Requirements by a `zinc-200` line while
+  there are any. On a chart under 1280px wide it moves on top of the box's
+  details (line below it), and the whole box scrolls. Term titles show a
+  rose count circle right after the name, the same as a card's corner
+  badge.
+- Floating on the chart: undo/redo and the plan's name top left; Selected
+  and Requirements top right as separate boxes of the same width
   (256px). They sit in one row down to a 1000px-wide chart (a 1440px
-  laptop with the sidebar open); the plan's name box gives up width
+  laptop with the side panel open); the plan's name box gives up width
   first (256px down to 128px).
 - A card never cuts its course code short: if the code and credits don't
   both fit, the credits hide. Course codes are written with a space
@@ -225,8 +237,9 @@ arrowheads gliding around a card). Everything that moves respects
 
 ## Site pages
 
-The dashboard and Schools pages share a top bar (wordmark,
-links, theme button, account circle) and a footer (© 2026 Charticulum,
+The dashboard and Schools pages share a top bar (wordmark on
+the left, links centered, then the account circle and theme button on the
+right) and a footer (© 2026 Charticulum,
 with email and GitHub icons at the right end). The signed-out home page
 has the same bar (just the wordmark and theme button) and footer; its
 body is two columns: the slogan, "See how it all fits together.", and sign-in on the
@@ -238,5 +251,5 @@ the page) on three terms of the sample school, moved by the planner's
 own reducer and checked by the engine. Below it, a line gives the first
 issue in rose (or a hint), with Reset beside it. It moves below the
 words under 1024px and is left out on phones. The planner has neither
-and fills the window; its sidebar carries the wordmark at the top and
+and fills the window; its side panel carries the wordmark at the top and
 the account at the bottom instead.

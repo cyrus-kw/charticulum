@@ -10,12 +10,12 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 //
 // and this component, mounted once in the root layout, does the rest.
 // Add data-tooltip-at="pointer" to put the label just right of the pointer
-// and have it follow along, for tall things like the sidebar's edge, where
+// and have it follow along, for tall things like the side panel's edge, where
 // "below" would be off screen.
 //
 // One
 // shared label (rather than one per button) is drawn on top of the whole
-// page, so it's never cut off by a scrolling sidebar or the chart, and it
+// page, so it's never cut off by a scrolling side panel or the chart, and it
 // can move to stay inside the window.
 
 const SHOW_DELAY = 300; // ms of pointing before it appears, like the browser's

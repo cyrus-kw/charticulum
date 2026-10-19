@@ -8,7 +8,7 @@ import { Settings } from "./site/Settings";
 import { cn, DANGER_ICON_BUTTON, ICON_BUTTON } from "./ui";
 
 // "Ana Lucía Pérez" → "Ana P": the first name and the last name's
-// initial, to keep the sidebar tidy. A single name stays as it is.
+// initial, to keep the side panel tidy. A single name stays as it is.
 function shortName(name: string): string {
   // split(/\s+/) breaks the name at any run of spaces.
   const parts = name.trim().split(/\s+/);
@@ -25,7 +25,7 @@ export type MenuUser = { name: string; email: string; role?: "user" | "admin" };
 // - "circle": just the circle with your initial, in the site's top bar;
 //   the menu drops down below it.
 // - "row": the circle, your name, and a chevron, at the bottom of the
-//   planner's sidebar; the menu opens upward, since there's no room below.
+//   planner's side panel; the menu opens upward, since there's no room below.
 // <details> is a built-in show/hide element: clicking its <summary> opens
 // and closes it.
 export function UserMenu({

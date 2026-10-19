@@ -10,8 +10,10 @@ import { ChartFlow } from "./ChartFlow";
 import { OpenIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
+import { IssuesPanel, listPlanIssues, type ListedIssue } from "./panels/IssuesPanel";
+import type { PanelProps } from "./panels/types";
+import { selectionIssues } from "../planner/issues";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
-import { IssuesPanel } from "./panels/IssuesPanel";
 import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
@@ -36,7 +38,7 @@ export function Planner({
 }: {
   school: SchoolData;
   saved: SavedChart;
-  // Who's signed in, shown at the bottom of the sidebar.
+  // Who's signed in, shown at the bottom of the side panel.
   user: MenuUser;
 }) {
   // useReducer holds the planner state; dispatch(action) updates it.
@@ -112,7 +114,7 @@ export function Planner({
   return (
     <div className="flex h-dvh flex-col bg-page text-ink dark:bg-zinc-950 dark:text-zinc-100">
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
-        {/* Sidebars resize by dragging their inner edge, which also widens
+        {/* Side panels resize by dragging their inner edge, which also widens
             or compresses the chart, and collapse to an icon. */}
         <SidePanel
           key={`left-${schoolKey}`}
@@ -124,8 +126,8 @@ export function Planner({
           onToggle={() => panels.toggle("left")}
           onResize={(width, done) => panels.setWidth(width, done)}
           heading={
-            // flex-1 fills the header, so the theme button lands at the far
-            // right, framing the wordmark with the sidebar button.
+            // flex-1 fills the header, so the dashboard button lands at the
+            // far right, framing the wordmark with the side panel button.
             <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
               {/* The wordmark leads to the dashboard too, like on the
                   site's other pages. */}
@@ -137,12 +139,6 @@ export function Planner({
                 <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
                 <p className="text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</p>
               </Link>
-              <ThemeToggle />
-            </div>
-          }
-          footer={
-            <>
-              <UserMenu user={user} look="row" confirmLeave={confirmLeave} />
               {/* Link (not <a>) moves to the page without reloading the app. */}
               <Link
                 href="/dashboard"
@@ -154,6 +150,12 @@ export function Planner({
               >
                 <OpenIcon />
               </Link>
+            </div>
+          }
+          footer={
+            <>
+              <UserMenu user={user} look="row" confirmLeave={confirmLeave} />
+              <ThemeToggle />
             </>
           }
         >
@@ -207,6 +209,9 @@ export function Planner({
             onUndo={() => dispatch({ type: "undo" })}
             onRedo={() => dispatch({ type: "redo" })}
             onSelect={(objectId) => dispatch({ type: "select", objectId })}
+            selectedTerm={state.selectedTerm}
+            onSelectTerm={(termIndex) => dispatch({ type: "selectTerm", termIndex })}
+            onRemove={(objectId) => dispatch({ type: "remove", objectId })}
             onTermChange={(change) => {
               // Showing or hiding Pre-Credit only changes the picture, so
               // it's a panel setting rather than a change to the plan.
@@ -214,8 +219,8 @@ export function Planner({
                 if (panels.open.preCredit !== (change.type === "showPreCredit")) panels.toggle("preCredit");
               } else dispatch(change);
             }}
-            // A collapsed sidebar's toggle floats on the chart, at the same
-            // spot it had in the sidebar's corner.
+            // A collapsed side panel's toggle floats on the chart, at the same
+            // spot it had in the side panel's corner.
             topLeft={
               !panels.open.left && (
                 <PanelToggle id="tools-panel" side="left" open={false} onToggle={() => panels.toggle("left")} />
@@ -233,32 +238,69 @@ export function Planner({
                 onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
               />
             }
-            // On the chart's top right, left to right: the selected course,
-            // the plan's issues, and the requirements. Separate boxes, the
-            // same width, so
-            // they're evenly spaced and shrink alike.
+            // On the chart's top right, left to right: the selected course
+            // or term, and the requirements. Separate boxes, the same width,
+            // so they're evenly spaced and shrink alike. Each box widens
+            // with an Issues column on its right while it has problems: the
+            // selected course's or term's, and the plan's.
             topRight={
               <>
-                <div className={cn(chartBox, "w-64")}>
-                  <DetailsPanel key={state.selectedId ?? "none"} {...panelProps} />
+                <div className={cn(chartBox, BOX_WITH_ISSUES)}>
+                  <div className="w-64 min-w-0">
+                    <DetailsPanel key={state.selectedId ?? `term-${state.selectedTerm}`} {...panelProps} />
+                  </div>
+                  <IssuesColumn
+                    issues={selectionIssues(view.chart, view.check.issues, state.selectedId, state.selectedTerm).map(
+                      (issue) => ({ issue }),
+                    )}
+                    {...panelProps}
+                  />
                 </div>
-                {/* Columns all the way down (the box, then the panel inside
-                    it), so when the box is capped in height, the issue list
-                    shrinks and scrolls while the title and count stay. */}
-                <div className={cn(chartBox, "flex w-64 flex-col *:flex *:min-h-0 *:flex-col")}>
-                  <IssuesPanel {...panelProps} />
-                </div>
-                {/* Credit meters, GPA, and exceptions, right beside the
-                    issues they explain. Columns all the way down, like the
-                    Issues box, so GPA stays put and the meters scroll. */}
-                <div className={cn(chartBox, "flex w-64 flex-col *:flex *:min-h-0 *:flex-col")}>
-                  <SummaryPanel {...panelProps} />
+                {/* Credit meters, GPA, and exceptions. Columns all the way
+                    down (the column, then the panel inside it), so when the
+                    box is capped in height, GPA stays put and the meters
+                    scroll. */}
+                <div className={cn(chartBox, BOX_WITH_ISSUES)}>
+                  <div className={cn(SCROLLING_COLUMN, "w-64")}>
+                    <SummaryPanel {...panelProps} />
+                  </div>
+                  <IssuesColumn issues={listPlanIssues(panelProps)} {...panelProps} />
                 </div>
               </>
             }
           />
         </main>
       </div>
+    </div>
+  );
+}
+
+// A box on the chart with an Issues column on its right. Two boxes with
+// their Issues columns (4 × 256px), beside undo/redo and the plan's name,
+// need about 1280px of chart; on a narrower chart (the width is measured
+// by the "@container" in ChartFlow.tsx) the issues go on top of the box's
+// details instead (a column, with the issues moved first by order-first;
+// a reversed column would start scrolled to its bottom), so the box keeps
+// its usual width and its problems are the first thing in it.
+const BOX_WITH_ISSUES = "flex @max-[1280px]:flex-col";
+// A column whose panel's list shrinks and scrolls when the box is capped
+// in height, while the panel's title row stays. Where the issues sit on
+// top (see BOX_WITH_ISSUES), the parts don't shrink (shrink-0): the whole
+// box scrolls instead, so neither part is squeezed out of sight.
+const SCROLLING_COLUMN = "flex min-h-0 min-w-0 flex-col *:flex *:min-h-0 *:flex-col @max-[1280px]:shrink-0";
+
+// The Issues column on a box's right, joined to it by a line (below it
+// instead where the issues sit on top). Left out when there are no issues.
+function IssuesColumn({ issues, ...props }: PanelProps & { issues: ListedIssue[] }) {
+  if (issues.length === 0) return null;
+  return (
+    <div
+      className={cn(
+        SCROLLING_COLUMN,
+        "w-64 border-l border-zinc-200 dark:border-zinc-800 @max-[1280px]:order-first @max-[1280px]:border-b @max-[1280px]:border-l-0",
+      )}
+    >
+      <IssuesPanel issues={issues} {...props} />
     </div>
   );
 }

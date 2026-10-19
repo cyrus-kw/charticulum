@@ -7,6 +7,8 @@
 //   wouldn't fit there (see termBeside) is greyed out, and pointing at it
 //   says why.
 // - TermMenu opens when a term's column is right-clicked: remove it.
+// - CourseMenu opens when a course card is right-clicked: remove it from
+//   the plan.
 import { useEffect, type ReactNode } from "react";
 import { EXTERNAL_TERM, type Chart, type Season } from "../engine/index";
 import { canRemoveTerm, termBeside, type TermSide } from "../planner/state";
@@ -45,6 +47,10 @@ const offersPreCredit = (chart: Chart, gap: TermGap) =>
 export function canAddInGap(chart: Chart, gap: TermGap): boolean {
   return offersPreCredit(chart, gap) || SEASONS.some((season) => "term" in seasonInGap(chart, gap, season).beside);
 }
+
+// A red menu item, for removing something. Greyed out when it can't be.
+const DANGER_MENU_ITEM =
+  "w-full px-3 py-1.5 text-left text-rose-600 hover:bg-rose-50 disabled:cursor-not-allowed disabled:text-zinc-400 disabled:hover:bg-transparent dark:text-rose-400 dark:hover:bg-rose-950 dark:disabled:text-zinc-600";
 
 // A box floating at (x, y) in window pixels, kept on screen. Clicking
 // anywhere outside it, or pressing Escape, closes it.
@@ -211,9 +217,51 @@ export function TermMenu({
           onChange(preCredit ? { type: "hidePreCredit" } : { type: "removeTerm", termIndex });
           onClose();
         }}
-        className="w-full px-3 py-1.5 text-left text-rose-600 hover:bg-rose-50 disabled:cursor-not-allowed disabled:text-zinc-400 disabled:hover:bg-transparent dark:text-rose-400 dark:hover:bg-rose-950 dark:disabled:text-zinc-600"
+        className={DANGER_MENU_ITEM}
       >
         Remove {term.label}
+      </button>
+    </Popover>
+  );
+}
+
+// The menu a right-clicked course card opens.
+export function CourseMenu({
+  chart,
+  objectId,
+  code,
+  x,
+  y,
+  onRemove,
+  onClose,
+}: {
+  chart: Chart;
+  objectId: string;
+  // How the course is written on screen ("CS 101").
+  code: string;
+  // Where it was right-clicked (window pixels).
+  x: number;
+  y: number;
+  onRemove: (objectId: string) => void;
+  onClose: () => void;
+}) {
+  // Pre-Credit comes from outside work (AP exams, transfer courses), so it
+  // is removed under Pre-Credit in the side panel, not here.
+  const external = chart.terms.find((t) => t.objectIds.includes(objectId))?.index === EXTERNAL_TERM;
+  return (
+    <Popover x={x} y={y} width={200} height={50} label={`${code} options`} onClose={onClose}>
+      <button
+        type="button"
+        role="menuitem"
+        disabled={external}
+        data-tooltip={external ? "Pre-Credit is removed under Pre-Credit, in the side panel." : undefined}
+        onClick={() => {
+          onRemove(objectId);
+          onClose();
+        }}
+        className={DANGER_MENU_ITEM}
+      >
+        Remove {code} from plan
       </button>
     </Popover>
   );

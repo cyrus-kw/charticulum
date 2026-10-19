@@ -1,6 +1,6 @@
 "use client";
 
-// Whether the Tools sidebar is open, how wide it is, and which of its tabs
+// Whether the Tools side panel is open, how wide it is, and which of its tabs
 // is showing, and whether the Pre-Credit column is shown. Remembered in this browser as a convenience;
 // if storage is unavailable, everything starts shown at default widths.
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -13,10 +13,10 @@ const KEY = "charticulum.panels.v1";
 // run wider on other systems.
 export const PANEL_MIN_WIDTH = 250;
 export const PANEL_MAX_WIDTH = 560;
-// Dragged narrower than this, a sidebar collapses to its icon.
+// Dragged narrower than this, a side panel collapses to its icon.
 export const PANEL_COLLAPSE_BELOW = 160;
 
-// The Tools sidebar's tabs: the plan (programs, requirements, ...) or the
+// The Tools side panel's tabs: the plan (programs, requirements, ...) or the
 // school's courses and data.
 export type ToolsTab = "plan" | "catalog";
 
@@ -30,7 +30,7 @@ export interface PanelsOpen {
 
 const DEFAULTS: PanelsOpen = { left: true, preCredit: true, leftWidth: 320, tab: "plan" };
 
-// Narrow windows (under Tailwind's "lg", 1024px) show the sidebar as a
+// Narrow windows (under Tailwind's "lg", 1024px) show the side panel as a
 // drawer over the chart instead of beside it. The same media query as
 // Tailwind's "max-lg:" classes.
 export const NARROW_QUERY = "(width < 64rem)";
@@ -51,9 +51,9 @@ export function usePanels() {
   // Defaults on the first render, on server and browser alike, so the page
   // loads without a mismatch; the saved choice is applied right after.
   const [open, setOpen] = useState<PanelsOpen>(DEFAULTS);
-  // Whether the sidebar is open on wide windows. This is what gets saved:
+  // Whether the side panel is open on wide windows. This is what gets saved:
   // opening or closing the drawer on a narrow window is just for now, and
-  // mustn't change how the sidebar shows next time on a wide one.
+  // mustn't change how the side panel shows next time on a wide one.
   const wideLeft = useRef(DEFAULTS.left);
   const persist = useCallback((panels: PanelsOpen) => {
     if (!isNarrow()) wideLeft.current = panels.left;
@@ -91,7 +91,7 @@ export function usePanels() {
     [persist],
   );
 
-  // Set the sidebar's width. `done` saves it (at the end of a drag); while
+  // Set the side panel's width. `done` saves it (at the end of a drag); while
   // dragging it just updates.
   const setWidth = useCallback(
     (width: number, done: boolean) => {
