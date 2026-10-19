@@ -238,7 +238,7 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
 }
 
 // What a term header needs from the chart for its + buttons: the chart (to
-// tell whether a semester fits), the header the pointer is over (a + only
+// tell whether a term fits), the header the pointer is over (a + only
 // shows beside it), and how to open the add menu. React Flow draws the header itself (from nodeTypes below), so these
 // can't be passed in as props; a context hands them down instead.
 const TermHeaderContext = createContext<{
@@ -255,7 +255,7 @@ const TermHeaderContext = createContext<{
 // Names a gap, so the + the pointer is on can be told apart from the rest.
 const gapKey = (gap: TermGap) => `${gap.after}:${gap.before}`;
 
-// A + on a term header's edge: opens the menu to add a semester in that
+// A + on a term header's edge: opens the menu to add a term in that
 // gap (between two terms, or at either end of the chart). It only shows
 // while the pointer is over a header next to it (and, while the pointer
 // is on a +, only that one shows), and never where nothing would fit.
@@ -271,9 +271,9 @@ function AddButton({ gap, neighbors, place }: { gap: TermGap; neighbors: number[
   const label = (index: number | null) => chart.terms.find((t) => t.index === index)?.label;
   const name =
     gap.after !== null && gap.before !== null
-      ? `Add a semester between ${label(gap.after)} and ${label(gap.before)}`
+      ? `Add a term between ${label(gap.after)} and ${label(gap.before)}`
       : gap.after !== null
-        ? `Add a semester after ${label(gap.after)}`
+        ? `Add a term after ${label(gap.after)}`
         : `Add before ${label(gap.before)}`;
   return (
     // The stripe ignores the pointer (see globals.css), so the button turns
@@ -309,7 +309,7 @@ function TermAddButtons({ termIndex }: { termIndex: number }) {
   const { terms } = context.chart;
   const at = terms.findIndex((t) => t.index === termIndex);
   const previous = terms[at - 1];
-  // Nothing goes between Pre-Credit and the first term but semesters, so
+  // Only a season's term can go between Pre-Credit and the first term, so
   // that gap counts as the left end (see TermGap).
   const after = previous && previous.index !== EXTERNAL_TERM ? previous.index : null;
   const last = at === terms.length - 1;

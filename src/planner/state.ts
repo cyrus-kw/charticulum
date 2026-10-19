@@ -142,7 +142,7 @@ export function canRemoveTerm(chart: Chart, termIndex: number): boolean {
 
 // The chart without one term. Its courses come off the chart with it, and
 // the terms after it are renumbered. Each term keeps its season and year,
-// so removing Spring 2027 leaves a plan that skips that semester.
+// so removing Spring 2027 leaves a plan that skips that term.
 export function removeTerm(chart: Chart, termIndex: number): Chart {
   if (!canRemoveTerm(chart, termIndex)) return chart;
   return { ...chart, terms: renumber(chart.terms.filter((t) => t.index !== termIndex)) };

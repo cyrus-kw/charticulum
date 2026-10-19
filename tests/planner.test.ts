@@ -108,7 +108,7 @@ describe("plannerReducer", () => {
       [3, "Spring 2028"],
       [4, "Fall 2028"],
     ]);
-    // The rest keep their season and year (the plan now skips a semester).
+    // The rest keep their season and year (the plan now skips a term).
     expect(state.chart.terms[2]).toMatchObject({ season: "fall", year: 2027 });
     expect(termWith(state, "CS102")).toBeUndefined();
     expect(state.selectedId).toBeNull();
@@ -132,7 +132,7 @@ describe("plannerReducer", () => {
     expect(removeTerm(one, 7)).toBe(one);
   });
 
-  it("adds a semester right after another, in the gap before the next", () => {
+  it("adds a term right after another, in the gap before the next", () => {
     // Sample plan: Fall 2026, Spring 2027, Fall 2027, Spring 2028, Fall 2028.
     const state = plannerReducer(sampleState(), { type: "insertTerm", termIndex: 2, side: "after", season: "summer" });
     expect(state.chart.terms.map((t) => [t.index, t.label])).toEqual([
@@ -145,11 +145,11 @@ describe("plannerReducer", () => {
       [6, "Fall 2028"],
     ]);
     expect(state.chart.terms[3]).toMatchObject({ season: "summer", year: 2027, objectIds: [] });
-    // The courses keep their semesters.
+    // The courses keep their terms.
     expect(state.chart.terms[4].objectIds).toContain("CS201");
   });
 
-  it("only offers semesters that fit between a term and its neighbor", () => {
+  it("only offers terms that fit between a term and its neighbor", () => {
     const chart = sampleState().chart;
     // After Spring 2027 (Fall 2027 is next).
     expect(termBeside(chart, 2, "after", "fall")).toEqual({ reason: "Fall 2027 is already in the plan." });
@@ -163,7 +163,7 @@ describe("plannerReducer", () => {
     expect(termBeside(chart, 0, "after", "fall")).toHaveProperty("reason");
   });
 
-  it("fills a gap left by a removed semester", () => {
+  it("fills a gap left by a removed term", () => {
     let state = plannerReducer(sampleState(), { type: "removeTerm", termIndex: 2 });
     state = plannerReducer(state, { type: "insertTerm", termIndex: 2, side: "before", season: "spring" });
     expect(state.chart.terms.map((t) => t.label)).toEqual([
@@ -171,7 +171,7 @@ describe("plannerReducer", () => {
     ]);
   });
 
-  it("ignores a semester that doesn't fit", () => {
+  it("ignores a term that doesn't fit", () => {
     const state = sampleState();
     expect(plannerReducer(state, { type: "insertTerm", termIndex: 2, side: "after", season: "fall" })).toBe(state);
   });

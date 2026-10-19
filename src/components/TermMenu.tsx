@@ -2,8 +2,8 @@
 
 // The small menus for changing a chart's terms:
 // - AddTermMenu opens from a + between two term headers (or at either end
-//   of the chart): add a winter, spring, summer, or fall semester there, or
-//   bring back the Pre-Credit column at the left end. A semester that
+//   of the chart): add a winter, spring, summer, or fall term there, or
+//   bring back the Pre-Credit column at the left end. A term that
 //   wouldn't fit there (see termBeside) is greyed out, and pointing at it
 //   says why.
 // - TermMenu opens when a term's column is right-clicked: remove it.
@@ -137,7 +137,7 @@ export function AddTermMenu({
     onClose();
   };
   return (
-    <Popover x={x - width / 2} y={y} width={width} height={140} label="Add a semester" onClose={onClose}>
+    <Popover x={x - width / 2} y={y} width={width} height={140} label="Add a term" onClose={onClose}>
       <div className="px-3 pt-1 pb-1 text-xs text-zinc-500 dark:text-zinc-400">{heading}</div>
       <div className="grid grid-cols-2 gap-1 px-2 pb-1.5">
         {offersPreCredit(chart, gap) && (
@@ -211,7 +211,7 @@ export function TermMenu({
             ? "Hides the column; your AP and transfer credit still counts."
             : removable
               ? "Its courses come off the chart (undo brings them back)."
-              : "The only semester can't be removed."
+              : "The only term can't be removed."
         }
         onClick={() => {
           onChange(preCredit ? { type: "hidePreCredit" } : { type: "removeTerm", termIndex });

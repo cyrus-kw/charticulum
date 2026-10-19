@@ -252,7 +252,7 @@ function TermDetails({ term, state, view, dispatch }: PanelProps & { term: Term 
           <button
             type="button"
             aria-label={`Remove ${term.label}`}
-            data-tooltip={removable ? "Remove term (its courses come off the chart)" : "The only semester can't be removed."}
+            data-tooltip={removable ? "Remove term (its courses come off the chart)" : "The only term can't be removed."}
             disabled={!removable}
             onClick={() => dispatch({ type: "removeTerm", termIndex: term.index })}
             className={cn(DANGER_ICON_BUTTON, "disabled:cursor-not-allowed disabled:opacity-40")}
