@@ -126,6 +126,8 @@ Reuse these instead of restyling by hand; they live in
   quiet ones; `danger` (rose text) for deleting.
 - **`Select`, `inputClass`**: form fields with the same border and
   padding. `compact` shrinks a select to a tag's height.
+- **`IssueCount`**: the rose count circle on a course card's corner and
+  just after a term's title; one component so both are the same size.
 - **`Badge`**: the small tag. Tones: neutral, bad, good, info, or a season.
   `square` for a single digit or icon.
 - **`Panel`**: a section with an uppercase heading and a divider below.
@@ -215,6 +217,18 @@ arrowheads gliding around a card). Everything that moves respects
 - Arrows are straight lines in the course's color, solid for
   prerequisites and dashed for courses taken together; red and thicker
   when out of order.
+- Arrows within a term run straight up or down, behind any cards in
+  between. Where several would lie on top of each other, each gets its
+  own lane: its ends move sideways along the cards' top and bottom
+  edges, 16px apart (closer on narrow cards), spread evenly around the
+  middle, left to right in requisite order (the line from the earlier
+  course in the chain is further left). A lone one stays in the middle. Lanes follow the cards as they
+  move (mid-drag too), and the ends glide to a new lane the same way they
+  glide around a card's border.
+- The same goes for arrows straight across a row (cards level with each
+  other in different terms, e.g. a line running behind a card in the
+  term between): overlapping ones are shifted above and below the middle
+  of the cards' sides, 16px apart, the earlier course's line on top.
 - When a course is traced, everything unrelated fades to 25%.
 - A selected term's title box gets the same `sky-500` ring as a selected
   card. Right-clicking a card opens a one-item menu (Remove, in rose),
@@ -224,8 +238,16 @@ arrowheads gliding around a card). Everything that moves respects
   to the right of Selected or Requirements by a `zinc-200` line while
   there are any. On a chart under 1280px wide it moves on top of the box's
   details (line below it), and the whole box scrolls. Term titles show a
-  rose count circle right after the name, the same as a card's corner
-  badge.
+  rose count circle just after the name, 4px from its last letter and up
+  at the title box's top (6px down), without taking room in the line, so
+  the name stays centered. In a narrow column the name is shortened
+  to the longest form that fits ("Spring 2027", "Spr 2027", "Spr '27";
+  `termLabels`), and pointing at it shows it in full. The badge's room is
+  kept free on both sides; when no form fits that way, only on its side
+  (name and badge are centered together, the name 10px left of center).
+  A name with no short form (Pre-Credit, a custom name) ends in "…"
+  before the badge would run past the column's edge. It's the same
+  badge as a card's corner count (`IssueCount` in `ui.tsx`).
 - Floating on the chart: undo/redo and the plan's name top left; Selected
   and Requirements top right as separate boxes of the same width
   (256px). They sit in one row down to a 1000px-wide chart (a 1440px

@@ -19,11 +19,14 @@ import {
   type NodeTypes,
   type ReactFlowInstance,
 } from "@xyflow/react";
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
+import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
 import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "../engine/index";
 import {
   chartLayout,
   edgeEndpoints,
+  laneAssignments,
+  requisiteDepths,
+  laneShift,
   perimeterOffset,
   perimeterPoint,
   perimeterStepToward,
@@ -43,6 +46,7 @@ import {
   ROW_HEIGHT,
   snapZoom,
   termIndexAt,
+  termLabels,
   ZOOM_STEP,
   type CourseNode,
   type Geometry,
@@ -56,7 +60,7 @@ import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../plann
 import { FitIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
 import { ADD_MENU_WIDTH, AddTermMenu, canAddInGap, CourseMenu, TermMenu, type TermChange, type TermGap } from "./TermMenu";
 import { useTheme } from "./theme";
-import { cn, SEASON_TINT } from "./ui";
+import { cn, IssueCount, SEASON_TINT } from "./ui";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
 
@@ -124,7 +128,10 @@ function useBorderGlide(goal: number, rect: Rect | undefined, toward: { x: numbe
 // whichever way the cards are arranged (even backwards or stacked). While
 // either card is being dragged, the ends go to the facing left and right
 // sides (top and bottom when over the same term), flowing smoothly around
-// their card's border when they switch.
+// their card's border when they switch. Lines within a term that would lie
+// on top of each other are shifted sideways into lanes (see laneShift);
+// when a lane changes (a card dragged in or out of the way), the ends glide
+// over to it like any other change.
 function FloatingEdge({ id, source, target, markerEnd, style, data }: EdgeProps<PlannerEdge>) {
   const sourceNode = useInternalNode(source);
   const targetNode = useInternalNode(target);
@@ -135,11 +142,19 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }: EdgeProps<
   // The sides the ends were on last time, so they don't flicker between
   // sides when a card is held near a switch point.
   const lastSides = useRef<{ start?: Side; end?: Side }>({});
+  // A lane runs along a column (cards one above the other: shift sideways)
+  // or a row (cards side by side: shift up or down).
+  const inColumn =
+    sourceRect && targetRect && sourceRect.x < targetRect.x + targetRect.width && targetRect.x < sourceRect.x + sourceRect.width;
+  const shift =
+    sourceRect && data?.lane !== undefined
+      ? laneShift(data.lane, data.lanes ?? 1, inColumn ? sourceRect.width : sourceRect.height)
+      : 0;
   const ends =
     sourceRect && targetRect
       ? dragging
-        ? draggingEndpoints(sourceRect, targetRect, lastSides.current, data?.columnWidth)
-        : edgeEndpoints(sourceRect, targetRect)
+        ? draggingEndpoints(sourceRect, targetRect, lastSides.current, data?.columnWidth, shift)
+        : edgeEndpoints(sourceRect, targetRect, false, shift)
       : null;
   useEffect(() => {
     if (!ends || !sourceRect || !targetRect) return;
@@ -217,14 +232,7 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
           <div className="truncate text-[10px] leading-tight text-zinc-600 dark:text-zinc-400">{object.title}</div>
         </>
       )}
-      {issues.length > 0 && (
-        <span
-          aria-label={`${issues.length} issue${issues.length > 1 ? "s" : ""}`}
-          className="absolute -top-2 -right-2 flex size-4 items-center justify-center rounded-full bg-rose-600 text-[10px] font-bold text-white"
-        >
-          {issues.length}
-        </span>
-      )}
+      <IssueCount count={issues.length} className="-top-2 -right-2" />
     </div>
   );
 }
@@ -317,11 +325,55 @@ function TermAddButtons({ termIndex }: { termIndex: number }) {
   );
 }
 
+// How wide a piece of text is drawn in the given element's font, in
+// pixels. One hidden canvas does the measuring for every title.
+let measuringCanvas: HTMLCanvasElement | null = null;
+function textWidth(text: string, element: Element): number {
+  measuringCanvas ??= document.createElement("canvas");
+  const context = measuringCanvas.getContext("2d");
+  if (!context) return 0;
+  const style = getComputedStyle(element);
+  context.font = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
+  return context.measureText(text).width;
+}
+
+// The badge's room beside a term's title: 16px, plus 4px between.
+const TITLE_BADGE_ROOM = 20;
+
+// How to write a term's title in `width` pixels: the longest way of
+// writing its name (see termLabels) that fits. With a badge, room for it
+// is kept on both sides so the title stays centered; if no way of writing
+// the name fits like that, room is kept on the badge's side only
+// (`offCenter`: the title and badge are centered together instead). If
+// nothing fits even then, the shortest is used and ends in "…". Measured
+// after the title is on screen, so the first draw (including the
+// server's) uses the full name.
+function useFittingLabel(label: string, width: number, badge: boolean) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [fitting, setFitting] = useState({ text: label, offCenter: false });
+  useLayoutEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    const choices = termLabels(label);
+    const fits = (room: number) => choices.find((choice) => textWidth(choice, element) <= room);
+    const centered = fits(width - (badge ? 2 * TITLE_BADGE_ROOM : 0));
+    const oneSided = badge ? fits(width - TITLE_BADGE_ROOM) : undefined;
+    setFitting(
+      centered !== undefined
+        ? { text: centered, offCenter: false }
+        : { text: oneSided ?? choices[choices.length - 1], offCenter: badge },
+    );
+  }, [label, width, badge]);
+  return { ref, ...fitting };
+}
+
 // A term's header. The shaded band behind the term is drawn by TermBands,
 // so it can fill the canvas from top to bottom.
 function TermStripe({ data, width }: NodeProps<TermNode>) {
   const over = !data.external && data.credits > data.maxCredits;
   const selected = useContext(TermHeaderContext)?.selectedTerm === data.index;
+  // The title's room: the column, less the box's padding (8px each side).
+  const title = useFittingLabel(data.label, (width ?? COLUMN_WIDTH) - 16, data.issueCount > 0);
   return (
     <div style={{ width: width ?? COLUMN_WIDTH, height: data.height }}>
       {/* The title and credits. The season color behind them is drawn by
@@ -334,17 +386,33 @@ function TermStripe({ data, width }: NodeProps<TermNode>) {
       >
         {!data.external && <TermAddButtons termIndex={data.index} />}
         {/* The title, then a red count of the problems in this term (with
-            it or its courses), like the count on a course card. */}
-        <div className="flex items-center justify-center gap-1">
-          <span className="truncate text-sm font-semibold text-zinc-800 dark:text-zinc-100">{data.label}</span>
-          {data.issueCount > 0 && (
+            it or its courses), the same badge as a course card's. The badge
+            hangs just after the title's last letter, up at the box's top
+            (6px down, like on a card), without taking up room in the line,
+            so the title stays centered. Room for the badge is kept free on
+            both sides (or, when space is tight, on its side only, moving
+            the title half the badge's room left: see useFittingLabel), so
+            the badge never runs past the column's edge. */}
+        <div className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+          <span
+            className={cn(
+              "relative inline-block align-top",
+              data.issueCount === 0 && "max-w-full",
+              data.issueCount > 0 && !title.offCenter && "max-w-[calc(100%-2.5rem)]",
+              data.issueCount > 0 && title.offCenter && "max-w-[calc(100%-1.25rem)] -translate-x-2.5",
+            )}
+          >
+            {/* In a narrow column the name is shortened ("Spr '27"); pointing
+                at it shows it in full. */}
             <span
-              aria-label={`${data.issueCount} issue${data.issueCount > 1 ? "s" : ""}`}
-              className="flex size-4 shrink-0 items-center justify-center rounded-full bg-rose-600 text-[10px] font-bold text-white"
+              ref={title.ref}
+              className="block truncate"
+              data-tooltip={title.text !== data.label ? data.label : undefined}
             >
-              {data.issueCount}
+              {title.text}
             </span>
-          )}
+            <IssueCount count={data.issueCount} className="-top-1.5 left-full ml-1" />
+          </span>
         </div>
         <div className={cn("truncate text-xs", over ? "font-semibold text-rose-600 dark:text-rose-400" : "text-zinc-600 dark:text-zinc-400")}>
           {data.credits}
@@ -717,14 +785,43 @@ export function ChartFlow({
     );
   }, [layout, selectedId, related, setNodes]);
 
+  // Lanes for lines straight along a term's column or a row of cards, from
+  // where the cards are right now (`nodes` follows a card as it's dragged
+  // and the others as they slide), so lines move aside or back to the
+  // middle as cards move.
+  const depths = useMemo(() => requisiteDepths(layout.edges), [layout]);
+  const lanes = useMemo(() => {
+    const at = new Map(nodes.flatMap((n) => (n.type === "course" ? [[n.id, n.position] as const] : [])));
+    const columnOf = (p: Point) => Math.floor((p.x + geometry.nodeWidth / 2) / geometry.columnWidth);
+    return laneAssignments(
+      layout.edges.flatMap((e) => {
+        const [s, t] = [at.get(e.source), at.get(e.target)];
+        if (!s || !t) return [];
+        const depth = depths.get(e.source) ?? 0;
+        if (columnOf(s) === columnOf(t)) return [{ id: e.id, track: `column ${columnOf(s)}`, top: s.y, bottom: t.y, depth }];
+        // Level with each other (within a pixel), in different terms.
+        if (Math.abs(s.y - t.y) < 1) return [{ id: e.id, track: `row ${Math.round(s.y)}`, top: s.x, bottom: t.x, depth }];
+        return [];
+      }),
+    );
+  }, [nodes, layout, geometry, depths]);
+  // Cards move on every frame of a drag, but lanes change only now and then:
+  // rebuild the lines only when they do.
+  const laneKey = [...lanes].map(([id, { lane, lanes: count }]) => `${id}:${lane}/${count}`).join(" ");
+
   const edges = useMemo(
     () =>
-      layout.edges.map((e) =>
-        related && !(related.has(e.source) && related.has(e.target))
-          ? { ...e, style: { ...e.style, opacity: 0.12 } }
-          : e,
-      ),
-    [layout, related],
+      layout.edges.map((e) => {
+        const lane = lanes.get(e.id);
+        const faded = related && !(related.has(e.source) && related.has(e.target));
+        return {
+          ...e,
+          ...(faded && { style: { ...e.style, opacity: 0.12 } }),
+          ...(lane && { data: { ...e.data!, ...lane } }),
+        };
+      }),
+    // laneKey stands in for `lanes` (it changes exactly when they do).
+    [layout, related, laneKey],
   );
 
   // Slide cards to new positions (the other cards making room while a

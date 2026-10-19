@@ -64,6 +64,18 @@ export function courseCode(id: string): string {
   return id.replace(/^([A-Za-z]+)(\d)/, "$1 $2");
 }
 
+// A term's name, then shorter ways to write it, for narrow columns:
+// "Spring 2027", "Spr 2027", "Spr '27". The chart shows the longest that
+// fits. Names that aren't a season and a year (Pre-Credit, a custom
+// name) have no shorter form; they end in "…" if they don't fit.
+const SEASON_SHORT: Record<string, string> = { Fall: "Fall", Spring: "Spr", Summer: "Sum", Winter: "Win" };
+export function termLabels(label: string): string[] {
+  const match = /^(Fall|Spring|Summer|Winter) (\d{4})$/.exec(label);
+  if (!match) return [label];
+  const [, season, year] = match;
+  return [label, `${SEASON_SHORT[season]} ${year}`, `${SEASON_SHORT[season]} '${year.slice(2)}`];
+}
+
 // The same, for every course code inside a sentence (an issue message, say):
 // "CS390 needs CS201" -> "CS 390 needs CS 201". Only ids in the catalog are
 // touched, whole words only, longest first (so CS102L isn't read as CS102).
@@ -132,6 +144,17 @@ export type EdgeData = {
   color: string;
   // The column width the chart is drawn at (for the drag rules).
   columnWidth: number;
+  // Set for a link between two cards in the same term, or in the same row
+  // of different terms. Its line runs straight up and down or straight
+  // across (behind any cards between them), and links whose lines would
+  // lie on top of each other each get their own lane: the line is shifted
+  // off the middle of the cards' sides, sideways in a column and up or down
+  // in a row (see laneShift). `lanes` is how many lanes its group of
+  // overlapping links shares; `lane` is this one's, counting from the left
+  // (or the top). The chart fills these in from where the cards are right
+  // now (see laneAssignments), so lanes change as a card is dragged.
+  lane?: number;
+  lanes?: number;
 };
 
 export type CourseNode = Node<CourseNodeData, "course">;
@@ -458,6 +481,93 @@ function placeVertically(order: string[][]): Map<string, number> {
   return y;
 }
 
+// One link's stretch of a column or row, for laneAssignments. `track`
+// names the term column (for a line straight up or down) or the row of
+// cards (for a line straight across) it runs along; `top` and `bottom` are
+// where its two cards are along it, in either order (their tops in a
+// column, their left edges in a row); `depth` is how far along its chain
+// of requisites the link starts (see requisiteDepths).
+export interface LaneSpan {
+  id: string;
+  track: string;
+  top: number;
+  bottom: number;
+  depth: number;
+}
+
+// How far along its chain of requisites each course is: 0 for one that
+// needs nothing on the chart, 1 for one that needs only those, and so on
+// (the longest chain leading to it). Lanes are ordered by this, so lines
+// read left to right in the order the courses are taken.
+export function requisiteDepths(edges: Pick<Edge, "source" | "target">[]): Map<string, number> {
+  const needs = new Map<string, string[]>();
+  for (const e of edges) needs.set(e.target, [...(needs.get(e.target) ?? []), e.source]);
+  const depth = new Map<string, number>();
+  const visiting = new Set<string>();
+  const depthOf = (id: string): number => {
+    if (depth.has(id)) return depth.get(id)!;
+    // A loop in the requisites (bad school data) shouldn't hang the chart.
+    if (visiting.has(id)) return 0;
+    visiting.add(id);
+    const d = Math.max(-1, ...(needs.get(id) ?? []).map(depthOf)) + 1;
+    visiting.delete(id);
+    depth.set(id, d);
+    return d;
+  };
+  for (const e of edges) {
+    depthOf(e.source);
+    depthOf(e.target);
+  }
+  return depth;
+}
+
+// Lanes for links that run straight along a term's column or a row of
+// cards (see EdgeData), by link id. Two links whose stretches of the same
+// column or row overlap get different lanes, so their lines run side by
+// side instead of on top of each other, in requisite order: a line from an
+// earlier course in the chain sits further left (in a column) or higher
+// (in a row). Sharing just an end card is fine: one line arrives at one
+// side of it and the other leaves from the opposite side.
+export function laneAssignments(spans: LaneSpan[]): Map<string, { lane: number; lanes: number }> {
+  const byTrack = new Map<string, LaneSpan[]>();
+  for (const span of spans) {
+    const [top, bottom] = [span.top, span.bottom].sort((a, b) => a - b);
+    byTrack.set(span.track, [...(byTrack.get(span.track) ?? []), { ...span, top, bottom }]);
+  }
+  const overlap = (a: { top: number; bottom: number }, b: { top: number; bottom: number }) =>
+    Math.max(a.top, b.top) < Math.min(a.bottom, b.bottom);
+
+  const result = new Map<string, { lane: number; lanes: number }>();
+  for (const column of byTrack.values()) {
+    // Split the column into groups that overlap (one after another down
+    // the column), so a lone link stays in the middle of its cards even
+    // when another part of the term needs several lanes.
+    column.sort((a, b) => a.top - b.top || a.bottom - b.bottom);
+    const groups: LaneSpan[][] = [];
+    let reach = -Infinity;
+    for (const span of column) {
+      if (span.top >= reach) groups.push([]);
+      groups[groups.length - 1].push(span);
+      reach = Math.max(reach, span.bottom);
+    }
+    for (const group of groups) {
+      // Earlier in the requisite chain first, so it takes a lane further
+      // left; from the same course, the shorter line first.
+      group.sort((a, b) => a.depth - b.depth || a.bottom - a.top - (b.bottom - b.top) || a.top - b.top);
+      const placed: { top: number; bottom: number; lane: number }[] = [];
+      for (const span of group) {
+        const taken = new Set(placed.filter((p) => overlap(p, span)).map((p) => p.lane));
+        let lane = 0;
+        while (taken.has(lane)) lane++;
+        placed.push({ ...span, lane });
+      }
+      const lanes = Math.max(...placed.map((p) => p.lane)) + 1;
+      group.forEach((span, i) => result.set(span.id, { lane: placed[i].lane, lanes }));
+    }
+  }
+  return result;
+}
+
 // Give each course with outgoing lines a color, avoiding colors already
 // used by nearby courses so neighboring lines are easy to tell apart.
 // Courses that already had a color keep it, so lines stay easy to follow
@@ -542,7 +652,10 @@ const center = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
 //
 // With `anySide` (used while a card is being dragged), "same term" means
 // the cards' centers are over the same column; see draggingEndpoints.
-export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
+//
+// `shift` moves both ends of a line into its lane (see laneShift):
+// sideways for a line up or down, up or down for a line across.
+export function edgeEndpoints(source: Rect, target: Rect, anySide = false, shift = 0) {
   const s = center(source);
   const t = center(target);
   const vertical = source.x < target.x + target.width && target.x < source.x + source.width;
@@ -555,15 +668,29 @@ export function edgeEndpoints(source: Rect, target: Rect, anySide = false) {
   if (vertical) {
     const targetBelow = t.y > s.y;
     return {
-      start: { x: s.x, y: targetBelow ? source.y + source.height : source.y },
-      end: { x: t.x, y: targetBelow ? target.y : target.y + target.height },
+      start: { x: s.x + shift, y: targetBelow ? source.y + source.height : source.y },
+      end: { x: t.x + shift, y: targetBelow ? target.y : target.y + target.height },
     };
   }
   const targetRight = t.x > s.x;
   return {
-    start: { x: targetRight ? source.x + source.width : source.x, y: s.y },
-    end: { x: targetRight ? target.x : target.x + target.width, y: t.y },
+    start: { x: targetRight ? source.x + source.width : source.x, y: s.y + shift },
+    end: { x: targetRight ? target.x : target.x + target.width, y: t.y + shift },
   };
+}
+
+// The most room between neighboring lanes (see EdgeData); narrow cards
+// squeeze them closer so every lane stays on the card.
+const LANE_GAP = 16;
+
+// How far left (negative) or right of a card's middle a lane's line meets
+// the card's top or bottom, or, for a line across, how far above
+// (negative) or below the middle of its side. `size` is the card's side
+// the lanes share (its width, or its height). The lanes are spread evenly
+// around the middle, so a single lane is exactly in the middle.
+export function laneShift(lane: number, lanes: number, size: number): number {
+  const gap = Math.min(LANE_GAP, size / (lanes + 1));
+  return (lane - (lanes - 1) / 2) * gap;
 }
 
 export type Side = "left" | "right" | "top" | "bottom";
@@ -616,6 +743,8 @@ export function draggingEndpoints(
   target: Rect,
   previous: { start?: Side; end?: Side } = {},
   columnWidth = COLUMN_WIDTH,
+  // Moves both ends into their lane (see laneShift).
+  shift = 0,
 ) {
   const s = center(source);
   const t = center(target);
@@ -639,7 +768,12 @@ export function draggingEndpoints(
     : t.x > s.x
       ? ["right", "left"]
       : ["left", "right"];
-  return { start: sideMiddle(source, startSide), end: sideMiddle(target, endSide), startSide, endSide };
+  const vertical = startSide === "top" || startSide === "bottom";
+  const end = (r: Rect, side: Side) => {
+    const p = sideMiddle(r, side);
+    return vertical ? { x: p.x + shift, y: p.y } : { x: p.x, y: p.y + shift };
+  };
+  return { start: end(source, startSide), end: end(target, endSide), startSide, endSide };
 }
 
 // Of the two ways around a border from `from` to `to`, the one whose

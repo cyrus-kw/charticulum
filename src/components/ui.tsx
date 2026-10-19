@@ -148,6 +148,25 @@ export function Badge({
   );
 }
 
+// The red count of problems on a course card or a term's title. One
+// component for both, so they're always the same size. It sits in a
+// corner (the caller places it with `className`), so it never pushes the
+// text beside it aside.
+export function IssueCount({ count, className }: { count: number; className?: string }) {
+  if (count === 0) return null;
+  return (
+    <span
+      aria-label={`${count} issue${count > 1 ? "s" : ""}`}
+      className={cn(
+        "absolute flex size-4 items-center justify-center rounded-full bg-rose-600 text-[10px] leading-none font-bold text-white",
+        className,
+      )}
+    >
+      {count}
+    </span>
+  );
+}
+
 // How one tab looks: a sky underline when chosen, grey text otherwise.
 // Shared by Tabs below and the site's top-bar links (Dashboard, Schools),
 // so every tab in the app looks the same. -mb-px: the chosen tab's

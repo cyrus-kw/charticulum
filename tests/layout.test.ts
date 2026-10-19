@@ -13,12 +13,16 @@ import {
   courseCode,
   geometryFor,
   termIndexAt,
+  termLabels,
   withCourseCodes,
   COMPACT_BELOW,
   MAX_ZOOM_PERCENT,
   snapZoom,
   ZOOM_STEP,
   edgeEndpoints,
+  laneAssignments,
+  requisiteDepths,
+  laneShift,
   perimeterLength,
   perimeterOffset,
   perimeterPoint,
@@ -208,6 +212,110 @@ describe("chartLayout look", () => {
     expect(data("CS101")?.onlyIn).toBeUndefined();
     expect(data("STAT200")?.needsMinGrade).toBe(true); // STAT300 needs a C in it
     expect(data("ENG101")?.generalEducation).toBe(true);
+  });
+});
+
+describe("lanes for links within a term", () => {
+  // Links as [id, column, row of one card, row of the other, depth].
+  const lanesOf = (links: [string, number, number, number, number?][]) =>
+    Object.fromEntries(
+      [
+        ...laneAssignments(
+          links.map(([id, column, a, b, depth = 0]) => ({ id, track: `column ${column}`, top: a * ROW_HEIGHT, bottom: b * ROW_HEIGHT, depth })),
+        ),
+      ].map(
+        ([id, { lane, lanes }]) => [id, `${lane}/${lanes}`],
+      ),
+    );
+
+  it("gives links that would overlap their own lanes, shorter ones first", () => {
+    // A->C (rows 0 to 2) runs behind B, alongside A->B and B->D.
+    expect(lanesOf([["A->B", 1, 0, 1], ["A->C", 1, 0, 2], ["B->D", 1, 1, 3]])).toEqual({
+      "A->B": "0/2",
+      "A->C": "1/2", // overlaps both of the others
+      "B->D": "0/2", // meets A->B only at B (one at its top, one at its bottom)
+    });
+  });
+
+  it("orders lanes left to right along the requisite chain", () => {
+    // The screenshot: CS 301 above CS 400 above CS 210, where CS 210 ->
+    // CS 301 -> CS 400. The line from CS 210 (earlier) goes left, even
+    // though it's the longer one.
+    const edges = [
+      { source: "CS210", target: "CS301" },
+      { source: "CS301", target: "CS400" },
+    ];
+    const depths = requisiteDepths(edges);
+    expect(Object.fromEntries(depths)).toEqual({ CS210: 0, CS301: 1, CS400: 2 });
+    expect(
+      lanesOf([
+        ["CS301->CS400", 1, 0, 1, depths.get("CS301")],
+        ["CS210->CS301", 1, 2, 0, depths.get("CS210")],
+      ]),
+    ).toEqual({ "CS210->CS301": "0/2", "CS301->CS400": "1/2" });
+  });
+
+  it("doesn't hang on requisites that loop", () => {
+    const depths = requisiteDepths([{ source: "A", target: "B" }, { source: "B", target: "A" }]);
+    expect([...depths.values()].every(Number.isFinite)).toBe(true);
+  });
+
+  it("keeps a link by itself in the middle, even if elsewhere in the term needs lanes", () => {
+    expect(lanesOf([["A->B", 1, 0, 1], ["A->C", 1, 0, 2], ["D->E", 1, 3, 4]])).toMatchObject({ "D->E": "0/1" });
+  });
+
+  it("works from where the cards are, in either order, one term at a time", () => {
+    // An upward line (a card dragged below its requisite) counts the same,
+    // and the same rows in another term don't get in the way.
+    expect(lanesOf([["X->Y", 1, 2, 0], ["P->Q", 2, 0, 2], ["Y->Z", 1, 0, 1]])).toEqual({
+      "Y->Z": "0/2",
+      "X->Y": "1/2",
+      "P->Q": "0/1",
+    });
+  });
+
+  it("does the same for lines straight across a row, earlier courses higher", () => {
+    // The screenshot: CS 400, CS 210, CS 301 left to right in one row, with
+    // CS 210 -> CS 400, CS 210 -> CS 301, and CS 301 -> CS 400 behind CS 210.
+    const spans = [
+      { id: "CS210->CS400", track: "row 0", top: 212, bottom: 0, depth: 0 },
+      { id: "CS210->CS301", track: "row 0", top: 212, bottom: 424, depth: 0 },
+      { id: "CS301->CS400", track: "row 0", top: 424, bottom: 0, depth: 1 },
+    ];
+    expect(Object.fromEntries(laneAssignments(spans))).toEqual({
+      "CS210->CS400": { lane: 0, lanes: 2 },
+      "CS210->CS301": { lane: 0, lanes: 2 },
+      "CS301->CS400": { lane: 1, lanes: 2 },
+    });
+    // A line across moves up or down; a line up or down moves sideways.
+    const box = (x: number, y: number) => ({ x, y, width: 100, height: 40 });
+    expect(edgeEndpoints(box(0, 0), box(300, 0), false, 8)).toEqual({ start: { x: 100, y: 28 }, end: { x: 300, y: 28 } });
+    expect(draggingEndpoints(box(0, 0), box(300, 0), {}, 212, 8)).toMatchObject({ start: { x: 100, y: 28 }, end: { x: 300, y: 28 } });
+  });
+
+  it("spreads lanes evenly around the middle of the card", () => {
+    expect(laneShift(0, 1, 120)).toBe(0);
+    expect([laneShift(0, 2, 120), laneShift(1, 2, 120)]).toEqual([-8, 8]);
+    // Narrow cards squeeze the lanes closer together.
+    expect([laneShift(0, 3, 40), laneShift(2, 3, 40)]).toEqual([-10, 10]);
+    // Both ends move by the same amount, so the line stays straight.
+    const box = (y: number) => ({ x: 0, y, width: 100, height: 40 });
+    expect(edgeEndpoints(box(0), box(200), false, 8)).toEqual({ start: { x: 58, y: 40 }, end: { x: 58, y: 200 } });
+    // While dragging too.
+    expect(draggingEndpoints(box(0), box(200), {}, 212, 8)).toMatchObject({ start: { x: 58, y: 40 }, end: { x: 58, y: 200 } });
+  });
+});
+
+describe("termLabels", () => {
+  it("offers shorter ways to write a season and year, longest first", () => {
+    expect(termLabels("Spring 2027")).toEqual(["Spring 2027", "Spr 2027", "Spr '27"]);
+    expect(termLabels("Fall 2026")).toEqual(["Fall 2026", "Fall 2026", "Fall '26"]);
+    expect(termLabels("Summer 2028")[2]).toBe("Sum '28");
+  });
+
+  it("leaves other names alone", () => {
+    expect(termLabels("Pre-Credit")).toEqual(["Pre-Credit"]);
+    expect(termLabels("Study abroad")).toEqual(["Study abroad"]);
   });
 });
 
