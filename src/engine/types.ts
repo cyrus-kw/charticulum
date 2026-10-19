@@ -79,6 +79,9 @@ export interface CurriculumObject {
   externalEquivalents: ExternalEquivalent[];
   // Which requirement categories this object counts toward.
   categories: Category[];
+  // For general-education objects, which area they fill, e.g. "Humanities".
+  // Cards show its first letter ("G-H").
+  genEdArea?: string;
   availability: Availability;
 }
 

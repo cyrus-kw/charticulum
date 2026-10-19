@@ -210,7 +210,9 @@ describe("chartLayout look", () => {
     expect(data("CS301")?.onlyIn).toBe("spring");
     expect(data("CS400")?.onlyIn).toBe("fall");
     expect(data("CS101")?.onlyIn).toBeUndefined();
-    expect(data("STAT200")?.needsMinGrade).toBe(true); // STAT300 needs a C in it
+    expect(data("STAT200")?.minGrade).toBe("C"); // STAT300 needs a C in it
+    expect(data("CS101")?.minGrade).toBe("C"); // and CS102 needs a C in CS101
+    expect(data("CS201")?.minGrade).toBeUndefined();
     expect(data("ENG101")?.generalEducation).toBe(true);
   });
 });

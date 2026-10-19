@@ -8,6 +8,7 @@ import type { Edge, Node } from "@xyflow/react";
 import {
   satisfies,
   EXTERNAL_TERM,
+  GRADE_POINTS,
   EXTERNAL_TERM_LABEL,
   type Catalog,
   type Chart,
@@ -115,8 +116,9 @@ export type CourseNodeData = {
   color?: string;
   // Set when the object is offered in just one season.
   onlyIn?: Season;
-  // Some other course needs a minimum grade in this one.
-  needsMinGrade: boolean;
+  // The lowest grade some other course accepts in this one (the strictest,
+  // if several ask), e.g. "C". Missing when no course asks for one.
+  minGrade?: Grade;
   generalEducation: boolean;
 };
 
@@ -215,9 +217,15 @@ export function chartLayout(
   // 4. Nodes: one stripe per term (drawn under the lines), then the cards.
   const bottom = Math.max(ROW_HEIGHT, ...[...y.values()].map((v) => v + NODE_HEIGHT));
   const stripeHeight = HEADER_HEIGHT + bottom + FOOTER_HEIGHT;
-  const minGradeIds = new Set(
-    [...catalog.values()].flatMap((o) => Object.keys(o.requisites.minGrades ?? {})),
-  );
+  // For each course, the strictest minimum grade any other course asks for
+  // in it. Grades compare by their points (an A- beats a C).
+  const minGrades = new Map<string, Grade>();
+  for (const other of catalog.values()) {
+    for (const [requisiteId, minimum] of Object.entries(other.requisites.minGrades ?? {})) {
+      const current = minGrades.get(requisiteId);
+      if (!current || GRADE_POINTS[minimum] > GRADE_POINTS[current]) minGrades.set(requisiteId, minimum);
+    }
+  }
 
   const nodes: PlannerNode[] = chart.terms.map((term, column) => ({
     id: `term-${term.index}`,
@@ -265,7 +273,7 @@ export function chartLayout(
           external,
           ...(colors.has(id) && { color: colors.get(id) }),
           ...(seasons.length === 1 && { onlyIn: seasons[0] }),
-          needsMinGrade: minGradeIds.has(id),
+          ...(minGrades.has(id) && { minGrade: minGrades.get(id) }),
           generalEducation: object.categories.includes("general-education"),
         },
         width: nodeWidth,

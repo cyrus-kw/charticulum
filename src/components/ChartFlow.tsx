@@ -20,7 +20,7 @@ import {
   type ReactFlowInstance,
 } from "@xyflow/react";
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
-import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "../engine/index";
+import { EXTERNAL_TERM, meetsGrade, type Catalog, type Chart, type ChartIssue } from "../engine/index";
 import {
   chartLayout,
   edgeEndpoints,
@@ -181,8 +181,13 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }: EdgeProps<
 }
 
 function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
-  const { object, grade, issues, external, color, onlyIn, needsMinGrade, generalEducation } = data;
-  const markers = `${needsMinGrade ? "*" : ""}${generalEducation ? "+" : ""}`;
+  const { object, grade, issues, external, color, onlyIn, minGrade, generalEducation } = data;
+  // Gen ed courses show "G-" and their area's first letter ("G-H" for
+  // Humanities), or just "G" when the school didn't name an area.
+  const genEdArea = object.genEdArea;
+  // A failing grade (an F, or under the minimum another course asks for)
+  // is shown in red instead of green.
+  const failing = grade !== undefined && (grade === "F" || (minGrade !== undefined && !meetsGrade(grade, minGrade)));
   const cardWidth = width ?? NODE_WIDTH;
   // Compressed (zoomed out): just the course code, e.g. "CS 101".
   const compact = cardWidth < COMPACT_BELOW;
@@ -204,7 +209,12 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
       // pointing at one tells you the rest. A full-size card already shows it.
       data-tooltip={
         compact
-          ? [`${courseCode(object.id)}: ${object.title} (${object.credits} cr)`, ...issues.map((i) => i.message)].join("\n")
+          ? [
+              `${courseCode(object.id)}: ${object.title} (${object.credits} cr)`,
+              ...(minGrade ? [`Minimum grade: ${minGrade}`] : []),
+              ...(generalEducation ? [`Gen ed${genEdArea ? `: ${genEdArea}` : ""}`] : []),
+              ...issues.map((i) => i.message),
+            ].join("\n")
           : undefined
       }
     >
@@ -212,7 +222,6 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
       {compact ? (
         <span className="truncate font-mono text-xs font-semibold">
           {courseCode(object.id)}
-          {markers}
         </span>
       ) : (
         <>
@@ -222,14 +231,39 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
           <div className="flex h-4 flex-wrap items-baseline justify-between gap-x-1 overflow-hidden leading-4">
             <span className="truncate font-mono text-xs font-semibold">
               {courseCode(object.id)}
-              {markers}
             </span>
             <span className="text-[11px] whitespace-nowrap text-zinc-500 tabular-nums dark:text-zinc-400">
-              {grade && <span className="mr-1 font-semibold text-emerald-700 dark:text-emerald-400">{grade}</span>}
+              {/* "*C": the lowest grade another course accepts in this one,
+                  greyed out so it reads as a note, not a grade earned. Once
+                  a grade is entered it takes the minimum's place (there's
+                  no room for both), and the grey * stays in front of it. */}
+              {minGrade && (
+                <span className="text-zinc-400 dark:text-zinc-500" data-tooltip={`Minimum grade: ${minGrade}`}>
+                  *{!grade && <span className="mr-1">{minGrade}</span>}
+                </span>
+              )}
+              {grade && (
+                <span
+                  className={cn(
+                    "mr-1 font-semibold",
+                    failing ? "text-rose-600 dark:text-rose-400" : "text-emerald-700 dark:text-emerald-400",
+                  )}
+                >
+                  {grade}
+                </span>
+              )}
               {object.credits} cr
             </span>
           </div>
-          <div className="truncate text-[10px] leading-tight text-zinc-600 dark:text-zinc-400">{object.title}</div>
+          {/* The name, with the gen ed area under the credits on the right. */}
+          <div className="flex items-baseline justify-between gap-x-1 text-[10px] leading-tight text-zinc-600 dark:text-zinc-400">
+            <span className="truncate">{object.title}</span>
+            {generalEducation && (
+              <span className="shrink-0" data-tooltip={`Gen ed${genEdArea ? `: ${genEdArea}` : ""}`}>
+                G{genEdArea && <>-<b>{genEdArea[0].toUpperCase()}</b></>}
+              </span>
+            )}
+          </div>
         </>
       )}
       <IssueCount count={issues.length} className="-top-2 -right-2" />
@@ -614,10 +648,10 @@ function Legend() {
       <span className={item}>{line(false)} prerequisite</span>
       <span className={item}>{line(true)} concurrent</span>
       <span className={item}>{line(false, BROKEN_EDGE_COLOR)} out of order</span>
-      {/* Swatches use the cards' own tints, so the two always match. */}
       <span className={item}>
-        {swatch(cn(SEASON_TINT.winter, "border-sky-300 dark:border-sky-800"))} winter only
+        <span className="text-zinc-400 dark:text-zinc-500">*</span> minimum grade
       </span>
+      {/* Swatches use the cards' own tints, so the two always match. */}
       <span className={item}>
         {swatch(cn(SEASON_TINT.fall, "border-orange-300 dark:border-orange-800"))} fall only
       </span>
@@ -628,10 +662,7 @@ function Legend() {
         {swatch(cn(SEASON_TINT.summer, "border-yellow-300 dark:border-yellow-700"))} summer only
       </span>
       <span className={item}>
-        <b className="font-mono">*</b> minimum grade
-      </span>
-      <span className={item}>
-        <b className="font-mono">+</b> gen ed
+        {swatch(cn(SEASON_TINT.winter, "border-sky-300 dark:border-sky-800"))} winter only
       </span>
     </div>
   );

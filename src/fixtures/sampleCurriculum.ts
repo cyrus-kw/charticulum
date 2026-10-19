@@ -27,7 +27,10 @@ const prev = (...ids: string[]) => ({ previous: ids, concurrent: [] });
 
 export const sampleCatalog = createCatalog([
   course("CS101", "Intro to Programming", 4, { categories: ["major"] }),
-  course("CS102", "Data Structures", 4, { requisites: prev("CS101"), categories: ["major"] }),
+  course("CS102", "Data Structures", 4, {
+    requisites: { ...prev("CS101"), minGrades: { CS101: "C" } },
+    categories: ["major"],
+  }),
   course("CS102L", "Data Structures Lab", 1, {
     requisites: { previous: [], concurrent: ["CS102"] },
     categories: ["major"],
@@ -51,6 +54,7 @@ export const sampleCatalog = createCatalog([
   }),
   course("MATH101", "Calculus I", 4, {
     categories: ["major", "general-education"],
+    genEdArea: "Quantitative",
     externalEquivalents: [{ institution: "AP", externalId: "CALC-AB" }],
   }),
   course("MATH201", "Discrete Mathematics", 3, {
@@ -59,17 +63,20 @@ export const sampleCatalog = createCatalog([
   }),
   course("ENG101", "Composition", 3, {
     categories: ["general-education"],
+    genEdArea: "Writing",
     externalEquivalents: [{ institution: "Valley Community College", externalId: "ENGL-1A" }],
   }),
-  course("HIST110", "World History", 3, { categories: ["general-education"] }),
-  course("PHIL120", "Ethics in Technology", 3, { categories: ["general-education"] }),
+  course("HIST110", "World History", 3, { categories: ["general-education"], genEdArea: "Humanities" }),
+  course("PHIL120", "Ethics in Technology", 3, { categories: ["general-education"], genEdArea: "Humanities" }),
   course("PHIL121", "Ethics in Technology (Honors)", 3, {
     internalEquivalents: ["PHIL120"],
     categories: ["general-education"],
+    genEdArea: "Humanities",
   }),
   course("SPAN-PROF", "Spanish Proficiency", 0, {
     kind: "proficiency",
     categories: ["general-education"],
+    genEdArea: "Language",
   }),
   course("SOPH-REV", "Sophomore Review", 0, {
     kind: "milestone",

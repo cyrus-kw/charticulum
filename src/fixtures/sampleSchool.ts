@@ -25,6 +25,7 @@ const statsCourses: CurriculumObject[] = [
     internalEquivalents: [],
     externalEquivalents: [],
     categories: ["minor", "general-education"],
+    genEdArea: "Quantitative",
     availability: { seasons: EVERY_TERM },
   },
   {

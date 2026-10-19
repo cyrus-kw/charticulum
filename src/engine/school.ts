@@ -31,6 +31,7 @@ const courseObject = z.object({
   internalEquivalents: z.array(id).default([]),
   externalEquivalents: z.array(z.object({ institution: z.string(), externalId: id })).default([]),
   categories: z.array(category).default([]),
+  genEdArea: z.string().min(1).optional(),
   // Files may leave availability (or its seasons) out; it's then filled in
   // as every term, so the rest of the app always sees the seasons listed.
   availability: z
