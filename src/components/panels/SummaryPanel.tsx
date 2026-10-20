@@ -80,6 +80,9 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
           {minimums.map(([category, minimum]) => (
             <Meter key={category} label={CATEGORY_NAMES[category]} value={report.creditsByCategory[category] ?? 0} target={minimum} />
           ))}
+          {(requirements.creditRules ?? []).map((rule) => (
+            <Meter key={rule.id} label={rule.name} value={report.creditsByRule[rule.id] ?? 0} target={rule.credits} />
+          ))}
           {requirements.maxSharedCredits !== undefined && (
             <div className="flex justify-between text-sm">
               <span>Shared Credits</span>

@@ -223,6 +223,34 @@ export interface Requirements {
   // School policy: most credits that may count toward more than one
   // category (e.g. shared between a major and a minor). Missing = no limit.
   maxSharedCredits?: number;
+  // Credits needed from a group of courses: a gen ed area, a department,
+  // or a list ("18 credits from the electives below").
+  creditRules?: CreditRule[];
+  // Lowest acceptable grade in a course, e.g. { CMPSC221: "C" } for a
+  // "C-required" course. Courses not graded yet pass for now.
+  minGrades?: Record<string, Grade>;
+}
+
+// "At least `credits` credits from courses that match." A course matches
+// when it fits every field given; a list field matches any one of its
+// entries. So { subjects: ["CMPSC"], minNumber: 400 } is "400-level CMPSC".
+// A course can count toward several rules (a GQ math course also counts
+// toward the major).
+export interface CreditRule {
+  id: string;
+  // How it's written for people, e.g. "Quantification (GQ)".
+  name: string;
+  credits: number;
+  // Gen ed areas, as the school names them ("Quantification").
+  genEdAreas?: string[];
+  // Subject codes ("CMPSC").
+  subjects?: string[];
+  // Course numbers at least this ("400-level" is 400).
+  minNumber?: number;
+  // Exactly these objects.
+  objectIds?: string[];
+  // Graded courses only count with at least this grade.
+  minGrade?: Grade;
 }
 
 // Global sets apply to every chart (e.g. general education); local sets
@@ -254,6 +282,8 @@ export type IssueCode =
   | "TERM_OVER_CREDIT_LIMIT"
   | "MISSING_REQUIRED_OBJECT"
   | "CATEGORY_SHORTFALL"
+  | "CREDIT_RULE_SHORTFALL"
+  | "REQUIRED_GRADE_TOO_LOW"
   | "TOTAL_CREDITS_SHORTFALL"
   | "SHARED_CREDITS_OVER_LIMIT"
   | "TEMPLATE_NOT_FOUND"

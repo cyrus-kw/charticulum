@@ -59,4 +59,16 @@ describe("mergeRequirementSets", () => {
       allowDoubleCounting: true,
     });
   });
+
+  it("keeps every credit rule, and the higher minimum grade", () => {
+    const merged = mergeRequirementSets([
+      { ...genEd, creditRules: [{ id: "gq", name: "GQ", credits: 6 }], minGrades: { ENG101: "C-" } },
+      { ...major, creditRules: [{ id: "gq", name: "GQ", credits: 9 }, { id: "cs", name: "CS", credits: 18 }], minGrades: { ENG101: "C", CS101: "C" } },
+    ]);
+    expect(merged.creditRules).toEqual([
+      { id: "gq", name: "GQ", credits: 9 },
+      { id: "cs", name: "CS", credits: 18 },
+    ]);
+    expect(merged.minGrades).toEqual({ ENG101: "C", CS101: "C" });
+  });
 });

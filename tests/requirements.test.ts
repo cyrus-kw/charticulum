@@ -109,4 +109,72 @@ describe("evaluateRequirements", () => {
     );
     expect(report.totalCredits).toBe(4);
   });
+
+  describe("credit rules", () => {
+    const courses = createCatalog([
+      obj("MATH140", { code: { subject: "MATH", number: 140 }, genEdArea: "Quantification", credits: 4 }),
+      obj("STAT200", { code: { subject: "STAT", number: 200 }, genEdArea: "Quantification", credits: 4 }),
+      obj("CMPSC221", { code: { subject: "CMPSC", number: 221 } }),
+      obj("CMPSC465", { code: { subject: "CMPSC", number: 465 } }),
+      obj("CMPSC473", { code: { subject: "CMPSC", number: 473 } }),
+    ]);
+    const chart = chartOf([[], ["MATH140", "STAT200", "CMPSC221"], ["CMPSC465", "CMPSC473"]]);
+
+    it("counts courses by gen ed area, by subject and number, or from a list", () => {
+      const report = evaluateRequirements(
+        courses,
+        chart,
+        requirements({
+          creditRules: [
+            { id: "gq", name: "GQ", credits: 6, genEdAreas: ["Quantification"] },
+            { id: "upper", name: "400-level CMPSC", credits: 6, subjects: ["CMPSC"], minNumber: 400 },
+            { id: "list", name: "From the list", credits: 9, objectIds: ["CMPSC221", "CMPSC465"] },
+          ],
+        }),
+      );
+      expect(report.creditsByRule).toEqual({ gq: 8, upper: 6, list: 6 });
+      expect(report.issues).toEqual([
+        { code: "CREDIT_RULE_SHORTFALL", message: "From the list has 6 credits; 9 are required." },
+      ]);
+    });
+
+    it("leaves out graded courses under the rule's minimum grade", () => {
+      const report = evaluateRequirements(
+        courses,
+        { ...chart, grades: { MATH140: "D", STAT200: "B" } },
+        requirements({
+          creditRules: [{ id: "gq", name: "GQ", credits: 6, genEdAreas: ["Quantification"], minGrade: "C" }],
+        }),
+      );
+      expect(report.creditsByRule).toEqual({ gq: 4 });
+      expect(codes(report)).toEqual(["CREDIT_RULE_SHORTFALL"]);
+    });
+  });
+
+  describe("minimum grades in required courses", () => {
+    const rules = requirements({ minGrades: { CS101: "C" } });
+
+    it("passes a course that isn't graded yet, or has the grade", () => {
+      expect(codes(evaluateRequirements(catalog, chartOf([[], ["CS101"]]), rules))).toEqual([]);
+      const graded = chartOf([[], ["CS101"]], { grades: { CS101: "C" } });
+      expect(codes(evaluateRequirements(catalog, graded, rules))).toEqual([]);
+    });
+
+    it("flags a grade under the minimum, on the course", () => {
+      const report = evaluateRequirements(catalog, chartOf([[], ["CS101"]], { grades: { CS101: "D" } }), rules);
+      expect(report.issues).toEqual([
+        {
+          code: "REQUIRED_GRADE_TOO_LOW",
+          message: "CS101 needs at least a C; the grade is D.",
+          objectId: "CS101",
+          termIndex: 1,
+        },
+      ]);
+    });
+
+    it("checks an equivalent taken in its place", () => {
+      const report = evaluateRequirements(catalog, chartOf([[], ["HON101"]], { grades: { HON101: "D" } }), rules);
+      expect(report.issues.map((i) => i.objectId)).toEqual(["HON101"]);
+    });
+  });
 });

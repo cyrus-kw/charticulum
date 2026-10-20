@@ -2,7 +2,7 @@
 // bulletin, so a hand edit (or a change to the school format) that breaks
 // it shows up here instead of on the Schools page.
 import { describe, expect, it } from "vitest";
-import { loadSchool } from "../src/engine/index";
+import { checkChart, forkTemplate, latestTemplate, loadSchool, resolveRequirements } from "../src/engine/index";
 import { readSchoolFolder } from "../src/server/schoolFolder";
 
 async function loadPennState() {
@@ -18,8 +18,22 @@ describe("schools/penn-state", () => {
     expect(data.subjects.length).toBeGreaterThan(250);
   });
 
-  it("has no programs (they're made by hand)", async () => {
-    expect((await loadPennState()).library).toEqual([]);
+  it("has the Computer Science B.S., whose plan only misses what the student picks", async () => {
+    const school = await loadPennState();
+    const program = latestTemplate(school.library, "computer-science-bs")!;
+    expect(program.version).toBe("2026-27");
+    const chart = forkTemplate(program);
+    const { requirements } = resolveRequirements(school.library, school.globalSets, chart);
+    const { issues } = checkChart(school.catalog, chart, requirements);
+    // Every required course is on the suggested plan.
+    expect(issues.filter((i) => i.code === "MISSING_REQUIRED_OBJECT")).toEqual([]);
+    // CMPSC 483W's bulletin entry still asks for CMPSC 311, which the
+    // program replaced with CMPSC 315 and 316.
+    expect(issues.filter((i) => i.objectId).map((i) => `${i.code} ${i.objectId}`)).toEqual([
+      "PREVIOUS_REQUISITE_NOT_MET CMPSC483W",
+    ]);
+    // Left to the student: electives and gen eds.
+    expect(issues.filter((i) => i.code === "CREDIT_RULE_SHORTFALL").length).toBeGreaterThan(0);
   });
 
   it("builds each course from its subject's file", async () => {

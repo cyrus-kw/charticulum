@@ -89,9 +89,17 @@ A subject's file only gives each course's number and letter; its id
 University Park's undergraduate subjects (274) and courses (about 9,500,
 with descriptions) and its school-wide rules, built from its
 [Undergraduate Bulletin](https://bulletins.psu.edu) by
-`scripts/penn-state.ts`. It has no programs; those are made by hand.
-`--save` also saves it to the database, keeping the programs already
-saved there.
+`scripts/penn-state.ts`. Its programs are written by hand in
+`programs/` (the script leaves them alone): so far the Computer Science
+B.S. `--save` also saves it to the database, with the folder's programs
+and any others already saved there.
+
+A program's requirement set has three parts: required objects
+(`requiredObjectIds`); credit rules (`creditRules`), each "at least N
+credits from courses that match", by gen ed area, subject, course
+number, or a list, optionally with a minimum grade (GQ 6 credits with C
+or better; 18 credits from the electives list); and minimum grades in
+required courses (`minGrades`, e.g. `{ "CMPSC221": "C" }`).
 
 Descriptions aren't sent with the planner page (thousands would make it
 megabytes); the page gets the school compacted, and Selected fetches a

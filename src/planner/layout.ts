@@ -197,6 +197,8 @@ export function chartLayout(
   // the others or change their colors.
   previous?: LayoutMemory,
   geometry: Geometry = DEFAULT_GEOMETRY,
+  // The plan's own minimum grades ("C-required" courses).
+  requiredGrades: Record<string, Grade> = {},
 ): { nodes: PlannerNode[]; edges: PlannerEdge[]; memory: LayoutMemory; fresh: boolean } {
   const { columnWidth, nodeWidth } = geometry;
   const nodeOffset = (columnWidth - nodeWidth) / 2;
@@ -221,15 +223,18 @@ export function chartLayout(
   // 4. Nodes: one stripe per term (drawn under the lines), then the cards.
   const bottom = Math.max(ROW_HEIGHT, ...[...y.values()].map((v) => v + NODE_HEIGHT));
   const stripeHeight = HEADER_HEIGHT + bottom + FOOTER_HEIGHT;
-  // For each course, the strictest minimum grade any other course asks for
-  // in it. Grades compare by their points (an A- beats a C).
+  // For each course, the strictest minimum grade asked for in it, by any
+  // other course or by the plan itself. Grades compare by their points
+  // (an A- beats a C).
   const minGrades = new Map<string, Grade>();
+  const raise = (id: string, minimum: Grade) => {
+    const current = minGrades.get(id);
+    if (!current || GRADE_POINTS[minimum] > GRADE_POINTS[current]) minGrades.set(id, minimum);
+  };
   for (const other of catalog.values()) {
-    for (const [requisiteId, minimum] of Object.entries(other.requisites.minGrades ?? {})) {
-      const current = minGrades.get(requisiteId);
-      if (!current || GRADE_POINTS[minimum] > GRADE_POINTS[current]) minGrades.set(requisiteId, minimum);
-    }
+    for (const [requisiteId, minimum] of Object.entries(other.requisites.minGrades ?? {})) raise(requisiteId, minimum);
   }
+  for (const [id, minimum] of Object.entries(requiredGrades)) raise(id, minimum);
 
   const nodes: PlannerNode[] = chart.terms.map((term, column) => ({
     id: `term-${term.index}`,

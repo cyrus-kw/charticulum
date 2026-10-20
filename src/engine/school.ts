@@ -61,6 +61,17 @@ const courseObject = objectFields
 
 export const subjectSchema = z.object({ code: subjectCode, name: z.string().min(1) });
 
+const creditRule = z.object({
+  id,
+  name: z.string().min(1),
+  credits,
+  genEdAreas: z.array(z.string().min(1)).optional(),
+  subjects: z.array(subjectCode).optional(),
+  minNumber: z.number().int().min(0).optional(),
+  objectIds: z.array(id).optional(),
+  minGrade: grade.optional(),
+});
+
 const requirementSet = z.object({
   id,
   name: z.string(),
@@ -73,6 +84,8 @@ const requirementSet = z.object({
   minGpa: z.number().min(0).max(4).optional(),
   allowedOverrides: z.array(z.enum(["waive-requirement", "waive-requisite", "substitute"])).optional(),
   maxSharedCredits: credits.optional(),
+  creditRules: z.array(creditRule).optional(),
+  minGrades: z.record(id, grade).optional(),
 });
 
 const term = z.object({
@@ -209,6 +222,10 @@ export function parseSchoolData(input: unknown): ParseResult {
   }
   for (const set of [...data.globalRequirementSets, ...data.templates.flatMap((t) => t.requirementSets)]) {
     check(`requirementSets.${set.id}`, set.requiredObjectIds ?? []);
+    check(`requirementSets.${set.id}.minGrades`, Object.keys(set.minGrades ?? {}));
+    for (const rule of set.creditRules ?? []) {
+      check(`requirementSets.${set.id}.creditRules.${rule.id}`, rule.objectIds ?? []);
+    }
   }
   const versions = new Set<string>();
   for (const t of data.templates) {

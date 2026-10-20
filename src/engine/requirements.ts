@@ -1,5 +1,5 @@
-import { earliestSatisfyingTerm, placementTerms } from "./catalog";
-import { chartGpa } from "./grades";
+import { earliestSatisfyingTerm, placementTerms, satisfies } from "./catalog";
+import { chartGpa, meetsGrade } from "./grades";
 import {
   CATEGORY_NAMES,
   EXTERNAL_TERM,
@@ -7,6 +7,8 @@ import {
   type Category,
   type Chart,
   type ChartIssue,
+  type CreditRule,
+  type CurriculumObject,
   type Requirements,
 } from "./types";
 
@@ -15,12 +17,24 @@ export interface RequirementReport {
   creditsByTerm: Record<number, number>;
   totalCredits: number;
   creditsByCategory: Partial<Record<Category, number>>;
+  // Credit rule id -> credits counted toward it.
+  creditsByRule: Record<string, number>;
   missingRequired: string[];
   // Credits counted toward more than one category.
   sharedCredits: number;
   // Undefined until something is graded.
   gpa?: number;
   issues: ChartIssue[];
+}
+
+// Does a course count toward a credit rule? It has to fit every field
+// the rule gives (see CreditRule).
+export function matchesCreditRule(rule: CreditRule, object: CurriculumObject): boolean {
+  if (rule.objectIds && !rule.objectIds.includes(object.id)) return false;
+  if (rule.genEdAreas && !(object.genEdArea && rule.genEdAreas.includes(object.genEdArea))) return false;
+  if (rule.subjects && !(object.code && rule.subjects.includes(object.code.subject))) return false;
+  if (rule.minNumber !== undefined && !(object.code && object.code.number >= rule.minNumber)) return false;
+  return true;
 }
 
 // Measure a chart against its requirements (the MVP's r-o-s).
@@ -33,6 +47,8 @@ export function evaluateRequirements(
   const creditsByTerm: Record<number, number> = {};
   const creditsByCategory: Partial<Record<Category, number>> = {};
   const counted = new Set<string>();
+  // The objects counted, for the credit rules below.
+  const countedObjects: CurriculumObject[] = [];
   let totalCredits = 0;
   let sharedCredits = 0;
 
@@ -44,6 +60,7 @@ export function evaluateRequirements(
       // so their credits aren't counted twice.
       if (!object || counted.has(id)) continue;
       counted.add(id);
+      countedObjects.push(object);
 
       creditsByTerm[term.index] += object.credits;
       totalCredits += object.credits;
@@ -99,6 +116,46 @@ export function evaluateRequirements(
     }
   }
 
+  // Credit rules. A graded course under the rule's minimum grade doesn't
+  // count; one not graded yet is planned, so it counts for now.
+  const creditsByRule: Record<string, number> = {};
+  for (const rule of requirements.creditRules ?? []) {
+    let earned = 0;
+    for (const object of countedObjects) {
+      if (!matchesCreditRule(rule, object)) continue;
+      const grade = chart.grades?.[object.id];
+      if (rule.minGrade && grade && !meetsGrade(grade, rule.minGrade)) continue;
+      earned += object.credits;
+    }
+    creditsByRule[rule.id] = earned;
+    if (earned < rule.credits) {
+      issues.push({
+        code: "CREDIT_RULE_SHORTFALL",
+        message: `${rule.name} has ${earned} credits; ${rule.credits} are required.`,
+      });
+    }
+  }
+
+  // Minimum grades in required courses ("C or better"). Whatever stands in
+  // for the course (an equivalent) needs the grade; one passing (or not
+  // yet graded) placement is enough.
+  for (const [id, minimum] of Object.entries(requirements.minGrades ?? {})) {
+    const taken = [...placements.keys()].filter((placedId) => satisfies(catalog, id, placedId));
+    const passed = taken.some((placedId) => {
+      const grade = chart.grades?.[placedId];
+      return grade === undefined || meetsGrade(grade, minimum);
+    });
+    if (taken.length === 0 || passed) continue;
+    for (const placedId of taken) {
+      issues.push({
+        code: "REQUIRED_GRADE_TOO_LOW",
+        message: `${placedId} needs at least a ${minimum}; the grade is ${chart.grades![placedId]}.`,
+        objectId: placedId,
+        termIndex: placements.get(placedId),
+      });
+    }
+  }
+
   if (totalCredits < requirements.minTotalCredits) {
     issues.push({
       code: "TOTAL_CREDITS_SHORTFALL",
@@ -125,6 +182,7 @@ export function evaluateRequirements(
     creditsByTerm,
     totalCredits,
     creditsByCategory,
+    creditsByRule,
     missingRequired,
     sharedCredits,
     gpa,

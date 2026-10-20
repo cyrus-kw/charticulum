@@ -20,7 +20,7 @@ import {
   type ReactFlowInstance,
 } from "@xyflow/react";
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
-import { EXTERNAL_TERM, meetsGrade, type Catalog, type Chart, type ChartIssue } from "../engine/index";
+import { EXTERNAL_TERM, meetsGrade, type Catalog, type Chart, type ChartIssue, type Grade } from "../engine/index";
 import {
   chartLayout,
   edgeEndpoints,
@@ -682,6 +682,8 @@ export interface ChartFlowProps {
   issues: ChartIssue[];
   creditsByTerm: Record<number, number>;
   maxCredits: number;
+  // The plan's minimum grades in required courses, marked on their cards.
+  requiredGrades?: Record<string, Grade>;
   selectedId: string | null;
   // `position`: where in the term's top-to-bottom order it was dropped.
   onMove: (objectId: string, termIndex: number, position: number) => void;
@@ -724,6 +726,7 @@ export function ChartFlow({
   issues,
   creditsByTerm,
   maxCredits,
+  requiredGrades,
   selectedId,
   onMove,
   onSelect,
@@ -779,8 +782,8 @@ export function ChartFlow({
     const before = arrangements.current.get(planVersion);
     if (before) memory.current = before;
     else if (memoryVersion.current !== layoutVersion) memory.current = undefined;
-    return chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry);
-  }, [catalog, chart, issues, creditsByTerm, maxCredits, geometry, layoutVersion, planVersion]);
+    return chartLayout(catalog, chart, issues, creditsByTerm, maxCredits, memory.current, geometry, requiredGrades);
+  }, [catalog, chart, issues, creditsByTerm, maxCredits, geometry, requiredGrades, layoutVersion, planVersion]);
   useEffect(() => {
     memoryVersion.current = layoutVersion;
   }, [layoutVersion]);

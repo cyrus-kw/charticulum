@@ -6,10 +6,12 @@
 //   schools/penn-state/school.json         id, name, calendar, school-wide rules
 //   schools/penn-state/subjects.json       every subject: code and name
 //   schools/penn-state/objects/cmpsc.json  one subject's courses, by number
+//   schools/penn-state/programs/*.json     programs, written by hand (left alone here)
 //
 //   npx tsx scripts/penn-state.ts          # writes the folder
 //   npx tsx scripts/penn-state.ts --save   # also saves it to the database in .env,
-//                                          # keeping the programs already saved there
+//                                          # with the folder's programs and the
+//                                          # ones already saved there
 //
 // What it reads:
 // - The subject list (.../university-course-descriptions/undergraduate/),
@@ -17,7 +19,7 @@
 //   credits, prerequisites, and gen ed area.
 // - The program pages in PROGRAMS, only as hints: which courses their
 //   suggested plans use, and their "A or B" requirement lines. It doesn't
-//   write any programs; those are made by hand.
+//   write any programs; those are made by hand, in programs/.
 //
 // Downloaded pages are kept in node_modules/.cache/penn-state, so running
 // it again doesn't download them again (delete that folder to refresh).
@@ -556,12 +558,14 @@ if (process.argv.includes("--save")) {
   process.loadEnvFile();
   const { requireDatabase } = await import("../src/server/db");
   const { schools } = requireDatabase();
-  // Keep the programs already in the database (they're made by hand);
-  // only the subjects, courses, and school-wide rules come from here.
+  // The folder's programs, plus any made in the database that the folder
+  // doesn't have (the same id and version: the folder's wins).
   const existing = await schools.get(parsed.data.school.id);
-  const merged = parseSchoolData({ ...parsed.data, templates: existing?.templates ?? [] });
+  const inFolder = new Set(parsed.data.templates.map((t) => `${t.id} ${t.version}`));
+  const kept = (existing?.templates ?? []).filter((t) => !inFolder.has(`${t.id} ${t.version}`));
+  const merged = parseSchoolData({ ...parsed.data, templates: [...parsed.data.templates, ...kept] });
   if (!merged.ok) throw new Error(`The saved programs don't fit the new courses:\n${merged.errors.join("\n")}`);
   const saved = await schools.save(merged.data);
-  console.log(`saved ${saved.name} to the database (kept its ${merged.data.templates.length} programs)`);
+  console.log(`saved ${saved.name} to the database with ${merged.data.templates.length} programs (${kept.length} kept from before)`);
   process.exit(0);
 }

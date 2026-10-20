@@ -209,6 +209,7 @@ export function Planner({
             issues={view.check.issues}
             creditsByTerm={view.check.report.creditsByTerm}
             maxCredits={view.requirements.maxCreditsPerTerm}
+            requiredGrades={view.requirements.minGrades}
             selectedId={state.selectedId}
             onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
             layoutVersion={state.layoutVersion}

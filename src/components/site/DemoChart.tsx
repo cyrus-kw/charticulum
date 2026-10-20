@@ -59,6 +59,7 @@ export function DemoChart() {
           issues={issues}
           creditsByTerm={view.check.report.creditsByTerm}
           maxCredits={view.requirements.maxCreditsPerTerm}
+          requiredGrades={view.requirements.minGrades}
           selectedId={state.selectedId}
           planVersion={state.chart}
           onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
