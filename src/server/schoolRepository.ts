@@ -14,7 +14,12 @@ export interface SchoolSummary {
 export interface SchoolRepository {
   // Every school, by name.
   list(): Promise<SchoolSummary[]>;
+  // The school without its course descriptions (they can add up to
+  // megabytes, and are read one at a time with description()).
   get(id: string): Promise<SchoolData | null>;
+  // One object's description, or null if there's none (or no such school
+  // or object).
+  description(schoolId: string, objectId: string): Promise<string | null>;
   // Adds the school, or replaces its data if one with the same id exists.
   save(data: SchoolData): Promise<SchoolSummary>;
 }
@@ -33,6 +38,11 @@ function readSchool(data: unknown): SchoolData | null {
   return parsed.ok ? parsed.data : null;
 }
 
+// A school's data with its course descriptions left out.
+export function withoutDescriptions(school: SchoolData): SchoolData {
+  return { ...school, objects: school.objects.map(({ description, ...object }) => object) };
+}
+
 export function prismaSchoolRepository(prisma: PrismaClient): SchoolRepository {
   return {
     async list() {
@@ -48,17 +58,38 @@ export function prismaSchoolRepository(prisma: PrismaClient): SchoolRepository {
       return row && readSchool(row.data);
     },
 
+    async description(schoolId, objectId) {
+      // One row, found by its two-part id (an index lookup).
+      const row = await prisma.objectDescription.findUnique({
+        where: { schoolId_objectId: { schoolId, objectId } },
+        select: { description: true },
+      });
+      return row?.description ?? null;
+    },
+
     async save(data) {
       const { id, name } = data.school;
+      // Descriptions go in their own table, one row each; the rest is the
+      // school's data.
+      const descriptions = data.objects.flatMap((o) =>
+        o.description ? [{ schoolId: id, objectId: o.id, description: o.description }] : [],
+      );
       // Prisma's JSON type is stricter than SchoolData, though any data
       // that passed schoolDataSchema is valid JSON.
-      const json = data as unknown as Prisma.InputJsonValue;
-      // upsert: update the row if it exists, otherwise create it.
-      const row = await prisma.school.upsert({
-        where: { id },
-        update: { name, data: json },
-        create: { id, name, data: json },
-      });
+      const json = withoutDescriptions(data) as unknown as Prisma.InputJsonValue;
+      // A transaction: all of these happen, or (if one fails) none do, so
+      // a school is never left with half its descriptions.
+      const [row] = await prisma.$transaction([
+        // upsert: update the row if it exists, otherwise create it.
+        prisma.school.upsert({
+          where: { id },
+          update: { name, data: json },
+          create: { id, name, data: json },
+        }),
+        // The old descriptions are replaced by the new ones.
+        prisma.objectDescription.deleteMany({ where: { schoolId: id } }),
+        prisma.objectDescription.createMany({ data: descriptions }),
+      ]);
       return summary(row);
     },
   };
@@ -76,7 +107,10 @@ export function memorySchoolRepository(): SchoolRepository {
     },
     async get(id) {
       const row = rows.get(id);
-      return row ? structuredClone(row.data) : null;
+      return row ? withoutDescriptions(structuredClone(row.data)) : null;
+    },
+    async description(schoolId, objectId) {
+      return rows.get(schoolId)?.data.objects.find((o) => o.id === objectId)?.description ?? null;
     },
     async save(data) {
       const row = { id: data.school.id, name: data.school.name, data: structuredClone(data), updatedAt: now() };
@@ -103,7 +137,13 @@ export function withSampleSchool(repo: SchoolRepository): SchoolRepository {
       return [...rows, sampleSummary].sort((a, b) => a.name.localeCompare(b.name));
     },
     async get(id) {
-      return (await repo.get(id)) ?? (id === sample.school.id ? sample : null);
+      return (await repo.get(id)) ?? (id === sample.school.id ? withoutDescriptions(sample) : null);
+    },
+    async description(schoolId, objectId) {
+      // The sample counts only if no saved school has its id.
+      const saved = (await repo.list()).some((r) => r.id === schoolId);
+      if (saved || schoolId !== sample.school.id) return repo.description(schoolId, objectId);
+      return sample.objects.find((o) => o.id === objectId)?.description ?? null;
     },
     save: (data) => repo.save(data),
   };

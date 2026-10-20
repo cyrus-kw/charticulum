@@ -1,8 +1,9 @@
 import { describe, expect, it } from "vitest";
+import { parseSchoolData } from "../src/engine/index";
 import { sampleSchool } from "../src/fixtures/sampleSchool";
 import { memoryChartRepository } from "../src/server/chartRepository";
 import { memorySchoolRepository, withSampleSchool } from "../src/server/schoolRepository";
-import { addTransferTable, createChart, dashboardData, importSchool, openChart } from "../src/server/site";
+import { addTransferTable, createChart, dashboardData, importSchool, objectDescription, openChart } from "../src/server/site";
 
 const repositories = () => ({
   charts: memoryChartRepository(),
@@ -92,5 +93,32 @@ describe("addTransferTable", () => {
 
     const bad = await addTransferTable(repos, sampleId, "institution,externalId,objectId\nAP,X,NOPE999\n");
     expect(bad.ok).toBe(false);
+  });
+});
+
+describe("course descriptions", () => {
+  // The sample school with a description on one course.
+  async function withDescription() {
+    const repos = repositories();
+    const objects = sample.objects.map((o) => (o.id === "CS101" ? { ...o, description: "Variables, loops, and functions." } : o));
+    await repos.schools.save({ ...sample, objects });
+    return repos;
+  }
+
+  it("leaves them out of a chart's school, to keep the page small", async () => {
+    const repos = await withDescription();
+    const id = await createChart(repos, "me", { schoolId: sampleId });
+    const opened = await openChart(repos, "me", id);
+    expect(opened?.school.objects.some((o) => "description" in o)).toBe(false);
+    // Compacted, it still parses back to the same school (minus the description).
+    const back = parseSchoolData(opened!.school);
+    expect(back.ok && back.data).toEqual(sample);
+  });
+
+  it("gives one when asked for, or null", async () => {
+    const repos = await withDescription();
+    expect(await objectDescription(repos, sampleId, "CS101")).toBe("Variables, loops, and functions.");
+    expect(await objectDescription(repos, sampleId, "CS102")).toBeNull();
+    expect(await objectDescription(repos, "no-such-school", "CS101")).toBeNull();
   });
 });

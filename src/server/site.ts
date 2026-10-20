@@ -5,8 +5,9 @@ import {
   loadSchool,
   mergeEquivalencyRows,
   parseEquivalencyCsv,
+  compactSchoolData,
   parseSchoolData,
-  type SchoolData,
+  type SchoolDataInput,
 } from "../engine/index";
 import { newChart } from "../planner/state";
 import type { SavedChart, SavedChartSummary } from "../storage/types";
@@ -67,16 +68,26 @@ export async function createChart(repos: Repositories, ownerId: string, input: N
 }
 
 // A saved chart with its school's data, ready for the planner; null if
-// the owner has no such chart or its school is gone.
+// the owner has no such chart or its school is gone. The school is
+// compacted (compactSchoolData) to keep the page small, since a big school
+// has thousands of courses; the planner parses it again to fill the
+// defaults back in. Descriptions are left out and read one at a time
+// instead (objectDescription, below).
 export async function openChart(
   repos: Repositories,
   ownerId: string,
   id: string,
-): Promise<{ saved: SavedChart; school: SchoolData } | null> {
+): Promise<{ saved: SavedChart; school: SchoolDataInput } | null> {
   const saved = await repos.charts.get(ownerId, id);
   if (!saved) return null;
   const school = await repos.schools.get(saved.schoolId);
-  return school ? { saved, school } : null;
+  return school ? { saved, school: compactSchoolData(school) } : null;
+}
+
+// One object's description, or null if it has none (or there's no such
+// school or object).
+export async function objectDescription(repos: Repositories, schoolId: string, objectId: string): Promise<string | null> {
+  return repos.schools.description(schoolId, objectId);
 }
 
 export type ImportResult = { ok: true; school: SchoolSummary } | { ok: false; errors: string[] };

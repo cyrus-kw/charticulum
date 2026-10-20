@@ -226,6 +226,37 @@ export function parseSchoolData(input: unknown): ParseResult {
 }
 
 // ---------------------------------------------------------------------------
+// Compacting: the reverse of the defaults above. Leaves out every field
+// parsing would fill in the same way anyway (empty lists, offered every
+// term, a code the id already spells), and descriptions. For sending a big
+// school to the browser, which parses it again to get the full data back.
+// ---------------------------------------------------------------------------
+
+export function compactSchoolData(data: SchoolData): SchoolDataInput {
+  const objects = data.objects.map((object) => {
+    const { code, description, requisites, internalEquivalents, externalEquivalents, categories, availability, ...rest } =
+      object;
+    const sameCode = code && JSON.stringify(parseCourseCode(object.id)) === JSON.stringify(code);
+    const everyTerm =
+      !availability.yearParity &&
+      availability.seasons.length === EVERY_TERM.length &&
+      EVERY_TERM.every((season) => availability.seasons.includes(season));
+    const hasRequisites =
+      requisites.previous.length > 0 || requisites.concurrent.length > 0 || requisites.minGrades !== undefined;
+    return {
+      ...rest,
+      ...(code && !sameCode ? { code } : {}),
+      ...(hasRequisites ? { requisites } : {}),
+      ...(internalEquivalents.length > 0 ? { internalEquivalents } : {}),
+      ...(externalEquivalents.length > 0 ? { externalEquivalents } : {}),
+      ...(categories.length > 0 ? { categories } : {}),
+      ...(everyTerm ? {} : { availability }),
+    };
+  });
+  return { ...data, objects };
+}
+
+// ---------------------------------------------------------------------------
 // Loading: turn school data into the engine's working objects.
 // ---------------------------------------------------------------------------
 

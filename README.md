@@ -93,6 +93,12 @@ with descriptions) and its school-wide rules, built from its
 `--save` also saves it to the database, keeping the programs already
 saved there.
 
+Descriptions aren't sent with the planner page (thousands would make it
+megabytes); the page gets the school compacted, and Selected fetches a
+course's description from `/api/schools/<school>/objects/<id>`. The
+database keeps them in their own table (`ObjectDescription`), one row
+per course, so each is found straight away.
+
 ## Database
 
 Saving uses Postgres through [Prisma](https://www.prisma.io), at the address

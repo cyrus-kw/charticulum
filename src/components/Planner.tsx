@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useReducer, useState, type MouseEvent } from "react";
 import Link from "next/link";
-import { EXTERNAL_TERM, loadSchool, type SchoolData } from "../engine/index";
+import { EXTERNAL_TERM, loadSchool, parseSchoolData, type SchoolData, type SchoolDataInput } from "../engine/index";
 import { historyReducer, startHistory } from "../planner/history";
 import { derive, openedState } from "../planner/state";
 import type { SavedChart } from "../storage/types";
@@ -29,14 +29,23 @@ import { usePanels } from "./usePanels";
 const chartBox =
   "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900";
 
+// The school's data was checked when it was saved, so a failure here
+// means a bug, not a bad file.
+function parsedSchool(input: SchoolDataInput): SchoolData {
+  const parsed = parseSchoolData(input);
+  if (!parsed.ok) throw new Error(`The school's data didn't parse:\n${parsed.errors.join("\n")}`);
+  return parsed.data;
+}
+
 // The planner for one saved chart. The page loads the chart and its
-// school's data on the server and hands them over.
+// school's data on the server and hands them over, the school compacted
+// (see openChart); parsing it fills the left-out defaults back in.
 export function Planner({
   school: schoolData,
   saved,
   user,
 }: {
-  school: SchoolData;
+  school: SchoolDataInput;
   saved: SavedChart;
   // Who's signed in, shown at the bottom of the side panel.
   user: MenuUser;
@@ -45,7 +54,7 @@ export function Planner({
   // The third argument builds the first state once, on first render.
   // The planner state, with undo/redo history around it.
   const [history, dispatch] = useReducer(historyReducer, undefined, () =>
-    startHistory(openedState(loadSchool(schoolData), saved.chart, saved.id)),
+    startHistory(openedState(loadSchool(parsedSchool(schoolData)), saved.chart, saved.id)),
   );
   const state = history.present;
 

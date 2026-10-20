@@ -33,6 +33,7 @@ export {
 export { combineSchoolFiles, type SchoolFile, type SchoolFiles } from "./schoolFiles";
 export {
   chartSchema,
+  compactSchoolData,
   loadSchool,
   parseSchoolData,
   schoolDataSchema,

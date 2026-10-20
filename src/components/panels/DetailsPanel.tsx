@@ -8,6 +8,7 @@ import { askReason, Badge, Button, cn, DANGER_ICON_BUTTON, newId, Panel, Select 
 import { courseCode } from "../../planner/layout";
 import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
+import { useDescription } from "./useDescription";
 
 const GRADES = Object.keys(GRADE_POINTS) as Grade[];
 // A row of tags under a label. It is as tall as a compact dropdown (h-5), so
@@ -82,6 +83,8 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             </Badge>
           ))}
         </div>
+        {/* key: a new course starts with its description cut short again. */}
+        <Description key={object.id} schoolId={state.school.data.school.id} objectId={object.id} />
       </div>
 
       {/* Course information on the left; its term and grade on the right.
@@ -308,5 +311,30 @@ function TermDetails({ term, state, view, dispatch }: PanelProps & { term: Term 
       )}
 
     </Panel>
+  );
+}
+
+// A course's description, fetched when the course is selected. Cut to
+// four lines at first; "More" shows the rest. Nothing shows while it
+// loads or if there isn't one, so courses without one look as before.
+function Description({ schoolId, objectId }: { schoolId: string; objectId: string }) {
+  const description = useDescription(schoolId, objectId);
+  const [open, setOpen] = useState(false);
+  if (!description) return null;
+  // Only offer "More" when there's likely more than four lines' worth.
+  const long = description.length > 220;
+  return (
+    <div className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+      <p className={cn(long && !open && "line-clamp-4")}>{description}</p>
+      {long && (
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="mt-0.5 text-xs text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
+        >
+          {open ? "Less" : "More"}
+        </button>
+      )}
+    </div>
   );
 }
