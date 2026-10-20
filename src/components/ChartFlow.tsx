@@ -293,8 +293,10 @@ const gapKey = (gap: TermGap) => `${gap.after}:${gap.before}`;
 // gap (between two terms, or at either end of the chart). It only shows
 // while the pointer is over a header next to it (and, while the pointer
 // is on a +, only that one shows), and never where nothing would fit.
-// `place` says where it sits: on the line between two columns, or just
-// inside the chart's left or right end (so it isn't cut off).
+// `place` says where it sits: a round + on the line between two columns,
+// or, at the chart's left or right end, a tab that sticks out of the edge
+// (flat against it, rounded on the inside), so it reads as "add a term
+// out this way".
 function AddButton({ gap, neighbors, place }: { gap: TermGap; neighbors: number[]; place: "between" | "left" | "right" }) {
   const context = useContext(TermHeaderContext);
   if (!context?.onAdd) return null;
@@ -321,14 +323,20 @@ function AddButton({ gap, neighbors, place }: { gap: TermGap; neighbors: number[
       onPointerEnter={() => setHoveredPlus(key)}
       onPointerLeave={() => setHoveredPlus(null)}
       className={cn(
-        "nodrag nopan pointer-events-auto absolute top-1/2 z-10 flex size-5 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-600 shadow-sm hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white",
-        place === "between" && "left-0 -translate-x-1/2",
-        place === "left" && "left-1",
-        place === "right" && "right-1",
+        "nodrag nopan pointer-events-auto absolute top-1/2 z-10 flex h-5 -translate-y-1/2 items-center justify-center border border-zinc-300 bg-white text-zinc-600 shadow-sm hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white",
+        place === "between" && "left-0 w-5 -translate-x-1/2 rounded-full",
+        // At the ends, the + sits in the middle of the rounded end (a
+        // circle as big as the round + buttons), so it's the same distance
+        // from the curve all the way round. The tab is as wide as a round
+        // button, so the + is also that far (6.5px) from the chart's edge.
+        place === "left" && "left-0 w-5 justify-end rounded-r-full border-l-0",
+        place === "right" && "right-0 w-5 justify-start rounded-l-full border-r-0",
       )}
     >
-      <span className="scale-75">
-        <PlusIcon />
+      <span className="flex size-[18px] items-center justify-center">
+        <span className="scale-75">
+          <PlusIcon />
+        </span>
       </span>
     </button>
   );
