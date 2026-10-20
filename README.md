@@ -33,7 +33,7 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `src/fixtures/` | The fictional sample school |
 | `prisma/` | Database schema and migrations |
 | `tests/` | Vitest tests (`*.db.test.ts` need a real database) |
-| `scripts/` | The terminal demo and a headless-browser screenshot tool |
+| `scripts/` | The terminal demo, a headless-browser screenshot tool, and a script that signs it in |
 
 ### Engine pieces
 
