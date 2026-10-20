@@ -1,0 +1,135 @@
+{
+  "subject": "GREEK",
+  "objects": [
+    {
+      "number": 99,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 101,
+      "type": "course",
+      "title": "Introductory Ancient Greek",
+      "credits": 4,
+      "description": "GREEK 101 is the first course in a two-semester introduction to ancient Greek, the language of Homer, Sophocles, Plato, and the New Testament. Students will begin to learn the grammar and vocabulary necessary for reading Greek literature of different periods. Unlike a modern language, ancient Greek is not a spoken language. Consequently, the class will be devoted to honing reading skills through drills and the translation of short sentences and passages. Students will also be encouraged to compose ancient Greek sentences and passages as they develop their fluency in the language. By the end of the semester, students will be prepared to continue to GREEK 102 ."
+    },
+    {
+      "number": 102,
+      "type": "course",
+      "title": "Intermediate Ancient Greek",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GREEK101"
+        ]
+      },
+      "description": "GREEK 102 continues the work begun in GREEK101, which is prerequisite for enrollment. Students will continue to learn the grammar and vocabulary necessary for reading ancient Greek literature of different periods. During this course, students will begin to read extended, unadapted passages from Plato, Xenophon, the New Testament and other sources. GREEK 102 will prepare students for GREEK 203 ."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 203,
+      "type": "course",
+      "title": "Greek Reading and Composition",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GREEK102"
+        ]
+      },
+      "description": "GREEK 203 is the third course in the introductory ancient Greek language sequence. The aim of this course is to help students increase their familiarity with forms and vocabulary, as well as gain confidence in their ability to read, appreciate, and interpret ancient Greek literature. Students will be introduced to advanced grammar and syntax and will read extensive passages of ancient Greek prose. Greek prose composition will also comprise a significant component of this course. Possible authors covered in this course may include but are not limited to: Plato, Xenophon, Herodotus, Attic orators, and Lucian. The prerequisite for this course is GREEK 102 or the permission of the instructor."
+    },
+    {
+      "number": 420,
+      "type": "course",
+      "title": "Greek Prose Authors",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 420 is an advanced reading course in ancient Greek, which focuses on the writings of prose authors. The primary aim of the course will be to hone students¿ ability to read connected passages of Greek prose by a given author or on a particular theme. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible authors/ genres of focus include, but are not limited to: Plato, Xenophon, the Attic Orators, Aristotle, Plutarch, Lucian, the Greek Novel, and the New Testament. The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 425,
+      "type": "course",
+      "title": "Greek Historians",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 425 is a reading course in ancient Greek focusing on one or more of the major ancient Greek historians. The course is designed to advance the student's fluency in reading Greek prose, while at the same time enriching their understanding of Greek civilization and history by a thematic choice of historical readings. The course may concentrate on one author or may address a thematic issue with readings from a variety of Greek historians (usually Herodotus, Thucydides, or Xenophon, or Polybius). The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Greek Poetry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 430 is an advanced reading course in ancient Greek poetry. The primary aim of the course will be to hone students' ability to read and appreciate Greek poetry. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible poets include but are not limited to: Homer, Hesiod, Sappho & the Lyric poets, Callimachus, and Apollonius Rhodius. The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Greek Drama",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 440 is an advanced reading course in ancient Greek Drama (tragedy and comedy). The primary aim of the course will be to hone students' ability to read and appreciate Greek drama. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible poets include: Aeschylus, Sophocles, Euripides, Aristophanes, and Menander. The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "type": "course",
+      "title": "Independent Studies (Honors)",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

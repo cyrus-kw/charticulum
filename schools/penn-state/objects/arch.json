@@ -1,0 +1,600 @@
+{
+  "subject": "ARCH",
+  "objects": [
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 99,
+      "type": "course",
+      "title": "Foreign Studies--Architecture",
+      "credits": 1,
+      "description": "Individual or group instruction conducted in a foreign country."
+    },
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Architecture and Ideas",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "description": "General introduction to world architecture, emphasizing the relationship between concepts, philosophies, values and ideologies in shaping the built environment. ARCH 100 Architecture and Ideas (3) (GA)(BA) This course meets the Bachelor of Arts degree requirements. This course introduces architecture and urbanism for a general audience. It presents key concepts that have shaped the built environment, and provides an ongoing framework for evaluations of what makes a good building or city. The material discussed is taken from prehistory to the present, and encompasses both major works of architecture and consideration of common building types and contexts. Although monuments and philosophies from the Western tradition predominate, it brings in issues and examples of global scope as well. The course is structured around a set of themes. These include: how architecture embodies spiritual beliefs; affects private and community life; evolving definitions of the architect; and how ideas about aesthetics, technology, tradition, and other cultural forces shape buildings and influence diverse, often conflicting notions of what constitutes \"good\" architecture. The topics discussed will demonstrate multiple ways of understanding buildings and cities. Lectures and assigned readings explore significant illustrative structures, design theories, and the cultural and intellectual contexts in which they emerge. Through the lectures and readings students will become familiar with an extensive set of architectural works, as well as a wide range of influential architectural concepts, authors, and texts. ARCH 100 will ultimately help students analyze and judge buildings and the arguments about them critically, and better understand buildings and cities as ideologically charged artifacts that influentially structure human experience."
+    },
+    {
+      "number": 121,
+      "type": "course",
+      "title": "Visual Communications I",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "ARCH131"
+        ]
+      },
+      "description": "Development of two and three-dimensional graphic communications skills and techniques required for the practice of architecture. ARCH 121 Visual Communications I (2)The course is designed to introduce two and three-dimensional graphic communication skills. Assignments will develop the student's understanding and skills associated with the hand-drawing techniques used in the practice of architecture. Exercises provide exposure to the variety of representational techniques available to architects for the visual communication of design ideas and design documentation. Visual Communications I is organized as an interactive studio environment which combines lectures and demonstrations with individual instruction. The basic concepts and theories of documenting, representing, and presenting architecture will be introduced through a series of lectures, seminars, and examples. In studio, skills will be developed through project workshops. Instruction includes working sessions, individual desk reviews, technique demonstrations and group discussions. Students will learn the fundamentals of architectural drawing by hand, introductory-level descriptive geometry, orthographic projection, paraline and perspective drawings. These skills and principles are imparted primarily through studio-based assigned projects."
+    },
+    {
+      "number": 122,
+      "type": "course",
+      "title": "Visual Communications II",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "ARCH131",
+          "ARCH121"
+        ],
+        "concurrent": [
+          "ARCH132"
+        ],
+        "minGrades": {
+          "ARCH131": "C",
+          "ARCH121": "C"
+        }
+      },
+      "description": "Development of two-dimensional digital graphic communications skills and techniques required for the practice of architecture. ARCH 122 Visual Communications II (2)The course is designed to introduce students to two-dimensional digital tools used in the practice of architecture. Assignments will develop the student's understanding and skills associated with digital techniques and software. Exercises provide exposure to the digital tools available to architects for the visual communication of design ideas and design documentation. Skills developed in ARCH 121 (drawing and modeling techniques) will provide the foundation for work performed in this course. ARCH 122 is organized as an interactive studio environment combining lectures and demonstrations with individual instruction. The basic concepts and theory of documenting, representing, and presenting architecture will be introduced through a series of lectures, seminars, and examples. In studio, skills will be developed through project workshops. Instruction includes working sessions, individual desk reviews, software and hardware demonstrations, and group discussions."
+    },
+    {
+      "number": 130,
+      "suffix": "A",
+      "type": "course",
+      "title": "Basic Design and Research I",
+      "credits": 3,
+      "description": "This beginning design studio will prepare students to communicate design ideas through drawing and modeling, promoting analog/traditional techniques, in addition to digital media and processes in design and presentation of design. This course will introduce students to the iterative process of design, involving constructive & critical feedback from peers and instructors. Students will learn to present evidence of reasoned solutions to design problems and explanation and defense of design decisions in graphic form. They will learn to visually communicate ideas and thoughts. This course will include exercises in precedent research and analysis, site analysis, response to building program and the integration of research into design proposals. The students will design and represent their proposals at various scales in response to analysis and research. They will plan, draw, and model their proposals, and present their design(s) to their peers and faculty. This course will emphasize ABET (Accreditation Board for Engineering and Technology) outcomes: - \"an ability to design and conduct experiments, as well as to analyze and interpret data,\" - \"an ability to communicate effectively,\" (ABET/Criteria for ABET Programs, 2007, p. 2)."
+    },
+    {
+      "number": 130,
+      "suffix": "B",
+      "type": "course",
+      "title": "Basic Design and Research II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH130A"
+        ]
+      },
+      "description": "This architectural design studio is organized around exercises in precedent research and analysis, site analysis, response to building program and the integration of research into design proposals. Students will learn to present evidence of reasoned solutions to design problems and explain and defend their design decisions in a graphic form. The students will learn to visually communicate architectural ideas. The students will design, detail, and represent their building proposals at various scales in response to the analysis and research. They will plan, draw, and model their proposals, in their site context and present their design(s) to their peers and faculty for critical comments, discussion, and review. This course will emphasize ABET (Accreditation Board for Engineering and Technology) outcomes: - \"an ability to design and conduct experiments, as well as to analyze and interpret data,\" - \"an ability to communicate effectively,\" (ABET/Criteria for ABET Programs, 2007, p. 2)."
+    },
+    {
+      "number": 131,
+      "type": "course",
+      "title": "Basic Design Studio I",
+      "credits": 4,
+      "requisites": {
+        "concurrent": [
+          "ARCH121"
+        ]
+      },
+      "description": "An introduction to the basic concepts, methods, and skills of architectural design in a project-based, active learning, studio environment. ARCH 131 Basic Design Studio I (4)This course is an introduction to the basic concepts, methods, and skills of architectural design. As a \"studio\" it is a project-based, active learning course where the development and evaluation of the work is driven by a critical dialogue with the instructor and one's classmates. This course is the first in a series of design studios that serve as the central thread throughout the curricula of the Architecture program. In ARCH 131 , students gain knowledge about the discipline of design, develop skills of design and communication, and foster a capacity for judgment - the ability to make appropriate choices and decisions regarding design questions. As a laboratory, the design studio provides the opportunity to apply and explore the knowledge and experience gained in other courses. ARCH 131 is an intensive course that encourages creativity and industry on the part of the students. Its design projects are open-ended; there are no single \"right answers.\" It demands energy, creativity, the willingness to take risks, and introspection. each student is expected to be open to a diverse range of ideas, values and solutions. The student is invited to view the studio experience as an opportunity to explore, discover, and invent. The studio is divided into separate sections, each led by one studio instructor. All sections are assigned a series of common projects and exercises; however, each section instructor will establish particular and unique assignments, and criteria for each project. This introduces students to the rich variety of possibilities in architectural communication and design. The primary form of evaluation and grading for this class is the \"review and critique\" during which students present their work to the class and then receive comments and recommendations for improvement. When assessing the student work, the instructors will consider the students performance in the following areas: 1. Conceptual Strength: The intentions and ideas that inspire the work. 2. Design Development: The energy, effort, and growth demonstrated throughout the course of the project. 3. Product: The tangible quality of the final product as a demonstration of the student's level of craftsmanship and mastery of the skills introduced in class. 4. Student Preparedness: At desk critiques, pin-ups, and reviews. 5. Student Participation: Students are expected to actively participate and be constructively engaged in class discussions, critiques, and reviews."
+    },
+    {
+      "number": 132,
+      "type": "course",
+      "title": "Basic Design Studio II",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ARCH131",
+          "ARCH121"
+        ],
+        "concurrent": [
+          "ARCH122"
+        ],
+        "minGrades": {
+          "ARCH131": "C",
+          "ARCH121": "C"
+        }
+      },
+      "description": "Continuation of ARCH 131 which further explores basic concepts, methods, and skills of architectural design with an emphasis on craftsmanship. ARCH 132 Basic Design Studio II (4)This course is a continuation of ARCH 131 and shares the same goals, methods, and means of evaluation. However, it builds upon the foundation of fundamental knowledge and skills delivered in the previous course and demands that the students expand their ability to tackle more difficult and complex problems of architectural design. The focus of this course is on \"craftsmanship\" and the methods and techniques of \"making and building.\" Students are expected to thoroughly consider the implications of materials, construction, and detailing as they relate to their overall design intentions. ARCH 132 is an intensive course that encourages creativity and industry on the part of the students. Its design projects are open-ended; there are no single \"right answers.\" It demands energy, creativity, the willingness to take risks, and introspection. Each student is expected to be open to a diverse range of ideas, values and solutions. The student is invited to view the studio experience as an opportunity to explore, discover, and invent. The studio is divided into separate sections, each led by one studio instructor. Each section instructor will establish particular and unique assignments, and criteria for each project. This introduces students to the rich variety of possibilities in architectural communication and design. When assessing the student work, the instructors will consider the students performance in the following areas: 1. Conceptual Strength: The intentions and ideas that inspire the work. 2. Design Development: The energy, effort, and growth demonstrated throughout the course of the project. 3. Product: The tangible quality of the final product as a demonstration of the student's level of craftsmanship and mastery of the skills introduced in class. 4. Student Preparedness: At desk critiques, pin-ups, and review. 5. Student Participation: Students are expected to actively participate and be constructively engaged in class discussions, critiques, and reviews."
+    },
+    {
+      "number": 170,
+      "suffix": "N",
+      "type": "course",
+      "title": "Introduction to Sustainable Architecture",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "description": "US buildings account for almost 40% of national CO2 emissions, 39% of the US total energy consumption, and 60% of US electricity alone. Worldwide, buildings consume nearly 40% of the world's energy, 25% of its wood, and 15% of its water. Building construction and use contribute significantly to global climate change. The way we design our built environment has a significant impact on consumption statistics, which is why we must consider the global environmental and health effects of buildings during the planning, design, and construction process. This course provides a broad exploration of the art and science of sustainable architecture. Architecture produces cultural artifacts with meaning. Yet, inhabiting and using architecture has a distinct and measurable impact on both local and global environments. Scientifically, this course investigates passive and active energy systems for buildings, environmental components of material production and use, and site and building design effects on the water cycle, clean air, local ecosystems, and food production. Students will calculate energy consumption and generation scenarios, produce a life-cycle analysis of a familiar product, evaluate a building based on current green building certification strategies, and evaluate biological impacts over the local and regional scale. Aesthetically, this course investigates vernacular solutions to physical human comfort, and demonstrates the artistic and cultural place of architecture in society. Part of the course will trace historical aesthetic trends to better understand how the existing unsustainable path began. Students will understand the roles of multiple stakeholders/social actors in every building project-from owners, to global \"neighbors\". Together, the course highlights the intersection of building performance and aesthetics. There will be a focus on returning to traditional solutions, as well as capitalizing on new innovations to solve environmental challenges. The underlying theme will be flourishing-both reducing negative environmental impacts as well as celebrating the healthy human condition through artistic expression and aegis of architecture."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies--Architecture",
+      "credits": 1,
+      "description": "Individual or group instruction conducted in a foreign country."
+    },
+    {
+      "number": 203,
+      "type": "course",
+      "title": "Materials and Building Construction I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH132",
+          "AE210"
+        ],
+        "concurrent": [
+          "ARCH231",
+          "AE421"
+        ],
+        "minGrades": {
+          "ARCH132": "C",
+          "AE210": "C"
+        }
+      },
+      "description": "Instruction in the design and construction of buildings utilizing wood and steel. ARCH 203 Materials and Building Construction I (3) This course serves as an introduction to common architectural building materials and associated methods of construction. It is the first part of a two-semester sequence to be followed by ARCH 204 in the spring semester. Lectures, readings, and in-class discussions introduce students to the historical development and conventional use of architectural materials and construction technologies, while select hands-on projects offer students experience in materials application and use. The class covers a wide variety of building methodologies that includes developed and developing cultures, building systems that are technologically sophisticated, as well as traditions considered primitive/vernacular.The primary objective of the course is to make BARCH students familiar with the materials and methods employed in making architecture, so that the results of that familiarity begin to inform the student's studio work/production.In addition to materials and construction methods, the course will also touch on issues related to craft/craftsmanship, sustainable practices and ethical use of resources, and the significant role that evolving technologies play in the process and economy of building-making."
+    },
+    {
+      "number": 204,
+      "type": "course",
+      "title": "Materials and Building Construction II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH203",
+          "AE421"
+        ],
+        "concurrent": [
+          "ARCH232",
+          "AE422"
+        ],
+        "minGrades": {
+          "ARCH203": "C",
+          "AE421": "C"
+        }
+      },
+      "description": "This course will continue the presentations of ARCH 203 , with a focus on concrete and masonry materials. ARCH 204 Materials and Building Construction II (3) The course is the second part of a two-semester sequence, following ARCH 203 . ARCH 204 is an introductory course in building materials and construction. It is intended for BARCH majors and is designed to prepare students for the professional practice of architecture. The learning objectives for the course can be divided into two categories: 1., developing a sense of materials and construction methods as the media for architecture, and then learning to use these media in creative and appropriate ways; 2. developing basic knowledge of the conventions of current building materials and construction techniques. Particular emphasis is placed on the use of drawings and models to accurately depict construction systems, assemblies and details. The course combines lectures and field trips with design projects, hands-on construction experiences, required readings, drawing and modeling."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Ideas Across Time in Architecture and Urbanism",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "description": "This course presents a transversal history of ideas, arguments, and visions that shape the built environment within their cultural, technological, and philosophical contexts. Buildings, landscapes, and cities embody ideas about society, culture, technology, and how we should live in the world. Some problems and questions are exemplary of their times; others seem eternal as we continue to grapple with them today. Changes in our ideas and ideals are made visible in our built environment, giving us a unique opportunity to trace their trajectories across time to see 'how we got to now.' The course introduces architectural and urban ideas by exploring and connecting key directions, works, and texts from the Western tradition. By casting a critical eye on where we've been, the course opens new perspectives on what might be next. The course covers a period ranging from ancient Greece and Rome to the present, with emphasis on how the foundations of Western architecture collided with modernity, and how we've dealt with the hereafters of modernity since the mid-20th century. Recurring themes will include the ways in which architectural theory has defined role of the architect, architecture's foundational principles, and the relationships between architectural and urban ideas, aesthetics, and the cultural contexts in which these ideas develop. Major topics will include ancient architectural theory, Renaissance classicism, tectonics and Gothic rationalism, the Beaux-Arts, Neoclassicism and typology, organicism and functionalism, the Modern avant-garde's radical new social and aesthetic visions, the International Style, countermodernisms, phenomenology, techno-utopianism, populism, gender, race, and international post-colonialism. This course meets the Bachelor of Arts degree requirements for Arts (GA) courses by: expanding knowledge and comprehension of the role of the arts, building competence in analysis, critical thinking and interpretive reasoning through the exploration of creative works; demonstrating the aesthetic, historic, social, and cultural significance of important works of design; and, critically assessing creative works through evaluative processes of analysis and interpretation."
+    },
+    {
+      "number": 231,
+      "type": "course",
+      "title": "Architectural Design I",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ARCH132",
+          "ARCH122"
+        ],
+        "concurrent": [
+          "ARCH203"
+        ],
+        "minGrades": {
+          "ARCH132": "C",
+          "ARCH122": "C"
+        }
+      },
+      "description": "Design of limited environments within defined constraints. ARCH 231 Architectural Design I (6) The second-year design curriculum introduces the student to the complexity of the architectural whole. The curriculum bridges the abstract design principles taught in the first year and the ability to put together a large building, the focus in the third-year. The objectives are to create an understanding of architectural elements and develop a sensitivity and awareness required for valid interpretations as well as to develop a reflective and critical design process with emphasis on the individual ability to articulate ideas. The major means of accomplishing development is through the design of smaller buildings/environments. To introduce the pragmatic and expressive aspects of architectural design and integrate visual communication with the design process. The emphasis is on developing comprehensive architectural thought, on the foundations of skill and knowledge essential for designing more \"complex\" buildings in later years, and making the students aware of the multiplicity of factors involved in the design process and their civic responsibility in making informed choices Thus, the pervasive issue of meaning in architecture is given a high priority and is interwoven in all stages of design exploration."
+    },
+    {
+      "number": 232,
+      "type": "course",
+      "title": "Architectural Design II",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ARCH231",
+          "ARCH203"
+        ],
+        "concurrent": [
+          "ARCH204",
+          "AE422"
+        ],
+        "minGrades": {
+          "ARCH231": "C",
+          "ARCH203": "C"
+        }
+      },
+      "description": "Design of limited environments within defined constraints. ARCH 232 Architectural Design II (6) The second-year design curriculum emphasis is on introducing the student to the complexity of the architectural whole. The curriculum bridges the abstract design principles taught in the first year and the ability to put together a large building, the focus in the third-year. The objectives are to create an understanding of architectural elements and develop a sensitivity and awareness required for valid interpretations as well as to develop a reflective and critical design process with emphasis on the individual ability to articulate ideas. The major means of accomplishing the design process is through the design of smaller buildings/environments. To introduce the pragmatic and expressive aspects of architectural design and integrate visual communication with the design process. The emphasis is on developing comprehensive architectural thought, on the foundations of skill and knowledge essential for designing more \"complex\" buildings in later years, and on making the students aware of the multiplicity of factors involved in the design process and their civic responsibility in making informed choices. Thus, the pervasive issue of meaning in architecture is given a high priority and is interwoven in all stages of design exploration."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies--Architecture",
+      "credits": 1,
+      "description": "Individual or group instruction conducted in a foreign country."
+    },
+    {
+      "number": 311,
+      "suffix": "W",
+      "type": "course",
+      "title": "Architectural and Planning Theories",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ],
+        "minGrades": {
+          "ENGL15": "C"
+        }
+      },
+      "description": "Architectural theory course with a strong focus on the reading and writing of essays about architecture and related fields. ARCH 311 Architectural and Planning Theories (3) ARCH 311 is a required course in the BARCH curriculum. The central goal of this course is to foster critical-thinking skills, in conjunction with the ability to develop and articulate theoretical positions related to the design, practice, and historical evolution of architecture, both verbally and in writing. ARCH 311 is a writing intensive seminar course fulfilling the University's Writing Across the Curriculum (WAC) requirement. Students will be introduced to various topics pertaining to advanced architectural theory. Students will critically read, then discuss significant works with the instructor. Lectures by the instructor will also be presented, discussed and analyzed. Writing assignments are utilized as instruments for learning the subject matter, methods of inquiry, and the types of writing typical of the discipline of architecture. The course format will also involve lectures by the instructor as well as presentations by the students related to past, present, and speculative architectural theories of importance to the field. In addition, students will complete writing assignments that demonstrate the development of a critical stance or idea, proficiency in critical analysis, and the use of established research techniques, citation of sources, and writing formats."
+    },
+    {
+      "number": 316,
+      "type": "course",
+      "title": "Analysis of Human Settlements: Cities",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "description": "This course focuses on the design and analysis of cities from ancient to modern time periods in the U.S. and the world, taking into account the cultural and historical ways human settlements develop, how cities relate to one another, and the wide array of built forms and material culture that make up built urban environments over time ¿ from arcades, squares, and streets to gardens, monuments, and more. If you have a genuine interest in learning more about how cities evolved and the historical and modern issues confronting the many diverse individuals and groups who thought about and influenced the planning of cities, this should be an interesting semester. One broad goal of this course is to enhance your urban literacy by developing the critical analytic skills needed to understand and appreciate cities in all of their complexity. These issues are not only pertinent to urban designers, architects, landscape architects and others who are directly involved in the planning of cities, but they are also vital to the diverse cultures and social groups who inhabit, experience, and also shape urban environments. The design and development of cities is a useful barometer for also understanding the political, economic, ethical, and other forces that guide and shape their development over time. This makes cities challenging to analyze because they are not static forms. They are ever changing and evolving."
+    },
+    {
+      "number": 317,
+      "type": "course",
+      "title": "Theory of Modern Japanese Architecture",
+      "credits": 3,
+      "description": "Introduction to the development of modern Japanese architecture from the Meiji Restoration of 1868 to the present day. ARCH 317 Theory of Modern Japanese Architecture (3) ARCH 317 outlines a lineage of ideology in Japanese architectural discourse in order to examine reciprocal interactions between Japan and the West in the development of modern Japanese architecture from the Meiji Period (1868-1912), through the Metabolism of the 60's, to the present day. The concept of \"tradition\" itself is an invention of the Meiji (modern) era. Through this notion, the course will introduce students to crucial moments in the development of Japanese architecture, while making parallel references to the key developments in the West. Inversely, examples of traditional Japanese architecture will be introduced as counterpoint for the modern. Several topics such as the evolution of Japanese symbolic and spatial traditions in art, architecture, and landscape architecture (gardens) will be discussed. While discussing the evolution of Japanese culture, aesthetics and religions, the influences of China and Korea will be introduced, thus increasing students' familiarity to the East. A brief examination of Western architects paralleling the course content will also be presented. The key figures to be discussed during the class include Kenzo Tange, Kisho Kurokawa, Arata Izozaki, Fumihiko Maki, Tadao Ando, Shin Takamatsu, Toyo Ito, Kazuyo Sejima and Shigeru Ban. Key Western architects, including Bruno Taut, Walter Gropius, Frank Lloyd Wright, and Le Corbusier, will also be discussed. In addition, several broad themes such as geography, climate culture, and symbolic and spatial traditions in art will be introduced. Eastern values and ethics very incongruent from those of the West and their impact on architecture will be presented and discussed. Specific globalization, the resultant reciprocal and transformative cross-cultural interactions in the development of modern Japanese architecture, and the unique process of \"Japanization\" in which ideas from the West are adapted, refined, and absorbed into Japanese architecture through specific buildings and architects. Students in this course will be expected to become more familiar with Eastern culture; comprehend basic principles behind Japanese architecture and gardens; understand relevant terminology associated with Japanese culture, art, gardens, and architecture; and become more aware of the reciprocal and transformative cross-cultural interactions in architecture."
+    },
+    {
+      "number": 331,
+      "type": "course",
+      "title": "Architectural Design III",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ARCH232",
+          "ARCH204"
+        ],
+        "minGrades": {
+          "ARCH232": "C",
+          "ARCH204": "C"
+        }
+      },
+      "description": "Development of the design process through organizational methodologies, based on physical, functional, and social-behavioral determinants. ARCH 331 Architectural Design II (6) Development of the design process through organizational methodologies, based on physical, functional, and social-behavioral determinants. Emphasis is placed on \"The Building Thoroughly Considered.\" The third-year design studio course is a continuation of the rigorous development of the architectural process started in the second year studio. Students will strive to develop an architectural totality, search for thoughtful decisions and sound judgments. Students continue the process of integrating the abstraction of the basics with the pragmatics of the built world. The student at the completion of this year should understand what a building is and how it responds to human needs in terms of cultural meaning, physical reality, operational prerequisites and construction."
+    },
+    {
+      "number": 332,
+      "type": "course",
+      "title": "Architectural Design IV",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ARCH331",
+          "ARCH380"
+        ],
+        "concurrent": [
+          "ARCH381"
+        ],
+        "minGrades": {
+          "ARCH331": "C",
+          "ARCH380": "C"
+        }
+      },
+      "description": "Development of the design process through organizational methodologies, based on physical, functional, and social-behavioral determinants. ARCH 332 Architectural Design IV (6) Development of the design process through organizational methodologies, based on physical, functional, and social-behavioral determinants. Emphasis is placed on \"The Building Thoroughly Considered.\" The second semester of the third-year design studio course is a continuation of the rigorous development of the architectural process started in the third year, first semester studio. ARCH 332 extends and deepens the understanding of the \"thoroughly considered\" building begun in ARCH 331 . Students will strive to develop an architectural totality, search for thoughtful decisions and sound judgments. Students continue the process of integrating the abstraction of the basics with the pragmatics of the built world. The student at the completion of this year should understand what a building is and how it responds to human needs in terms of cultural meaning, physical reality, operational prerequisites and construction."
+    },
+    {
+      "number": 380,
+      "type": "course",
+      "title": "Building Environmental Systems I",
+      "credits": 3,
+      "description": "ARCH 380 Building Environmental Systems I (3) introduces Architecture students to the topics of building thermal environment, and passive and mechanical heating/cooling systems. Thermal environment topics include thermal comfort, natural environmental impacts, heat transfer through the building envelope, heating and cooling design, mechanical systems, and building energy consumption. Building mechanical system topics include heating, ventilating, and airconditioning systems. Emphasis is placed on building design in response to the technical, environmental, and societal challenges, with a focus on sustainable design principles and guidelines applied to achieving thermal comfort in buildings. The course utilizes lectures, practicums, examinations, projects, and presentations to deliver and reinforce the technical content. The course offers students the opportunity to work in a team setting and to present their work orally to their peers. The broad coverage of the technical and social issues and professional skills challenges the architecture students to incorporate technical issues as an integral part of the overall building design. The course is required for students enrolled in the bachelor of architecture program."
+    },
+    {
+      "number": 381,
+      "type": "course",
+      "title": "Building Environmental Systems II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH380"
+        ],
+        "concurrent": [
+          "ARCH480"
+        ]
+      },
+      "description": "ARCH 381 Building Environmental Systems II (3). This course is a complement to ARCH 380 . All environmental control systems other than thermal environmental systems are covered in this course. ARCH 381 introduces architecture students to building illumination, acoustical, fire protection, electrical and plumbing design issues. Emphasis is placed on building design as a response to the technical, environmental, and societal challenges. The course utilizes lectures, practicums, examinations, projects, presentations, and field trips to deliver and reinforce the technical content. The course offers students the opportunity to work in team settings and to present their work orally to their peers. The broad coverage of the technical and social issues and professional skills intentionally involves students in discussion and application of social and ethical responsibilities. ARCH 380 is a prerequisite for this course."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Building Material Reclamation & Reuse",
+      "credits": 3,
+      "description": "This course is a very hands-on, project-based seminar focusing on the theory and practice of building material salvage and recycling. Through active and applied learning, students will gain experience in handling, preserving and adding value to salvaged building materials. The course will consist of a variety of small-scale design-build projects, where students will learn and practice the methods and techniques of reclamation and explore the design possibilities of reused material. In addition to being a practical hands-on seminar, this course is also intended to explore and examine the broader historical and theoretical context for the activity of building material reclamation and reuse. Since the literal fall of the Roman Empire, reclaimed building materials have been creatively used in the design and construction of new buildings, yet we lack a thoughtful theoretical (and poetic) construct that supports reclamation activity other than the simple and obvious ethics of sustainability. Themes to be explored: ruins, spoglia, palimpsests, weathering, memory and the mnemonic function of architecture."
+    },
+    {
+      "number": 412,
+      "type": "course",
+      "title": "Integrative Energy and Environmental Design",
+      "credits": 3,
+      "description": "Concepts and strategies for the environmentally conscious design of the built environment."
+    },
+    {
+      "number": 419,
+      "type": "course",
+      "title": "Design Research and Architectural Programming",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH332",
+          "ARCH311W"
+        ]
+      },
+      "description": "ARCH 419 prepares undergraduate Architecture students with the skills and tools to conduct research contributing to the pursuit of an architectural idea in a rigorous, in-depth manner, and then subsequently utilize the acquired knowledge in the development of the idea through the completion and presentation of a thoroughly considered architectural design project (building, component or system). This course will help students prepare for their independent or directed design research studio through the exploration of foundational approaches and methodologies in the field. It will foster in-depth design inquiry and research; build upon and reiterate design awareness, skills, and methods introduced in previous years; and introduce, discover and develop new ones. This course will help prepare students to identify significant design project topics, select the proper methodology, and engage in independent or directed research."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Architectural Design Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH130A"
+        ]
+      },
+      "description": "Studies in principles and elements of design; planning for human use; the relationship of space to physical and social environment. Architectural Engineering majors only. ARCH 441 Architectural Design Analysis (3) Studies in principles and elements of design; planning for human use; the relationship of space to physical and social environment.The objective of this course is to explore various approaches to architectural design and to reinforce the concept that there is no \"right\" or \"wrong\" answer to a design problem. \"Design\" is decision-making in itself -- the key to a successful project lies not only in the final product, but in the process leading up to it as well. In order to be successful, design solutions must respond to both formal ideas as well as human, environmental and technical realities. Thus, the interaction between art and technology becomes imperative."
+    },
+    {
+      "number": 442,
+      "type": "course",
+      "title": "Architectural Design Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH441"
+        ]
+      },
+      "description": "Continuation of ARCH 441 , with emphasis on functional relationship of space, form, structure, and building groups. Architectural Engineering majors only. ARCH 442 Architectural Design Analysis (3) Continuation of ARCH 441 , with emphasis on functional relationship of space, form, structure, and building groups.The objective of this course is to explore various approaches to architectural design and to reinforce the concept that there is no \"right\" or \"wrong\" answer to a design problem. \"Design\" is decision-making in itself -- the key to a successful project lies not only in the final product, but in the process leading up to it as well. In order to be successful, design solutions must respond to both formal ideas as well as human, environmental and technical realities. Thus, the interaction between art and technology becomes imperative."
+    },
+    {
+      "number": 451,
+      "type": "course",
+      "title": "Architectural Professional Practice",
+      "credits": 3,
+      "description": "A study of architectural practice in today's society: education, registration, office practice, codes, standards, construction industry, contracts, and legal documents. ARCH 451 Architectural Professional Practice (3) ARCH 451 is a required course in the BARCH curriculum. It is intended to prepare students for the professional practice of architecture. The course explores the historical influences and current trends that shape the relationship between the architect, client and builder in contemporary society. This course provides an overview of the changing roles of the architect through history as well as a detailed examination of the architectural profession in today's rapidly changing world. ARCH 451 reviews internship, architectural licensing procedures and requirements, professional development (life-long learning), architectural practice including office organizational structures, the architect's administrative role, construction cost control, professional organizations, the architect's professional, legal and ethical responsibilities (including life-safety and accessibility), leadership in the profession and the community as well as alternative architectural / design related careers."
+    },
+    {
+      "number": 480,
+      "type": "course",
+      "title": "Technical Systems Integration",
+      "credits": 3,
+      "description": "Presentations of buildings' analyses from a multiplicity of viewpoints: architectural, spacial, environmental, mechanical, construction assembly. ARCH 480 Technical Systems Integration (3) This course is a synthesis of topics previously introduced in the AE sequence - such as structural, mechanical, electrical, and other systems related to a building's technical performance. Students will practice the purposeful integration of all technical aspects of a buildings design, providing them with a working knowledge of matters related to energy efficiency, sustainability, lighting, and acoustics. The focus of the course lies in questioning how technical requirements and design intentions should be integrated during the design process, so as to enhance the aesthetic and performance qualities of an architectural project. This course combines lectures, field trips, and technical assignments, along with analysis and implementation of energy, day lighting, electrical lighting, and acoustical concepts in the student's design efforts. In addition to the synthesis of building design and technical systems, this course will further develop the student's knowledge of active/passive techniques for sustainable architecture. A focus on the collaborative workings/environment of the architectural practice helps students to translate systems integration strategies into graphic/digital representation, and reinforces the interdisciplinary nature of designing and constructing successful works of architecture."
+    },
+    {
+      "number": 481,
+      "type": "course",
+      "title": "Digital Design Media",
+      "credits": 3,
+      "description": "Advanced course in digital modeling, rendering, animation and non-linear video for architectural investigations."
+    },
+    {
+      "number": 482,
+      "type": "course",
+      "title": "Foundations in Shape Grammars",
+      "credits": 3,
+      "description": "Shape grammars are a powerful formalism for the generative description of designs and a key discourse in design computation. The formalism is distinctive for its interest in developing a mathematics of design through visual computations described directly with geometry. By foregrounding visual representations and visual processes, the formalism lays the foundation for shape computations that aid in explaining, understanding, and developing designs specified by rule-based, generative systems. These computations provide the basis for the generative description, interpretation, and evaluation of visual designs. This course provides a broad exploration of shape grammar theory, implementations, and applications in a variety of disciplines. More specifically, it investigates the theory of shapes, shape rules, parametric shape rules, rule schemata, languages of designs, and more, providing students with a foundation in the rule-based analysis and specification of designs as well as a fundamental understanding on design computing. It considers the history and logic of spatial systems in the arts, architecture, and engineering to build an awareness of rule-based approaches in design, especially in relation to the theories underlying contemporary design software. Critical and creative applications in the arts, architecture, landscape, urbanism, product design, and engineering will be discussed to understand shape grammars as a visual approach to rule-based analysis and synthesis with broad potential for design and research. Building on these insights, students will learn to analyze designs with rules and use those rules to generate new design configurations. Students will also be challenged to develop their own rulebased interpretations of design processes to study how shape grammars can be understood as a generative design methodology."
+    },
+    {
+      "number": 491,
+      "type": "course",
+      "title": "Architectural Design Research Studio - Directed",
+      "credits": 12,
+      "requisites": {
+        "previous": [
+          "ARCH311W",
+          "ARCH332"
+        ],
+        "minGrades": {
+          "ARCH311W": "C",
+          "ARCH332": "C"
+        }
+      },
+      "description": "Problems in architectural planning and design; and/or programming, implementation methodologies and applications for various environmental design scales. ARCH 491 Architectural Design Research Studio (6) It is the goal of this program that, upon completion of ARCH 491 , each student will have the ability to pursue an architectural idea in a rigorous, in-depth manner and be able to express the knowledge of and implication of that idea through the completion and presentation of a \"thoroughly considered building design project.\" It is the intent of the Design Research Studio component of the Bachelor of Architecture program to foster the spirit of in-depth design inquiry and research, and to build upon and reiterate design awareness, skills, and methods introduced in previous years; and to introduce, discover and develop new ones. To these ends the primary educational vehicle is the use of a propositional thesis as a way of directing the study toward the linking of theory and building in a meaningful manner."
+    },
+    {
+      "number": 492,
+      "suffix": "H",
+      "type": "course",
+      "title": "Architectural Design Studio",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ARCH491"
+        ],
+        "concurrent": [
+          "ARCH480"
+        ],
+        "minGrades": {
+          "ARCH491": "C"
+        }
+      },
+      "description": "Continuation of select ARCH 491 sections with concentration and specialization options."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Advanced Architectural and Related Design/Construction Work Experience II",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or architectural and related design/construction work experience. A final presentation of activities will be evaluated by a faculty member in the Department of Architecture. Number of credits will be determined based on the total number of hours of approved work experience under the direct supervision of a registered architect or other approved professional."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "type": "course",
+      "title": "Independent Study - Honors",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 499,
+      "suffix": "A",
+      "type": "course",
+      "title": "Rome Study-Architectural Design",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ARCH332",
+          "ARCH480"
+        ],
+        "concurrent": [
+          "ARCH499B",
+          "ARCH499C"
+        ],
+        "minGrades": {
+          "ARCH332": "C",
+          "ARCH480": "C"
+        }
+      },
+      "description": "Individual or group instruction conducted in Rome, Italy. ARCH 499A Foreign Study - Architectural Design VI (6) The semester abroad design work will focus on the difficult problem of creating new construction in the presence of an historic structure. This is an inevitable problem in the city of Rome where one can hardly avoid confronting historic or monumental buildings. However, as every place is preceded by a history, either natural, political or material, these issues are important outside of this context, the course aims to help students define critical strategies that will serve them beyond their semester abroad.Fifteen weeks is a short time to experience a place as complex and interesting as Rome, Italy. For many students, it may be a chance of a lifetime to live in and study a place as challenging and full of opportunity as this. Students are expected to approach the semester with even more seriousness then they would a semester at home. A semester in this program is not a mere travel experience but an academic exploration of a foreign and historic environment Every activity of this studio is designed to these ends. Therefore, we have selected a very direct and limited building program, a site in the historic center, and exercises that require students to spend time in the field as well as in the studio."
+    },
+    {
+      "number": 499,
+      "suffix": "B",
+      "type": "course",
+      "title": "Architectural Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH332",
+          "ARCH480"
+        ],
+        "concurrent": [
+          "ARCH499A",
+          "ARCH499C"
+        ],
+        "minGrades": {
+          "ARCH332": "C",
+          "ARCH480": "C"
+        }
+      },
+      "description": "ARCH 499B Architectural Analysis (3) (IL)Architecture is amplified and embodied in cities. Since most architecture is set in cities and the city is itself an architecture, it becomes necessary for us to evaluate the relationships that affect the making of buildings for cities and the organization of buildings into a meaningful whole. This course will explore the two meanings of the term \"the architecture of cities\". It will propose questions leading to an analytical de-composition of the situation of cities in general and Rome in particular. The course is loosely divided into three sections. The first, Historical Overview, presents the evolution of early settlements focusing on the significance of built form. The second, Revolutions and Modernity, demonstrates the qualitative shift in emphasis that settlements undergo from the Enlightenment, through the Industrial Revolution, to the Information Revolution. The third section, the Current Debate, will present some contemporary issues and techniques proposed for the resolution of apparent problems of city architecture. Since this course is given in a unique setting, it takes full advantage of Rome, its history and its problems, to highlight the universal design elements that are part of an analytical understanding, but also of a synthetic design understanding of cities. This course is theory based and, as such, will provoke thinking, a taking apart mentally, more than a making of architecture. The studio design problem, also set in this city, is the operative dimension of thoughts generated here. In this class, students are expected to articulate thought and some clear graphic analysis concerning architecture. These thoughts, if manipulated with discipline and commitment, will become a source of illumination for design activity. Learning Objectives: * To learn the meaning of cities in Western culture * To understand the significance of foundation and other rites concerning building the human environment. * To understand the meaning of urban architecture * To understand the reasons for the form of streets, buildings and open spaces in Western cities * To achieve the analytical skills necessary to take apart the component systems and material elements of architecture"
+    },
+    {
+      "number": 499,
+      "suffix": "C",
+      "type": "course",
+      "title": "Urban Studies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH332",
+          "ARCH480"
+        ],
+        "concurrent": [
+          "ARCH499B",
+          "ARCH499A"
+        ],
+        "minGrades": {
+          "ARCH332": "C",
+          "ARCH480": "C"
+        }
+      },
+      "description": "ARCH 499C Urban Special Topics (3) (IL)The course is a presentation of the history of Rome through the medium of its maps. The well documented cartographic history of the city is presented along with the morphological changes that are evident in the city today. The material of Rome's physical development is presented in two distinct ways. The first involves slide presentations of Roman maps and engraving images organized by specific routes (vie consolari and others) into and out of the city. The second is by on-site walks through the same routes with the instructor. The approximately twelve routes involve a lecture presentation usually given on Tuesdays, followed by an on-site walk usually given on Thursday. Students are then assigned their own route map of the same study area to generate over the weekend. These are graded and discussed in the following sessions. Framework: * Introduction: The definition of the Urbs through maps * 14th-15th century: Limbourg, Taddeo di Bartolo * 16th century: Bufalini, Duperac * Renaissance planning and the expanding city * 17th century: Maggi, Falda * 18th century: Nolli * 19th century: Catasto Piano * 20th century: Lanciani, Sanjust Themes: * 14th-15th century: Derivation of the iconic map from Mappaemundi and city images in art * 16th century: Images of pre-Sistine in-city and extension planning vs. Sixtus V's city outside the city * 17th century: Illustrating the Baroque point developments: Urban theater * 18th century: The new orientation and precision measurement of the Age of Reason. Nolli and Piranesi: the contemporary vs. the archaeological city *19th century: Stasis and expansion: Nolli retreads and the master Plans for the new Capital city * 20th century: Recapitulation and expansion: Lanciani's new Forma Urbis and images of the boundless city Learning Objectives: * To learn the history of the development of one of the most important cities in the world. * To learn the importance of mapping an way-finding in the understanding of architecture. * To learn the reading of traces of the past morphological development of a city. * To understand how cities are built, change, and grow over time."
+    },
+    {
+      "number": 499,
+      "suffix": "F",
+      "type": "course",
+      "title": "Architectural Design Foreign Study",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH480",
+          "ARCH499A",
+          "ARCH311W"
+        ],
+        "minGrades": {
+          "ARCH480": "C",
+          "ARCH499A": "C",
+          "ARCH311W": "C"
+        }
+      },
+      "description": "The abroad design studio serves students in their fifth year of the BARCH program, giving them the option of studying abroad for a semester additional to their required Rome semester. This studio will provide our students with a much needed global perspective into architecture and urbanity as practiced elsewhere in the world. The Architectural Design Studio will be embedded in an urban location abroad, introducing students to the socio-cultural and urban-architectural forces that shape our globe. It is increasingly important to recognize different models of architectural practice within different global contexts, and this studio will permit our students to engage in these issues first hand by being immersed within a particular culture and designing for it. A semester in an abroad studio is not merely a travel experience, but an academic exploration of a global environment. Students are expected to approach the work of the semester with even more rigor than they would a semester at home, while they follow a similar semester structure. The abroad studio will involve a site in the host city, programs and infrastructure appropriate for the exploration of the new context. The semester will include an initial urban/architectural analysis of the host city, leading to the identification of sites and design research topics. The studio will continue with the introduction of programs, and additional infrastructural requirements, and will culminate with a building proposal within the context of the host city. The abroad studio will have 150 contact hours, similar to architectural design studios at home"
+    }
+  ]
+}

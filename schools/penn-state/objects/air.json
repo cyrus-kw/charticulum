@@ -1,0 +1,93 @@
+{
+  "subject": "AIR",
+  "objects": [
+    {
+      "number": 151,
+      "type": "course",
+      "title": "Heritage and Values of the United States Air Force I",
+      "credits": 2,
+      "description": "\"Heritage and Values of the United States Air Force,\" is a survey course designed to introduce students to the United States Air Force and provides an overview of the basic characteristics, missions, and organization of the Air Force"
+    },
+    {
+      "number": 152,
+      "type": "course",
+      "title": "Heritage and Values of the United States Air Force II",
+      "credits": 2,
+      "description": "\"Heritage and Values of the United States Air Force II,\" is a survey course designed to introduce students to the United States Air Force and provides an overview of the basic characteristics, missions, and organization of the Air Force."
+    },
+    {
+      "number": 251,
+      "type": "course",
+      "title": "Team and Leadership Fundamentals I",
+      "credits": 2,
+      "description": "This course is designed to provide a fundamental understanding of both leadership and team building. It is imperative that students are taught from the beginning that there are many layers to leadership, including aspects that are not immediately obvious. Such things include listening, understanding themselves, being a good follower, and efficient problem solving. The students will apply these leadership perspectives when completing team building activities and discussing topics such as conflict management. Students will demonstrate basic verbal and written communication skills. The purpose of communication studies curriculum is to develop leaders with effective thinking, writing, and speaking skills. The course will begin to build on that foundation by providing opportunities to complete both briefing and writing assignments in accordance with Air Force requirements and will prepare students for the more rigorous assignments in future courses. As students mature and become more comfortable with the increasing requirements, the demands to write and speak increase as well."
+    },
+    {
+      "number": 252,
+      "type": "course",
+      "title": "The Evolution of USAF Air and Space Power II",
+      "credits": 2,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "requisites": {
+        "previous": [
+          "AIR251"
+        ]
+      },
+      "description": "Continued examination of air and space power from the Cold War era to the Persian Gulf War and beyond."
+    },
+    {
+      "number": 351,
+      "type": "course",
+      "title": "Leading People and Effective Communication I",
+      "credits": 3,
+      "description": "This course will provide students with the opportunity to utilize their communication skills as they begin more of a leadership role within an organization. The goal is for students to have a more in-depth understanding of how to effectively lead people and provide them with the tools to use throughout their leadership roles. Additionally, students will enhance their writing and briefing skills. Many of the students will be uncomfortable with public speaking, and this semester is designed to increase exposure to briefing while increasing confidence. The course continues into advanced skills and ethics training that will prepare them for becoming an officer and/or a supervisor."
+    },
+    {
+      "number": 352,
+      "type": "course",
+      "title": "Leading People and Effective Communication II",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Writing and Speaking",
+      "requisites": {
+        "previous": [
+          "AIR351"
+        ]
+      },
+      "description": "This course will provide students the opportunity to utilize their communication skills as they begin more of a leadership role within an organization. The goal is for students to have a more in-depth understanding of how to effectively lead people and provide them with the tools to use throughout their leadership roles. Additionally, students will enhance their writing and briefing skills. Many of the students will be uncomfortable with public speaking, and this semester is designed to increase exposure to briefing while increasing confidence. The course continues into advanced skills and ethics training that will prepare them for becoming an officer and/or a supervisor. The communication and public speaking requirements of the course are a culmination of five previous semesters of learning communication and speech theories and practical application. Initial communication and speech requirements start in AIR 151 and go through AIR 351 , the immediate prerequisite for AIR 351 . A student cannot enroll into AIR 352 without the successful completion of AIR 151 , AIR 152 , AIR 251 , AIR 252 , and AIR 351 which all establish the initial foundation for communication and speech theory and application."
+    },
+    {
+      "number": 451,
+      "type": "course",
+      "title": "National Security, Leadership Responsibilities, and Commissioning Preparation I",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "requisites": {
+        "previous": [
+          "AIR352"
+        ]
+      },
+      "description": "This course will provide a student the comprehension of the basic elements of national security policy and process. The student will understand the air and space power operations as well as grasp selected roles of the military in society, and current domestic and international issues affecting the military profession. Students will learn the responsibility, authority, and functions of an Air Force commander and selected provisions of the military justice system. The purpose of communication studies curriculum is to develop officers with effective thinking, writing, and speaking skills. The course encompasses advanced forms of communication by utilizing the skills previously learned and applying them to a written bullet exercise, individual current events briefing, space/cyberspace paper, and a group space/cyberspace briefing. These exercises are designed to provide an additional opportunity for students to refine their written and verbal communication skills and to reinforce the relevance of the ROTC curriculum by having students analyze the relationship of academic lessons and current world events."
+    },
+    {
+      "number": 452,
+      "type": "course",
+      "title": "National Security, Leadership Responsibilities, and Commissioning Preparation I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AIR451"
+        ]
+      },
+      "description": "This course will provide a student the comprehension of the basic elements of national security policy and process. The student will understand the air and space power operations as well as grasp selected roles of the military in society, and current domestic and international issues affecting the military profession. Students will earn the responsibility, authority, and functions of an Air Force commander and selected provisions of the military justice system. The course is designed to prepare a student for life as a junior officer in the Air Force. The purpose of communication studies curriculum is to develop officers with effective thinking, writing, and speaking skills. The course encompasses advanced forms of communication by utilizing the skills previously learned and applying them to a written bullet exercise, individual current events briefing, space/cyberspace paper, and a group space/cyberspace briefing. These exercises are designed to provide an additional opportunity for students to refine their written and verbal communication skills and to reinforce the relevance of the ROTC curriculum by having students analyze the relationship of academic lessons and current world events."
+    }
+  ]
+}

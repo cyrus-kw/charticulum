@@ -1,0 +1,335 @@
+{
+  "subject": "ERM",
+  "objects": [
+    {
+      "number": 150,
+      "suffix": "S",
+      "type": "course",
+      "title": "ERM First Year Engagement",
+      "credits": 1,
+      "description": "This First Year Engagement course is for first-year students intending to major in Environmental Resource Management at University Park campus. First year DUS students may also enroll. Students will explore environmental science, natural resource, and sustainability issues and research methodologies through literature review, library searches, field studies, critical thinking exercises, and exposure to Penn State faculty. Students will also be introduced to the breadth of University resources at their disposal."
+    },
+    {
+      "number": 151,
+      "type": "course",
+      "title": "Careers and Issues in Environmental Resource Management",
+      "credits": 1,
+      "description": "ERM 151 introduces students to the environmental sciences and resource management field early in their academic experience. The course is the first prescribed ERM course for students in the Environmental Resource Management major, and is also designed for non-majors (e.g. DUS students) interested in exploring career paths in the environmental sciences. Weekly presentations are made by ERM graduates, Penn State faculty, and upper-level students. Course objectives include discussion of topical issues in environmental sciences and resource management, familiarization with environmental career opportunities for graduates, providing feedback to enhance students' Penn State experience, enhancement of critical thinking and communication skills, and creating an opportunity to address student questions about the ERM program. Weekly writing assignments are designed to enhance the learning process and require students to reflect on the day's speaker and the issues of importance to them. A service learning and seminar assignment are also required to familiarize new students to engagement opportunities outside the classroom. Students also develop a draft and final Personal and Professional Development Plan throughout the semester, which is designed to facilitate the establishment and refinement of career goals and objectives, and to be an action plan for their remaining Penn State experience"
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Environmental Factors and Their Effect on Your Food Supply",
+      "credits": 3,
+      "description": "An exploration of how urban environmental problems influence our ability to obtain food and natural resources. E R M 210E R M 210 Environmental Factors and Their Effects on Your Food Supply (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Environmental Factors and Their Effect on Your Food Supply will study links between environmental issues and the agricultural systems from an urban perspective. Insects, one the most diverse groups of organisms, will be used to provide examples of human impact on ecosystem structure and function. Differences between sustainable and non-sustainable systems, along with efforts to create sustainable human systems, will be explored. This course looks at the Earth as a single ecosystem composed of interacting biological, chemical and physical systems. The social and economic dimensions of issues will be discussed. We will focus on how non-human systems interact with each other and with the human population. The course focus will be on the principles and concepts from biology, chemistry, geology and physics. Specific topics treated within the context of this interdisciplinary course include but are not limited to: human response to (insecticide use) and influence on (reduction in diversity) insects, the unique and life-giving properties of water, nutrient cycles, energy flows, species diversity, the dose-response relationship, risk assessment and perception, global climate change, and conservation of energy and matter.We will also be learning about how the use of the scientific method an interdisciplinary setting. Scientific situations found in everyday life will be used to explore and practice how to ask questions, gather data, and reach conclusions.Evaluation of student performance will be based upon critical thinking exercises, class discussion, short in-class writing assignments, and examinations. The critical thinking exercises will be assessed by written material submitted by the student. The written material will include the steps undertaken in the exploration (methods), the observations made (results) and description of what was learned (conclusions). These explorations will help students learn to solve problems and think critically using information they have discovered. The explorations will require students to supplement their observations with information found on the Web and in the Library. Students will be required to participate in class discussions using CourseTalk. Contributions will be evaluated for content and quality. Short, in-class, written student feedback will be collected frequently to determine the level of understanding and attendance. Two midterm evaluations and a comprehensive final will be given. These exams will consist of higher-order thinking questions requiring the student to synthesize information to solve problems. Self-quizzes will accompany each unit to help the student determine when they understand the concepts being learned.Environmental Factors and Their Effect on Your Food Supply is an introductory level, general education science course without prerequisites. This course is not a prerequisite for any other course. An introductory level course in sustainable environmental systems will provide a useful context for future course work.Recitation sections will be used to increase the student's understanding of concepts discussed during lecture. Computer exercises develop specifically for this course, the textbookCD-ROM, and data found on the Web will be used to aid students in their understanding of course concepts.The course will be offered annually in the spring. Expected enrollment is 100 students."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Basic Principles and Calculations in Environmental Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM111",
+          "MATH140"
+        ],
+        "concurrent": [
+          "PHYS211"
+        ]
+      },
+      "description": "This course will demonstrate the dependence of environmental science on biology, chemistry and physics, and provide a contextual link between principles learned in basic science courses and the advanced environmental concepts presented in later required Environmental Resource Management (ERM) courses. Students will integrate the knowledge from each of these disciplines into an interdisciplinary framework. This course will teach Environmental Resource Management students basic problem solving skills while using examples taken from environmental media - air, water, and soil. Students will have many opportunities to examine, manipulate, and solve quantitative problems related to the environment. This is a required course for Environmental Resource Management majors."
+    },
+    {
+      "number": 309,
+      "type": "course",
+      "title": "Measurement & Monitoring of Hydrologic Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ],
+        "concurrent": [
+          "PHYS211"
+        ]
+      },
+      "description": "This course is an introduction to measurement and monitoring equipment/techniques commonly used in analyses and design of hydrologic systems and will provide students the opportunity to learn and apply basic measurement techniques that serve as critical tools in professional practice in water resources. During the first part of the course, the instruments and techniques commonly used in water resources assessment, including rainfall monitoring, flow monitoring, and interest as part of the Sustainability Institute's Sustainable Communities Collaborative. Data generated over the course of the semester are used to develop a report that is shared, along with the data with a community partner. In the second part of the course, mapping development is explored, which serves as a critical aspect of water resources engineering and planning. ArcGIS serves as a primary software tool used in engineering design and water resources planning, and students will learn to develop maps to present and process various watershed - data including land use data, soils data, and hydrography data. Various aspects of the course will coalesce around the concept of the watershed being the basic unit of water resources analyses and design, and students will experience how various measurement techniques and approaches are necessary tools for practicing professionals. This course will be useful to any undergraduates seeking degrees in a major related to water resources planning, engineering, or technology."
+    },
+    {
+      "number": 327,
+      "type": "course",
+      "title": "Soil and Water Resource Management",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "PHYS211"
+        ]
+      },
+      "description": "This course equips students with the ability to understand land measurements, mapping, soils, hydrology, channel flow, erosion control techniques with emphasis on RUSLE2, subsurface drainage techniques, and water impoundments for use in storing water, managing stormwater, and capturing suspended sediment. The class concludes with a 3-week section on irrigation, which teaches water needs and pipe flow. Basic hydrology is presented using both the Soil-Cover-Complex and Rational Methods. Manning's equation is developed and discussed for use in understanding flow in open channels. The various components of the RUSLE2 soil erosion model are presented with emphasis in agricultural erosion. Irrigation is taught from both a supplemental agricultural and environmental perspective."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Foundations of Sustainable Business",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102"
+        ]
+      },
+      "description": "This course will provide students with an understanding of how environmental and sustainability issues are impacting business strategies and ultimately profits. We will also examine the external stakeholders, such as environmental groups, policy-makers, and \"green\" consumers, that impact business management. Business students will benefit by a better understanding of environmental/sustainability issues that impact their operations and strategies. Non-business students will benefit by understanding how business decisions can impact the natural environment. An emphasis will be on a thorough understanding of making a business case for sustainability. We will also discuss the triple bottom line and its use. Some Specific Issues to Cover: 1. How are organizations shifting business models to work with sustainability trends? 2. How can we make a business case (justification) for being \"green\"? 3. Can firms differentiate themselves by being responsible/sustainable? Do consumers and other stakeholders care? 4. Thorough understanding of stakeholders and how they impact operations. 5. How can the \"business\" side of the world work with the \"environmental\" side? 6. Use of packaging as an example of where parts of the supply chain are working together to be more sustainable. 7. How \"waste\" in its many forms can be seen as a surrogate for unsustainable practices. 8. Pros and cons of metrics used to measure sustainability. 9. Impacts of business operations on the environment."
+    },
+    {
+      "number": 411,
+      "type": "course",
+      "title": "Legal Aspects of Resource Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102"
+        ],
+        "concurrent": [
+          "ERM151"
+        ]
+      },
+      "description": "Legal systems and lawmaking processes; property rights in land, water, and wildlife resources; jurisdictional problems in planning resource use. E R M 411 Legal Aspects of Resource Management (3) This course provides a survey of the basic legal principles, regimes, and issues related to environmental protection and natural resource management. The course is designed for students interested in environmental resource management and related careers, providing them with a basic grounding in core principles of environmental law and regulation. The course will offer instruction, discussion, and practical application of theories of environmental law and basic legal and regulatory regimes related to water, air, and land. Focus will be on core federal legal regimes and statutes and their application in Pennsylvania. These legal regimes will be explored through topical case studies, such as Chesapeake Bay restoration, Marcellus Shale natural gas extraction, and climate change. During the latter half of the course, practical application of environmental legal issues will be demonstrated in a hands on manner where students will represent private, nonprofit, or government sectors in a hypothetical land development proposal, and will be expected to perform tasks they may be asked to perform during their environmental careers: preparing permit applications, public comment documents, writing permit conditions, and challenging and defending final agency decisions."
+    },
+    {
+      "number": 412,
+      "type": "course",
+      "title": "Resource Systems Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "STAT200"
+        ],
+        "concurrent": [
+          "ERM300"
+        ]
+      },
+      "description": "ERM 412 is a course in problem solving, as it relates to environmental and resource related issues. The course covers a variety of problems within an environmental context, including mass balance, steady-state, dynamic, and statistical problems. Students will gain experience in making assumptions and testing those assumptions in the application of biological, chemical, and physical principles to problem solving. The course is designed to develop experience in quantitative problem solving using spreadsheets, modeling tools, and computer-based statistical analysis."
+    },
+    {
+      "number": 413,
+      "suffix": "W",
+      "type": "course",
+      "title": "Case Studies in Ecosystem Management",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ERM300",
+          "ERM412"
+        ]
+      },
+      "description": "Application of biological, physical, and social science principles to ecosystem management problems; introduction to environmental impact analysis and review."
+    },
+    {
+      "number": 429,
+      "type": "course",
+      "title": "The Chesapeake Bay Watershed: Issues and Careers in Complex Environmental Problem Solving",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ERM411"
+        ]
+      },
+      "description": "This course will offer an in-depth exploration of issues related to the health of the Chesapeake Bay and its watershed, with an emphasis on pollutants impacting water quality, and the long history of efforts to improve Bay watershed health. These issues will be explored from a wide variety of perspectives, including environmental, hydrological, historical, social, and political. While the main pollutants of concern are few (nitrogen, phosphorus and sediment), the issues related to addressing them are extremely complex and require a multidisciplinary approach to environmental problem solving. Nutrient pollution represents the leading unsolved water quality issue in the United States and is one of major worldwide significance threatening freshwater, estuarine, and coastal ecosystems. Students will be introduced to the wide variety of environmental career opportunities that exist in \"saving the Bay,\" spanning multiple disciplines, areas of expertise, and job sectors. The depth of complexity of the issues and the diversity of careers will be experienced firsthand through classroom guest lectures, as well as travel throughout the Bay watershed, including overnight travel to the Chesapeake Bay."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Air Pollution Impacts to Terrestrial Ecosystems",
+      "credits": 3,
+      "internalEquivalents": [
+        "PPEM430"
+      ],
+      "description": "This course introduces student to air pollutant sources, transport, meteorology, and temporal and spatial trends of pollution dispersion and deposition. An overview is presented of the direct and indirect effects of air pollutants on terrestrial ecosystems with an emphasis on plant life. The effects of ozone, sulfur dioxide, nitrogen oxides, particulate matter, halogens, and combined pollutants leading to acidic atmospheric depositions are presented. Emphasis is placed on air pollutants as plant pathogens leading to symptoms and eventual long-term accumulative effects to entire ecosystems. Methods of diagnostics, factors affecting plant response, ecosystem decline and resiliency, pest interactions, assessment of loss and cost/benefit analysis leading to abatement follows. Final parts of the course include perspectives of public awareness, development of National Ambient Air Quality Standards, compliance prevention of significant deterioration, and the Clean Air Act reforms of 1990."
+    },
+    {
+      "number": 431,
+      "type": "course",
+      "title": "Environmental Toxicology",
+      "credits": 3,
+      "internalEquivalents": [
+        "VBSC431"
+      ],
+      "requisites": {
+        "previous": [
+          "BIOL110",
+          "CHEM110",
+          "CHEM112"
+        ]
+      },
+      "description": "Effects of pollutants on animal health at the chemical, physical, and cellular level."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Transformation of Pollutants in Soils",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM111",
+          "CHEM112",
+          "SOILS101"
+        ]
+      },
+      "description": "The course provides the chemical and biological basis for understanding, predicting and controlling the fate of pollutants added to the soil. The material falls distinctly into two major sections: Section I discusses the fundamental concepts of soil science as they relate to the fate of pollutants in soil systems. Section II provides specific coverage of important classes of soil pollutants. The environmental impacts associated with soil enrichment of these pollutant groups are discussed. Primary emphasis is given to pollutants having adverse effects on human health via water and the food supply, namely, trace elements, trace organic contaminants, pathogens, and radionuclides. The major plant nutrients, nitrogen and phosphorus, warrant coverage because of their potential negative impacts on aquatic systems. Salts can harm soil productivity and structure and thus represent a third distinct pollutant category."
+    },
+    {
+      "number": 435,
+      "type": "course",
+      "title": "Limnology",
+      "credits": 3,
+      "internalEquivalents": [
+        "WFS435"
+      ],
+      "requisites": {
+        "previous": [
+          "BIOL110",
+          "BIOL220W",
+          "CHEM110"
+        ]
+      },
+      "description": "Biogeochemistry and natural history of freshwater ecosystems. W F S (E R M) 435 Limnology (3)This course will define and describe major principles (physical, chemical, biological, and ecological) that govern the structure and function of freshwater ecosystems (ponds, lakes, and rivers). Current scientific literature will be critically reviewed and discussed in relation to comparative philosophy, methodology, and case studies that cover a range of topics in limnology. The objectives of E R M (W F S) 435 are to familiarize students with the major physical properties, chemical cycles, taxonomic groups of organisms, and ecological interactions that define and describe the natural function of aquatic ecosystems. The course will use case studies to illustrate and examine pertinent issues (e.g., excessive material loading, introduction to exotic species, habitat fragmentation, and climate change) that can alter the structure and function of aquatic ecosystems. Knowledge of these basic ecosystem principles will be applied towards formulating real-life resolutions to the issues identified in class, in order to better manage aquatic resources (methods to reduce material loads, transport controls of exotic species, habitat restoration, and reduction of global gases). This course will be useful to both undergraduate and graduate students seeking degrees in Environmental Resource Management, Wildlife and Fisheries Science, Ecology, and other related subjects. At the undergraduate level, the course will serve as a 400-level selection in both the Environmental Resource Management and Wildlife and Fisheries Science degree programs. At the graduate level, the course will compliment several Wildlife and Fisheries courses that form the compliment of that degree program. Moreover, the course can satisfy the course requirement for ecosystems ecology in the inter-college Ecology graduate program and serve as a breadth course in Water Resources for graduate students in the Watershed Stewardship program."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Chemistry of the Environment: Soil, Water, and Air",
+      "credits": 3,
+      "internalEquivalents": [
+        "SOILS440"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "CHEM111",
+          "CHEM112"
+        ]
+      },
+      "description": "This course is designed for junior and senior undergraduates with some previous chemistry background. The course will advance students¿ understanding of chemical concepts and link them to applications in environmental chemistry. The course focuses on topics in environmental soil chemistry such as: soil minerology, mineral weathering, sorption and ion exchange, chelation and complex formation, soil pH and acidic/alkaline soils, oxidation/reduction, soil salinity, soil biochemistry, and the dissolution/precipitation of common metals and compounds. The solid phase is emphasized, but solid/solution equilibria, aquatic chemistry, metals in the aqueous environment, and aquatic pollution will also be covered. The course also covers a detailed overview of stratospheric chemistry, tropospheric chemistry, and climate change."
+    },
+    {
+      "number": 447,
+      "type": "course",
+      "title": "Stream Restoration",
+      "credits": 3,
+      "description": "Stream restoration will focus on understanding stream impairment by evaluating the stream channel, its floodplain, and the watershed supplying runoff to the stream. A wide variety of stream assessment tools will be introduced along with several stream classifications systems. Students will be introduced to the concepts of stream stability and evolution and how human activities and our infrastructure impact the health of a stream. Various restoration approaches designed to restore impaired stream reaches to stable channels will be introduced. Stream stability and the role of sediment transport in the context of pebble-count data will be introduced along with several sediment transport models. Stream biology, macro-invertebrates, the role of riparian buffers, and desirable plant populations will be introduced. The laboratory experiences will focus on stream assessment tools and stream surveys needed for the stream restoration design process. Students will be responsible for assessing a stream and developing a preliminary design for restoring an impaired local stream reach."
+    },
+    {
+      "number": 448,
+      "type": "course",
+      "title": "Rural Road Ecology and Maintenance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Roads are ubiquitous throughout the landscape and this course is intended for students who anticipate working in natural resource management fields. This course provides students with the fundamental understanding of the interaction of natural systems with unpaved and low volume paved roads in order to economically maintain roadways with minimum impact on the environment. The major focus area will be the road/stream interface, including the fundamentals of hydrology, geology, soils, and erosion processes as they pertain to roads and streams. It is expected that the student will gain a practical understanding of rural road maintenance in order to provide a foundation for real-world application. Emphasis is placed on Environmentally Sensitive Maintenance (ESM) practices for rural roads that are used throughout Pennsylvania. The goal of ESM practices is to minimize the environmental impact of the existing road network by maintaining proper road drainage in order to keep road materials out of the adjacent streams and surrounding landscape. Upon completion the student will be ESM certified under Pennsylvania's Dirt, Gravel and Low Volume Road Maintenance Program."
+    },
+    {
+      "number": 450,
+      "type": "course",
+      "title": "Wetland Science and Sustainability",
+      "credits": 3,
+      "internalEquivalents": [
+        "WFS450"
+      ],
+      "description": "Wetlands are unique ecosystems, differing in many ways from both terrestrial and aquatic environments. The study of wetlands is interdisciplinary, requiring background knowledge in science, management and policy disciplines. This course will explore the variety of wetland types and classification schemes, and emphasize the diverse hydrological, biological, chemical, and physical interactions that occur within wetlands. They provide recognized ecosystem services and values to society, so issues surrounding wetland management, regulation, climate change impacts, and sustainability will be addressed. Topics will also include the restoration of degraded wetlands and wetland creation, along with the construction of wetlands for pollution abatement. Students will also develop an understanding of important international, national and state policies and regulations pertaining to wetlands and their protection and delineation. Opportunities for professional certification in wetland science will also be discussed."
+    },
+    {
+      "number": 489,
+      "type": "course",
+      "title": "Supervised Experience in College Teaching",
+      "credits": 1,
+      "description": "The Supervised Experience in College Teaching course provides select undergraduate students with formal, supervised teaching experience in an Environmental Resource Management (ERM) course. Faculty recruit students who excel in a particular course to serve as undergraduate teaching assistants for subsequent offerings of that course. Duties may include serving as peer tutors, teaching assistants, or laboratory assistants, and developing and/or evaluating course activities and materials. Students participating in this course will develop a deeper understanding of the focus within the course material by actively helping to teach the material. The course is only available to students who are invited to serve as teaching assistants for an ERM course and enrollment is by permission of the instructor."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Undergraduate Research in Environmental Science",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Thesis",
+      "credits": 1,
+      "description": "Independent study directed by a faculty supervisor that culminates in the production of an ERM honors thesis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "A supervised practicum in the environmental field. To be offered only for SA/UN grading."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered with a component in foreign countries, by individual or group instruction."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "subject": "CMAS",
+  "objects": [
+    {
+      "number": 258,
+      "suffix": "N",
+      "type": "course",
+      "title": "Introduction to Child Maltreatment and Advocacy Studies",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "internalEquivalents": [
+        "HDFS258N",
+        "SOC258N"
+      ],
+      "description": "Introduction to the multidisciplinary field of child maltreatment. CMAS (HD FS) 258 Introduction to Child Maltreatment and Advocacy Studies (3) This course will focus on the identification, investigation, service, advocacy, prosecution, and prevention of child maltreatment as well as the treatment of adverse health outcomes for children who have been maltreated. Specific topics include the causes, correlates, and consequences of child maltreatment, best practices for reporting and investigating an allegation of child maltreatment, evidence-based prevention and intervention programs, the Child Welfare System, and relevant legal issues (e.g., termination of parental rights, children's testimony in court, etc.). By definition, this course will detail issues related to the abuse and neglect of children. This material can be difficult to hear, view, and discuss. This course is a required course, and a prerequisite for all advanced courses, for a Minor in Child Maltreatment and Advocacy Studies."
+    },
+    {
+      "number": 465,
+      "type": "course",
+      "title": "Child Maltreatment: Prevention and Treatment",
+      "credits": 3,
+      "internalEquivalents": [
+        "HDFS465"
+      ],
+      "requisites": {
+        "previous": [
+          "CMAS258N"
+        ]
+      },
+      "description": "Advanced examination in approaches for preventing child maltreatment and treating its consequences. HD FS (CMAS) 465 Child Maltreatment: Prevention and Treatment (3) Child maltreatment, including physical abuse, sexual abuse, emotional abuse, and neglect, is a highly prevalent condition affecting nearly one million children each year in the United States alone. This course will delineate the long-term health consequences affecting those who have experienced child maltreatment with an emphasis on those outcomes exerting the greatest impact on overall public health throughout the lifespan. Importantly, a focus on the etiology of such health consequences in the child maltreatment population will be made in order to understand the causal pathways leading to these health consequences. This focus on etiology will serve as a segue into the remaining sections of this course, specifically the prevention and treatment of child maltreatment and its consequences. Universal and targeted prevention programs, where the focus is to prevent an initial instance of child maltreatment from occurring, will be detailed, as will tertiary prevention programs, where the focus is on preventing a re-occurrence of child maltreatment. Similarly, prevention of adverse health outcomes for those affected by child maltreatment will also be covered. Finally, evidenced-based interventions applied with children who have been maltreated and are currently experiencing clinical levels of impairment (e.g. post-traumatic stress disorder) will be detailed. Identification and rehearsal of treatment components commonly used in prevention and clinical intervention programs will be emphasized. Students successfully completing this course will have direct knowledge of the consequences of child maltreatment and the established methods used in prevention and intervention programs applied with this population."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "Systems and Community Responses",
+      "credits": 3,
+      "internalEquivalents": [
+        "NURS466"
+      ],
+      "description": "An exploration of the multidisciplinary response to child maltreatment. CMAS 466 / NURS 466 Systems and Community Responses (3) An exploration of the multidisciplinary response to child maltreatment. The roles, responsibilities, and interconnected relationships between the systems that interact when responding to child maltreatment issues will be analyzed. The forensic medical response, challenges, and multidisciplinary team best practices to child maltreatment case are examined. Students will explore responses and best practices within the health care, judicial, child protection, social service, educational, mental health, human service, and community systems. This course provides students with the opportunity to work with a variety of majors and understand more clearly the interdisciplinary nature of child maltreatment prevention, advocacy, and response."
+    },
+    {
+      "number": 493,
+      "type": "course",
+      "title": "Child Maltreatment and Advocacy Studies: Capstone Experience",
+      "credits": 1,
+      "internalEquivalents": [
+        "EDPSY493"
+      ],
+      "requisites": {
+        "previous": [
+          "CMAS258N"
+        ],
+        "concurrent": [
+          "CMAS465",
+          "CMAS466"
+        ]
+      },
+      "description": "This course serves as the capstone experience for students enrolled in the Child Maltreatment and Advocacy Studies minor."
+    }
+  ]
+}

@@ -2,8 +2,9 @@
 // calendar, and policy) as a single JSON document that can be imported.
 import { z } from "zod";
 import { createCatalog } from "./catalog";
+import { courseCodeId, formatCourseCode, parseCourseCode, SUBJECT_PATTERN } from "./codes";
 import { publishTemplate, type TemplateLibrary } from "./templates";
-import { EVERY_TERM, type Catalog, type CurriculumObject, type RequirementSet } from "./types";
+import { EVERY_TERM, type Catalog, type CourseCode, type CurriculumObject, type RequirementSet } from "./types";
 
 // ---------------------------------------------------------------------------
 // Schema. Zod checks data at runtime (TypeScript types only exist while
@@ -16,10 +17,20 @@ const grade = z.enum(["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D
 const category = z.enum(["major", "minor", "general-education", "elective", "focus"]);
 const credits = z.number().min(0);
 
-const courseObject = z.object({
-  id,
-  kind: z.enum(["course", "experience", "milestone", "proficiency"]),
+const subjectCode = z.string().regex(SUBJECT_PATTERN, "Use capital letters (and - or _), e.g. CAS.");
+
+const courseCode = z.object({
+  subject: subjectCode,
+  number: z.number().int().min(0),
+  suffix: z.string().regex(/^[A-Z]+$/, "Use capital letters only, e.g. A.").optional(),
+});
+
+// Everything about an object except its id and code. Kept apart so a
+// subject's file (schoolFiles.ts) can list objects by number alone.
+export const objectFields = z.object({
+  type: z.enum(["course", "experience", "milestone", "proficiency"]),
   title: z.string(),
+  description: z.string().optional(),
   credits,
   requisites: z
     .object({
@@ -38,6 +49,17 @@ const courseObject = z.object({
     .object({ seasons: z.array(season).default(EVERY_TERM), yearParity: z.enum(["odd", "even"]).optional() })
     .default({ seasons: EVERY_TERM }),
 });
+
+const courseObject = objectFields
+  .extend({ id, code: courseCode.optional() })
+  // Files may leave the code out; it's then read from the id when the id
+  // looks like one ("CAS100A"), so the rest of the app can rely on it.
+  .transform(({ code, ...object }): typeof object & { code?: CourseCode } => {
+    const filled = code ?? parseCourseCode(object.id);
+    return filled ? { ...object, code: filled } : object;
+  });
+
+export const subjectSchema = z.object({ code: subjectCode, name: z.string().min(1) });
 
 const requirementSet = z.object({
   id,
@@ -101,6 +123,9 @@ export const schoolDataSchema = z.object({
     start: z.object({ season, year: z.number().int() }),
     seasons: z.array(season).min(1),
   }),
+  // The subjects courses are taught in. Optional; when listed, every
+  // course's subject must be one of them.
+  subjects: z.array(subjectSchema).default([]),
   objects: z.array(courseObject).min(1),
   globalRequirementSets: z.array(requirementSet).default([]),
   templates: z.array(template).default([]),
@@ -120,12 +145,26 @@ export type SchoolDataInput = z.input<typeof schoolDataSchema>;
 // Parsing
 // ---------------------------------------------------------------------------
 
+// An object's type used to be called "kind". Files and saved schools from
+// before still say kind, so it's read as type. Only the "objects" list is
+// touched; anything that isn't shaped like that is passed through as is,
+// for the schema to report.
+export function withOldNamesRenamed(input: unknown): unknown {
+  if (typeof input !== "object" || input === null || !("objects" in input) || !Array.isArray(input.objects)) return input;
+  const objects = input.objects.map((object: unknown) => {
+    if (typeof object !== "object" || object === null || !("kind" in object) || "type" in object) return object;
+    const { kind, ...rest } = object;
+    return { ...rest, type: kind };
+  });
+  return { ...input, objects };
+}
+
 export type ParseResult = { ok: true; data: SchoolData } | { ok: false; errors: string[] };
 
 // Check unknown input (e.g. from JSON.parse) and return either the data or
 // readable error messages. Checks both shape and cross-references.
 export function parseSchoolData(input: unknown): ParseResult {
-  const parsed = schoolDataSchema.safeParse(input);
+  const parsed = schoolDataSchema.safeParse(withOldNamesRenamed(input));
   if (!parsed.success) {
     return {
       ok: false,
@@ -142,12 +181,25 @@ export function parseSchoolData(input: unknown): ParseResult {
     if (ids.has(object.id)) errors.push(`objects: duplicate id ${object.id}`);
     ids.add(object.id);
   }
+  const subjects = new Set<string>();
+  for (const subject of data.subjects) {
+    if (subjects.has(subject.code)) errors.push(`subjects: duplicate code ${subject.code}`);
+    subjects.add(subject.code);
+  }
   const check = (where: string, refs: string[]) => {
     for (const ref of refs) if (!ids.has(ref)) errors.push(`${where}: unknown object ${ref}`);
   };
 
   for (const object of data.objects) {
     const where = `objects.${object.id}`;
+    // A code and its id must agree, or the same course could show up
+    // under two names.
+    if (object.code && courseCodeId(object.code) !== object.id) {
+      errors.push(`${where}.code: ${formatCourseCode(object.code)} doesn't match the id (it would be ${courseCodeId(object.code)})`);
+    }
+    if (object.code && subjects.size > 0 && !subjects.has(object.code.subject)) {
+      errors.push(`${where}.code: unknown subject ${object.code.subject}`);
+    }
     check(`${where}.requisites`, [
       ...object.requisites.previous,
       ...object.requisites.concurrent,

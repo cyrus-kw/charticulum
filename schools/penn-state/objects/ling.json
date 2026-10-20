@@ -1,0 +1,313 @@
+{
+  "subject": "LING",
+  "objects": [
+    {
+      "number": 1,
+      "type": "course",
+      "title": "Language, Life and Society",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "In this course, we survey essential topics in the study of language with a view toward providing an overview of the approaches, methods, and goals of linguistics. We examine fundamental questions like what are the origins of human language? How does language work? How do human languages differ and how are they alike? How do children learn languages? Why does language change? What is the link between language and culture? Why do people have such strong opinions about others' language use? What is the impact of language loss in human society? We will address these questions and others through readings, problems and discussion. The goal of this course is to provide evidence and analytical methods by which students can critically evaluate their own and other people's views of language. The course also focuses on helping students gain proficiency in the general skill of how to use data (in this case, qualitative language data), to make a well-supported scientific argument."
+    },
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be taught in one year or semester."
+    },
+    {
+      "number": 98,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be taught in one year or semester."
+    },
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Foundations of Linguistics",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "The course consists of a general survey of language and linguistics. A number of topics relating to human knowledge and use of language are systematically and scientifically investigated. The focus of the course is not on any specific language or languages; rather, it is on properties common to all languages and on ways in which languages may differ. The focus is on examination of speakers' knowledge of language and the idea of language as a system of human communication; the course provides students with the tools needed for the recording, investigation, and close analysis of language. Areas of study include phonetics and phonology (the details of sound analysis), morphology (word structure), syntax (sentence structure), and semantics and pragmatics (the deep investigation of meaning). Another part of the course teaches the students about aspects of language in society through topics such as sociolinguistics and/or historical linguistics. This aspect of the course is crucial to students' understanding of how language and culture reflect and affect each other. The course uses examples from English and from non-English languages and cultures in order to investigate these topics, though no previous knowledge of any language other than English is presumed. A knowledge of basic linguistics is, however, generally very helpful in the learning of foreign languages."
+    },
+    {
+      "number": 150,
+      "type": "course",
+      "title": "Why People Bleepin' Swear",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "In this course we investigate a common, yet often misunderstood, trait of our everyday language: swearing. We explore this topic from historical, societal, and psychological contexts, focusing on core questions such as: why we swear, what constitutes a swear, how swears change over time, what associations to we, as individuals and societies, make about people who (commonly) swear, and what sorts of psychological and neurological processes are involved when we swear. Students will take an active role in class discussions and mini-presentations as we survey emerging ideas in swearing and linguistic taboos and how to learn about these ideas using linguistic analysis techniques. This course assumes no prior knowledge of linguistics."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be taught in one year or semester."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 294,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be taught in one year or semester."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 382,
+      "type": "course",
+      "title": "Language and Culture in Africa",
+      "credits": 3,
+      "description": "This course will provide an introduction to language in Africa from linguistic and cultural perspectives. Course topics include: the study of African language families and what they teach us about the history of the continent, the analysis of unusual linguistic structures found in indigenous African languages, multilingualism in Africa and the interaction between colonial and indigenous languages, linguistic traditions such as storytelling, ceremonies, ethnobotany, etc., and language development, including literacy practices and language and technology. The course will explore these topics in-depth through case studies focusing on four diverse geographical areas in West, North, East and Southern Africa. The capstone of the course will be a two-week trip for interested students to study linguistic practices in Benin, West Africa in both urban and rural settings."
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be taught in one year or semester."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Syntax I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC360"
+        ],
+        "minGrades": {
+          "CMPSC360": "C"
+        }
+      },
+      "description": "Principles of grammatical analysis in the generative framework; an overview of syntactic structures across languages. LING 402 Syntax I (3)(BA) This course meets the Bachelor of Arts degree requirements. The aim of this course is to provide students with the background needed to understand advances in modern generative syntactic theory and to encourage them to do creative and informed research in this area on English or other languages that they might know. The course provides a historical overview of the development of generative syntax. We explore in depth a number of topics that challenge any syntactic theory and we attempt to propose testable hypotheses concerning language structure."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Phonology I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "LING100"
+        ]
+      },
+      "description": "LING 404 Phonology I (3)(BA) This course meets the Bachelor of Arts degree requirements. This course is about sound patterning in language. In particular, we will learn how human speech sounds are produced and how they function together as a system. We will learn the International Phonetic Alphabet applied to English. We will discuss phonological data from many different languages to seek common phonological processes that occur despite the apparent surface diversity of languages. We will do extensive work on phonological problems in order to master basic phonological analysis."
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Introduction to Historical Linguistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "LING100"
+        ]
+      },
+      "description": "Introduction to Historical Linguistics is designed to teach the theories, methods, and data linguists used to study ancient and modern languages and language families, and the connections that can be traced through language between seemingly diverse peoples and cultures. This course will teach the methodologies used by historical linguists to seek to understand language change, and to reconstruct ancient language forms. These methodologies require students to already have a basic understanding of linguistics, in particular phonetics, phonology, morphology, syntax and semantics, as the course teaches students how to use methodologies within those subfields to investigate historical phenomena. The course will also investigate how linguistic analysis can be used to inform the study of human history. Topics include how languages change and evolve over time; language families, language change due to language contact, and the connection between language, history and archaeology. Students will thus also learn what language can teach us about the history of people groups around the world."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Morphology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "LING100"
+        ],
+        "minGrades": {
+          "LING100": "C"
+        }
+      },
+      "description": "Morphology is the scientific study of words and word structure. This course provides a detailed exploration of morphological processes from a largely comparative method. Students are also introduced various formal models that will guide our investigations. Throughout the course we will scaffold our knowledge of morphological structure and processes with the aid of these theoretical concepts."
+    },
+    {
+      "number": 414,
+      "type": "course",
+      "title": "Phonetic Analysis: Acoustic and Auditory Phonetics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "LING100"
+        ],
+        "minGrades": {
+          "LING100": "C"
+        }
+      },
+      "description": "This course is an exploration of phonetic analysis with a focus on acoustic and auditory phonetics (the properties of sound waves, particularly speech sounds, and how hearers perceive sounds given the constraints of the human auditory system). We will focus on how acoustic and auditory phonetics can enhance our understanding of sounds in languages around the world, and how it can inform analytical methods such as those used in sociolinguistics, linguistic field methods, and laboratory-based research involving sounds. This course will include training in specialized acoustic analysis software."
+    },
+    {
+      "number": 429,
+      "type": "course",
+      "title": "Language and Thought",
+      "credits": 3,
+      "internalEquivalents": [
+        "PSYCH426"
+      ],
+      "requisites": {
+        "previous": [
+          "PSYCH100"
+        ]
+      },
+      "description": "Relations between language and cognition; cognitive implications of normal and impaired language development; cognition and bilingualism. LING ( PSYCH 426 ) 429 Language and Thought (3)(BA) This course meets the Bachelor of Arts degree requirements. Is language a special and uniquely human ability that develops and functions independently of other cognitive processes? Do individuals who speak different languages also have different concepts about the meaning of objects and ideas? Does language development depend on exposure to spoken language? In this course we will examine the relation between language and thought by considering evidence on language and cognition in both children and adults. Topics to be covered include the typical development and use of language as well as language and cognition in individuals whose language and/or cognition is impaired in some form. The latter include individuals with aphasia who have sustained brain damage following stroke or head injury, schizophrenics whose language reflects aspects of their disorder, children diagnosed with Williams Syndrome who appear to have good or even precocious language abilities in the face of severe cognitive impairment, and Alzheimer's patients in whom semantic memory has begun to deteriorate. The course will also discuss the acquisition of sign language among deaf individuals and the consequences of bilingualism for children raised with two languages and for adults with proficiency in more than a single language.The purpose of this course is to provide a survey of current scholarship on the relation of language and thought, including a review of recent developments in the primary literature. The necessary background is covered in introductory Psychology and Linguistics courses, which serve as alternative prerequisites. Students will learn about the consequences of typical and impaired development for relations between cognition and language ability. It is distinguished from PSYCH 457 , Psychology of Language, by a focus on the implications of language, language development, and language impairment, for cognitive processes. It covers some topics also addressed by current courses in Linguistics and in Communications Sciences and Disorders, but is distinguished from those courses by its focus on perspectives and theories from cognitive psychology. This course may be used toward the 400-level PSY requirements of the PSYBA and PSYBS majors, and toward the PSY minor. Students typically will be assessed on the basis of class participation and discussion (20%), four papers (total 60%), and an in-class presentation based on reading original research literature (20%). The course typically will be offered once each year at the University Park campus with an enrollment limit of 50."
+    },
+    {
+      "number": 446,
+      "type": "course",
+      "title": "L1 Acquisition",
+      "credits": 3,
+      "internalEquivalents": [
+        "PSYCH427"
+      ],
+      "requisites": {
+        "previous": [
+          "PSYCH100"
+        ]
+      },
+      "description": "How children learn their first language; psycholinguistic aspects of lexical, syntactic, semantic, and phonological development. LING 446 ( PSYCH 427 ) L1 Acquisition (3) (BA) This course meets the Bachelor of Arts degree requirements.This course focuses on how children learn their first language from the theoretical perspectives of imitation theories, social construction theories, and innateness theories. In addition, the course covers the various stages of language acquisition including phonological (sound system), morphological (word meaning), syntactical (grammar) and semantic (meaning) development from birth to adulthood. Other related subfields covered in the course include the acquisition of Pidgin and Creole languages, bilingual and multilingual acquisition, and language acquisition and linguistic change."
+    },
+    {
+      "number": 447,
+      "type": "course",
+      "title": "Bilingualism",
+      "credits": 3,
+      "description": "Explores the social and psychological aspects of bilingualism; topics include languages in contact, transference, maintenance, and loss. LING 447 Bilingualism (3)(BA) This course meets the Bachelor of Arts degree requirements. This course presents a panoramic view of the major questions, research methods and results in bilingualism research. We will cover the following topics, in addition to those topics that emerge from students' research: bilingualism in society; political and social results of language contact; effects of social attitudes on bilinguals; how bilingualism affect language: transfer, code-switch, language contact and language change; the bilingual brain, psycholinguistic effects of having two grammars in sentence production, phonological perception and lexical storage; childhood bilingualism; developmental and educational consequences of bilingualism."
+    },
+    {
+      "number": 448,
+      "type": "course",
+      "title": "Sociolinguistics",
+      "credits": 3,
+      "description": "Issues in the study of language in its sociocultural context; analysis of social dialects and speech styles. LING 448 Sociolinguistics (3)(BA) This course meets the Bachelor of Arts degree requirements. This course investigates sociolinguistics variation and linguistic change. We will be concerned with identifying the mechanisms by which changes come about and are transmitted within a linguistic system. The course contrasts traditional studies of change and variation which concentrate on linguistic internal factors to those that are based on sociolinguistic factors. Research from a wide variety of languages and cultures will be examined."
+    },
+    {
+      "number": 449,
+      "type": "course",
+      "title": "Semantics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC360"
+        ],
+        "minGrades": {
+          "CMPSC360": "C"
+        }
+      },
+      "description": "LING 449 Semantics I (3)(BA) This course meets the Bachelor of Arts degree requirements. This course examines our best understanding of how humans produce and understand utterances to have particular meanings. This course examines lexical semantics, which is concerned with word meaning, phrasal semantics, which examines phrase meanings and with pragmatics, the study of meaning in contexts. Because meanings cannot always be built up or deduced from the combined meaning of smaller elements, students will attempt to divulge the semantic principles at work in human language through a wide variety of problems, activities, and formal analyses."
+    },
+    {
+      "number": 457,
+      "type": "course",
+      "title": "Psychology of Language",
+      "credits": 3,
+      "internalEquivalents": [
+        "PSYCH457"
+      ],
+      "requisites": {
+        "previous": [
+          "PSYCH100"
+        ]
+      },
+      "description": "Overview of psychological research and theory on language processes, including speech perception, word recognition, meaning representation, comprehension, and language acquisition. LING (PSYCH) 457 Psychology of Language (3)(BA) This course meets the Bachelor of Arts degree requirements. How do we process language? Why do we easily adjust to a speaker with a foreign accent? How do young children come to speak the language to which they are exposed? Why is it difficult to learn a second language as an adult? This course focuses on the cognitive processes engaged by language use. Topics to be covered include speech perception, word recognition, representation of word meaning, comprehension of sentences, spoken production of words and sentences, and first and second language acquisition. In addition, the role of language in the study of thought and the role of biological mechanisms in theories of language learning will be discussed, as well as ways in which research on the language of special populations (e.g., deaf signers, dyslexics, aphasics) can inform theories of language processing and representation."
+    },
+    {
+      "number": 493,
+      "type": "course",
+      "title": "Field Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "LING100"
+        ],
+        "concurrent": [
+          "LING404",
+          "LING402"
+        ],
+        "minGrades": {
+          "LING100": "C"
+        }
+      },
+      "description": "In this course, students work directly (in groups) with a native speaker of a foreign language with which no one in the class has any prior familiarity. The students will work to uncover the set of sounds relevant to the language in question by winnowing down possible sound contrasts made in human languages. They will begin to construct a lexicon (vocabulary) built with a phonetic alphabet to discover how words and sentences are formed in the language. They will refine their techniques of questioning their research participant based on principles of linguistic field work."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be taught in one year or semester."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

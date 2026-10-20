@@ -1,0 +1,54 @@
+{
+  "subject": "RSOC",
+  "objects": [
+    {
+      "number": 11,
+      "type": "course",
+      "title": "Intro Rural Sociology",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "Basic sociological concepts applied to rural societal institutions and rural communities; causes and consequences of rural social change as applied to domestic and global regions. The objectives of the course are (1) to acquaint students with the fundamental concepts, principles and research methods of rural sociology; and (2) to assist students in applying these concepts and principles to gain an understanding of rural societal institutions and the forces leading to social change in rural America and globally. Lectures and readings are designed to encourage students to examine their assumptions and understanding of the structure and functioning of rural communities, the forces leading to rural social change, and the likely course of these changes in the future. A major objective is to challenge students to critically analyze rural society and rural social institutions from a sociological perspective. Understanding the changing nature of rural society in an increasingly urbanizing and integrated world is a key consideration."
+    },
+    {
+      "number": 400,
+      "suffix": "N",
+      "type": "course",
+      "title": "Exploring Indigenous Ways of Knowing in Great Lakes Region: Lecture",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "requisites": {
+        "previous": [
+          "RSOC11"
+        ]
+      },
+      "description": "Exploring Indigenous Ways of Knowing in the Great Lakes Region explores concepts and values distinctive to indigenous ways of knowing (IK) in the Great Lakes Region through readings, video segments, and lectures. Five structural concepts or key themes - local knowledge, relational knowledge, empirical knowledge, spiritual knowledge, and traditional knowledge - provide a conceptual framework for understanding indigenous cultures and knowledge production and their unique contributions to western society in the 21st century. Students will be introduced to the Algonquian cultures of the Great Lakes Region and to the Ojibwe (Anishinaabeg), Odawa, and Potawatomi (Three Fires) cultures in particular. This course will introduce students to the distinctive ways indigenous people experience, understand, and know the world through their relationship with the land or region to which they belong. Too often, colonizers around the world have ignored indigenous knowledge systems even though these ways of knowing have sustained peoples, cultures, and environments for thousands of generations. Because these ways of knowing are generally preserved and transmitted through stories, music, ceremony, and embodied traditions, they are seldom understood and frequently dismissed by those who control the production of knowledge in the modern world. The knowledge of the indigenous peoples of the Great Lakes region will, in this course, be presented as an empirically grounded scientific body of knowledge and theory comparable and complementary to the European tradition and, in specific ways, enhancing the sustainability of western scientific knowledge and practice. This course is a prerequisite for the Maymester field experience - Exploring Indigenous Ways of Knowing among the Ojibwe CED 401 which offers students an opportunity to experience indigenous ways of knowing by engaging with Ojibwe educators, traditional knowledge holders, elders, and families in several of the three largest Ojibwe reservations in the US."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Study--Rural Sociology",
+      "credits": 1,
+      "description": "Study in selected countries of rural social institutions and current rural sociological problems."
+    }
+  ]
+}

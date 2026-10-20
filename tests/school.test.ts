@@ -30,7 +30,7 @@ describe("parseSchoolData", () => {
       formatVersion: 1,
       school: { id: "s", name: "S" },
       calendar: { start: { season: "fall", year: 2026 }, seasons: ["fall"] },
-      objects: [{ id: "A", kind: "course", title: "A", credits: 3 }],
+      objects: [{ id: "A", type: "course", title: "A", credits: 3 }],
     });
     if (!result.ok) throw new Error(result.errors.join("\n"));
     expect(result.data.objects[0].requisites).toEqual({ previous: [], concurrent: [] });
@@ -38,9 +38,9 @@ describe("parseSchoolData", () => {
   });
 
   it("reports shape errors with their location", () => {
-    const result = parseSchoolData({ ...sampleSchoolData, objects: [{ id: "A", kind: "lecture" }] });
+    const result = parseSchoolData({ ...sampleSchoolData, objects: [{ id: "A", type: "lecture" }] });
     expect(result.ok).toBe(false);
-    if (!result.ok) expect(result.errors.some((e) => e.startsWith("objects.0.kind"))).toBe(true);
+    if (!result.ok) expect(result.errors.some((e) => e.startsWith("objects.0.type"))).toBe(true);
   });
 
   it("reports references to unknown objects", () => {
@@ -97,5 +97,14 @@ describe("loadSchool", () => {
     const result = checkChart(school.catalog, chart, requirements);
     expect(result.issues).toEqual([]);
     expect(chart.terms[0].objectIds).toEqual(["STAT200"]);
+  });
+});
+
+describe("old field names", () => {
+  it("reads an object's old kind field as its type", () => {
+    const objects = sampleSchoolData.objects.map(({ type, ...rest }) => ({ ...rest, kind: type }));
+    const result = parseSchoolData({ ...sampleSchoolData, objects });
+    if (!result.ok) throw new Error(result.errors.join("\n"));
+    expect(result.data.objects.find((o) => o.id === "SPAN-PROF")?.type).toBe("proficiency");
   });
 });

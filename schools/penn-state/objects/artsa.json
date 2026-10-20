@@ -1,0 +1,90 @@
+{
+  "subject": "ARTSA",
+  "objects": [
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Introduction to Arts Administration",
+      "credits": 3,
+      "description": "This course provides students with a survey of the major concepts and practices of arts administration."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Arts Event Planning and Project Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MKTG301"
+        ]
+      },
+      "description": "Planning and managing an event for an arts organization."
+    },
+    {
+      "number": 402,
+      "suffix": "W",
+      "type": "course",
+      "title": "Strategic Management and Planning for the Arts",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MKTG301"
+        ]
+      },
+      "description": "Study of strategic planning for commercial and non-profit arts organizations."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Fundraising and Grant Writing",
+      "credits": 3,
+      "description": "This course explores strategies to identify and secure financial support for arts organizations and not-for-profit institutions. ARTSA 403 Fundraising and Grant Writing (3) ARTSA 403 , Fundraising and Grant Writing, is an upper level requirement for the Bachelor of Arts degree in Arts Administration. This course will provide students with an understanding of common institutional and leadership structures in the world of not-for-profit organizations. The course will explore proven strategies to create and maintain fiscal stability by generating revenue from a variety of potential financial sources. These include individuals and businesses, federal, state, and community resources, and charitable foundations. Students will also examine practical methods for development, including special events, long and short term campaigns, and the writing of proposals and grants. Upon completion of this course, ARTSA majors will be equipped with the skills necessary to plan and develop organizational solvency."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Event Planning Practicum",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARTSA301",
+          "ARTSA401",
+          "ARTSA403"
+        ],
+        "concurrent": [
+          "ARTSA402W"
+        ]
+      },
+      "description": "Students individually plan their own arts event in a workshop setting that guides them through organization and implementation. ARTSA 404 , Event Planning Practicum, is an upper level requirement for the Bachelor of Arts degree in Arts Administration. The course will function as a workshop for the planning and execution of students' capstone projects, in which they organize and implement an arts event either on or off campus. Projects may take the form of an exhibition of visual art or a theatrical or musical performance. Although students will be working independently on their own projects in consultation with a faculty advisor, the course is structured so that they will progress through the stages of event planning as a class, regularly presenting and critiquing work in progress. Topics to be covered include budget preparation, grant writing and fundraising, marketing, and program evaluation. Significant class time will also be devoted to discussing the implementation of each student's project. On completion of this course, students will be able to manage all aspects of the planning and execution of an arts event."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "type": "course",
+      "title": "Arts Administration Off Campus Internship**SPECIAL TOPICS**",
+      "credits": 3,
+      "description": "Arts Administration Off Campus Internship (3) A professional internship experience with an established arts agency or organization outside of the university."
+    },
+    {
+      "number": 495,
+      "suffix": "B",
+      "type": "course",
+      "title": "On Campus Internship in Arts Administration",
+      "credits": 3,
+      "description": "On Campus Internship in Arts Administration (3) An internship with an on-campus arts organization or program."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Study",
+      "credits": 3,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

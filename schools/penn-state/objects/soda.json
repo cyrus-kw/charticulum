@@ -1,0 +1,57 @@
+{
+  "subject": "SODA",
+  "objects": [
+    {
+      "number": 110,
+      "suffix": "N",
+      "type": "course",
+      "title": "Social Data, Technology, and Artificial Intelligence",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "SoDA 110N introduces students to the landscape of artificial intelligence (AI) and digital technology through the lens of human-generated data and societal applications. Emphasizing how data is produced and structured before it is ever used in algorithmic systems, the course examines the pipeline from raw human-generated data to AI implementation. Through real-world case studies and hands-on exercises, students develop foundational literacy in data systems and analytics processes, while critically exploring the social, political, and ethical implications of AI. Designed for students from diverse disciplines, the course requires no prior programming experience and fulfills General Education requirements."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics in Social Data Analytics",
+      "credits": 3,
+      "description": "Formal courses offered infrequently to explore, in depth, a subject that may be topical or of special interest."
+    },
+    {
+      "number": 308,
+      "type": "course",
+      "title": "Research Design for Social Data Analytics",
+      "credits": 3,
+      "description": "This course engages students in the study and use of research design tools for the analysis of \"big data.\" SODA 308 Research Design for Social Data Analytics (3) The tools of social science and social data analytics affect how data scientists and social scientists understand the world. This course engages students in the study and use of research design tools for the analysis of social systems and \"big data.\" Topics to be addressed include: how the scientific method relates to a practice of establishing the validity of propositions and the role that analytics can play in that process when the observations are vast and varied; how the validity of systematic patterns in data are assessed as well as how spurious or biased patterns in the data are ruled out; and how the scientific method can guide the use of exploratory techniques such as machine learning and visual analytics. Through the course, students will learn to develop innovative research designs in an effort to improve the statistical analyses used with social data and how to present these analyses to nontechnical audiences, such as non-profits, employers, and the general public. Course requirements include several short memoranda that require the development and presentation of a research design and data analysis plan. Students will also gain practical experience working with several \"big data\" sets. Students are required to have an understanding of introductory statistics (equivalent to the knowledge they would gain from PL SC 309) prior to taking this course."
+    },
+    {
+      "number": 314,
+      "type": "course",
+      "title": "Social Data and the Methodological Foundations of AI",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SODA110N"
+        ]
+      },
+      "description": "This course offers advanced, applied training in the use and understanding of artificial intelligence technologies and their applications to large-scale, human-generated information. Students gain hands-on experience with tools such as open-source generative models, APIs, and agentic systems, learning how these systems function and how to integrate them into research and communication workflows. Alongside technical learning, the course emphasizes critical evaluation of AI applications, ethical risks, and broader consequences for social institutions and human well-being. This integrated approach prepares students to be both capable expert users and thoughtful evaluators of AI."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses offered infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "subject": "ARMY",
+  "objects": [
+    {
+      "number": 101,
+      "type": "course",
+      "title": "Introduction to the Army",
+      "credits": 3,
+      "description": "Army 101 focuses on introduction to the Army and basic Soldier skills. It introduces Cadets to the Army and the Profession of Arms. Students will examine the Army Profession and what it means to be a professional in the U.S. Army. The overall focus is on developing basic knowledge and comprehension of the Army Leadership Requirements Model while gaining a complete understanding of the Reserve Officers' Training Corps (ROTC) program, its purpose in the Army, and its advantages for the student. Cadets also begin learning map reading and land navigation. Students will have initial classes on fieldcraft, first aid, individual/team movement techniques that will include a weekly lab facilitated by Advanced Course Cadets and supervised by Army ROTC Instructors."
+    },
+    {
+      "number": 102,
+      "type": "course",
+      "title": "Foundations of Leadership",
+      "credits": 3,
+      "description": "Army 102 introduces Cadets to the personal challenges and competencies that are critical for effective leadership. Cadets learn how the personal development of life skills such as critical thinking, time management, goal setting, and communication. Cadets learn the basics of the communications process and the importance for leader's to develop the essential skills to effectively communicate in the Army. Cadets will begin learning the basics of squad level tactics that will be reinforced during a weekly lab facilitated by Advanced Course Cadets and supervised by Army ROTC Instructors"
+    },
+    {
+      "number": 103,
+      "type": "course",
+      "title": "Physical Training Laboratory",
+      "credits": 1,
+      "description": "This course is designed to guide students through an intentional physical fitness program. The course follows the ARMY Physical Fitness Training Program, but is open to any student. The design consists of a systematic increase in the intensity or duration of physical activities. Proper progression allows the body to positively adapt to the stresses of training. When intensity or duration is increased too rapidly, the student cannot adapt to the demands of training, and is unable to recover, leading to overtraining and possible injury. The following are gradually increased to produce the desired physiological effect: - Intensity (resistance and pace). - Exercise volume (number of sets and repetitions). - Duration (time). In the toughening phase, the duration of the ability group runs (AGRs) progress from 10 minutes to 30 minutes gradually over the training cycle. The pace also gradually increases over time. For example, in the sustaining phase during the conduct of CLs and speed running, Soldiers progress from wearing the individual physical fitness uniform (IPFU) to Army combat uniforms (ACUs), boots, advanced combat helmet (ACH), and improved outer tactical vest (IOTV). Progression in strength is achieved by increasing one or more of the following for each exercise when using strength training equipment. - Resistance (weight). - Number of sets. - Number of repetitions. Adhering to the scheduled intensity and duration prevents the Soldier from progressing too fast. How fast the Soldier should progress also depends on how regularly he performs challenging activities and how much rest and recovery time he gets. PRT time is a valuable resource, especially during the toughening phase. Every PRT session develops strength, endurance, and mobility. To ensure improvement, PRT sessions in IMT occur 5 or 6 times a week and last 45 to 60 minutes. PRT sessions in the sustaining phase last 60 minutes or more and occur 4 to 5 times a week. If PRT cannot be conducted first thing in the morning, it should be conducted at some other time during the duty day. Training sessions should be sequenced to ensure adequate recovery."
+    },
+    {
+      "number": 201,
+      "type": "course",
+      "title": "Leadership and Ethics",
+      "credits": 3,
+      "description": "Army 201 focuses on leadership and ethics. The course adds depth to the Cadets knowledge of the different leadership styles. Cadets will conduct a leadership analysis of famous leaders and self-assessment of their own leadership style. The Army Profession is also stressed through understanding values, ethics and how to apply both to different situations they may encounter as a leader. Army Values and Ethics and their relationship to the Law of Land Warfare and philosophy of military service are also stressed. Students are then required to apply their knowledge outside the classroom in a hands-on performance-oriented environment during a weekly lab facilitated by Advanced Course Cadets and supervised by Army ROTC Instructors."
+    },
+    {
+      "number": 202,
+      "type": "course",
+      "title": "Army Doctrine and Decision Making",
+      "credits": 3,
+      "description": "Army 202 focuses on Army doctrine and decision making. The course begins with analytical techniques, creative thinking skills and the Army problem solving process as related to situations faced by leaders when making decisions. TLPs and OPORD will lead Cadets to an understanding of Army Doctrine and Symbology. Squad tactics will be covered in classes on Unified Land Operations, Offensive Operations and Defensive Operations. Students are then required to apply their knowledge outside the classroom in a hands-on performance-oriented environment during a weekly lab facilitated by Advanced Course Cadets and supervised by Army ROTC Instructors."
+    },
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Training Management and the Warfighting Functions",
+      "credits": 3,
+      "description": "Army 301 focuses on training management and the warfighting functions. It is an academically challenging course where you will study, practice, and apply the fundamentals of Training Management and how the Army operates through the Warfighting functions. At the conclusion of this course, you will be capable of planning, preparing, and executing training for a squad conducting small unit tactics. Includes a lab per week using peer facilitation by senior Cadets and supervised by Army ROTC Instructors."
+    },
+    {
+      "number": 302,
+      "type": "course",
+      "title": "Applied Leadership in Small Unit Operations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARMY301"
+        ]
+      },
+      "description": "Army 302 focuses on applied leadership in small unit operations. It is an academically challenging course where you will study, practice, and apply the fundamentals of direct level leadership and small unit tactics at the platoon level. At the conclusion of this course, you will be capable of planning, coordinating, navigating, motivating and leading a platoon in the execution of a mission. Includes a lab per week using peer facilitation by senior Cadets and supervised by Army ROTC Instructors. Successful completion of this course will help prepare you for the Cadet Summer Training Advanced Camp, which you will attend in the summer at Fort Knox, KY."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "The Army Officer",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARMY302"
+        ]
+      },
+      "description": "Army 401 focuses on development of the Army Officer. It is an academically challenging course where you will develop knowledge, skills, and abilities to plan, resource, and assess training at the small unit level. You will also learn about Army programs that support counseling subordinates and evaluating performance, values and ethics, career planning, and legal responsibilities. At the conclusion of this course, you will be familiar with how to plan, prepare, execute, and continuously assess the conduct of training at the company level. Includes a lab per week overseeing lesson facilitation and supervised by Army ROTC Instructors."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Company Grade Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARMY302"
+        ]
+      },
+      "description": "Army 402 is an academically challenging course where you will develop knowledge, skills, and abilities required of junior officers pertaining to the Army in Unified Land Operations and Company Grade Officer roles and responsibilities. This course includes reading assignments, homework assignments, small group assignments, briefings, case studies, practical exercises, a mid-term exam, and an Oral Practicum as the final exam. Successful completion of this course will assist in preparing you for your Basic Officer Leader Course and is a mandatory requirement for commissioning. Includes a lab per week overseeing lesson facilitation and supervised by Army ROTC Instructors."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

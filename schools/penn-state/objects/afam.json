@@ -1,0 +1,800 @@
+{
+  "subject": "AFAM",
+  "objects": [
+    {
+      "number": 3,
+      "type": "course",
+      "title": "Scholarship and Community",
+      "credits": 1,
+      "description": "Introduction to college life for new students in a designated residential community to help them optimize their Penn State experience."
+    },
+    {
+      "number": 4,
+      "type": "course",
+      "title": "Educational Equity Scholarship and Community II",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "AFAM3"
+        ]
+      },
+      "description": "The purpose of the second-semester seminar is to support scholars' success through demonstration of engaged scholarship through course curriculum and co-curricular program opportunities at University Park. This course is taught by the Office of Scholars Program staff as a living-learning program, with monthly seminar meetings and required programs through the Educational Equity Scholars Special Living Option (SLO). This unique structure provides an experiential education experience, which supports students' transition to college through campus engagement, encouraging a sense of belonging, and the development of self-awareness and self-advocacy skills. The course will also allow scholars to continue opportunities to develop relationships with key leaders, multicultural leadership, and resources across the University Park campus that will lead to their continued growth and strengthen emerging academic skills. AFAM 4 further challenge students to think more deeply and critically about the concepts of goal setting, reflection, responsibility, critical thinking, engagement, community, and ethical decision-making that were introduced in AFAM 3 ."
+    },
+    {
+      "number": 83,
+      "type": "course",
+      "title": "First-Year Seminar in African American Studies",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "AFAM 83 has two primary purposes. First, it is designed to introduce students to college life and help them identify the resources and opportunities that will be most helpful to their future personal and professional path. Secondly, this seminar will introduce students to the interdisciplinary field of African American and Diaspora Studies. They will learn about major themes and topics in the field and meet faculty from various disciplines (History, English, Anthropology, Religion, Communication) who are researching those topics. Both aspects of the course will give students a clearer sense of the academic and personal opportunities available at Penn State and in African American Studies."
+    },
+    {
+      "number": 100,
+      "suffix": "N",
+      "type": "course",
+      "title": "Black Freedom Struggles",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "This course focuses on Black freedom struggles in the United States and selected examples from other countries in Latin America and the Caribbean. Themes addressed may include enslaved Africans' resistance to capture and enslavement as well as post-Emancipation attempts to combat white supremacy, racial and gender inequality, labor and sexual exploitation, and political disenfranchisement. Resistance strategies include but are not limited to forging of prophetic religious tradition, marching, boycotting, forming strong families and communities, collective organizing, making art, and serving in the military in the late 19th through 21st centuries. This course will address key moments, movements, and texts in the history of Black struggles for freedom in various realms including the legal, political, religious, literary, and educational. It will also cover major (as well as lesser-known) artists, activists, writers, orators, scholars, community organizers and teachers involved in Black struggles for freedom. Students will acquire a strong basic knowledge of freedom struggles in the United State, the Caribbean, and Latin America. They will also begin to understand the relationship of black resistance to broader anti-racist, anti-colonial and anti-imperialist struggles. Assigned readings, films, and lectures will foster critical thinking, speaking, and writing skills."
+    },
+    {
+      "number": 101,
+      "suffix": "N",
+      "type": "course",
+      "title": "African American Women",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "WMNST101N"
+      ],
+      "description": "This course offers an introduction to the sociological, historical, and political experiences of African American women, their roles and contributions to society. Through an interdisciplinary approach, we will pay particular attention to historical and contemporary responses to intersectional challenges African American women face. Drawing from the 19th, 20th, and 21st centuries, through the use of print and digital texts, oral histories, film, music, poetry, and local events, we will investigate various forms of social and political activism including work in labor, civil rights, black power, feminist, womanist, and other movements, the impact of popular culture on what it means to be an African American woman, as well as the implications of claiming such an identity. By focusing on key moments, institutions, and figures in history, the course demonstrates African American women's central roles in the development of American institutions as we know them today, and challenges students to engage critically with questions of race, gender, class, and sexuality, as they wrestle with theories of Black Feminist Thought and Womanism."
+    },
+    {
+      "number": 102,
+      "type": "course",
+      "title": "Women of the African Diaspora",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "WMNST102"
+      ],
+      "description": "Women of the African Diaspora is an introduction to studying the lives of African Diaspora women and the systems of power that shape them across cultures and geographies. The course centers on the politics of race and gender, on notions of origins and belonging and the meaning of resistance as a cultural and political tool. We will engage with patriarchy as a system of power implicated in identity formation and social relations. We will pay particular attention to the ways colonial histories and racial legacies have shaped the experiences of women in Diaspora. To this end, students will explore the complex and contested ways in which multiple economic, political, and cultural institutions affect the lives of women in the diaspora and examine a variety of issues including economy and labor, mobility and Activism, creativity and literary production and spirituality and social change. Rooted in a diasporic and transnational feminist framework, the course addresses issues of power, culture, racial formation, and citizenship and explores spatiality, movement and border crossings. It follows an intersectional approach to the politics of race and gender and engages diaspora as a historical and contemporary condition that addresses the realities of women in African decent as shaped by the legacy of slavery and the contemporary racial and social pattern of globalization. Students will explore broad patterns, changes, and continuities between diasporic communities globally and the way they shaped women's experiences through an analysis of the history of colonization, slavery, independence struggles, nation-building, imperialism, neo-colonialism, revolution, violence and social movements. The course will provide and interdisciplinary perspective to develop a nuanced understanding of the histories and the lived experiences of women of African descent both globally and in the context of their local geographies. To this end, the course explores both similarities and differences of diasporic experiences. It examines the complex and contested ways in which multiple economic, political, and cultural institutions affect lives of women of African Descent both in the US and globally and by addressing the relationship between economy and labor, mobility and Activism, creativity and literary production, spirituality and social change. It challenges universal and homogenous notions of blackness and engages feminist politics of solidarity as a site of both difference and commonality. The course incorporates interdisciplinary approaches and materials such as films, music, novels, short stories to examine how racial, gender, sexual, and class identities are constructed in the context of the diaspora."
+    },
+    {
+      "number": 103,
+      "type": "course",
+      "title": "Racism and Sexism",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "SOC103",
+        "WMNST103"
+      ],
+      "description": "This survey course examines racism and sexism as cultural, political and economic processes that shape contemporary social life in the United States. It provides an historical overview of the roots of modern racism and sexism and will explore these structural inequalities continue to matter in a \"post-racial\" and \"post-feminist\" era. Students will engage a broad range of texts that discuss these forms of inequality as intersecting, mutually constituted forms of marginalization. Students will develop a deeper understanding of how race, gender, sexuality, and class conditions identity formation; racism as a structural process that shapes and limits the life chances of non-white communities; and the long tradition of resistance that women and communities of color have developed to combat these social inequalities. The course is divided into two sections. The first introduces a range of terms: race, gender, class, sexual politics, intersectionality and neoliberalism. The second half considers various case studies: mass incarceration, toxic waste, (un)natural disasters, reproductive justice, and Islamophobia in the war on terror. Students will leave with both an understanding of key theoretical terms in the study of racism and sexism and be able to apply these concepts to contemporary social issues."
+    },
+    {
+      "number": 105,
+      "suffix": "N",
+      "type": "course",
+      "title": "Afro-Latin America: Race and Revolution",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "Too often the history of race in the Americas is overly defined by concepts of racial identity and race relations in the United States. When examined quantitatively, fewer than five percent of the approximately 10 million slaves who survived the Middle Passage arrived in what we know as the United States of America. This course will examine the impact of slavery throughout the Americas, from the establishment of the plantation in Brazil through the impact of Black migration throughout the Americas today. Through lecture and discussion, we will identify patterns of racial identity and participation in the formation of the Latin American nation state that will give us a more nuanced understanding of both race and nation in the Americas. We will examine the development of the modern plantation from the sixteenth to the nineteenth century as well as the role of urban slavery in this era throughout Latin America. We will study the various paths to abolition with a particular focus on the Haitian Revolution and the common practice of military service among slave populations during the early nineteenth century struggles for Latin American independence. Additionally, we will look at the comparative abolition of slavery in the United States and Latin America, the role of slaves and free blacks in Central America, as well the role of race in the tensions between Haitians and Dominicans on the island of Hispaniola. The second half of the course will move to an examination of contemporary black politics, patterns of anti-black racism and state violence, and the emergence of new social movements for racial, gender, and economic justice in the Americas. This course meets the criteria for General Education designation in the B.A. fields of Humanities (GH), Social and Behavioral Sciences (GS), and International Cultures (IL)."
+    },
+    {
+      "number": 110,
+      "suffix": "N",
+      "type": "course",
+      "title": "Introduction to African American Studies",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "This course is an introduction to African American Studies as both a political and intellectual project. We will look at the discipline's history, its most prominent thinkers and institutional locations, as well as the influence of African American Studies both inside and outside of the academy. We will consider how student protests, political and cultural movements, important thinkers, and critical debates have shaped the field and how it has changed over time in response to new political and demographic realities. Beginning with the field's origins in 1960s-era student protests, this course considers the major concepts and methodological approaches - sociological, anthropological, historical, literary - that have shaped the field since its inception in 1968. We will consider the major themes and debates that have dominated African American Studies and how they have changed over time. Focusing on critical texts including W.E.B. DuBois' The Souls of Black Folks, Angela Y. Davis' Woman, Race and Class and Michael Gomez' Reversing Sail we will follow the field's evolution from one focused on the U.S. to one that encompasses African Diasporic populations around the globe. We will assess the impact of African American Studies in colleges and universities as well as in grassroots communities. Some topics we will examine include: the difference between African American Studies as an intellectual project and African American Studies as a political project; how theories about gender inequality have shaped the field; how theories about class inequality have shaped the field; how the diasporic turn has shaped the field; what U.S. demographic trends may mean for the future of African American Studies."
+    },
+    {
+      "number": 111,
+      "suffix": "N",
+      "type": "course",
+      "title": "Introduction to Anti-Black racism in the United States: The African American Experience",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "This interdisciplinary course for undergraduate students on anti-racism will examine the historical, sociological, representational, and psychological effects of racism on the experiences of African Americans. In 2020, three significant events: the killings of Ahmaud Arbery, George Floyd, Breonna Taylor, and many others, the COVID-19 pandemic, and benchmark studies on economic inequalities created a national and global demand for anti-Black racism education. An intersectional lens will guide the course to examine the core modules and recent events, providing a holistic racial, gender, and class analysis. Experiential activities and journal reflections will allow students to evaluate their personal beliefs about race, cultural identity, privilege, and social advocacy. The course concludes with students creating and presenting campus or community-based anti-racism projects. Faculty may include field trips to regional and/or national African American historical sites and guest speakers throughout the course in order to provide expert scholarship, insights, and experiences."
+    },
+    {
+      "number": 114,
+      "suffix": "N",
+      "type": "course",
+      "title": "Race, Gender and Sport",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "In 1969, sociologist Harry Edwards declared that a surge of protest among African American athletes marked \"the newest phase of the black liberation movement in America.\" Nearly five decades later, athletes such as Richard Sherman, Serena Williams, and Michael Sam proved that the relationship between race, gender, and sport remains complicated, and that athletes continue to offer meaningful contributions to a variety of struggles for liberation. This course addresses the race, gender and sport relationship from two complementary angles. First, we will examine the ways that sport gives meaning to racial and gender identity. As concepts that shift over time, race and gender derive their influence from prevailing forms of scientific reason, social attitudes, and cultural mythologies. From Jack Johnson to Serena Williams, sport has found and intervened itself in each of these contexts, particularly as society and culture produce marginal or subordinate identities. We will consider, for example, how and why sport posits the differences between men and women according to assumptions about physical strength, and how and why sport reinforces dubious assumptions regarding the physical superiority and cognitive inferiority of black athletes. Second, we will examine the ways that sport works as a setting in which political struggles around race and gender are imagined and expressed. From the 1968 stand by black track and field Olympians, to Billie Jean King's 1973 famous \"Battle of the Sexes,\" to tennis player Venus Williams' achievement of gender pay equity in 2007, to sports figures protesting on behalf of the Movement for Black Lives in 2016, athletes have long placed their social identities at the center of political speech. Finally, we will consider the historical trajectory of a narrative about the \"activist athlete,\" which once held that athletes had abdicated political obligations in pursuit of wealth, but which now seems to herald athletes' return to the nation's political scene in examples like LeBron James and Colin Kaepernick. This course will address sport's potential to rethink, resist, or challenge race and gender relations and other social hierarchies."
+    },
+    {
+      "number": 116,
+      "type": "course",
+      "title": "Muslims in America",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "RLST116"
+      ],
+      "description": "This course is a study of Muslims in North America, primarily the United States. It examines the multiple racial, cultural, and national groups that comprise this diverse community, starting with the historical record of the Muslims that came to the Americas as African slaves. Next, we examine African American Islam in its myriad formations. The influx of immigrants in the 1960s from the Middle East, Africa and Asia, dramatically shifted demographics in U.S. Muslim communities. Finally, we consider the post-9/11 period, which has put Islam and Muslims at the center of U.S. political and cultural discourse."
+    },
+    {
+      "number": 126,
+      "suffix": "N",
+      "type": "course",
+      "title": "The Popular Arts in America: The History of Hip-Hop",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "internalEquivalents": [
+        "INART126N"
+      ],
+      "description": "Hip-hop is an important and historically significant genre in popular music that initially began in the South Bronx in the early 1970s and has grown to become one of the most influential, controversial, and important genres to emerge in the last quarter of the 20th century. Beyond music, hip-hop has also been defined as a commercial enterprise, a lifestyle, and a sociocultural movement. This course explores the various meanings and manifestations of hip-hop throughout its evolution from the early 1970s to the present day. Students will examine the cultural, economic, social, and political implications of hip-hop nationally and globally. Drawing on frameworks like critical race theory and Black feminist/womanist theory, students will engage enduring debates at the heart of hip-hop-debates about art, race, class, gender, citizenship, power, and the body. Topics to be covered include: four foundational elements of hip-hop (rap, DJ arts, graffiti & visual arts, dance); the cultural, economic, political, and social conditions under which hip-hop emerged and developed; impact of hip-hop on the culture industries and the commercialization of the genre; stylistic principles that constitute the hip-hop aesthetic; racial parameters of hip-hop and notions of authenticity; gender and hip-hop's framing of black femininity and masculinity; and global circulation of hip-hop culture. Throughout the course students will explore the following questions: Under what social, political, and economic conditions did hip-hop emerge? Who were the key producers, fans, and detractors of hip-hop in its earliest years? Whose voices are privileged (and marginalized) within hip-hop studies as an academic project? How has hip-hop been framed within and/or transcended traditional notions of art and beauty? In what ways has hip-hop style been criminalized and degraded as low culture? In what ways has hip-hop style been (mis)appropriated? What is authentic hip-hop and how is it measured? To what extent do hip-hop artists pander to stereotypes? What is the relationship between hip-hop and capitalism? What are the benefits and limitations of the commercialization of hip-hop? How do fans and producers impact the genre in the contemporary digital era? What are the primary impediments to rappers who are neither black, nor male achieving the level of popularity and respect that hip-hop's biggest stars have attained? To what extent does the music industry use talent and marketability as a stand in for racial identity? How has hip-hop been taken up by marginalized groups in countries such as Brazil, Cambodia, and South Africa?"
+    },
+    {
+      "number": 132,
+      "type": "course",
+      "title": "Afro-Hispanic Civilization",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "AFR132",
+        "SPAN132"
+      ],
+      "description": "A general introduction to human and cultural elements of African origin in Spanish- and Portuguese-speaking countries of Latin America. SPAN 132 / AFR 132 / AFAM 132 Afro-Hispanic Civilization (3) (IL) (BA) This course meets the Bachelor of Arts degree requirements. The nations and peoples of Latin America have a unique, interesting history and cultural heritage that are rooted in the traditions, beliefs, experiences, values, and struggles of Native American, European, African and other populations. This course focuses on the presence and participation of African peoples and their descendants in the formation and development of societies and cultures in representative areas of the Caribbean, South America, and Central America and on the evolution, diversity, and richness of the African heritage therein. Course content includes the African background, the experience and impact of slavery, the social, cultural, and economic heritage of slavery, the role of race in Latin America, and Afro-Hispanic intellectual, literary, and artistic developments (e.g., aspects of folklore, music). The course aims to provide students with a general introduction to human and cultural elements of African origin within the Spanish- and Portuguese-speaking nations of the Americas so that they may be more knowledgeable of the meaning, significance and widespread influence of the African diaspora. It proposes to provide the student with a better understanding of Africa's contribution to Latin American identity, diversity, culture, and development; to promote appreciation for the values and practices of other cultures, and greater awareness of the relations between the nations of the region and the United States."
+    },
+    {
+      "number": 136,
+      "type": "course",
+      "title": "Race, Gender, and Employment",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "internalEquivalents": [
+        "LHR136",
+        "WMNST136"
+      ],
+      "description": "This course will ask how race and gender affect work in the contemporary United States. We will consider how race and gender shape people's work opportunities, their wages at work, and whether they participate in paid or unpaid labor (or both). We will begin with an overview of work and the changes in the workforce over time; we will move to investigate how workplace structures reproduce gender and race inequalities; will ask how race and gender inequalities are informally maintained through education systems and social networks; will consider differing dimensions of inequality across poverty, immigration, and sexuality; and will consider how studying unpaid labor helps us better understand the formal paid economy. This course meets the Bachelor of Arts degree requirements."
+    },
+    {
+      "number": 136,
+      "suffix": "Y",
+      "type": "course",
+      "title": "Race, Gender, and Employment",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "internalEquivalents": [
+        "LHR136Y",
+        "WMNST136Y"
+      ],
+      "description": "This course will ask how race and gender affect work in the contemporary United States. We will consider how race and gender shape people's work opportunities, their wages at work, and whether they participate in paid or unpaid labor (or both). We will begin with an overview of work and the changes in the workforce over time; we will move to investigate how workplace structures reproduce gender and race inequalities; will ask how race and gender inequalities are informally maintained through education systems and social networks; will consider differing dimensions of inequality across poverty, immigration, and sexuality; and will consider how studying unpaid labor helps us better understand the formal paid economy. The course emphasizes writing in the form of short assignments and longer papers as a means to develop comprehension of these ideas. This course is a writing intensive course designed to develop formal writing appropriate for a business context. We will use an active and engaged writing process using the course topics of diversity and employment inequality to strengthen writing skills."
+    },
+    {
+      "number": 139,
+      "type": "course",
+      "title": "African American Literature",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "ENGL139"
+      ],
+      "description": "This course offers an introduction to African American literature from the early writings of slavery and freedom to the works of present-day African American authors. We will explore the major themes, literary traditions and narrative strategies that merge and shape this body of literature, considering, for example, the influence of double-consciousness, questions of authenticity and performance, representations of blackness and whiteness, the significance of place, and the persistent presence of folklore and vernacular traditions. Our analyses of texts will be attentive to the intersections of race, class, gender, and sexuality, and by the end of the course you will be able to discuss fluently several literary techniques and strategies including irony, satire, narration, voice, characterization, imagery, style and setting. We will situate texts in their various historical and cultural contexts, and you will be introduced to key literary concepts and terms that should inform your reading and writing about these texts. You will learn how to analyze literature, do close and careful readings of texts and write persuasively about literary works. Students will engage in thoughtful, creative and open-minded class discussions, analyze literature and do close and careful readings of texts."
+    },
+    {
+      "number": 141,
+      "suffix": "N",
+      "type": "course",
+      "title": "African American Read-In Engaged Learning Experience",
+      "credits": 1,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "internalEquivalents": [
+        "ENGL141N",
+        "INART141N"
+      ],
+      "description": "This course will allow students to study African American literature, culture, history, and arts in connection with an annual public event, the African American Read-In (AARI). The AARI, promoting literacy and appreciation of African American literature, is a national event established in 1990 under the auspices of the National Council of Teachers of English. It has become a regular feature of Black History Month celebrated by community, neighborhood, and church groups as well as schools and institutions of higher education throughout the United States and elsewhere on a given Sunday and Monday in February attracting more than a million participants annually. This course offers students an engaged learning experience in which they will produce original intellectual and artistic content to be presented publicly at an AARI event on campus. Students will study texts from a range of historical periods and/or genres, and thus gain a solid introduction to the African American literary tradition. At the same time, the primary organizing principle of the course will be a particular theme that both allows a broad and coherent overview of a significant cultural or historical topic and engages issues of cultural diversity in the United States. The specific theme, thus, will bring the study of African American literature into a broader interdisciplinary context that intersects with African American culture, history, identity, and the struggle for equality. Students will study texts that relate to this annual theme and participate in a relevant field trip (museum, theater, cultural site, library, etc.) to deepen their understanding of the significance and contexts, social, historical, cultural, artistic of these materials and this theme. They will then develop this knowledge through creative and critical engagements into exhibitions, presentations, or performances to communicate their insights about a particular author, text, or topic in in the African American literary tradition. As shapers of the AARI program on their campus, class members will also have a voice in designing and planning the AARI as well as a stake in its overall success. As this course necessarily spans semesters, students who enroll in the Fall course will be expected to enroll in the Spring course in order to present their projects at the AARI in February. Only students who were enrolled in the Fall course will be permitted to enroll in the Spring, as it is the culmination of the same course."
+    },
+    {
+      "number": 145,
+      "type": "course",
+      "title": "African Diaspora Religions and Spiritualities",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "RLST145"
+      ],
+      "description": "This course is an introduction to religions and spiritual traditions of the African Americas including the United States, the Caribbean and Latin America, emphasizing present institutions and practices, their relationship to Africa and African spirituality, their shape and function during slavery, and their development from Emancipation to the present. Through various examples and case studies, we will trace the relationship between religion and resistance, race politics, gender and sexuality, religion and social change. The course addresses core ideas of the disciplines of religious studies and African Diaspora theory. The category of religion is explored through a diasporic framework that considers the legacy of slavery and contemporary racial and social hierarchies. The course approaches religions of the African Americas as epistemologies of resistance to white oppression introducing students to the diaspora condition as marked by historical violence and the dialectics of loss and displacement. Central to the course are concepts of religious orthodoxy and authenticity, cultural retentions and transformations and the dynamics of religious power and authority. The course follows a comparative framework in investigating religious life, introducing students to diaspora theory as a discourse of difference that engages critically with the particularities of the religious traditions of the African Americas without collapsing their differences. By addressing identity formations, the course focuses on religion as a discourse of power and one that articulates religious life as shaped by gender and race politics and by economics and social realities. To this end, the course follows an interdisciplinary approach and engages a variety of material including literary and historical texts, visual arts and music and dance makes it possible for students to understand the complexity of religious life in the African Americas."
+    },
+    {
+      "number": 146,
+      "type": "course",
+      "title": "The Life and Thought of Martin Luther King, Jr.",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "RLST146"
+      ],
+      "description": "A survey of the civil rights leader including his religious beliefs, intellectual development, and philosophy for social change."
+    },
+    {
+      "number": 147,
+      "type": "course",
+      "title": "The Life and Thought of Malcolm X",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "RLST147"
+      ],
+      "description": "The life of Malcolm X/El Hajj Malik El Shabazz (1925-1965) and his social, political, economic, and moral thought. AFAM 147 / RLST 147 The Life and Thought of Malcolm X (3) (GH;US)(BA) This course meets the Bachelor of Arts degree requirements. This course will examine in-depth the life, speeches, and thoughts of Malcolm X/El Hajj Malik El Shabazz. While the Autobiography will be a major source, we will also use other sources to develop an understanding of the philosophy and thought of Malcolm X. We will explore the social, economic, political, cultural, religious, moral, and spiritual context of America in general and of African Americans in particular. We will examine Malcolm X's influence on the period in which he lived and since his assassination. We will compare and contrast his view on issues of race, culture, politics, education, crime, human rights, civil rights, morality, and economics with those of other African American leaders and with the prevailing views of most Americans on those subjects. We will devote a large portion of the course to the examination of the social movements that impacted on Malcolm and those that he influenced. The speeches of Malcolm X and the writings about Malcolm X are instructive and will be utilized along with other documents. Videotapes and audiotapes will also be employed as instructional materials. Students are expected to be ACTIVE participants in the learning/teaching experience. Students are required to participate in class discussions centered on the readings and related topics. There will be a written mid-term examination and a written final examination. Students are expected to complete an individual research project related to the course and write a paper on that research as well as to participate in a collaborative group project of their choosing on a subject related to the class. This course will count in the supporting courses category of the major and minors in African/African American studies. It also will fulfill credits in the Religious Studies Program. It may also be used to fill GH and US requirements."
+    },
+    {
+      "number": 152,
+      "type": "course",
+      "title": "African American History",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "HIST152"
+      ],
+      "description": "Chronological and topical survey of the history of African Americans from the colonial period to the early twenty-first century. This course covers major themes in African American history including the societies and cultures of Africa, the Middle Passage, the Colonial experience, slavery, abolition, and the quest for freedom, Civil War and emancipation, Reconstruction, Jim Crow, the Great Migration, African American cultural expressions, WWII and the seeds of Civil Rights, the Freedom Movement, Black politics and White backlash. While \"knowing the facts\" is obviously important to historical understanding, this course helps students develop critical thinking skills. These skills include: close and thoughtful reading and analysis of primary and secondary sources; looking for a broader coherence or \"order\" to the material; independent analysis and effective articulation (both in writing and in class discussion) of well-reasoned, well-crafted conclusions and interpretations and arguments (conclusions/interpretations/arguments which are supported by specific factual evidence derived from a variety of sources). The three specific course objectives underscore its scholarly dimensions: (1) Students will gain a knowledge and understanding of the relationship between the experiences of African Americans and United States history as a whole. (2) Students will gain an understanding and knowledge of the political, economic, and social processes that shaped African American history. (3) Students will learn how to \"think historically\" by placing documents written in the past in their historical contexts, and to consider the relationship of the past to the present. By the end of the course students will: Demonstrate an understanding of the chronology of African American history. Demonstrate an understanding of the diverse experiences of different groups of Americans. Demonstrate an understanding of the social, political, and ideological structures that shaped African American history and continue to shape the modern United States."
+    },
+    {
+      "number": 164,
+      "type": "course",
+      "title": "The History of Brazil",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "HIST164"
+      ],
+      "description": "This course will study the history of Brazil, the only Portuguese-speaking nation in Latin America, from the colonial to the present period. We will examine Brazil's transformation from Portuguese colony to the seat of a nineteenth century transcontinental empire ruled by the only European monarch to rule from the Americas, and discuss developments such as plantation slavery and industrialization that transformed Brazil into an international powerhouse. We will examine political, economic, cultural and racial movements and institutions that defined Brazilian history during the empire, the first republic, the Vargas era, and the military dictatorship. We will conclude with a look at Brazil's struggles with democracy from the 1980s to the present as well as the rise of contemporary populist leaders, Brazil's struggles surrounding policing, political corruption, affirmative action, and its hosting international sporting events in the twenty-first century. This course is designed to introduce students to the making of the modern Brazilian state focusing on the period from the rise of the Brazilian Empire in 1808 through the modern day. We will survey major historical trends in Brazilian society, from its roots as a Portuguese colony and its role at the center of slavery and the slave trade in the Americas to its distinctive patterns of independence and nationhood. Brazil's experience as an independent nation during the nineteenth century (it became the only long-term monarchy in the Americas) offers an interesting point of comparison to the history of republican nationhood elsewhere in North and South America. We will also examine the challenges of state and nation building during the nineteenth and early twentieth century as well as the challenges associated with late industrialization and state-sponsored development."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 207,
+      "suffix": "N",
+      "type": "course",
+      "title": "Jazz and the African American Experience",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "internalEquivalents": [
+        "MUSIC207N"
+      ],
+      "description": "The history and evolution of jazz is a significant cultural manifestation of the African American experience. The music and its artists provide a lens through which to examine questions surrounding the African American experience and what it means to be Black in America, engaging with questions about identity, authenticity, freedom, activism, gender, and sexuality, as well as the role of music in African American life. Drawing upon curricular elements from MUSIC 7 , Evolution of Jazz, and AFAM 100, Living While Black: Themes in African American Thought and Experience, this course traces the history of jazz through an examination of the lives and art of thirty great jazz artists, juxtaposed with an examination of seminal writings of twenty African American poets, playwrights, novelists, critics, activists, philosophers, and scholars. Preliminary objectives will include basic musical information associated with tonality and with jazz. The main objectives of the course are: to explore the antecedents of jazz and the social-historical contexts in which they developed; to explore the pioneering artistry of selected twentieth-century jazz musicians, tracing the evolution of jazz styles in the process; to delve into the lives of these jazz artists and the social-historical contexts in which they lived; to explore the writings of historically contemporary African Americans, which articulate many of the major issues that have shaped black life in America; to enhance appreciation for the art of jazz and for the musical and literary contributions of African Americans; to encourage reflection, empathy, and a greater understanding of the cultural-historical circumstances that have informed the lives and art of African Americans. The narrowing of scope allows for a more detailed examination of the selected jazz artists, their music, and their lives. Similarly, the selected writings will allow students to reflect on the relationships and connections between these writings and the artistry and life experiences of the selected jazz artists. These objectives will be met by utilizing an interactive, multimedia online curriculum, including demonstration videos, a virtual keyboard, music notation files (e.g., Sibelius), audio recordings, audio-video recordings, selected readings, open forums, and discussion boards. Evaluation methods will include quizzes, tests, open forums, discussion boards, and reflection papers. Students will receive GA and GS credit for this course, as well as US designation. The course will not satisfy any requirements for the major or minor in music. All pieces, excerpts, examples, videos, and texts will be made available to students online."
+    },
+    {
+      "number": 207,
+      "suffix": "W",
+      "type": "course",
+      "title": "Methods in African American Studies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AFAM152"
+        ]
+      },
+      "description": "Methods in African American Studies offers an introduction to the interdisciplinary methods employed in African American Studies. This writing intensive, required course for the major in African American Studies exposes students to a wide range of scholarly method used in allied academic disciplines. Students will be given the opportunity to identify a research question in African American Studies that interests them, and then to use various methods to develop a research topic. Every couple of weeks students will be required to write response papers in which they analyze and identify AFAM methods as they are used in various disciplines. Toward the end of the course, students will write a research prospectus that will serve as the basis for their capstone seminar research paper and will undergo a process peer review to developed a final draft. The research prospectus will be presented in the final class in a student colloquium."
+    },
+    {
+      "number": 208,
+      "type": "course",
+      "title": "Workshop: Theatre in Diverse Cultures",
+      "credits": 3,
+      "internalEquivalents": [
+        "THEA208"
+      ],
+      "description": "A performance-oriented class which explores the historic and contemporary theatrical works of various culturally diverse peoples. THEA 208 / AFAM 208 Theatre Workshop in Diverse Cultures (3) (GA;US;IL) (BA) This course meets the Bachelor of Arts degree requirements.Theatre Workshop in Diverse Cultures is a performance-oriented class that aims to introduce students to the broad cultural diversity that exists in artistic expression. The class will focus on several plays throughout the semester that will represent cultural, ethnic, and gender diversity as well as different literary styles. Students will be exposed to various cultures by working on plays created by artists from those cultures. The course will concentrate on a specific playwright, culture, or region, such as plays from the Caribbean. Students will be required to read, study, analyze, and perform plays from the genre. For example, the class may focus on the works, life, and philosophy of August Wilson and read Joe Tumer's Come and Gone, Seven Guitars, Piano Lesson, and Fences. The class may explore Asian styles such as Noh Theatre and Asian American works by D. H. Hwang or work by Nigerian playwright and Nobel Prize winner Wole Soyinka. The presentation of these plays will be a principle part of the class, but the reading and discussion of the material will be as important. Students will participate in some capacity with the production of these plays in areas such as stage management, dramaturgy, sets and props, lights, sound, costumes, house management, publicity, and acting. These pieces will be performed in class, in workshop, and occasionally for the general public. Students will work as an ensemble and become acquainted with basic acting and theatre techniques The course objectives are: 1) to develop and enhance students' appreciation for the discipline and commitment required for multicultural theatrical presentations 2) to help to sensitize all students to the broad cultural diversity in artistic expression 3) to provide students with an introductory engagement with drama. THEA 208 / AFAM 208 serves as a primary selection for students pursuing the Theatre minor."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Freedom's First Generation: African American Life and Work, from the Civil War to World War II",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "HIST210"
+      ],
+      "description": "HIST/ AFAM 210 explores the context and events that shaped African American life during the post-abolition period from the U.S. Civil War until WW II. The course begins with a comparative examination of the decline of African slavery and of emancipation throughout the Americas, and then focuses on Black lives in the United States. The course explores a wide range of topics, including: Black identity in the U.S., the criminalization and disposability of Black bodies, Reconstruction, Jim Crow Laws, lynching, forced labor, the rise of African American leadership, gender and reproduction under slavery and in freedom, the development of protest strategies, the impact of industrialization and urbanization, and the significance of African American culture and art."
+    },
+    {
+      "number": 211,
+      "type": "course",
+      "title": "Slavery and Freedom in the Black Atlantic",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "HIST211"
+      ],
+      "description": "This course examines the history of African and Afro-descended people throughout the Atlantic world from the 15th through the 21st centuries. Historical topics include African societies before and after the advent of European trade systems, the Atlantic Slave Trade, the role of enslaved Africans in the conquest, establishment, and independence of the Americas, and the role of free and freed Afro-descended people in resistance, in service, and as citizens of American colonies and nations. This course compares and contrasts the systems of slavery that appeared throughout the Americas, the resistance that developed against these systems, and the nations that developed out of these institutions."
+    },
+    {
+      "number": 212,
+      "type": "course",
+      "title": "African Americans in the New Jim Crow Era, 1968-present",
+      "credits": 3,
+      "description": "An examination of Black political, economic, social, and cultural life in America from the era of colonization to 1905. AFAM 212 African Americans in the New Jim Crow Era, 1968-present (3) (US) This course covers the Black experience after the 1960s and the post-World War II Civil Rights Movement ended in the late 1960s. It begins with a brief overview of the major events and achievements of the Civil Rights Movement and its waning that followed in the wake of the Vietnam War and the social upheaval of the late 1960s. The course focuses on the the Black experience during the rightward shift in American politics, culture, and society in the last one third of the 20th century and the beginning decades of the 21st century. We look at the disintegration of the Democratic Party that grew out of the party's support of the Civil Rights Movement, the War on Poverty, and the Vietnam War. We discuss the recreation of the Republican Party that followed a southern strategy to rebuild the party on the racism and discontent of white people in the southern rim and in white suburbia throughout the nation. The new Republican Party pursued a new state's rights philosophy that fused with a growing libertarianism that rejected a strong federal government and was hostile to any efforts to address social justice issues in American society. We discuss the efforts of the New Right Republicans and the newly formed Democratic Leadership Conference of the Democratic Party to dismantle many of the achievements of the Civil Rights Movement, focusing on welfare reform, new sentencing laws,the privatization of the prison system and public education, all changes that forged a New Jim Crow society. We look at the role of black elected officials in this process, discussing the various differences between black members of the Democratic Leadership Conference, and those of the Progressive Black political groups. There were major political achievements in terms of more black elected officials, the Jesse Jackson Presidential Campaign, and the election of Barack Obama. However, the late 20th and early 21st Centuries were marked by growing class and racial inequality, perhaps made most visible by Hurricane Katrina when the entire world saw the consequences of decades of conservative policies that favored the rich over the poor. We discuss the popular notion of a post-racial and color blind society and the contradictions it embodies. The course ends with a discussion of newly emerging grassroots efforts to address issues such as environmental racism, school inequality and the schoolhouse to jailhouse track, police brutality, and the prison industrial complex. We discuss how African Americans today may build on the struggles and insights from the past to forge a stronger and more just future."
+    },
+    {
+      "number": 213,
+      "suffix": "Y",
+      "type": "course",
+      "title": "African American Women's History",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "HIST213Y",
+        "WMNST213Y"
+      ],
+      "description": "This course examines the social, political, and economic history of African American women in the United States from slavery to the present. Using secondary and primary sources along with film and discussion, we will explore the varied lived experiences of African American women paying special attention to the themes of family, sexuality, labor, politics, and religion. We will examine how the simultaneity of racial and sexual oppression influence African American women¿s actions. Additionally, we will consider dominant images of African American women in a historical context. While the course is primarily discussion in format, the professor will lecture when necessary. As the course is writing-intensive, papers of various lengths constitute the bulk of student assessment."
+    },
+    {
+      "number": 226,
+      "suffix": "N",
+      "type": "course",
+      "title": "Critical Approaches to Hip-Hop",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "internalEquivalents": [
+        "AMST226N",
+        "INART226N"
+      ],
+      "description": "This course will examine the politics of hip-hop art and culture. To do so, we will place hip-hop in broad historical context and trace its aesthetic and cultural roots from Africa to Jamaica to 1970s New York City and then forward to 1980s gangsta rap and former President Barack Obama's iPod. We will think through the implications of hip-hop's addiction to Italian-American mobsters, bling, and all-things keepin' it real. We will also search for hip-hop's political foundations in funk records, 1960s community organizing, and poetry of the Harlem Renaissance. All the while, we will analyze the varieties of hip-hop politics by paying close attention to how hip-hoppers vie for authenticity, recognition, and power through cultural practices--b-boying/girling, graffiti art, emceeing, djing, e.g.-at odds with the State, inequality, and injustice. We will also situate hip-hop politics within the ongoing history of American social movements. To avoid over-romanticizing, we will equally examine hip-hop's appetite for conspicuous consumption, misogyny, homophobia, trappin', and criminality. A deep understanding of hip-hop politics, then, requires examining its contradictions as well as the ways race, class, gender, sexuality, and geography shape hip-hop--and therefore American-culture, art, and identity. To get at these and other ideas, we will read, listen, and think broadly about why a full understanding of hip-hop truly matters."
+    },
+    {
+      "number": 233,
+      "type": "course",
+      "title": "Connecting Social Movements: U.S. Civil Rights and African Liberation",
+      "credits": 3,
+      "internalEquivalents": [
+        "AFR233"
+      ],
+      "description": "This course examines the interconnectedness of African liberation movements and the United States Civil Rights Movement, specifically focusing on periods of the 1950s through the 1970s. This course has three main aims. First, drawing from a political philosophy lens, the course aims to show the significance of how race was constructed, how racialization informed political systems/structures, and how racialization led to imperialism, colonialism and racial subjugation. The second aim is to demonstrate the impact and interconnectedness of African and Black American liberation movements through the lens of Pan-Africanism. The third aim is to explore the consequences of colonization and the social, cultural, and political impact of decolonization, post-colonialism, emancipation, and Black consciousness. Students will use their examination of African liberation movements and the U.S. Civil Rights movement to connect with their knowledge, observations, questions, and experiences with social justice, liberation, and social change movements in the present-day context."
+    },
+    {
+      "number": 235,
+      "type": "course",
+      "title": "From Folk Shouts and Songs to Hip Hop Poetry",
+      "credits": 3,
+      "internalEquivalents": [
+        "ENGL235"
+      ],
+      "description": "The origins, forms, and function of the oral folk tradition of African Americans. ENGL 235 / AFAM 235 From Folk Shouts and Songs to Hip Hop Poetry (3) (US)(BA) This course meets the Bachelor of Arts degree requirements. This course contemplates connections between African oral traditions and contemporary trends in Black poetry including hip-hop and spoken word poetry. The central objective of the course is to examine the degree to which the most contemporary forms of African American poetry continue to function as folk expression; it provides an opportunity for students to examine the oral roots of African American literature in general and contemporary hip-hop and spoken word poetry, in particular. Music, particularly the Blues and Jazz, will be a prominent feature of this class as we try to discover the peculiarities of Black poetry. Students will begin by comparing African and African American folk forms such as proverbs and epic poetry, continue with early African American poets such as Phyllis Wheatley, George Moses Horton, Frances Ellen Watkins Harper, and Paul Laurence Dunbar, and continue through the 20th century with the poetry of the Harlem Renaissance and Black Arts Movement to contemporary Hip-Hop and Spoken Word, including Def Poetry Jam recordings. Background readings will include important essays (such as James Weldon Johnson's \"Preface to the Book of Negro Poetry\" and Langston Hughes's \"The Negro Artist and the Racial Mountain\") that reveal the kinds of aesthetic issues African American artists faced in crafting their art in the face of a dominant culture that consistently questioned their capacity for artistic production. Students will listen as Margaret Walker reads her famous poem, \"For My People,\" and they will consider the importance of the Black Arts Movement, its poets and critics to the development of contemporary hip-hop and spoken word poetry. Other course materials will include videotaped interviews and poetry readings. Readings would come from an appropriate anthology and/or a combination of other appropriate texts selected by the instructor."
+    },
+    {
+      "number": 250,
+      "type": "course",
+      "title": "Introduction to the Caribbean",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "HIST250"
+      ],
+      "description": "A survey course exploring the emergence and historical evolution of the modern Caribbean. This course will explore the evolution of the Caribbean region from the eve of the arrival of Columbus to the 21st century. It will explore Indigenous societies prior to the arrival of Columbus and the interactions that lead to their destruction and the consolidation of European colonial empires. We will explore the coercive labor systems that emerged in the region including indentureship, Indigenous enslavement, transportation of Europeans, the establishment of African slavery, and the establishment of the plantation system that defined the region until the 20th century using both free and unfree labor to maintain its dominance in these island societies. Themes examined will include revolutions in Haiti and Cuba, the struggle for independence, slavery and racial hierarchy, the rise of U.S. neo-colonialism and hegemonic control in the region, nationalism, tourism, and the economic underdevelopment that defines the Caribbean until today."
+    },
+    {
+      "number": 260,
+      "type": "course",
+      "title": "A Critically Conscious Approach to Non-Fiction Literature for Children & Adolescents",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "LLED260",
+        "WGSS260"
+      ],
+      "description": "This course explores non-fiction literature for children and adolescents that promotes critical consciousness, cultural competency, and social justice. Students will engage with texts that challenge dominant narratives about world events and cultures and provide alternative perspectives. Through reading, discussion, and reflection, students will develop an understanding of the importance of representation in children's literature and its impact on young readers' sense of self and the world around them. The course will also emphasize the role of educators in creating inclusive learning environments and promoting social justice through literature."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 302,
+      "type": "course",
+      "title": "Diversity and Health",
+      "credits": 3,
+      "internalEquivalents": [
+        "BBH302"
+      ],
+      "requisites": {
+        "previous": [
+          "BBH101"
+        ]
+      },
+      "description": "Diversity and Health is an introduction to the interdisciplinary study of the impact of diversity on health in America. The course is designed to provide an understanding of the complex interaction between concepts of diversity, including but not limited to race, ethnicity, culture, gender, age, socioeconomic status, and sexual orientation. The course will also consider and critique the methods used in the study of these concepts and issues related to the measurement of health among diverse groups. The ultimate goal of this examination is to assist students in developing an appreciation of diversity and the impact diversity has on assessments and study of health, health status, and health promotion in America. The course is also designed to integrate different sources of information about diversity by utilizing critical thinking skills for the consumption of health information. The educational objectives will be to enable students to: 1) Consider the implications of race, ethnicity, gender, age, socioeconomic status and sexual orientation on health/social policies in light of research findings, 2) Understand the legacies and historical events that have impacted our view, status, and treatment of diverse populations, 3) Appreciate the importance of understanding the origins of different health behaviors that impact biological processes, as well as the impact of biological processes in the context of social, environmental, and cultural influences when examining health issues."
+    },
+    {
+      "number": 303,
+      "type": "course",
+      "title": "Race and Gender in the Americas: Latin American and Caribbean Cultures",
+      "credits": 3,
+      "internalEquivalents": [
+        "ANTH303",
+        "WMNST303"
+      ],
+      "description": "Utilizing a theoretical framework of intersectionality, this course examines historical and cultural constructions of race and gender in Latin America and the Caribbean. AFAM 303 / ANTH 303 / WMNST 303 Race and Gender in the Americas: Latin American and Caribbean Cultures (3) (GS;IL) Utilizing a theoretical framework of interesectionaly this course examines how racial, gender, sexual, and class identities are constructed in Latin American/Caribbean societies. The course applies an anthropological perspective to a wide range of countries in the region to reflect on how historical events such as the conquest, colonization, slavery, and independence movements are relevant to understanding the region today, as well as how race, gender, and sexuality inform contemporary themes of empire, nation-building, imperialism, neo-colonialism, revolution, violence, militarization, social movements, religion, neoliberalism, U.S. involvement/relations, and popular culture. The course addresses issues of power, culture, racial formation, and citizenship by incorporating interdisciplinary material beyond ethnography such as newspapers, grassroots media, biographies, films, music, novels, personal testimonies, etc. Rooted in feminist anthropological scholarship, this course emphasizes how power (from above and below) and culture mediate relationships between individual/community agency and institutions/structures. As an effort to encourage students to think about Anthropology and culture beyond superficial or romanticizing celebrations of multiculturalism, food, and music, the course stresses the theoretical importance of situating power and privilege amidst difference. We conceptualize culture not only as socially transmitted patterns of behavior and ideas/meanings, but as a complex and dynamic process/medium grounded in unequal relations in which power is constituted and resisted. The ethnographic emphasis of the course centers on the complex lived realities and voices of people, encouraging students to learn, understand, and respect cultural difference. The course offers students a broad sense of how power is central in the production of knowledge (particularly within the disciplines of Anthropology and History). Students will critically engage an array of topical issues in Latin America beyond dichotomous thinking. Discussion of course material includes contemplating issues of ethics, subjectivity, bias, and privilege. Conversations regarding processes of \"Othering\" and traditional \"us vs. them\" debates that often occur when discussing developing countries will prompt students to situate their own power/privilege and challenge our assumptions and preconceived notions of Latin America. Moreover, this course teaches Latin American Cultures within a global context of racialization. As such it also stresses the historical and contemporary social, economic, cultural and political significance of the U.S. in Latin America, to demonstrate how we are connected and responsible to what happens \"over there.\"; In order to promote service learning, a core tenant of feminist pedagogy, this course also offers students the opportunity to participate in an optional embedded program entitled \"Cuba: Identity, Diversity and Popular Culture\". This two week course in Havana, Cuba promotes interactive learning in and outside the classroom with international study. This course component successfully combines academic classes, hands-on activities, and service learning."
+    },
+    {
+      "number": 364,
+      "suffix": "N",
+      "type": "course",
+      "title": "Black & White Sexuality",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "WMNST364N"
+      ],
+      "description": "This course explains how narrow, \"black and white,\" ways of thinking limit our understanding of the diverse expressions of human sexuality. The course title's double meaning also references the various ways that sexuality is socially constructed in relation to race. For example, we will explore how stereotypical beliefs about the sexuality of people of African descent persist in the United States and have been legitimized historically by various cultural discourses, social institutions, and academic fields. Course assignments will require us to rethink and challenge what we understand as \"sexuality\" and consider its many influences like race, gender, class that shape our emotions, needs, desires, relationships, representations, practices, and public policies. An aim of this course is to begin to make sense of the long, entangled, and inextricable relationship between race and sexuality in the United States."
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Afro-American Studies Seminar",
+      "credits": 3,
+      "description": "A seminar examining theoretical and methodological issues in Afro-American Studies."
+    },
+    {
+      "number": 409,
+      "type": "course",
+      "title": "Racial and Ethnic Inequality in America",
+      "credits": 3,
+      "internalEquivalents": [
+        "SOC409"
+      ],
+      "description": "Examines how and why issues related to social, economic, and political inequality among racial groups influence various aspects of US society. Explores the impact of racial inequality and discrimination on individual and collective identity, with a special focus on minoritized racial and ethnic groups. Students will unravel the key components of structural inequality and systemic discrimination by seeking answers to questions like, What are the long-term effects of unequal access to resources on contemporary racial inequalities in the US? How have sociopolitical factors affected the ways in which white, African, Latinx, and other American minority groups interact over time? Is affirmative action the best policy for correcting social inequalities? How does immigration status affect the socioeconomic outcomes of Hispanics? Are Native-Americans adequately represented in US political institutions? Why are there racial inequalities in income levels?"
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Spirit, Space, Survival: Contemporary Black Women",
+      "credits": 3,
+      "description": "How recent Black women have used spirit and space to survive."
+    },
+    {
+      "number": 412,
+      "type": "course",
+      "title": "African American Theatre",
+      "credits": 3,
+      "internalEquivalents": [
+        "THEA412"
+      ],
+      "requisites": {
+        "previous": [
+          "THEA100"
+        ]
+      },
+      "description": "Exploration of the development of African American theatre from its roots in Africa through the diaspora, to the present time. THEA 412 / AFAM 412 African American Theatre (3) (US;IL) (BA) This course meets the Bachelor of Arts degree requirements.In this course, we will explore the development of African American theatre from its roots in Africa and Europe, through the diaspora, to the present time. We will learn something of the rich diversity of African American people and their contribution to the world's creative mainstream. We will become acquainted with both historical and contemporary artists who created and continue to create this unique American art form. The goals of the course are: 1)to develop familiarity with African American theatre and the socio-historic context in which it was created 2) to develop an understanding of the relationship of African American theatre to mainstream American theatre 3) to acquire an appreciation of the schools, styles, and techniques of African American theatre We will do this by reading and engaging plays in the context of the period in which they were created, viewing films of plays, and attending relevant productions where possible."
+    },
+    {
+      "number": 416,
+      "type": "course",
+      "title": "Race, Gender and Science",
+      "credits": 3,
+      "internalEquivalents": [
+        "STS416"
+      ],
+      "description": "The class will focus on race and gender as products of science, and how societal values shape scientific activity."
+    },
+    {
+      "number": 422,
+      "type": "course",
+      "title": "Contemporary African American Communication",
+      "credits": 3,
+      "internalEquivalents": [
+        "CAS422"
+      ],
+      "description": "A focused study on the continuities between African and African American culture and communication. CAS 422 / AFAM 422 Contemporary African American Communication (3) (US)(BA) This course meets the Bachelor of Arts degree requirements. At least once a year, this multidisciplinary course is designed to serve both Speech Communication and African and African American Studies. It is concerned with the relationship between a people's culture and world view and their systems of rhetoric/communication. It also provides a focus on the continuities between African and African American culture and communication. Specifically, it offers an approach to ascertaining the salient features of African and African American communication for community development. Special emphasis is given to the development and rhetoric of the Civil Rights Movement. The course utilizes videos, guest lectures, tapes of speeches, etc. to clarify objectives and stimulate classroom discussion. Students will be evaluated on two exams, one oral report, a final paper and class participation. Even though students need 400-level courses for their major and minor, this course is not required for Speech Communication majors. However, it does meet the Intercultural and International Competency requirement because it focuses on the communication of African Americans and how that communication has affected all Americans. The course will accommodate ten students in Speech Communication and ten students in African and African American Studies to ensure active discussion of issues."
+    },
+    {
+      "number": 431,
+      "type": "course",
+      "title": "Black Liberation and American Foreign Policy",
+      "credits": 3,
+      "internalEquivalents": [
+        "HIST431"
+      ],
+      "description": "This course deals with American foreign policy and Black liberation in Africa since 1945. AFAM 431 / HIST 431 Black Liberation and American Foreign Policy (3) (US;IL)(BA) This course meets the Bachelor of Arts degree requirements. Black Liberation and American Foreign Policy in Africa since 1945 presents an interdisciplinary approach to the study of American foreign policy in Africa. Course readings will consist of both secondary and primary sources to explore the evolution of American policy toward the continent over the last half-century, and the meaning of the American engagement with Africa for American politics and society. The course will also examine the reasons that Africa has served as a focus of concern among African Americans both prior to, and, over the period 1945 to the present. Of particular concern will be the ways in which American policy has reflected pressures from African Americans as a constituency in foreign policy. The focus of the course will be student-centered written research and discussion. Students will be required to select topics from the course outline for presentation in class with the instructor serving as the moderator of discussion and guide to relevant research materials. Students will be encouraged to use both primary and secondary sources for their research. Students will be expected to prepare two individual written presentations which will serve as the basis for class discussion (30% of the grade), a book review (10% of the grade), and a research paper of 15 pages (40% of the grade) on a topic drawn from the areas identified in the course outline. The final 20% of the grade will be awarded for participation in class discussion."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Between Nation and Empire: The Caribbean in the 20th Century",
+      "credits": 3,
+      "internalEquivalents": [
+        "HIST432"
+      ],
+      "requisites": {
+        "previous": [
+          "HIST250"
+        ]
+      },
+      "description": "An exploration of the political evolution of the Caribbean Region over the course of the 20th Century. HIST 432 / AFAM 432 Between Nation and Empire: The Caribbean in the 20th Century (3) (IL)(BA) This course meets the Bachelor of Arts degree requirements. This course will explore the political evolution of the Caribbean Region over the course of the 20th century. Its focus will be the ways in which imperial rule and the search for national identity have been the parameters that have shaped Caribbean political history over that period. Students will explore, in written assignments and class presentations, the ways in which the region which has historically been a theatre of confrontation among the major powers in the international system continued to serve that role over the course of the 20th century. The costs that have been borne by the people of the region from these conflicts have been enormous and crippling for several societies, especially Haiti, Cuba, Jamaica, and the Dominican Republic. Among those costs have also been the continued dependence of these societies upon human migration, limited economic strategies of transformation, increasing levels of poverty, and the emergence of a wide variety of political systems that reflect different historical experiences, demographic diversity, varying levels of political autonomy, and a remarkable level of cultural similarities. Evaluation will be based upon two class presentations; one research paper and class participation. The course will be required for students pursuing the African Diaspora minor and for those seeking to broaden their diversity requirements. It can be used to meet non-Western history requirements in the History major."
+    },
+    {
+      "number": 435,
+      "suffix": "N",
+      "type": "course",
+      "title": "Black Ecologies",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "AFR435N",
+        "ANTH434N"
+      ],
+      "description": "African and African Diasporic peoples have been central to the creation and transformation of global ecologies and landscapes. As the birthplace of humankind, the African continent features the longest archaeological record in the world, with abundant, yet often underrepresented, material and historical evidence for remarkable Indigenous African innovations in the areas of technology, food production, and resource and land use. This course specifically examines Black ecologies preceding and then radically transformed by the Trans-Atlantic Slave Trade. Beginning in the late fifteenth century, the enslavement of millions of Africans and their forced translocation to the Americas and Caribbean precipitated ecological transformations on all sides of the Atlantic, as African peoples, knowledge, resources and ecological inheritances were appropriated by the European mercantile system. Enslaved Africans transformed American landscapes via extractive industries of plantations and mines and suffered the emergence of toxic landscapes and disease alongside Native American communities. Africans also recreated African ecologies as they created livelihoods and landscapes of resistance and freedom in the Americas. The legacies of the Atlantic Era maintain a persistent dynamic in which African and African Diasporic communities experience disproportionate burdens of environmental injustice today. The concept of Black ecologies reflects the marginality, systemic racism and dispossession experienced by Black peoples and their landscapes. Black ecologies also allow us to understand African and African Diasporic ecological innovations, resistance and resilience, and the pathways to future sustainability and justice they promise."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "African American Philosophy",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHIL460"
+      ],
+      "description": "This course will explore central questions and themes guiding the evolution of African American philosophy in the 19th and 20th centuries. Our course will study three different movements from the era. We begin with slavery and questions of reason, civility, and nationality. We move on to philosophies of value and culture in the early twentieth century, with the focus on secularization and the historical nature of philosophical truth. Finally, we will read the work of black political philosophers, and the turn to Marxism and Hegelianism. Issues to be discussed include the foundation and source of race as knowledge of the world, the nature of blackness and identity, the nation as a locus of consciousness and action, God's role in the universe, and the possibility of an Afro-Pessimism about these things."
+    },
+    {
+      "number": 463,
+      "type": "course",
+      "title": "African American Autobiography",
+      "credits": 3,
+      "internalEquivalents": [
+        "ENGL463"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ]
+      },
+      "description": "The African American literary quest for identity and its adaptation to Euro-American culture and autobiographies. ENGL 463 African American Autobiography (3) (US)(BA) This course meets the Bachelor of Arts degree requirements. Starting with the slave narratives which initiate the literary quest of African Americans for identity, this upper-division course will examine the trope of writing (the &quot;talking&quot; book) as the (w)rite of passage into the dominant Euro-American culture. The course will identify, describe, and analyze how the major elements of the &quot;quest&quot; found in the slave autobiographies have been adapted as textual strategies by many contemporary African American writers of autobiography, semi-autobiography, and fictional autobiography. Authors under consideration will vary from class to class, but may include writers such as Frederick Douglass, Harriet Jacobs, W. E. B. Du Bois, Ida B. Wells, Richard Wright, Zora Neale Hurston, Maya Angelou, Martin Luther King, Alex Haley, Harriet E. Wilson, James Weldon Johnson, and Ernest Gaines. Topics explored will vary from class to class, but will likely consider slave narratives, the role of autobiography in the fashioning of identity and self, gender issues, genre questions, and the historical development of the genre and its shifting preoccupation from slave times through the early twentieth-century, the pre-Civil Rights era, the Civil Rights Movement, the Black Power Movement, and the present. The course will prepare students for other courses that engage in the verbal and written analysis of complex written texts, and will also prepare students to consider the social and cultural issues involved in the role of race in American history. Students will be evaluated by means of essays written out of class, essay and short answer exams, a term-long reading journal reflecting upon issues of the student's own &quot;autobiography,&quot; an oral class presentation, and class participation. The course may be used as English Major elective credit or as credit towards the English Minor and will be offered once a year, with 40 seats per offering."
+    },
+    {
+      "number": 465,
+      "type": "course",
+      "title": "The Post-World War II Civil Rights Movement",
+      "credits": 3,
+      "internalEquivalents": [
+        "HIST465"
+      ],
+      "description": "The civil rights struggle and its impact upon American politics. AFAM 465 / HIST 465 The Post-World War II Civil Rights Movement (3) (US) This course focuses on the post-World War II Civil Rights Movement. It begins with a discussion of the \"Long Civil Rights Movement,\" briefly looking at the roots of the movement in the labor movement and social struggles of the Great Depression and World War II. We then turn to the impact of World War II on African Americans, the growing militancy during the war, the struggles over segregation in the military, the growing role of blacks in the labor movement, and the growing link between African Americans and the rising anti-imperial movements that accelerated after the war. We discuss the role of African Americans in the Cold War and the struggles over the role of Communism and Socialism in the emerging Civil Rights Movement. The course is broken down into key topics of the movement years: the rise of localized grassroots movements all over the United States that were led by local people who sought to challenge school segregation, political disfranchisement, poor housing conditions, police brutality, and job discrimination. While legal disfranchisement and segregation existed solely in the southern states, the entire country practiced both and black people suffered the consequences universally. Much time is spent on the more famous southern civil rights movement, with discussions of the Emmett Till Murder of 1955; the Montgomery Bus Boycott and the rise of Martin Luther King, Jr. and the Southern Christian Leadership Conference; and the Little Rock Crisis of 1957. The beginning of the 1960s saw the creation of the Student Non-Violent Coordinating Committee and the emergence of key women leaders in the struggle such as Mrs. Ella Baker, Mrs. Fannie Lou Hamer, Mrs. Rosa Parks, and Mrs. Septima Clark, to name only a few. We discuss key moments in the 1960s, beginning with SNCC and CORE and the Freedom Rides, the SCLC in Birmingham and Albany; the March on Washington, the 1964 Mississippi Freedom Summer and the murders of Chaney, Goodman, Schwerner, and Medgar Evers; the 1965 Selma to Montgomery March, and the final passage of the 1964 Civil Rights Act and the 1965 Voting Rights Act. The emphasis on the southern struggle is on the local, ordinary people who achieved extraordinary things."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "African American Novel I",
+      "credits": 3,
+      "internalEquivalents": [
+        "ENGL466"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ]
+      },
+      "description": "This course examines the origins of the African American novel and follows the genre's evolution into the early twentieth century, outlining the relationships among the texts that form the body of African American narrative as well as the relationships of those texts to the constantly shifting cultural and political realities surrounding their writing. From the earliest novels, written during the period of slavery, through the Reconstruction era, the nadir of Black Codes and Jim Crow Supreme Court decisions, and into the Renaissance heralded by Alain Locke and others, course readings encompass a broad range of styles and genres, from early proto-documentary modes, through the realism and naturalism of a later time. The course takes up Robert S. Levine's claim that \"the history of the early African American novel is not fixed or stable\" by mapping the genre's early history and by developing an understanding of the novel as genre according to both early African American authors and later scholars. It addresses the fact that this history continues to be updated and that some texts whether in part or in whole remain lost. Authors covered in the course might include William Wells Brown, Frederick Douglass, Frank J. Webb, Julia C. Collins, Hannah Crafts, Martin Delany, Frances Ellen Watkins Harper, Charles Chesnutt, Pauline Hopkins, Paul Laurence Dunbar, Sutton Griggs, James Weldon Johnson, Oscar Micheaux, Nella Larsen, Jessie Fauset, and others. Scholarly readings accompany primary texts in order to give students a sense of the critical work that has gone into and continues to go on in the study of African American literature. Course topics may include the issue of firsts; the challenges of publication and the attendant realities of early African American print cultures; questions of tradition and influence; and the political, social, religious, and philosophical aims of early African American novels. Readings and discussions also attend to questions of form, specifically regarding intertextuality and generic blurring and hybridity. The study of early African American novels necessarily includes attention to issues of race, identity, nation, diaspora, and the question of authenticity, and each is taken up in turn. Course assignments and discussions engage students in critical work that demands careful attention to both content and context in order that all students might strengthen their close reading capabilities and engage with course figures and materials within their historical milieus."
+    },
+    {
+      "number": 467,
+      "type": "course",
+      "title": "African American Novel II",
+      "credits": 3,
+      "internalEquivalents": [
+        "ENGL467"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ]
+      },
+      "description": "This course examines the African American novel, its forms, and its traditions starting during the Harlem Renaissance. It follows the genre's evolution into the twenty-first century, outlining the relationships among the texts that form the body of African American narrative as well as the relationships of those texts to the constantly shifting cultural and political realities surrounding their writing. From the Renaissance heralded by Alain Locke, through the Civil Rights and Black Power Movements -and their attendant Black Arts Movement- and into the era of the Movement for Black Lives, course readings encompass a broad range of styles and genres, from realism, naturalism, and naturalist primitivism, through the experimental forms, magical realism, and \"postrace aesthetics\" of later times. The course invites students to think critically about the African American novel as a socially and politically engaged form, and to identify and analyze the long tradition of resistance that variously informs its development. Authors covered in the course might include major figures such as Claude McKay, Zora Neale Hurston, Nella Larsen, Wallace Thurman, Richard Wright, Ralph Ellison, Ann Petry, James Baldwin, Ishmael Reed, Earnest Gaines, Alice Walker, Toni Morrison, Toni Cade Bambara, Octavia Butler, Gayle Jones, Samuel Delany, Charles Johnson, John Edgar Wideman, Colson Whitehead, and others. Still, the course gives due attention to lesser known/studied materials from the period, including graphic novels, satire, speculative fiction, performance novels, and various other experimental forms. Course readings and instruction give particular attention to how African American novels of the twentieth and twenty-first centuries variously engage social identity categories, like race, gender, class, and sexuality, and how they engage and resist various literary conventions associated with naturalism, modernism, and postmodernism. The course also traces the development of new thematic and aesthetic interests in a generation of writers whose fiction has been influenced by the explosion of interest in the graphic novel, the popularity of cultural forms such as hip hop, and the ascendancy of the digital age. Scholarly readings accompany primary texts to give students a sense of the critical work that has gone into and continues to go on in the study of African American literature. In this course, students learn how to analyze literature, do close and careful readings of texts, conduct related research, and write persuasively about literary works. Assignments and discussions are designed such that students may engage with course figures and materials within their historical milieus."
+    },
+    {
+      "number": 468,
+      "type": "course",
+      "title": "African American Poetry",
+      "credits": 3,
+      "internalEquivalents": [
+        "ENGL468"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ]
+      },
+      "description": "Meta duEwa Jones argues, \"We cannot afford to continue to treat black poetry and poetics as loose change among the more highly valued paper currency of fiction and nonfiction prose. . . . The myriad aesthetic forms and concomitant political functions of black poetry and poetics should be seriously considered as grounds for broader and more nuanced theoretical and sociocultural claims.\" This course takes as its subject matter these aesthetic forms and political functions of the poetry of black America. It surveys the broad history of African American poetry and poetics, tracing the evolution of formal structures and aesthetics, but also taking a critical view of the reception of African American verse. Whether reading Phillis Wheatley or the contemporary poet Ed Roberson, all the poets included in this course have contended within the writing itself with the racially striated nature of the literary spaces they occupy. Course readings may come from poets including Wheatley, Frances Ellen Watkins Harper, Paul Laurence Dunbar, Alice Dunbar Nelson, Claude McKay, Langston Hughes, Robert Hayden, Melvin Tolson, Gwendolyn Brooks, Amiri Baraka, John Coltrane, Ishmael Reed, Nathaniel Mackey, Rita Dove, Maya Angelou, Audre Lorde, Natasha Tretheway, Sonia Sanchez, Nikki Giovanni, Nikky Finney, Roberson, Claudia Rankine, and others. The course addresses works by many of the key figures of this American literary tradition so that students may develop an understanding of the various contributions and legacies formal, musical, cultural, critical, political of African American poetry from the eighteenth century to today. Scholarly readings accompany primary texts to give students a sense of the critical work that has gone into and continues to go on in the study of African American poetry and poetics. The course surveys early African American poetry through works from the Harlem Renaissance and the Black Arts Movement, and through contemporary movements and formations. Topics will cover a range of thematic and formal issues relevant to individual poets, to major movements and periods, to regions, and to various smaller organizations and collectives. Course assignments, lectures, and discussions engage students in critical work that requires careful attention to form, content, and context such that all students might strengthen their explicatory skills and approach course figures and texts from an informed, analytical perspective."
+    },
+    {
+      "number": 469,
+      "type": "course",
+      "title": "Slavery and the Literary Imagination",
+      "credits": 3,
+      "internalEquivalents": [
+        "ENGL469"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ]
+      },
+      "description": "The impact of slavery on the petitions, poetry, slave narratives, autobiographies, and novels of African Americans. ENGL 469 / AFAM 469 Slavery and the Literary Imagination (3) (US)(BA) This course meets the Bachelor of Arts degree requirements. ENGL 469 / AFAM 469 provides an opportunity for undergraduate students to examine African American petitions, poetry, slave narratives, autobiographies, and novels as literary reconstructions of the economics, politics, ethics, and poetics of slavery. Authors under consideration will vary from class to class, but may include writers such as Paul Laurence Dunbar, Phillis Wheatley, F. Harper, James Weldon Johnson, Langston Hughes, Claude McKay, Sterling Brown, Booker T. Washington, Harriet Jacobs, W. W. Brown, Harriet Wilson, Margaret Walker, Arna Bontemps, D. Bradley, S. A. Williams, Toni Morrison, Ishmael Reed, and Charles Johnson. The course will focus on the complex relationship of slavery to the literary imagination of Americans of African descent as they increasingly discovered the limitations and possibilities of reading and writing themselves into freedom, literacy, and wholeness as human beings and American citizens. Topics covered will vary, but will include issues of the legacy of slavery in the west; the political aims and rhetorical conventions of African-American autobiography; the myths and realities of slavery; economic, political, ethical, and aesthetic issues of the representation of slavery; understandings of black consciousness and black culture on the road from slavery to freedom; the rise of African American realism as a response to the legacy of slavery; Black Feminism and issues of slavery; the role of history and memory in the construction of slavery; post-modern configurations of slavery; and the like. This class will prepare students for advanced courses in African American literature, as well as other academic courses that engage in the verbal and written analysis of complex written forms."
+    },
+    {
+      "number": 492,
+      "type": "course",
+      "title": "Identities, Power and Perceptual Pedagogies in Teaching and Learning",
+      "credits": 3,
+      "internalEquivalents": [
+        "CI492",
+        "EDTHP492"
+      ],
+      "description": "Students will perform inquires into the intersections of identities, power, and pedagogical formations in relation to urban teaching/learning contexts. AFAM 492 / CI 492 / EDTHP 492 Identities, Power and Perceptual Pedagogies in Teaching and Learning (3) In this course, students will take part in inquiries into the intersections of identities, power, and perceptual pedagogies, particularly as these phenomena pertain to methods of teaching and learning in urban contexts. To develop new knowledge and analytic skills, students will be introduced to perceptual and conceptual frameworks that assist deep engagements with youth- and teacher-centered case studies. These cases will depict actual lived experiences among racially and economically diverse students and teachers in urban contexts."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

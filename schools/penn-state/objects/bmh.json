@@ -1,0 +1,17 @@
+{
+  "subject": "BMH",
+  "objects": [
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Bioethics and Medical Humanities Capstone Course",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHIL132"
+        ]
+      },
+      "description": "Students will integrate knowledge from their BMH minor through discussion and writing a paper on some aspect of medical humanities."
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "subject": "AE",
+  "objects": [
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in-depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 124,
+      "type": "course",
+      "title": "Architectural Engineering Orientation",
+      "credits": 1,
+      "description": "This course is a first-year seminar (FYS) designed for students interested in learning about architectural engineering as a major and careers in this field while also providing the skills for students to successfully navigate Penn State University. The course is broken into three major areas: (1) an overview of architectural engineering as a major and a profession; (2) professional and study skills for navigating a university environment; (3) resources available for coursework application across Penn State and within the College of Engineering; and (4) unique themed experiences related to architectural engineering topics. AE 124 introduces the field of architectural engineering and discusses the wide range of career paths that graduates can pursue. The course overviews the 5-year architectural engineering curriculum and presents the research, study-abroad, internship, and other extracurricular opportunities available for students in the major. Next, the course provides students with the necessary skills to be successful in their classes, including: how to schedule classes and plan out study habits while familiarizing themselves with campus and the resources available to engineering students. Students learn how to navigate professional settings such as the Architectural Engineering Career Fair and job interviews so they can maximize their opportunities for internships and fulltime careers in the building industry. Lastly, students take a deeper dive into a selected themed topic that explores innovative hands-on projects that reflect various aspects of the architectural engineering discipline. Themes for the hands-on projects may vary from section to section and year to year to remain relevant to the current needs of the profession. Students learn in an interactive environment that utilizes a combination of teaching styles including, but not limited to: construction site tours, behind the scenes campus building tours, field trips, active building and testing, individual and group projects, guest speakers, and more."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in-depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 197,
+      "suffix": "G",
+      "type": "course",
+      "title": "Special Topics - GenEd",
+      "credits": 1,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
+    },
+    {
+      "number": 197,
+      "suffix": "N",
+      "type": "course",
+      "title": "Special Topics - InterDomain",
+      "credits": 1,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Natural Sciences",
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is an Inter-Domain GenEd course."
+    },
+    {
+      "number": 202,
+      "type": "course",
+      "title": "Architectural Engineering Concepts",
+      "credits": 3,
+      "description": "This course exposes students to (1) the interdependencies between various building systems (2) the interdisciplinary nature of the field of architectural engineering, and (3) the concept of professional practice in the building and construction industries. Students learn to integrate architectural design and detailing, the influence of thermal science, and building codes in the design of building systems. By the end of the course, students will be able to produce simple integrative building designs, attain fundamental knowledge of fire protection principles, design a roof storm water drainage system, have a fundamental knowledge of climate as a design driver, gain working knowledge of passive design strategies, attain a fundamental knowledge of psychrometrics, understand the principles defining thermal comfort, gain working knowledge of heat transfer through building envelope assemblies, calculate heat loss for a building, perform simple energy calculations and gain a fundamental knowledge of typical energy codes. The course also introduces the principles of social and environmental responsibility through discussion of sustainable design. The course utilizes lectures, practicums, examinations, projects and presentations to deliver and reinforce the technical content. The course offers students the opportunity to work in team settings and to present their work orally to their peers. The projects present opportunities to engage students in the discussion and application of social and ethical responsibilities."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Introduction to Architectural Structural Systems",
+      "credits": 3,
+      "description": "Qualitative study of architectural structural systems; historical development of structures; insights of structural analysis and synthesis; comparative structural types. This course is intended for Architecture students. AE 210 Introduction to Architectural Structural Systems (3) is an introductory course in structural analysis and engineering mechanics (primarily statics) with an emphasis on buildings. This course was created specifically for Penn State architecture students. The course is designed to give students an understanding of the behavior of building structural and related architectural elements under a variety of loading conditions. AE 210 is designed to provide students with an understanding of the interpretation and application of structural aspects of building code requirements, particularly in the area of design loads. In addition, this course provides the necessary prerequisite knowledge for two additional structural design courses that are required for architecture students."
+    },
+    {
+      "number": 221,
+      "type": "course",
+      "title": "Building Materials, Methods and Modeling I",
+      "credits": 3,
+      "description": "This course covers the fundamentals of: (1) building materials to form building systems, (2) building construction methods to assemble building systems, and (3) computer modeling strategies to convey system designs. All three areas are concurrently taught to connect the lectures to a thematic area in building design. Thematic areas covered in AE 221 include: various architectural and structural materials; visual documentation of architectural designs and structural systems in 2D and 3D representations; industry accepted software tools to convey designs; and finally, building codes and their requirements. Students learn the course content in a variety of active strategies including: site tours, building construction demos and lab builds, utilizing campus buildings in assignments, guest speakers and more. By the end of the course, students will be able to comprehend trends in how materials are used to create buildings; identify and select current and emerging building materials for a variety of applications; apply technology to communicate designs to many different stakeholders; read, interpret and generate construction documents (e.g. 2D and 3D models); and connect building codes and standards requirements to building materials. AE 221 is a required course for all students in the Architectural Engineering undergraduate program."
+    },
+    {
+      "number": 222,
+      "type": "course",
+      "title": "Building Materials, Methods and Modeling II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE221"
+        ]
+      },
+      "description": "This course covers materials and methods of construction used in residences, and the preparation of working drawings for a small building. The course objective is for students to understand construction documents, to communicate construction information with sketches, and to create drawings and specifications. The course is organized around a series of modules related to working drawings. These modules consist of: 1) reading and interpreting construction documents, 2) creating hand drawn sketches, from existing mock-ups, from existing drawings, from assigned details of existing campus buildings, from only given material and connection parameters, and 3) generating CAD drawings of plans, elevations, wall sections, building sections, details, schedules. The final partial construction documents will be in accordance with CAD standards and building various codes, including zoning. This course prepares students for further study in the advanced architectural engineering courses. Student evaluation and individual grades are based on a combination of homework, projects, in class assignments, exams, quizzes and attendance. In class assignments are generally short and given to demonstrate a concept or as practice. Special facilities consist of: 1) the drafting room, where various drawings and specifications are utilized and where students prepare sketches, 2) the computer lab, where students have access to computer aided design software, presentation software and communication software, 3) the material samples room, where actual material samples and fasteners are examined and understood and 4) the hands-on mock-up room, where true size mock-ups that represent the students' drawings are built by student groups."
+    },
+    {
+      "number": 240,
+      "type": "course",
+      "title": "Programming and Data Science for Architectural Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "The goal of this course is to provide students with fundamental knowledge of programming and data science so that it can be applied to a broad set of problems in architectural engineering. The course introduces students to programming concepts in Python, such as object oriented and functional programming as well as data science concepts, including exploratory data analysis and data visualization libraries that can be applied in Python, as well as similar applications available in spreadsheet tools. Basic topics related to statistics and optimization in architectural engineering applications are also included. During the final part of the course students will synthesize the topics they learned and apply them to AE CAD software and other tasks. This course provides a foundation for architectural engineering students to apply programming and data science techniques not only to challenges that exist today, but also to new challenges that will emerge as this field changes with time."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in-depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 308,
+      "type": "course",
+      "title": "Introduction to Structural Analysis",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Algebraic and graphical methods of analysis of determinate members, deflections; introduction to indeterminate analysis methods. Course includes practicums. AE 308 Introduction to Structural Analysis (4) In this introductory course, students develop skills to perform analysis of structures, with emphasis on buildings and their structural elements. The objectives of this course are as follows: 1) to determine loads that the buildings/structural elements are likely to be subjected to during the lifetime of the building; 2) to discuss procedures used to determine reactions and internal forces in trusses, beams, and frames; 3) to introduce methods that can be used to calculate deflections. These objectives can be seen as three general steps that define structural analysis. Although the main emphasis in this course is the analysis of planar, statically determinate structures, an introduction to the analysis of indeterminate structures is also given. The course is required to be taken by all architectural engineering undergraduate students in the third year. A knowledge of statics and strength of materials is required and this course serves as prerequisite for steel and concrete design courses in the Architectural Engineering Program."
+    },
+    {
+      "number": 309,
+      "type": "course",
+      "title": "Fundamentals of Architectural Acoustics",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "AE221"
+        ]
+      },
+      "description": "This course introduces students to the acoustical analysis and design of buildings by having a fundamental understanding of the physics of sound including frequency, wavelength, sound pressure, and the human auditory system. The course encompasses four distinct areas of study: (1) fundamentals of acoustics, (2) room acoustics, (3) sound isolation, and (4) human hearing. A key goal of the course is to equip students with the skills to provide building occupants with high-quality listening environments that minimize intrusion by offending noises. The course also overviews the acoustical performance of typical building materials. By manipulating architectural materials and geometric configurations, students learn to improve acoustical performance of a building, specifically reverberation time for interior room acoustics and sound transmission class for sound isolation. By the end of the course, students will be able to: perform calculations related to sound pressure level, sound power level, weighted average absorption coefficient, reverberation time, and sound transmission class; design rooms in terms of a suitable reverberation time; and design sound isolation between rooms in terms of a suitable partition selection. Through lectures, practicums, projects, and examinations, the concepts of acoustical design are delivered and reinforced. The course offers students the opportunity to work in a team setting."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Fundamentals of Heating, Ventilating, and Air Conditioning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME201"
+        ],
+        "concurrent": [
+          "AE202"
+        ]
+      },
+      "description": "This course explores a variety of HVAC systems and presents methods of analyzing air-conditioning processes. HVAC systems maintain not only an acceptable level of thermal comfort within conditioned spaces, but also a healthy indoor environment. Hence, the conditions for a comfortable and healthy indoor environment, such as physiological considerations, environmental indices, and control of indoor air quality are also presented. Successful design of an HVAC system requires an accurate estimate of the peak rate at which thermal energy must be added to (heating load) or removed from (cooling load) a space. Accordingly, the various types of heat transmission in buildings and methods for estimating them are discussed to prepare students to estimate a building's energy consumption and size HVAC systems properly. By the end of the course, students will have an understanding of elements that influence HVAC design (such as, climatic conditions, building enclosure and factors of integrative design); attain fundamental knowledge of cooling load estimating; be knowledgeable about typical building HVAC systems (such as, steam, hydronic, and air systems); understand the psychrometric processes involved in maintaining indoor conditions for comfort and health; and evaluate the processes needed to maintain acceptable indoor air quality."
+    },
+    {
+      "number": 311,
+      "type": "course",
+      "title": "Fundamentals of Electrical and Illumination Systems for Building",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ]
+      },
+      "description": "In Fundamentals of Electrical and Illumination Systems for Buildings ( AE 311 ), students gain an understanding of the basic knowledge and methods for analyzing, designing, and specifying building lighting and electrical systems. Lighting content introduces vision and perception, color, photometric calculations, luminaire types and their application, lighting controls, architectural lighting design principles, and lighting design documents. By the end of the course, students will be able to analyze, design, and specify simple architectural lighting systems. More specifically, students will gain a working knowledge of the terminology and principles of architectural lighting design and the role of lighting designers within the building design process; learn to apply the Illuminating Engineering Society (IES) design guidelines, and applicable energy code requirements in various space types. They will also be able to recognize, select, configure, and specify architectural luminaires and related control systems; understand the basics of color theory and the psychological impacts of lighting; and create and validate simple computer models for the purpose of facilitating lighting design. Electrical content introduces fundamental electrical calculations, electrical design processes, power distribution layout and equipment selection; the National Electrical Code, including application of its overcurrent and grounding requirements; electrical construction documents; and utility coordination. By the end of the course, students will be able to analyze, design and document architectural electrical systems. Specifically, students will gain a working knowledge of the terminology and principles of architectural electrical systems and the role of electrical engineers within the building design process; size and specify conductors, conduit, and overcurrent protection devices according to the National Electrical Code, and coordinate and layout panelboards and switchboards; identify topics in electrical building system design that create safety issues; and understand electric utility services and rate structures as they apply to building design. Lecture material is reinforced with homework, hands-on practicums, and team projects. AE 311 is a required course for all students in the Architectural Engineering undergraduate program and typically taken in the third year. This course serves as a prerequisite for courses on building illumination and electrical systems in the Architectural Engineering undergraduate program."
+    },
+    {
+      "number": 372,
+      "type": "course",
+      "title": "Introduction to the Building Construction Industry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE221"
+        ]
+      },
+      "description": "In this course, students will gain an understanding of the basic knowledge and methods used to organize and manage the delivery of a construction project. Construction topics covered include an introduction to the construction industry; organizational and contractual arrangements for construction projects; construction cost estimating techniques; construction scheduling approaches; critical path method scheduling; construction risk management, including bonds and insurance; and project management related to safety, quality, cost, and schedule. By the end of the course, students will: understand core concepts associated with construction planning and management approaches for building projects; be able to define the goals and objectives of the various players on a construction project; select a delivery method for organizing and delivering a successful construction project; know the typical types of contracts, insurance, and bonds, along with when they are appropriately used; create conceptual, square foot, assembly, and unit price construction cost estimates; develop a Critical Path Method (CPM) schedule for a construction project or group of activities; and define and apply the typical methods for managing and controlling a construction project. Lecture material is reinforced with hands-on practicums, team projects, and individual assignments. Upon successful completion of AE 372 , students will understand core concepts associated with construction planning and management approaches for building projects."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Design of Steel and Wood Structures for Buildings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE221",
+          "AE222",
+          "AE308"
+        ]
+      },
+      "description": "Design of Steel and Wood Structures for Buildings ( AE 401 ) is a first course in structural steel and wood design that focuses on the application of principles of structural behavior and material properties to the layout, analysis, design, and detailing of structural elements in steel and wood buildings. This course will prepare students to: (1) analyze and design members in gravity systems (steel and wood) and (2) identify, interpret and apply the appropriate provisions (from the American Institute of Steel Construction and the American Wood Council) to evaluate limit states at a member level. The primary steel topics covered in AE 401 include: steel system configurations; tension and compression members; non-composite and composite beams; decking and joists; conceptual layout of steel gravity systems, and bolt and weld limit states. The primary wood topics covered in AE401 include: wood design philosophy, wood gravity systems, along with correlations between what is similar and unique between steel and wood structures."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Design of Concrete Structures for Buildings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE221",
+          "AE222",
+          "AE308"
+        ]
+      },
+      "description": "This course provides students in the Structural option with an ability to analyze and design reinforced concrete members along with an understanding of their theoretical behavior. The primary focus is on the analysis and design of one-way systems composed of slabs, beams, and columns. By the end of the course, students will understand how design decisions are made; understand the theoretical behavior of reinforced concrete members and the effect of various design parameters on capacity; analyze and design reinforced concrete beams for flexure and shear, including the case of compression reinforcement of a flange; analyze and design reinforced concrete columns under axial loads and a combination of moment and axial load; construct simplified axial/flexure interaction diagrams for columns; understand concrete strength and serviceability characteristics; and read, interpret and apply American Concrete Institute building code provisions. A prerequisite knowledge of structural analysis is necessary."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Advanced Steel Design for Buildings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE401",
+          "AE430"
+        ]
+      },
+      "description": "By the end of the course, students will be able to analyze and design multi-story steel framing systems by: understanding and applying the provisions of national standards and specifications for design loads and associated criteria; designing gravity and lateral elements in a comprehensive design project; applying state-of-the-art guidelines for serviceability; creating and validating computer models for the purpose of facilitating design; Students will also be able to identify topics in steel design that are beyond the scope of classroom instruction; identify and apply resources available from the American Institute of Steel Construction; and explain their ethical and professional responsibilities for designing safe, serviceable, and economical steel designs."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Building Structural Systems in Steel and Concrete",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE221",
+          "AE222",
+          "AE308"
+        ]
+      },
+      "description": "In this course, students gain an ability to design simple building members in steel and concrete using current professional standards, specifications, and guidelines. Students will learn how to combine these members into simple structural systems and compare the performance and load carrying characteristics of these systems. The course also addresses general performance parameters of these materials, construction issues, and key systemsintegration issues for beams, columns, flooring and roofing systems, and lateral bracing systems constructed in steel and concrete. By the end of the course students will be able to: apply structural loads based on relevant codes and standards; understand the layout of various steel flooring and roof systems; select steel deck system based on design requirements; calculate the loads for different deck configurations and use them to assess the forces on floor members; design floor members including joists and standard steel W-shapes; calculate the loads on steel columns and design them; understand various lateral load resisting system in steel buildings and their efficient layout; understand various types of connections in steel buildings; understand various reinforced concrete floor systems and their applicability; calculate the loads and moments on beams, girders and one way-slabs; analyze beams for flexure and shear; design columns and two-way slabs using tables from the Concrete Reinforcing Steel Institute (CRSI). This course is considered to be the terminal course in structures for non-Structural option AE students, and is designed to provide a general understanding of design, construction, and integration issues that affect these structural systems. This course may not be taken by students in the Structural option in the Architectural Engineering undergraduate program or by students in the Architecture program."
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Geotechnical Engineering",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "AE308",
+          "AE402"
+        ]
+      },
+      "description": "This course prepares students in the analysis, evaluation, and design of the most commonly used foundation systems to support buildings with an emphasis on shallow foundations. Included is a discussion of how all structural loads on buildings, most notably gravity loads and wind/seismic lateral loads, are transferred to the soil supporting the building. The design of foundation systems is a function of soil material properties, foundation material, and the selected foundation system. Topics include the basics of soil mechanics for foundation design for both strength (load capacity) and settlement (serviceability), and the design of the most commonly used types of foundation systems. This course provides students with the knowledge, tools, and understanding of material properties, analysis and design principles, and methods necessary for successful design and construction of common shallow foundation systems within the framework of quality control, code compliance, economic considerations and safety, while minimizing failure risks. Students are also provided with an overview of the most common forms of deep foundation systems including piles and drilled shafts."
+    },
+    {
+      "number": 421,
+      "type": "course",
+      "title": "Architectural Structural Systems I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE210"
+        ]
+      },
+      "description": "Qualitative and quantitative analysis and design of architectural structures, force flow; structure configurations; measurement and experiments; design studio critique."
+    },
+    {
+      "number": 422,
+      "type": "course",
+      "title": "Architectural Structural Systems II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE421"
+        ]
+      },
+      "description": "Continuation of A E 421, with emphasis on structural configuration and construction assemblies."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Indeterminate Structures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE308"
+        ]
+      },
+      "description": "Indeterminate Structures ( AE 430 ) aims to help students develop their analytical understanding and skills related to multi-member determinate and indeterminate structures. A knowledge of statics, strength of materials, and basic structural analysis is required. Building on concepts from the introductory structural analysis class, this course expands on classical methods for the analysis for beams, columns, trusses, frames, as applied to buildings. Additionally, students will learn about gravity and environmental loads; load paths, load effects, methods of analysis, and problem-solving skills; building code provisions for wind and seismic conditions; and lateral loads. Lastly, this knowledge is synthesized for computational modeling of and validation for simple structures."
+    },
+    {
+      "number": 431,
+      "type": "course",
+      "title": "Advanced Concrete Design for Buildings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE402",
+          "AE430"
+        ]
+      },
+      "description": "Advanced Concrete Design for Buildings ( AE 431 ) is the second course in reinforced concrete design that builds upon previously learned skills in reinforced concrete design and analysis of statically determinate and indeterminate systems. Successful students will gain a sufficient understanding of the theoretical basis of concrete design to be able to learn any further aspect of concrete design on their own, and a set of specific critical skills needed by a structural designer involved with reinforced concrete structures. By the end of the course, students will be able to: interpret the organization and meaning of the ACI 318; apply behavior knowledge to evaluate limit states to assess if concrete one and two way gravity and lateral systems are properly sized; execute appropriate methods for designing concrete members and systems using the strength design approach; develop skills in layout, design and evaluation of conceptual concrete system designs for a building; analyze and design reinforced concrete structures by understanding that reinforced concrete analysis and design are inextricably linked; to interpret design issues, select and conduct the required analysis, and specify a design for a particular application."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Design of Masonry Structures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE402"
+        ]
+      },
+      "description": "Design of Masonry Structures ( AE 432 ) prepares students to design load-bearing and non load-bearing masonry structures. Although the emphasis is on reinforced masonry, some topics in unreinforced masonry are also covered. The course begins with a discussion of the materials used in masonry construction: clay units, concrete units, mortars, grout, and reinforcement. Since masonry code covers both allowable and strength design methods, a discussion of both design philosophies is necessary. The primary focus is on the analysis and design of reinforced masonry lintels, columns, shear walls, as well as out of plane walls. Additional topics such as deep beams, deflection, anchorage, and development length are also covered. By the end of the course, students will be able to analyze and design lintels in flexure and shear; analyze and design concrete masonry columns and pilasters under restrained or unrestrained conditions; analyze distribution of lateral loads to shear walls with openings; analyze and design masonry wall (load bearing and non-load bearing) in flexure and shear for in-plane loads; analyze and design concrete masonry walls and out-of-plane loads; design deep beams; detail miscellaneous steel attachments to masonry."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "BIM Data Management and Analytics for Multi-disciplinary Integration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE240"
+        ]
+      },
+      "description": "This course provides students with fundamental knowledge of Building Information Modeling (BIM) applications in a whole project lifecycle, BIM-based data analysis, data visualization, and multi-disciplinary coordination. The Architecture, Engineering, Construction, and Operation (AECO) industry generates a large amount of data every day, with BIM playing a critical role in the design, construction, and operation of buildings. This course addresses techniques and tools for extracting, revising, analyzing, and visualizing BIM data to support multi-disciplinary coordination and predict building design and construction performance based on BIM data. A team project enables students from various option areas to use BIM tools to visualize and predict design & construction performance based on their interests; for example, to predict construction cost and energy consumption, or to conduct a design constructability check. In addition, this course will provide students with an overview of the future applications of BIM."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Engineering Lifecycle Economic Analysis for Buildings",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "AE372"
+        ]
+      },
+      "description": "This course will focus on understanding the economics of the building lifecycle and the analytical approaches to evaluate higher cost building systems that may reduce overall lifecycle costs. Buildings are typically prototype combinations of systems that have varying costs in terms of utility rates and maintenance costs, system replacement, and challenging to quantify 'value' of the building operations. This course includes concepts from engineering economics to understanding and applying traditional engineering economics concepts to the lifespan of buildings and their systems. The majority of the course content will focus on understanding and applying methods and techniques for analyzing the initial and lifecycle costs associated with alternative building system decisions. In the final stages of the course, quantification of unique benefits will be considered along with how to consider these benefits in system decisions."
+    },
+    {
+      "number": 445,
+      "type": "course",
+      "title": "Building Retuning",
+      "credits": 3,
+      "description": "Building Retuning focuses on the identification and implementation of energy-efficient retuning measures for commercial buildings to detect energy savings opportunities and implement improvements. This class introduces the topics of energy efficiency management through no-cost and low-cost operational measures in the following major focus areas: lighting, building envelope, hot water/steam systems, HVAC, compressed air, indoor environmental quality, and plug loads. This course builds upon prerequisite knowledge in building energy systems and is intended to support careers in the energy services industry. Students will learn how data is acquired through several on-site building surveys and walkdowns, analyze them, convert them to graphical formats, and interpret them for operational diagnosis and write a report on their recommendations. Students will also gain experience to interact with building occupants and operators and practice how to effectively work as a team. By the end of the course, students will: understand the roles of various technologies, methods, and analytical tools designed to evaluate building energy systems, envelope, and occupancy; be proficient in the use of analytical tools used for energy modeling of existing buildings and the development of energy efficiency recommendations; be capable of synthesizing multiple sets of criteria in the design of energy efficiency measures and packages that are unique and responsive to situational conditions; and be experienced in communication with facility owners and managers in a manner that encourages actionable steps toward energy efficient systems."
+    },
+    {
+      "number": 448,
+      "type": "course",
+      "title": "Parametric Thinking and Modeling for Building Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE240"
+        ]
+      },
+      "description": "The goal of this course is to provide students with a fundamental knowledge of parametric thinking, visual programming, and data management for applications in architectural engineering. These concepts are promoted for use in the different stages of engineering design. The course begins with an introduction to algorithms with an emphasis on geometry and generative design for buildings, covering logic operators, vectors, curves, surfaces, meshes, intersections, and transformations. It then explores data structures and management in visual programming software, including data types, list operations, and tree operations. Next, it places parametric techniques in the context of the engineering design process, exposing students to discipline-specific analysis that can be implemented parametrically to inform engineering decisions. Finally, it introduces applications of visual programming for design space exploration and transferring data to later phases in the design and delivery of buildings. The course culminates with a group project that enables students to pursue their own AE computational interests."
+    },
+    {
+      "number": 449,
+      "type": "course",
+      "title": "Ultra-High Performance Buildings: Passive House Principles & Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE202"
+        ]
+      },
+      "description": "This course covers the principles, methods, and verification processes behind passive building design, with a focus on building envelope and mechanical system design, while providing a foundation in fundamental building science principles. The course focuses on ultra-high performance design principles, including continuous insulation, strict air tightness limits, reduction of thermal bridging, and thermal comfort via balanced ventilation and heat recovery, resulting in buildings with significantly lower energy use and higher occupant comfort than conventional construction. These principles are applicable to all building types. Students will also learn how to analyze Passive House performance during the design stage using relevant software, and during construction using blower door tests and infrared camera measurements."
+    },
+    {
+      "number": 453,
+      "type": "course",
+      "title": "Load and Energy Use Simulations for Buildings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE310"
+        ]
+      },
+      "description": "This course provides students with fundamental knowledge and an understanding of the methods and computational tools used in predicting and determining energy use of whole buildings and important subsystems. Load and energy use simulation content includes: conduction, convection, and radiation heat transfer physics as applied to buildings; Heat-Balance Method for transient load and energy calculations; application of commercial modeling software; analysis, interpretation, and verification of model results; and an introduction to data-driven modeling approaches. Course material is introduced and reinforced through hands-on modeling assignments, and larger concepts are motivated through in-depth individual and team modeling projects. By the end of the course, students will be able to: quantitatively compare and contrast building designs through load and energy simulations; identify and mathematically delineate the principal conductive, radiative, and convective heat transfer processes in building heating and cooling load assessment; identify, collect, and organize all of the initial conditions data required for the mathematical simulation of the building operation demand loads and calculation of the energy required to operate the building systems; identify and quantify the internal and envelope related cooling and heating loads; determine the subsystem (lighting, heating, ventilation, cooling, occupant equipment) energy use components associated with internal and envelope related loads; and indicate the energy use measurements required to establish an inverse model of building load and energy utilization for forward model simulation reconciliation."
+    },
+    {
+      "number": 454,
+      "type": "course",
+      "title": "Advanced Heating, Ventilating, and Air Conditioning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE310"
+        ]
+      },
+      "description": "This course provides students with fundamental theories and advanced knowledge to design HVAC systems for energy-efficient, healthy, and sustainable buildings. Students learn approaches to analyzing complex and integrated building mechanical systems for improved energy and environmental quality performance. Using scientific theories and analysis techniques from thermodynamics, fluid mechanics, and heat transfer, students critically evaluate building environmental quality, heating and cooling loads, and energy and mass transfer in the HVAC system, building envelope, and occupied spaces. This course provides a foundation for engineering students who will design and/or operate building mechanical systems including air and water distribution systems that promote energy savings, occupant comfort, and health for commercial and residential buildings. Based on these foundations, students learn engineering design and performance analysis procedures for residential and commercial building mechanical systems. By the end of the course, students will be able to apply fundamental thermodynamics and heat transfer principles to HVAC design and analysis; interpret the role of the HVAC system in energy consumption, indoor air quality, and thermal comfort; design HVAC components for residential and commercial construction using appropriate references; calculate heating, ventilating, and air-conditioning loads for a variety of buildings; critique and evaluate energy efficiency and environmental quality associated with building environmental systems; evaluate thermal comfort, productivity, and environmental quality associated with building environmental systems; and identify building performance standards and guidelines."
+    },
+    {
+      "number": 455,
+      "type": "course",
+      "title": "Advanced Heating, Ventilating, and Air Conditioning System Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE454"
+        ]
+      },
+      "description": "This focuses on the development of skills necessary to identify HVAC system types appropriate for a given building and to perform a system selection exercise to determine the best of several design alternatives based on criteria including indoor environmental quality, energy and water use, construction cost, operating and maintenance cost, and life-cycle cost. The first portion of the course is preparation for a team design project in which the team identifies alternatives for a projected building based on the owners' project requirements that comply with applicable standards for indoor environmental quality and energy efficiency. The project culminates in a report and oral presentation to a jury. By the end of the course, students will be able to recognize and distinguish among common types of HVAC systems; select system alternatives suitable for a given application; perform a budget-level mechanical system construction cost estimate; perform a life-cycle cost analysis including construction, operation, and maintenance costs; and perform and document a system selection process to recommend the best solution among several alternatives. Topics considered include schematic diagram development for HVAC systems, system selection procedures, HVAC system types, mechanical construction cost estimating, life-cycle cost analysis, and standards commonly used in the design of HVAC systems."
+    },
+    {
+      "number": 457,
+      "type": "course",
+      "title": "HVAC Control Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE454"
+        ]
+      },
+      "description": "In this course, students will gain an understanding of basic automatic control theory, control system components, and control system design for applications related to building heating, ventilation, and air conditioning systems. The course builds on knowledge of HVAC system function and design obtained in prior courses in the curriculum and prepares students for advanced design courses and the capstone project. The course begins with an introduction to concepts and terminology of automatic control, followed by detailed study of control system components: sensors, controlled devices, and controllers. Understanding of these fundamentals is then applied to the development and documentation of controls for common HVAC systems and the commissioning of control systems. Relevant standard and guideline documents are referenced as appropriate. Students gain skills to design, document, and analyze the performance of building control systems. By the end of the course, students will be able to describe the characteristics of dynamic control systems and illustrate typical responses; identify, explain, and select the components of a control system; select and explain appropriate control strategies and sequences of operation; design and specify complex building automation systems for a variety of building types; and assess and contrast HVAC control sequences."
+    },
+    {
+      "number": 458,
+      "type": "course",
+      "title": "Advanced Architectural Acoustics and Noise Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE309"
+        ]
+      },
+      "description": "This course focuses on noise control and room acoustics in buildings with an emphasis on the control of HVAC system noise, sound isolation in buildings, speech privacy, and acoustic design variables in spaces for speech and music. By the end of the course, students will be able to predict sound pressure levels (Lp) along ductwork due to sound power levels of a fan; design HVAC systems using noise control strategies to achieve suitable Lp; design noise barriers for outdoor HVAC equipment, e.g. cooling towers & rooftop units; design rooms for speech and /or music taking into account reverberation time, clarity index, room shape, materials and reflectors; specify appropriate sound transmission class (STC) of wall partitions and noise criteria (NC) for speech privacy; and design sound isolation for floor-ceiling assemblies in terms of impact insulation class (IIC)."
+    },
+    {
+      "number": 459,
+      "type": "course",
+      "title": "Measurement Science for High Performance Building Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE310",
+          "AE454"
+        ]
+      },
+      "description": "This course provides students with hands-on experience in the measurement of building energy performance, thermal comfort, and indoor air quality. Students learn standardized test methods and instrumentation for field investigation of building system performance. Using the measurement data from real buildings (both commercial and residential), students will be able to critically evaluate performance of building HVAC systems, building envelopes, and environmental quality in occupied spaces. Students will also learn how to renovate building systems based on field monitoring data. By the end of the course, students will be able to apply fundamental building science principles to measure mass and energy flow in buildings; leverage instrumentation and standardized test methods for high performance buildings; assess measurement science, uncertainty, and quality control associated with field measurements; and critique energy performance and indoor environmental quality of a building using field measurements and data analysis. The topics in this course provide a foundation for engineering students on the design of net-zero energy and high-performance buildings that address energy savings, occupant comfort, productivity, and health."
+    },
+    {
+      "number": 461,
+      "type": "course",
+      "title": "Architectural Illumination Systems & Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE311"
+        ]
+      },
+      "description": "This course enables students to design basic lighting systems by providing them with a working knowledge to (1) evaluate the applicability of different lamp, luminaire, and control types in a particular design situation; (2) establish fundamental design criteria for a variety of lighting applications; (3) conduct appropriate and accurate analyses of lighting systems to assess system performance and evaluate their ability to meet design criteria; and (4) implement a completed design by specifying all of the components of the system and providing an appropriate system layout. By the end of the course, students will be able to converse intelligently about the art and science of light; apply technical terminology utilized in the lighting industry; understand how to establish fundamental design criteria for a variety of lighting situations; apply a design process for selecting and evaluating lighting hardware including light sources and luminaires; create a lighting design, reflected ceiling plan, light fixture schedule, and be able to appropriately present design solutions; and recognize basic ethical issues and understand proper frameworks for evaluating situations. Topics covered include: lighting and color metrics; the lighting design process; psychological aspects of lighting; light sources, luminaires, lighting systems, and the layering of light; lighting system documentation; presentation skills; ethics, professional issues, and the business of lighting."
+    },
+    {
+      "number": 462,
+      "type": "course",
+      "title": "Architectural Lighting Controls",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE461"
+        ]
+      },
+      "description": "AE 462 is designed for students who wish to gain a more thorough understanding of architectural lighting controls and integration of controls with other building systems. This course examines how sustainability, human needs, costs, psychology, codes, corporate branding, and more all overlap to drive design decisions. It builds upon a fundamental understanding of the architectural lighting design process to develop a student's awareness of control issues. Topics include control philosophy, control topologies, control componentry, design documentation, code evaluation, and advanced control logic. The course investigates the methodology and processes behind basic control systems to modern data driven IoT (Internet of Things) solutions at the cutting edge of technology."
+    },
+    {
+      "number": 463,
+      "type": "course",
+      "title": "Daylight Analysis of Roman Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ARCH130A",
+          "AE202"
+        ]
+      },
+      "description": "Solar geometry, building orientation and form, daylight design methods, characterization of interior and exterior lighting conditions. Offered in Rome. Analysis of Roman architecture from the perspective of daylight. Topics include solar geometry; building orientation and form; daylight design methods including toplighting and sidelighting strategies; illuminance meters; characterization of interior and exterior lighting conditions; site visits. Course includes development of a software tool to compute solar geometry and daylight availability for any location on the globe and for clear, overcast, and cloudy sky conditions. The software tool will also run in reverse, providing time of day and year when the sun is in a desired position for any latitude and longitude. Offered on location in Rome."
+    },
+    {
+      "number": 464,
+      "type": "course",
+      "title": "Advanced Architectural Illumination Systems & Design",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "AE461"
+        ]
+      },
+      "description": "The course focuses on advanced topics related to lighting design such as luminous flux transfer and its application to lighting analysis tools, advanced issues in photometry, advanced control systems, and the design and evaluation of daylighting systems. Course topics include: Codes and standards; photometry, lighting and daylighting system performance metrics; lighting calculations for point and area sources, methods for modeling interreflection; the Lumen Method; light loss factors; proper application of lighting system modeling software; the fundamentals of daylighting and daylight delivery systems; basic and automated lighting control systems and their application, plus their role in emergency lighting. By the end of the course, students will be able to: convey a thorough understanding of photometric data and its application, including the ability to derive photometric reports from luminous intensity data; apply engineering principles and software to evaluate lighting and daylighting system performance; recognize different daylight delivery systems and list design considerations and performance features for these systems; apply daylight performance metrics to the analysis of daylight delivery systems; apply a working knowledge on the wide range of lighting control systems available, and properly select an appropriate control system and equipment for a specific application. The course includes hands-on practicum experiences, homework, analysis and design problems and exams."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "Computer Aided Lighting Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE461"
+        ]
+      },
+      "description": "This course provides students with a thorough understanding of the steps involved in the lighting design process, including the design and analysis for outdoor area; floodlighting; and interior applications, including design criteria; economic analysis; modeling algorithms; and visualization. The goal of this course is to cultivate an understanding of good lighting design practice through a series of design and analysis problems. Students gain experience and skill in applying these steps to real design problems, as well as effectively communicating their designs. Topics include the design process; outdoor area and interior architectural lighting design considerations; design criteria; schematic level design; lighting system modeling, performance evaluation and visualization; equipment selection and layout; and graphic and oral communication of schematic and final lighting design solutions. By the end of the course, students will have a thorough understanding of and the ability to: establish and follow a design process from programming through construction documentation; apply nontechnical skills that are essential to success in the AE professions of lighting design and illuminating engineering, including time management, effective communication, collegiality, and initiative; analyze lighting system performance with lighting software that employs advanced modeling algorithms; present design concepts, design processes, and lighting design solutions with clarity and professionalism, both visually and orally."
+    },
+    {
+      "number": 467,
+      "type": "course",
+      "title": "Advanced Building Electrical System Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE311"
+        ]
+      },
+      "description": "Advanced Building Electrical System Design ( AE 467 ) offers an in-depth look at electrical power distribution system design for buildings. The course reviews electrical calculation fundamentals, power distribution layout and equipment selection, metering/monitoring concepts, simple power flow control concepts, the National Electrical Code, design analysis and construction documents for electrical systems, and utility coordination. Lecture material is reinforced with homework and a semester-long project completed by each student. By the end of the course, students will have mastered core concepts needed to complete assignments encountered in electrical design for buildings. Specifically, students will be able to: explain and apply the electrical design process for buildings; evaluate facility loads and select an appropriate electrical distribution system configuration for a facility that complies with owner requirements; layout basic normal and emergency power distribution systems; understand the concepts of power system redundancy; address coordination details for the utility serving a project and create a detail that explains the interface with the utility; understand power studies (fault, device coordination and arc flash energy) and how to apply the study information to project design; select normal and emergency power distribution equipment that meets owner and project requirements; design feeders, branch circuits, and motor circuits and select distribution equipment sizes based upon loads and NEC rules; know basic metering and monitoring concepts and how these are applied to project systems; understand control systems for power flow, lighting, and equipment in buildings, and how to apply simple control strategies using control switches, relays/contactors and time switches for lighting circuits and transfer switches, as well as contactors and electrically-controlled breakers for power distribution systems; evaluate and compare power distribution system options utilizing cost data as well as an evaluation model; understand the concepts and NEC rules for residential/living unit electrical design; read and apply the National Electrical Code to normal and emergency power distribution equipment, conductors, raceways, overcurrent protection and grounding; demonstrate mastery of basic electrical calculations needed for the design of single- and three-phase systems; and understand how electrical design is presented in project contract documents."
+    },
+    {
+      "number": 468,
+      "type": "course",
+      "title": "Advanced Building Electrical and Communication Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE467"
+        ]
+      },
+      "description": "Special Building Electrical and Communication Systems is an elective course within the architectural engineering program. It addresses specialized components and analysis of building electrical systems, cost and availability of electrical energy, and power quality. Students will also develop an a more in-depth understanding of alternative electrical sources, the National Electric Code, advanced design issues of electrical systems, as well as other electrical and building communication issues. In addition, part of the course will focus on the fundamentals of special systems typically included within the electrical discipline scope of work such as fire alarm, access control, surveillance, voice, video and data systems. Upon completion of this course, students will be able to explain the fundamentals of special electrical and communication systems within a building."
+    },
+    {
+      "number": 469,
+      "type": "course",
+      "title": "Photovoltaic Systems Design and Construction",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210"
+        ]
+      },
+      "description": "This course offers in-depth study in the areas of solar energy sources, photovoltaic (PV) systems design, and their interface with building electrical systems. The course provides an overview of PV systems and common applications in residential and commercial buildings, including the availability, intensity, and utilization methods of solar irradiance and insolation based on latitude and climate as well as site survey and assessment methods for the positioning of PV systems. Technical topics include solar radiation modeling, calculations, and simulation, traditional and emerging photovoltaic technologies, DC-AC power inversion, energy storage systems, and system sizing and design. The integration of PV systems with the building electrical system, including discussions of the pertinent building codes, utility interconnection, and the economic analysis of PV systems, is also included in this course. By the end of the course, students will be able to calculate and account for the factors which affect the performance of PV systems in various climates and conditions; distinguish the features and performance variables of solar modules and inverters in the design of PV systems; calculate string sizing and inverter matching variables in the design of PV systems; communicate the critical design features of safe and efficient PV system integration with buildings and utilities; evaluate and quantify the factors affecting the successful installation and performance of PV systems in a variety of settings; and apply newly acquired inquiry skills to assess new products entering the solar energy marketplace. In addition to understanding the key issues with system design, students will be able to choose components properly and to design a basic grid-tied system for a chosen building. Students will also be able to conduct an economic analysis of PV systems in the context of residential and commercial building construction. Lecture material is reinforced with homework, hands-on exercises, and a semester-long project completed by each student."
+    },
+    {
+      "number": 470,
+      "type": "course",
+      "title": "Residential Building Design and Construction",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE372"
+        ]
+      },
+      "description": "Residential Building Design and Construction ( AE 470 ) familiarizes students with the residential construction industry and allows students to apply principles studied in other coursework to residential buildings. The content of this course provides an understanding of the residential construction process and the overall design of the various structural and enclosure systems within residential buildings. This course also focuses on the role of building science and the building enclosure in the performance and efficiency of residential buildings. The scope of residential construction considered in this course is primarily focused on single-family and multi-family dwellings. Furthermore, most of the topics covered are applicable to new construction, remodeling, as well as repair projects. By the end of the course, students will be knowledgeable of the operation of the residential construction industry and its role in the local and national economy; understand the construction process and the overall design of various systems within residential dwellings; and have experience with the role that building physics and the building envelope play in the performance and efficiency of residential buildings."
+    },
+    {
+      "number": 471,
+      "type": "course",
+      "title": "CONSTRUCTION MANAGEMENT OF RESIDENTIAL BUILDING PROJECTS",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE372"
+        ]
+      },
+      "description": "Understanding residential project planning, management, contracts, budget, administration, and execution; discussion of the life cycle of a residential construction business. AE 471 Construction management of Residential Building Projects (3) The course Construction Management of Residential Building Projects is designed to introduce the students to a general understanding of the construction industry, basic principles of project planning and management, contracts, budget and project administration and execution as applied to residential building construction. The content of the course is intended to provide the student with the knowledge, tools, and understanding of processes and tasks necessary to manage residential building projects to completion successfully and within the framework of quality control, code compliance, and safety, while minimizing risks. The scope of the residential construction considered in this course is primarily focused on single-family dwellings and multi-family dwellings. Furthermore, most of the topics covered can be applicable to new construction, remodeling, as well as repair projects."
+    },
+    {
+      "number": 472,
+      "type": "course",
+      "title": "Building Construction Planning and Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE475"
+        ]
+      },
+      "description": "This course introduces students to the processes by which building construction contractors acquire building projects, and the range of services typically provided on these projects. This course offers a working understanding of the preconstruction process and methods of acquiring negotiated work in building construction; addresses cost estimates, schedules, cash-flow curves, and site plans for building projects; and provides a working knowledge of competitive presentation strategies and helps students develop professional presentation skills. The content of the course centers upon the process by which companies plan for and acquire projects as construction managers and general contractors. Specific topics include schematic estimating and scheduling, design coordination of structural, architectural, and mechanical systems, value engineering processes, and site planning. The financial aspects of construction work are also presented, including project financing, cash flow, and accounting. A significant portion of the course is devoted to the development of strategic and competitive business presentation, including risk assessment, fee structure, team dynamics, and technical presentation skills. By the end of the course, students will understand and participate in the planning, development, and presentation of a Request for Proposal (RFP) for a construction effort. Specifically: understand the steps required to review and assemble a reply to a complex RFP; create a company organization chart, outline roles and responsibilities, company charter, and demonstrate an understanding of creating an interesting response; understand the roles of consultants and project staff; assemble schematic estimates, site logistics, project schedules, and research the project needs and drivers; apply technology to enhance their deliverables; create a safety analysis to reduce risk and learn ways to control costs, enhance fees, and communicate/document project issues; acquire presentation skills and understand ethical practices and network development. The class relies heavily upon the application of all content in the context of a team project. The project involves the distribution of a \"Request for Proposal\" for which students prepare a competitive proposal for an actual building construction project planned on the Penn State University Campus. Class activities include the presentation of key issues followed by in-class or independent exercises to reinforce themes and strategies to be applied in the project proposal."
+    },
+    {
+      "number": 473,
+      "type": "course",
+      "title": "Building Construction Management and Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE472"
+        ]
+      },
+      "description": "In Building Construction Management and Control ( AE 473 ), students will learn how to perform detailed construction planning, identify potential problems during construction, and manage changes throughout a construction project. Students gain an understanding of the role of the general contractor/construction manager in analyzing the construction aspects of a building project and designing the construction engineering and management systems to effectively execute the project. Additional course topics include the key decisions that construction executives make when managing a construction company and identifying potential projects to pursue; the management of changes which occur throughout a project and ethical standards for a professional engineer and their impact on decisions within the construction industry. By the end of the course, students will be able to: explain key decisions that construction executives make when managing a construction company; perform detailed planning for a construction project; implement a construction plan and monitor the progress of a project including cost, schedule, quality, and safety performance; manage changes which occur throughout the project and how to negotiate contract changes; follow ethical standards for a construction professional and explain how ethics impacts decisions within the construction industry. The course is taught via a combination of teaching methods that rely on problem-based learning through both in- and out-of-class activities; lectures by faculty and industry experts; project case studies; student presentations; and team and individual assignments."
+    },
+    {
+      "number": 475,
+      "type": "course",
+      "title": "Building Construction Engineering I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE372"
+        ]
+      },
+      "description": "Building Construction Engineering I ( AE 475 ) offers students core knowledge about the construction processes and methods of different construction systems. Key issues for the construction management of these systems are addressed. This course explores the main methods and procedures for constructing buildings, and focuses on the civil, structural, and envelope elements of buildings. Four main components of building construction engineering are investigated: preconstruction, civil systems, structural systems, and architectural systems. The objective of this course is to develop the students' fundamental understanding of the required steps to plan and construct a successful building project. By the end of the course, students will be able to: identify the construction methods for the building systems; describe the method; explain why the method is being used; provide alternatives for the design; provide a rationale to support or evaluate the choice of alternatives; use their knowledge of building materials and equipment, such as concrete, steel, and masonry, to support their decision-making on the related issues in different construction projects; describe different construction procedures and details and identify the best one for a construction project; create a reasonable project estimate and schedule using the tools for cost estimation and task scheduling; clearly identify project safety, productivity, and quality control concerns as they relate to the systems discussed in this course; show awareness of current design and construction industry trends, issues, and events; and understand team dynamics to strengthen communication and interpersonal skills for professional practice."
+    },
+    {
+      "number": 476,
+      "type": "course",
+      "title": "Building Construction Engineering II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE475"
+        ],
+        "concurrent": [
+          "AE310"
+        ]
+      },
+      "description": "Construction of mechanical and electrical systems in major buildings; fire protection, sound control, elevatoring; trade coordination; manufacturers' developments; computer application."
+    },
+    {
+      "number": 477,
+      "type": "course",
+      "title": "Material Science for Architectural Engineers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE221",
+          "EMCH213"
+        ]
+      },
+      "description": "This course offers an in-depth understanding of the structure-processing-properties relationship of common building and construction materials. The course provides a detailed understanding of the atomic-level composition, structures, and properties of the three most-prominent building material types: metals, ceramics, and polymers. The student will understand foundational topics in the structural make-up of building materials and their standardized determination of physical, chemical, and mechanical properties. With a combination of in-class activities and lab-based practicums, the students will be able to apply their theoretical knowledge to active experimentation of materials. By the end of this course, the student will be able to (1) identify the engineering application of building materials and explain their use to meet design criteria of structures; (2) apply process-structure-property relationships to explain the characteristics of common building materials (metals, ceramics, polymers); and, (3) evaluate the mechanical and failure behavior of built structures due to in-service loads."
+    },
+    {
+      "number": 481,
+      "suffix": "W",
+      "type": "course",
+      "title": "Comprehensive Architectural Engineering Senior Project I",
+      "credits": 4,
+      "description": "Building project selection and preparation of overall plan; preliminary investigation of building design and construction issues; creation of individual Capstone Project Electronic Portfolio (CPEP) and project proposal required. AE 481 Comprehensive Architectural Engineering Senior Project I (4) The course sequence of AE 481 and AE 482 comprises the capstone engineering design program for Architectural Engineering students. AE 481 is taken by all undergraduate architectural engineering (A E) students and also serves as the writing intensive course requirement in A E. Based on an actual building project model, students will investigate the building, perform technical analysis, develop project criteria and prepare a written proposal for more detailed work to be accomplished in AE 482 . Evaluation methods include but are not limited to written reports, verbal and written presentations, faculty consultations and development of a capstone project electronic portfolio (CPEP)."
+    },
+    {
+      "number": 482,
+      "type": "course",
+      "title": "Comprehensive Architectural Engineering Senior Project II",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "AE481W"
+        ]
+      },
+      "description": "Continuation of AE 481 Engineering analysis of building systems; emphasis on analysis and design of building structural, mechanical, lighting/electrical, and construction related systems. Final written report, web-based project portfolio and verbal presentation are required. AE 482 Comprehensive Architectural Engineering Senior Project II (4) AE 482 is the second half of the capstone engineering design project for Architectural Engineering students. The course is taken by all undergraduate architectural engineering and serves as a direct follow up to AE 481. Students perform detailed option specific work in conjunction with individual proposals written in AE 481. Students are also required to demonstrate work in the breadth areas of architectural engineering. Evaluation methods include but are not limited to written reports, verbal and written assignments, faculty consultations, maintaining their capstone project electronic portfolio, a final comprehensive written report and a verbal presentation to a faculty jury."
+    },
+    {
+      "number": 483,
+      "type": "course",
+      "title": "Comprehensive Architectural Engineering Senior Project II - IUG",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "AE481W"
+        ]
+      },
+      "description": "In this course, students enrolled in the Integrated (IUG) Bachelor and Masters of Architectural Engineering degree programs address the AE undergraduate capstone project breadth requirements, as well as develop related material for a final presentation that is delivered at the conclusion of the semester for the work on this project. Students perform investigations into the design and analysis of building systems and/or construction processes for two breadth study areas that lie outside their undergraduate option area of study, with an emphasis on systems integration, sustainability, and performance. Students develop criteria for the selected areas of study; perform research into engineered building systems and construction processes; conduct technical analyses; finalize their recommendations; produce content for a final written report; and present their solutions in a final project presentation. Project work is performed through independent study with an Architectural Engineering faculty member acting as a technical adviser and grader."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Thesis",
+      "credits": 1,
+      "description": "This course provides students with research skills related to the following: problem formulation, literature review, research study design, data collection, and analysis of results. The student¿s research is directed by a faculty supervisor and culminates in the writing of an honors thesis in Architectural Engineering."
+    },
+    {
+      "number": 494,
+      "suffix": "M",
+      "type": "course",
+      "title": "Senior Honors Thesis",
+      "credits": 4,
+      "description": "Comprehensive Architectural Engineering Senior Project development and planning with an honors thesis focus. In this course, an honors student in architectural engineering will work on a real-world building project which the student has selected and for which the student has obtained drawings and specifications, as well as the owner's permission to use this project as their undergraduate thesis project. Students enrolling in this course are required to complete the following: - Develop and initiate a plan for their undergraduate senior project in Architectural Engineering which will also serve as their Schreyer Honors College thesis. Through this thesis, the student demonstrates a command of relevant scholastic work and a personal contribution to that scholarship. - Secure an honors thesis adviser and meet with that person to select an in-depth and/or integration focus for their Honors Thesis work. The student then develops a formal proposal describing the focus area for the undergraduate senior project and honors thesis, outlining the analyses, investigations, and design elements of this work and the tools that will be employed. - Summarize the existing conditions present in this building project as it relates to their AE option, systems integration, and the honors thesis topic. - Conduct a thorough review of the relevant literature that has been published in the area that is the focus of the honors thesis, including details on the relevant building, construction, and energy codes that govern this work. - Commence work on the investigation, analysis, and design portion of the thesis, together with the general activities required of all AE students in their undergraduate capstone projects."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in-depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "suffix": "F",
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in-depth, a comparatively narrow subject which may be topical or of special interest."
+    }
+  ]
+}

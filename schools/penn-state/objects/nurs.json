@@ -1,0 +1,686 @@
+{
+  "subject": "NURS",
+  "objects": [
+    {
+      "number": 100,
+      "type": "course",
+      "title": "First Year Seminar in Nursing",
+      "credits": 1,
+      "description": "First year seminars in Nursing will introduce the student to the University and the College of Nursing. The primary focus will be engaging students in learning and orienting them to the scholarly community from the outset of their undergraduate studies in a way that will bridge to later experiences in the nursing major and facilitate the high expectations, demanding workload and other aspects of transition to college life. The course content will focus on enhancing opportunities that enable students to provide a holistic focus on the promotion of human health and initiatives that enhance quality of life."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 200,
+      "suffix": "M",
+      "type": "course",
+      "title": "Principles of Nursing Research and Evidence-Based Practice-Honors",
+      "credits": 3,
+      "description": "NURS 200M is an introduction to principles and methods of nursing research and application of research evidence to practice. The course is a writing intensive Honors course. Students will work individually and in cooperative learning groups to analyze and discuss nursing research from multiple viewpoints with a focus on integrity, global perspectives and leadership in nursing research. Each honor student will identify an evidence-based practice topic that could potentially lead to an undergraduate thesis to study in depth. Every in-class and out-of-class assignment is tailored to their topic. The students though, a series of writing intensive assignments, will be taught how to conduct a written peer review; will practice this in formative written review sessions on their peer's projects. NURS 200M will culminate with the development of evidenced based practice paper, which will be delivered to their peers as they would at a scientific meeting. This paper will also serve as the first draft of their thesis proposal. Upon completion of the course students will be able to: Discuss the roles and responsibilities of the nurse related to research and evidence-based practice (EBP); compare and contrast the research process and EBP process; explain the interrelationship among nursing theory, practice, and research; identify sources of evidence as a basis for EBP; describe the process in formulating EBP questions; formulate EBP questions; describe basic concepts and steps of research process; interpret research findings; appraise current issue relevant to nursing; and critically appraise published research studies."
+    },
+    {
+      "number": 200,
+      "suffix": "W",
+      "type": "course",
+      "title": "Principles of Nursing Research and Evidence-Based Practice",
+      "credits": 3,
+      "description": "Introduction to principles and methods of nursing research and application of , research evidence to practice. , NURS 200W is the introduction to principles and methods of nursing research and the application of research evidence to practice. The course is a writing intensive course with the goal to help the student communicate clearly and effectively while learning the basics of nursing research and its application to developing evidence based practice. Upon completion of this course the student will be able to: Discuss the roles and responsibilities of the nurse related to research and evidence-based practice (EBP); Compare and contrast the research process and the EBP process; Explain the interrelationships among nursing theory, practice, and research; Identify sources of evidence as a basis for EBP; Describe the process by which an EBP question is formulated; Formulate EBP questions that relate to relevant clinical problems and demonstrate critical thinking; Describe basic concepts and steps of the research process in nursing; Interpret research findings to determine statistical and clinical significance; Appraise current issues relevant to nursing research (such as cultural diversity issues and ethical conduct of research); Critically appraise published research studies."
+    },
+    {
+      "number": 203,
+      "type": "course",
+      "title": "First Aid and CPR",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "NURS 203 An introductory first aid course designed to provide the basic knowledge and skills to assist someone who is injured or ill. The course covers safety precautions of the responders including legal and ethical issues, teaches one-person CPR and airway obstruction, common injures resulting in bleeding and how to control bleeding, common medical emergencies i.e. bleeding, water, ice, shock, thermal injuries. Heart attack, stroke and head injuries are a focus and the proper way to transfer individuals with injuries. Environmental emergencies includes disaster preparation, terrorism and triage."
+    },
+    {
+      "number": 225,
+      "type": "course",
+      "title": "Pathophysiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS250",
+          "NURS251"
+        ]
+      },
+      "description": "Designed to explore the illness component of health with emphasis on the pathophysiological and psychosocial aspects. NURS 225 NURS 225 Pathophysiology (3) NURS 225 is designed to explore the illness component of health, with emphasis on the pathophysiological and psychosocial aspects. The required 3-credit course is a foundational course for all succeeding nursing courses. Upon completion of this course, the student will be able to identify knowledge from nursing and contributing disciplines as a foundation for the understanding of illness; describe selected theories of stress and adaptation; identify basic pathophysiological and psychosocial aspects of illness; relate common manifestations of illness to the underlying pathophysiological and psychosocial processes; identify physical environmental factors associated with the development of illness; recognize the significance of research to the evidence base of nursing practice related to illness; recognize the different pathological changes related to human variation and lifespan. Teaching strategies include lecture, audiovisual, case studies/discussion. Enrollment is limited to sophomore level nursing students. The course is offered each spring semester and successful completion is required prior to advancing to the Junior level nursing courses."
+    },
+    {
+      "number": 230,
+      "type": "course",
+      "title": "Introduction to the Fundamentals of Nursing",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NURS250",
+          "NURS251"
+        ],
+        "concurrent": [
+          "NURS225"
+        ]
+      },
+      "description": "Introduction to the nursing process, clinical competencies and psychosocial skills. NURS 230 NURS 230 Introduction to Fundamentals of Nursing (4) NURS 230 incorporates the analysis of the nursing process and introduction to clinical competencies and psychosocial skills. Students demonstrate beginning skills in utilizing the nursing process in the clinical setting to meet basic physical and psychosocial individual client needs. Upon completion of the course, students will be able to describe the characteristics of each step of the nursing process; demonstrate beginning skills in utilizing the nursing process in the clinical setting to meet basic physical and psychosocial individual client needs; demonstrate safe and competent performance of basic psychomotor nursing skills; demonstrate the ability to practice the principles of health and safety; perform basic interviewing techniques in collecting health status data; demonstrate communication skills that enable the student to establish appropriate interpersonal relationships; recognize variables influencing health status; recognize the psychosocial needs of individuals including basic needs related to loss, grief and the death experience; demonstrate a personal professional philosophy which addresses the individuality, dignity, values, beliefs, and culture of all clients; recognize the significance of evidence based practice as the basis for the use of the nursing process; recognize the importance of health teaching and health promotion across the life span; identify purposes and functions of appropriate community resources. Teaching strategies include lecture, discussion, audiovisuals, clinical experience, simulation laboratory demonstration and practice, self-learning medication and math mathematics packet. The course is offered each spring semester with an enrollment of approximately 120 nursing students divided into clinical sections limited to 10 students each."
+    },
+    {
+      "number": 240,
+      "type": "course",
+      "title": "Medication Calculations for Nurses",
+      "credits": 1,
+      "description": "Application of mathematical methods for drug calculations that support safe administration of the correctly calculated dosages of medications. This course is designed to help prepare student nurses for safe medication administration, successful completion of math competency exam throughout the curriculum, and build confidence in mathematical skills."
+    },
+    {
+      "number": 245,
+      "type": "course",
+      "title": "Violence and the Impact on Society",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "The NURS 245 goal is to facilitate an interdisciplinary and cross-theoretical approach to (1) raise awareness to the prevalence, causes, consequences of the different types of violence impacting societies; (2) to help students learn how to apply knowledge of human behavior and social change strategies; (3) to encourage students to inform and communicate professional judgement and participate in prevention of violence for the safety and security of vulnerable individuals, families and populations."
+    },
+    {
+      "number": 250,
+      "type": "course",
+      "title": "Professional Role Dev I: Intro to Professional Issues in Nursing Practice and Nursing Informatics",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BIOL161",
+          "BIOL163"
+        ]
+      },
+      "description": "NURS 250 Professional Role Dev I: Intro to Professional Issues in Nursing Practice and Nursing Informatics (2) (US)NURS 250US is the first course in the baccalaureate nursing program and introduces the students to the profession of nursing, the science of nursing and the use of information technology in health care. Designed to explore the wellness component of health and the role that informatics plays in the planning and delivery of health care. Upon completion of the course, the student will be able to Identify concepts of health and wellness that contribute to a foundation for nursing practice, Discuss the importance of cultural competency in the health care delivery systems and utilization of services,Identify the roles of the professional nurse in the delivery of health care to patients, families, communities and populations, Define elements that contribute to professional, evidence-based nursing practice. Describe nursing theory's relationship to the development of clinical judgment, Describe current and future nursing informatics' applications in the planning and delivery of health care and Apply ethical and legal concepts to the use of information technology/nursing informatics in health care. The concepts of diversity and cultural competence are emphasized and integrated within each major topic discussed. Teaching strategies emphasize inquiry-based learning, competency in informatics and promote critical thinking and include lecture, selected readings, exploration of internet sites on health and nursing, case studies, small group activities, group discussions, audiovisuals, role playing, journaling, self-reflection, and field trips. Enrollment is limited to sophomorelevel nursing students. The course is offered fall semester."
+    },
+    {
+      "number": 251,
+      "type": "course",
+      "title": "Health Assessment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL161",
+          "BIOL163"
+        ]
+      },
+      "description": "Designed to broaden the student's knowledge and skills in health assessment and physical examination across the lifespan. NURS 251 Health Assessment (3) NURS 251 is designed to broaden the student's knowledge and skills in health assessment. The course enables the student to learn the methods of interviewing patients for completing a health history and the tools and techniques necessary to conduct a physical examination. Upon completion of this course, the student will be able to identify psychosocial, cultural and developmental factors affecting the health assessment process; demonstrate appropriate communication and interviewing techniques (including the use of new technology) with clients of all ages to facilitate the health assessment; demonstrate the ability to obtain a holistic, systematic and comprehensive health history and assessment; promote an environment of safety and caring to maximize client care outcomes; participate in education and activities that would promote cultural competency in nursing assessment; document the health history and current health status and the physical exam according to accepted standards; demonstrate competency in the use of inspection, palpation, percussion and auscultation when performing physical examination; demonstrate the ability to recognize and interpret signs of normal and abnormal health assessment findings; demonstrate critical thinking in the analysis of physical findings; demonstrate the ability to assess risk and promote security and safety in the clinical environment; recognize and document health assessment variations in clients throughout the life span. Teaching strategies include lecture, discussion, demonstration, hands-on practice, audiovisuals, simulation laboratory experiences. NURS 251 is the first required clinical course; is offered each fall semester; and is limited to nursing students. Clinical experience with sections of 14 students is conducted in the Simulation Laboratory where students receive the individualized attention to facilitate learning the techniques of physical assessment. Annual enrollment is approximately 120 students who must successfully complete the course to progress in the nursing program."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Honors Seminar in Nursing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS200M",
+          "NURS225"
+        ]
+      },
+      "description": "Seminar activities on selected topics in nursing. NURS 300H Honors Seminar in Nursing (3) NURS 300H is designed to follow the introduction to nursing research course for honor students only. Each class session focuses on a different element of the honors thesis proposal. Objectives for the course include: Appraise strengths and opportunities for improvement in proposals for nursing research studies and systematic reviews; Apply strategies for establishing and sustaining effective mentor-mentee relationships; Describe the ethical issues involved in clinical research, with emphasis on investigators' responsibilities and participants' rights; Discuss current priority focus areas in nursing science; Compare and contrast thesis alternatives; Discuss selected research designs used for clinical research; Analyze opportunities for replication of clinical studies; Develop a three-chapter written proposal that lays the foundation for and establishes the approach to a relevant scholastic project for the honors thesis; Identify key factors to consider when planning for research dissemination The course is taught in the spring semester only and is open only to nursing honor students. Teaching strategies include lecture, student presentations, handouts, individual conferences, and written research consent forms and proposals. Evaluation criteria of the course include a critique, protection of human subject packet preparation, class participation, and at the end of this course, students will be expected to have a fully developed honors thesis proposal. Proposals will be evaluated on how convincing the argument is for the proposed research (literature review and identified knowledge gaps), the logical procession of the thinking, the clarity of the writing, and the significance of the proposed research to nursing."
+    },
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Nursing Care of the Adult Client Requiring Medical-Surgical Intervention",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NURS225",
+          "NURS230"
+        ],
+        "concurrent": [
+          "NURS305",
+          "NURS310"
+        ]
+      },
+      "description": "Therapeutic nursing care of the adult client in a variety of primarily medical-surgical settings. NURS 301 Nursing Care of the Adult Client Requiring Medical-Surgical Intervention (4) NURS 301 focuses on nursing care of adult client requiring medical-surgical intervention including. The course is placed in the junior year and is considered a beginning level medical-surgical course. Upon completion of this course, the student will be able to assess risks and promote the health and safety of the adult client throughout the lifespan; formulate nursing actions that are based on scientific principles and concepts from contributing disciplines in caring for the adult client to maximize outcomes; recognize pathophysiological and pharmacological aspects related to the nursing care of the adult medical surgical client; recognize the impact of stress on the adult client to incorporate health promotional and health educational activities; demonstrate the ability to communicate effectively across the health care delivery system; promote factors that create a culture of safety and caring for the adult medical-surgical client; utilize assessment data and technology to plan, implement and evaluate interventions specific to the health of the adult client; practice legal, ethical and professional accountability in the delivery of care to the adult client; demonstrate the ability to practice in a holistic, culturally competent and caring manner; demonstrate the ability to utilize evidence based practice and technology to assess and critically respond to the needs of the adult client; demonstrate with guidance the role of the professional nurse in caring for the adult client. Teaching strategies include lectures, discussions, audiovisuals, clinical experiences, and simulation laboratory. Clinical sections of 8-10 students spend 90 hours (2 credits) caring for medical surgical adult clients. Enrollment is approximately 120 nursing students split between University Park and Hershey Medical Center Campus and is offered fall semester of the junior year."
+    },
+    {
+      "number": 302,
+      "type": "course",
+      "title": "Clinical Judgement in Nursing",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "NURS225",
+          "NURS301",
+          "NURS305"
+        ]
+      },
+      "description": "NURS 302 is a one-credit - 45 hour faculty supervised clincal experience that focuses on the care of the adult medical surgical patient population. Upon completion of the course, the student will be able to analyze pathophysiological and pharmacological concepts when the planning the care and education of adult medical-surgical clients, demonstrate the continued ability to systematically approach the care and treatment of adult medical-surgical clients through a variety of methods, evaluate client outcomes of care and create new goals and interventions to promote positive client outcomes, incorporate the concepts of delegation and prioritization in the care of adult medical-surgical clients, and demonstrate effective intra-professional and inter-professional communication in planning and delivering safe and effective care of adult medical-surgical clients. Overall, course provides the concepts necessary for the student to better understand the clinical judgment and clinical reasoning needed to deliver safe, competent and comprehensive care to adult medical-surgical patients. The course is offered each spring semester."
+    },
+    {
+      "number": 303,
+      "type": "course",
+      "title": "Clinical Application of Laboratory Tests",
+      "credits": 1,
+      "description": "A study of the background, meaning, and nursing implications of laboratory test results. NURS 303 Clinical Application of Laboratory Tests (1) NURS 303 is a study of the background, meaning, and nursing implications of laboratory test results. It is designed to assist the nursing student in comprehending the patient's laboratory results in a clinical setting. Lab values are correlated to patient's condition and physiology of the disease process. Physical assessment data are compared to the various blood and urine lab test results also. Students are evaluated through written examination and the interpretation of case study scenarios. The course is offered in the spring semester and is open to all nursing students who have completed the introductory nursing course at the 200 level. Enrollment is not limited. The course objectives follow.Upon completion of this course, the student will be able to: a. Identify important clinical implications associated with a wide variety of blood and urine tests. b. Correlate lab data with physical assessment findings and other indicators of patient status. c. Recognize constellations of changes that may precede deterioration in clinical status. d. Discriminate between changes in lab values that require immediate reporting to the physician and those changes that do not require immediate reporting. e. Synthesize laboratory test results with assessment findings and pathophysiology and identify appropriate nursing actions."
+    },
+    {
+      "number": 305,
+      "type": "course",
+      "title": "Introduction to Pharmacological Concepts",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS225",
+          "NURS230"
+        ],
+        "concurrent": [
+          "NURS301",
+          "NURS310"
+        ]
+      },
+      "description": "Study of basic concepts of pharmacology and relevant nursing implications. NURS 305 Introduction to Pharmacological Concepts (3) NURS 305 is the introduction to pharmacological concepts and identifies the pharmacodynamics of major classifications of drugs. Prototypes or original drug models from which subsequent types arise are summarized. This course is closely linked to pathophysiology (a prerequisite) as most medications are administered based on a pathophysiologic condition. Pharmacologic principles covered in the course have practical application for students administering medications to clients in the clinical setting during the junior and senior years. Upon completion of this course, the student will be able to identify the measures taken in the United States to ensure drug safety; describe the process of drug development and evaluation; describe the methods of drug standardization; differentiate official and unofficial drug information sources; recognize the legal aspects and nursing responsibilities relative to the administration of drugs to ensure client safety; identify the pharmacodynamics of major classifications of drugs; recognize characteristics and nursing implications of the various types of pharmaceutical preparations and identify research related to pharmacology which influences nursing practice. Teaching strategies include videos, lectures, handouts and power point slides. Enrollment is limited to junior level nursing students or special permission from the instructor for non-nursing majors. The course is offered yearly during the fall semester."
+    },
+    {
+      "number": 306,
+      "type": "course",
+      "title": "Nursing Care of Children and Adolescents",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS305",
+          "NURS225",
+          "NURS230"
+        ]
+      },
+      "description": "Common health problems and nursing intervention for children and adolescents. NURS 306 Nursing Care of Children and Adolescents (3) NURS 306 focuses on common health problems and nursing intervention for children and adolescents. Upon completion of this course, the student will be able to formulate nursing actions that are based on scientific principles and concepts from contributing disciplines in caring for children and adolescents to maximize client care outcomes; develop interpersonal skills in responding in a humanistic manner to the unique needs of children, adolescents, and their families; recognize pathophysiological and pharmacological aspects related to the nursing care of the adult medical surgical client; assess the health needs of diverse populations of children and adolescents based on an understanding of the developmental, psychosocial, environmental, and cultural variables with an emphasis on health promotion; evaluate nursing care in a variety of settings to meet the health needs of children of various ages; utilize assessment data and technology to plan, implement, and evaluate interventions specific to the health care needs relevant to the characteristics of the child and adolescent client in interaction with the personal and suprapersonal environments; evaluate nursing care in a variety of settings to meet the health needs of children of various ages and promote healthy lifestyles; collaborate with colleagues in nursing and other health professions to promote the well being of children and adolescents in a variety of settings including the community; relate relevant research findings to child health nursing practice; practice legal, ethical and professional accountability in the delivery of child health care; participate in activities that advance personal and professional development, cultural competency, and the professional specialty of pediatric nursing and promote factors that create a culture of safety and caring for children and adolescents. Teaching strategies include lecture, discussion, audiovisuals, hands-on clinical care, laboratory simulation experiences. Emphasis is placed on delivery of safe and competent nursing care. Clinical sections of 8-10 students spend 45 hours caring for child/adolescent clients in a variety of settings (clinics, day care centers, elementary schools, and hospitals). Enrollment is approximately 120 nursing students (split between UP and HMC) and the course is offered each spring semester of the junior year."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Therapeutic Nursing Care of the Older Adult Client in a Variety of Settings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS225",
+          "NURS230"
+        ],
+        "concurrent": [
+          "NURS301",
+          "NURS305"
+        ]
+      },
+      "description": "Nursing concerns and intervention in promoting the health of the older adult. NURS 310 NURS 310 Therapeutic Nursing Care of the Older Adult Client in a Variety of Settings (3) NURS 310 focuses on nursing concerns and interventions in promoting the health of older clients. Upon completion of the course, the student will be able to utilize knowledge about aging from nursing and contributing disciplines as a foundation for nursing practice with the older adult client; recognize pathophysiological and pharmacological aspects related to the nursing care of the older adult client; demonstrate progressive development of communication skills including technology which supports the health care needs of the older adult client; promote factors that create a culture of safety and caring for the older adult client; utilize assessment data and technology to plan, implement, and evaluate interventions specific to the health of the older adult client; evaluate nursing care in a variety of settings to meet the health needs of the older adult client and promote healthy lifestyles; communicate pertinent client information, plan of care, and evaluation of goals to staff, instructors and other members of the health team; apply evidence based practice to maximize client outcomes in health promotional and educational activities for the older adult client; demonstrate with guidance the role of the professional nurse in caring for the older adult client; participate in activities that advance the personal and professional development, cultural competency in the professional specialty of gerontological nursing; practice legal, ethical and professional accountability in the delivery of care to the older adult client; recognize the importance of interdisciplinary care in meeting the bio-psycho-social needs of patients and families receiving end-of-life care. Teaching strategies include lecture, discussion, hands-on clinical care and simulation laboratory experiences. Clinical sections of 8-10 students spend 45 hours caring for clients in nursing homes and community settings with the focus on environmental assessment, individual health teaching and group health teaching. The course is offered fall semester and enrollment is approximately 120 nursing student (60 at UP and 60 at HMC)."
+    },
+    {
+      "number": 320,
+      "type": "course",
+      "title": "Nursing Care of the Childbearing Family and Gynecological Client",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS305"
+        ]
+      },
+      "description": "Therapeutic nursing care of the chilbearing family and gynecological client. NURS 320 NURS 320 Nursing Care of the Child Bearing Family and Gynecological Client (3) NURS 320 focuses on providing therapeutic nursing care of child-bearing family and gynecological client. Upon completion of this course, the student will be able to utilize knowledge from nursing and contributing disciplines related to reproductive health concerns, life events and health alterations of the child bearing family and gynecological client to maximize client care outcomes; recognize pathophysiological and pharmacological aspects related to the nursing care of the child bearing and gynecological client; demonstrate progressive development of communication skills including technology which supports the child bearing family and gynecological client; promote factors that create a culture of safety and caring for the child bearing family and gynecological client; assess the reproductive health of the child bearing family and gynecological client within the context of the developmental process and the personal and suprapersonal environments; utilize assessment data and technology to plan, implement, and evaluate interventions specific to the health of the child bearing family and gynecological client; evaluate nursing care in a variety of settings to meet the health needs of the child bearing family and promote healthy lifestyles; communicate pertinent client information, plan of care, and evaluation of goals to staff, instructors and other members of the health team; apply evidence based practice to maximize client outcomes in health promotional and educational activities for the child bearing family and gynecological client; demonstrate with guidance the role of the professional nurse in caring for child bearing families and gynecological client; participate in activities that advance the personal and professional development and cultural competency in the professional specialty of obstetric and gynecological nursing; practice legal, ethical and professional accountability in the delivery of care to the child bearing family and gynecological patient. Teaching strategies include lecture, clinical experiences and laboratory simulation, discussion, post clinical conferences, audiovisuals-slides and case studies. The course is offered spring semester of the junior year with an approximate enrollment of 120 nursing students (split between UP and HMC) and with clinical sections limited to 10 students per section."
+    },
+    {
+      "number": 325,
+      "suffix": "N",
+      "type": "course",
+      "title": "Health and Environmental Sustainability",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "internalEquivalents": [
+        "SUST325N"
+      ],
+      "description": "NURS / SUST 325N : Health in Environmental Sustainability; 3 credits. (Inter-Domain), (GHW), (GN). People live in constant contact with the environment: the built environment of homes, offices, and industrial facilities, as well as in cities or less developed areas such as farms or in nature / the outdoors. How do the air we breathe, the water we drink, the land we live on, the food we eat, and the materials and chemicals we use in these environments impact our health? At a time when nations are spending up to 1/6th of their budgets on healthcare, it is critical to understand how we impact the environment and how it impacts us back. This course covers the importance of environmental health on individual and community health, the effects of environmental hazards on diverse populations and the impact of climate change on disease. It also reviews best practices for environmental health, for building healthy communities, and introduces students to environmental health advocacy. A beneficial environment sustains human health and the well-being of all species on the planet."
+    },
+    {
+      "number": 350,
+      "type": "course",
+      "title": "Professional Role Development II: Ethics, Legal and Genomic Issues",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "NURS225",
+          "NURS230"
+        ]
+      },
+      "description": "The study of the interaction of ethical, legal, and genomic concepts as they apply to current health care practice. NURS 350 Professional Role Development II: Ethics, Legal and Genomic Issues (2) NURS 350 is the second of three professional role development courses and addresses the interaction of ethical, legal and genomic concepts as they apply to current health care practice. Upon completion of the course the student will be able to define the fundamental ethical theories; define and integrate into evidence based practice the basic ethical concepts as they relate to nursing; state the American Nurses' Association Code of Ethics for Nurses; demonstrate ethical behaviors such as honesty, integrity, responsibility, and dependability in clinical practice and everyday life; define and describe the concepts of standards of care and scope of practice; analyze nurse practice acts as they pertain to licensure and scope of practice; define the concepts of negligence verses malpractice; define and distinguish between the concepts of informed consent, patient selfdetermination, right of refusal, and advance directives (such as living wills, durable power of attorney, and do not resuscitate orders); analyze the role of advocacy from an ethical and legal perspective; communicate effectively (including the use of new technologies) with patients and families regarding legal, ethical, and genomic issues; describe the concept of confidentiality from ethical and legal perspectives; identify the impact genomics has played in the practice of health care; describe the historical to current research findings in genomics that have or may change health care practice guidelines; identify the role ethics, legal issues, and genomicss plays in providing health care to culturally sensitive populations; analyze and discuss historical and current biomedical dilemmas utilizing various ethical, legal and genomic perspectives. Teaching strategies include lecture, discussion, audiovisuals, small group activities, role- playing and group presentations. The course is offered fall semester and enrollment is limited to nursing majors."
+    },
+    {
+      "number": 352,
+      "type": "course",
+      "title": "Advanced Health Assessment for the Registered Nurse",
+      "credits": 3,
+      "description": "RECOMMENDED PREPARATION: NURS MAJOR CONTROL NURS 352 is a course designed to extend the RN student's knowledge and skills in health assessment and physical examination across the lifespan. The course includes 45 hours of clinical and is intended for students who are already nurses and who have relevant basic education of health and physical assessment. This course enhances the RN student's knowledge base with more advanced techniques of interview and examination. The course demands higher-level thinking about complex health assessment challenges and prepares RN students for health assessment study at the graduate level."
+    },
+    {
+      "number": 357,
+      "type": "course",
+      "title": "Introduction to Nursing Informatics",
+      "credits": 3,
+      "description": "NURS 357 is an introduction to nursing informatics focusing on technology applications to the nursing profession. This course provides a broad overview of nursing informatics and the various applications of informatics principles in the healthcare setting. Students will explore the data-information-knowledge-wisdom paradigm of informatics and gain an appreciation of how informatics principles contribute to nursing knowledge and practice. Students will assess personal informatics competencies and set goals for building informatics skills, and explore future trends in healthcare technologies."
+    },
+    {
+      "number": 390,
+      "type": "course",
+      "title": "Transition and the Professional Nursing Role",
+      "credits": 3,
+      "description": "Transition to baccalaureate education and professional nursing practice, emphasizing leadership, management, and issues influencing nursing education and practice. NURS 390 Transition and the Professional Nursing Role (3) (US) NURS 390 is the first nursing course that the registered nurse (RN) student completes. The course's intent is to set the groundwork for transition of the RN to baccalaureate education and professional nursing practice. With the emphasis being on leadership, management, and issues influencing nursing education and practice, the RN has the foundation on which to build nursing expertise as nursing courses progress. The course prerequisite is a current and valid RN license. Teaching strategies include: lecture, discussion, audiovisuals, self-assessment, reflective analysis, critical thinking/problem solving, computer assignments and active/collaborative learning. Evaluation of the course is by grading of written assignments, presentations, and testing. The course is offered in fall, spring or summer semesters of the junior year with a projected enrollment of 10 - 15 students, and is a prerequisite to other nursing courses. Upon completion of this course, the student will be able to: 1. Explain the processes inherent in successful transition to the role of the baccalaureate repared nurse. 2. Analyze the influences that impact role development and nursing practice, especially self-regulation and accountability. 3. Appraise the health care environment as it relates to nursing roles and nursing practice. 4. Measure the impact of nursing theory and research on baccalaureate level nursing practice. 5. Evaluate the importance of nursing research to nursing practice and the legislative arena. 6. Critically analyze issues that influence nursing education and practice today and in the future."
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Nursing Study in Specialized Setting",
+      "credits": 1,
+      "description": "Designed to provide student with in-depth study and practice in clinical."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Concepts of Health",
+      "credits": 3,
+      "description": "Exploration of current and ancient concepts of health and their respective modes of intervention."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Holistic Health",
+      "credits": 3,
+      "description": "Examination of emerging conceptualizations of health and therapy based on a holistic view of human beings."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "School Health and Emergency Care of Children and Adolescents",
+      "credits": 3,
+      "description": "Techniques for higher-level care for school health and emergency situations and application-based education. NURS 403 School Health and Emergency Care of Children and Adolescents (3)This course is a part of the school nurse series and will provide participants with advanced techniques for school health professionals that respond to health and emergency situations. The topics covered will include abdominal, genitourinary, head, musculoskeletal, and sports-related injuries. Students also will review shock, respiratory, neurologic, psychological and behavioral emergencies, and a wide array of issues facing students with special needs. Additionally, the participant will review disaster planning, preparation, and response activities. The course will review major medical and accidental situations facing the school nurse including the inter-agency coordination with emergency response systems and community entities. Students will learn what to include in a report for the communication center and emergency medical services. Skills stations for orthopedic injuries, trauma, and medical situations will allow students to practice skills and receive immediate feedback. Students will participate in application based education that utilizes case studies to pull the concepts together. Students will be asked to provide return demonstration for skills reviewed in this course."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Cardiac Dysrhythmias: Interpretation, Treatment, and Nursing Management",
+      "credits": 1,
+      "description": "An introductory course with a focus on dysrhythmia recognition and interpretation of abnormal 12-lead electrocardiograms (EKG, ECG). NURS 404 Cardiac Dysrhythmias: Interpretation, Treatment, and Nursing Management NURS 404 (Cardiac Dysrhythmias: Interpretation, Treatment, and Nursing Management) is an introductory course in dysrhythmia recognition and interpretation of normal and abnormal rhythm strips and 12-lead electrocardiograms. The course involves integration of electrophysiology principles, anatomy, physiology, and arrhythmogenesis in interpretation of dysrhythmias. The diagnosis, medical treatment, and nursing management will be incorporated through case study analysis. Evaluation of course content will be done through exams, in class worksheets, and case study analysis. The class is open to nursing and non-nursing majors desiring introductory understanding of cardiac dysrhythmias. NURS 404 is a good course for nursing majors interested in critical care and non-nursing majors interested in emergency medical services associated with any major (e.g., Kinesiology). The class is offered fall and/or spring semester with enrollment limited (20 students) to allow interactive hands-on interpretation of dysrhythmias."
+    },
+    {
+      "number": 405,
+      "suffix": "A",
+      "type": "course",
+      "title": "Nursing Care of the Adult Client with Complex Health Problems: Part A",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NURS305"
+        ]
+      },
+      "description": "In-depth study of care of patients with acute and complex health problems, utilizing evidence based practice. NURS 405A - Nursing Care of the Adult Client with Complex Health Problems: Part A (4) NURS 405A focuses on nursing care of adult clients with acute and complex health problems related to all major systems of the body. Upon completion of this course, the student will be able to synthesize knowledge from nursing and contributing discipline to maximize client care outcomes; recognize pathophysiological and pharmacological aspects related to the nursing care of the adult client; demonstrate the ability to communicate effectively including the use of technology with patients, families and the health care team; promote factors that create a culture of safety and caring for the adult client; demonstrate the ability to perform a comprehensive and systematic assessment and take appropriate nursing actions for the client with complex health problems; collaborate with colleagues from nursing and related disciplines using empirical and theoretical resources when defining nursing care priorities and determining nursing actions; utilize assessment data and technology to plan, implement, and evaluate interventions specific to the complex health problems of the adult client; participate in activities that advance the personal and professional developmental and cultural competency in the professional specialty of adult medical-surgical nursing; practice legal, ethical and professional accountability in the delivery of care to the adult medical-surgical client; apply evidence based practice to maximize client outcomes in health promotional and educational activities for the complex health needs of the adult client; demonstrate current and relevant knowledge of the social, health, behavioral and psychological sciences that can be applied to nursing practice for the adult client; demonstrate increasing self direction and confidence in providing nursing care for the adult client with complex health needs; demonstrate the role of professional nurse as a client advocate; demonstrate the ability to assess risk and actively promote the well being, safety, and security (patients and coworkers) in the work environment; demonstrate the ability with guidance to lead and coordinate a team, delegating care appropriately and safely; demonstrate the ability to respond appropriately to the emotional, psychological and spiritual needs of the adult client with complex care needs.Teaching strategies include lecture, discussion, laboratory simulation and clinical experiences. Evaluation methods include examinations, scholarly papers, simulation laboratory experiences, preclinical preparatory written work, and mid-course and final clinical performance evaluations."
+    },
+    {
+      "number": 405,
+      "suffix": "B",
+      "type": "course",
+      "title": "Nursing Care of the Adult Client with Complex Health Problems: Part B",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NURS305",
+          "NURS350"
+        ]
+      },
+      "description": "In-depth study of care of patients with acute and complex health problems, utilizing evidence based practice. NURS 405B - Nursing Care of the Adult Client with Complex Health Problems: Part B (4) NURS 405B focuses on nursing care of adult clients with acute and complex health problems related to all major systems of the body. The emphasis is on enhancing critical thinking skills necessary for making sound nursing judgments and the demonstration of self-direction in providing nursing care for clients with complex medical surgical problems. Upon completion of this course, the student will be able to: Synthesize knowledge from nursing and contributing discipline to maximize client care outcomes; Recognize pathophysiological and pharmacological aspects related to the nursing care of the adult client; Demonstrate the ability to communicate effectively including the use of technology with patients, families and the health care team; Promote factors that create a culture of safety and caring for the adult client; Demonstrate the ability to perform a comprehensive and systematic assessment and take appropriate nursing actions for the client with complex health problems; Collaborate with colleagues from nursing and related disciplines using empirical and theoretical resources when defining nursing care priorities and determining nursing actions; Utilize assessment data and technology to plan, implement, and evaluate interventions specific to the complex health problems of the adult client; Participate in activities that advance the personal ain the professional specialty of adult medical-surgical nursing; Practice legal, ethical and professional accountability in the delivery of care to the adult medical-surgical client; Apply evidence based practice to maximize client outcomes in health promotional and educational activities for the complex health needs of the adult client; Demonstrate current and relevant knowledge of the social, health, behavioral and psychological sciences that can be applied to nursing practice for the adult client; Demonstrate increasing self direction and confidence in providing nursing care for the adult client with complex health needs; Demonstrate the role of professional nurse as a client advocate; Demonstrate the ability to assess risk and actively promote the well being, safety, and security (patients and coworkers) in the work environment; Demonstrate the ability with guidance to lead and coordinate a team, delegating care appropriately and safely; Demonstrate the ability to respond appropriately to the emotional, psychological and spiritual needs of the adult client with complex care needs. Teaching strategies include lecture, discussion, laboratory simulation and clinical experiences. The course is offered fall semester with approximately 120 students enrolled (60 at UP and 60 at HMC) with clinical sections limited to 10 students per section."
+    },
+    {
+      "number": 407,
+      "type": "course",
+      "title": "Drugs of Abuse and Mental Health Issues",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "RECOMMENDED PREPARATION FOR NURS 407 IS BB H 143 OR PSYCH 100 . NURS 407 examines the issue of substance abuse in today's society. It looks closely into the health care needs across the lifespan of clients who have an alcohol or other drug disorder in combination with a psychiatric disorder. Pharmacological, behavioral, biological, and sociocultural characteristics, along with factors and patterns of addiction, are discussed and then how these factors and characteristics relate to mental illnesses are further explored. The different classes of habit-forming drugs (alcohol, stimulants, marijuana, hallucinogens, inhalants and prescription drugs) are covered and various treatment options are examined."
+    },
+    {
+      "number": 408,
+      "type": "course",
+      "title": "Clinical Application of Pharmacological Concepts",
+      "credits": 1,
+      "description": "Study of the application of pharmacological concepts to the clinical setting. NURS 408 Clinical Application of Pharmacological Concepts (1) NURS 408 is an elective course designed to provide the interested student an in-depth review of pharmacology. The application of pharmacological concepts in relation to the clinical setting is a primary focus of the course. The various drug classes are discussed with emphasis placed on care of the patient while administering different types of medications. Discussion of pharmacological principles and patient care requires knowledge and integration of anatomy, physiology, pathophysiology, and medical and nursing treatments for various disorders. NURS 408 provides an excellent review of medication classes as related to medical condition in preparation of the nursing student taking the NCLEX licensure examination upon graduation. The student is evaluated by written examination and/or case study interpretation. NURS 408 is placed in the spring semester and is open to all nursing students who have successfully completed administering medications in the 300 level nursing courses and are concurrently enrolled in the 400 level nursing courses. Enrollment is not limited in numbers. Course objectives are as follows.Upon completion of this course, the student will be able to: a. Categorize commonly used medications by major classifications of drugs. b. Predict classifications of medications given to specific clinical conditions. c. Develop patient teaching plans relevant to medication administration. d. Discuss research related to pharmacology which influences nursing practice."
+    },
+    {
+      "number": 409,
+      "type": "course",
+      "title": "Introduction to Forensic Nursing",
+      "credits": 3,
+      "description": "Provides an introduction to the forensic health sciences, forensic nursing, and the nursing role in the scientific investigation of violence. RECOMMENDED PREPARATION FOR NURS 409 IS NURS225, NURS 230 , NURS 250 . NURS 409 is an elective course and the first of three courses in a forensic nursing certificate. The course is designed to provide an introduction to the forensic health sciences, forensic nursing, and the nursing role in the scientific investigation of violence. The course focus is on the principles and philosophy of forensic nursing in acute care and community settings and the roles of the forensic science professional. The responsibilities of the advanced practice forensic nurse are explored. The course requires that the student have a basic understanding of the professional healthcare role, specifically that of the nurse. The course is appropriate for non-nursing majors interested in forensic health sciences."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Forensic Evidence Collection and Preservation",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "NURS245",
+          "NURS409"
+        ]
+      },
+      "description": "Examines nurses' role of recognizing patterns of injury. Evidence collection procedures are examined from collection to courtroom presentation, includes autopsy. Forensic Evidence Collection and Preservation examines the forensic nurse's role recognizing injuries/patterns of injury. Evidence collection procedures are examined from collection to courtroom presentation. NURS 410 will guide the student through a prerecorded autopsy, teaching general evidence identification, collection, preservation, and documentation techniques as well as a complete sexual assault kit evaluation. Students will be immersed in a case study allowing them to learn and then demonstrate their understanding of forensic procedures and protocols. Students follow actual forensic protocol used in practice including policies, procedures, and documentation tools. The final course evaluation includes an interactive assessment that draws upon the techniques taught in the course and prepares the student for employment in a forensic role."
+    },
+    {
+      "number": 411,
+      "type": "course",
+      "title": "Seminar in Forensic Nursing",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "NURS410"
+        ]
+      },
+      "description": "Seminar to discuss current topics, trends and research related to forensic nursing."
+    },
+    {
+      "number": 415,
+      "type": "course",
+      "title": "Community and Family Health Nursing",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NURS305"
+        ]
+      },
+      "description": "NURS 415 Community and Family Health Nursing - Concepts and Applications (4) (US;IL) NURS 415 US;IL focuses on nursing care of clients in the community and the family. This course allows students to work independently providing and improving health care of population groups within a diverse society. Upon completion of this course, the student will be able to synthesize knowledge from nursing, public health, family, and community theory as a foundation for culturally congruent community health nursing practice; utilize the nursing process and principles of primary, secondary, and tertiary prevention that are culturally appropriate in the care of community based clients who differ in terms of age, developmental stage, health beliefs values and practices; demonstrate interpersonal skills necessary for collaboration with and among culturally diverse consumers, community agencies, health professionals, and health related resources in the community; demonstrate the management and safety of client, family, and community care through appropriate use of concepts of leadership, case management, and group process; demonstrate understanding of epidemiological methods in gathering, analyzing, and utilizing data and be able to apply to diverse populations in the community; use coherent comprehensive, culturally sensitive and age appropriate communication in oral and written form; analyze biostatistical/epidemiological data and nursing evidence-based research findings to improve/enhance the delivery of nursing care to diverse populations in the community; identify recommended health screenings and immunizations and health promotional strategies throughout the life span; analyze the impact of culture as a significant influence on the health perceptions, interpretations, and behaviors of diverse groups; demonstrate the ability to perform comprehensive and risk assessments, to make critical decisions, and to take appropriate nursing actions in the area of community health; demonstrates the ability to practice the principles of health and safety in a caring manner to maximize client care outcomes across the lifespan. Teaching strategies include lecture, audiovisuals, student presentations, discussion, clinical experiences, guest speakers, laboratory simulation and clinical experiences in varied clinical settings where the students are responsible for assessing, planning, implementing, and evaluating the care of families within the context of a community. Students have the opportunity to analyze the impact of culture on health perceptions, interpretations, and behaviors of diverse groups."
+    },
+    {
+      "number": 417,
+      "type": "course",
+      "title": "Family and Community Health Concepts",
+      "credits": 4,
+      "description": "Study of the concepts of family and community based nursing care emphasizing multicultural influences on health practices. NURS 417 Family and Community Health Concepts (4) (US;IL) Upon completion of the course the student will be able to (a) Synthesize knowledge from nursing, public health, family, and community theory as a foundation for culturally congruent community health nursing practice that is sensitive to race, religion, gender, disability and sexual orientation; (b) Utilize the nursing process and principles of primary, secondary and tertiary prevention that are culturally appropriate in the care of community based clients who differ in terms of health beliefs, values, and practices; (c) Develop skill in the use of independent/interdependent nursing actions to deliver care to clients across the life span; (d) Demonstrate the management of client, family, and community care through appropriate use of concepts of leadership, case management and group process; (e) Describe collaboration at the collegial level with nurses and other members of the health care team to provide continuity of care through culturally appropriate communication, consultation, and referral; (f) Use coherent, comprehensive and culturally sensitive communication in oral and written form; (g) Analyze biostatistical/epidemiological data and nursing research findings to improve/enhance the delivery of nursing care to diverse populations in the community; (h) Analyze the impact of culture as a significant influence on the health perceptions, interpretations, and behaviors of diverse groups.Students will spend 40 hours practicing in a clinical setting. In that setting they will be responsible for assessing, planning, implementing and evaluating the care of families within the context of a community. Students will have the opportunity to analyze the impact of culture on health perceptions, interpretations, and behaviors of diverse groups.Evaluation methods: Students will be evaluated both theoretically and clinically by use of the following: (a) Guided study of complex family and community health patterns using collaboration case analysis; (b) Case findings and analysis; (c) Direct care to culturally diverse families in the community setting.Relationship/linkage of course to other courses: This course applies and integrates family and community nursing concepts to culturally diverse clients in the community. It is offered at the senior level and incorporates previously learned theoretical and clinical nursing knowledge with an appreciation for how diversity influences the health care behaviors of families and communities as they relate to the health care system.Relationship of course to major: This senior level nursing course is one of the components of the Advanced Standing Option. It is a required course that provides students with the opportunity to develop skill in delivery of health services to globally diverse populations across the life span. It is also designed to increase the student's knowledge base related to the community based client including relationships, lifestyle and kinship patterns. Lastly, it provides an arena for community health planning for diverse populations.Special facilities required to teach the course: The clinical arena which will be used to teach this course includes but is not limited to high risk populations in the community, senior or special housing projects, prisons and missions.Frequency of offering an enrollment: The course will be offered every semester and enrollment varies from 10 to 20 students."
+    },
+    {
+      "number": 420,
+      "type": "course",
+      "title": "Mental Health Nursing",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NURS305",
+          "NURS350"
+        ]
+      },
+      "description": "Emphasizes clinical application of mental health theory in nursing care of patients with acute and chronic mental health problems. NURS 420 NURS 420 Mental Health Nursing (4) NURS 420 focuses on care of clients experiencing mental health problems and emphasizes the clinical application of mental health theory in nursing care of patients with acute and chronic mental health problems. Upon completion of this course, the student will be able to synthesize knowledge from nursing and the social, health and behavioral sciences to describe the nature of mental adaptations throughout the lifespan; demonstrate effective therapeutic communication skills when dealing with clients, groups and families experiencing maladaptive responses to stress; assess the strengths and weaknesses of the client and family in the context of a group and community environment; demonstrate the ability to perform comprehensive and risk assessments, to make critical decisions, and to take appropriate nursing actions in the area of psychiatric mental health; utilize the nursing process as related to the Standards of Psychiatric and Mental Health Nursing practice; collaborate with nursing colleagues, mental health professionals and consumers in the practice of psychiatric mental health nursing; analyze individual and societal forces that effect nursing research and evidence based practice in the area of psychiatric mental health nursing; demonstrate the knowledge of self needed to be an effective therapeutic agent and a client advocate; demonstrate culturally competency and the ability to provide holistic psychiatric mental health nursing care; perform the principles of psychiatric mental health and safety in a caring, nonjudgmental manner; demonstrate a current and relevant knowledge base of legal and ethical issues that can be applied to psychiatric mental health nursing; identify and support mental health promotion and mental health educational activities to maximize client care outcomes and evaluate psychiatric mental health nursing as a professional specialty. Teaching Strategies include lecture, process recordings, discussion, selected readings, audiovisuals, laboratory simulation and clinical experiences. NURS 420 is offered fall and spring semesters with an annual enrollment of approximately 120 students (60 at UP and 60 at HMC) with clinical sections limited to 10 students each."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Organization and Administration for the Nurse Manager",
+      "credits": 3,
+      "description": "Introduction to organizational theory and principles of practice in the administration of nursing services and patient care. NURS 430 Organization and Administration for the Nurse Manager (3) NURS 430 is the first of four courses included in the nursing management series, which focuses on leadership and management in nursing. NURS 430 includes a study of the history of American management and the influences on management styles and approaches. Topics covered in the course includes: Leadership theory, Change theory, Health care organizational structure and functions, Legal and Ethical issues, Nursing Management structure, function, and roles, Power and politics; Communication; and Nursing care delivery systems."
+    },
+    {
+      "number": 431,
+      "type": "course",
+      "title": "Data Management for Nurse Managers",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "NURS430"
+        ]
+      },
+      "description": "Analysis of information systems to manage nursing service organizations; includes financial management, the budgeting processes, and productivity measurement. NURS 431 NURS 431 Data Management for Nurse Managers (3) NURS 431 is the second of four courses included in the nursing management series, which focuses on leadership and management in nursing. NURS 431 includes a study of information systems and financial aspects of managing health care organizations and patient care delivery. Topics covered in the course include: Information systems in health care, Electronic medical record, Security and portability of health care information. Topics related to budget and finance include, operating and capital budget management, nurse staffing systems and productivity. Lab activities enable students to develop proficiencies with spreadsheet software. The course is offered in traditional classroom instruction, on-line through ANGEL at selected campus sites and through World Campus. Course evaluation criteria may include examination, case studies, and student projects or presentations as assigned by the faculty. Upon completion of all 4 courses, students receive a certificate of completion of the Nursing Management Series from the school of nursing."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Nursing Management of Human Resources",
+      "credits": 3,
+      "description": "Human resource management and related factors in nursing service organizations. NURS 432 NURS 432 Nursing Management of Human Resources (3) NURS 432 is the third of four courses included in the nursing management series, which focuses on leadership and management in nursing. NURS 432 includes a study of human resource management with an emphasis on application to nursing and health care organizations. Topics covered in the course include: Employment laws, hiring, termination and managing staff turnover, conflict management, staff development and productivity, organized labor and unions, the impaired nurse, and discussion of nursing standards, ethics, delegation and the nursing shortage. The course is offered in traditional classroom instruction, on-line through ANGEL at selected campus sites and through World Campus. Course evaluation criteria may include examinations, case studies, and student projects or presentations as assigned by the faculty. Upon completion of all 4 courses, students receive a certificate of completion of the Nursing Management Series from the school of nursing."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Seminar for Nurse Managers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS430"
+        ]
+      },
+      "description": "Course focuses on the application of management principles in the role of the nurse manager. NURS 433 NURS 433 Seminar for Nurse Managers (3) NURS 433 is the fourth of four courses included in the nursing management series, which focuses on leadership and management in nursing. NURS 433 is designed to allow the student to explore issues that challenges individuals in the nurse manager role. Designed with a seminar approach the student will study the following topics: The future of nursing leadership, mentoring, networking, stress management for the nurse manager and avoiding burnout, managing patient care quality and regulatory compliance, and implementing change. Students also complete a field observational study with a nurse manager or nurse executive in a health care organization. It is recommended that students complete at least one of the previous nursing management ( NURS 430 , NURS 431 , NURS 432 ) courses prior to enrolling in this course. The course is offered in traditional classroom instruction, on-line through ANGEL at selected campus sites and through World Campus. Course evaluation criteria may include examinations, case studies, and student projects or presentations as assigned by the faculty. Upon completion of all 4 courses, students receive a certificate of completion of the Nursing Management Series from the school of nursing."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Trauma/Critical Care Nursing",
+      "credits": 3,
+      "description": "Focuses on the impact of and the nursing care of persons experiencing acute trauma and/or critical illness. NURS 440 NURS 440 Trauma/Critical Care Nursing (3) NURS 440 is designed as an introductory study of the impact of like-threatening physical problems across the life-span utilizing the nursing process. The course focuses on problems encountered in the hospital critical care setting and is a nursing elective. Upon completion of this course, the student will be able to meet the following objectives: Integrate knowledge from nursing and related disciplines into case study format for persons with life-threatening illnesses; Explore practice, ethical, legal and interpersonal dimensions within the critical care setting. Identify problems for nursing critical care research. Study the most common illnesses in the critical care setting for the neurological, respiratory, cardiac, renal, gastro-intestinal, trauma and multiple system organ failure systems. Students incorporate academic learning with some case study review to simulate the critical care setting. Success in the course is evaluated by in-class examinations, assigned research readings, and written critiques. NURS 440 is offered in the spring semester only, with an average enrollment of 40 students."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Nursing Care of America's Veterans: An Introduction Into the Care of Military Veterans",
+      "credits": 3,
+      "description": "This course offers information on caring for the unique population of United States military veterans. NURS 441 Nursing Care of America's Veterans: An Introduction Into the Care of Military Veterans (3) This course provides in-depth information on the American Veteran population from a nursing perspective. Nursing education focusing on the needs of this specific culture will result in improved patient care and outcomes for veterans. Health care needs are reviewed from the physical, emotional, social, and cultural aspects of care. The history of the Veterans Health Administration (VHA)/Veterans Administration (VA) system will be discussed as well as the benefits available for eligible veterans. Through addressing current events surrounding the VA quality care issues and access to care, nursing students will gain insight into the health care and health maintenance challenges experienced by many veterans in the United States."
+    },
+    {
+      "number": 450,
+      "suffix": "A",
+      "type": "course",
+      "title": "Professional Role Development III: Leadership and Management",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "NURS305",
+          "NURS350"
+        ]
+      },
+      "description": "Study of leadership roles and various styles of nursing management and their implications for the professional nurse. NURS 450A - Professional Role Development III: Leadership and Management (2) NURS 450A is the senior level professional role development course that focuses on delegation of care, leadership and management. Upon completion of the course, the student will be able to analyze influences which impact on role development and nursing practice; recognize the significance of professional, ethical, regulatory and legal codes within the context of nursing practice; recognize nursing skills necessary to respond to the client's needs throughout the life span including end of life issues; recognize current and relevant knowledge of leadership and management theory as it relates to the health care environment; recognize current and relevant knowledge of ethical, legal, national and international policies as it relates to the health care environment; demonstrates current knowledge of nursing research and modern technologies to recognize nursing care that is rigorous and evidence based; assess the nursing profession's responsibility for self-regulation and accountability in order to maximize client care outcomes; demonstrates the ability to promote, support, and facilitate the health, well being, and comfort of vulnerable populations as to enhance the quality of service delivery; recognize the principles of leadership, accountability and delegation that promote the well being, safety and security of patients and coworkers; recognize and promote the ability to communicate effectively (including the use of technology) with patients, families, social groups and the health care team; demonstrates increased awareness of the nurse generalist role and the value of life- long learning. Teaching strategies include lecture, audiovisuals, student presentations, discussion, guest speakers, simulation and role-playing. The course is offered each fall semester with approximately 120 students enrolled."
+    },
+    {
+      "number": 450,
+      "suffix": "B",
+      "type": "course",
+      "title": "Professional Role Development III: Clinical Capstone",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS305",
+          "NURS350"
+        ]
+      },
+      "description": "Senior level clinical capstone course that emphasizes the integration and application of theory and evidence based practice. NURS 450B is the clinical capstone course for the Nursing Program and provides a total of 135 clinical hours. Ninety (90) clinical hours will be spent with a preceptor in a clinical setting, where the student will be responsible for assessing, planning, implementing and evaluating the care of clients and will have the opportunity to employ management and delegation skills in the care of clients. The remaining 45 clinical hours will be obtained from simulation, case studies and other course work such as NCLEX review. All clinical hours focus on preparing the student to transition into the Registered Nurse role. Upon completion of this course, the student will be able to demonstrate the ability to practice in a holistic, culturally competent and caring manner; demonstrate the ability to practice within the context of professional, ethical, regulatory and legal codes of nursing practice; demonstrate the ability to promote, support, and facilitate the health, well-being, and comfort of vulnerable populations so as to enhance the quality of service delivery; demonstrate the ability to perform comprehensive and systematic assessments and take appropriate actions; demonstrate the ability to utilize evidence based practice and modern technologies to assess and respond appropriately to patient needs; utilize nursing skills to provide optimum care and to practice principles of health and safety in a caring, nonjudgmental manner; utilize nursing skills to respond to a person's needs throughout the life span, i.e. life choices, disability, and end of life issues; demonstrate current and relevant knowledge of the social, health, and behavioral sciences that can be applied to nursing practice; demonstrate current and relevant knowledge of ethical, legal, national, and international policies that can be applied to nursing practice; demonstrate current knowledge of nursing research to provide nursing care that is rigorous and evidence based; demonstrate the ability to communicate effectively (including the use of technology) with patients, families, social groups and the health care team; identify, manages and support health promotion and health educational activities to optimize patient safety and well-being; demonstrate the ability to lead and coordinate a team, delegating care appropriately; demonstrate the ability to assess risk and actively promote the well-being, safety, and security (patients and coworkers) in the work environment; demonstrate increased confidence in the nurse generalist role and in the value of life-long learning."
+    },
+    {
+      "number": 450,
+      "suffix": "C",
+      "type": "course",
+      "title": "Capstone Clinical Immersion",
+      "credits": 7,
+      "requisites": {
+        "previous": [
+          "NURS225",
+          "NURS301",
+          "NURS305",
+          "NURS350"
+        ],
+        "concurrent": [
+          "NURS450A",
+          "NURS480",
+          "NURS200W"
+        ]
+      },
+      "description": "Senior level clinical immersion course that emphasizes the integration and application of theory, clinical reasoning and judgement and evidence based practice. NURS 450C is the clinical capstone course for the Second Degree Nursing Option and provides a total of 315 clinical hours. Clinical hours will be spent with a preceptor in a clinical setting, where the student will be responsible for assessing, planning, implementing and evaluating the care of clients and will have the opportunity to employ management and delegation skills in the care of clients. Clinical hours focus on preparing the student to transition into the Registered Nurse role. Upon completion of this course, the student will be able to demonstrate the ability to practice in a holistic, culturally competent and caring manner; demonstrate the ability to practice within the context of professional, ethical, regulatory and legal codes of nursing practice; demonstrate the ability to promote, support, and facilitate the health, well-being, and comfort of vulnerable populations so as to enhance the quality of service delivery; demonstrate the ability to perform comprehensive and systematic assessments and take appropriate actions; demonstrate the ability to utilize evidence based practice and modern technologies to assess and respond appropriately to patient needs; utilize nursing skills to provide optimum care and to practice principles of health and safety in a caring, nonjudgmental manner; utilize nursing skills to respond to a person's needs throughout the life span, i.e. life choices, disability, and end of life issues; demonstrate current and relevant knowledge of the social, health, and behavioral sciences that can be applied to nursing practice; demonstrate current and relevant knowledge of ethical, legal, national, and international policies that can be applied to nursing practice; demonstrate current knowledge of nursing research to provide nursing care that is rigorous and evidence based; demonstrate the ability to communicate effectively (including the use of technology) with patients, families, social groups and the health care team; identify, manages and support health promotion and health educational activities to optimize patient safety and well-being; demonstrate the ability to lead and coordinate a team, delegating care appropriately; demonstrate the ability to assess risk and actively promote the well-being, safety, and security (patients and coworkers) in the work environment; demonstrate increased confidence in the nurse generalist role and in the value of life-long learning."
+    },
+    {
+      "number": 452,
+      "type": "course",
+      "title": "Women's Health Issues",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "The course provides the opportunity to explore priority health issues impacting the well being of women through a holistic lens including the physiologic, psychological, social, economic, political and cultural considerations. Issues affecting women in the United States and globally will be discussed. The lifespan from adolescence throughout later adulthood will be included. In depth exploration and critical analysis of key topics related to women's health will be incorporated into the course work and assignments. Students will be challenged to consider the health disparities influencing women and the impact these disparities have on the health of families and communities."
+    },
+    {
+      "number": 458,
+      "type": "course",
+      "title": "Ethical Challenges in Healthcare Informatics",
+      "credits": 3,
+      "description": "A case based collaboratory designed for the exploration and analysis of the ethical dilemmas facing healthcare informatics practitioners. NURS 458 focuses on the challenges associated with managing private healthcare information as health informatics technologies evolve. Students explore and apply principles of ethical decision-making and professional codes of conduct and laws governing information privacy to selected case scenarios and then compare and contrast their reasoning with expert opinions. Students gain an appreciation for the benefits of healthcare technologies and the potential for inadvertent and negligent breaches in information security."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Advanced Concepts in Clinical Nursing Informatics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NURS357"
+        ],
+        "concurrent": [
+          "NURS458"
+        ]
+      },
+      "description": "An exploration of clinical informatics tools to support informatics practice. NURS 460 Advanced Concepts in Clinical Nursing Informatics (3) Advanced Concepts in Clinical Nursing Informatics prepares nurses to support, promote, and assist in the implementation and efficient and safe use of informatics tools in the fast-paced, technology rich clinical healthcare environment. Students will explore electronic health records, clinical decision support tools, database management and data mining, patient safety technologies, and the clinical workflow implications and meaningful use of each. Students will learn principles of health care organizational culture, change theory, and the System Development Life Cycle (SDLC) to prepare them to assist with project management as informatics tools are introduced in the clinical environment. The use of informatics tools to support knowledge management in an organization is also emphasized. Students will discover the benefits and barriers of Health Information Exchange (HIE) in the promotion of public health. Finally, students will discover the competencies, skills, roles, and standards of informatics nursing practice."
+    },
+    {
+      "number": 463,
+      "type": "course",
+      "title": "Compassionate Counseling for Children/Adolescents Dealing with Dying, Death, Other Life Crises",
+      "credits": 3,
+      "description": "Explores issues involving dying, death and life crises which occur in today's world and affect school communities. RECOMMENDED PREPARATION FOR NURS 463 IS PSYCH 100 OR SOC 001 OR HD FS 129. NURS 463 explores the complex issues involving death in today's world as faced by children and adolescents. Content includes: counseling skills for nurses; child and adolescent development in the understanding of dying, death, and other life crises; exploring dying, death, and crises that are present in the lives of children and adolescents in the modern world; discussions of risks of death in the modern world including suicide, accidents, disasters, violence, war, and communicable diseases; description of death rituals and how societies cope with dying and death; identifying effective strategies to assist children and adolescents in coping with dying, death, and other life crises. The societal and school issues that affect not only an individual student but the milieu of the school and other students, parents, teachers, advisers, and administrators are inherent in the content. This course expands knowledge and interventions for those working with children and adolescents in the school setting."
+    },
+    {
+      "number": 464,
+      "type": "course",
+      "title": "Dying and Death",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "NURS 464 focuses on the exploration of attitudes toward death and dying, concept of grief, responsibilities to the dying person and the family across cultures. The student will explore theories and research related to death and dying, identify one's individual attitudes and beliefs about death, identify effective strategies to assist individuals and families to cope with death. Course topics include thanatology, expressions of attitudes toward death, factors affecting familiarity with death, learning about death, socialization, understanding death through the lifespan, a mature concept of death, death of a companion animal, social and cultural influences, cross-cultural and historical perspectives and inter faith dimensions and religious rituals, including traditional culture, western culture and cultural viewpoints and diversity. The course focuses on an overall understanding of the experience of loss, bereavement, grief and mourning as it relates to different populations and different methods of death including suicide, war, illness and violence."
+    },
+    {
+      "number": 465,
+      "type": "course",
+      "title": "Health Concepts for Adults with Complex Health Care Needs",
+      "credits": 3,
+      "description": "In-depth study and application of the theoretical principles and roles of adult clients and families with complex healthcare needs. NURS 465 focuses on the application of concepts that relate to the adult high-risk client, family, or significant other in a complex health care setting. Upon completion of this course, the student will be able to: integrate theory and knowledge of nursing and related disciplines as a basis for professional nursing practice with adult high-risk clients; demonstrate interpersonal skills to support and guide clients/families/significant others in the selection of appropriate health patterns; utilize the nursing process to analyze complex adult high-risk situations occurring in acute care, transitional care, and/or community settings; apply critical thinking skills to clinical nursing practice situations involving the high-risk client/families/significant others; collaborate with colleagues in the design, implementation, and evaluation of nursing interventions; demonstrate in the clinical nursing practice setting the role of the professional nurse as case manager, change agent, advocate and researcher with the adult high-risk client/families/ significant others; demonstrate a comprehensive understanding of opportunities for clinical nursing research with the adult high-risk client/families/significant others; and demonstrate nursing practice within the professional legal and ethical guidelines. The RN student selects a clinical nursing practice experience related to complex health care of the adult high-risk client and, based on course objectives, develops clinical practice objectives in collaboration with the course faculty."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "Systems and Community Responses",
+      "credits": 3,
+      "description": "An exploration of the multidisciplinary response to child maltreatment. CMAS 466 / NURS 466 Systems and Community Responses (3) An exploration of the multidisciplinary response to child maltreatment. The roles, responsibilities, and interconnected relationships between the systems that interact when responding to child maltreatment issues will be analyzed. The forensic medical response, challenges, and multidisciplinary team best practices to child maltreatment case are examined. Students will explore responses and best practices within the health care, judicial, child protection, social service, educational, mental health, human service, and community systems. This course provides students with the opportunity to work with a variety of majors and understand more clearly the interdisciplinary nature of child maltreatment prevention, advocacy, and response."
+    },
+    {
+      "number": 468,
+      "type": "course",
+      "title": "Client Education Strategies for Nurses and Other Health Care Providers",
+      "credits": 3,
+      "description": "Explores current and emerging roles of client education in the knowledge era. RECOMMENDED PREPARATION FOR NURS 468 IS PSYCH 100 OR SOC 001 OR HD FS 129. NURS 468 explores current and emerging roles of client (patient) education in the knowledge era. Emphasis is placed on the application of teaching and learning strategies that deliver empowering and engaging health education to promote wellness, prevent health problems, and manage chronic illness. Upon completion of this course, the student will be able to: assess the challenges and issues facing nurses and health care providers enacting the role of client educator in the knowledge era; explore the promotion of client health at all levels of prevention: primary, secondary, tertiary; integrate the client education process for individuals, families, groups, and communities; assess learner motivation, readiness, and situational impacts such as psychosocial factors and cultural beliefs that affect the client education process; implement sound, effective teaching and learning strategies in selected clinical settings with special populations; develop teaching plans using taxonomies of educational objectives; select specific teaching strategies and delivery systems, including technology, appropriate for the developmental stage and needs of the learner; describe methods for evaluation of teaching; identify appropriate communication and documentation of the process and outcomes; and list topics in client education which can be further explored through research. This course may be used as a nursing elective or by nurses or other health care workers to increase knowledge and promote successful health teaching to clients."
+    },
+    {
+      "number": 475,
+      "type": "course",
+      "title": "Integrated Concepts in Nursing Practice",
+      "credits": 3,
+      "description": "Project-based capstone course for application of nursing concepts to health promotion/disease prevention in populations. RECOMMENDED CONCURRENT FOR NURS 475 IS NURS 417 OR NURS 465 . NURN MAJOR CONTROL. NURS 475 is a project-based capstone clinical course for the RN student with a focus on the application of nursing concepts and the RN's development of future career goals. The course is designed to provide opportunity for students to synthesize and apply the art and science of nursing to health promotion and disease prevention in culturally diverse populations in varied clinical settings of the global community. Upon completion of this course, the student will be able to synthesize knowledge from nursing and related sciences for application to evidence based nursing practice; interpret legislative and regulatory processes relevant to the capstone project; collaborate with members of the health team to provide continuity of care through appropriate communication, consultation, and referral; communicate effectively using written, verbal, nonverbal and emerging technology methods; apply biostatistical, epidemiological, and research findings to enhance the delivery of evidence based nursing care; provide evidence based nursing care that contributes to safe and high quality patient outcomes within healthcare Microsystems; participate in the development and implementation of theory- based and a population-focused health promotion project; facilitate change in the healthcare microsystems affecting the provision of nursing care to diverse populations throughout the lifespan; demonstrate accountability in the delivery of professional nursing care; and integrate the concept of life-long learning into professional nursing practice."
+    },
+    {
+      "number": 480,
+      "type": "course",
+      "title": "NCLEX Prep",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "NURS405A",
+          "NURS405B"
+        ]
+      },
+      "description": "This course is designed to prepare nursing majors who are in their final semester to take the National Council Licensure Exam (NCLEX®) exam. Passing this exam is required to obtain licensure as a registered nurse (RN) in all US states and territories. Major topics include the structure and format of the exam, the NCLEX® test plan, test taking strategies, and review of key nursing concepts from across the curriculum that will be tested on the exam. The course is intended to be interactive and students are given extensive practice answering NCLEX®-style questions. Students are encouraged to identify areas in which they need further study to prepare for the exam. At the end of the course students are expected to develop a personal study plan to guide their preparation for the exam."
+    },
+    {
+      "number": 492,
+      "type": "course",
+      "title": "Emergency Care and Safety",
+      "credits": 3,
+      "description": "NURS 492 is a comprehensive emergency care and safety course that incorporates basic first aid skills and knowledge and advanced topics such as oxygen therapy, hazardous materials, farm/rural incidents, disaster planning, incident command, triage, and mass casualty incidents. The course includes discussion of infectious diseases and the standard precautions utilized by rescuers to prevent the transmission of disease. Critical thinking and decision-making skills are enhanced through practical exercises using various scenarios to improve the rescuers response in emergency situations. Students successfully passing the practical skill testing receives cards in First Aid/Emergency Care and CPR for the Healthcare Provider/Professional CPR. NURS 492 is a complimentary course to NURS 203 , which is a basic first aid/community CPR general education elective course designed for the non-nursing major who is required to have first aid/CPR certification for their course of study. NURS 492 provides emergency care at a higher level of training and is an excellent course for nursing students with advanced health care knowledge, community health care providers (i.e., school nurses), and any non-nursing major interested in emergency medical services (i.e., Kinesiology)."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Honors Thesis",
+      "credits": 1,
+      "description": "Independent honors research project related to student's interests directed by faculty supervisor and culminating in production of thesis. NURS 494H is the vehicle by which scholars in the Schreyer Honors College who are conducting honors research with a faculty member in the College of Nursing will register for the senior honors thesis credits. The course facilitates the development of an independent honors research project related to student's interests directed by faculty supervisor and culminating in production of thesis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Nursing Study in Specialized Setting",
+      "credits": 1,
+      "description": "Designed to provide student with in-depth study and practice in clinical specialty area of choice. COURSE CONTROL. NURS 495 is designed to provide students with in-depth study and practice in clinical specialty area of choice. Students work with a faculty member in the development of course objectives and goals and with a clinical preceptor to accomplish them. Student evaluation is provided by both the faculty and clinical preceptor. All clinical hours focus on increasing the student's self-confidence in transitioning into the Registered Nurse role and in the value of life-long learning that supports high quality care and evidence-based practice."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Study--Nursing",
+      "credits": 1,
+      "description": "Study of nursing issues in a foreign country."
+    }
+  ]
+}

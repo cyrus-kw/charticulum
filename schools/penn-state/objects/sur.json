@@ -1,0 +1,467 @@
+{
+  "subject": "SUR",
+  "objects": [
+    {
+      "number": 111,
+      "type": "course",
+      "title": "Plane Surveying",
+      "credits": 4,
+      "description": "Plane surveying principles; basic measurement statistics; use and care of equipment; traversing, area, and coordinate computations; differential leveling; RTK-GPS measurements. SUR 111 Plane Surveying (4) The objectives of this first course in surveying is to introduce the surveying profession and cover the fundamental methods of plane surveying which include use and care of equipment, field procedures, computations, and measurement error theory. As a result of completing the classroom component of the course, students will be able to: (1) make accurate conversions between commonly used surveying units, (2) apply the rules of significant figures to surveying measurements and calculations, (3) identify sources and types of error in surveying measurements, (4) understand differential leveling theory including note-form, survey closure, and loop adjustment, (5) compute the standard error of a set of repeated measurements and establish an acceptable range of observed values based upon a specified level of confidence, (6) adjust a set of measured angles and compute line directions for a closed traverse, (7) compute and adjust by compass rule the departures and latitudes of a closed traverse, (8) apply coordinate geometry methods to compute coordinates, direction, distance, and area. As a result of completing the laboratory component of this course, students will be able to: (1) perform a differential leveling survey within FCGS third order work, (2) perform a closed traverse survey with a relative precision of 1/10,000 using a total station, (3) use the RTK-GPS field method to measure position of stations in a closed traverse, and (4) complete a set of traverse computations for a closed traverse and present them in a prescribed format. SUR 111 is a prerequisite to all SUR courses. Student performance is based upon a mixture of homework, field exercises, writing assignments, quizzes, exams and a course portfolio. The final exam is comprehensive. All field exercises are held outside and on the campus grounds. Students must dress for weather conditions of the day of the laboratory exercise."
+    },
+    {
+      "number": 121,
+      "type": "course",
+      "title": "Elementary Surveying",
+      "credits": 3,
+      "description": "The objectives of this first course in surveying are to introduce the surveying profession (including licensure and DEIB in surveying), and cover the fundamental surveying principles, techniques, and practices. Concepts covered in the course include: Introduction to surveying principles and practices; basic measurement statistics; use and care of equipment; differential leveling; measurement and computations of distances, angles, and directions; field note keeping; surveying safety; surveying profession. As a result of completing the classroom component of the course, students will be able to: (1) make accurate conversions between commonly used surveying units, (2) apply the rules of significant figures to surveying measurements and calculations, (3) identify sources and types of error in surveying measurements, (4) collect and adjust differential leveling measurements, (5) understand angles, azimuths, and bearings used in surveying, (6) collect angle and distance measurements using modern surveying instruments and techniques, (7) compute accuracy / precision statistics for angle and distance measurements, (8) collect measurements of coordinate geometry problems."
+    },
+    {
+      "number": 122,
+      "type": "course",
+      "title": "Control Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR121"
+        ]
+      },
+      "description": "This course builds on the concepts learned in SUR 121 to establish vertical and horizontal control using traversing procedures and GNSS techniques. Students will be able to: (1) collect angle and distance measurements; (2) adjust a set of measured angles and compute line directions for closed and link traverses; (3) compute and adjust the departures and latitudes of a closed and link traverse; (4) use adjusted observations to compute adjusted coordinates, directions, distances, and area; (5) understand the relationships between the physical earth, the geoid, and ellipsoid; (6) perform coordinate transformations from geocentric to geodetic coordinates, and from geodetic to mapping coordinates; (7) understand the use of map projections in the state plane coordinate system, and the use of coordinate systems in large mapping and construction projects; (8) perform reduction of observations; (9) understand basic GNSS measurement principles; and (10) establish vertical and horizontal control using a variety of GNSS techniques. As part of the outdoor labs students will be able to: (1) perform a closed and link traverse survey using a total station, (2) use total station technology to establish vertical and horizontal control; (3) use GNSS technology to establish vertical and horizontal control; (4) design and establish vertical and horizontal control to support mapping and construction applications."
+    },
+    {
+      "number": 132,
+      "type": "course",
+      "title": "Surveying Software Analysis Tools",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "SUR122"
+        ]
+      },
+      "description": "SUR 132 is an introductory course in computer programs that are frequently being used in surveying for mapping, land information systems, and surveying product delivery. Standard industry software is used, including but not limited to CAD and GIS, for generating surveying products, maps, and databases. As part of the course students will be able to: (1) draw planimetric features relevant for surveying (e.g., deeds, parcels, buildings, sidewalks, etc.) (2) create contours and terrain models from various datasets (e.g., ground shots, aerial datasets, satellite datasets) to depict topography; (3) create and edit geospatial datasets and geodatabases relevant for surveying, mapping and land parcel information systems; (4) convert and transfer datasets from CAD to GIS and vice versa (interoperability between different software); (5) understand basic mapping elements and map design concepts; and (6) use of appropriate scale, mapping, and visualization concepts for technical and non-technical communication with maps;"
+    },
+    {
+      "number": 162,
+      "type": "course",
+      "title": "Methods in Large Scale Mapping",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR111",
+          "EDSGN100"
+        ]
+      },
+      "description": "CAD applications in mapping; data collection using traditional and satellite techniques; map compilation; COGO. SUR 162 Methods in Large Scale Mapping (3) SUR 162 is the basic mapping course in the curriculum. The concept of reference datum is introduced; the US national spatial reference system is described. Map design considerations such as scale are introduced. Map compilation emphasizes computer aided drafting. Basic standards and procedures of control and mapping surveys are introduced. Basic concepts of coordinate geometry are introduced. Laboratory exercises incorporate practice in control and mapping surveys, in map compilation and in application of coordinate geometry. As a result of completing the classroom component of the course students will be able to (1) describe hardcopy and softcopy maps, (2) describe the standard series of maps in the US National Mapping Program, (3) describe US national map accuracy standards, (4) apply map design considerations such as map clarity, order and balance, (5) calculate scale and map layout, (6) apply procedures of interpolation to calculate positions of contours, (7) describe the use of triangulated irregular networks to create contours, (8) describe components of the US national spatial reference system, (9) describe design considerations for triangulation, trilateration, traverse and precise leveling, (10) describe the survey procedures used to locate contours, (11) describe procedures to make a digital elevation model, (12)design a survey to collect mapping data using a data collector to enable efficient drawing, (13) use coordinate geometry to calculate position and elevation of a feature, to calculate direction and distance of a line, to calculate coordinates of a station using intersection, to calculate coordinates of an occupied station using resection. As a result of completing the laboratory component of the course students will be able to (1) set up a new map compilation project in a mapping program, (2) create and use blocks for standard map features (eg borders, title boxes), (3) use mapping program COGO features, (4) use mapping program contouring capabilities to create a digital terrain model, (5) use mapping program features to load collected positional data and draft a manuscript, (6) design and conduct a control traverse, and a mapping survey to collect data using an electronic data collector."
+    },
+    {
+      "number": 212,
+      "type": "course",
+      "title": "Route and Construction Surveying",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "SUR162"
+        ]
+      },
+      "description": "Circular, compound, spiral horizontal curves; equal, unequal tangent vertical curves; alignments, earthwork; control, building, pipe, street, and as-built construction surveys. SUR 212 Route and Construction Surveying (4) SUR 212 builds directly upon the fundamental surveying principles presented in SUR 111 (Plane Surveying), particularly traverse methods and coordinate geometry calculations. The course covers the fundamental geometric computations for street alignment design starting with simple circular, compound circular and spiral horizontal curves. This includes computation for intersection angles, radius, length, tangents, degree of curvature, stationing and stake-out calculations using coordinate geometry methods. The topics of vertical curve analysis follow which includes street grade, rate of change of grade, stationing, low and high points, passing a curve through fixed point and other alignment related analysis and design. Both equal tangent and unequal tangent vertical curves are discussed. Vertical curves are followed by street cross-sections, templates, slope stake locations, cut/full, earthwork computations and other aspects of 3-D alignment design. Once curve geometry and street alignment calculations are covered, the course moves into field stake-out methods for construction. Street alignment stake-out is covered first, using industry standard software with traditional and RTK-GPS equipment. A road alignment project is used to combine the aspects of geometric analysis and design with field stake-out methods including a control survey. Beyond street stake-out, other construction surveys are addressed including building, pipe line, culverts, storm and sanitary sewers, as-built and other construction related surveys. The laboratory exercises present field methods for construction projects in accordance with design specifications. Computations of earthwork volumes are also covered for other construction projects beyond that of street alignments."
+    },
+    {
+      "number": 213,
+      "type": "course",
+      "title": "Route and Construction Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR122"
+        ]
+      },
+      "description": "SUR 213 builds upon and uses concepts from SUR 121 and SUR 122 applies them in route and construction applications. The course covers stake out subdivisions and buildings for development, horizontal and vertical roadway computations and stake-out. In addition, the course provides a base knowledge of buildings, bridges, culverts, pipelines, sewers, earthwork volumes, erosion and sedimentation, and as-builts as it pertains to survey construction. The laboratory exercises focus on field methods for route and construction layout projects in accordance with design specifications. CAD is being used throughout the course for design and layout lab assignments, and to prepare surveying deliverables."
+    },
+    {
+      "number": 221,
+      "type": "course",
+      "title": "Large-scale Mapping Surveys",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR122",
+          "SUR132"
+        ],
+        "concurrent": [
+          "EDSGN100"
+        ]
+      },
+      "description": "SUR 221 is the basic mapping course in the curriculum, which also considers project management and client considerations. The course begins with client considerations and outlying what products will be delivered; typically, a report of record of survey maps and analyses showing the degree to which required survey standards have been met. Economic feasibility, contracting, budgeting and project management concepts of mapping surveys are also considered. Students complete a control survey using GNSS methods that will be used to support the data collection. Through traversing and detailing using a total station, students collect side shots and ground shots. GNSS techniques are also introduced for collecting side shots and ground shots. Collected datasets are used to create a topographic map in CAD to meet client requirements and specifications. Students compile a detailed report of survey."
+    },
+    {
+      "number": 222,
+      "type": "course",
+      "title": "Photogrammetry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR122"
+        ],
+        "concurrent": [
+          "SUR132"
+        ]
+      },
+      "description": "SUR 222 covers the basic principles of aerial photography and the geometry of the optics in relation to aerial cameras. Mathematical theories for refining and processing measurements from single aerial photographs are developed. Such measurements are transformed to obtain real world coordinates of features on the surface of the earth. Two and three-dimensional coordinate transformation equations are developed and applied to the measurements on the photographs. In addition, the theory underlying the geometry of stereopairs of photographs is developed and used to determine three-dimensional position on the surface. Stereographic equipment and software are used to produce photogrammetric point clouds, accurate topographic maps of the overlap areas using an aerial image block, and orthophotos. An introduction to Unmanned Aerial Systems (UASs) and their usage for topographic surveying are presented. The course also covers procedures and considerations for planning an aerial photography mission which includes flight planning, cost analysis, equipment selection, ground controls points configuration, and overall photogrammetric project management. Mapping using aerial photogrammetric data and using standard industry software such as CAD and GIS."
+    },
+    {
+      "number": 241,
+      "type": "course",
+      "title": "Surveying Measurement Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR121"
+        ],
+        "concurrent": [
+          "MATH140"
+        ]
+      },
+      "description": "Surveying Measurement Analysis explores the fundamental concepts of statistical error analysis with applications to surveying measurements. It covers the normal distribution function and theories describing the fundamental procedures in data, including measures of central tendency and measures of data variation. It then explores sampling distribution theory and develops statistical confidence intervals and testing using the X2 , students t, and F distributions. Fundamental concepts in the propagation of variance are developed and applied to the traditional surveying observations of angles, distances, azimuths, elevation differences. These error propagation techniques are further used to explore the propagation of variance in traditional traverse computations. The accompanying lab exercises help reinforce and validate the theoretical foundations of this class."
+    },
+    {
+      "number": 262,
+      "type": "course",
+      "title": "Coordinate Systems in Map Projections",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "MATH140",
+          "SUR162"
+        ]
+      },
+      "description": "Introduction to coordinate systems used in the Lambert, Mercator, Transverse Mercator, and UTM map projections; reduction of surveying observations. SUR 262 Coordinate systems in Map Projections (2) Coordinate systems in map projections covers the fundamental relationships between the physical earth, the geoid, the ellipsoid and map projections. It will explore the use of map projections in state plane coordinate systems, and the use of these coordinate systems in large mapping and construction projects. The course explores the corrections that must be made to properly use these coordinate systems including the reduction of observed elevations, distances, azimuths and angle."
+    },
+    {
+      "number": 272,
+      "type": "course",
+      "title": "Cadastral Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR111"
+        ]
+      },
+      "description": "Evolution of land records systems; PLS: property ownership and conveyancing; common and statute law; rules of construction; boundary location procedures."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 313,
+      "type": "course",
+      "title": "Integrated Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR221"
+        ],
+        "concurrent": [
+          "SUR213",
+          "SUR373W"
+        ]
+      },
+      "description": "The course objectives are directed toward providing instruction and practical experience in activities common in surveying practice, experience requiring the integration of virtually all abilities gained in previous surveying courses. The class is organized as a student surveying company with the instructor as general supervisor. Objective 1 of the student surveying company is to analyze a letter from a client (the instructor) requesting a survey. The letter will request a survey (typically ALTA boundary or construction). The client letter will specify standards (ALTA and other) the survey is to meet, standards commonly required in survey practice. The client letter will specify products to be delivered, typically a report of record of survey maps and analyses showing the degree to which required survey standards have been met. In addressing objective 1, students determine exactly what work needs to be done to satisfy client requirements. Typically these include several sub-surveys: (1) a relatively long-range satellite (GNSS) survey to bring control into the project area, (2) a traditional local control survey to create a control network to control subordinate surveys and the surveys producing what the client has requested, typically boundary retracement and mapping surveys. The result of work on objective 1 is the organization of the class into coordinating groups, one per sub-survey plus two additional groups for report compilation and editing and map production and editing. Objective 2 of the student surveying company is to develop detailed work plans for sub-surveys, report preparation and map production. The result of work on objective 2 is the set of work plans. A written contract (as a letter of understanding) between the student surveying company and the client is prepared. Objective 3 is to perform that record search, field work, data analysis, mapping and preliminary report writing for the sub-surveys necessary to meet client requirements. Objective 4 is to compile the final report of survey."
+    },
+    {
+      "number": 341,
+      "type": "course",
+      "title": "Adjustment Computations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR241",
+          "SUR122",
+          "MATH220"
+        ],
+        "concurrent": [
+          "CMPSC200",
+          "STAT200"
+        ]
+      },
+      "description": "Adjustment computations covers the basic theory and mechanics of a least squares adjustment using the traditional surveying observations of distances, angles, azimuths, and elevation differences. It explores the theory of error propagation, and uses this theory to determine the precision of indirectly measured quantities. It explores post-adjustment analysis through the use of various statistical tests, and error ellipse computation and analysis. This course primarily focuses on the least squares adjustment and analysis of differential leveling, triangulation, trilateration, traverse, and network observations. Plane fitting, parametric model estimation, and regression analysis are also covered."
+    },
+    {
+      "number": 351,
+      "type": "course",
+      "title": "Geodetic Models",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "SUR262"
+        ]
+      },
+      "description": "Three dimensional geodesy; computations on the ellipsoid; map projections; reduction of observations and elements of physical geodesy. SUR 351 Geodetic Models (3) Course covers the basic gravimetric and geometric geodesy aspects as related to surveying. Motions of the Earth and the effect on reference systems are explored. The Earth's gravity field, its measurement, reduction of gravity observations to the geoid, uses for gravity and gravity anomalies are studied. Different coordinate reference systems are studied including astronomic, geodetic, and satellite coordinate systems. Transformation between the various coordinate systems is covered while also considering crustal plate motion. Basic mathematical representations and transformations between various representative ellipsoids are explored. Satellite navigation and positioning is discussed at a rudimentary level. Both point positioning and relative positioning techniques are discussed."
+    },
+    {
+      "number": 352,
+      "type": "course",
+      "title": "Geometric and Physical Geodesy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR122"
+        ],
+        "concurrent": [
+          "MATH230",
+          "MATH251"
+        ]
+      },
+      "description": "This course provides a thorough background on geometric and physical geodesy. With respect to Geometric Geodesy the course covers: Computations to the ellipsoid and coordinate transformations between various coordinate systems, considering crustal plate motion. The astronomic, geodetic, and satellite coordinate systems are studied. Satellite navigation and positioning is discussed at a rudimentary level. With respect to Physical Geodesy the course covers: The Earth's gravity field, its measurement, reduction of gravity observations to the geoid, uses for gravity and gravity anomalies are studied. Geoid determination, Stokes's formula, the remove-restore methods, least-squares collocation. Vertical positioning and height datums and systems. Principles and applications of airborne, terrestrial, and satellite gravimetry and satellite altimetry."
+    },
+    {
+      "number": 361,
+      "type": "course",
+      "title": "Surveying Laser Scanning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR122"
+        ],
+        "concurrent": [
+          "SUR132",
+          "SUR241",
+          "MATH140"
+        ]
+      },
+      "description": "Introduction to laser scanning surveying. Principles of Light Detection And Ranging (LiDAR) technologies from terrestrial and mobile platforms. The process of point cloud generation from LiDAR techniques are discussed. The course covers the registration and geo-referencing process from multiple scans for indoor and outdoor data acquisition, as well as the direct geo-referencing and point cloud generation from mobile platforms. Error sources in terrestrial and mobile sensors and their system calibration procedures for quantifying and modeling such errors. Industry standard software is used for processing and analysis of point clouds for surveying applications related to 3D modeling, terrain modeling, creating drawings in CAD, and change detection of natural and man-made structures."
+    },
+    {
+      "number": 362,
+      "type": "course",
+      "title": "Introduction to Geospatial Information Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR132"
+        ],
+        "concurrent": [
+          "SUR222",
+          "MATH140"
+        ]
+      },
+      "description": "Geospatial information technology provides a means through which data about land can be analyzed to obtain information that may be used to support land management decisions. The objective of this course is to teach students to collect and process spatial data, analyze and make decisions, and to communicate the results using maps and other information delivery formats. This course begins with the introduction of geospatial technology and its application in decision making, resource allocation and management, a socio-economic development. Students learn the different types of data that are used in geospatial information technology. They learn about graphical data structures as well as descriptive databases and how to build them. Spatial data models are discussed together with their advantages and drawbacks, as well as descriptive databases. Students capture various datasets from the field, convert them into usable formats, and process them using the models that have been discussed so as to reinforce the knowledge. The use of technology for land parcel information management is discussed. Procedures for performing geospatial analyses and querying databases are discussed and students conduct laboratory exercises using the field data that they captured. Map making techniques are discussed and students learn to communicate the results of analysis through maps."
+    },
+    {
+      "number": 372,
+      "suffix": "W",
+      "type": "course",
+      "title": "Legal Aspects of Land Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR272"
+        ]
+      },
+      "description": "Legal research; rules of evidence including classification and evaluation; unwritten rights; land description composition; easements."
+    },
+    {
+      "number": 373,
+      "suffix": "W",
+      "type": "course",
+      "title": "Cadastral and Legal Aspects of Surveying",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "SUR122",
+          "SUR132"
+        ]
+      },
+      "description": "Cadastral surveying and law related to land surveying and property rights are the basis of this course. The course provides a review of the evolution of land records systems in the US. The creation and retracement of sectionalized and non-sectionalized boundaries are discussed. U.S. and Pennsylvania statutes and common law related to topics such as boundary retracement, boundary resurvey, adverse possession, easements, and boundary evidence are researched and reported by the students. Boundary retracement principles such as the rules of construction, boundary location procedures, and legal research and collection of written and measured evidence are discussed with a focus on finding a nexus between the two types of evidence. In addition, the course covers the rules of evidence including classification and evaluation. Unwritten rights, easements, and riparian rights are also discussed. The principles of land description composition are provided, and the students apply them in realistic scenarios that are writing intensive. Students perform legal research in real case studies, collect data related to record boundaries (e.g., previous deeds), and make an analysis of the property's history and property survey. Students will have to write extensive reports of their findings and use principles of effective surveying communication to prepare a report to the client including \"record of survey\" maps. Lectures and assignments address ethical and professional responsibilities of the surveyor, and also discuss DEIB issues in property surveys."
+    },
+    {
+      "number": 381,
+      "type": "course",
+      "title": "Stormwater Hydraulics and Hydrology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Stormwater Management Hydraulics and Hydrology is an elementary treatment of common design practices used to create stormwater management plans for small to medium sized land development projects. Erosion and sedimentation design is also addressed within the context of a stormwater management plan. The course is intended for engineering students who are not required to take formal fluid mechanics or hydrology courses, yet have a need to understand or complete the design aspects of stormwater management as it relates to their professional practice. The course contains three segments. The first segment covers the elementary hydraulics necessary to design drainage structures and storm water detention facilities. These topics include fluid statics, continuity, conservation of mass, conservation of energy, friction losses, minor losses, energy grade line, open channel flow, weirs and orifices. The second segment covers elementary hydrology methods used to analyze runoff from land development sites and small to medium watersheds. The hydrology topics include watershed characteristics, rainfall, abstractions, runoff, time of concentration, peak flow methods, hydrograph methods, basic channel routing and detention basin routing. The third segment covers government regulations and common design methods used to design storm sewers, detention basins and erosion control plans. A project includes the design of a stormwater management system for a residential subdivision."
+    },
+    {
+      "number": 382,
+      "type": "course",
+      "title": "Subdivision Design",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "SUR213",
+          "SUR221"
+        ],
+        "concurrent": [
+          "SUR373W"
+        ]
+      },
+      "description": "Introduction to Land Development Design is targeted for students in the Surveying Engineering Technology program. The course covers the basic surveying principles as these are applied to residential development and the subdivision of parcels. Overview of private restrictions and public regulations of land use, the planning process, local zoning ordinances and subdivision regulations. Students complete a basic design project in CAD. The design follows the Subdivision and Land Development Ordinance (SALDO) code, and it also considers topography, zoning, utilities, existing and proposed roads, and client requirements."
+    },
+    {
+      "number": 421,
+      "type": "course",
+      "title": "Advanced Photogrammetry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR132",
+          "SUR222",
+          "MATH220"
+        ]
+      },
+      "description": "Advanced mathematical methods for processing digital imagery and point clouds, and applications in surveying. This course is designed to provide a deeper understanding of the mathematical models used in Photogrammetry. New techniques are also presented, such as Structure from Motion (SfM) and Simultaneous Localization and Mapping (SLAM) for surveying applications. Platforms that are considered are terrestrial (close-range photogrammetry) and aerial (UAS and airborne photogrammetry). The course covers image alignment and georeferencing using ground control points (indirect) and multisensory direct georeferencing. Occlusion detection and true-orthophoto generation, together with image block mosaicking and refinement, are presented. Camera calibration and self-calibration approaches are discussed. The course also discusses principles and requirements for designing point cloud surveys that meet project needs."
+    },
+    {
+      "number": 422,
+      "type": "course",
+      "title": "Digital Photogrammetry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "SUR362"
+        ]
+      },
+      "description": "Mathematical methods for processing digital imagery, creating digital elevation models and ortho-photographs, and applications in spatial data infrastructure. SUR 422 Digital Photogrammetry (3) As a continuation to an existing photogrammetry course, this course is designed to provide a deeper understanding of the mathematical principles of photogrammetry as well as current applications of photogrammetric mapping. In recognition of the increasing use of digital images in geospatial technologies, especially in applications involving natural resource inventory and mapping, this course provides advanced knowledge in softcopy photogrammetry. This course deals with mathematical methods for processing tilted aerial photographs. Two- and three-dimensional coordinate transformation methods for correcting the geometry of digital imagery are taught. These are followed with the development of collinearity equations for analytical aerotriangulation and the adjustment of a block of photographs. Extraction of contours and development of elevation models are also taught. Creation of digital ortho-photographs, mosaics and color balancing of mosaicked images are discussed. Applications of ortho-rectified digital images in geospatial technologies are also taught.Laboratory exercises include the use of computer hardware and software to enhance and classify remotely sensed images, apply softcopy photogrammetry methods to develop contour maps, digital elevation models, and digital orthophotographs from a block of photographs. The course has direct relationship to photogrammetry, adjustment computations, and multipurpose land information systems which are all taught in the surveying program. It is a required course which is offered to baccalaureate degree students in the surveying engineering program. Academic achievement is evaluated through quizzes, home works, and examinations."
+    },
+    {
+      "number": 424,
+      "type": "course",
+      "title": "Monitoring Applications in Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR222",
+          "SUR361",
+          "SUR241"
+        ],
+        "concurrent": [
+          "SUR441"
+        ]
+      },
+      "description": "Engineering structures, natural and man-made, must be monitored periodically to ensure their safety of operation. Monitoring is a challenging task that necessitates robust surveying methods. This course discusses advanced mathematical and surveying methods for monitoring applications in surveying engineering. Monitoring using total stations, GNSS, and point clouds methods are discussed. Point cloud methods include laser scanning and photogrammetric datasets acquired from terrestrial and aerial platforms. Often in monitoring applications an integration or combination of the abovementioned datasets is necessary; therefore, this course covers the optimal integration of these datasets. The course covers multi-epoch comparisons and robust statistical analysis to distinguish between actual changes and apparent changes due to noise. Monitoring of one or more of the following structures are covered: buildings, bridges, dams, tunnels, levees, rockfalls, landslides, and coastal erosion."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Geospatial Applications in Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR132",
+          "SUR222",
+          "SUR361"
+        ]
+      },
+      "description": "Airborne and satellite methods are increasingly used in surveying applications for topographic mapping, building extraction and modeling, and monitoring. This course focuses on advanced geospatial principles and techniques in surveying with emphasis on GIS tools for mapping, identification, extraction, and interpretation of both physical and cultural landscape features. Visible imaging, RADAR, hyperspectral, and LiDAR sensors for airborne and satellite platforms are presented. Georeferencing of airborne and satellite datasets. Terrain filtering and modeling, feature extraction methods, classification, and segmentation in GIS using imagery and point clouds. Hydrographic approaches from airborne LiDAR and satellite imagery are covered. This course also brings an introduction to airborne and spaceborne SAR Interferometry for terrain mapping and monitoring applications."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Data Analysis and Project Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200",
+          "SUR341"
+        ]
+      },
+      "description": "Post least-squares adjustment analysis is important for decision making in surveying applications. The course covers statistical testing for blunder detection in control networks with measurements originating from GNSS and conventional methods. Internal and external reliability of networks are covered, and they are used in network design problems. 1D, 2D, and 3D transformations concepts are used to transform between different coordinate systems, and the decision of the appropriate transformation is conducted through statistical testing. The course also covers robust error propagation methods for uncertainty estimation of point clouds that originate from modern surveying technologies. Concepts of statistical testing for change detection / deformation monitoring are also discussed. The course includes a design project that considers accuracy and other requirements relevant to the application scenario."
+    },
+    {
+      "number": 455,
+      "type": "course",
+      "title": "Precise Positioning Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR352",
+          "PHYS214",
+          "MATH230"
+        ],
+        "concurrent": [
+          "SUR441"
+        ]
+      },
+      "description": "The course provides a background on stellar coordinate systems and reviews the main geodetic reference coordinate systems used with GNSS technology. Satellite orbital theory provides the basis for understanding GNSS operation. GNSS concepts that are also covered include pseudo-ranging, GNSS error sources, and GNSS vector adjustment. The mathematical and field techniques that are followed to eliminate and/or reduce GNSS errors (e.g., satellite orbits and clocks, troposphere and ionosphere, receiver clock, multipath and noise) are presented and re-enforced through practical problems with real data. The GNSS static and kinematic techniques for setting control points and perform surveying mapping tasks are demonstrated. Students collect their own data, and they use standard industry software to adjust their measurements, and to demonstrate that uncertainty is sufficient for the project application at hand. The course also covers inertial sensors and inertial navigation for modern surveying technologies, as well as the integration of GNSS and inertial sensors for mobile mapping."
+    },
+    {
+      "number": 462,
+      "type": "course",
+      "title": "Parcel-Based Geospatial Information Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR362",
+          "SUR372W"
+        ]
+      },
+      "description": "Acquisition processing of land parcel data; development of land information system and applications in geospatial information technology. SUR 462 Parcel-Based Geospatial Information Systems (3) People and cultures around the world have different perceptions of land. Land has different value to many people. As a natural resource, with finite size, there are always competing interests when it comes to allocation use and management of units of land. The basic unit of land is the parcel. All activities are associated with land parcels. With such competing interests, it is important to manage land and its resources in an effective manner so as to ensure its sustainability. To ensure proper stewardship of land, data about each land parcel must be maintained so that information from parcel-based geodatabases may be used to support decisions involving land, people, and communities. Parcel-based information technology serves as a component of the geospatial technology with special applications in placed-based information.This course builds on the knowledge obtained from SUR 362 , Geospatial Information Engineering course. It begins by considering various perceptions of the use and value of land to different cultures, communities, and organizations. A justification is made for the need to manage land and resources in land in order to promote good stewardship. The use of technology for land parcel information management is discussed. From there the course progresses through land parcel data types and sources, data conversion and geodatabase development. Applications of land parcel data in place-based information management are discussed. Accuracy considerations for parcel data in various applications are also discussed. Spatial analysis and methods for presenting or communicating results are discussed."
+    },
+    {
+      "number": 471,
+      "type": "course",
+      "title": "Professional Aspects of Land Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR373W"
+        ]
+      },
+      "description": "Professional Aspects of Land Surveying is a capstone course focusing on the ethical issues and legal limits of the surveying practice. (e.g., statutes, legal cases affecting professional registration, responsibility, and ethics). Students research statutes, legal cases, and codes of ethics of various jurisdictions to prepare for the role of a practicing surveyor who may serve as an expert witness in litigation. Practical case scenarios re-enforce concepts of surveyor responsibilities and ethics including Surveyor responsibilities to the profession and the survey-client relationship are explored along with a review of property, contract, and evidence law applicable to the practicing surveyor. Diversity, equity, inclusion, and belonging concepts in the surveying profession and in business are also covered. Students prepare a business plan incorporating business, and contract concepts for a new business enterprise."
+    },
+    {
+      "number": 482,
+      "type": "course",
+      "title": "Land Development Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SUR213",
+          "SUR221",
+          "SUR373W"
+        ],
+        "concurrent": [
+          "SUR381"
+        ]
+      },
+      "description": "Land development design is designed for seniors in Surveying Engineering and covers the basic principles of residential design and development. The objective of the course is to provide students with exposure to elements of the land development process from an engineering perspective. Topics covered include land development regulations, site analysis of soils, site evaluation in terms of opportunities and constraints, sketch design, site layout, preliminary design, street layout including horizontal and vertical design, grading plan, drainage design, stormwater management, sewer and water, and erosion and sedimentation controls. Students work in teams of two or three on a design project for a local property. Students will utilize AutoCAD Civil 3D (or similar software) and the Virginia Tech/Penn State Urban Hydrology Model (VTPSUHM) (or similar) in the project design. A site visit to the design property is included in the course when possible. At the end of the course, student teams will exchange their project designs and critique each other's work from the viewpoint of a township engineer. Designs are evaluated for adherence to a pre-selected municipal subdivision and land development ordinance (SALDO). Students are required to present their final designs to the class. They must be prepared to explain their work and defend any design elements that are questioned during the presentation. After completion of this course, students will be able to: 1) evaluate a site for land development potential, 2) prepare sketch designs for a proposed land development site, incorporating opportunities and constraints, 3) prepare a preliminary design including street alignment for a residential subdivision, sanitary sewer for a residential subdivision, storm sewer with inlets and inverts and a grading plan; and 4) prepare a mock final plan for public review and presentation."
+    },
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Seminar in Surveying",
+      "credits": 1,
+      "description": "Individual or group work in surveying."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an indiviudal basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    }
+  ]
+}

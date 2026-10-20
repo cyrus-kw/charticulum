@@ -1,0 +1,472 @@
+{
+  "subject": "STAT",
+  "objects": [
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Statistical Concepts and Reasoning",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Statistics is the art and science of decision making in the presence of uncertainty. The purpose of Statistics 100 is to help students improve their ability to assess statistical information in both everyday life and other University courses. Topics covered include methods for collecting and summarizing data, analyzing the relationship between variables, and using basic probability concepts to draw conclusions about populations based on data. The course is less technical and more conceptual than Statistics 200. Statistical concepts and interpretations will dominate over techniques and calculations ¿ but students should be comfortable working with fractions and square roots."
+    },
+    {
+      "number": 184,
+      "type": "course",
+      "title": "Introduction to R",
+      "credits": 3,
+      "description": "R is a powerful, open-source programming language used widely for applications in statistics and data science. It is easily extendable, and thousands of user-created packages are publicly available to extend its capabilities. This course will introduce students to data computing fundamentals and a reproducible workflow using the R programming language and related tools. Students will be expected to access, join, wrangle, clean, and visualize real data from various sources (e.g. CSV, HTML scraping, web URL, R packages). The course will emphasize the use of \"tidyverse\" R packages (e.g. dplyr, ggplot2), although students will also be exposed to Base R and other packages. In addition, students will be exposed to one or more integrated development environments (e.g. RStudio) and will be expected to write well-documented code using a reproducible workflow (e.g. RMarkdown, Git/GitHub). The course focuses on descriptive and graphical summary techniques rather than inferential statistical techniques"
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 200,
+      "type": "course",
+      "title": "Elementary Statistics",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Descriptive statistics, frequency distributions, probability, binomial and normal distributions, statistical inference, linear regression, and correlation. STAT 200 is a standard first course in statistics. Student who have successfully completed this course will understand basic concepts of probability and statistical inference, including common graphical and numerical data summaries; notions of sampling from a population of interest, including the sampling distribution of a statistic; construction and interpretation of confidence intervals, test statistics, and p-values; and connections between probabilistic concepts like the normal distribution and statistical inference. They will recognize various types of data, appropriate statistical methods to analyze them, and assumptions that underlie these methods, They will also gain extensive experience in the use of statistical software to analyze data and the interpretation the output of this software."
+    },
+    {
+      "number": 240,
+      "type": "course",
+      "title": "Introduction to Biometry",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Statistical analysis, sampling, and experimentation in the agricultural sciences; data collection, descriptive statistics, statistical inference, regression, one factor AOV, probability. Students may take only one course from STAT 200 , 220, 240 , 250 for credit. STAT 240 Introduction to Biometry (3) (GQ)(BA) This course meets the Bachelor of Arts degree requirements. This is a course concerned with statistical analysis pertaining to the natural and agricultural sciences. The objective of the course is to provide students with a good basis for understanding uncertainty and its effects on understanding observational studies and experiments. Course content includes data collection, descriptive statistics, statistical inference, regression, and ANOVA. Students will learn through lectures, individual and group problem solving, computer-based activities, and case study discussions. Since real-life use of statistics relies upon computers, this course will provide a strong hands-on analysis element necessitating regular access to computer labs. The statistical background gained by students will provide them with a base for future use of statistics in both their course work and careers."
+    },
+    {
+      "number": 250,
+      "type": "course",
+      "title": "Introduction to Biostatistics",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Statistical analysis and interpretation of data in the biological sciences; probability; distributions; statistical inference for one- and two-sample problems. STAT 250 is a standard first course in statistics, with an emphasis on applications and statistical techniques of particular relevance to the biological sciences. Students who have successfully completed this course will understand basic concepts of probability and statistical inference, including common graphical and numerical data summaries; notions of sampling from a population of interest, including the sampling distribution of a statistic; construction and interpretation of confidence intervals, test statistics, and p-values; and connections between probabilistic concepts such as normal distributions and statistical inference. They will recognize various types of data, appropriate statistical methods to analyze them, and assumptions that underlie these methods. Students will use statistical software to analyze real data."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Statistical Modeling I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ]
+      },
+      "description": "This course is designed to serve as a bridge between introductory statistics (including AP statistics) and more advanced applied statistics courses. The course will emphasize applied statistical modeling for real data using computer software (e.g. R, Minitab). Broad statistical topics include simple linear regression, multiple linear regression, analysis of variance (ANOVA) and factorial designs, logistic regression, multiple linear regression."
+    },
+    {
+      "number": 318,
+      "type": "course",
+      "title": "Elementary Probability",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT414",
+        "STAT418"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Combinatorial analysis, axioms of probability, conditional probability and independence, discrete and continuous random variables, expectation, limit theorems, additional topics. Students who have passed either MATH(STAT) 414 or 418 may not schedule this course for credit."
+    },
+    {
+      "number": 319,
+      "type": "course",
+      "title": "Elementary Mathematical Statistics",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT415"
+      ],
+      "requisites": {
+        "previous": [
+          "STAT318"
+        ]
+      },
+      "description": "Statistical inference: principles and methods, estimation and testing hypotheses, regression and correlation analysis, analysis of variance, computer analysis. Students who have passed STAT (MATH) 415 may not schedule this course for credit."
+    },
+    {
+      "number": 380,
+      "type": "course",
+      "title": "Data Science Through Statistical Reasoning and Computation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200",
+          "STAT184"
+        ]
+      },
+      "description": "A case study-based course in the use of computing and statistcal reasoning to answer data-intensive questions. STAT 380 Data Science Through Statistical Reasoning and Computation (3) This course addresses the fact that real data are often messy by taking a holistic view of statistical analysis to answer questions of interest. Various case studies will lead students from the computationally intensive process of obtaining and cleaning data, through exploratory techniques, and finally to rudimentary inferential statistics. This process will exploit students' exposure to introductory statistics as well as the R programming language -hence the required prerequisites- yet novel computing and analytical techniques will also be introduced throughout the course. For the collection of data, students will learn scripting and database querying skills; for their exploration, they will employ R capabilities for graphical and summary statistics; and for their analysis, they will build upon the basic concepts obtained in their introductory statistics course. The varied case studies will elucidate additional statistical topics such as identifying sources of bias and searching for high-dimensional outliers. A possible textbook for this course is Data Science in R: A Case Studies Approach to Computational Reasoning and Problem Solving (2015) by Deborah Nolan and Duncan Temple Lang."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "type": "course",
+      "title": "Statistical Modeling II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT184",
+          "MATH220",
+          "STAT300"
+        ]
+      },
+      "description": "This course is intended to build directly upon STAT 300 (Applied Statistical Modeling I) for students pursuing a major in statistics or a closely related program. Topics include likelihood-based inference, generalized linear models, random and mixed effects modeling, multilevel modeling. In particular, the applied nature of the course seeks to examine the advantages and disadvantages of various modeling tools presented, identify when they may be useful, use R software to implement them for analysis of real data, evaluate assumptions, interpret results, etc."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Experimental Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Random variables; probability density functions; estimation; statistical tests, t-tests; correlation; simple linear regression; one-way analysis of variance; randomized blocks."
+    },
+    {
+      "number": 414,
+      "type": "course",
+      "title": "Introduction to Probability Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "STAT(MATH) 414 is an introduction to the theory of probability for students in statistics, mathematics, engineering, computer science, and related fields. The course presents students with calculus-based probability concepts and those concepts can be used to describe the uncertainties present in real applications. Topics include probability spaces, discrete and continuous random variables, transformations, expectations, generating functions, conditional distributions, law of large numbers, central limit theorems. Students may take only one course from STAT(MATH) 414 and 418."
+    },
+    {
+      "number": 414,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Introduction to Probability Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "This course covers probability spaces, discrete and continuous random variables, transformations, expectations, generating functions, conditional distributions, law of large numbers, central limit theorems. In contrast to the non-honors version of 414, 414H has a stronger focus on a multivariate presentation of core concepts, asymptotic results, and proofs of essential theorems. This emphasis is complemented through more advanced in-class examples, homework problems, and exam questions. Students will also pursue a topic of choice in further depth through a course project. Students may take only one course from STAT(MATH) 414, 414H, and 418."
+    },
+    {
+      "number": 415,
+      "type": "course",
+      "title": "Introduction to Mathematical Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT414"
+        ]
+      },
+      "description": "A theoretical treatment of statistical inference, including sufficiency, estimation, testing, regression, analysis of variance, and chi-square tests."
+    },
+    {
+      "number": 415,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Introduction to Mathematical Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT414"
+        ]
+      },
+      "description": "This course covers statistical inference, including properties of estimators, hypothesis testing, uncertainty quantification, regression, analysis of variance, Bayesian inference, and numerical methods. In contrast to the non-honors version of 415, 415H has a stronger focus on proving key theorems and utilizing asymptotic properties of estimators. This emphasis is complemented through more advanced in-class examples, homework problems, and exam questions. Students will also pursue a topic of choice in further depth through a course project. Students may take only one course from STAT(MATH) 415 and 415H."
+    },
+    {
+      "number": 416,
+      "type": "course",
+      "title": "Stochastic Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT318",
+          "MATH230"
+        ]
+      },
+      "description": "Review of distribution models, probability generating functions, transforms, convolutions, Markov chains, equilibrium distributions, Poisson process, birth and death processes, estimation."
+    },
+    {
+      "number": 418,
+      "type": "course",
+      "title": "Introduction to Probability and Stochastic Processes for Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT414"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH231"
+        ]
+      },
+      "description": "Introduction to probability axioms, combinatorics, random variables, limit laws, and stochastic processes. Students may take only one course from MATH414 / STAT 414 and MATH 418 / STAT 418 for credit. STAT 418 / MATH 418 Introduction to Probability and Stochastic Processing for Engineering (3) This course gives an introduction to probability and random processes. The topics are not covered as deeply as in a semester-long course in probability only or in a semester-long course in stochastic processes only. It is intended as a service course primarily for engineering students, though no engineering background is required or assumed.The topics covered include probability axioms, conditional probability, and combinatorics; discrete random variables; random variables with continuous distributions; jointly distributed random variables and random vectors; sums of random variables and moment generating functions; and stochastic processes, including Poisson, Brownian motion, and Gaussian processes."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Computational Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200",
+          "MATH220",
+          "STAT415"
+        ]
+      },
+      "description": "Topics related to computing in statistics, including numerical linear algebra, optimization, simulation, numerical integration, and bootstrapping. STAT 440 Computational Statistics (3)This course introduces many important ideas in statistical computing. Students are expected to possess knowledge of mathematical statistics at the level of STAT 415 and matrices at the level of MATH 220 . Students will learn the statistical computing environment called R and use R to implement many of the theoretical computing topics, which include numerical linear algebra, optimization, numerical and Monte Carlo integration, random number generation and simulation, and bootstrapping. Other statistical and mathematical software may be treated briefly, including symbolic mathematics environments like Mathematics and Maple."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Intermediate Applied Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ]
+      },
+      "description": "Review of hypothesis testing, goodness-of-fit tests, regression, correlation analysis, completely randomized designs, randomized complete block designs, latin squares."
+    },
+    {
+      "number": 461,
+      "type": "course",
+      "title": "Analysis of Variance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ]
+      },
+      "description": "Analysis of variance for single and multifactor designs; response surface methodology."
+    },
+    {
+      "number": 462,
+      "type": "course",
+      "title": "Applied Regression Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ]
+      },
+      "description": "Introduction to linear and multiple regression; correlation; choice of models, stepwise regression, nonlinear regression."
+    },
+    {
+      "number": 463,
+      "type": "course",
+      "title": "Applied Time Series Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT300",
+          "STAT318"
+        ]
+      },
+      "description": "Identification of models for empirical data collected over time; use of models in forecasting. STAT 463 Applied Time Series Analysis (3)This course covers many major topics in time series analysis. Students will learn some theory behind various time series models and apply this theory to multiple examples. An introduction to time series and exploratory data analysis will be followed by a lengthy study of several important models, including autoregressive, moving average, autoregressive moving average (ARMA), autoregression integrated moving average (ARIMA), and seasonal models. For each model methods for parameter estimation, forecasting, and model diagnostics will be covered. Additional topics will include spectral techniques for periodic time series, including power spectra and the Fourier transform, and one or more miscellaneous topics chosen by the instructor, such as forecasting methods, transfer function models, multivariate time series methods, Kalman filtering, and signal extraction and forecasting. The use of statistical software will be a central component of this course, as will the proper interpretation of computer output. Students enrolling for this course are assumed to have taken a semester-long course on regression."
+    },
+    {
+      "number": 464,
+      "type": "course",
+      "title": "Applied Nonparametric Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ]
+      },
+      "description": "Tests based on nominal and ordinal data for both related and independent samples. Chi-square tests, correlation."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "Survey Sampling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ]
+      },
+      "description": "Introduction to design and analysis of sample surveys, including questionnaire design, data collection, sampling methods, and ratio and regression estimation. STAT 466 Survey Sampling (3)This course covers classical sampling design and analysis methods useful for research and management in many fields. Topics include design of questionnaires; methods of data collection, sample-survey designs including simple random sampling, stratified sampling, cluster sampling, and systematic sampling ratio, regression, and difference estimation; two-stage cluster sampling; population size estimation; methods for dealing with nonresponse; and possibly other topics at the discretion of the instructor. Statistical software will be used to apply many of the techniques covered by this course."
+    },
+    {
+      "number": 470,
+      "suffix": "W",
+      "type": "course",
+      "title": "Capstone for Statistics Major--Problem Solving and Communication in Applied Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT400"
+        ]
+      },
+      "description": "This is a capstone course intended primarily for undergraduate statistics majors in their last semester prior to graduation. The course is designed to reinforce problem solving and communication skills through development of writing ability, interaction with peers and oral presentations. Course objectives are tailored to the needs of each cohort and may include the application of statistical reasoning to real-world problems and case studies, recognition or recommendation of appropriate experimental designs, proficient use of ANOVA & GLMs with understanding of associated modeling assumptions, ability to identify concerns about the use or interpretation of statistical models in context, and both written and verbal communication of statistical findings."
+    },
+    {
+      "number": 480,
+      "type": "course",
+      "title": "Introduction to SAS",
+      "credits": 1,
+      "description": "Introduction to SAS with emphasis on reading, manipulating and summarizing data. STAT 480 Introduction to SAS (1) STAT 480 addresses the fundamentals of the SAS programming language. It addresses the programming environment and major aspects of the Base SAS software, including reading in, manipulating, and transforming data. It also addresses techniques for reshaping and restructuring data files, merging and concatenating data sets, creating summaries and subsets of data sets, formatting and printing data, as well as using some of the basic statistical procedures."
+    },
+    {
+      "number": 481,
+      "type": "course",
+      "title": "Intermediate SAS for Data Management",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "STAT480"
+        ]
+      },
+      "description": "Intermediate SAS for data management. STAT 481 Intermediate SAS for Data Management (1) STAT 481 builds on the skills and tools learned in STAT 480 to provide intermediate level ability to use the Statistical Analysis System (SAS). It covers additional capability and major uses of the program, such as error checking, report generation, date and time processing, random number generation, and production of presentation quality output for graphs and tables. Other possible topics include advanced merging, PROC SQL, importing and exporting data sets, SAS GRAPH, and the Output Delivery System."
+    },
+    {
+      "number": 482,
+      "type": "course",
+      "title": "Advanced Topics in SAS",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "STAT480",
+          "STAT481"
+        ]
+      },
+      "description": "Advanced statistical procedures in SAS, including ANOVA, GLM, CORR, REG, MANOVA, FACTOR, DISCRIM, LOGISTIC, MIXED, GRAPH, EXPORT, and SQL. STAT 482 Advanced Topics in SAS (1) STAT 482 builds on the skills and tools learned in STAT 480 and STAT 481 to provide advanced programming ability to use the Statistical Analysis System (SAS). It provides a survey of the major statistical analysis procedures, such as the TTEST, GLM, REG, MANOVA, FACTOR, DISCRIM, LOGISTIC, and MIXED procedures. Other topics include using the TABULATE procedure to create reports, generating random numbers, exporting data from SAS data sets, using the SAS/Graph module to produce presentation quality graphs, using the SQL procedure to query and combine data tables, and using macros to write more efficient SAS programs. Credit can not be received for both STAT 482 and STAT 480 /481/483."
+    },
+    {
+      "number": 483,
+      "type": "course",
+      "title": "Statistical Programming in SAS",
+      "credits": 3,
+      "description": "Introduction, intermediate, and advanced topics in SAS. Credit can not be received for both STAT 483 and STAT 480 /481/482. STAT 483 Statistical Analysis System Programming (3) The three-credit STAT 483 course is a combination of the three one-credit courses STAT 480 , STAT 481 , and STAT 482 . In STAT 480 , students are introduced to the SAS windowing system, basic SAS programming statements, and descriptive reporting procedures, such as the FORMAT, PRINT, REPORT, MEANS, and FREQ procedures. In STAT 481 , the focus is primarily on extending the programming skills of the students, as they learn how to read messy data into SAS data sets, how to combine SAS data sets in various ways, how to use SAS character functions, how to read and process date and time variables, how to use arrays and do loops to write more efficient programs, and how to use the Output Delivery System to create SAS output in a variety of formats. STAT 482 provides a survey of the major statistical analysis procedures, such as the TTEST, GLM, REG, MANOVA, FACTOR, DISCRIM, LOGISTIC, and MIXED procedures. Other STAT 482 topics include using the TABULATE procedure to create reports, generating random numbers, exporting data from SAS data sets, using the SAS/Graph module to produce presentation quality graphs, using the SQL procedure to query and combine data tables, and using macros to write more efficient SAS programs. Credit can not be received for both STAT 483 and STAT 480 /481/482."
+    },
+    {
+      "number": 484,
+      "type": "course",
+      "title": "The R Statistical Programing Language",
+      "credits": 1,
+      "description": "Builds an understanding of the basic syntax and structure of the R language for statistical analysis and graphics. R is a popular tool for statistical analysis and research used by a growing number of data analysts inside corporations and academia. The flexibility and extensibility of R are key attributes that have driven its adoption in a wide variety of fields. This course begins with an overview of the R language and the basics of R programming. Building upon these basic understandings and procedures, this course then provides students with hands on experience in implementing statistical analysis of data in univariate, bivariate and multivariate contexts using the R software. In addition, the course works through accessing, importing and manipulating data. Documentation of work and report writing are also important aspects of the course content, and R Markdown is utilized to illustrate best practices."
+    },
+    {
+      "number": 485,
+      "type": "course",
+      "title": "Intermediate R Statistical Programming Language",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "STAT484"
+        ]
+      },
+      "description": "Builds an understanding of the basic syntax and structure of the R language for statistical analysis and graphics. R is a popular tool for statistical analysis and research used by a growing number of data analysts inside corporations and academia. The flexibility and extensibility of R are keys attributes that have driven its adoption in a wide variety of fields. This course begins extends the application of statistical analyses by providing students with hands on experience implementing R in various regression and ANOVA contexts. In addition, data visualization options are considered for producing customized graphics and simple programming is learned. Documentation of work and report writing is also an important aspect of the course content."
+    },
+    {
+      "number": 487,
+      "type": "course",
+      "title": "Introduction to Statistical Analysis with Python",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "STAT300"
+        ]
+      },
+      "description": "Due to the pervasiveness of Python as a statistical analysis tool, there is a demand for statisticians to learn Python to perform descriptive and inferential data analysis. The course will take a case study approach to introduce students to Python. Students will learn to work with complex data using Python and will get hands-on experience on how to use Python to conduct statistical analyses."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "A",
+      "type": "course",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 1
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

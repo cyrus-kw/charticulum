@@ -18,7 +18,7 @@ import { sampleCatalog } from "./sampleCurriculum";
 const statsCourses: CurriculumObject[] = [
   {
     id: "STAT200",
-    kind: "course",
+    type: "course",
     title: "Intro to Statistics",
     credits: 3,
     requisites: { previous: ["MATH101"], concurrent: [] },
@@ -30,7 +30,7 @@ const statsCourses: CurriculumObject[] = [
   },
   {
     id: "STAT300",
-    kind: "course",
+    type: "course",
     title: "Probability",
     credits: 3,
     requisites: { previous: ["STAT200"], concurrent: [], minGrades: { STAT200: "C" } },
@@ -41,7 +41,7 @@ const statsCourses: CurriculumObject[] = [
   },
   {
     id: "STAT310",
-    kind: "course",
+    type: "course",
     title: "Regression Analysis",
     credits: 3,
     requisites: { previous: ["STAT300"], concurrent: [] },

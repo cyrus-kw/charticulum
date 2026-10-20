@@ -14,7 +14,7 @@ export function obj(
   const { previous = [], concurrent = [], minGrades, ...rest } = overrides;
   return {
     id,
-    kind: "course",
+    type: "course",
     title: id,
     credits: 3,
     internalEquivalents: [],

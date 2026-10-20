@@ -1,0 +1,64 @@
+{
+  "subject": "ET",
+  "objects": [
+    {
+      "number": 200,
+      "type": "course",
+      "title": "Graphic Communications",
+      "credits": 3,
+      "description": "The study of graphic communications relating to the design and construction industry."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Mechanics I: Statics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Equilibrium of coplanar force systems; analysis of frames and trusses; shear and moment diagrams; friction; centroids and moment of inertia. ET 300 Mechanics I: Statics (3)This course is intended to provide the students with both the theory and application of the fundamental principles of static analysis by introducing free-body diagrams as a tool for solving statics problems. Students gain knowledge of Vector Mechanics, representation of physical quantitiesby a vector notation. Grasp the meaning of magnitude and direction of a vector; understand the definition of a unit vector. Master the mechanics of Vector Algebra. Emphasis will be placed on equations of equilibrium for particles and rigid bodies. Students are able to understand the physical meaning of a force and moment equilibrium. Master the balance of forces and moments to ensure equilibrium for 2D and 3D structures. This will be followed by analyzing internal forces in cables and bending moments in beams."
+    },
+    {
+      "number": 321,
+      "type": "course",
+      "title": "Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH211"
+        ]
+      },
+      "description": "Motion of a particle, relative motion; kinetics of translation; rotation and plane motion; conservation of energy and momentum. ET 321 Dynamics (3)The students will be introduced to the fundamental concepts of dynamics for particles motion along straight and curved paths. The students will learn and utilize concepts in particle kinematics and study the relationship between the forces acting on a body, the mass of the body and the motion of the body by using Newton's second law of motion, the principle of work and energy and the principle of linear momentum and impulse. This will be followed by analyzing the rotation of a rigid body about a fixed axis, and extending kinematic concepts to plane motion of rigid bodies.The concepts of work, energy, linear momentum and angular momentum of a rigid body in plane motion will be introduced. The students will learn how to apply the principle of impulse/momentum to solve rigid-body planar kinetic problems that involve force, mass, velocity and time, and the principle of work/energy to solve problems that involve force, mass, velocity and displacement.Dynamics course will also provide students with the tools to obtain desired information from those models by solving the equations governing the motion of the system. Topics covered in Dynamics include: kinematics of particles, application of Newton's laws to particles, energy and momentum methods for particles, kinematics of rigid bodies, application of the laws of Newton and Euler to rigid bodies, and energy and momentum methods for rigid bodies."
+    },
+    {
+      "number": 322,
+      "type": "course",
+      "title": "Strength of Materials",
+      "credits": 3,
+      "description": "Axial, torsional, bending, and combined stress analysis; deformation and deflection analysis of cables, shafts, and beams; column design and analysis. ET 322 Strength of Materials (3)Strength of materials deals with the relationship among the external forces acting on a body, the resulting stresses (intensity of internal forces) and the deformation (change of size or shape). The determination of proper sizes and material of construction of mechanical components and structural members to satisfy strength and deformation requirements are important topics of strength of materials. The students will be introduced to the concept of stress - normal, shear and bearing stress, and relate strain to stress using material properties. The students will develop an understanding of design parameters such as design stresses, factors of safety for axial loads, transverse loads and torsional loads, to design components such as beams and circular shafts satisfying strength and deformation requirements. The students will also learn to calculate moments of inertia, centroids and apply parallel axis theorem for moment of inertia. The students will be introduced to the concept of combined stresses and their analysis using graphical and analytical methods. Finally, the concept of buckling in columns will be introduced."
+    },
+    {
+      "number": 323,
+      "type": "course",
+      "title": "Strength of Materials Laboratory",
+      "credits": 1,
+      "description": "Measurement of mechanical properties of materials, structural testing. ET 323 Strength of Materials Laboratory (1)The objective of the strength of materials laboratory is to demonstrate the basic principles in the area of strength and mechanics of materials to the undergraduate students through a series of experiments. Students will be conducting experiments using Universal Testing Machines to calculate tensile strength of steel and aluminum samples and experiments to measure hardness of non-heat treated and heat treated steels. Students will also test steel samples in single shear, double shear and impact loading, followed by experiments on the torsion testing machine to calculate torsional strength of aluminum samples and the strut apparatus to analyze different modes of buckling in a slender aluminum column. The laboratory demonstrates important concepts from the strength of materials theory course."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written or oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    }
+  ]
+}

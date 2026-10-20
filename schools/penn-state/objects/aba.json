@@ -1,0 +1,31 @@
+{
+  "subject": "ABA",
+  "objects": [
+    {
+      "number": 457,
+      "type": "course",
+      "title": "Understanding Communication: Verbal Behavior",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH100"
+        ]
+      },
+      "description": "This course focuses on the behavioral processes in the development of language and communication. Topics include the acquisition and development of listener, speaker, reader, and writer behaviors; the application of theory to instructional practices and treatment; and the implications for empirical research."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Projects in Behavior Analysis",
+      "credits": 1,
+      "description": "Supervised student activities on behavioral research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship in Behavior Analysis",
+      "credits": 3,
+      "description": "Supervised off-campus, non-group instruction including behavioral field experiences, practice, or internship. Requirements and assessment will include skills including but not limited to national certification requirements."
+    }
+  ]
+}

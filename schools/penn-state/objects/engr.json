@@ -1,0 +1,722 @@
+{
+  "subject": "ENGR",
+  "objects": [
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 99,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Introduction to Engineering",
+      "credits": 1,
+      "description": "A seminar providing information about different engineering majors, coping with college life, and exploring educational and career goals. ENGR 100S ENGR 100S Introduction to Engineering (1) (FYS)Engineering 100 is a First-Year Seminar designed as an introduction to the majors available to students in engineering. There are three main goals:1. To introduce students to the areas of study that the college has to offer - this is to assist students in deciding whether engineering is for them. It also helps students decide which major within engineering is for them. This introduction is accomplished through homework exercises and guest speakers - graduates in industry, graduate students, department heads, faculty, and current undergraduates.2. To introduce students to the university in general - what resources are available and what it means to be a student at a university instead of high school. This is accomplished through guest speakers, lectures by your professor, and homework exercises.3. To provide students with an opportunity to interact with faculty members, academic advisers, and other students.The class meets twice a week. All sections meet together once a week to listen to presentations from people representing each major. On the other class day, sections meet separately with their professor for presentations and activities unique to that instructor."
+    },
+    {
+      "number": 110,
+      "type": "course",
+      "title": "Introduction to Engineering for Educators",
+      "credits": 3,
+      "internalEquivalents": [
+        "SCIED110"
+      ],
+      "description": "This course focuses on physics content, engineering design principles, and elementary science education pedagogy."
+    },
+    {
+      "number": 111,
+      "type": "course",
+      "title": "Introduction to Cross-Cultural Communication for Engineers",
+      "credits": 1,
+      "description": "Introduction to theoretical approaches and practical applications of intercultural communications for engineering students."
+    },
+    {
+      "number": 115,
+      "suffix": "N",
+      "type": "course",
+      "title": "Science, Humanity and Catastrophe: Scientific Discovery in Germany",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "internalEquivalents": [
+        "GER115N"
+      ],
+      "description": "The 20th century was a time of great scientific advancement - advancements that were used both for good and for evil (and for other purposes that lie somewhere in between). Germany and German-speaking scientists played central roles in many of these discoveries. In this course we will take an interdisciplinary approach to discussing key scientific advancements, including the discovery of nuclear fission and the development of the nuclear bomb, the discovery of polymers and the invention of pain medicines such as morphine and oxycodone, learning about the science behind these discoveries alongside the social and historical contexts in which they occurred, and the impact these discoveries had on society. While a majority of the scientific discoveries that we will focus on took place in the first half of the 20th century, we will also discuss the ways in which the long-term consequences of these discoveries are still relevant today, especially as they relate to current issues on sustainability (e.g., the use of plastics) and the ethical considerations that arise more generally when thinking about the relationship between science, technology, engineering and society."
+    },
+    {
+      "number": 118,
+      "type": "course",
+      "title": "Impact of Culture on Engineering in China",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR111"
+        ]
+      },
+      "description": "Study of engineering in the context of cultural, historical, societal, political, and environmental considerations to understand the relationship between Chinese culture and engineering projects and policies; brief introduction to the basic engineering principles underlying the engineering projects and their design. ENGR 118 Impact of Culture on Engineering in China (3) (GS;IL) This summer-session course is delivered in China. Chinese culture, history, society, environment, politics, population, economics, and policies are related to engineering practice, design, manufacturing, processes, engineering education, and transportation. Exposure to Chinese cultural components and how they influence engineering project implementation are presented and demonstrated through site visits and participation in relevant activities. Sites and activities in China are selected to expose students to examples that illustrate the impact of Chinese culture on engineering in an integrated manner. For example, ancient engineering projects, such as the Great Wall, Forbidden City, and Terracotta Warriors, and modern engineering projects, such as the Three Gorges Dam, Hangzhou Bay Bridge, the Shanghai Dongtang Eco-city project, may be selected. In addition to site visits and local cultural and transportation experiences, the course includes guest lectures, documentaries, readings, class discussions, and projects. This course is designed to provide basic understanding of Chinese culture and to relate it to historical and contemporary applications of technology. A program fee is charged for course costs that are not covered by tuition. Students are required to participate in all aspects of the course: scheduled site visits, presentations, lectures, readings, and cultural experiences. An interest in technical applications and not necessarily a technical background is required. However, engineering and technical principles are presented."
+    },
+    {
+      "number": 120,
+      "suffix": "N",
+      "type": "course",
+      "title": "Design Thinking and 3D Printing in Engineering and Healthcare",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "description": "Design Thinking and 3D Printing in Engineering and Healthcare ( ENGR 120N ) is an introductory general education interdomain course. The course will introduce basic concepts of design processes, engineering, and medicine. The course will assist students in realizing the power of creativity and imagination as it is applied to the use of emerging technologies to solve design dilemmas at the local, regional, national, and international levels. Students will be encouraged to secure an interdisciplinary and collaborative foundation through an exploration of topics including basic engineering, human anatomy and health, design (proportion, structure, integrity, design, scale, manufacturing, iteration), Design Thinking concepts (empathize, define, create, prototype, and test), problem-solving processes (brainstorming, free thought, think aloud, reverse engineering), 3D production processes, Bioprinting (use of biofilm to create human tissue and organs), Engineering, Medicine, and Microprinting (creating works of art from photos taken from microscope slides). Students will be encouraged to view projects from the User/Patient perspective. Promotion of integrative thinking will be encouraged throughout the coursework with the goal of increasing the incorporation of design, problem-solving, engineering and medicine in the disciplines of study for individual students. Integrative thinking will be assessed through student involvement in online discussions, case studies, class conversations encompassing ethical/legal/financial considerations to design issues, studio time, image production and manipulation, internet file sharing, materials/properties selection, production processes, and interdisciplinary individual and team-based projects encompassing creative expression and science. By the end of the course, students will be furnished with basic knowledge and strategies to evaluate the role of design in the world and to independently act on the information. This course will fulfill 3 credits of the General Education requirements addressing the interdomain fields of Art (GA) and Natural Sciences (GN). No prerequisites are required for the course. This course will serve as an introduction to the basic ideas of design, creativity, imagination and problem-solving to complement development in science disciplines across the university community."
+    },
+    {
+      "number": 180,
+      "type": "course",
+      "title": "Introduction to Engineering Success and Professional Development First-year Seminar",
+      "credits": 1,
+      "description": "The Introduction to Engineering Success and Professional Development First-year Seminar is a one-credit course designed for first-year College of Engineering students participating in the Women in Engineering Program Orientation. The course provides essential academic, personal, and professional skills to support undergraduate success in engineering academics. Through hands-on projects, students engage in the engineering design process and gain foundational experience with engineering modeling software. Additionally, they develop technical communication skills, both oral and written. Career exploration is a key component, facilitated through networking opportunities with faculty, industry professionals, and upper-level student mentors. The course also addresses important aspects of university life, including academic integrity, engineering ethics, and the value of diversity and inclusion. By utilizing campus resources and engaging in near-peer mentoring, students will cultivate a strong sense of Engineering Identity and community within the field. By the end of the course, students will be equipped to effectively manage their academic journey, set and achieve goals, and explore future engineering career opportunities."
+    },
+    {
+      "number": 185,
+      "type": "course",
+      "title": "Short Term/Short Duration Internship",
+      "credits": 1,
+      "description": "This short-term or short-duration internship course allows undergraduate engineering students to be enrolled for credit while working at a professional research, industry, or government agency internship relevant to their major that does not meet the requirements for any other established internship course. Students enrolled in ENGR 185 may earn 1 credit while working fewer than 15 hours per week or fewer than 10 weeks during the semester of enrollment. Credit for this course may not be applied to degree requirements. Students enrolled in ENGR 195B gain real-world experience in a professional setting while learning other needed skills including communication, ethics, and time and project management. Students will complete an End-of-Semester Evaluation (with their workplace adviser) and an End-of-Semester Report at the conclusion of the internship; grading will be PS/FL."
+    },
+    {
+      "number": 191,
+      "type": "course",
+      "title": "Millennium Scholars Summer Seminar",
+      "credits": 2,
+      "description": "The Millennium Scholars Program, Summer Seminar ( ENGR 191 ) will introduce first-year scholars to the expectations and standards of the Millennium Scholars Program. Throughout the summer, scholars will meet different faculty and campus leaders, engage in community building with peers, and network with present and past Scholars. Scholars will understand the importance of presenting themselves professionally, learn how to engage in the various learning environments, learn how to hold the cohort accountable, and get acclimated to the Program and Penn State. This particular section of seminar is unique because only students participating in the Millennium Scholars Program will be enrolled."
+    },
+    {
+      "number": 192,
+      "type": "course",
+      "title": "Millennium Scholars First-Year Seminar",
+      "credits": 1,
+      "description": "Millennium Scholars Program (MSP) First-Year Seminar is a one credit course designed for First-Year MSP students. This course is designed to assist new scholars in understanding and meeting the expectations of the Millennium Scholars Program. The course will focus on professional development including developing networking and interviewing skills, preparing applications for summer research experiences (REUs), wellness and self-care, learning self-advocacy, and learning how to effectively access and use university resources. This section of seminar is unique because only first-year students participating in the Millennium Scholars Program will be enrolled. At the conclusion of the seminar students should have the foundational elements of an REU application completed and a list of fifteen REUs they will apply to in the spring semester. Students will also discuss what it means to be a Millennium Scholar."
+    },
+    {
+      "number": 193,
+      "type": "course",
+      "title": "Engineering Summer Bridge Program Seminar",
+      "credits": 0.25,
+      "description": "The Engineering Bridge course assists in the onboarding of incoming first-year students through the Multicultural Engineering Program, which strives to foster a welcoming environment that celebrates culture and inclusion while working towards increasing the recruitment and retention of racially and ethnically minoritized students pursuing engineering degrees. The course is designed for incoming first-year students in engineering majors at Penn State and includes structured social and cultural activities that encourage students to build relationships with each other and relate in-class programs to out-of-class experiences. The course will guide participants toward academic success to give them a head start in the challenging yet rewarding fields of engineering."
+    },
+    {
+      "number": 194,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 195,
+      "type": "course",
+      "title": "Engineering Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 195,
+      "suffix": "A",
+      "type": "course",
+      "title": "Engineering Internship",
+      "credits": 1,
+      "description": "A supervised work experience in a professionally relevant position in research, industry or government. ENGR 195A Engineering Internship (1 per semester/maximum of 4) This course provides students the opportunity to apply fundamental skills and academic concepts in a professional laboratory, industry, or government agency setting within the United States. The final grade (SA/UN) will be based on the final report submitted by the student and a mid-term and final evaluation submitted by the employer. This course will be offered fall, spring, and summer semesters, and may be repeated."
+    },
+    {
+      "number": 195,
+      "suffix": "I",
+      "type": "course",
+      "title": "Engineering International Internship",
+      "credits": 0.5,
+      "description": "A supervised work experience in a professionally relevant position in research, industry, government or service sector. ENGR 195I Engineering International Internship (1 per semester/maximum of 4) (IL) This course provides students the opportunity to apply fundamental skills and academic concepts in a professional laboratory, industry, or government agency setting outside of the United States. The final grade (SA/UN) will be based on the final report submitted by the student and a mid-term and final evaluation submitted by the employer. This course will be offered fall, spring, and summer semesters, and may be repeated."
+    },
+    {
+      "number": 196,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 200,
+      "suffix": "N",
+      "type": "course",
+      "title": "Generative AI for All",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Welcome to Generative Artificial Intelligence for All. This course introduces the world of generative AI and provides a basic theoretical lens of \"co-intelligence\" through which students can learn, work with, and critically assess this emerging technology. You'll learn what generative AI is, how it works, and its capabilities and limitations in creating novel content such as images, text, and music. Students will gain an understanding of the history and development of artificial intelligence, where generative AI fits within that landscape, how it came to be, and - at a high level - how it functions. The course also explores psychological and neurobiological theories that inform neural network design, including how large language models (LLMs) may be prompted (e.g., cognitive load theory). Students will examine the socio-political context in which generative AI has emerged and analyze this technological \"revolution\" in comparison to past shifts, such as the Industrial Revolution, and how these changes have shaped society and contemplate how this one may shape the future. In addition to developing hands-on skills, students will be introduced to how various industries - such as law, retail, advertising, healthcare, and journalism - are using generative AI in practice. Finally, students will explore the emerging opportunities, risks, and ethical implications of this technology for individuals and society. Join us to gain practical generative AI skills while critically examining its impact through an accessible, beginner-friendly introduction."
+    },
+    {
+      "number": 283,
+      "type": "course",
+      "title": "Communications for Technical Value and Impact",
+      "credits": 3,
+      "description": "This course develops the student's ability to effectively communicate technical material in preparation for a variety of Engineering-related careers. Instruction and assignments for this course encourage students to develop their communication skills and to practice disseminating well-organized, technical information in a way that is suitable for technical or non-technical audiences. In-class activities, discussions, and assignments will be based on practical, relevant technical topics that are of personal and/or professional interest to the students. The style of communication that is required will be more formal, more precise, and more authentic than that which students typically encounter outside of industry."
+    },
+    {
+      "number": 287,
+      "type": "course",
+      "title": "Career Preparation and Development for Engineers",
+      "credits": 1,
+      "description": "This course will provide engineering students with awareness of University support structures and resources for career development and training in a variety of key career topics (resume writing, interviewing, networking, etc.). The course will develop understanding of how skills such as time management and goal setting are applied to professional development and the impact of effective written, spoken, and digital communication in the job search process. Students will experience a variety of professional interactions through course assignments and learn to manage deadlines and submit deliverables as expected in work environments."
+    },
+    {
+      "number": 290,
+      "type": "course",
+      "title": "Millennium Scholars Professional Development Seminar",
+      "credits": 0.5,
+      "description": "The Millennium Scholars Program prepares undergraduates to enter graduate school. As part of this preparation, each scholar participates in a professional development seminar. Students will be exposed to various professional development topics through lecture, visiting guest speakers and interactive activities. The topics covered include Learning about career development tools; Gain knowledge from peers and professionals in the industry; Learn about summer research and graduate opportunities at other institutions; Learn about Penn State on campus resources; Participate in stress management and self-care exercises; Participate in team building and networking events; Career opportunities for people with graduate degrees. Third- and fourth-year students will be given an opportunity to develop mentoring skills. In addition, students will practice holistic well-being and use their learning to be a productive, empathetic member of their cohort and MSP community."
+    },
+    {
+      "number": 291,
+      "type": "course",
+      "title": "The Role of the Engineering Peer Advising Leader",
+      "credits": 1,
+      "description": "ENGR 291 is a 1-credit class designed to facilitate the preparation and professional development of students serving as College of Engineering Peer Advising Leaders (EPALs). EPALs support College of Engineering students through conversations about resources (Department, College, and/or University), about their individual experience as a Penn State engineering student, and about navigating the various Penn State management, registration and advising systems. Through this course, students who are training to become peer advising leaders will be familiarized with appropriate College and University resources that can support social and academic integration and success for students. Students will explore key aspects of communication in a 1-on-1 setting that will be critical to their work as an EPAL. Engineering 291 will serve to build cohesion and a shared experience culture for EPALs. The course experience will provide robust opportunities for targeted development, critical analysis, and reflection for specific professional skills relevant to the long-term success of engineering students."
+    },
+    {
+      "number": 292,
+      "type": "course",
+      "title": "Millennium Scholars Second-Year Seminar",
+      "credits": 1,
+      "description": "Millennium Scholars Program (MSP) Second-Year Seminar is a one-credit course designed for Second-Year MSP students. This one credit course is designed to assist scholars in developing research and presentation skills, prepare for the summer research experience (REU) application process and to understand the role of ethics and morals is the conduct of scientific research. This course will focus on the skills necessary to be an effective researcher and presenter of research; how to identify and apply for summer research experiences; clarifying personal research interests and understanding professional ethics. This section of seminar is unique because only second-year students participating in the Millennium Scholars Program will be enrolled. At the conclusion of the seminar students should have the foundational elements of an REU application completed and a list of ten REUs they will apply to in the spring semester. Students will also discuss issues relating to ethics and equity in science."
+    },
+    {
+      "number": 293,
+      "type": "course",
+      "title": "Clark Scholars Engineering Equity Seminar",
+      "credits": 1,
+      "description": "This seminar is open only to students within the Clark Scholars Program, a program built upon four thematic pillars: business and entrepreneurship, leadership, social equity and global citizenship, and community engagement. A comprehensive focus on these areas ensures that Clark Scholars make a broader impact on their community and that they are prepared to take on roles as socially responsible innovators and leaders in the industries in which they pursue their careers. In this way, they are excellently positioned to tackle some of the world's toughest challenges. To be an engineer of positive change means to understand the history and complexity of the world in which we work. In the Engineering Equity Seminar course, you will learn what it means to be an inclusive and equitable engineer, and how that is linked to engineering infrastructure and design. Through speakers across academia, industry, and the community, you will also learn how engineering influences society and vice versa, and the experiences of marginalized groups within the field. All along the way, group discussions on course topics will strengthen community amongst the Clark Scholars. A final project will test Scholars' knowledge of concepts learned."
+    },
+    {
+      "number": 295,
+      "type": "course",
+      "title": "Engineering Co-Op Work Experience I",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "CMPSC122",
+          "MATH140",
+          "MATH141"
+        ]
+      },
+      "description": "A supervised work experience where the student is employed in an engineering position in industry or government. (To be offered only for SA/UN grading.)"
+    },
+    {
+      "number": 295,
+      "suffix": "A",
+      "type": "course",
+      "title": "Engineering Cooperative Education",
+      "credits": 1,
+      "description": "ENGR 295A Engineering Cooperative Education (1) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting in the United States. This course is the first in a series that provides progressive semesters of career-related experience in the Cooperative Education Program (defined as two or more work semesters). The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
+    },
+    {
+      "number": 295,
+      "suffix": "I",
+      "type": "course",
+      "title": "Engineering International Cooperative Education",
+      "credits": 1,
+      "description": "ENGR 295I Engineering International Cooperative Education (1) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting outside of the United States. This course is the first in a series that provides progressive semesters of career-related experience in the Cooperative Education Program (defined as two or more work semesters). The final grade (SA/UN) will be based on the end-of semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 0.5,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Entrepreneurial Leadership",
+      "credits": 3,
+      "description": "This course develops leadership and entrepreneurial skills using collabora- tive, problem-based projects, with engineering and business students working in teams. ENGR 310"
+    },
+    {
+      "number": 320,
+      "type": "course",
+      "title": "Materials Properties Measurement I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ],
+        "concurrent": [
+          "ENGR350"
+        ]
+      },
+      "description": "Measurement and experimental procedures determination of the mechanical properties of engineered materials under deflection, compression, tension, fracture and fatigue conditions. ENGR 320 Materials Properties Measurement I (3) Materials Laboratory I introduces students to the experimental procedures in determining mechanical properties (elastic modulus, shear modulus, Poisson's ratio, and fracture toughness) of engineered materials. Students gain hands-on experience in strain gage mounting and material properties measurement using strain gages. In conjunction with mathematical modeling software, finite element analysis is used to analyze engineering components subjected to mechanical and thermal loading (static and dynamic). Experiments and lectures are designed to demonstrate the theory and practice of mechanical measurement of material. Students utilize state-of-the-art equipment for experimentation in conjunction with advanced modeling software such as ANSYS to predict and evaluate material behavior under mechanical and thermal loading."
+    },
+    {
+      "number": 320,
+      "suffix": "Y",
+      "type": "course",
+      "title": "Design for Global Society",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "requisites": {
+        "previous": [
+          "ENGL202C"
+        ]
+      },
+      "description": "ENGR 320Y examines engineering design from a societal perspective by asking the question, \"What are the responsibilities and challenges of designers in considering the needs and welfare of current and future societies, and of specific segments and groups within those societies?\" Students investigate and analyze a diverse range of perspectives on technology and consider and apply those perspectives to actual design projects and case studies. ENGR 320Y is designed as writing-intensive with the goal of having students practice a variety of writing assignments. Those assignments include short, informal assessments and longer research papers. Also, students will work in collaborative groups on an academically-themed project related to the design intent of this course. Student teams will write proposals for projects that explore the means of environmental improvement. Teams will deliver presentations in class and at related events such as campus Earth Day celebrations. Beyond the writing-intensive focus, the course has three other stated goals. One is to enhance student understanding by adopting a writing-to-learn approach for course assignments. The second is to help students appreciate and understand the formal design process with a focus on the diversity of the end users of their designs. The third is to have students take responsibility for their design during the process by recognizing the impact of technology on society. Meeting these goals involves readings and critical analyses in the areas of ethics, history, economy, ecology, science, and engineering."
+    },
+    {
+      "number": 350,
+      "type": "course",
+      "title": "Computational Modeling Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213",
+          "ME300",
+          "CMPSC121"
+        ]
+      },
+      "description": "Computational Modeling Methods is intended to introduce students to strategies in mathematical modeling of physical phenomena using modern computer simulation software. The course provides theoretical understanding and hands-on experience of the modeling techniques used in current engineering practice and allows students to apply these skills to engineering computational problems. Modeling of engineering processes requires users to have a working knowledge of computer simulation software and modeling techniques such as mesh construction and analysis. This course teaches the principles of mathematical modeling of various physical phenomena and allows students to learn the basic strategies of mathematical modeling and the proper use of computational tools for the analysis of topics involving structural, thermal, and materials engineering."
+    },
+    {
+      "number": 385,
+      "type": "course",
+      "title": "Advanced Technical Communication and Professional Development",
+      "credits": 3,
+      "description": "This course prepares engineering students to be leaders at Penn State and in the broader field of engineering. Students will learn advanced technical communication techniques appropriate for a variety of audiences and situations. In addition, they will engage with professional development topics relevant to their academic and professional careers."
+    },
+    {
+      "number": 390,
+      "type": "course",
+      "title": "Millennium Scholars Third-Year Seminar",
+      "credits": 1,
+      "description": "Millennium Scholars Program (MSP) Third-Year Seminar is a one credit course designed for Third-Year students MSP students. This one credit course is designed to assist scholars in preparing for the graduate school application process. This course will focus on the documents, skills and knowledge needed to apply for graduate school. Additionally, the course will provide resources to help students make decisions about graduate school and opportunities to practice skills like interviewing and presenting research. This section of seminar is unique because only students participating in the Millennium Scholars Program will be enrolled. At the conclusion of the seminar, students should have the foundational elements of a graduate school application completed and a list of ten schools they will apply to in the fall semester. Students will complete a thesis proposal and a timeline for the completing of their undergraduate research thesis. Students will participate in GRE or MCAT preparation according to their goals."
+    },
+    {
+      "number": 393,
+      "type": "course",
+      "title": "Clark Leadership & Innovation Seminar",
+      "credits": 1,
+      "description": "This seminar is open only to students within the Clark Scholars Program, a program built upon four thematic pillars: business and entrepreneurship, leadership, social equity and global citizenship, and community engagement. A comprehensive focus on these areas ensures that Clark Scholars make a broader impact on their community and that they are prepared to take on roles as socially responsible innovators and leaders in the industries in which they pursue their careers. In this way, they are excellently positioned to tackle some of the world's toughest challenges. This course equips students with a comprehensive understanding of essential leadership and innovation principles, bridging the gap between academic experiences and professional engineering practice. Through engaging assessments, interactive activities, and personal reflection, students will explore leadership styles and innovation theories, actively practicing these concepts in class through student leadership positions as well as providing a roadmap for implementation in and their future careers. Students will leave with practical insights and strategies to excel as innovative leaders in the engineering workforce."
+    },
+    {
+      "number": 394,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Engineering Co-Op Work Experience II",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENGR295"
+        ]
+      },
+      "description": "A supervised work experience where the student is employed in an engineering position in industry or government. (To be offered only for SA/UN grading.)"
+    },
+    {
+      "number": 395,
+      "suffix": "A",
+      "type": "course",
+      "title": "Engineering Cooperative Education",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENGR295A"
+        ]
+      },
+      "description": "ENGR 395A Engineering Cooperative Education (1-2) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting in the United States. This course is the second in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
+    },
+    {
+      "number": 395,
+      "suffix": "I",
+      "type": "course",
+      "title": "Engineering International Cooperative Education",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENGR295A"
+        ]
+      },
+      "description": "ENGR 395I Engineering International Cooperative Education (1-2) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting outside of the United States. This course is the second in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
+    },
+    {
+      "number": 396,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Project Management for Professionals",
+      "credits": 3,
+      "internalEquivalents": [
+        "WFED405"
+      ],
+      "description": "Covers the essential concepts and skills needed to make effective contributions on projects, on time and within budget. WF ED (ENGR) 405 Project Management for Professionals (3) Professionals in the workplace carry out many different projects every day ranging from somewhat small tasks, e.g.,planning events and designing courses, to big projects, e.g., launching an enterprise wide system. Project Management for Professionals is a practical \"hands-on\" course designed for mid-career adult students and covers the essential concepts and skills needed to make effective contributions and have an impact on the successful accomplishment of projects on time and within budget. Project management principles and techniques are presented with an emphasis on how they are applied to real world workforce development projects. Topics include the project management life cycle and process; techniques for planning, scheduling, budgeting, and controlling project performance; project manager responsibilities and skills; project team development and effectiveness; project communication; and organization structures."
+    },
+    {
+      "number": 407,
+      "type": "course",
+      "title": "Product Innovation Entrepreneurship",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR310"
+        ]
+      },
+      "description": "This course has students apply the entrepreneurial mindset in this one-of-a-kind class. Students learn about business and entrepreneurship through creativity, risk-taking, competition, and innovation. Explore and learn from success and failure. Practice the entrepreneurial mindset by developing and selling products and services, and by competing on teams to create startup businesses. The course is designed to stimulate creative thinking, learn to deal with and appreciate the opportunities provided by ambiguity, and increase a student's team-working abilities and leadership competencies through challenging and engaging projects. This class is required for the Product Innovation Cluster of the Entrepreneurship and Innovation (ENTI) minor and for the Engineering Leadership Development Minor (ELD). The class counts towards the Product Innovation Entrepreneurship Certificate (PINENT)."
+    },
+    {
+      "number": 408,
+      "type": "course",
+      "title": "Leadership Principles",
+      "credits": 3,
+      "description": "A project-based exploration of theories and principles of engineering leadership applicable to technical careers. This leadership course provides the basic theories, principles, skills, and relevant literature germane to leadership within the engineering discipline in particular. Leadership in an engineering context will be explored. This will range from developing awareness of personal leadership strengths to analysis of corporate mission, vision, values, and strategies. Students will apply these to semester-long team projects. Lectures, assignments, and group projects develop knowledge of the impacts of globalization, different cultural values, traditions, beliefs, and customs to develop leaders ready to impact an international workforce. Students will apply leadership theory to the global engineering industry through the following: - Describe leadership concepts, principles, and theories in the context of global engineering business practices - Demonstrate knowledge of how leadership behaviors impact cross-cultural teams (US) - Analyze their own personal leadership strengths and weaknesses through course projects - Evaluate and critique engineering leadership effectiveness displayed by others through project work and current event analysis - Demonstrate appreciation for life-long learning of leadership and teaming skills Course assignments and projects align with the current nature of a global market and require that students cultivate awareness of social identity such as ethnicity, race, class, religion, gender, physical/mental disability, age, or sexual orientation (US). Students are also evaluated on interpersonal communication through team projects, presentations, and written assignments as they apply to interactions within a culturally diverse team completing a semester-long project (US). Application of learning objectives will occur within a small team environment through the completion of a semester-long project dedicated to developing an engineering leadership solution to a challenging problem. The course will be offered each fall and spring semester."
+    },
+    {
+      "number": 409,
+      "type": "course",
+      "title": "Leadership in Organizations",
+      "credits": 3,
+      "description": "Development of leadership skills essential for engineers to guide colleagues or an organization in a productive direction."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Coaching Skills and Practice for Engineering Leaders",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR408"
+        ]
+      },
+      "description": "This course provides an applied approach to engineering leadership education. Students will develop a deeper understanding of leading engineering teams through applying coaching techniques designed to foster innovative and creative thinking through a nondirective process. Leader-as-coach theory will be explored and applied to teams in pre-requisite Engineering Leadership courses. The course centers on experiential learning by providing a real-world organizational structure of student teams reporting to their leadercoach on project progress. Students previously completing courses in the Engineering Leadership Minor will be assigned as leadercoaches for students currently completing a pre-requisite course. Leader-coaches will apply coaching techniques to positively impact their teams' progress through a semester-long engineering design project. Coaching through the design process, students in the course will gain experience in motivating and supporting engineers in creative and innovative design solutions. Leader-coaches will spend time critiquing technical solutions and apply coaching skills to support the design thinking process. Students will practice giving feedback to individual students based on observed performance. Upon completion of this course, students will be able to describe coaching skills and their application for effective leadership, recognize appropriate coaching skills for use in various situations, implement coaching techniques to foster creativity and innovation through the design thinking process, prepare clear and informative written performance reviews, conduct effective one-on-one performance reviews focused on individual personal development, and build self-awareness of personal leadership strengths and areas for growth. Course assignments require application of the design process, review of technical concepts, and coaching skills and support personal leadership development."
+    },
+    {
+      "number": 411,
+      "type": "course",
+      "title": "Entrepreneurship Business Fundamentals",
+      "credits": 3,
+      "description": "This course introduces critical entrepreneurship business skills from a startup perspective. Learn the fundamentals of business formation structures, accounting and finance, intellectual property, marketing, sales and operations. Projects include assembling a financial proforma and developing an investor pitch. Whether you start your own business, work for a startup or work for a larger organization, this class teaches how the entire business operates and the contributions of all the functional areas. This \"big picture\" understanding will enhance your leadership and entrepreneurial potential. This class is required for the Product Innovation Cluster of the Entrepreneurship and Innovation (ENTI) minor, the Master in Engineering Leadership and Innovation Management Degree (ELIM) and the Product Innovation Entrepreneurship Certificate (PINENT)."
+    },
+    {
+      "number": 415,
+      "type": "course",
+      "title": "Launching Innovation: Ideas to Opportunities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR310"
+        ]
+      },
+      "description": "This course provides an in-depth look at developing new products or services as an entrepreneur or within an existing organization. Students analyze attributes of companies that welcome innovation where they can employ the entrepreneurial mindset to spearhead new opportunities within a company. Students explore potential opportunities through a Business Model Canvas that highlights key strategic factors such as: customer value proposition, customer segments, channels/route to market, customer relations, revenue streams, resources, partnerships, and cost structure. These elements are applied to both new or novel ideas as an entrepreneur and to intrapreneurship, identifying opportunities within an existing organization and learning the role of a product manager. This class is required for the Product Innovation Cluster of the Entrepreneurship and Innovation (ENTI) minor and is an option for the Product Innovation Entrepreneurship Certificate (PINENT)."
+    },
+    {
+      "number": 421,
+      "type": "course",
+      "title": "Materials Properties Measurements II",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ENGR320",
+          "MATSE201",
+          "MATSE400"
+        ]
+      },
+      "description": "Materials powder characterization, compaction and densification techniques, density measurements, micro structural evaluation, thermal and electrical properties of materials. ENGR 421 Materials Properties Measurement II (4) Materials property measurement II introduces students to experimental procedures in the determination of thermal properties (heat transfer/conduction and thermal expansion) and electrical properties (resistance and dielectric measurements) of materials through demonstrations and experiments. Lectures provide a theoretical understanding of the characterization techniques and provide information for the design and interpretation of experimental results. This laboratory complements lectures in materials characterization, materials processing and materials design courses allowing students to apply theoretical knowledge to experimental processes. Students gain hands-on knowledge of testing equipment and experience in data acquisition and interpretation. Students gain experience in the processing of material (powder characterization, consolidation, and densification), the analysis of material microstructures and investigations of structure property relationships."
+    },
+    {
+      "number": 422,
+      "type": "course",
+      "title": "Leadership of International Virtual Engineering Teams",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR408"
+        ]
+      },
+      "description": "ENGR 422 provides students with the opportunity to develop intercultural engineering collaboration skills. The course focuses on developing leadership competence in cross-cultural teaming through a virtual learning environment. Students will team with students from other countries on completing a project with socially relevant solutions. Students will work virtually with students from other institutions outside the US to complete a project throughout the semester. Students completing this course will: Acquire and apply a theoretical foundation in appropriate engineering design across cultural and international boundaries; Discuss contemporary international engineering development, ethics, and project leadership principles as they relate to intercultural communication in engineering teams; Demonstrate engineering project collaboration and leadership skills in the context of virtual cross-cultural interdisciplinary teams; Assess business and leadership skills displayed by others and critically evaluate current international events and assigned reading material. Students will be evaluated on these learning objectives through a variety of methods such as presentation of a semester long team project, critiques and reflection of relevant literature, papers, and peers reviews. This course is part of the international track within the engineering leadership development minor."
+    },
+    {
+      "number": 425,
+      "type": "course",
+      "title": "New Venture Creation",
+      "credits": 3,
+      "internalEquivalents": [
+        "IST425",
+        "MGMT425"
+      ],
+      "description": "Via problem-based learning, students define new business ventures to meet current market needs, develop business models, and present to various stakeholders. The goal of New Venture Creation is to better prepare undergraduate students to be leaders in adaptive, globally-minded, technology-savvy organizations. The course is structured so students develop skills that are of high value in any workplace: leadership skills, self-efficacy, creativity and the ability to deal with ambiguity. Upon course completion, students will have a working knowledge of traditional and non-traditional ways for identifying a new product or business opportunity, quantifying the potential, understanding the key competitive factors, researching the audience, and producing a convincing plan for financing and launch. Students who want to augment the skills and knowledge from their major with the ability to develop a new product/service/process, will find New Venture Creation a valuable course. This is a novel problem-based learning (PBL) course, where the learning is student-centered, with faculty acting primarily in the role of facilitators. Active/Experiential learning happens in this course because students develop ownership of their venture concepts and are fully responsible for the genesis of ideas."
+    },
+    {
+      "number": 426,
+      "type": "course",
+      "title": "Invention Commercialization",
+      "credits": 3,
+      "internalEquivalents": [
+        "IST426",
+        "MGMT426"
+      ],
+      "requisites": {
+        "previous": [
+          "ECON102"
+        ]
+      },
+      "description": "Working with Penn State inventions selected by the Intellectual Property Office, student teams define an optimum commercialization path each technology. ENGR 426ENGR (MGMT/IST/ENTR) 426 Invention Commercialization (3) The goal of ENGR (MGMT/IST/ENTR) 426 is to have students understand why invention commercialization is complicated and difficult by participating in the process. For example, the inventor rarely has insights into the markets for his/her invention, is often not interested in the details of commercialization, and can be secretive. In addition, the business and financial communities often do not take the time, or have the resources, to understand new technologies and perform complex due diligence. Thus lack of due diligence often leads to rejection of innovation because existing companies often discount new technologies from outside the company as NIH - 'not invented here'. Effective transfer of new invention or innovation to a commercial product requires at least three different functional communities to interface: technical, legal and business. Each uses a different language, comes from different educational and cultural backgrounds, and may have an inherent distrust of the others. These functional barriers are difficult to overcome.This course teaches how these barriers can be broken down as student teams help bridge the perceived chasm between key players in the invention commercialization process. In these teams, students bring the skills and knowledge from their major to develop an invention commercialization recommendation for the Technology Transfer Office and the inventor. For example, business students focus on finance and market opportunity assessment; engineering and IST students focus on design refinements, prototyping support, and (if appropriate) making technology suggestions to the inventor.Upon completing the course, the students will have a working knowledge of different university and corporate technology or invention commercialization processes, important intellectual property management tools for inventions (patents, license agreements, option agreements) source of funding to move inventions toward product development, and delivering top quality presentations which outline the recommended commercialization path. Students who enjoy open-ended projects which involve the interplay of business and invention of who wants to work on interdisciplinary teams with the newest inventions will find this course a valuable course. NOTE: Because the inventions/products are based on Penn State faculty intellectual property, students must sign the Penn State Special Intellectual Property Agreement For Students - For Use When Assigning Intellectual Property to The Pennsylvania State University. The form can be viewed at http://guru.psu.edu/policies/RAG13.htmlThe course will be offered both Spring and Fall semesters with an enrollment of 40 students."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Professional Ethics for Engineers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDSGN100"
+        ]
+      },
+      "description": "Professional Ethics for Engineers equips students with the knowledge and tools to critically examine ethical challenges within engineering practice and leadership. Rooted in traditional ethical theory and the professional engineering code of ethics, this course encourages students to apply diverse ethical and equity-based frameworks to real-world and hypothetical scenarios in technology and innovation. Beginning with an overview of traditional ethical theories, students will learn techniques of moral analysis and apply these to ethical challenges involving technology and technology leaders. Following this foundational understanding, the course examines the broader societal impacts of technology: How does technology shape our environment? Influence individual and group behaviors? Reinforce or deconstruct existing power structures? And who ultimately benefits from technological advancements? Throughout the course, students will engage in case study analysis and critical reflection to evaluate the ethical and equitable dimensions of leadership decisions in engineering. By the end of the course, students will be prepared to seriously consider the impacts of technologies and ask questions that will contribute to the creation of better vetted technologies."
+    },
+    {
+      "number": 450,
+      "type": "course",
+      "title": "Materials Design and Applications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR421"
+        ]
+      },
+      "description": "Engineering design considerations for materials selection, organization of property trends of materials families, materials design strategies and property compatibility. ENGR 450 Materials Design and Applications (3) ENGR 450 introduces students to the process of materials organization and selection for application needs. Students select materials for applications based on desired properties, materials compatibility, and economic factors and learn how to design materials (composites) to fulfill critical materials requirement of an engineering application. The course facilitates students with the understanding of the engineering design process to make educated decisions on the materials selection and/or design for industry application needs. Students learn to understand trends in property characteristics associated within given families of materials, i.e. metals, ceramics and polymers, and to balance engineering needs and economic considerations with the application design process."
+    },
+    {
+      "number": 451,
+      "type": "course",
+      "title": "Social Entrepreneurship",
+      "credits": 3,
+      "description": "Students develop business models and implementation strategies for social ventures in diverse world regions. ENGR 451 Social Entrepreneurship (3) Social Entrepreneurship is about pursuing direct action to address a social problem in a manner that leads to a truly sustainable solution. A similar perspective on social entrepreneurship is based on Jean-Baptiste's definition of entrepreneurs as permanent value creators. If the primary objective of value creation is positive social change, then the entrepreneur can be categorized as a social entrepreneur. Sustainability and scalability of the venture to create social change on a larger scale is essential. Metaphorically, while conventional entrepreneurs might pursue the creation of multi-million dollar enterprises, social entrepreneurs strive to create multi-million smile enterprises, while understanding that their ability to expand their social returns bears a dynamic interdependence with their economic bottom line. The mission of the venture must be strongly aligned with the measured outcomes, and this emphasis on measuring social and economic impact is crucial to the efficacy and success of social enterprises.The theory and praxis of social entrepreneurship is constantly evolving within the complex framework of political, economic and social changes occurring at the global, national and local levels in the US and other countries. Students study the dynamics of social challenges, approaches to address them, and the conceptual framework of social innovation and social entrepreneurship from theoretical and practical perspectives. Students explore technology solutions to addressing global social problems with a systems thinking approach. Case studies of successful and failed social ventures from diverse world regions and fields like healthcare, energy, food and agriculture, education, income generation, and access to capital are employed. There is an emphasis on the opportunities and challenges to multi-sectoral collaboration to address social challenges.Students learn how to develop appropriate business models and implementation strategies for a \"sustainable\" social venture. Sustainability, in this regards, refers to ventures that are technologically appropriate, environmentally benign, socially acceptable and economically sustainable. There is a specific emphasis on understanding the customers and their context and economic sustainability of the ventures. The course draws heavily from cases to understand the diverse business structures and execution strategies used by social entrepreneurs and the varied challenges faced by them. Students work in multidisciplinary cross-functional teams to develop a business/implementation model for a social venture in diverse world regions. These are real ventures that are connected to other Humanitarian Engineering and Social Entrepreneurship (HESE) course offerings."
+    },
+    {
+      "number": 455,
+      "type": "course",
+      "title": "Humanitarian Engineering and Social Entrepreneurship Reflection and Research Dissemination",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDSGN454"
+        ]
+      },
+      "description": "This post-fieldwork course focuses on reflection on ethical issues and grassroots diplomacy challenges, and workshops on research dissemination. ENGR 455 Humanitarian Engineering and Social Entrepreneurship Reflection and Research Dissemination (3) The HESE Reflection and Research Dissemination course provides students an opportunity to reflect and build upon their experiences following the EDSGN 454 class involving travel to the partnering community to advance their HESE venture. There are three intertwined themes. One theme explores the ethical intricacies of conducting research and advancing entrepreneurial ventures in developing communities. The grassroots diplomacy theme delves into the complicated and delicate challenges of working in developing communities in a harmonious and effective manner. The research dissemination theme provides students with just-in-time information and skill-sets necessary for developing their research manuscripts into refereed publications. Post-travel reflection on ethical issues: This theme explores the ethical intricacies of conducting research and advancing entrepreneurial ventures in the context of developing communities. The ethics-related discussions help students reflect on their experience and develop a mindset where they want to make better ethical decisions because they are emotionally engaged and can effectively assess the implications of their actions. Grassroots Diplomacy: During their field experience, HESE students interact with diverse parties including local communities, non-governmental organizations, governmental and UN agencies, religious organizations, political groups, bureaucrats, local industry, US corporations, tourists, etc. Students observe and experience ego and community tensions and dynamics. They might get asked for grease payments or be propositioned for dowry. They might experience conflict or observe other groups, or their own group, compromise the core concept of self-determination. Workshops in the grassroots diplomacy theme delve into the complicated and delicate challenges of working in developing communities in a harmonious and effective manner to catalyze social change with their technology-based ventures. Research Dissemination: HESE students are engaged in an IRB-approved research study related to their venture, for which they gather data during the summer field experience. This workshop series provides students with just-in-time information and skill-sets necessary for developing their research manuscripts. The workshops lower the barriers to the scholarly dissemination of their work. Sharing designs, business/implementation strategies, and lessons learned is extremely important for the praxis of HESE worldwide. For examples, published designs for low-cost greenhouse can help people in many world regions. A paper on the non-technical challenges to the growth of the small-scale wind power industry in Kenya served as a starting point for a windmill venture."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Teaching Intern Seminar",
+      "credits": 0.5,
+      "description": "This course prepares students for the responsibilities involved in serving as Teaching Interns in the College of Engineering. Topics addressed in the course include: Individual differences and implication for learning, preparing for and conducting office hours, grading and assessment, instructional design, effective teaching practices, and faculty careers. Findings from research on how people learn and strategies for increasing student engagement are integrated into the course discussions. Issues related to academic integrity and ethical aspects of teaching are addressed as they evolve from in-class discussions."
+    },
+    {
+      "number": 467,
+      "suffix": "Q",
+      "type": "course",
+      "title": "Robots and Their Role in Society",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "This course explores and critically analyzes the growing influence and impact of robots and automation on society. In particular, the course introduces students to the ever widening role that intelligent robots are playing and will come to play in our workplaces, on our battlefields, and in our homes. Emphasis will be placed on understanding and critically analyzing how the technical, computational, and systems role of the machine effect the behavior and values of individuals and segments of society. The course is not technical in its treatment of robots and robotics, rather the focus is on critically investigating how the development of robotic technologies have impacted society in the past, present, and future. This is an honors course."
+    },
+    {
+      "number": 475,
+      "type": "course",
+      "title": "Space Systems Engineering Seminar",
+      "credits": 1,
+      "description": "Seminar overviewing the systems engineerng approach as applied to practical space systems. ENGR 475 Space Systems Engineering Seminar (1) As a requirement for the Space Systems Engineering (SPSYS) Certificate, this course is offered to students in the Certificate and others interested in Space Systems and more broadly in systems engineering. The course exposes students to the systems engineering approach as applied to practical space systems. The goal of this course is to prepare the student to understand and implement the systems approach to designing, building, testing, and flying space systems. The course begins with a series of lectures and discussions on the systems approach to engineering and how it applies to space systems in particular. Students then explore past, present, and future space systems and report on the use of systems principles in their design, fabrication, test, and flight operations-for both successful and unsuccessful space systems."
+    },
+    {
+      "number": 486,
+      "type": "course",
+      "title": "Business Opportunities in Engineering",
+      "credits": 2,
+      "description": "Business principles, leadership and management strategies, accounting fundamentals, engineering and business ethics, creativity, and personal character as a formula for success. ENGR 486 Business Opportunities in Engineering (2) This course focuses on business principles that will help Engineering students transition from academia to the business world. Engineers can be highly successful and climb the corporate ladder or transition to entrepreneurship. Awareness of what is needed to succeed in business is the key to success. This course opens the horizon to new ideas, business opportunities, and profitability. Fundamental aspects of accounting including budgeting, cash flow, profit-loss statements, job cost ledgers, overhead and fringe computation are examined. Creativity, critical thinking methods, and ethics as applied to engineering and business are studied in conjunction with case studies. Business plan structure and content are analyzed along with case histories of successful companies. Students will learn how to articulate a business viewpoint, create a mission or vision statement, and present a creative idea clearly and concisely using an \"elevator ride\" or \"billboard\" approach via essays, proposals, and business plan preparation and presentation. Students will learn leadership and management strategies that will be applicable immediately."
+    },
+    {
+      "number": 487,
+      "type": "course",
+      "title": "Business Opportunities in Engineering: The Business Plan",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "ENGR486"
+        ]
+      },
+      "description": "Essential elements, development, and presentation of the Business Plan from both an engineering and business point of view. ENGR 487 Business Opportunities in Engineering: The Business Plan (1) This course focuses on business opportunities in engineering. Students will learn about the essential elements of the Business Plan and the value of, and methods for, developing and presenting a Business Plan to start a business. Topics include The Business, Marketing, Financials, Supporting Material, Writing and Presentation Tips and Practice, and Case Studies. Aspects of creativity, winning business plans, strategies, strengths, competition, litigation, insurance, marketing, distribution, sales, and funding will also be discussed. This course complements Business Opportunities in Engineering that must be taken as a prerequisite or in conjunction with this course."
+    },
+    {
+      "number": 490,
+      "suffix": "W",
+      "type": "course",
+      "title": "Senior Design I",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "ENGR350"
+        ]
+      },
+      "description": "Analysis of environmental impacts on a design, designing products for the global environment and discussion on engineering ethics and professionalism. ENGR 490W Senior Design I (1) Senior design I provides students with experience in solving engineering problems independently and/or working in groups on an open-ended design problems. Students refine skills in information gathering, analysis of market and technical considerations, critical thinking of project/design scope and effective communication of project/design objectives. This course builds on previous knowledge and applies it to a global consideration of design criteria to a specific projects provided by relevant faculty. The course is the first installment of a senior capstone program in which students start to understand the global aspects of the engineering design process with respect to individual/group projects. Students gain perspective on project selection and research expectations from faculty and gather the relevant technical knowledge required to initiate the project. Projects are appropriately scoped for undergraduate research and are faculty initiated sponsored by regionally based industry (similar to The Learning Factory Experience at UP). Faculty provides research opportunities and external industry collaborations to students for selection based on common interest."
+    },
+    {
+      "number": 491,
+      "suffix": "W",
+      "type": "course",
+      "title": "Senior Design II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENGR490W"
+        ]
+      },
+      "description": "Capstone of research projects from conception to prototype through industry sponsored collaboration on common technical interests between faculty and student. ENGR 491W Senior Design II (3) Senior design I provides students with experience in solving engineering problems independently and/or working in groups on an open-ended design problems. Students refine skills in information gathering, analysis of market and technical considerations, critical thinking of project/design scope and effective communication of project/design objectives. This course builds on previous knowledge and applies it to a global consideration of design criteria to a specific projects provided by relevant faculty. The course is the first installment of a senior capstone program in which students start to understand the global aspects of the engineering design process with respect to individual/group projects. Students gain perspective on project selection and research expectations from faculty and gather the relevant technical knowledge required to initiate the project. Projects are appropriately scoped for undergraduate research and are faculty initiated sponsored by regionally based industry (similar to The Learning Factory Experience at UP). Faculty provides research opportunities and external industry collaborations to students for selection based on common interest."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project Courses",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Research Project Courses",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Engineering Co-Op Work Experience III",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENGR395"
+        ]
+      },
+      "description": "A supervised work experience where the student is employed in an engineering position in industry or government. (To be offered only for SA/Un grading.)"
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "type": "course",
+      "title": "Engineering Cooperative Education",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENGR395A"
+        ]
+      },
+      "description": "ENGR 495A Engineering Cooperative Education (1-3 per semester/maximum of 3) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting in the United States. This course is the third in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
+    },
+    {
+      "number": 495,
+      "suffix": "I",
+      "type": "course",
+      "title": "Engineering International Cooperative Education",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENGR395A"
+        ]
+      },
+      "description": "ENGR 495I Engineering International Cooperative Education (1-3 per semester/maximum of 3) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting outside of the United States. This course is the third in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

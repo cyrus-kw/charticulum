@@ -72,7 +72,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           <span className="font-semibold">{courseCode(object.id)}</span>: {object.title}
         </div>
         <div className="mt-1 flex flex-wrap gap-1">
-          <Badge>{object.kind}</Badge>
+          <Badge>{object.type}</Badge>
           <Badge>
             {object.credits} {object.credits === 1 ? "credit" : "credits"}
           </Badge>

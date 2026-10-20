@@ -1,0 +1,115 @@
+{
+  "subject": "A-I",
+  "objects": [
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Artificial Intelligence: Automated Thinking to Augment Human Intellect",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "This course introduces students to key artificial intelligence (AI) capabilities and their broad real-world applications. It first introduces students to the interdisciplinary intellectual underpinnings of artificial intelligence and the high-level computational architectures of intelligence. This foundational knowledge prepares the stage for introducing students to representative examples of artificial intelligence in action (from the lenses of \"what, why, and social and ethical implications\"), including playing games, learning from data, perception, language processing and question answering, making decisions, planning actions, interacting in multi-agent teams, and creative composition of text, music, and art/imagery. The course will also introduce ethical implications of AI and its impacts on society. Upon successful completion of the course, students will be able to articulate the big picture of AI, including basic understanding of AI's key capabilities such as natural language understanding, visual perception, prediction, learning, as well as ethics issues related to AI."
+    },
+    {
+      "number": 285,
+      "type": "course",
+      "title": "Experiential Learning Skills Lab",
+      "credits": 3,
+      "description": "This course offers students an immersive environment where they can hone their technical abilities, develop soft skills, and prepare for the multifaceted challenges they will face when they engage in experiential learning through internships, co-ops, research projects, challenges, and capstone projects. Students may collaborate in multidisciplinary teams to research, propose and implement solutions for problems in diverse fields such as healthcare, business, agriculture, media, and defense, using artificial intelligence and machine learning technologies. To enhance the learning experience, this course will incorporate interactions with AI professionals and alumni working in the field furthering professional communication skills. Students will be encouraged to submit their ideas and solutions developed in this course to a wider array of experiential learning initiatives and outreach programs within the artificial intelligence domain. Students will also receive guidance on securing internships, including participating in mock interviews, learning workplace etiquette, and setting learning goals for their internship experience."
+    },
+    {
+      "number": 305,
+      "type": "course",
+      "title": "Algorithmic Foundations for Artificial Intelligence",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC132",
+          "MATH220",
+          "MATH231",
+          "CMPSC360",
+          "STAT414"
+        ]
+      },
+      "description": "This course introduces students to essential algorithm design and analysis techniques with a focus on application in data science and machine learning. The course introduces students to elementary and advanced data structures to store and manipulate data. The course teaches different algorithm design and analysis techniques including classical paradigms such as divide and conquer, greedy, and dynamic programming, and advanced techniques such as randomized methods and algorithm tailored to machine learning such as gradient descent and online decision making. The course explores these techniques in context of different data types used in machine learning such as matrices, graphs and sequences. Students' learning of these concepts, techniques, and methods will be facilitated by exemplary programming demonstrations and coding exercises so that the students can utilize these algorithmic solutions in practical applications."
+    },
+    {
+      "number": 341,
+      "suffix": "W",
+      "type": "course",
+      "title": "Responsible Artificial Intelligence",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I100"
+        ],
+        "concurrent": [
+          "A-I370",
+          "CMPSC448"
+        ]
+      },
+      "description": "This course aims to equip students with the necessary conceptual frameworks, best practices, and technical tools for addressing challenges of designing and deploying systems that maximize the benefits of AI while minimizing their potential for harm. By examining case studies, students will be introduced to real-world examples related to AI fairness, privacy protection in relation to AI, generative AI, and accountability of AI systems. In addition, students will learn relevant methods, approaches, and best practices that can address related ethical considerations. Through this course, students will develop an awareness and understanding of the key social and ethical challenges that AI poses-issues of fairness, privacy, autonomy, trust, and democratic accountability, as well as become equipped to play an active role in addressing and overcoming such challenges in their future work. As a Writing Across the Curriculum course, students will be given individual writing assignments that are spaced at regular intervals to encourage active, regular writing. The students will write a draft for each individual assignment, receive peer and instructor feedback, revise their drafts, and then get final feedback from the instructor."
+    },
+    {
+      "number": 370,
+      "type": "course",
+      "title": "Problem Formulation and Automated Problem Solving",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I100",
+          "CMPSC132",
+          "STAT200"
+        ],
+        "concurrent": [
+          "CMPSC465",
+          "STAT401"
+        ]
+      },
+      "description": "This course introduces students to methods for automated problem solving requiring intelligence by formulating and solving problems as search, optimization, or constraint satisfaction problems. Topics of the course include but are not limited to: Problem-solving as state space search, Basic search algorithms and their properties, Finding optimal solutions (Best first search, A* Search, Heuristic search); Problem Solving through Problem Reduction, Search in non-deterministic environments, Problem solving in partially observable environments, Problem solving as Constraint Satisfaction, and Adversarial problem solving (optimal decisions in games; minimax search; etc.). Laboratory assignments will be used to provide students with hands-on experience in implementing and experimenting with AI problem solving methods. Upon successful completion of the course, students will be able to formulate and solve real-world problems of moderate complexity using modern search algorithms."
+    },
+    {
+      "number": 375,
+      "type": "course",
+      "title": "Knowledge Representation and Inference",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I370",
+          "STAT401"
+        ]
+      },
+      "description": "This course is designed to introduce students to the principles and practice of representing and reasoning with knowledge for the design of AI systems. The course will cover logical, probabilistic, and decision-theoretic knowledge representations and their applications in query answering, decision making, and planning. Upon successful completion of the course, the students will be able to choose, design and apply appropriate modern knowledge representation and inference techniques to solve AI problems. Topics include logical knowledge representations, probabilistic knowledge representations, decision-theoretic knowledge representations, action representations and their use in planning, concept of ontologies, knowledge graphs, graph alignment and reasoning. Laboratory assignments will be used to provide hands-on experience with knowledge representation-based solutions to real-world AI problems of moderate complexity."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "AI Systems and Tools",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC448",
+          "A-I341W",
+          "EE456"
+        ]
+      },
+      "description": "The goal of this course is to provide students with an understanding and overview of practical hardware and software system considerations in reliable and scalable development and deployment of modern machine learning (ML) and artificial intelligence (AI) models. The course imparts the essential techniques for designing algorithms that are mindful of software and hardware constraints. It equips learners with the key techniques and best practices for seamlessly deploying AI models across the entire lifecycle, from training to deployment and monitoring. Through this comprehensive approach, students gain invaluable skills for efficiently translating AI models into real-world applications, ensuring optimal performance and resource utilization. By investigating the fundamental differences between AI/ML as a model versus AI/ML as a system deployed in production, students' learning of these practical concepts, techniques, and methods will be facilitated by exemplary programming demonstrations and coding exercises so that the students can translate AI system design principles into practical machine learning applications and understand the fundamental differences between AI/ML as a model versus AI/ML as a system deployed in production."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis"
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised on or off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    }
+  ]
+}

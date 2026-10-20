@@ -79,7 +79,7 @@ export function evaluateRequirements(
     issues.push({
       code: "MISSING_REQUIRED_OBJECT",
       // Named by its type: "Required course CS390…", "Required milestone…".
-      message: `Required ${catalog.get(id)?.kind ?? "item"} ${id} is not in the chart.`,
+      message: `Required ${catalog.get(id)?.type ?? "item"} ${id} is not in the chart.`,
       objectId: id,
     });
   }

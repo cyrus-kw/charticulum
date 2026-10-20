@@ -1,0 +1,264 @@
+{
+  "subject": "RHS",
+  "objects": [
+    {
+      "number": 93,
+      "type": "course",
+      "title": "WorkLink Seminar I",
+      "credits": 1,
+      "description": "This variable credit, repeatable seminar is taken as part of the WorkLink Strategies and Employability Certificate. WorkLink is a 2-year certificate program in career and inclusive education created for students with intellectual disabilities (ID). Students will complete 24 credit hours in the WorkLink Seminar I and II (e.g., career development, life skills, financial literacy, person-centered career planning), and audit up to 24 additional credits as electives from the Penn State General Education course offering. Students will spend at least 50% of their time in the program pursuing inclusive coursework (non WorkLink Seminar courses). WorkLink Seminar I provides a broad exploration of several topics related to career preparation, academic success, personal health and wellness, independent living skills, and safety. Students will engage with peers, mentors, and WorkLink staff to increase their awareness of career and independent living skills and how these interact with opportunities and responsibilities associated with being a Penn State student. Students will recognize their own skills and learning and support needs related to academic, independent living, career, and wellness goals, and apply content to develop personalized plans for growth in these areas. This two-semester seminar partially fulfills the first-year requirements for the WorkLink Certificate. Upon instructor approval, students not in the WorkLink Certificate program may take WorkLink Seminar I credits to gain knowledge and skill in various topic areas covered."
+    },
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 99,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Introduction to Disability Culture",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "This course is designed to increase student awareness of personal, interpersonal, and societal aspects of disability, including how disability can be defined and understood differently in varied individual, institutional, and cultural contexts. Students will learn models of disability that will help them to (a) clearly distinguish different ways of conceptualizing disability and (b) critically think about how disability is represented and understood in varied cultural contexts, including in the US and in other countries. Through discussion of class readings and completion of class assignments, students will examine the ethical, economic, and social implications of disability and the dynamics of group and individual behavior that impact social interactions among people with and without disabilities. A strong emphasis will also be placed on understanding disability from a variety of cultural perspectives and assessing the impact of racial, ethnic, gender, socioeconomic, and socio-political factors, both domestically and internationally, on disability status."
+    },
+    {
+      "number": 193,
+      "type": "course",
+      "title": "WorkLink Seminar II",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "RHS93"
+        ]
+      },
+      "description": "This course is intended for students enrolled in the WorkLink Certificate program. WorkLink Seminar II ( RHS 193 ) provides a broad exploration of several topics related to career preparation, job searching, work readiness, and internships through experiential learning. Students will engage with peers, mentors, and WorkLink staff and community employers to increase their awareness of workplace self-advocacy, job accommodations, career development, skills necessary for employment in today¿s job market, job search strategies, and networking. Students will recognize their own skills related to job and career goals, and apply content to develop personalized plans for growth in these areas. This two-semester seminar fulfills the second year requirements for the WorkLink Certificate. Upon instructor approval, students not in the WorkLink Certificate program may take WorkLink Seminar II credits to gain knowledge and skill in various topic areas covered."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 226,
+      "type": "course",
+      "title": "College Student Mental Health and Wellness",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "Have you ever wanted to learn more about yourself, your friends, your roommates, or other people in college? If so, then this course is for you. In this class, we will explore factors that affect the mental health and wellbeing of college students, including sleep, substance use, social anxiety, discrimination, academic stress, the campus climate, resilience, peer relationships, values, and suicide. The course will address both how to prevent problems from developing as well as interventions for improving college students¿ mental health and wellbeing. We will use lectures, guest speakers, films, discussion, and weekly readings to learn about college students and their mental health. The class will be especially relevant to your career if you are considering a mental health profession (e.g., psychology, counseling, social work, rehabilitation), but it will appeal to students in any major who are interested in learning more about college students¿ mental health, including their own. Cultural factors that affect college students¿ well-being will be considered throughout the course. Culture will be defined broadly to include ethnicity, sexual orientation, religion, gender, class, ability, race, and age. Students will be encouraged to think critically about course material through the lenses of their own lived experiences and worldviews. Prevalence, characteristics, causes, implications, prevention, and treatment of common mental health conditions among college students will be addressed, as well as campus resources for addressing such conditions. The course also will focus on factors that promote the psychological well-being of college students, such as friendships, identity, romantic relationships, meaning, and career preparation. The primary goal for the course is that you deepen your understanding of psychological wellness and mental health problems commonly faced by college students. A secondary aim is for you to learn about yourself so that you can optimize your psychological well-being, prevent mental health problems from developing, recognize when you or a friend might need help, improve the wellness of campus communities to which you belong, and become familiar with local resources that can provide assistance."
+    },
+    {
+      "number": 295,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "N/A"
+    },
+    {
+      "number": 295,
+      "suffix": "A",
+      "type": "course",
+      "title": "WorkLink Internship",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "RHS93"
+        ],
+        "concurrent": [
+          "RHS193"
+        ]
+      },
+      "description": "Full or part-time, supervised non-group instruction including field experiences, or internships for students in the WorkLink certificate program or by approval of the instructor. Students will complete these internships on campus or in the community."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Introduction to Rehabilitation and Human Services",
+      "credits": 3,
+      "description": "This course serves as an introduction to Rehabilitation and Human Services practice settings. The course reviews the human services profession, including introductory information about social problems within a socio-political context to show how culture and ideology influence experiences and perspectives. The foundation of the human services profession is explored by examining educational standards and professional requirements: its roots as a helping profession within the history of social welfare provision, its ethical standards, theoretical underpinnings, and the nature of the generalist practice model, with an emphasis on helping people with disabilities."
+    },
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Introduction to Counseling as a Profession",
+      "credits": 3,
+      "description": "Overview of the counseling theories that are often used in human service and rehabilitation practices."
+    },
+    {
+      "number": 302,
+      "type": "course",
+      "title": "Client Assessment in Rehabilitation and Human Services",
+      "credits": 3,
+      "description": "The purpose of this course is to give students an overview of a range of rehabilitation and health related assessments for use in clinical practice. The primary focus of the class is to gain an understanding of the range of formal tests and assessments used to support the overall goal of maintaining functioning across multiple life domains for people with disabilities. Students will learn about the multicultural concerns impacting test bias, test fairness, and ethical considerations in test selection and interpretation. Students will gain an understanding of important concepts related to the psychometrics of tests and assessments, including basic statistical concepts. Students will learn how to evaluate the quality of assessments, and how to select appropriate assessments for clients on an individual and best practice basis."
+    },
+    {
+      "number": 303,
+      "type": "course",
+      "title": "Group Work in Rehabilitation Practice and Human Services",
+      "credits": 3,
+      "description": "Students will learn about basic issues and key concepts regarding Group Work in Rehabilitation Practice and Human Services. An overview of essential elements and dynamics for conducting groups and various team-related activities will be the major focus. The purpose of this course is to provide students with a foundational understanding of group work and experiences within Rehabilitation and Human Services settings."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "suffix": "W",
+      "type": "course",
+      "title": "Case Management and Communication Skills",
+      "credits": 3,
+      "description": "Principles and practices of obtaining, recording, evaluating, and utilizing case data in rehabilitation planning; implementation of rehabilitation plans."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Community Mental Health Practice and Services",
+      "credits": 3,
+      "description": "This course introduces issues specific to therapeutic helping in community mental health settings. Practical skills, knowledge, information, and suggestions unique to community mental health are provided. Topics such as roles of community practitioners, mental health services, psychiatric rehabilitation principles, recovery, ethics, diversity, certified peer specialists, evidence-based practices, advocacy, funding, and community change are addressed."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Children and Families in Rehabilitation Settings and Human Services",
+      "credits": 3,
+      "description": "Contemporary family issues, child development, legal considerations, cultural and familial factors within rehabilitation and human services practice will be addressed."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Medical Aspects of Disability",
+      "credits": 3,
+      "description": "The purpose of this course is to give students an overview of many chronic illnesses and disabilities, and their impact in the lives of the individuals who live with them. This course is designed for non-medical professionals and students interested in working with individuals with disabilities and chronic illnesses. The primary focus of the class is to gain an understanding of the experience of disability. Specifically, the course covers the body systems and their functions, how disabilities and illnesses impact many aspects of life across the lifespan (work, family, identity), the personal, environmental, and cultural factors that contribute to the experience of disability, as well as appropriate rehabilitation goals and accommodations associated with the illnesses and disabilities covered in class. Students will learn how to use disability related principles, practices, and models for conceptualizing diverse clients living with a range of disabilities across the lifespan, including how disability impacts family members. An understanding of diagnostic criteria, appropriate treatments and interventions, supports, assistive technology, and referrals will be covered for each category of disability discussed in class and for each case study assignment."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Rehabilitation Services for Transition Age Youth with Disabilities: Theory and Practice",
+      "credits": 3,
+      "description": "Stark educational and employment disparities exist between youth and young adults with disabilities and their typically developing peers. Difficulty with obtaining and maintaining employment post-high school poses a threat to lifelong earnings and self-sufficiency. This course is intended for students who plan to work as a human services professional who supports these youth and young adults as they transition from high school to employment and educational opportunities. Students in this course will develop the knowledge, skills, and resources necessary to understand and practice effective strategies to work with transition age youth with disabilities (14-24 years) in different rehabilitation settings including, but not limited to: vocational rehabilitation (SVR) systems, career and technical education, and/or educational settings. This course will incorporate perspectives and legislation from special education and career and technical education to provide an understanding of the requirements and standards for transition and employment services for youth and young adults with disabilities. Developmental models of career, self-determination, independent living, and social maturation will be provided as context for the material. In this course, students will be exposed to current issues and topics that affect service delivery for this population in different settings. The course will also address topics pertaining to case management practices, policies and procedures involved with client service delivery. In this course students will gain an understanding of the historical context and development of transition services, including supported employment, rehabilitation philosophy, and approach to transition. Students will learn about the roles and functions of professionals supporting transition age youth, methods for engaging youth/young adults and their families as well as models and evidence based practices in transition services and how to use person-centered planning. We will also cover topics related to case management practices, relevant legislative mandates; policies and practices guiding service delivery."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Employment Strategies for People with Disabilities",
+      "credits": 3,
+      "description": "Develop knowledge, skills, and resources necessary to understand and practice effective employment strategies in working with people with disabilities. This course is designed for students to develop knowledge, skills, and necessary resources to understand and practice effective employment strategies in working with people with disabilities, including individuals from culturally diverse backgrounds. Students will develop skills on networking with employers (e.g., social media, professional organizations, interviewing employers, etc.) for building professional contacts and networks. Various forms of labor market information will be analyzed to identify both challenges and opportunities for people with disabilities in different sectors of the labor market (primary and secondary). Throughout the course, students will learn about disability issues in the workplace (e.g., laws, policy, stigma, accommodations, etc.). A strong emphasis will be on understanding how laws and policies impact employment for people with disabilities, and students will identify legal and illegal practices. Best employer practices will be identified regarding mitigating disability impact on both employees (current and future) and employers. This course will incorporate Assistive Technology (AT) applications so students will be able to identify appropriate AT devices to assist people with disabilities in obtaining and retaining employment along with applicable strategies for working with employers in developing employment opportunities in today's changing world of work. Students will understand how disability is a critical component of workforce diversity and strengths people with disabilities bring to the workplace. Students will identify how people with disabilities should prepare for the employment process including training opportunities (formal and informal), resume development, interview preparation, and initiatives to promote increased employment outcomes. Different disability populations (e.g., youth, Veterans, aging workers, etc.) will be discussed including common barriers for employment as well as how to create opportunities in different employer settings."
+    },
+    {
+      "number": 420,
+      "type": "course",
+      "title": "Culture & Disability: Study Abroad in Ireland",
+      "credits": 6,
+      "internalEquivalents": [
+        "SPLED420"
+      ],
+      "description": "Study aspects of culture and disability through lecture, visiting Irish disability service agencies, and guest speakers from various disability agencies. This course is designed to increase student awareness of disability from a cross-cultural comparison between the United States and Ireland including: personal, interpersonal, and societal aspects of disability, including how disability can be defined and understood differently in varied individual, institutional and cultural contexts. Students will learn models of disability that will help (a) clearly distinguish different ways of conceptualizing disability and (b) critically think about how disability is represented and understood in varied cultural contexts. Students will examine ethical, economic, and social implications of disability. Dynamics of group, family and individual behavior that impact interactions between people, with and without disabilities, will be addressed. Interactions and assignments will aid in the introduction of students to interpersonal communication and interaction issues among international cultures. A strong emphasis will be placed on understanding disability from a variety of cultural perspectives and assessing the impact of racial, ethnic, gender, socioeconomic, and socio-political factors on disability status. Throughout the course students will engage with various service providing agencies (which may include sensory disabilities, intellectual/cognitive disabilities, and physical disabilities). Class time will be allotted to prepare for engagement and reflection as well as providing background information for understanding global policy and how to make comparisons. Students will participate in a culminating activity, such as attending the International Disability Summer School that equips students with the insights and skills necessary to translate the generalities of international positions on disabilities into tangible reform for persons with disabilities and understand disability from a global perspective. This course meets the requirement for RHS 100 (RHS majors and RHS minors and honors students), and/or up to 6 credits toward 400 level elective requirements for RHS minors. SPLED students can earn up to 6 credits towards the SPLED minor"
+    },
+    {
+      "number": 428,
+      "type": "course",
+      "title": "Rehabilitation Corrections",
+      "credits": 3,
+      "description": "This course will provide an overview of the many facets of rehabilitation within correctional settings, including the history of rehabilitation in the criminal justice system, classification and risk assessment, offender needs and treatment individualization, and interventions for various populations. This course will cover diversion programs, prison/jail programs, and reentry services. We will evaluate evidence of program effectiveness, analyze issues related to program implementation, and explore solutions for barriers to treatment in correctional settings."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Trauma-informed care for school & human service professionals",
+      "credits": 3,
+      "description": "Many helping professionals interact with people who have survived, or are at risk for trauma, even when these professionals are not directly involved in either the design or delivery of direct interventions for trauma symptoms. This class is intended for students who wish to pursue one of these human services careers. In this class, students will learn how to conceptualize their students' and/or clients' struggles using a trauma-sensitive perspective that can enhance service outcomes. Course topics include types of traumas and adversities; the lasting effects of chronic trauma; laws and reporting procedures; how to identify appropriate resources and evidence-based practices; communication strategies; and risk, protective and resiliency factors; understanding the connection to professional wellness and vicarious trauma; and populations at highest risk for types of trauma. The application of these topics to settings such as schools, healthcare, and the criminal justice system will be discussed."
+    },
+    {
+      "number": 493,
+      "type": "course",
+      "title": "Professional Development and Internship Preparation in RHS",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "RHS100",
+          "RHS300",
+          "RHS301",
+          "RHS302",
+          "RHS303"
+        ]
+      },
+      "description": "This course is designed to prepare students for a successful internship experience and career in RHS settings. Students will further their understandings of theories and models of human development that inform the human services profession. A major focus of the course will be on furthering students' understanding of how to apply and use these theories in working with their intended populations, increase their knowledge and appreciation of diverse cultures, and further develop professional dispositions. Students will also learn practice skills designed to secure an appropriate internship placement as well as gain exposure to different human service settings and an understanding of what is required of professionals within these settings. In addition to preparing for an internship placement, this course will also cover topics related to long-term career planning including issues such as determining the need for continued education and preparing for a career as a Human Services professional."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 15
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "type": "course",
+      "title": "Rehabilitation and Human Services Internship",
+      "credits": 6,
+      "description": "Internship in rehabilitation and related human services agencies and institutions providing psychosocial, vocational, educational, and/or residential services to people with disabilities. The internship in RHS provides students the opportunity to implement what they have learned in their program coursework. Students will develop and practice core competencies while exploring professional career opportunities. RHS students must complete 12 total credits of RHS 495A . These 12 credits can be completed in a single semester or divided equally across 2 semesters. To register for this course, a completed internship application must be submitted to the RHS program in the semester prior to taking RHS 495A ."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical of of special interest."
+    }
+  ]
+}

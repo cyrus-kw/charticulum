@@ -33,7 +33,8 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `src/fixtures/` | The fictional sample school |
 | `prisma/` | Database schema and migrations |
 | `tests/` | Vitest tests (`*.db.test.ts` need a real database) |
-| `scripts/` | The terminal demo, a headless-browser screenshot tool, and a script that signs it in |
+| `scripts/` | The terminal demo, a headless-browser screenshot tool, a script that signs it in, and the Penn State data builder |
+| `schools/` | Real schools' data, as folders of JSON files (`penn-state/`) |
 
 ### Engine pieces
 
@@ -43,6 +44,7 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `types.ts` | Curriculum objects, charts, terms, requirements, overrides, templates, issues |
 | `check.ts` | `checkChart`: applies exceptions, then checks placement, then requirements |
 | `catalog.ts` | Builds the catalog (objects by id) and checks whether a requisite is met |
+| `codes.ts` | Course codes (subject, number, letter): reading, writing, and sorting them |
 | `validate.ts` | Requisites (previous/concurrent/minimum grade), availability, Pre-Credit |
 | `requirements.ts` | Credits per term and category, required objects, GPA, shared credits |
 | `scopes.ts` | Combines global and local requirement sets; the stricter rule wins |
@@ -51,6 +53,7 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `scheduler.ts` | Builds a plan respecting requisites, credit limits, and availability |
 | `availability.ts` | Seasons, odd/even years, term calendars |
 | `school.ts` | The SchoolData JSON format: schema, validation, loading |
+| `schoolFiles.ts` | A school split into files (school, subjects, one file per subject): checking and combining them |
 | `equivalents.ts` | Turns completed AP/transfer credit into Pre-Credit objects |
 | `grades.ts` | Letter-grade points, minimum grades, GPA |
 | `equivalencyCsv.ts` | Transfer/AP tables from CSV |
@@ -59,9 +62,36 @@ The app needs a database to save plans and schools; see [Database](#database).
 ## School data format
 
 A school is one JSON document: catalog objects, global requirement sets,
-versioned program templates, a term calendar, and an equivalency table. See
+versioned program templates, a term calendar, and an equivalency table.
+A numbered course's code is kept in its parts, `"code": { "subject":
+"CAS", "number": 100, "suffix": "A" }`, and its id is them run together
+(`CAS100A`); files may leave the code out, and it's read from the id. See
 the built-in sample school, `src/fixtures/sampleSchool.ts`. Imports are checked for shape and for references to
 objects that don't exist, with errors pointing at the exact field.
+Objects may have a `description`, and a school may list its `subjects`
+(code and name); when it does, every course's subject must be one of them.
+
+A school can also be split into a folder of files
+(`src/engine/schoolFiles.ts`), which `combineSchoolFiles` puts back
+together, with errors naming the file:
+
+```
+school.json          id, name, calendar, school-wide rules, AP/transfer table
+subjects.json        { "subjects": [{ "code": "CMPSC", "name": "Computer Science" }] }
+objects/cmpsc.json   { "subject": "CMPSC", "objects": [{ "number": 121, "title": ..., "credits": 3 }] }
+programs/*.json      program templates (optional)
+```
+
+A subject's file only gives each course's number and letter; its id
+(`CMPSC121`) and code come from the file's subject.
+
+`schools/penn-state/` is a real school in that layout: all of Penn State
+University Park's undergraduate subjects (274) and courses (about 9,500,
+with descriptions) and its school-wide rules, built from its
+[Undergraduate Bulletin](https://bulletins.psu.edu) by
+`scripts/penn-state.ts`. It has no programs; those are made by hand.
+`--save` also saves it to the database, keeping the programs already
+saved there.
 
 ## Database
 

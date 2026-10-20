@@ -1,0 +1,976 @@
+{
+  "subject": "ME",
+  "objects": [
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 101,
+      "type": "course",
+      "title": "Toy Fundamentals: First-Year Seminar",
+      "credits": 1,
+      "description": "First-Year Seminar focusing on toy design and manufacture. M E 101S Toy Fundamentals (1)(FYS) Toy Fundamentals is a First-Year Seminar intending to be an introduction to engineering design and prototyping through a product type everyone has used: toys! This five-week class explores the history of toys, marketing, toy design for different ages, and includes toy dissection, design, prototyping and field testing. It will run in the first 5 weeks of the semester."
+    },
+    {
+      "number": 102,
+      "type": "course",
+      "title": "Smart Lego Robots & Design",
+      "credits": 1,
+      "description": "First-Year Seminar focusing on the development of technology exploration kits for middle-school-aged children. M E 102S Toys for Technology Exploration: First-Year Seminar (1) This is a First-Year Seminar that focuses on an important sub-group of toys. 'Learning-by-doing' is a recognized method for improving student's learning in grades K-12 (and in college!). As part of 'Toys for Technology Exploration', existing hands-on kits used for science and math education for ages 10-14 will be reviewed. The new standards for science and technology education in Pennsylvania are used to guide new hands-on kit designs, and these designs will be prototyped and field-tested with public school students.Note: Class size, frequency of offering, and evaluation methods will vary by location and instructor. For these details check the specific course syllabus."
+    },
+    {
+      "number": 190,
+      "type": "course",
+      "title": "Special Topics in Mechanical Engineering: First-Year Seminar",
+      "credits": 1,
+      "description": "A First-Year Seminar focusing on issues related to Mechanical Engineering. M E 190S M E 190S Special Topics in Mechanical Engineering: First-Year Seminar (1) (FYS)In this First-Year Seminar, students will explore the Mechanical Engineering profession by means of treatment of a particular topic in M E. Students will be assigned pertinent readings and the professor will lead discussions on the ethical, professional, and societal aspects of the topic area. The seminar will also feature group activities and encourage participation in the classroom setting."
+    },
+    {
+      "number": 197,
+      "suffix": "G",
+      "type": "course",
+      "title": "Special Topics - GenEd",
+      "credits": 1,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Natural Sciences",
+      "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
+    },
+    {
+      "number": 201,
+      "type": "course",
+      "title": "Introduction to Thermal Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ]
+      },
+      "description": "Application of the basic concepts of thermodynamics, fluid dynamics, and heat transfer to the solution of engineering problems."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Engineering Thermodynamics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ],
+        "concurrent": [
+          "MATH141"
+        ]
+      },
+      "description": "Basic thermodynamics concepts, properties of pure substances, first and second law analysis of systems and control volumes. M E 300 Engineering Thermodynamics I (3) This course is designed to develop an understanding of thermodynamic concepts and their application for the student by providing an integrative modeling and analysis approach to thermal-fluids systems. The course emphasizes the integration and application of fundamental principles of mass and energy conservation and fundamental ideal gas and non-ideal working fluids concepts to fundamental engineering systems. These systems include basic spark-ignition engines and turbojet engines as well as basic and extended Rankine and refrigeration cycles. Emphasis is on creating engineering models of these systems and indicating how the idealized versions of these systems can be extended to more realistic descriptions. Besides these mass and energy conservation concepts the course introduces the basic concepts of heat transfer and mass flow, providing a foundation in these subjects to be further expanded in later courses. The course aims to develop knowledge and initiate skills for \"thinking like an engineer.\""
+    },
+    {
+      "number": 308,
+      "type": "course",
+      "title": "Fluid Flow and Heat Transfer Laboratory",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ME320"
+        ],
+        "concurrent": [
+          "ME410"
+        ]
+      },
+      "description": "Experimental work to enhance understanding of thermodynamics, fluid dynamics, and heat transfer."
+    },
+    {
+      "number": 315,
+      "type": "course",
+      "title": "Heat Transfer Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "ME348",
+          "ME410"
+        ]
+      },
+      "description": "This one-credit laboratory course is structured to reinforce the various principles taught in the corresponding 3-credit lecture course - M E 410, Heat Transfer. The laboratory includes several different experiments whose objective is to reintroduce and reinforce the various principles associated with conduction, convection, radiation and heat exchangers. Each laboratory session begins with a thorough review of the relevant material covered in the lecture course, including the use of energy conservation on control volumes related to the experiment and related simplifications. Prior to conducting any experiment, the students are informed about the particular safety issues that vary from one experiment to another. The students are then briefed about the setup of the data acquisition systems, what type of data the need to be collected, and how the data then is coupled to the review of the specific laboratory topic. At the end of the semester, the students should be able to interface a typical data acquisition system with those used in industry and elsewhere. The students generally work in groups to collect data, with reports prepared individually after an experiment is completed."
+    },
+    {
+      "number": 320,
+      "type": "course",
+      "title": "Fluid Flow",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "MATH251",
+          "ME300",
+          "MATH231"
+        ]
+      },
+      "description": "This course is an introduction to fluid mechanics, and emphasizes fundamental concepts and problem-solving techniques. Topics to be covered include fluid properties (density, viscosity, vapor pressure, surface tension); fluid statics (hydrostatic pressure, pressure forces on planar and curved surfaces); fluid kinematics (flow visualization, vorticity, Reynolds transport theorem); control volume analysis (conservation laws of mass, momentum, and energy, Bernoulli equation); dimensional analysis (dimensional homogeneity, method of repeating variables, experimental testing, similarity); internal flows (pipe flows, major and minor losses, piping networks, matching pumps to systems); differential analysis (Navier-Stokes equation, creeping flow, potential flow, boundary layers); external flows (lift and drag, pressure vs. friction drag); and compressible flow (isentropic flow through nozzles, shock waves). Brief introductions to computational fluid dynamics (CFD), and turbomachinery (pumps and turbines) will also be provided."
+    },
+    {
+      "number": 325,
+      "type": "course",
+      "title": "Fluids Laboratory",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ME320",
+          "ME348"
+        ]
+      },
+      "description": "The course is designed for students to understand basic concepts of fluid mechanics through analysis of experimental data from various sources. The course emphasizes hands-on experience to take measurements, analyze and interpret experimental data. An important component of this course fosters an ability to write laboratory reports and to creatively generate independent ideas that involve the study of fluid mechanics through development and execution of final project. The course aims to developed teamwork (no hyphen needed, this is one word) skills and advanced proficiency in professional communications and interactions."
+    },
+    {
+      "number": 330,
+      "type": "course",
+      "title": "Computational Tools",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "EMCH213",
+          "MATH251",
+          "PHYS212"
+        ]
+      },
+      "description": "This course gives students physical insights as well as introductory skills on the use of modern computational tools in solving mechanical engineering problems. The course has two main thrusts: 1) finite element analysis for structural/thermal mechanics and 2) computational fluid dynamics for fluid flows. Students will use commercial codes to solve fundamental problems associated with statics, dynamics, mechanics of materials, heat transfer, and fluid dynamics. Particular emphasis will be placed on comparing simulation results to analytical solutions. Students will also use the computational tools to parametrically study the solution space that enable informed design strategies. This class will prepare mechanical engineering students to solve technical problems in their courses, summer internships, and ultimately in their engineering career."
+    },
+    {
+      "number": 340,
+      "type": "course",
+      "title": "Mechanical Engineering Design Methodology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDSGN100"
+        ],
+        "concurrent": [
+          "ME320",
+          "ME360"
+        ]
+      },
+      "description": "The design process; problem definition, conceptual design, system design, detail design, evaluation and test, implementation, documentation and communication. M E 340 Mechanical Engineering Design Methodology (3) This course is intended to provide mechanical engineering students with the fundamental tools to produce an effective design solution in a realistic professional environment with conflicting customer needs and technical capabilities. The students will identify the system design targets through interaction with the 'customer', develop multiple conceptual designs, select the best design solution and produce a functional prototype. The course is project driven with significant input from the students in defining the work objectives and goals. Initially several mini-projects will be assigned with specific objectives such as identifying customer needs, quantifying technical design specifications and decision making. The course culminates with a student team based design competition. The competition provides an opportunity to apply the design process to an open-ended mechanical engineering problem."
+    },
+    {
+      "number": 345,
+      "type": "course",
+      "title": "Instrumentation, Measurements, and Statistics",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EE210"
+        ]
+      },
+      "description": "Fundamentals of statistics, sensors, instrumentation, and measurement of mechanical phenomena such as temperature, flow, pressure, force, stress, displacement, and acceleration. M E 345 Instrumentation, Measurements, and Statistics (4) This course is required for all mechanical engineering students. It serves as an introduction to the fundamental principles of instrumentation and measurement, along with statistics, and integrates and applies what the students have learned in their electrical engineering course. The course includes a 3-hour-per-week hands-on laboratory where students apply the material learned in the lecture. For many students this is the first time they have actual hands-on experience with electronics and measurement equipment, such as oscilloscopes, breadboards, function generators, digital data acquisition systems, integrated circuits strain gages, displacement meters, thermocouples, tachometers, dynamometers, filters, volume flow meters, velocity meters, pressure transducers, etc. Students learn not only how to use these devices in the lab, but also the fundamental principles of their operation. Statistical analysis is integrated into the course, especially in the hands-on laboratories, where statistics is used to analyze and interpret acquired data."
+    },
+    {
+      "number": 345,
+      "suffix": "W",
+      "type": "course",
+      "title": "Instrumentation, Measurements, and Statistics",
+      "credits": 4,
+      "requisites": {
+        "concurrent": [
+          "EE212"
+        ]
+      },
+      "description": "Measurement concepts, probability and statistics, error analysis; electro- mechanical transducers, applied electrical and mechanical measurements, electrical and electronics instruments, data acquisition and instrumentation systems."
+    },
+    {
+      "number": 348,
+      "type": "course",
+      "title": "Circuit Analysis, Instrumentation, and Statistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251",
+          "PHYS212"
+        ]
+      },
+      "description": "ME 348 Circuit Analysis, Instrumentation, and Statistics (4) This course is required for all mechanical engineering students, and is taken in the junior year. It serves as an introduction to the fundamental principles of circuit analysis, instrumentation and measurement, as well as statistics. The course includes a 3-hour-per-week, hands-on laboratory where students explore the concepts taught in the lecture. For many students this is the first time they have actual hands-on experience with electronics and measurement equipment, such as oscilloscopes, breadboards, function generators, digital data acquisition systems, integrated circuits strain gages, displacement meters, thermocouples, tachometers, dynamometers, filters, volume flow meters, velocity meters, pressure transducers, etc. Students learn not only how to use these devices in the lab, but also the fundamental principles of their operation. Statistical analysis is integrated into the course, especially in the hands-on laboratories, where statistics is used to analyze and interpret acquired data."
+    },
+    {
+      "number": 349,
+      "type": "course",
+      "title": "Intermediate Mechanics of Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ],
+        "concurrent": [
+          "CMPSC200",
+          "MATH220"
+        ]
+      },
+      "description": "Intermediate topics in mechanics of materials with computer applications. M E 349 Intermediate Mechanics of Materials (3) This course introduces students to intermediate and applied topics in mechanical behavior of materials with an emphasis on design and computation. This course will give students the tools to do practical analysis and the foundation needed to prepare them for other mechanical engineering courses in design and other elective courses. Subjects covered include stress analysis, deformation & deflection, material failure and finite element analysis. Stress analysis includes the study of stress concentrations, stress transformations and principal stresses. Stress-based static failure theories for brittle and ductile materials are investigated. Two-way bending of beams is covered as well as torsional deformation of non-circular cross sections. Buckling and pressure vessels are introduced as separate topics while the finite element analysis is introduced as a computational tool to study stress and deformation. Throughout the course students will use a commercial finite element program to verify and visualize results from analysis of the various topics. During the course, students are introduced to the basic theory of the finite element method."
+    },
+    {
+      "number": 355,
+      "type": "course",
+      "title": "Dynamic Systems Laboratory",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ME348"
+        ],
+        "concurrent": [
+          "ME450"
+        ]
+      },
+      "description": "Experimental investigation of simple position, velocity, and temperature control systems with analog and digital controllers. M E 355 Dynamic Systems Laboratory (1) The objective of the Dynamic Systems Laboratory is to enable students to experimentally investigate the calibration, response characteristics, modeling, and control of mechanical and fluid systems. This course is intended to allow students to develop some hands-on experience and working knowledge of basic dynamic and control systems. Specifically, to 1. Identify the actuators, sensors, plants, and controllers of physical control systems.2. Calibrate encoders, temperature, laser displacement, and flow sensors.3. Measure steady state, step, and frequency response of thermal, fluid, and mechanical systems.4. Compare simulation and experimental results to validate theoretical model.5. Design PID controllers for thermal, fluid, and mechanical systems.6. Implement and test PID controllers for thermal, fluid, and mechanical systems."
+    },
+    {
+      "number": 357,
+      "type": "course",
+      "title": "System Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC200",
+          "EE211",
+          "MATH251"
+        ]
+      },
+      "description": "Mathematical modeling and analysis of linear dynamic systems; performance and design of simple controllers. M E 357 System Dynamics (3)This course is to explore the modeling of linear systems via transfer functions and state-space models; analysis of systems in the time and frequency domain using transfer functions and stat-space models; development of control techniques based on PID. The use of software Matlab and Simulink is another emphasis. Students are evaluated through the use of written exams during the semester, a comprehensive written final, weekly homework assignments, and a design project. This course is required in the ME BD program at Behrend, integrates material from a number of previous courses, and provides the student with tools that will be used in a number of subsequent courses."
+    },
+    {
+      "number": 360,
+      "type": "course",
+      "title": "Mechanical Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ],
+        "concurrent": [
+          "CMPSC200"
+        ]
+      },
+      "description": "Specification of components such as shafts, bearings, and power transformers; optimal designs for operational, environmental, and manufacturing requirements. ME 360 Mechanical Design (3) This course is required for all mechanical engineering students. It is an introduction to analysis and design of mechanical components. It helps provide practical insight into theory provided by prerequisites in engineering mechanics and materials science. Students initially perform yielding and fatigue failure predictions for general structural elements and then focus on specific mechanical components such as gears, fluid film bearing, rolling element bearings, screws, shafts, and springs. Use and interpretation of finite element analyses (FEA) are also introduced. The overall goals are for students to learn to make basic design decisions regarding the suitability of different materials in mechanical components (e.g. steel versus aluminum), and to make basic design decisions regarding the suitability of different components in a mechanical system (e.g. ball bearings versus fluid film bearings)."
+    },
+    {
+      "number": 365,
+      "type": "course",
+      "title": "Materials Testing Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "MATSE259"
+        ]
+      },
+      "description": "Laboratory for materials testing, property identification and modification, failure analysis, and metallurgical testing. M E 365 Materials Testing Laboratory (1)This laboratory course provides an integrated approach to materials science and engineering. The laboratory examines the important relationships between processing, microstructure, and the properties of materials. The course provides an introduction to basic characterization techniques for materials, such as microscopy, hardness testing, fracture testing and analysis, fatigue testing, and impact testing. In addition, material selection and heat treatment topics are covered. The course requires hands-on involvement by the students in the planning of experiments as well as data manipulation and analysis of results. The laboratory exercises are intended to provide students with a broad appreciation of the breadth of material science and engineering and the principles behind material characterization and property modification. Students work in groups, and written reports are the primary basis for grading."
+    },
+    {
+      "number": 367,
+      "type": "course",
+      "title": "Machine Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME349"
+        ],
+        "concurrent": [
+          "MATSE259"
+        ]
+      },
+      "description": "Design and selection of machine components and connections. Stress analysis and modes of failure of materials used in machine components. M E 367 Machine Design (3) This course introduces students to the process for selection, design and failure analysis of various common machine elements. This course will give students the foundation to design mechanical systems and the tools to design, select, or analyze machine components for practical applications necessary for their design projects and other mechanical engineering electives. Subjects include the reliability, safety factors, and the design of machine elements including shafts, roller bearings, brakes, clutches, gears, belt and chain drives, and additional topics such as screws, springs, journal bearings, and connections. Both static and cyclic loading are considered as part of the design and analysis process. Extensive use is made of material properties, design tables, figures and graphs to assist in the design and analysis process. The course includes a comprehensive project that incorporates several of the topics covered in the course in the design of a mechanical system. The goal of the project is for students to learn how various machine"
+    },
+    {
+      "number": 370,
+      "type": "course",
+      "title": "Vibration of Mechanical Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "CMPSC200",
+          "MATH220",
+          "MATH251"
+        ]
+      },
+      "description": "Modeling and analysis of vibration characteristics of mechanical systems with single degree and multiple degrees of freedom. Vibration control by isolation, absorption and balancing. M E 370 Vibration of Mechanical Systems (3) The course studies vibration characteristics of mechanical systems and vibration control. It is divided into four main topics. Fundamental aspects of mechanical vibrations are studied first. Types and causes of various vibratory motions are described. The concepts of mathematical modeling of the vibratory systems are presented. Model elements including mass/inertia, spring and damper elements and their corresponding describing equations are studied. Single degree-of-freedom vibrations are modeled and analyzed. Equations describing free vibrations of undamped and damped systems are derived. Natural frequency and damping ratio are defined and their physical significance discussed. Harmonically excited vibrations are studied with many practical application problems; resonance and its physical significance are emphasized. The theoretical aspects of general periodic vibrations and non-periodic vibrations are formulated by means of Fourier analysis and convolution integral. Vibrations of multiple degrees-of-freedom systems are studied. Mathematical models governing free vibrations are formulated. Equations determining the natural frequencies and mode shapes of the system are derived with relation to eigenvalue problems. Harmonically excited vibrations are analyzed with practical applications. Vibration control in relation to engineering design is the last topic studied. Various vibration control concepts and techniques are presented including vibration isolation, vibration absorption and balancing to reduce the intensity of the source of excitation."
+    },
+    {
+      "number": 375,
+      "type": "course",
+      "title": "Vibrations Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "ME370",
+          "ME348"
+        ]
+      },
+      "description": "Experimental measurement and analysis of mechanical system dynamics. This laboratory course provides an opportunity to apply the fundamental vibrations theory taught in ME 370 to actual mechanical hardware. The experiments illustrate fundamental concepts from an experimental vibration perspective. Experimental vibration measurement methods are applied to estimate simplified dynamic models for vibrating mechanical systems. The students compare analytical to experimental results to gain a sense of the limitations of both modeling and experimentation. Experiments include: free vibration of linear and nonlinear systems, response, measurement of translational and rotational, forced harmonic vibration, spectral analysis of vibration signals, experimental data uncertainty and comparison of finite element model dynamic results to experimental data. Throughout the course the students will: 1. Plan, implement and debug instrumentation to measure vibrations of mechanical systems. 2. Implement experimental test systems using vibration transducers and data acquisition to maximize measurement quality. 3. Recognize the dominant behavior seen in many larger, more complicated engineering systems. 4. Estimate the system vibration parameters 5. Use software to compare measured and predicted dynamic behavior. 6. Recognize dominant nonlinear behavior and implement a nonlinear simulation using software. 7. Verify the results of computer analyses of dynamic systems by various methods including experimental measurement and analytical modeling."
+    },
+    {
+      "number": 380,
+      "type": "course",
+      "title": "Machine Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "MATH251"
+        ]
+      },
+      "description": "Kinematic analysis of mechanisms such as linkages, flywheels, cams and gears. Dynamic forces and vibrations of mechanisms. M E 380 Machine Dynamics (3)In this course students learn how to apply the techniques of dynamics to analyze both the motion and forces associated with planar mechanisms. Students learn how to model and solve for the position, velocity, acceleration and forces on linkages using vectors. They also study the kinematics of gears, flywheels and cams. Machine vibrations is introduced as an integral part of Machine Dynamics. Students learn how to model simple mechanical systems as vibrating systems and then analyze the vibratory response of these systems. Once these analytical skills have been developed, the students can apply these skills to the design of linkages, internal combustion engines, gears, shafts and cams. Several in-class exams are used to evaluate students' performance. Computer problems are assigned so students can experience the solution methods to some of the more complex problems. This required course integrates material from calculus and dynamics to provide the student with tools that can be used to analyze the motion of machinery and can be used in the design of machinery and machine components. It is offered annually in the Fall semester and occasionally in the Spring semester."
+    },
+    {
+      "number": 390,
+      "type": "course",
+      "title": "Academic and Career Development for Mechanical Engineers",
+      "credits": 0.5,
+      "description": "ME 390 Academic and Career Development for Mechanical Engineers (0.5) guides students through the process of tailoring their academic studies to suit their individual career goals. Students will look at career opportunities within mechanical engineering as well as the many other professions that are available to BSME degree holders. Students will be prepared to participate successfully in recruiting events such as the Penn State career fairs"
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "type": "course",
+      "title": "Thermodynamics of Propulsion and Power Systems",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ME410"
+        ]
+      },
+      "description": "Analysis and modeling of propulsion and power systems, including combustion, compressible flow through nozzles, chemical equilibrium, and moist air systems. M E 400 Thermodynamics of Propulsion and Power Systems (3) This course is specifically designed to provide an integrative modeling and analysis approach to thermal-fluids systems. The course emphasizes the integration and application of fundamental principles of mass, momentum, and energy conservation to relatively complex systems. These systems include spark-ignition and diesel engines, gas-turbine engines for power production, and turbojet engines. The integration of the topics of combustion, compressible flow, and psychrometrics allow these systems to be analyzed in their totality. Emphasis is on creating engineering models of these systems. The course aims to integrate previous knowledge and develop skill in 'thinking like an engineer.'"
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Refrigeration and Air Conditioning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME410"
+        ]
+      },
+      "description": "Theoretical principles, design, performance, and selection of various refrigeration and air-conditioning systems; building heat and cooling loads; solar heating."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Polymer Electrolyte Fuel Cell Engines",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ME410"
+        ]
+      },
+      "description": "Introduction to Fundamentals of Polymer Electrolyte Fuel Cells (PEFCs). Includes fundamentals of electrochemistry, thermodynamics, fluid mechanics, heat transfer materials, and manufacturing issues of PEFCs. A brief survey of other fuel cell types is also included. M E 403 Polymer Electrolyte Fuel Cell Engines (3) This course is intended for the engineering student interested in obtaining a fundamental background required for polymer electrolyte fuel cell (PEFC) modeling and diagnosis. Those students with interest in the basic design, operation, and characteristics of PEFC systems should also benefit. This course serves as an introduction to the fundamental principles of electrochemistry, thermodynamics, heat and mass transfer, materials and manufacturing issues related to PEFC engines. The various types of PEFC components and technologies are dissected in detail, including direct inject alternative fuel systems. A survey of cutting-edge issues in fuel cell technology including the future direction of PEFC technology will be presented as time permits. The student will also participate in an experimental lab study to aide in the understanding of these systems, a computer-based simulation project, and a group-based fuel cell system design project. Issues of specific interest to mechanical engineers, including water management and heat and mass transfer in thin film porous media, will be dealt with in depth. A brief survey of other fuel cell types is also presented."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Gas Turbines",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300"
+        ]
+      },
+      "description": "This course enables students with the proper background to gain specialized knowledge as a step towards becoming practitioners in the field of gas turbines. The information imparted covers from basic cycles to properties of materials required to put together these impressive machines. Competent course performance requires knowledge of basic thermodynamics, fluids and heat transfer. The homework is carefully graduated in order to highlight key aspects already covered in the lectures, with new thinking an unavoidable part. As an optional part of the course, students can run and acquire data in an actual gas turbine. Additionally, those with a strong background in fluids can design blades and study the flow around them with CDF. Course Objectives: Upon completion of this course, students should be able to: 1. Analyze cogeneration plants. 2. Analyze turbofans, jets and turbojets. 3. Specify a typical gas turbine installation, including auxiliaries. 4. Carry out conceptual design of gas turbine engines for different applications. 5. Specify construction materials to withstand typical operating conditions. 6. Demonstrate professionalism in interactions with colleagues, faculty, and staff. Program Objectives: This course covers the following program objectives: 1. demonstrate ability to solve differential equations 2. demonstrate familiarity with linear algebra 3. perform analysis of thermal/fluids components 4. perform analysis of thermal/fluids systems 5. work effectively on multidisciplinary teams 6. demonstrate ability to communicate effectively with the written word 7. demonstrate ability to communicate effectively in oral communications 8. demonstrate professionalism in interactions with colleagues, faculty, and staff"
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Indoor Air Quality Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320"
+        ]
+      },
+      "description": "Prediction of the motion of contaminants (both gaseous particulate) in gas streams; analysis of ventilation systems and air pollution control systems; comparison of experimental sampling techniques. M E 405 Indoor Air Quality Engineering (3) This course serves as an introduction to environmental health engineering, which presents the quantitative relationships describing generation, movement, and control of pollutants inside the workplace. Although some aspects of the course can be applied to outdoor air pollution, the course concentrates on applications related to indoor air quality. In particular, students are taught how to measure and predict concentrations of air pollutants, both gaseous and particulate, in rooms. In addition, they are taught how to design both local and general ventilation systems to maintain acceptable indoor air quality. In addition, the design of air pollution control systems that remove both gaseous and particulate contaminants from the air is discussed.The relationships are described by mass and energy balances that relate pollutant generation and movement to process parameters. The course is designed for seniors and graduate students in Mechanical, Chemical, Environmental and Civil Engineering, and Meteorology.To work effectively in environmental health engineering, students must be proficient in applying the thermal sciences. The course uses principles of mathematics and thermal sciences included in accredited programs of engineering. Most students will have mastered some of these principles, but few will have mastered them all. The course reviews all the necessary thermal science principles before using them, but some students will need to review this material in more detail than others.This course is offered once per year.Course Objectives:a. Demonstrate the ability to analyze and compare risks associated with various activities and with exposure to hazardous chemicals.b. Demonstrate a working knowledge of the physiology and function of the respiratory system, including diseases of the lung.c. Demonstrate the ability to estimate pollutant emission rates using emission factors and fundamental mass balance techniques.d. Analyze practical problems of general and local ventilation requirements.e. Design local ventilation systems using standard guidelines from ACGIH and ASHRAE.f. Predict the motion of particles in air, and analyze pollution control devices which remove particles from the air.g. Demonstrate professionalism in interactions with colleagues, faculty, and staff.Program Objectives:a. demonstrate knowledge of chemistryb. demonstrate ability to solve differential equationsC. demonstrate familiarity with statisticsd. perform analysis of thermal/fluids components and thermal/fluids systemse. demonstrate an appreciation of the economic, global, social, and ethical context of their workf. demonstrate professionalism in interactions with colleagues, faculty, and staffg. make effective use of spreadsheets as an analysis and design toolh. use software such as Matlab and MathCAD to solve engineering problems including ODE'S, systems of linear equations, and numerical integration"
+    },
+    {
+      "number": 406,
+      "type": "course",
+      "title": "Introduction to Statistical Thermodynamics",
+      "credits": 3,
+      "internalEquivalents": [
+        "NUCE406"
+      ],
+      "requisites": {
+        "previous": [
+          "ME300",
+          "MATH230"
+        ]
+      },
+      "description": "Statistical description of systems composed of large numbers of particles in the context of classical and quantum mechanics; basic concepts of probability theory and thermodynamics as they relate to statistical mechanics. M E (NUC E) 406 Introduction to Statistical Thermodynamics (3) This course is an introduction to probabilistic and statistical concepts in the physical sciences, which we refer to as 'statistical thermodynamics.' In areas such as design and processing of electronic devices, materials engineering, chemical engineering, and combustion engineering, the science of statistical mechanics is a particularly necessary, powerful, and important tool for the engineer. The underlying foundation of statistical mechanics is developed by (1) reviewing the basic ideas from probability theory, (2) deriving the binomial, Poisson, and Gaussian probability distributions, and (3) using these models to analyze several examples taken from science and engineering. To make a connection between macroscopic quantities and the corresponding probabilistic representation, classical thermodynamics is reviewed using the internal energy, entropy, and free energy functions in the context of the first and second laws. Statistical mechanics for classical and quantum-mechanical systems is presented via the micro-canonical, canonical, and grand canonical ensembles using the associated partition functions. During the syntheses of ideas, applications from various branches of science are presented. Some examples of applications are the Einstein crystal, the Debye crystal, the ideal gas, and black body radiation.This course covers the following program objectives: 1. Demonstrate knowledge of basic chemistry and physics. 2. Demonstrate a knowledge of atomic and nuclear physics. 3. Demonstrate a knowledge of thermodynamics, heat transfer, and fluid flow. 4. Understand and apply the basic concepts of particle transport. 5, Understand and apply thermodynamics and heat transfer principles to the analysis of nuclear power components and systems."
+    },
+    {
+      "number": 408,
+      "type": "course",
+      "title": "Energy Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME410"
+        ]
+      },
+      "description": "Theory, analysis, design, selection, and application of energy conversion systems. This course is intended for mechanical engineering students to reinforce the topics taught in thermodynamics, fluid mechanics, and heat and mass transfer; gives students familiarity with energy conversion systems using traditional and renewable energy sources which are typically encountered by mechanical engineers, and improves students' analytical and design skills. Coverage of materials include heat exchanger analysis, selection, and design with respect to heat transfer, pressure drop, and fluid pumping requirements; analysis and design of power cycles based on thermodynamic principles; fundamentals of combustion processes; introduction to wind energy and wind turbine aerodynamic analysis; fuel cell fundamentals and analysis of fuel cell problems and systems based on thermodynamics and heat transfer principles. Students will be evaluated by homework assignments; individual and small team projects; and exams."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320",
+          "CMPSC200",
+          "MATH220"
+        ]
+      },
+      "description": "Thermal energy transfer mechanisms: conduction (steady, transient), convection (internal, external), radiation; lumped parameter method; heat exchangers; introduction to numerical methods. ME 410 , Heat Transfer, is a required course for mechanical and nuclear engineering students. The course presents the three modes of heat transfer: conduction, convection, and radiation. One-dimensional steady and transient conduction is studied for planar, cylindrical, and spherical geometries. The lumped capacitance analysis is used for transient conduction when appropriate. Analytical and numerical methods are presented for two-dimensional conduction problems, including the analysis of extended surfaces. Convection heat transfer is studied in both internal and external geometries and under laminar and turbulent flow regimes. External flows include cooling on flat plates due to laminar and turbulent boundary layer flows, and cooling of cylinders due to cross flow. The convection heat transfer analysis in internal flows considers laminar and turbulent pipe flows. Free convection is also considered where heat transfer is due to flow induced by fluid buoyancy. Boiling and condensation considers the effect of two-phase flows on surface heat transfer. Radiation heat transfer is studied by considering both the general characteristics of radiation as well as the properties of radiating surfaces and radiation heat transfer between surfaces. Methods for solving multi-mode heat transfer are presented throughout the course. Heat exchangers and heat transfer from extended surfaces are two applications studied in the course"
+    },
+    {
+      "number": 411,
+      "type": "course",
+      "title": "Heat-Exchanger Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME410"
+        ]
+      },
+      "description": "Thermal design and application of different heat-exchanger types, including surface selection and design optimization."
+    },
+    {
+      "number": 420,
+      "type": "course",
+      "title": "Compressible Flow I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320"
+        ]
+      },
+      "description": "This course is a technical elective. We cover several unique concepts and applications of compressible flow, including: speed of sound and Mach number, isentropic 1-D flow in variable area ducts, converging nozzles, choking, converging-diverging nozzles, moving shocks, blast waves, shock tubes, Rayleigh flow (duct flow with heat transfer), Fanno flow (duct flow with friction), normal and oblique shock waves, expansion fans, and other topics to be announced, time permitting. Course Objectives: Upon completion of this course, students should be able to: 1. Solve a range of compressible-flow problems often encountered in engineering practice, including adiabatic isentropic flow in ducts and normal and oblique shock wave analysis. 2. Apply physical thinking and problem-solving techniques to practical problems using fluid mechanics and thermodynamics. 3. Integrate previous course material in fluids and thermodynamics into the study of compressible flow. 4. Apply computer programs (Matlab, Excel, EES, Javascript calculators, etc.) to compressible-flow problems. 5. Identify and utilize the strong visual nature of flow patterns in engineering practice in the thermal sciences. 6. Demonstrate practical design skills such as design of supersonic nozzles and wind tunnels. 7. Demonstrate professionalism and respectful interaction with faculty and colleagues."
+    },
+    {
+      "number": 422,
+      "type": "course",
+      "title": "Principles of Turbomachinery",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320"
+        ]
+      },
+      "description": "Conservation laws pertinent to energy conversion and fluid mechanics are applied to pumps, centrifugal compressors, axial compressors and turbines, hydro turbines and wind turbines. Ideal performance is established, and conventional loss correlations are applied to define potential performance of turbomachinery. The applications of similarity and dimensionless parameters towards characterizing turbomachines are outlined. The course objectives are; 1. Review/acquire thermofluids concepts applicable to turbomachinery such as Reynolds transport theorem, First and Second laws, isentropic efficiencies, potential flow, dissipative flows. 2. Develop an understanding of working principles applicable to centrifugal, axial and mixed flow machinery. Extend concepts applicable to hydro and wind turbines. Develop approximations for both compressible and incompressible flows. 3. Gain an understanding of loss calculations."
+    },
+    {
+      "number": 423,
+      "type": "course",
+      "title": "Introduction to Numerical Methods in Fluid Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320",
+          "MATH250",
+          "CMPSC200"
+        ]
+      },
+      "description": "This course provides an introduction to the important and growing field of Computational Fluid Dynamics (CFD). The student will become familiar with a short history and relevance of CFD, the basic differential models of fluid dynamics, discretization and linearization practices, and solution strategies of CFD. Fundamentals of algorithm classification, error and stability analysis will be covered. Also, several advanced topics of relevance to modern CFD analysis will be covered. A term project will involve coding a CFD model of one of several choices including: 2D shallow wave equations for application to a tsunami, unsteady conjugate flow+heat transfer analysis of a pin array, and others per the instructor's discretion."
+    },
+    {
+      "number": 424,
+      "type": "course",
+      "title": "Additive Manufacturing Lab",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ME349"
+        ]
+      },
+      "description": "Explore various aspects of 3D printing. Topics will vary by semester, depending on the current technology and advancements in the field. This laboratory course provides an integrated approach to additive manufacturing and reverse engineering. The course introduces basic operating procedures for Fused Deposition Modeling (FDM) printers and gives instruction on repair, troubleshooting, and print optimization techniques. The laboratory examines the important relationships between 3D printing parameters and the final object¿s material properties. In addition, reverse engineering and rapid prototyping topics are covered. The laboratory exercises provide students with a broad appreciation of the current technological capabilities of FDM 3D printing and an understanding of when to implement the technology over a traditional manufacturing technique. Written technical and research reports and proposals, Inventor models, and 3D printed models are the primary basis for grading."
+    },
+    {
+      "number": 427,
+      "type": "course",
+      "title": "Aerodynamics for Mechanical Engineers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320"
+        ]
+      },
+      "description": "The primary objective of this course is to teach students how to apply concepts relating to incompressible flows to solve aerodynamic design problems. In incompressible aerodynamics, fundamental concepts such as lift, drag, aerodynamic moment, induced drag, viscous drag, pressure drag, separation, stall, circulation, downwash, camber, thickness ratio, and lift distribution are discussed. Students use these concepts primarily to determine aerodynamic lift and drag using a variety of techniques, including potential flow theory and wind tunnel testing. Based on instructor preference and expertise, additional topics relating to incompressible and/or compressible aerodynamics may be also discussed. Students will be evaluated through the use of written exams during the semester, a comprehensive written final, and weekly homework assignments. This course is a technical elective in the ME programs at the Behrend, Berks and Harrisburg campuses and allows students who have completed ME 320 , Elementary Fluid Mechanics, to improve their understanding of fluids and thermodynamics by covering the subject in more detail and applying it specifically to aerodynamic problems. It will usually be offered annually."
+    },
+    {
+      "number": 428,
+      "type": "course",
+      "title": "Applied Computational Fluid Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320",
+          "ME410"
+        ]
+      },
+      "description": "Introduction to theory and application of computational techniques for solving fluid flow and heat transfer. M E 428 Applied Computational Fluid Dynamics (3) The purpose of this course is to teach students how to use a commercial CFD code to solve real-world engineering fluid flow problems. The definition of appropriate problem domain, set of governing equations, boundary conditions, and fluid properties is discussed. Sufficient theory of CFD is covered so that students are able to select appropriate elements or interpolation techniques and options, mesh size, pressure-correction technique and solution technique. Students are also taught how to interpret the results of a CFD simulation, including determination that the solution is physically realistic, conforms to the governing equations, is converged and grid independent, and determination of important engineering quantities such as net force, pressure drop and flow rate. Students are evaluated through the use of written exams during the semester, a comprehensive written final, weekly homework assignments, and a semester project. This course is a technical elective in the Mechanical Engineering program and allows students who are interested in fluid mechanics and heat transfer to further their study. It is offered periodically."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Introduction to Combustion",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300"
+        ]
+      },
+      "description": "Concepts related to laminar and turbulent premixed and nonpremixed combustion with applications to propulsion and stationary systems. EGEE (M E) 430 Introduction to Combustion (3) This course provides an introductory treatment of combustion science. The objectives of the course are to develop in the students an understanding of combustion kinetics, combustion thermochemistry, flame dynamics, flame stability, and pollutant formation. Coverage includes laminar and turbulent flames, premixed and diffusion flames, and detonations. Emphasis is placed on the role that Kinetics, heat transfer, mass transfer, and fluid dynamics have on flame structure and flame stability. The course includes some laboratory demonstrations of flat flame and diffusion flame burners, and incorporates numerical calculations of thermodynamic and kinetic combustion phenomena. The course begins with a review of transport phenomena, physical gas dynamics, and thermochemistry. Then, the concept of the laminar flame speed is introduced in the context of a one-dimensional flame and a propagating chemical wave. Issues of premixed flame structure and stability are presented along with a discussion of flammability limits. Next, laminar diffusion flames are presented via the Burke-Schumann analysis. From laminar flames, the emphasis shifts to turbulent premixed and diffusion flames, and the concepts of flame stretch and strain. Detonations are considered, with emphasis on thermodynamic analysis of the detonation and the structure of the detonation wave. Details of chemical kinetics for the hydrogen-oxygen and hydrocarbon-air reaction systems are presented, with linkage back to earlier topics such as flame stabilization and flammability limits. After kinetic phenomena, the course then considers pollutant formation focusing on soot and NOx. The fundamental aspects of combustion are applied to analysis of the combustion process and pollutant formation in international combustion engines and catalytic combustors. The course wraps up with discussion of atmospheric chemistry, the fate of pollutants, and the formation of secondary pollutants."
+    },
+    {
+      "number": 431,
+      "type": "course",
+      "title": "Internal Combustion Engines",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300",
+          "ME320"
+        ]
+      },
+      "description": "This course is specifically designed to provide an integrative modeling and analysis approach to thermal-fluids systems. The course emphasizes the integration and application of fundamental principles of mass, momentum, and energy conservation to relatively complex systems. These systems include spark-ignition and diesel engines, gas-turbine engines for power production, and turbojet engines. The integration of the topics of combustion, compressible flow, and psychrometrics allow these systems to be analyzed in their totality. Emphasis is on creating engineering models of these systems. The course aims to integrate previous knowledge and develop skill in \"thinking like an engineer."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Rocket Propulsion",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300",
+          "ME320"
+        ]
+      },
+      "description": "Overview of underlying theories and design practices of chemical and non-chemical rocket propulsion systems. The topical areas include basic thermodynamics and gas dynamics, propellant formulation and characterization, component and system designs, and test evaluation. At the conclusion of this course, students will have obtained fundamental knowledge and design rules of various rocket propulsion systems, including solid, liquid, and hybrid rockets, as well as electric propulsion engines."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Fundamentals of Air Pollution",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300"
+        ]
+      },
+      "description": "Natural and man-made sources of pollution; atmospheric dispersion; biological and health effects; control systems; legislation and regulations. This course is an introduction to air pollution, with an emphasis on outdoor rather than indoor air pollution. Topics to be covered include sources (emissions) of air pollution, both gaseous and particulate, interaction of air pollution with our bodies and the environment, and methods of measuring, quantifying, analyzing, and controlling air pollution. A brief introduction to government regulations related to air pollution will also be provided. Students are expected to be proficient in applying mathematics (e.g., integration, differentiation, and application of differential equations), and some basic chemistry, statistics, thermodynamics, and fluid mechanics."
+    },
+    {
+      "number": 435,
+      "type": "course",
+      "title": "Mechanical Engineering Systems Lab",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME348",
+          "ME330",
+          "ME320"
+        ],
+        "concurrent": [
+          "ME370"
+        ]
+      },
+      "description": "This course studies fundamental mechanical engineering subjects, including mechanics, dynamics, heat transfer, fluid mechanics, material science, and control in a holistic approach, through real-world systems in topics, such as energy and sustainability, autonomy and robotics, and big data. Students will analyze and divide complex thermal and mechanical problems into manageable subtasks, devise, and conduct hands-on experiments to solve engineering problems. This course will give students experience with data acquisition and analysis, evaluating the strength and limitations of theoretical predictions using computational tools, and interpreting data to support a conclusion. In particular, the course emphasizes helping students develop skills in observation, problem-solving, analysis, and critical thinking. This course has weekly laboratory sessions as well as two weekly lectures to provide project background, reinforce knowledge, reflect and discuss experimental observations, and train communication, documentation, and presentation skills."
+    },
+    {
+      "number": 440,
+      "suffix": "W",
+      "type": "course",
+      "title": "Mechanical Systems Design Project",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME340"
+        ],
+        "concurrent": [
+          "IE312",
+          "ENGL202C"
+        ]
+      },
+      "description": "Design and analysis of mechanical components and systems. Application of fundamental design and analysis methods to open ended engineering problems. Students develop and practice skills and techniques for managing and executing engineering design projects. These skills are applied to an industry-sponsored project. Project teams perform all facets of product and process design. This includes problem identification, planning of the project, formulation of design specifications, the development and evaluation of alternative conceptual designs, the development of detailed designs, the specification of manufacturing processes, prototyping of manufacturing processes and parts, and analysis and documentation of results. Students will visit industrial sites to gain an understanding of existing processes and problems and to assess the customer's needs. Students will present their design process and final design in several formats: oral presentations, poster presentations, web pages, and reports."
+    },
+    {
+      "number": 444,
+      "type": "course",
+      "title": "Engineering Optimization",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230",
+          "CMPSC201"
+        ]
+      },
+      "description": "Problem formulation, algorithms and computer solution of various engineering optimization problems. M E 444 Engineering Optimization (3)Students will learn to formulate and solve a variety of engineering optimization problems. Basic concepts, problem formulation, scaling, use of different optimizers, effect of tuning parameters and starting points and solution interpretation will be taught. Example problems will be taken from mechanical, aerospace, nuclear, civil, chemical, electrical and other engineering disciplines. This course will complement other engineering design courses, such as capstone design. Students will learn how optimization can reduce product turnaround time, and to make decisions involving weight, stiffness, strength, performance, energy utilization, and other attributes. Pedagogy will focus on hands-on experience through computational problem-solving and graphical understanding. Technology classrooms and computer labs for instruction will be used. A by-product of this course is increased math and computer skills."
+    },
+    {
+      "number": 445,
+      "type": "course",
+      "title": "Microcomputer Interfacing for Mechanical Engineers",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ME348"
+        ]
+      },
+      "description": "Interfacing of electro-mechanical systems to microcomputers for data acquistion, data analysis and digital control."
+    },
+    {
+      "number": 448,
+      "type": "course",
+      "title": "Engineering Design Concepts",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME380"
+        ],
+        "concurrent": [
+          "ME367",
+          "ME410"
+        ]
+      },
+      "description": "Engineering design and modelling, engineering economic analysis techniques, technical communication skills, project planning and design. M E 448 Engineering Design Concepts (3)This course is the first of a two-part sequence of courses that make up the capstone design experience in the ME BD major (the second course is M E 449, Mechanical Design Projects). In this course students study the engineering design process, begin working on their design project, and learn about professional topics related to industry. Topics in the engineering design process include customer needs identification, development of engineering specifications, concept generation, concept selection, costing, and project planning. Professional topics include communication, team work, ethics, safety, sustainability, globalization, and engineering economics. Students are evaluated on the design process and professional topics through assignments and quizzes. A major component of the course is to begin work on a capstone design project. Students work in teams of 3 to 4 on an industrially-sponsored project or other project approved by the faculty. The student teams work with the sponsor to develop specifications and a project plan, perform background research necessary to fully understand the project, begin to solve the problem, and make two presentations during the semester. The first presentation is a formal project proposal; the second presentation at the end of the semester is a progress report. Students are evaluated on both their technical and presentation skills, as well as their ability to function as a team. This course is required in the Behrend Mechanical Engineering (ME BD) program, and integrates material from a number of previous courses."
+    },
+    {
+      "number": 449,
+      "type": "course",
+      "title": "Mechanical Design Projects",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME448"
+        ]
+      },
+      "description": "Group or individual design projects in the areas of mechanical engineering."
+    },
+    {
+      "number": 450,
+      "type": "course",
+      "title": "Modeling of Dynamic Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME370"
+        ],
+        "concurrent": [
+          "ME348"
+        ]
+      },
+      "description": "Modeling and analysis of dynamic interactions in engineering systems. Classical and state variable methods; digital simulation; stability and dynamic response. M E 450 Modeling of Dynamics Systems (3) This course covers modeling, analysis, and control of single and multiple degree-of-freedom dynamical systems, including mechanical, electrical, thermal, fluid systems and their combinations (mixed systems). The processes of energy storage and dissipation, which are common for different kinds of dynamic systems, will be emphasized in investigating general principles for modeling various dynamic systems. Basic concepts in system theory such as state variables and stability notions will be introduced. Most of the content will be restricted to linear-time-invariant systems (LTIs); however, local linearization around nominal operating points will be taught to analyze nonlinear systems. Introduction to classical control analysis and design methods will also be given."
+    },
+    {
+      "number": 452,
+      "type": "course",
+      "title": "Vehicle Road Dynamics",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ME450"
+        ]
+      },
+      "description": "This course conducts investigations of one-dimensional, two-dimensional, and three-dimensional dynamics, kinematics and design integrated into the study of vehicle dynamics. Topics include body kinematics, steady state body dynamics, transient stability, tire forces, suspension, automatic control, and driver interaction. The emphasis is on the analysis of a vehicle as a complex system, recognizing how to abstract observed behaviors into appropriate mathematical models, how to decompose behaviors into subsystems, how to construct and perform numerical simulations, and how to design and analyze experiments to test models and simulations to gain insights into design goals and tradeoffs."
+    },
+    {
+      "number": 454,
+      "type": "course",
+      "title": "Mechatronics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME348"
+        ]
+      },
+      "description": "Interfacing of electro-mechanical hardware to microcomputers and microcontrollers for data acquisition, data analysis, and digital control. The course addresses the need for today's mechanical engineer to understand the architecture of engineering systems and not just the mechanical hardware. The course has a significant lab component in the form of weekly, two-hour labs. Examples of lab topics include the design and building of a complete autonomous vehicle including the drive system, steering, sensors, obstacle avoidance, and computer control."
+    },
+    {
+      "number": 455,
+      "type": "course",
+      "title": "Automatic Control Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME320",
+          "ME450"
+        ]
+      },
+      "description": "This course covers the characterization and feedback control of linear time invariant (LTI) dynamic systems, classical feedback control theories will be emphasized. Basic concepts of analyzing, predicting and specifying the performance of dynamic systems, including transfer functions, dynamic response, block diagram, stability notions and sensitivity will be introduced. A thorough treatment of feedback controller design via Root-Locus method will be provided, which includes the design of lead/lag compensation and PID controller. Frequency domain controller design will also be introduced thoroughly, from the characterization of open-loop frequency response using Bode plot to the analysis of closed-loop frequency response. In this process, the notions of gain-phase relationship, Nyquist stability criterion, and stability margin will be discussed. Finally, the method of adding dynamic compensation to adjust the frequency response and improve the stability and performance of the system will be introduced."
+    },
+    {
+      "number": 456,
+      "type": "course",
+      "title": "Introduction to Robotics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "ME360"
+        ]
+      },
+      "description": "This course is a technical elective where students learn about the present and future status of robot applications, and are required to apply fundamental knowledge of physics, mechanics, and mathematics to develop software to analyze and control robots. The course deals with mechanics and control of mobile robots, flying robots and robot manipulators. First, students are taught to describe position and orientation of a rigid body, including rotation matrix, roll-pitch-yaw angles and Euler angles. In addition, a brief introduction to feedback control system is provided. After these background materials, students learn about the following topics: a. kinematics and control of wheeled mobile robots, car-like mobile robots and quadrotor and b. 3-D kinematics, statics, dynamics and control of robot manipulators. Sensors, actuators and software used in industrial robots are discussed."
+    },
+    {
+      "number": 459,
+      "type": "course",
+      "title": "Machine Learning in Mechanical Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC200"
+        ]
+      },
+      "description": "This course is designed to equip mechanical engineering students with the essential skills to bridge the gap between theoretical machine-learning models and real-world mechanical engineering challenges. This course serves as an introduction to machine learning and its diverse applications in the field of mechanical engineering, emphasizing hands-on experience with a high-level programming language."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Advanced Machine Design Problems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME360",
+          "ME370"
+        ]
+      },
+      "description": "This course is designed to approach and analyze fundamental problems in the design of advanced level machine components and systems. It integrates advanced concepts in fatigue, vibrations, mechanics of materials and tribology for component and system level reliability. The course emphasizes elements of power transmission through detailed discussion on kinematics and reliability-based design of cams, flywheels, transmission couplings and gear chains. Example cases involve single and multiple cylinder automotive engine system with analysis of dynamics and balancing, power transmission through both flexible and rigid elements as well as different kinds of differentials built of spur, helical, bevel and worm gears. Another thrust is the application of tribology on machine design with special focus on hydrostatic and hydrodynamic bearings. Through case studies drawn from design and failure from real life systems, the course develops knowledge and skills for translating design concepts from components to system level."
+    },
+    {
+      "number": 461,
+      "type": "course",
+      "title": "Finite Elements in Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213",
+          "CMPSC201"
+        ]
+      },
+      "description": "Computer modeling and fundamental analysis of solid, fluid, and heat flow problems using existing computer codes. E MCH (M E) 461 Finite Elements in Engineering (3) This is an introductory course in the Finite Element Method. Through this course, students gain knowledge in finite element theory and problem modeling. The mathematical formulation of the method is presented and then applied to problems in elasticity and heat transfer. Projects are assigned to demonstrate the finite element method in simplified problems using hand- calculations and computer programs such as Matlab. The use of commercial FEA programs is introduced and problems of increased complexity are assigned to demonstrate their use in a computer lab. Finally, problems of realistic complexity are assigned such that students can practice solving, documenting and presenting their use of commercial FEA programs."
+    },
+    {
+      "number": 465,
+      "type": "course",
+      "title": "Introduction to Manufacturing Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "ME468"
+        ]
+      },
+      "description": "A laboratory-based introduction to manufacturing processes including material removal, forming, casting and joining for metals and non-metals. M E 465 Introduction to Manufacturing Laboratory (1)This laboratory course provides an integrated approach to Manufacturing Science and Engineering. The laboratory examines common techniques for fabricating parts; providing an introduction to several basic processes for creating both metallic and polymeric parts. As a part of this course, students will be exposed to compressive, tensile, sheet, bending, casting and powder metal processes. Using basic material science principles, students will examine concepts such as material flow, springback, and cold working. The course requires hands-on involvement by the students in the planning of experiments as well as data manipulation and analysis of results. The laboratory exercises are intended to provide students with a broad appreciation of the breadth of Manufacturing Science and Engineering. Students work in groups. Written reports and in-class exercises are the primary basis for grading. This course is a technical elective."
+    },
+    {
+      "number": 467,
+      "type": "course",
+      "title": "Applied Finite Element Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME349"
+        ],
+        "concurrent": [
+          "ME410"
+        ]
+      },
+      "description": "Review of matrix algebra; discretization; finite element formulation; application of finite element computer codes."
+    },
+    {
+      "number": 468,
+      "type": "course",
+      "title": "Engineering for Manufacturing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE259"
+        ]
+      },
+      "description": "Manufacturability, the selection of the most effective materials and processes, and quality assurance. M E 468 Engineering for Manufacturing (3) This course will present an overview of the various manufacturing techniques that are currently used within industry. The advantages and disadvantages of each manufacturing technique will be discussed along with common defects that occur with each process. The start-up, operating, maintenance, and labor costs of each process will be presented along with general manufacturing economical concerns. Statistics and Quality assurance topics will also be covered, along with manufacturability and design for manufacturing concepts."
+    },
+    {
+      "number": 469,
+      "type": "course",
+      "title": "Metallic Manufacturing Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME349"
+        ],
+        "concurrent": [
+          "ME468"
+        ]
+      },
+      "description": "Principles of metal working and introduction to current theories; analysis of deformation, joining, and metal removal processes. M E 469 Metallic Manufacturing Processes (3)In this integrated lecture/laboratory course students will learn a) metal deformations techniques such as: forging, rolling, extrusion and drawing, b) metal removal techniques for single, multi and infinite point cutting, and c) metal fastening techniques, including bolts, rivets and welds. As a part of the learning process, students will directly compare existing standards and theories to actual laboratory results. Students will learn how to assess the accuracy of both theoretical derivations and experimental procedures by first deriving theoretical equations in the classroom and then directly examining the ability of the equations to predict the given behavior by actually performing the manufacturing operation in the laboratory. Based on in-depth discussions regarding assumptions, approximations, and experimental error, students will assess the ability of the current state-of-the-art techniques to accurately predict the forces generated/required during various manufacturing metal working operations. In addition, students will derive their own theories by removing/improving some assumptions within the existing theories. For processes where multiple theories exist, students will compare and contrast the predictive abilities of the various techniques to those found through controlled laboratory experiments. Similar comparisons will also be made for processes where both engineering standards and theoretical techniques exist."
+    },
+    {
+      "number": 470,
+      "type": "course",
+      "title": "Analysis and Design in Vibration Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "ME370"
+        ]
+      },
+      "description": "Application of Lagrange's equations to mechanical system modeling, multiple- degree-of-freedom systems, experimental and computer methods; some emphasis on design applications. In this course, students will learn basic techniques for modeling and analyzing linear multidegree-of-freedom (MDOF) mechanical systems, and will learn how to use these techniques for mechanical design. Students will learn to obtain equations of motion using energy methods (Lagrange's equations), with emphasis on the efficient formulation and reduction to the linear case. The basic theory of MDOF systems will be presented, including: eigenvalue problems; natural frequencies and normal modes; superposition and modal analysis; and frequency response. Numerical methods for solving static, dynamic and eigenvalue problems will be presented. Introductions to the theory of linear continuous systems and experimental methods of vibrations will be presented. A substantial portion of the course will be spent discussing design applications of the basic theory, such as: finite element numerical analysis and experimental modal analysis of beams and plates; vehicle suspension design; and vibration isolation and absorption."
+    },
+    {
+      "number": 480,
+      "type": "course",
+      "title": "Mechanism Design and Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212"
+        ]
+      },
+      "description": "Design and analysis of mechanical linkages including kinematic synthesis and dynamic analysis. Linkages for a variety of applications are considered. M E 480 Mechanism Design and Analysis (3) The student who takes this course will develop a basic understanding of the analysis and synthesis of planar linkage mechanisms. Students will develop the ability to model real linkage mechanisms using kinematic diagrams, including identification of links and joints. They will also learn to use Gruebler's equation to calculate the mobility or number of degrees of freedom of linkages based on the kinematic diagram. Students will also become familiar with real mechanism applications in the context of mechanism synthesis, where they will learn to determine the required dimensions of a mechanism for a specific application. Students will apply these dimensional synthesis methods in a design project which includes building a simple linkage prototype. They will learn kinematic analysis methods, i.e., analysis of position, velocity, and acceleration of planar linkages. These methods consist of graphical, algebraic, and complex number approaches. Students will also learn to use commercial software packages, e.g. Working Model, to predict position, velocity, and acceleration of planar linkages, and will compare their predictions to those using analytical approaches. Finally, students will learn to do dynamic force analysis of planar linkages to predict joint forces and motor torques. They will use commercial software packages to predict joint forces and motor torques of planar linkages, and will compare their predictions to those using analytical approaches."
+    },
+    {
+      "number": 481,
+      "type": "course",
+      "title": "Introduction to Computer-Aided Analysis of Machine Dynamics",
+      "credits": 3,
+      "description": "Techniques and formulations for computer based kinematic and dynamic analyses of machines. M E 481 Introduction to Computer-Aided Analysis of Machine Dynamics (3) This course addresses computer methods for kinematic and dynamic analyses of two-dimensional (2D) multi-body machines at the advanced undergraduate and introductory graduate level. The course introduces the formalism of kinematic mobility and topology to help students recognize constrained kinematic chains embedded in larger engineering systems. Classic kinematic and Newtonian dynamic methods are reformulated using modern matrix methods. The latter half of the course focuses on underlying algorithms and theory behind commercially available mechanism analysis software packages that employ differential-algebraic equation (DAE) solvers. Students program their own numerical integration methods for time domain simulation of forward dynamics of a simple system to reinforce the theory. The overall goals are for students to be able to identify forward versus inverse dynamic problems; and to be able to plan, implement and debug an appropriate computer-based design tool to analyze kinematics and dynamics of 2D constrained mechanisms."
+    },
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Professional Development for Mechanical Engineers",
+      "credits": 0.5,
+      "requisites": {
+        "previous": [
+          "ME390"
+        ]
+      },
+      "description": "ME 490 Professional Development for Mechanical Engineers (0.5) provides a look at foundational business issues of importance to new engineers: creating value, organizational models, financial statements, and intellectual property. Students will get a preview of their role in today's global workplace and how they can position themselves for success. Strategies for recognizing opportunities and continually growing skills and knowledge is emphasized. The course meets once weekly for 8 weeks."
+    },
+    {
+      "number": 491,
+      "type": "course",
+      "title": "Bioengineering Applications of Mechanical Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE211",
+          "ME320",
+          "ME357",
+          "EMCH213",
+          "ME349"
+        ]
+      },
+      "description": "Application of mechanical engineering knowledge in the context of life sciences. M E 491 Bioengineering Applications of Mechanical Engineering (3)The primary objective of this course is to teach students how to apply mechanical engineering knowledge in the context of life sciences. Fundamental mechanical engineering knowledge such as solid mechanics, fluid mechanics and system dynamics will be reviewed first. Then, different topics in bioengineering, such as motion biomechanics, physiological fluid mechanics, modeling of physiological systems, and rehabilitation engineering will be discussed. Throughout the semester, students also work in groups to solve several simplified real-life bioengineering projects. Students will be evaluated through these projects plus a final project presentation, an application presentation and several homework assignments. This course is a technical elective in the ME BD program and allows students who have completed their third-year to learn the application of mechanical engineering knowledge in the life science context."
+    },
+    {
+      "number": 493,
+      "type": "course",
+      "title": "ME Honors Thesis Writing Preparation",
+      "credits": 1,
+      "description": "The goal of this course is to prepare mechanical engineering Schreyer honors scholars for their final honors thesis. The course helps students identify a thesis supervisor if the student has not already found a thesis supervisor and project. The main body of the course focuses on writing the literature review. Identifying different types of literature and their uses, finding appropriate literature online and on databases, and writing about the literature are all covered extensively. Students are given detailed feedback on outlines and drafts of their literature review throughout the semester, resulting in a final literature review for their honors thesis at the end. In addition to the literature review, two presentations - one elevator pitch and one final presentation - are required to practice oral communication of research topics. Finally, the topics of research ethics, research in teams, and career planning are discussed throughout the course to prepare students for future research and career opportunities. Class meets once per week and class times are highly interactive, with activities to practice the skills learned in the course with the help of peers and faculty. The grade is comprised of several assignments, including pre-class assignments, in-class assignments, and thesis-related assignments."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Senior Thesis",
+      "credits": 1,
+      "description": "Students must have approval of a thesis adviser before scheduling this course. M E 494H Senior Thesis (1-9) All Schreyer Scholars are required to complete an undergraduate honors thesis. This work represents the culmination of a student's honors experience. Through the thesis, the student demonstrates a command of relevant scholastic work and a personal contribution to that scholarship.The thesis project can take many forms - from laboratory experiments all the way to artistic creations. The thesis document captures the relevant background, methods and techniques, as well as describing the details of the completion of the individual project. Two Penn State faculty members judge the merits of this Scholar's honors thesis, the student's self-selected thesis supervisor and the department-selected honors adviser in the student's area of honors."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "A",
+      "type": "course",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 1
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Research",
+      "credits": 1,
+      "description": "Honors research that fulfills Shreyer's Honor College requirements. This research will serve as a basis for my honors thesis. Research regarding the development and manufacturing of micro fuel cells. Course will be graded on a scale similar to a traditional class."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

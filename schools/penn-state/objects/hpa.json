@@ -1,0 +1,625 @@
+{
+  "subject": "HPA",
+  "objects": [
+    {
+      "number": 57,
+      "type": "course",
+      "title": "Consumer Choices in Health Care",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "HPA 57 is designed to provide students with an understanding of the breadth of decisions related to health and health care in the United States. HPA 57 introduces students to the consumers' role in health related decisions, including assessing health risks, health benefits, service choices, and end-of-life care. The growth in available health care information resources, the expansion of for-profit medical care, and increasing cost pressure are transforming the role of the health care consumers from passive recipients to active participants in many health care decisions. The main goal of this course is to educate students to become knowledgeable health care consumers and providing them with opportunities to learn how to gather, analyze, and synthesize information about health and health care to make sound health care choices. Students will learn practical information, key terminology and where/how to find reliable, up-to-date information on different sectors of the health care system (e.g. physicians, hospitals, commercial and public health insurance, mental health, long-term care)."
+    },
+    {
+      "number": 58,
+      "type": "course",
+      "title": "Understanding Health Insurance",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "Health insurance is important for maintaining health and wellness across the lifespan, yet health insurance in the United States is incredibly complex. This course equips students with key health literacy skills enabling them to make informed decisions about health insurance coverage and care choices. Students learn health insurance terminology and concepts as well as study primary mechanisms for obtaining coverage (public and private). The challenges associated with choosing and using health insurance as well as how to maximize the value of one's health insurance are explored. Students study who makes up the un- and underinsured populations and how a lack of (adequate) insurance impacts access to care and health. Throughout the course students' complete practical activities that mirror real-life scenarios and decisions."
+    },
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Research Careers in Health Policy and Administration",
+      "credits": 1,
+      "description": "HPA 100 is designed to provide students with an introduction to research as a potential career path in health policy and administration. This course will give students an overview of the research process, the disciplines that contribute to research in health policy and administration, and common themes of research in those disciplines. It will also introduce students to career opportunities in research and the educational paths to those careers."
+    },
+    {
+      "number": 101,
+      "type": "course",
+      "title": "Introduction to Health Services Organization",
+      "credits": 3,
+      "description": "Examination of the social, political, historic, and scientific factors in the development and organization of health services."
+    },
+    {
+      "number": 123,
+      "suffix": "S",
+      "type": "course",
+      "title": "Exploring Health Policy and Administration",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "PSU14"
+        ]
+      },
+      "description": "This course gives an introduction to some of the major academic topics in the Department of Health Policy and Administration with the aim to meet the Penn State first-year seminar goal of orienting students to the scholarly community from the outset of their undergraduate studies in such a way that will bridge to later experiences in a chosen major. The class provides an overview of the key academic topics in Health Policy and Administration as well as more in-depth exploration of several themes in health services research and scholarship consistent with student and faculty interests. The course aims to help students explore their academic interests in health policy and administration as they begin their education at Penn State."
+    },
+    {
+      "number": 200,
+      "type": "course",
+      "title": "An Introduction to Data in the Health Care System",
+      "credits": 3,
+      "description": "This course examines the broad topic of data and healthcare decisions, particularly how to be an astute consumer of data about health, the health care system, and health policy. To work in the health sector means facing a dizzying array of claims based on data with varying levels of quality. To be an informed consumer requires thinking critically about the claims being made, understanding what data are being presented, dissecting the claims, critiquing the methods carefully, and weighing the totality of the evidence to make informed decisions. Some topics of discussion include: 1) what is data? 2) how can we evaluate the quality of data 3) how can data be presently honestly and what are common pitfalls? 4) what is causality? 5) how to evaluate analytic methods, 6) how can data and results be presented visually and fairly? 7) how can a non-researcher understand research, and 8) how can one begin the transition from consumer to producer of data and research."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Health Care Payment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102"
+        ]
+      },
+      "description": "This course covers basic concepts and issues related to health insurance and payment of health care services in the United States. Students learn insurance related concepts including factors that influence the purchase of insurance and those insurance companies considered when determining rates. Sources and uses of health care dollars are examined as well as how laws, policies, and regulations influence health insurance and payment. Both public insurance programs and private health insurance are studied. Students explore reimbursement and payment methodologies and assess how health care payment influences provider behavior and care delivery. Budgeting concepts and spreadsheet software are introduced."
+    },
+    {
+      "number": 211,
+      "type": "course",
+      "title": "Financial Decisions in Health Care Organizations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA210"
+        ]
+      },
+      "description": "An introduction to financial and economic information to make decisions in health care organizations Healthcare Finance is at the core of issues surrounding quality healthcare delivery. It involves wisely balancing the need to manage/control costs while simultaneously investing in strategic opportunities. This course will present and allow students to examine the major issues involved in finance, budgeting and strategic planning and the unique applications of these in health care organizations. This course is designed to help you understand the basic concepts of finance and financial management. The objective is to have you become knowledgeable of how health care entities organize and report financial data and use that data to make decisions. The course will focus initially on the conceptual framework of basic accounting techniques such as the preparation of financial reports, annual and capital budgeting, cost accounting and analysis of financial statements. The course builds on these basic concepts to provide students a conceptual and practical knowledge of health care finance, which includes sources of funding, revenue, cost determinants, third party payers, and valuations that have an impact on the health care organization. The course is also designed to provide students with a working knowledge of vocabulary, concepts in financial management and strategy that will help them be prepared to plan, create, implement and monitor strategic initiatives within a health care organization. Finally, successful completion of this course should equip the student with the tools necessary to be able to effectively communicate with the finance professionals in a health care organization regarding financial decisions being made by that organization."
+    },
+    {
+      "number": 295,
+      "type": "course",
+      "title": "Field Experience",
+      "credits": 1,
+      "description": "Field Experience"
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Health Services Policy Issues",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102"
+        ]
+      },
+      "description": "This course provides students with a basic framework for health policy analysis and examines major strands of U.S. health policy. Detailed consideration and discussion are given to the relationship of national policy to the planning, implementation, and funding of health care services, with particular emphasis on low-income and minority populations. This course will cover topics such as the healthcare policy environment in the U.S, government-funded health care through Medicaid and Medicare, and contemporary health care reform initiatives."
+    },
+    {
+      "number": 301,
+      "suffix": "H",
+      "type": "course",
+      "title": "Health Services Policy Issues",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102",
+          "HPA101",
+          "PLSC1"
+        ]
+      },
+      "description": "H P A 301H uses a case study method to examine health services policy issues and emphasizes the skills needed to analyze and communicate knowledge about health services policy. The chief goals of the course are to broaden student understanding of selected current policy issues in health care, to deepen student knowledge of the development of health policy issues, and to develop student skills in the areas of information literacy, communication, and teamwork. Students are evaluated on a combination of individual and team work."
+    },
+    {
+      "number": 301,
+      "suffix": "W",
+      "type": "course",
+      "title": "Health Services Policy Issues",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102",
+          "HPA101",
+          "PLSC1"
+        ]
+      },
+      "description": "Analysis of major issues in health services delivery in hospitals, medical practice, public health, mental health, and health professional education. This course provides students with a basic framework for health policy analysis and examines major strands of U.S. health policy. Detailed consideration and discussion are given to the relationship of national policy to the planning, implementation, and funding of health care services, with particular emphasis on low-income and minority populations. This course will cover topics such as the healthcare policy environment in the U.S, government-funded health care through Medicaid and Medicare, and contemporary health care reform initiatives."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Health Care and Medical Needs",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BBH101"
+        ],
+        "concurrent": [
+          "HPA101"
+        ]
+      },
+      "description": "HPA 310 introduces students to the use of medical terminology in the context of the structure of the human body, functions of its systems, and disease. Disease processes include development, progression, diagnosis, treatment, and prevention. We will also highlight technological developments in the health care field that are used to assist in diagnosis, treatment, and prevention of diseases. In the process of learning the language of the medical profession and health care industry, students are expected to develop an appreciation for the complex interactions between individual, social, environmental and community factors in the development, growth, and progression of disease processes. Students are also expected to develop skills in accessing and disseminating reliable and relevant information concerning the disease process. On completion of this course students will have a more in depth understanding of 1. The language and terminology of medicine and the health care field; 2. Technologic developments in clinical, diagnostic and therapeutic areas; 3. Anatomy and physiology of organ systems, and how they relate to disease states; 4. Major chronic illnesses prevalent in the U.S."
+    },
+    {
+      "number": 310,
+      "suffix": "H",
+      "type": "course",
+      "title": "Health Care and Medical Needs",
+      "credits": 3,
+      "description": "Health care from an individual, family, and community standpoint illustrated with specific diseases and health problems."
+    },
+    {
+      "number": 311,
+      "type": "course",
+      "title": "Population Health and Healthcare",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA101"
+        ]
+      },
+      "description": "This course covers fundamental theories, concepts, issues, and strategies related to a population health approach to health and health services"
+    },
+    {
+      "number": 332,
+      "type": "course",
+      "title": "Health Systems Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA211",
+          "HPA101"
+        ]
+      },
+      "description": "Health Systems Management provides you with an overview of how health care institutions are organized and governed, the role of the management staff, and the management systems designed for their efficient and effective operation. This course will build student competencies in management. By the end of the semester students will have an appreciation for the complexities in managing a health care organization. They will develop this awareness by both examining their own patterns of behavior and learning about many dynamics common within organizations, using both conceptual information from the text and by analyzing selected cases. Class activities will primarily focus on the application of concepts in a variety of different situations and settings. By the end of this class students will: 1) Understand management as a balance among competing goals in a variety of situations; 2) Display such critical managerial competencies as listening, providing feedback, managing time effectively and managing conflict; 3) Apply organizational behavior theories to situations in health care management; 4) Solve organizational challenges using quality improvement tools; 5) Synthesize financial and economic information to make decisions in health care organizations; and 6) Understand the process of making ethical decisions."
+    },
+    {
+      "number": 332,
+      "suffix": "H",
+      "type": "course",
+      "title": "Health Systems Management",
+      "credits": 3,
+      "description": "Introduction to and analysis of managerial roles and practices in health service organizations."
+    },
+    {
+      "number": 390,
+      "type": "course",
+      "title": "Professional Development in Health Policy & Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA101"
+        ]
+      },
+      "description": "Development of personal understanding and professional skills to prepare students for future employment or study in health policy and administration. HPA 390 Professional Development in Health Policy and Administration The objectives of HPA 390 are to help students understand themselves and the opportunities available in the health care field and professional skills in preparation for their required internship and future profession. In HPA 390 students learn to assess their talents and abilities and how those talents can be best applied in one of the many career settings in health care. They research different types of organizations and opportunities in the health care field. They learn the basic professional skills that are required in the health care industry."
+    },
+    {
+      "number": 390,
+      "suffix": "W",
+      "type": "course",
+      "title": "Professional Development in Health Policy & Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA101"
+        ]
+      },
+      "description": "Development of personal understanding and professional skills to prepare students for future employment or study in health policy and administration. H P A 390 Professional Development in Health Policy and Adiminstration (3) The objectives of H P A 390 are to help students understand themselves and the opportunities available in the health care field and professional skills in preparation for their required internship and future profession. In H P A 390 students learn to assess their talents and abilities and how those talents can be best applied in one of the many career settings in health care. They research different types of organizations and opportunities in the health care field. They learn the basic professional skills that are required in the health care world. Students are evaluated on the basis of a personal self-study exercise, completion of a required planning for several professional development exercises, and a team project on a health care organization.Health Policy Administration students take H P A 390 after they have completed the initial overview of the health care system in H P A 101 and while they are taking their core courses in the major, H P A 301, H P A 310, and H P A 332. The course is a prerequisite for H P A 395, the student's professional internship, providing the professional development background that students need to have a high-quality internship experience that furthers their education. H P A 390 is a required course in the curriculum. No students from other departments may take the course without H P A permission."
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Field Experience in Health Policy and Administration",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "HPA301W",
+          "HPA310",
+          "HPA332",
+          "HPA390W"
+        ]
+      },
+      "description": "Professional field experience providing opportunities to apply skills and knowledge in health care setting."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Comparative Health Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W"
+        ]
+      },
+      "description": "Comparative analysis of health services in selected developed and developing countries. H P A 401 Comparative Health Systems (3) (IL) In HPA 401 students will examine health and health services delivery systems as complex and variable entities that reflect individual country's values and beliefs. Health systems influence and are influenced by the various cultures, demographics, geographies, economies, technologies, and political infrastructures of the country. This class will provide students with a tool kit to begin the difficult task of understanding health care outside the U.S. The class will be focusing on the challenges of attempting comparisons before drawing comparative conclusions."
+    },
+    {
+      "number": 401,
+      "suffix": "H",
+      "type": "course",
+      "title": "Comparative Health Systems",
+      "credits": 3,
+      "description": "Comparative analysis of health services in selected developed and developing countries."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Principles of Public Health Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W",
+          "HPA311"
+        ]
+      },
+      "description": "This course is an overview of issues pertaining to public health administration and the uses of data analytics in population health. Course content provides the foundational understanding for the organization and function of public health activities within the health care delivery system of the United States. Students are introduced to fundamental concepts, issues, and strategies related to the public health system in the United States. On successful competition of this course students should be able to discuss and analyze policies and population-based interventions related to public health and utilize scientific knowledge base and public policy skills to approach solutions to public health problems."
+    },
+    {
+      "number": 420,
+      "type": "course",
+      "title": "Principles of Managed Care",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W"
+        ]
+      },
+      "description": "Survey of managed health care, including history, typology, current issues, management challenges, and impacts on patients, providers, and special populations. H P A 420 Principles of Managed Care (3) H P A 420 is designed to introduce students to managed health care in the United States, including history, typology, current issues, management challenges, and impacts on patients, providers, and special populations. Participants must have a basic knowledge of the US healthcare system, including key stakeholders, national trends in health delivery, financing, and health policy. Most assignments encourage students to select a focus on the impact of managed care on either the private sector or public sector, allowing them to examine concepts in detail that is relevant to their career path.This course is designed as a seminar and employs team-based learning and other projects to achieve the learning objectives. Students will demonstrate mastery of skills through tests, written assignments, and oral presentations. All students are expected to actively participate in class discussions. Much of the work for this course will be conducted in project teams. All students are expected to participate as full and equal members of their team and are responsible for all research and content developed by the team."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Health Care Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W"
+        ]
+      },
+      "description": "The objectives of HPA 430 are: (1) to help students learn about their own strengths and weaknesses as leaders; (2) to give students an opportunity to build their skills in small group leadership; and, (3) to explore the leadership challenges in health care. On successful completion of the course students should be able to do the following: 1) Describe, compare, and contrast several leadership competency models in current use in health care; 2) Understand the four cornerstones of health care leadership;self-awareness, vision, interpersonal relationships, and execution. Explain two to four significant leadership challenges in the current health care system; 3) Identify their leadership strengths and weaknesses and develop a plan for improving their leadership skills and/or explore ways to improve those skills; 4) Understand the leadership skills required for leading small group projects and discussions."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Administration of Hospital and Health Service Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332"
+        ]
+      },
+      "description": "Analysis of administrative structures and interorganizational arrangements among hospitals and other health care organizations."
+    },
+    {
+      "number": 435,
+      "type": "course",
+      "title": "Safety Net Health Care",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W",
+          "HPA311"
+        ]
+      },
+      "description": "This course is designed to provide students with knowledge about what safety net health care is, how it is delivered and financed, and current policy and practice initiatives related to safety net care. A safety net can generally be described as a program that transfers benefits to those who are impoverished. The course will describe how poverty is defined in the United States and other countries. Safety net benefits could be in the form of cash, vouchers, or services. Transferring benefits to the impoverished can help to limit or prevent future economic shock or vulnerability for them. In health care, safety net is a generic term that is often used to describe services that are available to impoverished individuals, some of whom are insured and some are not. The safety net can also be described as a group of clinics, hospitals, and providers that have decided to provide services to impoverished patients. This decision may be based on altruism, but oftentimes an organization or provider must carefully consider the financial implications of providing this care. Given the challenges that public and private organizations face in providing safety net health care, novel approaches have been developed and students will have an opportunity to examine recent innovative approaches. After learning about the components of the safety net students will consider how these components work together within communities. In the last part of the course students will study marginalized groups that are often served in the safety net. Students will think about how they would manage these groups from a clinical, operational, and patient-centered perspective."
+    },
+    {
+      "number": 438,
+      "type": "course",
+      "title": "Culturally Competent Health Services for Diverse Populations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA311"
+        ]
+      },
+      "description": "This course examines the broad concept of diversity and its impact on health care, particularly on rendering services to patients from diverse groups and about the challenges health care professionals face serving diverse populations. Diversity includes many factors, such as age, ethnicity, race, religion, physical and mental disability, class, gender and sexual orientation. To eradicate health disparities and improve health outcomes, students will explore effective and culturally appropriate strategies and interventions to deliver health care to diverse health care consumers. Some topics of discussion include health disparities, health determinants and health outcomes, cultural competence theories and models, health promotion, research and ethics, and the challenges of diversity within health care with a focus on specific cultural groups and non-ethnic cultures."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Principles of Epidemiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BBH310",
+          "STAT200"
+        ],
+        "minGrades": {
+          "BBH310": "C",
+          "STAT200": "C"
+        }
+      },
+      "description": "This course is designed to provide students with a basic understanding of the principles of Epidemiology and to familiarize students with the methods and applications of epidemiology to understanding the bases for heterogeneity of disease and health among populations. The goals of the course are: 1) recognize and use basic principles, concepts, terminology, and techniques in Epidemiology as applied to the study of infectious disease, chronic diseases, and other health-related problems; 2) examine and understand measures of risk and burden of illness on populations defined in terms of age, race, gender, class, time, and other relevant socio-cultural and demographic factors; 3) be able to interpret and critique epidemiological research reports on the identification of risk factors and casual factors for diseases in populations; 4) assess the health status and burden of diseases and health problems of populations at multiple levels of analysis for the purpose of planning health promotion activities and health care services; 5) have a basic understanding of the epidemiology tools for disease screening and other methods for primary and secondary prevention of disease and health problems; 6) examine the validity and applicability of various health interventions used to improve health status and the barriers for successful interventions; and 7) have a basic understanding of the epidemiology of the major causes of morbidity and mortality in the U.S. and for other selected regions and nations of the world. This is a required course in the Biobehavioral Health major and an elective course in the Health Policy and Administration major. The course is also appropriate for students intending to advance to post-baccalaureate graduate and professional programs in medicine, public health, health policy and planning, and other health-related careers. Students will be evaluated based on their performance on a combination of written assignments, a term paper or project, and exams."
+    },
+    {
+      "number": 442,
+      "type": "course",
+      "title": "Long-Term Care Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332"
+        ]
+      },
+      "description": "Management and policy issues for institutional, community, and home settings for chronic care services."
+    },
+    {
+      "number": 443,
+      "type": "course",
+      "title": "Nursing Home Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332"
+        ]
+      },
+      "description": "This course provides students who are interested in a career in long-term care to gain an operational knowledge of managing skilled nursing facilities. After mastering the concepts of skilled nursing management, the student can step into a position as an administrator, assistant administrator, or trainee administrator, and find a level of comfort in dealing with operational issues and problems encountered in day-to-day management situations in any type of long-term care organization. To accomplish this, the course incorporates numerous theories, models, illustrations, and examples to help the student grasp the complexities of managing a long-term care facility. Upon course completion students will be able to: Discuss the broad range of operational issues related to the field of nursing home administration; Describe the rules and regulations that impact nursing home operations; and Recognize the professional development needs of nursing home administrators."
+    },
+    {
+      "number": 444,
+      "type": "course",
+      "title": "Aging Policy in the United States",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W"
+        ]
+      },
+      "description": "The United States is an aging nation and in the coming decades the number of elders in the United States is expected to grow dramatically. Policymakers faced with growing concern about containing the cost and scope of government face tough questions: Given the current and changing political climate, what course should policy makers chart to meet the challenges of a societies where large numbers of people are moving into old age and living long lives? How will their decisions affect entitlements for older adults now and in the future? What social, economic, political, and cultural factors will influence policymaking? This course will address the impacts of national age-based and age-related policy and programs such as Social Security, Medicare, Medicaid, and the Older Americans Act. In addition, it will examine the implementation of these programs in state and local settings, where implications are tangible for vulnerable groups such as low-income and frail older people and their families. Policy challenges of issues such as Alzheimer's, long term services and supports, housing, caregiving, transportation, nutrition, emergency management, and disease prevention will be considered."
+    },
+    {
+      "number": 445,
+      "type": "course",
+      "title": "Health Economics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON302"
+        ]
+      },
+      "description": "Economic analysis of U.S. health care system; planning, organization, and financing; current public policy issues and alternatives."
+    },
+    {
+      "number": 446,
+      "type": "course",
+      "title": "Economics and Health In Low- and Middle-Income Countries",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102",
+          "STAT200"
+        ]
+      },
+      "description": "In this course, students will learn about health systems and policies in low- and middle-income countries (LMIC). The course begins by exploring the link between health and economic development in LMICs. The majority of the course examines LMICs' performance in the United Nations health-related Sustainable Development Goals (e.g. clean water and sanitation, zero hunger, etc.). Through an in-depth reading of seminal articles, class discussion and guest lectures, student's will attempt to understand policy measures that researchers and policymakers have investigated to address the most pressing health related challenges in these countries."
+    },
+    {
+      "number": 447,
+      "type": "course",
+      "title": "Financing Health Care",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332",
+          "HPA211"
+        ]
+      },
+      "description": "This course is to prepare health care administrators for the responsibilities involved in maintaining a well-managed health care organization. The course covers concepts in managerial accounting and finance that are critical to decision-making. Topics covered include types of budgets; considerations for cash flow, payables and receivables; and considerations in working with various types of revenue streams. These topics include evaluation of capital investment decisions, sources of financing, managerial accounting concepts (including cost behavior, profit analysis, and incremental analysis), reimbursement under various third-party payer environments, cost allocation and government program reporting."
+    },
+    {
+      "number": 449,
+      "type": "course",
+      "title": "Personal Care Home Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332"
+        ]
+      },
+      "description": "This course provides students who are interested in a career in long-term care to gain an operational knowledge of managing personal care residential facilities. Because the course is designed to meet part of the requirements to be certified as an administrator for personal care residential facilities in Pennsylvania, students will be required to receive 100 contact hours of instruction. The course incorporates numerous theories, models, illustrations, and examples to help the student grasp the complexities of managing a residential long-term care facility. Upon course completion students will be able to: Discuss the broad range of operational issues related to the field of personal care home administration; Describe the rules and regulations that impact personal care home operations; and Recognize the professional development needs of personal care home administrators. Upon successful completion of this course, students will be eligible to take the Pennsylvania Personal Care Home Administration Competency Exam which will enable the student can step into a position as a personal care home administrator, assistant administrator, or trainee administrator."
+    },
+    {
+      "number": 450,
+      "type": "course",
+      "title": "Healthcare Policies and Politics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA101",
+          "HPA301W",
+          "PLSC1"
+        ]
+      },
+      "description": "Survey of health care's political contexts: formulation, implementation, and modification stages of policy process; politics of private interests (associations) at national and state levels."
+    },
+    {
+      "number": 451,
+      "type": "course",
+      "title": "Federal Health Policy Making",
+      "credits": 3,
+      "internalEquivalents": [
+        "PUBPL453"
+      ],
+      "requisites": {
+        "previous": [
+          "HPA301"
+        ]
+      },
+      "description": "This course provides an overview of the health policy-making stages at the federal level of government. Students will have an opportunity to explore how policy agendas are created by policy stakeholders (e.g., advocates, interest groups, etc.) in defining social problems and identifying possible solutions. Students will next examine the steps for the development of legislation (e.g., bill introduction, committee referral, hearings, floor action, etc.). Students will also learn about the implementation of policy at the federal level after the formal enactment of legislation (e.g., programmatic guidance and final rules, etc.). Students will also learn about the Congressional budget process and judicial branch reviews and their impact on federal health policy formulation, implementation, and modification."
+    },
+    {
+      "number": 454,
+      "type": "course",
+      "title": "Health Care Professional Communication",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA301W",
+          "HPA332",
+          "HPA390W"
+        ]
+      },
+      "description": "This course will focus upon the analysis and application of professional communication principles and practices for successful participation in health care organizational and occupational activities. The changing health care industry towards greater coordination and integration of health delivery and the increased emphasis on the active participation of service recipients require that individuals send clear verbal messages, choose effective nonverbal behaviors, listen for desired results, and apply valid critical-thinking and problem-solving processes. Students in this course will be expected to identify, analyze, develop, and evaluate communication skills needed for professional success in interpersonal situations, group interactions, and professional written documents and oral presentations."
+    },
+    {
+      "number": 455,
+      "type": "course",
+      "title": "Strategic Planning and Marketing for Health Services",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA395"
+        ]
+      },
+      "description": "The history, principles, techniques, and methodologies of health services planning and marketing are studied and students learn how to plan for new or changed health services, programs, or facilities. Students will examine the various stakeholders and explore community and healthcare program specific needs assessments, planning and marketing design. They will apply concepts learned and analyze real-life situations found in the market today. This course will build students' competencies in management, with a focus on application of these concepts to healthcare organizations. By the end of the semester students will have a deepened appreciation for the complex balancing of priorities and responsibilities necessary to effectively manage the strategic priorities within healthcare organizations. They will develop this awareness by both examining their own patterns of behavior and learning about common behavioral and structural dynamics within organizations. By the end of the course students will be able to: 1) identify critical features on an organization's environment and examine the implications of each feature on organizational goals and objectives; 2) Recognize and analyze regulatory, demographic, and policy trends to inform planning and assess potential impact on long-range goals; 3) Differentiate service/product specific markets and identify competitors within each market; 4) Propose comprehensive approaches for distribution network development and marketing/communication plan implementation; 5) Design metrics for evaluating goal attainment; 6) Formulate and defend strategic plans, marketing plans, goals and action steps; 7) Demonstrate the conceptual mastery of team dynamics through effective service as team members."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Human Resource Management in Health Care Organizations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332"
+        ]
+      },
+      "description": "Foundations of human resource management applied to health care organizations, including hospitals, long-term care facilities, and community health organizations."
+    },
+    {
+      "number": 470,
+      "type": "course",
+      "title": "Health Care Information Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332",
+          "IST210",
+          "IST220"
+        ]
+      },
+      "description": "This course introduces information systems terminology, data structures, software applications, and their management functions in health services organizations. H P A 470 Health Care Information Management (3) This course introduces the student to information systems terminology, structures, specific applications, and their relationships to management functions in health services organizations. Health providers and health systems are continuing to make multi-million dollar investments in information systems in order to meet new market and regulatory requirements. All health services managers will play a role in the analysis, design, acquisition, installation, operation and ultimate success of information systems necessary to meet organizational goals and objectives. This course exposes students to the IS/IT applications used to support management functions. Further, applications and management issues unique to industry segments (e.g., long-term care, home care, hospital administration, physician practice management) will also be explored.The goal of the course is to ensure that students are schooled in the terminology, conceptual models, applications and opportunities and limitations of information systems in health services to the point that they can ask appropriate questions, recognize and state significant issues, and participate in the discussion and analysis of information systems development and application.The course is one of several elective courses in the Health Policy Administration major that students can complete and is also a required part of the Information Sciences and Technology/Health Policy Administration Minor providing students with an understanding of the basic structures of information systems in health administration; the relationship of these systems to managerial functions such as communications, coordination, control strategic and process planning and decision making, and the important policy and ethical issues associated with privacy, confidentiality, and security in information systems. Since the course represents the capstone of the Information Sciences and Technology/Health Policy Administration minor, it is important for students to have the pre-requisites for the course (H P A 332, IST 210 , and IST 220 ), including an understanding of major issues in the health care system, health care management and information systems.Student's attainment of educational objectives will be assessed through a variety of evaluation methods. Understanding and appropriate application of terminology, management issues, and ethical/privacy concerns will be assessed through examination. Concept integration will be assessed through case-study analysis and project papers. Data presentation and training communication issues will be assessed through individual application projects and presentations.A technology classroom with access to the World Wide Web and Penn State servers is required for effective instruction. We will use these facilities to demonstrate software applications, provide technical support for guestspeaker presentations, and facilitate student presentations. The course will be offered once per academic year with an expected enrollment of 20-40 students."
+    },
+    {
+      "number": 471,
+      "type": "course",
+      "title": "Data Visualization for Health Services Organizations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA200"
+        ]
+      },
+      "description": "This course provides the opportunity to apply data visualization principles and storytelling to complex healthcare datasets using various methods and tools. Healthcare data presents unique challenges when attempting to combine clinical, administrative, and financial data meaningfully. Through this course, the students will learn how to create visualizations of these data while developing innovative ways to present findings. Students will use tools in high demand in the healthcare industry and develop critical thinking skills through identifying strengths and weaknesses of the graphical presentation."
+    },
+    {
+      "number": 472,
+      "type": "course",
+      "title": "Advanced Data Analysis in Health Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT200"
+        ],
+        "concurrent": [
+          "HPA471"
+        ]
+      },
+      "description": "This course guides students through the application of key concepts and techniques of data analysis in health administration. Students will learn and apply various software to collect, analyze, interpret, and present data in a healthcare setting. Focus will be on applying descriptive statistics using industry-related tools to analyze health services datasets for answering complex questions facing health administration leaders."
+    },
+    {
+      "number": 475,
+      "type": "course",
+      "title": "Health Care Quality",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332"
+        ]
+      },
+      "description": "This course covers the basic principles and techniques of quality management in healthcare:including the definition, measurement, and uses of data for improving the quality of health and health services. The course also covers the organizational responsibilities related to quality assurance. Students will examine methods and tools for managing quality in health facilities, physician practices, and integrated health systems; including developments in quality assurance and improvement, utilization review, risk management, and patient satisfaction. From this examination students will be able to understand how to benchmark quality indicators using accreditation standards. On the successful completion of the course students will be able to: 1) Define the common terminology related to quality and process improvement; 2) Apply the quality management concepts to the modern health care operating environment; 3) Evaluate the effectiveness of a quality/process improvement program; 3) Define accreditation standards and how they drive quality; 4) Be able to use quality tools to improve quality; 5) Discuss the current issues and future trends associated with quality in the health care environment."
+    },
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Physician Practice Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPA332",
+          "HPA211"
+        ]
+      },
+      "description": "Development of skills needed to effectively manage physician practices. Practice management may be defined as the body of knowledge and skills necessary to manage the multiple elements of a specific practice of a physician. These elements include organization, administration, communication, marketing, and patient care. This course provides students an opportunity to develop the knowledge and skills necessary to be successful in the growing field of physician practice management. Topics include management of tasks and responsibilities, supervision and training, practice marketing, service scheduling, accounting processes, benchmarking and receivables, reimbursement and billing related to the physician practice Upon successful completion of the course, the student will have: 1) A historical knowledge of the origins and evolution of physician practices; 2) An awareness of the legal entities which make up physician practices; 3) A working knowledge of the governance, performance domains, hiring processes, revenue cycles, medical record keeping, and common quality measures used in physician practices."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Undergraduate Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis. HPA 494 is a mentored investigation conducted by undergraduates that seek to make a scholarly contribution. HPA 494 is designed to provide students with the opportunity to develop discipline-specific projects in collaboration with faculty members."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Senior Honors Thesis",
+      "credits": 1,
+      "description": "Independent study related to student's interests directed by a faculty supervisor and culminating in the production of a thesis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Field Experience",
+      "credits": 1,
+      "description": "Field Experience"
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 3,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Study",
+      "credits": 1,
+      "description": "Study of health care systems and practices in selected foreign countries."
+    }
+  ]
+}

@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { satisfies } from "../../engine/index";
+import { compareByCode, satisfies, type CurriculumObject } from "../../engine/index";
 import { courseCode } from "../../planner/layout";
-import { Badge, Button, inputClass, Panel, Select } from "../ui";
+import { Button, inputClass, Panel, Select } from "../ui";
 import type { PanelProps } from "./types";
 
-// Objects not yet in the chart, with a button to add each one.
+// Objects not yet in the chart, with a button to add each one. Required
+// ones not on the chart yet come first; the rest are grouped by subject
+// (CMPSC, MATH, ...) in code order: CAS 100, CAS 100A, CAS 100B, CAS 101.
 export function CatalogPanel({ state, view, dispatch }: PanelProps) {
   const { catalog } = state.school;
   const [query, setQuery] = useState("");
@@ -23,7 +25,18 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
     .filter((o) => !placed.includes(o.id))
     // Matches the code as stored ("CS390") or as shown ("CS 390"), or the title.
     .filter((o) => !q || [o.id, courseCode(o.id), o.title].some((text) => text.toLowerCase().includes(q)))
-    .sort((a, b) => Number(required.has(b.id)) - Number(required.has(a.id)) || a.id.localeCompare(b.id));
+    .sort(compareByCode);
+
+  // Split into groups, keeping the sorted order inside each one. A Map
+  // remembers the order its keys were added in, which is the sorted order.
+  const groups = new Map<string, CurriculumObject[]>();
+  const requiredGroup = unplaced.filter((o) => required.has(o.id) && !isPlaced(o.id));
+  if (requiredGroup.length > 0) groups.set("Required", requiredGroup);
+  for (const o of unplaced) {
+    if (requiredGroup.includes(o)) continue;
+    const name = o.code?.subject ?? "Other";
+    groups.set(name, [...(groups.get(name) ?? []), o]);
+  }
 
   return (
     <Panel title="Catalog">
@@ -44,30 +57,32 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
           ))}
         </Select>
       </div>
-      {/* A thin line between courses, so each code reads with its title. */}
-      <ul className="divide-y divide-zinc-100 dark:divide-zinc-800">
-        {unplaced.length === 0 && <li className="text-sm text-zinc-500">Nothing left to add.</li>}
-        {unplaced.map((o) => (
-          <li key={o.id} className="flex items-center gap-2 py-1.5 text-sm">
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-1.5">
-                <span className="font-mono text-xs font-semibold">{courseCode(o.id)}</span>
-                {required.has(o.id) && !isPlaced(o.id) && <Badge tone="bad">required</Badge>}
-              </div>
-              <div className="truncate text-zinc-600 dark:text-zinc-400">
-                {o.title} · {o.credits} cr
-              </div>
-            </div>
-            <Button
-              aria-label={`Add ${courseCode(o.id)}`}
-              disabled={terms.length === 0}
-              onClick={() => dispatch({ type: "move", objectId: o.id, termIndex: targetTerm })}
-            >
-              Add
-            </Button>
-          </li>
-        ))}
-      </ul>
+      {unplaced.length === 0 && <p className="text-sm text-zinc-500">Nothing left to add.</p>}
+      {[...groups].map(([name, objects]) => (
+        <section key={name} className="mb-2">
+          <h3 className="pt-1 text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">{name}</h3>
+          {/* A thin line between courses, so each code reads with its title. */}
+          <ul className="divide-y divide-zinc-100 dark:divide-zinc-800">
+            {objects.map((o) => (
+              <li key={o.id} className="flex items-center gap-2 py-1.5 text-sm">
+                <div className="min-w-0 flex-1">
+                  <div className="font-mono text-xs font-semibold">{courseCode(o.id)}</div>
+                  <div className="truncate text-zinc-600 dark:text-zinc-400">
+                    {o.title} · {o.credits} cr
+                  </div>
+                </div>
+                <Button
+                  aria-label={`Add ${courseCode(o.id)}`}
+                  disabled={terms.length === 0}
+                  onClick={() => dispatch({ type: "move", objectId: o.id, termIndex: targetTerm })}
+                >
+                  Add
+                </Button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </Panel>
   );
 }

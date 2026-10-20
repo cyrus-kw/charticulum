@@ -1,0 +1,199 @@
+{
+  "subject": "PES",
+  "objects": [
+    {
+      "number": 213,
+      "type": "course",
+      "title": "Polymer Chemistry Lab",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "CHEM210"
+        ],
+        "concurrent": [
+          "MATSE202"
+        ]
+      },
+      "description": "This lab is designed to provide a practical and theoretical understanding of polymer synthesis and the analysis of those polymers. Students will prepare different classes of polymers learning techniques of addition and condensation reactions. These will include solution and melt polymerization processes. Syntheses will provide direct exposure to concepts such as reaction initiation, propagation and termination as well as reaction kinetics. The effects of time, temperature, pressure, catalysts, stoichiometric ratio and agitation rates will be studied to understand the different polymerization processes. Students will learn polymer analyses and techniques -thermal (Differential Scanning Calorimetry, Thermal Gravimetric Analysis), molecular weight, viscosity/rheology tests, Fourier Transformation Infrared spectroscopy- to understand both the process and the polymers prepared."
+    },
+    {
+      "number": 305,
+      "type": "course",
+      "title": "Fluids/Heat Transfer",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE445"
+        ]
+      },
+      "description": "This course covers fluid mechanics and heat transfer topics that the Plastic Engineering Science students are most likely to need in their professional lives. Students can gain a basic understanding of energy and energy interactions, various mechanisms of heat transfer, and fundamentals of fluid flow. The course was designed to present the basic principles of fluid mechanics and heat transfer as well as illustrate numerous and diverse real-world engineering examples to give students a feel for how thermal-fluid sciences are applied in engineering practice. The course was also designed to develop an intuitive understanding of thermal-fluid sciences by emphasizing the physics and physical arguments. Such a course can also instill in students the confidence and the background to do further reading of their own and to be able to communicate effectively with specialists in thermal-fluid sciences."
+    },
+    {
+      "number": 320,
+      "type": "course",
+      "title": "Polymer Sustainability",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "PES340"
+        ]
+      },
+      "description": "This course will address the problem of environmentally-persistent plastic pollution. The environmental science of plastic pollution, including quantification techniques, consequences for specific ecosystems, and the incorporation of microplastics in the environment will be taught. Commercial and new biobased and biodegradable polymers will be taught, with a focus on the environmental requirements for total degradation, and the potential impacts of degradation products. Finally, life cycle analysis and the concept of designing plastic materials and components for a circular economy will be introduced through case-study analysis."
+    },
+    {
+      "number": 323,
+      "type": "course",
+      "title": "Rheology Lab",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "MATSE445"
+        ],
+        "concurrent": [
+          "MATSE447"
+        ]
+      },
+      "description": "This lab is designed to provide a practical and theoretical understanding of the rheologcal behaviors of thermoplastic polymers, curing kinetics of chemical and physical crosslink polymers, as well as the crystallization kinetics of semi-crystalline polymers. Evaluation and characterization of phase separation in binary miscible polymer blends and order-disorder transition in block copolymer will be studied rheologically for different blends and block copolymers, respectively. In addition, the students will learn the practical and fundamental aspects of rheology in the linear and non-linear viscoelastic regimes under wide range of temperature, shear rate, and strain amplitude. Student will be trained to operate, calibrate and maintain a number of rheometers, such as rotational rheometer and capillary rheometer. Selection of the right geometry (e.g. parallel plate, cone-plate, concentric cylinders, rectangular torsion, three-point bending, etc.) for specific rheological measurements is very crucial and will have significant effect on the accuracy of the data. The selection of geometry is also related to the different states of the material (e.g. solid, liquid, and gel). The advantages and disadvantages or limitation of each geometry will be studied. Analysis and theoretical fitting to the experimental data will be an essential part of this lab course. Several rheological principles and models will be studied in this course, such as WLF or Time-Temperature Superposition Principle, Cox-Merz Rule, classical theories of Maxwell, Rouse, and Doi-Edwards as well as Cross, Carreau-Yasuda, and Palierne models."
+    },
+    {
+      "number": 340,
+      "type": "course",
+      "title": "Polymer Characterization",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "PES213"
+        ],
+        "concurrent": [
+          "PES341"
+        ]
+      },
+      "description": "The standard techniques used to investigate and identify polymer systems will be discussed in detail. The fundamental theory that drive each technique will be taught, including Braggs law and the the use of Fourier transforms in data analysis. Lectures and demonstrations using molecular level characterization methods will teach the students the state of the art in determining molecular weight and molecular weight distributions, defining end groups, and assessing additives in a polymer formulation. Microstructural level analysis instruction will enable the students to select the proper technique to assess polymer microstructural features such as crystalline content and phase identification, local (micro, nano) properties such as hardness, the distribution of nanoparticles in a composite material, and the hierarchy of structure that can develop in complex polymer blend systems such as phase separation and interphase development. Thermal analysis techniques will emphasize the relationships between heating/cooling rates to final morphology formed during processing as well as more traditional aspects such as identifying the glass transition and melting enthalpy of polymers. X-Ray techniques will be introduced as a means to explore the micro, nanostructure, and orientation of semicrystalline polymers."
+    },
+    {
+      "number": 341,
+      "type": "course",
+      "title": "Polymer Characterization Lab",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "PES213"
+        ],
+        "concurrent": [
+          "PES340"
+        ]
+      },
+      "description": "This lab will parallel the content taught in PES 340 , Materials Characterization. Focus on sample preparation, variables in characterization techniques, and results interpretation will be emphasized. Both neat (unfilled) polymers and polymer composites will be used to teach several important polymer characterization techniques. Molecular/atomic characterization techniques will include nuclear magnetic resonance, chromatography, and Fourier transform infrared and mass spectroscopy. Microstructural characterization techniques include visible and polarized light microscopy for the characterization of semicrystalline microstructure and composite dispersion, environmental scanning electron microscopy, thermal analysis including differential scanning and fast scanning calorimetry, thermogravametric analysis and dynamic mechanical analysis. Data interpretation from X-Ray diffraction techniques will also be completed."
+    },
+    {
+      "number": 351,
+      "type": "course",
+      "title": "Polymer Processing Lab",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "MATSE202"
+        ],
+        "concurrent": [
+          "MATSE445",
+          "PES365"
+        ]
+      },
+      "description": "This lab covers basic melt processing techniques including injection molding, extrusion, blow molding, thermoforming, compression molding and twin screw extrusion. The course will focus on the relationship between processing parameters and the quality of the polymer sample produced from all fabrication techniques. After fabricating samples (tensile bars, impact bars) mechanical properties and material degradation as a result of processing will be assessed. Twin screw compounding will be used to produce experimental polymer composite material that will then be injection molded, and the physical properties of these materials assessed and compared as a function of both material composition and compounding conditions."
+    },
+    {
+      "number": 365,
+      "type": "course",
+      "title": "Processing for Polymer Product Performance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PES213"
+        ]
+      },
+      "description": "This course is designed to complement the fundamental understanding of viscoelastic polymer behavior both in the melt and in the solid state, with an emphasis on properly considering these properties in quality plastic part design. The student will be introduced to plastic part design, plastic mold and die design, and polymer flow simulation as it relates to injection molding. Part design will emphasize the importance of designing to accommodate the ultimate manufacturing technique; concepts such as gating location and part draft will be introduced. Mold design will be introduced in order that students will understand the importance of proper cooling line placement, runner design, and realistic gating location and melt delivery options. Flow simulation is introduced as a tool to anticipate the influence of the molding process on the final part properties, including dimensional stability. Solid part models will be considered in both flow analysis and subsequent finite element analysis for the prediction of mechanical properties, which are ultimately a product of part design, processing conditions, and material properties. Finally, the course will introduce the students to the influence of part geometry and processing conditions on final part properties by conducting a series of labs where the students test and compare the mechanical properties of a complex molded sample (such as a bearing cage or a drill housing) to a standard test specimen, highlighting the deviation from \"data sheet\" properties that results from processing and geometric effects."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Failure Analysis and Characterization",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE447",
+          "PES365"
+        ],
+        "concurrent": [
+          "PES460"
+        ]
+      },
+      "description": "This course will teach a responsible, thorough approach to failure analysis of polymer materials and products. In polymer product failure, the root cause analysis requires the engineer to consider material science (composition and degradation), mechanical design and loading, processing history, and user interaction with the product. This requires a disciplined and interdisciplinary approach to problem solving. In this course, techniques such as microscopy, FTIR, and mechanical testing will be used strategically to develop data-driven approach to failure analysis. Real case studies will be used (obtained from the literature or industry) to augment theoretical learning, and these case studies will be analyzed with regard to the quality of the investigative approach. Strong emphasis will be placed on teaching the importance of adopting proper accelerated aging theory."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Failure Analysis Lab",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "PES440"
+        ]
+      },
+      "description": "This course will cover the laboratory techniques required to carry out responsible, thorough approach to failure analysis of polymer materials and products. In polymer product failure, the root cause analysis requires the engineer to consider material science (composition and degradation), mechanical design and loading, processing history, and user interaction with the product. This requires a disciplined and interdisciplinary approach to problem solving. In this course, techniques such as microscopy, FTIR, and mechanical testing will be used strategically to develop data-driven approach to failure analysis. Real product failures, including recycled materials and degraded natural products, will be used to ensure the student develops relevant experience applying laboratory techniques to real-life failure analysis."
+    },
+    {
+      "number": 446,
+      "suffix": "W",
+      "type": "course",
+      "title": "Senior Project 1",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "PES365"
+        ]
+      },
+      "description": "Supervised student activities on research and/or design projects identified on an individual or small group basis. The combination of PES 446W , PES 447W and PES 448W fulfills the degree requirement for Writing Across the Curriculum as well as constituting the required Capstone Experience for students in Polymer Engineering and Science. Writing Across the Curriculum courses include writing assignments that relate clearly to the course objectives and serve as effective instruments for learning the subject matter of the course. In writing-intensive courses, assignments are designed to help students investigate the course subject matter, gain experience in interpreting data or the results of research, shape writing for a particular audience, or practice the type of writing associated with a given profession or discipline. Therefore, in this course, and the two subsequent Senior Design Courses, each written assignment will be evaluated, and feedback will be provided to the student, either in written or verbal form. In all instances, students will provide draft copies of reporting assignments and will be given the opportunity to revise their work to incorporate revisions and receive additional points. This iterative process is designed to provide the student with continuous feedback on quality and effectiveness of written communication. In PES 446, students are required to complete a comprehensive review of published literature that pertains to their senior project. This activity will support the formulation and succinct statement of a project hypothesis that will then be justified and defended (Justification) in the project report. Based on these activities a project plan, represented by a Gannt Chart with anticipated milestones and deliverables will be developed. The draft literature review provided at the beginning of the course will be updated prior to the final presentation, to be delivered at the end of the semester. Report sections will be due in draft form on an approximately bi-weekly basis. Preliminary grading will be provided along with critique of written communication. Revised versions will be due for final grading approximately one week after faculty feedback."
+    },
+    {
+      "number": 447,
+      "suffix": "W",
+      "type": "course",
+      "title": "Senior Project 2",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "PES365",
+          "PES446W"
+        ]
+      },
+      "description": "Supervised student activities on research and/or design projects identified on an individual or small group basis. The combination of PES 446W , PES 447W and PES 448W fulfills the degree requirement for Writing Across the Curriculum. Writing Across the Curriculum courses include writing assignments that relate clearly to the course objectives and serve as effective instruments for learning the subject matter of the course. In writing-intensive courses, assignments are designed to help students investigate the course subject matter, gain experience in interpreting data or the results of research, shape writing for a particular audience, or practice the type of writing associated with a given profession or discipline. Therefore, in this course, and the two subsequent Senior Design Courses, each written assignment will be evaluated, and feedback will be provided to the student, either in written or verbal form. In all instances, students will provide draft copies of reporting assignments and will be given the opportunity to revise their work to incorporate revisions and receive additional points. This iterative process is designed to provide the student with continuous feedback on quality and effectiveness of written communication. In PES 447W , students are required to update a comprehensive literature review initiated in PES 446W pertaining to their senior project. The primary focus of this course will be on establishing and maintaining an effective program of research activity that makes consistent progress toward verification or invalidation of the project hypothesis. Students will be instructed on best practices of research writing, with an emphasis on development of appropriate representation of research data, contextualization of results and evolution and/or adaptation of the program of investigation based on developed experimental data. Preliminary grading will be provided along with critique of written communication. Cumulative findings will be submitted in an end of semester report. Report sections will be due in draft form on an approximately bi-weekly basis. Preliminary grading will be provided along with critique of written communication. Revised versions will be due for final grading approximately one week after faculty feedback."
+    },
+    {
+      "number": 448,
+      "suffix": "W",
+      "type": "course",
+      "title": "Senior Project 3",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "PES365",
+          "PES447W"
+        ]
+      },
+      "description": "Supervised student activities on research and/or design projects identified on an individual or small group basis. The combination of PES 446W , PES 447W and PES 448W fulfills the degree requirement for Writing Across the Curriculum. Writing Across the Curriculum courses include writing assignments that relate clearly to the course objectives and serve as effective instruments for learning the subject matter of the course. In writing-intensive courses, assignments are designed to help students investigate the course subject matter, gain experience in interpreting data or the results of research, shape writing for a particular audience, or practice the type of writing associated with a given profession or discipline. Therefore, in this course, and the two subsequent Senior Design Courses, each written assignment will be evaluated, and feedback will be provided to the student, either in written or verbal form. In all instances, students will provide draft copies of reporting assignments and will be given the opportunity to revise their work to incorporate revisions and receive additional points. This iterative process is designed to provide the student with continuous feedback on quality and effectiveness of written communication. In PES 448W , students are required to update a comprehensive literature pertaining to their project that was initiated in PES 446W and further expanded in PES 447W . The primary focus of this course will be on synthesizing the accumulated results from all three courses that constitute the senior design project and presenting data and findings in a comprehensive final report. Students will be instructed on best practices of drafting, editing and finalizing a project report, with clear statements of hypotheses, objectives, methods, analysis and conclusions. The ultimate goal is to provide the students an opportunity to produce a publication-worthy scholarly work. Cumulative findings will be submitted in an end of project report. Report sections will be due in draft form on an approximately bi-weekly basis. Preliminary grading will be provided along with critique of written communication. Revised versions will be due for final grading approximately one week after faculty feedback."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Polymer Formulation for Processing and Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE447",
+          "PES365"
+        ]
+      },
+      "description": "This course is designed for senior-level PES students that are prepared to learn the inter-relationships between part design and specifications, processing constraints, and final material formulation requirements. This course requires the student to critically examine a commercial part of complex geometry intended for a challenging application environment, and then formulate a polymer system that can be used to produce an injection molded part that will meet specifications. The course is not limited to theoretical discussion; the students are expected to produce and test their material formulation, using twin screw extrusion, injection molding and a variety of testing capabilities available in the Penn State Plastics Laboratory. Real material properties will be assessed and applied to FEA analysis, and the simulated performance (tensile and compression strength) of the part will be compared to the actual molded properties as assessed in the lab. This lab requires faculty to select and work with an existing but retired industrial injection mold and geometry in order to provide students with a realistic level of complexity in their study."
+    }
+  ]
+}

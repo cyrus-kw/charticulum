@@ -1,0 +1,1495 @@
+{
+  "subject": "MATH",
+  "objects": [
+    {
+      "number": 3,
+      "type": "course",
+      "title": "Basic Skills",
+      "credits": 3,
+      "description": "Natural numbers; integers; rational numbers; decimals; ratio, proportion; percent; graphs; applications. Students who have passed MATH 001 may not schedule this course for credit. This course may not be used to satisfy the basic minimum requirements for graduation in any baccalaureate degree program."
+    },
+    {
+      "number": 4,
+      "type": "course",
+      "title": "Intermediate Algebra",
+      "credits": 3,
+      "description": "Algebraic expressions; linear, absolute value equations and inequalities; lines; systems of linear equations; integral exponents; polynomials; factoring. This course may not be used to satisfy the basic minimum requirements for graduation in any baccalaureate degree program."
+    },
+    {
+      "number": 10,
+      "type": "course",
+      "title": "Preparation Skills for Success in Mathematics",
+      "credits": 1,
+      "description": "A foundation course that emphasizes study skills and reviews basic mathematical principles."
+    },
+    {
+      "number": 21,
+      "type": "course",
+      "title": "College Algebra with Analytic Geometry with Applications I",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course satisfies the General Education Qualification. Topics covered include visualizing and graphing data; evaluating the average rate of change; solving linear equations and inequalities; solving linear absolute value equations and inequalities; modeling with linear functions and discussion of interpolation; solving quadratic equations using different solution methods; solving quadratic inequalities; modeling with quadratic functions."
+    },
+    {
+      "number": 22,
+      "type": "course",
+      "title": "College Algebra With Analytic Geometry and Applications II",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course covers topics that include functions and their representations; distinguishing between types of functions; evaluating the average rate of change; factoring polynomials of general degree; solving polynomial inequalities; solving rational equations and inequalities; solving radical equations; modeling with polynomial and rational functions; finding and interpreting the meaning of inverse functions; solving exponential and logarithmic equations; modeling with exponential and logarithmic functions."
+    },
+    {
+      "number": 26,
+      "type": "course",
+      "title": "Plane Trigonometry and Applications of Trigonometry",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course satisfies the General Education Qualification. Topics covered include angles and their measures; right triangle trigonometry; all six trigonometric functions and their representations; angle addition/subtraction and double angle identities; modeling with sine and cosine; applications of trigonometric functions; simple harmonic motions and other applications of trigonometric functions; inverse trigonometric functions; solving trigonometric equations; verifying identities; law of sines and law of cosines; vectors; polar equations; trigonometric form of complex numbers; other related topics as time permits."
+    },
+    {
+      "number": 31,
+      "type": "course",
+      "title": "Mathematics of Music",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course is intended to explore the connections between mathematics and music. Topics include elementary combinatorics, trigonometry, group theory, probability and game theory, and how these mathematical principles can help us understand rhythm, melody, harmony, pitch, and composition. This is an applied mathematics course using music as the context, and is intended for any student who is interested in learning about how these two fields interact. No prior knowledge of mathematics or music is required; however, some knowledge of algebra and trigonometry, and basic understanding of musical notation, may be beneficial."
+    },
+    {
+      "number": 32,
+      "type": "course",
+      "title": "Math for Allied Health Professions",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course is intended to build the specific quantitative reasoning skills needed by workers in Allied Health Professions, such as nurses or therapists. Students will become fluent in proportional reasoning in a variety of contexts, including unit conversion, drug dosage calculations, probability, and logarithmic scales. Students gain the tools to communicate and reason about covariation in scenarios such as exponential growth and decay. Student will also apply tools of probability and descriptive statistics to gain literacy in risk and uncertainty in health settings, such as making sense of effect sizes in research literature."
+    },
+    {
+      "number": 33,
+      "type": "course",
+      "title": "Mathematics for Sustainability",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Mathematical analysis of sustainability: measurement, flows, networks, rates of change, uncertainty and risk, applying analysis in decision making; using quantitative evidence to support arguments; examples. MATH 033 Mathematics for Sustainability (3) (GQ) This course is one of several offered by the mathematics department with the goal of helping students from non-technical majors partially satisfy their general education quantification requirement. It is designed to provide an introduction to various mathematical modeling techniques, with an emphasis on examples related to environmental and economic sustainability. The course may be used to fulfill three credits of the GQ requirement for some majors, but it does not serve as a prerequisite for any mathematics courses and should be treated as a terminal course. The course provides students with the mathematical background and quantitative reasoning skills necessary to engage as informed citizens in discussions of sustainability related to climate change, resources, pollution, recycling, economic change, and similar matters of public interest. Students apply these skills through writing projects that require quantitative evidence to support an argument. The mathematical content of the course spans six key areas: \"measuring\" (representing information by numbers, problems of measurement, units, estimation skills); \"flowing\" (building and analyzing stock-flow models, calculations using units of energy and power, dynamic equilibria in stock-flow systems, the energy balance of the earth-sun system and the greenhouse effect); \"connecting\" (networks, the bystander effect, feedbacks in stock-flow models); \"changing\" (out-of-equilibrium stock-flow systems, exponential models, stability of equilibria in stock-flow systems, sensitivity of equilibria to changes in a parameter, tipping points in stock-flow models); \"risking\" (probability, expectation, bayesian inference, risk vs uncertainty; \"deciding\" (discounting, uses and limitations of cost-benefit analysis, introduction to game theory and the tragedy of the commons, market-based mechanisms for pollution abatement, ethical considerations)."
+    },
+    {
+      "number": 34,
+      "type": "course",
+      "title": "The Mathematics of Money",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course will provide students with the mathematical background and quantitative skills needed to make sound financial decisions. This course introduces personal finance topics including simple interest, simple discount, compound interest, annuities, investments, retirement plans, inflation, depreciation, taxes, credit cards, mortgages, and car leasing. Students will learn how to use linear equations, exponential and logarithmic equations, and arithmetic and geometric sequences to solve real world financial problems. Students will answer questions such as, What is the most they can afford to pay for a car? How much do they need to invest in their 401(k) account each month to retire comfortably? What credit card is the best option? In a society where consumers are presented with a vast array of financial products and providers, students are enabled to evaluate options and make informed, strategic decisions. This course may be used by students from non-technical majors to satisfy 3 credits of their General Education Quantification (GQ) requirement. This course does not serve as a prerequisite for any mathematics courses and should be treated as a terminal course."
+    },
+    {
+      "number": 35,
+      "type": "course",
+      "title": "General View of Mathematics",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course presents a general view of a number of mathematical topics to a non-technical audience, often relating the mathematical topics to a historical context, and providing students with an opportunity to engage with the mathematics at an introductory level. Although some variation in topics covered may take place among different instructors at different campuses, an example of such a course focuses on a number theory theme throughout the course, beginning with the Greeks' view of integers, the concept of divisors, the calculation of greatest common divisors (which originates with Euclid), the significance of the prime numbers, the infinitude of the set of prime numbers (also known to the ancient Greeks), work on perfect numbers (which continues to be a topic of research today), and the work of Pythagoras and his famous Theorem. The course then transitions to the work of European mathematicians such as Euler and Gauss, including work on sums of two squares (which generalizes the Pythagorean Theorem), and then considering Euler's phi function, congruences, and applications to cryptography."
+    },
+    {
+      "number": 36,
+      "type": "course",
+      "title": "Insights Into Mathematics",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course will provide students the mathematical background and quantitative skills in various mathematical applications in such areas which are related to voting, fair divisions which includes apportionment methods, and the understanding and application of basic graph theory such as Euler and Hamilton circuits. This course may be used by students from non-technical majors to satisfy 3 credits of their General Education Quantification (GQ) requirement. This course does not serve as a prerequisite for any mathematics courses and should be treated as a terminal course."
+    },
+    {
+      "number": 37,
+      "type": "course",
+      "title": "Finite Mathematics",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Finite math includes topics of mathematics which deal with finite sets. Sets and formal logic are modern concepts created by mathematicians in the mid 19th and early 20th centuries to provide a foundation for mathematical reasoning. Sets and formal logic have lead to profound mathematical discoveries and have helped to create the field of computer science in the 20th century. Today, sets and formal logic are taught as core concepts upon which all mathematics can be built. In this course, students learn the elementary mathematics of logic and sets. Logic is the symbolic, algebraic way of representing and analyzing statements and sentences. While students will get just a brief introduction to logic, the mathematics used in logic are found at the heart of computer programming and in designing electrical circuits. Problems of counting various kinds of sets lead to the study of combinatorics, the art of advanced counting. For example, if a room has twenty chairs and twelve people, in how many ways can these people occupy the chairs? And are you accounting for differences in who sits in particular chairs, or does it only matter whether a chair has a body in it? These kinds of counting problems are the basis for probability. In order to calculate the chance of a particular event occurring you must be able to count all the possible outcomes. MATH 37 is intended for students seeking core knowledge in combinatorics, probability and mathematical logic but not requiring further course work in mathematics. Students entering the class will benefit from having some experience with basic algebra and solving word problems. The course may be used to fulfill three credits of the quantification portion of the general education requirement for some majors, but does not serve as a prerequisite for any mathematics courses and should be treated as a terminal course. Class size, frequency of offering, and evaluation methods will vary by location and instructor. For these details check the specific course syllabus."
+    },
+    {
+      "number": 38,
+      "type": "course",
+      "title": "Elementary Linear Algebra",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Many problems we have to solve in day-to-day practice require the simultaneous determination of several different but interrelated unknowns. Although many problems of this form have been studied throughout the long history of mathematics, only in the early 20th century did the systematic approach we now refer to as linear algebra emerge. Matrices and linear algebra are now accepted as the single most essential tool need for the solution of these problems. In addition, linear algebra provides students their first introduction to the concept of dimension in an abstract setting where things with 4, 5, or even more dimensions are often encountered. In the simplest situations, many of these problems can be represented as A x = b, where x is our vector of unknowns, A is a matrix, and b is a vector of constants. MATH 38 is intended for students requiring some understanding of the concepts of linear algebra for their major, but not requiring any calculus course work. Students who are also required to take calculus course work should instead take MATH 220 after completion of an appropriate prerequisite."
+    },
+    {
+      "number": 41,
+      "type": "course",
+      "title": "Trigonometry and Analytic Geometry",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Topics covered include functions and their representations; distinguishing between types of functions; evaluating the average rate of change; graphs and rate of change; end behavior of graphs; modeling with polynomial and rational functions and discussing extrema; finding and interpreting the meaning of inverse functions; solving exponential and logarithmic equations; modeling with exponential and logarithmic functions; angles and their measures; right triangle trigonometry; all six trigonometric functions and their representations; modeling with sine and cosine; applications of trigonometric functions; simple harmonic motion and other applications of trigonometric functions; inverse trigonometric functions; solving trigonometric equations; verifying identities; law of sines and law of cosines; and further topics, such as elementary limits, as time permits."
+    },
+    {
+      "number": 81,
+      "type": "course",
+      "title": "Technical Mathematics I",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Math 81 is the first course in an applied mathematics sequence. The course includes a review of algebra, study of functions, study of systems of linear equations, and an introduction to trigonometry. It addresses the needs of engineering technology majors, and emphasizes technology and applications."
+    },
+    {
+      "number": 82,
+      "type": "course",
+      "title": "Technical Mathematics II",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "MATH81"
+        ]
+      },
+      "description": "Exponents, radicals, complex numbers, theory of equations, inequalities, half angle and double angle formulas, inverse trigonometric functions, exponential, logarithm, conic sections."
+    },
+    {
+      "number": 83,
+      "type": "course",
+      "title": "Technical Calculus",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "MATH82"
+        ]
+      },
+      "description": "Math 83 is the third course in an applied mathematics sequence. Math 81; Math 82; Math 83; Math 210; Math 211. It addresses the needs of engineering technology majors, and emphasizes technology and applications. Math 83 is an introduction to differential and integral calculus, with some differential equations. Specific course topics include: limits: derivatives; implicit differentiation; related rates and extrema problems; curve sketching; numerical and symbolic integration; applications of differentiation; and differential equations."
+    },
+    {
+      "number": 97,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 97,
+      "suffix": "G",
+      "type": "course",
+      "title": "Special Topics - GenEd",
+      "credits": 1,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
+    },
+    {
+      "number": 102,
+      "type": "course",
+      "title": "Bridge to Calculus",
+      "credits": 3,
+      "description": "This summer course aims to provide incoming students with the tools needed to be successful wherever they place in the calculus sequence. Specific content is tailored to individual students, based on their existing skill set and expected entry point in the calculus sequence, but ranges from algebra and trigonometry to the real analysis which underlies calculus. The course emphasizes teamwork, communication skills, growth mindset, self-assessment (e.g., metacognition) and building a community of scholars. This is achieved through evidence-based, student-centered pedagogical practices such as collaborative and active learning, scaffolded instruction, extensive group work, metacognitive reflections, and exploratory projects and presentations."
+    },
+    {
+      "number": 110,
+      "type": "course",
+      "title": "Techniques of Calculus I",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Business Calculus is a critical component in the education of any business, financial, or economics professional who uses quantitative analysis. This course introduces and develops the mathematical skills required for analyzing change, and the underlying mathematical behaviors that model real-life economics and financial applications. The primary goal of our business calculus courses is to develop the students' knowledge of calculus techniques, and to use a calculus framework to develop critical thinking and problem solving skills. The concept of a limit of a function/model is central to differential calculus; MATH 110 begins with a study of this concept, its geometric and analytical interpretation, and its use in the definition of the derivative. Differential calculus topics include: derivatives and their applications to rates of change, related rates, optimization, and graphing techniques. Target applications focus mainly on business applications, e.g. supply/demand models, elasticity, logistical growth, and marginal analysis within Cost, Revenue, and Profit models. Integral Calculus begins with the Fundamental Theorem of Calculus, integrating the fields of differential and integral calculus. Antidifferentiation techniques are used in applications focused on finding areas enclosed by functions, consumer and producer surplus, present and future values of income streams, annuities, and perpetuities, and the resolution of initial value problems within a business context. Students may only take one course for credit from MATH 110 , 140 , 140A, 140B , and 140H ."
+    },
+    {
+      "number": 111,
+      "type": "course",
+      "title": "Techniques of Calculus II",
+      "credits": 2,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "MATH110"
+        ]
+      },
+      "description": "MATH 111 is the second course in a sequence of calculus content tailored primarily to first year business students with an emphasis on economics, business, social science, and/or ecology applications. Although it provides standalone instruction in the core elements of differential and integral calculus, applications are chosen to dovetail with typical models discussed in first year finance, economics, social science and/or ecology coursework."
+    },
+    {
+      "number": 140,
+      "type": "course",
+      "title": "Calculus With Analytic Geometry I",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "internalEquivalents": [
+        "MATH140H",
+        "MATH140E"
+      ],
+      "description": "Calculus is an important building block in the education of any professional who uses quantitative analysis. This course introduces and develops the mathematical skills required for analyzing change and creating mathematical models that replicate real-life phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. The concept of limit is central to calculus; MATH 140 begins with a study of this concept. Differential calculus topics include derivatives and their applications to rates of change, related rates, linearization, optimization, and graphing techniques. The Fundamental Theorem of Calculus, relating differential and integral calculus begins the study of Integral Calculus. Antidifferentiation and the technique of substitution is used in integration applications of finding areas of plane figures and volumes of solids of revolution. Trigonometric functions are included in every topic. Students may only take one course for credit from MATH 110 , 140 , 140A, 140B , and 140H ."
+    },
+    {
+      "number": 140,
+      "suffix": "B",
+      "type": "course",
+      "title": "Calculus and Biology I",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Calculus is an important building block in the education of any professional who uses quantitative analysis. This course introduces and develops the mathematical skills required for analyzing change and creating mathematical models that replicate real-life phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. The concept of limit is central to calculus; this concept is studied early in the course. Differential calculus topics include derivatives and their applications to rates of change, related rates, linearization, optimization, and graphing techniques. The Fundamental Theorem of Calculus, relating differential and integral calculus begins the study of Integral Calculus. Antidifferentiation and the technique of substitution is used in integration applications of finding areas of plane figures and volumes of solids of revolution. Trigonometric functions are included in every topic. Students may only take one course for credit from MATH 110 , 140 , 140A, 140B , and 140H ."
+    },
+    {
+      "number": 140,
+      "suffix": "E",
+      "type": "course",
+      "title": "Calculus with Engineering Applications I",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Calculus is an important building block in the education of any professional who uses quantitative analysis. This course introduces and develops the mathematical skills required for analyzing change and creating mathematical models that replicate real-life phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. The concept of limit is central to calculus; MATH 140E begins with a study of this concept. Differential calculus topics include derivatives and their applications to rates of change, related rates, linearization, optimization, and graphing techniques. The Fundamental Theorem of Calculus, relating differential and integral calculus begins the study of Integral Calculus. Antidifferentiation and the technique of substitution is used in integration applications of finding areas of plane figures and volumes of solids of revolution. Trigonometric functions are included in every topic."
+    },
+    {
+      "number": 140,
+      "suffix": "G",
+      "type": "course",
+      "title": "Calculus with Earth and Mineral Sciences Applications I",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course is the first in a sequence of three calculus courses designed for students in the earth and mineral sciences and related fields. Topics include limits of functions, continuity; the definition of the derivative, various rules for computing derivatives (such as the product rule, quotient rule, and chain rule), implicit differentiation, higher-order derivatives, solving related rate problems, and applications of differentiation such as curve sketching, optimization problems, and Newton's method; the definition of the definite integral, computation of areas, the Fundamental Theorem of Calculus, integration by substitution, and various applications of integration such as computation of areas between two curves, volumes of solids, and work."
+    },
+    {
+      "number": 140,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Calculus with Analytic Geometry I",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Calculus is an important building block in the education of any professional who uses quantitative analysis. This course introduces and develops the mathematical skills required for analyzing change and creating mathematical models that replicate real-life phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. The concept of limit is central to calculus; MATH 140 begins with a study of this concept. Differential calculus topics include derivatives and their applications to rates of change, related rates, linearization, optimization, and graphing techniques. The Fundamental Theorem of Calculus, relating differential and integral calculus begins the study of Integral Calculus. Antidifferentiation and the technique of substitution is used in integration applications of finding areas of plane figures and volumes of solids of revolution. Trigonometric functions are included in every topic. Students may only take one course for credit from MATH 110 , 140 , 140A, 140B , and 140H ."
+    },
+    {
+      "number": 141,
+      "type": "course",
+      "title": "Calculus with Analytic Geometry II",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "internalEquivalents": [
+        "MATH141H",
+        "MATH141E"
+      ],
+      "description": "MATH 141 is the second course in a two- or three-course calculus sequence for students in science, engineering and related fields. Calculus is an important building block in the education of any professional who uses quantitative analysis. This course further introduces and develops the mathematical skills required for analyzing growth and change and creating mathematical models that replicate reallife phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. This course covers the following topics: logarithms, exponentials, and inverse trigonometric functions; applications of the definite integral and techniques of integration; sequences and series; power series and Taylor polynomials; parametric equations and polar functions. Students may take only one course for credit from MATH 141 , 141B , and 141H ."
+    },
+    {
+      "number": 141,
+      "suffix": "B",
+      "type": "course",
+      "title": "Calculus and Biology II",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Techniques of integration and applications to biology; elementary matrix theory, limits of matrices, Markov chains, applications to biology and the natural sciences; elementary and separable differential equations, linear rst-order differential equations, linear systems of differential equations, the Lotka-Volterra equations. Students may take only one course for credit from MATH 141 , 141B , and 141H ."
+    },
+    {
+      "number": 141,
+      "suffix": "E",
+      "type": "course",
+      "title": "Calculus with Engineering Applications II",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "MATH 141E is the second course in a two- or three-course calculus sequence for students in science, engineering and related fields. Calculus is an important building block in the education of any professional who uses quantitative analysis. This course further introduces and develops the mathematical skills required for analyzing growth and change and creating mathematical models that replicate reallife phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. This course covers the following topics: logarithms, exponentials, and inverse trigonometric functions; applications of the definite integral and techniques of integration; sequences and series; power series and Taylor polynomials; parametric equations and polar functions."
+    },
+    {
+      "number": 141,
+      "suffix": "G",
+      "type": "course",
+      "title": "Calculus with Earth and Mineral Sciences Applications II",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course is the second in a sequence of three calculus courses designed for students in the earth and mineral sciences and related fields. Topics include inverse functions of exponential, logarithmic, and trigonometric functions; indeterminate forms and L'Hopital's rule; various techniques of integration, including integration by parts, trigonometric integrals, trigonometric substitution, and partial fractions; improper integration; infinite sequences and series, tests for convergence and divergence of infinite series, including the integral test, comparison tests, ratio test, root test; power series, Taylor and MacLaurin Series."
+    },
+    {
+      "number": 141,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Calculus with Analytic Geometry II",
+      "credits": 4,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "MATH 141 is the second course in a two- or three-course calculus sequence for students in science, engineering and related fields. Calculus is an important building block in the education of any professional who uses quantitative analysis. This course further introduces and develops the mathematical skills required for analyzing growth and change and creating mathematical models that replicate reallife phenomena. The goals of our calculus courses include to develop the students' knowledge of calculus techniques and to use the calculus environment to develop critical thinking and problem solving skills. This course covers the following topics: logarithms, exponentials, and inverse trigonometric functions; applications of the definite integral and techniques of integration; sequences and series; power series and Taylor polynomials; parametric equations and polar functions. Students may take only one course for credit from MATH 141 , 141B , and 141H ."
+    },
+    {
+      "number": 197,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 197,
+      "suffix": "G",
+      "type": "course",
+      "title": "Special Topics - GenEd",
+      "credits": 1,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
+    },
+    {
+      "number": 198,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 200,
+      "type": "course",
+      "title": "Problem Solving in Mathematics",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Fundamental concepts of arithmetic and geometry, including problem solving, number systems, and elementary number theory. For elementary and special education teacher certification candidates only. A student who has passed EDMTH 444 may not take MATH 200 for credit. MATH 200 Problem Solving in Mathematics (3) (GQ) This is a course in mathematics content for prospective elementary school teachers. Students are assumed to have successfully completed two years of high school algebra and one year of high school geometry. Students are expected to have reasonable arithmetic skills. The content and processes of mathematics are presented in this course to develop mathematical knowledge and skills and to develop positive attitudes toward mathematics. Problem solving is incorporated throughout the topics of number systems, number theory, probability, and geometry, giving future elementary school teachers tools to further explore mathematical content required to convey the usefulness, beauty and power of mathematics to their own students."
+    },
+    {
+      "number": 201,
+      "type": "course",
+      "title": "Problem Solving in Mathematics II",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "This course studies the foundations of elementary school mathematics with an emphasis on problem solving. MATH 201 Problem Solving in Mathematics II (3) (GQ) Problem Solving in Mathematics II studies the foundations of elementary school mathematics with an emphasis on problem solving. Mathematical ways of thinking are integrated throughout the study of probability, statistics, graphing, geometric shapes, and measurement. This course is designed for prospective teachers not only to gain the ability to explain the mathematics in elementary school courses, but also to help them comprehend the underlying mathematical concepts. Gaining a deeper understanding will enable them to assist their young students in the classroom since effective mathematical teaching requires understanding what students know, what they need to learn, and then helping them to learn it well."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Calculus with Engineering Technology Applications",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Topics in calculus with an emphasis on applications in engineering technology. MATH 210 Calculus with Engineering Technology Applications (3) is a three-credit course to be taken either after the MATH 81 , MATH 82 , MATH 83 sequence or after a semester of college-level calculus. The content of the course is geared toward the needs of engineering technology majors and places a large emphasis on technology and applications. The course provides mathematical tools required in the upper division engineering technology courses. A primary goal is to have students use technology to solve more realistic problems than the standard simplistic ones that can be solved by \"pencil and paper.\" Student evaluation will be performed through exams, quizzes, graded assignments, and a cumulative final exam. It is expected that MTHBD 210 will be offered every semester with an enrollment of 44-80 students."
+    },
+    {
+      "number": 211,
+      "type": "course",
+      "title": "Intermediate Calculus and Differential Equations with Applications",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "MATH210"
+        ]
+      },
+      "description": "Topics in ordinary differential equations, linear algebra, complex numbers, Eigenvalue solutions and Laplace transform methods. MATH 211 Intermediate Calculus and Differential Equations with Applications (4) MATH 211 is a three-credit course to be taken after MATH 210 . The content of the course is geared toward the needs of engineering technology majors and places a large emphasis on technology and applications. The course provides mathematical tools required in the engineering technology courses at the sixth semester and above. A primary goal is to have students use technology to solve more realistic problems than the standard simplistic ones that can be solved by \"pencil and paper.\" Student evaluation will be performed through exams, quizzes, graded assignments, and a cumulative final exam."
+    },
+    {
+      "number": 220,
+      "type": "course",
+      "title": "Matrices",
+      "credits": 2,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "internalEquivalents": [
+        "MATH220H"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Systems of linear equations; matrix algebra; eigenvalues and eigenvectors; linear systems of differential equations. MATH 220 Matrices (2-3) (GQ) (BA) This course meets the Bachelor of Arts degree requirements.Systems of linear equations appear everywhere in mathematics and its applications. MATH 220 will give students the basic tools necessary to analyze and understand such systems. The initial portion of the course teaches the fundamentals of solving linear systems. This requires the language and notation of matrices and fundamental techniques for working with matrices such as row and column operations, echelon form, and invertibility. The determinant of a matrix is also introduced; it gives a test for invertibility. In the second part of the course the key ideas of eigenvector and eigenvalue are developed. These allow one to analyze a complicated matrix problem into simpler components and appear in many disguises in physical problems. The course also introduces the concept of a vector space, a crucial element in future linear algebra courses. This course is completed by a wide variety of students across the university, including students majoring in engineering programs, the sciences, and mathematics. (In case of many of these students, MATH 220 is a required course in their degree program.)"
+    },
+    {
+      "number": 220,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Matrices",
+      "credits": 2,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Honors course in systems of linear equations; matrix algebra; eigenvalues and eigenvectors; linear systems of differential equations. MATH 220H Honors Matrices (2) (GQ)(BA) This course meets the Bachelor of Arts degree requirements. This course is intended as an introduction to linear algebra with a focus on solving systems for linear equations. Topics include systems of linear equations, row reduction and echelon forms, linear independence, introduction to linear transformations, matrix operations, inverse matrices, dimension and rank, determinants, eigenvalues, eigenvectors, diagonalization, and orthogonality.The typical delivery format for the course is two 50-minute lectures per week, with typical assessment tools including examinations, quizzes, homework, and writing assignments.In contrast to the non-honors version of this course, the honors version is typically more theoretical and will often include more sophisticated problems. Moreover, certain topics are often discussed in more depth and are sometimes expanded to include applications which are not visited in the non-honors version of the course."
+    },
+    {
+      "number": 225,
+      "type": "course",
+      "title": "Mathematical Foundations for Machine Learning",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "CMPSC131"
+        ],
+        "concurrent": [
+          "CMPSC132"
+        ]
+      },
+      "description": "This course introduces students to essential mathematical foundations required for further studies in machine learning. The course introduces students to linear algebra (inner product vector spaces, matrix-vector products, norms for vectors and matrices, and matrix factorization), multivariate calculus (partial derivatives, gradient, Hessians, contour plots, Taylor expansion, and linear approximations), and basic optimization techniques (bisection, Newton's method, gradient descent, and the analysis of the convergence rates). Students' learning of these mathematical concepts, techniques, and methods will be facilitated by exemplary programming demonstrations and coding exercises so that the students can translate theoretical mathematical concepts into practical machine learning applications and understand the linkage between the mathematical concepts and the machine learning applications that utilize them."
+    },
+    {
+      "number": 230,
+      "type": "course",
+      "title": "Calculus and Vector Analysis",
+      "credits": 4,
+      "internalEquivalents": [
+        "MATH230H"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Three-dimensional analytic geometry; vectors in space; partial differentiation; double and triple integrals; integral vector calculus. Students who have passed either Math 231 or MATH 232 may not schedule Math 230 or MATH 230H for credit."
+    },
+    {
+      "number": 230,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Calculus and Vector Analysis",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Honors course in three-dimensional analytic geometry; vectors in space; partial differentiation; double and triple integrals; integral vector calculus. Students who have passed either MATH 231 or MATH 232 may not schedule MATH 230 or MATH 230H for credit. MATH 230H Honors Calculus and Vector Analysis (4) This course is the third in a sequence of three calculus courses designed for students in engineering, science, and related fields. Topics include vectors in space, dot products, cross products; vector-valued functions, modeling motion, arc length, curvature; functions of several variables, limits, continuity, partial derivatives, directional derivatives, gradient vectors, Lagrange multipliers; double integrals, triple integrals; line integrals, Green's Theorem, Stokes' Theorem, the Divergence Theorem.The typical delivery format for the course is four 50-minute lectures per week, with typical assessment tools including examinations, quizzes, homework, and writing assignments.In contrast to the non-honors version of this course, the honors version is typically more theoretical and will often include more sophisticated problems. Moreover, certain topics are often discussed in more depth and are sometimes expanded to include applications which are not visited in the non-honors version of the course."
+    },
+    {
+      "number": 231,
+      "type": "course",
+      "title": "Calculus of Several Variables",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Analytic geometry in space; partial differentiation and applications. Students who have passed MATH 230 or MATH 230H may not schedule this course."
+    },
+    {
+      "number": 232,
+      "type": "course",
+      "title": "Integral Vector Calculus",
+      "credits": 2,
+      "description": "Multidimensional analytic geometry, double and triple integrals; potential fields; flux; Green's, divergence and Stokes' theorems. Students who have passed MATH 230 may not schedule this course for credit."
+    },
+    {
+      "number": 240,
+      "type": "course",
+      "title": "Mathematical Methods for Biology and the Life Sciences",
+      "credits": 4,
+      "description": "This course will cover systems of differential equations, multivariable calculus, and applications to biology and the life sciences. Students will learn about complex numbers, and their relation to oscillations. Analysis of biologically relevant mathematical models will include the linear stability of couples nonlinear systems, and the method of separation of timescales. The course will also introduce probability theory in a biological context, including conditional probability, Bayes Theorem, probability distributions, and stochastic modeling in the life sciences."
+    },
+    {
+      "number": 250,
+      "type": "course",
+      "title": "Ordinary Differential Equations",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATH251",
+        "MATH251H"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "First- and second-order equations; special functions; Laplace transform solutions; higher order equations. Students who have passed MATH 251 may not schedule this course for credit."
+    },
+    {
+      "number": 251,
+      "type": "course",
+      "title": "Ordinary and Partial Differential Equations",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "First- and second-order equations; special functions; Laplace transform solutions; higher order equations; Fourier series; partial differential equations."
+    },
+    {
+      "number": 251,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Ordinary and Partial Differential Equations",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "MATH220"
+        ]
+      },
+      "description": "This course serves as an introduction to ordinary and partial differential equations. Topics include various techniques for solving first and second order ordinary differential equations, an introduction to numerical methods, solving systems of two ordinary differential equations, nonlinear differential equations and stability, Laplace transforms, Fourier series, and partial differential equations. In contrast to the non-honors version of this course, the honors version is typically more theoretical and will often include more sophisticated problems. Moreover, certain topics are often discussed in more depth and are sometimes expanded to include applications which are not visited in the non-honors version of the course."
+    },
+    {
+      "number": 252,
+      "type": "course",
+      "title": "Partial Differential Equations",
+      "credits": 1,
+      "description": "Fourier series; partial differential equations. Students who have passed MATH 251 may not schedule this course for credit. This course serves as the continuation of MATH 250 (Ordinary Differential Equations) and provides an elementary treatment of partial differential equations and Fourier series. Once a student completes both MATH 250 (3 credits) and MATH 252 (1 credit), the student will have completed all of the material in MATH 251 (4 credits). In particular, the student will be able to find solutions to given partial differential equations and will be able to utilize the tools from the field of Fourier series in the process."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Elementary Combinatorics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "Fundamental techniques of enumeration and construction of combinatorial structures, permutations, recurrences, inclusion-exclusion, permanents, 0, 1- matrices, Latin squares, combinatorial designs."
+    },
+    {
+      "number": 310,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Concepts of Combinatorics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "Honors version of elementary and enumerative combinatorics."
+    },
+    {
+      "number": 311,
+      "suffix": "M",
+      "type": "course",
+      "title": "Honors Concepts of Discrete Mathematics",
+      "credits": 3,
+      "description": "Basic methods of mathematical thinking and fundamental mathematical structures, primarily in the context of numbers, groups, and symmetries."
+    },
+    {
+      "number": 311,
+      "suffix": "W",
+      "type": "course",
+      "title": "Concepts of Discrete Mathematics",
+      "credits": 3,
+      "internalEquivalents": [
+        "CMPSC360"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Introduction to mathematical proofs; elementary number theory and group theory. Students who have passed CMPSC 360 may not schedule this course for credit."
+    },
+    {
+      "number": 312,
+      "type": "course",
+      "title": "Concepts of Real Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "An introduction to rigorous analytic proofs involving properties of real numbers, continuity, differentiation, integration, and infinite sequences and series."
+    },
+    {
+      "number": 312,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Concepts of Real Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "MATH311M"
+        ]
+      },
+      "description": "This course provides rigorous development of the key concepts and results of analysis. The topics include sequences and continuity of functions in the context of real numbers and metric spaces, series, differentiation and integration of functions on the real line."
+    },
+    {
+      "number": 313,
+      "suffix": "H",
+      "type": "course",
+      "title": "Concepts of Geometry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140H",
+          "MATH311M"
+        ]
+      },
+      "description": "Development thorough understanding and technical mastery of foundations of modern geometry. MATH 313H Concepts of Geometry (3) The central aim of this course is to develop thorough understanding and technical mastery of foundations of modern geometry. Basic high school geometry is assumed; axioms are mentioned, but not used to deduce theorems. Approach in development of the Euclidean geometry of the plane and the 3-dimensional space is mostly synthetic with an emphasis on groups of transformations. Linear algebra is invoked to clarify and generalize the results in dimension 2 and 3 to any dimension. It culminates in the last part of the course where six 2-dimensional geometries and their symmetry groups are discussed. This course is a a part of a new \"pre-MASS\" program (PMASS)aimed at freshman/sophomore level students, which will operate in steady state in the spring semesters. This course is directly linked with a proposed course Math 313R, its 1-credit recitation component. It is highly recommended to all mathematics, physics and natural sciences majors who are graduate school bound, and is a great opportunity for all Schreyer Scholars. The following topics will be covered: Euclidean geometry of the plane (distance, isometries, scalar product of vectors, examples of isometries: rotations, reflections, translations, orientation, symmetries of planar figures, review of basic notions of group theory, cyclic and dihedral groups, classification of isometries of Euclidean plane, discrete groups of isometries and crystallographic restrictions. similarity transformations, selected results from classical Euclidean geometry}; Euclidean geometry of the 3-dimensional space and the sphere (distance, isometries, scalar product of vectors, planes and lines in the 3-dimensional space, normal vectors to planes, classification of pairs of lines, isometries with a fixed point: rotations and reflections, orientation, isometries of the sphere, classification of orientation-reversing isometries with a fixed point, finite groups of isometries of the 3-dimensional space, existence of a fixed point, examples: cyclic, dihedral, and groups of symmetries of Platonic solids, classification of isometries without fixed point: translations and screw-motions, intrinsic geometry of the sphere, elliptic plane: a first example of non-Euclidean geometry); Elements of linear algebra and its application to geometry in 2, 3, and n dimension (real and complex vector spaces. linear independence of vectors, basis and dimension, eigenvalues and eigenvectors, diagonalizable matrices, classification of matrices in dimension 2: elliptic, hyperbolic and parabolic matrices, orthogonal matrices and isometries of the n-dimensional space); Six 2-dimensional geometries (Projective geometry, affine geometry, inversions and conformal geometry, Euclidean geometry revisited, geometry of elliptic plane, hyperbolic geometry). The achievement of educational objectives will be assessed through weekly homework, class participation, and midterm and final exams."
+    },
+    {
+      "number": 316,
+      "type": "course",
+      "title": "Upperclass Seminar: Careers, Graduate Study, and Opportunities in Mathematics",
+      "credits": 1,
+      "description": "This course is designed to prepare sophomore, junior and senior mathematics majors to take advantage of opportunities provided by the mathematics department and university in selecting and pursuing a career path. Some class sessions will involve professional development activities and information about career-related resources; others will consist of presentations and discussions with guest lecturers chosen to represent possible career pathways in mathematics and related fields."
+    },
+    {
+      "number": 318,
+      "type": "course",
+      "title": "Elementary Probability",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT318"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Combinatorial analysis, axioms of probability, conditional probability and independence, discrete and continuous random variables, expectation, limit theorems, additional topics. Students who have passed either MATH(STAT) 414 or 418 may not schedule this course for credit."
+    },
+    {
+      "number": 319,
+      "type": "course",
+      "title": "Elementary Mathematical Statistics",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT319"
+      ],
+      "requisites": {
+        "previous": [
+          "STAT318"
+        ]
+      },
+      "description": "Statistical inference: principles and methods, estimation and testing hypotheses, regression and correlation analysis, analysis of variance, computer analysis. Students who have passed STAT (MATH) 415 may not schedule this course for credit."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "type": "course",
+      "title": "Teaching in Mathematics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "SC220"
+        ]
+      },
+      "description": "Mathematics Learning Assistants will participate in the instruction of undergraduate mathematics courses. In MATH 400 Teaching in Mathematics (1-2), students will learn about and gain experience in leading and facilitating in-class and out-of-class group discussions and group problem-solving sessions. Students will be members of a teaching community, interact with a supervising mathematics faculty member, and learn teaching strategies on how to facilitate and help engage undergraduate students in discussions and group work."
+    },
+    {
+      "number": 401,
+      "type": "course",
+      "title": "Introduction to Analysis I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "Review of calculus, properties of real numbers, infinite series, uniform convergence, power series. Students who have passed Math. 403 may not schedule this course."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Classical Analysis I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH312"
+        ]
+      },
+      "description": "Topology of Rn, compactness, continuity of functions, uniform convergence, Arzela-Ascoli theorem in the plane, Stone-Wierstrass theorem."
+    },
+    {
+      "number": 403,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Classical Analysis I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311M",
+          "MATH312H"
+        ]
+      },
+      "description": "This course covers the foundations of classical analysis in the framework of metric spaces. Topics include metric spaces, compactness, continuous maps, uniform convergence, and function spaces."
+    },
+    {
+      "number": 404,
+      "type": "course",
+      "title": "Classical Analysis II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH403"
+        ]
+      },
+      "description": "Differentiation of functions from Rn to Rm, implicit function theorem, Riemann integration, Fubini's theorem, Fourier analysis."
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Advanced Calculus for Engineers and Scientists I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH250"
+        ]
+      },
+      "description": "Vector calculus, linear algebra, ordinary and partial differential equations. Students who have passed MATH 411 or 412 may not take this course for credit."
+    },
+    {
+      "number": 406,
+      "type": "course",
+      "title": "Advanced Calculus for Engineers and Scientists II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH405"
+        ]
+      },
+      "description": "Complex analytic functions, sequences and series, residues, Fourier and Laplace transforms. Students who have passed MATH 421 may not take this course for credit."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Complex Analysis for Mathematics and Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "Complex analytic functions; Cauchy-Riemann equations; complex contour integrals; Cauchy's integral formula; Taylor and Laurent series; residue theory; applications in engineering. MATH 410 Complex Analysis for Mathematics and Engineering (3) A succinct stand-alone course description (up to 400 words) to be made available to students through the on-line Bulletin and Schedule of Courses. This is a complex analysis course designed for students in mathematics, applied mathematics, engineering, science, and related fields. Topics include complex numbers; analytic functions, complex differentiability, and the Cauchy-Riemann equations; complex exponential, logarithmic, power, and trigonometric functions; complex contour integrals; Cauchy's theorem; Cauchy's integral formula; Taylor and Laurent series; residue theory; and various applications in areas of science and engineering. This course focuses on the definitions, concepts, calculation techniques, supporting theory, and examples of applications suited to the usage of complex analysis in mathematics, applied mathematics, science, and engineering. Students who have passed MATH 406 or MATH 421 may not take this course for credit."
+    },
+    {
+      "number": 411,
+      "type": "course",
+      "title": "Ordinary Differential Equations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH250"
+        ]
+      },
+      "description": "Linear ordinary differential equations; existence and uniqueness questions; series solutions; special functions; eigenvalue problems; Laplace transforms; additional topics and applications."
+    },
+    {
+      "number": 412,
+      "type": "course",
+      "title": "Fourier Series and Partial Differential Equations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH250"
+        ]
+      },
+      "description": "Orthogonal systems and Fourier series; derivation and classification of partial differential equations; eigenvalue function method and its applications; additional topics. MATH 412 Fourier Series and Partial Differential Equations (3) (BA) This course meets the Bachelor of Arts degree requirements.The purpose of MATH 412 is to introduce students to the origins, theory, and applications of partial differential equations. Several basic physical phenomena are considered - including flows, vibrations, and diffusions - and used to derive the relevant equations. The fundamentals of the mathematical theory of partial differential equations are motivated and developed for the students through the systematic exploration of these classic physical systems and their corresponding equations: the Laplace, wave, and heat equations. In addition to treating the physical origins of the equations, this course focuses on solving evolution equations as initial value problems on unbounded domains (the Cauchy problem), and also on solving partial differential equations on bounded domains (boundary value problems). There is not one but many techniques for solving these equations, and the course presents some aspect of the expansion in orthogonal functions (including Fourier series), eigenvalue theory, functional analysis, and the use of separation of variables, Fourier transforms, and Laplace transforms to solve PDEs by converting them to ordinary differential equations. This course currently serves a cross-section of students at the university with interests or the need for this advanced subject mathematics, including students majoring in the engineering program, meteorology, physics, and mathematics. This typically includes the most advanced physics, engineering, and meteorology students, as well as mathematics majors with interests in applied mathematics."
+    },
+    {
+      "number": 414,
+      "type": "course",
+      "title": "Introduction to Probability Theory",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT414"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "STAT(MATH) 414 is an introduction to the theory of probability for students in statistics, mathematics, engineering, computer science, and related fields. The course presents students with calculus-based probability concepts and those concepts can be used to describe the uncertainties present in real applications. Topics include probability spaces, discrete and continuous random variables, transformations, expectations, generating functions, conditional distributions, law of large numbers, central limit theorems. Students may take only one course from STAT(MATH) 414 and 418."
+    },
+    {
+      "number": 414,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Introduction to Probability Theory",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT414H"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "This course covers probability spaces, discrete and continuous random variables, transformations, expectations, generating functions, conditional distributions, law of large numbers, central limit theorems. In contrast to the non-honors version of 414, 414H has a stronger focus on a multivariate presentation of core concepts, asymptotic results, and proofs of essential theorems. This emphasis is complemented through more advanced in-class examples, homework problems, and exam questions. Students will also pursue a topic of choice in further depth through a course project. Students may take only one course from STAT(MATH) 414, 414H, and 418."
+    },
+    {
+      "number": 415,
+      "type": "course",
+      "title": "Introduction to Mathematical Statistics",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT415"
+      ],
+      "requisites": {
+        "previous": [
+          "STAT414"
+        ]
+      },
+      "description": "A theoretical treatment of statistical inference, including sufficiency, estimation, testing, regression, analysis of variance, and chi-square tests."
+    },
+    {
+      "number": 415,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Introduction to Mathematical Statistics",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT415H"
+      ],
+      "requisites": {
+        "previous": [
+          "STAT414"
+        ]
+      },
+      "description": "This course covers statistical inference, including properties of estimators, hypothesis testing, uncertainty quantification, regression, analysis of variance, Bayesian inference, and numerical methods. In contrast to the non-honors version of 415, 415H has a stronger focus on proving key theorems and utilizing asymptotic properties of estimators. This emphasis is complemented through more advanced in-class examples, homework problems, and exam questions. Students will also pursue a topic of choice in further depth through a course project. Students may take only one course from STAT(MATH) 415 and 415H."
+    },
+    {
+      "number": 416,
+      "type": "course",
+      "title": "Stochastic Modeling",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT416"
+      ],
+      "requisites": {
+        "previous": [
+          "STAT318",
+          "MATH230"
+        ]
+      },
+      "description": "Review of distribution models, probability generating functions, transforms, convolutions, Markov chains, equilibrium distributions, Poisson process, birth and death processes, estimation."
+    },
+    {
+      "number": 417,
+      "type": "course",
+      "title": "Qualitative Theory of Differential Equations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH250"
+        ]
+      },
+      "description": "Linear differential equations, stability of stationary solutions, ordinary bifurcation, exchange of stability, Hopf bifurcation, stability of periodic solutions, applications. MATH 417 Qualitative Theory of Differential Equations (3) (BA) This course meets the Bachelor of Arts degree requirements.The main objective of the course is the qualitative theory of ordinary differential equations such as existence and uniqueness of solutions, dependence on initial data and parameters, and basic stability of solutions for both linear and nonlinear equations. It is designed to introduce students to modern concepts including the bifurcation theory, intermittent (transitional) and chaotic behavior of solutions and dynamical system approach to differential equations. Along the way, a number of applications are discussed and students get familiar with some basic examples illustrating main principles of the theory, such as Lorenz attractor, predator-prey models, etc. The course is completed by students majoring in engineering programs, the sciences, and mathematics."
+    },
+    {
+      "number": 418,
+      "type": "course",
+      "title": "Introduction to Probability and Stochastic Processes for Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT418"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "Introduction to probability axioms, combinatorics, random variables, limit laws, and stochastic processes. Students may take only one course from MATH414 / STAT 414 and MATH 418 / STAT 418 for credit. STAT 418 / MATH 418 Introduction to Probability and Stochastic Processing for Engineering (3) This course gives an introduction to probability and random processes. The topics are not covered as deeply as in a semester-long course in probability only or in a semester-long course in stochastic processes only. It is intended as a service course primarily for engineering students, though no engineering background is required or assumed.The topics covered include probability axioms, conditional probability, and combinatorics; discrete random variables; random variables with continuous distributions; jointly distributed random variables and random vectors; sums of random variables and moment generating functions; and stochastic processes, including Poisson, Brownian motion, and Gaussian processes."
+    },
+    {
+      "number": 419,
+      "type": "course",
+      "title": "Theoretical Mechanics",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS419"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH250",
+          "PHYS212",
+          "PHYS213",
+          "PHYS214"
+        ]
+      },
+      "description": "Principles of Newtonian, Lagrangian, and Hamiltonian mechanics of particles with applications to vibrations, rotations, orbital motion, and collisions. PHYS 419 / MATH 419 Theoretical Mechanics (3) A second course in classical mechanics, required of all physics majors who typically take it in their 5th or 6th semester. The course includes a review of relevant mathematics, detailed discussions of advanced topics in Newtonian mechanics, introductions to Lagrangian and Hamiltonian dynamics, and applications to such forced oscillations, orbital motion, vibrational motion and normal modes, rigid body motion, and collisions.It is a prerequisite for Physics 461, which is a second semester extension. It is also a valuable background for most 400-level physics courses, especially Physics 410."
+    },
+    {
+      "number": 421,
+      "type": "course",
+      "title": "Complex Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH401"
+        ]
+      },
+      "description": "Infinite sequences and series; algebra and geometry of complex numbers; analytic functions; integration; power series; residue calculus; conformal mapping, applications."
+    },
+    {
+      "number": 425,
+      "type": "course",
+      "title": "Introduction to Operations Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "MATH220"
+        ]
+      },
+      "description": "Nature of operations research, problem formulation, model construction, deriving solution from models, allocation problems, general linear allocation problem, inventory problems."
+    },
+    {
+      "number": 426,
+      "type": "course",
+      "title": "Introduction to Modern Geometry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH401"
+        ]
+      },
+      "description": "Plane and space curves; space surfaces; curvature; intrinsic geometry of surfaces; Gauss-Bonnet theorem; covariant differentiation; tensor analysis."
+    },
+    {
+      "number": 427,
+      "type": "course",
+      "title": "Foundations of Geometry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230"
+        ]
+      },
+      "description": "Euclidean and various non-Euclidean geometries and their development from postulate systems. Students who have passed MATH 427 may not schedule MATH 471 ."
+    },
+    {
+      "number": 428,
+      "type": "course",
+      "title": "Geometry for Teachers",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ],
+        "concurrent": [
+          "MATH427"
+        ]
+      },
+      "description": "Research in mathematics education using ideas from Euclidean and non-Euclidean geometry. Students who have passed MATH 471 may not schedule MATH 427 . MATH 428 Geometry for Teachers (1) MATH 428 is designed to introduce students to mathematics education and research in education. The student will present topics in written and verbal classroom reports. Students will be evaluated on research papers and classroom presentations of those papers, classroom technology demonstration of geometry topics, and classroom demonstration of teaching geometry.This course supplements MATH 427 by providing the education component that is required by the state of Pennsylvania for obtaining certification in teaching mathematics. This course is offered only at Penn State Erie, The Behrend College."
+    },
+    {
+      "number": 429,
+      "type": "course",
+      "title": "Introduction to Topology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "Metric spaces, topological spaces, separation axioms, product spaces, identificaiton spaces, compactness, connectedness, fundamental group."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Linear Algebra and Discrete Models I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "Vector spaces, linear transformations, matrices determinants, characteristic values and vectors, systems of linear equations, applications to discrete models."
+    },
+    {
+      "number": 435,
+      "type": "course",
+      "title": "Basic Abstract Algebra",
+      "credits": 3,
+      "description": "Elementary theory of groups, rings, and fields. Students who have passed MATH 435 may not schedule MATH 470 ."
+    },
+    {
+      "number": 436,
+      "type": "course",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "Vector spaces and linear transformations, canonical forms of matrices, elementary divisors, invariant factors; applications. Students who have passed MATH 436 may not schedule MATH 441 ."
+    },
+    {
+      "number": 436,
+      "suffix": "H",
+      "type": "course",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "description": "Vector spaces and linear transformations, canonical forms of matrices, elementary divisors, invariant factors; applications."
+    },
+    {
+      "number": 437,
+      "type": "course",
+      "title": "Algebraic Geometry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH311W"
+        ]
+      },
+      "description": "Study of curves in the plane defined by polynomial equations p(x,y)= 0. Projective equivalence, singular points, classification of cubics. MATH 437 Algebraic Geometry (3)(BA) This course meets the Bachelor of Arts degree requirements. The geometric study of algebraic equations is one of the oldest and deepest parts of mathematics, and it lies at the heart of modern developments in geometry, algebra, number theory and physics. Students completing MATH 437 will understand many new algebraic and geometric ideas by studying examples of curves defined by equations of degrees 2 and 3 in the plane. Fist come conics (given by equations of degree 2 in two variables). Rigid motions, similarities, and affine transformations give different classifications of them. New ideas then show how to get a conic through any five points and prove Pascal's theorem about six points on a conic. Special cases suggest extension of the usual plane to the projective plane, with \"points at infinity,\" homogeneous coordinates, and projective transformations.The main part of the course turns to equations of degree 3 and their singularities, flex points, tangents, and degeneracies. Several new ideas, both algebraic and analytic, are brought in to prove the existence of complex flex points on singular cubics and then real flex points on nonsingular real cubics. There is then a classification on complex projective cubics by a single parameter and finally a full classification of all real projective cubics.As time permits, relations to further topics are sketched: addition of points on a nonsingular cubic, Mordell's theorem, doubly periodic functions, and Fermat's last theorem.The course is typically taken by mathematics majors."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Matrix Algebra",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "Determinants, matrices, linear equations, characteristic roots, quadratic forms, vector spaces. Students who have passed Math 436 may not schedule this course."
+    },
+    {
+      "number": 443,
+      "type": "course",
+      "title": "Introduction to Dynamical Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230",
+          "MATH312"
+        ]
+      },
+      "description": "The theory of dynamical systems is a modern branch of mathematics. Its main objective is to analyze long-term behavior of systems that evolve in time. In this course we introduce the fundamental concepts and tools of dynamics and discuss an array of examples. The topics include contractions, maps of circles and tori, symbolic systems, hyperbolic systems, recurrence, Equi distribution, transitivity and mixing, stability, entropy, chaos, and fractals."
+    },
+    {
+      "number": 448,
+      "type": "course",
+      "title": "Mathematics of Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "The course provides a foundational knowledge of the mathematics and mathematical models of finance, primarily of option pricing, hedging, and portfolio optimization. The topics include the definition of various financial securities and instruments (e.g. bonds, stocks, forward contracts, and options), the theory of interest, the No-Arbitrage Principle, measures of return and volatility, the Markowitz model of portfolio theory, the Capital Asset Pricing Model, the pricing of forward contracts, option trading strategies, the pricing of options via binomial models and the Black-Scholes model, and principles of hedging."
+    },
+    {
+      "number": 449,
+      "type": "course",
+      "title": "Applied Ordinary Differential Equations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH250"
+        ]
+      },
+      "description": "Differential and difference equations and their application to biology, chemistry, and physics; techniques in dynamical systems theory. MATH 449 Mathematical Modeling (3) Many phenomena that arise in the natural sciences, such as the motion of pendulum or signal conduction in neurons or oscillations in certain chemical reactions, can be modeled using nonlinear differential equations. This course will develop the mathematical techniques needed to investigate such differential equations. These techniques include the study of equilibria, stability, phase plane analysis, bifurcation analysis and chaos. The course will assume prior knowledge of ordinary differential equations at the MATH 250 /251 level; this is the only prerequisite for the course. We will focus on understanding and interpreting the behavior of the solutions to the differential equation models rather than on deriving the model equations themselves. Evaluation will be based on midterm exams, a final exam, graded homework, and graded longer projects which may involve computer work. The course should be of interest to any science or engineering major and some models will be chosen to reflect the fields of interest of the class. The goal is for the students to be able to apply the techniques learned in the course to mathematical models that they will encounter in other classes or situations. The class will be offered every other year with an expected enrollment of 10-15 students."
+    },
+    {
+      "number": 450,
+      "type": "course",
+      "title": "Mathematical Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH430"
+        ]
+      },
+      "description": "Constructing mathematical models of physical phenomena; topics include pendulum motion, polymer fluids, chemical reactions, waves, flight, and chaos. MATH 450 Mathematical Modeling (3) The purpose of the course is to introduce mathematical modeling, i.e., the construction of mathematical structures which capture relevant physical phenomena. The course will systematically explore mathematical ideas and tools used to study the natural world. Particular emphasis will be placed on the process of creating a mathematical model starting from a physical scenario. Typically this process will begin with an experiment either demonstrated in the W. G. Pritchard Lab or performed by the students in class.Once a particular model has been developed, students will use mathematical analysis and experimentation to determine the properties and relevance of the model, and to make predictions. Often the model can be satisfactory; however, many times one also finds new features of the system that are not adequately accounted for in the model, and the process begins again. It is this cycle the course will focus on. For a given phenomenon (e.g., flow of viscous fluid, pendulum motion) several models may be compared and contrasted, and possible simplifications will be discussed.A significant aspect of the course is its laboratory component, in which the students will perform experiments or observe demonstrations. However, the main emphasis will be placed on creating and rigorously analyzing the mathematical aspects of the models. Instead of presenting a finely tuned model for a given phenomenon, this course will try to convey some of the heuristic, intuitive, and mathematical ideas employed in modeling.Examples of physical systems to be considered include: simple and compound pendulum motion, chemical oscillations, water waves, and elastic behavior of polymer solutions.The course is open to a wide range of undergraduate as well as graduate students with majors in mathematics, biology, chemistry, engineering, and physics. The course should be accessible to students with some basic knowledge of mathematical analysis and differential equations. Main topics include: modeling with ordinary differential equations; bifurcation theory and stability; traveling waves in epidemics, chemical reactions, free fluid surfaces, and polymer solutions; fluctuations in nature, stochastic differential equations and chaos."
+    },
+    {
+      "number": 451,
+      "type": "course",
+      "title": "Numerical Computations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC121",
+          "MATH230"
+        ]
+      },
+      "description": "ALGORITHMS FOR INTERPOLATION, APPROXIMATION, INTEGRATION, NONLINEAR EQUATIONS, LINEAR SYSTEMS, FAST FOURIER TRANSFORM, AND DIFFERENTIAL EQUATIONS EMPHASIZING COMPUTATIONAL PROPERTIES AND IMPLEMENTATION. STUDENTS MAY TAKE ONLY ONE COURSE FOR CREDIT FROM MATH 451 AND 455."
+    },
+    {
+      "number": 452,
+      "type": "course",
+      "title": "Deep Learning Algorithms and Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230",
+          "CMPSC121"
+        ]
+      },
+      "description": "This is an undergraduate course on the introduction of basic mathematical, numerical and practical aspects of deep learning techniques. It will provide students with the mathematical background and also practical tools needed to understand, to analyze and to further develop numerical methods for deep learning and applications. The course is simultaneously geared towards math students who want to learn about the emerging technology of deep learning and also towards students from other fields who are interested in deep learning application but would like to strengthen their theoretical foundation and mathematical understanding. This course will allow students to fulfill 400-level math course requirement for Math Majors/Minors (or for other Majors as approved by student advisor). The course will cover some basic deep learning models such as the basic deep neural networks, convolutional neural networks, training algorithms such as stochastic gradient descent methods, popular data bases such as MNIST and CIFAR and specific applications such as image classifications. Traditional numerical methods such as finite element and multigrid method will also be introduced to motivate and to understand how and why deep neural networks work."
+    },
+    {
+      "number": 455,
+      "type": "course",
+      "title": "Introduction to Numerical Analysis I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230"
+        ]
+      },
+      "description": "Floating point computation, numerical rootfinding, interpolation, numerical quadrature, direct methods for linear systems. Students may take only one course for credit from MATH 451 and MATH 455 ."
+    },
+    {
+      "number": 455,
+      "suffix": "H",
+      "type": "course",
+      "title": "Introduction To Numerical Analysis I",
+      "credits": 3,
+      "description": "FLOATING POINT COMPUTATION, NUMERICAL ROOTFINDING, INTERPOLATION, NUMERICAL QUADRATURE, DIRECT METHODS FOR LINEAR SYSTEMS. STUDENTS MAY TAKE ONLY ONE COURSE FOR CREDIT FROM MATH 451 AND MATH 455 ."
+    },
+    {
+      "number": 456,
+      "type": "course",
+      "title": "Introduction to Numerical Analysis II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH455"
+        ]
+      },
+      "description": "Polynomial and piecewise polynomial approximation, matrix least squares problems, numerical solution of eigenvalue problems, numerical solution of ordinary differential equations."
+    },
+    {
+      "number": 457,
+      "type": "course",
+      "title": "Introduction to Mathematical Logic",
+      "credits": 3,
+      "description": "Propositional logic, first-order predicate logic, axioms and rules of inference, structures, models, definability, completeness, compactness. Logic forms the foundation of all mathematical reasoning. To prove a mathematical theorems, one deduces them step by step from basic principles, called axioms, or from other statements previously deduced. Each step of a proof has to be a logically valid rule, such as, for example, the modus ponens: \"If A holds, and A implies B, then B holds.\" In Math 457, students will learn how concepts such as axiom, theorem, proof, and truth can be formulated as a mathematical theory, that is, logical reasoning will be studied as a mathematical subject. The simplest kind of logical system is propositional logic. Here, the basic components are whole statements which are either true or false, and which can be combined using logical connectives such AND, OR, or NOT to form new statements. Its simple nature makes propositional logic a good system to introduce many of the basic ideas: syntax and semantics, proof systems, completeness and compactness. However, propositional logic does not capture mathematical reasoning adequately. Therefore, one considers (first-order) predicate logic. Students will learn how formulas are formed according to syntactical rules. They will also study how a mathematical theory is defined as a set of formulas, how a proof is formally defined, and what constitutes a proof system. The syntactical notions above are contrasted with mathematical semantics, which considers structures over which formulas can be interpreted. This way, one can rigorously define whether a formal statement is true in a given mathematical structure, in which case we say the structure is a model of the statement. For example, the integers with addition are a model of the statement \"for every x there exists a y such that x+y =0\". A central goal of mathematical logic is to explore how the syntactical side (formulas, axioms, proof systems) and the semantical side (mathematical structures such as the additive group of integers) interact. Two fundamental results in this regard will be covered: the completeness theorem says that one can prove a statement from a set of axioms if and only if the statement is true in any structure satisfying all axioms. The compactness theorem, in turn, is an important consequence of the completeness theorem. It has profound implications for the existence and construction of mathematical structures. Students who would like to enroll in Math 457 are required to have some knowledge of mathematical proofs as provided in Math 311W."
+    },
+    {
+      "number": 465,
+      "type": "course",
+      "title": "Number Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "Elements, divisibility of numbers, congruences, residues, and forms. MATH 465 Number Theory (3) (BA) This course meets the Bachelor of Arts degree requirements.This course serves as an upper-level introduction to the fundamentals of elementary number theory. A major emphasis in the course is placed on the role that the prime numbers play in the study of properties of the integers along with the related topics of divisibility and factorization of integers. Additional topics covered in the course include congruences (and the theorems of Euler and Fermat which are classics in this area), properties of arithmetic functions including those which are multiplicative, and other topics such as Pythagorean triples and representations of numbers as sums of squares. This course is completed by a wide variety of students across the university, especially those majoring in mathematics. (In many of the options in the MTHBS degree, MATH 465 can be used to satisfy one of the major requirements.) The course is also taken quite frequently by non-mathematics majors who wish to use the course to satisfy an upper-level requirement for the mathematics minor."
+    },
+    {
+      "number": 467,
+      "type": "course",
+      "title": "Factorization and Primality Testing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC360"
+        ]
+      },
+      "description": "Prime sieves, factoring, computer numeration systems, congruences, multiplicative functions, primitive roots, cryptography, quadratic residues. Students who have passed MATH 465 may not schedule this course."
+    },
+    {
+      "number": 468,
+      "type": "course",
+      "title": "Mathematical Coding Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "Shannon's theorem, block codes, linear codes, Hamming codes, Hadamard codes, Golay codes, Reed-Muller codes, bounds on codes, cyclic codes."
+    },
+    {
+      "number": 470,
+      "type": "course",
+      "title": "Algebra for Teachers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "An introduction to algebraic structures and to the axiomatic approach, including the elements of linear algebra. Designed for teachers and prospective teachers. Students who have passed Math 435 may not schedule this course."
+    },
+    {
+      "number": 471,
+      "type": "course",
+      "title": "Geometry for Teachers",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "Problem solving oriented introduction to Euclidean and non-Euclidean geometries; construction problems and geometrical transformations via \"Geometer's Sketchpad\" software. Intended primarily for those seeking teacher certification in secondary mathematics. Students who have passed MATH 427 may not schedule this course."
+    },
+    {
+      "number": 475,
+      "suffix": "Y",
+      "type": "course",
+      "title": "History of Mathematics",
+      "credits": 3,
+      "description": "A global survey of the history of mathematics as viewed as a human response to cultural, political, economic, and societal pressures. MATH 475W Introduction to the History of Mathematics (3) (DF) The primary goal of this course is to explore where mathematics comes from, how it was labored on, how ideas were preceived, and how theories developed. Development in algebra, geometry, arthimetic and calculus will be discussed.A second goal is to help students understand the importanct of written communication in mathematics and to provide opportunities for students to improve the quality of their writing. The primary means for accomplishing this goal will be four papers, 4-8 pages in length. These will be written for an audience of mathematically-knowledgeable readers. In addition, each quiz will contain at least one essay question.Students will be evaluated on quizzes, homework, papers, and a final exam. Quizzes will total 250 points, the papers 200 points, and the final exam 150 points.This course is a required course in the Mathematical Science (MA SC) BS curriculum. This course is also available as an elective for students in the Computer Science (COMP) program.No special facilities are required for this course. This course will be offered once per year, with an expected enrollment of 25-40 students."
+    },
+    {
+      "number": 479,
+      "type": "course",
+      "title": "Special and General Relativity",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS479"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS237",
+          "PHYS400",
+          "PHYS419",
+          "MATH250",
+          "MATH230"
+        ]
+      },
+      "description": "Mathematical description, physical concepts, and experimental tests of special and general relativity. MATH 479 / PHYS 479 Special and General Relativity (3) This course is intended as an elective course (within the undergraduate Physics program) for Physics majors to be taken in their senior year. Intended to be cross-listed with MATH, it can also be used in support of a Mathematics minor and, in some options, within the Math program as a program elective as well. The course significantly expands upon the introduction to Special Relativity (SR) seen in PHYS 237 , including discussions of experimental tests of SR and applications to relativistic mechanics. It then introduces students to the mathematical machinery required to understand General Relativity (GR), starting with the description of curved spacetimes and geodesics. It discusses solutions to the Einstein equations and surveys the classic tests which established the validity of General Relativity. It concludes with applications of GR in such areas as black hole physics, the generation and detection of gravitational waves, other topics (such as cosmology, relativistic astrophysics, etc.)."
+    },
+    {
+      "number": 482,
+      "type": "course",
+      "title": "Mathematical Methods of Operations Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230"
+        ]
+      },
+      "description": "Survey of linear and nonlinear programming; mathematics of optimization; queues; simulation."
+    },
+    {
+      "number": 484,
+      "type": "course",
+      "title": "Linear Programs and Related Problems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230"
+        ]
+      },
+      "description": "Introduction to theory and applications of linear programming; the simplex algorithm and newer methods of solution; duality theory."
+    },
+    {
+      "number": 485,
+      "type": "course",
+      "title": "Graph Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH311W"
+        ]
+      },
+      "description": "Introduction to the theory and applications of graphs and directed graphs. Emphasis on the fundamental theorems and their proofs."
+    },
+    {
+      "number": 486,
+      "type": "course",
+      "title": "Mathematical Theory of Games",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "Basic theorems, concepts, and methods in the mathematical study of games of strategy; determination of optimal play when possible. MATH 486 Mathematical Theory of Games (3) This course covers several major classes of models and methods for analyzing multi-party strategic interactions, i.e. games. Specific topics include extensive and strategic form games, continuous games, cooperative games, strictly competitive games, repeated games and adaptive learning, and evolutionary models. The effects on outcomes of information, communication, and other modeling assumptions are discussed. Real-world examples drawn from economics, biology, anthropology, management and everyday life are discussed in detail. When appropriate, computer algebra systems are incorporated in the course. The course typically meets during either two 75-minute periods each week or three 50-minute periods each week. Evaluation methods may vary by instructor, but will typically include a combination of examinations, quizzes, homework, and projects."
+    },
+    {
+      "number": 490,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Student Colloquium",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "MATH230",
+          "MATH250",
+          "MATH311W"
+        ]
+      },
+      "description": "The course comprises colloquium style weekly lectures by visitors and by Penn State faculty covering select topics in classical and contemporary mathematics. Some talks will describe math-intense jobs outside of academia and help the students to plan for their future career. The topics of the lectures will be quite advanced, distinguishing it as an honors course. In addition to attending the talks, toward the end of semester, the students will either give a presentation or write an essay on a mathematical topic of their choice or a topic covered in one of the colloquium talks."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Thesis Project",
+      "credits": 3,
+      "description": "The honors thesis proposal must be approved by the thesis supervisor and the honors adviser and submitted to the Schreyer Honors College prior to scheduling this course. Honors students in Mathematics should register for Math 494H in one or both of their last two semesters. All Schreyer Scholars are required to complete an undergraduate honors thesis. This work represents the culmination of a student's honors experience. Through the thesis, the student demonstrates a command of relevant scholastic work and a personal contribution to that scholarship. The thesis document should capture the relevant background, methods and techniques, as well as describe the details of the completion of the individual project."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "A",
+      "type": "course",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 1
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

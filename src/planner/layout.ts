@@ -6,6 +6,8 @@
 // positions chosen so lines cross as little as possible.
 import type { Edge, Node } from "@xyflow/react";
 import {
+  formatCourseCode,
+  parseCourseCode,
   satisfies,
   EXTERNAL_TERM,
   GRADE_POINTS,
@@ -60,9 +62,11 @@ export function geometryFor(columnWidth: number): Geometry {
   return { columnWidth, nodeWidth: Math.min(nodeWidth, columnWidth - 16) };
 }
 
-// A course id written for people: "CS101" becomes "CS 101".
+// A course id written for people: "CS101" becomes "CS 101". Ids that
+// aren't course codes ("SPAN-PROF") stay as they are.
 export function courseCode(id: string): string {
-  return id.replace(/^([A-Za-z]+)(\d)/, "$1 $2");
+  const code = parseCourseCode(id);
+  return code ? formatCourseCode(code) : id;
 }
 
 // A term's name, then shorter ways to write it, for narrow columns:

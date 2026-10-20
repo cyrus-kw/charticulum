@@ -53,7 +53,7 @@ describe("evaluateRequirements", () => {
   });
 
   it("names a missing required object by its type", () => {
-    const withMilestone = createCatalog([...catalog.values(), obj("REVIEW", { kind: "milestone", credits: 0 })]);
+    const withMilestone = createCatalog([...catalog.values(), obj("REVIEW", { type: "milestone", credits: 0 })]);
     const report = evaluateRequirements(
       withMilestone,
       chartOf([[], []]),

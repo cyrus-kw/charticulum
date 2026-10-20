@@ -1,0 +1,284 @@
+{
+  "subject": "EMET",
+  "objects": [
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Computation Tools for Engineering Synthesis",
+      "credits": 1,
+      "description": "EMET 100 is a first semester course intended to introduce first-year EMET students to a core set of computational tools and simulation software that will be used repeatedly throughout the EMET curriculum to investigate engineering/technical problems. The course is conducted in a computer-based laboratory format to ensure that students gain hands-on experience with the tools, learn the capabilities and limitations of each, and come to understand the types of problems best handled by each tool."
+    },
+    {
+      "number": 215,
+      "type": "course",
+      "title": "Manufacturing Engineering",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "EGT114"
+        ]
+      },
+      "description": "EMET 215 is intended to introduce the student, in both a lecture and site visit setting, to production planning, and production routing for the purpose of part creation and assembly, manufacturing process and equipment layout required for an assembly of artifacts from raw materials to shipping, including material handling. The course will provide students with a thorough understanding of the manufacturing processes and material handling equipment necessary to formulate a facility layout for producing an assembly of artifacts. Additionally, EMET 215 is intended to provide the student, in both a laboratory and site visit setting, learn the skills necessary to design, manufacture, and assemble a simple engineered product. The course will provide the experience and interactions to give them the knowledge necessary to develop basic hands-on skills for processing and assembly operations, 3d printing, operating and programming CNC machinery. Course activities will be based upon equipment/resources available at each campus. It is suggested that students observe manufacturing processing and assembly operations during site visits to local companies, based on availability."
+    },
+    {
+      "number": 222,
+      "type": "course",
+      "title": "Applied Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MET111"
+        ],
+        "concurrent": [
+          "MATH140"
+        ]
+      },
+      "description": "The purpose of this course is to give students the ability to calculate engineering stresses, strains, and deflections in members subjected to different types of loading using the applied forces and reactions obtained from static equilibrium calculations. Various types of components are analyzed such as rods subjected to axial loading, shafts subjected to torsion, and beams of various cross-sectional geometries subjected to bending moments. Additionally, members under combined loadings are analyzed to determine principal stresses and maximum shear stresses using stress transformation equations and Mohr's circle. For all applications, free body diagrams will be used in order to relate external and internal reactions."
+    },
+    {
+      "number": 225,
+      "type": "course",
+      "title": "Applied Dynamics",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "MET111",
+          "MATH140"
+        ]
+      },
+      "description": "This course is designed to provide engineering technology students with knowledge in solving problems using fundamental laws and equations of motion that are applied to particles and rigid bodies. Dynamics is typically broken into two categories: (1) kinematics (the study of motion without considering the causes of the motion; and (2) kinetics (the study of motion due to applied external forces). Topics addressed in dynamics for technology include: kinematics of particles, application of Newton's laws to particles and rigid bodies, energy and momentum of particles, kinematics of rigid bodies, impact of particles and rigid bodies, and energy and momentum for rigid bodies."
+    },
+    {
+      "number": 230,
+      "type": "course",
+      "title": "Computerized I/O Systems",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "EET212W"
+        ]
+      },
+      "description": "Introduction to concepts of structured programming, data acquisition, computerized interfaces, and graphical user interfaces. EMET 230 Computerized I/O Systems (3) EMET 230 is designed to provide the students with the knowledge of steps and issues to be addressed when deciding on computerized input-output systems. Understanding the basics property, classification and types of signals, significant figures, rounding off, etc. Steps in choosing hardware and understanding the principles used in the software design to develop friendly user interfaces."
+    },
+    {
+      "number": 325,
+      "type": "course",
+      "title": "Electric Drives",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EET212W"
+        ]
+      },
+      "description": "Study of operation, application and specification of AC/DC electrical drive motors, servos, actuators, control units and power converters. EMET 325 Electric Drives (3) EMET 325 provides students with a basic understanding of the operation, capabilities, limitations, and selection of electrical drive devices and drive controls typically found in industrial manufacturing and production systems. The course provides background on the basic operating characteristics of variety of drive devices, both AC and DC; however, the emphasis is on the practical limitations and typical application of these devices. Particular emphasis will be given to concepts and topics important to the selection, implementation and operation of electrical drives in common industrial applications.Lectures will be supported by classroom demonstrations of setup, connection, and operating characteristics of devices covered in lectures. These demonstrations will emphasize typical uses of the devices studied."
+    },
+    {
+      "number": 326,
+      "type": "course",
+      "title": "Mechanical Drives",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMET225"
+        ]
+      },
+      "description": "Transmission of force and motion using linkages, cams, gears, belts, and hydraulic and pneumatic drives. EMET 326 Mechanical Drives (3) EMET 326 is designed to provide the students with the knowledge of various mechanical drives used in engineering. The course introduces the concepts displacement, velocity and acceleration analysis of linkages, cams, gears and belts. Instructor may employ purely geometric methods or combine it with vector approaches. Differential and integral calculus for some of the topics and may considering using techniques of optimizations for mechanism synthesis. Static and dynamic force analysis of linkages is studied."
+    },
+    {
+      "number": 330,
+      "type": "course",
+      "title": "Measurement Theory and Instrumentation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMET230"
+        ],
+        "concurrent": [
+          "MATH250"
+        ]
+      },
+      "description": "Fundamentals of measuring, transmitting, and recording temperature, pressure, flow, force, displacement, and velocity; laboratory component emphasizes systems used in manufacturing. EMET 330 Measurement Theory and Instrumentation (3) The purpose of EMET 330 is to familiarize students with the measurement and instrumentation systems typically used in automated manufacturing and automated process industries. The primary focus of the EMET degree program is the technology of automated control, and measurement and instrumentation systems are essential elements in the control of any industrial or manufacturing process. This course is designed to cover those topics in process measurement, data monitoring, signal conditioning, and data acquisition that are typical in such control systems. The majority of industrial instrumentation systems involve measurement of position, displacement, velocity, force, flow, pressure, or temperature. EMET 330 will cover the common techniques used to make these types of measurements. Measurement systems also require signal conditioning and amplification to convert primary sensor signals into practical analogs that can be used in electronic controls. EMET 330 will also cover fundamentals of signal conditioning and amplification, including analog and digital data acquisition techniques, D-to-A and A-to-D conversion methods and equipment, and fundamentals of automated data acquisition and instrumentation-computer interfacing. Finally, accurate application of any measurement requires an understanding and proper application of basic statistical methods of data reduction. EMET 330 will include coverage of these topics as well. EMET 330 is also a lab-based course. Thus, students in the course will be required to conduct lab exercises in which they actually use industrial-quality sensors, transmitters, signal conditioning equipment, and data acquisition systems to gain experience with how these devices actually perform."
+    },
+    {
+      "number": 350,
+      "type": "course",
+      "title": "Quality Control, Inspection, and Design",
+      "credits": 3,
+      "description": "Fundamentals of quality including statistics, probability, and design of experiments. EMET 350 Quality Control, Inspection, and Design (3) The purpose of EMET 350 is to familiarize students with the use of statistical methods to measure, describe, and control the quality of products and processes. This will be done by teaching students the statistical and probabilistic methods that are applied to quality monitoring and quality control; the typical methods used to monitor, describe, and control quality; and the accepted methods for designing effective statistical experiments to characterize quality.Specific topics that will be covered include: � Basic statistical concepts, measures, and tools � Basic concepts of continuous and discrete probability, probability distributions, populations, and samples � Standard sampling methods � Data presentation tools, including histograms, frequency charts, stem-leaf plots, Pareto charts, etc. � Control charting tools and methods as applied to both variables and attributes, including x-bar/R charts, x-bar/s charts, median/R charts, trend charts, charts of non-conforinities or nonconforming items, etc. � Standard measures of process capability � Acceptance sampling techniques, methods, and tools � Concepts of gage control � Methods and tools for design of statistical experimentsThe course will also introduce students to standard computer tools for statistical and quality control computations."
+    },
+    {
+      "number": 351,
+      "type": "course",
+      "title": "Quality Control, Inspection, and Design",
+      "credits": 2,
+      "description": "The objective of Quality Control, Inspection, and Design is to introduce the student to fundamentals of quality including statistics, probability, and process control. EMET 351 will provide a fundamental understanding of modern statistical quality control methods used by industry. It covers the concepts, principles, procedures, statistical tools, and computations used to analyze and maintain statistical control of manufacturing and production processes and systems. Standard statistical methods are emphasized rather than the mathematical theory of statistical models."
+    },
+    {
+      "number": 394,
+      "type": "course",
+      "title": "EMET Student Design Competition",
+      "credits": 1,
+      "description": "Students collaborate on research and design of appropriate solutions to real-life problems and projects."
+    },
+    {
+      "number": 395,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 396,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Fundamentals of Engineering Review",
+      "credits": 2,
+      "description": "Overview of the topics covered on the Fundamentals of Engineering Exam administered by the NCEES for the purpose of earning a Professional Engineering license. EMET 402 Fundamentals of Engineering Review (2) EMET 402 Fundamentals of Engineering Review is intended to provide students with an overview of topics covered on the morning portion of the Fundamentals of Engineering Exam. Passage of the exam, administered twice per year by the National Council for Examiners for Engineering and Surveying (NCEES), is the first step toward Professional Engineering licensure. Since students have already taken courses that cover all of the subject areas, this course merely serves as a review of these topics in order to help the student prepare for the exam."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Electromechanical Design Project Preparation",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "EMET325",
+          "EMET326"
+        ],
+        "concurrent": [
+          "EMET410"
+        ]
+      },
+      "description": "This course involves the planning and preliminary design activities for the capstone electro-mechanical design project. EMET 403 Electromechanical Design Project Preparation (1) EMET 403 , Electromechanical Design Project Preparation, involves the planning and development of a design plan for a project to be completed in the capstone electro-mechanical project design course, EMET 440 , which is required for all Electro-Mechanical Engineering Technology baccalaureate degree students. Both EMET 403 and EMET 440 require formal report writing, project documentation, and group presentations. In EMET 403 , students will present design plans to a faculty panel for review and approval. In this planning and design development process, students will be required to follow a rigorous design methodology. To support the process, EMET 403 will include instruction in the use of project management software, and students will undergo the typical process of periodic design reviews and critiques as their plans evolve. Finally, EMET 403 is a team-based course. All project designs will be prepared by teams of two or more students. Generally, these same teams will be maintained through actual completion of the project in the following project design course, EMET 440 . Because of this linkage of EMET 403 and EMET 440 , both in design plans and team structure, it is essential that students schedule EMET 403 in the semester immediately prior to the semester in which they will register for EMET 440 ."
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Fluid Mechanics and Heat Transfer",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMET326",
+          "MATH250"
+        ]
+      },
+      "description": "Introduction to the principles of fluid mechanics and heat transfer with emphasis on the application to practical problems. EMET 405 Fluid Mechanics & Heat Transfer (3) This course is designed to provide students with knowledge in fluid statics, fluid dynamics, and heat transfer. The emphasis of the course is to introduce them to the fundamental laws and principles of these engineering sciences, and to give them experience in solving problems using these laws and principles. The instructor may employ methods of differential and integral calculus as a part of selected topics. The fluid mechanics portion of the course introduces the students to fluid statics (e.g. hydrostatic pressure on submerged surfaces) and to fluid dynamics (e.g. continuity equation, energy equation, and laminar and turbulent flow). The heat transfer portion of the course introduces the three modes heat transfer: conduction, convection and radiation. It also covers an important type of heat transfer equipment, the heat exchanger."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Automated Control Systems",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH250"
+        ],
+        "concurrent": [
+          "EMET330"
+        ]
+      },
+      "description": "Introduction to analog feedback control theory and computer simulation and analysis using Matlab; laboratory study of feedback systems. EMET 410 Automated Control Systems (4) Automated Control Systems is a required course for senior-level students in the Electro-Mechanical Engineering Technology (EMET) baccalaureate degree program. The main goal of the course is to teach students the concepts of automated control by coupling theory, industrial practices, and appropriate laboratory activities. The course demonstrates that physical processes can be represented by differential equations and hence, Laplace transforms. It teaches students how to measure and modify a system's performance in a variety of ways as well as how to make use of time-domain techniques, root locus and Bode plots. Improving student communication skills is also a goal of this course. The specific EMET program outcomes addressed by the course are: OUTCOME 1: * Students will readily recognize the availability of and be able to apply electrical, fluid and mechanical analogues for use in system models. * In laboratory exercises, students will correctly design and test control systems as applied to integrated electrical and mechanical systems. OUTCOME 2: * Students will develop linear, constant coefficient, ordinary differential equations from electromechanical system models, and solve them using Laplace transform techniques. OUTCOME 6: * Students will correctly analyze and design analog control systems to meet performance requirements by using computer tools to perform root locus, frequency domain, and time domain analysis and design. OUTCOME 8: * Students will correctly design and test analog control systems, including proportional, integral and derivative (PID) feedback control and other compensators in laboratory exercises. This includes tuning PID controllers."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Programmable Logic Controls II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EET275"
+        ]
+      },
+      "description": "A second course in PLCs covering sequencing/shift instructions, program flow control, data and math instructions, PID loops, and machine communication. EMET 430 Programmable Logic Controls II (3) The objective of EMET 430 - Programmable Logic Controls (PLC) II course is to give students an in-depth understanding of the advanced control, programming, I/O, communications, and distributed processing capabilities of modem PLCs. The objective is achieved through coordinated lecture and laboratory activities. Lectures cover theoretical and operational concepts; laboratory exercises will require students to apply lecture concepts to actual control problems using real equipment. EMET 430 is a senior-level elective in the Electro-Mechanical Engineering Technology program. It is intended for those students who want to expand their PLC knowledge beyond the basics covered in required courses in the EMET curriculum. Students must have prior knowledge of basic PLC capabilities, ladder logic programming, and general methods of interfacing PLCs with external devices. This background is typically obtained via the EE T 220 - Programmable Logic Controls (or equivalent) course.By building on prior concepts of ladder logic and simple relay/contactor style programming, EMET 430 can focus on the applications, programming, and use of specialty I/O modules and advanced control technologies available in state-of-the-art PLCs. The following major topical areas will generally be covered: � advanced programming instructions related to program flow control, data manipulation, mathematical computations, and timing/sequencing functions; � use of specialty processor and I/O modules (viz., analog current and voltage I/O, digital I/O, thermocouple and RTD interface devices, specialized motor controls, etc.); � advanced technology that adapts PID capabilities to PLC systems permitting them to be used when circumstances require dynamic, closed-loop feedback control; and � standard installation and safety practices for PLC installations.Programming tasks in the course will be carried out using modern operator interface equipment and software to ensure that students understand the capabilities and limitations of those systems. The course will also examine the capabilities, flexibility, and limitations of computer-linked, distributed PLC systems, including study of the communication technologies and systems currently used by industry. Generally, a capstone student project will be used to tie all these concepts together and to give students direct, hands-on experience with actually setting up and operating a PLC-based control system.Performance in the lecture portion of the course will typically be evaluated by a combination of major exams, short quizzes, and out-of-class problem and programming assignments. Performance in the laboratory will typically be evaluated based on a series of both formal and informal lab reports documenting programming solutions to assigned control problems."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Smart Manufacturing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EET275",
+          "CMPET211",
+          "EMET330"
+        ]
+      },
+      "description": "Exploration of central concepts and technologies of smart manufacturing with focus on the internet of things, data analytics for production data, simulation and digital twins, and process and manufacturing systems optimization. Smart Manufacturing introduces the concepts and technologies of modern data-driven smart manufacturing. The purpose of the course is to empower students to incorporate smart manufacturing thinking and technologies into manufacturing processes. Key smart manufacturing topics that the student will explore include the industrial internet of things, data analytics and predictive machine learning, simulation and the digital twin, and process and manufacturing systems optimization. The course includes a laboratory component to provide students experience with implementing these technologies. The laboratory exercises are a mix of hardware development via internet of things sensor collection, software use for data analysis and visualization, numerical modeling for digital twin creation, and systemic process optimization."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Electro-Mechanical Project Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMET403"
+        ]
+      },
+      "description": "Planning, development, and implementation of electro-mechanical design project; includes formal report writing, project documentation, group presentations, project demonstrations. EMET 440 Electro-Mechanical Project Design (3) Electro-Mechanical Project Design is to provide students with theoretical and practical experience associated with the integration of the various disciplines within the field of electromechanical engineering technology. Students working in teams will employ previously developed and approved design plans to construct, demonstrate, and document an integrated, electromechanical system. Plans for designs will come from the results of the project design preparation course, EMET 403 , conducted in the immediately preceding semester. Thus students in EMET 440 are expected to have participated in the design development process that occurred in that same offering of EMET 403 Projects will be required to use a variety of electromechanical equipment, including such items as robots, machine vision systems, programmable logic controllers, personal computers, electric motors, CNC equipment, etc. Appropriate project documentation exercises, project presentations, progress reporting, budgeting and scheduling, system performance to specifications, and development of final design reports will be required elements of the course."
+    },
+    {
+      "number": 441,
+      "type": "course",
+      "title": "Mechatronics Project Design",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "EMET325",
+          "EMET326"
+        ],
+        "concurrent": [
+          "EMET410"
+        ]
+      },
+      "description": "Planning and development activities for the capstone electro-mechanical design project. Mechatronics Project Design involves working as a team member using appropriate management techniques in the investigation, analysis, and design of electromechanical systems by demonstrating the ability to allocate effectively time, responsibilities, and resources to a project. All Electro-Mechanical Engineering Technology baccalaureate degree students take EMET 441 followed by EMET 442 in the next semester. This is a 2 credit/4 contact-hour course."
+    },
+    {
+      "number": 442,
+      "type": "course",
+      "title": "Mechatronics Project Implementation",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "EMET410",
+          "EMET441"
+        ]
+      },
+      "description": "Assembly and testing activities for the electro-mechanical design project. Mechatronics Project Implementation provides students with theoretical and practical experience associated with the integration of the various disciplines within the field of electromechanical engineering technology. Students working in teams will employ previously learned material to plan, construct, and test an integrated, electromechanical system. Projects will require a variety of electromechanical equipment, including such items as robots, machine vision systems, programmable logic controllers, personal computers, electric motors, CNC equipment, etc. Appropriate project documentation exercises, project presentations, progress reporting, budgeting and scheduling, and development of final project reports will be required elements of the course. This is a 2 credit/4 contact hour course."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    }
+  ]
+}

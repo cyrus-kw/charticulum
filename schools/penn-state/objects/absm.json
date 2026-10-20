@@ -1,0 +1,383 @@
+{
+  "subject": "ABSM",
+  "objects": [
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Growing Your Future--First-Year Seminar",
+      "credits": 1,
+      "internalEquivalents": [
+        "BE100"
+      ],
+      "description": "This first-year seminar introduces students to the university in general and to the breadth of the Biological Engineering (BE) and Agricultural and Biorenewable Systems Management (ABSM) programs. Students participate in hands-on lab activities in the program focus areas, including food processing, bioproducts, machinery, agricultural systems, and natural resources. Through these lab activities and a group project, students learn how the profession is critical to providing a growing world population with food, fiber, fuel, and water under increasing environmental constraints. In addition to being introduced to Penn State as an academic community, students also become familiar with the resources, tools, and opportunities available to them. Through lab activities and in-class discussions on research, internship, and international opportunities, students meet and establish relationships with faculty, graduate students, and undergraduate students affiliated with the BE and ABSM programs."
+    },
+    {
+      "number": 104,
+      "suffix": "N",
+      "type": "course",
+      "title": "Art and Agriculture",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Arts",
+      "internalEquivalents": [
+        "ARTH104N"
+      ],
+      "description": "This course is an interdisciplinary study of the central role played by agriculture in a global history of art. We will pay attention to cultural objects made of plants and animals affected by human intervention: cordage and textiles from fibers (flax, sisal, silk, cotton, wool); dye colors from plants, trees and insects; clothing and shelter from leather; writing surfaces from hide; engineered objects from fast-growing plants like bamboo. We will consider definitions of agriculture by examining perceived distinctions between foraging and farming. Exploring images of farms and farmers, we will study fundamental preconceptions of agricultural design. The course will employ concepts and methods drawn from the natural sciences and the humanities."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 300,
+      "type": "course",
+      "title": "Introduction to Agricultural and Biorenewable Products",
+      "credits": 3,
+      "description": "This course provides an overview of the production, nature, and use of bioproducts, which are defined as products created from biologically derived, renewable industrial feedstocks. These materials are renewable and can be sustainably produced; as such, they will be increasingly used as society recognizes the opportunity cost of mining and using other non-renewable industrial feedstocks. The class focuses on evaluating biorenewable systems in the context of environmental impact, economics, and policy, as well as understanding where biorenewable resources come from and how they are produced. Students will engage with primary source material related to developing a circular economy in the US, including academic R&D reports and program plans from federal agencies such as EPA, USDA, and DOE."
+    },
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Engineering Principles of Agricultural and Biorenewable Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "PHYS211"
+        ]
+      },
+      "description": "This course provides an overview of engineering principles to students in the non-engineering Agricultural and Biorenewable Systems Management major, but who are likely to encounter challenges that require quantitative solutions. Problem solving skills are extremely important to technology. At the end of the course, students will be able to: solve problems related to agricultural and biorenewable systems using a structured, logical method combining concepts from physics and math; recognize and apply unit factoring and dimensional analysis to problem solving; quantify physical relationships and apply engineering principles to evaluate basic engineering technology problems. Hands-on examples are used throughout the course to tie the course material to applications in agricultural and biorenewable industries. This course provides the groundwork for topics explored in more detail later in the Agricultural and BioRenewable Systems Management curriculum."
+    },
+    {
+      "number": 309,
+      "type": "course",
+      "title": "Measurement & Monitoring of Hydrologic Systems",
+      "credits": 3,
+      "internalEquivalents": [
+        "ERM309"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ],
+        "concurrent": [
+          "PHYS211"
+        ]
+      },
+      "description": "This course is an introduction to measurement and monitoring equipment/techniques commonly used in analyses and design of hydrologic systems and will provide students the opportunity to learn and apply basic measurement techniques that serve as critical tools in professional practice in water resources. During the first part of the course, the instruments and techniques commonly used in water resources assessment, including rainfall monitoring, flow monitoring, and interest as part of the Sustainability Institute's Sustainable Communities Collaborative. Data generated over the course of the semester are used to develop a report that is shared, along with the data with a community partner. In the second part of the course, mapping development is explored, which serves as a critical aspect of water resources engineering and planning. ArcGIS serves as a primary software tool used in engineering design and water resources planning, and students will learn to develop maps to present and process various watershed - data including land use data, soils data, and hydrography data. Various aspects of the course will coalesce around the concept of the watershed being the basic unit of water resources analyses and design, and students will experience how various measurement techniques and approaches are necessary tools for practicing professionals. This course will be useful to any undergraduates seeking degrees in a major related to water resources planning, engineering, or technology."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Power Transmission in Agriculture",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ABSM301"
+        ]
+      },
+      "description": "After successful completion of ABSM 310 , students will apply the physical principles of mechanical power transmission system components such as shafts, belts, chains, gears, and clutches by selecting suitable mechanical drives and specifying proper maintenance procedures. Students will be able to read hydraulic and pneumatic schematics, size fluid power components such as pumps, valves, cylinders, and troubleshoot hydraulic and pneumatic systems. Students will also be able to explain the electrical and physical principles of AC and DC electric motor operation. They will be able to identify torque, speed, voltage, and current operating characteristics and will be able to select controls and circuit protection devices necessary to achieve proper performance."
+    },
+    {
+      "number": 320,
+      "type": "course",
+      "title": "Combustion Engines for Mobile Equipment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300"
+        ]
+      },
+      "description": "After successful completion of ABSM 320 , students will explain and evaluate the theoretical and practical aspects of internal combustion engines. Students will evaluate and compare alternative engine thermodynamic cycles, alternative fuels (gasoline, diesel, biodiesel, compressed natural gas), performance enhancing attachments (turbochargers, intercoolers), and supporting systems (fuel injection, lubrication, starting, cooling, emissions cleansing). Students will be able to properly select engines and related systems for mobile applications. Students will employ important maintenance procedures required for economical useful life and proper operation. Students will be able to troubleshoot engine systems."
+    },
+    {
+      "number": 325,
+      "type": "course",
+      "title": "Conservation-related agricultural structures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS211",
+          "MATH140"
+        ]
+      },
+      "description": "This course delves into the expanding importance of sustainable agriculture, focusing on the plan of agricultural structures that can improve livestock and crop management, reduce soil erosion and runoff, and protect stream quality. You will identify the needs of various conservation-related structures on farms, such as fence, stream crossing, roofed heavy-use area, waste storage facility, mortality composting facility, livestock watering system, and agrochemical handling facility. You will learn how to survey these structures to solve water and soil issues while meeting farmers' needs. You will gain agricultural conservation professional skills to understand how various structures are planned through real-world visits and hands-on practices. Specific topics covered include but are not limited to: - Heavy-use area protection practices - Waste storage facilities - Mortality composting facilities - Agrochemical handling"
+    },
+    {
+      "number": 326,
+      "type": "course",
+      "title": "Conservation and management practices in agriculture and natural resources",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS211",
+          "MATH140"
+        ]
+      },
+      "description": "This course provides a foundation for understanding natural resource challenges with a specific focus on water and soil. You will learn to inventory resource challenges on farms using aerial photos, GIS tools, and other digital resources and real-world visits. You will analyze how agricultural activities such as tillage, fertilization, and irrigation affect soil health (organic matter, structure, and erosion) and water quality (nitrogen, phosphorus, and sediment levels). You will identify various best management practices (BMPs) to address the resource challenges and understand how to properly plan the practices, including no/reduced till, crop rotation, diversion, terrace, waterway, prescribed grazing, silvopasture, cover crop, stripcropping, and filter strip. You will gain hands-on planning experience by developing a site-specific conservation plan that serves both the environment and the farmer's needs."
+    },
+    {
+      "number": 327,
+      "type": "course",
+      "title": "Soil and Water Resource Management",
+      "credits": 3,
+      "internalEquivalents": [
+        "ERM327"
+      ],
+      "requisites": {
+        "concurrent": [
+          "PHYS211"
+        ]
+      },
+      "description": "This course equips students with the ability to understand land measurements, mapping, soils, hydrology, channel flow, erosion control techniques with emphasis on RUSLE2, subsurface drainage techniques, and water impoundments for use in storing water, managing stormwater, and capturing suspended sediment. The class concludes with a 3-week section on irrigation, which teaches water needs and pipe flow. Basic hydrology is presented using both the Soil-Cover-Complex and Rational Methods. Manning's equation is developed and discussed for use in understanding flow in open channels. The various components of the RUSLE2 soil erosion model are presented with emphasis in agricultural erosion. Irrigation is taught from both a supplemental agricultural and environmental perspective."
+    },
+    {
+      "number": 350,
+      "type": "course",
+      "title": "Introduction to Life Cycle Assessment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Life cycle assessment (LCA) is a quantitative approach to assessing the environmental, economic, and/or social impacts associated with the entire supply chain of a product, process, or service. LCA is a systematic and holistic approach that enables designers and planners to identify the most impactful stages of a supply chain so that we might strategically intervene to improve the system. In this course students will learn about the LCA standards developed by the International Organization for Standardization (ISO). Students will also develop estimation, data verification skills, how to consider uncertainty in analysis, and learn how materials and energy flows lead to impacts to ecological and human systems. Over the course of the semester students will build their own LCA project by finding appropriate data, developing a life cycle inventory, entering data into LCA software, completing an impact assessment, and finally analysis and interpretation of the results generated. LCA is a flexible methodology and students will be encouraged to focus their project on a topic relevant to their broader learning and career objectives. Learning to complete an LCA also develops critical thinking skills, or life cycle thinking, which enables people to develop the skillset to pay attention to the larger system in which they are working in order to develop the human, materials and energy transactions that can lead to more renewable and sustainable systems. Class projects will allow the students to apply LCA to biorenewable systems, including agricultural and biological processes and product development."
+    },
+    {
+      "number": 391,
+      "type": "course",
+      "title": "Communication Skills for BE and ABSM Students",
+      "credits": 2,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Writing and Speaking",
+      "internalEquivalents": [
+        "BE391"
+      ],
+      "description": "This course is one part of a two-semester experience in discipline-specific communication and leadership skills training. A key facet of this training is contextual approach. To meet the needs of BE and ABSM students, the course emphasizes communication skills that are critical for their professional development, appreciating the technical content of students' work and the industries within which the students will ultimately work. The primary focus for this course is communication skills (oral and written) with a secondary focus on leadership and career skills. Students will be evaluated through various methods, such as writing and speaking projects, professional presentations, written homework and worksheets in class and out, creation of portfolios and reports, and in-class group and individual exercises. This course provides a foundation in General Education, Writing and Speaking (GWS) for students in the Biological Engineering (BE) and Agricultural and Biorenewable Systems Management (ABSM) majors."
+    },
+    {
+      "number": 392,
+      "type": "course",
+      "title": "Leadership and Ethics for BE and ABSM Students",
+      "credits": 2,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Writing and Speaking",
+      "internalEquivalents": [
+        "BE392"
+      ],
+      "description": "This course is the second half of a two-semester experience in leadership, ethics, and communication skills training, following ABSM/ BE 391 . Course modules focus on leadership and communication needs of industry within its corresponding technical content thereby representing a complete contextual approach. The primary focus of this course is on leadership, with communication, ethics, sustainability, and professional development issues presented in the context of how they relate to leadership. Topics developed for this course include personal development, ethical decision-making, corporate social responsibility, strategic group management, facilitation, and diversity."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Foundations of Sustainable Business",
+      "credits": 3,
+      "internalEquivalents": [
+        "ERM402"
+      ],
+      "requisites": {
+        "previous": [
+          "ECON102"
+        ]
+      },
+      "description": "This course will provide students with an understanding of how environmental and sustainability issues are impacting business strategies and ultimately profits. We will also examine the external stakeholders, such as environmental groups, policy-makers, and \"green\" consumers, that impact business management. Business students will benefit by a better understanding of environmental/sustainability issues that impact their operations and strategies. Non-business students will benefit by understanding how business decisions can impact the natural environment. An emphasis will be on a thorough understanding of making a business case for sustainability. We will also discuss the triple bottom line and its use. Some Specific Issues to Cover: 1. How are organizations shifting business models to work with sustainability trends? 2. How can we make a business case (justification) for being \"green\"? 3. Can firms differentiate themselves by being responsible/sustainable? Do consumers and other stakeholders care? 4. Thorough understanding of stakeholders and how they impact operations. 5. How can the \"business\" side of the world work with the \"environmental\" side? 6. Use of packaging as an example of where parts of the supply chain are working together to be more sustainable. 7. How \"waste\" in its many forms can be seen as a surrogate for unsustainable practices. 8. Pros and cons of metrics used to measure sustainability. 9. Impacts of business operations on the environment."
+    },
+    {
+      "number": 411,
+      "type": "course",
+      "title": "Bioproducts Science and Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "ABSM350"
+        ]
+      },
+      "description": "This course investigates fundamental aspects of biorenewable polymers (bioproducts) and ties their underlying chemical structure to macroscale properties. These bioproducts are created from biologically derived, renewable industrial feedstocks such as wood, cotton, grasses, and bast fibers (e.g. jute, hemp, kenaf, sisal, etc.). The course begins with an overview of descriptive organic chemistry that is relevant to biorenewable polymers. Students will build on this knowledge to identify, compare, and contrast various industrially relevant plastics. Material science of polymers, including determining molecular weights and measuring mechanical properties of bioproducts is then investigated. These properties are relevant to compare the performance of existing plastics with emerging bioproducts. A survey of the several classes of synthetic and natural polymers, fibers, and composites is the focus of the third unit in the class. Final course subjects include manufacture of soft materials and their decomposition to form recalcitrant waste and microplastics. These will be discussed in the context of 21st-century western culture predicated on the existence of cheap and disposable plastic products, and how design and deployment of new bioproducts could eliminate plastic waste, reduce the environmental impact of plastics, and enhance the economics of industrial biorefining."
+    },
+    {
+      "number": 417,
+      "type": "course",
+      "title": "Processing and Manufacturing Systems for Bioproducts",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABSM300",
+          "ABSM301"
+        ]
+      },
+      "description": "Overview of systems and processes used in the manufacture of bioproducts. This course reviews major bioproducts and details how they are manufactured industrially. A fundamental understanding of petrochemical refining, pulp and papermaking, and sawmill operations is the foundation of the beginning of the course, since the majority of existing and emerging bioproducts are manufactured using these processes or new hybrids of these. Next, thermochemical conversion of biomass is covered, including existing technologies such as torrefaction and barrel production, and emerging technologies such as catalytic fast pyrolysis and biomass gasification. Students will then prepare and deliver presentations on traditional and emerging wood and paper products. The final portion of the course will include biomass fractionation technologies that provide cellulose, hemicellulose, and lignin to produce fuels and chemicals in a manner analogous to petrochemical refining."
+    },
+    {
+      "number": 420,
+      "type": "course",
+      "title": "Principles of Off-Road Machines",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME360"
+        ]
+      },
+      "description": "ABSM 420 covers the technical aspects of off-road power machinery, such as tractors, self-propelled harvesters, and military, logging and construction equipment. Upon successful completion, students will understand the many facets of design and management of such vehicles (such as mechanical power generation, power allocation, power transmission, traction, operator enclosures, and electrical and electronic systems). Laboratory exercises will involve full-scale equipment with instrumentation used to measure performance. While ABSM 420 is not a prerequisite for any other course, it complements engineering and technology courses related to machinery. This course is a technical selection in the Biological Engineering and Agricultural and Biorenewable Systems Management majors and is required for the Off-Road Equipment minor. It complements other courses for anyone interested in the off-road machinery industries. ABSM 420 covers several aspects of function and design related to off-road machinery."
+    },
+    {
+      "number": 422,
+      "type": "course",
+      "title": "Energy Analysis in Agricultural and Biorenewable Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABSM301"
+        ]
+      },
+      "description": "This course focuses upon first understanding the various forms of energy in common use today and then analyzing the energy equivalents of various forms of energy. Forms of energy to be studied most extensively include electricity, fossil fuels, and renewable energy sources. Principles and applications of engineering economic analyses will be emphasized because these principles are needed to evaluate the feasibility of converting from one energy form to another. Applications will focus on the biorenewable systems chain, from field and forest production through green product development and distribution. For each application area, there will be discussion of the alternatives available for using energy in a more efficient and economical manner. The infrastructure systems needed for providing energy to a specific location will be described as well as typical rate structures for the energy provided. Alternatives to the conventional energy systems will be identified and the course will conclude with discussion of energy strategies throughout the 21st century. Local, national, and international perspectives on energy resources will be infused throughout this course."
+    },
+    {
+      "number": 423,
+      "type": "course",
+      "title": "Deterioration and Protection of Bioproducts",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABSM300"
+        ],
+        "concurrent": [
+          "ABSM411"
+        ]
+      },
+      "description": "Timber, wood, and bioproduct deterioration from fungi, insects, fire; treatment of bioproducts for in-service protection."
+    },
+    {
+      "number": 424,
+      "type": "course",
+      "title": "Precision Agriculture Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME330"
+        ]
+      },
+      "description": "Precision agriculture is a data-based approach to optimize crop production and reduce environmental footprint. This course provides an overview of major concepts in precision agriculture (such as GPS, GIS, remote sensing, and spatial variability) and case studies illustrating decisions and management. In this course, computer processing, data analysis and management, robotics, and other related advancements in technologies will be emphasized to provide necessary technical skills in precision agriculture to students. The first part of the course will cover agricultural machinery combined with GPS such as planters, combines, fertilizer application equipment, and sprayers. Students will learn how to manage these tools efficiently. The second part of the course will emphasize how to manage and analyze field variability data including yield data, soil properties with real-time sensors and create prescriptions based on actual data. The last part of the course will emphasize how precision agriculture technology can benefit a farm's financial sustainability."
+    },
+    {
+      "number": 426,
+      "type": "course",
+      "title": "Safety and Health in Agriculture and Biorenewable Industries",
+      "credits": 3,
+      "description": "BRS 426 explores management aspects of occupational safety and health specifically as it pertains to both the agricultural and biorenewable systems industry sectors. Employers are increasingly demanding students have training in safety and health. Topics to be covered include principles of safety and health, hazard analysis, hazard prevention and control, human behavior and safety, training and education, safety and health regulations, agricultural emergencies and developing a written safety program."
+    },
+    {
+      "number": 428,
+      "type": "course",
+      "title": "Electric Power and Instrumentation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABSM301"
+        ]
+      },
+      "description": "Nearly every facet of our modern society relies on electricity and electronics. Whether engaged in product development, manufacturing, production, testing, or management, graduates of technical programs benefit from a fundamental understanding of electrical/electronic systems. This course prepares students to analyze electrical/electronic systems applicable to agricultural and biorenewable industries. Upon completion of this course, the student will be able to: demonstrate correct use of common electronic measurement tools including multimeters, oscilloscopes and others; demonstrate sound electrical construction techniques including cable preparation, soldering, circuit board construction, and others; demonstrate sound troubleshooting skills for electrical and electronic systems; understand common elements of power distribution systems; understand simple measurement and control circuits represented by schematics or ladder diagrams; understand and apply various sensors to measure temperature, pressure, strain, force, proximity, speed etc.; understand the application of dataloggers, programmable logic controllers, and computer software to collect data and/or control simple processes; understand the function of common circuit components such as resistors, capacitors, inductors, diodes, op-amps, transistors, and transformers in simple circuits; understand basic maintenance and safety requirements for facility electrical systems."
+    },
+    {
+      "number": 429,
+      "type": "course",
+      "title": "Agricultural and Biorenewable Systems Analysis and Management",
+      "credits": 3,
+      "description": "ABSM 429 covers systems analysis and optimization techniques including an introduction to systems theory, qualitative and quantitative analysis, and management science for constrained decision-making. It includes concepts of linear programming, network models, integer and binary programming, and waiting line models. All topics are presented in the form of case studies that require the students to solve problems in realistic production and processing scenarios. ABSM students should take this course in the 7th semester (or the Fall semester of their 4th year) because it integrates knowledge and experiences acquired in prior ABSM, business, and agricultural science courses, and is critical for the capstone courses, ABSM 430W and 431W ."
+    },
+    {
+      "number": 430,
+      "suffix": "W",
+      "type": "course",
+      "title": "Agricultural and Biorenewable Systems Management Capstone 1",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ABSM391",
+          "ABSM392",
+          "ABSM429"
+        ]
+      },
+      "description": "Students in Agricultural and Biorenewable Systems Management learn to apply technology, business, and science to sustainable agricultural and biologically-based product systems development and management. The capstone experience is a two semester, 4th year sequence required of all ABSM students. This course is the Fall component of the sequence and introduces the student to concepts critical for analyzing real-world biorenewable systems. This includes selecting a capstone topic, technical writing review, team building, systems analysis tool application, project proposal development, and proposal presentations. The course also provides iterative writing experiences to enhance the student's ability to create technically sound and grammatically correct reports. At the end of this course, the student will be able to: Write a technically sound ABSM project proposal; be able to function in teams to address a project within the ABSM domain; be able to assess a system and apply appropriate analysis and/or business tools."
+    },
+    {
+      "number": 431,
+      "suffix": "W",
+      "type": "course",
+      "title": "Agricultural and Biorenewable Systems Management Capstone 2",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "ABSM430W"
+        ]
+      },
+      "description": "Students in Agricultural and Biorenewable Systems Management learn to apply technology, business, and science to sustainable agricultural and biologically-based product systems development and management. The capstone experience is a two semester, senior year sequence required of all ABSM students. This course is the Spring component of the sequence. The students apply quantitative systems and business tools to analyze real-world biorenewable systems, interpret the results, and provide recommendations for management decision making. The course also provides iterative writing experiences to enhance the student's ability to create technically sound and grammatically correct reports."
+    },
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Agricultural and Biorenewable Systems Management Colloquium",
+      "credits": 1,
+      "description": "This course introduces students to various aspects of the agricultural and biorenewable systems industries with an emphasis on professional career information and insights. Outside speakers will provide perspectives on current challenges, opportunities, and future trends in agricultural, bioproduct, and related industries."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Undergraduate Research",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Honors Thesis",
+      "credits": 1,
+      "description": "Independent study directed by a faculty supervisor that culminates in the production of a BioRenewable Systems honors thesis."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 1,
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

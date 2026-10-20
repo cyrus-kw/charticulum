@@ -11,7 +11,7 @@ function course(
 ): CurriculumObject {
   return {
     id,
-    kind: "course",
+    type: "course",
     title,
     credits,
     requisites: { previous: [], concurrent: [] },
@@ -43,7 +43,7 @@ export const sampleCatalog = createCatalog([
     availability: { seasons: ["spring"] },
   }),
   course("CS390", "Industry Internship", 3, {
-    kind: "experience",
+    type: "experience",
     requisites: prev("CS201"),
     categories: ["elective"],
   }),
@@ -74,12 +74,12 @@ export const sampleCatalog = createCatalog([
     genEdArea: "Humanities",
   }),
   course("SPAN-PROF", "Spanish Proficiency", 0, {
-    kind: "proficiency",
+    type: "proficiency",
     categories: ["general-education"],
     genEdArea: "Language",
   }),
   course("SOPH-REV", "Sophomore Review", 0, {
-    kind: "milestone",
+    type: "milestone",
     requisites: prev("CS102", "MATH201"),
   }),
   course("ART100", "Intro to Design", 3, { categories: ["elective"] }),

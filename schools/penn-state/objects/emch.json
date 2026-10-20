@@ -1,0 +1,322 @@
+{
+  "subject": "EMCH",
+  "objects": [
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Statics and Strength of Materials",
+      "credits": 5,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Equilibrium of particles, rigid bodies, frames, trusses, beams, columns; stress and strain analysis of rods, beams, pressure vessels. E MCH 210 E MCH 210 Statics and Strength of Materials (5) This course is a combination of E MCH 211 and E MCH 213. Students taking E MCH 210 may not take E MCH 211 or 213 for credit, or vice versa. Students will learn how forces and moments acting on rigid and deformable bodies affect reactions both inside and outside the bodies. Students will study the external reactions, and their inter-relationships; the discipline of statics (E MCH 211), as well as the associated internal forces and deformations, quantified by their corresponding stresses and strains; the discipline of strength of materials (E MCH 213). The student will be able to analyze and design simple structural components based bon deflection, strength, or stability. Students will be prepared to analyze and design simple structures and take upper division courses in mechanics of materials and structural analysis and design. Students will communicate their analysis through the use of free-body diagrams and logically arranged equations."
+    },
+    {
+      "number": 210,
+      "suffix": "H",
+      "type": "course",
+      "title": "Statics and Strength of Materials, Honors",
+      "credits": 5,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Equilibrium of particles and rigid bodies, frames, trusses, beams, columns; stress and strain analysis of rods, beams, pressure vessels. E MCH 210H E MCH 210H Statics and Strength of Materials, Honors (5) This honors course is a combination of E MCH 211 and E MCH 213. Students taking E MCH 210H may not take E MCH 211 and 213 for credit, or vice versa. The same general topics are covered as in E MCH 210, but in a more advanced fashion and with more advanced applications. Students will learn how forces and moments acting on rigid and deformable bodies affect reactions both inside and outside the bodies. Students will study the external reactions, and their inter-relationships - the discipline of statics (E MCH 211), as well as the associated internal forces and deformations, quantified by their corresponding stresses and strains - the discipline of strength of materials (E MCH 213). The student will be able to analyze and design simple structural components based on deflection, strength, or stability. Students will be prepared to analyze and design simple structures and take upper division courses in mechanics of materials and structural analysis and design. Students will communicate their analysis through the use of free-body diagrams and logically arranged equations."
+    },
+    {
+      "number": 211,
+      "type": "course",
+      "title": "Statics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Equilibrium of coplanar force systems; analysis of frames and trusses; noncoplanar force systems; friction; centroids and moments of inertia. E MCH 211 E MCH 211 Statics (3) Engineering Mechanics is the engineering science that relates forces and moments to the motion (displacement, velocity, acceleration) of bodies. The understanding of the concepts of force, moment, and motion is essential to design efficient engineering components ranging from a bridge to a wing strut to a robot arm to the mother board of a computer. Statics (E MCH 211) is the foundational course for both Dynamics (E MCH 212), which is the study of motion and the forces causing motion, and Strength of Materials (E MCH 213), which is the study of deformation and strength design of solids. Statics will provide students with the tools and guidance to master the use of equilibrium equations and Free Body Diagrams (FBD's) and to solve real engineering problems. Students should leave this class with the ability to logically approach a variety of static engineering problems, to translate a physical situation into an analytic model, and to use various mathematical tools to determine desired information. Course topics include: introduction and vectors, problem solving, force vectors, particle equilibrium, moments/couples, equivalent systems, distributed loads/FBDs, rigid body equilibrium, trusses, frames and machines, 3-D equilibrium, friction, centroids and center of gravity, and moments of inertia."
+    },
+    {
+      "number": 212,
+      "type": "course",
+      "title": "Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH211",
+          "MATH141"
+        ]
+      },
+      "description": "Motion of a particle; relative motion; kinetics of translation, rotation, and plane motion; work-energy; impulse-momentum. E MCH 212 E MCH 212 Dynamics (3) Dynamics (E MCH 212) is the study of forces causing motion and, at least in engineering, its primary goal is the determination of loads on moving structures for the purpose of design. Dynamics will provide students with the tools and guidance to analytically model a wide variety of mechanical and structural systems. In Dynamics, this is done by drawing free-body diagrams of the relevant parts of the system and then applying the laws of Newton and Euler, laws governing material behavior, and equations describing the geometry of motion of points and bodies (kinematics) to those free-body diagrams to obtain the equations governing the motion of the system. Once a system has been modeled, Dynamics will also provide students with the tools to obtain desired information from those models by solving the equations governing the motion of the system. Topics covered in Dynamics include: kinematics of particles, application of Newton's laws to particles, energy and momentum methods for particles, kinematics of rigid bodies, application of the laws of Newton and Euler to rigid bodies, and energy and momentum methods for rigid bodies."
+    },
+    {
+      "number": 212,
+      "suffix": "H",
+      "type": "course",
+      "title": "Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH211",
+          "MATH141"
+        ]
+      },
+      "description": "Motion of a particle; relative motion; kinetics of translation, rotation, and plane motion; work-energy; impulse-momentum. E MCH 212H E MCH 212H Dynamics (3) Dynamics (E MCH 212) is the study of forces causing motion and, at least in engineering, its primary goal is the determination of loads on moving structures for the purpose of design. Honors Dynamics (E MCH 212H) will provide students with the tools and guidance to analytically model a wide variety of mechanical and structural systems. In Dynamics, this is done by drawing free-body diagrams of the relevant parts of the system and then applying the laws of Newton and Euler, laws governing material behavior, and equations describing the geometry of motion of points and bodies (kinematics) to those free-body diagrams to obtain the equations governing the motion of the system. Once a system has been modeled, Honors Dynamics will also provide students with the tools to obtain desired information from those models by solving the equations governing the motion of the system. Topics covered in Honors Dynamics include: kinematics of particles, application of Newton's laws to particles, energy and momentum methods for particles, kinematics of rigid bodies, application of the laws of Newton and Euler to rigid bodies, and energy and momentum methods for rigid bodies. In addition to what is done in Dynamics (E MCH 212), students in Honors Dynamics will typically do a project in which they design an experiment and use what they have learned to compare theory with experiment. They will also make use of modern mathematical software to solve the nonlinear differential equations obtained in their analysis of mechanical and structural systems to obtain further understanding of the behavior of these systems."
+    },
+    {
+      "number": 213,
+      "type": "course",
+      "title": "Strength of Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH211"
+        ]
+      },
+      "description": "Axial stress and strain; torsion; stresses in beams; elastic curves and deflection of beams; combined stress; columns. E MCH 213 E MCH 213 Strength of Materials (3) In this elementary course on the strength of materials the response of some simple structural components is analyzed in a consistent manner using i) equilibrium equations, ii) material law equations, and iii) the geometry of deformation. The components analyzed include rods subjected to axial loading, shafts loaded in torsion, slender beams in bending, thin-walled pressure vessels, slender columns susceptible to buckling, as well as some more complex structures and loads where stress transformations are used to determine principal stresses and the maximum shear stress. The free body diagram is indispensable in each of these applications for relating the applied loads to the internal forces and moments and plotting internal force diagrams. Material behavior is restricted to be that of materials in the linear elastic range. A description of the geometry of deformation is necessary to determine internal forces and moments in statically indeterminate problems. The underlying mathematics are boundary value problems where governing differential equations are solved subject to known boundary conditions. Students will be able to:a) Identify kinematic modes of deformation (axial, bending, torsional, buckling and two dimensional) and associated stress states on infinitesimal elements and sketch stress distribution over cross sections b) Analyze determinate and indeterminate problems to determine fundamental stress states associated with kinematic modes of deformation c) Apply strength of materials equations (and formulas) to the solution of engineering and design problems d) Recognize and extract fundamental modes in combined loading and do the appropriate stress analysis e) Extract material properties (modulus of elasticity, yield stress, Poisson's ratio) from data and apply these in the solution of problems f) Calculate the geometric properties (moments of inertia, centroids, etc) of structural elements and apply these in the solution of problems.which will enable them to solve real engineering problems."
+    },
+    {
+      "number": 296,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 302,
+      "suffix": "H",
+      "type": "course",
+      "title": "Thermodynamics, Heat Conduction, and Principles of Modeling, Honors",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "PHYS211"
+        ]
+      },
+      "description": "EMCH 302H is a required course for engineering science students. This course presents the fundamental principles of classical thermostatics, thermodynamics, and heat transfer with relevant engineering applications. The students are expected to develop skills necessary to apply these principles to common engineering problems involving properties of matter, energy, non-reacting mixtures, and energy transport. The classical thermostatics and thermodynamics instruction will typically take 9 weeks. Control volume analysis techniques are introduced for closed and open systems undergoing both quasi-static and dynamic processes. The techniques are applied to analyze common power and refrigeration cycles, including gas and vapor systems. Diffusion in fluid and solid mixtures will also be considered. Special attention will be devoted to the notions of Helmholtz and Gibbs free energies as well as enthalpy. Use and significance of these concepts constitutive theories of gas, fluid, and solid materials systems will be discussed. The heat transfer component of the course will typically take 4 weeks. Instruction on heat transfer, will cover the three classical modes of heat transfer: conduction, convection, and radiation. Heat exchangers and heat transfer from extended surfaces are presented at a very basic level. Two weeks will be devoted to an introduction to statistical thermodynamic concepts in which a thermodynamic system is viewed as an ensemble whose state can be characterized in phase space. Enough background will be provided to compare and contrast the classical and statistical notions of entropy."
+    },
+    {
+      "number": 315,
+      "type": "course",
+      "title": "Mechanical Response of Engineering Materials",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Mechanical response measures and design theories for engineering materials; elastic and plastic response as affected by stress, strain, time, temperature. E MCH 315 E MCH 315 Mechanical Response of Engineering Materials (2) The main goal of E MCH 315 is to present mathematical models to describe mechanical behavior of materials and develop skills relevant to understanding the mechanical response of an engineering design using realistic materials. Engineering analysis is emphasized by introducing various material responses to external factors including static loading, cyclic loading, and elevated temperatures. The student will gain a broad base in this area that serves as a foundation for subsequent employment in systems design and testing, or further study in engineering analysis, mechanical design, materials engineering or materials selection. E MCH 315 is an extremely useful and versatile class that has many applications in all engineering disciplines. The general topics include: elastic, viscoelastic, plastic, and creep deformation; temperature effects, stress based failure criteria for ductile and brittle material behavior; creep rupture; fracture mechanics prediction of brittle failure; and failure by fatigue."
+    },
+    {
+      "number": 316,
+      "type": "course",
+      "title": "Experimental Determination of Mechanical Response of Materials",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "MATSE259",
+          "ME360"
+        ]
+      },
+      "description": "Experimental techniques for mechanical property measurement and structural testing. E MCH 316 E MCH 316 Experimental Determination of Mechanical Response of Materials (1) The objective of EM CH 316 is to introduce students to the relevant technology and methods used to determine the mechanical responses of engineering materials and structural components. Student teams will apply stress and strain measurement techniques; conduct tensile, torsion, creep, internal pressurization, and fatigue tests; then characterize mechanical behavior and explain the material parameters obtained. The laboratory assignments are designed to complement the lecture course E MCH 315, which must be taken as a prerequisite of concurrently."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 400,
+      "type": "course",
+      "title": "Advanced Strength of Materials and Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Combined stresses; energy methods; special problems in bending and torsion; plates; thin-walled structures; buckling and stability; design projects."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Applied and Experimental Stress Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Experimental design of structural and machine components; photoelasticity, electrical resistance strain gauge techniques, Moire techniques, interferometry, holography."
+    },
+    {
+      "number": 403,
+      "type": "course",
+      "title": "Strength Design in Materials and Structures",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Determination, interpretation, significance, and application of mechanical properties such as plastic flow, fatigue strength, creep resistance, and dynamic properties."
+    },
+    {
+      "number": 407,
+      "type": "course",
+      "title": "Computer Methods in Engineering Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Computer methods in mechanical design: solid modeling, graphics, surface smoothing/interpolation and underlying numerics: simultaneous equations, quadrature, eigen problems, discrete models. E MCH 407 Computer Methods in Engineering Design (3) E MCH 407 teaches computer methods and the use of modeling tools for doing mechanical design and the underlying numerical methods necessary to design, design analysis and development of design-related computer tools. The programming tool used in the course is MATLAB. E MCH 407 provides preparation for study of finite element analysis and professional practice. It is well suited to students who expect to work in design, manufacturing and/or project engineering. E MCH 407 is not a typical numerical methods course; for example, it treats solution of differential equations using finite differences only as minor application. Nonetheless the mathematics is at times rather abstract. Course Objectives (labels for ABET criterion met are appended to each objective). Students will be able to: � Apply methods prerequisite to finite element analysis to solve well-defined problems (a, e, f, g, i, k) � Generate splines and curves for the smoothing of surfaces (a, b, e, f, g, h, i, j, k) � Write computer code to do computer graphics and object manipulation (a, c) � Do solid modeling, create rapid-prototypes, generate meshes using a commercial package (c, e, h, j, k) � Calculate eigenvalues/eigenvectors and plot mode shapes (a, e, j, k) 2. Evaluation Methods include homework, mini-project submittals, midterm and final exams. 3. Special Facilities: E MCH 407 is taught in classrooms with computers. 4. Frequency of Offering/Enrollment: E MCH 407 is offered every spring semester. Enrollment is limited to the number of computers in the classroom."
+    },
+    {
+      "number": 409,
+      "type": "course",
+      "title": "Advanced Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "MATH230"
+        ]
+      },
+      "description": "Continuation of E MCH 012; Euler's equations for the rotation of a rigid body, gyroscopic motion, impulsive motion, Lagrangian mechanics."
+    },
+    {
+      "number": 416,
+      "type": "course",
+      "title": "Failure and Failure Analysis of Solids",
+      "credits": 3,
+      "description": "Examination and analysis of the various modes of failure of solid materials."
+    },
+    {
+      "number": 440,
+      "type": "course",
+      "title": "Nondestructive Evaluation of Flaws",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE440"
+      ],
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Methods and limitations of nondestructive evaluation of mechanical flaws; optical, acoustical, electromagnetic, x-ray, radiography, thermography, and dye techniques."
+    },
+    {
+      "number": 446,
+      "type": "course",
+      "title": "Mechanics of Viscoelastic Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH315",
+          "EMCH316"
+        ]
+      },
+      "description": "Nature of viscoelastic materials, constitutive relations, thermorheological materials, viscoelastic stress analysis, rubber elasticity, viscoelastic liquids, experimental techniques for material characterization."
+    },
+    {
+      "number": 461,
+      "type": "course",
+      "title": "Finite Elements in Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME461"
+      ],
+      "requisites": {
+        "previous": [
+          "EMCH213",
+          "CMPSC201"
+        ]
+      },
+      "description": "Computer modeling and fundamental analysis of solid, fluid, and heat flow problems using existing computer codes. E MCH (M E) 461 Finite Elements in Engineering (3) This is an introductory course in the Finite Element Method. Through this course, students gain knowledge in finite element theory and problem modeling. The mathematical formulation of the method is presented and then applied to problems in elasticity and heat transfer. Projects are assigned to demonstrate the finite element method in simplified problems using hand- calculations and computer programs such as Matlab. The use of commercial FEA programs is introduced and problems of increased complexity are assigned to demonstrate their use in a computer lab. Finally, problems of realistic complexity are assigned such that students can practice solving, documenting and presenting their use of commercial FEA programs."
+    },
+    {
+      "number": 470,
+      "type": "course",
+      "title": "Analysis and Design in Vibration Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME470"
+      ],
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "ME370"
+        ]
+      },
+      "description": "Application of Lagrange's equations to mechanical system modeling, multiple- degree-of-freedom systems, experimental and computer methods; some emphasis on design applications. In this course, students will learn basic techniques for modeling and analyzing linear multidegree-of-freedom (MDOF) mechanical systems, and will learn how to use these techniques for mechanical design. Students will learn to obtain equations of motion using energy methods (Lagrange's equations), with emphasis on the efficient formulation and reduction to the linear case. The basic theory of MDOF systems will be presented, including: eigenvalue problems; natural frequencies and normal modes; superposition and modal analysis; and frequency response. Numerical methods for solving static, dynamic and eigenvalue problems will be presented. Introductions to the theory of linear continuous systems and experimental methods of vibrations will be presented. A substantial portion of the course will be spent discussing design applications of the basic theory, such as: finite element numerical analysis and experimental modal analysis of beams and plates; vehicle suspension design; and vibration isolation and absorption."
+    },
+    {
+      "number": 471,
+      "type": "course",
+      "title": "Engineering Composite Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ]
+      },
+      "description": "Properties, manufacture, forms of composites; micromechanics; orthotropic lamina properties; laminate analysis; theories; failure analysis; thermal, environmental effects."
+    },
+    {
+      "number": 473,
+      "type": "course",
+      "title": "Composites Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH471"
+        ]
+      },
+      "description": "An introduction to the principles of mechanics governing manufacturing, computer-aided design, and testing of composite materials and structures."
+    },
+    {
+      "number": 480,
+      "type": "course",
+      "title": "Mechanism Design and Analysis",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME480"
+      ],
+      "requisites": {
+        "previous": [
+          "EMCH212"
+        ]
+      },
+      "description": "Design and analysis of mechanical linkages including kinematic synthesis and dynamic analysis. Linkages for a variety of applications are considered. M E 480 Mechanism Design and Analysis (3) The student who takes this course will develop a basic understanding of the analysis and synthesis of planar linkage mechanisms. Students will develop the ability to model real linkage mechanisms using kinematic diagrams, including identification of links and joints. They will also learn to use Gruebler's equation to calculate the mobility or number of degrees of freedom of linkages based on the kinematic diagram. Students will also become familiar with real mechanism applications in the context of mechanism synthesis, where they will learn to determine the required dimensions of a mechanism for a specific application. Students will apply these dimensional synthesis methods in a design project which includes building a simple linkage prototype. They will learn kinematic analysis methods, i.e., analysis of position, velocity, and acceleration of planar linkages. These methods consist of graphical, algebraic, and complex number approaches. Students will also learn to use commercial software packages, e.g. Working Model, to predict position, velocity, and acceleration of planar linkages, and will compare their predictions to those using analytical approaches. Finally, students will learn to do dynamic force analysis of planar linkages to predict joint forces and motor torques. They will use commercial software packages to predict joint forces and motor torques of planar linkages, and will compare their predictions to those using analytical approaches."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    }
+  ]
+}

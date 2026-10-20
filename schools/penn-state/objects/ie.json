@@ -1,0 +1,532 @@
+{
+  "subject": "IE",
+  "objects": [
+    {
+      "number": 100,
+      "type": "course",
+      "title": "Discover Industrial Engineering: First-Year Seminar",
+      "credits": 1,
+      "description": "Informational First-year on Industrial Engineering as a career choice and profession; lab exercises; guest speakers; real world problems. I E 100S I E 100S Discover Industrial Engineering: First-Year Seminar (1) (FYS)The objective of this first-year seminar course is to provide information on industrial engineering as a career choice and as a profession. It is a fact that most first-year students have never heard of Industrial Engineering (I E), or the many varied opportunities that exist within the I E major. This course explores the many aspects of the major and also offers the opportunity to interact with I E faculty and students, something that is an uncommon occurrence during the first year of engineering study.Class time is used for a variety of activities including: interactive class sessions where students work in teams to analyze and solve applied \"real-world\" problems in industrial and manufacturing engineering; I E faculty guest speakers addressing career opportunities in a particular area within I E; Lab experiences or demonstrations; Alumni guest speakers or panels; Plant tours (1 per semester); I E student panels on topics such as Co-op.The class atmosphere is relaxed and there are no examinations. Homework assignments are given throughout the semester on relevant topics."
+    },
+    {
+      "number": 302,
+      "type": "course",
+      "title": "Engineering Economy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Principles and methods for analyzing the economic feasibility of technical alternatives leading to a decision or recommendation."
+    },
+    {
+      "number": 304,
+      "type": "course",
+      "title": "Introduction to Service Systems Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "CMPSC121"
+        ]
+      },
+      "description": "This course provides an introduction to service systems engineering by focusing on various modeling techniques for describing their characteristics and evaluating their productivity and performance. Students will learn descriptive modeling of service system from the perspective of different disciplines and functions. Building on this, students will study key concepts and issues in measuring and managing productivity of service systems, especially the role of the customer in services. Large-scale services built on cloud platforms will be discussed using real-world examples. Students will conduct performance modeling studies of such service platforms using analytical and simulation approaches. Students will gain hands-on experience in computing and modeling with cloud platform."
+    },
+    {
+      "number": 305,
+      "type": "course",
+      "title": "Product Design, Specification and Measurement",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC200",
+          "MATH220",
+          "MATH230"
+        ],
+        "concurrent": [
+          "MATSE259"
+        ]
+      },
+      "description": "Principles of product design and specifications and methods for product verification. IE 305 Product Design, Specification and Measurement (3) is a 3rd year course required for all students pursuing a baccalaureate degree in Industrial Engineering. It exposes students to the principles of product design specification, manufacturing, and verification with an emphasis on mechanical products. It further exposes students to the digital thread connecting Computer Aided Design, Computer Aided Manufacturing, and Computer Aided Metrology platforms. Lastly, it exposes students to the technology, science, and computational methods used to assess product geometry, texture, and mechanical properties."
+    },
+    {
+      "number": 306,
+      "type": "course",
+      "title": "Machining Process Design & Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE305",
+          "IE322"
+        ]
+      },
+      "description": "Application of Engineering Principles for the Design and Implementation of Economic and Effective Machining Processes. Machining Process Design & Analysis is an elective course within the Department of Industrial & Manufacturing Engineering that can be used to satisfy the undergraduate, manufacturing process course requirement. Its purpose is to provide students with an in-depth experience into the science, engineering, and thought processes that are used to apply machining processes to economically convert raw materials into finished products. Students will learn how to design, analyze, implement, and troubleshoot machining processes and machining systems. Students taking this course must have previously completed IE 305 , and have knowledge of produce specification, metrology, and computer aided design tools."
+    },
+    {
+      "number": 307,
+      "type": "course",
+      "title": "Additive Manufacturing Process and Reverse Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE305"
+        ]
+      },
+      "description": "The study and application of rapid prototyping technologies in design and manufacturing. I E 307 Additive Manufacturing Process and Reverse Engineering (3) Speed to market is an essential element of competitiveness. New manufacturing technologies, driven by CAD, such as Additive Manufacturing (AM), Rapid Tooling (RT), and Reverse Engineering are making it possible for companies to significantly cut design and manufacturing cycles times. This course will explore these new manufacturing technologies, study the basic processes and their role in the design and manufacturing cycle, and provide hands on experience with these processes. Students will be able to use process models, characteristics and capabilities of specific AM processes such as Stereo Lithography Process, Fused Deposition Modeling, Selective Laser Sintering, Electron Beam Melting, and 3-D Printing to compare different processes. The students will study the use of these processes for Rapid Tooling applications for sand casting, investment casting, and injection molding. The students will be able to describe the role of CAD and Reverse Engineering in providing the data needed and current technological challenges for AM. The students will be able to develop cost models for the processes to evaluate the production economics. Students will gain hands on experience with the processes and reverse engineering through the laboratory component."
+    },
+    {
+      "number": 311,
+      "type": "course",
+      "title": "Principles of Solidification Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE305"
+        ]
+      },
+      "description": "Discussion, laboratory practices, and laboratory experiments covering principles of metal casting and joining, nondestructive testing, and nonmetallic processing."
+    },
+    {
+      "number": 312,
+      "type": "course",
+      "title": "Product Design and Manufacturing Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH213"
+        ],
+        "concurrent": [
+          "MATSE259"
+        ]
+      },
+      "description": "Theory and principles of mechanical design specification, verification, and manufacturing. Industrial engineering majors may not schedule this course."
+    },
+    {
+      "number": 322,
+      "type": "course",
+      "title": "Probabilistic Models in Industrial Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "The study and application of probability theory in the solution of engineering problems. I E 322 Probabilistic Models in Industrial Engineering (3)Probabilistic Models in Industrial Engineering is a first level junior course required for all the baccalaureate students in the Department of Industrial and Manufacturing Engineering. It exposes students to the probability theory and models and discrete and continuous probability distributions which are necessary for solving real life engineering problems with uncertainty. Reliability modeling, one such problem of interest to the manufacturers and consumers, will be taught in this course. The course will also cover sampling distributions and point and interval estimation of mean, variance and proportion. Students taking this course should be familiar with elementary algebra, and differential and integral calculus."
+    },
+    {
+      "number": 323,
+      "type": "course",
+      "title": "Statistical Methods in Industrial Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE322"
+        ]
+      },
+      "description": "The study and application of statistics in the solution of engineering problems. Statistical Methods in Industrial Engineering is a second level junior course required for all the baccalaureate students in the Department of Industrial and Manufacturing Engineering. It exposes students to the statistical tools such as estimation, testing of hypotheses, control charts, process capability indexes, gage R & R studies, simple regression and design of experiments, which are necessary for analyzing and solving real life engineering problems using data. Students taking this course should be familiar with the following topics taught in the first course in probability offered in the department. Probability concepts, Random variables, Independence, Probability Distributions (both discrete and continuous), Mathematical Expectation, Variation and Binomial and Standard Normal tables."
+    },
+    {
+      "number": 327,
+      "type": "course",
+      "title": "Introduction to Work Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ],
+        "concurrent": [
+          "EMCH211"
+        ]
+      },
+      "description": "Job analysis, cognitive and physical considerations in design of work, work measurement. Introduction to Work Design is a first level junior course required for all the baccalaureate students in the Department of Industrial and Manufacturing Engineering. It exposes students to the basic introductory tools required for analyzing and designing both the job and the worksite in a cost-effective manner, as well as measuring the resulting output. These tools include human information processing, basic auditory and visual displays, anthropometry and musculoskeletal principles, cumulative trauma disorders, work measurement and stopwatch time study. Students taking this course should be familiar with the basic concepts of cost."
+    },
+    {
+      "number": 330,
+      "type": "course",
+      "title": "Engineering Analytics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE322",
+          "CMPSC200"
+        ]
+      },
+      "description": "The study and application of Computing, Information Technology and Analytics to Industrial Engineering. IE 330 Engineering Analytics (3) Engineering Analytics is a required course for all baccalaureate students in the Industrial Engineering major. It provides students with a quantitative background in descriptive analytics which deals with data mining, predictive analytics which deals with forecasting, and the use of Big Data in analysis. Examples of analytics will be presented in various industries including manufacturing, healthcare, and distribution. The students will learn to work in settings to make data-informed decisions from large data sets. Students taking this course should be familiar with differential and integral calculus, statistics, and basic computing."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies--Industrial Engineering",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 402,
+      "type": "course",
+      "title": "Advanced Engineering Economy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE302",
+          "IE322",
+          "IE405"
+        ]
+      },
+      "description": "Concepts and techniques of analyses useful in evaluating engineering projects under deterministic and uncertain conditions."
+    },
+    {
+      "number": 405,
+      "type": "course",
+      "title": "Deterministic Models in Operations Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "Deterministic models in operation research including linear programming, flows in networks, project management, transportation and assignment models and integer programming. I E 405 Deterministic Models in Operations Research (3) This course will be an introduction to deterministic modeling. In particular, the student will learn to formulate linear programs, network models, and integer programs. The student will also learn solution strategies such as the simplex method and branch and bound. Duality and sensitivity analysis will be covered along with their economic interpretation. Optimization software will be used for solving the formulations. Practical examples along with a detailed case study will be presented to help the student to synthesize the topic. This will be a required course for all undergraduate students pursuing a baccalaureate degree in Industrial Engineering."
+    },
+    {
+      "number": 408,
+      "type": "course",
+      "title": "Cognitive Work Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE327"
+        ]
+      },
+      "description": "Design and evaluation of cognitive work, including the human/computer interface, visual displays, software design, and automated system monitoring, with emphasis on human performance. Cognitive Work Design is a senior level course offered in the Department of Industrial and Manufacturing Engineering. It is one of two courses which follow I E 327, Introduction to Work Design. This course focuses on the cognitive part of human factors and work design. This course will enable students to design, implement, and evaluate human-computer interfaces according to principles outlined in foundational human-computer interaction readings. Students will be engaged in the active learning of design, programming, and usability concepts by way of building interfaces on the personal computer. Students taking this course should be familiar with computer programming and introduction to work design."
+    },
+    {
+      "number": 418,
+      "type": "course",
+      "title": "Human/Computer Interface Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE327",
+          "CMPSC200"
+        ]
+      },
+      "description": "Design and evaluation of the human/computer interface, including human performance, visual displays, software design, and automated system monitoring. IE 418 Human/Computer Interface Design (3) The objective of this course is to enable students to design, implement, and evaluate human-computer interfaces according to principles outlined in foundational human-computer interaction readings. Students will be engaged in the active learning of design, programming, and usability concepts by way of building interfaces on the personal computer as well as on the Palm computing platform. A major component of the course is the capstone design project for which student teams will communicate with users to design, implement, and assess interfaces to improve existing work processes in an actual work domain (e.g., safety office, power plant)."
+    },
+    {
+      "number": 419,
+      "type": "course",
+      "title": "Work Design - Productivity and Safety",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE327"
+        ]
+      },
+      "description": "Methods improvement, physical work design, productivity, work measurement; principles and practice of safety. Work Design - Productivity and Safety is a senior level course offered in the Department of Industrial and Manufacturing Engineering. It is one of two courses which follow I E 327, Introduction to Work Design. This course focuses on the methods improvement physical work design, productivity, work measurement; principles and practice of safety. This course will enable students to perform work measurement: develop an MTM analysis, and carry out a work sampling study. Students taking this course are expected to understand basic concepts of work design."
+    },
+    {
+      "number": 424,
+      "type": "course",
+      "title": "Process Quality Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ],
+        "concurrent": [
+          "MATH220"
+        ]
+      },
+      "description": "Statistical methods for engineering process characterization and improvement. For non-Industrial Engineering majors. I E 424 Process Quality Engineering (3) This course will provide students with probabilistic and statistical methods required to improve the quality of products and processes. It will start with the introduction to quality culture and the key elements of quality improvement. Then the methods for data presentation and interpretation are discussed. Next, the basic probability concepts and commonly used probability distributions are taught followed by statistical concepts, such as sampling distributions, point and interval estimation, and hypotheses testing. The concepts and methods of statistical tools required for process selection and improvement such as process capability indexes and control charts are discussed next. The course ends with the coverage of simple and multiple regression models."
+    },
+    {
+      "number": 425,
+      "type": "course",
+      "title": "Stochastic Models in Operations Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "IE322"
+        ]
+      },
+      "description": "This course will be an introduction to the modeling of stochastic systems. The student will learn about Poisson processes, Markov Chains, Dynamic Programming, and Queuing systems; both model formulations and solutions strategies. The students will learn several applications of these models in manufacturing and service systems, so that they can synthesize the lecture material. The student will study the topic of inventory theory, including fundamental trade-offs, economic order quantity (EOQ) modeling, and stochastic models. This will be a required course for all undergraduate students pursuing a baccalaureate degree in Industrial Engineering."
+    },
+    {
+      "number": 427,
+      "type": "course",
+      "title": "Human Systems Networks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE327"
+        ]
+      },
+      "description": "This course provides an awareness of the role of humans in systems. It builds upon a fundamental understanding of human work by situating humans within systems of other humans and things. Students will learn the fundamentals of social networks analysis methods. They will also learn to collect and compile data from humans in systems. Equipped with the fundamentals, students will then formulate task, knowledge, and social networks to represent behavior and performance in different work domains. The use of human-system networks as a descriptive mechanism will be contrasted with optimization methods to improve networks. Examples will be provided to enable students to apply the methodology in the transportation domain and in sociotechnical systems (such as a hospital)."
+    },
+    {
+      "number": 428,
+      "type": "course",
+      "title": "Metal Casting",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE305",
+          "MATSE259"
+        ]
+      },
+      "description": "This course is designed to provide a fundamental understanding of contemporary metalcasting science and technology principles through integrated lecture and laboratory experiences. Lectures will focus on the primary manufacturing steps for producing castings -- patternmaking and runner system design, molding systems, melt practices and solidification science, and the application of Industrial Engineering principles for efficient casting production. Laboratory instruction includes the use of foundry laboratory facilities, 3D sand printing facilities, and solidification/flow modeling simulation software. Students perform structured casting experiments in lab and work in project teams to develop effective gating and risering systems for metal castings based on both simulation and laboratory results."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Introduction to Healthcare Systems Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE304",
+          "IE323",
+          "IE405"
+        ],
+        "concurrent": [
+          "IE330"
+        ]
+      },
+      "description": "The objective of this course is to equip students with both domain knowledge about healthcare systems and the skills of applying quantitative modeling techniques for tackling application problems specific to the healthcare domain. This course exposes students to the contextual knowledge about the structure, finance, and operations of healthcare systems and provides students with the understandings of decision-making from different perspectives within the healthcare systems. It introduces common types of data used in healthcare settings, measures for health outcomes, and the framework of health economic evaluation. This course also emphasizes applications of quantitative modeling techniques ranging from statistical analysis, data analytics, optimization, and simulation to a variety of decision problems in healthcare operations and health policy settings. Students will learn to identify and formulate decision-making problems in healthcare systems, apply proper analytic tools and data sources to solve the problems, and interpret the modeling analysis results in the healthcare context. Students taking this class should be familiar with computer programming and basic mathematical modeling techniques."
+    },
+    {
+      "number": 433,
+      "type": "course",
+      "title": "Regression Analysis and Design of Experiments",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT319"
+        ]
+      },
+      "description": "Theory and Application of Regression Analysis and Design of Experiments to build models and optimize process and product parameters. This is an elective course for the baccalaureate students in the Department of Industrial and Manufacturing Engineering. It exposes students to the two important statistical tools which are regression analysis and design of experiments. Topics include simple and multiple regression analysis (matrix formulation), diagnostics, prediction, Analysis of Variance, Blocking, and Fractional Factorial designs. Students taking this course should be familiar basic matrix computations and with the following topics taught in the second course in probability and statistics offered in the department: properties of point estimators, sampling distributions, and test of hypotheses."
+    },
+    {
+      "number": 434,
+      "type": "course",
+      "title": "Statistical Quality Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT319"
+        ]
+      },
+      "description": "Statistical techniques for univariate and multivariate monitoring of independent and autocorrelated processes; foundations of quality control and improvement. I E 434 Statistical Quality Control (3) This course is about the use of modern statistical methods for process and product improvement. The goal is to impart a sound understanding of the principles and basis for applying them in a variety of practical situations in manufacturing and service fields. The course will give an overview of the basic statistical methods and then concentrate on some of the more useful recent developments including univariate and multivariate techniques to monitor autocorrelated data, analyzing process capability, and improving process quality in short-run environments. The course objectives are to: (1) understand the assumptions and theoretical foundations of process monitoring; (2) know how to select, set up, and use monitoring charts effectively depending on the system characteristics; and (3) understand the basic business and economic principles of process monitoring."
+    },
+    {
+      "number": 435,
+      "type": "course",
+      "title": "Pricing and Demand Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE405"
+        ],
+        "concurrent": [
+          "IE330"
+        ]
+      },
+      "description": "This course provides a broad exploration of improving profitability for organizations using revenue- and demand-based strategies. After a brief introduction to the time value of money, it investigates the topics of customer demand and choice, traditional and dynamic pricing methods, auction methods, customer-based strategies such as bundling and customization, and how to determine service charges for service activities. It considers the various factors that influence how and why customers make the decisions they do for service-based products, particularly in relation to their utility for transactions. Building on these insights, students will be able to develop various pricing and other customer-based strategies that help to improve profitability for service industries that use either traditional or dynamic pricing strategies. Students will be able to apply these strategies to a variety of service industries including the logistics, hospitality, healthcare, and retail industries."
+    },
+    {
+      "number": 436,
+      "type": "course",
+      "title": "Six Sigma Methodology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT319"
+        ]
+      },
+      "description": "Techniques for structured problem-solving to improve the quality and cost of products and processes. I E 436 Six Sigma Methodology (3) Six Sigma is a structured, quantitative approach to improving the quality and cost of products and processes. It provides a framework for quality improvement that builds upon statistical tools to achieve business results. Although statistical techniques are emphasized throughout, the course has a strong engineering and management orientation that will prepare students for synthesizing the material that comprises the Six Sigma body of knowledge. Important aspects of the Six Sigma approach include a strong focus on the customer, proactive management, fact-based decision-making, and interdisciplinary collaborations. The course objectives are: (1) to give students a fundamental understanding of and experience with solving a problem using the structured problem-solving approach of Define-Measure-Analyze-Improve-Control (DMAIC); (2) to provide an opportunity for students to solve or be involved with solving business problems with statistical tools; and (3) to help students build confidence in their business sense and statistical skills."
+    },
+    {
+      "number": 453,
+      "type": "course",
+      "title": "Simulation Modeling for Decision Support",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC200",
+          "IE323",
+          "IE425"
+        ]
+      },
+      "description": "Introduction of concepts of simulation modeling and analysis, with application to manufacturing, production and service systems. It is the third course in operations research offered to the undergraduate students. The objective of this course is for students to learn to appropriately apply discrete event simulation modeling for decision support in industrial engineering problems through developing skills in model building using a discrete event simulation application program, simulation output analysis, and communication of technical information and conclusions drawn from data analysis. Students taking this course should be familiar with computer programming and operations research techniques."
+    },
+    {
+      "number": 456,
+      "type": "course",
+      "title": "Industrial Robot Applications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "ME360"
+        ]
+      },
+      "description": "Introduction to robotics, with emphasis on robot selection, programming, and economic justification for manufacturing applications. I E 456 Industrial Robot Applications (3)This course is a technical elective, and is normally taken by students in their Senior years. In this course, students learn about present and future status of robot applications, and are required to apply fundamental knowledge of physics and mathematics to develop software to analyze and control robots. The course deals with mechanics and control of robot manipulators and wheeled mobile robots. First, students are taught to analyze 3-D kinematics, statics and dynamics of robot manipulators. Then, control algorithms for robot manipulators are presented. Sensors, actuators and softwares used in industrial robots are discussed. In the end, kinematics and control of wheeled mobile robots are presented. During this course, application of computer, particularly Matlab, is emphasized as much as possible."
+    },
+    {
+      "number": 458,
+      "type": "course",
+      "title": "Manufacturing and Design of Nano Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDSGN100"
+        ]
+      },
+      "description": "This is an advanced undergraduate course on the manufacturing and design of advanced devices at the nano- or micro-scale. The topic covers many disciplines in engineering and science, including: nanotechnology, nanomaterials, nano- or micro-scale sensors and actuators, energy storage devices, and subtractive and additive processing. Upon completion of this course, students will understand the scaling effect, design principles of nano-or micro-devices, fabrication methods, and their practical applications."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Service Systems Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE322",
+          "IE405"
+        ]
+      },
+      "description": "Use of quantitative models and methods for analysis, design and control of service systems. I E 460 Service Systems Engineering (3) This course focuses on using operations research methods such as mathematical programming, network analysis and applied probability to solve problems that arise in service systems. The lecture topics will include measuring service quality, methods for evaluating service systems, financial engineering & portfolio optimization, supply chain design & operations, manpower planning & scheduling, and revenue management. Several case studies will be used to illustrate applications. Course grades are based on homework, case studies, mini-project, midterm and final exams."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "Concurrent Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "MATH220"
+        ]
+      },
+      "description": "Concurrent engineering methods for product/process development, capturing customer requirements, insuring manufacturability and serviceability."
+    },
+    {
+      "number": 468,
+      "type": "course",
+      "title": "Optimization Modeling and Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE405",
+          "MATH231"
+        ]
+      },
+      "description": "Mathematical modeling of linear, integer, and nonlinear programming problems and computational methods for solving these classes of problems. I E 468 Optimization Modeling and Methods (3) This course provides an analytic treatment of optimization models in linear, integer, and nonlinear programming. In particular, the course is concerned with the development of mathematical optimization models and computational solution techniques for solving these problems. The mathematical modeling of real-world applications is complemented with the use of modeling software such as LINGO or GAMS (General Algebraic Modeling System), which allows the user to readily develop large-scale mathematical models. The course also considers solution techniques for solving these optimization problems. Students will develop a basic understanding of the solution techniques through actual implementation of simple algorithms, as well as the use of commercial software such as those provided by LINDO, LINGO, and GAMS."
+    },
+    {
+      "number": 470,
+      "type": "course",
+      "title": "Manufacturing System Design and Analysis",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "IE306"
+        ]
+      },
+      "description": "Contemporary design and analysis methodologies used to organize systems for economic manufacture of products. IE 470 Manufacturing System Design and Analysis (3)Manufacturing System Design and Analysisis a senior level course in manufacturing, required for all the baccalaureate students in the Department of Industrial and Manufacturing Engineering. Students will be exposed to the contemporary techniques used to design and analyze manufacturing systems for economic manufacture of products. Students will learn to design manufacturing systems (human and automated) to satisfy differing types of product demand.Students taking this course should be familiar with introduction to manufacturing and product specifications and introduction to manufacturing process design and analysis."
+    },
+    {
+      "number": 475,
+      "type": "course",
+      "title": "Modeling and Optimization of Stochastic Service Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT380",
+          "IE405",
+          "IE425"
+        ]
+      },
+      "description": "This course will cover the analysis, modeling, optimization, and evaluation of practically occurring service systems. The first part of the course will employ a queueing-theoretic approach for modeling service systems, which will cover the modeling and simulation of arrival processes via Poisson models and their variants, steady-state analysis for service models with exponential and general service time distributions, and non-stationary arrival processes. The second part of the course will expose students to modern data-driven approaches for uncertainty modeling, scheduling, and optimization of service systems. Case studies from service systems in diverse fields including but not limited to healthcare, call centers, transportation, and computer networks will be employed to supplement and reinforce the material."
+    },
+    {
+      "number": 478,
+      "type": "course",
+      "title": "Retail Services Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE322"
+        ]
+      },
+      "description": "Objective of this course is to understand modern retail industry with focus on their operations and information technologies. The course starts with an overview of the basic types of retailing, their channels, and economics of their operations. This will be followed by an introduction to financial statements and understanding how they are used for measuring performance of retailers. Warehousing and distributions operations will be reviewed. Queuing models will be introduced and applied for staffing checkout processes and distribution centers. Mean value analysis from queuing theory will be used for rough-cut capacity planning of automated cross-docks which are now being increasingly used in retailing. Information technologies and data analytics in retail industry will be covered through exercises in class using MS Access and MS Excel VBA to give students hands-on learning experience with these techniques. Data warehouse architectures will also be discussed."
+    },
+    {
+      "number": 479,
+      "type": "course",
+      "title": "Human Centered Product Design and Innovation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE408"
+        ]
+      },
+      "description": "Consumer product design for a global market, incorporating human factors principles and user desires in a multicultural perspective. EDSGN (I E) 479 Human Centered Product Design and Innovation (3)This course will focus on consumer product design for a global market, incorporating human factors and ergonomics principles as well as user needs and emotional desires. The students will be led through product design process, various product design strategies, product planning, managing the development process, product evaluation, decision making tools, and market entry. Special emphasis will placed on user centered design, incorporating user characteristics, user needs and emotional desires (including Kansei engineering approaches), survey methodology, and usability testing. To emphasize the multicultural perspectives in today's global product design, interdisciplinary teams from two universities on opposites of the globe will apply these principles on actual industrial product designs for leading consumer product manufacturers."
+    },
+    {
+      "number": 480,
+      "suffix": "W",
+      "type": "course",
+      "title": "Capstone Design Project",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IE302",
+          "IE305",
+          "IE323",
+          "IE327",
+          "IE405"
+        ],
+        "concurrent": [
+          "IE330"
+        ]
+      },
+      "description": "Industry-based senior capstone design project emphasizing manufacturing systems, service systems, and information systems in an interdisciplinary setting. I E 480W Capstone Design Project (3) Students will develop 'real world' engineering project experience through an industry-based project. Projects will focus on manufacturing systems, service systems, and/or information systems. Students will work in teams to complete the projects, where the teams will be interdisciplinary and composed of students from within the major with different areas of expertise and students from other majors as needed. Students interested in taking this course should have senior standing and be familiar with basic principles in manufacturing, operations research, and human factors engineering. Students will be evaluated through in-class participation, and a group project that consists of weekly communication with the project sponsor along with three design reviews, interim written reports and a final report, presentation and poster.This is a Writing-Intensive course in the department and hence students will be given opportunities to practice writing throughout the semester in multiple writing assignments."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Senior Honors Thesis",
+      "credits": 1,
+      "description": "Students must have approval of a thesis adviser before scheduling this course."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies--Industrial Engineering",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

@@ -8,8 +8,16 @@
 // Objects (the "o" in the o-a system)
 // ---------------------------------------------------------------------------
 
-// A string "union" type: the value must be exactly one of these strings.
-export type ObjectKind = "course" | "experience" | "milestone" | "proficiency";
+// What sort of thing an object is. A string "union" type: the value must
+// be exactly one of these strings.
+// - course: a class with a number and credits, taken in a term (CMPSC 121).
+// - experience: work done outside a classroom that counts toward the
+//   degree, like an internship, co-op, or study abroad.
+// - milestone: a checkpoint the student passes, usually with no credits,
+//   like a sophomore review or applying to a major.
+// - proficiency: a skill shown rather than a class taken, like passing a
+//   language or placement exam.
+export type ObjectType = "course" | "experience" | "milestone" | "proficiency";
 
 export type Category =
   | "major"
@@ -66,12 +74,34 @@ export interface Availability {
   yearParity?: "odd" | "even";
 }
 
+// A course's code, in its parts: "CAS 100A" is subject "CAS", number
+// 100, suffix "A". Kept apart (not just inside the id) so courses can be
+// grouped by subject and sorted by number.
+export interface CourseCode {
+  subject: string;
+  number: number;
+  // Letters after the number, if any ("A" in CAS 100A, "W" in CMPSC 483W).
+  suffix?: string;
+}
+
+// A subject a school teaches in, e.g. { code: "CMPSC", name: "Computer
+// Science" }. Course codes start with a subject's code.
+export interface Subject {
+  code: string;
+  name: string;
+}
+
 // One plannable thing: a course, internship, milestone, or proficiency.
 // Its fields are its attributes (the "a" in the o-a system).
 export interface CurriculumObject {
   id: string;
-  kind: ObjectKind;
+  // Numbered courses have a code, and their id is its parts run together
+  // ("CAS100A"). Other objects (a milestone like SOPH-REV) have none.
+  code?: CourseCode;
+  type: ObjectType;
   title: string;
+  // What the course covers, in the school's words. Optional.
+  description?: string;
   credits: number;
   requisites: Requisites;
   // Other objects at this school that count as this one.

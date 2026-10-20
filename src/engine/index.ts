@@ -3,6 +3,7 @@
 // so the files can be reorganized without breaking anything outside.
 export * from "./types";
 export { createCatalog, satisfies } from "./catalog";
+export { compareByCode, courseCodeId, formatCourseCode, parseCourseCode } from "./codes";
 export { compareSlots, isOffered, slotBeside, slotLabel, termCalendar, type CalendarSlot } from "./availability";
 export { validateChart } from "./validate";
 export { evaluateRequirements, type RequirementReport } from "./requirements";
@@ -29,6 +30,7 @@ export {
   type CsvResult,
   type EquivalencyRow,
 } from "./equivalencyCsv";
+export { combineSchoolFiles, type SchoolFile, type SchoolFiles } from "./schoolFiles";
 export {
   chartSchema,
   loadSchool,

@@ -1,0 +1,132 @@
+{
+  "subject": "EME",
+  "objects": [
+    {
+      "number": 200,
+      "type": "course",
+      "title": "Subsurface Energy Engineering",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Natural Sciences",
+      "description": "This introductory course provides a comprehensive overview of subsurface energy resources and their engineering principles. Students will explore the energy industry, focusing on the geological and petrological aspects of subsurface reservoirs. Key topics include the origin and occurrence of hydrocarbons, the characteristics of subsurface reservoirs, low-permeability reservoirs, shale formations, heavy oil and bitumen reservoirs, natural gas hydrates, and coalbed methane. In addition, the course delves into renewable and sustainable energy sources such as geothermal energy. Students will learn about geologic carbon sequestration technologies, hydrogen geo-storage, and enhanced recovery techniques. These topics are self-contained and taught in a way that assumes no prior knowledge in this area, although having enough of a mathematical background to understand equations and formulas will be beneficial. Through a combination of lectures, case studies, and practical exercises, students will gain both a solid foundation and a broad perspective on existing and emerging practices in subsurface energy engineering. This course is a stand-alone General Education course that contributes to the General Education Learning objectives of Critical and Analytical Thinking and Integrative Thinking. Furthermore, it is a single-domain course in the Natural Sciences (GN)."
+    },
+    {
+      "number": 210,
+      "type": "course",
+      "title": "Data Analytics for Energy Systems",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "description": "Data Analytics for Energy Systems merges introductory statistics with coding through simulation-based inference. Class lectures are split between discussing the concepts and illustrating their application through coding examples. The course is highly data-centric, using mostly datasets pertaining to the energy industry or grand challenges related to energy and sustainability (although some data are generated through fun in-class exercises). The course starts by discussing different types of data and introducing students to basic coding skills to manipulate datasets and extract summary statistics. The course then moves into data visualization, discussing common types of graphical tools and the types of data for which they are appropriate. Simulation-based inference then begins around the third week with bootstrapping in the context of finding confidence intervals, which then moves into hypothesis testing through randomization distributions. The concepts from hypothesis testing carry over into chi-square tests, ANOVA, and regression, which also delves into prediction. Neural Networks and Random Forests are covered at a conceptual and applied level (not getting into the theory) towards the end of the course. The course concludes with some topics in basic probability that weren't covered earlier in the semester."
+    },
+    {
+      "number": 301,
+      "type": "course",
+      "title": "Thermodynamics in Energy and Mineral Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          "PHYS212",
+          "MATH250"
+        ]
+      },
+      "description": "Treatment of classical thermodynamics targeted to the needs of students in the Department of Energy and Mineral Engineering."
+    },
+    {
+      "number": 303,
+      "type": "course",
+      "title": "Fluid Mechanics in Energy and Mineral Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH250",
+          "PHYS211"
+        ]
+      },
+      "description": "Treatment of fluid mechanics targeted to the needs of students in the Department of EME."
+    },
+    {
+      "number": 407,
+      "type": "course",
+      "title": "Electrochemical Energy Storage",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ME300",
+          "ME320"
+        ]
+      },
+      "description": "Electrochemical concepts in energy storage devices, cell construction and materials involved in batteries and capacitors, electrochemical testing methods and applications."
+    },
+    {
+      "number": 428,
+      "type": "course",
+      "title": "Negative Emissions Technologies",
+      "credits": 3,
+      "description": "Large-scale deployment of negative emissions technologies (NET's) will be critical to minimize the worst impacts of climate change. NET's encompass technologies that can permanently sequester CO2 emissions, and specifically technologies that remove CO2 from earth systems such that the CO2 balance is net negative. This course covers fundamental technologies for carbon capture and sequestration, with a focus on integrated systems capable of achieving net-negative emissions - including bio-energy production with carbon capture and storage, and direct air capture coupled with geologic carbon sequestration or mineralization. We will integrate methods to assess emission balances and the sustainability of emerging technologies, including life cycle and techno-economic assessment, and the main course deliverable will be a guided sustainability assessment on an NET system. The goal of this course is to help students gain a broad understanding of NET pathways and learn to think critically about these complex systems, as well as the dual challenges of meeting demands for energy and CO2 emission reductions, through a lens of holistic sustainability."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Energy Policy",
+      "credits": 3,
+      "internalEquivalents": [
+        "GEOG432"
+      ],
+      "requisites": {
+        "previous": [
+          "EBF200",
+          "EGEE120",
+          "PLSC490"
+        ]
+      },
+      "description": "Analysis, formulation, implementation, and impacts of energy-related policies, regulations, and initiatives."
+    },
+    {
+      "number": 444,
+      "type": "course",
+      "title": "Global Energy Enterprise",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON104",
+          "EGEE102",
+          "EGEE120"
+        ]
+      },
+      "description": "Global Energy Enterprise provides in-depth insight into the role that public and private nonmarket actors and actions play in contemporary energy markets through a variety of artifacts and case studies. Students perform a nonmarket analysis of a current energy policy case study through series of guided steps using a well-regarded analytical framework. The course also provides an overview of technical, environmental, economic, and sociopolitical aspects of modern energy sources, as well as an overview of international energy and policy regimes."
+    },
+    {
+      "number": 450,
+      "type": "course",
+      "title": "Energy Crisis Leadership",
+      "credits": 3,
+      "description": "Energy Crisis Leadership accelerates developing leadership skills, self-awareness, confidence, and character through evidence-based and experiential learning activities. This course equips students with the tools, experience, and knowledge to navigate and manage crises in the energy, natural resources, and transportation sectors. Through immersive case studies and innovative action-based simulations, students will analyze high-profile, real-world events and tackle complex, ambiguous problems under pressure. Students consider these scenarios in global, economic, environmental, legal, and societal contexts, and recognize the ethical and professional responsibilities of the leaders involved. The semester culminates in a 24-hour crisis leadership challenge, where students synthesize their learning to manage a simulated disaster. Graduates of this course will be better equipped to think critically on their feet, maintain poise under pressure, and strategize effectively through turbulent conditions."
+    },
+    {
+      "number": 460,
+      "type": "course",
+      "title": "Geo-resource Evaluation and Investment Analysis",
+      "credits": 3,
+      "description": "The course covers engineering evaluation of geo-resources, present value and rate of return analysis, mineral property and reserve estimation, and cost estimation and engineering economy concepts applied to geo-resources including energy and minerals."
+    },
+    {
+      "number": 466,
+      "type": "course",
+      "title": "Energy and Sustainability in Society",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOG30N",
+          "GEOG432"
+        ]
+      },
+      "description": "EME 466 provides the culminating experience for Energy and Sustainability Policy majors through an individualized inquiry-based capstone project in which students tackle the wicked problems of sustainability they see and experience in their own communities. Students identify, organize, execute, and reflect on a local issue related to energy, the environment, or sustainability with particular emphasis on policy-based solutions."
+    }
+  ]
+}

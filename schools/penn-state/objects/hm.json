@@ -1,0 +1,821 @@
+{
+  "subject": "HM",
+  "objects": [
+    {
+      "number": 99,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual of group instruction."
+    },
+    {
+      "number": 100,
+      "suffix": "S",
+      "type": "course",
+      "title": "Hospitality Management First Year Seminar",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "PSU14"
+        ]
+      },
+      "description": "The purpose of the First-Year Seminar is to introduce new students to an open and purposeful learning community, and to help them develop the habits and pleasures of good scholarship. Working with faculty members, students will learn that expectations of personal integrity, level of effort, and civility at Penn State are much higher than in high school, but that there are many people, vehicles, and support to help them meet those expectations. They will learn to take charge of their own education, to plan for internships, international experiences, research, and, in general, to become active learners. This First-Year Seminar specific to Hospitality Management (HM) offers students an up-close perspective of the School of Hospitality Management (SHM) experience directly from interactions with SHM faculty. Each class period a different HM faculty member will meet with first-year students to share their personal and professional motivations for being engaged in the hospitality industry. Unique to this class will be the opportunity for students to learn how their academic program prepares them for the breadth of opportunities the hospitality profession has to offer and the positive impact both hospitality research and practice have on our communities."
+    },
+    {
+      "number": 101,
+      "type": "course",
+      "title": "Exploring the Global Hospitality Industry",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "description": "This course introduces students to the many exciting facets of the global hospitality industry, the largest service industry in the world. Students will be provided an overview of the major segments of the hospitality industry and key players, a historical perspective of the hospitality industry, and key operational issues common to most hospitality enterprises. This course will provide students with an overview of the characteristics that distinguish the hospitality industry from other industries and addresses the primary strategic and tactical issues relevant to hospitality enterprises. Current events, diversity, well-being, ethical issues related to the hospitality industry, and global trends will be integrated throughout. Ultimately, the course will provide students a broad and integrative overview of the global hospitality industry, and the opportunities for career development."
+    },
+    {
+      "number": 199,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual of group instruction."
+    },
+    {
+      "number": 201,
+      "type": "course",
+      "title": "Introduction to Management in the Hospitality Industry",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "HM202"
+        ]
+      },
+      "description": "Introduction to the hospitality industry and hospitality management. HM 201 Introduction to Management in the Hospitality Industry (3) The objectives of this course are to provide an introduction to the hospitality industry, to management practices within the industry, and to the hospitality major. Students have an opportunity to learn about the functions of management; the major components of the hospitality, travel, and tourism industries; trade associations and publications; growth areas and trends; and the need for creative leadership. Main topics typically include: functions of management and functional areas of business segments of the hospitality industry, international business as related to hospitality, services business, the planning process and strategic planning, organization design in hospitality, directing and leading in hospitality, the control process in hospitality, travel and tourism industries hospitality, hotels and lodging, the restaurant business, managed services, leisure and recreation/other hospitality opportunities, beverage management, and management ethics and social responsibility."
+    },
+    {
+      "number": 202,
+      "type": "course",
+      "title": "Colloquium in Hospitality Management",
+      "credits": 1,
+      "description": "Major industry and professional speakers lecture on current issues followed by discussion with students and faculty. HM 202 Colloquium in Hospitality Management (1) This course has two primary objectives. First, students have an opportunity to hear from industry leaders. Second, students can determine their career directions, learn about the requirements for success in the industry, and identify career opportunities. The topics for the course vary from semester to semester depending upon the expertise of the distinguished speakers who address the class. However, a common theme is to explore trends in the industry regarding hotels, restaurants, and institutional foodservice. Students may learn about related career opportunities, such as careers with cruise lines, travel agencies, and other sectors in the hospitality and tourism industry."
+    },
+    {
+      "number": 203,
+      "type": "course",
+      "title": "Hospitality Professional Development Seminar",
+      "credits": 1,
+      "description": "The purpose of this course is to provide students with professional development preparation early in the curriculum. This course will help students obtain quality work experience during their college career to best prepare them for post-graduate employment. In particular, this course is designed to prepare students for meeting the major's work experience requirement. Meaningful work experience serves as a complement to classroom learning and provides the foundation for securing employment upon graduation. This course will help students understand the connection between college work experience and full-time careers and will impart strategies for conducting a successful job search and making the most out of these work opportunities. The class will include lectures, discussions, experiential exercises, guest lectures, and professional development assignments."
+    },
+    {
+      "number": 208,
+      "type": "course",
+      "title": "Social, Cultural, and Health Influences of Alcohol",
+      "credits": 1.5,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "This course is designed to provide a historical approach to educating students on the development of alcohol and its influence on society. Alcohol is both culturally and economically significant as its usage has been a source of global trade, economic status, and political conflict. Science has proven positive and negative impacts of alcohol, which have shaped marketing, regulation, and consumption patterns. A better understanding of alcohol and its place in our society is not only educational from a historical perspective, but provides students with impactful nutritional and health knowledge regarding alcohol. By the end of this course, each student will feel more comfortable with the topic of alcohol in our society. This course will focus on how we can promote a more responsible educational process involving alcohol consumption, sale, and service. Education on alcohol can provide fundamental information that cannot only significantly improve one's well-being and quality of life, but also others."
+    },
+    {
+      "number": 209,
+      "type": "course",
+      "title": "Alcohol & Cuisine: Culture & Responsible Service",
+      "credits": 1.5,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Health and Wellness",
+      "description": "This course focuses on the relationship between alcohol and cuisine. Students will gain a historical perspective on the societal, economic, and regulatory trends that shaped the gastronomy of regional entities around the world. The course will explore the role of these trends in defining the customs, opinions, health policies, as well as the attitudes of the various cultures towards alcohol and gastronomy. Evaluating social influences and issues with the spread of food and beverage across communities will allow students to engage in thoughtful discussions regarding cultural differences related to health and wellness initiatives, regulations, and service standards. A primary goal of the class is to instill a strong sense of social responsibility by educating the students not only on the legalities of alcohol sales and service in their community, but on health and wellness issues, and more importantly, on the responsible way to serve and consume alcohol. Students will gain a worldly perspective on regional food and alcohol cultures and how this shapes policies and regulations related to health guidelines and service practices. Specific lectures will emphasize the potential liabilities nationally linked to alcohol service in private settings or organizations such as Greek life, tailgating or other social gatherings. The course will provide training and may offer professional certification in responsible sales and service of alcohol. This certificate, besides educating students on the regulations and proper alcohol service standards, is also a critical mitigating factor in problem cases involving insurance companies or legal courts."
+    },
+    {
+      "number": 210,
+      "suffix": "N",
+      "type": "course",
+      "title": "The Impact of Culture and Customs in Global Hospitality Environments",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Humanities",
+      "description": "We live, work, and travel in a world in which interactions with individuals from different cultures is increasingly common and necessary. This course investigates the differences that exist between countries and geographical regions in their cultural norms and looks at the social customs that are at the basis of proper behavior. The course draws on philosophical explorations of the importance of customs as extensions of cultural norms and morals, and on social science research into the differences between cultures. It provides students with an opportunity to see the world through the eyes of people from different cultures, and broadens their understanding of the different ways of seeing and thinking about themselves and others, and of their place in a global society. Through a greater understanding of the diverse cultural forces that influence values, behaviors, attitudes and business practices, students will develop the critical thinking skills that will allow them to successfully interact with others in personal and business environments, which are exemplified by hospitality management-specific cases. The course provides the opportunity for students, who are future managers, employees, and travelers, to become better global citizens with an appreciation of other cultures."
+    },
+    {
+      "number": 228,
+      "type": "course",
+      "title": "Hospitality Food Safety",
+      "credits": 1,
+      "description": "Application of HACCP, U.S. Food Code, biosecurity and other federal regulations to hospitality foodservice operations. Students attain certification in foodservice sanitation. HM 228 Hospitality Food Safety (1) This course will examine the science associated with preparing and serving food that is safe for consumption with regards to biological, chemical, and physical contamination. Emphasis is on federal regulations associated with HACCP, the U.S. Food Code, and other issues associated with safety of the food supply in the U.S. Case studies help students apply food safety principles to hospitality operations. Students will attain certification in foodservice sanitation by taking the examination administered by the National Restaurant Association."
+    },
+    {
+      "number": 230,
+      "type": "course",
+      "title": "Principles of Food Production Management",
+      "credits": 3,
+      "description": "This course introduces students to the food service industry, one of the biggest and most dynamic segments in hospitality. This course will prepare students with a better understanding of the food service industry as well as prepare them for future classes throughout the program. Students will learn how to integrate tools such as menu planning, standardized recipes, forecasting and budget planning to successfully drive revenues, control costs, and manage customer service. This course will also offer students hands-on experience in a professional kitchen environment while introducing them to quantity food production principles. Students will be able to understand and apply the safety, sanitation and sustainability principles in food production, storage, and food handling practices within a professional kitchen. Through a hands-on approach, students will be introduced to professional kitchen equipment and smallwares and their uses, as well as recognition of various food products commonly utilized in foodservice."
+    },
+    {
+      "number": 235,
+      "type": "course",
+      "title": "Hospitality Financial Accounting",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "Accounting, in many respects, is the language of business and translates business transactions into quantifiable information. The purpose of this course is to provide the tools as to how to use and understand this language for making informed business decisions. Areas of focus include how to analyze and record business transactions, compiling and analyzing three of the four major financial statements, banking procedures and control of cash, various issues related to the payment of employees and the introduction of how to analyze financial statements. Regardless of the functional area in the hospitality industry in which students choose to work, they will most likely be required to understand how business transactions impact the various financial statements, and how to use financial statements to make informed business decisions. Therefore, an understanding of the importance of accounting information to make informed business decisions is vital to students' future success."
+    },
+    {
+      "number": 242,
+      "type": "course",
+      "title": "Hospitality Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ]
+      },
+      "description": "This course gives an overview of marketing applied to the hospitality industry, including unique attributes of hospitality marketing; understanding consumers and the service-quality imperative; market segmentation; relationship and target marketing; promotion planning; market research; and competitor analysis. The course examines the similarities and differences in Hospitality Marketing practices across service sectors."
+    },
+    {
+      "number": 250,
+      "type": "course",
+      "title": "Principles of Quantity Food Production",
+      "credits": 3,
+      "description": "Principles and methods of quantity food production including preparation techniques, quality control and evaluation, and cost control."
+    },
+    {
+      "number": 265,
+      "suffix": "W",
+      "type": "course",
+      "title": "Teams and Leadership in the Hospitality Industry",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Social and Behavioral Sciences",
+      "requisites": {
+        "previous": [
+          "HM101"
+        ]
+      },
+      "description": "The human element is vital to the success of any organization, particularly in the hospitality industry. The purpose of this course is to provide students tools for successfully leading teams of employees to enhance organizational performance. Particular areas of focus will be on understanding motivation, individual differences, power and influence, diversity, group dynamics, and conflict management. Students will be familiarized with these content areas and will apply them through project-based work, group assignments, experiential activities, and case studies. As a writing-intensive course, special emphasis will be placed on the development of students' written communication skills. Regardless of the functional area in which students choose to work, they will be required to work with, manage, and lead other people. Therefore, an understanding of leadership and the dynamics of working in and with teams is vital to students' future success."
+    },
+    {
+      "number": 271,
+      "type": "course",
+      "title": "Hospitality Information Technology Fundamentals",
+      "credits": 2,
+      "description": "This course introduces students to the technology used in the hospitality industry and to technology concepts. To prepare students for success in the industry, the class is designed to allow students to possess a working knowledge of technology and how to best use this technology to improve the guest experience and increase an organization's performance."
+    },
+    {
+      "number": 272,
+      "type": "course",
+      "title": "Introduction to Worksheet-Based Analysis and Modeling for Managerial Decision Making",
+      "credits": 2,
+      "description": "The ability to use and apply MS Excel is a vital competency and resume builder for students to have. Companies expect it for career success and dependency on one's ability to use Excel in solving financial and managerial problems. Additionally, Excel proves to be a useful tool for managing personal finances such as budgets or transaction tracking. The use of worksheets and MS Excel is required in such diverse classes as management, marketing, finance, real estate, and entrepreneurship. This introductory course intends to provide students with beginner to intermediary knowledge of Excel and involves lectures on the basic functionality of the software. The classes make intensive use of hands-on, in-class learning exercises illustrating the topics presented in the lectures. as well as case studies."
+    },
+    {
+      "number": 280,
+      "type": "course",
+      "title": "Fundamentals of Hotel and Accommodations Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "Students will explore the typical ownership and management structures of various types of hotels. Ownership discussions include the various types of ownership entities from sole proprietorships to real estate investment trusts and large institutional owners. The role of the owner is discussed to enable students to understand how ownership entities effect their role as a hotel manager. Students will learn about franchise agreements, brand affiliations, and management companies. Students will learn how key operating departments of a typical hotel work, how the departments interrelate, work with one another to deliver exceptional guest service and profits. Discussions of the key operating departments in a hotel to include front office, housekeeping and laundry, engineering, food and beverage, and safety and security. Students will learn the key performance metrics and terminology related to the operation of the various hotel departments. Students will apply linear programming to optimize staffing and labor scheduling. Students will be provided tours of the primary operating departments, housekeeping and laundry, food and beverage, maintenance, and front office, to experience and observe operations. Students will have the opportunity to enhance their classroom learnings with observation of functioning operations. Students will explore the growth in the home sharing sector and its effect on the hotel business. Other trends and current events will be presented and discussed regarding their short- and long-term impact on the hotel business."
+    },
+    {
+      "number": 290,
+      "suffix": "W",
+      "type": "course",
+      "title": "Hospitality Managerial Communication",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM201"
+        ],
+        "minGrades": {
+          "HM201": "C"
+        }
+      },
+      "description": "Communication in organizations is essential to creating an open and collaborative environment. The premise of this course focuses on the core fundamentals of creating and delivering clear and concise business messages. Additionally, the course draws on the ability to recognize and understand the differences between communication styles that exist in a global marketplace. Students will be familiarized with types of messages and will apply their knowledge through writing, reviewing, and evaluating written and verbal messages. Particular areas of focus include creating routine business messages, preparing persuasive memos, and delivering bad news messages. Students will also be challenged to create professional reports and presentations, which are essential to influencing and informing key stakeholders. Content in this course will help students become more effective communicators and leaders, regardless of their future profession."
+    },
+    {
+      "number": 297,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual of group instruction."
+    },
+    {
+      "number": 304,
+      "type": "course",
+      "title": "Institutional Food Service Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "Institutional food service management systems in the hospitality field. HM 304 Institutional Food Service Management (3) Institutional and contract food service management is in the growth stage of the hospitality industry life cycle. The objective of this course is to provide an overview of the various segments of institutional food service, including health care, life care, education, business, transportation (i.e., airlines, cruise ships), correctional and recreational services. Main topics typically include: historical overview of institutional/non-commercial food service management, exploring key markets where institutional food service management exists, key systems used in the fundamental areas of quantity food production, current and future trends effecting institutional food service management, career opportunities in the institutional food service management sector, and managed services and multi-department management. This course is an elective in the Hospitality Management program."
+    },
+    {
+      "number": 305,
+      "type": "course",
+      "title": "Restaurant Management",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "HM201"
+        ]
+      },
+      "description": "Restaurant food service management systems in the hospitality field; analysis including cost control and quality control techniques. HM 305 Restaurant Management (3) Providing quality service and products and ultimately making a profit in a restaurant require the foodservice professional to control and analyze costs. The objective of this course is to provide an overview of the food, labor, budget, and finance information required in restaurant management. Main topics typically include: framework and function of control in foodservice operations, steps and processes of using management information systems in controlling food cost and preparation of food; forecasting and menu pricing techniques in controlling food cost in the preparation and service of food; problems associated with labor costs and analyzing various techniques and tools used to control labor cost effectively through proper staffing and scheduling; methods of controlling food and beverage cost through effective purchasing, receiving, storage, issuing, preparation, inventory, and portion control; techniques of preparation and implementation of effective budgets as control tools; ratio-analysis for analyzing cost in foodservice operations; financial statements used to monitor the financial health of a foodservice operation; and capital budgeting and how it is used. This course is required in the Hospitality Management program. The introductory course in Hospitality Management must have been completed or must be taken concurrently."
+    },
+    {
+      "number": 306,
+      "type": "course",
+      "title": "Hospitality in Senior Living",
+      "credits": 3,
+      "description": "Introduction to senior living and continuing care retirement communities and related hospitality management career opportunities. HM 306 Hospitality in Senior Living (3) This course introduces students to continuing care retirement communities (CCRC's) and senior living facilities. The course is taught from a hospitality perspective and focuses on how the application of hospitality management can enhance senior communities and their residents. The multidisciplinary content includes a variety of perspectives on designing and delivering services for seniors, including long-term care administration, geriatric nursing, adulthood and aging, therapeutic recreation, and nutrition and foodservice."
+    },
+    {
+      "number": 310,
+      "type": "course",
+      "title": "Beverage Management and Professional Service",
+      "credits": 3,
+      "description": "This course is designed to familiarize students with the beverage industry. The course will introduce students to beverage identification, production, and service strategies. The course provides the principles for responsible service, efficient processes, and profitable management of various alcoholic and nonalcoholic beverages."
+    },
+    {
+      "number": 311,
+      "type": "course",
+      "title": "Introduction to Wines of the World",
+      "credits": 2,
+      "description": "The course introduces students to viniculture and viticulture and the sensory evaluation of wine. It focuses on the complexities of production, storage, grape-growing, and the intersection of agriculture, commerce, and hospitality businesses. Special emphasis is given to the climates, topographies, and other natural conditions that make some regions more suited to certain wine cultivation than others and how these conditions are replicated around the world. It concentrates on the sensory elements of wine that make it a global economic and culture phenomenon with emphasis on Old World and New World traditions, food pairing, new entries to the marketplace, and trends in the wine business. It covers the important role wine plays in the delivery of dining experiences in both hospitality enterprises such as catering and restaurant venues as well as retail and social experiences. Wine sales makes a substantial contribution to the profitability and marketability of many food service operations. The wine industry is replete with specific and technical vocabulary that when mastered enables students to engage in wine activities knowledgably and successfully, whether as a consumer or hospitality professional."
+    },
+    {
+      "number": 318,
+      "type": "course",
+      "title": "Club Management and Operations",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "HM201"
+        ],
+        "minGrades": {
+          "HM201": "C"
+        }
+      },
+      "description": "Principles and practices of club organizations and management. HM 318 Club Management and Operations (2) This course focuses on the unique management skills that are necessary in the private club industry. A key objective is to demonstrate to students the concept of \"exceptional service\" that is demanded in this field. The course leads students on a tour of the responsibilities and operations of all departments that would be found in a city or country club. Main topics typically include: club management industry and career opportunities; types of clubs that exist in the industry, including structure, organization, and philosophy; the various departments of a successful club including but not limited to: food and beverage, accounting and cost control, human resources, marketing and promotion, catering and banquets, golf operations, tennis operations, aquatics, and fitness facilities; and management skills required of a club manager: leadership, board relations, general management, service excellence, communications. The course is required in the Professional Golf Management option in the Recreation, Park, and Tourism Management program and is a professional elective for Hospitality Management majors."
+    },
+    {
+      "number": 319,
+      "type": "course",
+      "title": "Hospitality Facilities Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM201"
+        ],
+        "minGrades": {
+          "HM201": "C"
+        }
+      },
+      "description": "Fundamental principles of facilities planning, facilities management, and maintenance for all segments of the hospitality industry. HM 319 Hospitality Facilities Management (3) This course has been designed to provide students with information related to hospitality facility design and maintenance. While managers may not have to fix equipment or install heaters, they should understand the complexity of these tasks and respect the position of the architect and hospitality engineer. Main topics typically include: principles of facility engineering and maintenance, costs associated with the life cycle of a hospitality facility; role of the manager in the planning and maintenance process; function of the building in service and marketing, impact of building design on guest service and operation; evaluation of building and grounds for compliance with the Americans with Disabilities Act of 1990; role of management in development, planning, and remodeling of food service operations; and flow of resources as exhibited in blueprints. The course is a required course for all Hospitality Management majors. Students must first complete the introductory hospitality course and the hospitality colloquium."
+    },
+    {
+      "number": 322,
+      "type": "course",
+      "title": "Introduction to Brewed Alcoholic Beverages (Beer, Cider, and Mead)",
+      "credits": 2,
+      "description": "Discover the world of brewed alcoholic beverages. Historical and cultural impacts of brewed beverages (beer, cider, and mead) resonate in nearly all parts of our society. Explore and learn about production techniques, classic and modern ingredients, flavor profiles, and sensory expectations of different brewed alcoholic beverages. Taste and discover the sensory elements that make brewed alcoholic beverages vital economic products contributing to the hospitality industry. Appreciate marketing, merchandising, packaging, and service standards incorporated by industry leaders. Recognize the significance of responsible sales and service of all alcoholic beverages, specifically brewed beverages. Discover why brewed alcoholic beverages are culturally engrained in our future."
+    },
+    {
+      "number": 330,
+      "type": "course",
+      "title": "Food Production and Operations Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM230"
+        ],
+        "minGrades": {
+          "HM230": "C"
+        }
+      },
+      "description": "This course is designed to apply management principles to foodservice production and service in a lab environment. HM 330 stresses the integration of management principles acquired in prior classes, including planning, organizing, controlling, staffing, and leading. Students will rotate in management and staff positions for the quantity production of quality food. The course draws from the students' theoretical background in accounting, management, nutrition, food production and sanitation. HM 330 integrates this content into the daily operation of a campus foodservice facility as a living laboratory."
+    },
+    {
+      "number": 336,
+      "type": "course",
+      "title": "Hospitality Managerial Accounting",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG211",
+          "HM272"
+        ],
+        "minGrades": {
+          "ACCTG211": "C",
+          "HM272": "C"
+        }
+      },
+      "description": "The course provides managerial tools for decision-making by focusing on the basic concepts, analyses, uses, and procedures of cost accounting in the hospitality industry. Managerial decision-making using accounting data is an integral part of the function of managers in the hospitality industry. The accounting function of a business generates financial data, and managers need to be able to interpret the data, analyze it and make decisions based on their interpretation and analysis of the data. This course provides the student with the core knowledge needed to understand the kinds of data generated by the financial systems of hospitality operations, prepare budgets, perform variance analysis, and provide control over the financial aspects of the hospitality business."
+    },
+    {
+      "number": 342,
+      "type": "course",
+      "title": "Marketing of Regulated Beverages",
+      "credits": 2,
+      "description": "The course provides an overview of marketing strategies pertaining to alcoholic and nonalcoholic beverages. Topics include identifying the target market, developing a competitive advantage, selecting, and implementing promotional plans and pricing techniques, and how to develop a relevant brand. Retail concepts include e-commerce, merchandising techniques, creating on-premises experiences, and building customer loyalty."
+    },
+    {
+      "number": 344,
+      "type": "course",
+      "title": "Digital Marketing for Hospitality Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM242"
+        ]
+      },
+      "description": "This class explores the consumer's decision process for hospitality purchases within the changing landscape of digital technologies. The class focuses on expanding students' knowledge of the applications of digital communications across multiple channels within the context of hospitality. Students explore how to employ digital marketing to build hospitality brands, conduct business, handle guest complaints, drive sales, and forge and maintain guest relationships."
+    },
+    {
+      "number": 350,
+      "type": "course",
+      "title": "Hospitality Revenue and Profit Optimization",
+      "credits": 3,
+      "categories": [
+        "general-education"
+      ],
+      "genEdArea": "Quantification",
+      "requisites": {
+        "previous": [
+          "HM272"
+        ],
+        "minGrades": {
+          "HM272": "C"
+        }
+      },
+      "description": "This course introduces students to the principles of revenue and profit optimization, and the methodologies and analytical techniques required to make data-driven, profit-oriented decisions across all of the major revenue streams in hospitality. Areas of focus include data analytics, pricing, demand forecasting, capacity and duration management, and distribution channel management. The overriding goal of this course is to provide students with the skills necessary to make data-driven, profit-oriented decisions."
+    },
+    {
+      "number": 355,
+      "type": "course",
+      "title": "Legal Aspects of the Hospitality Industry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "Specialized applications of law to the hospitality industry. HM 355 Legal Aspects of the Hospitality Industry (3) Laws, courts, and more generally the legal system together constitute an integral feature of the environment within which the hospitality industry operates. The objective of this course is to acquaint students with the application of law to hotels, restaurants, and institutional settings. A hospitality manager who understands the law can prevent many legal problems from occurring, including preventing injuries that may lead to lawsuits Main topics in this course typically include: types of law, judicial structure and trial procedures; conduct of legal research, including use of Web resources; legal duties of innkeepers and guests; negligence and other torts; contract law; civil rights and public accommodations, especially protections from discrimination; guests' property; regulation and licensing; employment law, especially protections from discrimination; casinos and the law; and food and alcohol service liability."
+    },
+    {
+      "number": 366,
+      "type": "course",
+      "title": "Human Resource Management in the Hospitality Industry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM201"
+        ],
+        "minGrades": {
+          "HM201": "C"
+        }
+      },
+      "description": "Hospitality is a people-intensive industry that relies on employees to provide the primary product delivered to the customer - the service experience. Therefore, the goal of this course to further develop your understanding and skill in managing people in a dynamic, diverse, and complex workplace. The course will begin by examining the strategic role of human resources in organizations and legal issues surrounding the employment relationship. The course will then shift its focus to employee recruiting, selection, training, performance, management, and compensation and benefits. In addition to addressing the fundamentals in these core areas of human resources management, current issues and trends will be explored and analyzed. The course is grounded in the foundational principles of effective in human resource management and focuses on issues relevant to the hospitality industry throughout."
+    },
+    {
+      "number": 382,
+      "type": "course",
+      "title": "Franchising in the Hospitality Industry",
+      "credits": 3,
+      "description": "The course examines franchising from the perspective of the both the Entrepreneur interested in franchising their business (Franchisor) and the Entrepreneur interested in starting a business by buying a franchise (Franchisee). Franchising is explored from legal requirements to marketing to feasibility and aptitude. Examples are included for a variety of hospitality franchise operations and franchise opportunities in other business segments. The course is oriented to the student who would like to start a business, explore buying a franchise of an existing business, or work for franchisors."
+    },
+    {
+      "number": 384,
+      "type": "course",
+      "title": "Introduction to Meeting and Event Management",
+      "credits": 3,
+      "description": "HM 384 Meetings and Events I examines the meeting and event industry, and the skill set of successful Meeting and Event Professionals. The course covers a broad overview of the processes involved in planning and implementing meetings, special events, and conferences by focusing on the basic processes of developing, planning, coordinating, implementing, and evaluating. Meetings & Events management is a viable career option within the hospitality industry. Hotels, restaurants, schools, arenas, convention centers, and retirement communities can all serve as venues for events. Events add value to organizations by creating engaging and memorable experiences for its stakeholders. Effective event managers know how to assess stakeholder objectives and design an event that meets or exceeds those objectives. With actual event case studies, the student will apply best practices in event design, promotion, management, and evaluation."
+    },
+    {
+      "number": 386,
+      "type": "course",
+      "title": "Introduction to the Gaming and Casino Industry",
+      "credits": 3,
+      "description": "HM 386 will serve as a gateway course to the casino concentration for some students and as a supplemental course for students focusing in other areas. The goal is to provide students with an overview of the commercial gaming industry with a focus on the United States gaming market. Students will be exposed to the early stages of the gaming industry in the twentieth century as well as the rapid expansion that has occurred in the last twenty years. Students will understand how casinos are structured depending on the markets they serve as well as how they are regulated. After providing the students with a framework from which to view commercial gaming, the course will provide an introduction to four important games that all contribute to casino profits. The goal will be to familiarize students with terms as well as operational knowledge necessary should they decide to pursue a career in commercial gaming. Lastly, HM 386 will serve as an entry course for the remainder of the casino concentration. This course will help students determine whether they wish to make a further commitment which will involve three additional courses and an internship."
+    },
+    {
+      "number": 388,
+      "type": "course",
+      "title": "Advanced Gaming Operations Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM386"
+        ]
+      },
+      "description": "The primary objective of this course is to build upon the fundamental understanding of the gaming industry that was introduced in the introductory course. The advanced students will gain an understanding of what it means to be a casino manager. Students will build this knowledge by working through case studies derived from actual issues that have confronted casino managers. In addition, students will continue to build their expertise in the various revenue producing games offered the casino industry. Finally, the students will continue to be exposed to some of the fundamentals of casino mathematics."
+    },
+    {
+      "number": 389,
+      "type": "course",
+      "title": "iGaming & Online Sports Betting Markets",
+      "credits": 3,
+      "description": "This course introduces students to the iGaming and online sports betting industry, one of the fastest-growing sectors in hospitality, sports and gaming. Students explore the historical and legal foundations of online gaming, U.S. regulatory frameworks, compliance requirements, technical standards, platform operations, and business models. Course topics also include customer acquisition and marketing under evolving advertising restrictions, responsible gambling practices, integrity safeguards, and emerging global trends. Assessments are designed to encourage applied learning and integration of course content. This course complements traditional casino management offerings by preparing students for careers in both land-based and online gaming environments."
+    },
+    {
+      "number": 390,
+      "type": "course",
+      "title": "Corporate Social Responsibility in Hospitality",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "This course introduces students to issues of corporate social responsibility. The course is taught from both general business and hospitality perspectives. Specifically, this course addresses the general historical development of CSR along with hospitality cases, fundamental concepts of CSR, different arguments for CSR, major frameworks of CSR, sustainability (environmental) issues, and hospitality cases and applications. The course will provide an opportunity to students for analyze the CSR programs of major hospitality companies by applying the concepts and practices of CSR discussed in the course."
+    },
+    {
+      "number": 395,
+      "suffix": "A",
+      "type": "course",
+      "title": "Penn State Hospitality Services Internship",
+      "credits": 3,
+      "description": "The on-campus internship course provides experience that will prepare students for management-level employment. This is designed to provide students with real job experience that complements their classroom learning and affords them the opportunity to apply their knowledge in real-world settings. This will be accomplished by participating in rotations as an employee, student supervisor, and Manager in Training in the daily operations in their department of Penn State Hospitality Services, and by developing their job skills specific to their internship position and personal goals. The students professional work experience offers knowledge about the hospitality industry, the chance to learn new skills, and a means to assess strengths and areas for development. Students will receive direct hands-on training in a functional area of Penn State Hospitality Services working in such areas as; front desk, housekeeping, maintenance, sales, restaurants, culinary, banquets, and marketing for 15-20 hours per week for 15 weeks. Students will also attend a 75-minute class weekly, which will feature presentations by Penn State Hospitality Services department heads, and professional development presentations."
+    },
+    {
+      "number": 395,
+      "suffix": "B",
+      "type": "course",
+      "title": "Penn State Hospitality Services Executive Internship",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM395A"
+        ]
+      },
+      "description": "The on-campus internship course provides experience that will prepare students for management-level employment. This is designed to provide students with real job experience that complements their classroom learning and affords them the opportunity to apply their knowledge in real-world settings. This will be accomplished by participating in rotations as an employee, student supervisor, and Manager in Training in the daily operations in their department of Penn State Hospitality Services, and by developing their job skills specific to their internship position and personal goals. The students professional work experience offers knowledge about the hospitality industry, the chance to learn new skills, and a means to assess strengths and areas for development. Students will receive direct hands-on training in a functional area of Penn State Hospitality Services working in such areas as; front desk, housekeeping, maintenance, sales, restaurants, culinary, banquets, and marketing for 15-20 hours per week for 15 weeks. Students will also attend a 75-minute class weekly, which will feature presentations by Penn State Hospitality Services department heads, and professional development presentations."
+    },
+    {
+      "number": 395,
+      "suffix": "C",
+      "type": "course",
+      "title": "Penn State Food Services Internship",
+      "credits": 3,
+      "description": "The on-campus internship course provides experience that will prepare students for management-level employment. This is designed to provide them with real job experience that complements their classroom learning and affords them the opportunity to apply their knowledge in real-world settings. This will be accomplished by participating in rotations as an employee, student supervisor and Manager in Training in the daily operations of Penn State Food Services, and by developing their job skills specific to their internship position and personal goals. The student's professional work experience offers knowledge about the hospitality industry, the chance to learn new skills, and a means to assess strengths and areas for development. Students will receive direct hands-on training in a functional area of Penn State Housing and Food Services for working 15-20 hours per week for 15 weeks. Students will also attend a 75-minute class weekly, which will feature presentations by Housing & Food Services department heads, professional development, and tours of the Penn State Housing & Food Services facilities."
+    },
+    {
+      "number": 395,
+      "suffix": "D",
+      "type": "course",
+      "title": "Off Campus Internship - PSHS",
+      "credits": 3,
+      "description": "The Off-campus internship course provides experience that will prepare students for management-level employment. This is designed to provide students with real job experience that complements their classroom learning and affords them the opportunity to apply their knowledge in real-world settings. This will be accomplished be participating in rotation as an employee, student supervisor and Manager in Training in the daily operations in their department. The students professional work experience offers knowledge about the hospitality industry, the chance to learn new skills, and a means to assess strengths and areas for development. Students will receive direct hands-on training in a functional area working in the hospitality industry for 15-20 hours per week for 15 weeks during Fall and Spring semesters, and 30-40 hours per week during the summer."
+    },
+    {
+      "number": 397,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual of group instruction."
+    },
+    {
+      "number": 407,
+      "type": "course",
+      "title": "The Sustainable Fork: Food Systems Decisions for Away-From-Home Eating",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "The course will incorporate economic and managerial dimensions to the discussion of food decisions in foodservice away-from-home eating contexts, particularly emphasizing the behavioral aspect of decisions - how individuals (consumers, providers, managers) make choices in the food system, and what might be the consequences of these choices. The course will use evidence from multiple farm-to-fork perspectives to allow students to analyze food systems problems and solutions. It will also require students to engage directly with the local food service system through course projects and tours. The major topics of discussion will be organized under each of the value chain components of the farm-to-fork continuum: production, distribution, purchasing, preparation, and consumption. Specific topics under each of these value chain components will include: nutrition, food safety, food waste, sustainable practices, social justice, consumer utility, economic profits, ethics, government policy, and decision-making. In particular, the course will be motivated by economic theories such as: agency relationship, information asymmetry, transaction cost economics, and behavioral economics topics such as self-rationing, and time discounting."
+    },
+    {
+      "number": 410,
+      "type": "course",
+      "title": "Professional Beverage Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM208"
+        ]
+      },
+      "description": "This advanced course explores the strategic, operational, and experiential dimensions of beverage management in hospitality settings. Students will critically examine the global beverage industry, including production, distribution, and service of alcoholic and nonalcoholic beverages. Emphasis is placed on profitability, sustainability, legal compliance, and professional service standards. Through case studies, hands-on activities, and industry engagement, students will develop advanced competencies in beverage program design, inventory control, regulatory navigation, and service innovation. The course integrates cultural, historical, and contemporary perspectives to prepare students for leadership roles in beverage-focused operations."
+    },
+    {
+      "number": 413,
+      "type": "course",
+      "title": "New Product Development for Commercial Foodservice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM230"
+        ],
+        "minGrades": {
+          "HM230": "C"
+        }
+      },
+      "description": "This course introduces students to a new product development process that requires coordination, communication, and integration throughout the organization."
+    },
+    {
+      "number": 430,
+      "type": "course",
+      "title": "Applied Leadership in Foodservice Operations Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM330"
+        ]
+      },
+      "description": "This course is designed to give students an opportunity to gain experience in the wide range of skills and techniques that are normally associated with the duties of a hospitality manager. The skills and techniques that will be emphasized include, but are not limited to, duties involved in the planning, execution, and evaluation of full-service, theme-oriented ala carte dining. Students are expected to form a marketable theme and then develop, produce, and evaluate an authentic dining experience. A successful dining experience is contingent upon both guest satisfaction and the achievement of financial goals. This course simulates technical, conceptual, and interpersonal skills required in foodservice operations. The emphasis is on group dynamics, improvement in managerial skills, and management team functions."
+    },
+    {
+      "number": 432,
+      "type": "course",
+      "title": "Contemporary Issues in Restaurant Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM201",
+          "HM228",
+          "HM230"
+        ],
+        "minGrades": {
+          "HM201": "C",
+          "HM228": "C",
+          "HM230": "C"
+        }
+      },
+      "description": "A focus on special topics and current events in the restaurant industry. HM 432 Contemporary Issues in Restaurant Management (3) The purpose of this course is to focus on contemporary issues and current events in the restaurant and food service management. The course will attempt to keep the students as updated as possible regarding the industry by covering these topics and including a discussion of current events from headline news services and other electronic references. Students gain knowledge that is applicable specifically to the restaurant and foodservice industry. This course explores the global food and drink market in today's challenging climate with analysis of trends and conditions expected to influence sales value and volume growth over the next five years. Discussion will include the impact economic shifts have on the restaurant and food service industry and the subsequent influence on consumer purchasing habits and food and drink sales over several years. This course considers food and drink New Product Development (NPD) and other vital branding, marketing and sales strategies in the context of the following challenges, issues and trends expected to influence restaurants and food service management over the years."
+    },
+    {
+      "number": 435,
+      "type": "course",
+      "title": "Hospitality Corporate Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON102",
+          "HM336"
+        ]
+      },
+      "description": "This is an introductory financial management course for the hospitality management major. The course will teach students fundamental knowledge of financial management concepts. This course will introduce a wide range of essential concepts that students can utilize to improve their decision-making and value creation abilities. The course introduces financial management Health and Human Development concepts with a focus on practical application, both in professional and personal lives. Students' ability to learn these concepts will be tested through group and individual assignments. This course focuses on conceptual and analytical knowledge and skill.. Practical knowledge will also be reinforced through in-class discussions, and periodic readings that focus on current issues in finance and hospitality."
+    },
+    {
+      "number": 446,
+      "type": "course",
+      "title": "Marketing of Regulated Beverages",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM208"
+        ]
+      },
+      "description": "This 400-level course offers an in-depth examination of marketing strategies related to alcoholic beverages. Topics include identifying the target market, developing a competitive advantage, selecting and implementing promotional plans and pricing techniques, and developing a relevant brand. Retail concepts include e-commerce, merchandising techniques, creating on-premises experiences, and building customer loyalty. This advanced course is designed for students with foundational knowledge in marketing, aiming to deepen their expertise in the regulated beverage industry."
+    },
+    {
+      "number": 480,
+      "type": "course",
+      "title": "Applied Hospitality Concepts and Decision Making",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM280",
+          "HM336",
+          "HM350"
+        ]
+      },
+      "description": "Applied Hospitality Concepts and Decision Making is designed as a capstone course in the Hospitality Operations stream. The course primarily focuses on students' participation in a hotel management simulation. The simulation requires students to consider strategic objectives through the application of revenue management, managerial accounting, human resource management, sales and marketing, and sustainability and innovation concepts. The course also devotes time to the topic of service quality and the considerations in delivering high-quality service in the hospitality experience including both theoretical perspectives and quantitative analysis (i.e., project management, process analysis). As a capstone course, the course will also keep students abreast of trends and current events in the hospitality industry."
+    },
+    {
+      "number": 481,
+      "type": "course",
+      "title": "Advanced Topics in Hospitality Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ]
+      },
+      "description": "This course will focus on advanced topics in hospitality management that are of critical importance in a dynamic and ever-changing operating environment. The content will range from topics that effect hospitality operations (design trends) to hospitality ownership (franchising) to outside factors that affect the industry (e.g., the global economy, legislative issues, corporate social responsibility, and artificial intelligence). Additional content may address current and emerging issues in the hospitality industry."
+    },
+    {
+      "number": 482,
+      "type": "course",
+      "title": "Hospitality Real Estate",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM101"
+        ],
+        "minGrades": {
+          "HM101": "C"
+        }
+      },
+      "description": "Ultimately, hospitality enterprises are location-based businesses requiring the deployment of real estate. To understand this important concept, hospitality students need to understand real estate in a hospitality industry environment. Students in HM 482 complete projects including feasibility studies for proposed hotels where they evaluate the competition, project hotel supply by future year, including evaluating and quantifying future supply additions. Then, students project hotel demand by future year by market segment, including estimating growth and any induced demand, and they calculate fair share by future year for proposed hotels. Students estimate penetration ratios by future year by market segment for proposed hotels, until stabilization, calculate occupancy by future year for proposed hotels, until stabilization, and estimate Average Daily Rate (ADR) by future year for proposed hotels, including estimating inflation. Students develop detailed financial projections by future year for proposed hotels, estimate market value for proposed hotels by applying the Income Approach, Cost Approach, and Sales Comparison Approach, conduct a Reconciliation to conclude a single, final Market Value Estimate, and compare the estimated market value of proposed hotels to the estimated development cost to conclude feasibility."
+    },
+    {
+      "number": 483,
+      "type": "course",
+      "title": "Revenue Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM350"
+        ],
+        "minGrades": {
+          "HM350": "C"
+        }
+      },
+      "description": "Students learn how to effectively implement revenue management strategies and techniques in the hospitality industry."
+    },
+    {
+      "number": 484,
+      "type": "course",
+      "title": "Hospitality Entrepreneurship and Innovation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG211"
+        ]
+      },
+      "description": "This course examines Entrepreneurship, Intrapreneurship and Innovation in the Hospitality Industry. The course provides a foundation of how ideas are generated, implemented, and taken to market. The course examines the characteristics of the entrepreneur and the process from idea generations, building a business model, preparing competitive analysis, completing a feasibility study, reviewing intellectual property, developing a business plan, seeking funding, and presentation to investors. The course is oriented to the student who would like to start a business or explore innovation within an existing organization"
+    },
+    {
+      "number": 485,
+      "type": "course",
+      "title": "Advanced Meeting and Event Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM384"
+        ]
+      },
+      "description": "Meeting and event planning is an important and viable professional career option within the hospitality industry. Each event contains all the aspects of any business venture: stakeholder analysis, operations plan, marketing plan, and financial plan. Accordingly, the execution of an event requires effective communication, teamwork, motivational, and analytical skills. Therefore, students seeking a career in event management need to possess these fundamental business skills. In this advanced, hands-on course, students will plan and execute an event, building on event management content from HM 384 : Introduction to Meeting and Event Planning. Students will be involved in all major aspects of planning and executing events, including contract negotiation, budgeting, risk management, promotion, menu planning, site selection, on-site management, sustainability, inclusivity, volunteer management, and evaluation."
+    },
+    {
+      "number": 486,
+      "type": "course",
+      "title": "Casino Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM386"
+        ]
+      },
+      "description": "The primary objective of this course is to build upon the fundamental understanding of the gaming industry that was introduced in the introductory course. The advanced students will gain an understanding of the various promotional programs currently used by the commercial gaming industry. Students will build this knowledge by working in teams to build competence and present specific programs to their classmates. In addition, students will continue to learn to evaluate marketing programs based on their incremental contributions to profits and thereby understand that some marketing approaches cannot be financially justified. Finally, the students will continue to build competence in the fundamentals of casino mathematics."
+    },
+    {
+      "number": 488,
+      "type": "course",
+      "title": "Hospitality Asset Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG211"
+        ]
+      },
+      "description": "Asset management is a growing and dynamic discipline in the hospitality industry. Asset managers are integral to the relationships between owners, managers, franchisors, franchisees, and brands. Today's owners expect asset management to function as the owner¿s representative in optimizing the value and protecting the asset. This course introduces students to asset management (\"AM\") and the role of the asset manager in global hospitality operations. The course is taught from a hospitality perspective and focuses on how asset managers usually work with hospitality asset owners and third-party providers to enhance and optimize the value of hospitality assets. The multidisciplinary content includes a variety of perspectives on asset manager helping owners and third-party operators make investment decisions, enhance asset value, review and assess contractual agreements, and be aware of ongoing global and local trends that could eventually affect the value of hospitality assets such as hotels and restaurants"
+    },
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Strategic Hospitality Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM336",
+          "HM242",
+          "HM265W"
+        ],
+        "minGrades": {
+          "HM336": "C",
+          "HM242": "C",
+          "HM265W": "C"
+        }
+      },
+      "description": "The purpose of this capstone course is to integrate previous course work to enhance students' analytical and critical thinking skills, managerial decision making skills, and an awareness of emerging trends in the hospitality industry. In particular, this course will integrate content in the areas of hospitality marketing, human resource management, organizational behavior, finance, accounting, and hospitality operations. The course offers a blend of theory and practical application of models of competitive strategy. The central questions that drive the course are: 'How do hospitality companies make strategic decisions, and how does strategy enhance the effectiveness of hospitality enterprises?' During the first half of the semester, the course will focus on the model of strategy formulation, from developing company vision and mission and setting objectives, through conducting an environmental scan, Strengths, Weaknesses, Opportunities, and Threats (SWOT) analysis, strategic analysis, and strategic choice. During the second half of the course, the focus will shift to corporate social responsibility, ethics, international strategic decision making, global hospitality management, and emerging trends in the industry."
+    },
+    {
+      "number": 490,
+      "suffix": "W",
+      "type": "course",
+      "title": "Strategic Hospitality Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HM336"
+        ],
+        "minGrades": {
+          "HM336": "C"
+        }
+      },
+      "description": "This capstone writing-intensive class integrates content from throughout the previous curriculum, focusing on strategic application to current industry issues. HM 490W Strategic Hospitality Management (3) This capstone course integrates previous courses in the curriculum and introduces students to new strategic management concepts. This course adopts a macro perspective by focusing on the total hospitality enterprise and the external competitive environment in which hospitality firms operate. The goal of the course is to develop students' analytical skills to formulate, implement, and evaluate business strategies. Using a case-based approach, the course emphasizes critical thinking and evidence-based decision making."
+    },
+    {
+      "number": 492,
+      "type": "course",
+      "title": "Advanced Professional Seminar in Hospitality Management",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "HM430",
+          "HM490W"
+        ]
+      },
+      "description": "Course prepares senior HM students to assume leadership positions in the hospitality industry (Focus on careers, leadership, ethics, lifelong learning)."
+    },
+    {
+      "number": 494,
+      "type": "course",
+      "title": "Research Project",
+      "credits": 1,
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "type": "course",
+      "title": "Senior Honors Thesis",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "STAT200",
+          "HM201"
+        ],
+        "minGrades": {
+          "STAT200": "C",
+          "HM201": "C"
+        }
+      },
+      "description": "Independent study related to a student's interests directed by a faculty supervisor and culminating in the production of a thesis."
+    },
+    {
+      "number": 496,
+      "type": "course",
+      "title": "Independent Studies",
+      "credits": 1,
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "type": "course",
+      "title": "Special Topics",
+      "credits": 1,
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "type": "course",
+      "title": "Foreign Studies",
+      "credits": 1,
+      "description": "Courses offered in foreign countries by individual of group instruction."
+    }
+  ]
+}

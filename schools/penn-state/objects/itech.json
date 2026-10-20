@@ -1,0 +1,123 @@
+{
+  "subject": "ITECH",
+  "objects": [
+    {
+      "number": 212,
+      "type": "course",
+      "title": "Artificial Intelligence Tools and Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I100"
+        ],
+        "minGrades": {
+          "A-I100": "C"
+        }
+      },
+      "description": "This course provides a hands-on introduction to the tools and workflows that power modern AI systems. Students will experiment with pretrained models, evaluate model outputs, integrate AI services into applications, and construct small AI-enabled prototypes. Ethical considerations - including bias, transparency, and accountability - are embedded throughout. By the end of the course, students will be able to apply AI tools, assess outputs, and design responsible AI workflows."
+    },
+    {
+      "number": 308,
+      "type": "course",
+      "title": "Applied IT Project Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST210",
+          "IST220"
+        ],
+        "minGrades": {
+          "IST210": "C",
+          "IST220": "C"
+        }
+      },
+      "description": "This course explores modern project management through traditional, agile, and hybrid approaches. Students analyze scope, time, cost, quality, and risk management techniques; apply project management tools; evaluate ethical considerations; and integrate technology-enabled methods for planning and monitoring. Through case studies, tool-based exercises, and a capstone project plan, students will synthesize traditional and agile methods to manage projects in dynamic environments."
+    },
+    {
+      "number": 442,
+      "type": "course",
+      "title": "Applied Artificial Intelligence Project Lifecycle",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I100",
+          "ITECH212",
+          "A-I285"
+        ],
+        "minGrades": {
+          "A-I100": "C",
+          "ITECH212": "C",
+          "A-I285": "C"
+        }
+      },
+      "description": "This advanced, project-based course guides students through the full life cycle of developing, deploying, and evaluating an AI-driven application. Working individually or in teams, students will take an applied problem from concept to implementation - moving through the stages of ideation, data acquisition and preparation, model selection and training, system integration, deployment, and post-deployment evaluation. Emphasis is placed on designing AI systems that are technically sound, ethically responsible, and aligned with user and organizational goals. By the end of the course, students will have completed and presented a fully functional AI application accompanied by documentation, testing artifacts, and a final project report, demonstrating mastery of both the technical and ethical dimensions of modern AI development."
+    },
+    {
+      "number": 457,
+      "type": "course",
+      "title": "Advanced Network and Cybersecurity Technologies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST220",
+          "CYBER221"
+        ],
+        "minGrades": {
+          "IST220": "C",
+          "CYBER221": "C"
+        }
+      },
+      "description": "This course provides a hands-on exploration of advanced network and cybersecurity technologies used to protect enterprise and cloud infrastructures. Students will configure, secure, and troubleshoot network devices; evaluate threats; interpret security events; and apply defensive strategies in realistic scenarios. Emphasis is placed on applying security tools, analyzing vulnerabilities, and implementing defense-in-depth controls across systems, networks, and virtual environments."
+    },
+    {
+      "number": 458,
+      "type": "course",
+      "title": "Information Technology Laws, Regulations, and Ethics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST110"
+        ],
+        "minGrades": {
+          "IST110": "C"
+        }
+      },
+      "description": "This course provides an in-depth examination of the legal, regulatory, and ethical frameworks governing information technology in a global digital environment. Students will analyze foundational legal concepts, evaluate statutory and regulatory requirements, interpret case law, and assess the ethical implications of technology use. Emphasis is placed on applying legal reasoning, conducting compliance assessments, and recommending responsible IT governance strategies. Through case studies and applied analyses, students will learn to synthesize legal requirements with ethical decision-making in real-world scenarios.."
+    },
+    {
+      "number": 461,
+      "type": "course",
+      "title": "Advanced Database Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST210",
+          "CMPSC122"
+        ]
+      },
+      "description": "A study of advanced topics in database management systems that are fundamental to effective administration of modern enterprise information systems. The objective of the course is to enable a student to comprehend a range of issues in modern database management and administration. This course offers an in-depth exploration of advanced database concepts and technologies, designed for students aiming to master the complexities of modern database systems. Students will engage with the full database lifecycle, from initial planning and design to implementation, optimization, and maintenance. Emphasis is placed on advanced SQL techniques, performance tuning, transaction management, and the exploration of emerging trends such as distributed databases, big data, NoSQL, and cloud databases. Prerequisite IST 210 and IST 242"
+    },
+    {
+      "number": 490,
+      "type": "course",
+      "title": "Special Topics in Information Technology: Technology Exploration and Application",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST210"
+        ],
+        "minGrades": {
+          "IST210": "C"
+        }
+      },
+      "description": "This course provides an in-depth exploration of an emerging technology shaping the information systems field. Students analyze the technology's architecture, evaluate implementation challenges, assess integration and security considerations, and design applied solutions. Through hands-on labs and a semester project, students will synthesize technical, organizational, ethical, and strategic perspectives to make informed adoption and implementation recommendations."
+    },
+    {
+      "number": 495,
+      "type": "course",
+      "title": "Internship",
+      "credits": 0.5,
+      "description": "Supervised on or off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of the student activities is required. ITECH 495 is offered as an internship for a student within a company. Faculty and industry collaborate to specify the duties of the intern. The course facilitator responsible for the course then approves the internship. The internship must consist of a minimum of 240 hours for 1 credit and 120 hours for .5 credit of meaningful information and technology-related tasks per credit hour."
+    }
+  ]
+}

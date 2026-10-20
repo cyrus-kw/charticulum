@@ -1,0 +1,37 @@
+{
+  "formatVersion": 1,
+  "school": {
+    "id": "penn-state",
+    "name": "Penn State University Park"
+  },
+  "calendar": {
+    "start": {
+      "season": "fall",
+      "year": 2026
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ]
+  },
+  "globalRequirementSets": [
+    {
+      "id": "psu-baccalaureate",
+      "name": "Penn State baccalaureate degree",
+      "scope": "global",
+      "minTotalCredits": 120,
+      "minCreditsByCategory": {
+        "general-education": 45
+      },
+      "maxCreditsPerTerm": 19,
+      "minGpa": 2,
+      "allowDoubleCounting": true,
+      "allowedOverrides": [
+        "waive-requirement",
+        "waive-requisite",
+        "substitute"
+      ]
+    }
+  ]
+}

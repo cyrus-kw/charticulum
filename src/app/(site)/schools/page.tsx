@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ImportSchoolForm, TransferTableForm } from "../../../components/site/SchoolForms";
 import { LocalTime } from "../../../components/site/LocalTime";
-import { countsByKind } from "../../../components/ui";
+import { countsByType } from "../../../components/ui";
 import { requireDatabase } from "../../../server/db";
 import { requireUser } from "../../../server/session";
 
@@ -28,7 +28,7 @@ export default async function SchoolsPage() {
               <h2 className="font-medium">{name}</h2>
               {data && (
                 <p className="text-xs text-zinc-500">
-                  {countsByKind(data.objects)} · {data.templates.length} programs · {data.equivalencyTable.length}{" "}
+                  {countsByType(data.objects)} · {data.templates.length} programs · {data.equivalencyTable.length}{" "}
                   equivalency rows
                   {/* The built-in sample has never been saved (its date is 1970). */}
                   {Date.parse(updatedAt) > 0 && (
