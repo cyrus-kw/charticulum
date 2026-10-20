@@ -12,8 +12,9 @@ const LINKS = [
 ];
 
 // The bar across the top of the site's pages (not the planner, which uses
-// the whole window). The page you're on is highlighted. Signed out (the
-// home page), it has just the wordmark and the theme button.
+// the whole window). The page you're on is highlighted. The wordmark
+// always leads to the home page. Signed out, the bar has just the
+// wordmark and the theme button.
 export function SiteHeader({ user }: { user?: MenuUser }) {
   // usePathname: the address being shown, e.g. "/schools".
   const pathname = usePathname();
@@ -25,7 +26,7 @@ export function SiteHeader({ user }: { user?: MenuUser }) {
           what keeps the middle one truly centered. Tighter gaps on phones
           (under Tailwind's "sm", 640px), so everything fits on one line. */}
       <div className="mx-auto grid h-14 max-w-5xl grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 sm:gap-6">
-        <Link href={user ? "/dashboard" : "/"} className="shrink-0 justify-self-start leading-tight">
+        <Link href="/" className="shrink-0 justify-self-start leading-tight">
           <span className="block text-base font-semibold">Charticulum</span>
           <span className="block text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</span>
         </Link>
