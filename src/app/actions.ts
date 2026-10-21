@@ -23,7 +23,6 @@ export async function createChartAction(form: FormData): Promise<void> {
     schoolId: text(form, "schoolId"),
     templateId: templateId || undefined,
     version: version || undefined,
-    name: text(form, "name"),
   });
   // redirect() works by throwing, so nothing after it runs.
   redirect(`/chart/${encodeURIComponent(id)}`);

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useFormStatus } from "react-dom";
 import { createChartAction } from "../../app/actions";
 import type { SchoolChoice } from "../../server/site";
-import { Button, inputClass, Select } from "../ui";
+import { Button, Select } from "../ui";
 
 // Pick a school and a program; the server makes the chart and opens it.
 export function NewChartForm({ schools }: { schools: SchoolChoice[] }) {
@@ -14,7 +14,7 @@ export function NewChartForm({ schools }: { schools: SchoolChoice[] }) {
   return (
     // A form whose action is a server action: submitting sends the fields
     // (by their `name`) to createChartAction on the server.
-    <form action={createChartAction} className="grid gap-3 sm:grid-cols-[1fr_1fr_1fr_auto] sm:items-end">
+    <form action={createChartAction} className="grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
       <label className="grid gap-1 text-sm">
         <span className="text-xs text-zinc-500">School</span>
         <Select name="schoolId" className="h-9" value={schoolId} onChange={(e) => setSchoolId(e.target.value)} required>
@@ -37,10 +37,6 @@ export function NewChartForm({ schools }: { schools: SchoolChoice[] }) {
           ))}
           <option value="">Empty plan</option>
         </Select>
-      </label>
-      <label className="grid gap-1 text-sm">
-        <span className="text-xs text-zinc-500">Name (optional)</span>
-        <input name="name" autoComplete="off" maxLength={200} className={`${inputClass} h-9`} placeholder="My plan" />
       </label>
       <SubmitButton />
     </form>

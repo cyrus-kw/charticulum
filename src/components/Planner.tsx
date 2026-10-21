@@ -6,8 +6,8 @@ import { EXTERNAL_TERM, loadSchool, parseSchoolData, type SchoolData, type Schoo
 import { historyReducer, startHistory } from "../planner/history";
 import { derive, openedState } from "../planner/state";
 import type { SavedChart } from "../storage/types";
-import { ChartFlow, HistoryControls } from "./ChartFlow";
-import { OpenIcon } from "./icons";
+import { ChartFlow } from "./ChartFlow";
+import { OpenIcon, RedoIcon, UndoIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
 import { PlanInfoPanel } from "./panels/PlanInfoPanel";
@@ -18,15 +18,39 @@ import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
-import { cn, FIELD_FOCUS, Tabs } from "./ui";
+import { cn, Tabs } from "./ui";
 import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_INSET, TOGGLE_SIZE } from "./SidePanel";
 import { ThemeToggle } from "./ThemeToggle";
 import { UserMenu, type MenuUser } from "./UserMenu";
 import { usePanels } from "./usePanels";
 
-// The plan's name box, in the same style as the undo/redo buttons beside it.
-const nameBox =
-  "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900";
+// Undo and redo for changes to the plan: plain header buttons, the same
+// as the ones in the side panel's header. Faded while there's nothing to
+// undo or redo.
+function HistoryControls({
+  canUndo,
+  canRedo,
+  onUndo,
+  onRedo,
+}: {
+  canUndo: boolean;
+  canRedo: boolean;
+  onUndo: () => void;
+  onRedo: () => void;
+}) {
+  const look = cn(HEADER_BUTTON, "disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent");
+  const size = { width: TOGGLE_SIZE, height: TOGGLE_SIZE };
+  return (
+    <div className="flex shrink-0 items-center gap-1">
+      <button type="button" style={size} className={look} aria-label="Undo" data-tooltip="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
+        <UndoIcon />
+      </button>
+      <button type="button" style={size} className={look} aria-label="Redo" data-tooltip="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
+        <RedoIcon />
+      </button>
+    </div>
+  );
+}
 
 // The school's data was checked when it was saved, so a failure here
 // means a bug, not a bad file.
@@ -61,6 +85,9 @@ export function Planner({
   // "unsaved" is simply "not the same object". (Undoing back to the saved
   // version brings back that same object, so it counts as saved again.)
   const [savedChart, setSavedChart] = useState(saved.chart);
+  // The spot in the panel above the chart where the chart draws its zoom
+  // buttons; null until that spot is on the page.
+  const [zoomSlot, setZoomSlot] = useState<HTMLDivElement | null>(null);
   const unsaved = state.chart !== savedChart;
 
   // Closing the tab or reloading with unsaved changes: the browser asks
@@ -204,7 +231,7 @@ export function Planner({
         <main className="flex min-h-0 min-w-0 flex-1 flex-col" aria-label="Chart">
           {/* The panel above the chart, in four columns of the same width
               with a line between each. The first has undo/redo and the
-              plan's name in a row as tall as the side panel's header (so
+              zoom buttons in a row as tall as the side panel's header (so
               the two line up), and what the plan is under it (school,
               programs, terms). Then the selected course or term, every problem,
               and the plan's requirements. It has a fixed height, so the
@@ -231,15 +258,9 @@ export function Planner({
                   onUndo={() => dispatch({ type: "undo" })}
                   onRedo={() => dispatch({ type: "redo" })}
                 />
-                {/* The plan's name, as tall as the buttons beside it. It
-                    takes the rest of the row, up to 256px. */}
-                <input
-                  autoComplete="off"
-                  className={cn(nameBox, FIELD_FOCUS, "h-[30px] max-w-64 min-w-0 flex-1 px-2 text-sm font-medium")}
-                  aria-label="Chart name"
-                  value={state.chart.name}
-                  onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
-                />
+                {/* The chart draws its zoom buttons here (see zoomSlot), at
+                    the row's right end (ml-auto takes the space between). */}
+                <div ref={setZoomSlot} className="ml-auto flex shrink-0" />
               </div>
               <div className="min-h-0 flex-1 overflow-y-auto">
                 <PlanInfoPanel {...panelProps} />
@@ -284,6 +305,7 @@ export function Planner({
               selectedTerm={state.selectedTerm}
               onSelectTerm={(termIndex) => dispatch({ type: "selectTerm", termIndex })}
               onRemove={(objectId) => dispatch({ type: "remove", objectId })}
+              zoomSlot={zoomSlot}
               onTermChange={(change) => {
                 // Showing or hiding Pre-Credit only changes the picture, so
                 // it's a panel setting rather than a change to the plan.

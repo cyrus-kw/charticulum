@@ -62,7 +62,6 @@ export type PlannerAction =
   | { type: "startProgram"; ref: TemplateRef }
   | { type: "addProgram"; ref: TemplateRef }
   | { type: "build" }
-  | { type: "rename"; name: string }
   | { type: "select"; objectId: string | null }
   | { type: "selectTerm"; termIndex: number | null }
   // `position`: where in the term's top-to-bottom order (an index among
@@ -95,10 +94,10 @@ export function openedState(school: LoadedSchool, chart: Chart, savedId: string)
 
 // A brand-new chart: the program's suggested plan (pinned to that
 // version), or an empty plan if no program is given or it isn't found.
-export function newChart(school: LoadedSchool, ref?: TemplateRef, name?: string): Chart {
+export function newChart(school: LoadedSchool, ref?: TemplateRef): Chart {
   const template = ref && findTemplate(school.library, ref);
-  if (template) return arrangeChart(school.catalog, forkTemplate(template, name || undefined));
-  return { name: name || "My plan", terms: [emptyTermZero()], completedExternal: [] };
+  if (template) return arrangeChart(school.catalog, forkTemplate(template));
+  return { name: "My plan", terms: [emptyTermZero()], completedExternal: [] };
 }
 
 const emptyTermZero = (): Term => ({ index: EXTERNAL_TERM, label: EXTERNAL_TERM_LABEL, objectIds: [] });
@@ -285,9 +284,6 @@ export function plannerReducer(state: PlannerState, action: PlannerAction): Plan
         layoutVersion: state.layoutVersion + 1,
       };
     }
-
-    case "rename":
-      return withChart({ ...chart, name: action.name });
 
     // Selecting a course unselects any term, and the other way around.
     case "select":

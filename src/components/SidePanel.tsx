@@ -205,9 +205,12 @@ export function SidePanel({
               style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
               // sticky top-0: the header stays put while the rest scrolls
               // under it. It needs a solid background (the page's) and z-10
-              // to cover what scrolls beneath.
+              // to cover what scrolls beneath. shrink-0: when the contents
+              // are taller than the side panel, the column would otherwise
+              // squeeze the header down to its text's height, leaving a gap
+              // above the tab row (which sticks just below the full height).
               className={cn(
-                "sticky top-0 z-10 flex items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
+                "sticky top-0 z-10 flex shrink-0 items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
                 side === "right" && "flex-row-reverse",
               )}
             >
@@ -299,9 +302,9 @@ export function PanelToggle({
       className={cn(
         "group relative",
         HEADER_BUTTON,
-        // Floating on the chart it needs a background to stand out, and
-        // waits for the side panel to finish sliding shut (see globals.css).
-        !open && "after-panel-slide border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900",
+        // Shut, it waits for the side panel to finish sliding shut (see
+        // globals.css), so two don't show at once. It looks the same either way.
+        !open && "after-panel-slide",
       )}
     >
       <SidePanelIcon side={side} open={open} />

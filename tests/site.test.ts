@@ -34,10 +34,9 @@ describe("createChart and openChart", () => {
       schoolId: sampleId,
       templateId: firstProgram.id,
       version: firstProgram.version,
-      name: "Freshman plan",
     });
     const opened = await openChart(repos, "me", id);
-    expect(opened?.saved.chart.name).toBe("Freshman plan");
+    expect(opened?.saved.chart.name).toBe(`${firstProgram.name} (my plan)`);
     expect(opened?.saved.chart.pinnedTemplates).toEqual([{ templateId: firstProgram.id, version: firstProgram.version }]);
     expect(opened?.school.school.id).toBe(sampleId);
   });

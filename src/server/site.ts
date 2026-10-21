@@ -53,7 +53,6 @@ export interface NewChartInput {
   // Both missing: start from an empty plan.
   templateId?: string;
   version?: string;
-  name?: string;
 }
 
 // Make and save a new chart; returns its id.
@@ -62,7 +61,7 @@ export async function createChart(repos: Repositories, ownerId: string, input: N
   if (!data) throw new Error(`No school with id ${input.schoolId}.`);
   const ref =
     input.templateId && input.version ? { templateId: input.templateId, version: input.version } : undefined;
-  const chart = newChart(loadSchool(data), ref, input.name?.trim());
+  const chart = newChart(loadSchool(data), ref);
   const saved = await repos.charts.save(ownerId, { schoolId: input.schoolId, chart });
   return saved.id;
 }

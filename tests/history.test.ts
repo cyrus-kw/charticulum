@@ -49,10 +49,9 @@ describe("undo and redo", () => {
     expect(run(h, { type: "redo" })).toBe(h);
   });
 
-  it("doesn't record selection or renaming as undo steps", () => {
-    const h = run(start(), { type: "select", objectId: "CS101" }, { type: "rename", name: "Mine" });
+  it("doesn't record selection as an undo step", () => {
+    const h = run(start(), { type: "select", objectId: "CS101" });
     expect(h.past).toHaveLength(0);
-    expect(h.present.chart.name).toBe("Mine");
   });
 
   it("keeps the saved copy and clears the selection when undoing", () => {

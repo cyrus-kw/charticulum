@@ -19,6 +19,7 @@ import {
   type NodeTypes,
   type ReactFlowInstance,
 } from "@xyflow/react";
+import { createPortal } from "react-dom";
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { EXTERNAL_TERM, meetsGrade, type Catalog, type Chart, type ChartIssue, type Grade } from "../engine/index";
 import {
@@ -57,10 +58,11 @@ import {
   type TermNode,
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
-import { FitIcon, MinusIcon, PlusIcon, RedoIcon, UndoIcon } from "./icons";
+import { FitIcon, MinusIcon, PlusIcon } from "./icons";
 import { ADD_MENU_WIDTH, AddTermMenu, canAddInGap, CourseMenu, TermMenu, type TermChange, type TermGap } from "./TermMenu";
 import { useTheme } from "./theme";
 import { cn, IssueCount, SEASON_TINT } from "./ui";
+import { HEADER_BUTTON } from "./SidePanel";
 
 const hidden = { opacity: 0, pointerEvents: "none" as const };
 
@@ -527,36 +529,17 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
   );
 }
 
-// Shared look for the small button groups on the chart (zoom, undo/redo).
+// Shared look for the small button groups on the chart (zoom).
 const controlGroup =
   "flex shrink-0 items-center divide-x divide-zinc-200 overflow-hidden rounded-md border border-zinc-200 bg-white shadow-sm dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900";
 const button =
   "flex h-7 min-w-7 items-center justify-center px-2 text-sm text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 dark:text-zinc-200 dark:hover:bg-zinc-800";
-
-// Undo and redo for changes to the plan (drawn in the panel above the
-// chart, in Planner.tsx, in the same style as the zoom buttons).
-export function HistoryControls({
-  canUndo,
-  canRedo,
-  onUndo,
-  onRedo,
-}: {
-  canUndo: boolean;
-  canRedo: boolean;
-  onUndo: () => void;
-  onRedo: () => void;
-}) {
-  return (
-    <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Undo" data-tooltip="Undo (Ctrl+Z)" disabled={!canUndo} onClick={onUndo}>
-        <UndoIcon />
-      </button>
-      <button type="button" className={button} aria-label="Redo" data-tooltip="Redo (Ctrl+Shift+Z)" disabled={!canRedo} onClick={onRedo}>
-        <RedoIcon />
-      </button>
-    </div>
-  );
-}
+// The flat look, for zoom buttons drawn outside the chart (the planner's
+// panel above it): plain header buttons with no box, like undo/redo there.
+const flatButton = cn(
+  HEADER_BUTTON,
+  "size-[30px] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent",
+);
 
 // Horizontal zoom buttons. Zooming spreads the terms out sideways or
 // compresses them; text and rows keep their size.
@@ -564,12 +547,16 @@ function ZoomControls({
   zoom,
   onZoom,
   onFit,
+  flat = false,
 }: {
   // A whole percentage.
   zoom: number;
   onZoom: (percent: number) => void;
   onFit: () => void;
+  // Plain buttons side by side instead of a boxed group.
+  flat?: boolean;
 }) {
+  const look = flat ? flatButton : button;
   // What's typed in the box; applied on Enter or leaving the box.
   const [draft, setDraft] = useState<string | null>(null);
   const apply = () => {
@@ -578,11 +565,11 @@ function ZoomControls({
     setDraft(null);
   };
   return (
-    <div className={controlGroup}>
-      <button type="button" className={button} aria-label="Compress the chart" data-tooltip="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
+    <div className={flat ? "flex shrink-0 items-center gap-1" : controlGroup}>
+      <button type="button" className={look} aria-label="Compress the chart" data-tooltip="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
         <MinusIcon />
       </button>
-      <label className="flex h-7 items-center px-1.5 text-xs text-zinc-500 tabular-nums">
+      <label className={cn("flex items-center px-1.5 text-xs text-zinc-500 tabular-nums", flat ? "h-[30px]" : "h-7")}>
         <input
           type="text"
           inputMode="numeric"
@@ -605,10 +592,10 @@ function ZoomControls({
         />
         %
       </label>
-      <button type="button" className={button} aria-label="Spread the chart out" data-tooltip="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + BUTTON_ZOOM_STEP)}>
+      <button type="button" className={look} aria-label="Spread the chart out" data-tooltip="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + BUTTON_ZOOM_STEP)}>
         <PlusIcon />
       </button>
-      <button type="button" className={button} aria-label="Fit to width" data-tooltip="Fit to width" onClick={onFit}>
+      <button type="button" className={look} aria-label="Fit to width" data-tooltip="Fit to width" onClick={onFit}>
         <FitIcon />
       </button>
     </div>
@@ -716,6 +703,10 @@ export interface ChartFlowProps {
   // legend; exactly as tall as the plan; and the mouse wheel scrolls the
   // page instead of the chart.
   bare?: boolean;
+  // Where to draw the zoom buttons, if not in the chart's bottom-left
+  // corner (the planner puts them in the panel above the chart). The
+  // zoom itself stays inside the chart, which knows its own size.
+  zoomSlot?: HTMLElement | null;
 }
 
 export function ChartFlow({
@@ -735,6 +726,7 @@ export function ChartFlow({
   layoutVersion = 0,
   planVersion = chart,
   bare = false,
+  zoomSlot,
 }: ChartFlowProps) {
   // The chart fills the canvas: measure it, and size the term columns to
   // fit across it, times the horizontal zoom.
@@ -1017,6 +1009,15 @@ export function ChartFlow({
     return () => element.removeEventListener("wheel", onWheel, { capture: true });
   }, [zoomTo, zoom, bare]);
 
+  const zoomControls = (
+    <ZoomControls
+      zoom={zoom}
+      onZoom={(percent) => zoomTo(percent)}
+      onFit={() => zoomTo(100, 0)}
+      flat={Boolean(zoomSlot)}
+    />
+  );
+
   return (
     <TermHeaderContext.Provider value={termHeader}>
       <div
@@ -1260,21 +1261,24 @@ export function ChartFlow({
             [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, size?.height ?? 0)],
           ]}
         >
-          {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
+          {/* In the bottom-left corner, or the bottom-right when the zoom
+              controls take the left (leaving them room); wraps if narrow. */}
           <FlowPanel
-            position="bottom-right"
-            style={{ maxWidth: "calc(100% - 220px)" }}
+            position={zoomSlot === undefined ? "bottom-right" : "bottom-left"}
+            style={{ maxWidth: zoomSlot === undefined ? "calc(100% - 220px)" : "calc(100% - 30px)" }}
             className={cn(bare && "hidden")}
           >
             <Legend />
           </FlowPanel>
-          <FlowPanel position="bottom-left" className={cn(bare && "hidden")}>
-            <ZoomControls
-              zoom={zoom}
-              onZoom={(percent) => zoomTo(percent)}
-              onFit={() => zoomTo(100, 0)}
-            />
-          </FlowPanel>
+          {/* createPortal draws the buttons in the page's spot while they
+              stay part of this component (same state, same handlers). */}
+          {zoomSlot ? (
+            createPortal(zoomControls, zoomSlot)
+          ) : zoomSlot === undefined ? (
+            <FlowPanel position="bottom-left" className={cn(bare && "hidden")}>
+              {zoomControls}
+            </FlowPanel>
+          ) : null}
           <TermBands terms={termData} columnWidth={geometry.columnWidth} />
         </ReactFlow>
       </div>
