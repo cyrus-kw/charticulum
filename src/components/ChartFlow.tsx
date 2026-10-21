@@ -19,7 +19,7 @@ import {
   type NodeTypes,
   type ReactFlowInstance,
 } from "@xyflow/react";
-import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode, type RefObject } from "react";
+import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { EXTERNAL_TERM, meetsGrade, type Catalog, type Chart, type ChartIssue, type Grade } from "../engine/index";
 import {
   chartLayout,
@@ -471,6 +471,8 @@ function TermStripe({ data, width }: NodeProps<TermNode>) {
 
 // The height of the row of term titles (title and credits), in pixels.
 const TITLE_HEIGHT = 54;
+// The title box of a term with no season (Pre-Credit, a custom name).
+const PLAIN_TITLE = "bg-zinc-200 dark:bg-zinc-800";
 
 // The alternating term bands, filling the whole height of the canvas, and
 // the season color behind each term's title. They follow panning and
@@ -483,6 +485,18 @@ const TITLE_HEIGHT = 54;
 // stripe.
 function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWidth: number }) {
   const { x, y } = useViewport();
+  // A column's left edge and width, rounded to whole pixels of the
+  // screen. Columns usually start at a fraction of a pixel (8 terms across
+  // 2119px are 264.875px each), and the browser blurs such an edge over
+  // two pixels, so one color bled into the next and missed the panel's
+  // lines above the chart, which are always drawn on whole pixels. On a
+  // scaled screen (e.g. 150%) a page pixel is 1.5 screen pixels, so the
+  // rounding is in screen pixels (devicePixelRatio). Each column ends
+  // exactly where the next begins, so there are no gaps or overlaps.
+  const ratio = typeof window === "undefined" ? 1 : window.devicePixelRatio || 1;
+  const snap = (value: number) => Math.round(value * ratio) / ratio;
+  const edge = (column: number) => snap(x + column * columnWidth);
+  const place = (column: number) => ({ left: edge(column), width: edge(column + 1) - edge(column) });
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
       {terms.map((term, column) => (
@@ -496,25 +510,19 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
                 ? "bg-band dark:bg-white/5"
                 : "bg-transparent",
           )}
-          style={{ left: x + column * columnWidth, width: columnWidth }}
+          style={place(column)}
         />
       ))}
-      {terms.map(
-        (term, column) =>
-          term.season &&
-          !term.external && (
-            <div
-              key={`title-${column}`}
-              className={cn("absolute", SEASON_TINT[term.season])}
-              // 1px wider than the column, under the next title's color:
-              // columns can start at a fraction of a pixel, and without the
-              // overlap the blurred edges leave a thin dark seam between
-              // two titles. (The stripes can't overlap like this: they're
-              // see-through, so an overlap would show as a lighter line.)
-              style={{ left: x + column * columnWidth, top: y, width: columnWidth + 1, height: TITLE_HEIGHT }}
-            />
-          ),
-      )}
+      {terms.map((term, column) => (
+        <div
+          key={`title-${column}`}
+          // Every title gets a box of the same size: its season's tint,
+          // or a neutral grey for Pre-Credit and terms with no season,
+          // so no title looks taller or shorter than the rest.
+          className={cn("absolute", term.season && !term.external ? SEASON_TINT[term.season] : PLAIN_TITLE)}
+          style={{ ...place(column), top: snap(y), height: TITLE_HEIGHT }}
+        />
+      ))}
     </div>
   );
 }
@@ -525,8 +533,9 @@ const controlGroup =
 const button =
   "flex h-7 min-w-7 items-center justify-center px-2 text-sm text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 dark:text-zinc-200 dark:hover:bg-zinc-800";
 
-// Undo and redo for changes to the plan.
-function HistoryControls({
+// Undo and redo for changes to the plan (drawn in the panel above the
+// chart, in Planner.tsx, in the same style as the zoom buttons).
+export function HistoryControls({
   canUndo,
   canRedo,
   onUndo,
@@ -633,13 +642,6 @@ const WHEEL_PER_STEP = 100;
 const DRAGGING_Z = 1000;
 // How long the other cards take to slide aside while reordering.
 const SHIFT_MS = 150;
-// The top-right boxes stop this far above the term titles...
-const BOX_GAP = 8;
-// ...but are never shorter than this, so they stay usable when the plan
-// fills the whole window and there's no empty space above it.
-const MIN_BOX_HEIGHT = 200;
-// React Flow's margin around its panels (the space from the chart's edge).
-const PANEL_MARGIN = 15;
 
 type Point = { x: number; y: number };
 
@@ -710,18 +712,7 @@ export interface ChartFlowProps {
   // Identifies this version of the plan (the same object whenever undo or
   // redo brings it back), so its exact arrangement can be restored.
   planVersion?: object;
-  // Extra controls floating on the chart's top corners (e.g. the icons of
-  // collapsed side panels).
-  topLeft?: ReactNode;
-  topRight?: ReactNode;
-  // Shown just right of undo/redo (the plan's name).
-  title?: ReactNode;
-  // Undo/redo (buttons in the top-left corner).
-  canUndo?: boolean;
-  canRedo?: boolean;
-  onUndo?: () => void;
-  onRedo?: () => void;
-  // Just the chart, for the home page's demo: no undo/redo, zoom, or
+  // Just the chart, for the home page's demo: no zoom or
   // legend; exactly as tall as the plan; and the mouse wheel scrolls the
   // page instead of the chart.
   bare?: boolean;
@@ -743,13 +734,6 @@ export function ChartFlow({
   onTermChange,
   layoutVersion = 0,
   planVersion = chart,
-  topLeft,
-  topRight,
-  title,
-  canUndo = false,
-  canRedo = false,
-  onUndo = () => {},
-  onRedo = () => {},
   bare = false,
 }: ChartFlowProps) {
   // The chart fills the canvas: measure it, and size the term columns to
@@ -974,44 +958,15 @@ export function ChartFlow({
     if (headerOnly && (point.y < 0 || point.y > HEADER_HEIGHT)) return null;
     return chart.terms[Math.floor(point.x / geometry.columnWidth)]?.index ?? null;
   };
-  // A plan shorter than the canvas sits in its vertical middle; a taller
-  // one starts at the top and scrolls. It's centered when first drawn, when
-  // the canvas is resized, and for a whole new plan, but not after each
-  // edit: moving one course shouldn't shift every card. (It does move up
-  // if the plan grows past the bottom.)
-  //
-  // On a narrow canvas the top-right boxes wrap below undo/redo, so they
-  // start lower (boxTop) and would hang over the term titles. Then the plan
-  // is centered in the space below that shift instead, moving it down by
-  // as much as the boxes moved. Only where the boxes start counts, not how
-  // tall they are, so selecting a course (which grows its box) never moves
-  // the plan.
-  const boxes = useRef<HTMLDivElement>(null);
-  const lastCenter = useRef<{ width: number; height: number; offset: number; boxTop: number } | null>(null);
-  const { centerOffset, boxTop } = useMemo(() => {
-    const width = size?.width ?? 0;
-    const height = size?.height ?? 0;
-    const room = Math.max(0, height - contentHeight);
-    const last = lastCenter.current;
-    const recenter = !last || last.width !== width || last.height !== height || layout.fresh;
-    if (!recenter) return { centerOffset: Math.min(last.offset, room), boxTop: last.boxTop };
-    // Read from the page as it's drawn now. The boxes wrap by CSS alone,
-    // so by the time the canvas has a new size they're already in place.
-    const canvas = wrapper.current?.getBoundingClientRect();
-    const box = boxes.current?.getBoundingClientRect();
-    const top = canvas && box ? box.top - canvas.top : PANEL_MARGIN;
-    return { centerOffset: Math.min(room, room / 2 + top - PANEL_MARGIN), boxTop: top };
-  }, [size?.width, size?.height, contentHeight, layout]);
-  useEffect(() => {
-    lastCenter.current = { width: size?.width ?? 0, height: size?.height ?? 0, offset: centerOffset, boxTop };
-  }, [size?.width, size?.height, centerOffset, boxTop]);
+  // The plan starts at the canvas's top, term titles first; a plan taller
+  // than the canvas scrolls.
   const clampView = useCallback(
     (x: number, y: number) => ({
       x: Math.min(0, Math.max(x, (size?.width ?? 0) - contentWidth)),
-      y: centerOffset > 0 ? centerOffset : Math.min(0, Math.max(y, (size?.height ?? 0) - contentHeight)),
+      y: Math.min(0, Math.max(y, (size?.height ?? 0) - contentHeight)),
       zoom: 1,
     }),
-    [size, contentWidth, contentHeight, centerOffset],
+    [size, contentWidth, contentHeight],
   );
 
   // Zoom to a percentage (snapped to the allowed steps), keeping the point
@@ -1301,8 +1256,8 @@ export function ChartFlow({
           panOnDrag={!bare}
           preventScrolling={!bare}
           translateExtent={[
-            [0, -centerOffset],
-            [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, (size?.height ?? 0) - centerOffset)],
+            [0, 0],
+            [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, size?.height ?? 0)],
           ]}
         >
           {/* Leaves room for the zoom controls on the left; wraps if narrow. */}
@@ -1312,59 +1267,6 @@ export function ChartFlow({
             className={cn(bare && "hidden")}
           >
             <Legend />
-          </FlowPanel>
-          {/* Everything along the chart's top: undo/redo and the plan's
-              name on the left, the boxes (topRight) on the right.
-
-              Wide: one row. Each box is only as tall as the empty space
-              above the term titles (--box-room), so it never covers the
-              chart; anything longer scrolls inside the box. centerOffset is
-              how far down the chart starts.
-
-              Narrow (the canvas, not the window, is under 1000px, about
-              what the row needs): undo/redo stays on the left. On the
-              right, the last box (Requirements) stays at the top right and
-              the others stack in a column to its left, top to bottom in
-              their left-to-right order. That's a grid filled column by
-              column (grid-flow-col) with two rows; the last box spans both
-              rows, so when it's open and tall, the second row (1fr) grows
-              instead of pushing the stacked boxes apart. It all scrolls if
-              it's taller than the chart. "@container" makes the
-              @max-[1000px] classes below measure this panel's width.
-              Narrower still, the boxes wrap below undo/redo (flex-wrap),
-              kept on the right by ml-auto. content-start packs the wrapped
-              rows at the top; without it the browser spreads them over the
-              panel's full height, dropping the boxes into the chart's middle.
-
-              "nowheel" keeps the wheel from moving the chart underneath.
-              Only the controls and boxes catch clicks: the space around
-              them lets clicks through to the chart. */}
-          <FlowPanel
-            position="top-left"
-            style={{
-              ["--box-room" as string]: `${Math.max(MIN_BOX_HEIGHT, centerOffset - boxTop - BOX_GAP)}px`,
-            }}
-            className={cn(
-              "nowheel @container h-[calc(100%-30px)] w-[calc(100%-30px)] !pointer-events-none",
-              bare && "hidden",
-            )}
-          >
-            <div className="flex h-full flex-wrap content-start items-start justify-between gap-2">
-              {/* Takes the free space left of the boxes (flex-1), so the
-                  plan's name can widen into it or shrink when it's short.
-                  min-w-52: below that, the boxes wrap instead. Only its
-                  controls catch clicks, not the empty space it spans. */}
-              <div className="flex min-w-52 flex-1 items-start gap-2 *:pointer-events-auto">
-                {topLeft}
-                <HistoryControls canUndo={canUndo} canRedo={canRedo} onUndo={onUndo} onRedo={onRedo} />
-                {title}
-              </div>
-              {topRight && (
-                <div ref={boxes} className="ml-auto flex items-start gap-2 *:pointer-events-auto *:overflow-y-auto *:max-h-(--box-room) @max-[1000px]:grid @max-[1000px]:max-h-full @max-[1000px]:grid-flow-col @max-[1000px]:grid-rows-[auto_1fr] @max-[1000px]:overflow-y-auto @max-[1000px]:*:last:row-span-2">
-                  {topRight}
-                </div>
-              )}
-            </div>
           </FlowPanel>
           <FlowPanel position="bottom-left" className={cn(bare && "hidden")}>
             <ZoomControls

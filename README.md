@@ -26,7 +26,7 @@ The app needs a database to save plans and schools; see [Database](#database).
 |---|---|
 | `src/engine/` | The chart engine: pure TypeScript with no UI, fully tested |
 | `src/planner/` | App state (a reducer) and flowchart layout, also pure and tested |
-| `src/components/` | React components: the flowchart and side panels (`panels/`), and the site pages' forms (`site/`) |
+| `src/components/` | React components: the flowchart, the panel above it, and the side panel (sections in `panels/`), and the site pages' forms (`site/`) |
 | `src/app/` | Next.js pages (home with sign-in, dashboard, schools, chart), server actions (Settings' in `settings/`), and API routes |
 | `src/server/` | Saving charts and schools to the database, accounts and sign-in, and what each page does with them |
 | `src/storage/` | How the planner in the browser saves through the API |

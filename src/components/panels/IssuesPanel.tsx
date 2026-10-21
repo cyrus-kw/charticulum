@@ -30,12 +30,10 @@ export function listPlanIssues({ state, view }: Pick<PanelProps, "state" | "view
   ];
 }
 
-// A column of problems on the right side of Selected (the selected
-// course's or term's) and of Requirements (the plan's), joined to the box
-// by a line. Each comes with one-click fixes where there's an obvious one
-// (progressive error correction). Nothing shows without any.
+// The plan's problems, in the panel above the chart beside Selected and
+// Requirements. Each comes with one-click fixes where there's an obvious
+// one (progressive error correction).
 export function IssuesPanel({ issues, state, dispatch }: Pick<PanelProps, "state" | "dispatch"> & { issues: ListedIssue[] }) {
-  if (issues.length === 0) return null;
   const lastTerm = state.chart.terms.at(-1)?.index ?? 1;
 
   const fixes = (issue: ChartIssue) => {
@@ -85,13 +83,16 @@ export function IssuesPanel({ issues, state, dispatch }: Pick<PanelProps, "state
       title="Issues"
       // The count as a red tag, square like the badges on the chart.
       actions={
-        <Badge tone="bad" square>
-          {issues.length}
-        </Badge>
+        issues.length > 0 && (
+          <Badge tone="bad" square>
+            {issues.length}
+          </Badge>
+        )
       }
     >
+      {issues.length === 0 && <p className="text-sm text-zinc-500">No issues: the plan meets every rule.</p>}
       {/* A long list scrolls inside the box, under the title and count.
-          (min-h-0 lets it shrink to fit; see the boxes in Planner.tsx.) It
+          (min-h-0 lets it shrink to fit; see the columns in Planner.tsx.) It
           reaches into the panel's right padding (-mr-4) and puts it back
           (pr-4), so the scrollbar sits by the box's edge without covering
           any words. */}

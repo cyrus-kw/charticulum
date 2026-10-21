@@ -6,12 +6,12 @@ import { EXTERNAL_TERM, loadSchool, parseSchoolData, type SchoolData, type Schoo
 import { historyReducer, startHistory } from "../planner/history";
 import { derive, openedState } from "../planner/state";
 import type { SavedChart } from "../storage/types";
-import { ChartFlow } from "./ChartFlow";
+import { ChartFlow, HistoryControls } from "./ChartFlow";
 import { OpenIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
-import { IssuesPanel, listPlanIssues, type ListedIssue } from "./panels/IssuesPanel";
-import type { PanelProps } from "./panels/types";
+import { PlanInfoPanel } from "./panels/PlanInfoPanel";
+import { IssuesPanel, listPlanIssues } from "./panels/IssuesPanel";
 import { selectionIssues } from "../planner/issues";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
 import { ProgramPanel } from "./panels/ProgramPanel";
@@ -19,14 +19,13 @@ import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { cn, FIELD_FOCUS, Tabs } from "./ui";
-import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_SIZE } from "./SidePanel";
+import { HEADER_BUTTON, PANEL_HEADER_HEIGHT, PanelToggle, SidePanel, TOGGLE_INSET, TOGGLE_SIZE } from "./SidePanel";
 import { ThemeToggle } from "./ThemeToggle";
 import { UserMenu, type MenuUser } from "./UserMenu";
 import { usePanels } from "./usePanels";
 
-// A box lying on the chart, in the same style as its other controls. The
-// box's own border closes off the panel inside.
-const chartBox =
+// The plan's name box, in the same style as the undo/redo buttons beside it.
+const nameBox =
   "rounded-md border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900";
 
 // The school's data was checked when it was saved, so a failure here
@@ -202,115 +201,113 @@ export function Planner({
           />
         </SidePanel>
 
-        <main className="min-h-0 min-w-0 flex-1" aria-label="Chart">
-          <ChartFlow
-            catalog={state.school.catalog}
-            chart={shownChart}
-            issues={view.check.issues}
-            creditsByTerm={view.check.report.creditsByTerm}
-            maxCredits={view.requirements.maxCreditsPerTerm}
-            requiredGrades={view.requirements.minGrades}
-            selectedId={state.selectedId}
-            onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
-            layoutVersion={state.layoutVersion}
-            planVersion={state.chart}
-            canUndo={history.past.length > 0}
-            canRedo={history.future.length > 0}
-            onUndo={() => dispatch({ type: "undo" })}
-            onRedo={() => dispatch({ type: "redo" })}
-            onSelect={(objectId) => dispatch({ type: "select", objectId })}
-            selectedTerm={state.selectedTerm}
-            onSelectTerm={(termIndex) => dispatch({ type: "selectTerm", termIndex })}
-            onRemove={(objectId) => dispatch({ type: "remove", objectId })}
-            onTermChange={(change) => {
-              // Showing or hiding Pre-Credit only changes the picture, so
-              // it's a panel setting rather than a change to the plan.
-              if (change.type === "showPreCredit" || change.type === "hidePreCredit") {
-                if (panels.open.preCredit !== (change.type === "showPreCredit")) panels.toggle("preCredit");
-              } else dispatch(change);
-            }}
-            // A collapsed side panel's toggle floats on the chart, at the same
-            // spot it had in the side panel's corner.
-            topLeft={
-              !panels.open.left && (
-                <PanelToggle id="tools-panel" side="left" open={false} onToggle={() => panels.toggle("left")} />
-              )
-            }
-            // The plan's name, beside undo/redo. As tall as those buttons; up
-            // to 256px wide, shrinking (to 128px at least) when the boxes on
-            // the right need the room.
-            title={
-              <input
-                autoComplete="off"
-                className={cn(chartBox, FIELD_FOCUS, "h-[30px] w-64 min-w-32 shrink px-2 text-sm font-medium")}
-                aria-label="Chart name"
-                value={state.chart.name}
-                onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
+        <main className="flex min-h-0 min-w-0 flex-1 flex-col" aria-label="Chart">
+          {/* The panel above the chart, in four columns of the same width
+              with a line between each. The first has undo/redo and the
+              plan's name in a row as tall as the side panel's header (so
+              the two line up), and what the plan is under it (school,
+              programs, terms). Then the selected course or term, every problem,
+              and the plan's requirements. It has a fixed height, so the
+              chart below never jumps as its contents change; a long column
+              scrolls inside itself. */}
+          <section
+            aria-label="Plan details"
+            style={{ height: PANEL_HEADER_HEIGHT + 1 + DETAILS_HEIGHT }}
+            className="grid shrink-0 grid-cols-4 divide-x divide-zinc-200 border-b border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800"
+          >
+            <div className={cn(COLUMN, "flex flex-col")}>
+              <div
+                style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
+                className="flex shrink-0 items-center gap-2 border-b border-zinc-200 dark:border-zinc-800"
+              >
+                {/* A collapsed side panel's toggle sits in this row's corner,
+                    at the same spot it has in the side panel's own header. */}
+                {!panels.open.left && (
+                  <PanelToggle id="tools-panel" side="left" open={false} onToggle={() => panels.toggle("left")} />
+                )}
+                <HistoryControls
+                  canUndo={history.past.length > 0}
+                  canRedo={history.future.length > 0}
+                  onUndo={() => dispatch({ type: "undo" })}
+                  onRedo={() => dispatch({ type: "redo" })}
+                />
+                {/* The plan's name, as tall as the buttons beside it. It
+                    takes the rest of the row, up to 256px. */}
+                <input
+                  autoComplete="off"
+                  className={cn(nameBox, FIELD_FOCUS, "h-[30px] max-w-64 min-w-0 flex-1 px-2 text-sm font-medium")}
+                  aria-label="Chart name"
+                  value={state.chart.name}
+                  onChange={(e) => dispatch({ type: "rename", name: e.target.value })}
+                />
+              </div>
+              <div className="min-h-0 flex-1 overflow-y-auto">
+                <PlanInfoPanel {...panelProps} />
+              </div>
+            </div>
+            <div className={cn(COLUMN, "overflow-y-auto")}>
+              <DetailsPanel key={state.selectedId ?? `term-${state.selectedTerm}`} {...panelProps} />
+            </div>
+            {/* The selected course's or term's problems first, since
+                they're about what's in Selected, just to the left, then the
+                plan's as a whole. */}
+            <div className={cn(COLUMN, SCROLLING)}>
+              <IssuesPanel
+                issues={[
+                  ...selectionIssues(view.chart, view.check.issues, state.selectedId, state.selectedTerm).map(
+                    (issue) => ({ issue }),
+                  ),
+                  ...listPlanIssues(panelProps),
+                ]}
+                {...panelProps}
               />
-            }
-            // On the chart's top right, left to right: the selected course
-            // or term, and the requirements. Separate boxes, the same width,
-            // so they're evenly spaced and shrink alike. Each box widens
-            // with an Issues column on its right while it has problems: the
-            // selected course's or term's, and the plan's.
-            topRight={
-              <>
-                <div className={cn(chartBox, BOX_WITH_ISSUES)}>
-                  <div className="w-64 min-w-0">
-                    <DetailsPanel key={state.selectedId ?? `term-${state.selectedTerm}`} {...panelProps} />
-                  </div>
-                  <IssuesColumn
-                    issues={selectionIssues(view.chart, view.check.issues, state.selectedId, state.selectedTerm).map(
-                      (issue) => ({ issue }),
-                    )}
-                    {...panelProps}
-                  />
-                </div>
-                {/* Credit meters, GPA, and exceptions. Columns all the way
-                    down (the column, then the panel inside it), so when the
-                    box is capped in height, GPA stays put and the meters
-                    scroll. */}
-                <div className={cn(chartBox, BOX_WITH_ISSUES)}>
-                  <div className={cn(SCROLLING_COLUMN, "w-64")}>
-                    <SummaryPanel {...panelProps} />
-                  </div>
-                  <IssuesColumn issues={listPlanIssues(panelProps)} {...panelProps} />
-                </div>
-              </>
-            }
-          />
+            </div>
+            {/* Credit meters and exceptions. The title row stays put and
+                the meters scroll. */}
+            <div className={cn(COLUMN, SCROLLING)}>
+              <SummaryPanel {...panelProps} />
+            </div>
+          </section>
+          <div className="min-h-0 flex-1">
+            <ChartFlow
+              catalog={state.school.catalog}
+              chart={shownChart}
+              issues={view.check.issues}
+              creditsByTerm={view.check.report.creditsByTerm}
+              maxCredits={view.requirements.maxCreditsPerTerm}
+              requiredGrades={view.requirements.minGrades}
+              selectedId={state.selectedId}
+              onMove={(objectId, termIndex, position) => dispatch({ type: "move", objectId, termIndex, position })}
+              layoutVersion={state.layoutVersion}
+              planVersion={state.chart}
+              onSelect={(objectId) => dispatch({ type: "select", objectId })}
+              selectedTerm={state.selectedTerm}
+              onSelectTerm={(termIndex) => dispatch({ type: "selectTerm", termIndex })}
+              onRemove={(objectId) => dispatch({ type: "remove", objectId })}
+              onTermChange={(change) => {
+                // Showing or hiding Pre-Credit only changes the picture, so
+                // it's a panel setting rather than a change to the plan.
+                if (change.type === "showPreCredit" || change.type === "hidePreCredit") {
+                  if (panels.open.preCredit !== (change.type === "showPreCredit")) panels.toggle("preCredit");
+                } else dispatch(change);
+              }}
+            />
+          </div>
         </main>
       </div>
     </div>
   );
 }
 
-// A box on the chart with an Issues column on its right. Two boxes with
-// their Issues columns (4 × 256px), beside undo/redo and the plan's name,
-// need about 1280px of chart; on a narrower chart (the width is measured
-// by the "@container" in ChartFlow.tsx) the issues go on top of the box's
-// details instead (a column, with the issues moved first by order-first;
-// a reversed column would start scrolled to its bottom), so the box keeps
-// its usual width and its problems are the first thing in it.
-const BOX_WITH_ISSUES = "flex @max-[1280px]:flex-col";
-// A column whose panel's list shrinks and scrolls when the box is capped
-// in height, while the panel's title row stays. Where the issues sit on
-// top (see BOX_WITH_ISSUES), the parts don't shrink (shrink-0): the whole
-// box scrolls instead, so neither part is squeezed out of sight.
-const SCROLLING_COLUMN = "flex min-h-0 min-w-0 flex-col *:flex *:min-h-0 *:flex-col @max-[1280px]:shrink-0";
-
-// The Issues column on a box's right, joined to it by a line (below it
-// instead where the issues sit on top). Left out when there are no issues.
-function IssuesColumn({ issues, ...props }: PanelProps & { issues: ListedIssue[] }) {
-  if (issues.length === 0) return null;
-  return (
-    <div
-      className={cn(
-        SCROLLING_COLUMN,
-        "w-64 border-l border-zinc-200 dark:border-zinc-800 @max-[1280px]:order-first @max-[1280px]:border-b @max-[1280px]:border-l-0",
-      )}
-    >
-      <IssuesPanel issues={issues} {...props} />
-    </div>
-  );
-}
+// How tall the panel above the chart is, under the side panel header's
+// height: the plan's details column, and the rest of every other column.
+const DETAILS_HEIGHT = 192;
+// A column of the panel above the chart. The panel is a grid of four
+// exactly equal columns (grid-cols-4), each line drawn inside its column,
+// so the lines fall on exact quarters of the chart's width: where a term's
+// edge is at a quarter too (e.g. 4 or 8 terms), the two line up. min-h-0
+// lets a column be shorter than its contents, so it scrolls instead.
+const COLUMN = "min-h-0 min-w-0";
+// A column whose panel's list shrinks and scrolls inside the column's
+// fixed height, while the panel's title row stays.
+const SCROLLING = "flex min-h-0 flex-col *:flex *:min-h-0 *:flex-1 *:flex-col";

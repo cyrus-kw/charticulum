@@ -17,7 +17,7 @@ const KEY_STEP = 16;
 const CLICK_SLOP = 3;
 // The toggle sits this far from the corner, open or collapsed. It matches
 // React Flow's panel margin, so the floating copy lands in the same spot.
-const TOGGLE_INSET = 15;
+export const TOGGLE_INSET = 15;
 // The same height as the chart's button groups (28px buttons + 1px borders).
 export const TOGGLE_SIZE = 30;
 // The toggle's look, shared with other buttons in the side panel's header

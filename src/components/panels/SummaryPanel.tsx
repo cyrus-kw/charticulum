@@ -1,7 +1,7 @@
 "use client";
 
 import { CATEGORY_NAMES, type Category, type Override } from "../../engine/index";
-import { Badge, Button, cn, Panel } from "../ui";
+import { Button, cn, Panel } from "../ui";
 import type { PanelProps } from "./types";
 
 function Meter({ label, value, target, format = String }: { label: string; value: number; target: number; format?: (n: number) => string }) {
@@ -37,40 +37,18 @@ function describe(override: Override): string {
 }
 
 // Progress toward every requirement, and the exceptions in effect. The
-// plan's problems show beside the box (IssuesPanel). GPA stays in the
-// title row; the meters and exceptions below it scroll when the box is
-// capped in height (see the Requirements box in Planner.tsx).
+// plan's problems show in the Issues column beside it (IssuesPanel), and
+// GPA in Plan (PlanInfoPanel). The meters and exceptions scroll under the
+// title within the column's fixed height (see the panel above the chart in
+// Planner.tsx).
 export function SummaryPanel({ state, view, dispatch }: PanelProps) {
   const { report, appliedOverrides } = view.check;
   const { requirements } = view;
   const minimums = Object.entries(requirements.minCreditsByCategory) as [Category, number][];
   const overrides = state.chart.overrides ?? [];
 
-  // GPA sits in the title row, its number a tag: green when it's fine (3.45),
-  // red under the minimum, where it also says what the minimum is
-  // ("1.80 (min 2.00)"). Until there are grades there's no GPA yet, so
-  // it's a grey tag with a dash.
-  const { minGpa } = requirements;
-  const below = minGpa !== undefined && report.gpa !== undefined && report.gpa < minGpa;
-  const gpa = report.gpa === undefined ? "–" : report.gpa.toFixed(2);
-
   return (
-    <Panel
-      title="Requirements"
-      actions={
-        (minGpa !== undefined || report.gpa !== undefined) && (
-          // "GPA" in the panel title's small capitals, but regular weight
-          // and in the main text color (white in dark mode), then the
-          // number as a tag.
-          <span className="flex items-center gap-1.5">
-            <span className="text-xs font-normal tracking-wide text-ink uppercase dark:text-zinc-100">GPA</span>
-            <Badge tone={below ? "bad" : report.gpa === undefined ? "neutral" : "good"}>
-              {`${gpa}${below ? ` (min ${minGpa.toFixed(2)})` : ""}`}
-            </Badge>
-          </span>
-        )
-      }
-    >
+    <Panel title="Requirements">
       {/* The meters scroll: this reaches into the panel's right padding
           (-mr-4) and puts it back (pr-4), so the scrollbar sits by the
           box's edge without covering any words. */}
