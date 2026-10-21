@@ -779,7 +779,20 @@ export function ChartFlow({
     // The preview being shown (which term, which spot), so cards only
     // slide when it changes.
     previewKey: string | null;
+    // The part of the chart in view when the drag began (left, top,
+    // right, bottom); the card can't be dragged past its edges.
+    view: { left: number; top: number; right: number; bottom: number } | null;
   } | null>(null);
+  // Where a dragged card may go: its spot pulled back inside the visible
+  // part of the chart, so a card can't be dragged out of sight.
+  const inView = (p: Point): Point => {
+    const view = drag.current?.view;
+    if (!view) return p;
+    return {
+      x: Math.min(Math.max(p.x, view.left), view.right - geometry.nodeWidth),
+      y: Math.min(Math.max(p.y, view.top), view.bottom - NODE_HEIGHT),
+    };
+  };
   // Where to start from: the arrangement this exact version of the plan
   // had before (when undo/redo brings it back), else the latest one, or
   // nothing for a whole new plan (see layoutVersion).
@@ -1080,7 +1093,17 @@ export function ChartFlow({
           edges={edges}
           nodeTypes={nodeTypes}
           edgeTypes={edgeTypes}
-          onNodesChange={onNodesChange}
+          // React Flow reports where the dragged card has moved to; it's
+          // held inside the visible chart before being drawn there.
+          onNodesChange={(changes) =>
+            onNodesChange(
+              changes.map((c) =>
+                c.type === "position" && c.position && c.id === drag.current?.id
+                  ? { ...c, position: inView(c.position) }
+                  : c,
+              ),
+            )
+          }
           onNodeDragStart={(_, node) => {
             if (node.type !== "course") return;
             // Courses taken together with this one in its term move with it.
@@ -1095,6 +1118,12 @@ export function ChartFlow({
               start: home,
               previewIndex: null,
               previewKey: null,
+              // The canvas never scales, so what's in view is just the
+              // canvas's size, moved by how far it's scrolled.
+              view: (() => {
+                const v = flow.current?.getViewport();
+                return v && size ? { left: -v.x, top: -v.y, right: size.width - v.x, bottom: size.height - v.y } : null;
+              })(),
             };
             // The course being moved is the selected one, so its details show.
             // (No click follows a real drag, so this isn't undone by one.)
@@ -1104,9 +1133,11 @@ export function ChartFlow({
             setHoveredId(node.id);
             setNodes((nodes) => nodes.map((n) => (block.includes(n.id) ? { ...n, zIndex: DRAGGING_Z } : n)));
           }}
-          onNodeDrag={(_, node) => {
+          onNodeDrag={(_, dragged) => {
             const current = drag.current;
             if (!current) return;
+            // Where the card is drawn, which can be short of the pointer.
+            const node = { ...dragged, position: inView(dragged.position) };
             const start = current.start.get(node.id)!;
             const overOwnTerm = termIndexAt(chart, node.position.x, geometry) === current.termIndex;
             const dx = node.position.x - start.x;
@@ -1171,7 +1202,8 @@ export function ChartFlow({
             }
             slideTo(targets);
           }}
-          onNodeDragStop={(_, node) => {
+          onNodeDragStop={(_, dragged) => {
+            const node = { ...dragged, position: inView(dragged.position) };
             const current = drag.current;
             drag.current = null;
             if (node.type !== "course" || !current) return;
