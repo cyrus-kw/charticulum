@@ -91,14 +91,6 @@ export function RedoIcon() {
   );
 }
 
-export function MinusIcon() {
-  return (
-    <Icon>
-      <path d="M5 12h14" />
-    </Icon>
-  );
-}
-
 export function PlusIcon() {
   return (
     <Icon>
@@ -107,16 +99,38 @@ export function PlusIcon() {
   );
 }
 
-// Two chevrons pointing in toward the middle (><): squeeze the chart back
-// to fit the width. It spans x 5–19, the same width as the plus beside it.
-// Its stroke is a little thicker than the other icons' because slanted
-// lines at 16px get spread over neighbouring pixels and look fainter than
-// the plus's straight ones.
+// The three zoom icons are one family: arrows along the middle line,
+// spanning x 3–21, with the same 4-unit heads, so they read as a set.
+// (The ends are rounded, so the strokes reach 2–22 like the other icons.)
+
+// Two arrows pointing in at each other (→←): compress the chart.
+export function CompressIcon() {
+  return (
+    <Icon>
+      <path d="M3 12h7M6 8l4 4-4 4" />
+      <path d="M21 12h-7M18 8l-4 4 4 4" />
+    </Icon>
+  );
+}
+
+// Two arrows pointing away from each other (← →): spread the chart out.
+export function SpreadIcon() {
+  return (
+    <Icon>
+      <path d="M10 12H3M7 8l-4 4 4 4" />
+      <path d="M14 12h7M17 8l4 4-4 4" />
+    </Icon>
+  );
+}
+
+// Two arrows pointing in at a bar (→|←): squeeze the chart back to fit
+// the width, the bar being the window's edge.
 export function FitIcon() {
   return (
     <Icon>
-      <path d="m5 7 5 5-5 5" strokeWidth="2.5" />
-      <path d="m19 7-5 5 5 5" strokeWidth="2.5" />
+      <path d="M3 12h6M5 8l4 4-4 4" />
+      <path d="M21 12h-6M19 8l-4 4 4 4" />
+      <path d="M12 5v14" />
     </Icon>
   );
 }

@@ -302,4 +302,9 @@ export interface ChartIssue {
   termIndex?: number;
   // For requisite problems: which requisite isn't met.
   requisiteId?: string;
+  // For a requirement that isn't met yet: its name, the same as its meter
+  // in Requirements ("General Education", "Total Credits"), and a short
+  // summary to show beside that name ("15 more credits").
+  requirement?: string;
+  summary?: string;
 }

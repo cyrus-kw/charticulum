@@ -20,7 +20,18 @@ import {
   type ReactFlowInstance,
 } from "@xyflow/react";
 import { createPortal } from "react-dom";
-import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, type RefObject } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  useSyncExternalStore,
+  type RefObject,
+} from "react";
 import { EXTERNAL_TERM, meetsGrade, type Catalog, type Chart, type ChartIssue, type Grade } from "../engine/index";
 import {
   chartLayout,
@@ -58,7 +69,7 @@ import {
   type TermNode,
 } from "../planner/layout";
 import { concurrentBlock, dropIndex, packedTops, reorderPreview } from "../planner/ordering";
-import { FitIcon, MinusIcon, PlusIcon } from "./icons";
+import { CompressIcon, FitIcon, PlusIcon, SpreadIcon } from "./icons";
 import { ADD_MENU_WIDTH, AddTermMenu, canAddInGap, CourseMenu, TermMenu, type TermChange, type TermGap } from "./TermMenu";
 import { useTheme } from "./theme";
 import { cn, IssueCount, SEASON_TINT } from "./ui";
@@ -495,7 +506,7 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
   // scaled screen (e.g. 150%) a page pixel is 1.5 screen pixels, so the
   // rounding is in screen pixels (devicePixelRatio). Each column ends
   // exactly where the next begins, so there are no gaps or overlaps.
-  const ratio = typeof window === "undefined" ? 1 : window.devicePixelRatio || 1;
+  const ratio = usePixelRatio();
   const snap = (value: number) => Math.round(value * ratio) / ratio;
   const edge = (column: number) => snap(x + column * columnWidth);
   const place = (column: number) => ({ left: edge(column), width: edge(column + 1) - edge(column) });
@@ -526,6 +537,34 @@ function TermBands({ terms, columnWidth }: { terms: TermNode["data"][]; columnWi
         />
       ))}
     </div>
+  );
+}
+
+// How many screen pixels make one page pixel (1.5 on a 150% screen), kept
+// up to date if the window moves to another screen or the page is zoomed.
+// The server can't know it, so the server's copy of the page (and the
+// first draw in the browser) uses 1; React then switches to the real value
+// straight away. Reading it directly while drawing made the browser's
+// first draw differ from the server's, which React reports as an error
+// (a "hydration mismatch"). Same idea as useTheme in theme.ts.
+function usePixelRatio(): number {
+  return useSyncExternalStore(
+    (onChange) => {
+      // This media query matches only the current ratio, so it fires
+      // "change" once the ratio changes. Then it no longer describes the
+      // new ratio, so a fresh one is made for the next change.
+      let query = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+      const handle = () => {
+        query.removeEventListener("change", handle);
+        query = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+        query.addEventListener("change", handle);
+        onChange();
+      };
+      query.addEventListener("change", handle);
+      return () => query.removeEventListener("change", handle);
+    },
+    () => window.devicePixelRatio || 1,
+    () => 1,
   );
 }
 
@@ -567,7 +606,7 @@ function ZoomControls({
   return (
     <div className={flat ? "flex shrink-0 items-center gap-1" : controlGroup}>
       <button type="button" className={look} aria-label="Compress the chart" data-tooltip="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
-        <MinusIcon />
+        <CompressIcon />
       </button>
       <label className={cn("flex items-center px-1.5 text-xs text-zinc-500 tabular-nums", flat ? "h-[30px]" : "h-7")}>
         <input
@@ -593,7 +632,7 @@ function ZoomControls({
         %
       </label>
       <button type="button" className={look} aria-label="Spread the chart out" data-tooltip="Spread out" disabled={zoom >= MAX_ZOOM_PERCENT} onClick={() => onZoom(zoom + BUTTON_ZOOM_STEP)}>
-        <PlusIcon />
+        <SpreadIcon />
       </button>
       <button type="button" className={look} aria-label="Fit to width" data-tooltip="Fit to width" onClick={onFit}>
         <FitIcon />
@@ -1261,11 +1300,19 @@ export function ChartFlow({
             [Math.max(contentWidth, size?.width ?? 0), Math.max(contentHeight, size?.height ?? 0)],
           ]}
         >
-          {/* In the bottom-left corner, or the bottom-right when the zoom
-              controls take the left (leaving them room); wraps if narrow. */}
+          {/* Centered along the bottom, or in the bottom-right corner when
+              the zoom controls take the left (leaving them room); wraps if
+              narrow. */}
           <FlowPanel
-            position={zoomSlot === undefined ? "bottom-right" : "bottom-left"}
-            style={{ maxWidth: zoomSlot === undefined ? "calc(100% - 220px)" : "calc(100% - 30px)" }}
+            position={zoomSlot === undefined ? "bottom-right" : "bottom-center"}
+            // A centered panel sits from the middle and is pulled back by
+            // half its width, so it would only get half the chart's width
+            // and wrap early; max-content lets it be as wide as its keys.
+            style={
+              zoomSlot === undefined
+                ? { maxWidth: "calc(100% - 220px)" }
+                : { width: "max-content", maxWidth: "calc(100% - 30px)" }
+            }
             className={cn(bare && "hidden")}
           >
             <Legend />

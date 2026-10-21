@@ -12,7 +12,7 @@ import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
 import { PlanInfoPanel } from "./panels/PlanInfoPanel";
 import { IssuesPanel, listPlanIssues } from "./panels/IssuesPanel";
-import { selectionIssues } from "../planner/issues";
+import { chartIssues } from "../planner/issues";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
 import { ProgramPanel } from "./panels/ProgramPanel";
 import { SavePanel } from "./panels/SavePanel";
@@ -229,8 +229,10 @@ export function Planner({
         </SidePanel>
 
         <main className="flex min-h-0 min-w-0 flex-1 flex-col" aria-label="Chart">
-          {/* The panel above the chart, in four columns of the same width
-              with a line between each. The first has undo/redo and the
+          {/* The panel above the chart, in four columns with a line
+              between each: Plan, Selected, and Issues share the width
+              equally, and Requirements, the narrowest, gets two thirds of
+              one of theirs. The first has undo/redo and the
               zoom buttons in a row as tall as the side panel's header (so
               the two line up), and what the plan is under it (school,
               programs, terms). Then the selected course or term, every problem,
@@ -240,7 +242,7 @@ export function Planner({
           <section
             aria-label="Plan details"
             style={{ height: PANEL_HEADER_HEIGHT + 1 + DETAILS_HEIGHT }}
-            className="grid shrink-0 grid-cols-4 divide-x divide-zinc-200 border-b border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800"
+            className="grid shrink-0 grid-cols-[3fr_3fr_3fr_2fr] divide-x divide-zinc-200 border-b border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800"
           >
             <div className={cn(COLUMN, "flex flex-col")}>
               <div
@@ -269,17 +271,13 @@ export function Planner({
             <div className={cn(COLUMN, "overflow-y-auto")}>
               <DetailsPanel key={state.selectedId ?? `term-${state.selectedTerm}`} {...panelProps} />
             </div>
-            {/* The selected course's or term's problems first, since
-                they're about what's in Selected, just to the left, then the
-                plan's as a whole. */}
+            {/* The chart's problems (the selected course's or term's
+                first, since they're about what's in Selected, just to the
+                left), then what the plan still needs. */}
             <div className={cn(COLUMN, SCROLLING)}>
               <IssuesPanel
-                issues={[
-                  ...selectionIssues(view.chart, view.check.issues, state.selectedId, state.selectedTerm).map(
-                    (issue) => ({ issue }),
-                  ),
-                  ...listPlanIssues(panelProps),
-                ]}
+                chartIssues={chartIssues(view.chart, view.check.issues, state.selectedId, state.selectedTerm)}
+                requirementIssues={listPlanIssues(panelProps)}
                 {...panelProps}
               />
             </div>
@@ -325,9 +323,8 @@ export function Planner({
 // height: the plan's details column, and the rest of every other column.
 const DETAILS_HEIGHT = 192;
 // A column of the panel above the chart. The panel is a grid of four
-// exactly equal columns (grid-cols-4), each line drawn inside its column,
-// so the lines fall on exact quarters of the chart's width: where a term's
-// edge is at a quarter too (e.g. 4 or 8 terms), the two line up. min-h-0
+// columns sized 3 : 3 : 3 : 2 (about 27%, 27%, 27%, 18%), each line drawn
+// inside its column. min-h-0
 // lets a column be shorter than its contents, so it scrolls instead.
 const COLUMN = "min-h-0 min-w-0";
 // A column whose panel's list shrinks and scrolls inside the column's

@@ -28,3 +28,17 @@ export function selectionIssues(
   if (selectedId) return issues.filter((issue) => issue.objectId === selectedId);
   return [];
 }
+
+// Every problem on the chart (each belongs to a term or a course in one),
+// with what's selected first, so the problems about what's in Selected
+// lead the list in Issues beside it.
+export function chartIssues(
+  chart: Chart,
+  issues: ChartIssue[],
+  selectedId: string | null,
+  selectedTerm: number | null,
+): ChartIssue[] {
+  const selected = selectionIssues(chart, issues, selectedId, selectedTerm);
+  const onChart = issues.filter((issue) => chart.terms.some((term) => issueInTerm(issue, term)));
+  return [...selected, ...onChart.filter((issue) => !selected.includes(issue))];
+}

@@ -14,14 +14,33 @@ export function cn(...classes: (string | false | null | undefined)[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export function Panel({ title, children, actions }: { title: string; children: ReactNode; actions?: ReactNode }) {
+// `toolbar` makes the title row as tall as a toolbar button (30px) and
+// 15px from the top, the same as the undo/redo and zoom row beside it
+// above the chart, so the titles and those buttons sit on one line. Its
+// contents then start 6px below (mb-1.5), so their first line is centered
+// on the line under that row in the Plan column (61px down): a 20px row
+// starting at 15 + 30 + 6 = 51px has its middle at 61px.
+export function Panel({
+  title,
+  children,
+  actions,
+  toolbar = false,
+}: {
+  title: string;
+  children: ReactNode;
+  actions?: ReactNode;
+  toolbar?: boolean;
+}) {
   return (
     // A divider between sections; the last one has nothing below it, so
     // it skips its divider (last:border-b-0).
-    <section className="border-b border-zinc-200 px-4 py-3 last:border-b-0 dark:border-zinc-800">
+    <section
+      className={cn("border-b border-zinc-200 px-4 py-3 last:border-b-0 dark:border-zinc-800", toolbar && "pt-[15px]")}
+    >
       {/* A fixed height, so a button here (like Close) doesn't push the
-          title down; the button just overhangs a little. */}
-      <div className="mb-2 flex h-5 items-center justify-between gap-2">
+          title down; the button just overhangs a little. shrink-0 keeps
+          that height even when a long list below it is squeezed to fit. */}
+      <div className={cn("flex shrink-0 items-center justify-between gap-2", toolbar ? "mb-1.5 h-[30px]" : "mb-2 h-5")}>
         <h2 className="text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">{title}</h2>
         {actions}
       </div>
@@ -121,11 +140,15 @@ export function Badge({
   children,
   tone = "neutral",
   square = false,
+  keepCase = false,
 }: {
   children: ReactNode;
   tone?: "neutral" | "bad" | "good" | "info" | Season;
   // A square for an icon or a single digit (wider only if it must be).
   square?: boolean;
+  // Show a name exactly as it's written (e.g. a program's rule, "PHYS 213
+  // or 214"), instead of in title case.
+  keepCase?: boolean;
 }) {
   return (
     <span
@@ -143,7 +166,7 @@ export function Badge({
         tone === "summer" && cn(SEASON_TINT.summer, "text-yellow-800 dark:text-yellow-300"),
       )}
     >
-      {Children.map(children, (child) => (typeof child === "string" ? titleCase(child) : child))}
+      {keepCase ? children : Children.map(children, (child) => (typeof child === "string" ? titleCase(child) : child))}
     </span>
   );
 }

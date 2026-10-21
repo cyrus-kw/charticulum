@@ -97,6 +97,7 @@ export function evaluateRequirements(
       code: "MISSING_REQUIRED_OBJECT",
       // Named by its type: "Required course CS390…", "Required milestone…".
       message: `Required ${catalog.get(id)?.type ?? "item"} ${id} is not in the chart.`,
+      summary: "Required, not on the plan",
       objectId: id,
     });
   }
@@ -112,6 +113,8 @@ export function evaluateRequirements(
       issues.push({
         code: "CATEGORY_SHORTFALL",
         message: `${CATEGORY_NAMES[category]} has ${earned} credits; ${minimum} are required.`,
+        requirement: CATEGORY_NAMES[category],
+        summary: moreCredits(minimum - earned),
       });
     }
   }
@@ -132,6 +135,8 @@ export function evaluateRequirements(
       issues.push({
         code: "CREDIT_RULE_SHORTFALL",
         message: `${rule.name} has ${earned} credits; ${rule.credits} are required.`,
+        requirement: rule.name,
+        summary: moreCredits(rule.credits - earned),
       });
     }
   }
@@ -160,6 +165,8 @@ export function evaluateRequirements(
     issues.push({
       code: "TOTAL_CREDITS_SHORTFALL",
       message: `The chart has ${totalCredits} credits; ${requirements.minTotalCredits} are required.`,
+      requirement: "Total Credits",
+      summary: moreCredits(requirements.minTotalCredits - totalCredits),
     });
   }
 
@@ -167,6 +174,8 @@ export function evaluateRequirements(
     issues.push({
       code: "SHARED_CREDITS_OVER_LIMIT",
       message: `${sharedCredits} credits count toward more than one category; at most ${requirements.maxSharedCredits} may.`,
+      requirement: "Shared credits",
+      summary: `${sharedCredits - requirements.maxSharedCredits} too many count twice`,
     });
   }
 
@@ -175,6 +184,8 @@ export function evaluateRequirements(
     issues.push({
       code: "GPA_BELOW_MINIMUM",
       message: `GPA is ${gpa.toFixed(2)}; at least ${requirements.minGpa.toFixed(2)} is required.`,
+      requirement: "GPA",
+      summary: `${gpa.toFixed(2)}, under the minimum ${requirements.minGpa.toFixed(2)}`,
     });
   }
 
@@ -188,4 +199,10 @@ export function evaluateRequirements(
     gpa,
     issues,
   };
+}
+
+// "1 more credit", "15 more credits": how far a credit requirement is from
+// being met, for the short summary beside its name in Issues.
+function moreCredits(credits: number): string {
+  return `${credits} more ${credits === 1 ? "credit" : "credits"}`;
 }

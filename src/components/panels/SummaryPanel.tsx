@@ -47,14 +47,29 @@ export function SummaryPanel({ state, view, dispatch }: PanelProps) {
   const minimums = Object.entries(requirements.minCreditsByCategory) as [Category, number][];
   const overrides = state.chart.overrides ?? [];
 
+  const totalMet = report.totalCredits >= requirements.minTotalCredits;
   return (
-    <Panel title="Requirements">
+    <Panel
+      title="Requirements"
+      toolbar
+      // Total credits at the title row's right end, where Issues has its
+      // count: the one number every plan has, so it's always in view.
+      // Rose while short, like a meter's numbers. Just the numbers, on one
+      // line (the column is narrow); pointing at them says what they are.
+      actions={
+        <span
+          className={cn("text-sm whitespace-nowrap tabular-nums", !totalMet && "text-rose-700 dark:text-rose-400")}
+          data-tooltip="Total credits"
+        >
+          {report.totalCredits} / {requirements.minTotalCredits}
+        </span>
+      }
+    >
       {/* The meters scroll: this reaches into the panel's right padding
           (-mr-4) and puts it back (pr-4), so the scrollbar sits by the
           box's edge without covering any words. */}
       <div className="-mr-4 min-h-0 overflow-y-auto pr-4">
         <div className="space-y-2">
-          <Meter label="Total Credits" value={report.totalCredits} target={requirements.minTotalCredits} />
           {minimums.map(([category, minimum]) => (
             <Meter key={category} label={CATEGORY_NAMES[category]} value={report.creditsByCategory[category] ?? 0} target={minimum} />
           ))}

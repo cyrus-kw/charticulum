@@ -134,7 +134,12 @@ describe("evaluateRequirements", () => {
       );
       expect(report.creditsByRule).toEqual({ gq: 8, upper: 6, list: 6 });
       expect(report.issues).toEqual([
-        { code: "CREDIT_RULE_SHORTFALL", message: "From the list has 6 credits; 9 are required." },
+        {
+          code: "CREDIT_RULE_SHORTFALL",
+          message: "From the list has 6 credits; 9 are required.",
+          requirement: "From the list",
+          summary: "3 more credits",
+        },
       ]);
     });
 

@@ -24,7 +24,9 @@ import { issueInTerm } from "./issues";
 export const COLUMN_WIDTH = 212;
 export const NODE_WIDTH = 120;
 export const NODE_HEIGHT = 52;
-export const ROW_HEIGHT = 88;
+// A row is a card plus the gap under it (56px), room for lines to pass
+// between cards.
+export const ROW_HEIGHT = 108;
 export const HEADER_HEIGHT = 72;
 const FOOTER_HEIGHT = 24;
 // Cards are centered in their stripe, leaving a wide gap for lines.

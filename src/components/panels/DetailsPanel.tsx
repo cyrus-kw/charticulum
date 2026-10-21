@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { satisfies, CATEGORY_NAMES, EXTERNAL_TERM, GRADE_POINTS, type Grade, type Term } from "../../engine/index";
-import { planIssues } from "../../planner/issues";
 import { canRemoveTerm } from "../../planner/state";
 import { askReason, Badge, Button, cn, DANGER_ICON_BUTTON, newId, Panel, Select } from "../ui";
 import { courseCode } from "../../planner/layout";
@@ -11,9 +10,9 @@ import type { PanelProps } from "./types";
 import { useDescription } from "./useDescription";
 
 const GRADES = Object.keys(GRADE_POINTS) as Grade[];
-// A row of tags under a label. It is as tall as a compact dropdown (h-5), so
-// the left column's rows line up with Term and Grade on the right.
-const tagList = "mt-0.5 flex min-h-5 flex-wrap items-center gap-1";
+// A row's tags, beside its label. min-h-5 makes a row of tags as tall as
+// a line of the label's text, so the two stay level.
+const tagList = "flex min-h-5 min-w-0 flex-wrap items-center gap-1";
 
 // Everything about the selected object, plus ways to change it. The term
 // picker is a keyboard-friendly alternative to dragging.
@@ -25,18 +24,12 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
   // A term is selected (by clicking its title on the chart).
   const selectedTerm = view.chart.terms.find((t) => t.index === state.selectedTerm);
   if (selectedTerm) return <TermDetails term={selectedTerm} state={state} view={view} dispatch={dispatch} />;
-  // Nothing selected: the box stays, with a hint, and says where any
-  // problems on the chart are (the red counts on cards and term titles).
+  // Nothing selected: the box stays, with a hint. (The chart's problems
+  // are all listed in Issues beside it.)
   if (!id || !object) {
-    const onChart = view.check.issues.length - planIssues(view.chart, view.check.issues).length;
     return (
-      <Panel title="Selected">
+      <Panel title="Selected" toolbar>
         <p className="text-sm text-zinc-500">Click on a course or a term to see its details.</p>
-        {onChart > 0 && (
-          <p className="mt-1 text-sm text-rose-700 dark:text-rose-400">
-            {onChart === 1 ? "1 issue" : `${onChart} issues`} on the chart: look for the red counts.
-          </p>
-        )}
       </Panel>
     );
   }
@@ -52,6 +45,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
   return (
     <Panel
       title="Selected"
+      toolbar
       actions={
         // Pre-Credit is removed under Pre-Credit, not here.
         !external && (
@@ -67,132 +61,124 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
         )
       }
     >
-      <div className="mb-2">
-        {/* "CS 201: Algorithms" */}
-        <div className="text-base">
-          <span className="font-semibold">{courseCode(object.id)}</span>: {object.title}
-        </div>
-        <div className="mt-1 flex flex-wrap gap-1">
-          <Badge>{object.type}</Badge>
-          <Badge>
-            {object.credits} {object.credits === 1 ? "credit" : "credits"}
-          </Badge>
-          {object.categories.map((c) => (
-            <Badge key={c} tone="info">
-              {CATEGORY_NAMES[c]}
-            </Badge>
-          ))}
-        </div>
-        {/* key: a new course starts with its description cut short again. */}
-        <Description key={object.id} schoolId={state.school.data.school.id} objectId={object.id} />
+      {/* "CS 201: Algorithms". Its line is 24px, taller than the 20px rows
+          Panel's `toolbar` centers on the line in the Plan column, so it
+          moves up 2px (-mt-0.5) to be centered on that line too. */}
+      <div className="-mt-0.5 text-base">
+        <span className="font-semibold">{courseCode(object.id)}</span>: {object.title}
       </div>
-
-      {/* Course information on the left; its term and grade on the right.
-          Labels sit above their values to fit both side by side. */}
-      <div className="grid grid-cols-2 gap-3 text-sm">
-        <dl className="space-y-1.5">
-          {/* Requisites only when the course has any. */}
-          {requisites.previous.length > 0 && (
-            <div>
-              <dt className="text-xs text-zinc-500">Prerequisites</dt>
-              <dd className={tagList}>
-                {requisites.previous.map((r) => (
-                  <Badge key={r}>
-                    {courseCode(r)}
-                    {requisites.minGrades?.[r] && ` (${requisites.minGrades[r]}+)`}
-                  </Badge>
-                ))}
-              </dd>
-            </div>
-          )}
-          {requisites.concurrent.length > 0 && (
-            <div>
-              <dt className="text-xs text-zinc-500">Concurrents</dt>
-              <dd className={tagList}>
-                {requisites.concurrent.map((r) => (
-                  <Badge key={r}>{courseCode(r)}</Badge>
-                ))}
-              </dd>
-            </div>
-          )}
-          <div>
-            <dt className="text-xs text-zinc-500">Offered</dt>
-            {/* Tags, tinted like the chart's one-season cards. */}
-            <dd className={tagList}>
-              {availability.seasons.length > 0 ? (
-                availability.seasons.map((season) => (
-                  <Badge key={season} tone={season}>
-                    {season}
-                  </Badge>
-                ))
-              ) : (
-                // Not scheduled by the school yet.
-                <Badge>TBA</Badge>
-              )}
-              {availability.yearParity && <Badge>{availability.yearParity} years</Badge>}
-            </dd>
-          </div>
-          {object.internalEquivalents.length > 0 && (
-            <div>
-              <dt className="text-xs text-zinc-500">Same as</dt>
-              <dd className={tagList}>
-                {object.internalEquivalents.map((r) => (
-                  <Badge key={r}>{courseCode(r)}</Badge>
-                ))}
-              </dd>
-            </div>
-          )}
-        </dl>
-
-        {external ? (
-          <p className="text-zinc-500">Pre-Credit from outside work. Remove it under Pre-Credit.</p>
+      {/* One line of tags: credits, gen ed areas, then the seasons it's
+          offered in (tinted like the chart's one-season cards). Its type
+          only shows when it isn't a course, since nearly everything is. */}
+      <div className="mt-1 flex flex-wrap gap-1">
+        {object.type !== "course" && <Badge>{object.type}</Badge>}
+        <Badge>
+          {object.credits} {object.credits === 1 ? "credit" : "credits"}
+        </Badge>
+        {object.categories.map((c) => (
+          <Badge key={c} tone="info">
+            {CATEGORY_NAMES[c]}
+          </Badge>
+        ))}
+        {availability.seasons.length === 4 ? (
+          // Offered all year: one tag instead of four.
+          <Badge>Every season</Badge>
+        ) : availability.seasons.length > 0 ? (
+          availability.seasons.map((season) => (
+            <Badge key={season} tone={season}>
+              {season}
+            </Badge>
+          ))
         ) : (
-          <div className="space-y-1.5">
-            <div>
-              <label htmlFor="detail-term" className="block text-xs text-zinc-500">
-                Term
-              </label>
-              <Select
-                id="detail-term"
-                className="w-full"
-                compact
-                value={term?.index ?? ""}
-                onChange={(e) => dispatch({ type: "move", objectId: id, termIndex: Number(e.target.value) })}
-              >
-                {!term && <option value="">Not in plan</option>}
-                {view.chart.terms
-                  .filter((t) => t.index !== EXTERNAL_TERM)
-                  .map((t) => (
-                    <option key={t.index} value={t.index}>
-                      {t.label}
-                    </option>
-                  ))}
-              </Select>
-            </div>
-            <div>
-              <label htmlFor="detail-grade" className="block text-xs text-zinc-500">
-                Grade
-              </label>
-              <Select
-                id="detail-grade"
-                className="w-full"
-                compact
-                value={state.chart.grades?.[id] ?? ""}
-                onChange={(e) =>
-                  dispatch({ type: "setGrade", objectId: id, grade: (e.target.value || null) as Grade | null })
-                }
-              >
-                <option value="">No grade</option>
-                {GRADES.map((g) => (
-                  <option key={g} value={g}>
-                    {g}
+          // Not scheduled by the school yet.
+          <Badge>Offered TBA</Badge>
+        )}
+        {availability.yearParity && <Badge>{availability.yearParity} years</Badge>}
+      </div>
+      {/* key: a new course starts with its description cut short again. */}
+      <Description key={object.id} schoolId={state.school.data.school.id} objectId={object.id} />
+
+      {/* The rest as rows like the Plan box's: a grey label beside its
+          value, one line each, so it all fits without scrolling. Term and
+          Grade share the first row, since they're the two things to change;
+          requisite rows only show when the course has any. */}
+      <dl className="mt-2 grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-1.5 text-sm">
+        <dt className="self-center text-zinc-500">Term</dt>
+        {external ? (
+          <dd className="text-zinc-500">Pre-Credit (remove it under Pre-Credit)</dd>
+        ) : (
+          <dd className="flex min-w-0 items-center gap-3">
+            <Select
+              aria-label="Term"
+              className="min-w-0 flex-1"
+              compact
+              value={term?.index ?? ""}
+              onChange={(e) => dispatch({ type: "move", objectId: id, termIndex: Number(e.target.value) })}
+            >
+              {!term && <option value="">Not in plan</option>}
+              {view.chart.terms
+                .filter((t) => t.index !== EXTERNAL_TERM)
+                .map((t) => (
+                  <option key={t.index} value={t.index}>
+                    {t.label}
                   </option>
                 ))}
-              </Select>
-            </div>
-          </div>
+            </Select>
+            <label htmlFor="detail-grade" className="shrink-0 text-zinc-500">
+              Grade
+            </label>
+            <Select
+              id="detail-grade"
+              className="w-20 shrink-0"
+              compact
+              value={state.chart.grades?.[id] ?? ""}
+              onChange={(e) =>
+                dispatch({ type: "setGrade", objectId: id, grade: (e.target.value || null) as Grade | null })
+              }
+            >
+              <option value="">None</option>
+              {GRADES.map((g) => (
+                <option key={g} value={g}>
+                  {g}
+                </option>
+              ))}
+            </Select>
+          </dd>
         )}
-      </div>
+        {requisites.previous.length > 0 && (
+          <>
+            <dt className="text-zinc-500">Needs</dt>
+            <dd className={tagList}>
+              {requisites.previous.map((r) => (
+                <Badge key={r}>
+                  {courseCode(r)}
+                  {requisites.minGrades?.[r] && ` (${requisites.minGrades[r]}+)`}
+                </Badge>
+              ))}
+            </dd>
+          </>
+        )}
+        {requisites.concurrent.length > 0 && (
+          <>
+            <dt className="text-zinc-500">Taken with</dt>
+            <dd className={tagList}>
+              {requisites.concurrent.map((r) => (
+                <Badge key={r}>{courseCode(r)}</Badge>
+              ))}
+            </dd>
+          </>
+        )}
+        {object.internalEquivalents.length > 0 && (
+          <>
+            <dt className="text-zinc-500">Same as</dt>
+            <dd className={tagList}>
+              {object.internalEquivalents.map((r) => (
+                <Badge key={r}>{courseCode(r)}</Badge>
+              ))}
+            </dd>
+          </>
+        )}
+      </dl>
 
       {!external && unmetRequired.length > 0 && (
         <div className="mt-3 space-y-2">
@@ -249,6 +235,7 @@ function TermDetails({ term, state, view, dispatch }: PanelProps & { term: Term 
   return (
     <Panel
       title="Selected"
+      toolbar
       actions={
         // Pre-Credit fills itself from outside work, so it isn't removed.
         !external && (
@@ -265,8 +252,9 @@ function TermDetails({ term, state, view, dispatch }: PanelProps & { term: Term 
         )
       }
     >
-      <div className="mb-2">
-        {/* The term's name, with its credit load at the right end, in the
+      <div className="-mt-0.5 mb-2">
+        {/* The term's name (moved up 2px like a course's, to be centered on
+            the line in the Plan column), with its credit load at the right end, in the
             boxes' quiet grey text (like the Issues box's "This plan meets
             every requirement."); rose when over the limit. */}
         <div className="flex items-baseline justify-between gap-2">
@@ -315,26 +303,27 @@ function TermDetails({ term, state, view, dispatch }: PanelProps & { term: Term 
 }
 
 // A course's description, fetched when the course is selected. Cut to
-// four lines at first; "More" shows the rest. Nothing shows while it
-// loads or if there isn't one, so courses without one look as before.
+// two lines at first (the "…" says there's more); clicking it shows the
+// rest, and clicking again cuts it short. That saves the line a separate
+// "More" button would take. Nothing shows while it loads or if there
+// isn't one, so courses without one look as before.
 function Description({ schoolId, objectId }: { schoolId: string; objectId: string }) {
   const description = useDescription(schoolId, objectId);
   const [open, setOpen] = useState(false);
   if (!description) return null;
-  // Only offer "More" when there's likely more than four lines' worth.
-  const long = description.length > 220;
+  // Only clickable when there's likely more than two lines' worth.
+  const long = description.length > 110;
+  const text = cn("mt-1 text-sm text-zinc-600 dark:text-zinc-400", long && !open && "line-clamp-2");
+  if (!long) return <p className={text}>{description}</p>;
   return (
-    <div className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-      <p className={cn(long && !open && "line-clamp-4")}>{description}</p>
-      {long && (
-        <button
-          type="button"
-          onClick={() => setOpen(!open)}
-          className="mt-0.5 text-xs text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300"
-        >
-          {open ? "Less" : "More"}
-        </button>
-      )}
-    </div>
+    <button
+      type="button"
+      aria-expanded={open}
+      data-tooltip={open ? "Show less" : "Show all"}
+      onClick={() => setOpen(!open)}
+      className={cn(text, "w-full text-left hover:text-zinc-800 dark:hover:text-zinc-200")}
+    >
+      {description}
+    </button>
   );
 }

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { ChartIssue } from "../src/engine/index";
-import { issueInTerm, planIssues, selectionIssues } from "../src/planner/issues";
+import { chartIssues, issueInTerm, planIssues, selectionIssues } from "../src/planner/issues";
 import { chartOf } from "./helpers";
 
 describe("where problems show", () => {
@@ -33,5 +33,19 @@ describe("the selection's problems", () => {
     expect(selectionIssues(chart, issues, null, 2)).toEqual([onB, overLimit]);
     expect(selectionIssues(chart, issues, null, 1)).toEqual([]);
     expect(selectionIssues(chart, issues, null, null)).toEqual([]);
+  });
+});
+
+describe("the chart's problems", () => {
+  const chart = chartOf([[], ["A"], ["B"]]);
+  const onA: ChartIssue = { code: "NOT_OFFERED", message: "", objectId: "A", termIndex: 1 };
+  const onB: ChartIssue = { code: "NOT_OFFERED", message: "", objectId: "B", termIndex: 2 };
+  const shortfall: ChartIssue = { code: "TOTAL_CREDITS_SHORTFALL", message: "" };
+  const issues = [onA, onB, shortfall];
+
+  it("lists every one on the chart, the selection's first", () => {
+    expect(chartIssues(chart, issues, null, null)).toEqual([onA, onB]);
+    expect(chartIssues(chart, issues, "B", null)).toEqual([onB, onA]);
+    expect(chartIssues(chart, issues, null, 2)).toEqual([onB, onA]);
   });
 });
