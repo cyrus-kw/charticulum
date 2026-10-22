@@ -608,7 +608,7 @@ function ZoomControls({
       <button type="button" className={look} aria-label="Compress the chart" data-tooltip="Compress" disabled={zoom <= 100} onClick={() => onZoom(zoom - BUTTON_ZOOM_STEP)}>
         <CompressIcon />
       </button>
-      <label className={cn("flex items-center px-1.5 text-xs text-zinc-500 tabular-nums", flat ? "h-[30px]" : "h-7")}>
+      <label className={cn("flex items-center text-xs text-zinc-500 tabular-nums", flat ? "h-[30px]" : "h-7 px-1.5")}>
         <input
           type="text"
           inputMode="numeric"

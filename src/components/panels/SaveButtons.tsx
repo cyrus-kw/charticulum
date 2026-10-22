@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import type { Chart } from "../../engine/index";
 import { serverChartStore } from "../../storage/stores";
 import { CopyIcon, SaveIcon } from "../icons";
-import { cn, ICON_BUTTON, ICON_BUTTON_BASE } from "../ui";
+import { cn, ICON_BUTTON, ICON_BUTTON_BASE, TOOLBAR_BUTTON_SIZE } from "../ui";
 import type { PanelProps } from "./types";
 
 const store = serverChartStore();
@@ -60,6 +60,7 @@ export function SaveButtons({
         data-tooltip={status}
         disabled={busy || !unsaved}
         onClick={() => void save(false)}
+        style={TOOLBAR_BUTTON_SIZE}
         // ICON_BUTTON's grey, or the same button in sky. (Both colors
         // can't be listed at once: whichever Tailwind wrote last would win.)
         className={cn(
@@ -80,6 +81,7 @@ export function SaveButtons({
         data-tooltip="Save a copy"
         disabled={busy}
         onClick={() => void save(true)}
+        style={TOOLBAR_BUTTON_SIZE}
         className={cn(ICON_BUTTON, "disabled:cursor-not-allowed disabled:opacity-40")}
       >
         <CopyIcon />

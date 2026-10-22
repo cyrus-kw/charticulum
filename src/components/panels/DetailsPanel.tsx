@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { satisfies, CATEGORY_NAMES, EXTERNAL_TERM, GRADE_POINTS, type Grade, type Term } from "../../engine/index";
 import { canRemoveTerm } from "../../planner/state";
-import { askReason, Badge, Button, cn, DANGER_ICON_BUTTON, newId, Panel, Select } from "../ui";
+import { askReason, Badge, Button, cn, DANGER_ICON_BUTTON, newId, Panel, Select, TOOLBAR_BUTTON_SIZE } from "../ui";
 import { courseCode } from "../../planner/layout";
 import { TrashIcon } from "../icons";
 import type { PanelProps } from "./types";
@@ -54,6 +54,7 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             aria-label={`Remove ${object.id} from plan`}
             data-tooltip="Remove from plan"
             onClick={() => dispatch({ type: "remove", objectId: id })}
+            style={TOOLBAR_BUTTON_SIZE}
             className={DANGER_ICON_BUTTON}
           >
             <TrashIcon />
@@ -245,6 +246,7 @@ function TermDetails({ term, state, view, dispatch }: PanelProps & { term: Term 
             data-tooltip={removable ? "Remove term (its courses come off the chart)" : "The only term can't be removed."}
             disabled={!removable}
             onClick={() => dispatch({ type: "removeTerm", termIndex: term.index })}
+            style={TOOLBAR_BUTTON_SIZE}
             className={cn(DANGER_ICON_BUTTON, "disabled:cursor-not-allowed disabled:opacity-40")}
           >
             <TrashIcon />

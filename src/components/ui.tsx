@@ -88,6 +88,10 @@ export const DANGER_ICON_BUTTON = cn(
   ICON_BUTTON_BASE,
   "text-rose-600 hover:bg-rose-50 hover:text-rose-700 dark:text-rose-400 dark:hover:bg-rose-950 dark:hover:text-rose-300",
 );
+// In the title rows of the panel above the chart, icon buttons are 30px
+// like undo/redo and zoom beside them, so every icon up there is spaced
+// the same (34px apart with gap-1). A style, since it must beat size-7.
+export const TOOLBAR_BUTTON_SIZE = { width: 30, height: 30 };
 
 // How a form field looks while it's being typed in: a sky border with a
 // soft sky glow around it (instead of the browser's own black outline).

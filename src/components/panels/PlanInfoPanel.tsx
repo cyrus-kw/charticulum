@@ -3,7 +3,7 @@
 import { EXTERNAL_TERM, type Chart } from "../../engine/index";
 import { ResetIcon } from "../icons";
 import { askToConfirm } from "../ConfirmDialog";
-import { cn, ICON_BUTTON, Panel } from "../ui";
+import { cn, ICON_BUTTON, Panel, TOOLBAR_BUTTON_SIZE } from "../ui";
 import { SaveButtons } from "./SaveButtons";
 import type { PanelProps } from "./types";
 
@@ -69,6 +69,7 @@ export function PlanInfoPanel({
               const message = "Replace the current plan with one the builder lays out?";
               if (await askToConfirm({ message, confirmLabel: "Replace" })) dispatch({ type: "build" });
             }}
+            style={TOOLBAR_BUTTON_SIZE}
             className={ICON_BUTTON}
           >
             <ResetIcon />
