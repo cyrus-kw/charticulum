@@ -32,17 +32,19 @@ export function SiteHeader({ user }: { user?: MenuUser }) {
         </Link>
         {/* self-stretch: the links run the bar's full height, so the
             chosen one's underline sits on the bar's bottom border, like
-            the Plan / Catalog tabs in the planner's side panel. items-end
-            and pb-2 put the words 8px above the underline, the same gap
-            those tabs have (their py-2). */}
-        <nav aria-label="Site" className="flex gap-2 self-stretch">
+            the Curriculum AI / Catalog tabs in the planner's side panel.
+            To look like those tabs: each link is the same width with its
+            name centered, they touch (no gap, so the underlines would
+            meet), and pb-3 puts the words 12px above the underline, the
+            same gap those tabs have (their py-3). */}
+        <nav aria-label="Site" className="flex self-stretch">
           {user &&
             LINKS.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               aria-current={pathname === href ? "page" : undefined}
-              className={cn(tabClass(pathname === href), "flex items-end pb-2 sm:px-3")}
+              className={cn(tabClass(pathname === href), "flex w-24 items-end justify-center pb-3 sm:w-40")}
             >
               {label}
             </Link>
