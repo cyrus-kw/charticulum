@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { memoryAccountStore } from "../src/server/accounts";
 import { checkCode, endSession, hashSecret, normalizeEmail, requestCode, userForSession, type AuthDeps } from "../src/server/auth";
 import type { EmailMessage } from "../src/server/mailer";
@@ -36,6 +36,20 @@ async function signIn(world: ReturnType<typeof setup>, email: string, name = "An
   if (!result.ok || result.kind !== "sign-in") throw new Error("Sign-in failed.");
   return result.session.secret;
 }
+
+describe("requestCode when email fails", () => {
+  it("says the email couldn't be sent", async () => {
+    const world = setup();
+    world.deps.mailer = {
+      send: async () => {
+        throw new Error("Resend is down");
+      },
+    };
+    vi.spyOn(console, "error").mockImplementation(() => {});
+    const result = await requestCode(world.deps, { email: "ana@example.com" });
+    expect(result).toEqual({ ok: false, error: expect.stringMatching(/couldn't send/) });
+  });
+});
 
 describe("normalizeEmail", () => {
   it("trims and lowercases, and rejects non-addresses", () => {

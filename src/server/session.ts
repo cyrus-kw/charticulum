@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 import type { User } from "./accounts";
 import { endSession, userForSession, type AuthDeps } from "./auth";
 import { requireDatabase } from "./db";
-import { consoleMailer } from "./mailer";
+import { mailerFromEnv } from "./mailer";
 
 // The cookie that holds a signed-in browser's session secret.
 const SESSION_COOKIE = "charticulum_session";
@@ -15,7 +15,7 @@ const SESSION_COOKIE = "charticulum_session";
 export function authDeps(): AuthDeps {
   return {
     store: requireDatabase().accounts,
-    mailer: consoleMailer,
+    mailer: mailerFromEnv(),
     now: () => new Date(),
     // ADMIN_EMAILS="ana@example.com, bo@example.com" in .env
     adminEmails: (process.env.ADMIN_EMAILS ?? "")

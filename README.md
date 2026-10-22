@@ -130,11 +130,17 @@ database copies itself for a scratch check), write the migration with
 and apply it with `npm run db:deploy`.
 
 **Accounts**: sign in on the home page with a 6-digit code sent by email
-(no passwords). For now the email is printed in the terminal running the
-app, so copy the code from there. Charts are private to each account;
+(no passwords). Without an email service set up (`npm run dev`), the
+email is printed in the terminal running the app, so copy the code from
+there. Charts are private to each account;
 schools are shared. Put `ADMIN_EMAILS="you@example.com"` in `.env` to make your account
 an admin (admins import and change schools).
 
 **On Vercel**: add a Postgres database from the Vercel dashboard (Storage tab),
 which sets `DATABASE_URL` for you. Then create the tables once with
-`DATABASE_URL="<that url>" npm run db:deploy`.
+`DATABASE_URL="<that url>" npm run db:deploy` (and again whenever a new
+migration is added). For sign-in emails, make a free Resend account
+(resend.com), verify a domain you own there, and set `RESEND_API_KEY` and
+`EMAIL_FROM` (e.g. `Charticulum <codes@your-domain>`) in the Vercel
+project's environment variables. Without them, the live site can't send
+codes.

@@ -20,7 +20,7 @@
 import { createHash, randomBytes, randomInt, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
 import type { AccountStore, Role, User } from "./accounts";
-import type { Mailer } from "./mailer";
+import type { EmailMessage, Mailer } from "./mailer";
 
 export const CODE_MINUTES = 15;
 export const SESSION_DAYS = 30;
@@ -83,7 +83,7 @@ export async function requestCode(deps: AuthDeps, input: { email: string; userId
     createdAt: now,
   });
   const ending = `It works once, for ${CODE_MINUTES} minutes. If you didn't ask for this, ignore this email.`;
-  await deps.mailer.send(
+  const message: EmailMessage =
     input.userId
       ? {
           to: email,
@@ -94,8 +94,15 @@ export async function requestCode(deps: AuthDeps, input: { email: string; userId
           to: email,
           subject: `${code} is your Charticulum code`,
           text: `Enter this code to sign in to Charticulum:\n\n${code}\n\n${ending}`,
-        },
-  );
+        };
+  try {
+    await deps.mailer.send(message);
+  } catch (error) {
+    // The details (a bad key, an unverified domain...) are for whoever
+    // runs the site, so they go to the server log, not the page.
+    console.error(error);
+    return { ok: false, error: "We couldn't send the email. Please try again in a few minutes." };
+  }
   return { ok: true };
 }
 
