@@ -78,11 +78,13 @@ export function Button({ variant = "secondary", className, ...props }: ButtonPro
 // Small square icon-only buttons inside boxes and menus (28px). The
 // plain one is grey; the danger one is rose, for removing or leaving
 // (the course trash button, Sign out). Icon-only buttons also need an
-// aria-label and a data-tooltip.
+// aria-label and a data-tooltip. While a button's menu is open
+// (aria-expanded), it's highlighted in the menu's own background color
+// (white, dark zinc-900), so it's clear which button the menu belongs to.
 export const ICON_BUTTON_BASE = "flex size-7 shrink-0 items-center justify-center rounded-md";
 export const ICON_BUTTON = cn(
   ICON_BUTTON_BASE,
-  "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100",
+  "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 aria-expanded:bg-white aria-expanded:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 dark:aria-expanded:bg-zinc-900 dark:aria-expanded:text-zinc-100",
 );
 export const DANGER_ICON_BUTTON = cn(
   ICON_BUTTON_BASE,

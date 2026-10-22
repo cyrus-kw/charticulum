@@ -88,7 +88,7 @@ export function SaveButtons({
           unsaved
             ? cn(
                 ICON_BUTTON_BASE,
-                "text-sky-600 hover:bg-zinc-100 hover:text-sky-700 dark:text-sky-400 dark:hover:bg-zinc-800 dark:hover:text-sky-300",
+                "text-sky-600 hover:bg-zinc-100 hover:text-sky-700 aria-expanded:bg-white aria-expanded:text-sky-700 dark:text-sky-400 dark:hover:bg-zinc-800 dark:hover:text-sky-300 dark:aria-expanded:bg-zinc-900 dark:aria-expanded:text-sky-300",
               )
             : ICON_BUTTON,
           "disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent",
