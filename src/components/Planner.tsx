@@ -16,7 +16,6 @@ import { PlanInfoPanel } from "./panels/PlanInfoPanel";
 import { IssuesPanel, listPlanIssues } from "./panels/IssuesPanel";
 import { chartIssues } from "../planner/issues";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
-import { ProgramPanel } from "./panels/ProgramPanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { cn, Tabs } from "./ui";
@@ -174,7 +173,15 @@ export function Planner({
   );
 
   return (
-    <div className="flex h-dvh flex-col bg-page text-ink dark:bg-zinc-950 dark:text-zinc-100">
+    // overflow-clip: the planner exactly fills the window, and nothing in
+    // it (like the chart's edge, wider than the window at some zooms) may
+    // stick out past it. Otherwise the page grows wider than the window,
+    // and a sideways trackpad swipe over a part that doesn't scroll itself
+    // (the legend, the account row) slides the whole page instead.
+    // "clip" rather than "hidden" because it can't be scrolled at all.
+    // relative: things placed with position: absolute and no other frame
+    // are placed in this one, so the clip covers them too.
+    <div className="relative flex h-dvh flex-col overflow-clip bg-page text-ink dark:bg-zinc-950 dark:text-zinc-100">
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
         {/* Side panels resize by dragging their inner edge, which also widens
             or compresses the chart, and collapse to an icon. */}
@@ -226,7 +233,8 @@ export function Planner({
             </>
           }
         >
-          {/* Two tabs: the plan itself, and the school's courses and data.
+          {/* Two tabs: Curriculum AI (a placeholder for now), and the
+              school's courses and data, with Pre-Credit at the top.
               The tab row stays in view at the top of the scrolling part,
               just under the header. */}
           <Tabs
@@ -237,20 +245,16 @@ export function Planner({
             stickyTop={0}
             tabs={[
               {
-                value: "plan",
-                label: "Plan",
-                content: (
-                  <>
-                    <ProgramPanel {...panelProps} />
-                    <ExternalCreditPanel {...panelProps} />
-                  </>
-                ),
+                value: "ai",
+                label: "Curriculum AI",
+                content: <p className="px-4 py-3 text-sm text-zinc-500">Coming soon.</p>,
               },
               {
                 value: "catalog",
                 label: "Catalog",
                 content: (
                   <>
+                    <ExternalCreditPanel {...panelProps} />
                     <CatalogPanel {...panelProps} />
                     <SchoolPanel {...panelProps} />
                   </>

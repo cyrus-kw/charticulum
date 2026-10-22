@@ -16,9 +16,9 @@ export const PANEL_MAX_WIDTH = 560;
 // Dragged narrower than this, a side panel collapses to its icon.
 export const PANEL_COLLAPSE_BELOW = 160;
 
-// The Tools side panel's tabs: the plan (programs, requirements, ...) or the
-// school's courses and data.
-export type ToolsTab = "plan" | "catalog";
+// The Tools side panel's tabs: Curriculum AI (not built yet), or the
+// school's courses and data with Pre-Credit.
+export type ToolsTab = "ai" | "catalog";
 
 export interface PanelsOpen {
   left: boolean;
@@ -28,7 +28,7 @@ export interface PanelsOpen {
   tab: ToolsTab;
 }
 
-const DEFAULTS: PanelsOpen = { left: true, preCredit: true, leftWidth: 320, tab: "plan" };
+const DEFAULTS: PanelsOpen = { left: true, preCredit: true, leftWidth: 320, tab: "ai" };
 
 // Narrow windows (under Tailwind's "lg", 1024px) show the side panel as a
 // drawer over the chart instead of beside it. The same media query as
@@ -72,7 +72,8 @@ export function usePanels() {
           // Saved before these settings existed: their defaults.
           preCredit: saved.preCredit !== false,
           leftWidth: typeof saved.leftWidth === "number" ? clampPanelWidth(saved.leftWidth) : DEFAULTS.leftWidth,
-          tab: saved.tab === "catalog" ? "catalog" : "plan",
+          // (An old saved "plan" tab, from before Curriculum AI, opens it.)
+          tab: saved.tab === "catalog" ? "catalog" : "ai",
         });
       }
     } catch {

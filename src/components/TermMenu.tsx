@@ -53,8 +53,9 @@ const DANGER_MENU_ITEM =
   "w-full px-3 py-1.5 text-left text-rose-600 hover:bg-rose-50 disabled:cursor-not-allowed disabled:text-zinc-400 disabled:hover:bg-transparent dark:text-rose-400 dark:hover:bg-rose-950 dark:disabled:text-zinc-600";
 
 // A box floating at (x, y) in window pixels, kept on screen. Clicking
-// anywhere outside it, or pressing Escape, closes it.
-function Popover({
+// anywhere outside it, or pressing Escape, closes it. (Also used by the
+// save button's menu, SaveButtons.tsx.)
+export function Popover({
   x,
   y,
   width,

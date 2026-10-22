@@ -5,13 +5,20 @@ import { useRouter } from "next/navigation";
 import type { Chart } from "../../engine/index";
 import { serverChartStore } from "../../storage/stores";
 import { CopyIcon, SaveIcon } from "../icons";
+import { Popover } from "../TermMenu";
 import { cn, ICON_BUTTON, ICON_BUTTON_BASE, TOOLBAR_BUTTON_SIZE } from "../ui";
 import type { PanelProps } from "./types";
 
 const store = serverChartStore();
 
-// Save this chart, or save a copy and open it: two icon buttons in the
-// Plan box's title row, left of Build for me.
+// The save menu's width (pixels), so it can line up under the button.
+const MENU_WIDTH = 160;
+// A menu item with its icon in front, greyed out when it can't be used.
+const MENU_ITEM =
+  "flex w-full items-center gap-2 px-3 py-1.5 text-left hover:bg-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent dark:hover:bg-zinc-800";
+
+// Save this chart, or save a copy and open it: the save button in the
+// Plan box's title row, left of Build for me, opens a menu of the two.
 export function SaveButtons({
   state,
   dispatch,
@@ -49,17 +56,31 @@ export function SaveButtons({
     }
   };
 
+  // Where the menu opens (window pixels), or null while it's shut.
+  const [menuAt, setMenuAt] = useState<{ x: number; y: number } | null>(null);
+  const choose = (asCopy: boolean) => {
+    setMenuAt(null);
+    void save(asCopy);
+  };
+
   // The save button says whether there's anything to save: sky blue
-  // (the accent) with unsaved changes, faded once everything is saved.
+  // (the accent) with unsaved changes, grey once everything is saved.
+  // Clicking it opens a small menu: Save, and Save a copy.
   const status = busy ? "Saving…" : unsaved ? "Save (unsaved changes)" : "Saved";
   return (
     <>
       <button
         type="button"
         aria-label={status}
+        aria-haspopup="menu"
+        aria-expanded={menuAt !== null}
         data-tooltip={status}
-        disabled={busy || !unsaved}
-        onClick={() => void save(false)}
+        disabled={busy}
+        onClick={(e) => {
+          // Just under the button, lined up with its right edge.
+          const box = e.currentTarget.getBoundingClientRect();
+          setMenuAt(menuAt ? null : { x: box.right - MENU_WIDTH, y: box.bottom + 4 });
+        }}
         style={TOOLBAR_BUTTON_SIZE}
         // ICON_BUTTON's grey, or the same button in sky. (Both colors
         // can't be listed at once: whichever Tailwind wrote last would win.)
@@ -75,17 +96,27 @@ export function SaveButtons({
       >
         <SaveIcon />
       </button>
-      <button
-        type="button"
-        aria-label="Save a copy"
-        data-tooltip="Save a copy"
-        disabled={busy}
-        onClick={() => void save(true)}
-        style={TOOLBAR_BUTTON_SIZE}
-        className={cn(ICON_BUTTON, "disabled:cursor-not-allowed disabled:opacity-40")}
-      >
-        <CopyIcon />
-      </button>
+      {menuAt && (
+        <Popover x={menuAt.x} y={menuAt.y} width={MENU_WIDTH} height={76} label="Save options" onClose={() => setMenuAt(null)}>
+          {/* Nothing to save once it's all saved, but the menu still
+              opens for Save a copy. */}
+          <button
+            type="button"
+            role="menuitem"
+            disabled={!unsaved}
+            data-tooltip={unsaved ? undefined : "Everything is saved."}
+            onClick={() => choose(false)}
+            className={MENU_ITEM}
+          >
+            <SaveIcon />
+            Save
+          </button>
+          <button type="button" role="menuitem" onClick={() => choose(true)} className={MENU_ITEM}>
+            <CopyIcon />
+            Save a copy
+          </button>
+        </Popover>
+      )}
     </>
   );
 }

@@ -159,6 +159,18 @@ export function ResetIcon() {
   );
 }
 
+// A graduation cap: programs (majors and minors). The board's corners
+// reach 2 and 22 like the other icons; the tassel hangs from its right.
+export function ProgramIcon() {
+  return (
+    <Icon>
+      <path d="M22 9 12 4 2 9l10 5 10-5z" />
+      <path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" />
+      <path d="M22 9v6" />
+    </Icon>
+  );
+}
+
 // A floppy disk: save. A square with one corner cut, the label at the
 // bottom and the metal shutter at the top.
 export function SaveIcon() {

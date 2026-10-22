@@ -272,7 +272,9 @@ export function Tabs<T extends string>({
               // Only the chosen tab is a Tab stop; arrows reach the others.
               tabIndex={selected ? 0 : -1}
               onClick={() => onChange(tab.value)}
-              className={cn(tabClass(selected), "flex-1 py-2")}
+              // py-3, like a Panel's top padding, so in the planner the
+              // tab names line up with the Plan box's title beside them.
+              className={cn(tabClass(selected), "flex-1 py-3")}
             >
               {tab.label}
             </button>

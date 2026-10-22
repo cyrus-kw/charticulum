@@ -4,13 +4,14 @@ import { EXTERNAL_TERM, type Chart } from "../../engine/index";
 import { ResetIcon } from "../icons";
 import { askToConfirm } from "../ConfirmDialog";
 import { cn, ICON_BUTTON, Panel, TOOLBAR_BUTTON_SIZE } from "../ui";
+import { ProgramMenu } from "./ProgramMenu";
 import { SaveButtons } from "./SaveButtons";
 import type { PanelProps } from "./types";
 
 // What this plan is, at a glance: its school, its programs, the terms it
 // spans, how many courses are on it, and its GPA. Sits under undo/redo and the
 // plan's name in the panel above the chart. Its title row holds the
-// save buttons and Build for me.
+// programs menu, the save button, and Build for me.
 export function PlanInfoPanel({
   unsaved,
   onSaved,
@@ -56,6 +57,7 @@ export function PlanInfoPanel({
       title="Plan"
       actions={
         <div className="flex items-center gap-1">
+          <ProgramMenu {...props} />
           <SaveButtons {...props} unsaved={unsaved} onSaved={onSaved} />
           {/* The builder lays out every course of the plan's programs so all
               their rules are met, replacing the current plan (undo brings
