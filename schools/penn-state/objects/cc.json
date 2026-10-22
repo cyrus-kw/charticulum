@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "As a field, Corporate Communication involves taking organizational goals and translating them into communication strategies and tactics inside and outside the organization as well as managing communication processes on an ongoing basis. Corporate Communication is complex, dynamic, and involves navigating various communication channels. As a lower-level introduction to Corporate Communication, this course introduces fundamental concepts, theories, and practices in Corporate Communication by providing a basic overview for students within the major/minor, as well as those who may not necessarily go on to major in the field. The course emphasizes the application of Corporate Communication concepts for any contemporary professional."
     },
     {
@@ -80,7 +82,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CC401"
+          {
+            "oneOf": [
+              "CC401",
+              "CC402"
+            ]
+          }
         ]
       },
       "description": "Explores and applies concepts and theories to various cases, emphasizing written development of strategies relevant to the internal and external organization. This course explores Corporate Communication as it encompasses both the internal and external organization. It takes a comprehensive approach to exploring theory and application in the context of specific cases. Course content builds on and unifies other required courses in the major. Coursework will primarily involve students developing major strategies and related tactics for existing or newly emerging organizations. Coursework may also involve students applying Corporate Communication concepts and theories to the development of their own career plans. This course emphasizes student synthesis and creativity in applying theory and research from Corporate Communication and allied fields to the total organization. The course will typically include analysis and evaluation of practitioner and scholarly readings, students' work, and case studies."
@@ -92,7 +99,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CC401"
+          {
+            "oneOf": [
+              "CC401",
+              "CC402"
+            ]
+          }
         ]
       },
       "description": "CC 495A Internship in Corporate Communication (3) Communications experience in businesses or agencies that may include activities in writing, media production, planning, public relations, advertising, employee relations, or training."
@@ -105,8 +117,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CC200",
-          "CC401"
+          {
+            "oneOf": [
+              [
+                "CC200",
+                "CC401"
+              ],
+              "CC402"
+            ]
+          }
         ]
       },
       "description": "CC 495A Internship in Corporate Communication (3) Communications experience in businesses or agencies that may include activities in writing, media production, planning, public relations, advertising, employee relations, or training."

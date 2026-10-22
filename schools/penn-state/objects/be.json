@@ -36,7 +36,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "The ability to quantify relationships into mathematical models, and implement the models into the computer to find solutions, is essential for engineering analysis and design. This course provides the student with tools for modeling biological and physical systems. Upon completion of this course, the student will be able to: identify a process/system and represent that process/system mathematically; solve the mathematically-represented system using computer-based modeling tools, such as Excel and MATLAB; describe the emphasis areas offered in the Biological Engineering major; and be able to develop a systems model related to each area. The course includes engineering economics, matrix operations, curve fitting, numerical integration and differentiation, linear and non-linear systems of equations, and applications of these methods to biological and agricultural systems."
@@ -48,11 +53,27 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "BE301",
-          "MATH251"
+          {
+            "oneOf": [
+              [
+                "BE301",
+                "MATH251"
+              ],
+              [
+                "MATH250",
+                "MATH252",
+                "ME300"
+              ]
+            ]
+          }
         ],
         "concurrent": [
-          "ME320"
+          {
+            "oneOf": [
+              "ME320",
+              "CE360"
+            ]
+          }
         ]
       },
       "description": "This course applies the principles of heat and mass transfer to natural and engineered biological systems, ranging from soil/water ecosystems to animal, plant, and microbial production systems. Heat transfer mechanisms (conduction, convection, and radiation) are covered, as well as analysis techniques for steady state and transient cases. Mass transfer mechanisms (diffusion, dispersion, and convection) are also covered followed by simultaneous heat and mass transfer, including psychrometrics, ventilation, and drying. Applications of heat and mass transfer to agricultural and biological engineering are interwoven throughout the course. These applications may include heat exchangers for hydraulic systems, flow through porous media, soil freezing and thawing, bioreactor design, post-harvest product storage, animal housing, and greenhouses."
@@ -64,7 +85,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ]
       },
       "description": "The objective of this course is to provide the student with the essential skills necessary to engage in practical agricultural structure analysis and design. Topics include a review of shear, moment and deflection concepts; loading in agricultural structures including earth loads, grain loads and livestock loads; methods for the analysis of determinate and indeterminate beams, trusses and frames; the material properties of wood including impact of species, grain orientation, degree of hydration, etc., on member adequacy. The nano and molecular structure of wood is also discussed and how it impacts material properties. The course is focused on the practical application of basic engineering principles with examples. The course contains a design analysis project where a student team analyzes an industrially designed structure (typically a post-frame building containing a truss roof system), which has been designed for a specific area. The team then redesigns the structure for a different location with different snow and wind loadings as well as intended usage, and optimizes the structure for efficient design of the structural members. The design and analysis may be completed using a common industrial software package. The course will serve as a prerequisite for senior-level structural design courses."
@@ -89,7 +115,12 @@
       "requisites": {
         "previous": [
           "EMCH212",
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ]
       },
       "description": "This course is designed to provide a broad foundation for understanding machine design for engineering students who are interested in machine systems. In addition, this course serves as a foundation for those wishing to develop a more focused understanding of agricultural and general machine systems and is a prerequisite for ABSM and BE 400 level courses. Machine systems are an integral part of many agricultural operations from field production to post-harvest processing, storage, transportation, and bio-based processing. Biomass feedstock logistics and bioenergy production systems are heavily relying on machine systems. Agricultural engineers will likely encounter a wide range of powered and automated equipment in their careers. This course consists of lectures, labs, and open-ended mechanical design projects. Lab activities focus on testing and evaluating of machine performance using machine components, prototype machines and instruments. Lab activities and design projects will be completed in the format of small groups. This course equips the students with skills to: (1) describe operating characteristics of engines and electric motors and properly select models for different applications; (2) design machine elements and mechanical power transmission systems to accomplish a machine task; (3) apply basic physics and engineering principles in a variety of machine-product interaction situations: and (4) practice technical report writing and oral presentation."
@@ -101,7 +132,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "ME320"
+          {
+            "oneOf": [
+              "ME320",
+              "CE360"
+            ]
+          }
         ]
       },
       "description": "BE 307 focuses on utilization and engineering of soil-water resources, including rainfall-runoff, soil-water movement, erosion/sediment transport and flow processes. For each topic, the significance, underlying principles and equations will be covered, along with further exploration in a practical and experiential mode with class participants sharing in problem formulation, team problem solving, discussions, lab activities, and explanations/presentations. Students will be exposed to map use, representative soil profiles, cropping-management systems, and watershed-scale settings. Lab activities will sequentially build from one lab period to the next, showing how each stage of soil and water engineering is used to develop a more complete watershed-type project. As appropriate, field trips will be scheduled so as to show course participants the practical settings in which basic soil and water engineering principles can be applied. The course will serve as preparation for the senior-level soil and water engineering design courses in the Natural Resources Engineering Option of the Biological Engineering (BE) major."
@@ -133,7 +169,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Writing and Speaking",
+      "genEdAreas": [
+        "Writing and Speaking"
+      ],
       "description": "This course is one part of a two-semester experience in discipline-specific communication and leadership skills training. A key facet of this training is contextual approach. To meet the needs of BE and ABSM students, the course emphasizes communication skills that are critical for their professional development, appreciating the technical content of students' work and the industries within which the students will ultimately work. The primary focus for this course is communication skills (oral and written) with a secondary focus on leadership and career skills. Students will be evaluated through various methods, such as writing and speaking projects, professional presentations, written homework and worksheets in class and out, creation of portfolios and reports, and in-class group and individual exercises. This course provides a foundation in General Education, Writing and Speaking (GWS) for students in the Biological Engineering (BE) and Agricultural and Biorenewable Systems Management (ABSM) majors."
     },
     {
@@ -144,7 +182,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Writing and Speaking",
+      "genEdAreas": [
+        "Writing and Speaking"
+      ],
       "description": "This course is the second half of a two-semester experience in leadership, ethics, and communication skills training, following ABSM/ BE 391 . Course modules focus on leadership and communication needs of industry within its corresponding technical content thereby representing a complete contextual approach. The primary focus of this course is on leadership, with communication, ethics, sustainability, and professional development issues presented in the context of how they relate to leadership. Topics developed for this course include personal development, ethical decision-making, corporate social responsibility, strategic group management, facilitation, and diversity."
     },
     {
@@ -162,11 +202,26 @@
       "requisites": {
         "previous": [
           "BE301",
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ],
         "concurrent": [
-          "ME320",
-          "MATH251"
+          {
+            "oneOf": [
+              "ME320",
+              "CE360"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH251",
+              "MATH252"
+            ]
+          }
         ]
       },
       "description": "Engineering properties play a crucial role during the analysis, design, and synthesis phases of problem solving. The accurate knowledge of properties is essential to the precise determination of the overall system and component responses. Due to the time-dependent and environmentally-sensitive nature of properties of the agricultural, food, and biological materials, the theory and measurement systems are different from those used for conventional engineering materials and their systems. Therefore, the focus of this course is to provide the students with sound bases of the theory and measurement methods that are used to quantify physical, mechanical, thermal, biological, and chemical properties of products and their systems. In addition, the significance and importance of the inherent variation in the property values of agricultural, food, and biological materials is emphasized."
@@ -186,8 +241,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME360",
-          "ME320"
+          {
+            "oneOf": [
+              "ME360",
+              "BE306"
+            ]
+          },
+          {
+            "oneOf": [
+              "ME320",
+              "CE360"
+            ]
+          }
         ]
       },
       "description": "This course is designed to provide a solid foundation for understanding hydraulic and pneumatic systems for power transmission and motion control, including hydrostatic transmissions and electro-hydraulic systems. Applications include mobile and stationary equipment in agricultural production and processing systems. Biological Engineers (and other engineers as well) will likely encounter a wide range of powered and automated equipment in their careers. This course equips the students to: (1) understand the key operating characteristics of most fluid power system components including compressors, pumps, valves, cylinders, and motors, (2) design fluid power circuits, (3) mathematically model the steady state operation of fluid power systems, and (4) have sufficient knowledge to obtain the Hydraulic Specialist Certification offered by the Fluid Power Society. The course includes a hands-on laboratory offering the chance for students to construct circuits, see component cutaways, experience component and system performance demonstrations, and work with electronic control of hydraulic systems. Prerequisite knowledge includes fluid mechanics and familiarity with mechanical power transmission systems. Students may be evaluated based on homework assignments, laboratory reports, a design project, and exams."
@@ -199,7 +264,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BE303"
+          {
+            "oneOf": [
+              "BE303",
+              "AE308",
+              "CE340"
+            ]
+          }
         ]
       },
       "description": "BE 462 covers structural properties of wood, design of wood structural elements, design of wood structural systems, and design of post-frame buildings. The course begins by defining the structural loads applicable to wood framed building systems. Them, students are introduced to the unique physical and structural characteristics of solid lumber and other wood products, such as plywood and other panel products and structural composite lumber, including laminated veneer lumber, parallel strand lumber and composite wood I-joists. The engineering principles and specifications for designing wood structural members, including tension members, beams, columns, and beam-columns are presented in detail using the National Design Specification for Wood Design. Design specifications for designing wood structural connections using dowels, such as nails, bolts and lag-screws, are presented. Design procedures for designing selected wood-frame systems, such as floors, trusses, structural diaphragms and shear walls, are also presented. Students are introduced to a computer program which is an invaluable aid for analyzing and designing wood framed structural systems. At the conclusion of the course students will be able to specify structural loads for wood framing systems and analyze and design wood beams, columns, beam-columns, typical wood diaphragms and shear walls, simple wood structural systems, and a range of wood structural connections. The course builds on engineering students' prior knowledge from strength of materials and elementary structural analysis. Students may be evaluated based on homework assignments, exams and a semester project."
@@ -211,7 +282,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EE210"
+          {
+            "oneOf": [
+              "EE210",
+              "BE305",
+              "EE211",
+              "EE212"
+            ]
+          }
         ]
       },
       "description": "This course applies the basics of mechatronic systems such as controller, sensor, and actuator theory to agricultural and biological systems. Applications in agricultural and biological systems will be covered throughout the semester such as developing mini-scale peach tree detector, apple harvester, animal body temperature sensing unit, nursery plant identifier, light sensor application for apple maturity evaluation, or similar topics. Students will gain hands-on experience with agricultural robotics and micro-controller programming through design and implementation of an embedded system based on microcontroller."
@@ -223,10 +301,23 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "EME301",
+              "ME201",
+              "CHE220"
+            ]
+          }
         ],
         "concurrent": [
-          "BE308"
+          {
+            "oneOf": [
+              "BE308",
+              "CHE340",
+              "CE479"
+            ]
+          }
         ]
       },
       "description": "In the coming decades biomass will play an increasing role in satisfying society's energy and material needs, providing a renewable alternative to fossil fuels. This course will cover the fundamental theories and applied technologies used in production and conversion of biomass into transportation fuels, heat, power, electricity, chemicals and other value-added products. Production strategies focus on sustainable cropping systems, harvest, storage, and pretreatment for diverse biomass feedstocks. Conversion technologies covered include ethanol fermentation, biodiesel catalysis, combustion, pyrolysis, gasification, anaerobic digestion, and emerging processes. System analysis will address worker safety and health, environmental impacts, policy, and economics. The course is recommended for students in engineering and science majors with a background in thermodynamics, chemistry, and biochemistry or microbiology. Evaluation may be based on class participation, homework, quizzes, exams, and a team design project. Students may take only one course from BE 464 and ABE 884 for credit."
@@ -263,7 +354,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BE307"
+          {
+            "oneOf": [
+              "BE307",
+              "CE461"
+            ]
+          }
         ]
       },
       "description": "This course equips students with the ability to design sediment and stormwater impoundments and erosion control structures used in agriculture and the development of the agricultural-urban interface. Predictive hydrology is presented along with an introduction to a hydrology-based model used in the land-development industry. Basins are presented as fundamental structures used to attenuate stormwater peaks as well as holding ponds to facilitate gravitational sediment removal from stormwater runoff. Various sediment traps are also included. Flood routing is developed so students understand and can design for flood peak attenuation. Low Impact Development (LID) practices such as green roofs, bioretention areas and vegetated filter strips are presented as infiltration-based alternatives to traditional stormwater management. Open channel design procedures including maximum permissible velocity and tractive force are reviewed. The course includes two design projects. Students are assigned a land parcel and the proposed development. Students are expected to develop an Erosion and Sedimentation Control Plan and a Post-Construction Stormwater Management Plan. Both projects are expected to be developed in compliance with state regulatory standards and to include LID practices as appropriate. In addition to the design projects, students may be evaluated on lab reports, in-class activities, and a mid-term exam."
@@ -275,7 +371,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BE308"
+          {
+            "oneOf": [
+              "BE308",
+              [
+                "MICRB201",
+                "BMB211"
+              ]
+            ]
+          }
         ],
         "concurrent": [
           "BE302"
@@ -290,7 +394,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BE307"
+          {
+            "oneOf": [
+              "BE307",
+              "CE370"
+            ]
+          }
         ]
       },
       "description": "The course focuses on exploration of the fundamental principles and processes that determine the fate of nutrients and pollutants in liquid and semi-solid wastes that are applied to the soil for recycling and disposal. These principles then serve as the basis for design of systems for application of livestock manures, biosolids, septage, wastewater effluents, and other residual materials. Relevant state and federal regulations will be covered to illustrate the impact of regulations and policies on engineering practice. The course culminates in a project for which students design a system to dispose of municipal, agricultural, or industrial byproduct or wastewater. Principles will be reinforced with several homework sets. Field trips will expose students to land-based waste disposal processes and systems. The course will serve as a senior-level engineering science/design course in Biological Engineering (BE)."
@@ -302,7 +411,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BE307"
+          {
+            "oneOf": [
+              "BE307",
+              "CE461"
+            ]
+          }
         ]
       },
       "description": "This course will provide hands-on experience of several commonly available simulation models for natural resources engineers for investigating water resources related issues. The models will serve as a base from which students can investigate the effects of different management design scenarios on watershed system responses. The course introduces general modeling concepts of data processing, model development, model calibration/validation and uncertainty analysis. Model development concepts will be introduced with data driven regression models for rainfall-runoff simulation. Then, students will work with a range of simulation models commonly used by industry or government agencies. One model might be used as an initial exploration of modeling for an entire watershed and to show the hydrologic responses for various subwatersheds (agriculturally dominated vs. urban dominated). A second model might be used to explore more in-depth modeling for an urban watershed. A third model might be used to introduce modeling concepts of demand driven closed conduit water systems in drinking water distribution systems. Students will select one of the three models to study in detail for a project where they evaluate a water management structure design or investigate a water resources related issue."

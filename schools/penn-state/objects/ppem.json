@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This course is an introduction to the world of fungi and their impact on humans and the environment around us. Fungi represent one of five or one of sixteen Kingdoms of biological organisms depending on the system used. Either way the Fungi are an integral and essential component of the biological world worthy of study by scientists and non-scientists alike. However, despite their importance to the ecosystem and to human affairs Fungi are among the least studied groups of biological organisms. This is unfortunate since Fungi are often quite beautiful and impact everyone's life. The goal of the proposed course is to provide a framework and context for students to become familiar with the Fungi and their importance to other life forms including humans. For example, food production is both positively and negatively impacted by Fungi in quite profound ways from serving a source of highly sought-after products such as truffles to plant pathogens such as wheat rust destroying crops. This course explores questions such as: What are Fungi? Why are they important? How do they work in the ecosystem? How have humans harnessed the unique capabilities of Fungi? How are Fungi portrayed in the media, and are these accounts accurate? Students will also practice using their fungal knowledge to evaluate the potential efficacy of consumer products aimed at control of Fungi. Some course concepts will be explored through hands on activities and visits to relevant campus locations. At course conclusion students will have a deeper understanding of the fascinating Kingdom Fungi, and a greater appreciation for their importance, diversity, and beauty."
     },
     {
@@ -21,7 +23,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "This inter-domain general education course provides a cross-disciplinary platform for plant- and microbe-facilitated creative production and art-mediated scientific learning. The course balances studio art activities with lecture- and discussion-based learning about integrated science and art topics. Students use the media of plant and microbial pigments, growth, and biology in a hybrid studio-lab environment. The biology, chemistry, and physics of these living and life-derived media are expected to form integral parts of student presentations. Lectures will provide information about broad scientific principles and in-depth learning about specific phenomena underlying the biologically-based media as well as relevant bio-art issues and contexts in which work is produced. Student projects will represent an integration of natural science understanding with artistic expression. Students will be encouraged to go in various directions with their creative efforts, including visual mechanics (light, color, composition), mark making (painting, drawing), meaning making (metaphors, allegories, cultural appropriations), storytelling, sensing (ways of seeing, phenomenology), and new media issues (e.g., post-humanism). Some example types of bio-media and their scientific connections include: plant pigments, which facilitate discussion of light, photosynthesis, basic chemistry and chromatography; bacterial cultures, which facilitate discussion of microbiology, cell biology, and cellular movements; and fluorescent proteins, which facilitate discussion of DNA, RNA, protein structure, mutations, species concepts, and genetic engineering. Student projects integrate the scientific basis of the bio-art media used such that the media become part of the message of the art."
     },
     {
@@ -53,7 +59,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "The concepts of plant pathology are introduced to describe how plants, the environment, and biotic and abiotic plant pathogens interact over time to cause disease. Understanding these relationships can help to prevent disease problems or increase management and control options. Students learn how plant pathogens survive, reproduce, and spread. The role that plant pathogen distribution and regulation have played in shaping history and their influence on our economics, trade, and the environment is discussed. Common and significant plant diseases are illustrated to explain their causes, diagnosis, management, and national and international importance. All information is presented in online modules and all assessments are submitted online. Students should be able to recognize common garden plants in the NE United States such as maples, oaks, roses, crabapples, lilacs, peony, pachysandra, etc. Internet access and a digital camera are required (phone cameras are usually fine). Weekly assignments, quizzes, and labs are all submitted online. Several diagnosis exercises reinforce the practical aspects of identifying and controlling plant pathogens and the Plant Disease Assessment Report provides experience in plant disease site evaluation and management. Students customize many assignments to use their favorite plant materials and locations. The online modules supply course content but students apply the lessons in their own local area. Original student photographs are needed for diagnoses and the Plant Disease Assessment Report. Plant diseases have significant influences on plant aesthetics, economics, edibility, and viability. They have had profound influences on world history, and roles in modern national and international trade and bio-security. Students will gain an appreciation of the impact that horticultural crop diseases can have on society and the environment, including how the global trade of horticultural crops has resulted in the spread of pathogens important to agricultural crops and native plants."
     },
     {
@@ -128,7 +136,24 @@
       "requisites": {
         "previous": [
           "BIOL110",
-          "AGECO201"
+          {
+            "oneOf": [
+              "AGECO201",
+              "BIOL127",
+              "BIOL220W",
+              "BIOL220M",
+              "BIOL222",
+              "BIOL230W",
+              "BIOL230M",
+              "BIOL240W",
+              "BIOL240M",
+              "MICRB251",
+              "HORT232",
+              "PPEM120",
+              "PPEM225",
+              "PPEM405"
+            ]
+          }
         ]
       },
       "description": "BIOL 425 / PPEM 425 (4 cr.) is a lecture and laboratory survey of the diversity of Fungi, consisting of two 75-minute lecture and two 180-minute laboratory/field activity periods per week. The course moves from branch to branch in the Fungal tree of life, covering aspects of ecology, morphology, physiology and life history, as well as current and historical importance to human affairs in medicine, agriculture and industry. Topics covered as students move through the Fungal tree include: 1) Macrofungi seen in the field; 2) Fungal evolution; 3) Fungal reproduction and dispersal; 4) Fungal growth, development and structure; 5) Fungal genetics and genomics; 6) Fungi as mutualistic symbionts of plants, animals and other organisms; 7) Fungal diseases of plants, animals and humans; 8) Fungi as toxin producers; 9) Fungi as sources of food, pharmaceuticals and enzymes; and 10) Fungi as research organisms used to understand basic biological processes. Some laboratory sessions consist of field trips to local forests to observe and collect Fungi for observation in the laboratory."
@@ -140,7 +165,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              [
+                "BIOL11",
+                "BIOL12"
+              ],
+              [
+                "CHEM112",
+                "CHEM113"
+              ]
+            ]
+          }
         ]
       },
       "description": "Description and history of mycotoxicoses. Mycotoxin formation, occurrence, control, economic and social impacts, and regulatory issues. PPEM 427 Mycotoxins: Effects of Fungal Toxins on Human and Animal Health (3) This course will provide a comprehensive overview of the multi-disciplinary subject of mycotoxicology. Mycotoxins are chemicals produced by fungi that are toxic to humans and animals. Students will become familiar with the history and description of mycotoxins and mycotoxicoses, formation of mycotoxins, biology of mycotoxigenic fungi, methods of mycotoxin analysis, fate of mycotoxins in food processing, management and prevention of mycotoxins, regulations, and economic and social impacts. This course is appropriate for students who wish to learn more about fungi beyond the introductory level, as well as for those with interests in animal science and husbandry. The subject of mycotoxicology involves most aspects of the agriculture-food system so students of food science, crop and soil science, entomology and plant pathology will find relevant topics in mycotoxicology. Biology and microbiology students especially those with interests in plant-associated microbes and ecology will also benefit from this course. Course format will be two lectures per week and one period of discussion that will include laboratory activities, field trips, case study discussions, and student presentations."
@@ -184,7 +221,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB201"
+          {
+            "oneOf": [
+              "MICRB201",
+              "MICRB201H"
+            ]
+          }
         ]
       },
       "description": "This is a lecture-based course that will broaden students' understanding of the diverse biotic and abiotic interactions relevant to microbes in diverse environments. In particular, this course focuses on ecological interactions between microbes in a common environment or between microbes and their eukaryotic hosts (e.g. plants and animals). In addition to learning about ecological theory as it applies to microbes, students will learn about historical and contemporary approaches to studying microbes in different environments. This will include substantial focus on cutting edge '-omics', microscopic, and direct functional analytical approaches to understand both the distribution of microbial taxa (i.e. who's there) and what processes they carry out in their natural environments (i.e. what they're doing). In the latter portions of the class, students will apply the theory and techniques to understanding the ecology of specific environments, including environmental, agricultural, and food environments. The objectives of this course include: provide students with a firm understanding of contemporary microbial ecology and environmental microbiology; conceptually link processes that occur in disparate environments, such as plant roots, termite guts, and cheese rinds; provide students with the language to discuss these concepts and processes; make students familiar with and conversant in 'omic' and other cutting edge functional techniques used to study microbes in their natural environments; provide select examples of how humans take advantage of microbial ecology for our benefit (such as suppression of pathogens or promotion of waste decomposition). The course will conclude with a research and writing project where students will review the microbial ecology of a specific environment. This course expects students to have an understanding of basic microbiological concepts."

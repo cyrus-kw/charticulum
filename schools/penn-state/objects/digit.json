@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "The traditional theories and methods that underwrote the study of literature, history, and philosophy in the 20th century are now being supplemented with new techniques and tools. While this class will give a sense of the breadth of theoretical writings that have defined digital humanities (DH), we will imagine how current debates in DH share similarities to a longer history of philosophy, literature, and technology. Intended for students unfamiliar with digital humanities, this course surveys an array of tools, techniques, and cultures related to the field. We will be reading a survey of literature that emerged alongside computing and digital humanities properly. This course will challenge you to experiment with new techniques, and students who are resourceful, creative, and energetic will find this course an ideal forum to test their curiosity and inquisitiveness."
     },
     {
@@ -35,7 +37,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course introduces students in a general education context to procedural animation, applying algorithms within animation software to simulate physics realistically and control how polygonal forms are animated over factors of time. The methods of procedural animation require computational processing called motion scripting, unlike traditional \"stop-motion\" animation that is controlled manually by the animator. Students in this course learn how to collect and implement corporeal and synthetic motion data to animate 2D and 3D vector objects using computer software, following methods used in animated movies and video games."
     },
     {

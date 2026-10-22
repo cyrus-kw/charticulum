@@ -62,7 +62,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "KOR1"
+          {
+            "oneOf": [
+              "KOR1",
+              "KOR12"
+            ]
+          }
         ]
       },
       "description": "Step-by-Step Korean 21 is the third in a series of four two-credit Korean language courses ( KOR 11 , KOR 12 , KOR 21 , and KOR 22 ), designed for students who prefer a slower pace or have demanding schedules. This course is for students who have successfully completed Step-by-Step Korean 2 ( KOR 12 ), KOR 1 , or an equivalent introductory course. It covers the first half of the material in KOR 2 : Level One KOR B (4 credits) and continues to develop foundational language skills, with an emphasis on reinforcing and mastering basic grammatical structures through consistent aural and oral practice. By the end of the course, students will be able to understand short conversations and written texts related to familiar, everyday topics such as routines, preferences, and personal experiences. They will begin to participate in simple conversations using strings of learned phrases and short sentences, and will be able to write short, connected sentences about familiar subjects. The course supports learners in developing stronger control of foundational grammar and vocabulary, with increasing fluency and accuracy. Students will also explore aspects of Korean culture and daily life to enhance their ability to interact appropriately in basic social situations."
@@ -108,7 +113,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This introductory course explores the Korean language as a reflection of Korea's culture and society. Through an analysis of linguistic features, regional variations, and media representations, students will gain a deeper understanding of how language both reflects and shapes Korea's history, identity, and cultural practices. Major themes include Hangul, dialects, communication styles, and linguistic differences between North and South Korea. The course also integrates Korean media, such as K-dramas, K-pop lyrics, and cultural phenomena, to illustrate sociolinguistic concepts and trends. By examining language through historical, sociolinguistic, and practical perspectives, this course aims to deepen students' appreciation and understanding of Korean society and culture. This course will be taught in English and no prior knowledge of Korean is required."
     },
     {
@@ -119,7 +126,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "Survey of Korean culture and society in historical contexts; exploration from antiquity to the contemporary period through diverse media. This course is designed as a multi-disciplinary introduction to Korean society. In surveying Korean culture from antiquity to the present, we will examine a wide range of primary sources from the past, including archaeological relics, written records, and works of art; as well as contemporary materials by Korean authors, directors, and other cultural producers, together with scholarly commentaries about these materials. Instruction and all materials will be in English. No preliminary knowledge of Korean history or language is required for taking this course. In the first part of the course that covers the origins of Korean 'tradition,' we will observe the formation and development of social relations, popular beliefs, and systems of thought that have shaped the Korean way of life. Our historical analysis of these texts will also locate their resonances and ramifications in modern Korea, particularly in cultural representations. In the second part of the course, we will discuss Korea's transformation through its encounter with the West, its modern experiences and national struggle under colonial rule, social upheavals after liberation, and the Korean War. Finally, by tracing the enduring impacts of the unresolved past on contemporary society, we will look at Korea today in terms of economic development and crisis, the democracy movement and its limitations, relations with North Korea and with the US, and sociocultural diversification in the age of globalization. By situating these topics within the broader contexts of East Asia and the world, we will seek to gain a richer and more nuanced view of Korea on the global map. The overall goal of this course is to develop students' abilities to engage in cross-cultural understanding. Through a comprehensive study of Korean materials from a variety of genres and media, students will not only learn about and from Korean history and culture, but also enhance their skills in reading closely, thinking critically, and writing effectively. In exploring Korean culture as a space of complex formations and dynamic interactions, students will be trained to question, analyze, and appreciate different modes of cultural production in their specific political and social contexts."
     },
     {
@@ -131,7 +140,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Humanities",
+        "Inter-Domain"
+      ],
       "description": "This course provides critical approaches to cultural flows from South Korea. We will employ theoretical concepts and critical vocabularies from cultural studies to deepen and sharpen our analysis of the cultural representation of Korea in relation to questions such as class, gender, ethnicity, and body politics. Using diverse texts from literature, film, TV dramas, comics, and pop music, we will examine the social codes, cultural values, and economic realities that influence Korean society, including the Korean diasporic population around the world. In directing our attention to various ways in which Korean culture is transmitted and presented in different media, we will also inquire into historical and social issues rooted in the division of Korea, as well as the international dispersion of Koreans since the colonial period. Through intellectual exercises in boundary crossing, we will ultimately develop our ability to explore the cross-cultural production of trans/national identities in the age of globalization."
     },
     {
@@ -143,7 +156,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Humanities",
+        "Inter-Domain"
+      ],
       "description": "This course introduces modern and cutting-edge forms of cultural production in Korea from the 20th century to the present day. Students will learn about major forms of media and technologies, including film, digital games, webtoons, mukbang, citizen journalism, etc. Readings and screenings will cover sociological, technological, historical, and aesthetic aspects of media. The course, or individual units within the course, will be structured so that students develop a historical perspective, allowing them to understand the cultural contexts that have inspired the creative works under study. By examining Korean film and new media with attention to changing cultural settings, students will investigate such topics as the relation between social institutions and the individual, the formation and expression of identity, changing gender roles and family structures, the impact of technological and economic trends on social structure, and changing climates of censorship and freedom of expression. In addition, students will learn to think critically about various media's techniques and aesthetics of representation, and will become more engaged, critical spectators of film and related media. Class work includes some lecture but emphasizes guided discussions, group work, writing exercises, and some student presentations. This participatory approach is intended to deepen students' appreciation of the works, to help them understand value systems that may differ from those predominant in western cultures, and to assist students in developing both analytical and expressive abilities. Through critical reading, group discussion and interpretive writing, students will hone skills for evaluating modes of cultural production and consumption in modern Korea. The course is designed to be suitable for all students generally interested in Korea, or interested in various fields of humanistic study, whether or not they have previously studied the culture of Korea."
     },
     {
@@ -154,7 +171,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "How can we approach North Korea beyond the narrow lens of immediate security concerns? How can we move past Cold War narratives about this socialist country, which persists in a post-Cold War world? How do we write cultural and social histories that transcend the usual top-down focus on the Kim family and the state? And how do we challenge the dominant view of North Korea as an isolated exception in global history? This course addresses these questions by examining North Korea's history, moving chronologically from its colonial origins to its present-day context in the post-Cold War era, yet with thematical variances. Rather than interpreting North Korea's historical developments solely as top-down products of the Kim family or state control, we will pay more attention to how a wide range of North Korean individuals have shaped their history through daily practices in their home, workplaces, schools, and leisure venues. By focusing on these everyday dynamics, the course seeks to challenge the stereotypical image of North Korea as a monolithic \"totalitarian\" state. By shifting the focus in this way, students are encouraged to engage with the political and social complexities of the socialist country beyond the constraints of the Cold War framework."
     },
     {
@@ -165,7 +184,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This introductory course explores the dynamic and turbulent history of modern Korea in global contexts, spanning from the final years of the Choson dynasty in the 19th century to the ongoing Cold War tensions of the 21st century. Students will journey through a diverse historical landscape, encountering a wide array of events, figures, and places - ranging from the late 19th-century decree for men to cut their topknots to scientific farming and landlord system in the colonial countryside, from the rise of the \"new woman\" in urban consumer culture in colonial Korea to the memory politics on the Korean War, and from home interiors in two Koreas to landmines and birds in the DMZ. Rather than focusing solely on memorizing historical facts, this course emphasizes critical analysis of how the historical moments in Korean history have been narrated by historians. Through the analysis, students will be encouraged to rethink the three core concepts of the course - modern, Korea, and history - while engaging with other crucial terms such as colonialism, collaboration, socialism, the Cold War, gender, material culture, and everyday life. No prior knowledge of Korean history or language is required, and all instruction and materials will be in English."
     },
     {

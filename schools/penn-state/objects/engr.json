@@ -48,7 +48,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "GER115N"
       ],
@@ -75,7 +79,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "Design Thinking and 3D Printing in Engineering and Healthcare ( ENGR 120N ) is an introductory general education interdomain course. The course will introduce basic concepts of design processes, engineering, and medicine. The course will assist students in realizing the power of creativity and imagination as it is applied to the use of emerging technologies to solve design dilemmas at the local, regional, national, and international levels. Students will be encouraged to secure an interdisciplinary and collaborative foundation through an exploration of topics including basic engineering, human anatomy and health, design (proportion, structure, integrity, design, scale, manufacturing, iteration), Design Thinking concepts (empathize, define, create, prototype, and test), problem-solving processes (brainstorming, free thought, think aloud, reverse engineering), 3D production processes, Bioprinting (use of biofilm to create human tissue and organs), Engineering, Medicine, and Microprinting (creating works of art from photos taken from microscope slides). Students will be encouraged to view projects from the User/Patient perspective. Promotion of integrative thinking will be encouraged throughout the coursework with the goal of increasing the incorporation of design, problem-solving, engineering and medicine in the disciplines of study for individual students. Integrative thinking will be assessed through student involvement in online discussions, case studies, class conversations encompassing ethical/legal/financial considerations to design issues, studio time, image production and manipulation, internet file sharing, materials/properties selection, production processes, and interdisciplinary individual and team-based projects encompassing creative expression and science. By the end of the course, students will be furnished with basic knowledge and strategies to evaluate the role of design in the world and to independently act on the information. This course will fulfill 3 credits of the General Education requirements addressing the interdomain fields of Art (GA) and Natural Sciences (GN). No prerequisites are required for the course. This course will serve as an introduction to the basic ideas of design, creativity, imagination and problem-solving to complement development in science disciplines across the university community."
     },
     {
@@ -173,7 +181,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Welcome to Generative Artificial Intelligence for All. This course introduces the world of generative AI and provides a basic theoretical lens of \"co-intelligence\" through which students can learn, work with, and critically assess this emerging technology. You'll learn what generative AI is, how it works, and its capabilities and limitations in creating novel content such as images, text, and music. Students will gain an understanding of the history and development of artificial intelligence, where generative AI fits within that landscape, how it came to be, and - at a high level - how it functions. The course also explores psychological and neurobiological theories that inform neural network design, including how large language models (LLMs) may be prompted (e.g., cognitive load theory). Students will examine the socio-political context in which generative AI has emerged and analyze this technological \"revolution\" in comparison to past shifts, such as the Industrial Revolution, and how these changes have shaped society and contemplate how this one may shape the future. In addition to developing hands-on skills, students will be introduced to how various industries - such as law, retail, advertising, healthcare, and journalism - are using generative AI in practice. Finally, students will explore the emerging opportunities, risks, and ethical implications of this technology for individuals and society. Join us to gain practical generative AI skills while critically examining its impact through an accessible, beginner-friendly introduction."
     },
     {
@@ -228,7 +240,12 @@
           "CHEM110",
           "CMPSC122",
           "MATH140",
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "PHYS211"
+            ]
+          }
         ]
       },
       "description": "A supervised work experience where the student is employed in an engineering position in industry or government. (To be offered only for SA/UN grading.)"
@@ -287,7 +304,13 @@
           "EMCH213"
         ],
         "concurrent": [
-          "ENGR350"
+          {
+            "oneOf": [
+              "ENGR350",
+              "EMCH407",
+              "EMCH461"
+            ]
+          }
         ]
       },
       "description": "Measurement and experimental procedures determination of the mechanical properties of engineered materials under deflection, compression, tension, fracture and fatigue conditions. ENGR 320 Materials Properties Measurement I (3) Materials Laboratory I introduces students to the experimental procedures in determining mechanical properties (elastic modulus, shear modulus, Poisson's ratio, and fracture toughness) of engineered materials. Students gain hands-on experience in strain gage mounting and material properties measurement using strain gages. In conjunction with mathematical modeling software, finite element analysis is used to analyze engineering components subjected to mechanical and thermal loading (static and dynamic). Experiments and lectures are designed to demonstrate the theory and practice of mechanical measurement of material. Students utilize state-of-the-art equipment for experimentation in conjunction with advanced modeling software such as ANSYS to predict and evaluate material behavior under mechanical and thermal loading."
@@ -301,10 +324,19 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "requisites": {
         "previous": [
-          "ENGL202C"
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202A",
+              "ENGL202B",
+              "ENGL202D"
+            ]
+          }
         ]
       },
       "description": "ENGR 320Y examines engineering design from a societal perspective by asking the question, \"What are the responsibilities and challenges of designers in considering the needs and welfare of current and future societies, and of specific segments and groups within those societies?\" Students investigate and analyze a diverse range of perspectives on technology and consider and apply those perspectives to actual design projects and case studies. ENGR 320Y is designed as writing-intensive with the goal of having students practice a variety of writing assignments. Those assignments include short, informal assessments and longer research papers. Also, students will work in collaborative groups on an academically-themed project related to the design intent of this course. Student teams will write proposals for projects that explore the means of environmental improvement. Teams will deliver presentations in class and at related events such as campus Earth Day celebrations. Beyond the writing-intensive focus, the course has three other stated goals. One is to enhance student understanding by adopting a writing-to-learn approach for course assignments. The second is to help students appreciate and understand the formal design process with a focus on the diversity of the end users of their designs. The third is to have students take responsibility for their design during the process by recognizing the impact of technology on society. Meeting these goals involves readings and critical analyses in the areas of ethics, history, economy, ecology, science, and engineering."
@@ -317,8 +349,20 @@
       "requisites": {
         "previous": [
           "EMCH213",
-          "ME300",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "ME300",
+              "EME301"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "Computational Modeling Methods is intended to introduce students to strategies in mathematical modeling of physical phenomena using modern computer simulation software. The course provides theoretical understanding and hands-on experience of the modeling techniques used in current engineering practice and allows students to apply these skills to engineering computational problems. Modeling of engineering processes requires users to have a working knowledge of computer simulation software and modeling techniques such as mesh construction and analysis. This course teaches the principles of mathematical modeling of various physical phenomena and allows students to learn the basic strategies of mathematical modeling and the proper use of computational tools for the analysis of topics involving structural, thermal, and materials engineering."
@@ -371,7 +415,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "ENGR295A"
+          {
+            "oneOf": [
+              "ENGR295A",
+              "ENGR295I"
+            ]
+          }
         ]
       },
       "description": "ENGR 395A Engineering Cooperative Education (1-2) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting in the United States. This course is the second in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
@@ -384,7 +433,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "ENGR295A"
+          {
+            "oneOf": [
+              "ENGR295A",
+              "ENGR295I"
+            ]
+          }
         ]
       },
       "description": "ENGR 395I Engineering International Cooperative Education (1-2) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting outside of the United States. This course is the second in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
@@ -525,7 +579,13 @@
       ],
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "ECON14"
+            ]
+          }
         ]
       },
       "description": "Working with Penn State inventions selected by the Intellectual Property Office, student teams define an optimum commercialization path each technology. ENGR 426ENGR (MGMT/IST/ENTR) 426 Invention Commercialization (3) The goal of ENGR (MGMT/IST/ENTR) 426 is to have students understand why invention commercialization is complicated and difficult by participating in the process. For example, the inventor rarely has insights into the markets for his/her invention, is often not interested in the details of commercialization, and can be secretive. In addition, the business and financial communities often do not take the time, or have the resources, to understand new technologies and perform complex due diligence. Thus lack of due diligence often leads to rejection of innovation because existing companies often discount new technologies from outside the company as NIH - 'not invented here'. Effective transfer of new invention or innovation to a commercial product requires at least three different functional communities to interface: technical, legal and business. Each uses a different language, comes from different educational and cultural backgrounds, and may have an inherent distrust of the others. These functional barriers are difficult to overcome.This course teaches how these barriers can be broken down as student teams help bridge the perceived chasm between key players in the invention commercialization process. In these teams, students bring the skills and knowledge from their major to develop an invention commercialization recommendation for the Technology Transfer Office and the inventor. For example, business students focus on finance and market opportunity assessment; engineering and IST students focus on design refinements, prototyping support, and (if appropriate) making technology suggestions to the inventor.Upon completing the course, the students will have a working knowledge of different university and corporate technology or invention commercialization processes, important intellectual property management tools for inventions (patents, license agreements, option agreements) source of funding to move inventions toward product development, and delivering top quality presentations which outline the recommended commercialization path. Students who enjoy open-ended projects which involve the interplay of business and invention of who wants to work on interdisciplinary teams with the newest inventions will find this course a valuable course. NOTE: Because the inventions/products are based on Penn State faculty intellectual property, students must sign the Penn State Special Intellectual Property Agreement For Students - For Use When Assigning Intellectual Property to The Pennsylvania State University. The form can be viewed at http://guru.psu.edu/policies/RAG13.htmlThe course will be offered both Spring and Fall semesters with an enrollment of 40 students."
@@ -537,7 +597,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EDSGN100"
+          {
+            "oneOf": [
+              "EDSGN100",
+              "ENGR408"
+            ]
+          }
         ]
       },
       "description": "Professional Ethics for Engineers equips students with the knowledge and tools to critically examine ethical challenges within engineering practice and leadership. Rooted in traditional ethical theory and the professional engineering code of ethics, this course encourages students to apply diverse ethical and equity-based frameworks to real-world and hypothetical scenarios in technology and innovation. Beginning with an overview of traditional ethical theories, students will learn techniques of moral analysis and apply these to ethical challenges involving technology and technology leaders. Following this foundational understanding, the course examines the broader societal impacts of technology: How does technology shape our environment? Influence individual and group behaviors? Reinforce or deconstruct existing power structures? And who ultimately benefits from technological advancements? Throughout the course, students will engage in case study analysis and critical reflection to evaluate the ethical and equitable dimensions of leadership decisions in engineering. By the end of the course, students will be prepared to seriously consider the impacts of technologies and ask questions that will contribute to the creation of better vetted technologies."
@@ -589,7 +654,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course explores and critically analyzes the growing influence and impact of robots and automation on society. In particular, the course introduces students to the ever widening role that intelligent robots are playing and will come to play in our workplaces, on our battlefields, and in our homes. Emphasis will be placed on understanding and critically analyzing how the technical, computational, and systems role of the machine effect the behavior and values of individuals and segments of society. The course is not technical in its treatment of robots and robotics, rather the focus is on critically investigating how the development of robotic technologies have impacted society in the past, present, and future. This is an honors course."
     },
     {
@@ -626,7 +695,14 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "ENGR350"
+          {
+            "oneOf": [
+              "ENGR350",
+              "EMCH407",
+              "EMCH461",
+              "ME461"
+            ]
+          }
         ]
       },
       "description": "Analysis of environmental impacts on a design, designing products for the global environment and discussion on engineering ethics and professionalism. ENGR 490W Senior Design I (1) Senior design I provides students with experience in solving engineering problems independently and/or working in groups on an open-ended design problems. Students refine skills in information gathering, analysis of market and technical considerations, critical thinking of project/design scope and effective communication of project/design objectives. This course builds on previous knowledge and applies it to a global consideration of design criteria to a specific projects provided by relevant faculty. The course is the first installment of a senior capstone program in which students start to understand the global aspects of the engineering design process with respect to individual/group projects. Students gain perspective on project selection and research expectations from faculty and gather the relevant technical knowledge required to initiate the project. Projects are appropriately scoped for undergraduate research and are faculty initiated sponsored by regionally based industry (similar to The Learning Factory Experience at UP). Faculty provides research opportunities and external industry collaborations to students for selection based on common interest."
@@ -679,7 +755,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "ENGR395A"
+          {
+            "oneOf": [
+              "ENGR395A",
+              "ENGR395I"
+            ]
+          }
         ]
       },
       "description": "ENGR 495A Engineering Cooperative Education (1-3 per semester/maximum of 3) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting in the United States. This course is the third in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of-semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."
@@ -692,7 +773,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "ENGR395A"
+          {
+            "oneOf": [
+              "ENGR395A",
+              "ENGR395I"
+            ]
+          }
         ]
       },
       "description": "ENGR 495I Engineering International Cooperative Education (1-3 per semester/maximum of 3) This course provides students the opportunity to apply the fundamentals and academic concepts learned in their major classes in a professional laboratory, industry, or government agency setting outside of the United States. This course is the third in a series that provides progressive semesters of career-related experience in the Cooperative Education Program. The final grade (SA/UN) will be based on the end-of-semester report submitted by the student and mid-semester and end-of semester evaluations submitted by the employer and student. This course will be offered fall, spring, and summer semesters."

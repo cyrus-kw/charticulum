@@ -43,12 +43,34 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT301"
+          {
+            "oneOf": [
+              "MGMT301",
+              "MGMT301W",
+              "BA304"
+            ]
+          }
         ],
         "concurrent": [
-          "FIN301",
-          "MKTG301",
-          "SCM301"
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          },
+          {
+            "oneOf": [
+              "MKTG301",
+              "MKTG301W",
+              "BA303"
+            ]
+          },
+          {
+            "oneOf": [
+              "SCM301",
+              "BA302"
+            ]
+          }
         ]
       },
       "description": "An introduction to the business environment emphasizing business contracts, liability issues arising from business relations, including those in the internet realm and intellectual property issues. Alternative dispute resolution and global perspectives will be integrated throughout. B LAW 341 Business Law I: Introduction to Contracts, Liability Issues, and Intellectual Property (3) Business decisions have legal consequences. Such decisions can represent both legal risks and opportunities. It is important for one entering business to have a fundamental understanding of the governing legal principles. This course will provide an introduction to the U.S. legal system, coverage of the major components of contract law, and an examination of business liability issues under tort law. In addition, the intellectual property issues of trade secrets, trademarks, patents, and copyrights will be covered. The impact of digital technology and business globalization will be integrated into each topic discussed. The course will be taught in a lecture-discussion format to encourage interaction and exploration of difficult issues. The course text and materials will include key business legal cases."
@@ -77,7 +99,12 @@
       ],
       "requisites": {
         "previous": [
-          "BLAW341"
+          {
+            "oneOf": [
+              "BLAW341",
+              "BLAW243"
+            ]
+          }
         ]
       },
       "description": "Analyze contemporary law applicable to various types of ownership interests and rights, methods of transferring ownership, and use of real property. B LAW 424 B LAW (R M) 424 Real Estate Law (3) Analysis of contemporary law applicable to various types of ownership interests and rights, methods of transferring ownership, and use of real property. The objectives for this course are: (1) to provide students with an understanding of essential U.S. real estate property law, including the rights private property owners may obtain, how ownership and transfer are handled in view of present and future interests, constitutional issues that impact real estate ownership, and the legal aspects of modern real estate contractual transactions; (2) to teach students the ability to spot the legal issues arising from the above as future business leaders and (3) to introduce students to the legal reasoning process necessary to address and avoid the legal dilemmas presented by such issues. Instructional methods for the course will include detailed lectures and classroom discussion of readings and other materials. Student progress and mastery of the material will be evaluated through periodic examinations."
@@ -105,7 +132,12 @@
       "requisites": {
         "previous": [
           "BLAW341",
-          "FIN301"
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          }
         ]
       },
       "description": "An examination of the laws governing agency relationships, employment, and the various structures of commercial enterprises."
@@ -117,9 +149,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BLAW341",
+          {
+            "oneOf": [
+              "BLAW341",
+              "BA241",
+              "BA243"
+            ]
+          },
           "ACCTG211",
-          "FIN301"
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          }
         ]
       },
       "description": "All articles of the Uniform Commercial Code, banking relationships, debtor- creditor law, and bankruptcy law. B LAW 444B LAW 444 Advanced UCC and Commercial Transactions (3) This course is designed to: (1) provide the student with a systematic study of the laws governing sales transactions, the instruments for financing those transactions and rights and liabilities of debtors and creditors (the Uniform Commercial Code governs these issues); (2) to explore current trends in the law affecting commercial transactions; (3) to develop further the student's legal reasoning processes; (4) to enhance the student's ability to identify legal issues from the business decision maker's and financial auditor's perspectives. Instructional methods will include lectures, readings, multimedia content, and class discussions. Student progress and mastery of the material will be evaluated through periodic examinations. Some state C.P.A. Boards require completion of this course as a prerequisite to obtaining certification as a public accountant. Completion of the course will be credited toward fulfillment of the requirements for the Legal Environment of Business Minor."

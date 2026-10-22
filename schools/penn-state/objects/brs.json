@@ -22,7 +22,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          }
         ]
       },
       "description": "Business-to-business bioproduct sales and marketing fundamentals and market overview of key forest industry sectors including biorefinery value chain outputs. BRS 437 Bioproduct Marketing and Sales (4) This course covers business-to-business (B2B) bioproduct marketing fundamentals and a market overview of key forest industry sectors (solid wood, composite panels, and engineered wood products) including biorefinery value chain outputs (environmental services, energy, fuels, and co-products) and personal selling of bioproducts. Students will apply B2B market principles and concepts toward an understanding of bioproducts industries and markets. Personal selling techniques will be developed and applied to enhance understanding of the industrial sales function within bioproduct firms. Marketing research for decision-makers will be examined."

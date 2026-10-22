@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "ASTRO 1 Astronomical Universe (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Students who have passed ASTRO 5 , ASTRO 6 , ASTRO 7N or ASTRO 10 may not take this course for credit. Overview of modern understanding of the astronomical universe. ASTRO 1 is an introductory course for non-science majors. It provides a broad introduction to Astronomy with qualitative descriptions of the dazzling and varied contents of the universe including planets, the Sun and other stars, exoplanets, red giants, white dwarfs, neutron stars, black holes, supernovae, galaxies, dark matter, and more. The course will explore how these objects form and change and interact, how the whole whole universe formed and changes (cosmology), and where Earth fits in the vast scheme of things. Students will learn how our relative place, orientation, and motion in space dictate our changing view of the sky (daily and yearly sky motions, phases of the moon) and conditions on Earth (arctic, tropics, and seasonal changes). Descriptions will build upon the basic physics of gravity, light, and atoms, and will be discussed in the context of the process of science as a robust and self-correcting way of learning and knowing that relies on making and testing predictions by gathering evidence. The goal of this course is to cover most of the areas of modern astronomy at a level which requires only basic mathematics."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "The development of our modern understanding of the visible sky and planetary systems. Students who have passed ASTRO 1 , ASTRO 7N , or ASTRO 10 may not take this course for credit. ASTRO 5 The Sky and Planets (3) (GN) will introduce students to the wonders of the universe and help them to understand how the universe works through the laws of physics. During the semester, they will learn about the different observed motions of objects in our sky, how astronomical objects influence our concepts of time, the nature of light and spectra, how planetary systems are formed and comparative details about our solar system and other planetary systems. Many colorful images and movies of the solar system have been collected by robotic satellite missions like Voyagers I & II, the Magellan mission to Venus, Mars rovers and orbiters, the Galileo and Juno missions to Jupiter, the Cassini and Huygens missions to Saturn, and the New Horizons mission to Pluto and the Kuiper Belt. These and other images will be used to convey the excitement of discovery and nature of astronomical study of the Solar System to our students."
     },
     {
@@ -31,7 +35,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "ASTRO 6 Astronomical Universe (3) (GN) This course meets the Bachelor of Arts degree requirements. Students who have passed ASTRO 1 , ASTRO 7N , or ASTRO 10 may not take this course for credit. Overview of modern understanding of stars, galaxies, and cosmology. ASTRO 6 is an introductory course for non-science majors. It provides a broad introduction to many areas of Astronomy with qualitative descriptions of the dazzling and varied contents of the universe including the Sun and other stars, red giants, white dwarfs, neutron stars, black holes, supernovae, galaxies, dark matter, and more. The course will explore how these objects form and change and interact, how the whole whole universe formed and changes (cosmology), and where Earth fits in the vast scheme of things. Descriptions will build upon the basic physics of gravity, light, and atoms, and will be discussed in the context of the process of science as a robust and self-correcting way of learning and knowing that relies on making and testing predictions by gathering evidence. The goal of this course is to cover most of the areas of modern astronomy at a level which requires only basic mathematics."
     },
     {
@@ -43,7 +49,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "ASTRO 7N (GA/GN) is both an introductory course in astronomy for non-science majors and a creative space for those with science backgrounds interested in visual arts; it provides students the opportunity to demonstrate understanding and develop a personal connection to the subject by designing four art projects. Students will learn the broad concepts of astronomy by playing an immersive video game, which allows them to 1) explore seasons, phases of the Moon, light, gravity, and telescopes from a virtual colony on Mars; 2) fly from planet to planet in the Solar System and learn about their properties and formation; 3) visit the Sun and other stars, learn how they produce energy, and about their life cycles; 4) fly through the cosmos and construct their own universe, particle by particle. Students will also learn about the relationships and exchanges between arts and sciences, and explore inspiration and perspective on these topics by designing themed art projects using traditional and digital media. These projects include assembling a photo- journal of astronomically-relevant subjects, constructing their own video-game-like scene, interpreting data to inform a plausible depiction of an alien world, and producing three- color images using methods like those employed by astronomers to compose and display Hubble Space Telescope images. Students who have passed ASTRO 1 , ASTRO 5 , ASTRO 6 or ASTRO 10 may not take this course for credit."
     },
     {
@@ -54,7 +64,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "ASTRO 10 Elementary Astronomy) (GN) (BA) This course meets the Bachelor of Arts degree requirements. Students who have passed ASTRO, 1, ASTRO 5 , ASTRO 6 , or ASTRO 7N may not take this course for credit. Students may not receive General Education credit for ASTRO 10 unless they also take ASTRO 11 . Overview of modern understanding of the astronomical universe. ASTRO 10 is an introductory course for non-science majors. It provides a broad introduction to Astronomy with qualitative descriptions of the dazzling and varied contents of the universe including planets, the Sun and other stars, exoplanets, red giants, white dwarfs, neutron stars, black holes, supernovae, galaxies, dark matter, and more. The course will explore how these objects form and change and interact, how the whole whole universe formed and changes (cosmology), and where Earth fits in the vast scheme of things. Students will learn how our relative place, orientation, and motion in space dictate our changing view of the sky (daily and yearly sky motions, phases of the moon) and conditions on Earth (arctic, tropics, and seasonal changes). Descriptions will build upon the basic physics of gravity, light, and atoms, and will be discussed in the context of the process of science as a robust and self-correcting way of learning and knowing that relies on making and testing predictions by gathering evidence. The goal of this course is to cover most of the areas of modern astronomy at a level which requires only basic mathematics."
     },
     {
@@ -65,10 +77,17 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "concurrent": [
-          "ASTRO1"
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO10"
+            ]
+          }
         ]
       },
       "description": "Selected experiments and explorations to illustrate major astronomical principles and techniques. Telescopic observations of planets, stars and nebulae. ASTRO 11 Elementary Astronomy Laboratory (1) (GN)(BA) This course meets the Bachelor of Arts degree requirements. ASTRO 11 is the 1 credit laboratory component of this overview of astronomy and is intended to be taken in conjuction with ASTRO 10 . It covers material similar to the lecture component in ASTRO 10 , but the selected topics are covered in more depth and are focused on active learning components. Weekly two-hour labs may include investigating the habitable zone of a variety of stars, investigating the phases of the moon, analysis of the properties of stars in a color-magnitude diagram, analysis of the colorful spectra of different chemical elements, and exploration of one of the deepest images of space ever obtained. In addition, students will complete a semester nighttime observing project that typically involves learning some constellations, tracing phases of the moon, and sketching images seen through telescopes or binoculars at the student observatory."
@@ -82,7 +101,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "CMLIT19N"
       ],
@@ -118,7 +141,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
     },
     {
@@ -139,10 +164,19 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
-          "ASTRO1"
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO6",
+              "ASTRO7N",
+              "ASTRO10"
+            ]
+          }
         ]
       },
       "description": "This course meets the Bachelor of Arts degree requirements. Astronomical observations made during the last 70 years, combined with mathematical physical theory (Einstein's General Relativity), has led to a dramatic new view of the history of the Universe. Ten to twenty billion years ago, all the material that is now contained in stars, planets, and galaxies was then compressed into a region, smaller than a pinhead, and so hot that atoms could not survive. This fiery cauldron cooled and expanded, forming hydrogen and helium, and eventually all the materials and structures that we know today. This course will discuss the evidence, theories and controversies of this new scientific cosmology, commonly known as 'the Big Bang'. This class is designed for the non-science students who, after learning the fundamentals of astronomy in ASTRO 1 (GN), ASTRO 6 (GN), ASTRO 7N (GA/GN) or ASTRO 10 (GN), want to pursue further the questions of cosmology. The great success of the Big Bang theory in explaining the expansion of the Universe, the synthesis of the chemical elements, and the relic radiation leftover from the first moments are reviewed. Some of the questions discussed are still debated in the scientific community. For example: Why do some galaxies have stunning spiral structures, while others are relatively featureless ellipticals? What is the \"dark matter\" that may have emerged from the Big Bang, and seems to make a larger contribution to the mass of the universe than all of the material we are familiar with? What can the most distant and oldest objects we know of, the quasars, tell us about how galaxies formed? In presenting the development of this subject, the empirical and conceptual methods of modern physical science are conveyed. Students are assigned problems that exercise the use of elementary mathematics and physics to address real issues, and will confront discussions of interpretation and meaning in essays. A final project allows them to explore individual interests."
@@ -155,10 +189,18 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
-          "ASTRO1"
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO6",
+              "ASTRO10"
+            ]
+          }
         ]
       },
       "description": "The predicted properties of black holes and the astronomical evidence for their existence are investigated in the context of modern ideas about space, time, and gravity. ASTRO 130 Black Holes in the Universe (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Black Holes in the Universe introduces students to the predicted properties of black holes and the astronomical evidence for their existence. Modern ideas about the nature of space, time, and gravity are also covered. The key topics discussed in the course include Newton's and Einstein's theories of gravity, predicted properties of black holes, stars and their fates, how to detect a black hole, gamma-ray bursts, supermassive black holes in galactic nuclei, active galaxies, black hole spin, gravitational waves, Hawking radiation, singularities, and black hole child universes. The course is intended to be an attractive choice for students who are interested in enriching and broadening their understanding of modern physical science.The course is intended for students who have completed and enjoyed the one-semester survey of modern astronomy, ASTRO 1 , 6 , or 10 . It has an interdisciplinary flavor, combining basic physical concepts, astronomical observations, and philosophical ideas to present a complete picture of the current understanding of black holes. Time is also devoted to provide historical insight into the development of our ideas about gravity from Kepler and Newton through Einstein and modern ideas about quantum gravity. Students use mathematics at the level of high school algebra."
@@ -171,10 +213,18 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
-          "ASTRO1"
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO5",
+              "ASTRO10"
+            ]
+          }
         ]
       },
       "description": "The problem of the existence of life beyond Earth is investigated, drawing from recent research in astronomy and other fields. ASTRO 140 Life in the Universe (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. The possibility of life beyond Earth is one of the great unsolved puzzles of human thought and has been debated for millennia. An answer would fundamentally change the relationship between the human race to the rest of the Universe. Advances in modern physics and astrophysics have dramatically changed and enriched the understanding of our cosmic surroundings, but have not yet produced an unambiguous evidence concerning the extraterrestrial life. Yet, significant progress has been made on certain aspects of the problem. Recent observations of protoplanetary disks around young stars, planets around solar-type stars and a rapidly spinning pulsar (a Penn State discovery), and pervasive organic molecules throughout the Galaxy give tantalizing, albeit indirect, hints in favor of the existence of nonterrestrial life. \"Life in the Universe\" is envisioned to be an attractive choice for students who are interested in enriching and broadening their understanding of modern science. The course is highly interdisciplinary, combining evidence from several fields of science to describe our chances to encounter life beyond Earth and the Solar System. Selecting this course would be a logical choice for students who completed and enjoyed ASTRO 1 (GN), ASTRO 5 (GN), or ASTRO 10 (GN). The students are expected to reach the following goals from this course: - learn to appreciate limitations of human experience and a role of the interdisciplinary approach in solving scientific problems - gain understanding of a relationship between the physical Earth, its biosphere, and the rest of the observable Universe - examine in some detail a contemporary problem of scientific investigation: the astrophysical evidence for planets around stars other than the Sun - assess the scientific significance of searches for extraterrestrial life including technological civilizations. Lectures systematically cover the topics listed in the course outline at a level appropriate for non-science students, although students from the Planetary Science & Astronomy major, as well as other science and engineering majors, can take the course. While general understanding of astronomy from the prerequisite course is expected, the necessary physical and astrophysical concepts are reintroduced to assure a logical and coherent flow of information throughout the course. Videos are used to illustrate a number of topics, such as the search for extraterrestrial intelligence, physical conditions on planets of the Solar System, the detection of planets around a neutron star, and to evaluate the scientific content of science fiction movies."
@@ -188,7 +238,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "COMM151N"
       ],
@@ -202,7 +256,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Have you seen the Milky Way with your own eyes? What used to be an everyday occurrence is now something you can do only if you purposely travel to a dark site or live in one of the very few remaining locations in the world where the Milky Way is visible. In this course, you will explore what has changed in recent decades to make the Milky Way and every object in the sky less easily visible. This course is a general education natural sciences (GN) course that focuses on the key sustainability issue in astronomy: light pollution. The course will explore the impacts of the growth of artificial lights on access to the night sky for enjoyment as well as for research in astronomy. Students will also consider how other artificial sources of light, including electronics that transmit radio signals and satellites that reflect sunlight are impacting our skies. The course will also examine the impacts of artificial light on public safety, human health, and ecosystems. Students will critically examine the issues and some proposed solutions promoted by advocacy organizations and legislators. Through analysis of readings and discussions, students will gain skill in reflective writing and in the design of an action plan for improving the lighting in their communities."
     },
     {
@@ -233,7 +289,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL15"
+          {
+            "oneOf": [
+              "ENGL15",
+              "ESL15",
+              "ENGL30H",
+              "ENGL15A",
+              "ENGL15S",
+              "ENGL15E",
+              "ENGL30T",
+              "ENGL137H",
+              "CAS137H"
+            ]
+          }
         ]
       },
       "description": "The class is designed to build skills in communication modes that are used every day in academic and non-academic astronomy, industry, and related natural sciences: technical writing and reading, presenting to different audiences, using professional authoring tools and software, designing posters and slides, and creating and maintaining a strong professional presence online. There will be a strong focus on improving technical writing skills, practiced by submitting small-but-regular assignments inside and outside of class. By the end of this course, students will have gained practical experience producing many professional writing products with extensive feedback and opportunities for growth as a scientific writer. This course will satisfy the \"Writing Across the Curriculum\" requirement."
@@ -246,7 +314,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
           "PHYS212"
@@ -303,7 +373,14 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "ASTRO1",
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO5",
+              "ASTRO6",
+              "ASTRO10"
+            ]
+          },
           "MATH140"
         ]
       },
@@ -324,7 +401,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC201",
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC204"
+            ]
+          },
           "PHYS212",
           "PHYS213",
           "PHYS214"
@@ -369,9 +453,29 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ASTRO291",
-          "CMPSC121",
-          "MATH230",
+          {
+            "oneOf": [
+              "ASTRO291",
+              [
+                "ASTRO401",
+                "ASTRO402W"
+              ]
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201",
+              "ASTRO21"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
           "PHYS211"
         ]
       },
@@ -411,7 +515,12 @@
       "requisites": {
         "previous": [
           "PHYS237",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "This course covers astrophysical radiation processes, focusing on the physical mechanisms that produce, modify, and diagnose radiation from astrophysical plasmas, and develops a quantitative framework for continuum and line emission in environments such as interstellar gas, nebulae, accretion flows, and hot ionized media. The course begins with essential background in special relativity, statistical mechanics, and thermodynamic equilibrium, followed by the radiative transfer equation and its physical interpretation (emission, absorption, and scattering), and then examines major continuum processes including blackbody radiation, thermal bremsstrahlung, synchrotron and cyclotron emission, and Compton scattering. The second half focuses on atomic processes governing line emission and absorption, including atomic structure, selection rules, Einstein coefficients, collisional and radiative processes, and ionization balance, with applications to interpreting spectra from photoionized and collisionally ionized plasmas, absorption lines, optical depth effects, and the curve of growth. Emphasis is placed on analytic calculations and order-of-magnitude estimates connecting physical conditions to observable radiation, including the computation of emissivities, absorption coefficients, cooling rates, and characteristic timescales, and the inference of source properties from observed spectra."
@@ -426,9 +535,27 @@
           "PHYS212",
           "PHYS213",
           "PHYS214",
-          "MATH230",
-          "MATH250",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC101"
+            ]
+          }
         ]
       },
       "description": "This course covers the equations of (magneto) hydrodynamics and applications to the modeling and interpretation of astronomical observations. Applications include star formation, stellar winds, waves in stratified and magnetized plasma, instabilities, shocks, blast waves, and accretion disks."
@@ -467,7 +594,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ASTRO291"
+          {
+            "oneOf": [
+              "ASTRO291",
+              "ASTRO401"
+            ]
+          }
         ]
       },
       "description": "The Search for Extraterrestrial Intelligence is the hunt for technosignatures: signs of non-human technology beyond Earth. The search has many forms, with its targets spanning scales from small objects in the Solar System to galaxy-spanning industry, and is conducted in many ways, from the use of radio telescopes searching for communicative signals to infrared space telescopes searching for Dyson spheres. This course will offer a survey of the field as a subfield of astrobiology, and as an interdisciplinary endeavor that includes biology, astrophysics, game theory, anthropology, law, and many other fields. It begins with a history of the field and its jargon, then continues with a study of the theory of the field, including the Drake Equation and Fermi Paradox, and then the practice of the field, including a survey of the kinds of technosignatures we might search for. It concludes with a study of the social and ethical aspects of the field, and special topics that will vary by semester. The course includes a field trip to Green Bank Observatory to conduct real radio SETI observations and learn the history of SETI at NRAO."

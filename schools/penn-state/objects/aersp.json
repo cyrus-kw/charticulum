@@ -53,9 +53,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213",
-          "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              [
+                "EMCH213",
+                "MATH220",
+                "MATH230"
+              ],
+              [
+                "MATH231",
+                "MATH232",
+                "MATH250"
+              ]
+            ]
+          }
         ]
       },
       "description": "Aerospace structural design concepts, flight safety. Stiffness, strength, stability of thin-walled structures under combined loads. Energy methods, finite element analysis. AERSP 301 Aerospace Structures (3) AERSP 301 covers essential topics in aerospace structures. The objectives of the course are to help students: 1) appreciate the roles that structures and structural materials play in aerospace vehicles; 2) understand general design concepts for aerospace structures: vehicles, components, and materials; 3) develop the analysis tools and skills needed to analyze the performance of aerospace structures; and 4) gain experience identifying, formulating, and solving aerospace structural engineering problems. AERSP 301 builds on structural mechanics topics from required foundational courses in mechanics, statics, dynamics and strength of materials. It prepares students for study of advanced topics such as plates and shells, composites, structural stability, finite element analysis, structural dynamics, and aeroelasticity. It also provides students with the basic background needed to contribute effectively to multidisciplinary trade studies in vehicle design activities. AERSP 301 begins with an overview of the general features of flight vehicle structures, with emphasis on thin-walled members and advanced materials. Then, the implications of assured safety of flight for structural design are explored, leading to coverage of: load cases, flight envelopes, load factors, factors of safety, kinds of structural failures, and margins of safety. Topics in structural analysis proceed from an initial review of topics in elasticity, structural materials, and beam bending. Then, the deflection and stress responses of thin-walled beams under transverse shear and torsional loading are addressed. More than a third of the course is devoted to energy principles and the development of the finite element method of structural analysis. The course finishes with a treatment of the structural stability of beams and panels, a key topic with respect to the behavior of thin-walled aerospace structures."
@@ -108,7 +119,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
+          {
+            "oneOf": [
+              "EMCH212",
+              "EMCH212H"
+            ]
+          },
           "MATH251"
         ]
       },
@@ -121,9 +137,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
-          "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              [
+                "EMCH212",
+                "MATH220",
+                "MATH230"
+              ],
+              [
+                "MATH231",
+                "MATH232",
+                "MATH250",
+                "CMPSC121"
+              ]
+            ]
+          }
         ]
       },
       "description": "Introduction to space and space flight; laws of particle mechanics; orbits and trajectories; space vehicles and propulsion. AERSP 309 Astronautics (3) This course, required for aerospace engineering majors, focuses primarily on the dynamics of spaceflight, including both orbital and attitude (orientation) motion of spacecraft. Topics include: three-dimensional rotational kinematics (direction cosine matrices, vector components in different coordinate systems, Euler angles, the angular velocity vector, and velocity and acceleration in different reference frames), three-dimensional particle dynamics (Newton's laws of particle motion, energy, angular momentum, and systems of particles), two-body orbital mechanics (Newton's law of universal gravitation, the orbit equation, conic sections and orbit terminology, Kepler's equation, classical orbital elements, and representations of satellite position and velocity), orbital maneuvers and transfers (impulsive maneuvers, Hohmann transfers, simple inclination changes, and relative motion between spacecraft), rigid-body dynamics (angular momentum and energy, the inertia matrix, principal-axis system, Euler's equations of rigid-body motion, torque-free motion, and effects of external torques), rocket performance (the rocket equation, specific impulse, estimating propellant requirements for a mission, and a survey of propulsion technology), and the space environment (standard atmosphere, simple radiative heat-transfer analysis, the Van Allen radiation belts, meteors and debris hazards). The course relies upon a sound understanding of mechanics, matrix algebra and vector calculus. Assignments include analytical and numerical problems, some of which require computer programming."
@@ -135,9 +163,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
-          "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              [
+                "EMCH212",
+                "MATH220",
+                "MATH230"
+              ],
+              [
+                "MATH231",
+                "MATH232",
+                "MATH250",
+                "CMPSC121"
+              ]
+            ]
+          }
         ]
       },
       "description": "Fluid statics and kinematics; fluid dynamics of inviscid and viscous flows; Navier-Stokes equations; introduction to boundary layers. AERSP 311 Aerodynamics I (3) This is a first course in incompressible inviscid and viscous flows. It includes an introduction to fluids, fluid statics and hydrostatics. Fluid kinematics, including Eulerian versus Lagrangian viewpoint, steady versus unsteady flows, volume and mass flow rates, vorticity and circulation, and streamlines are described. Derivation of the governing equations for the conservation of mass, momentum and energy is presented. Dimensional analysis is covered. Potential flow with and without the effects of viscosity is analyzed. A derivation and exact solutions of the Navier-Stokes equations are given and boundary layers are introduced. This is the first of a two course sequence in aerodynamics, where both courses are required for senior-year propulsion and design courses. Evaluation of student performance will be by two midterm exams worth approximately 25% each, a final exam worth approximately 35% and weekly homework assignments worth approximately 15%."
@@ -151,7 +191,12 @@
         "previous": [
           "AERSP311",
           "AERSP313",
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201"
+            ]
+          }
         ]
       },
       "description": "Fluid mechanics of viscous and compressible flows, laminar boundary layers, turbulent flows, isentropic flows, shock waves, supersonic life and drag. AERSP 312 Aerodynamics II (3) Exact solutions of the Navier-Stokes equations for unsteady flow. Boundary layers solved by the methods of Blasius, Falkner-Skan and Thwaites. Boundary layer stability and transition to turbulence. Turbulent flow and solution methods. Fluid flow measurement techniques and numerical methods. Derivation of the governing equations for the conservation of mass, momentum and energy for compressible flow. Steady one-dimensional isentropic flow. Normal, traveling and oblique shock waves. Compressible flow with area change and converging-diverging nozzle flows. Prandtl-Meyer expansions and supersonic life and drag. One-dimensional flow with friction or heat transfer. Unsteady and linearized compressible flow. Introduction to the method of characteristics. This is the second of a two course sequence in aerodynamics and is a prerequisite for senior level courses in propulsion and design. Evaluation of student performance will be by two midterm exams worth approximately 25% each, a final exam worth approximately 35% and weekly homework assignments worth approximately 15%."
@@ -163,8 +208,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              [
+                "MATH220",
+                "MATH230"
+              ],
+              [
+                "MATH231",
+                "MATH232",
+                "MATH250",
+                "CMPSC121"
+              ]
+            ]
+          }
         ]
       },
       "description": "Mathematical methods applied to aerospace engineering: Fourier series, ordinary and partial differential equations, complex variables, numerical methods, data analysis. AERSP 313 Aerospace Analysis (3) This course is designed to reinforce the mathematical concepts learned in the prerequisite mathematics and computer science courses and to present new mathematical material that is necessary for aeronautics, astronautics, dynamics and control, and fluid dynamics analysis. In practice, analytical and numerical approaches to problems solving are complementary, hence, this course will emphasize a combined analytical and numerical treatment."
@@ -251,7 +308,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "AERSP413",
+          {
+            "oneOf": [
+              "AERSP413",
+              "AERSP450"
+            ]
+          },
           "AERSP462"
         ]
       },
@@ -345,7 +407,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AERSP308"
+          {
+            "oneOf": [
+              "AERSP308",
+              "AERSP312",
+              "ME420"
+            ]
+          }
         ]
       },
       "description": "This course examines the effects on spacecraft design and operation, both short and long term, by the four aspects of the space environment: the neutral environment, the plasma environment, the radiation environment, and the micrometeoroid and orbital debris environment, both in near-Earth as well as interplanetary space. The neutral space environment includes the three regimes of rarefied gas dynamics; slip, transition, and free molecular flow, as determined by the Knudsen number; spacecraft surface degradation due to physical, chemical, and mechanical processes, and an introduction to the Direct Simulation Monte Carlo (DSMC) computational method for calculating rarefied flows. The calculation of spacecraft drag, lift, and pitching moments in free molecular flow is detailed. The plasma space environment in space is examined and the confinement of plasma via magnetic fields is derived. Spacecraft charging of both spacecraft bodies and solar cell arrays due to the plasma environment with the resultant damage due to arcing is analyzed. The effect of spacecraft grounding scheme, positive, negative, or floating, on spacecraft charging is examined. The sources of space radiation; trapped radiation belts (Van Allen belts), galactic cosmic rays (GCR), and solar proton events (SPE) and coronal mass ejections (CME); are quantified and the various types of radiation, high energy photons or particles, are covered. The effects of radiation on spacecraft materials, in particular solar cells and electronic components, and biological occupants such as humans, along with means of shielding against them are quantitatively examined. The space micrometeoroid and orbital debris environments are examined with a particular emphasis on the increasing population of orbital debris. Impact dynamics to calculate cratering and penetration distances and current methods such as the Whipple shield for protecting spacecraft from micrometeoroids and orbital debris are covered. Methods to prevent the formation of orbital debris as accepted by the international community are discussed."
@@ -372,9 +440,24 @@
       ],
       "requisites": {
         "previous": [
-          "ME320",
-          "MATH250",
-          "CMPSC200"
+          {
+            "oneOf": [
+              "ME320",
+              "AERSP312"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "This course provides an introduction to the important and growing field of Computational Fluid Dynamics (CFD). The student will become familiar with a short history and relevance of CFD, the basic differential models of fluid dynamics, discretization and linearization practices, and solution strategies of CFD. Fundamentals of algorithm classification, error and stability analysis will be covered. Also, several advanced topics of relevance to modern CFD analysis will be covered. A term project will involve coding a CFD model of one of several choices including: 2D shallow wave equations for application to a tsunami, unsteady conjugate flow+heat transfer analysis of a pin array, and others per the instructor's discretion."
@@ -386,7 +469,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          },
           "MATH220"
         ]
       },
@@ -411,7 +501,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AERSP410"
+          {
+            "oneOf": [
+              "AERSP410",
+              "ME432"
+            ]
+          }
         ]
       },
       "description": "Analysis and performance of chemical and nuclear rockets, electric propulsion systems. Introduction to solar, chemical, thermoelectric, and nuclear power sources."
@@ -436,7 +531,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AERSP450"
+          {
+            "oneOf": [
+              "AERSP450",
+              "EMCH409",
+              "PHYS419"
+            ]
+          }
         ]
       },
       "description": "This course is an introduction to the mathematics and practices in orbital mechanics as applied to spacecraft mission design and operation. The major topics are: the n-body problem, the two-body problem, Keplerian orbits, the Kepler problem (position as a function of time), three-dimensional specifications of Keplerian orbits (classical orbital elements and modified equinoctial elements), Lambert's problem (determining a conic section that joins two specified points for a given time of flight), impulsive transfers, the Hohmann transfer and its extension to other problems, spherical trigonometry and its use in plane-change maneuvers and in gravitational modelling, the sphere of influence, the patched-conic approximation, the circular restricted three-body problem, linear orbit theory (relative motion between vehicles in neighboring orbits), gravitational modelling via spherical harmonics, perturbation methods (Encke's method and variation of elements), orbit determination, tracking kinematics, and time systems."
@@ -461,7 +562,15 @@
       "requisites": {
         "previous": [
           "MATH220",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "AERSP424"
+            ]
+          }
         ]
       },
       "description": "Aerospace autonomy is the blending of aerospace engineering and computer science - an interdisciplinary topic that will boost your skills in both domains. From advanced decision-making algorithms to sensing and state estimation to advances in machine learning applications, aerospace autonomy covers a lot of territory. In this class we introduce some of the techniques and challenges so that the vehicle will \"fly itself\" while maintaining awareness of sensors, safety, and software along the way through homework and coding assignments."
@@ -508,10 +617,16 @@
       ],
       "requisites": {
         "previous": [
-          "EE330"
+          {
+            "oneOf": [
+              "EE330",
+              "PHYS400"
+            ]
+          }
         ],
         "minGrades": {
-          "EE330": "C"
+          "EE330": "C",
+          "PHYS400": "C"
         }
       },
       "description": "This course provides the education on models that are used for description of plasma phenomena as applicable to plasma confinement, plasma assisted materials processing, astrophysical plasmas and plasmas in the near Earth's space environment. It provides practical training in solution of problems involving collisional and collisionless plasmas. In particular, it investigates dynamics of charged particles in specified uniform, non-uniform and time varying electric and magnetic fields. It explores collective behavior of plasmas, including various electrostatic and electromagnetic waves that can be excited and propagate in plasmas parallel and perpendicular to the externally applied magnetic field. The course considers non-linear effects in plasmas, as typically occurring in the sheath regions near the plasma confining walls. It discusses concepts of equilibrium and stability of plasmas, and various models of unstable plasma motions, especially in relation to plasma confinement."
@@ -526,10 +641,22 @@
       ],
       "requisites": {
         "previous": [
-          "EE330"
+          {
+            "oneOf": [
+              "EE330",
+              "PHYS400",
+              [
+                "METEO421",
+                "METEO431"
+              ]
+            ]
+          }
         ],
         "minGrades": {
-          "EE330": "C"
+          "EE330": "C",
+          "PHYS400": "C",
+          "METEO421": "C",
+          "METEO431": "C"
         }
       },
       "description": "The physical nature of the objects in the solar system; the earth's atmosphere, ionosphere, radiation belts, magnetosphere, and orbital mechanics."

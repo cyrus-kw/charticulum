@@ -15,7 +15,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENVE417"
+          {
+            "oneOf": [
+              "ENVE417",
+              "STAT401"
+            ]
+          }
         ]
       },
       "description": "Watershed response to rainfall events; hydrologic systems; ground water flow. ENVE 415 Hydrology (3) Hydrology is the study of water's movement over the earth and in the atmosphere, with a particular focus in the class on the processes of precipitation, infiltration and runoff. The general public focuses on hydrology when there either is too much water(flooding) or too little water (drought). Engineers working in the hydrology arena focus on evaluating the timing and location of potential floods,designing structures and sites to minimize the impacts of the site on the hydrologic behavior of an area, and evaluating potential sources of water supply during drought times so that the public impact of a drought is minimal.This course builds on concepts learned in the hydraulic design course in terms of conveyance system design. Course topics include determination of the safe yield of a water supply, calculation of hydrographs in ungaged watersheds, the hydraulics of groundwater wells, and the design of storm water management structures to minimize flooding. The students use currently available models from the U.S. Department of Agriculture, the U.S. EPA and the U.S. Army Corps of Engineers in their watershed evaluations and design of storm water control practices."

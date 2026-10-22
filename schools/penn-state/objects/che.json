@@ -150,12 +150,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH231",
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          },
           "CHE210",
           "CHE220"
         ],
         "minGrades": {
           "MATH231": "C",
+          "MATH230": "C",
           "CHE210": "C",
           "CHE220": "C"
         }
@@ -266,7 +272,12 @@
         "previous": [
           "CHE230",
           "CHE320",
-          "CHE330"
+          {
+            "oneOf": [
+              "CHE330",
+              "CHE350"
+            ]
+          }
         ]
       },
       "description": "The objective of this course is to present the principles of mass transfer and their application to separation and purification processes. The course develops rate expressions for mass transfer in multiphase, multicomponent systems based on diffusion and convective processes. Starting with Fick's law and macroscopic balances the course moves to the design of large scale separation processes including equilibrium stage and continuous separations for the separation and purification of chemical compounds. Specific separation operations analyzed include distillation, absorption, extraction, membrane units, adsorption. The course also introduces the use of modern software tools in the design of such processes."
@@ -339,7 +350,12 @@
       ],
       "requisites": {
         "previous": [
-          "CHEM202"
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          }
         ]
       },
       "description": "Transportation of people and goods in many parts of the world depend almost completely on petroleum fuels, such as gasoline, jet fuel, diesel fuel, and marine fuel. Apart from the fuels, materials that are necessary for operating the combustion engines of cars, trucks, planes, and trains also come from petroleum. These materials include lubricating oils (motor oils), greases, tires on the wheels of the vehicles, and asphalt to pave the roads for smooth rides in transportation vehicles. All petroleum fuels and many materials are produced by processing of crude oil in petroleum refineries. Petroleum refineries also supply feedstock to the petrochemicals and chemical industry for producing all consumer goods from rubber and plastics (polymers) to cosmetics and medicine. This course explains how physical processes and chemical reactions that take place in separate petroleum refinery units are integrated to convert crude oil into desired fuels and materials. Refinery processes are divided into four types that include separation, conversion, finishing, and support. The overall objective of petroleum refining is to convert crude oil into fuels and materials that comply with commercial specifications and environmental regulations. All refining processes and refinery operations are also subjected to the applicable environmental regulations. A historical evolution of process concepts is introduced to demonstrate how the refining efficiency has increased with significant reduction of pollutant emissions from individual refinery processes. The principal objectives of this course are to enable students to: 1. explain the market drivers for the refining industry (ABET student outcome 2). 2. indicate what crude oils consist of and how crude oils are characterized based on their physical properties (ABET 1, 2); 3. express the objectives of petroleum refining and classify the processes used in petroleum refining (ABET 1, 2, 7); 4. demonstrate how a petroleum refinery works and sketch a flow diagram that integrates all refining processes and the resulting refinery products (ABET 2); 5. examine how each refinery process works and how physical and chemical principles are applied to achieve the objectives of each refinery process (ABET 1, 2, 7); 6. assess implications of changing crude oil feedstocks on refinery configuration and propose strategies to resolve conflicts with degrading crude oil quality and increasingly stringent environmental regulations on petroleum fuels (ABET outcome 4, 7); 7. discuss different sources of natural gas and explain how natural gas is processed at well sites and in processing plants with application of selected refinery processes and other physical operations (ABET 1, 2)."
@@ -489,7 +505,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHE350"
+          {
+            "oneOf": [
+              "CHE350",
+              "BME409",
+              "BME413",
+              "BE302"
+            ]
+          }
         ]
       },
       "description": "CHE 455 is an elective course that examines the application of chemical engineering principles (thermodynamics, transport, and kinetics) to the analysis of a number of medically related phenomena and devices. Specific topics include drug delivery systems, pharmacokinetics, artificial organs, biological transport phenomena, and temperature regulation. One of the important goals of the course is to understand how chemical engineers go about developing appropriate physical models for complex biological systems. Emphasis will be placed on identifying the key physical / biological phenomena governing the system behavior. Where appropriate, the course will also examine some of the social, political, and economic implications of medical technology in our society, e.g., the artificial kidney program. Students do not need a background in biology or physiology -- the key biological phenomena will be covered at appropriate places throughout the semester."

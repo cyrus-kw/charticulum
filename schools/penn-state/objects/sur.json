@@ -117,7 +117,12 @@
           "SUR121"
         ],
         "concurrent": [
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "Surveying Measurement Analysis explores the fundamental concepts of statistical error analysis with applications to surveying measurements. It covers the normal distribution function and theories describing the fundamental procedures in data, including measures of central tendency and measures of data variation. It then explores sampling distribution theory and develops statistical confidence intervals and testing using the X2 , students t, and F distributions. Fundamental concepts in the propagation of variance are developed and applied to the traditional surveying observations of angles, distances, azimuths, elevation differences. These error propagation techniques are further used to explore the propagation of variance in traditional traverse computations. The accompanying lab exercises help reinforce and validate the theoretical foundations of this class."
@@ -129,7 +134,12 @@
       "credits": 2,
       "requisites": {
         "concurrent": [
-          "MATH140",
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          },
           "SUR162"
         ]
       },
@@ -189,8 +199,18 @@
           "MATH220"
         ],
         "concurrent": [
-          "CMPSC200",
-          "STAT200"
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT401"
+            ]
+          }
         ]
       },
       "description": "Adjustment computations covers the basic theory and mechanics of a least squares adjustment using the traditional surveying observations of distances, angles, azimuths, and elevation differences. It explores the theory of error propagation, and uses this theory to determine the precision of indirectly measured quantities. It explores post-adjustment analysis through the use of various statistical tests, and error ellipse computation and analysis. This course primarily focuses on the least squares adjustment and analysis of differential leveling, triangulation, trilateration, traverse, and network observations. Plane fitting, parametric model estimation, and regression analysis are also covered."
@@ -218,8 +238,24 @@
           "SUR122"
         ],
         "concurrent": [
-          "MATH230",
-          "MATH251"
+          {
+            "oneOf": [
+              "MATH230",
+              [
+                "MATH231",
+                "MATH232"
+              ]
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH251",
+              [
+                "MATH250",
+                "MATH252"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course provides a thorough background on geometric and physical geodesy. With respect to Geometric Geodesy the course covers: Computations to the ellipsoid and coordinate transformations between various coordinate systems, considering crustal plate motion. The astronomic, geodetic, and satellite coordinate systems are studied. Satellite navigation and positioning is discussed at a rudimentary level. With respect to Physical Geodesy the course covers: The Earth's gravity field, its measurement, reduction of gravity observations to the geoid, uses for gravity and gravity anomalies are studied. Geoid determination, Stokes's formula, the remove-restore methods, least-squares collocation. Vertical positioning and height datums and systems. Principles and applications of airborne, terrestrial, and satellite gravimetry and satellite altimetry."
@@ -236,7 +272,12 @@
         "concurrent": [
           "SUR132",
           "SUR241",
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "Introduction to laser scanning surveying. Principles of Light Detection And Ranging (LiDAR) technologies from terrestrial and mobile platforms. The process of point cloud generation from LiDAR techniques are discussed. The course covers the registration and geo-referencing process from multiple scans for indoor and outdoor data acquisition, as well as the direct geo-referencing and point cloud generation from mobile platforms. Error sources in terrestrial and mobile sensors and their system calibration procedures for quantifying and modeling such errors. Industry standard software is used for processing and analysis of point clouds for surveying applications related to 3D modeling, terrain modeling, creating drawings in CAD, and change detection of natural and man-made structures."
@@ -252,7 +293,12 @@
         ],
         "concurrent": [
           "SUR222",
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "Geospatial information technology provides a means through which data about land can be analyzed to obtain information that may be used to support land management decisions. The objective of this course is to teach students to collect and process spatial data, analyze and make decisions, and to communicate the results using maps and other information delivery formats. This course begins with the introduction of geospatial technology and its application in decision making, resource allocation and management, a socio-economic development. Students learn the different types of data that are used in geospatial information technology. They learn about graphical data structures as well as descriptive databases and how to build them. Spatial data models are discussed together with their advantages and drawbacks, as well as descriptive databases. Students capture various datasets from the field, convert them into usable formats, and process them using the models that have been discussed so as to reinforce the knowledge. The use of technology for land parcel information management is discussed. Procedures for performing geospatial analyses and querying databases are discussed and students conduct laboratory exercises using the field data that they captured. Map making techniques are discussed and students learn to communicate the results of analysis through maps."
@@ -377,7 +423,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200",
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT401"
+            ]
+          },
           "SUR341"
         ]
       },
@@ -392,7 +443,15 @@
         "previous": [
           "SUR352",
           "PHYS214",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              [
+                "MATH231",
+                "MATH232"
+              ]
+            ]
+          }
         ],
         "concurrent": [
           "SUR441"

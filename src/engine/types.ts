@@ -35,6 +35,18 @@ export const CATEGORY_NAMES: Record<Category, string> = {
   focus: "Focus",
 };
 
+// A category's heading in Requirements: "Electives" (a list of them), the
+// app's name for the others, or a school's own category written out
+// ("seminars" is "Seminars", "first-year-seminar" "First Year Seminar").
+export function categoryHeading(category: string): string {
+  if (category === "elective") return "Electives";
+  if (category in CATEGORY_NAMES) return CATEGORY_NAMES[category as Category];
+  return category
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 export type Grade =
   | "A" | "A-"
   | "B+" | "B" | "B-"
@@ -42,13 +54,16 @@ export type Grade =
   | "D+" | "D" | "D-"
   | "F";
 
+// Each entry is an object, or a choice ({ oneOf: [...] }, like a
+// program's required courses; see RequiredItem): "MATH 140 or MATH 140H".
 export interface Requisites {
   // Must be completed in an EARLIER term.
-  previous: string[];
+  previous: RequiredItem[];
   // Must be taken in the SAME term or earlier.
-  concurrent: string[];
+  concurrent: RequiredItem[];
   // Lowest acceptable grade for a requisite, e.g. { CS101: "C" }.
-  // Requisites without an entry accept any grade.
+  // Requisites without an entry accept any grade. For a choice, each of
+  // its courses has its own entry.
   minGrades?: Record<string, Grade>;
 }
 
@@ -109,9 +124,11 @@ export interface CurriculumObject {
   externalEquivalents: ExternalEquivalent[];
   // Which requirement categories this object counts toward.
   categories: Category[];
-  // For general-education objects, which area they fill, e.g. "Humanities".
-  // Cards show its first letter ("G-H").
-  genEdArea?: string;
+  // For general-education objects, which areas they fill, e.g.
+  // ["Humanities"]. An Inter-Domain course lists both its domains and
+  // "Inter-Domain": ["Humanities", "Social and Behavioral Sciences",
+  // "Inter-Domain"]. Cards show the first one's first letter ("+H").
+  genEdAreas?: string[];
   availability: Availability;
 }
 
@@ -164,9 +181,15 @@ export interface TemplateRef {
 }
 
 export interface ChartTemplate {
-  id: string;
+  // The school's own code for the program, e.g. Penn State's "CMPSC_BS"
+  // (its plan code). Charts pin it as their TemplateRef's templateId.
+  code: string;
   version: string;
-  name: string;
+  // How it's written for people, e.g. "Computer Science, B.S.".
+  title: string;
+  // The degree it leads to ("baccalaureate"), which picks the school-wide
+  // set its charts are checked against (programRequirements).
+  degree: string;
   // This program's local r-o-s.
   requirementSets: RequirementSet[];
   // The school's suggested plan.
@@ -207,8 +230,19 @@ export type Override =
 // rules. Global/local scopes, overrides, and school policy come later.
 // ---------------------------------------------------------------------------
 
+// A required object, or a choice between several ("MATH 230, or MATH
+// 230H, or MATH 231 & MATH 232"). In a choice, each option is one object
+// or a list of objects taken together (all of them are needed); any one
+// option is enough. See required.ts for the helpers that read these.
+export interface RequiredChoice {
+  oneOf: (string | string[])[];
+}
+export type RequiredItem = string | RequiredChoice;
+
 export interface Requirements {
-  requiredObjectIds: string[];
+  // Required objects (an id) and choices ({ oneOf: [...] }), in the order
+  // the program lists them.
+  requiredObjectIds: RequiredItem[];
   // Partial<...> means not every category needs an entry.
   minCreditsByCategory: Partial<Record<Category, number>>;
   minTotalCredits: number;
@@ -223,12 +257,33 @@ export interface Requirements {
   // School policy: most credits that may count toward more than one
   // category (e.g. shared between a major and a minor). Missing = no limit.
   maxSharedCredits?: number;
-  // Credits needed from a group of courses: a gen ed area, a department,
-  // or a list ("18 credits from the electives below").
-  creditRules?: CreditRule[];
+  // Credits needed from a group of courses (a gen ed area, a department,
+  // or a list: "18 credits from the electives below"), sorted into groups
+  // like General Education, Electives, and Seminars. Requirements shows
+  // each group under its own heading, in this order.
+  creditRules?: CreditRuleGroup[];
   // Lowest acceptable grade in a course, e.g. { CMPSC221: "C" } for a
   // "C-required" course. Courses not graded yet pass for now.
   minGrades?: Record<string, Grade>;
+}
+
+// A heading in Requirements and the credit rules under it, e.g. General
+// Education with a rule for each gen ed area.
+export interface CreditRuleGroup {
+  // What kind of credit it is ("general-education", "elective",
+  // "seminars"); groups in two sets with the same category are one.
+  // When it's one of the app's categories (Category), the heading counts
+  // that category's credit minimum ("30 / 45" for the school's 45 gen ed
+  // credits). Otherwise, or when no set gives it a minimum, the heading
+  // adds up its rules instead.
+  category: string;
+  // How it's written for people, e.g. "General Education".
+  name: string;
+  // Each course counts toward one rule of the group only, the first (in
+  // the group's order) that still needs credits, so one Natural Sciences
+  // course can't fill two Natural Sciences rules at once.
+  eachCourseOnce?: boolean;
+  rules: CreditRule[];
 }
 
 // "At least `credits` credits from courses that match." A course matches
@@ -237,12 +292,19 @@ export interface Requirements {
 // A course can count toward several rules (a GQ math course also counts
 // toward the major).
 export interface CreditRule {
+  // Unique across all of a plan's rules (credits are tallied by it), e.g.
+  // "Q" for Quantification.
   id: string;
-  // How it's written for people, e.g. "Quantification (GQ)".
-  name: string;
+  // How it's written for people. A rule with one gen ed area can leave
+  // it out and be named after the area (creditRuleName).
+  name?: string;
   credits: number;
-  // Gen ed areas, as the school names them ("Quantification").
-  genEdAreas?: string[];
+  // The gen ed area, as the school names it ("Quantification"), or a
+  // list of areas, any of which counts (Knowledge domains: Arts,
+  // Humanities, ...).
+  area?: string | string[];
+  // Courses in any of these areas don't count, e.g. "Inter-Domain".
+  notArea?: string | string[];
   // Subject codes ("CMPSC").
   subjects?: string[];
   // Course numbers at least this ("400-level" is 400).
@@ -263,6 +325,9 @@ export interface RequirementSet extends Partial<Requirements> {
   id: string;
   name: string;
   scope: RequirementScope;
+  // For a global set, the degree it's for ("baccalaureate"): a chart gets
+  // the global sets of its programs' degree.
+  degree?: string;
 }
 
 // ---------------------------------------------------------------------------

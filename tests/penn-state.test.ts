@@ -20,7 +20,7 @@ describe("schools/penn-state", () => {
 
   it("has the Computer Science B.S., whose plan only misses what the student picks", async () => {
     const school = await loadPennState();
-    const program = latestTemplate(school.library, "computer-science-bs")!;
+    const program = latestTemplate(school.library, "CMPSC_BS")!;
     expect(program.version).toBe("2026-27");
     const chart = forkTemplate(program);
     const { requirements } = resolveRequirements(school.library, school.globalSets, chart);
@@ -45,8 +45,12 @@ describe("schools/penn-state", () => {
 
   it("reads prerequisites, including grades and same-term courses", async () => {
     const { catalog } = await loadPennState();
-    // "(CMPSC 122 or CMPSC 132) and (CMPSC 360 or MATH 311W)": the options on the plans.
-    expect(catalog.get("CMPSC465")!.requisites.previous).toEqual(["CMPSC122", "CMPSC360"]);
+    // "(CMPSC 122 or CMPSC 132) and (CMPSC 360 or MATH 311W)": two choices,
+    // the options on the plans first.
+    expect(catalog.get("CMPSC465")!.requisites.previous).toEqual([
+      { oneOf: ["CMPSC122", "CMPSC132"] },
+      { oneOf: ["CMPSC360", "MATH311W"] },
+    ]);
     // "Prerequisite: MATH 110 or Concurrent: MATH 140": MATH 140, same term or earlier.
     expect(catalog.get("CMPSC121")!.requisites).toMatchObject({ previous: [], concurrent: ["MATH140"] });
     // "C or better in PHYS 212".

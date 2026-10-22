@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This course provides an interdisciplinary introduction to the study of Latinas/os in the U.S., beginning with a historical overview of the major events in the U.S. southwest, Mexico, and the Caribbean that led to the creation of Latina/o communities in this country. Within this historical context, the course explores a number of themes: 1) the reasons for migration and the effects on identity of movement between countries and within the U.S.; 2) the social protest movements of the 1960s, including Chicano and Puerto Rican nationalism, the farmworker movement, and Latina feminism; and 3) present-day issues as they affect the major Latina/o groups in the U.S., attending to both similarities and differences within and between the major groups."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This course provides an interdisciplinary introduction to the study of Latinas and Latinos in the United States. The course includes a historical overview of the major events in the U.S. Southwest, Mexico, the Caribbean, and Central and South America that led to the creation of Latina/o communities in this country. Students will examine the formation of racial and class hierarchies within U.S. Latina/o communities; the processes of (international and regional) migration; gendered hierarchies and responses to sexism; and the complexities of U.S. Latina/o identity."
     },
     {
@@ -31,7 +35,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "internalEquivalents": [
         "PHIL139"
       ],
@@ -52,7 +58,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "English 226 will constitute a wide-ranging examination of contemporary texts (1960-present) central to the construction of contemporary Latino/a culture. ENGL 226 Latina and Latino Border Theories (3) (GH;US;IL)(BA) This course meets the Bachelor of Arts degree requirements. This course focuses on contemporary Latina/o cultural production, placing it in historical context and analyzing it through the framework of borders. We make connections between Latina/o groups, showing both similarities and differences. We examine the politics of representation, asking how artistic texts define community and individual identities that are coherent yet also embody the complexity of these identities. The texts cross and claim borders- cultural, sexual, gender, geographical, generational, spiritual, and institutional. We will ask how these art forms work to claim border spaces: How are cultural differences retained without constructing hierarchies of exclusion? What models of identity do these artists propose in response to structures of domination? We'll read novels, short stories, poems, history, and theoretical essays; we will also watch several films. Throughout the course, we will attend to particular histories and cultures of Latina/o groups; it is crucial to both maintain the specificity of each culture (Chicana/o, Puerto Rican, Cuban-American, and Dominican-American) and their connections to each other as Latinas/os in the U.S. Inquiring into these intersections leads one to ask the following: how can Latinos unite against the assault on immigrants and bilingual education without erasing very important differences among Latina/o populations? How can Latinas unite against ongoing sexism and homophobia within their communities and the U.S. in general? How should we view the marketing category \"Hispanic\" and/or \"Latino\" and how do artists offer alternative conceptions of group identity?"
     },
     {
@@ -70,13 +78,24 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "internalEquivalents": [
         "WMNST300"
       ],
       "requisites": {
         "previous": [
-          "WMNST100"
+          {
+            "oneOf": [
+              "WMNST100",
+              "WMNST100U",
+              "WMNST105N",
+              "WMNST106N",
+              "WMNST106Q",
+              "LTNST100"
+            ]
+          }
         ]
       },
       "description": "WMNST/ LTNST 300 Latinx Gender and Sexuality Studies (3) (GH/US/BA) This course examines the historical development, theoretical premises, and political, social, and artistic contributions of Latinx feminisms in the United States. It shows the connections to as well as the divergences from Latin American feminism by beginning with an analysis of how the Spanish conquest, the imposition of Catholicism, and subsequent years of colonialism shaped gender and sexual identities. It examines the contemporary effects of these historical issues and inquires into the common concerns of Latin American feminists and Latinx feminists. It asks how theories and practices have diverged given different geographies, both between the U.S. and Latin America and within the U.S. The course will examine changes in the 1960s and 1970s in the U.S., when Chicano and Puerto Rican nationalist movements also gave rise to a feminist consciousness amongst Latinas; the conjuncture of race, ethnicity, gender, and sexuality is considered, with attention to how Latinas critiqued Anglo feminism's narrow focus on gender. The course will focus on family formations, considering social science and feminist discourse on the issues of patriarchy. How have Latinx feminists valued yet also rearticulated the traditional family? What critiques have made been against heterosexism? How has the LGBTQ community formulated new kinds of families? How does migration shape family relations? The course will explore how Latinx artists in different genres have responded to and resisted traditional gender and sexual roles. Literature, film, poetry, performance art, and hip hop are all examined for their diverse representations of sexual desire."
@@ -90,7 +109,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "SPAN315N"
       ],
@@ -104,7 +127,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "internalEquivalents": [
         "SPAN326"
       ],
@@ -131,7 +156,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL15"
+          {
+            "oneOf": [
+              "ENGL15",
+              "ESL15",
+              "ENGL30H",
+              "ENGL15A",
+              "ENGL15S",
+              "ENGL15E",
+              "ENGL30T",
+              "ENGL137H",
+              "CAS137H"
+            ]
+          }
         ]
       },
       "description": "An in-depth study of Chicana/Chicano literature, film, and music from the inception of the Chicano Movement (1965-1975) to the present. ENGL 426 Chicana and Chicano Cultural Production: Literature, Film, and Music (3) (US)(BA) This course meets the Bachelor of Arts degree requirements. ENGL 426 will constitute an in-depth study of Chicano/a literature, film, and music from the inception of the Chicano movement (1965-1975) to the present. In addition to primary aesthetic texts, students will read historical, political, and theoretical essays designed to situate the Chicano/a cultural texts in historical and political context.The aim of the course is to give students a better understanding of Chicano/a cultural production by situating these works of art against other U. S. artistic traditions and within wider historical and political movements. Authors and artists under consideration in this class will vary, but will likely include Luis Valdez, Tomas Rivera, Estella Portillo Trambley, Oscar Zeta Acosta, Corky Gonzales, Gloria Anzaldua, Norma Alarcon, Cherrie Moraga, Richard Rodriguez, Dagoberto Gilb, Rolando Hinojosa, Alfredo Vea, Charlie Trujillo, Diego Vasquez Jr., Joe Rodriguez, Tomas Almaguer, Jose Esteban Munoz, Manuel Ramos, Lucha Corpi, Rudolfo Anaya, Michael Nave. This class will prepare students for advanced courses in Latin/a literatures as well as other academic courses that engage in the verbal and written analysis of complex texts. Students will be evaluated by means of essays written in and out of class, essay exams, group projects, term-long journals, and class participation. Students should expect to complete a minimum of three written assignments in the course of the term. The course may be used as ENGL major elective credit or as credit towards the ENGL minor and will be offered once a year with 40 seats per offering."
@@ -164,7 +201,12 @@
       ],
       "requisites": {
         "previous": [
-          "SPAN100A",
+          {
+            "oneOf": [
+              "SPAN100A",
+              "SPAN200"
+            ]
+          },
           "SPAN253W"
         ]
       },
@@ -178,13 +220,20 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "internalEquivalents": [
         "SPAN479"
       ],
       "requisites": {
         "previous": [
-          "SPAN100A",
+          {
+            "oneOf": [
+              "SPAN100A",
+              "SPAN200"
+            ]
+          },
           "SPAN253W"
         ]
       },

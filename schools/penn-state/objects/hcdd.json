@@ -44,7 +44,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HCDD113"
+          {
+            "oneOf": [
+              "HCDD113",
+              "HCDD113S",
+              "ETI100"
+            ]
+          }
         ]
       },
       "description": "This course focuses on concepts, methods, techniques, and tools for designing effective technology-enabled experiences. The course will provide students with all the elements for a toolbox they can use to design and create both prototypes and working applications, and some analytic methods they can use to perform basic evaluations. The course will emphasize iterative design and the benefits of employing a cycle of analyze - design - built - evaluate in close cooperation with prospective technology users and other product stakeholders. In addition to more practice-oriented skills and knowledge, the course will provide students with an appreciation for some persistent design challenges including managing design trade-offs, ensuring universal and international access, working with others on co-design, and receiving and delivering design critiques. Students who successfully complete the course will leave equipped to engage with practicing design teams in industry, government, and academia."
@@ -99,10 +105,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "IST242"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC221": "C"
+          "CMPSC221": "C",
+          "IST242": "C"
         }
       },
       "description": "Introduction to object-oriented applications including applications in an Object Oriented Design (OOD) language or OOD languages. HCDD 311 Object-Oriented Design and Software Applications (3) HCDD 311 is among the courses making up the Application Design & Development option in the Baccalaureate degree in Information Sciences and Technology. This course is normally taken in the 5th or 6th semester. It is the first upper-division course in the option sequence. The course is intended to provide students with a background in object-oriented design and object-oriented application development. Students will learn the fundamentals of object-oriented analysis, design, and modeling. They will apply design concepts and develop the skills necessary to bring an idea through the different phases of the application development lifecycle. The course normally involves students working on teams to design and develop working application prototypes. Upon completion of this course, students will be able to apply object-oriented design principles using object-oriented modeling and programming languages, show how object-oriented principles increase the quality of complex applications, and begin development of the team skills necessary when developing complex systems."
@@ -114,10 +126,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132",
+              "IST240",
+              "IST242"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC122": "C"
+          "CMPSC122": "C",
+          "CMPSC132": "C",
+          "IST240": "C",
+          "IST242": "C"
         }
       },
       "description": "Interdisciplinary survey of topics and methods related to the human-centered design use and usability of information systems. HCDD 331 Foundations of Human-Centered Design: User and System Principles (3) This course provides a focused introduction to one of the most complicated parts of information systems design: users and the contexts in which they live, work, and play. The course provides a balance between theory and practice, which are tightly intertwined in this area. Students will learn how to use social science theories about human capabilities and group behavior to predict whether an information system will be usable and useful, and they will learn about the opportunities and challenges that are associated with a wide range of emerging technologies. Students will also gain skills in designing and evaluating information systems that meet the needs of a target audience. Because the information technology design space evolves rapidly, much of the technology-related content covered in this course will evolve from year to year; however the focus throughout will be understanding and responding to the needs, capabilities and preferences of the users of interactive information systems. The format of the class may include lectures, readings, in-class or online discussions, projects, or case studies. Assessment of student performance may include short assignments, quizzes, exams, or in-depth projects."

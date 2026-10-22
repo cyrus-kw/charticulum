@@ -15,7 +15,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EDPSY10"
+          {
+            "oneOf": [
+              "EDPSY10",
+              "EDPSY11",
+              "HDFS229"
+            ]
+          }
         ]
       },
       "description": "This course is designed to apprentice teachers in early childhood education to the policies, theories, practices, skills, and knowledge(s) of home-school, community-school partnerships in the globally diversifying 21st century. Students will learn about and discuss family uniqueness and strengths. Very few families are \"traditional,\" and no two families are alike. Teachers must learn to recognize what makes a family unique and the individual strengths that children and families bring into the classroom. Students will consider using this knowledge in the development of effective family engagement programs for their school and classroom. Experiences are active, challenging, and designed to help students work effectively with families and see teaching as an active engagement for understanding, communication, partnership building, and ultimately social change."

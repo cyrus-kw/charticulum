@@ -76,7 +76,12 @@
       "requisites": {
         "previous": [
           "ACCTG211",
-          "MIS204"
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
         ]
       },
       "description": "This introductory-level course, ACCTG 285 - Introduction to Cyber Fraud, introduces students to the various types of cybercrime that an organization or individual may face along with guidance on what to do once they are uncovered. Topics include an introduction to occupational fraud, malware, viruses, internet schemes, prevention and detection techniques, and artificial intelligence. This course is designed to support any student interested in learning about the challenges a business or individual may face as the result of technology, whether explicitly interested in accounting or not."
@@ -129,7 +134,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG305"
+          {
+            "oneOf": [
+              "ACCTG305",
+              "ACCTG371"
+            ]
+          }
         ]
       },
       "description": "Hands-on course to teach accounting software, applications of spreadsheets and databases in accounting, and surveying of underlying database theory. ACCTG 312 Accounting Technology Lab (3) This is a hands-on course to teach accounting software, applications of spreadsheets and databases in accounting, and surveying of underlying database theory ."
@@ -174,7 +184,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG371"
+          {
+            "oneOf": [
+              "ACCTG371",
+              "ACCTG471"
+            ]
+          }
         ]
       },
       "description": "Financial compliance, internal, and operational audits; standards and procedures; sampling; EDP auditing; professional issues; application of concepts through written responses. ACCTG 403 Auditing (3)Financial statement, regulatory and contract compliance, internal and operational audits, professional standards and ethical conduct; statistical and judgmental sampling; the audit-impact of information technology; audit risk and internal control structure evaluation; application of procedures in transaction cycles; audit reporting; professional issues."
@@ -187,7 +202,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG371"
+          {
+            "oneOf": [
+              "ACCTG371",
+              "ACCTG471"
+            ]
+          }
         ]
       },
       "description": "Financial, compliance, internal, and operational audits; standards and procedures; sampling; EDP auditing; professional issues; application of concepts through written responses. ACCTG 403W Auditing (3) Financial statement, regulatory and contract compliance, internal and operational audits, professional standards and ethical conduct; statistical and judgmental sampling; the audit-impact of information technology; audit risk and internal control structure evaluation; application of procedures in transaction cycles; audit reporting; professional issues."
@@ -199,10 +219,17 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG201",
-          "ACCTG202",
-          "STAT200",
-          "ECON102"
+          {
+            "oneOf": [
+              [
+                "ACCTG201",
+                "ACCTG202",
+                "STAT200",
+                "ECON102"
+              ],
+              "ACCTG211"
+            ]
+          }
         ]
       },
       "description": "This course emphasizes the use of accounting information for internal purposes as opposed to the external disclosure focus of the financial accounting course. The cost covers the vocabulary and mechanics of cost accounting and the design of management accounting systems for planning and controlling operations, and for motivating personnel. The course integrates accounting with ideas from data analysis, decision analysis, finance, microeconomics, and operations management. The themes stressed throughout the course will be the notion that information is costly; the circumstances that necessitate cost allocation, the idea that different costs and different allocation schemes apply for different purposes; and fundamentals of incentive and compensation plans. Among the topics covered are cost behavior, cost-volume analysis, relevant costs, and the use of cost information for decision making. The course will rely on lectures and discussion of case studies."
@@ -214,7 +241,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG211"
+          {
+            "oneOf": [
+              "ACCTG211",
+              [
+                "ACCTG201",
+                "ACCTG202",
+                "FIN301"
+              ]
+            ]
+          }
         ]
       },
       "description": "ACCTG 405 Principles of Taxation I, is the first course that undergraduate accounting majors take that is devoted entirely to taxation. Although the course is intended for accounting majors, the content is relevant to finance majors seeking elective courses. The objective of the course is to provide students with a basic understanding of the concepts, terminology, and decision-making skills specific to the discipline of taxation that are germane to the professional development of those preparing for a career in accounting. Although the course surveys the many forms of taxation that are found in industrialized societies, and the comparisons thereof, the main focus is on the federal income taxation of individuals. However, coverage is provided regarding the manner in which the taxation of individuals relates to corporate and partnership entities. ACCTG 405 is related to other accounting courses through its coverage of income concepts, and micro-economic principles. The former compares differences in the measurement of financial accounting income with the manner in which income is determined according to the tax laws. The latter emphasizes business decision-making principles that are important in the managerial portion of the accounting program. The course covers topics that illustrate fundamental tax strategies and how such enable taxpayers to achieve business and personal economic objectives. The assessment process in ACCTG 405 incorporates examinations, homework assignments, and individual and group projects. The exams are combinations of objective questions and open-ended problems. Exams are often given in the evening. Course learning aids include a text book, on-line tax research services, spreadsheet software, and a packet of handouts prepared by instructors to keep the classes updated on the many changes in the tax laws that occur each year."
@@ -315,7 +351,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG403"
+          {
+            "oneOf": [
+              "ACCTG403",
+              "ACCTG403W"
+            ]
+          }
         ]
       },
       "description": "Examination of legal liability, EDP, statistical sampling, SEC reporting, internal control, and financial reporting in specialized industries."
@@ -327,8 +368,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG371",
-          "MIS204"
+          {
+            "oneOf": [
+              "ACCTG371",
+              "ACCTG471"
+            ]
+          },
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
         ]
       },
       "description": "Accounting data are utilized as information in making decisions and as a control mechanism. The focus of this course, however, will be upon the actual production of accounting data. The purpose of the course is to learn how accountants collect relevant data and transform them into reports appropriate for managers and external readers. Procedural details will focus first on the traditional accounting cycle and the journal entries for business transactions and events. Then we shall examine in detail the principle accounting cycles: sales cycle, cash receipts cycle, purchases cycle, cash disbursements cycle, payroll cycle, facilities cycle, general ledger cycle, production cycle. For each cycle, you should be able to explain the relation of the accounting process to the business enterprise, the basic journal entries, the basic internal control features, and the document flow."
@@ -340,7 +391,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG340"
+          {
+            "oneOf": [
+              "ACCTG340",
+              "ACCTG404"
+            ]
+          }
         ]
       },
       "description": "Management accounting topics such as decision models, quantitative techniques, variance analysis, and their use in accounting. ACCTG 440 Advanced Management Accounting (3) An in-depth examination of accounting techniques used within modern organizations. The course is designed for students interested in pursuing careers in corporate accounting or financial management. The portfolio of managerial accounting procedures, including cost measurement and allocation, budgeting practices, transfer pricing, and variance analyses appropriate to an organization's unique circumstances are derived. The student will learn to apply psychological and sociological theories of behavior to practical problems of control and to apply quantitative methods and models to managerial decision-making. Other topics covered by the course may include, financial management of working capital, long-term assets and liabilities; techniques for managing inventory; and strategic cost management including inter-organizational cost management."
@@ -384,7 +440,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG211"
+          {
+            "oneOf": [
+              "ACCTG211",
+              [
+                "ACCTG201",
+                "ACCTG202"
+              ]
+            ]
+          }
         ]
       },
       "description": "ACCTG 471 provides students with an understanding of generally accepted accounting principles and procedures so that they properly account for and present information in financial statements prepared for external users. The student should acquire a complete understanding of the accounting issues relating to cash, receivables, inventory, plant assets, natural resources, and intangibles. The student should be able to evaluate alternative accounting methods and choose the methods which will best convey the financial information related to the above areas. The student should be able to apply appropriate generally accepted accounting principles and procedures to account for transactions related to the above asset areas. The student should be able to demonstrate an understanding of the transaction analysis, recording, classification, summarization, and reporting procedures in the accounting cycle, and an understanding of the information contained in the financial statements. Finally, student should be able to demonstrate written communication skills required of accountants."
@@ -396,7 +460,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ACCTG371"
+          {
+            "oneOf": [
+              "ACCTG371",
+              "ACCTG471"
+            ]
+          }
         ]
       },
       "description": "Off-balance-sheet financing; special issues in cost capitalization, liabilities, and equities; matching; funds flow statements; statement analysis; inflation accounting."
@@ -433,7 +502,12 @@
       "requisites": {
         "concurrent": [
           "ACCTG472",
-          "ACCTG403"
+          {
+            "oneOf": [
+              "ACCTG403",
+              "ACCTG403W"
+            ]
+          }
         ]
       },
       "description": "Study of investigative accounting, consulting and litigation support activities undertaken in forensic accounting engagements. ACCTG 483 Forensic Accounting (3) ACCTG 483 is the exploration of the broad discipline known as \"forensic accounting\" which includes a variety of investigative accounting, valuation, damage assessment and litigation support services. Forensic accounting is an evolving discipline which is distinguished from assurance services in that it does not involve reporting on the fairness of financial statements. It generally involves the investigation and analysis of financial data for some specific purpose - obtaining an in-depth understanding of information that enables the forensic accountant to prove, disprove or at least confidently speculate about allegations related to the information and to report those findings objectively. Forensic accountants are involved in presenting analyses that might be valuable for such things as settling legal disputes, calculating economic damages, valuing intellectual property, determining the extent of damage or loss due to fraud, or tracing elusive assets or revenue sources. A forensic accountant might also participate in pro-active engagements such as the development of systems and procedures to prevent fraud. The first part of the course deals with the technical and ethical framework of forensic accounting and focuses on the understanding of forensic and investigative accounting including investigation methodology, the nature of fraud, fraud risk factors, financial statement fraud, litigation support and dispute resolution services and development of the skills needed in those professional activities. These skills include the ability to integrate knowledge of accounting, finance, economics, business law and other business disciplines in gathering, analyzing and evaluating evidence and drawing conclusions. The second part of the course focuses on forensic accounting investigation and analysis of financial information in connection with litigation, dispute resolution, estimation of economic damages, or other specific objectives, and the preparation of comprehensive, objective reports of findings and conclusions."

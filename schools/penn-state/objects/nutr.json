@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "This course introduces students to nutrition principles necessary to promote a healthy lifestyle through assessment and application. Students will be better prepared to evaluate nutrition-related issues presented in the media and to make informed choices about their diet in order to promote health throughout their lives. Information about nutrients (proteins, carbohydrates, fat, vitamins, water, and minerals) and the physiological processes used to digest, absorb, and utilize them is presented and related to such topics as maintenance of ideal body weight, improvement in physical performance, and the role of nutrients in various disease states such as heart disease, diabetes, cancer, and osteoporosis. Topical issues such as alcohol ingestion, food insecurity, and consumer concerns will be utilized to integrate and critically analyze information presented by various media outlets. This course is intended for non-nutrition major students."
     },
     {
@@ -40,7 +42,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "This class teaches students how to plan and prepare recipes and meals through the lens of the Dietary Guidelines for Americans (DGFA) and the dietary guidelines of other countries and cultures. Students will explore the relationship between diet and health, with an emphasis on the food groups that make up the MyPlate, Mediterranean diet and Vegetarian eating patterns, as well as other established eating patterns in the US and other countries. Current US eating practices will be evaluated and compared with the guidelines to understand how well Americans and students are meeting current recommendations. Students will also attend a cooking lab where they will learn basic cooking skills and apply the concepts covered in the course through recipe analysis, meal plan creation, and hands-on cooking sessions."
     },
     {
@@ -59,7 +63,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course explores factors that influence food intake, how individuals make food choices within their communities, and how these choices impact health and wellness. Topics include an overview of what Americans tend to eat, factors that influence food intake (e.g., economics, food environment, advertising/marketing), and the impact of poverty on food security, hunger, and health outcomes including obesity. This course also discusses how nutrition-policy influences food intake and health and food assistance programs. Students will be encouraged to examine their beliefs and understanding of how ethnic status, race, and socio-economic status, etc., affects individuals and their family's access to low-cost, healthy food. Students will enhance their understanding of the nature of social justice and equity by examining whether access to healthy food through federally funded programs is a right or a privilege and how a country capable of feeding the world has hungry citizens. This course includes hands-on interactive learning activities in the foods laboratory that teach food budgeting skills across income levels that provide perspective to eating healthy on a budget."
     },
     {
@@ -90,7 +98,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "NUTR 251 Introductory Principles of Nutrition (GHW) is a 3-credit course. This course is designed for nutrition majors and non-majors to provide a broad understanding of general principles of nutrition. Concepts covered include the essential nutrients, digestion, absorption, transport, and food sources. Additionally, major health issues related to some nutrients that are of public health concern in the United States are discussed in more detail giving insight into cause, treatment and prevention. Of major importance to students' lives are health and nutrition implications of overweight and obesity, heart disease, diabetes, bone health, and energy balance as affected by diet and physical activity. Lastly, understanding of nutritional needs throughout the life span is introduced, with emphasis on pregnancy, lactation, and infant nutrition. All of these concepts at this introductory level are important for students in the major so that they are prepared for upper division courses."
     },
     {
@@ -102,7 +112,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "NUTR 251H , Introductory Principles of Nutrition (GHW) is a 3-credit General Education honors course. This course is designed for honors-seeking nutrition majors and non-majors in the pre-health fields to provide a broad understanding of general principles of nutrition. Concepts covered include the essential nutrients, digestion, absorption, transport, and food sources. Additionally, major health issues related to some nutrients that are of public health concern in the United States are discussed in more detail giving insight into cause, treatment and prevention. Of major importance to students' lives are health and nutrition implications of overweight and obesity, heart disease, diabetes, bone health, and energy balance as affected by diet and physical activity. Lastly, understanding of nutritional needs throughout the life span is introduced, with emphasis on pregnancy, lactation, and infant nutrition. All of these concepts at this introductory level are important for students in the major so that they are prepared for upper division courses. All of these concepts at this introductory level are important for students in the major so that they are prepared for upper division courses and are relevant to preparation for medicine, dentistry, and other allied health fields."
     },
     {
@@ -114,7 +126,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Drugs and Nutrition: Social and Scientific Interactions is a General Education Integrative Studies (N) course intended for all undergraduates looking to learn more about nutrition in the context of drugs. In this survey course, learners will explore relevant terminology and connections between nutrition and drugs, as well as, the historical context and cultural significance of plant medicines, drugs and nutrition. Learners will also acquire requisite knowledge about current perspectives surrounding plant medicines, harm reduction and health equity. Common themes across drug-nutrition interactions including historical context, cultural significance, nutritional impacts and concerns, harm reduction and health equity as well as considerations for special populations will be covered."
     },
     {
@@ -154,7 +170,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "Virtually no discipline attracts more public attention or generates more controversies than nutrition. With more access to nutrition facts and diet plans now than ever before, why does the American diet contribute to obesity? Students will examine the roles of fats, proteins, and carbohydrates by examining current \"fad\" diets such as keto, paleo, 30/30 diet, and others. Students will explore the scientific basis of dietary patterns of the latest trends and alternative diets for nutrition and healthy weight. Past and present diet trends are examined, focusing on the overall impact on individual and population wellness. This course will also explore the deeper causes and hidden influences that often result in following the latest nutrition trends. Students will be able to research, evaluate, and present their findings on a nutrition-related topic."
     },
     {
@@ -164,8 +184,23 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "NUTR251",
-          "CHEM202"
+          {
+            "oneOf": [
+              [
+                "NUTR251",
+                "CHEM202"
+              ],
+              [
+                "NUTR251",
+                "CHEM210"
+              ],
+              [
+                "FDSC200",
+                "CHEM202",
+                "CHEM210"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course explores the science behind food preparation, equipping students with culinary skills, food safety knowledge, and techniques to preserve nutritional value. Students will gain an understanding of the roles of nutrients-carbohydrates, proteins, fats, vitamins, minerals, and water-in cooking applications and how they influence food texture, flavor, and stability. The course also examines current food trends and dietary guidelines, helping students adapt their culinary practices to evolving nutritional recommendations and consumer preferences. Through cooking labs, students will apply food chemical and physical principles to cooking methods, modify recipes to meet dietary restrictions and enhance their quality, and analyze prepared foods using sensory evaluation. Students will learn about food production methods and the role of food additives in manufacturing."
@@ -217,7 +252,12 @@
       "requisites": {
         "previous": [
           "NUTR251",
-          "CHEM110"
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM130"
+            ]
+          }
         ]
       },
       "description": "NUTR 372 provides a foundation in principles involved in human nutrient metabolism. Particular focus will be placed on macronutrients (protein, carbohydrates, and fats) and relevant micronutrients (e.g., water- and fat-soluble vitamins, and minerals). Language around nutritional biochemistry and physiology: digestion, absorption, distribution, metabolism and excretion will be covered for all relevant nutrients. This course will prepare students for advanced courses in nutritional sciences."
@@ -408,7 +448,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "NUTR445"
+          {
+            "oneOf": [
+              "NUTR445",
+              "NUTR372"
+            ]
+          }
         ]
       },
       "description": "This course will take a lifecycle approach to the study of nutritional needs, status, conditions, and interventions. The same nutrients are needed from birth to older age, but the requirements change along with a plethora of other factors including food preferences, chewing ability, digestion, absorption, metabolism, growth, behaviors, and barriers to healthy eating. The course will be divided into nine life stages and will cover what is nutritionally important at each stage. The student will also learn how nutritional status at one stage can impact health in later stages. By the end of this course, the student will have in-depth knowledge of nutritional needs and issues at each stage of life."
@@ -420,7 +465,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "NUTR445"
+          {
+            "oneOf": [
+              "NUTR445",
+              "NUTR372"
+            ]
+          }
         ]
       },
       "description": "This course will review the underlying nutritional components and pathophysiology of common human diseases/disorders. The focus is on the metabolic disturbances and nutritional interventions for the prevention of these diseases. Topics include nutritional aspects of obesity, diabetes, cardiovascular disease, gastrointestinal and renal diseases, immunity and viral diseases, and cancer. The overall goal of this course is to expose students to the integrated nature of the disease process with a focus on nutritionally based or related diseases."
@@ -444,8 +494,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "NUTR251",
-          "BIOL163"
+          {
+            "oneOf": [
+              "NUTR251",
+              "BIOL161"
+            ]
+          },
+          {
+            "oneOf": [
+              "BIOL163",
+              "BIOL141",
+              "PSYCH260",
+              "PSYCH260A"
+            ]
+          }
         ]
       },
       "description": "This course explores how food affects behavior and the brain, and vice versa: how neural circuits and gut hormones control eating and other behaviors. Throughout the course we will dissect the proverb ¿You are what you eat¿, and examine the effect of diet and body weight on behavior and cognition. Links between pathology and dysfunction in the gut and neurological and psychiatric diseases, including addiction, autism or Alzheimer¿s will also be explored. This course will cover current nutritional neuroscience findings from both animal models and human studies. We will also emphasize critical evaluation of nutritional neuroscience topics."

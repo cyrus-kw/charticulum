@@ -135,10 +135,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "IST240"
+          {
+            "oneOf": [
+              "IST240",
+              "IST242"
+            ]
+          }
         ],
         "minGrades": {
-          "IST240": "C"
+          "IST240": "C",
+          "IST242": "C"
         }
       },
       "description": "Introductory course on integration of information technology into different venues, including the planning, development, and implementation of the integration. ETI 420 Fundamentals of Systems and Enterprise Integration (3) ETI 420 focuses on introducing the student to the role of information systems and technologies in achieving a variety of system goals. Emphasis will be placed on the theories and skills required for planning, developing, implementing, and managing the integration of information technology and different systems. ETI 420 is required of all Information Sciences and Technology (IST) undergraduates who have chosen the Information Technology Integration Option in their baccalaureate degree. It is the prerequisite for ETI 421 which is also required for the Option. Upon completion of the course, the student will be able to recognize information technology integration. They will also understand the 'business processes and information value chain' within a system, and be able to foster an understanding of the role of IT in system integration. Students will be periodically assessed through examinations, case studies, individual and group assignments and projects, and other performance indicators where appropriate."

@@ -52,7 +52,15 @@
         "previous": [
           "CHEM112",
           "CHEM113",
-          "CHEM202"
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210",
+              "CHEM227",
+              "CHEM301",
+              "GEOSC418"
+            ]
+          }
         ]
       },
       "description": "This course focuses upon geochemical and biogeochemical principles applied to environmental analysis, remediation and sustainable technologies. Students will apply stable isotope chemistry to environmental forensics and environmental processes. The generation and chemical fate of radioisotopes are presented. Organismal processes and their biotechnological applications are also discussed, including microbial redox chemistry and cell surface chemistry. Biogeochemistry at macroscopic spatial scales is also addressed."

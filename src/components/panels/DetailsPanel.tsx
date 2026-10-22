@@ -1,7 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { satisfies, CATEGORY_NAMES, EXTERNAL_TERM, GRADE_POINTS, type Grade, type Term } from "../../engine/index";
+import {
+  describeRequired,
+  requiredIds,
+  requiredKey,
+  satisfies,
+  stillNeededIds,
+  CATEGORY_NAMES,
+  EXTERNAL_TERM,
+  GRADE_POINTS,
+  type Grade,
+  type Term,
+} from "../../engine/index";
 import { canRemoveTerm } from "../../planner/state";
 import { askReason, Badge, Button, cn, DANGER_ICON_BUTTON, newId, Panel, Select, TOOLBAR_BUTTON_SIZE } from "../ui";
 import { courseCode } from "../../planner/layout";
@@ -37,9 +48,11 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
   const term = view.chart.terms.find((t) => t.objectIds.includes(id));
   const external = term?.index === EXTERNAL_TERM;
   const placed = view.chart.terms.flatMap((t) => t.objectIds);
-  const unmetRequired = view.requirements.requiredObjectIds.filter(
-    (req) => req !== id && !placed.some((p) => satisfies(catalog, req, p)),
-  );
+  // What it could stand in for: required courses not on the plan (for an
+  // unmet choice, each of its options' courses).
+  const unmetRequired = stillNeededIds(view.requirements.requiredObjectIds, (req) =>
+    placed.some((p) => satisfies(catalog, req, p)),
+  ).filter((req) => req !== id);
   const { requisites, availability } = object;
 
   return (
@@ -150,12 +163,18 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
           <>
             <dt className="text-zinc-500">Needs</dt>
             <dd className={tagList}>
-              {requisites.previous.map((r) => (
-                <Badge key={r}>
-                  {courseCode(r)}
-                  {requisites.minGrades?.[r] && ` (${requisites.minGrades[r]}+)`}
-                </Badge>
-              ))}
+              {requisites.previous.map((r) => {
+                // A choice's courses share one minimum grade; show it once.
+                const grade = requiredIds([r])
+                  .map((req) => requisites.minGrades?.[req])
+                  .find(Boolean);
+                return (
+                  <Badge key={requiredKey(r)} keepCase>
+                    {describeRequired(r, courseCode)}
+                    {grade && ` (${grade}+)`}
+                  </Badge>
+                );
+              })}
             </dd>
           </>
         )}
@@ -164,7 +183,9 @@ export function DetailsPanel({ state, view, dispatch }: PanelProps) {
             <dt className="text-zinc-500">Taken with</dt>
             <dd className={tagList}>
               {requisites.concurrent.map((r) => (
-                <Badge key={r}>{courseCode(r)}</Badge>
+                <Badge key={requiredKey(r)} keepCase>
+                  {describeRequired(r, courseCode)}
+                </Badge>
               ))}
             </dd>
           </>

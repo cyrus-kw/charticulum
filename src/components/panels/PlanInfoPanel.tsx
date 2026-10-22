@@ -84,10 +84,10 @@ export function PlanInfoPanel({
         {pinned.length === 0
           ? row("Program", "None yet")
           : pinned.map((ref) => {
-              const template = library.find((t) => t.id === ref.templateId && t.version === ref.version);
+              const template = library.find((t) => t.code === ref.templateId && t.version === ref.version);
               return (
                 <div key={`${ref.templateId}@${ref.version}`} className="contents">
-                  {row("Program", template?.name ?? ref.templateId, ref.version)}
+                  {row("Program", template?.title ?? ref.templateId, ref.version)}
                 </div>
               );
             })}

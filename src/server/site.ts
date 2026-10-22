@@ -37,7 +37,7 @@ export async function dashboardData(repos: Repositories, ownerId: string) {
   const schools: SchoolChoice[] = await Promise.all(
     summaries.map(async (s) => {
       const data = await repos.schools.get(s.id);
-      const programs = (data?.templates ?? []).map((t) => ({ templateId: t.id, version: t.version, name: t.name }));
+      const programs = (data?.templates ?? []).map((t) => ({ templateId: t.code, version: t.version, name: t.title }));
       return { ...s, programs };
     }),
   );

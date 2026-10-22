@@ -8,7 +8,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ],
         "concurrent": [
           "GEOSC1"
@@ -82,7 +87,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH251"
+          {
+            "oneOf": [
+              "MATH251",
+              [
+                "MATH250",
+                "MATH252",
+                "PNG410",
+                "CMPSC204",
+                "EME210"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course addresses basic fluid flow topics in reservoir engineering, with a focus on Secondary Hydrocarbon Recovery, especially water flooding and injection in subsurface reservoirs. The displacement of in-situ fluids by water is a complicated physical process that has a substantial impact on recovery efficiencies. This course is organized around understanding areal, vertical, and local displacement efficiencies and the key factors that affect those efficiencies. The course provides strategies for selecting a field pattern for special cases. The impact of mobility ratio on vertical and area sweep efficiency is examined. The extension of the Buckley and Leverett water flooding theory is presented for two-phase flow. The course provides insights on how water moves through a reservoir and how to design a waterflood by specifying locations of production and injection wells, and rate schedules. The course also discusses relevant well-test analyses. Practical aspects of waterflooding in the field are also considered throughout the course."
@@ -94,7 +110,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH251"
+          {
+            "oneOf": [
+              "MATH251",
+              [
+                "MATH250",
+                "MATH252",
+                "PNG420"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course examines the mathematical basis for pressure analysis. Both theory and the practice of pressure testing techniques are considered. The objectives are to: 1) Understand fundamentals of pressure transient analysis (well testing) for estimation of key formation parameters for a variety of flow models, including the line source solution, finite wellbore radius with wellbore storage and skin, naturally fractured reservoirs, and infinite and finite conductivity fractures; 2) Solve pressure transient problems using analytical solutions, computer programs, classical graphical methods, and modern well test software; 3) Understand sources of error and assumptions made; and 4) Learn about practical well test evaluation and well configurations for both tight and conventional reservoirs."
@@ -135,8 +160,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH211",
-          "EMCH213"
+          {
+            "oneOf": [
+              [
+                "EMCH211",
+                "EMCH213"
+              ],
+              [
+                "ME320",
+                "EMCH210"
+              ]
+            ]
+          }
         ],
         "concurrent": [
           "PNG440W"

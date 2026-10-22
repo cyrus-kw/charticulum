@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Introduction to horticulture with an emphasis on plant domestication, morphology, classification, world food crops, commodities, gardens, propagation, and agrochemicals. The course content of HORT 101 , as indicated in the complete course outline, deals with the fundamental concepts and specialty areas, which contribute not only to the science and technology involved in horticulture but also to the art. It provides an overview of the role of various specialties of the natural sciences (e.g. plant morphology, physiology, taxonomy, genetics and nutrition, pest management, management and production of crops, landscaping, and technology) relevant to a range of plant uses from medicinals and food production to the aesthetic benefits derived from plants. The course begins with the origin and domestication of plants followed by: A. An Overview of horticulture which includes an explanation of the horticulture industry, how to achieve success in horticulture and the relationship between horticulture and the environment; B. Science in horticulture which includes the classification of plants, plant propagation, plant nutrition, environmental factors affecting plant growth and development, plant growth regulators, post harvest physiology and pest management; C. Management and production of horticultural crops which include nursery, floral, turfgrass, vegetable, fruit and nuts; D. Landscaping including designing landscapes, xeroscapes and sitescapes, establishing and maintaining landscapes; and E. Concluding with Technology in horticulture. The course content additionally includes major areas of knowledge based on the fundamentals, universal concepts and achievements in the cluster of scientific disciplines comprising horticulture and provides students with the opportunity to appreciate that the origins, domestication and production of cultivated plants are the essence of human existence."
     },
     {
@@ -27,7 +29,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This course reviews basics and fundamentals of wine grape production methods and challenges across the US, as framed by the interaction of genetics, environment, and management. Viticulture and grapevine science will be taught in an approachable format and by highlighting real-world and applied case studies as learned from observations in commercial vineyards or from applied research. The course also frequently reviews climates, geography, environment, and economic impact of various grape and wine production regions across the US, and how each region/state has novel aspects that pose niche grape production and market challenges. Regional and state reviews showcase the cultivation of a unique mix of wine grape cultivars, and showcases grape growing and wine producing industries that vary in size and experience. No prior experience with the topic needed; the aim is to draw from commercial case studies and everyday examples around us."
     },
     {
@@ -60,7 +64,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Plants have played a dynamic role in shaping our life. In reality, human existence on Earth is made possible by the breath of plants through photosynthesis. Likewise, our botanical connections and interactions are many: we need plants for food, beverages, medicines, materials, healthy lifestyles, and aesthetics. Plants have also played an important role in where our ancestors settled and where we live today. Some of the important topics discussed in this class will include the role of tea in transforming world cultures, the importance of sugar in the Civil War and the establishment of the Caribbean nations, the effect of the Irish potato famine on Europe and the US, and the use of plants in solving crimes."
     },
     {
@@ -72,7 +80,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "Fundamentals of Home Landscaping offers broad coverage of the environmental, human, technological, and aesthetic issues associated with residential landscape design. Beginning with the way we perceive, manage, and design the landscape, the course examines the arrangement of land, water, plant forms, and structures for their best use and greater enjoyment. Relying on actual procedures and underlying principles utilized by experienced residential landscape designers, the course will introduce students to basic design principles, concepts, specific procedures for preparing site plans and associated documents. The course will also explore designing with and general care of plants, assorted hardscape types, and how to properly assess a site. From choosing trees, shrubs, groundcovers that are correct for the site to properly installing patios, decks, and walkways, students will be presented with the varied ways plants and hardscape are installed and maintained. The course will conclude with students completing a design for a residential site."
     },
     {
@@ -83,7 +95,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "The objective of this course is to provide students with the opportunity to develop an appreciation of the skills required to properly care for large trees. The course provides information that is especially useful to those in the Landscape Management option of the Landscape Contracting major. The course will provide an overview of the methods used to diagnose problems and provide for the long term care of large trees. Areas of emphasis will include accessing the upper parts of large trees, safety when working in and around large trees, and the proper selection, use, and maintenance of the equipment used in the arboriculture profession."
     },
     {
@@ -176,7 +190,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest. This Special Topics is an Inter-Domain GenEd course"
     },
     {
@@ -237,7 +255,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HORT315",
+          {
+            "oneOf": [
+              "HORT315",
+              "BIOL441"
+            ]
+          },
           "SOILS101"
         ]
       },
@@ -257,7 +280,13 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "HORT137",
+          {
+            "oneOf": [
+              "HORT137",
+              "HORT138",
+              "FOR203"
+            ]
+          },
           "SOILS101"
         ]
       },
@@ -271,7 +300,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HORT269"
+          {
+            "oneOf": [
+              "HORT269",
+              "HORT250"
+            ]
+          }
         ]
       },
       "description": "An overview of current and emerging issues in the Landscape Contracting Industry. Students will learn about the entrepreneurial, management, labor, and environmental issues that are shaping careers and the direction of the industry. Interactions with personnel within the landscape industry will expose the students to company expectations of employees, and the immediate issues those companies are facing in the marketplace. Students will also practice and perfect their written communication skills."
@@ -339,7 +373,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HORT101"
+          {
+            "oneOf": [
+              "HORT101",
+              "AGRO28",
+              "AGECO121"
+            ]
+          }
         ]
       },
       "description": "The course provides information that is especially useful to those with knowledge of horticultural plants; however a background in plant production is not needed. Major topics discussed include basic concepts in plant and fish biology; nutrient and water use, cycling, and management; pest and pathogen management; and environmental factors as they relate to the design and operation of hydroponics and aquaponics systems. This course includes a weekly laboratory session where students gain practical skills in growing crops in a variety of hydroponics systems and growing crops and fish in an aquaponics system."
@@ -363,7 +403,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          }
         ]
       },
       "description": "The nature, operation, and management of retail garden centers, winery tasting rooms, and independent food retailers. Overview of retail marketing principles and practices as they pertaining to horticultural retail businesses. Lectures, discussions, and projects focus on: selecting and pricing goods and services ; how independent retailers effectively use traditional promotion avenues and social media networks to connect with customers; and how to develop a relevant brand, cause marketing effort, and loyalty program. Students will also learn: about retail layout and display strategies; that each consumer segment has different wants, interests, and abilities to obtain goods and services, and about effective employee management."
@@ -375,7 +420,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BMB252"
+          {
+            "oneOf": [
+              "BMB252",
+              "BMB252H",
+              "MICRB252",
+              "BIOL230W",
+              "BIOL230M"
+            ]
+          }
         ]
       },
       "description": "The overall goal of this course is to provide a strong overview of the techniques used in plant biotechnology and the applications made possible by those techniques. The lecture topics will be used to introduce the principles of tissue culture and molecular biology, including how they are used to produce transgenic plants. Furthermore, the course will give students a broader and deeper knowledge in the field of Plant Biotechnology and provide a foundation for understanding the field as it changes in the future. Topics include the safety, legal and ethical issues surrounding GMOs and the study of the anti-GMO arguments surrounding each issue. In the laboratory component of the course, students will be introduced to the underlying principles of molecular biology techniques and aseptic culture of plant cells as well as the tissues and organs used to produce transgenic plants. In summary, through this course students will be introduced to many of the most important tools of the biotechnologist."
@@ -387,7 +440,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "HORT250"
+          {
+            "oneOf": [
+              "HORT250",
+              "HORT269"
+            ]
+          }
         ]
       },
       "description": "Develop and refine the student's ability to understand construction details likely to be encountered by the landscape contractor. It will introduce the technical considerations required to implement design in a manner that is both functional and aesthetically pleasing. It will also introduce principles of grading and drainage."
@@ -411,7 +469,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "HORT250"
+          {
+            "oneOf": [
+              "HORT250",
+              "HORT269"
+            ]
+          }
         ]
       },
       "description": "Reading and interpreting contract drawings and specifications, quantity take- offs, cost estimating, and bid document preparation."

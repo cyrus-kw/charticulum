@@ -45,8 +45,9 @@ The app needs a database to save plans and schools; see [Database](#database).
 | `check.ts` | `checkChart`: applies exceptions, then checks placement, then requirements |
 | `catalog.ts` | Builds the catalog (objects by id) and checks whether a requisite is met |
 | `codes.ts` | Course codes (subject, number, letter): reading, writing, and sorting them |
-| `validate.ts` | Requisites (previous/concurrent/minimum grade), availability, Pre-Credit |
+| `validate.ts` | Requisites (previous/concurrent/minimum grade; a requisite can be a choice), availability, Pre-Credit |
 | `requirements.ts` | Credits per term and category, required objects, GPA, shared credits |
+| `required.ts` | Required objects, requisites, and choices ("MATH 230, or MATH 231 & 232"): options, met or not, what's still needed |
 | `scopes.ts` | Combines global and local requirement sets; the stricter rule wins |
 | `overrides.ts` | Applies waivers and substitutions, with grade conditions and policy |
 | `templates.ts` | Versioned templates, forking, merging charts |
@@ -87,19 +88,47 @@ A subject's file only gives each course's number and letter; its id
 
 `schools/penn-state/` is a real school in that layout: all of Penn State
 University Park's undergraduate subjects (274) and courses (about 9,500,
-with descriptions) and its school-wide rules, built from its
+with descriptions) and its school-wide rules (120 credits, 2.00 GPA,
+and the 45-credit General Education program), built from its
 [Undergraduate Bulletin](https://bulletins.psu.edu) by
 `scripts/penn-state.ts`. Its programs are written by hand in
 `programs/` (the script leaves them alone): so far the Computer Science
 B.S. `--save` also saves it to the database, with the folder's programs
 and any others already saved there.
 
-A program's requirement set has three parts: required objects
-(`requiredObjectIds`); credit rules (`creditRules`), each "at least N
-credits from courses that match", by gen ed area, subject, course
-number, or a list, optionally with a minimum grade (GQ 6 credits with C
-or better; 18 credits from the electives list); and minimum grades in
-required courses (`minGrades`, e.g. `{ "CMPSC221": "C" }`).
+A program (a template in `programs/`) has the school's `code` for it
+(Penn State's plan code, `"CMPSC_BS"`; charts pin it with its version),
+a `title` ("Computer Science, B.S."), its `degree`, the credits the
+whole program needs (`minTotalCredits`), its requirements by category,
+and a suggested plan. `localRequirements` lists the categories, e.g.
+`{ "category": "major", "requiredObjectIds": [...], "minGrades": {...} }`
+and `{ "category": "elective", "rules": [...] }`; a category's `rules`
+are its credit rules, shown in Requirements under a heading named after
+the category ("Electives", "Seminars"; `categoryHeading`). A requirement set has three parts: required objects
+(`requiredObjectIds`), each an id or a choice, `{ "oneOf": ["MATH230",
+"MATH230H", ["MATH231", "MATH232"]] }` (any one option; a list is an
+option of courses taken together); credit rules (`creditRules`), in
+groups (`{ "category", "name", "rules": [...] }`: General
+Education, Electives, Seminars), each rule "at least N credits from
+courses that match", by gen ed area (`area`: one, or a list of which
+any counts), subject, course number, or a list, optionally with a
+minimum grade (`{ "id": "Q", "area": "Quantification", "credits": 6,
+"minGrade": "C" }`; 18 credits from the electives list). A rule's
+`name` labels its meter; a rule with one area can leave it out and is
+named after the area; `notArea` leaves out courses in an area
+("Inter-Domain courses may not be used"). A group with
+`"eachCourseOnce": true` counts each course toward one of its rules
+only, the first in order that still needs it. A group whose category is
+one of the app's (`general-education`) counts that category's credit
+minimum in its heading when a set gives one, otherwise its rules added
+up. Rules shared by every program (Penn State's gen ed) go in the
+school's global set (`programRequirements`, one per degree:
+`{ "degree": "baccalaureate", "minTotalCredits": 120, ..., "globalRequirements":
+[{ "category": "general-education", "eachCourseOnce": true, "rules": [...] }] }`,
+its categories listed like a program's; a program names its degree, `"degree":
+"baccalaureate"`, and its charts get that set only), programs' own in theirs; and minimum grades in
+required courses (`minGrades`, e.g. `{ "CMPSC221": "C" }`; one on a
+course of a choice applies to all its options).
 
 Descriptions aren't sent with the planner page (thousands would make it
 megabytes); the page gets the school compacted, and Selected fetches a

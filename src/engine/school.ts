@@ -3,8 +3,17 @@
 import { z } from "zod";
 import { createCatalog } from "./catalog";
 import { courseCodeId, formatCourseCode, parseCourseCode, SUBJECT_PATTERN } from "./codes";
+import { requiredIds } from "./required";
 import { publishTemplate, type TemplateLibrary } from "./templates";
-import { EVERY_TERM, type Catalog, type CourseCode, type CurriculumObject, type RequirementSet } from "./types";
+import {
+  categoryHeading,
+  EVERY_TERM,
+  type Catalog,
+  type ChartTemplate,
+  type CourseCode,
+  type CurriculumObject,
+  type RequirementSet,
+} from "./types";
 
 // ---------------------------------------------------------------------------
 // Schema. Zod checks data at runtime (TypeScript types only exist while
@@ -25,6 +34,12 @@ const courseCode = z.object({
   suffix: z.string().regex(/^[A-Z]+$/, "Use capital letters only, e.g. A.").optional(),
 });
 
+// A required object's (or a requisite's) id, or a choice: { "oneOf":
+// ["MATH230", "MATH230H", ["MATH231", "MATH232"]] }, where a list is an
+// option of several objects taken together. A choice needs at least two
+// options, and a list at least two objects (one would just be an id).
+const requiredItem = z.union([id, z.object({ oneOf: z.array(z.union([id, z.array(id).min(2)])).min(2) })]);
+
 // Everything about an object except its id and code. Kept apart so a
 // subject's file (schoolFiles.ts) can list objects by number alone.
 export const objectFields = z.object({
@@ -34,15 +49,15 @@ export const objectFields = z.object({
   credits,
   requisites: z
     .object({
-      previous: z.array(id).default([]),
-      concurrent: z.array(id).default([]),
+      previous: z.array(requiredItem).default([]),
+      concurrent: z.array(requiredItem).default([]),
       minGrades: z.record(id, grade).optional(),
     })
     .default({ previous: [], concurrent: [] }),
   internalEquivalents: z.array(id).default([]),
   externalEquivalents: z.array(z.object({ institution: z.string(), externalId: id })).default([]),
   categories: z.array(category).default([]),
-  genEdArea: z.string().min(1).optional(),
+  genEdAreas: z.array(z.string().min(1)).min(1).optional(),
   // Files may leave availability (or its seasons) out; it's then filled in
   // as every term, so the rest of the app always sees the seasons listed.
   availability: z
@@ -61,22 +76,34 @@ const courseObject = objectFields
 
 export const subjectSchema = z.object({ code: subjectCode, name: z.string().min(1) });
 
-const creditRule = z.object({
-  id,
+const creditRule = z
+  .object({
+    id,
+    name: z.string().min(1).optional(),
+    credits,
+    area: z.union([z.string().min(1), z.array(z.string().min(1)).min(1)]).optional(),
+    notArea: z.union([z.string().min(1), z.array(z.string().min(1)).min(1)]).optional(),
+    subjects: z.array(subjectCode).optional(),
+    minNumber: z.number().int().min(0).optional(),
+    objectIds: z.array(id).optional(),
+    minGrade: grade.optional(),
+  })
+  // Without a name, it's named after its area, so it needs just one.
+  .refine((rule) => rule.name !== undefined || typeof rule.area === "string", {
+    message: "Give a name (or one area to name it after).",
+    path: ["name"],
+  });
+
+const creditRuleGroup = z.object({
+  category: id,
   name: z.string().min(1),
-  credits,
-  genEdAreas: z.array(z.string().min(1)).optional(),
-  subjects: z.array(subjectCode).optional(),
-  minNumber: z.number().int().min(0).optional(),
-  objectIds: z.array(id).optional(),
-  minGrade: grade.optional(),
+  eachCourseOnce: z.boolean().optional(),
+  rules: z.array(creditRule),
 });
 
-const requirementSet = z.object({
-  id,
-  name: z.string(),
-  scope: z.enum(["global", "local"]),
-  requiredObjectIds: z.array(id).optional(),
+// The rules a requirement set can hold (see Requirements in types.ts).
+const requirementRules = z.object({
+  requiredObjectIds: z.array(requiredItem).optional(),
   minCreditsByCategory: z.partialRecord(category, credits).optional(),
   minTotalCredits: credits.optional(),
   maxCreditsPerTerm: credits.optional(),
@@ -84,8 +111,27 @@ const requirementSet = z.object({
   minGpa: z.number().min(0).max(4).optional(),
   allowedOverrides: z.array(z.enum(["waive-requirement", "waive-requisite", "substitute"])).optional(),
   maxSharedCredits: credits.optional(),
-  creditRules: z.array(creditRule).optional(),
+  creditRules: z.array(creditRuleGroup).optional(),
   minGrades: z.record(id, grade).optional(),
+});
+
+// One category of a program's requirements ("major", "elective",
+// "seminars"): its required courses, minimum grades, and credit rules
+// (`rules`, shown in Requirements under the category's heading, e.g.
+// "Electives"; see categoryHeading). See templateFromData for how it
+// becomes the engine's RequirementSet.
+const categorySet = requirementRules.omit({ creditRules: true, minTotalCredits: true }).extend({
+  category: id,
+  eachCourseOnce: z.boolean().optional(),
+  rules: z.array(creditRule).optional(),
+});
+
+// A school-wide set, for every program toward one kind of degree
+// ("baccalaureate"). Every one is global, and the degree names it. Its
+// requirements by category (gen ed) are listed like a program's.
+const programRequirement = requirementRules.omit({ creditRules: true }).extend({
+  degree: id,
+  globalRequirements: z.array(categorySet).optional(),
 });
 
 const term = z.object({
@@ -97,10 +143,14 @@ const term = z.object({
 });
 
 const template = z.object({
-  id,
+  code: id,
   version: z.string().regex(/^\d{4}-\d{2}$/, 'Use an academic year like "2026-27".'),
-  name: z.string(),
-  requirementSets: z.array(requirementSet),
+  title: z.string(),
+  degree: id,
+  // Credits the whole program needs (more than the degree's 120, say).
+  minTotalCredits: credits.optional(),
+  // Its own requirements by category (the degree's are global).
+  localRequirements: z.array(categorySet),
   terms: z.array(term),
 });
 
@@ -140,7 +190,7 @@ export const schoolDataSchema = z.object({
   // course's subject must be one of them.
   subjects: z.array(subjectSchema).default([]),
   objects: z.array(courseObject).min(1),
-  globalRequirementSets: z.array(requirementSet).default([]),
+  programRequirements: z.array(programRequirement).default([]),
   templates: z.array(template).default([]),
   // A school's transfer/AP table, kept separate from the objects because
   // it's usually maintained separately. Each row adds an external equivalent.
@@ -214,25 +264,26 @@ export function parseSchoolData(input: unknown): ParseResult {
       errors.push(`${where}.code: unknown subject ${object.code.subject}`);
     }
     check(`${where}.requisites`, [
-      ...object.requisites.previous,
-      ...object.requisites.concurrent,
+      ...requiredIds([...object.requisites.previous, ...object.requisites.concurrent]),
       ...Object.keys(object.requisites.minGrades ?? {}),
     ]);
     check(`${where}.internalEquivalents`, object.internalEquivalents);
   }
-  for (const set of [...data.globalRequirementSets, ...data.templates.flatMap((t) => t.requirementSets)]) {
-    check(`requirementSets.${set.id}`, set.requiredObjectIds ?? []);
+  for (const set of [...globalSets(data), ...data.templates.flatMap((t) => templateFromData(t).requirementSets)]) {
+    check(`requirementSets.${set.id}`, requiredIds(set.requiredObjectIds ?? []));
     check(`requirementSets.${set.id}.minGrades`, Object.keys(set.minGrades ?? {}));
-    for (const rule of set.creditRules ?? []) {
+    for (const rule of (set.creditRules ?? []).flatMap((group) => group.rules)) {
       check(`requirementSets.${set.id}.creditRules.${rule.id}`, rule.objectIds ?? []);
     }
   }
+  const degrees = new Set(data.programRequirements.map((set) => set.degree));
   const versions = new Set<string>();
   for (const t of data.templates) {
-    const key = `${t.id} ${t.version}`;
+    if (!degrees.has(t.degree)) errors.push(`templates.${t.code}.degree: no programRequirements for ${t.degree}`);
+    const key = `${t.code} ${t.version}`;
     if (versions.has(key)) errors.push(`templates: ${key} appears twice`);
     versions.add(key);
-    check(`templates.${t.id}`, t.terms.flatMap((term) => term.objectIds));
+    check(`templates.${t.code}`, t.terms.flatMap((term) => term.objectIds));
   }
   data.equivalencyTable.forEach((row, i) => check(`equivalencyTable.${i}`, [row.objectId]));
   if (!data.calendar.seasons.includes(data.calendar.start.season)) {
@@ -297,7 +348,46 @@ export function loadSchool(data: SchoolData): LoadedSchool {
   }));
 
   let library: TemplateLibrary = [];
-  for (const t of data.templates) library = publishTemplate(library, t);
+  for (const t of data.templates) library = publishTemplate(library, templateFromData(t));
 
-  return { data, catalog: createCatalog(objects), library, globalSets: data.globalRequirementSets };
+  return { data, catalog: createCatalog(objects), library, globalSets: globalSets(data) };
+}
+
+// A program as the engine's ChartTemplate: each category becomes a local
+// RequirementSet (its credit rules one group, under the category), and the
+// program's own total credits one more.
+function templateFromData(t: SchoolData["templates"][number]): ChartTemplate {
+  const { minTotalCredits, localRequirements, ...rest } = t;
+  const sets = categorySets(t.code, "local", localRequirements);
+  if (minTotalCredits !== undefined) sets.unshift({ id: t.code, name: t.title, scope: "local", minTotalCredits });
+  return { ...rest, requirementSets: sets };
+}
+
+// The school-wide sets as the engine's RequirementSets: for each degree,
+// one with its own rules (id and name: the degree), then one per category.
+// Each carries the degree, so a chart gets only its programs' degree's.
+function globalSets(data: Pick<SchoolData, "programRequirements">): RequirementSet[] {
+  return data.programRequirements.flatMap(({ degree, globalRequirements = [], ...rules }) => [
+    { id: degree, name: degree, scope: "global" as const, degree, ...rules },
+    ...categorySets(degree, "global", globalRequirements).map((set) => ({ ...set, degree })),
+  ]);
+}
+
+// A program's (or degree's) categories as RequirementSets, one each, its
+// credit rules one group under the category's heading.
+function categorySets(
+  owner: string,
+  scope: RequirementSet["scope"],
+  sets: z.infer<typeof categorySet>[],
+): RequirementSet[] {
+  return sets.map(({ category, eachCourseOnce, rules, ...setRules }) => {
+    const title = categoryHeading(category);
+    return {
+      id: `${owner} ${category}`,
+      name: title,
+      scope,
+      ...setRules,
+      ...(rules && { creditRules: [{ category, name: title, ...(eachCourseOnce && { eachCourseOnce }), rules }] }),
+    };
+  });
 }

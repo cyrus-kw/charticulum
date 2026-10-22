@@ -1,0 +1,276 @@
+{
+  "code": "CMPSC_BS",
+  "version": "2026-27",
+  "title": "Computer Science, B.S.",
+  "degree": "baccalaureate",
+  "minTotalCredits": 127,
+  "localRequirements": [
+    {
+      "category": "major",
+      "requiredObjectIds": [
+        "CMPSC150N",
+        "CMPSC221",
+        "CMPSC222",
+        "CMPSC315",
+        "CMPSC316",
+        "CMPSC320",
+        "CMPSC360",
+        "CMPSC461",
+        "CMPSC465",
+        "CMPSC483W",
+        "ENGL202C",
+        "PHYS211",
+        "PHYS212",
+        {
+          "oneOf": [
+            "CAS100A",
+            "CAS100B",
+            "ENGL138T"
+          ]
+        },
+        {
+          "oneOf": [
+            "CMPSC121",
+            "CMPSC131"
+          ]
+        },
+        {
+          "oneOf": [
+            "CMPSC122",
+            "CMPSC132"
+          ]
+        },
+        {
+          "oneOf": [
+            "CMPEN270",
+            [
+              "CMPEN271",
+              "CMPEN275"
+            ]
+          ]
+        },
+        {
+          "oneOf": [
+            "ENGL15",
+            "ENGL30H",
+            "ENGL137H"
+          ]
+        },
+        {
+          "oneOf": [
+            "MATH140",
+            "MATH140H"
+          ]
+        },
+        {
+          "oneOf": [
+            "MATH141",
+            "MATH141H"
+          ]
+        },
+        {
+          "oneOf": [
+            "MATH220",
+            "MATH220H"
+          ]
+        },
+        {
+          "oneOf": [
+            "MATH230",
+            "MATH230H",
+            [
+              "MATH231",
+              "MATH232"
+            ]
+          ]
+        },
+        {
+          "oneOf": [
+            "STAT318",
+            "STAT414",
+            "STAT418"
+          ]
+        },
+        {
+          "oneOf": [
+            "STAT319",
+            "STAT415"
+          ]
+        }
+      ],
+      "minGrades": {
+        "CMPSC150N": "C",
+        "CMPSC221": "C",
+        "CMPSC222": "C",
+        "CMPSC315": "C",
+        "CMPSC316": "C",
+        "CMPSC320": "C",
+        "CMPSC360": "C",
+        "CMPSC461": "C",
+        "CMPSC465": "C",
+        "CMPSC483W": "C",
+        "ENGL202C": "C",
+        "PHYS211": "C",
+        "PHYS212": "C",
+        "CAS100A": "C",
+        "CMPSC121": "C",
+        "CMPSC122": "C",
+        "CMPEN270": "C",
+        "ENGL15": "C",
+        "MATH140": "C",
+        "MATH141": "C",
+        "MATH220": "C",
+        "MATH230": "C"
+      }
+    },
+    {
+      "category": "elective",
+      "rules": [
+        {
+          "id": "cs-electives",
+          "name": "CMPSC/CMPEN electives",
+          "credits": 18,
+          "objectIds": [
+            "CMPEN362",
+            "CMPEN462",
+            "CMPEN431",
+            "CMPEN454",
+            "CMPSC431W",
+            "CMPSC432",
+            "CMPSC442",
+            "CMPSC443",
+            "CMPSC444",
+            "CMPSC447",
+            "CMPSC448",
+            "CMPSC449",
+            "CMPSC450",
+            "CMPSC451",
+            "CMPSC455",
+            "CMPSC456",
+            "CMPSC458",
+            "CMPSC464",
+            "CMPSC466",
+            "CMPSC467",
+            "CMPSC471",
+            "CMPSC473",
+            "CMPSC475",
+            "CMPSC476",
+            "CMPSC478",
+            "CMPSC489",
+            "EE456"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "seminars",
+      "rules": [
+        {
+          "id": "first-year-seminar",
+          "name": "First-Year Seminar",
+          "credits": 1,
+          "objectIds": [
+            "ENGR180",
+            "EDSGN11",
+            "EDSGN13"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "index": 0,
+      "label": "Pre-Credit",
+      "objectIds": []
+    },
+    {
+      "index": 1,
+      "label": "Fall 2026",
+      "season": "fall",
+      "year": 2026,
+      "objectIds": [
+        "CMPSC121",
+        "CMPSC150N",
+        "MATH140",
+        "ENGL15"
+      ]
+    },
+    {
+      "index": 2,
+      "label": "Spring 2027",
+      "season": "spring",
+      "year": 2027,
+      "objectIds": [
+        "CMPSC122",
+        "MATH141",
+        "PHYS211",
+        "ENGR180"
+      ]
+    },
+    {
+      "index": 3,
+      "label": "Fall 2027",
+      "season": "fall",
+      "year": 2027,
+      "objectIds": [
+        "CMPSC221",
+        "MATH230",
+        "MATH220",
+        "PHYS212",
+        "CAS100A"
+      ]
+    },
+    {
+      "index": 4,
+      "label": "Spring 2028",
+      "season": "spring",
+      "year": 2028,
+      "objectIds": [
+        "CMPSC222",
+        "CMPSC360",
+        "CMPEN270"
+      ]
+    },
+    {
+      "index": 5,
+      "label": "Fall 2028",
+      "season": "fall",
+      "year": 2028,
+      "objectIds": [
+        "CMPSC315",
+        "CMPSC320",
+        "CMPSC465",
+        "STAT318"
+      ]
+    },
+    {
+      "index": 6,
+      "label": "Spring 2029",
+      "season": "spring",
+      "year": 2029,
+      "objectIds": [
+        "CMPSC316",
+        "CMPSC461",
+        "STAT319",
+        "ENGL202C"
+      ]
+    },
+    {
+      "index": 7,
+      "label": "Fall 2029",
+      "season": "fall",
+      "year": 2029,
+      "objectIds": [
+        "CMPSC483W"
+      ]
+    },
+    {
+      "index": 8,
+      "label": "Spring 2030",
+      "season": "spring",
+      "year": 2030,
+      "objectIds": []
+    }
+  ]
+}

@@ -15,7 +15,12 @@
           "MATSE201",
           "MATSE202",
           "MATH220",
-          "MATH231",
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          },
           "MATH251"
         ]
       },

@@ -32,8 +32,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA241",
-          "BA242"
+          {
+            "oneOf": [
+              [
+                "BA241",
+                "BA242"
+              ],
+              "BA243",
+              [
+                "BLAW243",
+                "ENTR320",
+                "FIN301"
+              ]
+            ]
+          }
         ]
       },
       "description": "Overview of alternative forms of financing including seed capital, valuing a company, going public, partnerships, and acquisitions."

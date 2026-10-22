@@ -54,7 +54,7 @@ export const sampleCatalog = createCatalog([
   }),
   course("MATH101", "Calculus I", 4, {
     categories: ["major", "general-education"],
-    genEdArea: "Quantitative",
+    genEdAreas: ["Quantitative"],
     externalEquivalents: [{ institution: "AP", externalId: "CALC-AB" }],
   }),
   course("MATH201", "Discrete Mathematics", 3, {
@@ -63,20 +63,20 @@ export const sampleCatalog = createCatalog([
   }),
   course("ENG101", "Composition", 3, {
     categories: ["general-education"],
-    genEdArea: "Writing",
+    genEdAreas: ["Writing"],
     externalEquivalents: [{ institution: "Valley Community College", externalId: "ENGL-1A" }],
   }),
-  course("HIST110", "World History", 3, { categories: ["general-education"], genEdArea: "Humanities" }),
-  course("PHIL120", "Ethics in Technology", 3, { categories: ["general-education"], genEdArea: "Humanities" }),
+  course("HIST110", "World History", 3, { categories: ["general-education"], genEdAreas: ["Humanities"] }),
+  course("PHIL120", "Ethics in Technology", 3, { categories: ["general-education"], genEdAreas: ["Humanities"] }),
   course("PHIL121", "Ethics in Technology (Honors)", 3, {
     internalEquivalents: ["PHIL120"],
     categories: ["general-education"],
-    genEdArea: "Humanities",
+    genEdAreas: ["Humanities"],
   }),
   course("SPAN-PROF", "Spanish Proficiency", 0, {
     type: "proficiency",
     categories: ["general-education"],
-    genEdArea: "Language",
+    genEdAreas: ["Language"],
   }),
   course("SOPH-REV", "Sophomore Review", 0, {
     type: "milestone",

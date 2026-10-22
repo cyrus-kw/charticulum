@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This class provides an introduction to environmental sustainability for students with no background in environmental science or soils. The concept of sustainability provides a framework for understanding environmental problems by balancing the needs of current society with the long-term needs of future societies and the environment. Sustainability also provides a framework for linking international cultures because environmental problems and solutions often cross political and cultural boundaries. The goal of the course is to develop critical thinking skills related to sustainable environmental choices. As we explore the concept of sustainability, we will discover the role of soil in mediating human-environment interactions by determining natural plant and animal abundance, supporting agriculture, and buffering the environment against modern pollution. The four themes of the class are: 1) Environment, Sustainability and Natural Resources, which introduces students to the scientific method and value systems that affect environmental choices, to fundamental ecological principles and to basic concepts of soil science and environmental science, 2) Challenges to Sustainability, in which we consider some of the major challenges to global sustainability; climate change, loss of biodiversity and ecosystem services, human population growth and resource consumption and waste management, 3) Feeding the World and its Impact on the Environment in which we consider the Malthusian dilemma of how we can feed ~10 billion of people in the near future together with the conservation dilemma of how we can maintain a healthy environment, and 4) Sustainability Solutions, in which we consider what has been done to achieve environmental protection while sustainably increasing food production and students are challenged to develop their own sustainability solution to a current issue somewhere in the world. The class will include \"soils cases\" in which examples from environmental soil science are used to convey principles of sustainability, and \"sustainability activities\" to see examples of sustainable environmental choices on campus or in State College. Students will complete the class with: 1) a survey of the key issues in global environmental sustainability, 2) exposure to current scientific information related to these issues, 3) an enhanced ability to interpret environmental data, 4) an increased knowledge of the role of soils in maintaining environmental quality, 5) an increased understanding of how environmental problems and solutions are global phenomena, requiring cooperation among many international cultures, and 6) a significant depth of knowledge about \"what it takes\" to feed 10 billion people while maintaining a healthy environment."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This survey and foundational course introduces students to a broad range of subject matter from most sub-disciplines of soil science. We study a range of soil characteristics and seek to understand their relationship to soil function, land use, plant growth, environmental quality, and society/culture. This course introduces students to the variety and complexity of soils on a local, national, and international scale. We identify the physical, chemical, and biological properties and processes of soils and relate these to the way that societies use and abuse soils. Students acquire a working knowledge of the technical terminology of soil science and begin developing observational skills needed to describe and/or locate soil properties for specific locations and to interpret those properties for various uses. We learn to recognize and explain various land use and management practices and to select those that are appropriate at a given site. Students also evaluate the impact of land use and management decisions on agricultural productivity and sustainability, environmental and ecological health, and on community relationships. This course is required or on a list from which students select for many environmental and agricultural majors. It is specifically listed as a prerequisite for many other SOILS courses and for several soils-related courses taught at Penn State."
     },
     {
@@ -118,7 +122,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL11"
+          {
+            "oneOf": [
+              "BIOL11",
+              "BIOL127",
+              "BIOL110"
+            ]
+          }
         ]
       },
       "description": "Introduction to soil organisms; includes interactions between organisms, their processes, and metabolism with a major focus on microorganisms."
@@ -142,8 +152,17 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL11",
-          "BIOL12"
+          {
+            "oneOf": [
+              [
+                "BIOL11",
+                "BIOL12"
+              ],
+              "BIOL110",
+              "BIOL127",
+              "BISC3"
+            ]
+          }
         ]
       },
       "description": "AGECO 418 / ANSC 418 / SOILS 418 Nutrient Management in Agricultural Systems is a senior-level course that applies the fundamentals of animal, plant and soil sciences to the issues and solutions in the area where livestock production intersects with water and air quality. Modern regionalization and concentration of animal production systems comes with environmental implications due to a net influx of nutrients to livestock farms. While some nutrients leave the farm in the form of animal products, 60 to 70% of the nutrients are excreted and applied to nearby crop land. If not properly managed these nutrients represent a risk to environmental quality. Students in this cross-listed course gain both scientific and practical understanding of sound nutrient management principals and strategies. The course considers big picture concepts such as nutrient cycling as well as farm-level implementations such as Nutrient Management Planning."
@@ -192,9 +211,17 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM110",
-          "CHEM111",
-          "CHEM112"
+          {
+            "oneOf": [
+              [
+                "CHEM110",
+                "CHEM111",
+                "CHEM112"
+              ],
+              "CHEM202",
+              "CHEM210"
+            ]
+          }
         ]
       },
       "description": "This course is designed for junior and senior undergraduates with some previous chemistry background. The course will advance students¿ understanding of chemical concepts and link them to applications in environmental chemistry. The course focuses on topics in environmental soil chemistry such as: soil minerology, mineral weathering, sorption and ion exchange, chelation and complex formation, soil pH and acidic/alkaline soils, oxidation/reduction, soil salinity, soil biochemistry, and the dissolution/precipitation of common metals and compounds. The solid phase is emphasized, but solid/solution equilibria, aquatic chemistry, metals in the aqueous environment, and aquatic pollution will also be covered. The course also covers a detailed overview of stratospheric chemistry, tropospheric chemistry, and climate change."

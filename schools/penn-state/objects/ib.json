@@ -44,7 +44,13 @@
       "requisites": {
         "previous": [
           "IB303",
-          "BA241"
+          {
+            "oneOf": [
+              "BA241",
+              "BA243",
+              "BLAW341"
+            ]
+          }
         ]
       },
       "description": "International Business Law examines the framework and systems of international law, including: world legal systems, international commercial disputes, contracts, banking and trade regulation, European Union law, the World Trade Organization, import/export law, marketing regulations, intellectual property, foreign direct investment, labor & employment, and environmental laws."

@@ -20,7 +20,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "ARTH104N"
       ],
@@ -47,8 +51,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH140",
-          "PHYS211"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "This course provides an overview of engineering principles to students in the non-engineering Agricultural and Biorenewable Systems Management major, but who are likely to encounter challenges that require quantitative solutions. Problem solving skills are extremely important to technology. At the end of the course, students will be able to: solve problems related to agricultural and biorenewable systems using a structured, logical method combining concepts from physics and math; recognize and apply unit factoring and dimensional analysis to problem solving; quantify physical relationships and apply engineering principles to evaluate basic engineering technology problems. Hands-on examples are used throughout the course to tie the course material to applications in agricultural and biorenewable industries. This course provides the groundwork for topics explored in more detail later in the Agricultural and BioRenewable Systems Management curriculum."
@@ -66,7 +80,12 @@
           "CHEM110"
         ],
         "concurrent": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "This course is an introduction to measurement and monitoring equipment/techniques commonly used in analyses and design of hydrologic systems and will provide students the opportunity to learn and apply basic measurement techniques that serve as critical tools in professional practice in water resources. During the first part of the course, the instruments and techniques commonly used in water resources assessment, including rainfall monitoring, flow monitoring, and interest as part of the Sustainability Institute's Sustainable Communities Collaborative. Data generated over the course of the semester are used to develop a report that is shared, along with the data with a community partner. In the second part of the course, mapping development is explored, which serves as a critical aspect of water resources engineering and planning. ArcGIS serves as a primary software tool used in engineering design and water resources planning, and students will learn to develop maps to present and process various watershed - data including land use data, soils data, and hydrography data. Various aspects of the course will coalesce around the concept of the watershed being the basic unit of water resources analyses and design, and students will experience how various measurement techniques and approaches are necessary tools for practicing professionals. This course will be useful to any undergraduates seeking degrees in a major related to water resources planning, engineering, or technology."
@@ -90,7 +109,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "ABSM301"
+            ]
+          }
         ]
       },
       "description": "After successful completion of ABSM 320 , students will explain and evaluate the theoretical and practical aspects of internal combustion engines. Students will evaluate and compare alternative engine thermodynamic cycles, alternative fuels (gasoline, diesel, biodiesel, compressed natural gas), performance enhancing attachments (turbochargers, intercoolers), and supporting systems (fuel injection, lubrication, starting, cooling, emissions cleansing). Students will be able to properly select engines and related systems for mobile applications. Students will employ important maintenance procedures required for economical useful life and proper operation. Students will be able to troubleshoot engine systems."
@@ -102,8 +126,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHYS211",
-          "MATH140"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "This course delves into the expanding importance of sustainable agriculture, focusing on the plan of agricultural structures that can improve livestock and crop management, reduce soil erosion and runoff, and protect stream quality. You will identify the needs of various conservation-related structures on farms, such as fence, stream crossing, roofed heavy-use area, waste storage facility, mortality composting facility, livestock watering system, and agrochemical handling facility. You will learn how to survey these structures to solve water and soil issues while meeting farmers' needs. You will gain agricultural conservation professional skills to understand how various structures are planned through real-world visits and hands-on practices. Specific topics covered include but are not limited to: - Heavy-use area protection practices - Waste storage facilities - Mortality composting facilities - Agrochemical handling"
@@ -115,8 +149,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHYS211",
-          "MATH140"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "This course provides a foundation for understanding natural resource challenges with a specific focus on water and soil. You will learn to inventory resource challenges on farms using aerial photos, GIS tools, and other digital resources and real-world visits. You will analyze how agricultural activities such as tillage, fertilization, and irrigation affect soil health (organic matter, structure, and erosion) and water quality (nitrogen, phosphorus, and sediment levels). You will identify various best management practices (BMPs) to address the resource challenges and understand how to properly plan the practices, including no/reduced till, crop rotation, diversion, terrace, waterway, prescribed grazing, silvopasture, cover crop, stripcropping, and filter strip. You will gain hands-on planning experience by developing a site-specific conservation plan that serves both the environment and the farmer's needs."
@@ -131,7 +175,12 @@
       ],
       "requisites": {
         "concurrent": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "This course equips students with the ability to understand land measurements, mapping, soils, hydrology, channel flow, erosion control techniques with emphasis on RUSLE2, subsurface drainage techniques, and water impoundments for use in storing water, managing stormwater, and capturing suspended sediment. The class concludes with a 3-week section on irrigation, which teaches water needs and pipe flow. Basic hydrology is presented using both the Soil-Cover-Complex and Rational Methods. Manning's equation is developed and discussed for use in understanding flow in open channels. The various components of the RUSLE2 soil erosion model are presented with emphasis in agricultural erosion. Irrigation is taught from both a supplemental agricultural and environmental perspective."
@@ -143,7 +192,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "Life cycle assessment (LCA) is a quantitative approach to assessing the environmental, economic, and/or social impacts associated with the entire supply chain of a product, process, or service. LCA is a systematic and holistic approach that enables designers and planners to identify the most impactful stages of a supply chain so that we might strategically intervene to improve the system. In this course students will learn about the LCA standards developed by the International Organization for Standardization (ISO). Students will also develop estimation, data verification skills, how to consider uncertainty in analysis, and learn how materials and energy flows lead to impacts to ecological and human systems. Over the course of the semester students will build their own LCA project by finding appropriate data, developing a life cycle inventory, entering data into LCA software, completing an impact assessment, and finally analysis and interpretation of the results generated. LCA is a flexible methodology and students will be encouraged to focus their project on a topic relevant to their broader learning and career objectives. Learning to complete an LCA also develops critical thinking skills, or life cycle thinking, which enables people to develop the skillset to pay attention to the larger system in which they are working in order to develop the human, materials and energy transactions that can lead to more renewable and sustainable systems. Class projects will allow the students to apply LCA to biorenewable systems, including agricultural and biological processes and product development."
@@ -156,7 +210,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Writing and Speaking",
+      "genEdAreas": [
+        "Writing and Speaking"
+      ],
       "internalEquivalents": [
         "BE391"
       ],
@@ -170,7 +226,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Writing and Speaking",
+      "genEdAreas": [
+        "Writing and Speaking"
+      ],
       "internalEquivalents": [
         "BE392"
       ],
@@ -193,7 +251,13 @@
       ],
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "AGBM101"
+            ]
+          }
         ]
       },
       "description": "This course will provide students with an understanding of how environmental and sustainability issues are impacting business strategies and ultimately profits. We will also examine the external stakeholders, such as environmental groups, policy-makers, and \"green\" consumers, that impact business management. Business students will benefit by a better understanding of environmental/sustainability issues that impact their operations and strategies. Non-business students will benefit by understanding how business decisions can impact the natural environment. An emphasis will be on a thorough understanding of making a business case for sustainability. We will also discuss the triple bottom line and its use. Some Specific Issues to Cover: 1. How are organizations shifting business models to work with sustainability trends? 2. How can we make a business case (justification) for being \"green\"? 3. Can firms differentiate themselves by being responsible/sustainable? Do consumers and other stakeholders care? 4. Thorough understanding of stakeholders and how they impact operations. 5. How can the \"business\" side of the world work with the \"environmental\" side? 6. Use of packaging as an example of where parts of the supply chain are working together to be more sustainable. 7. How \"waste\" in its many forms can be seen as a surrogate for unsustainable practices. 8. Pros and cons of metrics used to measure sustainability. 9. Impacts of business operations on the environment."
@@ -231,7 +295,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME360"
+          {
+            "oneOf": [
+              "ME360",
+              "BE306",
+              "ABSM310"
+            ]
+          }
         ]
       },
       "description": "ABSM 420 covers the technical aspects of off-road power machinery, such as tractors, self-propelled harvesters, and military, logging and construction equipment. Upon successful completion, students will understand the many facets of design and management of such vehicles (such as mechanical power generation, power allocation, power transmission, traction, operator enclosures, and electrical and electronic systems). Laboratory exercises will involve full-scale equipment with instrumentation used to measure performance. While ABSM 420 is not a prerequisite for any other course, it complements engineering and technology courses related to machinery. This course is a technical selection in the Biological Engineering and Agricultural and Biorenewable Systems Management majors and is required for the Off-Road Equipment minor. It complements other courses for anyone interested in the off-road machinery industries. ABSM 420 covers several aspects of function and design related to off-road machinery."
@@ -270,7 +340,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME330"
+          {
+            "oneOf": [
+              "ME330",
+              "STAT200",
+              "BE301",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "Precision agriculture is a data-based approach to optimize crop production and reduce environmental footprint. This course provides an overview of major concepts in precision agriculture (such as GPS, GIS, remote sensing, and spatial variability) and case studies illustrating decisions and management. In this course, computer processing, data analysis and management, robotics, and other related advancements in technologies will be emphasized to provide necessary technical skills in precision agriculture to students. The first part of the course will cover agricultural machinery combined with GPS such as planters, combines, fertilizer application equipment, and sprayers. Students will learn how to manage these tools efficiently. The second part of the course will emphasize how to manage and analyze field variability data including yield data, soil properties with real-time sensors and create prescriptions based on actual data. The last part of the course will emphasize how precision agriculture technology can benefit a farm's financial sustainability."

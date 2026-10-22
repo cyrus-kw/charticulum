@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { compareByCode, satisfies, type CurriculumObject } from "../../engine/index";
+import { compareByCode, satisfies, stillNeededIds, type CurriculumObject } from "../../engine/index";
 import { courseCode } from "../../planner/layout";
 import { Button, inputClass, Panel, Select } from "../ui";
 import type { PanelProps } from "./types";
@@ -25,7 +25,9 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
 
   const placed = view.chart.terms.flatMap((t) => t.objectIds);
   const isPlaced = (id: string) => placed.some((p) => satisfies(catalog, id, p));
-  const required = new Set(view.requirements.requiredObjectIds);
+  // Required courses not on the plan yet; for a choice not met yet, the
+  // courses of each of its options, so any of them can be picked.
+  const required = new Set(stillNeededIds(view.requirements.requiredObjectIds, isPlaced));
 
   const q = query.trim().toLowerCase();
   const unplaced = [...catalog.values()]
@@ -35,7 +37,7 @@ export function CatalogPanel({ state, view, dispatch }: PanelProps) {
     .sort(compareByCode);
 
   // Required ones first, then the rest, cut to the number shown.
-  const isRequired = (o: CurriculumObject) => required.has(o.id) && !isPlaced(o.id);
+  const isRequired = (o: CurriculumObject) => required.has(o.id);
   const ordered = [...unplaced.filter(isRequired), ...unplaced.filter((o) => !isRequired(o))];
   const visible = ordered.slice(0, shown);
 

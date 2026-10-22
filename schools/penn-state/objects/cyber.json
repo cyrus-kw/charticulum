@@ -38,7 +38,13 @@
       "requisites": {
         "previous": [
           "SRA111",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC101",
+              "IST140"
+            ]
+          }
         ]
       },
       "description": "Provides an understanding of the overview of information security including security architecture, access control, and internet secure applications. CYBER 221 Overview of Information Security (3) CYBER 221 focuses on an overview of information security. Students will learn the principles of information security, security architectures and models, aspects and methods of information security such as physical security control, operations security, access control, hacks/attacks/defense, systems and programs security, cryptography, network and web security, worms and viruses, and other Internet secure applications. Students will also learn how to plan and manage security, security policies, business continuity plans, disaster recovery plans, and social and legal issues of information security. A major component of the course will be several hands-on exercises and a final team-based project. This course will incorporate collaborative and action-learning experiences wherever appropriate. Emphases will be placed on developing and practicing writing and speaking skills through application of the concepts, theories and technologies that define the course."
@@ -50,8 +56,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CYBER100",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CYBER100",
+              "CYBER100S"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "IST140"
+            ]
+          }
         ]
       },
       "description": "This studio course teaches four basic hands-on cyber-defense skills: configuring a firewall, implementing a host-based intrusion detection software tool, using the Metasploit tool to do penetration testing, and implementing a network intrusion detection tool. The first cyber-defense skill is on configuring an ACL (Access Control List) firewall. This module provides the students with a practical exercise applying their analytical skills to properly configure the ACL of a firewall and to verify the correctness of their firewall configurations. Through this exercise, the students also learn firewall oriented network security policies. The second cyber-defense skill is on implementing a host-based intrusion detection software tool which can detect suspicious user sessions on a computer. This module provides the students with a practical exercise applying their programming skills to solve anomaly detection problems. The third cyber-defense skill is on using the Metasploit tool to do penetration testing. This module provides the students with a practical exercise applying their programming skills to do penetration testing. The fourth cyber-defense skill is on implementing a network intrusion detection software tool which can detect suspicious network flows. This module provides the students with a practical exercise applying their programming skills to solve signature-based intrusion detection problems"
@@ -105,7 +122,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200",
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          },
           "CYBER262"
         ]
       },
@@ -138,7 +160,13 @@
       "requisites": {
         "previous": [
           "CYBER342W",
-          "ENGL202C"
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202D",
+              "IST489"
+            ]
+          }
         ]
       },
       "description": "Cybersecurity Capstone is an advanced, culminating course for students who are majoring in Cybersecurity. This course provides the student with a practical exercise, designed by the instructor. The initial weeks of the semester provide the student with an overview of several analytic frameworks that are used in cybersecurity shops and organizations. Then, the student reviews specific technical analysis methods in malware, static and dynamic analysis, file system exploration, security log file analysis and network analysis. The findings from these analyses are then integrated into the analytic framework, gaps are identified, further analysis is conducted to fill the gaps. In the final weeks of the semester, students construct a high level briefing that supplies appropriate levels of technical detail to top level executives."

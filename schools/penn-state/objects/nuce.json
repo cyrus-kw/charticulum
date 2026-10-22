@@ -25,7 +25,12 @@
           "MATH251"
         ],
         "concurrent": [
-          "MATH230",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          },
           "PHYS214"
         ]
       },
@@ -54,7 +59,12 @@
           "MATH251"
         ],
         "concurrent": [
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          }
         ]
       },
       "description": "This course is structured to provide students with the necessary analytical techniques and terminology for radiation science, nuclear reactor design, and power system simulation. Students will be taught the basic mathematical methods needed for such topics as simplified reactor physics, fluid mechanics, heat and mass transfer, control theory, shielding, radiation detection, fission product decay, and risk assessment. The course will cover four general mathematical areas: partial differential equations, linear algebra, systems of ordinary differential equations, and probability and statistics. Linear ordinary differential equations are solved using Reduction to Separable Form, Superposition of Solutions, Laplace Transforms, and Numerical Methods. Linear partial differential equations are solved using Separation of Variables. Linear algebra is used to solve sets of linear equations, Least Squares Fit, and Finite Difference Methods. Eigenvalues and Eigenvectors found for a matrix are used to rotate a function to principle coordinates and to solve systems of ordinary differential equations. Probability and statistics includes sampling, permutations and combinations, binomial, Poisson, hypergeometric, and normal distributions. These statistical methods are then applied to radiation counting statistics."
@@ -79,7 +89,12 @@
         "concurrent": [
           "EMCH212",
           "MATH251",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "This course is intended to provide nuclear engineers with fundamentals in thermal-fluid sciences. This course is designed to develop an understanding of thermodynamic concepts and their application to nuclear thermal-fluid systems such as nuclear reactors and power plants. The course also emphasizes the study of fundamental principles of fluid mechanics including mass, energy and momentum conservation and their applications in nuclear engineering systems."
@@ -91,7 +106,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME320"
+          {
+            "oneOf": [
+              "ME320",
+              "NUCE321"
+            ]
+          }
         ]
       },
       "description": "This course is intended to provide nuclear engineers with fundamentals in thermal-fluids sciences. The course starts with an introduction of Similitude and Dimensional analysis (Buckingham Pi Theorem) and its application of fluid dynamics and heat transfer. Internal and external flows are reviewed, including the evaluation of friction losses. Finally, the course covers the fundamentals of heat transfer. While maintaining generality, throughout the course topics of greater importance in nuclear engineering are emphasized. These include in particular: pressure drop in internal flows, conduction in cylindrical geometries, convection heat transfer and heat exchanger design. Moreover, the connection to nuclear engineering applications is emphasized."
@@ -117,7 +137,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "Fundamental concepts of nuclear engineering, including fission, reactor theory, shielding, and radioisotopes; intended for other than nuclear engineering students."
@@ -141,7 +166,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM452"
+          {
+            "oneOf": [
+              "CHEM452",
+              "PHYS237",
+              "NUCE301"
+            ]
+          }
         ]
       },
       "description": "Theory of radioactive decay processes, nuclear properties and structure, nuclear reactions, interactions of radiation with matter, biological effects of radiation. CHEM 406 Nuclear and Radiochemistry (3) CHEM 406 provides a basic introduction to many of the important physical phenomena in nuclear and radiochemistry and the theories that describe them. The exposition of both experimental phenomena and theory complements the content of other upper-level courses in physical chemistry such as CHEM 450 and 452 .Specifically, the types of radioactive decay are described, and, using this information, the equations that relate the growth and decay, i. e., the kinetics, of radioactive nuclei are derived. In parallel, a variety of types of nuclear reactions, such as neutron capture are introduced and used to develop the equations that governing the kinetics of nuclear reactions, including the concept of cross section. To describe the nature of nuclear matter, the relationships between energy, binding energy, and mass, are developed and augmented with the introduction of related quantities including the nuclear magnetic-dipole moment, total angular momentum of the nucleus, and Fermi-Dirac and Bose-Einstein statistics. A basic introduction to quantum mechanics, including several problems of increasing complexity, namely, the one-dimensional particle-in-a-box, the three-dimensional particle-in-a-cubic-box, and the particle-in-a-spherical box is then provided. The latter problem forms the basis for developing the single-particle shell-model of the nucleus, which is compared to the single-particle shell-model of the atom, namely, the hydrogen-atom problem. The barrier-penetration theory of alpha-decay, Fermi's phase-space theory of beta-decay, and the selection rules for gamma-ray decay are then presented. Final topics include the interactions of radiation with matter and the biological effects of radiation."
@@ -153,8 +184,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300",
-          "MATH230"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Statistical description of systems composed of large numbers of particles in the context of classical and quantum mechanics; basic concepts of probability theory and thermodynamics as they relate to statistical mechanics. M E (NUC E) 406 Introduction to Statistical Thermodynamics (3) This course is an introduction to probabilistic and statistical concepts in the physical sciences, which we refer to as 'statistical thermodynamics.' In areas such as design and processing of electronic devices, materials engineering, chemical engineering, and combustion engineering, the science of statistical mechanics is a particularly necessary, powerful, and important tool for the engineer. The underlying foundation of statistical mechanics is developed by (1) reviewing the basic ideas from probability theory, (2) deriving the binomial, Poisson, and Gaussian probability distributions, and (3) using these models to analyze several examples taken from science and engineering. To make a connection between macroscopic quantities and the corresponding probabilistic representation, classical thermodynamics is reviewed using the internal energy, entropy, and free energy functions in the context of the first and second laws. Statistical mechanics for classical and quantum-mechanical systems is presented via the micro-canonical, canonical, and grand canonical ensembles using the associated partition functions. During the syntheses of ideas, applications from various branches of science are presented. Some examples of applications are the Einstein crystal, the Debye crystal, the ideal gas, and black body radiation.This course covers the following program objectives: 1. Demonstrate knowledge of basic chemistry and physics. 2. Demonstrate a knowledge of atomic and nuclear physics. 3. Demonstrate a knowledge of thermodynamics, heat transfer, and fluid flow. 4. Understand and apply the basic concepts of particle transport. 5, Understand and apply thermodynamics and heat transfer principles to the analysis of nuclear power components and systems."
@@ -190,7 +231,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "NUCE301"
+          {
+            "oneOf": [
+              "NUCE301",
+              "NUCE405"
+            ]
+          }
         ]
       },
       "description": "Ionizing radiation, biological effects, radiation measurement, dose computational techniques, local and federal regulations, exposure control."
@@ -202,7 +248,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "NUCE301"
+          {
+            "oneOf": [
+              "NUCE301",
+              "NUCE405"
+            ]
+          }
         ]
       },
       "description": "Nature, sources, and control of radioactive wastes; theory and practice of disposal processes."
@@ -270,7 +321,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "NUCE301",
+          {
+            "oneOf": [
+              "NUCE301",
+              "NUCE405"
+            ]
+          },
           "NUCE309"
         ]
       },
@@ -299,7 +355,12 @@
           "MATH251"
         ],
         "concurrent": [
-          "MATH230",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          },
           "PHYS214"
         ]
       },
@@ -312,10 +373,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EE330"
+          {
+            "oneOf": [
+              "EE330",
+              "PHYS400"
+            ]
+          }
         ],
         "minGrades": {
-          "EE330": "C"
+          "EE330": "C",
+          "PHYS400": "C"
         }
       },
       "description": "This course provides the education on models that are used for description of plasma phenomena as applicable to plasma confinement, plasma assisted materials processing, astrophysical plasmas and plasmas in the near Earth's space environment. It provides practical training in solution of problems involving collisional and collisionless plasmas. In particular, it investigates dynamics of charged particles in specified uniform, non-uniform and time varying electric and magnetic fields. It explores collective behavior of plasmas, including various electrostatic and electromagnetic waves that can be excited and propagate in plasmas parallel and perpendicular to the externally applied magnetic field. The course considers non-linear effects in plasmas, as typically occurring in the sheath regions near the plasma confining walls. It discusses concepts of equilibrium and stability of plasmas, and various models of unstable plasma motions, especially in relation to plasma confinement."

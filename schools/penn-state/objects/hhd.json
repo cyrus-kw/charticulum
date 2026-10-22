@@ -32,7 +32,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Addiction is commonly defined as set of compulsive behaviors that cannot be stopped despite negative consequences. The term itself is controversial and defined differently by various disciplines. This has resulted in skewed perceptions of addiction by society as a whole. This course aims to inform students on the biological, psychological, and sociological viewpoints of addiction and how they interact to form an integrated perspective (the biopsychosocial model). By understanding the current knowledge on the biological and psychological bases of addiction, students will be better prepared to make knowledgeable decisions on their own behaviors, understand the behavior of others, and generate informed opinions on the social aspects of addiction. We will begin by comparing and contrasting the different ways addiction has been defined in various fields and exploring the debate on which substances/behaviors are actually considered addictive. Throughout the course, students will broadly explore basic concepts in biology (cells, neural communication, brain anatomy, use of animal models, pharmacology, genetics, epigenetics, and comorbidity), psychology (memory, conditioning, reward, expectancy, bias, and mental health) and sociology (family systems theory, stress theory, developmental theory, feminist theory). These concepts will be practically applied to various questions concerning 1. The status of addiction as a disease. 2. How addiction is or should be treated. 3. The effects of addiction on family and society. 4. Policies concerning the criminalization of drugs and compulsive behaviors. In addition, methods and data from primary research in all three domains of the biopsychosocial model will be analyzed. Several assignments using various forms of communication will serve to illustrate the connections and asses integrated learning."
     },
     {
@@ -96,8 +100,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL161",
-          "STAT200"
+          {
+            "oneOf": [
+              "BIOL161",
+              "KINES203"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "As new molecules progress from the laboratory to the bedside, the clinical trials enterprise needs a fresh generation of professionals with knowledge of the application of research applied to human health and disease; professional skills in regulatory oversight, human subjects' protections, and research administration; and a willingness to share health interventions in communities. In this course students will develop a deeper understanding of clinical research practice including legal requirements and oversight, good clinical practice, essential elements of clinical practice/operations, data management, the financing/budgeting of clinical trials, and socio-political factors impacting trials; all of which will help prepare students for internships and jobs in clinical research organizations. The course is best suited to students with fifth semester standing or higher who are considering future careers and professional certification in clinical research specialties."
@@ -139,7 +153,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "How can a person grow to become more truly themselves? How do our habits inform our future? This course examines current research on happiness, aging, and well-being alongside the lived experience of older adults. Together students and older adult community members will discuss research as well as compare perceptions and perspectives of the aging experience. We will use an aging lens to explore what it means to grow as a human being, how to become the person we would like to be, and how to help others do the same. Students will partner with older adults for engagement experiences and a collaborative project."
     },
     {

@@ -22,7 +22,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH26"
+          {
+            "oneOf": [
+              "MATH26",
+              "MATH81"
+            ]
+          }
         ]
       },
       "description": "Forces; moments; resultants; two- and three-dimensional equilibrium of force systems; friction; centroids and moments of inertial of areas. MET 111 Mechanics for Technology: Statics (3) MET 111 will provide practical and compressive coverage of elementary statics. In addition to the theoretical approach, the course will demonstrate the practical applications of statics concepts. Students entering this course should have basic knowledge of algebra as well as geometry and trigonometry. Course will introduce the definition of scalar and vector quantities. This will be followed by vector addition, vector subtraction, resolution of vectors, addition of systems of coplanar forces, rectangular components of a vector, etc. Course will also introduce the concept of moments and couples. This will be followed by introducing free-body diagrams as a tool for solving statics problems. Emphasis will be placed on equations of equilibrium for particles and rigid bodies. Students will be exposed to 2D and 3D equilibrium. Course will put emphasis on truss and frame analysis as well as pulleys. Distributed loads will also be discussed. Course will also introduce the concept of friction, angle of friction, wedges, etc. Belt friction and rolling resistance as well as friction in bearings will also be discussed. Course will also introduce the concept of centroids, center of gravity, and moment of inertia of an area. Emphasis will be put on calculating centroidal moment of inertia of composite areas. Polar moment of inertia and mass of moment of inertia will also be introduced. Student will learn not only problem solving strategy but also develop ability to present results in clear manner."
@@ -42,7 +47,12 @@
       "requisites": {
         "previous": [
           "MET111",
-          "MATH82"
+          {
+            "oneOf": [
+              "MATH82",
+              "MATH22"
+            ]
+          }
         ]
       },
       "description": "Kinematics (particles and rigid bodies), kinetics, work-energy, impulse- momentum, and mechanisms. MET 206 Dynamics (3) Instructional, Educational, and Course Objectives - To introduce students to the basic principles of dynamics as applied to practical problems which include such topics as friction, kinetics of particles and rigid bodies, laws of force and motion, using methods of work-energy and impulse-momentum. Further, students will consider mechanisms which are typical in manufacturing industries and mechanical design. These goals serve to satisfy the following course objectives: -Students should be able to demonstrate proficiency in applied design, manufacturing processes, and mechanics. -Students should be able to apply concepts of applied mathematics and science in solving technical problems."
@@ -55,8 +65,22 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH212",
+              "PHYS211",
+              "MET206",
+              "PHYS150",
+              "PHYS250"
+            ]
+          },
+          {
+            "oneOf": [
+              "EMCH213",
+              "MET213",
+              "ET322"
+            ]
+          }
         ]
       },
       "description": "Design machine elements including bearings, springs, levers, shafts, gears, belts, and small mechanical devices; writing skills and computer applications. MET 210W Machine Design (3) ME T 210W is designed to provide students with the necessary concepts and procedures to properly design machine elements in mechanical systems. The course starts with the study of the properties of various engineering materials, including various types of steel, aluminum, and plastics. Heat treating of steels is also covered. Machine design criteria are presented along with discussions of various types of stresses, concepts of principle stress, combined stresses, and methods of stress analysis. Failure theories and their application to brittle and ductile materials are covered along with the relationship of these concepts to design factors. The influence of dynamic loads on design and design margins is also covered. Welded and bolted connections and their design requirements are also studied, along with the application of buckling and beam deflection analysis to the design of support colunms and beams. The course also examines the design of various types of springs and gears, the calculation of shaft stresses, and the design of clutches, brakes, belts, and chains.The writing component of the ME T 210W course is satisfied by having students choose a design project which is completed over the course of the semester. Instructors introduce the design project early in the semester and discuss how writing exercises will be used to complete the project. Students write an initial proposal that is graded and returned. Subsequently, students prepare and present progress reports at various times through the semester. These are also graded. The project ends with students preparing a draft final project report, which is critiqued and returned. Based on the critique, a final design report is prepared and is a significant component of the final course grade. Both the progress reports and the final design report activities involve both written and oral exercises."
@@ -69,7 +93,12 @@
       "requisites": {
         "previous": [
           "MET111",
-          "MATH26"
+          {
+            "oneOf": [
+              "MATH26",
+              "MATH81"
+            ]
+          }
         ]
       },
       "description": "Axial stress and strain; shear; torsion; beam stresses and deflections; combined axial and bending stresses; columns, ductility, resilience, and toughness. MET 213 Strength and Properties of Materials (3) MET 213 includes analysis and computations of axial stress and strain, shear and bearing stress; stress-strain diagrams, mechanical properties of materials including yield strength, ultimate strength, modulus of elasticity, percent elongation, poisson's ratio; stress concentration, axial deformations, statically-indeterminate axially loaded members, thermal stress and strain; torsion analysis including shear stress, angle of twist, power, rotational speed; beam bending analysis including shear force and bending moment diagrams, flexure stress, beam shear stress, , beam deflections; combined axial and bending stresses; columns."
@@ -81,7 +110,12 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "MET213"
+          {
+            "oneOf": [
+              "MET213",
+              "EMET222"
+            ]
+          }
         ]
       },
       "description": "Measurement of mechanical properties of materials; structural testing, data acquisition and analysis; technical laboratory report writing."
@@ -107,8 +141,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MET107",
-          "EGT121"
+          {
+            "oneOf": [
+              [
+                "MET107",
+                "EGT121"
+              ],
+              [
+                "EGT201",
+                "EGT205"
+              ]
+            ]
+          }
         ]
       },
       "description": "Computer-aided drafting and design; computer software solutions to mechanical engineering technology design problems. MET 306 Computer-Aided Design (3) This course is designed to be the third CAD course in a Mechanical Engineering Technology program. Students will be exposed to modeling industry specific geometry using solid and surface modeling techniques. Sheet metal modeling, tool path generation and material removal simulation for CNC operations as well as mechanism analysis are taught, Automation and optimization techniques using CAD packages are also covered in lab assignments. Students are expected to document their designs by producing industrial quality working drawings. Lecture material is directly related to the laboratory assignments and topics in understanding hardware and CAD software bench marking as well as associated costs and their relationship to the engineering design process are also covered. Experience in basic CAD modeling is required as well as a working knowledge of Statics, Dynamics and Strength of Materials. Evaluation is based on laboratory assignments, homework assignments, quizzes and a final project."
@@ -127,7 +171,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "MET213"
+            ]
+          }
         ]
       },
       "description": "Principles of stress and strain in 3D, indeterminate structures, failure theory, and energy methods in solid mechanics. MET 320 Strength of Materials II (3) This course consists of three main subject areas; a study of statically indeterminate structures, a study of stresses and strains in three dimensions, and a study of energy methods in solid mechanics. Statically indeterminate structures are studied for stresses and deformations. The types of indeterminate structures studied are axially loaded members, including temperature changes; torsionally loaded members, including geared connections; and bending members. Stresses and strains are studied in three dimensions with Mohr's Circle to identify principal stresses and absolute maximum shear stress, to understand Hooke's Law and other material property relationships, and to apply various failure or yield theories. Energy methods are studied so that stresses and deformations from impact loading of structures can be analyzed and included in the design of axial, torsion, and bending structures. Energy methods are also used to determine the static deformation of complicated structures. Other miscellaneous topics may include unsymmetric bending, bending of multi-material beams including reinforced concrete, bending of curved beams, shear center, combined loadings, torsion of non-circular members, columns, and true stress and true strain."
@@ -140,7 +189,13 @@
       "requisites": {
         "previous": [
           "MATH140",
-          "EMCH212"
+          {
+            "oneOf": [
+              "EMCH212",
+              "ET321",
+              "MET206"
+            ]
+          }
         ]
       },
       "description": "A study of engineering methods of problem formulation and solution; includes differential methods, dimensional analysis, and graphical analysis."
@@ -152,11 +207,22 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250",
+              "PHYS150"
+            ]
+          }
         ],
         "concurrent": [
           "CHEM110",
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH83"
+            ]
+          }
         ]
       },
       "description": "Introduction for technologists to the basic concepts and applications of thermodynamics. MET 330 Thermodynamics (3)This course is designed as the first thermal sciences course in a series of three. Students are introduced to the basic thermodynamic units and concepts, the properties of pure substances, first law of thermodynamics for open and closed systems, second law of thermodynamics, ideal cycles, performance and efficiency, entropy, power and refrigeration cycles. Evaluation is based on homework assignments, quizzes and examinations. Students need a background that includes inorganic chemistry and calculus to succeed in this course."
@@ -169,7 +235,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "MET330"
+            ]
+          }
         ],
         "concurrent": [
           "MET341"
@@ -222,10 +293,23 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EET105"
+          {
+            "oneOf": [
+              "EET105",
+              "EET100",
+              "EE211",
+              "EET320"
+            ]
+          }
         ],
         "concurrent": [
-          "PHYS212"
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS151",
+              "PHYS251"
+            ]
+          }
         ]
       },
       "description": "Measurement concepts, transducers, electronic-aided measurement, mechanical and electrical measurements. Intended for mechanical engineering technologists. MET 341 Mechanical Measurements and Instrumentation (3) This course serves as an introduction to the fundamental principles of instrumentation and measurements. Subjects covered in this course may include the responses of first and second order systems, the concept of time constant and rise time, calibration, standards, design of experiment, and lectures on the design and function of different types of sensors and instruments. Topics may be added or removed, as needed to meet Program Outcomes. The course includes lectures alternating with hands-on laboratory where students apply the material learned in the lectures. For many students this is the first time they have actual hands-on experience with electronic and measurement equipment, such as oscilloscopes, breadboards, function generators, digital data acquisition systems, integrated circuits, strain gauges, displacement sensors, thermocouples, tachometers, force sensors, accelerometers, velocity meters, pressure transducers, flow measurements, etc. Students learn not only how to use these devices in the lab, but also the fundamental principles of their operation."
@@ -237,7 +321,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "IET321"
+          {
+            "oneOf": [
+              "IET321",
+              [
+                "IET215",
+                "IET216"
+              ]
+            ]
+          }
         ]
       },
       "description": "Introduction to process design for production applications from job shop to world-class manufacturing environments. MET 358 Process Design Engineering (3) Process design engineering includes the theory and application of principles and practices for economical tool design. Students will learn and demonstrate the use of basic engineering metrology tools. Students will learn and apply the principles of geometric dimensioning and tolerancing to datum systems. Students will learn the elements of process design for a variety of manufacturing processes currently used in industry with a focus on material removal methods including computer numerical control machining. Students will learn the fundamentals of process specification, planning, and fixture design for high-volume material removal operations. Students will participate in a team project to design and build a production machining fixture. The project teams will document and present their designs.This course is the second of a three-course sequence with a focus on manufacturing. The first two courses, Introduction to Manufacturing Processes and Process Design Engineering, are required in the Mechanical Engineering Technology program at Penn State Capital College. The third course, Manufacturing Engineering, is a senior-level technical elective. The course in this proposal will be offered every spring semester with a projected enrollment of 30. All lab work will be done in the Engineering Lab Building.Students are evaluated based on their individual performance as well as their participation as a team member. Evaluation opportunities are both lecture and lab-related. There are two exams and a couple of short projects that each student will complete. Student teams will conduct a machining experiment, which each student will analyze in a formal lab report. Project teams will document their fixture designs with drawings and supporting descriptions. Also, each team will prepare a formal presentation showcasing their fixtures and present it to the class."
@@ -249,7 +341,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "ET322",
+              "MET213"
+            ]
+          }
         ]
       },
       "description": "Design of structural and mechanical elements with emphasis on theories of fatigue failure. MET 365 Design of Machine Elements (3)Design of Machine Elements covers a wide array of mechanical engineering principles. The course draws heavily on the knowledge gained in the strength of materials lecture and laboratory courses. Failure Theory is covered for both static and dynamic loading conditions. The study of failure under 'low stress' cyclic loading, also called fatigue, is a feature of failure theory study. Finally, the theories are applied to the design of machine and structural elements that include beams, columns, pressure vessels, shafts, keys, couplings, belt and chain drives, fasteners, springs, gears, brakes, and clutches. The effects of wear and lubrication on machine design are also examined."
@@ -261,7 +359,12 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "IET311"
+          {
+            "oneOf": [
+              "IET311",
+              "IET101"
+            ]
+          }
         ]
       },
       "description": "Materials Science and Engineering is an organized investigation of engineering materials, including their classification, properties, and means of testing to determine their properties. In materials courses different topics such as atomic bonding, crystalline structure of materials, structural imperfections, solid state diffusion, plastic deformation, mechanical properties of engineering materials, systematic analysis of materials failure, phase diagrams and kinetics are discussed. The application of materials in manufactured products and construction, and the effects of both manufacturing processes and in-service stress on materials are considered. The laboratory subjects combine hands-on experiments with the materials which will be discussed in the lecture. Sample preparation, tension tests, hardness test, impact resistance, heat treatment, fatigue testing, torsion, shear, bending, etc. are some of the experiments which may be performed in the lab sessions. The report for the lab session is a necessary component which is a practice for written technical communication."
@@ -293,7 +396,12 @@
       "requisites": {
         "previous": [
           "MET320",
-          "EGT121"
+          {
+            "oneOf": [
+              "EGT121",
+              "EGT205"
+            ]
+          }
         ]
       },
       "description": "Solutions of advanced engineering design problems using finite elements. Intended for engineering technologists. MET 415 Finite Element Analysis Applications I (3) Finite Element Analysis Applications I is a required course for junior or senior-level students in the Mechanical Engineering Technology (METBD) baccalaureate degree program. Finite element analysis (FEA) is a computer-simulation tool which is frequently used in engineering practice. Students study fundamental topics in static, structural FEA with the goal of mastering the usage of this software tool to become efficient and effective users of FEA technology in their engineering careers. Emphasis is placed on appropriate modeling (symmetry, simplifying assumptions, etc.), clear communication of analysis findings, and verification of results."
@@ -355,10 +463,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "MET330",
+              "MET332"
+            ]
+          }
         ],
         "concurrent": [
-          "MET331W"
+          {
+            "oneOf": [
+              "MET331W",
+              "MET431"
+            ]
+          }
         ]
       },
       "description": "Principles of fluid flow, hydraulic components, and hydraulic circuits having application to industry. MET 432 Fluid Power (3) This course studies fluid motion, flow, and energy losses, as well as, fluid storage and distribution. Specific devices are examined, including hydraulic pumps and air compressors; hydraulic and pneumatic actuators such as motors and cylinders; and fluid power circuit valves and other ancillary devices. Heat transfer in fluid power circuits is evaluated. Fluid power circuit design is presented using electrical and electronic controls with ladder logic programming."
@@ -383,7 +502,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "MET330",
+              "MET332"
+            ]
+          }
         ]
       },
       "description": "Analysis of processes and systems for energy conversion, including power, refrigeration and air conditioning cycles, thermoelectric etc."
@@ -407,8 +532,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
-          "MATH250",
+          {
+            "oneOf": [
+              "EMCH212",
+              "MET206"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH211"
+            ]
+          },
           "MET341"
         ],
         "concurrent": [
@@ -437,7 +572,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
+          {
+            "oneOf": [
+              "EMCH212",
+              "ET321",
+              "MET206"
+            ]
+          },
           "MET321"
         ]
       },
@@ -518,7 +659,12 @@
           "IET216",
           "MET210W",
           "MET306",
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "MET330"
+            ]
+          }
         ],
         "concurrent": [
           "MET415",
@@ -534,7 +680,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MET365"
+          {
+            "oneOf": [
+              "MET365",
+              "MET210W"
+            ]
+          }
         ]
       },
       "description": "This course is the first of a two-part course sequence that comprises the capstone design experience in the MET major (the second course is MET 486 , Project Design). In this course students study the engineering design process, begin working on their senior design project, and learn about professional topics related to industry. Topics in the engineering design process include needs identification, concept generation, concept selection, costing, and project planning. Professional topics include communication, team work, ethics, safety, and sustainability. Engineering economics and its application to the capstone design project is a featured topic. Students are evaluated through assignments and quizzes. One major component of the course is to begin work on a capstone design project. Students typically work in teams of 3 to 4 on an industrially-sponsored project or other project approved by the faculty. The student teams work with the sponsor to develop a project scope and plan, perform background research, begin to solve the problem, and present their project proposal orally and in written form. Students are evaluated on both their technical and presentation skills, as well as their ability to function as a team. This capstone course is required in the Mechanical Engineering Technology (MET) program."

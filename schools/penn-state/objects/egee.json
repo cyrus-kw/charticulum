@@ -16,7 +16,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "internalEquivalents": [
         "MATSE101"
       ],
@@ -42,7 +44,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Energy utilization and technological development, energy resources, conversion and consequences on the local and global environment, and future energy alternatives. EGEE 101H Energy and the Environment (3) (GN)Energy is the life-blood of any society. The information and principles learnt in this course will allow the students to make sound judgments in the area of 'personal energy choices.' There is increasing concern about the influence of human activities, particularly energy use, on global climate change. This has an impact on global business aspects. Students in all walks of life need to be exposed to the basic concepts to appreciate the positions of policymakers, scientists, and industry over the interrelationship between greenhouse gas emissions and global climate change. The students will acquire knowledge, which will enable them to critically evaluate any energy-related concerns of the society. This is important for any college graduate for responsible citizenship and stewardship. The main objectives of this course are to: provide basic understanding and appreciation of energy and environmental concepts and interconnectedness; analyze energy consumption patterns; discuss various energy resources that power the modern society; examine the energy conversion processes; explore interrelationships between energy use and industrial progress and environmental consequences; discuss future energy alternatives."
     },
     {
@@ -53,7 +57,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Energy is a vital component of modern society. Much of the general population believes that the energy sources we depend on are perpetual. While people believe that energy use is the culprit for environmental damage, they are not aware of the methods and principles by which energy conversion devices operate. This general education course will provide you with the necessary knowledge and information on the main operating principles of devices/appliances that are in common use and information on which to make the right decision in selecting the most energy efficient and economical choice. These devices are day-to-day appliances such as refrigerators, washers and dryers, ovens, etc., and home heating or cooling and transportation choices. The course also provides necessary information on heating furnaces, insulation, doors and windows, lighting, and air conditioning principles. The objective of the course is to expose you to energy efficiency in day to day life in order to save money and energy and thereby protect the environment. I hope the information in this course will help you become an environmentally-responsible individual of this Global Village. This course is a stand-alone General Education course that contributes to the General Education Learning objectives of Key Literacies, Critical and Analytical Thinking, Global Learning, and Social Responsibility and Ethical Reasoning. Furthermore, this course meets the Bachelor of Arts degree requirements."
     },
     {
@@ -73,7 +79,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "EGEE 110 Environmental Health and Safety Science (3) (GN) (GS). Environmental Health and Safety is an applied field with many aspects. It has engineering, science, psychology, and management components. For an understanding of how humans interact with their working and living environment, one has to understand basic sciences such as physics, biology, chemistry, mathematics, and psychology as well as some of the traditional engineering disciplines. This general education course is intended to provide students with a basic understanding of how these science and engineering principles are applied in an environmental health and safety context to topics and hazards commonly encountered in our lives. At the conclusion of the course, participants should be able to: 1) Demonstrate an understanding of how the dynamic processes of both the natural and man-made world impact the health, safety, and well-being of all of us in our daily lives; 2) Identify and understand common hazards inherent in industries, residences, transportation systems, and natural environments; 3) Explain the definition of risk including the concepts of probability, severity, presence of a hazard, and exposure to a hazard: 4) Recognize and understand ways of quantitatively expressing risk; 5) Explain risk perception and some of the factors that influence it; 6) Understand and apply control strategies and protective measures to hazards and risks to self, family, friends, and co-workers throughout daily activities;"
     },
     {
@@ -84,7 +94,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Oil is the world's most important commodity. Access to oil was decisive in the great military struggles of the 20th century. The economic and strategic value of oil has led to the evolution of a fascinating array of business, political, and strategic alliances around the world. The objective of this course is to describe this evolution and the technological, commercial, and political innovations shaping its current face. This knowledge is vital in achieving a more complete understanding of the role of oil in international affairs and economic development. The course begins with a discussion of the development of the American and European oil industries during the 19th century and the formation of the first great industrial oil monopolies. The emergence of oil as a strategic commodity prior to and during World War I will then be discussed. The economic and technological reasons for the recurring boom-bust cycles of oil markets and the political arrangements developed to cope with their effects is the third major topic of the course. The focus then shifts back to military affairs with a discussion of the role of oil in the battles of World War II. We then examine the social and cultural roots of the post-war dissolution of company ownership and the nationalization of oil reserves. Also in the policy arena is a discussion of the policy response of western governments to a growing dependence upon low-cost oil from the Middle East, Africa, and South America. The analysis then focuses on the ideology and strategy behind the formation of the Organization of Petroleum Exporting Countries (OPEC) and the motivations and execution of their strategies to drive up oil prices during the 1970s and early 1980s. The last part of the course discusses the emergency of oil as a commodity traded in open commodity market exchanges, the development of reserves in deep water and in Africa, and the relationship between oil policy and the war on international terrorism. Allowing students to gain a new perspective on global relations, and domestic politics. By the end of the semester, students will have broad understanding of oil and its pervasive impact on society over the years, better writing ability, and improved critical reading and thinking skills. This general education course will provide a multi-disciplinary approach to understanding how oil affects international relations and commerce. The relationships between oil technology, social and political institutions, and the unique cultures in oil-producing regions."
     },
     {
@@ -162,7 +174,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EGEE101"
+          {
+            "oneOf": [
+              "EGEE101",
+              "EGEE102",
+              "CHEM112"
+            ]
+          }
         ]
       },
       "description": "Energy is in transition, with increased international energy demand and increasing environmental pressures. Energy transitions, approaches, and outcomes are addressed. EGEE 401 Energy in a Changing World (3) The role of energy is increasingly important with increasing environmental constraints, transitioning energy policies, supply disruption, international pressure on climate change compliance and competition for energy. This course evaluates the existing energy infrastructure and energy/fuel use, both domestic and international, along with evolving technologies, implementation and challenges in meeting energy demands. The class provides a holistic view and serves all students interested in an energy or energy-related career. Students will understand the interrelationship between legislative, technology, environmental, and international factors associated with energy production, processing, distribution and utilization."
@@ -175,7 +193,12 @@
       "requisites": {
         "previous": [
           "EE210",
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
         ]
       },
       "description": "This course covers the structure and economics of the power grid in the US and the role played by renewable generation on the existing system. The course begins by introducing students to the structure of the power grid and teaches them to use typical analysis methods that are used to describe power transmission. The regulatory structure of US electricity markets is described to develop the framework for interpreting electricity pricing. Power analyses are used in conjunction with economic analyses to describe the interplay between transmission and cost of electricity to consumers. Unique aspects of renewable generation are introduced to this established context to begin to describe future drivers in the marketplace. Specific challenges associated with renewables are discussed, including the need for power system reserves, flexibility, the potential for overgeneration and the need for frequency and demand response. Methods to manage or overcome these challenges will also be discussed. Finally, this knowledge will be applied via discussion of several case studies of real power generation and transmission systems in the world."
@@ -222,7 +245,13 @@
       ],
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201",
+              "EME301"
+            ]
+          }
         ]
       },
       "description": "Concepts related to laminar and turbulent premixed and nonpremixed combustion with applications to propulsion and stationary systems. EGEE (M E) 430 Introduction to Combustion (3) This course provides an introductory treatment of combustion science. The objectives of the course are to develop in the students an understanding of combustion kinetics, combustion thermochemistry, flame dynamics, flame stability, and pollutant formation. Coverage includes laminar and turbulent flames, premixed and diffusion flames, and detonations. Emphasis is placed on the role that Kinetics, heat transfer, mass transfer, and fluid dynamics have on flame structure and flame stability. The course includes some laboratory demonstrations of flat flame and diffusion flame burners, and incorporates numerical calculations of thermodynamic and kinetic combustion phenomena. The course begins with a review of transport phenomena, physical gas dynamics, and thermochemistry. Then, the concept of the laminar flame speed is introduced in the context of a one-dimensional flame and a propagating chemical wave. Issues of premixed flame structure and stability are presented along with a discussion of flammability limits. Next, laminar diffusion flames are presented via the Burke-Schumann analysis. From laminar flames, the emphasis shifts to turbulent premixed and diffusion flames, and the concepts of flame stretch and strain. Detonations are considered, with emphasis on thermodynamic analysis of the detonation and the structure of the detonation wave. Details of chemical kinetics for the hydrogen-oxygen and hydrocarbon-air reaction systems are presented, with linkage back to earlier topics such as flame stabilization and flammability limits. After kinetic phenomena, the course then considers pollutant formation focusing on soot and NOx. The fundamental aspects of combustion are applied to analysis of the combustion process and pollutant formation in international combustion engines and catalytic combustors. The course wraps up with discussion of atmospheric chemistry, the fate of pollutants, and the formation of secondary pollutants."
@@ -236,7 +265,12 @@
         "previous": [
           "EME301",
           "EGEE302",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Thermodynamics of external fields, theory of stability and fluctuations, irreversible and non-linear thermodynamics, and bifurcation theory and their applications in energy and environmental processes are discussed. This course will be an advanced thermodynamics class that will expose students to the thermodynamics of irreversible processes and the thermodynamic analysis of dynamic systems. Students will learn to analyze the thermodynamics of conductivity, diffusion, gravitation, electrochemical systems, stability, fluctuations and critical phenomena. Students are expected to be able to understand and apply their knowledge to analyze problems involving fuel cells, membrane potential in electrolysis systems for hydrogen production, and other energy and environmental processes. This is an elective course in the energy engineering major and will be offered once a year in the spring semester to about 40 students. Student performance will be evaluated based on homework, mid term exams, class participation, project, and final exams."
@@ -248,7 +282,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "EE310",
+              "EME301",
+              "CHE220",
+              "METEO431",
+              "MATSE201"
+            ]
+          }
         ]
       },
       "description": "A review of fundamental concepts in solar energy conversion including photovoltaic (PV) and solar thermal conversion systems. The course examines the principles of solar energy conversion to build a foundation for explaining the basic concepts and implementation of conversion processes. It reviews the properties and availability of solar radiation and geometric relationship of sun/collector, principles of photovoltaic conversion and properties of materials used in PV systems, designing PV systems, procedures for solar thermal engineering calculations, and thermal power plants for electricity generation. This course will complement the existing courses on fossil fuels and other renewable energy sources. Students will be engaged to actively participate in learning through team projects, semester papers, class presentations, and field trips."
@@ -285,8 +328,26 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300",
-          "ME320"
+          {
+            "oneOf": [
+              [
+                "ME300",
+                "ME320"
+              ],
+              [
+                "EME301",
+                "EME303"
+              ],
+              [
+                "CHE220",
+                "CHE330"
+              ],
+              [
+                "MATSE401",
+                "MATSE402"
+              ]
+            ]
+          }
         ]
       },
       "description": "Course covers fundamental principles of electrochemistry, including electrochemical thermodynamics, kinetics, catalysis, and corrosion and focuses on applications such as fuel cells, batteries, and photovoltaics. Each application covers: principles of method, criteria determining performance, present state of development, and advantages/disadvantages. Laboratory demonstration of the performance (current-voltage) measurements of an electrochemical converter is scheduled in this course. EGEE 441 Electrochemical Engineering Fundamentals (3) The course will cover the fundamental principles of electrochemistry, including electrochemical thermodynamics, kinetics, catalysis, and corrosion. Students will be exposed to the application of these principles in fuel cells, batteries, and photovoltaics. Students will be able to perform efficiency analysis in these systems. They will also be able to understand the differences between types of fuel cells and distinguish between electrochemical and chemical energy systems. For each of the above application areas students will learn the criteria used to determine their performance, their current state of development, and their advantages/disadvantages. Laboratory demonstration will help to enhance student knowledge and understanding. Student performance will be evaluated through problem sets, quizzes, midterm, project papers, class participation, and final examination. This is a required course in the energy engineering major."
@@ -338,7 +399,13 @@
       ],
       "requisites": {
         "previous": [
-          "CMPSC201",
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          },
           "MATH220"
         ]
       },

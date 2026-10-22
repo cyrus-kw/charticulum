@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "SOC180N"
       ],
@@ -47,7 +51,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "The purpose of this course is to explore gender differences in sport and politics that emerge from physiology, culture, history, politics, and policy. The engagement of women in sport has unique physiological considerations and ethical dilemmas as well as a rich history of defining moments and important ties to feminism and politics. In this course, students will learn how physiology differences affect female athletic performance and the effects of exercise on the female body, as well as how cultural, historical, and political forces shaped women's participation in sport. Students will also see how similar historical, cultural, and political forces affect women's involvement in politics. Combined, students will understand how similar forces shape gender norms and participation two different, yet related, aspects of society. Additionally, students will learn about the push for evidence-based policymaking and apply that knowledge to topics including doping, pregnancy, and gender verification. Students will integrate physiology and policy in a final assignment advocating for evidence-based sport policy. They will also educate their peers through a public education project."
     },
     {
@@ -99,7 +107,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HPA301"
+          {
+            "oneOf": [
+              "HPA301",
+              "HPA301W",
+              "HPA301H",
+              "PLSC202",
+              "PUBPL304W"
+            ]
+          }
         ]
       },
       "description": "This course provides an overview of the health policy-making stages at the federal level of government. Students will have an opportunity to explore how policy agendas are created by policy stakeholders (e.g., advocates, interest groups, etc.) in defining social problems and identifying possible solutions. Students will next examine the steps for the development of legislation (e.g., bill introduction, committee referral, hearings, floor action, etc.). Students will also learn about the implementation of policy at the federal level after the formal enactment of legislation (e.g., programmatic guidance and final rules, etc.). Students will also learn about the Congressional budget process and judicial branch reviews and their impact on federal health policy formulation, implementation, and modification."

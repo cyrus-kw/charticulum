@@ -44,9 +44,8 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
-      "internalEquivalents": [
-        "STAT200"
+      "genEdAreas": [
+        "Quantification"
       ],
       "description": "This course introduces students to data sciences, a discipline focused on the knowledge and skills needed to harness the power of data to advance social, physical, and life sciences, address complex national and global challenges, inform public policy, and improve human lives. It demonstrates how the discipline of data science integrates knowledge and skills from various fields such as computer sciences, statistics, and informatics through scientific methods to extract knowledge, devise predictive models, and communicate insights. Through a combination of lectures, hands-on labs, and case studies, students are introduced to the \"big picture\" of data sciences including elements of understanding data through exploratory data analysis, statistical inference, and building predictive models, using real-world examples from domains such as life sciences and health sciences."
     },
@@ -57,13 +56,24 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
         ],
         "concurrent": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC121": "C"
+          "CMPSC121": "C",
+          "CMPSC131": "C"
         }
       },
       "description": "The course introduces students to the fundamentals of data models: organizing, managing, and using different types of data that arise in real-world applications. The course introduces students to several alternative data models and database solutions, emphasizing their strengths and limitations in the context of real-world applications. Topics covered include the relational databases, key-value stores, column-oriented databases, vector-space databases, graph databases, and distributed file systems together with their applications in solving real-world big data management problems. Upon completion of the course, the students will be able to choose an appropriate data model and database solution for a given application, and use the chosen database to organize, manage, and use data in the context of specific applications."
@@ -103,14 +113,28 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "DS200",
+          {
+            "oneOf": [
+              "DS200",
+              "STAT200"
+            ]
+          },
           "DS220",
-          "CMPSC360"
+          {
+            "oneOf": [
+              "CMPSC360",
+              "IST230",
+              "MATH311W"
+            ]
+          }
         ],
         "minGrades": {
           "DS200": "C",
+          "STAT200": "C",
           "DS220": "C",
-          "CMPSC360": "C"
+          "CMPSC360": "C",
+          "IST230": "C",
+          "MATH311W": "C"
         }
       },
       "description": "This course provides an overview about data privacy and security implications arising in the context of data analytics, as well as the techniques and processes for managing privacy and security of large-scale structured and unstructured data sources. Concepts are taught in reference to a variety of data types and application areas. Students will learn design principles to enhance privacy and security in data science practice."
@@ -122,8 +146,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122",
-          "CMPSC360"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132",
+              "IST242"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC360",
+              "IST230",
+              "MATH311W"
+            ]
+          }
         ]
       },
       "description": "This course teaches students how to formulate data science problems that arise in different applications that involve different types of data (tabular, sequence, network, matrix data); and introduces students to common strategies for formulating, and solving those problems. The course will cover (1) how to formulate data science problems (e.g., text analysis, biological sequence analysis, social network analysis, recommender systems) and how to evaluate alternative formulations, (2) common algorithmic methods and tools (as implemented in software libraries) for representing, processing, and sampling data, (3) how to apply the methods and tools to solve well-formulated data science problems. The course will also teach students how to understand and use results about the correctness, efficiency, and scalability of the techniques and tools, and they will learn to recognize when specific algorithmic tools can be used to improve the performance of their data science tasks. Through exercises, students will gain hands-on experience in problem formulation and solution development for data science problems that arise in applications."
@@ -133,21 +169,40 @@
       "type": "course",
       "title": "Machine Learning for Data Analytics",
       "credits": 3,
-      "internalEquivalents": [
-        "CMPSC448"
-      ],
       "requisites": {
         "previous": [
-          "CMPSC122",
-          "MATH318",
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH318",
+              "MATH414",
+              "MATH418"
+            ]
+          },
           "MATH220",
-          "CMPSC360"
+          {
+            "oneOf": [
+              "CMPSC360",
+              "IST230",
+              "MATH311W"
+            ]
+          }
         ],
         "minGrades": {
           "CMPSC122": "C",
+          "CMPSC132": "C",
           "MATH318": "C",
+          "MATH414": "C",
+          "MATH418": "C",
           "MATH220": "C",
-          "CMPSC360": "C"
+          "CMPSC360": "C",
+          "IST230": "C",
+          "MATH311W": "C"
         }
       },
       "description": "The course teaches students the principles of machine learning (and data mining) and their applications in the data sciences. DS 310 Machine Learning for Data Analytics (3) The course introduces the principles of machine learning (and data mining), representative machine learning algorithms and their applications to real-world problems. Topics to be covered include: principled approaches to clustering, classification, and function approximation from data, feature selection and dimensionality reduction, assessing the performance of alternative models, and relative strengths and weaknesses of alternative approaches. The course will include a laboratory component to provide students with hands-on experience with applications of the algorithms to problems from several domains. Prerequisites for the course include basic proficiency in programming, elementary probability theory and statistics, and discrete mathematics."
@@ -160,7 +215,13 @@
       "requisites": {
         "previous": [
           "DS220",
-          "MATH318"
+          {
+            "oneOf": [
+              "MATH318",
+              "MATH414",
+              "MATH418"
+            ]
+          }
         ]
       },
       "description": "Recommended Preparations: DS 310 Modern data-intensive applications (healthcare, security, public policy, science, commerce, crisis management, education, among others) increasingly call for integration of multiple types of data from disparate sources. This course introduces students to the principles and the practice of data integration, with particular emphasis on relational, knowledge-based, graph-based, and probabilistic methods. Carefully crafted assignments will help enhance the students' mastery of both the theoretical underpinnings as well as practical aspects of data integration. The students will work in teams to solve representative data integration problems drawn from real-world applications. Upon completion of the course, students should be able design, implement, and evaluate data integration solutions to support data intensive applications."
@@ -172,12 +233,26 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "DS200",
-          "CMPSC122"
+          {
+            "oneOf": [
+              "DS200",
+              "STAT200"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132",
+              "IST242"
+            ]
+          }
         ],
         "minGrades": {
           "DS200": "C",
-          "CMPSC122": "C"
+          "STAT200": "C",
+          "CMPSC122": "C",
+          "CMPSC132": "C",
+          "IST242": "C"
         }
       },
       "description": "The course introduces visual analytics methods and techniques that are designed to support human analytical reasoning with data. DS 330 Visual Analytics for Data Sciences (3) Visual analytics is the science of combining interactive visual interfaces and information visualization techniques with automatic algorithms to support analytical reasoning through human-computer interaction. People use visual analytics tools and techniques to synthesize information and derive insight from massive, dynamic, ambiguous, and often conflicting data, and to communicate their findings effectively for decision-making. This course will serve as an introduction to the science and technology of visual analytics and will include lectures on both theoretical foundations and application methodologies. The goals of this course are for students to (1) develop a comprehensive understanding of this emerging, multidisciplinary field, and (2) apply that understanding toward a focused research problem in a real-world application or a domain of personal interest."
@@ -190,8 +265,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "DS435",
-          "CMPSC448"
+          {
+            "oneOf": [
+              "DS435",
+              "DS300"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC448",
+              "DS310"
+            ]
+          }
         ]
       },
       "description": "This course builds up the students' understanding of data sciences by discussing the fundamental principles in the context of real-world examples, and then shows specifically how the principles can provide understanding of many of the most common methods and techniques covered in previous data science courses. The course features three individual projects as well as a team project spanning the entire course. After taking this course, the students should be able to cover the entire pipeline of a data science project, from problem formulation to data science solutions. That is, start from a data driven problem, identify pertinent datasets to the problem and collect data, reason about the best techniques that should be used to solve the problem, implement algorithms and models, assess performance, and communicate actionable insights through both written reports and oral presentations. As one example, a fundamental principle of data science is that solutions for extracting useful knowledge from data must carefully consider the problem in the real world scenarios. This may sound obvious at first, but the notion underlies many choices that must be made in the process of data analytics, including problem formulation, method choice, solution evaluation, and general strategy formulation. Another fundamental principle is that predictive modeling can both inform and be informed by relevant knowledge (including theories, models, frameworks) of the relevant domains. This principle manifests itself throughout data science: in the specific design of many particular data sciences applications, and more generally as the basis for all intelligent solutions. In this course, this principle will be highlighted by case studies from multiple domains so that students can be inspired to apply this principle to their term projects. Lastly, as most data science projects are delivered as solutions as opposed to software deliverables, the ability for data scientists to communicate their results through concise and actionable insights plays a critical role in a data science project. This course places a particular focus on developing student writing abilities, through formal project reports and presentations. The individual projects will offer an interactive experience for students through feedbacks on their reports provided by the instructor. The term-long project will also train students in writing in a collaborative environment."
@@ -236,8 +321,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122",
-          "DS220"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          },
+          {
+            "oneOf": [
+              "DS220",
+              "CMPSC221"
+            ]
+          }
         ]
       },
       "description": "Recommended Preparations: DS 310 ; CMPSC 448 This course introduces modern programming models and related software stacks for performing scalable data analytics and discovery tasks over massive and/or high dimensional datasets. The learning objectives of the course are that the students are able to choose appropriate programming models for a big data application, understand the tradeoff of such choice, and be able to leverage state-of-the art cyber infrastructures to develop scalable data analytics or discovery tasks. Building on data models covered in DS 220 , this course will introduce programming models such as MapReduce, data flow supports for modern cluster computing environment, and programming models for large-scale clustering (either a large number of data samples or a large number of dimensions). Using these frameworks and languages, the students will learn to implement data aggregation algorithms, iterative algorithms, and algorithms for generating statistical information from massive and/or high-dimensional data. The realization of these algorithms will enable the students to develop data analytic models for massive datasets."
@@ -279,7 +374,12 @@
         ],
         "concurrent": [
           "DS435",
-          "CMPSC465"
+          {
+            "oneOf": [
+              "CMPSC465",
+              "DS305"
+            ]
+          }
         ],
         "minGrades": {
           "DS220": "C",
@@ -297,12 +397,20 @@
         "previous": [
           "MATH141",
           "DS220",
-          "CMPSC360"
+          {
+            "oneOf": [
+              "CMPSC360",
+              "IST230",
+              "MATH311W"
+            ]
+          }
         ],
         "minGrades": {
           "MATH141": "C",
           "DS220": "C",
-          "CMPSC360": "C"
+          "CMPSC360": "C",
+          "IST230": "C",
+          "MATH311W": "C"
         }
       },
       "description": "The practices and foundations of access to textual and nontextual information using the principles of information retrieval and web search. Introductory course for for undergraduate students in the last year of their academic program and graduate students covering the practices, issues, and theoretical foundations of organizing and analyzing information and information content for the purpose of providing access to textual and nontextual information resources. Introduces students to the principles of information storage and retrieval systems and databases. DS 441 Information Retrieval and Organization (3) This is an introductory course for Information Sciences and Technology senior and graduate students covering the practices, issues, and theoretical foundations of organizing and analyzing information and information content for the purpose of providing access to textual and non-textual information resources. This course will introduce students to the principles of information storage and retrieval systems and databases. Students will learn how effective information search and retrieval is interrelated with the organization and description of information to be retrieved. Students will also learn to use a set of tools, such as search engines, and procedures for organizing information. They will become familiar with the techniques involved in conducting effective searches of information resources."

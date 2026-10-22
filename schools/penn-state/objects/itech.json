@@ -76,10 +76,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "IST110"
+          {
+            "oneOf": [
+              "IST110",
+              "CYBER100",
+              "HCDD113",
+              "A-I100"
+            ]
+          }
         ],
         "minGrades": {
-          "IST110": "C"
+          "IST110": "C",
+          "CYBER100": "C",
+          "HCDD113": "C",
+          "A-I100": "C"
         }
       },
       "description": "This course provides an in-depth examination of the legal, regulatory, and ethical frameworks governing information technology in a global digital environment. Students will analyze foundational legal concepts, evaluate statutory and regulatory requirements, interpret case law, and assess the ethical implications of technology use. Emphasis is placed on applying legal reasoning, conducting compliance assessments, and recommending responsible IT governance strategies. Through case studies and applied analyses, students will learn to synthesize legal requirements with ethical decision-making in real-world scenarios.."
@@ -92,7 +102,13 @@
       "requisites": {
         "previous": [
           "IST210",
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132",
+              "IST242"
+            ]
+          }
         ]
       },
       "description": "A study of advanced topics in database management systems that are fundamental to effective administration of modern enterprise information systems. The objective of the course is to enable a student to comprehend a range of issues in modern database management and administration. This course offers an in-depth exploration of advanced database concepts and technologies, designed for students aiming to master the complexities of modern database systems. Students will engage with the full database lifecycle, from initial planning and design to implementation, optimization, and maintenance. Emphasis is placed on advanced SQL techniques, performance tuning, transaction management, and the exploration of emerging trends such as distributed databases, big data, NoSQL, and cloud databases. Prerequisite IST 210 and IST 242"
@@ -104,10 +120,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "IST210"
+          {
+            "oneOf": [
+              "IST210",
+              "IST220"
+            ]
+          }
         ],
         "minGrades": {
-          "IST210": "C"
+          "IST210": "C",
+          "IST220": "C"
         }
       },
       "description": "This course provides an in-depth exploration of an emerging technology shaping the information systems field. Students analyze the technology's architecture, evaluate implementation challenges, assess integration and security considerations, and design applied solutions. Through hands-on labs and a semester project, students will synthesize technical, organizational, ethical, and strategic perspectives to make informed adoption and implementation recommendations."

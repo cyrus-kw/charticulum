@@ -1,5 +1,6 @@
 import { GRADE_POINTS } from "./grades";
-import type { Category, CreditRule, Grade, OverrideKind, RequirementSet, Requirements } from "./types";
+import { requiredKey, requiredOptions } from "./required";
+import type { Category, CreditRule, CreditRuleGroup, Grade, OverrideKind, RequiredItem, RequirementSet, Requirements } from "./types";
 
 // Used when no set says otherwise.
 export const DEFAULT_MAX_CREDITS_PER_TERM = 18;
@@ -12,15 +13,20 @@ export const DEFAULT_MAX_CREDITS_PER_TERM = 18;
 // - credit limit per term and shared-credit limit: the lowest
 // - double counting: allowed only if no set forbids it
 // - override kinds: only those every set allows
-// - credit rules: all of them; one id in two sets keeps the higher credits
-// - minimum grades: the highest per course
+// - credit rules: all of them, in their groups (a group's category in
+//   two sets holds both sets' rules); one rule id in two sets keeps the
+//   higher credits
+// - minimum grades: the highest per course; one asked for in a course of a
+//   choice applies to all its options ("MATH 230 or MATH 231 & 232", C
+//   or better: whichever is taken needs the C)
 export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
   const ordered = [
     ...sets.filter((set) => set.scope === "global"),
     ...sets.filter((set) => set.scope === "local"),
   ];
 
-  const required = new Set<string>();
+  // Keyed by requiredKey, so one listed by two sets is kept once.
+  const required = new Map<string, RequiredItem>();
   const minCreditsByCategory: Partial<Record<Category, number>> = {};
   let minTotalCredits = 0;
   let maxCreditsPerTerm: number | undefined;
@@ -28,11 +34,12 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
   let minGpa: number | undefined;
   let allowedOverrides: OverrideKind[] | undefined;
   let maxSharedCredits: number | undefined;
-  const creditRules = new Map<string, CreditRule>();
+  // Group category -> the group, with its rules by id.
+  const creditRules = new Map<string, Omit<CreditRuleGroup, "rules"> & { rules: Map<string, CreditRule> }>();
   const minGrades: Record<string, Grade> = {};
 
   for (const set of ordered) {
-    for (const id of set.requiredObjectIds ?? []) required.add(id);
+    for (const item of set.requiredObjectIds ?? []) required.set(requiredKey(item), item);
 
     for (const [category, minimum] of Object.entries(set.minCreditsByCategory ?? {}) as [
       Category,
@@ -55,9 +62,16 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     if (set.maxSharedCredits !== undefined) {
       maxSharedCredits = Math.min(maxSharedCredits ?? Infinity, set.maxSharedCredits);
     }
-    for (const rule of set.creditRules ?? []) {
-      const current = creditRules.get(rule.id);
-      if (!current || rule.credits > current.credits) creditRules.set(rule.id, rule);
+    for (const { rules, ...group } of set.creditRules ?? []) {
+      if (!creditRules.has(group.category)) creditRules.set(group.category, { ...group, rules: new Map() });
+      const current = creditRules.get(group.category)!;
+      // Counting each course once is the stricter rule.
+      if (group.eachCourseOnce) current.eachCourseOnce = true;
+      const merged = current.rules;
+      for (const rule of rules) {
+        const current = merged.get(rule.id);
+        if (!current || rule.credits > current.credits) merged.set(rule.id, rule);
+      }
     }
     for (const [id, grade] of Object.entries(set.minGrades ?? {})) {
       const current = minGrades[id];
@@ -65,8 +79,21 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     }
   }
 
+  for (const item of required.values()) {
+    const ids = requiredOptions(item).flat();
+    const strictest = ids
+      .map((id) => minGrades[id])
+      .filter((grade) => grade !== undefined)
+      .sort((a, b) => GRADE_POINTS[b] - GRADE_POINTS[a])[0];
+    if (!strictest) continue;
+    for (const id of ids) {
+      const current = minGrades[id];
+      if (!current || GRADE_POINTS[strictest] > GRADE_POINTS[current]) minGrades[id] = strictest;
+    }
+  }
+
   return {
-    requiredObjectIds: [...required],
+    requiredObjectIds: [...required.values()],
     minCreditsByCategory,
     minTotalCredits,
     maxCreditsPerTerm: maxCreditsPerTerm ?? DEFAULT_MAX_CREDITS_PER_TERM,
@@ -75,7 +102,9 @@ export function mergeRequirementSets(sets: RequirementSet[]): Requirements {
     ...(minGpa !== undefined && { minGpa }),
     ...(allowedOverrides && { allowedOverrides }),
     ...(maxSharedCredits !== undefined && { maxSharedCredits }),
-    ...(creditRules.size > 0 && { creditRules: [...creditRules.values()] }),
+    ...(creditRules.size > 0 && {
+      creditRules: [...creditRules.values()].map((group) => ({ ...group, rules: [...group.rules.values()] })),
+    }),
     ...(Object.keys(minGrades).length > 0 && { minGrades }),
   };
 }

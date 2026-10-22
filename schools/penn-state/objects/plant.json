@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course will examine the \"world\" of chocolate throughout human history. First cultivated by the ancient peoples of the Americas and then manufactured by Europeans and Pennsylvanians alike, chocolate has played a privileged role as a luxury good. An interdomain course, \"Chocolate Worlds\" is interdisciplinary, taught by faculty in the departments of Plant Science, Anthropology, and History. As a team we investigate the how diverse societies have differentially interacted with this crop. Rather than be organized chronologically, this course will be divided into course Units, such as the history of cocoa uses and cultivation, cocoa plant science and farming issues, chocolate making and markets, and the state of the global chocolate industry. The course's lectures and assigned readings work in concert equally directed by scientific inquiry and the queries of the social sciences and humanities. Assignments will address real world questions relating to contemporary cocoa cultivation and production, and its role in international development and social justice. As a class we will take field trips to sites such as local chocolate manufacturing facilities and cocoa research sites and laboratories. The learning objectives of this course include students' broad knowledge of cacao production, its history, and ethnical issues surrounding its cultivation in today's global economy. Additionally, students will gain an historical appreciation for the role this crop his played in diverse human societies and a scientific understanding of its genetic structure."
     },
     {
@@ -29,10 +33,17 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              "SOILS101"
+            ]
+          }
         ]
       },
       "description": "About 12,000 years ago, humans began harvesting their food from the natural biological diversity that surrounded them, resulting eventually to domesticated agricultural crops. Over thousands of years farmers selected for desirable traits in crops, and thus improved the plants for agricultural purposes. Agricultural Crop Growth, Form, and Function is a required introductory course for options in the Plant Science major. This course provides fundamental information on agricultural crop growth needed for understanding course content of upper level courses within the major. The major focus areas will include general crop growth and function, environmental and plant interactions in agriculture, Pests of agricultural crops, and breeding and genetics of agriculturally important crops. Upon successful completion of the course students should have a better understanding of the following topics: structural components of cells and plants; growth of tissue systems; plant interactions with their environment; physiological processes in plant growth; basic components of plant genetics; and the impact of human selection, genetic engineering, and climate modifications on plant development and food production."
@@ -51,7 +62,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PLANT200"
+          {
+            "oneOf": [
+              "PLANT200",
+              "BIOL110"
+            ]
+          }
         ]
       },
       "description": "PLANT202 introduces basic concepts in plant genetics, biotechnology and genomics, and considers their importance in areas such as plant breeding, conservation, agronomy and horticulture. The course aims to make the latest technological innovations accessible and to provide students with the basis to critically evaluate these developments and to communicate their implications to a broader audience."
@@ -71,7 +87,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "The objective of PLANT 220 (GN), Gardening for Fun and Profit is to provide students with science-based fundamentals of establishing and maintaining residential landscapes and gardens. The course provides information that is especially useful to those with minimal to intermediate knowledge of horticultural plants. A background in gardening or landscaping is not needed. Class topics are presented by guest speakers who are scientists and experts in the topic area. Major topics include proper plant selection, soil preparation for establishing plantings, the basics of seeding, growing transplants and planting, the basics of planting and maintaining trees and shrubs, avoiding common mistakes in the garden and landscape, gardening resources, storage and processing fruits and vegetables for home use and ideas for making profit from gardening activities. This course includes a weekly laboratory session where students gain practical skills needed for developing and maintaining residential landscapes and edible gardens through hands-on activities and field trips."
     },
     {
@@ -82,7 +100,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Fundamentals of Cannabis provides a broad overview of hemp's natural ecosystem, biology, domestication, phenotypic plasticity, industrial cultivation, and business models within the hemp industry that foster bioeconomic empowerment for growers. The course starts with the basic biology of Cannabis species the effects of light on the production of cannabinoids, the various uses in the economic fabric of industrialized nations, and concludes with what makes hemp (THC < 0.3%) a unique plant for industrial production. Despite the legalization of hemp, optimal conditions for indoor and outdoor cultivation of cannabis remain not well understood. The purpose of this course is to introduce students to basic principles, best horticultural practices, and specific concepts for getting started in industrial hemp production. Throughout this course, potential business opportunities are emphasized for various aspects of the hemp industry."
     },
     {
@@ -132,8 +152,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AGRO28",
-          "AGECO201",
+          {
+            "oneOf": [
+              "AGRO28",
+              "HORT101"
+            ]
+          },
+          {
+            "oneOf": [
+              "AGECO201",
+              "PLANT200",
+              "HORT202"
+            ]
+          },
           "ENT313",
           "SOILS101"
         ]

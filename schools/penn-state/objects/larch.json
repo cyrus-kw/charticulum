@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "LARCH 60 is an introduction to the development of designed outdoor places from the ancient past to present day. Designed landscapes and urban spaces are expressions of cultural values and environmental influences. Underlying all of the designs is the fundamental human connection to, and manipulation of nature as people create spaces that reflect political views, religion, are entertaining or provide personal inspiration and, most recently, show concerns for the health of the earth. While there is discussion of Middle East and East Asian landscapes, the course focuses upon Western civilizations with roughly the last third focusing on North American landscapes. The act of design and art often reveals a culture's beliefs, values, and aspirations. As well, the creation of outdoor places uniquely express a relationship between humans and nature. These designs and the many spaces they provide (e.g. plazas, campuses, gardens, cities, parks, memorials, urban systems, our own backyards, etc.) are aesthetic phenomenon that speak richly of cultural values. This is true throughout history as it is today. The stories these landscapes tell go hand-in-hand with cultural histories, but are not always closely examined. Designed landscapes enrich our daily lives enormously, but are not always observed, or understood as intentional acts of design--in fact they seem effortlessly placed before us. Successful landscape architecture accommodates human and natural functions (as does good building architecture), but the best speak to larger issues: to our minds and spirits. This course addresses the art of understanding the many layers of intent in designed landscapes from the past to present-including those that surround us as we walk through the built environment."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "This interdisciplinary course is based on the premise that space is an active structuring element of human experience. Using theoretical orientations from disciplines like Landscape Architecture, Architecture, Urban Planning, Urban Studies, Geography, History, Sociology, Cultural Anthropology among others, this course investigates how social structures are spatially embedded in contemporary built environments, especially cities. We focus on cities, because we live in a rapidly urbanizing world, and since 2008, more than half the world's population have been living in urban areas. In this class we examine how social systems impact places, especially the modern city, and also how we as human beings are impacted by and impact cities. Cities are examined in historical context, starting from the mid 19th century. We study industrial, colonial and global cities. We then focus on enduring themes pertaining to the experience of cities by different groups in society based on factors like gender, race, ethnicity, and socio-economic status. A variety of western and non-western cases are used to understand cities in a variety of contexts. This course will complement LARCH 60 and other courses related to human settlements and urbanization offered by various departments/programs like Architecture, Art History, Geography, History, and Sociology. This course meets the Bachelor of Arts degree requirement, and the intercultural requirement (US/IL)."
     },
     {
@@ -249,7 +253,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course explores the ecological and aesthetic issues of landscape design intended to restore degraded environments. We will discuss the science and design principles needed to restore ecological processes and biological communities on disturbed, degraded, or altered landscapes, and learn to apply landscape design techniques to those sites. Topics covered include restoring endangered species, native prairie, rare plants, riparian areas, streams, rivers, lakes, wetlands, watersheds, woodlands, and wildlife habitat."
     },
     {
@@ -442,10 +450,19 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Health and Wellness",
+        "Inter-Domain"
+      ],
       "requisites": {
         "previous": [
-          "KINES100"
+          {
+            "oneOf": [
+              "KINES100",
+              "LARCH125"
+            ]
+          }
         ]
       },
       "description": "KINES 405N , a study abroad course, based in a bicycle friendly European city, provides students with an opportunity to experience the programs, policies, infrastructure (including urban design features) and culture associated with bicycling in what is one of the most bike-friendly cities in the world. Students will have an opportunity to be immersed in the city's bicycle culture, observe bicycle infrastructure and multi-modal transportation solutions, learn from programs and policies that support bicycling and learn about the role of bicycling in sustainable, liveable communities. This course will be taught from a multi-disciplinary perspective to address the complex issues associated with bicycling. Students are expected to apply information and content to other countries and communities."

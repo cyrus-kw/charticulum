@@ -75,7 +75,12 @@
       "requisites": {
         "previous": [
           "NAVSC200",
-          "NAVSC401"
+          {
+            "oneOf": [
+              "NAVSC401",
+              "NAVSC411"
+            ]
+          }
         ]
       },
       "description": "The Navy's Resource Management Program (personnel management), counseling techniques, military justice, prevention of substance abuse, and naval correspondence and publications. NAVSC 402 Leadership and Ethics II (3) NAVSCI 402 Leadership and Ethics (3) - A capstone course building upon the foundation of previous Naval Science courses, Leadership and Ethics ensures students have a solid understanding of and an appreciation for ethical standards and decision making. It provides midshipmen with the ethical foundation and basic leadership tools needed to be effective junior officers and provide the high quality leadership our country and Department of Defense will need in the 21st Century. The curriculum is divided into two distinct but overlapping sections; the first focused on ethical theory and major Western ethical philosophy followed by the practical application of leadership as it pertains to a junior officer's duties and responsibilities. Ethical theory is introduced in an academic, discussion-oriented format in order to provide midshipmen with a solid foundation and understanding of various moral, ethical and leadership philosophies. This serves to guide, refine and strengthen a junior officer's character and increase one's awareness of different ethical decision-making tools. The latter portion of the course challenges the midshipmen to apply the first part of the course (i.e. ethical leadership theory) in discussions and practical application exercises of their future duties, responsibilities and expectations of a junior officer in the United States Navy or Marine Corps. Extensive use of case studies throughout the curriculum reinforces the importance of ethical decision-making by naval leaders."

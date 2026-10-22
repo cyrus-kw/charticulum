@@ -6,7 +6,16 @@ export { createCatalog, satisfies } from "./catalog";
 export { compareByCode, courseCodeId, formatCourseCode, parseCourseCode } from "./codes";
 export { compareSlots, isOffered, slotBeside, slotLabel, termCalendar, type CalendarSlot } from "./availability";
 export { validateChart } from "./validate";
-export { evaluateRequirements, type RequirementReport } from "./requirements";
+export { creditRuleName, evaluateRequirements, type RequirementReport } from "./requirements";
+export {
+  closestOption,
+  describeRequired,
+  isRequiredMet,
+  requiredIds,
+  requiredKey,
+  requiredOptions,
+  stillNeededIds,
+} from "./required";
 export { applyExternalEquivalents, externalPlacements } from "./equivalents";
 export { checkChart, type ChartCheck } from "./check";
 export { DEFAULT_MAX_CREDITS_PER_TERM, mergeRequirementSets } from "./scopes";

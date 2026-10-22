@@ -23,7 +23,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "General introduction to world architecture, emphasizing the relationship between concepts, philosophies, values and ideologies in shaping the built environment. ARCH 100 Architecture and Ideas (3) (GA)(BA) This course meets the Bachelor of Arts degree requirements. This course introduces architecture and urbanism for a general audience. It presents key concepts that have shaped the built environment, and provides an ongoing framework for evaluations of what makes a good building or city. The material discussed is taken from prehistory to the present, and encompasses both major works of architecture and consideration of common building types and contexts. Although monuments and philosophies from the Western tradition predominate, it brings in issues and examples of global scope as well. The course is structured around a set of themes. These include: how architecture embodies spiritual beliefs; affects private and community life; evolving definitions of the architect; and how ideas about aesthetics, technology, tradition, and other cultural forces shape buildings and influence diverse, often conflicting notions of what constitutes \"good\" architecture. The topics discussed will demonstrate multiple ways of understanding buildings and cities. Lectures and assigned readings explore significant illustrative structures, design theories, and the cultural and intellectual contexts in which they emerge. Through the lectures and readings students will become familiar with an extensive set of architectural works, as well as a wide range of influential architectural concepts, authors, and texts. ARCH 100 will ultimately help students analyze and judge buildings and the arguments about them critically, and better understand buildings and cities as ideologically charged artifacts that influentially structure human experience."
     },
     {
@@ -120,7 +122,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "US buildings account for almost 40% of national CO2 emissions, 39% of the US total energy consumption, and 60% of US electricity alone. Worldwide, buildings consume nearly 40% of the world's energy, 25% of its wood, and 15% of its water. Building construction and use contribute significantly to global climate change. The way we design our built environment has a significant impact on consumption statistics, which is why we must consider the global environmental and health effects of buildings during the planning, design, and construction process. This course provides a broad exploration of the art and science of sustainable architecture. Architecture produces cultural artifacts with meaning. Yet, inhabiting and using architecture has a distinct and measurable impact on both local and global environments. Scientifically, this course investigates passive and active energy systems for buildings, environmental components of material production and use, and site and building design effects on the water cycle, clean air, local ecosystems, and food production. Students will calculate energy consumption and generation scenarios, produce a life-cycle analysis of a familiar product, evaluate a building based on current green building certification strategies, and evaluate biological impacts over the local and regional scale. Aesthetically, this course investigates vernacular solutions to physical human comfort, and demonstrates the artistic and cultural place of architecture in society. Part of the course will trace historical aesthetic trends to better understand how the existing unsustainable path began. Students will understand the roles of multiple stakeholders/social actors in every building project-from owners, to global \"neighbors\". Together, the course highlights the intersection of building performance and aesthetics. There will be a focus on returning to traditional solutions, as well as capitalizing on new innovations to solve environmental challenges. The underlying theme will be flourishing-both reducing negative environmental impacts as well as celebrating the healthy human condition through artistic expression and aegis of architecture."
     },
     {
@@ -187,7 +193,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "This course presents a transversal history of ideas, arguments, and visions that shape the built environment within their cultural, technological, and philosophical contexts. Buildings, landscapes, and cities embody ideas about society, culture, technology, and how we should live in the world. Some problems and questions are exemplary of their times; others seem eternal as we continue to grapple with them today. Changes in our ideas and ideals are made visible in our built environment, giving us a unique opportunity to trace their trajectories across time to see 'how we got to now.' The course introduces architectural and urban ideas by exploring and connecting key directions, works, and texts from the Western tradition. By casting a critical eye on where we've been, the course opens new perspectives on what might be next. The course covers a period ranging from ancient Greece and Rome to the present, with emphasis on how the foundations of Western architecture collided with modernity, and how we've dealt with the hereafters of modernity since the mid-20th century. Recurring themes will include the ways in which architectural theory has defined role of the architect, architecture's foundational principles, and the relationships between architectural and urban ideas, aesthetics, and the cultural contexts in which these ideas develop. Major topics will include ancient architectural theory, Renaissance classicism, tectonics and Gothic rationalism, the Beaux-Arts, Neoclassicism and typology, organicism and functionalism, the Modern avant-garde's radical new social and aesthetic visions, the International Style, countermodernisms, phenomenology, techno-utopianism, populism, gender, race, and international post-colonialism. This course meets the Bachelor of Arts degree requirements for Arts (GA) courses by: expanding knowledge and comprehension of the role of the arts, building competence in analysis, critical thinking and interpretive reasoning through the exploration of creative works; demonstrating the aesthetic, historic, social, and cultural significance of important works of design; and, critically assessing creative works through evaluative processes of analysis and interpretation."
     },
     {
@@ -260,10 +268,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL15"
+          {
+            "oneOf": [
+              "ENGL15",
+              [
+                "ENGL30H",
+                "ARCH210"
+              ]
+            ]
+          }
         ],
         "minGrades": {
-          "ENGL15": "C"
+          "ENGL15": "C",
+          "ENGL30H": "C",
+          "ARCH210": "C"
         }
       },
       "description": "Architectural theory course with a strong focus on the reading and writing of essays about architecture and related fields. ARCH 311 Architectural and Planning Theories (3) ARCH 311 is a required course in the BARCH curriculum. The central goal of this course is to foster critical-thinking skills, in conjunction with the ability to develop and articulate theoretical positions related to the design, practice, and historical evolution of architecture, both verbally and in writing. ARCH 311 is a writing intensive seminar course fulfilling the University's Writing Across the Curriculum (WAC) requirement. Students will be introduced to various topics pertaining to advanced architectural theory. Students will critically read, then discuss significant works with the instructor. Lectures by the instructor will also be presented, discussed and analyzed. Writing assignments are utilized as instruments for learning the subject matter, methods of inquiry, and the types of writing typical of the discipline of architecture. The course format will also involve lectures by the instructor as well as presentations by the students related to past, present, and speculative architectural theories of importance to the field. In addition, students will complete writing assignments that demonstrate the development of a critical stance or idea, proficiency in critical analysis, and the use of established research techniques, citation of sources, and writing formats."
@@ -276,7 +294,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "This course focuses on the design and analysis of cities from ancient to modern time periods in the U.S. and the world, taking into account the cultural and historical ways human settlements develop, how cities relate to one another, and the wide array of built forms and material culture that make up built urban environments over time ¿ from arcades, squares, and streets to gardens, monuments, and more. If you have a genuine interest in learning more about how cities evolved and the historical and modern issues confronting the many diverse individuals and groups who thought about and influenced the planning of cities, this should be an interesting semester. One broad goal of this course is to enhance your urban literacy by developing the critical analytic skills needed to understand and appreciate cities in all of their complexity. These issues are not only pertinent to urban designers, architects, landscape architects and others who are directly involved in the planning of cities, but they are also vital to the diverse cultures and social groups who inhabit, experience, and also shape urban environments. The design and development of cities is a useful barometer for also understanding the political, economic, ethical, and other forces that guide and shape their development over time. This makes cities challenging to analyze because they are not static forms. They are ever changing and evolving."
     },
     {

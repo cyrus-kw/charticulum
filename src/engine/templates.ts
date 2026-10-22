@@ -14,21 +14,21 @@ import type {
 export type TemplateLibrary = ChartTemplate[];
 
 export function publishTemplate(library: TemplateLibrary, template: ChartTemplate): TemplateLibrary {
-  if (findTemplate(library, { templateId: template.id, version: template.version })) {
-    throw new Error(`${template.id} ${template.version} is already published.`);
+  if (findTemplate(library, { templateId: template.code, version: template.version })) {
+    throw new Error(`${template.code} ${template.version} is already published.`);
   }
   return [...library, template];
 }
 
 export function findTemplate(library: TemplateLibrary, ref: TemplateRef): ChartTemplate | undefined {
-  return library.find((t) => t.id === ref.templateId && t.version === ref.version);
+  return library.find((t) => t.code === ref.templateId && t.version === ref.version);
 }
 
 // The newest version of a template. Versions like "2026-27" sort correctly
 // as plain text.
 export function latestTemplate(library: TemplateLibrary, templateId: string): ChartTemplate | undefined {
   return library
-    .filter((t) => t.id === templateId)
+    .filter((t) => t.code === templateId)
     .sort((a, b) => b.version.localeCompare(a.version))[0];
 }
 
@@ -37,17 +37,17 @@ const copyTerms = (terms: Term[]): Term[] =>
 
 // Start a student's own chart from a template. The chart is pinned to the
 // template's version, so later versions don't change its requirements.
-export function forkTemplate(template: ChartTemplate, name = `${template.name} (my plan)`): Chart {
+export function forkTemplate(template: ChartTemplate, name = `${template.title} (my plan)`): Chart {
   return {
     name,
     terms: copyTerms(template.terms),
     completedExternal: [],
-    pinnedTemplates: [{ templateId: template.id, version: template.version }],
+    pinnedTemplates: [{ templateId: template.code, version: template.version }],
   };
 }
 
-// The rules a chart is checked against: the school's global sets plus the
-// local sets of every template it's pinned to.
+// The rules a chart is checked against: the school's global sets for each
+// degree its pinned templates lead to, plus those templates' own local sets.
 export function resolveRequirements(
   library: TemplateLibrary,
   globalSets: RequirementSet[],
@@ -55,6 +55,7 @@ export function resolveRequirements(
 ): { requirements: Requirements; issues: ChartIssue[] } {
   const issues: ChartIssue[] = [];
   const localSets: RequirementSet[] = [];
+  const degrees = new Set<string>();
   for (const ref of chart.pinnedTemplates ?? []) {
     const template = findTemplate(library, ref);
     if (!template) {
@@ -65,8 +66,10 @@ export function resolveRequirements(
       continue;
     }
     localSets.push(...template.requirementSets);
+    degrees.add(template.degree);
   }
-  return { requirements: mergeRequirementSets([...globalSets, ...localSets]), issues };
+  const degreeSets = globalSets.filter((set) => set.degree !== undefined && degrees.has(set.degree));
+  return { requirements: mergeRequirementSets([...degreeSets, ...localSets]), issues };
 }
 
 // Combine two charts, e.g. a major plus a minor. Terms with the same index

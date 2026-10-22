@@ -86,7 +86,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "SPAN210N"
       ],
@@ -113,7 +117,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PORT200"
+          {
+            "oneOf": [
+              "PORT200",
+              "PORT405"
+            ]
+          }
         ],
         "concurrent": [
           "PORT405"
@@ -142,7 +151,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PORT3"
+          {
+            "oneOf": [
+              "PORT3",
+              "PORT123"
+            ]
+          }
         ]
       },
       "description": "The course uses essays, news articles, short stories, music, films, and other cultural materials to review key grammatical concepts, to expand vocabulary, and to deepen understanding of the language. Through these activities, students will improve their ability to speak and to write about a variety of topics in Portuguese at an advanced level. Time is divided between the four language skills (writing, speaking, reading, listening) with a particular emphasis on conversation and composition. These skills are addressed every week throughout the semester with more complexity and nuance."

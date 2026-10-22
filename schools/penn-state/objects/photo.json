@@ -16,7 +16,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "An introduction to the aesthetics, history, and science of photography including practical and critical approaches to the art of photography. PHOTO 100 Introduction to Photography (3) (GA) PHOTO 100 is an introduction to the aesthetics, history, and science of photography including practical and critical approaches to the art of photography for beginning students. The course will introduce students to photography as an art form and as an important medium in commercial applications, news and journalism, science, and industry. The course will look at photography in a social/historical context and showcase the work of important photographers. The course will examine the impact of technological, economic, and cultural forces on photography and, in turn, the role that it plays in our daily life, culture, and society. The course will also expose students to the various styles and techniques used in making photographs and give them the opportunity to gain experience and practical know-how in creating their own photographs. Through the process of assembling and critically examining their own work and the work of others, they will be encouraged to develop a more informed critical point of view about photography as an art and important form of human expression. Students will be required to have access to a digital camera and the internet."
     },
     {
@@ -27,7 +29,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "This is a non-technical introductory photography course where students photographically and intellectually examine the role of photography in modern culture. PHOTO 101 expands students' depth of appreciation, knowledge, and understanding of the medium by providing them with a creative and intellectual background to realize its broad cultural scope. The course accomplishes this through photographic and written explorations of social, political and ethical issues relevant to photography. Photography wields unprecedented influence as a primary visual medium and students constantly use photography in their personal lives as both a communications tool and as a creative outlet. The ubiquitous smart phones with built in cameras are responsible for much of this explosive popularity with social media providing appealing venues for publicly displaying photography. Over the first decade of the new millennium, social media sites saw the volume of photo uploads increase dramatically, eventually exceeding 10 billion per month. In light of photography being a key medium students use to share and communicate information about themselves to the world at large, the course is designed to help them to think critically and ethically about the photographs they take, share, view and use. The major course teaching topics will address a broad range of contemporary issues relevant to how photography and culture affect one another. Students will become aware of photography as a constantly evolving medium, whose relatively short historical trajectory has culminated in the development of an easily accessible egalitarian art form that bridged the digital divide to interact intimately with personal computing, cell phone communications, the Internet, and social media. In the course, students will take photographs to fulfill photographic assignments, share them with peer audiences, and then engage in critical conversations regarding the aesthetic and communicative meaning and effectiveness of the photos. They will also engage in written assignments where the course presents them with case studies regarding current issues in photography such as, the impact of technological developments in the medium, ethical uses of photography, photography as free speech, and photography as social media. Students will conduct research on the topics and develop informed written position statements, which they will share with their classmates for peer evaluation and feedback. In addition, students will engage with selected readings regarding aspects of photography addressed in the major teaching topics."
     },
     {
@@ -64,7 +68,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "This professionally oriented photography course gives students a foundation in the techniques and other competencies relevant to professional photography. PHOTO 202 Fundamentals of Professional Photography is a professionally oriented problem based learning class where students are introduced to the fundamental technical and creative aspects of client centered photography relevant to careers in photography and photography related or dependent fields. Students will be introduced to the photographic techniques; professional practices; creative sensibilities; and cultural knowledge significant to the work of a professional photographer and fields reliant on or related to professional photography. The course content focuses student attention on mastering the technical fundamentals of professional photography in the context of the photographer/client relationship. The learning problems place emphasis on the communication, collaboration, and cooperation necessary to solve visual photographic problems in a professionally oriented setting. Under these conditions, students must collaborate with their clients to foster creatively productive relationships and meet their photographic needs. This problem requires developing communication and interpersonal relation skills, which require clearly understanding the clients' needs and educating them about the creative possibilities and limitations. Under this teaching and learning model, students must learn to merge their own creative vision with the needs and desires of their professional clients. These skills are directly applicable to the real world problems students will encounter in professionally oriented circumstances after they graduate. In the learning problems student peers, with the instructor's guidance, will play dual roles of clients and photographers with the goal of concentrating the photographers' attentions on communicating with their clients to create effective and creative purpose-driven images. Consequently, the course places a greater emphasis on communication, collaboration, and cooperation than it does on personally and individually motivated expression. Since the advent of digital photography, the medium has undergone an unprecedented period of technological, creative, and cultural flux. Digital photography, computer technology, and social media have had dramatic impact on the medium, which we expect will continue into the future. Consequently, we have used a problem based learning approach to ensure we can continuously address the most relevant and current topics and information. We have also chosen major teaching and learning topics, which will continue to meet the fundamental needs of the students even as technology continues to shift. At the beginning of each semester, students and the instructors will work collaboratively to develop five student learning-problems. These problems or projects will address the major teaching and learning topics under a variety of conditions designed to reinforce the subject matter, encourage flexibly creative thinking, and allow students to pursue the subject with greater critical depth and awareness."
     },
     {
@@ -133,7 +139,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHOTO200"
+          {
+            "oneOf": [
+              "PHOTO200",
+              "PHOTO202"
+            ]
+          }
         ]
       },
       "description": "PHOTO 303 Professional Photography: Studio Technique and Photocomposition is an intermediate-level problem-based learning class where students acquire practical skills, and learn creative techniques relevant to professional photographic image making. The course focuses on building and synthesizing career oriented competencies in the areas of intermediate to advanced digital photography, photocomposition, studio lighting, and image processing related to professional photography. This is a technically oriented course, which emphasizes image making for professional purposes such as for clients or specific audiences. Using this approach, students will practice methods to tailor their own creative vision to the needs of collaborators such as art directors or other professionals. Students will focus on using lighting, cameras & lenses, and creative design techniques as tools to achieve professional quality photographs appropriate for creative artist portfolios used for photography and related careers. Students will develop the skills necessary to recognize and deconstruct lighting, camera, and design techniques in professional photography they may encounter in advertising, magazines, websites and other places where professional photography is used. After they graduate, students will be able to continue using these critical skills to learn and experiment with new techniques, which drive the constantly changing styles in photographic design and thus keep their work looking fresh and current. They will additionally develop and hone visual and verbal skills necessary to critically analyze their own photos and the photos of their peers. The course will culminate with students producing professional portfolios of their work suitable for career purposes."
@@ -147,7 +158,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "In this course, student will explore techniques for the visualization of the physics of fluid flows including seeding with dyes and particles. Students will also gain technical expertise in a range of flow visualization and photographic techniques drawn from the course topics, such as photographing atmospheric clouds. Assignments are student-driven, to individuals and mixed teams of undergrad students from different majors. This course will reveal the techniques of making laboratory and everyday fluid flows visible for both scientific and aesthetic purposes. Students will create images using photographic techniques, and document their work in written reports. Questions such as \"what makes an image scientific?\" and \"what makes an image art?\" will be explored."
     },
     {
@@ -183,7 +198,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHOTO200"
+          {
+            "oneOf": [
+              "PHOTO200",
+              "PHOTO202"
+            ]
+          }
         ]
       },
       "description": "Students will learn the primary technical, aesthetic, and stylistic photographic techniques and knowledge required for the creation, presentation, and marketing of professional fashion photographs. The course will additionally address the relevant business practices associated with the field. Other essential material covered in the course will involve student research culminating in presentation projects relating to the history, aesthetics, and ethics of fashion photography. The course features a problem based learning approach where students and instructors work collaboratively to develop five student learning-problems. These problems or projects will address the major teaching and learning topics under a variety of conditions designed to reinforce the subject matter, encourage flexibly creative thinking, and allow students to pursue the subject with greater critical depth and awareness. Like fashion itself, fashion photography is subject to constant aesthetic, stylistic, and cultural change. To address these problems practitioners need to develop an awareness of style and trends in both the fashion industry and the fashion publishing industry, which are dependent on photography for marketing and advertising. Photography additionally adds historic value as a stylistic and creative archive for these industries. Fashion photographers must have the skills and mindset necessary to constantly learn and experiment with new techniques, which keep their work technically proficient and stylistically innovative and fresh. This problem based learning approach will allow the course to remain dynamic and address, in real-time, changing issues relevant to the industry and our students."
@@ -195,7 +215,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "PHOTO200"
+          {
+            "oneOf": [
+              "PHOTO200",
+              "PHOTO202"
+            ]
+          }
         ]
       },
       "description": "The development of a photographic project that leads to the creation of narrative visual stories. PHOTO 402 Photographic Narratives (4) PHOTO 402 is a project course in photography focused on the construction of visual narratives that feature a student's photographs as the central content. The course gives the student the opportunity to choose a subject and explore it through photographic means over an extended period of time, in this case, an entire semester. Emphasis is placed on the quality of photography and the organization of those photographs into print and digital forms of display. Students will be evaluated on their abilities to understand the medium through classroom instruction. Evaluation will also be determined by a student's imaginative capabilities through visualization and through the completion of a series of finished pieces."
@@ -207,7 +232,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "PHOTO300"
+          {
+            "oneOf": [
+              "PHOTO300",
+              "PHOTO303"
+            ]
+          }
         ]
       },
       "description": "PHOTO 404 : Professional Photography Capstone: Self-Marketing and Professional Presence is a culminating problem based learning course where students analyze, synthesize, and organize their creative, academic, co-curricular, internship and photographic experiences to present to audiences of potential clients and employers in preparation for careers in professional photography or related fields. Trends in effective self-marketing and professional presence change over time with shifts in cultures, styles, and technologies. The Internet has given rise to global niche markets as well, which photographers often accommodate. As a result, there is no clear one-size-fits-all approach to this inconstant problem. We have chosen to apply a problem-based learning approach to this course with the intent that students will work with their instructors and peers to tailor the course learning problems to be relevant to each individual student and still meet the course learning objectives. To achieve that, in collaboration with their instructor and peers, every student will design five individualized capstone projects specifically pertinent to his or her situation. Each project will directly address at least two of the course major teaching topics. Much of the work of the capstone course will focus on reflection, refinement, and synthesis."
@@ -231,7 +261,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PHOTO200"
+          {
+            "oneOf": [
+              "PHOTO200",
+              "PHOTO202"
+            ]
+          }
         ]
       },
       "description": "This advanced level course will explore the practices of photographing products for print and product advertising. PHOTO 406 Product Photography (2) This advanced level course will introduce the practice of photographing products with a focus on advertising. The development of the photographers' problem solving abilities, when lighting varied surfaces, will be considered. The importance of lighting for scale will be examined along with how or when to contribute to the context of a product by introducing appropriate set propping. Aesthetic and intellectual concepts of rendering of products for specific end uses will be explored. Theory will be applied and practiced by the student in a studio environment. As a practical course, lectures and studio demonstrations are major elements of the instruction. The lecture time will modify throughout the course to allow each student the flexibility to practice learned skills. Students will be responsible for scheduling individual studio time with the Integrative Arts Photo Services unit. A digital camera and a laptop computer with a copy of Adobe Photoshop installed are required."
@@ -243,7 +278,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PHOTO200"
+          {
+            "oneOf": [
+              "PHOTO200",
+              "PHOTO202"
+            ]
+          }
         ]
       },
       "description": "This advanced level course investigates contemporary portrait photography and traditional and modern styles of photographic lighting. PHOTO 407 Portrait Photography (2) This advanced level course will investigate what portrait photography is and how portrait lighting evolved from the influences of early painting. Throughout the course there will be an ongoing investigation of the successes of historic, contemporary & influential photographers. Styles of photographic lighting will be explored as well as natural and artificial light sources. Why posing is important to portrait photography will be considered as well as how or when to suggest or direct a subject to acquire a pleasing pose will be examined and practiced. Theory will be applied and practiced by the student in environmental and studio locations. Through the study of character and expression, the student Portrait Photographer will introduce their style to portrait making. The course will enable the student to make intellectual and aesthetic choices when choosing appropriate equipment and technique, command the application of skillful lighting, develop sensitivities of interaction in prelude to the direction of the photo session and understand the incorporation of space or environment and it's relationship to the individual subject. A digital camera and a laptop computer with a copy of Adobe Photoshop installed are required."
@@ -255,7 +295,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PHOTO200"
+          {
+            "oneOf": [
+              "PHOTO200",
+              "PHOTO202"
+            ]
+          }
         ]
       },
       "description": "A practicum course in photographing sports and athletic events."

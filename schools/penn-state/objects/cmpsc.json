@@ -23,7 +23,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "This course introduces the fundamental concepts and processes of solving computational problems through the design, implementation, testing, and evaluation of basic computer programs. The concepts include basic computational constructs such as calculation, iteration, conditions, functions, and data types. These provide the basic building blocks found in virtually all programming languages. The processes include the step-by-step refinement of a problem description into individual components that can be implemented, tested, and integrated into an effective solution. As a general education course, the central theme to the course is computational thinking which includes a wide range of approaches to solving problems and designing systems that draw upon concepts fundamental to computer science. Computational thinking includes thinking about various types and sources of data, and the correctness, efficiency, elegance, and simplicity of various potential solutions. Computational thinking is applying principles of abstraction at multiple levels to focus on important details; it is applying problem decomposition to identify small problems that can be individually solved then combined to form a solution to the original problem. Upon completion of this course, the student will be able to conceptualize and implement computational solutions to problems; to utilize the imperative model of computation to solve problems; to reason about problems at multiple levels of abstraction; and to analyze code for its behavior, efficiency, and correctness. A student may receive credit for only one of the following courses: CMPSC 101 , CMPSC 121 , CMPSC 131 , CMPSC 200 , CMPSC 201"
     },
     {
@@ -45,9 +47,6 @@
       "type": "course",
       "title": "Introduction to Programming Techniques",
       "credits": 3,
-      "internalEquivalents": [
-        "CMPSC131"
-      ],
       "requisites": {
         "concurrent": [
           "MATH140"
@@ -60,9 +59,6 @@
       "type": "course",
       "title": "Intermediate Programming",
       "credits": 3,
-      "internalEquivalents": [
-        "CMPSC132"
-      ],
       "requisites": {
         "previous": [
           "CMPSC121"
@@ -85,7 +81,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "This course introduces the fundamental concepts and processes of solving computational problems through the design, implementation, testing and evaluation of efficient and robust computer programs. The concepts include basic computational constructs found in imperative, object-oriented and functional programming languages such as iteration, conditionals, functions, recursion, and datatypes. These provide the basic building blocks found in virtually all programming languages. The processes include the stepwise refinement of a problem description into individual components that can be implemented, tested, and integrated into an effective solution. A central theme to the course is computational thinking which includes a wide range of approaches to solving problems and designing systems that draw upon concepts fundamental to computer science. Computational thinking includes thinking recursively, considering parallel processing, thinking about types and type checking, judging a program not just for correctness and efficiency but also for its esthetics, and judging a system design for its simplicity and elegance. Computational thinking is applying principles of abstraction at multiple levels to focus on important details; it is applying problem decomposition to identify small problems that can be individually solved then combined to form a solution to the original problem. Computational thinking uses program invariants to describe a system's behavior succinctly and declaratively. Computational thinking considers multiple models of computation when designing an effective solution to a problem."
@@ -97,7 +98,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
         ]
       },
       "description": "This course builds upon the foundations of programming and computation by introducing and studying the data structures and programming language features that support the design and construction of large-scale software systems. It introduces the foundations of object-oriented programming, the design and analysis of efficient algorithms using important data structures, and programming techniques that support reusable and modular program components, including data abstraction, polymorphism, and higher-order functions. Topics from object-oriented programming include classes, objects, inheritance, methods, message passing, static and dynamic type checking. These topics form the core of most object-oriented languages and provide a foundation for learning more advanced language topics. Data structures capture the common organization of many kinds of data arising in the design of efficient solutions to computational problems. Specific data structures covered include stacks, queues, trees, graphs and linked lists. The design and analysis of efficient algorithms using these data structures provide a foundation for the study of computing, where understanding the complexity of a problem and the availability of efficient solutions are essential skills. Finally, topics including higher-order functional programming, data abstraction and parametric polymorphism, as well as principles from object-oriented programming, come together to support the design and implementation of modular, reusable and robust code."
@@ -111,7 +117,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "PHIL150N"
       ],
@@ -139,13 +149,20 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
-      "internalEquivalents": [
-        "CMPSC201"
+      "genEdAreas": [
+        "Quantification"
       ],
       "requisites": {
         "concurrent": [
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH141E",
+              "MATH141B",
+              "MATH141G",
+              "MATH141H"
+            ]
+          }
         ]
       },
       "description": "This course introduces basic programming concepts including algorithm development, simple data types, number representation, control structures, functions, plotting, and basic numerical analysis techniques, all in the context of science and engineering. The course enables students to develop computer programs in a scientific programming language to solve simple engineering and science problems. The basic numerical analysis techniques covered in the course include matrix operations, systems of equations, solving equations, roots, curve fitting, interpolation, numerical integration, and numerical solutions of ordinary differential equations. Students analyze engineering and science problems, develop algorithms to solve those problems, implement their algorithms in an appropriate programming language, and produce informative output in both numerical and graphical form. The general programming concepts learned in the course are commonly found in most programming languages. The problem-solving skills learned in the course can then be utilized in upper-level engineering and science courses. This course includes an exploration of the conceptual and syntactical background needed for the successful completion of practical programming assignments. The course also includes an emphasis on the actual design and implementation of computer programs necessary for solving computational problems. This course satisfies University quantification requirements because it assists students in assessing and interpreting quantitative data and information. In addition, the course assists students with recognizing patterns, establishing relations, exercising conceptual thinking, developing problem-solving skills, and thinking logically and critically. Finally, the course supports students in their efforts to draw accurate and useful conclusions, to make informed decisions based on quantitative analysis, and to use mathematical skills to solve conceptual problems. A student may use only one of the following courses to satisfy degree requirements: CMPSC 101 , 102 , 121 , 131 , 200 , 201 ."
@@ -158,7 +175,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "requisites": {
         "previous": [
           "MATH140"
@@ -177,7 +196,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "Design, use, and programming of spreadsheets and data bases with applications from a range of disciplines."
     },
     {
@@ -199,7 +220,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC204"
+            ]
+          }
         ]
       },
       "description": "This course introduces intermediate concepts of programming including object-oriented programming, dynamic data structures, and data visualization and data modeling. The core of this course covers data analysis, efficient usage of data structure, simulations, data visualization, and data structure collections. The topics include, but are not limited to, the study and the use of lists, stacks, queues, and hash tables. Emphasis will revolve around application to scientific computing libraries in conjunction with data abstraction, object-oriented program design, data visualization, and data manipulation. Hands-on programming assignments and usage of scientific libraries are the integral part of this course."
@@ -212,7 +239,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "internalEquivalents": [
         "GAME250"
       ],
@@ -230,7 +259,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ]
       },
       "description": "The course covers advanced object-oriented principles and their application to web-based, net-centric computing. Major topics include virtual machines, intermediate code generation (Java-specific), graphical user interfaces (GUI) design, event handling, server-side programming with database queries, and security, permissions and file management concepts for client/server systems. Extensive programming assignments provide an understanding of the entire process of client/server development including interface prototyping, program design, implementation of both client and server programs, unit testing, and documentation. This course prepares students to meet immediate demands in solving complex computational problems."
@@ -242,7 +276,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ]
       },
       "description": "This course provides a practical introduction to the design, implementation and analysis of advanced data structures and algorithms, using the C programming language and its related command line tools. Data structures include D-ary, Binomial and Fibonacci heaps; Red-Black, splay and quad-trees, along with algorithms for managing and manipulating them. Also covered is the implementation of graph data structures using adjacency lists and adjacency matrices. Graph algorithms studied include searching and minimum spanning tree construction. Pattern matching algorithms include Brute force, Boyer-Moore, KMP, and Rabin-Karp."
@@ -254,7 +293,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC132"
+          {
+            "oneOf": [
+              "CMPSC132",
+              "CMPSC122"
+            ]
+          }
         ]
       },
       "description": "This course covers the technical aspects and development behind blockchain technology with a primary focus on software implementation including Web3 development and the basics of JavaScript. Students will be taught the fundamentals of web development, blockchain-based application and architectures, smart contracts for running blockchains as decentralized applications, introduction to UI development, and applications of blockchain in industry. Overall, this class teaches the implementation of blockchain technology and web development in the modern world."
@@ -299,7 +343,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC102"
+            ]
+          }
         ]
       },
       "description": "OO programming, visual programming, classes, objects, ADTs, inheritance, recursion, regular expressions, user-defined controls, documentation, testing, verification, productivity tools. CMPSC 302 Intermediate Visual Programming (3) This course forms the second of a two course sequence of courses for non-major students. It is designed to build upon concepts and skills presented in the first course, CMPSC 102 , with the intent of enabling the student to develop larger scale programs and interface with databases and Web servers using a visual programming language. Some of the topics covered in this course will be object-oriented programming, inheritance, string manipulation, regular expressions, creating custom controls, creating controls dynamically, interfacing with databases and using an appropriate platform, such as ASPX.net to create web pages.This course forms the second of a two course sequence of courses for non-major students. It covers advanced features of the target language , building larger scale programs and interfaces to databases and web servers. It builds on the skills covered in CMPSC-102 and introduces creating new controls, dynamically placing controls at run time, arrays and lists of controls, the use of regular expressions, more in-depth treatment of classes and objects, including inheritance and polymorphism, multi-dimensional arrays, lists, unit testing and project deployment."
@@ -323,7 +372,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
         ]
       },
       "description": "Data representation, digital logic, instruction set/control logic, machine/ assembly languages, advanced architectures, memory hierarchy, I/O devices, overall system design."
@@ -347,7 +401,15 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "CMPEN270",
+          {
+            "oneOf": [
+              "CMPEN270",
+              [
+                "CMPEN271",
+                "CMPEN275"
+              ]
+            ]
+          },
           "CMPSC222"
         ]
       },
@@ -384,10 +446,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC122": "C"
+          "CMPSC122": "C",
+          "CMPSC132": "C"
         }
       },
       "description": "In-depth study of various programming paradigm including procedural, object oriented, and generic programming in C++ programming language. The primary goals of this course are (1) to provide students with an in-depth knowledge of different programming paradigms, (2) to provide students with the ability to design and develop software using the paradigm that is appropriate to a given problem, and (3) to provide students with the programming concepts that are applicable to programming in other languages. The secondary goal of this course is to expose students to a diverse range of programming tasks using C++ programming language that is frequently used in the follow up courses as well as in industry."
@@ -407,7 +475,15 @@
       "requisites": {
         "previous": [
           "CMPSC301",
-          "STAT414"
+          {
+            "oneOf": [
+              "STAT414",
+              "STAT418",
+              "MATH414",
+              "MATH418",
+              "EE465"
+            ]
+          }
         ]
       },
       "description": "This course will introduce students from different engineering and sciences disciplines to the data driven problem solving methods using machine learning techniques including clustering, classification, data modeling, and data visualization. The course will focus on processes, techniques, and algorithms for data mining and machine learning. Processes and phases include data preparation, exploration, modeling, and prediction. Specific clustering and classification techniques will be used to emphasize machine learning models using high-level language and their libraries. Students will learn and apply key concepts of modeling, analysis and validation from machine learning and data mining to analyze and develop data-driven predictive models. Upon completion of the course, students will be able to develop machine learning based solutions with applications in different science and engineering domains."
@@ -419,7 +495,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ]
       },
       "description": "Discrete mathematics and foundations for modern computer science. Topics include sets, relations, logic, algorithms, graphs, finite state machines and regular expressions."
@@ -455,8 +536,18 @@
       ],
       "requisites": {
         "previous": [
-          "CMPSC122",
-          "DS220"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          },
+          {
+            "oneOf": [
+              "DS220",
+              "CMPSC221"
+            ]
+          }
         ]
       },
       "description": "Recommended Preparations: DS 310 ; CMPSC 448 This course introduces modern programming models and related software stacks for performing scalable data analytics and discovery tasks over massive and/or high dimensional datasets. The learning objectives of the course are that the students are able to choose appropriate programming models for a big data application, understand the tradeoff of such choice, and be able to leverage state-of-the art cyber infrastructures to develop scalable data analytics or discovery tasks. Building on data models covered in DS 220 , this course will introduce programming models such as MapReduce, data flow supports for modern cluster computing environment, and programming models for large-scale clustering (either a large number of data samples or a large number of dimensions). Using these frameworks and languages, the students will learn to implement data aggregation algorithms, iterative algorithms, and algorithms for generating statistical information from massive and/or high-dimensional data. The realization of these algorithms will enable the students to develop data analytic models for massive datasets."
@@ -468,7 +559,12 @@
       "credits": 1.5,
       "requisites": {
         "concurrent": [
-          "CMPSC465"
+          {
+            "oneOf": [
+              "CMPSC465",
+              "CMPSC462"
+            ]
+          }
         ]
       },
       "description": "Programming with common data structures; recursion; stacks, queues, dictionaries, priority queues; string searching and manipulation; sorting; trees; combinatorics."
@@ -492,7 +588,12 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "CMPSC330"
+            ]
+          }
         ]
       },
       "description": "This course provides hands-on practice with a wide range of computer science topics that are used to solve programming contest questions. These topics include common data structures; strings; sorting; combinatorics; number theory; graph traversal and other algorithms; dynamic programming. In the course, students will solve a range of programming contest questions, both using an online judge in practice sessions and during actual programming contests. In addition to solving programming problems, the course time will also be used to explore topics mentioned above and the relationship to specific problems, solution techniques, and the analysis of proposed solutions to specific problems. This course is envisioned to be a hands-on lab, with instructor supported, self-guided study. The course topics will be chosen from topics that commonly appear in current programming contests, including but not limited to: · Contest Programming · Common Data Structures · Strings · Sorting · Combinatorics · Number Theory · Graph Traversal and Other Algorithms · Dynamic Programming"
@@ -504,7 +605,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "SWENG311"
+            ]
+          }
         ]
       },
       "description": "This course introduces JavaScript and AJAX for creating Rich Internet Applications, and XML for client-server communication and Web Services. CMPSC 421 Net-centric Computing (3) This course will build on the client-server computing concepts and techniques that students learned about in prerequisite courses. The goal of the course is to introduce students to the most significant and fundamental of those technologies that are used in the computing paradigm known by a number of terms including \"Net-centric\", \"Web 2\", and \"cloud\" computing. On the client: We will use Dynamic XHTML, Cascading Style Sheets, JavaScript and AJAX to develop the client side of Rich Internet (or Web) Applications. For client-server-communication: We will learn how to create and validate XML documents and use these as the primary language for transmission of data from the server to the client. We will also consider how JavaScript Object Notation (JSON) can sometimes be used as a viable alternative to XML for server to client data transmission. On the server: We will learn about a variety of server-side technologies for consuming, storing, transforming, and generating content. We will use the three main types of XML parsers to consume, transform, and generate XML; we will use XSL and XPath to style and transform XML; we will use XML binding tools to convert XML to and from classes (in some high-level language); we will use Data Access Objects and object-relational mapping tools for data persistence. We will learn how servers use Web services and RSS feeds to provide XML structured content, and we will consume existing Web services and RSS feeds and produce simple Web services."
@@ -543,8 +649,19 @@
       "requisites": {
         "previous": [
           "CMPSC221",
-          "CMPSC465",
-          "STAT318"
+          {
+            "oneOf": [
+              "CMPSC465",
+              "CMPSC463"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT414",
+              "STAT418"
+            ]
+          }
         ]
       },
       "description": "This course teaches fundamental concepts, algorithms and problem-solving techniques for exploratory data mining and their applications, with an emphasis on the algorithmic aspects. The course covers extensively the design of algorithms and implementations of software solutions to various exploratory data mining tasks. In addition, we discuss in depth various requirements and technical issues arising in the design and implementations of robust, efficient, effective and scalable software solutions. Topics covered include types and quality of data, similarity measures of data, algorithms and approaches for data processing/cleaning/analysis, data exploration, cluster analysis, association analysis, and anomaly detection. Additionally, basic concepts and techniques for predictive data mining, i.e., regression and classification, are reviewed. Students will exercise the obtained knowledge to address important technical issues in realistic exploratory data mining tasks and applications. Because the knowledge of various data structures (e.g., index structures, hash trees, graphs, lattices, and pointers) and algorithmic concepts (e.g., recursions, traversal, and pruning) are essential background to many data mining algorithms taught in the course. Students who are interested in the course are required to take the prerequisite courses in order to equip themselves with appropriate background knowledge and programming skillsets to succeed in the course."
@@ -569,7 +686,12 @@
       "requisites": {
         "previous": [
           "CMPSC312",
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "CMPSC330"
+            ]
+          }
         ]
       },
       "description": "This course introduces elements and architecture of computer and data communication networks, demonstrates the fundamental principles of computer networking, and provides practical experience in the network application development. This course will provide an overview of computing network architectures and programming that are essential knowledge for many professionals working in computer science and information systems fields. Students will gain hands on experience in a range of network programming assignments."
@@ -581,7 +703,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC335"
+          {
+            "oneOf": [
+              "CMPSC335",
+              "CMPEN461"
+            ]
+          }
         ]
       },
       "description": "Today's security event monitoring and correlation tools are being taxed more than ever before. The constant deluge of data being output by the many devices in our security infrastructures and input into log managers, SIEM (Security information and event management) and other security management interfaces creates quite a load on our analytics systems. In the noise of all this security and event-related data, it is difficult to sort through and obtain real, actionable events that need attention. The market is in need of a new generation of security tools - ones that process much larger datasets, are capable of deep-dive analytics and rely more on intelligence than attack signatures. The proposed course will cover the fundamental data science techniques that are applied to enhance security intelligence. This course will complement the existing computer science and software engineering curriculum. It also prepares students for both a career as a data scientist and as a cybersecurity analyst."
@@ -638,7 +765,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "CMPSC330"
+            ]
+          }
         ]
       },
       "description": "Secure software design principles/practices, common threats, applied cryptography, trust management, input validation, OS-/programming language- specific issues, software validation. CMPSC 444 Secure Programming (3) This course presents an overview of the principles and practices of secure software design. The course begins with a presentation of overarching principles of secure software development that enable the design, implementation, and testing of secure systems that can withstand attacks. These principles and strategies for realizing them will be illustrated through an analysis of common security issues and pitfalls in the software development process. The course will cover a variety of programming languages including C/C++, Java, and scripting languages; different classes of systems including standalone applications, client/server systems, and peer-to-peer applications; and development issues specific to different operating systems. Students will develop and analyze programs that demonstrate security principles, strategies, coding techniques, and the use of tools that can help make code more resistant to attacks."
@@ -652,7 +784,12 @@
         "previous": [
           "STAT318",
           "MATH220",
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ]
       },
       "description": "Applied machine learning techniques are used in many different areas, such as the classification, visualization and analysis of data, clustering, and understanding of natural languages for human-computer interactions. These applications are crossing the boundaries of computer science and data science. Big technology firms have all started offering their own cloud machine learning platforms. This course will start with an overview of supervised and unsupervised learning, and introduce the associated libraries. It covers basic machine learning concepts, tasks, and workflow using an example classification problem based on K-nearest neighbors, Naïve Bayes, Support Vector Machine (SVM), K-means, and implementation using Python libraries. Natural language processing (NLP) techniques including n-gram models, grammar, parse trees, and part-of-speech tagging will be discussed. The issue of dimensionality of data will be discussed, and the task of clustering data, as well as supervised approaches for creating predictive models will be described, and learners will be able to apply Python predictive modeling methods while understanding process issues related to data generalizability (e.g. cross validation, overfitting). The course will also look at more advanced techniques, such as neural network, feed-forward network, back-propagation and deep learning with cloud AI services. Technological differences between using cloud services at a higher level of abstraction and coding locally will be discussed. Students will be able to identify the difference between a supervised (classification) and unsupervised (clustering) technique, identify which technique they need to apply for a particular dataset, manage and understand data, and engineer features to meet that need. Students will work in teams to develop web applications that use industry standard cloud services provided by one of the AI cloud service providers."
@@ -665,8 +802,21 @@
       "requisites": {
         "previous": [
           "MATH220",
-          "DS220",
-          "STAT318"
+          {
+            "oneOf": [
+              "DS220",
+              "CMPSC430",
+              "CMPSC431W"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT414",
+              "MATH318",
+              "MATH414"
+            ]
+          }
         ]
       },
       "description": "Data Mining is the process of discovering patterns, correlations, and trends, in large data sets. This course is designed to provide an overview of the data mining process, with an emphasis on data management, pattern discovery, and cluster analysis. Data management includes data selection, cleaning, clustering, visualization, and distributed data storage and processing. The course covers pattern mining concepts, including pattern discovery concepts, efficient pattern mining algorithms, and graph pattern mining. The classification problem is illustrated through decision tree algorithms and ensemble methods. Basic concepts of cluster analysis are introduced, followed by typical clustering algorithms, including partitioning methods, hierarchical clustering, and graph clustering. Applications of cluster analysis are also covered. The course concludes with a study of data mining in the context of graphs used to model a wide range of networks from social networks to biological networks to web pages on the Internet."
@@ -690,8 +840,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT415",
-          "CMPSC122"
+          {
+            "oneOf": [
+              "STAT415",
+              "STAT319"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          }
         ]
       },
       "description": "Evaluation and use of machine learning models; algorithmic elements of artificial intelligence."
@@ -703,7 +863,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT318",
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT414",
+              "STAT418",
+              "EE465"
+            ]
+          },
           "MATH220",
           "CMPSC221"
         ]
@@ -717,9 +884,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201"
+            ]
+          },
           "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Problems of synchronization, concurrent execution, and their solution techniques. Design and implementation of concurrent software in a distributed system."
@@ -734,8 +912,21 @@
       ],
       "requisites": {
         "previous": [
-          "CMPSC121",
-          "MATH230"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC101"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "ALGORITHMS FOR INTERPOLATION, APPROXIMATION, INTEGRATION, NONLINEAR EQUATIONS, LINEAR SYSTEMS, FAST FOURIER TRANSFORM, AND DIFFERENTIAL EQUATIONS EMPHASIZING COMPUTATIONAL PROPERTIES AND IMPLEMENTATION. STUDENTS MAY TAKE ONLY ONE COURSE FOR CREDIT FROM MATH 451 AND 455."
@@ -751,7 +942,12 @@
       "requisites": {
         "previous": [
           "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Floating point computation, numerical rootfinding, interpolation, numerical quadrature, direct methods for linear systems. Students may take only one course for credit from MATH 451 and MATH 455 ."
@@ -793,7 +989,12 @@
         "previous": [
           "CMPSC311",
           "MATH220",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Fundamentals of computer graphics: input/output devices, transformation, projection, clipping, hidden line/surface elimination."
@@ -835,13 +1036,19 @@
       "requisites": {
         "previous": [
           "MATH141",
-          "CMPSC122",
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          },
           "CMPSC360",
           "CMPSC330"
         ],
         "minGrades": {
           "MATH141": "C",
           "CMPSC122": "C",
+          "CMPSC132": "C",
           "CMPSC360": "C",
           "CMPSC330": "C"
         }
@@ -858,7 +1065,14 @@
           "CMPSC462"
         ],
         "concurrent": [
-          "STAT318"
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT414",
+              "MATH318",
+              "MATH414"
+            ]
+          }
         ]
       },
       "description": "Recurrences, algorithms design techniques, searching, sorting, selection, graph algorithms, NP-completeness, approximation algorithms, local optimization algorithms. CMPSC 463 Design and Analysis of Algorithms (3) The primary goals of this course are (1) to provide the students with fundamental techniques for designing and analyzing algorithms, and (2) to introduce some techniques for dealing with inherently intractable problems.This is a required course in the BS COMP program."
@@ -882,8 +1096,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122",
-          "CMPSC360"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC360",
+              "MATH311W"
+            ]
+          }
         ]
       },
       "description": "Fundamental concepts of computer science: data structures, analysis of algorithms, recursion, trees, sets, graphs, sorting."
@@ -896,7 +1120,16 @@
       "requisites": {
         "previous": [
           "MATH220",
-          "STAT318"
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT414",
+              "STAT418",
+              "MATH318",
+              "MATH414",
+              "MATH418"
+            ]
+          }
         ]
       },
       "description": "In this course, we will focus on the benefits brought by quantum mechanics to information processing and computation tasks. The content of this course is theoretical, i.e., we will give an overview of various topics in quantum computation from a theoretical computer science perspective. We will first introduce the fundamental framework for quantum information processing and computation. Then, we will introduce topics in quantum algorithms, quantum information theory, and quantum cryptography."
@@ -911,7 +1144,12 @@
       ],
       "requisites": {
         "previous": [
-          "CMPSC360"
+          {
+            "oneOf": [
+              "CMPSC360",
+              "MATH311W"
+            ]
+          }
         ]
       },
       "description": "Prime sieves, factoring, computer numeration systems, congruences, multiplicative functions, primitive roots, cryptography, quadratic residues. Students who have passed MATH 465 may not schedule this course."
@@ -1010,8 +1248,18 @@
       "requisites": {
         "previous": [
           "CMPSC221",
-          "CMPSC311",
-          "CMPSC465"
+          {
+            "oneOf": [
+              "CMPSC311",
+              "CMPSC312"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC465",
+              "CMPSC462"
+            ]
+          }
         ]
       },
       "description": "Development of software for devices including smart phones, tablets, handheld units, and other general purpose computing platforms."
@@ -1023,7 +1271,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC311"
+          {
+            "oneOf": [
+              "CMPSC311",
+              "CMPSC472",
+              "CMPSC474",
+              "CMPEN441"
+            ]
+          }
         ]
       },
       "description": "Debugging is a practical and essential skill for any computer scientist to be able to properly diagnosis and fix problems (i.e., bugs) in systems and/or code. The goal of this course is for students to develop debugging skills through extensive practice. The course will cover general methodologies for debugging such as instrumentation, consistency checking, and divide & conquer. The course will also cover how to effectively utilize a variety of debugging tools such as debuggers, memory error detectors, race condition detectors, etc. Lastly, the course will explain specific types of bugs such as race conditions, deadlocks, and corrupted memory, which is necessary for finding these types of bugs. This is a project-based course that will involve extensive reading and writing of C code and use of Linux, so a solid background knowledge in C and Linux is expected."
@@ -1115,8 +1370,23 @@
       "requisites": {
         "previous": [
           "MATH141",
-          "MATH220",
-          "STAT318"
+          {
+            "oneOf": [
+              "MATH220",
+              "MATH430",
+              "MATH436"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT319",
+              "STAT414",
+              "STAT415",
+              "STAT418",
+              "EE465"
+            ]
+          }
         ]
       },
       "description": "Deep learning is a branch of machine learning which learns rich data representations simultaneously in the process of neural network optimization. Deep learning has greatly advanced state-of-the-art performance in computer vision, which covers a wide range of applications in our life, e.g., search, map, self-driving cars, etc. This course provides an introduction to deep learning with a focus on computer vision algorithms. This course first covers the details of typical deep neural network architectures for computer vision, such as fully-connected networks, convolutional neural networks, recurrent neural networks, transformers, generative models, deep reinforcement learning. The optimization algorithms, the data-efficient learning techniques and the practical strategies for training and fine-tuning deep neural networks in computer vision tasks will be introduced. It will also discuss deep learning applications in traditional computer vision problems and emerging topics, e.g. image classification, object detection, image segmentation, video classification, action detection, etc., and introduce the core concepts behind those deep learning based computer vision algorithms. In this course, students are expected to implement and train the deep neural networks, and gain a detailed understanding of the cutting-edge algorithms in various computer vision problems."

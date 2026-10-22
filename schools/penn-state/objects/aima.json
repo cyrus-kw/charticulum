@@ -24,7 +24,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "internalEquivalents": [
         "COMM197G"
       ],
@@ -93,7 +95,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC448",
+          {
+            "oneOf": [
+              "CMPSC448",
+              "DS310",
+              "CMPSC445"
+            ]
+          },
           "A-I370",
           "A-I375"
         ],

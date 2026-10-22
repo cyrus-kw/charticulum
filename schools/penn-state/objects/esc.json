@@ -122,7 +122,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "HHUM220N"
       ],
@@ -174,7 +178,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM110",
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM110H"
+            ]
+          },
           "PHYS212"
         ]
       },
@@ -225,7 +234,13 @@
       "requisites": {
         "previous": [
           "EE210",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "MATH251H"
+            ]
+          }
         ]
       },
       "description": "Irrotational and solenoidal fields, potentials, vector and scalar field and wave equations, harmonic and wave functions in various coordinates, radiation. E SC 400H Electromagnetic Fields (3) E SC 400H is a required senior-level course for students pursuing a bachelor's of Engineering Science. At the conclusion of this course, students will be able to: 1. Apply the basic principles of electrostatics, such as Coulomb's Law, electric field intensity, electric flux density, Gauss's Law, the concepts of divergence and gradient, and potential functions to solve basic and applied problems. 2. To compute resistance and capacitance for a variety of geometric configurations. 3. They will apply the basic principles of steady magnetic fields, such as the Biot-Savart Law, Amper6s Circuital Law, magnetic flux and flux density, Stoke's Theorem and the concept of the curl and Maxwell's equations for static electric and steady magnetic fields to solve basic and applied problems. 4. Compute self and mutual inductance for a variety of geometric configurations. 5. Understand the necessary modifications of Maxwell's equations for time varying fields including Faraday's Law and the concept of displacement current and apply these to solve basic and applied problems. 6. Understand the solutions of the reduced wave equation, for time-harmonic excitations, for plane wave propagation in both perfect and lossy dielectrics, the concepts of skip depth and wave polarization, plane wave reflection at planar boundaries, Snell's Law, Brewster's angle, and the concept of standing wave ratio and apply these to solve basic and applied problems. 7. Understand the basic principles of waves on transmission lines and apply these to solve basic and applied problems.Topics include: Vector Analysis; Coulomb's Law and Electric Field Intensity; Electric Flux Density, Gauss's Law, and Divergence; Energy and Potential; Conductors, Dielectrics, and Capacitance; Poisson's and Laplace's Equations; the Steady Magnetic Field; Magnetic Forces, Materials, and Inductance; time-Varying Fields and Maxwell's Equations; the Uniform Plane Wave; Waves at Boundaries and in Dispersive Media. A typical course assessment includes homework assignments, mid-semester examinations and a final examination. The course is offered, in a lecture format, each spring at the University Park Campus. A typical enrollment is 25-30 students. This course is not a prerequisite for other courses."
@@ -237,7 +252,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "Unified application of coordinate transformations; Laplace's, heat, and wave equations to boundary value problems and problems of continua in engineering."
@@ -249,7 +269,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "MATH220"
+          {
+            "oneOf": [
+              "MATH220",
+              "MATH220H"
+            ]
+          }
         ]
       },
       "description": "Numerical solution of differential equations including fundamentals: roots of single nonlinear and simultaneous (Matrix) equations, least squares fitting and staistical goodness, interpolation, finite differences, differentiation, integration, eigensolutions. E SC 407H Computer Methods in Engineering Science, Honors (3) The overall objective of this course is the creation of mathematical continuum models in the form of differential equations and the application of numerical methods to solve them. To reach this goral, fundamental methods dealing with numerical approximation, specifically starting with Taylor's series, are covered: differentiation, integration, and root search of single nonlinear equations. Mathematical models are transformed into discrete models using the finite difference method, hence the solution of simultaneous algebraic equations in matrix and iterative forms is also covered. In addition, eigenvalue problems are also covered in order to characterize models, both continuous and discrete. The concept of vector-variable and vector-valued functions are used to form algorithms, cast them into computer code, in a language of student choice, usually Mathematica or MATLAB because graphical output is required in doing assignments. This course relates to programs of study in most engineering disciplines based upon the physics of solids and fluids. Evaluation methods include assessment of written reports, at least one midterm examination and either a final examination or a final report."
@@ -296,10 +321,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210H",
+              "EMCH210"
+            ]
+          }
         ],
         "concurrent": [
-          "ESC312"
+          {
+            "oneOf": [
+              "ESC312",
+              "PHYS237"
+            ]
+          }
         ]
       },
       "description": "Structure and imperfections in engineered materials; their influence on properties, behavior, and processing. Applications of metals, ceramics, polymers, and composites. E SC 414M Elements of Material Engineering (3) This course is a junior-level, writing-intensive engineering science course designed to introduce students to the fundamentals of materials science and engineering. In the early part of this honors course, structure property relationships in materials are explored. The student will examine how atomic structure and bonding influence engineering properties such as strength and electrical properties Next, solidification, strengthening mechanisms, and phase diagrams for some common engineering materials are discussed to further examine structure property relationships and to provide the basis for the study of more complex materials The second half of the course introduces properties and attributes of each of the major classes of materials (metals, ceramics, polymers, and composites) to acquaint the student with the wide array of material properties and choices available for design. Next, electrical, optical, and thermal properties of the various classes of materials are introduced Finally, the course closes with an introduction to the topics of materials selection and design Throughout the course, integrated writing assignments allow the student to explore the properties of a specific material or materials process in detail and gain insight the design process."
@@ -339,7 +375,14 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH141E",
+              "MATH141B",
+              "MATH141H"
+            ]
+          }
         ]
       },
       "description": "Hands-on lab experience and exposure to campus-wide interdisciplinary experimental research. Experimental probability and statistics. Appplications across all Engineering Science disciplines. E SC 433H Engineering Science Research Laboratory Experience (1) This course provides an introduction to experimental research, including hands-on laboratory experience. In addition, students take part in campus-wide laboratory tours that illustrate the variety of experimental practice, as well as the strongly interdisciplinary nature of contemporary experimental research in Engineer Science. Lab tours involve laboratories in a variety of disciplines, both within the Department of Engineering Science and Mechanics, and in other departments with related interdisciplinary activities. The classroom content focuses on the fundamentals of experimental probability and statistics, including: the experimental process; probability distributions and error; statistical estimators; least squares; and confidence limits and hypothesis testing. Applications of the statistical analysis of experimental data are drawn from across all Engineering Science disciplines and illustrated in the labs and lab tours. There will be three hands-on laboratories. Each lab will include additional introductory lecture material, specific handouts, and readings A report will be required for each lab that represents a significant writing component to the class, and includes both descriptive and analytical components Assessment for the course is based on the laboratory reports, which include analytical and descriptive components, as well as exercises involving the material discussed in lectures."
@@ -376,7 +419,12 @@
       ],
       "requisites": {
         "previous": [
-          "MATSE201"
+          {
+            "oneOf": [
+              "MATSE201",
+              "ESC414M"
+            ]
+          }
         ]
       },
       "description": "The materials science of applying thin film coatings, etching, and bulk crystal growth; includes materials transport, accumulation, epitaxy, and defects."
@@ -395,7 +443,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC201",
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          },
           "MATH220"
         ]
       },
@@ -409,8 +463,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH250",
-          "PHYS212"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "MATH251H"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS212H"
+            ]
+          }
         ]
       },
       "description": "This course will provide students with the opportunity to learn the design process in the context of an industry- or government-sponsored or service-based design project that demands delivering a working solution. The design projects in this course will be structured for students from two or more different engineering majors, as defined by the project sponsors in collaboration with the instructor and departmental project coordinators. While the projects may be supplied/supported/initiated by industry, topics may be related to the cutting-edge multidisciplinary research areas represented by the strengths and diversity of the Engineering Science faculty, such as nanotechnology, biomaterials, and other areas requiring cross-discipline collaboration. The project sponsor will provide the technical expertise for the project, a clear definition of all project deliverables, and the financial support to cover needed materials and supplies and travel costs. Project sponsors will be invited to attend two key events each semester: Project Kickoff in week 1 of the semester to define the project and answer questions from the students as well as the Design Showcase in week 15 of the semester, when teams present their project results to sponsors, faculty, other students, and the public. The College of Engineering will provide the facilities where the design teams will work together to develop the design concept and prototype solutions. Faculty members in the Department of Engineering Science and Mechanics will administer the course, including reading, evaluating, and grading the final project report, provide lectures on topics including on project management, design, product manufacturing, intellectual property, engineering ethics, societal/global/contemporary/professional issues, and related technical topics, and organize invited technical lectures related to industry projects. In accordance with standard procedures, specific multidisciplinary projects will be selected for this course to provide challenging design experiences for all students. The selection of these projects will be done by the course instructor prior to the start of each semester of the course offering. Multidisciplinary teams are be formed based on specific technical elements of the project and project scope."
@@ -423,8 +488,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH250",
-          "PHYS212"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "MATH251H"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS212H"
+            ]
+          }
         ]
       },
       "description": "This course will provide students with the opportunity to learn the design process in the context of an industry- or government-sponsored or service-based design project that demands delivering a working solution. The design projects in this course will be structured for students from two or more different engineering majors, as defined by the project sponsors in collaboration with the instructor and departmental project coordinators. While the projects may be supplied/supported/initiated by industry, topics may be related to the cutting-edge multidisciplinary research areas represented by the strengths and diversity of the Engineering Science faculty, such as nanotechnology, biomaterials, and other areas requiring cross-discipline collaboration. The project sponsor will provide the technical expertise for the project, a clear definition of all project deliverables, and the financial support to cover needed materials and supplies and travel costs. Project sponsors will be invited to attend two key events each semester: Project Kickoff in week 1 of the semester to define the project and answer questions from the students as well as the Design Showcase in week 15 of the semester, when teams present their project results to sponsors, faculty, other students, and the public. The College of Engineering will provide the facilities where the design teams will work together to develop the design concept and prototype solutions. Faculty members in the Department of Engineering Science and Mechanics will administer the course, including reading, evaluating, and grading the final project report, provide lectures on topics including on project management, design, product manufacturing, intellectual property, engineering ethics, societal/global/contemporary/professional issues, and related technical topics, and organize invited technical lectures related to industry projects. In accordance with standard procedures, specific multidisciplinary projects will be selected for this course to provide challenging design experiences for all students. The selection of these projects will be done by the course instructor prior to the start of each semester of the course offering. Multidisciplinary teams are be formed based on specific technical elements of the project and project scope."
@@ -439,7 +515,13 @@
       ],
       "requisites": {
         "previous": [
-          "MATSE259"
+          {
+            "oneOf": [
+              "MATSE259",
+              "EMCH315",
+              "ESC414M"
+            ]
+          }
         ]
       },
       "description": "Fundamentals of processing particulate materials including production, characterization, handling, compaction, and sintering of metal, carbide, intermetallic, and composite powders."
@@ -451,7 +533,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH315",
+              "ESC312"
+            ]
+          }
         ]
       },
       "description": "Interdisciplinary fundamentals of nano/microelectromechanical systems (NEMS/ MEMS), including design, fabrication and machining of miniature systems. Draws from mechanics, science and materials. E SC 481 Elements of Nano/Micro-electromechanical Systems Processing and Design (3) The objective of the course is to introduce students to the theory and technology of nanofabrication. This objective is realized via the study of materials and devices for NEMS as well as nano-system's design, manufacture and packaging,. Emphasis on the interrelationships between material properties and processing, device/system structure, and the mechanical, electrical, optical, or (bio)chemical behavior of devices/systems. As taught, the course is multidisciplinary and requires adequate background in materials science, mechanics, and device physics. The course comprises lecture presentations and laboratory demonstrations. Students attending this course come from different engineering majors, physics, and materials science. The students are assessed using a combination of homework assignments, class presentations, group projects, and written quizzes and exams."
@@ -478,7 +566,15 @@
       ],
       "requisites": {
         "previous": [
-          "PHYS214"
+          {
+            "oneOf": [
+              "PHYS214",
+              [
+                "ESC312",
+                "MATH230"
+              ]
+            ]
+          }
         ]
       },
       "description": "Introduction to computer simulation techniques and their applications at the physical/life sciences interface. E SC (MATSE) 483 Simulation and Design of Nanostructures (3) Students will learn the simulation techniques and the design rules of nanostructures. Basic concepts of computer modeling will be introduced using quantum and classical approaches. Fundamental physical phenomena encountered in the molecular fields of computational physics, chemistry, and biology will be studied. Applications are drawn from a broad range of fields including soft and condensed matter to build an understanding of nanostructures.The course will assume knowledge and skill developed in the prerequisite courses of PHYS 214 and MATH 230 . Students are expected to combine knowledge from other courses with information presented here to develop sophisticated interpretations and understanding of physical and chemical principles of nanostructures and their design rules.Evaluation methods to be used in this course will be two in-class examinations and one final period examination. The course contains a computer code generation and implementation component. Students will use commercial or educational computer codes (e.g. Matlab, Mathematica, AMBER, CHARMM, VASP, etc.) which are available at our high performance computing clusters (http://gears.aset.psu.edu/hpc/)/ Students will use the computing clusters to perform simulations which are accessible from any classroom or laboratory at Penn State.The principal objectives of the course is to learn the fundamental physics of nanostructures and to design them with computer simulations. This approach starts from classical molecular dynamics that apply on the large scale biological and synthetic assemblies and encompasses quantum mechanics for the molecular and atomic sizes. This course will give a broad scientific picture of simulation techniques in the area of nano-science and technology."

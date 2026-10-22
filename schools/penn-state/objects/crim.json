@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "CRIMJ12",
         "SOC12"
@@ -25,7 +27,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "CRIMJ12H",
         "SOC12H"
@@ -41,7 +45,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "SOC12S"
       ],
@@ -55,7 +61,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "CRIMJ100"
       ],
@@ -86,7 +94,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "SOC201"
       ],
@@ -100,7 +110,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "CRIMJ204",
         "PSYCH204"
@@ -116,7 +128,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "IT225N"
       ],
@@ -194,7 +210,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
     },
     {
@@ -264,7 +282,12 @@
       ],
       "requisites": {
         "previous": [
-          "SOC12",
+          {
+            "oneOf": [
+              "SOC12",
+              "CRIM12"
+            ]
+          },
           "CRIMJ250W"
         ]
       },
@@ -427,7 +450,12 @@
       ],
       "requisites": {
         "previous": [
-          "SOC12"
+          {
+            "oneOf": [
+              "SOC12",
+              "CRIM12"
+            ]
+          }
         ]
       },
       "description": "In this course you will learn about how crime levels vary across different types of neighborhoods and about the role of different socioeconomic, demographic, spatial, and informal social control aspects of neighborhoods in promoting or buffering crime. We will address the patterns, concepts, theories, methods, and policies related to communities and crime. We will critically assess theory and research on the effects of neighborhood structure and social organization on crime, focusing in particular on the classic and contemporary thinking on poverty, social disorganization, disorder, collective efficacy, institutional trust, cultural heterogeneity, segregation, immigration and how they affect criminal behavior and victimization. Through readings, class discussions, and activities, writing projects, and presentations, you will be given the opportunity to reflect on what you are learning and to apply the theoretical concepts to real-life examples and to new contexts in and out of the class."
@@ -442,7 +470,12 @@
       ],
       "requisites": {
         "previous": [
-          "SOC207"
+          {
+            "oneOf": [
+              "SOC207",
+              "CRIM250W"
+            ]
+          }
         ]
       },
       "description": "Explains how communities solve local problems by partnering with researchers, practitioners, and policy makers. Demonstrates how such partnerships help communities tackle complex problems by clarifying their causes, identifying solutions, leveraging resources, and mobilizing stakeholders to act. Examines community-engaged research projects - such as collaborative efforts to revitalize neighborhoods, reduce crime & violence, empower youth, house the homeless, improve health, and promote sustainability - that address local manifestations of broader societal problems. Students will collaborate with community partners to design, implement, and evaluate problem-solving projects. Provides students with skills and knowledge needed to collaborate productively in community-engaged problem-solving initiatives."
@@ -458,7 +491,13 @@
       ],
       "requisites": {
         "previous": [
-          "CRIM12"
+          {
+            "oneOf": [
+              "CRIM12",
+              "CRIMJ12",
+              "CRIMJ100"
+            ]
+          }
         ]
       },
       "description": "Law and society studies the social origins of law and legal systems; occupational careers, and decision-making of legal officials. SOC (CRIMJ/CRIM) 467 Law and Society (3) (BA) This course meets the Bachelor of Arts degree requirements.Law and society teaches students' knowledge of key concepts and core ideas about the role of law in society. The course will cover the basics of key legal philosophies, major social science theories of law and society, research in law and society, the structure of the legal profession, and vital contemporary issues involving the role of law in society. CRIM/ CRIMJ 113 and CRIM/ CRIMJ 250W are prerequisites. The evaluations methods will include written assignments on course readings, and essay-style exams. Law and Society may be counted toward the credits required for the B.A. and B.S. in Crime, Law and Justice. It would fulfill one of the 400-level requirements in the 'Law' component of the major. The course may also be counted toward credits required for the B.A. and B.S. in Sociology for students with the Deviance and Criminology specialization."

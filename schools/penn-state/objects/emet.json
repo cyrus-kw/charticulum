@@ -30,7 +30,12 @@
           "MET111"
         ],
         "concurrent": [
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH83"
+            ]
+          }
         ]
       },
       "description": "The purpose of this course is to give students the ability to calculate engineering stresses, strains, and deflections in members subjected to different types of loading using the applied forces and reactions obtained from static equilibrium calculations. Various types of components are analyzed such as rods subjected to axial loading, shafts subjected to torsion, and beams of various cross-sectional geometries subjected to bending moments. Additionally, members under combined loadings are analyzed to determine principal stresses and maximum shear stresses using stress transformation equations and Mohr's circle. For all applications, free body diagrams will be used in order to relate external and internal reactions."
@@ -43,7 +48,12 @@
       "requisites": {
         "previous": [
           "MET111",
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH83"
+            ]
+          }
         ]
       },
       "description": "This course is designed to provide engineering technology students with knowledge in solving problems using fundamental laws and equations of motion that are applied to particles and rigid bodies. Dynamics is typically broken into two categories: (1) kinematics (the study of motion without considering the causes of the motion; and (2) kinetics (the study of motion due to applied external forces). Topics addressed in dynamics for technology include: kinematics of particles, application of Newton's laws to particles and rigid bodies, energy and momentum of particles, kinematics of rigid bodies, impact of particles and rigid bodies, and energy and momentum for rigid bodies."
@@ -94,7 +104,12 @@
           "EMET230"
         ],
         "concurrent": [
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH211"
+            ]
+          }
         ]
       },
       "description": "Fundamentals of measuring, transmitting, and recording temperature, pressure, flow, force, displacement, and velocity; laboratory component emphasizes systems used in manufacturing. EMET 330 Measurement Theory and Instrumentation (3) The purpose of EMET 330 is to familiarize students with the measurement and instrumentation systems typically used in automated manufacturing and automated process industries. The primary focus of the EMET degree program is the technology of automated control, and measurement and instrumentation systems are essential elements in the control of any industrial or manufacturing process. This course is designed to cover those topics in process measurement, data monitoring, signal conditioning, and data acquisition that are typical in such control systems. The majority of industrial instrumentation systems involve measurement of position, displacement, velocity, force, flow, pressure, or temperature. EMET 330 will cover the common techniques used to make these types of measurements. Measurement systems also require signal conditioning and amplification to convert primary sensor signals into practical analogs that can be used in electronic controls. EMET 330 will also cover fundamentals of signal conditioning and amplification, including analog and digital data acquisition techniques, D-to-A and A-to-D conversion methods and equipment, and fundamentals of automated data acquisition and instrumentation-computer interfacing. Finally, accurate application of any measurement requires an understanding and proper application of basic statistical methods of data reduction. EMET 330 will include coverage of these topics as well. EMET 330 is also a lab-based course. Thus, students in the course will be required to conduct lab exercises in which they actually use industrial-quality sensors, transmitters, signal conditioning equipment, and data acquisition systems to gain experience with how these devices actually perform."
@@ -172,7 +187,12 @@
       "requisites": {
         "previous": [
           "EMET326",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH211"
+            ]
+          }
         ]
       },
       "description": "Introduction to the principles of fluid mechanics and heat transfer with emphasis on the application to practical problems. EMET 405 Fluid Mechanics & Heat Transfer (3) This course is designed to provide students with knowledge in fluid statics, fluid dynamics, and heat transfer. The emphasis of the course is to introduce them to the fundamental laws and principles of these engineering sciences, and to give them experience in solving problems using these laws and principles. The instructor may employ methods of differential and integral calculus as a part of selected topics. The fluid mechanics portion of the course introduces the students to fluid statics (e.g. hydrostatic pressure on submerged surfaces) and to fluid dynamics (e.g. continuity equation, energy equation, and laminar and turbulent flow). The heat transfer portion of the course introduces the three modes heat transfer: conduction, convection and radiation. It also covers an important type of heat transfer equipment, the heat exchanger."
@@ -184,7 +204,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH211"
+            ]
+          }
         ],
         "concurrent": [
           "EMET330"
@@ -211,9 +236,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EET275",
-          "CMPET211",
-          "EMET330"
+          {
+            "oneOf": [
+              [
+                "EET275",
+                "CMPET211",
+                "EMET330"
+              ],
+              [
+                "ME345W",
+                "ME357"
+              ]
+            ]
+          }
         ]
       },
       "description": "Exploration of central concepts and technologies of smart manufacturing with focus on the internet of things, data analytics for production data, simulation and digital twins, and process and manufacturing systems optimization. Smart Manufacturing introduces the concepts and technologies of modern data-driven smart manufacturing. The purpose of the course is to empower students to incorporate smart manufacturing thinking and technologies into manufacturing processes. Key smart manufacturing topics that the student will explore include the industrial internet of things, data analytics and predictive machine learning, simulation and the digital twin, and process and manufacturing systems optimization. The course includes a laboratory component to provide students experience with implementing these technologies. The laboratory exercises are a mix of hardware development via internet of things sensor collection, software use for data analysis and visualization, numerical modeling for digital twin creation, and systemic process optimization."

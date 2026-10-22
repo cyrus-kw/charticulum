@@ -50,10 +50,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL15",
-          "ECON102",
-          "STAT200",
-          "ACCTG211"
+          {
+            "oneOf": [
+              [
+                "ENGL15",
+                "ECON102",
+                "STAT200",
+                "ACCTG211"
+              ],
+              [
+                "ACCTG201",
+                "ACCTG202"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course provides a basic understanding and framework of how firms acquire, allocate, and control their financial resources. It covers the acquisition and management of corporate capital; analysis of operations, forecasting capital requirements, raising capital, and planning profits. This is a core finance course focusing on basic financial principles and practices essential to managing a business. In addition, this course also covers financial markets, institutions, organizational forms and investments. It relies heavily on accounting and economic principles with a strong emphasis on problem solving and decision making. One objective of this course is to be able to assess the past and present performance of the firm. This can be achieved through vertical and horizontal analysis of the financial statements as well as ratio analysis. Another aspect of this course is the financial planning process. This includes concepts such as pro forma statements, developing the statement of cash flows, as well as the budgeting process through the preparation of the cash budget. Another facet of this class is to understand how financing and investment decisions are made. Students will learn about the time value of money as well as fundamental techniques for valuing financial assets such as stocks and bonds. Additionally, capital budgeting techniques such as the net present value and internal rate of return are explained. Other important objectives include the management of working capital, the determination of the cost of capital, operating and financial leverage, and risk and return. The concepts and tools covered in this class allow the student to gain a fundamental understanding of how the finance function works within the business environment. The course promotes critical thinking and will enable the student to better integrate the individual functions of a business in order to make good business decisions. A student may receive credit toward graduation for only one of the following: BA 301 , FIN 100 , FIN 301 , or FIN 301H ."
@@ -66,10 +76,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL15",
-          "ECON102",
-          "STAT200",
-          "ACCTG211"
+          {
+            "oneOf": [
+              [
+                "ENGL15",
+                "ECON102",
+                "STAT200",
+                "ACCTG211"
+              ],
+              [
+                "ACCTG201",
+                "ACCTG202"
+              ]
+            ]
+          }
         ]
       },
       "description": "FIN 301H honors course provides insight into real world issues that are needed to effectively run a business. Students will utilize the fundamental concepts learned in finance (integrated with accounting, marketing, management, logistics, operations, and business law/ethics) as a foundation for running a business in the classroom. The \"product\" in this business will be a comprehensive strategic business plan for a real, live local, state, national, or international business that will serve not only as an articulation of understanding of core course concepts, but also as a supplement to the existing core package of introductory business courses. The honor students in this course will be building their strategic business plan products in electronic format in closely-knit, high performance teams. The strategic plan product development process in this course inherently involves integration across the functional areas of business: marketing, logistics, finance, and management. There is also inclusion and integration of courses in accounting, business law, management information systems, and statistics as applicable. Each student team will allocate product development responsibilities according to areas of expertise and interest. An appropriate balance of students from several majors will be assigned to each group. Class time will involve exchanging information within and across groups and coordinating activities between groups where necessary. Students will periodically meet with individual and team-based corporate mentors who will provide one-on-one advice on an as-needed basis. Students will also receive specialized training in team-based processes, leadership, and technology tools required to implement the products under development. Select members of the Penn State faculty and Smeal College alumni will be on hand at times to provide this specialized training and consulting expertise. Company owners and principals will provide periodic (monthly) reviews of honor students' work to assist them in the development of a first-class, professional business plan product."
@@ -83,8 +103,18 @@
         "previous": [
           "ACCTG211",
           "ECON102",
-          "MATH140",
-          "STAT200",
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          },
           "FIN301"
         ]
       },
@@ -97,7 +127,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Development of advanced practices of financial management and their application to decision making in business firm. FIN 305 Financial Management of the Business Enterprise (3) The objective of this course is to give students an understanding, and working knowledge of the major decisions faced by corporate financial managers. In general, the course will emphasize three major areas: investment and capital budgeting, financing and capital structure, dividend policy and corporate growth. A basic understanding of financial analysis and valuation will be provided. Basic corporate securities markets will be described. Determinants of securities prices, yields, and returns will be discussed. Special emphasis is placed on the role of the capital markets in financing corporate operations and investment, in facilitating corporate reorganizations and financial restructuring, and in reflecting owners wealth and evaluating the performance of corporate management. Within the general framework, a number of special topics will be covered, including mergers and acquisitions and the market for corporate control, international financial management, derivative instruments and their applications to corporate risk management. Students taking, the course should have a working knowledge of elementary statistics, and a basic understanding of accounting and financial statements."
@@ -110,7 +145,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Development of advanced practices of financial management and their application to decision making in a business firm. FIN 305M Financial Management of the Business Enterprise (Honors ) (3) The objective of this course is to give students an understanding, and working knowledge of the major decisions faced by corporate financial managers. In general, the course will emphasize three major areas: investment and capital budgeting, financing and capital structure, dividend policy and corporate growth. A basic understanding of financial analysis and valuation will be provided. Basic corporate securities markets will be described. Determinants of securities prices, yields, and returns will be discussed. Special emphasis is placed on the role of the capital markets in financing corporate operations and investment, in facilitating corporate reorganizations and financial restructuring, and in reflecting owner's wealth and evaluating the performance of corporate management. Students taking, the course should have a working knowledge of elementary statistics, and a basic understanding of accounting and financial statements. As an Honors course, students will study the impact of corporate activities on the market value of its stock, so a common stock pricing model is needed that accounts for factors that matter to investors. FIN 305M looks at these issues through topics such as, time value of money, risk and return, and valuation of stocks and bonds. The course concludes with topics related to specific business activities, such as capital budgeting, capital markets, capital structure, and dividend policy. The level of discussion and critical analysis expected in FIN 305M compliments the expected level of performance for honors students."
@@ -123,7 +163,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "The objective of this course is to give students an understanding, and working knowledge of the major decisions faced by corporate financial managers. In general, the course will emphasize three major areas: investment and capital budgeting, financing and capital structure, dividend policy and corporate growth. A basic understanding of financial analysis and valuation will be provided. Basic corporate securities markets will be described. Determinants of securities prices, yields, and returns will be discussed. Special emphasis is placed on the role of the capital markets in financing corporate operations and investment, in facilitating corporate reorganizations and financial restructuring, and in reflecting owners wealth and evaluating the performance of corporate management. Within the general framework, a number of special topics will be covered, including mergers and acquisitions and the market for corporate control, international financial management, derivative instruments and their applications to corporate risk management. Students taking, the course should have a working knowledge of elementary statistics, and a basic understanding of accounting and financial statements."
@@ -208,7 +253,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Advanced valuation theory; fundamentals of security analysis; portfolio construction and management."
@@ -221,7 +271,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Advanced valuation theory; fundamentals of security analysis; portfolio construction and management. FIN 406H - Security Analysis and Portfolio Management (Honors)(3) Finance 406 is about how to invest money in stocks, bonds and derivative securities. The course focus is on creating portfolios of assets rather than on picking individual assets for investment. To create a portfolio of assets, the portfolio manager must have knowledge of the assets available for purchase, the markets the assets are traded in, and the statistical and mathematical techniques needed to assign weights to the assets within the portfolio. The manager must also be able to predict changes in the economy that justify changes in the portfolio, as well as be able to evaluate the performance of the portfolio relative to standard benchmark portfolios such as the S&P500.The course begins with a review of the structure of the asset markets, basic pricing formulas, fundamental and technical analysis, and the tools from previous statistics, economics, and calculus classes needed. Different models relating risk and return such as the CAPM and arbitrage pricing model are covered. These models exemplify how investors are willing to trade-off the variance in returns from investments with the expected value of the investment. The students then learn how to choose the weights to assign to each asset available to maximize the expected return while minimizing risk of the portfolio using the portfolio theory of Markowitz. While the focus of this section of the class is on investing in equities, the portfolio theory learned is applicable to all types of assets. Because there are important differences between stocks and bonds, the next section of the class focuses on the unique characteristics of fixed income securities. Models explaining the different risk and return characteristics of bonds are examined. Because fixed income securities prices and returns are directly linked to changes in interest rates, theories of what determines interest rates are presented and applied to evaluating the performance of portfolios including fixed income securities. The course concludes with an overview of investment in options and futures contracts. The basic pricing models for these types of assets are reviewed as well as practical concepts of investing in derivatives such as margin accounts and creating synthetic returns using combinations of different types of options.As an Honors course, the level of research and academic investigation is enhanced with outside journal readings in topics such as portfolio theory, anomalies and market efficiency, overpricing, and current topics in Portfolio Management as material is published. This material is incorporated into class discussions and course exams beyond what is covered in the standard version of the class."
@@ -245,7 +300,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Functional analysis of major credit institutions; sources and uses of funds; impact of government regulation."
@@ -258,7 +318,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Introduction to bonds, equities, derivatives, and financial institutions including insurance, pension funds and mutual funds. FIN 408H - Financial Markets and Institutions (Honors) (3) Finance 408H is about financial institutions and markets. The markets section will include approximately 9 classes on debt markets, and another nine classes on equity markets (e.g. NYSE, NASDAQ) and derivatives (options and futures). The primary institutions covered in this course include insurance companies, mutual funds, pension funds, securities firms, and investment banks. We hope to include an analysis of personal financial planning issues as well. Reading assignments at various web sites will be made. The course will include weekly spreadsheet assignments that focus on the course concepts presented in class. These assignments ought to provide a rigorous understanding of the concepts recently presented in class and they will develop and improve the students' Excel skills. The overarching objective is for each student to develop an understanding of markets and institutions that will provide lifetime enjoyment."
@@ -270,7 +335,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "The sources and uses of credit; instruments and methods of financing; the theory and practice or real estate investment analysis. FIN (R EST) 409 Real Estate Finance and Investment (3) Real Estate financial markets are rapidly changing, with new instruments and ideas introduced every day. Therefore, the emphasis of this class will be on preparing the students to tackle any new instrument that might be introduced to the market, understanding why and how people make money in the field, and be able to understand and utilize the innovations that have been introduced and are still being developed. The course will provide a broad coverage of real estate investment, finance, and valuation. We will study different measures of investment performance, the impact of the financing decision on real estate investment risks and return, and various real estate financing techniques. Specific topics include: legal considerations in real estate finance, present value concepts, fixed rate mortgage loans, adjustable rate and variable payment mortgages, underwriting and financing residential properties, income-producing properties and valuation fundamentals, leases, projecting cash flows, investment value, investment and risk analysis, financial leverage and financing alternatives, disposition and renovation of income properties, financing corporate real estate, real estate capital markets, the secondary mortgage market and REITS."
@@ -294,7 +364,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Measuring and managing risk faced by financial institutions. FIN 413 Risk Management of Financial Institutions (3) This course focuses on measurement and management of risk faced by managers of modern financial institutions. Students will be introduced to various tools and techniques used to measure and analyze risk from traditional balance sheet activities (such as credit risk, liquidity risk, indolvency risk, interest rate risk and market risk) and from off-balance sheet activities. In addition, students will learn strategies for controlling and managing the risks to achieve the best risk-return outcome. This course is designed to be an upper level, undergraduate course. Students will have opportunities to apply fundamental concepts learned in other finance classes. It is recommended for business students, especially finance majors, who wish to have careers in financial service firms or non-financial firms that use financial assets."
@@ -405,7 +480,12 @@
       "requisites": {
         "previous": [
           "FIN330",
-          "ACCTG310"
+          {
+            "oneOf": [
+              "ACCTG310",
+              "ACCTG405"
+            ]
+          }
         ]
       },
       "description": "Liquidity planning, titling and transfer of property, trusts, federal unified tax system, gifting, incapacity planning, legal documents. FIN 430 Estate Planning (3) This course addresses estate planning issues for individuals as part of an overall personal financial plan. Personal financial planning encompasses budgeting, credit management, insurance, taxes, investments and retirement planning in addition to estate planning. The objective of this course is identifying and quantifying the goals of an individual regarding their final wishes and determining how best to meet those goals given the current applicable laws and the individual's situation. The estate administration and probate process are discussed along with common estate documents. The titling and transfer of assets as well as asset valuation are covered. Methods used to provide estate liquidity are presented. Common forms of trusts that are used in estate planning are introduced along with an overview of basic methods of transferring family owned businesses. Case studies are emphasized since estate planning is unique to each individual's situation. Some legal research is commonly incorporated into the course because estate planning is based on federal and state law. Student evaluation generally consists of examinations, individual and group assignments, quizzes, and case studies. Students desiring a career in financial services, law, or tax accounting should consider incorporating this course into their program of study."
@@ -439,7 +519,12 @@
       ],
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "This course provides students with working knowledge of some widely used quantitative methods, such as Monte Carlo simulations, t-tests, linear regressions, nonlinear regressions, regressions with dummy variables, and regressions with interacting explanatory variables, as well their applications in business. The course will focus on understanding and applying each method, but not on statistical theory or their proof. Monte Carlo simulations will be used to substitute for mathematical proofs. By the end of the course, students should understand the purposes of the above methods and how to use them to solve real estate, financial, marketing, and risk management problems. Students should also be able to interpret results in ways that are correct, insightful, and useful, should be aware of potential problems of each method, such as the omitted variable bias, multicollinearity, heteroskedasticity of regressions, and should know how to make corrections if these problems are present. Students should also have developed working knowledge of R, which is a programming language and software environment widely used by quantitative analysts. Students should know how to use R to conduct basic data manipulation, do simple Monte Carlo simulations, do t-tests, and run linear and non-linear regressions."
@@ -466,7 +551,13 @@
       ],
       "requisites": {
         "previous": [
-          "FIN305W"
+          {
+            "oneOf": [
+              "FIN305W",
+              "RM303",
+              "RM330W"
+            ]
+          }
         ]
       },
       "description": "Debt and equity financing, capital structure, \"creative financing,\" risk analysis, corporate asset management. FIN (R M) 460 Real Estate Financial Analysis (3) The objective of this course is to provide in-depth coverage of real estate investment and financing decisions. The focus is on the private market, including corporate asset management. Investment analysis moves from the basics of forecasting cash flows, through advanced topics including the impact of real option value on investment and development decisions. Risk measurement is given particular attention with a focus on sensitivity and simulation analysis. There is some coverage of asset pricing models like the Capital Asset Pricing Model, which is critically analyzed with respect to its applicability in real estate markets. The impact of illiquidity, management costs, and the suspicion of non-normally distributed returns are explored, as are the implications of relative market inefficiency. The financing module begins with the basics of mortgage debt mathematics, which is then extended to include comparisons of various repayment programs. Included are interest-only, balloon, shared appreciation, growing equity, graduated payment and reverse annuity loans, as well as various creative financing of commercial properties.The latter include participating mortgages, convertible mortgages, and mezzanine debt. Featured in the corporate asset management section is the lease/buy decision. Other topics may be addresses based on current events. It is anticipated that guest speakers will be invited where appropriate."
@@ -502,7 +593,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "FIN305W",
+              "FIN406",
+              "FIN420",
+              "FIN427",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Data Science and Artificial Intelligence in Finance is an innovative course tailored to bridge the gap between financial theory and practical data science applications using a high-level programming language (e.g., Python) and artificial intelligence. The course will cover fundamental and advanced data handling techniques, data visualization, statistical analysis, and machine learning with a focus on financial datasets. Students will learn through a hands-on approach using programming language and its powerful libraries, as well as Structured Query Language (SQL) for database management. The course will also introduce students to the basics of generative AI, including large language models (LLMs) and prompt engineering, equipping them with the skills to leverage AI in financial contexts."
@@ -517,7 +617,13 @@
       ],
       "requisites": {
         "previous": [
-          "FIN305W"
+          {
+            "oneOf": [
+              "FIN305W",
+              "RM303",
+              "RM330W"
+            ]
+          }
         ]
       },
       "description": "Analysis of publicly-traded real estate of both the equity, (REITs) and debt (MBSs) sides. The course also provides international perspectives. FIN 470 / RM 470 Real Estate and Capital Markets (3) The objectives of this course are to expose the student and explore the issues associated with the analysis of \"public\" (\"Wall Street\") real estate, including both equities (such as Real Estate Investment Trusts or REITs) and debt vehicles (such as Mortgage-Backed Securities or MBSs). In addition, the course will focus on the increasingly globalization of real estate capital markets as the real estate sector becomes integrated into the global financial system. The differences between private and public real estate analysis will also be explored, including the suitability of traditional asset pricing models for real estate analysis. Topics include the growing impact of institutional real estate forces on the real estate sector, the use of modern financial economics methods to real estate including the concept of market efficiency, modern portfolio theory applications, market measures of risk and return, the use of option-based models, and other advances. The rise of Wall Street's interest in real estate securities is an important institutional development and serves as the underlying background for the analysis of MBSs using fixed-income security techniques. As globalization has spread, the real estate sector has moved with these changes and prospects for a global real estate market are examined and evaluated. This course serves as a compliment to FIN 460 , which emphasizes traditional financial analyses of individual real estate projects. In FIN 470 , real estate securities are viewed as a natural extension towards the complete integration of real estate and capital markets. In this sense, these courses will enable traditional and modern analyses of the real estate sector for years to come."
@@ -568,7 +674,13 @@
         "previous": [
           "ECON102",
           "PSYCH100",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "PSYCH200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "This course will introduce students to behavioral finance, which is the intersection of psychology, economics, and finance. They will learn how individuals and firms make financial decisions and how these decisions might deviate from perceived rational or traditional choices. Students will explore the existence of psychological biases in financial decision-making and examine their impact on financial markets. The course will also explore the interplay of biases through a stock trading simulation."

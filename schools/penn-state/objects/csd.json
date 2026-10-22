@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "Preventing Vocal Abuse, Misuse, and Disorders is a 3 credit course intended to be the first course for all University students exploring communication sciences and disorders as a possible major, and students interested in learning specifically about vocal hygiene, voice use, vocal abuse and voice disorders. Principles of the voice mechanisms, preventing vocal abuse, and promoting vocal health across the life span are core principles of the course. The focus of this course is on preventing voice disorders and promoting activities that contribute to healthy vocal habits across the life span. The course is designed to integrate theoretical knowledge, practice-based, and measurement-focused activities to assist learners in understanding, achieving, maintaining, and promoting a lifetime of healthy vocal activities. Learning activities include use of specialized computer instrumentation for analyzing voice qualities. The educational objectives of the course are to: 1) develop a basic understanding of the normal and disordered vocal mechanism; 2) understand the need for maintaining and promoting lifetime wellness in your vocal activities and habits for any occupational choice; 3) learn about the prevention of vocal disorders across the life span from vocal nodules to laryngeal cancer; 4) understand the subjective and objective measures of vocal qualities to assist in changing and altering vocal abuses and misuses while improving and enhancing good vocal habits, and 5) developing an understanding of how vocal behaviors influence social behaviors, employment, and quality of life. The course includes an overview of the anatomy and physiology of the respiratory and vocal mechanisms, physics of voice production, development of vocal abuses and resulting pathologies, disorders including vocal growths, paralysis, voice disorders associated with cleft lip and cleft palate, syndromes, neurodegenerative disorders, aging and head and neck cancer."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "This course examines the anatomy and physiology of the auditory system and related the anatomy to general acoustic principles. This course also evaluates hearing measurement, noise measurement, and protective measures needed to preserve an individual's hearing."
     },
     {
@@ -52,7 +56,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "This course will allow students to acquire skills, knowledge, and experiences about the ways in which performance activities such as improvisation, vocal performance, and dance can promote valued communication and developmental outcomes for individuals with and without developmental and intellectual disabilities. The course is explicitly designed to include students from the Lifelink PSU program who have intellectual disabilities, who learn with and alongside enrolled students. This structure directly emphasizes the interconnections between students with and without disabilities, as well as between the knowledge bases and theoretical approaches brought by specialists in the performing arts and in diverse areas of disability services. The course will emphasize the pluralistic nature of knowledge in the social and behavioral sciences by incorporating the pedagogy and knowledge of experts from the performing arts with the empirical scientific approach taken in diverse disciplines dedicated to disability services and rehabilitation, including but not limited to Communication Sciences and Disorders, Education and Special Education, Psychology, Music Therapy, and Rehabilitation. Students will collaborate to analyze both in the empirical research literature as well as in their classroom experiences with the Lifelink students the specific ways in which various performing arts offer opportunities for growth in self-expression, interpersonal understanding, and other important communication skills."
     },
     {
@@ -87,7 +93,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Explores the economic, social, psychological, and political aspects of the deaf culture and its interaction with the majority hearing culture. CSD 269 CSD 269 Deafness and Society (3) (GS;US;IL) explore this community as being a distinct culture having its own rules of social interaction, values, group norms, and identity. The educational objectives are that the student will acquire an understanding of: 1) the development of the American Deaf Community, 2) factors affecting an individual's choice to affiliate with the Deaf Community, 3) history and current trends in deaf education, 4) American Sign Language (ASL) and other forms of communication used by Deaf Americans, 5) social, emotional, and psychological aspects of deafness, 6) diversity with the Deaf Community, and 7) deafness in the literature, media, and the arts."
     },
     {
@@ -215,8 +223,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CSD146",
-          "CSD331"
+          {
+            "oneOf": [
+              [
+                "CSD146",
+                "CSD331"
+              ],
+              "BIOL155",
+              "BIOL161",
+              "BIOL163",
+              "BISC2",
+              "BISC4"
+            ]
+          }
         ]
       },
       "description": "This course will provide the CSD major with foundational knowledge on the anatomy, physiology, and neurology of the typical, healthy swallowing process (deglutition). This is an elective course for CSD majors and should be taken during the third or fourth year of the major. The overarching goal of this course is to provide the student with a comprehensive foundation on the swallow and to better prepare the student for their graduate course in dysphagia. Through lectures and experiential learning, students will be expected to: (a) understand the anatomy, physiology, and neurology of the typical swallow; (b) understand the different stages of the typical swallow; (c) understand various methods of clinical and instrumental evaluation techniques used to assess the swallow; (d) understand the importance of the ability to swallow on a person's overall quality of life; and (e) understand the legal issues surrounding a person's ability to swallow."
@@ -281,7 +300,15 @@
       "requisites": {
         "previous": [
           "CSD300",
-          "CSD431"
+          {
+            "oneOf": [
+              "CSD431",
+              "CSD442",
+              "CSD444",
+              "CSD462",
+              "CSD451"
+            ]
+          }
         ]
       },
       "description": "CSD 459, Principles of Clinical Management in Communication Disorders (PRIN CLIN MGMT), is a 3-credit writing-intensive course required for Communications Sciences and Disorders majors, and should be taken during the final year of their undergraduate curriculum. The intent of this course is to closely review the principles and practices for assessing and treating people across the life span who have a communication disorder as well as reviewing, interviewing, counseling, and report writing skills. Overall, this \"how-to\" course is designed to provide students with practical solutions and methods when serving persons with communication disorders. The educational objectives are that students will acquire an understanding of: 1) report writing with emphasis on different styles and the need for clear documentation and explanations, 2) assessment with emphasis on interviewing skills, preparation and test administration, interpretation of the results, and oral and written presentation, 3) therapy practices with emphasis on task analysis, behavioral objectives, and implementation, 4) documentation with emphasis on lesson plans, mid and final reports, documentation specific to school versus medical settings, and billing, and 5) client and family counseling and group sessions."

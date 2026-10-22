@@ -25,15 +25,17 @@ const catalog = createCatalog([
 ]);
 
 const globalSets: RequirementSet[] = [
-  { id: "ge", name: "General education", scope: "global", requiredObjectIds: ["ENG101"] },
+  { id: "bachelor", name: "bachelor", scope: "global", degree: "bachelor", requiredObjectIds: ["ENG101"] },
+  { id: "associate", name: "associate", scope: "global", degree: "associate", requiredObjectIds: ["NEVER"] },
 ];
 
 const term = (index: number, objectIds: string[]) => ({ index, label: `Term ${index}`, objectIds });
 
 const cs2026: ChartTemplate = {
-  id: "bs-cs",
+  code: "bs-cs",
   version: "2026-27",
-  name: "B.S. Computer Science",
+  title: "B.S. Computer Science",
+  degree: "bachelor",
   requirementSets: [
     { id: "cs", name: "CS major", scope: "local", requiredObjectIds: ["CS102", "STAT200"] },
   ],
@@ -50,9 +52,10 @@ const cs2027: ChartTemplate = {
 };
 
 const statsMinor: ChartTemplate = {
-  id: "minor-stats",
+  code: "minor-stats",
   version: "2026-27",
-  name: "Statistics minor",
+  title: "Statistics minor",
+  degree: "bachelor",
   requirementSets: [
     {
       id: "stats",

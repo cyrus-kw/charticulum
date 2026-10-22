@@ -1,4 +1,4 @@
-import { EVERY_TERM, type Chart, type CurriculumObject, type Requirements } from "../src/engine/types";
+import { EVERY_TERM, type Chart, type CurriculumObject, type RequiredItem, type Requirements } from "../src/engine/types";
 
 // Build a CurriculumObject with sensible defaults so tests only spell out
 // the fields they care about. `Partial<CurriculumObject>` makes every field
@@ -6,8 +6,8 @@ import { EVERY_TERM, type Chart, type CurriculumObject, type Requirements } from
 export function obj(
   id: string,
   overrides: Partial<Omit<CurriculumObject, "requisites">> & {
-    previous?: string[];
-    concurrent?: string[];
+    previous?: RequiredItem[];
+    concurrent?: RequiredItem[];
     minGrades?: CurriculumObject["requisites"]["minGrades"];
   } = {},
 ): CurriculumObject {

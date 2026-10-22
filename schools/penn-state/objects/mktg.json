@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course reviews marketing in a social and historical context. The goal is to explore how the 4 Ps of Marketing- which are product, price, place, promotion, are deeply rooted in the societal context across the ages and have been both a function of culture as well as a cultural influencer. While many think of marketing as a new business function, it has a very long history as marketing is indeed millenia old practice. This course seeks to familiarize students with early examples of marketing, such as the first documented customer complaint letter dating back to 1750 BCE which was written in cuneiform on a clay tablet in Mesopotamia, and to compare these to contemporary practices. The students will be presented with marketing practices throughout history and will learn to critically assess these in terms of the morality of the period and using current standards."
     },
     {
@@ -86,7 +90,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Explores methods to implement/adapt marketing methods to the Internet; builds upon introductory marketing classes to examine what does/doesn't work. MKTG 302 Marketing Techniques for Electronic Commerce (3) This course examines the role of commerce and marketing with special focus on Internet commerce topics including: the commerce value chain, business strategies and business strategies for the global marketplace. Several Internet business models are examined. These include: business-to-business (B2B); business-to-consumer (B2C); consumer-to-consumer (C2C); and government-to-consumer (G2C); and other permutations of these models. Marketing fundamentals include market segmentation and product life cycle, and similar topics are reviewed with the emphasis on Internet implementation. Specific methods for conducting market research using the Internet as well as methods to determine who is the 'average' Internet user are examined. Advertising methods for the Internet vs. the traditional advertising mediums of TV, radio, and print, and methods to measure advertising success on the Internet are discussed. The Internet removes existing roadblocks and adds new roadblocks for businesses, thus requiring different pricing strategies. Distribution channels and methods of supply--chain management are studied. How marketers utilize e-mail, site commissions, cookies, filters, and databases is examined. Security, privacy, and ethical issues, e.g., consumers' rights to privacy and sale of consumer information, are reviewed. Finally, a market plan to migrate business functions to the Internet is developed."
@@ -98,7 +107,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Examination of the role of public relations in a company's efforts to manufacture and market its products and services."
@@ -111,7 +125,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Examination of the role of public relations in a company's efforts to manufacture and market its products and services. Students may earn credit toward graduation for only one of the following: MKTG 310 or MKTG 310W ."
@@ -123,7 +142,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Management of marketing institutions in distribution channels from producers to consumers. Emphasis on retail institutions: location, personnel, merchandising, control, promotion."
@@ -135,7 +159,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Application of behavioral science concepts to the understanding of buyer behavior as a basis for marketing management decision making."
@@ -147,8 +176,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303",
-          "STAT200"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Research approaches, methods, and applications studied as a formal approach to problem solving for marketing decisions."
@@ -205,7 +244,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MKTG330"
+          {
+            "oneOf": [
+              "MKTG330",
+              "MKTG342"
+            ]
+          }
         ]
       },
       "description": "Perspectives and models of the key decisions involved in managing advertising and sales promotion campaigns."
@@ -282,7 +326,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA342"
+          {
+            "oneOf": [
+              "BA342",
+              "SUST200",
+              "CED152"
+            ]
+          }
         ]
       },
       "description": "Sustainability is a broad domain concerning the extent to which environmental, economic, and social practices are viable for current and future generations. Consumer awareness of sustainability issues has evolved from an emerging social movement to mainstream values, but increasing sustainable behavior remains a challenge. This course is designed to provide students with the knowledge to enhance sustainable behaviors in firms, among consumers, and in society at large. In doing so, this course will include frameworks for understanding how to influence sustainable practices, consumer response to sustainability, and marketing communication issues as well as real-world examples of sustainable practices and issues, offering both a theoretical and applied approach. The course may also include a project which will entail student teams working on a real-world sustainable behavior problem in collaboration with a business or segment of the university campus when available or other course project addressing a relevant sustainability issue. Students should leave the course with an understanding of sustainability issues in the current marketplace and the knowledge and ability to influence sustainable behaviors. Students will enter their career with the knowledge and skills to be a sustainable business decision-maker and foster sustainable behavior."
@@ -294,7 +344,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "This course will focus on how companies develop, execute and measure marketing strategies and tactics to use sports teams, familities, leagues and other organizations to market their products and services domestically and internationally to consumers and business partners. The course will examine the marketing strategies employed by sports teams and leagues. MKTG 443 Sports Marketing (3)\"Sports Marketing\" is designed to explore how various types of businesses and other organizations market products and/or service related to sports as well as how sports are used as marketing platforms for non-sports products. Unique aspects of the sports business will be explored including how strategies and tactics related to marketing in this sector differs from other industries. The purpose of this course is to provide an overview of various aspects of sports marketing. This will include the use of sports as a marketing tool for other products, the marketing of sports products and emerging considerations that are relevant for both marketing through and the marketing of sports. Since sports involves consumers, businesses and other organizations, this courses will cover B2C as well as B2B marketing.How product, distribution, pricing and promotional programs are developed particular to this industry will be one of the primary focuses. Relationship marketing, the role of technology, sponsorships, ambush marketing, partnership leveraging, endorsements, venue naming rights, licensing and emerging legal and ethical issues will also be important focuses. A guest speaker series will provide additional professional perspectives on a variety of unique aspects of marketing particular to sports. Reading Sports Business Journal, the most highly regarded source of news by sports industry employees, will further expand this knowledge base as will current news events related to the industry. Students will be provided an opportunity to network with guest speakers and those interested in considering sports among their job search, will also be able to receive internship and career counseling from the instructional team. Students enrolled in this class will also be able to submit resumes and requests to be interviewed for internships with various sports organizations being arranged in cooperation with the Smeal Collage Corporate and Career Services Office. Students will apply what is being learned in the class to the development of a project related to sports marketing, with the added benefit of having a deliverable which can be used to further the search for jobs and/or internships in the sports business."
@@ -319,7 +374,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA303"
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Role of international marketing in the global environment; political, economic, geographic, historical, cultural conditions; developing and implementing international marketing strategies. MKTG (I B) 445 Global Marketing (3) (IL) MKTG/I B 445 focuses on the wide range of issues, which face enterprises as they develop and execute marketing strategies and tactics, designed to support business activities in markets outside their home country. This course deals directly with these issues as they apply to firms, which concentrate on a few markets closer to home, or on many markets throughout the world, including via the Internet. This course also deals with the important role played by governments in shaping the global marketing environment, including through trade policies, treaties and marketing supports. Students successfully completing this course also gain a greater understanding of the cultural, technological, economic, political and social environments which international businesses and global marketers face as they seek to expand their product and/or service offerings into other nations. Understanding this important part of the challenge facing international businesses and global marketers is achieved through the text, lectures, and student group projects and presentations including some focused on specific countries, including both major trading partners of the United States and select emerging new markets. This course is designed for students who have an interest in these topics and/or who plan to enter fields such as international business or global marketing and/or who expect to work for businesses, which are active internationally. Class discussions and projects are designed to help students explore these topics in greater depth. A series of small group assignments and presentations will further help students apply what is being learned via problem-based learning. This is an interactive class. Therefore, a portion of the grade each student achieves will be based on class attendance and participation. Students are also expected to pay attention to examples of the issues discussed in class that they encounter during the semester in prim broadcast, and online communications. Along with material from lectures and the text, issues discussed in class will be included in the exam."
@@ -433,7 +493,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MKTG330"
+          {
+            "oneOf": [
+              "MKTG330",
+              "MKTG342"
+            ]
+          }
         ]
       },
       "description": "Social Media Marketing tools, techniques, and strategies to build brands and customers. MKTG 480 Intermediate Social Media Marketing (3) In today's business world, marketers must become more creative in the ways in which they present their company on an Internet based platform such as Twitter, Facebook, and Linked-In in order to present increasingly relevant products and services to a more receptive customer base. The course, Intermediate Social Media Marketing, is designed to provide hands-on experiences with the use of Social Media Marketing tools and techniques while adhering to socially acceptable and ethical standards and protocols. The technology tools and platforms include but not limited to: Facebook, LinkedIn, Twitter, YouTube, Google+, Pinterest, Foursquare, Friendster, Technorati, Blogs, Vlogs, Podcats, Hootsuite, Radian6, various search engines, and QR codes. These social media tools can be used to find, reach, connect, and automate marketing messages to efficiently and effectively build relationships, stronger brands and loyalty. These technologies may be utilized with or without a fully realized marketing automation structure, allowing ideas to be shared on a global platform. Students will learn and apply the major categories of Social Media tools, the how's and why's of their use, and decide what venues to use to reach the social media marketing objectives of firms, which may include improving the content to increase online presence, brand awareness, fan likings, customer inquiries, and sales. During this course, students will devise a social media marketing plan for a local firm (or firms) that addresses (1) platform, (2) content, and (3) interaction. This course will achieve academic excellence by having students research the latest techniques and practices of social media, mobile, and direct marketing to build a social media marketing plan for a local firm (or firms) to expand its markets. Students will be analyzing a firm's current traditional and social media marketing practices, and short-term and long-term goals for its target markets."

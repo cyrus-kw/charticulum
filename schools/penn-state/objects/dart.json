@@ -17,7 +17,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Humanities",
+        "Inter-Domain"
+      ],
       "description": "DART 102N Introduction to 2d Digital Art and Technology (3) A General Education Integrative Studies, digital arts course introducing 2D graphics software through explorations of the 2d digital art medium. This is a General Education Integrative Studies, digital arts course introducing 2D graphics software through the creation of original digital artwork and the exploration of the 2d digital art medium. Course content explores technology, digital art, and visual culture, and concepts of identity, digital culture, and propaganda. Students create original artwork using graphic software such as Adobe Photoshop. They acquire skills and methods of research and development, creative production, critical review, reflection, and strategies for revision. Learning focuses on problem solving, exploration of creative options, visual communication, critique of images and ideas, and reflective writing. Students apply this process of visual research as a personal means of exploring topical issues and ideas, responding in informed ways to the images created by others, and reacting critically and creatively to the visual world around them. The course looks at topics such as the impact of technology on personal identity and community practices as they are represented in the mix of visual culture. Methods of visual expression and graphic communication such as advertising, messaging and propaganda are examined and critically analyzed as cultural practices that serve many purposes, from education, entertainment, marketing, and politics. The purpose of the course is to introduce students to the creative use of digital technologies in responding critically and imaginatively to this changing visual world of image, text and story in which they live. By developing original digital artwork, students learn to formulate and communicate their ideas related to the course topics from a personal perspective and build an understanding of how they make an impact on a world beyond the classroom."
     },
     {
@@ -27,7 +31,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "DART100"
+          {
+            "oneOf": [
+              "DART100",
+              "DART202"
+            ]
+          }
         ]
       },
       "description": "DART 200 : Creative Research in Digital Arts and Media Design (3) provides digital artists and designers with a studio-based exploration of critical, theoretical, and historical understandings of digital media and research. This course provides digital arts and media design majors with a studio-based exploration of critical, theoretical, and historical understandings of digital media processes and creative research methodologies. Students practice formal art and design skills, acquire and expand digital proficiencies, and reflect upon their creative research in studio-based inquiry and production."
@@ -117,7 +126,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "DART202"
+          {
+            "oneOf": [
+              "DART202",
+              "DART203",
+              "DART204",
+              "DART205",
+              "DART206"
+            ]
+          }
         ]
       },
       "description": "DART 300 : Digital Portfolio Elements (3) An intermediate level studio course in which students develop digital art and design work that promotes creative thinking and problem-based learning in producing digital media projects to be included in their digital portfolio. Students also gain increased ability and independence in the application of relevant digital tools and technologies. The structure of the assignments and overall course will prepare and guide the students towards increased critical awareness and professionalism through the creation of a body of work, greater understanding of the languages of art and design, and an increased ability to analyze and critique the work of others. This course relies on the active and collective participation of each student."
@@ -294,7 +311,13 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "DART303"
+          {
+            "oneOf": [
+              "DART303",
+              "DART304",
+              "DART314"
+            ]
+          }
         ]
       },
       "description": "DART 404 Animation Studio (4 per semester, maximum of 8) An in-depth digital arts production course focusing on exploring animation and time-based media through the development of self-initiated projects. This course will build upon previous digital arts studio courses and provide students with an in-depth studio experience to produce animated and time-based media works. In animation studio, students will explore animation and time-based media in relationship to their creative interests and studio practice while seeking to integrate course lectures, discussions and screenings into the realization of new work. This course is receptive to all forms of traditional and experimental animation techniques (analog, digital, hybrid) as well as creative and time-based media approaches."
@@ -319,7 +342,13 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "ART101"
+          {
+            "oneOf": [
+              "ART101",
+              "DART203",
+              "DART305"
+            ]
+          }
         ]
       },
       "description": "DART 406 Advanced Web and Multimedia Publishing Studio (4 per semester/maximum of 8) A digital arts studio course concentrating on advanced web and multimedia publishing practice for art and design. This course will build upon previous digital studio courses and provide students with an in-depth experience on web authoring and multimedia publishing practice through readings, discussions and hands-on studio production towards the realization of new work and representative online portfolio."
@@ -331,7 +360,13 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "DART302"
+          {
+            "oneOf": [
+              "DART302",
+              "DART303",
+              "DART304"
+            ]
+          }
         ]
       },
       "description": "DART 410 Integrating Media: Convergence in Practice ( (4 per semester/maximum of 12) A studio course focusing on integrating new media concepts and related technologies into digital arts, media design and contemporary studio practice. This course is designed to provide an intensive studio experience for more focused creative research, media exploration and studio practice in new media. Students will seek to engage and synthesize a wide range of technologies, techniques and digital workflows in 2d, 3d, 4d or interactive media towards the development of a compelling and cohesive body of work."
@@ -362,7 +397,16 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "DART203"
+          {
+            "oneOf": [
+              "DART203",
+              "DART213",
+              "ART230",
+              "ART280",
+              "ART110",
+              "ART111"
+            ]
+          }
         ]
       },
       "description": "Digital Fabrication Studio explores how a diverse range of technologies can translate digital designs and data into the physical world. Through hands-on experience, we will work with laser cutting, CNC routing, 3D modeling, and 3D printing in a range of materials, to realize creative projects. An understanding of the tools, workflows, materials, and interdisciplinary possibilities surrounding computer-aided design and manufacturing will emerge throughout the course. We will become skilled in the appropriate hardware and 2D/3D software through in-class exercises, one-on-one instruction, and video tutorials. Students are encouraged to consider a hybrid, analog-digital art practice that embraces both traditional craft and emerging technologies. Frequent in-progress critiques will encourage iterative processes and guide making. Assigned readings and class discussions will ask questions about the role these technologies play in the present, while prompting us to imagine their future potential."
@@ -374,7 +418,14 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "DART203"
+          {
+            "oneOf": [
+              "DART203",
+              "DART205",
+              "DART303",
+              "DART325"
+            ]
+          }
         ]
       },
       "description": "DART 415 Immersive Media Studio (4) is a digital art course that provides student with an in-depth and hands-on studio experience with immersive media and related technologies (virtual reality, augmented reality, haptic technologies, etc.). This course will focus on creative investigation and interdisciplinary exploration of the medium and engage students in world building through the medium of immersive reality. Students will build virtual environment using 3D modeling software, create interactive elements utilizing game engines, and apply technical knowledge to creative storytelling. Through a series of technical demonstrations, weekly screenings, theoretical readings, individual research, and student presentations, students will learn fundamentals of the immersive reality medium and construct their own virtual experiences."

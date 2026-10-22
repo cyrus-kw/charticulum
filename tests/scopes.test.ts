@@ -60,15 +60,22 @@ describe("mergeRequirementSets", () => {
     });
   });
 
-  it("keeps every credit rule, and the higher minimum grade", () => {
+  it("keeps every credit rule in its group, and the higher minimum grade", () => {
+    const genEdGroup = (credits: number) => ({
+      category: "general-education",
+      name: "General Education",
+      rules: [{ id: "gq", name: "GQ", credits }],
+    });
     const merged = mergeRequirementSets([
-      { ...genEd, creditRules: [{ id: "gq", name: "GQ", credits: 6 }], minGrades: { ENG101: "C-" } },
-      { ...major, creditRules: [{ id: "gq", name: "GQ", credits: 9 }, { id: "cs", name: "CS", credits: 18 }], minGrades: { ENG101: "C", CS101: "C" } },
+      { ...genEd, creditRules: [genEdGroup(6)], minGrades: { ENG101: "C-" } },
+      {
+        ...major,
+        creditRules: [genEdGroup(9), { category: "elective", name: "Electives", rules: [{ id: "cs", name: "CS", credits: 18 }] }],
+        minGrades: { ENG101: "C", CS101: "C" },
+      },
     ]);
-    expect(merged.creditRules).toEqual([
-      { id: "gq", name: "GQ", credits: 9 },
-      { id: "cs", name: "CS", credits: 18 },
-    ]);
+    // One General Education group (the higher GQ), then Electives.
+    expect(merged.creditRules).toEqual([genEdGroup(9), { category: "elective", name: "Electives", rules: [{ id: "cs", name: "CS", credits: 18 }] }]);
     expect(merged.minGrades).toEqual({ ENG101: "C", CS101: "C" });
   });
 });

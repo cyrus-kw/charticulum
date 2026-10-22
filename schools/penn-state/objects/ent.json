@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "An introduction to the diversity of insects and the ways in which they interact with humans and impact our world. ENT 202N is a Science course that will use an interdisciplinary approach to look at the biology and the interplay between nature and society. Major themes of the course will be illustrated by focusing on the world of Insects and the relationships between society and Insects. Emphasis will be placed on critical analysis of both the costs and the benefits of human activities that impact natural systems. Course Learning Goals : 1. Discuss, describe, and give examples of relevant ecological and evolutionary processes and / or phenomena. 2. Apply content knowledge and understanding in novel contexts and situations. 3. Recognize the implications of the two-way dynamic between human activities and insects and how these dynamics differ in different parts of the world. 4. Make predictions associated with likely impacts of human activities on natural systems, ecosystem services, and insect and human populations. 5. Conduct research of relevant literature and utilize empirical evidence to support claims made in a popular press news story about insects. 6. Discuss, describe, and give examples of the two-way relationship between social issues and scientific discovery. 7. Communicate scientific knowledge to a diverse audience."
     },
     {
@@ -22,7 +26,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "This interdomain, general education course examines the major plagues of human history from both a scientific and societal lens. The course will be co-taught by instructors with biology and political science backgrounds who will help the students to integrate across those disciplines. Each week during a single lecture, students will learn the etiology, mode of transmission and treatment/control measures of a different disease. In parallel, students will also read popular press articles on how these diseases had particular cultural, economic or political impacts. These readings, in conjunction with guide questions, will prepare students for a weekly discussion during the second lecture run by both instructors. During the course, students will develop their ability to think critically about diseases and society and demonstrate this skill by designing a novel response to an emerging pathogen in a particular cultural context. This course will develop student communication skills, both oral and written."
     },
     {
@@ -34,7 +42,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Among more than 1,000,000 known insect species, honey bees are truly unique. No other insect has been harnessed so effectively to benefit humankind: honey bees provide critical pollination services for agricultural crops, and the wax and honey they produce are valuable commodities. Furthermore, their fascinating social life-style has intrigued individuals from hobby beekeepers to scientists studying complex questions about the evolution of sociality. More recently, documented declines in populations of honey bees and wild bees have stimulated interest in many communities, including policymakers, in improving health outcomes for bees. This course will provide students with a strong understanding of (1) honey bee behavior (particularly their complex and sophisticated social systems), biology, and health, (2) the important contributions honey bees and their pollination services make to maintaining natural ecosystems and increasing productivity of many of our key agricultural crops; and (3) the global history of human interactions with honey bees, including how people from many cultures have managed bees to provide honey, wax, and pollination services (4) the social and political context of addressing bee health issues. The course material will be presented in a series of interactive lectures, videos, and discussions, and also include a field trip to the Pollinator Gardens at the Arboretum at Penn State, a field trip to one of the Penn State apiaries, tracking individual honey bees in an observation hive, and dissections of samples in a laboratory exercise."
     },
     {
@@ -215,8 +227,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL110",
-          "BIOL230W"
+          {
+            "oneOf": [
+              "BIOL110",
+              "BIOL110H"
+            ]
+          },
+          {
+            "oneOf": [
+              "BIOL230W",
+              "BIOL230M",
+              "BIOL220W",
+              "BIOL220M"
+            ]
+          }
         ]
       },
       "description": "Insects are one of the most ecologically successful and diverse taxonomic groups on the planet, and their success is attributed to the amazing range and complexity of the behaviors they exhibit. This course provides an introduction to fundamental concepts and processes in the study of animal behavior, with an emphasis on insect examples, insect diversity and a theoretical and empirical overview of insect behavior. The course is structured around four complementary categories to study behavior based on their development, adaptive value, function, and evolution. Students will learn how scientists study insect behavior, why insects behave the way they do, what functions these behaviors serve, and how behavior is shaped by the evolutionary forces of natural and sexual selection."

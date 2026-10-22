@@ -100,7 +100,12 @@
       "requisites": {
         "previous": [
           "TURF235",
-          "TURF434"
+          {
+            "oneOf": [
+              "TURF434",
+              "TURF435"
+            ]
+          }
         ]
       },
       "description": "Case Studies in Turfgrass Management is a three credit, writing intensive course for students in the final year of the Turfgrass Science major. The goal of this capstone course is to provide students with an understanding of processes involved in solving turfgrass and soil problems at the managerial level. Using several real-life scenarios provided by the instructor, students will learn to gather facts associated with a problem, analyze the problem, formulate a set of options for solving the problem, implement a plan of action, and evaluate the results of the action. Once these processes are assimilated, students will form teams and select challenging turf and soil problems, analyze them, formulate options for solving the problems, select the most feasible solutions, and evaluate outcomes. Teams will submit reports and develop presentations for class. Teams will also be charged with questioning presenting teams and evaluating team members. Students will be evaluated through exams, reports, presentations, and class participation."

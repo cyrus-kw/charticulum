@@ -18,17 +18,27 @@
 //   then each subject's course list: each course's title, description,
 //   credits, prerequisites, and gen ed area.
 // - The program pages in PROGRAMS, only as hints: which courses their
-//   suggested plans use, and their "A or B" requirement lines. It doesn't
-//   write any programs; those are made by hand, in programs/.
+//   suggested plans use (to put the likeliest option of an "A or B"
+//   first). It doesn't write any programs; those are made by hand, in
+//   programs/, with their own "A or B" lines as choices.
 //
 // Downloaded pages are kept in node_modules/.cache/penn-state, so running
 // it again doesn't download them again (delete that folder to refresh).
 //
-// The chart engine only understands "take all of these", so Penn State's
-// "A or B" rules are simplified (see chooseRequisites).
+// A course's requisites are a list where every entry is needed, and an
+// entry can be a choice of options ("MATH 140 or MATH 140H"), so most of
+// Penn State's "A or B" rules carry over as written (see requisiteItems).
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { compareByCode, parseCourseCode, parseSchoolData, type Grade } from "../src/engine/index";
+import {
+  compareByCode,
+  parseCourseCode,
+  parseSchoolData,
+  requiredIds,
+  requiredKey,
+  type Grade,
+  type RequiredItem,
+} from "../src/engine/index";
 import type { SchoolDataInput } from "../src/engine/school";
 import { readSchoolFolder } from "../src/server/schoolFolder";
 
@@ -41,7 +51,7 @@ const CACHE = "node_modules/.cache/penn-state";
 const OUT = "schools/penn-state";
 
 // Program pages read for hints (see above). Add one here (its address on
-// bulletins.psu.edu) to help pick the right "A or B" for its courses.
+// bulletins.psu.edu) to help put the likeliest option of an "A or B" first.
 const PROGRAMS = [
   "engineering/computer-science-bs",
   "engineering/computer-engineering-bs",
@@ -49,6 +59,38 @@ const PROGRAMS = [
   "engineering/electrical-engineering-bs",
   "engineering/mechanical-engineering-bs",
 ];
+
+// What an Inter-Domain course lists among its gen ed areas, besides its
+// two domains.
+const INTER_DOMAIN = "Inter-Domain";
+
+// The baccalaureate degree's 45 gen ed credits, for every program
+// (bulletins.psu.edu/undergraduate/general-education/baccalaureate-degree-general-education-program/):
+// Foundations 15, Knowledge Domains 15, Integrative Studies 6, and
+// Exploration 9. A course counts toward one of them only, the first in
+// this order that still needs it, so the narrow rules come first.
+const DOMAINS = ["Arts", "Humanities", "Natural Sciences", "Social and Behavioral Sciences"];
+const GEN_ED = {
+  category: "general-education",
+  eachCourseOnce: true,
+  rules: [
+    // Foundations: C or better, and not Inter-Domain courses.
+    { id: "WS", area: "Writing and Speaking", credits: 9, minGrade: "C" as Grade, notArea: INTER_DOMAIN },
+    { id: "Q", area: "Quantification", credits: 6, minGrade: "C" as Grade, notArea: INTER_DOMAIN },
+    // Knowledge Domains: not Inter-Domain courses.
+    { id: "HW", area: "Health and Wellness", credits: 3, notArea: INTER_DOMAIN },
+    { id: "N", area: "Natural Sciences", credits: 3, notArea: INTER_DOMAIN },
+    { id: "A", area: "Arts", credits: 3, notArea: INTER_DOMAIN },
+    { id: "H", area: "Humanities", credits: 3, notArea: INTER_DOMAIN },
+    { id: "S", area: "Social and Behavioral Sciences", credits: 3, notArea: INTER_DOMAIN },
+    // Integrative Studies.
+    { id: "INT", name: "Integrative Studies", area: INTER_DOMAIN, credits: 6 },
+    // Exploration: Natural Sciences (may be Inter-Domain), then any domain
+    // or Inter-Domain.
+    { id: "EXN", name: "Exploration: Natural Sciences", area: "Natural Sciences", credits: 3 },
+    { id: "EX", name: "Exploration", area: [...DOMAINS, INTER_DOMAIN], credits: 6 },
+  ],
+};
 
 // Penn State's gen ed areas, by their code.
 const GEN_ED_AREAS: Record<string, string> = {
@@ -140,7 +182,7 @@ function firstNumber(value: string): number {
 //   "(CMPSC 122 or CMPSC 132) and (CMPSC 360 or MATH 311W)"
 //   "MATH 21 or satisfactory performance on the mathematics placement examination"
 // They're read into a small tree of "all of" / "one of" groups, then
-// turned into the plain list the engine wants (chooseRequisites).
+// turned into the list the engine wants (requisiteItems).
 // ---------------------------------------------------------------------------
 
 type Requirement =
@@ -231,10 +273,9 @@ function optionScore(rule: Requirement, catalog: Set<string>, prefer: Set<string
   return [...prefer, catalog].reduce((score, set, i, sets) => score + share(set) * 2 ** (sets.length - i), 0);
 }
 
-// The engine's requisites are a plain list: every course on it is needed.
-// To turn "one of" into that, pick the option that scores best. If an
-// option isn't a course (a placement exam, say), no course is needed, so
-// the group adds nothing.
+// One way to meet a rule, as a plain list of courses: for each "one of",
+// the option that scores best. If an option isn't a course (a placement
+// exam, say), no course is needed, so the group adds nothing.
 function chooseRequisites(rule: Requirement, catalog: Set<string>, prefer: Set<string>[]): string[] {
   switch (rule.kind) {
     case "course":
@@ -250,6 +291,38 @@ function chooseRequisites(rule: Requirement, catalog: Set<string>, prefer: Set<s
       let best: Requirement | undefined;
       for (const part of options) if (best === undefined || score(part) > score(best)) best = part;
       return best ? chooseRequisites(best, catalog, prefer) : [];
+    }
+  }
+}
+
+// A rule as the engine's requisites: a list where every entry is needed.
+// "All of" becomes several entries, and "one of" a choice ({ oneOf }),
+// each option one course or several taken together, the best-scoring
+// first (Build for me takes the first). A "one of" inside an option ("A
+// and (B or C)", or "D") goes deeper than a choice can, so there the
+// option uses its best-scoring way (chooseRequisites).
+function requisiteItems(rule: Requirement, catalog: Set<string>, prefer: Set<string>[]): RequiredItem[] {
+  switch (rule.kind) {
+    case "course":
+      return catalog.has(rule.id) ? [rule.id] : [];
+    case "other":
+      return [];
+    case "all": {
+      const items = rule.parts.flatMap((part) => requisiteItems(part, catalog, prefer));
+      return [...new Map(items.map((item) => [requiredKey(item), item])).values()];
+    }
+    case "any": {
+      const options = rule.parts.filter((part) => !(part.kind === "other" && IGNORABLE.test(part.words)));
+      if (options.some((part) => part.kind === "other")) return [];
+      const score = (part: Requirement) => optionScore(part, catalog, prefer);
+      const lists = [...options]
+        .sort((a, b) => score(b) - score(a))
+        .map((part) => chooseRequisites(part, catalog, prefer))
+        .filter((list) => list.length > 0);
+      // The same option twice (two ways of writing it) counts once.
+      const unique = [...new Map(lists.map((list) => [list.join(" "), list])).values()];
+      if (unique.length <= 1) return unique[0] ?? [];
+      return [{ oneOf: unique.map((list) => (list.length === 1 ? list[0] : list)) }];
     }
   }
 }
@@ -309,10 +382,22 @@ function parseCourseList(html: string): CourseDraft[] {
       crossListed: [],
     };
     for (const [, paragraph] of block.matchAll(/<p class="noindent">([\s\S]*?)<\/p>/g)) {
+      // "General Education: Humanities (GH)", one paragraph per area; an
+      // Inter-Domain course has two, and "General Education - Integrative:
+      // Interdomain".
       const genEd = /^General Education: .*\((G[A-Z]+)\)/.exec(text(paragraph));
-      if (genEd) {
+      const interDomain = /^General Education\s*-\s*Integrative:\s*Interdomain/i.test(text(paragraph));
+      if (genEd || interDomain) {
         if (!draft.course.categories!.includes("general-education")) draft.course.categories!.push("general-education");
-        draft.course.genEdArea ??= GEN_ED_AREAS[genEd[1]] ?? genEd[1];
+        const area = genEd ? (GEN_ED_AREAS[genEd[1]] ?? genEd[1]) : INTER_DOMAIN;
+        const areas = (draft.course.genEdAreas ??= []);
+        // Domains first and "Inter-Domain" last, whatever order the page
+        // lists them in, so a card shows a domain's letter.
+        if (!areas.includes(area)) {
+          const before = areas.indexOf(INTER_DOMAIN);
+          if (area === INTER_DOMAIN || before === -1) areas.push(area);
+          else areas.splice(before, 0, area);
+        }
       }
       // A paragraph can hold several labeled parts: "Enforced Prerequisite
       // at Enrollment: ... Concurrent Courses: ... Recommended Preparation:
@@ -355,32 +440,12 @@ function parseCourseList(html: string): CourseDraft[] {
 // ---------------------------------------------------------------------------
 
 interface ProgramDraft {
-  // "A or B" lines from the requirements list: [A, B, ...].
-  alternatives: string[][];
   // Each University Park suggested plan, as its lines; each line is a
   // course with any "or" alternatives ("CMPSC 121 or 131" → [CMPSC121, CMPSC131]).
   plans: string[][][];
 }
 
 function parseProgram(html: string): ProgramDraft {
-  // Requirement lists: a course row followed by "or" rows.
-  const alternatives: string[][] = [];
-  for (const [, table] of html.matchAll(/<table class="sc_courselist">([\s\S]*?)<\/table>/g)) {
-    let current: string[] | undefined;
-    for (const [, cls, row] of table.matchAll(/<tr class="([^"]*)">([\s\S]*?)<\/tr>/g)) {
-      const codes = linkedCourses(row);
-      // Rows naming two courses together ("MATH 231 & MATH 232") aren't
-      // one course, so they can't be simple alternatives.
-      const single = codes.length === 1 && !row.includes("&amp;");
-      if (cls.includes("orclass")) {
-        if (current && single) current.push(codes[0]);
-      } else {
-        current = single ? [codes[0]] : undefined;
-        if (current) alternatives.push(current);
-      }
-    }
-  }
-
   // Suggested academic plans: each is a table after a heading like
   // "Computer Science, B.S. at University Park Campus".
   const plans: string[][][] = [];
@@ -393,7 +458,7 @@ function parseProgram(html: string): ProgramDraft {
     plans.push(cells.map(([, cell]) => linkedCourses(cell)).filter((line) => line.length > 0));
   }
 
-  return { alternatives, plans };
+  return { plans };
 }
 
 // ---------------------------------------------------------------------------
@@ -443,8 +508,9 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
     equivalents.get(a)!.add(b);
   };
   for (const draft of drafts.values()) {
-    const previous = new Set<string>();
-    const concurrent = new Set<string>();
+    // Keyed by requiredKey, so the same requisite named twice is kept once.
+    const previous = new Map<string, RequiredItem>();
+    const concurrent = new Map<string, RequiredItem>();
     const minGrades: Record<string, Grade> = {};
     // Where there's a choice, prefer courses on the same plans as this
     // one ("MATH 230 or MATH 231": the plans with ME 320 use MATH 231),
@@ -452,29 +518,27 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
     const samePlans = new Set(planSets.filter((set) => set.has(draft.course.id)).flatMap((set) => [...set]));
     const prefer = [samePlans, planCourses];
     for (const alternatives of draft.requisites) {
-      // Of parts joined by "or", use the one that scores best.
+      // Of parts joined by "or" ("Prerequisite: MATH 110 or Concurrent:
+      // MATH 140"), use the one that scores best: a choice can't mix
+      // "earlier" and "same term".
       const part = alternatives.reduce((best, next) =>
         optionScore(next.rule, catalog, prefer) > optionScore(best.rule, catalog, prefer) ? next : best,
       );
-      for (const id of chooseRequisites(part.rule, catalog, prefer)) {
-        if (id === draft.course.id) continue;
-        (part.kind === "previous" ? previous : concurrent).add(id);
-        if (part.minGrade && part.kind === "previous") minGrades[id] = part.minGrade;
+      for (const item of requisiteItems(part.rule, catalog, prefer)) {
+        const ids = requiredIds([item]);
+        if (ids.includes(draft.course.id)) continue;
+        (part.kind === "previous" ? previous : concurrent).set(requiredKey(item), item);
+        // "C or better" applies to whichever option is taken.
+        if (part.minGrade && part.kind === "previous") for (const id of ids) minGrades[id] = part.minGrade;
       }
     }
     draft.course.requisites = {
-      previous: [...previous],
-      concurrent: [...concurrent].filter((id) => !previous.has(id)),
+      previous: [...previous.values()],
+      concurrent: [...concurrent].filter(([key]) => !previous.has(key)).map(([, item]) => item),
       ...(Object.keys(minGrades).length > 0 ? { minGrades } : {}),
     };
     // A cross-listed course is the same class under two subjects.
     for (const other of draft.crossListed) addEquivalent(draft.course.id, other);
-  }
-  // "A or B" in a program's requirements and plans: either counts.
-  for (const program of programs) {
-    for (const [first, ...others] of [...program.alternatives, ...program.plans.flat()]) {
-      for (const other of others) addEquivalent(first, other);
-    }
   }
 
   // In code order (CAS 100, CAS 100A, CAS 101, ... CMPSC 97, CMPSC 100),
@@ -491,21 +555,22 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
     school: { id: "penn-state", name: "Penn State University Park" },
     calendar: { start: { season: "fall", year: START_YEAR }, seasons: ["spring", "summer", "fall"] },
     objects,
-    globalRequirementSets: [
+    programRequirements: [
       {
-        id: "psu-baccalaureate",
-        name: "Penn State baccalaureate degree",
-        scope: "global",
+        degree: "baccalaureate",
         // Senate Policy 82-00 and 83-80: at least 120 credits, 45 of them
-        // gen ed, and a 2.00 GPA; more than 19 credits in a semester needs
-        // the dean's approval.
+        // gen ed (the rules below), and a 2.00 GPA; more than 19 credits
+        // in a semester needs the dean's approval.
         minTotalCredits: 120,
-        minCreditsByCategory: { "general-education": 45 },
         maxCreditsPerTerm: 19,
         minGpa: 2.0,
         allowDoubleCounting: true,
         allowedOverrides: ["waive-requirement", "waive-requisite", "substitute"],
+        globalRequirements: [GEN_ED],
       },
+      // Not filled in yet: no associate or graduate programs so far.
+      { degree: "associate" },
+      { degree: "graduate" },
     ],
     subjects: subjects.map(({ code, name }) => ({ code, name })),
     // Programs and their plans are made by hand.
@@ -559,10 +624,10 @@ if (process.argv.includes("--save")) {
   const { requireDatabase } = await import("../src/server/db");
   const { schools } = requireDatabase();
   // The folder's programs, plus any made in the database that the folder
-  // doesn't have (the same id and version: the folder's wins).
+  // doesn't have (the same code and version: the folder's wins).
   const existing = await schools.get(parsed.data.school.id);
-  const inFolder = new Set(parsed.data.templates.map((t) => `${t.id} ${t.version}`));
-  const kept = (existing?.templates ?? []).filter((t) => !inFolder.has(`${t.id} ${t.version}`));
+  const inFolder = new Set(parsed.data.templates.map((t) => `${t.code} ${t.version}`));
+  const kept = (existing?.templates ?? []).filter((t) => !inFolder.has(`${t.code} ${t.version}`));
   const merged = parseSchoolData({ ...parsed.data, templates: [...parsed.data.templates, ...kept] });
   if (!merged.ok) throw new Error(`The saved programs don't fit the new courses:\n${merged.errors.join("\n")}`);
   const saved = await schools.save(merged.data);

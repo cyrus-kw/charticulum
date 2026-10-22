@@ -8,6 +8,8 @@ import type { Edge, Node } from "@xyflow/react";
 import {
   formatCourseCode,
   parseCourseCode,
+  closestOption,
+  isRequiredMet,
   satisfies,
   EXTERNAL_TERM,
   GRADE_POINTS,
@@ -322,7 +324,9 @@ export function chartLayout(
 }
 
 // One link from each placed requisite (or an equivalent standing in for it)
-// to the placed object that needs it.
+// to the placed object that needs it. For a choice ("MATH 140 or MATH
+// 140H"), the links come from one option: one that's met in time if
+// there is one, otherwise the one the plan has the most of.
 function requisiteLinks(catalog: Catalog, chart: Chart, columnOf: Map<string, number>): Link[] {
   const termIndexOf = (id: string) => chart.terms[columnOf.get(id)!].index;
   const links: Link[] = [];
@@ -334,12 +338,19 @@ function requisiteLinks(catalog: Catalog, chart: Chart, columnOf: Map<string, nu
       ...previous.map((req) => ({ req, concurrent: false })),
       ...concurrent.map((req) => ({ req, concurrent: true })),
     ];
-    for (const { req, concurrent: isConcurrent } of needs) {
-      for (const [sourceId] of columnOf) {
-        if (sourceId === id || !satisfies(catalog, req, sourceId)) continue;
-        const sourceTerm = termIndexOf(sourceId);
-        const ok = isConcurrent ? sourceTerm <= targetTerm : sourceTerm < targetTerm;
-        links.push({ source: sourceId, target: id, concurrent: isConcurrent, broken: !ok });
+    for (const { req: item, concurrent: isConcurrent } of needs) {
+      const inTime = (sourceTerm: number) => (isConcurrent ? sourceTerm <= targetTerm : sourceTerm < targetTerm);
+      // The placed cards that stand for `req`.
+      const sources = (req: string) =>
+        [...columnOf.keys()].filter((sourceId) => sourceId !== id && satisfies(catalog, req, sourceId));
+      const metInTime = (req: string) => sources(req).some((sourceId) => inTime(termIndexOf(sourceId)));
+      const option = isRequiredMet(item, metInTime)
+        ? closestOption(item, metInTime)
+        : closestOption(item, (req) => sources(req).length > 0);
+      for (const req of option) {
+        for (const sourceId of sources(req)) {
+          links.push({ source: sourceId, target: id, concurrent: isConcurrent, broken: !inTime(termIndexOf(sourceId)) });
+        }
       }
     }
   }

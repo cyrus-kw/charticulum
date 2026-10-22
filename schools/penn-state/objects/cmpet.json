@@ -62,7 +62,12 @@
           "CMPET211"
         ],
         "concurrent": [
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH210"
+            ]
+          }
         ]
       },
       "description": "Algorithms, languages, notations and applications of object- and procedure- oriented languages to electrical and electronic problem solving. CMPET 301 Algorithmic Processes for Electrical Systems (3) Algorithmic Processes for Electrical Systems is a required course for junior-level students in the Electrical and Computer Engineering Technology (ECET) baccalaureate degree program. It is essential for Electrical Engineering Technology students to acquire a working knowledge of a computer language commonly used in practice. This course will prepare the student to analyze a problem and implement a structured procedural design and also an object-oriented design. This course is a follow-up course to CMPET 5 and CMPET 211 , and prepares the student for several more advanced courses in the program related to computer analysis of circuits and systems.This course covers properties of algorithms and languages, software development process, notations for describing algorithms, applications of object- and procedure-oriented languages to electrical and electronic problem solving, high-level language programming, integrated development environment, and structured programming. Laboratory exercises parallel lecture material."
@@ -101,7 +106,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPEN271"
+          {
+            "oneOf": [
+              "CMPEN271",
+              "CMPET117"
+            ]
+          }
         ]
       },
       "description": "Signal representations, communication techniques, interfacing, serial and parallel communication, modems, error detection, LAN and WAN protocols. CMPET 401CMPET 401 Data Communication and Networking (3) This course is designed to provide the students with a foundation in signal presentation, communication techniques, serial and parallel communication, modems, and other interfacing methods. The networking technologies for local and wide area networks are also studied in detail. The range of topics covered depends on students' background. Topics: Part 1. (2 weeks) Overview: Introduction Protocols and Architecture; Part 2. (9 weeks) Data Communications: Data Transmission Media Data encoding Communication techniques Data Link Control Multiplexing; Part 3. (4 weeks) Local and Wide Area Networks: LAN and WAN protocols Switching techniques Bridges and routers High speed networks Internetworking Internet resources. This course is a required course in the Computer Engineering Technology Option of the Electrical Engineering Technology BS curriculum."
@@ -125,8 +135,18 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "CMPEN271",
-          "CMPEN275"
+          {
+            "oneOf": [
+              "CMPEN271",
+              "CMPET117"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPEN275",
+              "CMPET120"
+            ]
+          }
         ]
       },
       "description": "Analysis and design of advanced combinational and sequential circuits using IC logic devices and PLD's while promoting the use of software development tools. CMPET 403 Switching Circuit Design (4) This course is designed to enhance students' abilities to analyze and design complex digital systems. The course will include the following topics: 1. Review of combinational circuits' analysis and design using, karnaugh maps with up to six variables and Quine-McCluskey method 2. Advanced combinational logic analysis and design with MSI logic circuits 3. Hazard in digital systems 4. Review of analysis and design of synchronous finite state machines (Moore and Mealy methodologies) 5. Synchronous sequential logic design using One-hot finite state machines 6. State reduction for completely and incompletely specified circuits/systems 7. Analysis and design of asynchronous sequential circuits/systems 8. Logic circuit testing and testable design 9. Introduction to Hardware Description LanguageThis course is a technical elective in the Electrical Engineering Technology BS curriculum and is intended to be taken by students who have completed their first digital systems course requirements. As such, the course integrates materials from the above undergraduate electrical course in addition to related math, engineering, and science courses. No special facilities are required for this course other than laboratories available to the Electrical Engineering Technology Program."

@@ -60,6 +60,25 @@ describe("parseSchoolData", () => {
     broken.templates[0].version = "2026";
     expect(parseSchoolData(broken).ok).toBe(false);
   });
+
+  it("rejects a program for a degree the school has no set for", () => {
+    const broken = structuredClone(sampleSchoolData) as SchoolData;
+    broken.templates[0].degree = "doctorate";
+    const result = parseSchoolData(broken);
+    expect(result.ok).toBe(false);
+    if (!result.ok) expect(result.errors).toContain("templates.bs-cs.degree: no programRequirements for doctorate");
+  });
+
+  it("names a credit rule after its area, but a list of areas needs a name", () => {
+    const withRule = (rule: Record<string, unknown>) => {
+      const school = structuredClone(sampleSchoolData) as SchoolData;
+      school.programRequirements[0].globalRequirements = [{ category: "general-education", rules: [rule as never] }];
+      return parseSchoolData(school).ok;
+    };
+    expect(withRule({ id: "Q", area: "Quantification", credits: 6 })).toBe(true);
+    expect(withRule({ id: "KD", area: ["Arts", "Humanities"], credits: 6 })).toBe(false);
+    expect(withRule({ id: "KD", name: "Knowledge domains", area: ["Arts", "Humanities"], credits: 6 })).toBe(true);
+  });
 });
 
 describe("loadSchool", () => {
@@ -77,11 +96,11 @@ describe("loadSchool", () => {
   });
 
   it("ships suggested plans that pass their own rules", () => {
-    for (const template of school.library.filter((t) => t.id === "bs-cs")) {
+    for (const template of school.library.filter((t) => t.code === "bs-cs")) {
       const fork = forkTemplate(template);
       const { requirements } = resolveRequirements(school.library, school.globalSets, fork);
       const result = checkChart(school.catalog, fork, requirements);
-      expect(result.issues, `${template.id} ${template.version}`).toEqual([]);
+      expect(result.issues, `${template.code} ${template.version}`).toEqual([]);
     }
   });
 
@@ -97,6 +116,28 @@ describe("loadSchool", () => {
     const result = checkChart(school.catalog, chart, requirements);
     expect(result.issues).toEqual([]);
     expect(chart.terms[0].objectIds).toEqual(["STAT200"]);
+  });
+});
+
+describe("a program's categories", () => {
+  it("become its rules: required courses, credit rule groups, and its total credits", () => {
+    const data = structuredClone(sampleSchoolData) as SchoolData;
+    const program = data.templates.find((t) => t.code === "bs-cs" && t.version === "2026-27")!;
+    program.minTotalCredits = 50;
+    program.localRequirements.push({
+      category: "elective",
+      rules: [{ id: "upper-cs", name: "Upper-level CS", credits: 3, subjects: ["CS"], minNumber: 300 }],
+    });
+    const result = parseSchoolData(data);
+    if (!result.ok) throw new Error(result.errors.join("\n"));
+    const school = loadSchool(result.data);
+    const fork = forkTemplate(latestTemplate(school.library, "bs-cs")!);
+    const { requirements } = resolveRequirements(school.library, school.globalSets, fork);
+    expect(requirements.minTotalCredits).toBe(50);
+    expect(requirements.requiredObjectIds).toContain("CS390");
+    expect(requirements.creditRules).toEqual([
+      { category: "elective", name: "Electives", rules: [{ id: "upper-cs", name: "Upper-level CS", credits: 3, subjects: ["CS"], minNumber: 300 }] },
+    ]);
   });
 });
 

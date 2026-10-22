@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "internalEquivalents": [
         "STS105"
       ],
@@ -23,7 +25,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "The gut microbiome is increasingly being recognized as critical to our health, but what is it? We host as many microbes in our gut as there are human cells in our body and the metabolic capabilities of these microbes vastly exceeds what is encoded by the human genome. These microbes influence everything from the digestion of our food to our metabolism to our immune system to perhaps even our mood. Learning about these microbes and the role they play in the human body is a necessary part of understanding many diseases as well as how to maintain health. In this General Education, Health and Wellness course we will explore all the way that the gut microbiome influences us and our health as well as how we influence it with our diet and lifestyle choices."
     },
     {
@@ -50,7 +54,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
     },
     {
@@ -104,7 +110,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Fermented beverage production has been a driving force for scientific discovery and as such is a wonderful way to introduce areas of scientific knowledge. This course will use beer, wine, and other fermented products, as well as their ingredients to teach core scientific concepts. These concepts will include the biology of fruit development, the microbiology of wine and beer production, the physics of carbonated beverages, and the flavor chemistry induced through fire. Through these areas, students will learn critical thinking skills, as well as apply what they have learned to practical problems including utilizing some of the key mathematical equations used in beer and wine production. Upon completion, students will be expected to be able to understand key elements of fermented beverage production, along with the science behind it, and to be able to apply that knowledge to practical problems."
     },
     {
@@ -128,7 +136,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FDSC200"
+          {
+            "oneOf": [
+              "FDSC200",
+              "FDSC201",
+              "CHEM202"
+            ]
+          }
         ],
         "concurrent": [
           "BMB211",
@@ -151,7 +165,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250",
+              "STAT240"
+            ]
+          }
         ]
       },
       "description": "The field of Sensory and Consumer Science is primarily focused on responses of consumers to food products and non-food fast-moving consumer goods (e.g., shampoo). These responses may be sensory/perceptual (i.e., how sweet, how bitter, how smooth) or affective (i.e., liking / preference), with the assumption that the former generally drives the later. Numerous tools have been developed by sensory practitioners over the last 70 years, with additional influences from experimental psychology. The course also addresses contemporary research on pedagogy that indicate applied statistics are best taught in context to the field in which students will apply the statistical concepts. Here, students will gain practice applying introductory statistical topics (t-tests, Analysis of Variance, etc) to sensory and consumer data collected from human participants."
@@ -193,7 +213,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "FDSC200"
+          {
+            "oneOf": [
+              "FDSC200",
+              "FDSC201"
+            ]
+          }
         ]
       },
       "description": "Physiological mechanisms involved in thirst and appetite, digestion, absorption, utilization of nutrients, respiration, and body temperature regulation."
@@ -275,8 +300,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FDSC200",
-          "FDSC201"
+          {
+            "oneOf": [
+              [
+                "FDSC200",
+                "FDSC201"
+              ],
+              [
+                "FDSC400",
+                "FDSC405"
+              ],
+              "FDSC408",
+              "FDSC410"
+            ]
+          }
         ]
       },
       "description": "Investigate the physical and chemical behavior of plant-based raw materials and ingredients, with emphasis on parameters influencing finished product quality. FD SC 413 Science and Technology of Plant Foods (3) This course focuses on the unique importance of foods produced from plants to human health and wellness. The influence of cultural practices, harvesting and handling methods and processing technology on quality and safety of whole, fresh and processed food products using minimal processing and fermentation to preserve food products from plant sources will be emphasized."
@@ -288,8 +325,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FDSC200",
-          "FDSC201"
+          {
+            "oneOf": [
+              [
+                "FDSC200",
+                "FDSC201"
+              ],
+              [
+                "FDSC400",
+                "FDSC405"
+              ],
+              "FDSC408",
+              "FDSC410"
+            ]
+          }
         ]
       },
       "description": "Investigate the physical and chemical behavior of dairy-based raw materials and ingredients, with emphasis on parameters influencing finished product specifications. FD SC 414 Science and Technology of Dairy Foods (3)FD SC 414 provides students with information about the composition, properties and physiochemical aspects of milk and milk products and an understanding of the changes that occur in milk during processing into a variety of dairy products. Laboratory exercises are held weekly and complement the topic being addressed in lecture. A semester-long group project is conducted during the course to help students integrate knowledge gained throughout the Food Science Curriculum. The project focuses on a \"real life\" product development problem and requires students to develop problem statements, design experiments, design formula and processing schemes, obtain ingredients and actually manufacture a product. Time is allotted in the laboratory schedule for some group activities; other are scheduled outside of class."
@@ -301,8 +350,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FDSC200",
-          "FDSC201"
+          {
+            "oneOf": [
+              [
+                "FDSC200",
+                "FDSC201"
+              ],
+              [
+                "FDSC400",
+                "FDSC405"
+              ],
+              "FDSC408",
+              "FDSC410"
+            ]
+          }
         ]
       },
       "description": "Investigate the physical and chemical properties of muscle food commodities, with emphasis on muscle-based ingredients in formulated foods. FD SC 415 Science and Technology of Muscle Foods (3)This course applies food science and technology to the processing, storage and handling of red meat, poultry, and seafood products. The course includes two lectures and one lab session each week. The laboratory sessions are conducted in the Meat Laboratory located on Porter Road. Student performance is evaluated based on exams, lab reports, and homework exercises. Course objectives are set to: 1. help students understand the nature and importance of structure, compositional and quality differences among muscle food ingredients and their impact on product manufacturing, 2. inform students of the basic steps of primary processing for livestock, poultry and seafood species and their impact on meat properties, 3. give students first-hand experience with typical manufacturing steps and processes for fresh, cured, smoked, fermented, dried or cooked meats and help them understand how variations in processing will affect finished product properties, and 4. give students practice in applying the scientific method in answering questions or solving problems that may arise during the manufacture of muscle foods products. Course activities draw on the students' prior knowledge of food chemistry, food engineering, food microbiology and food analysis, applying concepts from those disciplines in the manufacture and evaluation of meat products. Course topics cover the range from meat science through technical and practical aspects of meat product manufacture including product quality, safety, profitability and regulatory issues. There is emphasis on meat industry practices including traditional and recent technology. Through laboratory exercises and independent group projects students gain experience in application of the scientific method for solving product development problems."

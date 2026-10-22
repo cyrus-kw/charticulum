@@ -3,13 +3,13 @@
 // Courses taken together (concurrent requisites, e.g. a lecture and its
 // lab) in the same term form a block: they move as one, and nothing can be
 // dropped between them.
-import type { Catalog } from "../engine/index";
+import { requiredIds, type Catalog } from "../engine/index";
 
 // Does either course list the other as a concurrent requisite?
 function takenTogether(catalog: Catalog, a: string, b: string): boolean {
   return (
-    (catalog.get(a)?.requisites.concurrent.includes(b) ?? false) ||
-    (catalog.get(b)?.requisites.concurrent.includes(a) ?? false)
+    requiredIds(catalog.get(a)?.requisites.concurrent ?? []).includes(b) ||
+    requiredIds(catalog.get(b)?.requisites.concurrent ?? []).includes(a)
   );
 }
 

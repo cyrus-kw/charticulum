@@ -195,10 +195,10 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }: EdgeProps<
 
 function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
   const { object, grade, issues, external, color, onlyIn, minGrade, generalEducation } = data;
-  // Gen ed courses show a grey "+" and their area's first letter in blue
-  // ("+H" for Humanities), like a grade after its "*", or "+G" when the
-  // school didn't name an area.
-  const genEdArea = object.genEdArea;
+  // Gen ed courses show a grey "+" and their (first) area's first letter
+  // in blue ("+H" for Humanities), like a grade after its "*", or "+G"
+  // when the school didn't name an area. Pointing at it lists them all.
+  const genEdArea = object.genEdAreas?.join(", ");
   // A failing grade (an F, or under the minimum another course asks for)
   // is shown in red instead of green.
   const failing = grade !== undefined && (grade === "F" || (minGrade !== undefined && !meetsGrade(grade, minGrade)));
@@ -276,7 +276,7 @@ function CourseCard({ data, selected, width }: NodeProps<CourseNode>) {
               <span className="shrink-0" data-tooltip={`Gen ed${genEdArea ? `: ${genEdArea}` : ""}`}>
                 <span className="text-zinc-400 dark:text-zinc-500">+</span>
                 <span className="font-semibold text-sky-800 dark:text-sky-300">
-                  {genEdArea ? genEdArea[0].toUpperCase() : "G"}
+                  {object.genEdAreas ? object.genEdAreas[0][0].toUpperCase() : "G"}
                 </span>
               </span>
             )}

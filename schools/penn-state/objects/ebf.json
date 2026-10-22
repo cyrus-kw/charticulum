@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "requisites": {
         "previous": [
           "ECON102"
@@ -59,7 +61,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BLAW243"
+          {
+            "oneOf": [
+              "BLAW243",
+              "BA242",
+              "BA243"
+            ]
+          }
         ]
       },
       "description": "An examination of the law that applies to acquiring the property rights for exploration and drilling of energy sources. This course examines the area of energy law and contracts, which is crucial to successful drilling in natural gas and oil properties. The course begins with a description of ownership and rights in the mineral estate, and how those rights have evolved over time. Students will be instructed in the how different types of land affect legal rights, and the details of the law of capture. They will also review the Statute of Frauds and examine how it applies to land drilling contracts. The second part of the course presents the basic tenents of real estate law, examining the seminal cases in this area. It will review the standard oil and gas lease used in the United States. Issues reviewed will include the nature of lease clauses and implied covenants, as well as farmout and joint operating agreements. It will also examine how royalty payments can be structured. Environmental regulation is a critical component of energy exploration. To address this topic, students will be introduced to the regulatory process. They will study regulatory compliance and how to deal with government officials. They will also be instructed in corporate liability for property clean up and pollution, and in strategies for minimizing both that liability and harm to the environment. In addition, the course will review topics of environmental due diligence and the joint and several nature of environmental liability."
@@ -72,7 +80,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "EBF200"
+            ]
+          }
         ]
       },
       "description": "The U.S. energy sector is in the process of a great transformation. This Writing Across the Curriculum course examines how evolving federal, state, and local policies; regulatory efforts toward electricity market deregulation; and the technical innovations driving shale gas development and renewable energy generation have changed markets for energy and electricity in the United States. This all occurs in the context of a movement towards lower carbon emissions. The Great Energy Transition explores these energy topics from a law, policy, and economics perspective. It analyzes energy topics such as natural gas development and renewable energy by asking how law, policy, and economics are driving changes in these types of sectors, how these changes impact society, and how these changes present both opportunities and challenges in their design and implementation. Successful completion of the course will enable students to productively engage with prospective employers, energy experts, policymakers, and administrative professionals on a broad range of modern energy topics. The Writing Across the Curriculum aspects of this course will hone students' skills at outlining and structuring their writing, identifying sources, incorporating feedback, and making their writing more concise."
@@ -85,7 +99,12 @@
       "requisites": {
         "previous": [
           "EBF200",
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          }
         ]
       },
       "description": "All major firms engage in financial risk management. In this course, we will learn quantitative techniques for describing of how firms can use financial instruments to manage their financial risk. In particular, we will focus on risk management with respect to threats to financial viability from the weather. The course takes a highly statistical approach to the valuation and analysis of financial derivatives such as futures and options. Specific topics to be covered include the structure and pricing of options, the theory of arbitrage, financial statistics and the use of options to hedge financial risk. Students will gain experience using the Black-Scholes equation to value financial options, and will also learn strategies for hedging financial exposure to large commodity price variations. The techniques discussed in this class will be primarily illustrated using weather and energy commodity derivatives, but can be applied to a large variety of different commodity markets."
@@ -111,10 +130,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH140",
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          },
           "EBF200",
           "EBF301",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "ECON302"
+            ]
+          }
         ]
       },
       "description": "What is the role of energy in the economic system? What are the implications of the energy transformation on economic welfare? How can we efficiently meet new demand while also addressing the myriad social, environmental, and regulatory challenges related to the energy system? This course will examine these questions from an intermediate microeconomics perspective. The course covers topics in the organization and conduct of firms operating in energy markets, measuring and detecting the manipulation of energy markets, and regulating the environmental impacts of energy production, delivery and consumption."

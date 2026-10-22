@@ -10,7 +10,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Writing and Speaking",
+      "genEdAreas": [
+        "Writing and Speaking"
+      ],
       "description": "Writing, speaking, and critical thinking skills applied to topics of general interest in Environmental and Materials Science. EM SC 100S Earth and Mineral Sciences First-Year Seminar (3) (GWS;FYS) The EMS First-Year Seminar is designed to encourage students to begin the important process of 'thinking for a living.' The primary focus of the seminar is to promote critical reading and thinking skills, and to help students develop effective written and oral arguments. Students learn the importance of reading, sharing ideas and collaborating, through independent and group research, discussion and debate. We want our students to think about some of the major issues facing the world today, the role that science and technology have played in defining and addressing these issues, the way in which present-day thinking has been shaped by the past, and the development of scientific thought. The Seminar's content focuses on communication skills, but these are addressed within the context of issues relevant to the disciplines represented in EMS. As such, the discussions range across topics such as the Earth and its resources; scientific and technical aspects of global habitability; development of the advanced materials necessary for sustaining and advancing civilization in the 21st century; and the social, economic, and political factors that shape and constrain society's view of the Earth system. Students undertake three to five major writing projects throughout the semester, as well as several smaller one to two paragraph written assignments. Grades are determined from their performance on the written papers, oral presentations, and in-class participation. The Seminar is a required course for all EMS first-year students at the University Park campus and, together with English 015 and either English 202 or Speech Communications 100, will satisfy the Writing and Speaking requirements of General Education."
     },
     {
@@ -28,7 +30,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This course introduces students to various aspects of plastics in the environment. Major topics covered include the production and uses of plastics, the science of plastics in the environment (distribution and degradation), the impacts of plastics on ecosystems and humans, and potential solutions. The various ways in which plastics are used in a variety of products and applications are discussed. Plastics production has accelerated and evolved over the past several decades, now utilizing multiple raw materials, including recycled plastics, to create different types of plastics, including primary (nurdles) and secondary forms. Themes covered under the fate of plastics include timescales of transport and degradation, measurement techniques, size range classifications, and the distribution in the environment (water, soil, and air). The global plastics budget is discussed, including the low rate of recycling. The degradation of plastics includes fracturing, photolysis, and microbial decomposition. Ecological impacts are separated into those due to macroplastics and microplastics. Effects on humans include those resulting from the consumption of food and from inhalation of airborne fibers. Existing laws and policies surrounding plastics are discussed at local, national, and international levels, including bans on certain types of plastics (e.g., bags and microbeads). The course culminates in the analysis of solutions to plastics pollution, including recycling, bioplastics, compostable plastics, and non-plastic replacements. This course will provide a BA student with the intended breadth of a BA degree."
     },
     {
@@ -40,7 +44,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "In this course students are guided through an engaging exploration and the critical evaluation of selected media (e.g., books, film) in contemporary culture on topics related to energy and sustainability. Three selections are used each term, typically two books and one film. Students consider the subject matter in light of humanistic values, where the science, ideas and history presented in the selected media are critically evaluated relative to the viability of our planet's ability to support life. Opening lessons cover the foundational science of energy and sustainability, with a global perspective and consideration of the human dimension. The science is presented without technical jargon or advanced mathematics, to promote a genuine and sound understanding of these essential concepts for college-level students of all academic backgrounds. Learning units are devoted to each media selection, with all content, activities and assessments within the unit contributing to this concentrated focus. After completing this course, students will possess the foundational science knowledge necessary to evaluate contemporary topics related to energy and sustainability, from the perspective of universal humanity on a planet of finite resources. This knowledge prepares students to develop observations, questions and opinions on topics related to energy and sustainability and to self-express them, in both written and oral presentations, to others with different backgrounds and points of view. Students will have the foundational knowledge necessary to be skilled critical readers of energy and sustainability subject matter, knowing how to raise (and answer) questions related to scientific clarity and soundness and how to test assumptions and scope of arguments, especially as related to inclusion of humanistic values and planetary limits. This knowledge prepares students to be willing and able to avoid entrenched ideology-based positions on issues related to energy and sustainability and to develop, instead, a personal position based in science and data with a humanistic perspective. Students will gain the knowledge of credible resources and organizations for ongoing research related to energy and sustainability and be prepared to participate in public dialogue on some of the most challenging and complicated issues of our time, including activities such as letters to the editor, online commenting, political engagement, and public advocacy."
     },
     {
@@ -102,7 +110,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC200"
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "GEOG365",
+              "GEOG485",
+              "GEOG489",
+              "GEOSC210",
+              "GEOSC444",
+              "METEO273",
+              "EME210",
+              "MATSE219",
+              "CMPSC101"
+            ]
+          }
         ]
       },
       "description": "With the rapid increase in quality and quantity of environmental data, emerging data-driven analytical methods are becoming important for discovering patterns and making predictions about our Earth and environmental systems. The datasets, such as in-situ measurements, remote sensing observations acquired by satellite, airborne, and UAV systems, Earth system modeling outputs, and energy datasets, are generally characterized by different spatial and temporal scales and coverage, complex data structures, high dimensionality, and large data volume. It is important to understand the principles, strengths, and limitations of data-driven methods for Earth and environmental science applications, and to learn the practical skills for applying them to real-world datasets. This course introduces various data analytical methods focused on machine learning for Earth and environmental sciences. A range of supervised and unsupervised methods for regression, classification, and clustering problems will be discussed with real-world examples, including but not limited to climatological data, biodiversity data, remote sensing imagery classification, and geomorphological analysis. This 3-credit course is designed to include lectures and class projects. The lectures will focus on the basic principles and environmental and earth science applications of machine learning algorithms, including regression (e.g., OLS, Ridge, LASSO, PCR), gradient descent optimization, classification (e.g., logistic regression, naïve Bayes, decision trees, random forest, support vector machine), neural networks and deep learning, and clustering (e.g., k-means, hierarchical, self-organizing map) techniques, etc. The class projects will include practical programming exercises in using these techniques for various real-world datasets. Students are encouraged to bring datasets from their own domain (e.g., geography, geoscience, materials science, meteorology, and energy) for analysis in the final project."

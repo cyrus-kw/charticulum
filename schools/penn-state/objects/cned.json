@@ -66,7 +66,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
     },
     {
@@ -104,13 +106,24 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PSYCH100"
+          {
+            "oneOf": [
+              "PSYCH100",
+              "RHS100"
+            ]
+          }
         ],
         "concurrent": [
-          "RHS301"
+          {
+            "oneOf": [
+              "RHS301",
+              "HDFS301"
+            ]
+          }
         ],
         "minGrades": {
-          "PSYCH100": "B"
+          "PSYCH100": "B",
+          "RHS100": "B"
         }
       },
       "description": "CNED 393 is a course that prepares and supports students in their role as a Peer Counselor (PC) on campus to help support fellow students as they navigate difficult decisions, points of crisis, or everyday aspects of student life. Student Peer Counselors approved to participate in this course will learn how to work cooperatively with their respective campus to respond to fellow student needs, promote student safety and personal wellness, meet individually with students to discuss any emotional concerns, facilitate support groups, and hold events that cater to student wellness and stress reduction. This 2-credit course consists of the CNED 393 seminar taught by a qualified faculty member, who has clinical counseling experience, along with clinical group supervision conducted by campus psychological and counseling services staff members."

@@ -117,7 +117,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ],
         "concurrent": [
           "GEOSC1"
@@ -132,10 +137,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ],
         "concurrent": [
-          "IE424"
+          {
+            "oneOf": [
+              "IE424",
+              "STAT401"
+            ]
+          }
         ]
       },
       "description": "C E 336 Materials Science for Civil Engineers (3) This course introduces engineering students to the structure, properties and behavior of construction materials, providing the bridge between engineering mechanics and engineering design. The course is an engineering science course focused at providing the students with a working knowledge of the nature and engineering properties of construction materials to understand prediction models and statistical variations for quality control. The course provides an introduction to aggregates, concrete, asphalt, timber, steel, structural alloys, and polymers used in civil infrastructure and in building construction. Durability, life expectancy, recycling, and variability of materials will be examined in addition to their mechanical properties. The students will achieve these objectives through in-class practices or quizzes, homework exercises, reading assignments and exams."
@@ -147,7 +162,12 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "CE335"
+          {
+            "oneOf": [
+              "CE335",
+              "CE336"
+            ]
+          }
         ]
       },
       "description": "Laboratory investigating the physical and mechanical properties of civil engineering materials; soils, aggregates, concrete; steel; wood; and polymers. C E 337 C E 337 Civil Engineering Materials Laboratory (1) The understanding of the structure, physical and mechanical properties and behavior of engineering materials is at the very core of engineering design. A command of this knowledge is essential for all civil engineers. This 1-credit laboratory provides a hands-on experience with the testing and evaluation of civil engineering materials, including soils, aggregates, concrete, steel, wood and polymers. In addition, this lab builds on the topics of professional communication and engineering in groups that are present throughout the Civil Engineering curriculum. This course is required for all Civil Engineering majors and is a required laboratory component for ABET review. The course also may serve selected Architectural Engineering students that currently enroll in Material Science for Engineers. The laboratory will be taught every semester with an offering of 4-6 sections per semester.The Civil Engineering Materials Laboratory is directly tied to Engineering Mechanics of Soils and Material Science for Civil Engineers. It replaces the laboratory component of both of the existing courses to create a comprehensive materials laboratory experience. By creating a stand-alone course, students may schedule the laboratory separate from the lecture time, eliminating multiple course conflicts. The course meets 3 hours each week throughout the semester with an introductory lecture and training session on lab safety. Concurrent or previous enrollment in Engineering Mechanics of Soils or Material Science for Engineers ensures that the students have completed the Strength of Materials course and have a clear point of reference to the relevance of the material in the course.The Civil Engineering Materials Laboratory will incorporate the use of a variety of equipment, including universal testing machines, Charpy fracture toughness device, Rockwell Hardness device, soil compaction devices, sieves, plasticity index devices, concrete mixing equipment, electronic strain devices, direct/biaxial/triaxial shear devices and other similar equipment."
@@ -159,7 +179,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ]
       },
       "description": "Analysis of statically determinate and indeterminate trusses, beams, and frames; reactions, axial forces, shears, moments, deflections. Introduction to influence lines. The course includes an introduction to structural systems and basic analysis methods for beams, frames, and trusses. Topics covered include the analysis of statically determinate and indeterminate structures, deflection calculations, influence lines, and an introduction to the stiffness method and a software package for structural analysis."
@@ -221,7 +246,12 @@
       "requisites": {
         "previous": [
           "CHEM110",
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          }
         ]
       },
       "description": "Nature and scope of environmental issues; air, water, land impacts; fundamentals and processes of pollution control. CE 370 Introduction to Environmental Engineering (3) The objectives of this course are to introduce science and engineering principles for dealing with natural and engineered environmental systems; to provide quantitative tools to solve environmental engineering problems dealing with water and wastewater treatment, air pollution control, and management of solid and hazardous wastes; and to identify alternative ways to deal with pollution and to minimize pollution."
@@ -267,7 +297,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC200"
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
         ],
         "concurrent": [
           "MATH251"
@@ -283,7 +320,12 @@
       "requisites": {
         "previous": [
           "CHEM110",
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          }
         ]
       },
       "description": "Massive changes to our personal consumption patterns and civil infrastructure systems are needed to decrease CO2 emissions and minimize the impacts of climate change. In this course we will quantify energy use; study how much energy, water, and food we use in our daily lives; and determine how much CO2 gets emitted from these personal activities and by components of our public infrastructure (including buildings, electric power industries, food systems, and transportation). We will evaluate how design choices in our homes, buildings, agricultural systems, and transportation infrastructure can be modified to reduce energy consumption and carbon emissions. Greenhouse gases that cause climate change include more than just carbon from fossil fuels; we will therefore also discuss sources of other greenhouse gases and natural and engineered strategies to mitigate and reduce their emissions. Other topics include modeling rates of renewable energy growth, energy storage, climate science, infrastructure's role in environmental and climate justice, and the economic aspects of climate solutions."
@@ -295,18 +337,38 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC204",
+              "CE402"
+            ]
+          },
           "MATH140",
           "MATH141",
           "MATH220",
-          "STAT401"
+          {
+            "oneOf": [
+              "STAT401",
+              "IE424"
+            ]
+          }
         ],
         "minGrades": {
           "CMPSC121": "C",
+          "CMPSC131": "C",
+          "CMPSC200": "C",
+          "CMPSC201": "C",
+          "CMPSC204": "C",
+          "CE402": "C",
           "MATH140": "C",
           "MATH141": "C",
           "MATH220": "C",
-          "STAT401": "C"
+          "STAT401": "C",
+          "IE424": "C"
         }
       },
       "description": "This course introduces Civil and Environmental Engineering (CEE) applications and solutions that can be addressed by probabilistic machine learning techniques. Students will learn CEE related foundational concepts in probability theory, data science, and statistics, explore Monte Carlo simulation solutions, and get familiar with optimization methods. Predictive modeling based on analytical/computational models and acquired data will be covered, as well as condition identification and classification techniques based on available information, and decision-making under uncertainty concepts. Several CEE applications will be analyzed and demonstrated throughout the course. Through coding exercises students will also gain practical experience, preparing them to integrate probabilistic modeling and machine learning methodologies into their professional engineering practice."
@@ -318,12 +380,30 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH141",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "ESC261M"
+            ]
+          }
         ],
         "minGrades": {
           "MATH141": "C",
-          "CMPSC121": "C"
+          "MATH111": "C",
+          "CMPSC121": "C",
+          "CMPSC131": "C",
+          "CMPSC200": "C",
+          "CMPSC201": "C",
+          "ESC261M": "C"
         }
       },
       "description": "This course offers a comprehensive introduction to domain-oriented Artificial Intelligence (AI) and Machine Learning (ML) methods, equipping future engineers and scientists with cutting-edge AI/ML skills, preparing them for advanced AI tasks and making them proficient in solving complex problems with AI models. In today's rapidly evolving technological landscape, AI/ML is transforming the way problems are approached and solved across industries, including Civil and Environmental Engineering. Employers increasingly seek professionals with AI expertise to address complex challenges and drive innovation. By learning AI/ML methods in the context of their career interests, students will be well-equipped to excel in their fields and stand out in the job market. The course bridges fundamental principles of ML with domain-relevant examples taken from Civil, Environmental, and Water Engineering, providing students with the skills necessary to train and run AI/ML models in their respective fields. Examples include examining pavement performance with a Random Forest, predicting water quality and floods with Recurrent Neural Networks, and identifying microbes and examining building safety with Convolutional Neural Networks. The covered methods are selected to cover domain problems and practices, so that by the end of the course, students will be familiar with AI model concepts and the usefulness of AI and ML models in their domains and industries. They will be exposed to hands-on coding exercises, model training, benchmarking, and finetuning. The content related to statistics and math is limited. For those unfamiliar with Python, the first few sessions of the course will include exercises on Python and PyTorch, a popular ML library in Python. AI algorithms to be covered include regularized linear regression, regression trees and random forest, boosting, convolutional and recurrent neural networks, unsupervised learning, generative models, and the effective use of generative AIs for model training, all in the context of Civil, Environmental, and Water Engineering (CEWE) applications."
@@ -335,7 +415,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CE332"
+          {
+            "oneOf": [
+              "CE332",
+              "AE372"
+            ]
+          }
         ]
       },
       "description": "C E 410 provides students with a working knowledge of the residential land development design process, including conservation and green design approaches, site assessment, grading and earthwork, utility design and layout, and stormwater management. The course covers the subdivision and land development regulatory processes, zoning issues, and the elements of civil infrastructure design required in the residential land development process. Conservation design and sustainable development techniques are emphasized throughout the course. For effective residential subdivision design, students must be proficient in applying basic principles of mathematics, science, and economics included in accredited academic engineering programs. An understanding of design software and its application has also become an integral part of the land development design process. The course discusses the scope and nature of the residential land development process. Students will be expected to perform design and analysis necessary for appropriate subdivision layout and infrastructure design. Issues in engineering ethics and professional responsibility related to land development are interwoven into class discussions and assignments. The course is an elective for students in the Civil Engineering major and an elective in the Residential Construction Minor."
@@ -367,7 +452,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT401"
+          {
+            "oneOf": [
+              "STAT401",
+              "IE424"
+            ]
+          }
         ]
       },
       "description": "C E 422 Transportation Planning (3) In this course, students acquire basic knowledge on the history and recent developments in transportation planning problems and quantitative methods. They will develop an understanding of transportation planning, transportation modeling, transportation system simulation, data collection techniques, and gain laboratory experience with each. Students will use mathematical/statistical models and GIS software to analyze, simulate, and forecast the demand for transport services. They will gain familiarity with the software used in transportation planning practice."
@@ -392,7 +482,12 @@
       "requisites": {
         "previous": [
           "EDSGN100",
-          "CE332"
+          {
+            "oneOf": [
+              "CE332",
+              "CE333W"
+            ]
+          }
         ]
       },
       "description": "Project Information Modeling is the process of constructing a 3D digital model of a project with attached information. Project Information Modeling (PIM) is an integrated process built on coordinated, reliable information about a project from design through construction and into operations. It is a new approach to project delivery in which a digital representation of the project process is used to facilitate the exchange and interoperability of information. Implementation of PIM generates significant benefits, including improved design quality, reduction in design errors, improved field productivity, reduction in conflicts and changes, and finally reduction in construction cost and time. In this course, students will learn applications of PIM used in the industry by different disciplines (e.g., architectural, engineering and construction), design model-based development and coordination (e.g., 3D, 4D, 5D, and XD), value engineering concepts, system clash prevention, and understand the benefits of various parametric modeling applications that can be used. Upon completion of this course, students will have full understanding of PIM concepts throughout the lifecycle of a building or an infrastructure project, from planning, design, pre-construction, construction and operations."
@@ -441,7 +536,12 @@
       "requisites": {
         "previous": [
           "CE336",
-          "STAT401"
+          {
+            "oneOf": [
+              "STAT401",
+              "IE424"
+            ]
+          }
         ]
       },
       "description": "C E 436 Construction Engineering Materials (3) The course provides students with a working knowledge of the safe design, production and application of quality construction materials unique to civil engineering. The course builds upon the understanding of civil engineering materials gained in the introductory course. C E 436 focuses on the materials design and quality control of aggregates, steel, portland cement concrete, and asphalt concrete."
@@ -467,7 +567,12 @@
       "requisites": {
         "previous": [
           "CE432",
-          "CE435"
+          {
+            "oneOf": [
+              "CE435",
+              "CE436"
+            ]
+          }
         ]
       },
       "description": "Construction project integrating geotechnical reports; materials specifications; quality control; equipment; estimation; scheduling; design details: excavations, foundations, retaining walls, formwork, pavements. C E 438W C E 438W Construction Engineering Capstone Design (3) This course is intended to establish the foundation for organizational and procedural understanding in construction engineering. The student will gain the knowledge necessary to apply engineering principles in analyzing economical approaches to construction problems. This course will cover construction methods, equipments, and cost estimation of the construction materials, excavation, foundation, and other phases of civil engineering construction projects."
@@ -481,7 +586,12 @@
       "requisites": {
         "previous": [
           "CE435",
-          "CE436"
+          {
+            "oneOf": [
+              "CE436",
+              "CE437"
+            ]
+          }
         ]
       },
       "description": "Subsurface site evaluation; integrated design of retaining walls, foundations, pavements, and materials for airports, highways, dams, or other facilities."
@@ -562,7 +672,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CE332"
+          {
+            "oneOf": [
+              "CE332",
+              "AE372"
+            ]
+          }
         ]
       },
       "description": "This course focuses on introducing the fundamental principles of detailed cost estimating and bidding in civil infrastructure projects, including classifying work in accordance with specifications standards, extracting quantity take-offs from drawings, compiling and pricing estimates, finalizing bids, and the utilization of software and spreadsheets to automate estimating functions. The course also introduces estimating methods used for the preparation of conceptual and preliminary estimates."
@@ -574,7 +689,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CE332"
+          {
+            "oneOf": [
+              "CE332",
+              "CE333W"
+            ]
+          }
         ]
       },
       "description": "Theory and practice used in planning and scheduling projects; defining task and resources, creating logic diagrams, and monitoring the projects. C E 456 C E 456 Planning & Scheduling (3) \"Planning and Scheduling\" encompasses construction tenets and fundamentals including organizing, staffing, directing, and controlling representing concepts and principles integral to career applications in project and design management. Students who successfully complete this course will be able to: 1) understand and use planning, scheduling, and control techniques for managing construction projects 2) understand scheduling techniques and computer applications in critical path methods, PERT, and resource scheduling 3) understand construction financing and schedule / cost relations 4) understand the principles of project tracking, progress measurements, trend analysis, and forecasting"
@@ -586,7 +706,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CE332"
+          {
+            "oneOf": [
+              "CE332",
+              "AE372"
+            ]
+          }
         ]
       },
       "description": "Introduction to major construction equipment along with selected construction methods for civil infrastructure projects. This includes understanding construction equipment economics, selection of appropriate equipment based on operational parameters, principles of equipment productivity analysis and measurement, methods for equipment productivity improvement, safe operation of construction equipment, techniques for optimizing equipment utilization, and technologies for enhancing equipment integration and automation."

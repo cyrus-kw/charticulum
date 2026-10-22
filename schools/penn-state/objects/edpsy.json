@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "This course is an overview of the major theories and significant research on the development and explanation of individual differences and how those differences affect the education of school-age children. Specific topics include physical, cognitive, language, social-emotional, and cultural development in children and youth ages 3-20. By its very nature, the course will include a diversity focus, with special attention to ethnic, cultural, and gender issues as well as the needs of special populations. Within each topics area, the course will pay special attention to theoretical and empirical work on how and why variations occur, how they are to be interpreted and measured, and the implications those variations have for society, especially for schooling. Traditional and alternative practices in schools will be examined to see which approaches best meet the needs of in increasingly diverse American society. The course will also address cross-cultural comparisons to identify similarities and differences in developmental patterns, what these patterns tell us about development, and the societal impacts of these patterns. While the course will focus on individual differences in education it will not be exclusively oriented toward future teachers. The course will also help parents ( or future parents) and citizens understand the nature of development and individual differences of students as they progress through the educational system."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "EDPSY 11 is a course about individual differences in learners that may stem from biological and environmental influences on development and wellness. This course addresses the ways in which we consider these differences as we design environments for learners in early and middle childhood. Course content includes cognitive, language, social-emotional, moral and physical development of students in pre-elementary through middle school settings. Content also includes understanding and promotion of health and wellness in educational settings; as well as individual differences that stem from gender, ethnic, racial, and other forms of diversity in children and youth. Both primary and secondary sources serve as foundational readings for the course. Readings share research on how and why variations occur, how to measure and interpret them, and what implications such variations have on traditional and non-traditional educational environments with emphasis on developmentally appropriate and individually appropriate educational practice. Specific applications for teacher certification are included. Within each topic area, the course will pay special attention to theoretical and empirical work on how and why variations occur, how they are to be interpreted and measured, and the implications those variations have for social policy and ethical dilemmas with particular attention to educational settings. Traditional and alternative practices in schools will be examined to see which approaches best meet the needs of an increasingly diverse American society. While the course will focus on individual differences in education, it will not be exclusively oriented toward future teachers. The course will also help students understand how course content relates to parents (or future parents) understand the nature of development and individual differences of children and the students as they progress through the educational system."
     },
     {
@@ -31,7 +35,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "This introduction to educational psychology provides students with an understanding of the major concepts, principles and theories, and related research of learning and teaching. The research on learning and teaching is a primary emphasis, with clear connections made to diverse real-world contexts such as home, family life, informal and formal teaching and learning settings, as well as the influence of mass media and digital technologies on the learning process."
     },
     {
@@ -64,7 +70,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "This course is an introduction to quantitative methods in educational and social science research emphasizing the interpretation of frequently encountered statistical procedures. Students will learn both conceptual and technical aspects of common approaches to understanding score interpretation and ranges, relationships among variables, and hypothesis testing and group comparisons. Students will learn how to use these approaches to interpret findings and draw conclusions from quantitative data."
     },
     {
@@ -192,11 +200,27 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "CMAS258N"
+          {
+            "oneOf": [
+              "CMAS258N",
+              "HDFS258N",
+              "SOC258N"
+            ]
+          }
         ],
         "concurrent": [
-          "CMAS465",
-          "CMAS466"
+          {
+            "oneOf": [
+              "CMAS465",
+              "HDFS465"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMAS466",
+              "NURS466"
+            ]
+          }
         ]
       },
       "description": "This course serves as the capstone experience for students enrolled in the Child Maltreatment and Advocacy Studies minor."

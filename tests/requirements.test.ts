@@ -112,8 +112,8 @@ describe("evaluateRequirements", () => {
 
   describe("credit rules", () => {
     const courses = createCatalog([
-      obj("MATH140", { code: { subject: "MATH", number: 140 }, genEdArea: "Quantification", credits: 4 }),
-      obj("STAT200", { code: { subject: "STAT", number: 200 }, genEdArea: "Quantification", credits: 4 }),
+      obj("MATH140", { code: { subject: "MATH", number: 140 }, genEdAreas: ["Quantification"], credits: 4 }),
+      obj("STAT200", { code: { subject: "STAT", number: 200 }, genEdAreas: ["Quantification"], credits: 4 }),
       obj("CMPSC221", { code: { subject: "CMPSC", number: 221 } }),
       obj("CMPSC465", { code: { subject: "CMPSC", number: 465 } }),
       obj("CMPSC473", { code: { subject: "CMPSC", number: 473 } }),
@@ -126,13 +126,19 @@ describe("evaluateRequirements", () => {
         chart,
         requirements({
           creditRules: [
-            { id: "gq", name: "GQ", credits: 6, genEdAreas: ["Quantification"] },
-            { id: "upper", name: "400-level CMPSC", credits: 6, subjects: ["CMPSC"], minNumber: 400 },
-            { id: "list", name: "From the list", credits: 9, objectIds: ["CMPSC221", "CMPSC465"] },
+            { category: "general-education", name: "General Education", rules: [{ id: "Q", credits: 6, area: "Quantification" }] },
+            {
+              category: "elective",
+              name: "Electives",
+              rules: [
+                { id: "upper", name: "400-level CMPSC", credits: 6, subjects: ["CMPSC"], minNumber: 400 },
+                { id: "list", name: "From the list", credits: 9, objectIds: ["CMPSC221", "CMPSC465"] },
+              ],
+            },
           ],
         }),
       );
-      expect(report.creditsByRule).toEqual({ gq: 8, upper: 6, list: 6 });
+      expect(report.creditsByRule).toEqual({ Q: 8, upper: 6, list: 6 });
       expect(report.issues).toEqual([
         {
           code: "CREDIT_RULE_SHORTFALL",
@@ -148,11 +154,58 @@ describe("evaluateRequirements", () => {
         courses,
         { ...chart, grades: { MATH140: "D", STAT200: "B" } },
         requirements({
-          creditRules: [{ id: "gq", name: "GQ", credits: 6, genEdAreas: ["Quantification"], minGrade: "C" }],
+          creditRules: [
+            { category: "general-education", name: "General Education", rules: [{ id: "Q", credits: 6, area: "Quantification", minGrade: "C" }] },
+          ],
         }),
       );
-      expect(report.creditsByRule).toEqual({ gq: 4 });
+      expect(report.creditsByRule).toEqual({ Q: 4 });
       expect(codes(report)).toEqual(["CREDIT_RULE_SHORTFALL"]);
+    });
+  });
+
+  describe("gen ed rules counting each course once", () => {
+    const courses = createCatalog([
+      obj("BIO1", { genEdAreas: ["Natural Sciences"] }),
+      obj("BIO2", { genEdAreas: ["Natural Sciences"] }),
+      obj("BIO3", { genEdAreas: ["Natural Sciences"] }),
+      obj("ID1", { genEdAreas: ["Humanities", "Natural Sciences", "Inter-Domain"] }),
+    ]);
+    // Like Penn State's: Knowledge Domains GN (not Inter-Domain), then
+    // Exploration GN (may be).
+    const genEd = (eachCourseOnce: boolean) =>
+      requirements({
+        creditRules: [
+          {
+            category: "general-education",
+            name: "General Education",
+            eachCourseOnce,
+            rules: [
+              { id: "N", area: "Natural Sciences", credits: 3, notArea: "Inter-Domain" },
+              { id: "EXN", name: "Exploration: Natural Sciences", area: "Natural Sciences", credits: 3 },
+            ],
+          },
+        ],
+      });
+
+    it("puts each course in the first rule that still needs it", () => {
+      const report = evaluateRequirements(courses, chartOf([[], ["BIO1", "BIO2"]]), genEd(true));
+      expect(report.creditsByRule).toEqual({ N: 3, EXN: 3 });
+    });
+
+    it("counts a course in every rule it fits without it", () => {
+      const report = evaluateRequirements(courses, chartOf([[], ["BIO1"]]), genEd(false));
+      expect(report.creditsByRule).toEqual({ N: 3, EXN: 3 });
+    });
+
+    it("leaves out courses in a rule's notArea", () => {
+      const report = evaluateRequirements(courses, chartOf([[], ["ID1"]]), genEd(true));
+      expect(report.creditsByRule).toEqual({ N: 0, EXN: 3 });
+    });
+
+    it("puts extra credits in the first rule the course fits", () => {
+      const report = evaluateRequirements(courses, chartOf([[], ["BIO1", "BIO2", "BIO3"]]), genEd(true));
+      expect(report.creditsByRule).toEqual({ N: 6, EXN: 3 });
     });
   });
 

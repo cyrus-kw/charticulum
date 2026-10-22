@@ -1,6 +1,7 @@
 import { isOffered, slotLabel, termCalendar, type CalendarSlot } from "./availability";
 import { earliestSatisfyingTerm } from "./catalog";
 import { externalPlacements } from "./equivalents";
+import { closestOption, isRequiredMet, requiredIds } from "./required";
 import { applyOverrides } from "./overrides";
 import {
   EXTERNAL_TERM,
@@ -65,8 +66,10 @@ function scheduleChart(
   const isDone = (id: string) => earliestSatisfyingTerm(catalog, placements, id) !== undefined;
 
   // 1. Collect the required objects and, recursively, their requisites.
+  //    For a choice, the option Pre-Credit already covers (all or part
+  //    of), or else the first one.
   const needed = new Set<string>();
-  const stack = [...requirements.requiredObjectIds];
+  const stack = requirements.requiredObjectIds.flatMap((item) => closestOption(item, isDone));
   while (stack.length > 0) {
     const id = stack.pop()!; // "!" tells TypeScript pop() can't be undefined here
     if (needed.has(id) || isDone(id)) continue;
@@ -76,7 +79,12 @@ function scheduleChart(
       continue;
     }
     needed.add(id);
-    stack.push(...object.requisites.previous, ...object.requisites.concurrent);
+    // For a choice, the option already done or already needed (all or
+    // part of), or else the first one.
+    const chosen = (req: string) => isDone(req) || needed.has(req);
+    for (const item of [...object.requisites.previous, ...object.requisites.concurrent]) {
+      stack.push(...closestOption(item, chosen));
+    }
   }
 
   // 2. Report prerequisite cycles (A needs B needs A); they can never be scheduled.
@@ -133,14 +141,18 @@ function scheduleChart(
         if (credits + object.credits > requirements.maxCreditsPerTerm) continue;
         if (slot && !isOffered(object, slot)) continue;
 
-        const previousMet = object.requisites.previous.every((req) => {
-          const doneIn = earliestSatisfyingTerm(catalog, placements, req);
-          return doneIn !== undefined && doneIn < index;
-        });
-        const concurrentMet = object.requisites.concurrent.every((req) => {
-          const doneIn = earliestSatisfyingTerm(catalog, placements, req);
-          return doneIn !== undefined && doneIn <= index;
-        });
+        const previousMet = object.requisites.previous.every((item) =>
+          isRequiredMet(item, (req) => {
+            const doneIn = earliestSatisfyingTerm(catalog, placements, req);
+            return doneIn !== undefined && doneIn < index;
+          }),
+        );
+        const concurrentMet = object.requisites.concurrent.every((item) =>
+          isRequiredMet(item, (req) => {
+            const doneIn = earliestSatisfyingTerm(catalog, placements, req);
+            return doneIn !== undefined && doneIn <= index;
+          }),
+        );
         if (!previousMet || !concurrentMet) continue;
 
         objectIds.push(id);
@@ -191,7 +203,7 @@ function findPreviousCycles(catalog: Catalog, ids: Set<string>): string[][] {
       return;
     }
     path.push(id);
-    for (const req of catalog.get(id)?.requisites.previous ?? []) {
+    for (const req of requiredIds(catalog.get(id)?.requisites.previous ?? [])) {
       if (ids.has(req)) visit(req);
     }
     path.pop();
@@ -207,7 +219,7 @@ function findPreviousCycles(catalog: Catalog, ids: Set<string>): string[][] {
 function chainHeights(catalog: Catalog, ids: Set<string>): Map<string, number> {
   const dependents = new Map<string, string[]>();
   for (const id of ids) {
-    for (const req of catalog.get(id)!.requisites.previous) {
+    for (const req of requiredIds(catalog.get(id)!.requisites.previous)) {
       if (!dependents.has(req)) dependents.set(req, []);
       dependents.get(req)!.push(id);
     }

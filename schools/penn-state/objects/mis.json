@@ -30,7 +30,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "Introduction to Management Information Systems provides an overview of the role of information systems in business process design, the current technologies used for obtaining, storing, securing, and communicating information in support of operations and decision-making within a business organization, as well as, the concepts and principles for developing and using popular spreadsheet and database tools. Applications focus on the development of quantitative problem-solving skills applied to specific examples of business problems and issues found in business disciplines, including accounting, finance, marketing, supply chain operations, and general management. Problem solving skills will be reinforced by assigning problem sets to students to do on their own."
     },
     {
@@ -76,10 +78,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ],
         "concurrent": [
-          "MIS204"
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
         ]
       },
       "description": "Business Analytics encompasses the Information Technology (IT) supported tools and techniques for exploring, analyzing, integrating, and reporting business data for fact-based decisions. MIS 301 introduces the essential skills for exploring and analyzing vast pools of data to support competitive strategies and for effectively presenting results. The course provides an IT program framework of Before (data management), Doing (analytics), and After (communicating, sharing, and presenting)."
@@ -91,7 +103,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "IST140",
+              "CMPSC101"
+            ]
+          }
         ]
       },
       "description": "MIS 307 focuses on using object-oriented programming to develop a broader understanding of logical structures, algorithms, arithmetic facilities, and data structures to develop software that can be purposefully used to inform decisions and automate intentional processes. This is a hands-on, practical course designed to give students first-hand experience in applying object-oriented programming techniques to software development."
@@ -110,7 +128,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "MIS204",
+              "MIS250",
+              "CMPSC102"
+            ]
+          }
         ]
       },
       "description": "Theory and utilization of database management systems in organizations, including data modeling and applications development."
@@ -122,7 +147,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MIS204"
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
         ]
       },
       "description": "MIS 344 is an introductory course designed to provide students the concepts of cybersecurity along with a deeper understanding of current information and the need for system protection. This course builds a foundation for understanding the critical issues associated with protecting information assets. It will invlude a hands-on practice that involves protecting work with passwords and applying multiple security through research, application and certification in the field."
@@ -134,7 +164,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "An introduction to data analytics including data preparation, data visualization, dimension reduction, modeling techniques, and applications in different domain areas."
@@ -170,7 +205,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MIS204"
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
         ]
       },
       "description": "MIS 390 examines concepts of IS (including hardware, software, and data storage and acquisition) and the support that IS provides for transactional, decisional, and collaborative business processes. Students will be able to understand the collection, processing, storage, distribution, and value of information and be able to make recommendations regarding IS that support and enable individuals in their daily lives as well as the management of customers and suppliers of the enterprise. These competencies include the ability to conduct a business process and systems analysis through a semester project that enables an organization to achieve strategic goals and objectives."
@@ -261,7 +301,12 @@
       "requisites": {
         "previous": [
           "MIS315",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Students will learn how to interpret data with popular data science programming. Students will study inferential statistics to generate information about data. Students will mine data and understand the necessity of data cleansing. Students will generate predictions (ensemble modeling) and understand the need for distributive computing to handle big data (Hadoop)."
@@ -351,7 +396,13 @@
       "requisites": {
         "previous": [
           "MIS430",
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC302",
+              "MIS315"
+            ]
+          }
         ]
       },
       "description": "MIS 435 Systems Design and Implementation (3)Current systems development methods involve a use-case based, and iterative and incremental approach. This is the approach generally used on object-oriented systems development projects and is the approach taught in this course. Design aspects of the course will emphasize design patterns and their application to systems design using the standard software design notation-The Unified Modeling Language. An Agile (light-weight) approach to systems design will be emphasized. Implementation aspects of the course will focus on object-oriented programming using a modern object-oriented programming language."
@@ -363,7 +414,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MIS250"
+          {
+            "oneOf": [
+              "MIS250",
+              "MIS301"
+            ]
+          }
         ]
       },
       "description": "Programming literacy, data analysis and problem-solving skills are important for business students as organizations look to make data and model-informed decisions and to automate tasks and processes. Business school graduates may have to perform such tasks and analyses themselves using programming languages or may have to interact with and/or supervise software engineers and data analysts who perform these tasks and analyses. Programming Skills for Business will provide students with foundational programming skills that can be used to model and solve complex business problems and automate routine tasks and processes. Students will learn core programming concepts and practice computational thinking. They will also learn how to retrieve, clean, transform, visualize, summarize, and analyze data to support decision-making. Programming language, coding platforms and libraries or packages used will vary and evolve to keep pace with changing technology landscape, student needs and instructor interest."
@@ -399,7 +455,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MIS301"
+          {
+            "oneOf": [
+              "MIS301",
+              "MIS390"
+            ]
+          }
         ]
       },
       "description": "Strategic use and management of information technology in digital global economy. MIS 446 Information Technology and Business Strategy (3) This course introduces the basics on the interplay between information technology and business strategies. The course starts with the general topic of strategic use of information technology in business (as enabler, differentiator, and disruptor) using examples from a variety of industries, followed by detailed coverage of the information technology strategy in individual industries including e-logistics, e-tailing, e-marketing, e-finance. The course also covers basics on the business information technology infrastructure and environments (Internet, Web, service-oriented computing, and security and risks). Towards the end, the course discusses the role of information technology in the global economy, business value of the explosively growing digital social networks, and other emerging trends and new technology opportunities. Topics include: - Information technology strategy. IT-business strategy alignment; IT as enabler, differentiator, and disruptor.- Internet and Web infrastructure; extranet, intranet, hosting strategies; platform independence; eBusiness technology standards; open versus proprietary technologies; interoperability.- Web Services for implementing business applications; software as a service; Services science and services oriented architectures.- Overview of E-Business models, B2B, B2C, (x2y).- E-logistics and supply chain: Analysis of Dell model; Internet auctions, eBay; e-hubs; i-mode, GPS, RFID.- E-tailing: Amazon, eBay, Walmart, recommendation systems, reputation systems.- E-marketing: search engine advertising (Google AdWords/AdSense, Yahoo Search Marketing); database marketing (precision targeting).- E-finance: online brokerage (Schwab, E*Trade), wealth management (e-strategy, technology for churn prediction and customer acquisition/retention), payment technologies (paypal), computational trading strategies.- Collaboration/Community technologies: Blogs, MySpace, Facebook, YouTube, Voice over IP, videoconferencing, RSS, etc.; Impact on business communication and media industry. - Need for security in ecommerce - threats and solutions.- Globalization and IT. Offshoring and outsourcing.- Emerging trends and technology opportunities."
@@ -449,7 +510,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "IST140",
+              "CMPSC101"
+            ]
+          },
           "MIS390"
         ]
       },

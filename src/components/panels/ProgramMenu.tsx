@@ -23,8 +23,8 @@ const MENU_WIDTH = 360;
 export function ProgramMenu({ state, dispatch }: PanelProps) {
   const { library } = state.school;
   const pinned = state.chart.pinnedTemplates ?? [];
-  const options = library.map((t) => ({ key: refKey({ templateId: t.id, version: t.version }), template: t }));
-  const addable = options.filter(({ template }) => !pinned.some((p) => p.templateId === template.id));
+  const options = library.map((t) => ({ key: refKey({ templateId: t.code, version: t.version }), template: t }));
+  const addable = options.filter(({ template }) => !pinned.some((p) => p.templateId === template.code));
 
   // Where the menu opens (window pixels), or null while it's shut.
   const [menuAt, setMenuAt] = useState<{ x: number; y: number } | null>(null);
@@ -59,7 +59,7 @@ export function ProgramMenu({ state, dispatch }: PanelProps) {
               <Select className="flex-1" value={startKey} onChange={(e) => setStartKey(e.target.value)}>
                 {options.map(({ key, template }) => (
                   <option key={key} value={key}>
-                    {template.name} ({template.version})
+                    {template.title} ({template.version})
                   </option>
                 ))}
               </Select>
@@ -84,7 +84,7 @@ export function ProgramMenu({ state, dispatch }: PanelProps) {
                 <option value="">Choose…</option>
                 {addable.map(({ key, template }) => (
                   <option key={key} value={key}>
-                    {template.name} ({template.version})
+                    {template.title} ({template.version})
                   </option>
                 ))}
               </Select>

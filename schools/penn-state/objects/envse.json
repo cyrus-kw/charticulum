@@ -75,7 +75,12 @@
           "CHEM112",
           "MATH141",
           "MNPR301",
-          "EME303"
+          {
+            "oneOf": [
+              "EME303",
+              "CE360"
+            ]
+          }
         ]
       },
       "description": "The major objective of this course is to teach the design principles for different unit operations commonly employed in environmental pollution control in the mineral, energy, and chemical process industries. The course is required of all ENVSE students, who must score at least a grade of C to graduate. Students will develop the ability to identify, formulate, and solve complex engineering problems by applying principles of engineering, science, and mathematics. Fundamental principles covered in earlier courses (math, physics and chemistry) will be applied to derive design equations for different unit operations (e.g. sedimentation basins, activated sludge processes, dissolved air flotation, gas absorption and stripping, and precipitation). Students will develop engineering design solutions that meet specified needs with consideration of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors. Student evaluation will be based upon homework assignments, quizzes, in-class tests, and design projects. Some assignments may require students to work in teams."

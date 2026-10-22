@@ -23,7 +23,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Information, People and Technology presents the high points of an education in the College of Information Sciences and Technology. It opens an intellectual journey through the ideas and challenges that IT professionals face in the world. It will address major questions such as: How can we use technology to organize and integrate human enterprises? How can technology help people and organizations adapt rapidly and creatively? What can we do about information overload?Three perspectives (or facets) address the core issues: information or the basic science of data encoding, transmission and storage; people or the interactions among technologies, institutions, regulations and users; and technology or the design and operation of basic information technology devices. Students completing the course will be confident users and consumers of information technology. Students will develop research and analytical skills to evaluate specific devices and understand how those devices function in larger socio-technical systems. Students will be able to predict and anticipate the impact of new technologies on human institutions as well as understand the potential impact of institutions on the use and design of information technologies.The course employs an action-oriented approach. Students learn by doing-formulating and solving problems drawn from professional contexts, detecting and recovering from errors related to technology use, and locating, reading and studying materials that support their analysis and problem-solving. Students will accomplish this by participating in team-based learning. The course provides students with the opportunity to use, modify, and evaluate software to search for, frame, and express ideas with fluency. A variety of mechanisms are used to assess student performance. These evaluation methods typically include exams, quizzes, homework assignments, group projects, and peer and self-assessments."
     },
     {
@@ -49,7 +51,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts"
+      ],
       "description": "A survey course that explores emerging technologies used to produce and consume popular cultural artifacts. Through individual and team-based learning activities, students will analyze and interact with information and communication technologies across popular culture genres. The course content and the assignments are directed at helping students to both create and critique digital media in ways that demonstrate their understanding of, engagement with, and reflections upon the relationships among people and organizations, emerging technology, and popular culture. Students will also design and produce digital media that demonstrate their ability to integrate and synthesize central concepts and themes from the course. This is an introductory course in IST, and meets the requirements for a General Education course in Arts (GA). This course is delivered with significant student and instructor interaction with computers and digital media."
     },
     {
@@ -68,7 +72,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "The Invasion of Technology from a 21st Century Perspective introduces students to the world of technology from a humanistic point of view. Students will embark on a journey starting in the early 20th century to explore technology and relationships between technology and society and what the varying theoretical and historical underpinning about \"human progress\" in respect to these relationships. They will then sojourn through the years to learn about the advances of technology for better or worse. Students will develop an understanding of how individuals and social groups shape and are shaped by technological change and how human societies create means for both social control and freedom, with a focus on ethics and morality as related to the use of technology and its resulting consequences. Students will also be introduced to the latest technology and current collaboration with other professionals. They will gain a better understanding of the historical perspective and the societal, political, cultural and economic issues relative to technology. This course is a multidimensional, interactive course, which allows students to explore the nuances of modern technology as it pertains to security, medicine, education, employment, treatment, military defense and social media. Students will create/invent a design proposal for a scalable and usable application that focuses on topics related to the humanities and social sciences, which may ultimately find its way into the marketplace. Students will also conduct an interview with a grandparent or equivalent to gain a better understanding of people's impact on technology and visa-versa."
     },
     {
@@ -80,7 +88,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "\"What is Information?\" considers the material and social nature of information in historical and contemporary contexts. How has information been managed and valued? How have information infrastructures served as sites of social and political connection or antagonism? How have ideas about information changed over time and how have they remained the same? The course integrates perspectives from the social sciences and the humanities, and prepares students to think about (and act in) a world in which information (and its linked concepts, like data) play an increasingly important social and political role. The course addresses the history of information as both a concept and as a matter of social practice, and then focuses on three major topics: how information is presented, how information is organized, and how information is put to social and political use. Moving from the earliest periods of human history and their \"information ages\" (including the birth of writing and the dawn of printing and mass literacy), the course leads students into our contemporary \"information society,\" and the ways in which both the use and manipulation of information shape our lives."
     },
     {
@@ -120,7 +132,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "This course combines theory and practice to help students develop a contextualized understanding of community as a conceptual lens for understanding human history and human experience. This course examines the history of community, and of interactions between community and information technology, emphasizing how possibilities and practices of community have been transformed by information technology through the last half century, and currently. The course includes opportunities for students to engage with, and thereby come to understand and appreciate local community institutions off campus. Thus, in the tradition of the Chicago School of Sociology, the course directly utilizes the local community itself as a living laboratory for the study of community informatics. The objective of the course is to help students think critically about community and technology in society, and more specifically, about the how information technology can be used to shape human participation in and experience of community. The course is an honors course. It is run as a small class. It is taught by a research leader in the field of community informatics. The class environment is dominated by debate and discussion. And the course has challenging assignments, involving direct interaction with local community groups."
     },
     {
@@ -178,7 +192,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "Introduction to formal languages, mathematical logic, and discrete mathematics, with applications to information sciences and technology. IST 230 Language, Logic, and Discrete Mathematics (3) IST 230 is one of the five introductory core courses for the baccalaureate degree program in Information Sciences and Technology. The purpose of IST 230 is to provide students with an understanding of an array of mathematical concepts and methods which form the foundation of modern information science, in a form that will be relevant and useful for IST students. Exams and assignments will be used to assess that understanding. IST 230 will draw some of its material from several mathematical disciplines: formal language theory, mathematical logic, discrete mathematics. In-depth treatments of each of these subjects are offered elsewhere in the University as advanced mathematics and computer science courses. The difference is that IST 230 will present these concepts in a more elementary way, with much more emphasis on IST applications, and in a more eclectic, web-based format. IST 230 will be structured as a small number of modules. Each module will introduce a group of mathematical concepts and present applications of those concepts to problems of information storage, information retrieval, information management, etc. These include: MODULE 1: SET, RELATIONS, FUNCTIONS, NUMBERS set operations, applications of relations, equivalence relations, function composition, inverse functions, logarithms, exponential function, number systems, applications of number theory. APPLICATIONS: mathematical data types (integers, fractions, real numbers, tuples, function spaces); exponential growth; non-feasible algorithms; public key encryption. MODULE 2: LOGIC AND BOOLEAN ALGEBRA predicates, quantifiers, formulas, interpretations, syllogisms, logical consequence, tableau method, boolean connectives, boolean functions, valuations, truth tables, logic gates. APPLICATIONS: database query languages; specification languages; switching circuits; boolean search expressions. MODULE 3: COMBINATORICS AND PROBABILITY combination, permutation, discrete probability APPLICATIONS: lexicographic ordering; combinatorial explosions; lower bouncs of algorithms; reliability of computer systems MODULE 4: GRAPHS AND TREES directed and undirected graphs, weighted graphs, walks, paths, matrix representations, graph algorithms, spanning trees, rooted and structured trees, combining trees to form new trees, inserting nodes in trees, sorting, searching. APPLICATIONS: flow diagrams; task scheduling; critical paths; network connectivity; finite state machines; parsing; derivation; trees as data structures for storing information. MODULE 5: INDUCTION AND RECURSION induction and recursion on the natural numbers and other structures such as trees. APPLICATIONS: recursive evaluation of mathematical and Boolean expressions; recursive searching and sorting algorithms; asymptotic analysis of algorithms. MODULE 6: GRAMMARS, LANGUAGES AND FINITE STATE MACHINES alphabets, strings, grammars, languages, regular languages, regular expressions, finite state machines, language recognizers. APPLICATIONS: regular expression search; efficient pattern matching using finite-state machines."
@@ -192,7 +211,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This introductory course will combine theory and practice to help students develop a rich understanding of the constantly evolving US digital culture. We will survey a variety of information and communication technologies (ICTs), and their modes of production, distribution, and consumption by individuals and institutions including traditional media, business, and government. Specifically, we will examine the impact of social and mobile technologies on how we consume, share, resist, and participate in digital culture. Students will also develop basic technical and media creation skills. The general theme of the course is analyzing contemporary cases to understand the significance of new ICTs in shaping our identities, behaviors, language, imaginations, and society. Students will read texts authored by some of the most formative thinkers examining the impact ICTs on society, and apply these core concepts in our analysis of digital cultures. Students will actively use microblogging, RSS feeds, social networking and other Web 2.0 tools to produce and consume content, interact with peers, and reflect critically on this experience. This course will emphasize awareness of current events and technology trends, as well as critical thinking skills and the ability to frame and explore issues through written, visual and verbal communication. This is an introductory course in IST and COMM, and meets the requirements for a Social and Behavioral Sciences (GS) and Humanities (GH) Course. This course is delivered with significant student and instructor interaction with computers and digital media."
     },
     {
@@ -212,7 +235,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT215"
+          {
+            "oneOf": [
+              "MGMT215",
+              "ENGR310"
+            ]
+          }
         ]
       },
       "description": "The proliferation of new IT combined with the reach of the Web, Internet, and mobile devices is opening up new possibilities for individuals and companies to leverage IT to create new digital businesses. This course provides a broad overview of the role of entrepreneurial thinking and innovation in advancing IT-focused businesses. Students will examine how these skills can be leveraged to create new IT-driven businesses as well as to create competitive advantage for existing businesses via new IT products and services (i.e., intrapreneurship). This course provides a broad overview of the role of entrepreneurial thinking and innovation in advancing IT-focused businesses and familiarizes students with the processes and tools used to conceptualize and plan new innovative products and/or services that leverage IT as a core component of their business model. Students will be introduced to concepts, tools, and principles of business management including business strategy, finance, marketing, human resources, and leadership within the context of IT business models. This will be a very hands-on active class. Students will have the opportunity to work in teams to practice skills related to identifying novel ideas, assessing market opportunities, defining customer segments, identifying key partners, and building IT-based business models."
@@ -224,10 +252,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "IST140",
+              "CMPSC101"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC121": "C"
+          "CMPSC121": "C",
+          "CMPSC131": "C",
+          "IST140": "C",
+          "CMPSC101": "C"
         }
       },
       "description": "Introduction to the specification and application of languages and language paradigms that interact with computers. IST 240 is one of two courses added to the three core courses for the associate degree program to form the core courses for the baccalaureate degree program in Information Sciences and Technology. The primary goal of this course is to study the foundations underlying the design, specification and use of a wide variety of language paradigms used to interact with computers. The following details the content of the course: (1) nature of languages; (2) elements of languages; (3) classification of languages; (4) formal descriptions of languages; (5) data and types; (6) names and bindings; (7) control structures; (8) language processors; and (9) study experiences. Student evaluation may be accomplished by means of assignments, examinations, and possibly a project. This course will most likely involve Web-based course material and will therefore require student access to computers and the Web. Although other existing courses are similar to IST 240 in content, none of those courses fit the objective of this course and of this program."
@@ -239,10 +277,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "IST140",
+              "IST240"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC121": "C"
+          "CMPSC121": "C",
+          "CMPSC131": "C",
+          "IST140": "C",
+          "IST240": "C"
         }
       },
       "description": "Intermediate application development including algorithms, data structures, and object-oriented concepts. IST 242 Intermediate & Object-Oriented Application Development (3) This is a second course in application development. It will focus on the intermediate knowledge needed to create applications that use high level programming languages, combining original code with existing code libraries and application programming interfaces (APIs). The perspective will be of application development that takes place within a human and organizational context; in this sense data structures will be construed as representations of organizational entities and information, and algorithms as a reflection of human and organizational processes and activity. Students will also learn about common application architectures and design patterns. This is a hands-on, practical course designed for IST design and development option undergraduate students and others as an elective."
@@ -261,7 +309,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC122"
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132",
+              "IST250",
+              "IST242"
+            ]
+          }
         ]
       },
       "description": "IST 256 will provide students with the knowledge and skills to create both basic and more dynamic web-based content pages and applications. The course will first focus on acquiring competencies in core web development languages including HTML, CSS, and JavaScript, then move on to more advanced topics such as information architecture, incorporation of multimedia, and the use of application programming interfaces (APIs) and application development frameworks for the web. The course will follow an active learning pedagogy and incorporate a substantial project component. The first part of the course consists of introduction of web programming concepts, techniques, and tools. Students will demonstrate understanding of the course content by building web pages via individual and group activities. The latter half of the course will involve more in-depth project work both as individuals and in groups."
@@ -293,10 +348,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "IST242"
+            ]
+          }
         ],
         "minGrades": {
-          "CMPSC221": "C"
+          "CMPSC221": "C",
+          "IST242": "C"
         }
       },
       "description": "Introductory design and development studio course for IST and SRA students. IST 261 Application Development Design Studio I (3) This studio course will provide opportunities for students to practice the technical skills acquired in their foundation application design and development courses, specifically, in IST 140 and IST 242 . The course will follow the general format of experiential studios in the arts and architecture. It will be primarily problem-based and project oriented. Peer and instructor design critiques will be the major feedback and assessment mechanisms. Students in the IST Software Design Studios will be expected to complete deliverables in each phase of the systems development lifecycle (i.e. problem definition, requirements analysis, design, development, test) regardless of the development paradigm employed (plan-based, agile, etc). A key objective of this design studio will be to introduce students to the challenges faced in different application design and development activities before exposing them to specific techniques to manage these challenges in upper-division courses. Projects may be undertaken by individuals, pairs, or larger groups but each studio participant will be responsible for producing significant individual project deliverables. Project ideas may come from the student or from the instructor; however, projects related to students' other course deliverables will require the agreement of both instructors. Students will be required to maintain a design and development journal. This journal will be the analog of an engineering notebook or artist's sketchbook and should contain a running account of the students design and development ideas, explorations, rationale, and other notes. The IST design and development studios are a forum for serious students to engage with the concepts, process, tools, and materials used to envision and build software applications. Both collaboration and individual performance will be emphasized, as will experimentation, risk-taking, and enthusiasm for the process of designing and building working software applications. Students will be expected to improvise and then respond constructively to feedback from instructors and peers."
@@ -388,7 +449,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "IST110"
+          {
+            "oneOf": [
+              "IST110",
+              "SRA111"
+            ]
+          }
         ]
       },
       "description": "Leadership in college instructional settings; teaching and learning principles; instructional technologies; and best practices in coaching, team facilitation, learning assessment. This course prepares undergraduate students for their role as Learning Assistants (LA's) in the College of IST. In this course, LA's will prepare to assist in instructional environments that encourage students to participate actively in their learning. LA's will be immersed in activities that introduce them to some of the teaching methods aimed at promoting active learning in College of IST classrooms, while being prepared for leadership responsibilities such as coaching, providing feedback, evaluating, monitoring academic integrity, fostering inclusive learning environments, and supporting teams. Students will also learn about information technologies designed for managing courses and increasing student engagement. Outside of class meetings, students will serve as instructional assistants in an assigned course. They will be mentored, supervised, and evaluated on the job by their assigned faculty member."
@@ -429,7 +495,12 @@
       "requisites": {
         "previous": [
           "IST210",
-          "IST220"
+          {
+            "oneOf": [
+              "IST220",
+              "IEC200"
+            ]
+          }
         ]
       },
       "description": "Introduction to emerging issues, technology forecasting and analysis; overview of emerging issues and leading technologies in IST and how they impact information systems, users, the IT labor force and society. IST 402 Emerging Issues and Technologies (3 per semester/maximum of 9) Information Sciences and Technology (IST) is a rapidly changing discipline. New issues, methods, tools, applications and terminology appear on a continual basis. A key skill is the ability to analyze new issues and assess new technologies within the context of the information age. This course prepares students to understand the difference between potential technological failures and success, fads and revolutionary technology. It also helps students to view emerging issues as an opportunity rather than a threat. Intellectual tools are provided to assist in understanding issues, assessing and forecasting technological changes for feasibility and planning in real world situations. The course provides students with: a.) A process framework for analyzing new issues and a theoretical framework to study technological and social impacts of such issues. b.) A process framework for recognizing and understanding new technologies and a theoretical framework to take advantage of such technologies. c.) Exposure to new issues and technologies. d.) Hands-on experience in studying recent technological advances in detail.The course will also provide students with the ability to: a.) Understand the concept of issue analysis and technology forecasting. b.) Recognize the important of new issues and technologies in information sciences. c.) Incorporate these new issues and technologies into an existing information systems framework. d.) Develop and implement new technology solutions, or discuss policies for addressing emerging issues. e.) Predict impacts of issues and technology on information management, users, policies, and the environment.Each time the course is offered; new issues and.or information technology areas will be explored. Examples of issues and technologies addressed include: wireless communications, security and intrusion detection, intelligent agents, web search, languages, intelligent systems, bio-informatics, advanced visualization and human-computer interactions, ubiquitous-pervasive computing, groupware, computer aided cognition, system design by global IT teams, IT outsourcing, and digital divide."
@@ -454,7 +525,13 @@
       ],
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "ECON14"
+            ]
+          }
         ]
       },
       "description": "Working with Penn State inventions selected by the Intellectual Property Office, student teams define an optimum commercialization path each technology. ENGR 426ENGR (MGMT/IST/ENTR) 426 Invention Commercialization (3) The goal of ENGR (MGMT/IST/ENTR) 426 is to have students understand why invention commercialization is complicated and difficult by participating in the process. For example, the inventor rarely has insights into the markets for his/her invention, is often not interested in the details of commercialization, and can be secretive. In addition, the business and financial communities often do not take the time, or have the resources, to understand new technologies and perform complex due diligence. Thus lack of due diligence often leads to rejection of innovation because existing companies often discount new technologies from outside the company as NIH - 'not invented here'. Effective transfer of new invention or innovation to a commercial product requires at least three different functional communities to interface: technical, legal and business. Each uses a different language, comes from different educational and cultural backgrounds, and may have an inherent distrust of the others. These functional barriers are difficult to overcome.This course teaches how these barriers can be broken down as student teams help bridge the perceived chasm between key players in the invention commercialization process. In these teams, students bring the skills and knowledge from their major to develop an invention commercialization recommendation for the Technology Transfer Office and the inventor. For example, business students focus on finance and market opportunity assessment; engineering and IST students focus on design refinements, prototyping support, and (if appropriate) making technology suggestions to the inventor.Upon completing the course, the students will have a working knowledge of different university and corporate technology or invention commercialization processes, important intellectual property management tools for inventions (patents, license agreements, option agreements) source of funding to move inventions toward product development, and delivering top quality presentations which outline the recommended commercialization path. Students who enjoy open-ended projects which involve the interplay of business and invention of who wants to work on interdisciplinary teams with the newest inventions will find this course a valuable course. NOTE: Because the inventions/products are based on Penn State faculty intellectual property, students must sign the Penn State Special Intellectual Property Agreement For Students - For Use When Assigning Intellectual Property to The Pennsylvania State University. The form can be viewed at http://guru.psu.edu/policies/RAG13.htmlThe course will be offered both Spring and Fall semesters with an enrollment of 40 students."
@@ -467,7 +544,12 @@
       "requisites": {
         "previous": [
           "IST210",
-          "IST220"
+          {
+            "oneOf": [
+              "IST220",
+              "IEC200"
+            ]
+          }
         ]
       },
       "description": "Survey of social environment of information technology themes: Community, sovereignty, privacy, ethics, economics, and knowledge management. IST 431 The Information Environment (3) The ways that people communicate and utilize information is being changed dramatically by new information technologies. Information and the technologies that are employed by create, organize, transfer, and utilize that information in a networked environment, using such global networks as the internet or internal networks such as intranets, have become a key component of the global economy. This global environment can change the way we interact, communicate, and function on the job and in our daily lives. The new technologies also raise new economic, legal, ethical, and social issues that are of grave importance to society. IST 431 examines the overall context of the new information environment and new technical issues relating to knowledge management in the global networked environment. IST 431 is a required course in the Information, Society and Public Policy Option.There may be some overlap of material with COMM 405 , COMM 483 , COMM 485, PHIL 407 , PHIL 423, PHIL 433 and PL SC 460m but none of these courses cover the same material, or approach it in the same manner.Upon completion of this course, the student will gain an appreciation of the differences between 'cyberspace' and the 'real' world. The student will also understand that the implementation and modern information technologies has significant social and policy implications that demand appropriate policy issues in several different contexts (globa, national, local). The student will also be able to discuss the major themes in information policy studies (e.g., community, privacy, access, economic participation, security) and be able to relate these themes to the applications of particular technologies. They will be able to describe policy frameworks and issues, as well as the ethical and social implications of these choices.Homework assignments; Socratic dialogue; analysis and write-up of case studies; assessment of group research projects and presentations; participation in on-line discussion groups; two mid-term and one final examination (objective and essay). The precise mix of evaluation components will be determined by individual instructors; a typical weighting might be exams (60%), written assignments and papers (20%), and collaborative projects (20%). IST 431 will be offered every semester at University Park. At every other campus location where the Baccalaureate degree program is offered, the course will be offered 1-2 times annually depending on demand. Student enrollment at University Park will begin at approximately 50-75 in the first year and grow to 200 over a 3-4 year time period. At other locations, enrollment should range from 25-50 annually."
@@ -499,7 +581,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL202C"
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202D"
+            ]
+          }
         ]
       },
       "description": "Problem-based approach to technology integration by focusing on real-life problems faced by an organization. IST 440W Information Sciences and Technology Integration and Problem Solving (3) This course is the undergraduate capstone for Information Sciences and Technology majors in the Baccalaureate degree. It requires students to work collaboratively in teams of 4-6 students, with each team comprised of students from more than one option and, if possible, more than one campus. Each team is given a significant real-world problem or issue in which information technology is part of the solution. Teams will be expected to manage the project effectively and to communicate its results clearly to a variety of audiences within an organization. Major topics include: review of problem-based and case-based learning; overview of project management practices; assessment of organizational and technical issues posed by the scenario; development and testing of work plans and analysis of options; communication within the group; communication within a management environment; and presentation of results to a variety of audiences inside and outside the organization. IST students need to understand the organizational and social contexts in which technology functions. Indeed, many technology problems are multi-dimensional--they have an economic dimension, a legal dimension, a human resources dimension, and so on. This course will require students to analyze, evaluate, and test alternative solutions and to weigh their advantages and disadvantages for the organization. Students will be evaluated in three ways: by the effectiveness of their team's solution of the technical or organizational problem; by the quality of the students' written and oral presentations; and by the quality of their project management and internal communication. A substantial written paper will be required of each student and each time; in addition, each team will also construct a Web-site for sharing results. Other technologies will be used as required by the project. It is expected that membership on teams of students will be drawn from the various options in the Information Sciences and Technology major. At least nine credits (including at least one IST 300-level and one IST 400-level course) in the student's option must be completed before enrollment in IST 440W . This course should be offered every fall and spring semester beginning in the fall semester 2002. It will be taught in sections of 25 and have a total enrollment of approximately 100 per semester."
@@ -530,7 +617,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "COMM310"
+          {
+            "oneOf": [
+              "COMM310",
+              "IST310",
+              "COMM422"
+            ]
+          }
         ]
       },
       "description": "Digital advertising has transformed many industry activities related to buying and delivering advertising. Information technology and big data have revolutionized the way media and content providers interact and negotiate with advertisers, agencies and third parties. This course will explore the digital advertising and media ¿ecosystem,¿ identify key players and trends, and review performance analysis and evaluation. Particular attention will be paid to sources, management, storage, analysis and visualization of data. Trends in industry regulation and ethics will be explored. This includes ad industry selfregulation and data privacy regulations. The implications of big data and artificial intelligence on industry ethics is discussed."
@@ -543,7 +636,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "COMM450"
+          {
+            "oneOf": [
+              "COMM450",
+              "IST450"
+            ]
+          }
         ]
       },
       "description": "This project-oriented course provides students with the knowledge and skills necessary to conduct sponsored advertising-based marketing campaigns. This course offers students an opportunity to gain knowledge and hands-on experience on sponsored search and email advertising. Strategies for developing successful digital advertising campaigns will be discussed, including qualifying and researching clients, account and campaign structure, identifying and organizing keywords, bidding strategies and budgeting, and targeting approaches (including geo, time-based, audience, content and domain targeting), and conversion tagging, tracking and attribution. Students will earn certifications for Google Search and Display, and gain experience with the Google Ads platform, including use of the keyword planning tool, setting up campaigns, ad groups and keywords, writing text and display ad copy, and applying proper settings at the account, campaign, ad group and ad levels. Finally, students will learn important principles for landing page design and become proficient building professional landing pages. Students cannot earn credit for both COMM 450A and MKTG 473 ."

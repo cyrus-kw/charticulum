@@ -1,10 +1,12 @@
 import { meetsGrade } from "./grades";
+import { requiredIds } from "./required";
 import type {
   Catalog,
   ChartIssue,
   CurriculumObject,
   Grade,
   Override,
+  RequiredItem,
   Requirements,
 } from "./types";
 
@@ -83,12 +85,15 @@ export function applyOverrides(
 
     switch (override.kind) {
       case "waive-requirement":
-        requiredObjectIds = requiredObjectIds.filter((id) => id !== override.objectId);
+        // Waiving any course of a choice waives the whole choice.
+        requiredObjectIds = requiredObjectIds.filter((item) => !requiredIds([item]).includes(override.objectId));
         break;
       case "waive-requisite": {
         const requisites = editable(override.objectId).requisites;
-        requisites.previous = requisites.previous.filter((id) => id !== override.requisiteId);
-        requisites.concurrent = requisites.concurrent.filter((id) => id !== override.requisiteId);
+        // Waiving any course of a choice waives the whole choice.
+        const kept = (item: RequiredItem) => !requiredIds([item]).includes(override.requisiteId);
+        requisites.previous = requisites.previous.filter(kept);
+        requisites.concurrent = requisites.concurrent.filter(kept);
         delete requisites.minGrades?.[override.requisiteId];
         break;
       }

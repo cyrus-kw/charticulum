@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "A survey of the properties, manufacture, and uses of polymers, ceramics, and metals in today's world with emphasis on modern developments and new materials. This course presents the basic science and technology of materials to non-science students. The course concentrates on 'Materials in Today's World' but frames the discussion in a relevant historical framework. Course topics are built around 'The Central Paradigm of Materials Science and Engineering;' which links processing to structures to properties to performance. First, students are introduced to the basic concepts of metals and nonmetals, and to a fundamental understanding of The Periodic Table. From these conceptual ideas, ceramics and electronic materials are rationalized on the basis of their electronic structures. The properties of materials, e.g., mechanical, thermal, electronic, and photonic, are developed directly from the structural knowledge of the materials classifications. The concept of materials design is introduced with respect to the properties of density, melting point, and hardness. Current practices for processing and manufacturing of materials are compared with methods that were employed in antiquity. This course meets the Bachelor of Arts: Natural Sciences (BA) and General Education: Natural Sciences (GN) Penn State requirements."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Energy utilization and technological development, energy resources, conversion and consequences on the local and global environment, and future energy alternatives. EGEE (MATSC) 101 Energy and the Environment (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Energy is the life-blood of any society. The information and principles learnt in this course will allow the students to make sound judgments in the area of personal energy choices; There is increasing concern about the influence of human activities, particularly energy use, on global climate change. This has an impact on global business aspects. Students in all walks of life need to be exposed to the basic concepts to appreciate the positions of policymakers, scientists, and industry over the interrelationship between greenhouse gas emissions and global climate change. The students will acquire knowledge, which will enable them to critically evaluate any energy-related concerns of the society. This is important for any college graduate for responsible citizenship and stewardship. The main objectives of this course are to: provide basic understanding and appreciation of energy and environmental concepts and interconnectedness; analyze energy consumption patterns; discuss various energy resources that power the modern society; examine the energy conversion processes; explore interrelationships between energy use and industrial progress and environmental consequences; discuss future energy alternatives. Student performance will be evaluated continuously through homework assignments, exams, group activities, class participation and a final examination. Position papers or term papers may be used in lieu of homework assignments in some sections. This course is a stand-alone General Education course."
     },
     {
@@ -39,7 +43,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
           "CHEM110"
@@ -56,7 +62,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "This interdomain course of science and history will explore the relationships between materials science (ceramics, metals, polymers and composites) and the historical impact on the play, safety, and accessibility of sports, recreation, and games. Accordingly, this course will investigate exercise, team sports, analog and digital games and recreation. Beginning with a historical overview of the activity, the course then focuses on chosen equipment and how that equipment has changed with time and the evolution of materials. This information will then be discussed through the lens of broader impacts on society at large. Using discussions, in and outside of class, end of class quizzes, and activities during class, students will be assessed on their knowledge of the basics of materials science, the history of activities, and the broader impacts of the relationships between materials and sports, games and recreation."
     },
     {
@@ -68,7 +78,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "description": "What explains the enduring strength of Roman concrete and the chemical process behind fresco masterpieces? What discoveries and social contexts paved the way for the inventions of the radio and telephone and innovations in Murano and glassmaking through the ages? How did Italians and Italian Americans overcome challenges and obstacles to leave their names to so many scientific elements, principles, and products, including fermium, voltage, Avogadro's Law, and Jacuzzis? Finally, and most importantly, how can the answers to these questions serve YOU to engineer your dolce vita, your sweet/best life? In this course, you are invited to adapt STEM Design Thinking principles to chart a uniquely human academic path and sustainable future. By thinking like Leonardo da Vinci and learning through play like Maria Montessori, for instance, you will have the opportunity to observe, discuss, experiment, imagine, curate, and articulate your own life innovations. Come exercise your curiosity in this experiential-engagement and discussion-centered class, and design your own dolce vita! No previous knowledge of science or Italian is expected. There are no prerequisites. Credits from this course may satisfy BA Humanities, BA Natural Sciences, BA International Cultures (IL), Gen Ed Humanities (GH), Gen Ed Natural Science (GN), and Interdomain/Integrative Studies credits. This course also counts toward the Italian Major."
     },
     {
@@ -78,7 +92,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM112"
+          {
+            "oneOf": [
+              "CHEM112",
+              "MATSE112"
+            ]
+          }
         ]
       },
       "description": "Concepts of relationships between structure and thermal, optical, magnetic, electrical, and mechanical properties of metals, ceramics, glasses, and polymers."
@@ -90,8 +109,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM202",
-          "MATH230"
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "The materials science of organic or soft materials with an emphasis on synthetic and natural polymer. MATSE 202 Introduction to Polymer Materials (3) Materials made from many types of natural organic materials, (cotton, wool, hemp, leather, etc.) have been with us throughout recorded history and have played crucial roles in the rise of civilizations and the economies of tribes and nations. Over the course of the last 100 years or so the development of synthetic organic materials, particularly polymers, has transformed the way we live. Modern transportation systems, much of contemporary medicine and the entire electronics and computer industry would not be possible without these materials. In order to understand their nature and provide a basis for a more in-depth understanding of these materials provided by courses with a more specific focus, why they are ubiquitous in modern society, this course will provide students with a basic knowledge of the structure, synthesis and properties and processing of these materials, starting with a review of atomic and molecular structure and proceeding through basic elements of the chemical synthesis, structure, mechanical properties and processing of these materials. Students will discover the commonalities and differences between synthetic polymers, such as polyesters and nylons, and natural or biological polymers, such as cotton and silk. A comparison will also be made between the mechanical properties of \"hard\", inorganic materials such as metals and ceramics, and \"soft\", organic materials such as polymers.The primary intended audience is undergraduates in Materials Science and Engineering. This course will provide a necessary overview of organic materials for those students who will focus on inorganic materials in the major and also provide an introduction to organic materials for those students who will specialize in polymers and other organic materials. It is also anticipated that students in other disciplines who want to obtain an overview of the science and engineering of organic materials would want to take this course."
@@ -104,7 +133,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Writing and Speaking",
+      "genEdAreas": [
+        "Writing and Speaking"
+      ],
       "description": "This course is a 3 credit general education course in technical writing, for undergraduates majoring in Materials Science and Engineering. In it, students will learn how to develop a variety of documents which they will be expected to write during the course of their college and professional careers, including technical/lab reports, posters, fellowship and internship applications, job search documents, progress reports, and formal and informal communications. Other topics would include ethics, literature surveys, critical evaluation of sources, citing of references, and proper data presentation. Embedded within each of these topics and document types will be instruction in the writing process, identifying and assessing your audience, organizing documents, adopting a professional style, learning active and passive voices, and using review and editing techniques."
     },
     {
@@ -130,7 +161,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
         ]
       },
       "description": "Relationship of structure and processing variables to the properties and service behavior of metals, polymers, and ceramics."
@@ -167,7 +203,15 @@
         "previous": [
           "MATSE201",
           "MATSE202",
-          "MATH251"
+          {
+            "oneOf": [
+              "MATH251",
+              [
+                "MATH250",
+                "MATH252"
+              ]
+            ]
+          }
         ]
       },
       "description": "The course starts with the first law of thermodynamics and its applications to the calculations of heat involved in various materials processes such as chemical reactions and phase transformations. Second law of thermodynamics and the concept of entropy are then introduced. The application of maximum work theorem to engine efficiency is briefly discussed. Various thermodynamic potentials are defined to determine the equilibrium of a system under various thermodynamic conditions, with an emphasis on the Gibbs free energy functions at constant temperature and pressure conditions. The relationships among thermodynamic properties are derived using the Maxwell relations. Phase diagrams of single-component systems are constructed from the Gibbs free energy function, and the Clapeyron equation is applied to describe the phase boundaries. Applications of thermodynamics to the determination of chemical equilibrium and to the calculation of the voltages of electrochemical reactions are also discussed. The last part of the course is focused on the solution thermodynamics and its application to binary phase-diagrams."
@@ -193,8 +237,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE201",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATSE201",
+              "CHEM112"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Describe properties of materials and composites and their in vivo interactions. BME 443 ( MATSE 403 ) Biomedical Materials (3) Metals, polymers, and ceramics, and their composites, which are capable of emulating the functions of hard and soft tissues, are the subjects of this course.The subject matter shall be confined to implanted materials; external appliances, such as casts, braces, etc are not considered The topical content of this course will be grouped into four areas. A general introduction to selected aspects of physiology will be presented. This will provide the background necessary to appreciate the factors which govern the selection of biomedical materials. Specific emphases will be placed on polymerization of biopolymers (polypeptides and polysaccharides) and the general relationships between conformation and biological function, the biochemistry of blood and blood surface interactions, the formation of teeth and bone and the relationships between microstructure, composition and function, the immune responses to implanted materials, the resorption of bone (osteoporosis) and the development of caries. The perspective placed on these topics will be that of materials science. 'The selection of ceramics for hard tissue prosthesis will be discussed. Orthopaedic and dental applications for ceramics will be discussed. Specific ceramic materials to be treated include dental porcelain, alumina- and zirconia-based ceramics, and bioglasses and pyrolytic carbons. Various classes of inorganic cements, gypsum, zinc phosphates, zinc carboxylates, silicates, and glassionomer cements will also be considered as ceramics. Hydroxyapatite, Hap-based composites and Hap-metal interactions will be discussed in particular Relationships among physical properties, mechanical properties, and chemical interactions with biological fluids will be described. Dental and orthopedic applications of metals will be described. The fracture toughness of metals, their electrochemical responses in vivo, and the nature of the interfacial interactions with hard tissues will be treated Dental amalgams and the noble metals for dental applications will be considered. Metals and alloys, such as Ti, Co-Cr, and vitallium, used in prosthetic applications, will be described and their properties and limitations discussed The phenomenon of stress shielding and the immune responses associated with the accumulation of metallic and polymeric particular debris in the vicinity of an implant will be discussed in particular Polymeric materials are important in a broad range of biomedical applications. Among these are soft tissue prostheses, hemostatic agents, dental restoratives, bone replacement materials, and surgical adhesives. In some applications it is desirable that a polymeric material biodegrade while in others property retention is desirable."
@@ -206,7 +260,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM112"
+          {
+            "oneOf": [
+              "CHEM112",
+              "MATSE112"
+            ]
+          }
         ]
       },
       "description": "Focus is on special properties of surface as an important causative and mediating agent in the biological response to materials."
@@ -274,7 +333,12 @@
         "previous": [
           "MATSE201",
           "MATH220",
-          "MATH231"
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          }
         ]
       },
       "description": "The main course objective is to provide sufficient background for the understanding of fundamental phenomena in solid state materials. Mathematical description of periodic arrays and the concept of reciprocal space are introduced, lattice vibrations are discussed. An introduction to quantum mechanics is given and the solution of the stationary Schrödinger Equation for various problems relevant in nanostructured materials is presented. A semi-quantitative approach is taken how the electronic structure of isolated atoms is changed as they bond and form molecules and solids. Emphasis is placed how such bonding influences whether the resulting material will be a metal, an insulator or a semiconductor. The goal is to master the modern framework in solid state materials that describes materials phenomena at an atomic level, such as electronic band structure and electronic transport, the vibrational properties of solid state materials and to prepare the audience for higher level quantum mechanical problems."
@@ -315,7 +379,12 @@
           "MATSE201",
           "MATSE202",
           "MATH220",
-          "MATH231",
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          },
           "MATH251"
         ]
       },
@@ -370,7 +439,12 @@
       ],
       "requisites": {
         "previous": [
-          "EME301"
+          {
+            "oneOf": [
+              "EME301",
+              "MATSE401"
+            ]
+          }
         ]
       },
       "description": "A study of the chemical and engineering principles pertinent to metal processing in aqueous systems: hydrometallurgical extraction, plating, materials preparation. MATSE (MN PR) 426 Aqueous Processing (3) This 3-credit course deals with the chemical and engineering principles underlying the aqueous processing of metals: metal extraction from primary and secondary sources, electroplating, and metal finishing, powder synthesis, energy storage and conversion, and treatment of recycling of metal-containing toxic wastes.1. Physico-Chemical Principles - Thermodynamic, chemical kinetic and transport factors which control hydrochemical processes (leaching; precipitation; adsorption; solvent extraction; ion exchange; electrowinning, electrorefining and electroplating; membrane processes; energy storage and conversion); graphical representation of homogeneous and solid/solution equilibria; chemical reagents.2. Engineering Principles - Reactor design and staged operations; ideal batch, continuous stirred-tank and plug-flow reactors; fluidized bed reactors; electrochemical reactors; multistage separation processes (solid-liquid, liquid-liquid, and gas-liquid systems).3. Process Synthesis - Design of metal separation (extraction, refining, waste treatment) materials synthesis, metal finishing, and energy storage/conversion processes and system-integration of unit operations, industrial practice. Emphasis on closing circuits to minimize or eliminate waste effluents."
@@ -382,7 +456,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE259"
+          {
+            "oneOf": [
+              "MATSE259",
+              "MATSE201"
+            ]
+          }
         ]
       },
       "description": "The focus of this course is on understanding the microstructure development and design of structural ferrous metals. The course will begin with understanding the basic physical metallurgy concepts of ferrous metals and applying these principles to understanding their processing/structure/property relationships. Specifically, the alloying principles, phase transformation behavior, and transformation kinetics steels will be considered in detail. Heat treatment practices (annealing, normalizing, quenching, tempering, and precipitation hardening) and their effects on the microstructure and mechanical properties of each of these metals will also be studied."
@@ -394,7 +473,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE259"
+          {
+            "oneOf": [
+              "MATSE259",
+              "MATSE201"
+            ]
+          }
         ]
       },
       "description": "The focus of this course is to understand the phases, microstructures, and mechanical properties of non ferrous structural metals; specifically the alloys of aluminum, titanium, nickel, and copper. The alloying principles, phase transformation behavior, and transformation kinetics for each metal system will be considered in detail. Heat treatment practices (annealing, normalizing, tempering, aging, and precipitation hardening) and their effects on the microstructure and mechanical properties of each of these metals will also be studied. Corrosion resistance, weldability, and sustainability will also be considered for the alloy systems."
@@ -409,7 +493,12 @@
           "MATSE201",
           "MATSE202",
           "MATH220",
-          "MATH230",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
           "MATH251"
         ]
       },
@@ -446,10 +535,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE259",
+          {
+            "oneOf": [
+              "MATSE259",
+              "MATSE201"
+            ]
+          },
           "MATSE202",
           "MATH220",
-          "MATH231",
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          },
           "MATH251",
           "PHYS211"
         ]
@@ -463,7 +562,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210H",
+              "EMCH210"
+            ]
+          }
         ]
       },
       "description": "Methods and limitations of nondestructive evaluation of mechanical flaws; optical, acoustical, electromagnetic, x-ray, radiography, thermography, and dye techniques."
@@ -475,9 +580,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM202",
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          },
           "MATSE202",
-          "MATH231"
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          }
         ]
       },
       "description": "This 3-credit course focuses on about 50 commercially most important polymers together with the discussion of synthesis routes, industrial production processes, processing methods, physical and chemical properties, and applications. They are classified into 10 families of polymeric materials, which are taught along with introduction of polymeric materials and synthesis of polymers in the beginning of the class."
@@ -538,7 +653,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE201"
+          {
+            "oneOf": [
+              "MATSE201",
+              "ESC414M"
+            ]
+          }
         ]
       },
       "description": "The materials science of applying thin film coatings, etching, and bulk crystal growth; includes materials transport, accumulation, epitaxy, and defects."
@@ -550,7 +670,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE201"
+          {
+            "oneOf": [
+              "MATSE201",
+              "ESC414M"
+            ]
+          }
         ]
       },
       "description": "Materials characterization in general; electrical properties of crystals, contacts, films; optical properties of single phase materials, waveguide, and multilayer stacks."
@@ -653,7 +778,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATSE259"
+          {
+            "oneOf": [
+              "MATSE259",
+              "EMCH315",
+              "ESC414M"
+            ]
+          }
         ]
       },
       "description": "Fundamentals of processing particulate materials including production, characterization, handling, compaction, and sintering of metal, carbide, intermetallic, and composite powders."
@@ -665,7 +796,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PHYS214"
+          {
+            "oneOf": [
+              "PHYS214",
+              [
+                "ESC312",
+                "MATH230"
+              ]
+            ]
+          }
         ]
       },
       "description": "Introduction to computer simulation techniques and their applications at the physical/life sciences interface. E SC (MATSE) 483 Simulation and Design of Nanostructures (3) Students will learn the simulation techniques and the design rules of nanostructures. Basic concepts of computer modeling will be introduced using quantum and classical approaches. Fundamental physical phenomena encountered in the molecular fields of computational physics, chemistry, and biology will be studied. Applications are drawn from a broad range of fields including soft and condensed matter to build an understanding of nanostructures.The course will assume knowledge and skill developed in the prerequisite courses of PHYS 214 and MATH 230 . Students are expected to combine knowledge from other courses with information presented here to develop sophisticated interpretations and understanding of physical and chemical principles of nanostructures and their design rules.Evaluation methods to be used in this course will be two in-class examinations and one final period examination. The course contains a computer code generation and implementation component. Students will use commercial or educational computer codes (e.g. Matlab, Mathematica, AMBER, CHARMM, VASP, etc.) which are available at our high performance computing clusters (http://gears.aset.psu.edu/hpc/)/ Students will use the computing clusters to perform simulations which are accessible from any classroom or laboratory at Penn State.The principal objectives of the course is to learn the fundamental physics of nanostructures and to design them with computer simulations. This approach starts from classical molecular dynamics that apply on the large scale biological and synthetic assemblies and encompasses quantum mechanics for the molecular and atomic sizes. This course will give a broad scientific picture of simulation techniques in the area of nano-science and technology."

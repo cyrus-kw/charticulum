@@ -103,7 +103,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA304"
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
         ]
       },
       "description": "Applies organizational behavior theories, concepts, and skills to leading and motivating individuals and groups."
@@ -115,7 +120,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA304"
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
         ]
       },
       "description": "Concepts, theories, and methods of managing people and designing organizations. MGMT 326 Organizational Behavior and Design (3) This introductory course covers the concepts, theories, and methods of managing people and designing organizations. Issues and challenges of managing at different organizational levels (individual, group, project, and total organization) are discussed and illustrated with real-world examples. Students learn about the latest means of designing high-performing organizations, including how to change an organization. This course will serve as a foundation for taking advanced management courses. The primary method of evaluation is an examination after each of the four major parts of the course, but class participation and short papers may also be used for evaluation."
@@ -127,7 +137,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA304"
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
         ]
       },
       "description": "Designing organizations to effectively manage new technologies, structures, and people in changing global contexts."
@@ -139,7 +154,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA304"
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
         ]
       },
       "description": "Introduction to the strategic planning and implementation of human resource management, including staffing, development, appraisal, and rewards."
@@ -151,7 +171,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
         ]
       },
       "description": "Globalization and technology have changed the way organizations interact with internal and external constituents. Leaders must strive to create an environment where individuals adapt in socially responsible ways in order to foster the growth of global citizens. This course explores the realm of cultural intelligence or cultural quotient (CQ) and its importance in developing an inclusive approach to leadership and management. Through an experiential learning approach, students will develop skills that will aid in their ability to appreciate, manage, lead, and work with individuals across a multitude of cultural identities."
@@ -255,7 +280,13 @@
       "requisites": {
         "previous": [
           "SCM301",
-          "MGMT409"
+          {
+            "oneOf": [
+              "MGMT409",
+              "MGMT410",
+              "BA421"
+            ]
+          }
         ]
       },
       "description": "An advanced course in project management focusing on portfolio planning and control within the context of specific organizational challenges. MGMT 415 Project Portfolio Management and Organizations (3) Project Portfolio Management (PPM) is a strategically-focused course on the management of projects, programs, and portfolios in organizations. The management of individual projects is a complex, multi-level challenge involving myriad issues of planning, organizing, and controlling all project elements. Project portfolio management addresses a more strategic need; namely, the process of project selection in order to develop a balanced portfolio of projects designed to support organizational initiatives. As a result, this course addresses the critical issues of maximizing value in a portfolio, linking projects to organizational strategy, understanding the critical organization effects of structure, environment, and culture on project success, and creating a coherent PPM framework for the firm. Because the focus is more strategic, the role of the instructor in this course is to go beyond the mechanics of planning and controlling a single project to training students how to think strategically where projects and programs are concerned; to recognize their role in creating a PPM plan for an organization, selecting projects for value, rebalancing a project portfolio, and maintaining this focus within the organization."
@@ -268,7 +299,13 @@
       "requisites": {
         "previous": [
           "SCM301",
-          "MGMT409"
+          {
+            "oneOf": [
+              "MGMT409",
+              "MGMT410",
+              "BA421"
+            ]
+          }
         ]
       },
       "description": "Advanced course in project management focusing on a more in-depth approach to project planning and scheduling and resource management. MGMT 418 Project Planning and Resource Management (3) Project Planning and Resource Management is a more in-depth look at some of the most important aspects of project management; the ability to accurately plan and schedule projects using the latest and most accurate methods. Further, the course addresses resource management within the context of planning, noting the important linkage between these two elements. Accurate planning can be done through a variety of techniques, including CPM, PERT, simulation, linear programming and other optimization methods. Students will learn when each of these methods are most useful, benefits and drawbacks of various planning and resource management techniques, and how to apply these techniques to their projects. In addition, students will learn about different types of project risks, and techniques for analyzing and managing these risks. Because the focus is hand-on and problem-based. The role of the instructor in this course is to demonstrate these analytical techniques through classroom exercises and assignments and software packages, including MS Project, simulation, and Analytic Hierarchical Process (AHP)."
@@ -280,7 +317,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT301"
+          {
+            "oneOf": [
+              "MGMT301",
+              "BA304"
+            ]
+          }
         ]
       },
       "description": "An exploration of the sources of interpersonal conflict and strategies of resolution in the managerial context."
@@ -292,7 +334,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT321"
+          {
+            "oneOf": [
+              "MGMT321",
+              "MGMT326"
+            ]
+          }
         ]
       },
       "description": "Developing individual skills in interpersonal and group settings and experience-based and conceptual training in relating effectively to other people."
@@ -311,7 +358,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "ECON14"
+            ]
+          }
         ]
       },
       "description": "Working with Penn State inventions selected by the Intellectual Property Office, student teams define an optimum commercialization path each technology. ENGR 426ENGR (MGMT/IST/ENTR) 426 Invention Commercialization (3) The goal of ENGR (MGMT/IST/ENTR) 426 is to have students understand why invention commercialization is complicated and difficult by participating in the process. For example, the inventor rarely has insights into the markets for his/her invention, is often not interested in the details of commercialization, and can be secretive. In addition, the business and financial communities often do not take the time, or have the resources, to understand new technologies and perform complex due diligence. Thus lack of due diligence often leads to rejection of innovation because existing companies often discount new technologies from outside the company as NIH - 'not invented here'. Effective transfer of new invention or innovation to a commercial product requires at least three different functional communities to interface: technical, legal and business. Each uses a different language, comes from different educational and cultural backgrounds, and may have an inherent distrust of the others. These functional barriers are difficult to overcome.This course teaches how these barriers can be broken down as student teams help bridge the perceived chasm between key players in the invention commercialization process. In these teams, students bring the skills and knowledge from their major to develop an invention commercialization recommendation for the Technology Transfer Office and the inventor. For example, business students focus on finance and market opportunity assessment; engineering and IST students focus on design refinements, prototyping support, and (if appropriate) making technology suggestions to the inventor.Upon completing the course, the students will have a working knowledge of different university and corporate technology or invention commercialization processes, important intellectual property management tools for inventions (patents, license agreements, option agreements) source of funding to move inventions toward product development, and delivering top quality presentations which outline the recommended commercialization path. Students who enjoy open-ended projects which involve the interplay of business and invention of who wants to work on interdisciplinary teams with the newest inventions will find this course a valuable course. NOTE: Because the inventions/products are based on Penn State faculty intellectual property, students must sign the Penn State Special Intellectual Property Agreement For Students - For Use When Assigning Intellectual Property to The Pennsylvania State University. The form can be viewed at http://guru.psu.edu/policies/RAG13.htmlThe course will be offered both Spring and Fall semesters with an enrollment of 40 students."
@@ -339,7 +392,12 @@
       "requisites": {
         "previous": [
           "SCM301",
-          "MGMT409"
+          {
+            "oneOf": [
+              "MGMT409",
+              "MGMT410"
+            ]
+          }
         ]
       },
       "description": "Risk management is indispensable for effective project management. The course provides students with proven theories, tools, and best practices in risk management in order to manage a project to its success. From the course, students will recognize that project risks are not surprises and can be effectively managed by conducting analytics and best practices in risk management planning, risk identification, qualitative and quantitative risk analyses, risk response planning, and risk monitoring and control. The course will also emphasize the applications of these concepts to practices. Case studies will be used to help students develop a practical understanding of the best practices in project risk management."
@@ -449,7 +507,17 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT215"
+          {
+            "oneOf": [
+              "MGMT215",
+              "BA342",
+              "BA243",
+              [
+                "BA241",
+                "BA242"
+              ]
+            ]
+          }
         ]
       },
       "description": "Advanced examination of social, ethical, legal, and economic responsibilities of those who must make and execute challenging business decisions and manage others who do. The course focuses on the knowledge, skills, and perspectives that a leader in business must have in order to navigate the intersection of business, ethics and society. This includes prescriptive frameworks for ethical decision making, an understanding of how people actually make ethical and unethical decisions, strategies for creating and sustaining ethical cultures, and practice addressing real and hypothetical challenges to responsible leadership in business."
@@ -462,8 +530,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA241",
-          "BA242"
+          {
+            "oneOf": [
+              [
+                "BA241",
+                "BA242"
+              ],
+              "BA243",
+              "BA342"
+            ]
+          }
         ]
       },
       "description": "Advanced examination of social, ethical, legal, economic, equity, environmental, public policy, and political influences on managerial DECISIONS AND STRATEGIES. MGMT 451W Business, Ethics, and Society (3) Focuses on the knowledge, skills, and perspectives that a manager must have in order to deal with the social, legal, ethical, and political demands in society. Ecological, ethical, and public policy dimensions of various managerial decisions are examined."
@@ -512,7 +588,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA304"
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
         ]
       },
       "description": "Examines issues of nations and cultures including motivation, communication, negotiation, leadership, ethics and social responsibility, and women in management."
@@ -565,7 +646,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT409"
+          {
+            "oneOf": [
+              "MGMT409",
+              "MGMT410"
+            ]
+          }
         ]
       },
       "description": "Strategies for Developing New Products examines how established organizations evaluate industries, identify opportunities, and introduce new products. Students apply strategic management frameworks and cross-functional perspectives to support the design, development, and implementation of new product concepts. The course emphasizes aligning product decisions with firm strategy, competitive dynamics, and organizational capabilities. With a strong focus on strategy and feasibility, the course centers on executive-level decision-making, particularly whether a product should be developed and launched given organizational capabilities, industry conditions, financial viability, operational constraints, and intellectual property considerations."
@@ -611,7 +697,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MGMT326"
+          {
+            "oneOf": [
+              "MGMT326",
+              [
+                "MGMT321",
+                "MGMT331"
+              ]
+            ]
+          }
         ]
       },
       "description": "With increasing competition around the globe, companies today confront an increasing array of choices regarding geographic markets, locations for key activities, ways of organizing businesses, operations, and processes for managing across borders. This course provides a broad exploration of new business models developed for competing in the global marketplace. It discusses the evidence, concepts and models for understanding the strategic issues facing executives nowadays and their impacts on company performance. In particular, it investigates various aspects of corporate level and business level strategy dealing with opportunities and challenges in the global competitive environment. It considers the dynamics in the global business environment and addresses key strategic decisions that influence firm growth and competitive advantages. The aim of this course is to prepare students to manage effectively in today's interconnected world by understanding this changing environment, principles of global strategy, and the relation between global strategy and organization. Students will develop strategic thinking capabilities and apply analytical tools and frameworks for understanding key factors influencing decision making in today's interconnected world. The course builds on insights from prior business courses in accounting, marketing, finance, organizational behavior, strategy, and international management. Learning will take place through lectures, in-class activities, case discussion, simulation, and group project and presentations."

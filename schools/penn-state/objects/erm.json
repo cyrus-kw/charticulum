@@ -59,10 +59,20 @@
       "requisites": {
         "previous": [
           "CHEM111",
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
         ],
         "concurrent": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "This course will demonstrate the dependence of environmental science on biology, chemistry and physics, and provide a contextual link between principles learned in basic science courses and the advanced environmental concepts presented in later required Environmental Resource Management (ERM) courses. Students will integrate the knowledge from each of these disciplines into an interdisciplinary framework. This course will teach Environmental Resource Management students basic problem solving skills while using examples taken from environmental media - air, water, and soil. Students will have many opportunities to examine, manipulate, and solve quantitative problems related to the environment. This is a required course for Environmental Resource Management majors."
@@ -77,7 +87,12 @@
           "CHEM110"
         ],
         "concurrent": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "This course is an introduction to measurement and monitoring equipment/techniques commonly used in analyses and design of hydrologic systems and will provide students the opportunity to learn and apply basic measurement techniques that serve as critical tools in professional practice in water resources. During the first part of the course, the instruments and techniques commonly used in water resources assessment, including rainfall monitoring, flow monitoring, and interest as part of the Sustainability Institute's Sustainable Communities Collaborative. Data generated over the course of the semester are used to develop a report that is shared, along with the data with a community partner. In the second part of the course, mapping development is explored, which serves as a critical aspect of water resources engineering and planning. ArcGIS serves as a primary software tool used in engineering design and water resources planning, and students will learn to develop maps to present and process various watershed - data including land use data, soils data, and hydrography data. Various aspects of the course will coalesce around the concept of the watershed being the basic unit of water resources analyses and design, and students will experience how various measurement techniques and approaches are necessary tools for practicing professionals. This course will be useful to any undergraduates seeking degrees in a major related to water resources planning, engineering, or technology."
@@ -89,7 +104,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "This course equips students with the ability to understand land measurements, mapping, soils, hydrology, channel flow, erosion control techniques with emphasis on RUSLE2, subsurface drainage techniques, and water impoundments for use in storing water, managing stormwater, and capturing suspended sediment. The class concludes with a 3-week section on irrigation, which teaches water needs and pipe flow. Basic hydrology is presented using both the Soil-Cover-Complex and Rational Methods. Manning's equation is developed and discussed for use in understanding flow in open channels. The various components of the RUSLE2 soil erosion model are presented with emphasis in agricultural erosion. Irrigation is taught from both a supplemental agricultural and environmental perspective."
@@ -115,7 +135,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "AGBM101"
+            ]
+          }
         ]
       },
       "description": "This course will provide students with an understanding of how environmental and sustainability issues are impacting business strategies and ultimately profits. We will also examine the external stakeholders, such as environmental groups, policy-makers, and \"green\" consumers, that impact business management. Business students will benefit by a better understanding of environmental/sustainability issues that impact their operations and strategies. Non-business students will benefit by understanding how business decisions can impact the natural environment. An emphasis will be on a thorough understanding of making a business case for sustainability. We will also discuss the triple bottom line and its use. Some Specific Issues to Cover: 1. How are organizations shifting business models to work with sustainability trends? 2. How can we make a business case (justification) for being \"green\"? 3. Can firms differentiate themselves by being responsible/sustainable? Do consumers and other stakeholders care? 4. Thorough understanding of stakeholders and how they impact operations. 5. How can the \"business\" side of the world work with the \"environmental\" side? 6. Use of packaging as an example of where parts of the supply chain are working together to be more sustainable. 7. How \"waste\" in its many forms can be seen as a surrogate for unsustainable practices. 8. Pros and cons of metrics used to measure sustainability. 9. Impacts of business operations on the environment."
@@ -127,10 +153,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          }
         ],
         "concurrent": [
-          "ERM151"
+          {
+            "oneOf": [
+              "ERM151",
+              "CED152",
+              "EBF200"
+            ]
+          }
         ]
       },
       "description": "Legal systems and lawmaking processes; property rights in land, water, and wildlife resources; jurisdictional problems in planning resource use. E R M 411 Legal Aspects of Resource Management (3) This course provides a survey of the basic legal principles, regimes, and issues related to environmental protection and natural resource management. The course is designed for students interested in environmental resource management and related careers, providing them with a basic grounding in core principles of environmental law and regulation. The course will offer instruction, discussion, and practical application of theories of environmental law and basic legal and regulatory regimes related to water, air, and land. Focus will be on core federal legal regimes and statutes and their application in Pennsylvania. These legal regimes will be explored through topical case studies, such as Chesapeake Bay restoration, Marcellus Shale natural gas extraction, and climate change. During the latter half of the course, practical application of environmental legal issues will be demonstrated in a hands on manner where students will represent private, nonprofit, or government sectors in a hypothetical land development proposal, and will be expected to perform tasks they may be asked to perform during their environmental careers: preparing permit applications, public comment documents, writing permit conditions, and challenging and defending final agency decisions."
@@ -142,8 +179,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH141",
-          "STAT200"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ],
         "concurrent": [
           "ERM300"
@@ -245,9 +293,17 @@
       ],
       "requisites": {
         "previous": [
-          "CHEM110",
-          "CHEM111",
-          "CHEM112"
+          {
+            "oneOf": [
+              [
+                "CHEM110",
+                "CHEM111",
+                "CHEM112"
+              ],
+              "CHEM202",
+              "CHEM210"
+            ]
+          }
         ]
       },
       "description": "This course is designed for junior and senior undergraduates with some previous chemistry background. The course will advance students¿ understanding of chemical concepts and link them to applications in environmental chemistry. The course focuses on topics in environmental soil chemistry such as: soil minerology, mineral weathering, sorption and ion exchange, chelation and complex formation, soil pH and acidic/alkaline soils, oxidation/reduction, soil salinity, soil biochemistry, and the dissolution/precipitation of common metals and compounds. The solid phase is emphasized, but solid/solution equilibria, aquatic chemistry, metals in the aqueous environment, and aquatic pollution will also be covered. The course also covers a detailed overview of stratospheric chemistry, tropospheric chemistry, and climate change."
@@ -266,7 +322,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH140"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH22",
+              "MATH26",
+              "MATH41",
+              "MATH110"
+            ]
+          }
         ]
       },
       "description": "Roads are ubiquitous throughout the landscape and this course is intended for students who anticipate working in natural resource management fields. This course provides students with the fundamental understanding of the interaction of natural systems with unpaved and low volume paved roads in order to economically maintain roadways with minimum impact on the environment. The major focus area will be the road/stream interface, including the fundamentals of hydrology, geology, soils, and erosion processes as they pertain to roads and streams. It is expected that the student will gain a practical understanding of rural road maintenance in order to provide a foundation for real-world application. Emphasis is placed on Environmentally Sensitive Maintenance (ESM) practices for rural roads that are used throughout Pennsylvania. The goal of ESM practices is to minimize the environmental impact of the existing road network by maintaining proper road drainage in order to keep road materials out of the adjacent streams and surrounding landscape. Upon completion the student will be ESM certified under Pennsylvania's Dirt, Gravel and Low Volume Road Maintenance Program."

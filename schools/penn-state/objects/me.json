@@ -38,7 +38,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
     },
     {
@@ -104,7 +106,12 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "ME348",
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          },
           "ME410"
         ]
       },
@@ -119,8 +126,18 @@
         "previous": [
           "EMCH212",
           "MATH251",
-          "ME300",
-          "MATH231"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          }
         ]
       },
       "description": "This course is an introduction to fluid mechanics, and emphasizes fundamental concepts and problem-solving techniques. Topics to be covered include fluid properties (density, viscosity, vapor pressure, surface tension); fluid statics (hydrostatic pressure, pressure forces on planar and curved surfaces); fluid kinematics (flow visualization, vorticity, Reynolds transport theorem); control volume analysis (conservation laws of mass, momentum, and energy, Bernoulli equation); dimensional analysis (dimensional homogeneity, method of repeating variables, experimental testing, similarity); internal flows (pipe flows, major and minor losses, piping networks, matching pumps to systems); differential analysis (Navier-Stokes equation, creeping flow, potential flow, boundary layers); external flows (lift and drag, pressure vs. friction drag); and compressible flow (isentropic flow through nozzles, shock waves). Brief introductions to computational fluid dynamics (CFD), and turbomachinery (pumps and turbines) will also be provided."
@@ -133,7 +150,12 @@
       "requisites": {
         "previous": [
           "ME320",
-          "ME348"
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          }
         ]
       },
       "description": "The course is designed for students to understand basic concepts of fluid mechanics through analysis of experimental data from various sources. The course emphasizes hands-on experience to take measurements, analyze and interpret experimental data. An important component of this course fosters an ability to write laboratory reports and to creatively generate independent ideas that involve the study of fluid mechanics through development and execution of final project. The course aims to developed teamwork (no hyphen needed, this is one word) skills and advanced proficiency in professional communications and interactions."
@@ -163,7 +185,12 @@
           "EDSGN100"
         ],
         "concurrent": [
-          "ME320",
+          {
+            "oneOf": [
+              "ME320",
+              "BME409"
+            ]
+          },
           "ME360"
         ]
       },
@@ -176,7 +203,13 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "EE210"
+          {
+            "oneOf": [
+              "EE210",
+              "EE211",
+              "EE212"
+            ]
+          }
         ]
       },
       "description": "Fundamentals of statistics, sensors, instrumentation, and measurement of mechanical phenomena such as temperature, flow, pressure, force, stress, displacement, and acceleration. M E 345 Instrumentation, Measurements, and Statistics (4) This course is required for all mechanical engineering students. It serves as an introduction to the fundamental principles of instrumentation and measurement, along with statistics, and integrates and applies what the students have learned in their electrical engineering course. The course includes a 3-hour-per-week hands-on laboratory where students apply the material learned in the lecture. For many students this is the first time they have actual hands-on experience with electronics and measurement equipment, such as oscilloscopes, breadboards, function generators, digital data acquisition systems, integrated circuits strain gages, displacement meters, thermocouples, tachometers, dynamometers, filters, volume flow meters, velocity meters, pressure transducers, etc. Students learn not only how to use these devices in the lab, but also the fundamental principles of their operation. Statistical analysis is integrated into the course, especially in the hands-on laboratories, where statistics is used to analyze and interpret acquired data."
@@ -189,7 +222,12 @@
       "credits": 4,
       "requisites": {
         "concurrent": [
-          "EE212"
+          {
+            "oneOf": [
+              "EE212",
+              "EE211"
+            ]
+          }
         ]
       },
       "description": "Measurement concepts, probability and statistics, error analysis; electro- mechanical transducers, applied electrical and mechanical measurements, electrical and electronics instruments, data acquisition and instrumentation systems."
@@ -230,10 +268,20 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "ME348"
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          }
         ],
         "concurrent": [
-          "ME450"
+          {
+            "oneOf": [
+              "ME450",
+              "ME357"
+            ]
+          }
         ]
       },
       "description": "Experimental investigation of simple position, velocity, and temperature control systems with analog and digital controllers. M E 355 Dynamic Systems Laboratory (1) The objective of the Dynamic Systems Laboratory is to enable students to experimentally investigate the calibration, response characteristics, modeling, and control of mechanical and fluid systems. This course is intended to allow students to develop some hands-on experience and working knowledge of basic dynamic and control systems. Specifically, to 1. Identify the actuators, sensors, plants, and controllers of physical control systems.2. Calibrate encoders, temperature, laser displacement, and flow sensors.3. Measure steady state, step, and frequency response of thermal, fluid, and mechanical systems.4. Compare simulation and experimental results to validate theoretical model.5. Design PID controllers for thermal, fluid, and mechanical systems.6. Implement and test PID controllers for thermal, fluid, and mechanical systems."
@@ -246,7 +294,12 @@
       "requisites": {
         "previous": [
           "CMPSC200",
-          "EE211",
+          {
+            "oneOf": [
+              "EE211",
+              "EE212"
+            ]
+          },
           "MATH251"
         ]
       },
@@ -262,7 +315,12 @@
           "EMCH213"
         ],
         "concurrent": [
-          "CMPSC200"
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "Specification of components such as shafts, bearings, and power transformers; optimal designs for operational, environmental, and manufacturing requirements. ME 360 Mechanical Design (3) This course is required for all mechanical engineering students. It is an introduction to analysis and design of mechanical components. It helps provide practical insight into theory provided by prerequisites in engineering mechanics and materials science. Students initially perform yielding and fatigue failure predictions for general structural elements and then focus on specific mechanical components such as gears, fluid film bearing, rolling element bearings, screws, shafts, and springs. Use and interpretation of finite element analyses (FEA) are also introduced. The overall goals are for students to learn to make basic design decisions regarding the suitability of different materials in mechanical components (e.g. steel versus aluminum), and to make basic design decisions regarding the suitability of different components in a mechanical system (e.g. ball bearings versus fluid film bearings)."
@@ -302,7 +360,12 @@
       "requisites": {
         "previous": [
           "EMCH212",
-          "CMPSC200",
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          },
           "MATH220",
           "MATH251"
         ]
@@ -317,7 +380,12 @@
       "requisites": {
         "concurrent": [
           "ME370",
-          "ME348"
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          }
         ]
       },
       "description": "Experimental measurement and analysis of mechanical system dynamics. This laboratory course provides an opportunity to apply the fundamental vibrations theory taught in ME 370 to actual mechanical hardware. The experiments illustrate fundamental concepts from an experimental vibration perspective. Experimental vibration measurement methods are applied to estimate simplified dynamic models for vibrating mechanical systems. The students compare analytical to experimental results to gain a sense of the limitations of both modeling and experimentation. Experiments include: free vibration of linear and nonlinear systems, response, measurement of translational and rotational, forced harmonic vibration, spectral analysis of vibration signals, experimental data uncertainty and comparison of finite element model dynamic results to experimental data. Throughout the course the students will: 1. Plan, implement and debug instrumentation to measure vibrations of mechanical systems. 2. Implement experimental test systems using vibration transducers and data acquisition to maximize measurement quality. 3. Recognize the dominant behavior seen in many larger, more complicated engineering systems. 4. Estimate the system vibration parameters 5. Use software to compare measured and predicted dynamic behavior. 6. Recognize dominant nonlinear behavior and implement a nonlinear simulation using software. 7. Verify the results of computer analyses of dynamic systems by various methods including experimental measurement and analytical modeling."
@@ -433,8 +501,18 @@
       ],
       "requisites": {
         "previous": [
-          "ME300",
-          "MATH230"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Statistical description of systems composed of large numbers of particles in the context of classical and quantum mechanics; basic concepts of probability theory and thermodynamics as they relate to statistical mechanics. M E (NUC E) 406 Introduction to Statistical Thermodynamics (3) This course is an introduction to probabilistic and statistical concepts in the physical sciences, which we refer to as 'statistical thermodynamics.' In areas such as design and processing of electronic devices, materials engineering, chemical engineering, and combustion engineering, the science of statistical mechanics is a particularly necessary, powerful, and important tool for the engineer. The underlying foundation of statistical mechanics is developed by (1) reviewing the basic ideas from probability theory, (2) deriving the binomial, Poisson, and Gaussian probability distributions, and (3) using these models to analyze several examples taken from science and engineering. To make a connection between macroscopic quantities and the corresponding probabilistic representation, classical thermodynamics is reviewed using the internal energy, entropy, and free energy functions in the context of the first and second laws. Statistical mechanics for classical and quantum-mechanical systems is presented via the micro-canonical, canonical, and grand canonical ensembles using the associated partition functions. During the syntheses of ideas, applications from various branches of science are presented. Some examples of applications are the Einstein crystal, the Debye crystal, the ideal gas, and black body radiation.This course covers the following program objectives: 1. Demonstrate knowledge of basic chemistry and physics. 2. Demonstrate a knowledge of atomic and nuclear physics. 3. Demonstrate a knowledge of thermodynamics, heat transfer, and fluid flow. 4. Understand and apply the basic concepts of particle transport. 5, Understand and apply thermodynamics and heat transfer principles to the analysis of nuclear power components and systems."
@@ -458,9 +536,24 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME320",
-          "CMPSC200",
-          "MATH220"
+          {
+            "oneOf": [
+              "ME320",
+              "BME409"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH220",
+              "NUCE309"
+            ]
+          }
         ]
       },
       "description": "Thermal energy transfer mechanisms: conduction (steady, transient), convection (internal, external), radiation; lumped parameter method; heat exchangers; introduction to numerical methods. ME 410 , Heat Transfer, is a required course for mechanical and nuclear engineering students. The course presents the three modes of heat transfer: conduction, convection, and radiation. One-dimensional steady and transient conduction is studied for planar, cylindrical, and spherical geometries. The lumped capacitance analysis is used for transient conduction when appropriate. Analytical and numerical methods are presented for two-dimensional conduction problems, including the analysis of extended surfaces. Convection heat transfer is studied in both internal and external geometries and under laminar and turbulent flow regimes. External flows include cooling on flat plates due to laminar and turbulent boundary layer flows, and cooling of cylinders due to cross flow. The convection heat transfer analysis in internal flows considers laminar and turbulent pipe flows. Free convection is also considered where heat transfer is due to flow induced by fluid buoyancy. Boiling and condensation considers the effect of two-phase flows on surface heat transfer. Radiation heat transfer is studied by considering both the general characteristics of radiation as well as the properties of radiating surfaces and radiation heat transfer between surfaces. Methods for solving multi-mode heat transfer are presented throughout the course. Heat exchangers and heat transfer from extended surfaces are two applications studied in the course"
@@ -508,9 +601,24 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME320",
-          "MATH250",
-          "CMPSC200"
+          {
+            "oneOf": [
+              "ME320",
+              "AERSP312"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "This course provides an introduction to the important and growing field of Computational Fluid Dynamics (CFD). The student will become familiar with a short history and relevance of CFD, the basic differential models of fluid dynamics, discretization and linearization practices, and solution strategies of CFD. Fundamentals of algorithm classification, error and stability analysis will be covered. Also, several advanced topics of relevance to modern CFD analysis will be covered. A term project will involve coding a CFD model of one of several choices including: 2D shallow wave equations for application to a tsunami, unsteady conjugate flow+heat transfer analysis of a pin array, and others per the instructor's discretion."
@@ -559,7 +667,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201",
+              "EME301"
+            ]
+          }
         ]
       },
       "description": "Concepts related to laminar and turbulent premixed and nonpremixed combustion with applications to propulsion and stationary systems. EGEE (M E) 430 Introduction to Combustion (3) This course provides an introductory treatment of combustion science. The objectives of the course are to develop in the students an understanding of combustion kinetics, combustion thermochemistry, flame dynamics, flame stability, and pollutant formation. Coverage includes laminar and turbulent flames, premixed and diffusion flames, and detonations. Emphasis is placed on the role that Kinetics, heat transfer, mass transfer, and fluid dynamics have on flame structure and flame stability. The course includes some laboratory demonstrations of flat flame and diffusion flame burners, and incorporates numerical calculations of thermodynamic and kinetic combustion phenomena. The course begins with a review of transport phenomena, physical gas dynamics, and thermochemistry. Then, the concept of the laminar flame speed is introduced in the context of a one-dimensional flame and a propagating chemical wave. Issues of premixed flame structure and stability are presented along with a discussion of flammability limits. Next, laminar diffusion flames are presented via the Burke-Schumann analysis. From laminar flames, the emphasis shifts to turbulent premixed and diffusion flames, and the concepts of flame stretch and strain. Detonations are considered, with emphasis on thermodynamic analysis of the detonation and the structure of the detonation wave. Details of chemical kinetics for the hydrogen-oxygen and hydrocarbon-air reaction systems are presented, with linkage back to earlier topics such as flame stabilization and flammability limits. After kinetic phenomena, the course then considers pollutant formation focusing on soot and NOx. The fundamental aspects of combustion are applied to analysis of the combustion process and pollutant formation in international combustion engines and catalytic combustors. The course wraps up with discussion of atmospheric chemistry, the fate of pollutants, and the formation of secondary pollutants."
@@ -597,7 +711,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300"
+          {
+            "oneOf": [
+              "ME300",
+              "ME201"
+            ]
+          }
         ]
       },
       "description": "Natural and man-made sources of pollution; atmospheric dispersion; biological and health effects; control systems; legislation and regulations. This course is an introduction to air pollution, with an emphasis on outdoor rather than indoor air pollution. Topics to be covered include sources (emissions) of air pollution, both gaseous and particulate, interaction of air pollution with our bodies and the environment, and methods of measuring, quantifying, analyzing, and controlling air pollution. A brief introduction to government regulations related to air pollution will also be provided. Students are expected to be proficient in applying mathematics (e.g., integration, differentiation, and application of differential equations), and some basic chemistry, statistics, thermodynamics, and fluid mechanics."
@@ -609,7 +728,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME348",
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          },
           "ME330",
           "ME320"
         ],
@@ -644,8 +768,18 @@
       "requisites": {
         "previous": [
           "MATH220",
-          "MATH230",
-          "CMPSC201"
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC200"
+            ]
+          }
         ]
       },
       "description": "Problem formulation, algorithms and computer solution of various engineering optimization problems. M E 444 Engineering Optimization (3)Students will learn to formulate and solve a variety of engineering optimization problems. Basic concepts, problem formulation, scaling, use of different optimizers, effect of tuning parameters and starting points and solution interpretation will be taught. Example problems will be taken from mechanical, aerospace, nuclear, civil, chemical, electrical and other engineering disciplines. This course will complement other engineering design courses, such as capstone design. Students will learn how optimization can reduce product turnaround time, and to make decisions involving weight, stiffness, strength, performance, energy utilization, and other attributes. Pedagogy will focus on hands-on experience through computational problem-solving and graphical understanding. Technology classrooms and computer labs for instruction will be used. A by-product of this course is increased math and computer skills."
@@ -657,7 +791,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "ME348"
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          }
         ]
       },
       "description": "Interfacing of electro-mechanical systems to microcomputers for data acquistion, data analysis and digital control."
@@ -700,7 +839,12 @@
           "ME370"
         ],
         "concurrent": [
-          "ME348"
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          }
         ]
       },
       "description": "Modeling and analysis of dynamic interactions in engineering systems. Classical and state variable methods; digital simulation; stability and dynamic response. M E 450 Modeling of Dynamics Systems (3) This course covers modeling, analysis, and control of single and multiple degree-of-freedom dynamical systems, including mechanical, electrical, thermal, fluid systems and their combinations (mixed systems). The processes of energy storage and dissipation, which are common for different kinds of dynamic systems, will be emphasized in investigating general principles for modeling various dynamic systems. Basic concepts in system theory such as state variables and stability notions will be introduced. Most of the content will be restricted to linear-time-invariant systems (LTIs); however, local linearization around nominal operating points will be taught to analyze nonlinear systems. Introduction to classical control analysis and design methods will also be given."
@@ -724,7 +868,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME348"
+          {
+            "oneOf": [
+              "ME348",
+              "ME345"
+            ]
+          }
         ]
       },
       "description": "Interfacing of electro-mechanical hardware to microcomputers and microcontrollers for data acquisition, data analysis, and digital control. The course addresses the need for today's mechanical engineer to understand the architecture of engineering systems and not just the mechanical hardware. The course has a significant lab component in the form of weekly, two-hour labs. Examples of lab topics include the design and building of a complete autonomous vehicle including the drive system, steering, sensors, obstacle avoidance, and computer control."
@@ -737,7 +886,12 @@
       "requisites": {
         "previous": [
           "ME320",
-          "ME450"
+          {
+            "oneOf": [
+              "ME450",
+              "ME357"
+            ]
+          }
         ]
       },
       "description": "This course covers the characterization and feedback control of linear time invariant (LTI) dynamic systems, classical feedback control theories will be emphasized. Basic concepts of analyzing, predicting and specifying the performance of dynamic systems, including transfer functions, dynamic response, block diagram, stability notions and sensitivity will be introduced. A thorough treatment of feedback controller design via Root-Locus method will be provided, which includes the design of lead/lag compensation and PID controller. Frequency domain controller design will also be introduced thoroughly, from the characterization of open-loop frequency response using Bode plot to the analysis of closed-loop frequency response. In this process, the notions of gain-phase relationship, Nyquist stability criterion, and stability margin will be discussed. Finally, the method of adding dynamic compensation to adjust the frequency response and improve the stability and performance of the system will be introduced."
@@ -750,7 +904,12 @@
       "requisites": {
         "previous": [
           "EMCH212",
-          "ME360"
+          {
+            "oneOf": [
+              "ME360",
+              "ME367"
+            ]
+          }
         ]
       },
       "description": "This course is a technical elective where students learn about the present and future status of robot applications, and are required to apply fundamental knowledge of physics, mechanics, and mathematics to develop software to analyze and control robots. The course deals with mechanics and control of mobile robots, flying robots and robot manipulators. First, students are taught to describe position and orientation of a rigid body, including rotation matrix, roll-pitch-yaw angles and Euler angles. In addition, a brief introduction to feedback control system is provided. After these background materials, students learn about the following topics: a. kinematics and control of wheeled mobile robots, car-like mobile robots and quadrotor and b. 3-D kinematics, statics, dynamics and control of robot manipulators. Sensors, actuators and software used in industrial robots are discussed."
@@ -787,8 +946,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH213",
-          "CMPSC201"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210H",
+              "EMCH210"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC200"
+            ]
+          }
         ]
       },
       "description": "Computer modeling and fundamental analysis of solid, fluid, and heat flow problems using existing computer codes. E MCH (M E) 461 Finite Elements in Engineering (3) This is an introductory course in the Finite Element Method. Through this course, students gain knowledge in finite element theory and problem modeling. The mathematical formulation of the method is presented and then applied to problems in elasticity and heat transfer. Projects are assigned to demonstrate the finite element method in simplified problems using hand- calculations and computer programs such as Matlab. The use of commercial FEA programs is introduced and problems of increased complexity are assigned to demonstrate their use in a computer lab. Finally, problems of realistic complexity are assigned such that students can practice solving, documenting and presenting their use of commercial FEA programs."
@@ -854,8 +1024,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212",
-          "ME370"
+          {
+            "oneOf": [
+              "EMCH212",
+              "EMCH212H"
+            ]
+          },
+          {
+            "oneOf": [
+              "ME370",
+              "ESC407",
+              "EMCH407"
+            ]
+          }
         ]
       },
       "description": "Application of Lagrange's equations to mechanical system modeling, multiple- degree-of-freedom systems, experimental and computer methods; some emphasis on design applications. In this course, students will learn basic techniques for modeling and analyzing linear multidegree-of-freedom (MDOF) mechanical systems, and will learn how to use these techniques for mechanical design. Students will learn to obtain equations of motion using energy methods (Lagrange's equations), with emphasis on the efficient formulation and reduction to the linear case. The basic theory of MDOF systems will be presented, including: eigenvalue problems; natural frequencies and normal modes; superposition and modal analysis; and frequency response. Numerical methods for solving static, dynamic and eigenvalue problems will be presented. Introductions to the theory of linear continuous systems and experimental methods of vibrations will be presented. A substantial portion of the course will be spent discussing design applications of the basic theory, such as: finite element numerical analysis and experimental modal analysis of beams and plates; vehicle suspension design; and vibration isolation and absorption."
@@ -867,7 +1048,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH212"
+          {
+            "oneOf": [
+              "EMCH212",
+              "EMCH212H"
+            ]
+          }
         ]
       },
       "description": "Design and analysis of mechanical linkages including kinematic synthesis and dynamic analysis. Linkages for a variety of applications are considered. M E 480 Mechanism Design and Analysis (3) The student who takes this course will develop a basic understanding of the analysis and synthesis of planar linkage mechanisms. Students will develop the ability to model real linkage mechanisms using kinematic diagrams, including identification of links and joints. They will also learn to use Gruebler's equation to calculate the mobility or number of degrees of freedom of linkages based on the kinematic diagram. Students will also become familiar with real mechanism applications in the context of mechanism synthesis, where they will learn to determine the required dimensions of a mechanism for a specific application. Students will apply these dimensional synthesis methods in a design project which includes building a simple linkage prototype. They will learn kinematic analysis methods, i.e., analysis of position, velocity, and acceleration of planar linkages. These methods consist of graphical, algebraic, and complex number approaches. Students will also learn to use commercial software packages, e.g. Working Model, to predict position, velocity, and acceleration of planar linkages, and will compare their predictions to those using analytical approaches. Finally, students will learn to do dynamic force analysis of planar linkages to predict joint forces and motor torques. They will use commercial software packages to predict joint forces and motor torques of planar linkages, and will compare their predictions to those using analytical approaches."

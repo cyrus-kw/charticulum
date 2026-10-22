@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This course is designed for students to step into the role of a criminalist ¿ one who performs the scientific examination of evidence - as they process a case from start to finish over the semester. Students begin by learning a scientific approach to crime scene investigation, evidence collection, and transport. They then follow the collected evidence as it is disseminated throughout the crime lab for examination and analysis. Disciplines such as forensic serology, trace evidence, impression evidence, drug chemistry, toxicology, and DNA will be discussed. Students will learn about the examinations performed by crime lab professionals; the application of scientific principles from disciplines such biology, chemistry, physics, and math to those exams; and the instrumentation commonly used in the lab to complete those examinations and analyses. Once the evidence has been processed, students will use critical thinking skills to interpret the evidence within the context of the case. They will reconstruct the crime as it could have occurred guided by the results and conclusions generated from their analyses. Students will also explore the role of various scientific disciplines outside of criminalistics (anthropology, entomology, pathology, etc.) as they are used in modern forensics, as well as the role of forensic science in society and the criminal justice system."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This course offers an exploration of the science, management, and investigative techniques for the field of crime scene investigation. Students will develop the intellectual skills needed to plan for and organize a crime scene investigation, including crime scene approach and management; how to be tenacious when recovering and developing evidence; prescribing and amending crime scene search plans; making competent use of limited time, human, and other resources; and understanding and accounting for chain of custody. Throughout the course, students will employ the philosophies and practice of science to the investigation of crimes. Each student will understand the nature and value of each kind of physical evidence and how to recognize, collect, and preserve it. They will generate hypotheses of crimes based on evidence and use deduction in a scientific manner. Students will learn to prescribe recovery and development cascades for: fingerprints, trace evidence, impression evidence, and biological evidence, as well gain an understanding of the science behind the methods used for each type of evidence. The advantages, disadvantages, and limitations of these methods will be discussed. Additionally, students will gain experience by performing crime scene investigation exercises that enhance their understanding of the science and methodology discussed, including processing a mock crime scene."
     },
     {
@@ -98,8 +102,18 @@
       "requisites": {
         "previous": [
           "FRNSC210",
-          "STAT200",
-          "PHYS212"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS251"
+            ]
+          }
         ]
       },
       "description": "Laboratory-based examination of forensic evidence; microscopy, classification and identification. FRNSC 411 Criminalistics: Trace and Impression Evidence (3) Laboratory-based examination of physical evidence typically recovered from crime scenes. Examination of physical evidence will occur according to established forensic procedures, including the location of trace evidence and performance of presumptive and confirmatory tests. Students will establish a laboratory notebook to document their findings. Since forensic testing ultimately results in testimony in a courtroom, students will prepare written reports of their findings and learn how to present their findings in a courtroom setting. The course will concentrate on microscopy (stereo, transmitted light, polarized light, and comparison), physical and chemical techniques to classify evidence, and pattern matching techniques to individualize impression evidence. The course is relevant to any student majoring in Forensic Science or who has an interest in obtaining employment in local, state, or federal law enforcement agencies and crime lab facilities."
@@ -112,8 +126,18 @@
       "requisites": {
         "previous": [
           "FRNSC210",
-          "STAT200",
-          "PHYS212"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS251"
+            ]
+          }
         ],
         "concurrent": [
           "FRNSC411"
@@ -129,7 +153,14 @@
       "requisites": {
         "previous": [
           "FRNSC210",
-          "BIOL230W"
+          {
+            "oneOf": [
+              "BIOL230W",
+              "MICRB202",
+              "BMB251",
+              "BIOL240W"
+            ]
+          }
         ]
       },
       "description": "Laboratory-based examination of forensic evidence; biological fluid identification, hair microscopy. FRNSC 413 Criminalistics: Biology (3) Laboratory-based examination of biological evidence typically recovered from crime scenes. Examination of biological evidence will occur according to established forensic procedures, including the identification of biological evidence and the performance of presumptive and confirmatory tests. Students will establish a laboratory notebook to document their findings. Since forensic testing ultimately results in testimony in a courtroom, students will prepare written reports of their findings and learn how to present their findings in a courtroom setting. The course will concentrate on the analysis of biological such as human blood, semen, saliva, urine, fecal matter and hair; including the employment of chemical, biological, and biochemical techniques to classify evidence. The course is relevant to any student majoring in Forensic Science or who has an interest in obtaining employment in local, state, or federal law enforcement agencies and crime lab facilities."
@@ -166,9 +197,27 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL222",
-          "BMB251",
-          "CHEM212"
+          {
+            "oneOf": [
+              "BIOL222",
+              "BIOL322"
+            ]
+          },
+          {
+            "oneOf": [
+              "BMB251",
+              "MICRB251",
+              "BIOL230W",
+              "BMB251H",
+              "BIOL230M"
+            ]
+          },
+          {
+            "oneOf": [
+              "CHEM212",
+              "CHEM212H"
+            ]
+          }
         ]
       },
       "description": "Classroom discussions will focus on advanced aspects of molecular biology, including as they relate to forensic DNA analysis. The course will start with an overview of molecular structures (i.e., DNA, RNA, and proteins) and an advanced discussion of DNA topology, macromolecular interactions, and chromatin formation. From there, discussions will move from replication, mutation, mutation repair, and recombination, to transcription and translation, and then to regulation of gene expression. This latter topic will include an advanced discussion of microRNAs and how they can be used to distinguish body fluids in forensic DNA laboratories. At the end of the course, students will have a strong understanding of molecular biology concepts and tool, and how they relate to forensic DNA analysis. Recitation and active learning sessions will be used to reinforce the material. The proposed course is relevant to any forensic science student who has taken BMB 251 / MICRB 251 , BIOL 230W , BMB 251H , or BIOL 230M and CHEM 212 or CHEM 212H , and is required for Forensic Science majors who elect to complete the biology option. Genetics takes a different lens into molecular biology with a focus on problem-solving that is an important foundation for forensic science and would provide foundations (both skills and concepts) for this proposed course. FRNSC 420 serves as a prerequisite for FRNSC 421W , Forensic Molecular Biology, as it lays the foundation of advanced molecular biology concepts that forensic DNA reply upon, including molecular tools employed by forensic molecular biologists. In addition, this course is for any student who has an interest in obtaining employment in a local, state or federal law enforcement agency and/or crime laboratory facility, as it is a requirement to have a molecular biology course for employment and advancement in a forensic DNA laboratory."
@@ -199,7 +248,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM202",
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          },
           "CHEM227"
         ]
       },
@@ -215,7 +269,12 @@
         "previous": [
           "CHEM213",
           "CHEM227",
-          "FRNSC411"
+          {
+            "oneOf": [
+              "FRNSC411",
+              "CHEM431W"
+            ]
+          }
         ]
       },
       "description": "Analytical and instrumental methods used in the forensic sciences with special emphasis on the analysis and characterization of trace evidence. Forensic chemistry is a classroom and laboratory based course designed to introduce the student to the forensic analysis of trace evidence according to established forensic procedures. The trace evidence can include paint, fire debris, glass, controlled drug substances, blood alcohol analysis, fibers, smokeless powders, inks/dyes, gunpowder, and low explosives. The focus of the course will be on identifying and understanding the nature of the samples, common sample preparation methods, chemical and analytical instrumental methods, and proper collection and storage of evidence. The course will simulate the methods in a standard forensic chemistry laboratory. The analytical methods will include microscopical, spectroscopic, trace elemental, and chromatographic analytical tools that are commonly used in these laboratories. The course will rely heavily on the students' knowledge and skills that have been learned or acquired during their studies in the pre-requisite course work. The pre-requisite knowledge include, but are not limited to: algebra, calculus, general chemistry, organic chemistry, analytical chemistry, basic statistics, polarizing light microscopy, spectroscopy theory, chromatography theory, proper evidence handling practice, and good writing skills. All of these knowledge areas are represented in the required pre-requisite courses which are CHEM 213 AND CHEM 227 AND ( FRNSC 411 OR CHEM 431W )."
@@ -228,7 +287,12 @@
       "requisites": {
         "previous": [
           "FRNSC410",
-          "FRNSC411"
+          {
+            "oneOf": [
+              "FRNSC411",
+              "FRNSC413"
+            ]
+          }
         ]
       },
       "description": "This course will introduce students to the concepts of medicolegal death investigation and the operations of a medical examiner or coroner's office. Topics will include determining cause and manner of death, issuing a death certificate, making death notification, forensic autopsy, typical postmortem findings in common natural and unnatural deaths, mortuary procedures, cultural differences in death rituals, mass casualty events, and others. Relevant learning objectives will be in alignment with the training standards of the American Board of Medicolegal Death Investigators (ABMDI). An optional Saturday field exercise will be conducted in which students can have the opportunity to practice many of the skills learned in class including scene assessment, witness interviewing, family death notification, and transport of the body to the morgue. This may also include a visit to the morgue and/or funeral home. The course will involve much active learning, group activities/discussions, and both individual and group quizzes. Students will be expected to prepare for class by completing assigned readings and pre-lecture activities. Instructor lecturing will be limited to approximately 30% of class time."
@@ -240,7 +304,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "FRNSC411"
+          {
+            "oneOf": [
+              "FRNSC411",
+              "FRNSC413"
+            ]
+          }
         ]
       },
       "description": "Presentation and discussion of special issues in forensic science; extension and application of background knowledge to unusual topics and cases."
@@ -253,7 +322,13 @@
       "requisites": {
         "previous": [
           "FRNSC410",
-          "FRNSC411"
+          {
+            "oneOf": [
+              "FRNSC411",
+              "FRNSC413",
+              "FRNSC415"
+            ]
+          }
         ]
       },
       "description": "This course will prepare students to make the transition to professional careers in forensic science and allied fields. The primary goals of this course are to: · Prepare students for the process of seeking and obtaining professional employment in forensic science or an allied field. In addition to standard employment practices, these activities (lectures and exercises) include behavioral-based mock interviews, preparation for background investigations and civil-service employment practices. · Develop professional standards and practices in forensic science which will not only prepare students to enter the field, but to excel and advance throughout their careers. These activities will include discussions of laboratory operations, quality assurance/quality control, professional conduct, ethical reasoning and laboratory safety. · Finalize students' education in forensic science and criminalistics through activities in case integration. The case integration activities prepare students to incorporate available information into the investigative process and to serve as consultants to the criminal justice system. · Prepare each student to sit for a comprehensive exam, to include the full content of coursework across the scope of the Forensic Science Program. This will be administered using the Forensic Science Assessment Test (FSAT) offered by the American Board of Criminalistics (ABC) or its equivalent."

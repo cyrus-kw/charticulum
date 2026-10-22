@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "HPA 57 is designed to provide students with an understanding of the breadth of decisions related to health and health care in the United States. HPA 57 introduces students to the consumers' role in health related decisions, including assessing health risks, health benefits, service choices, and end-of-life care. The growth in available health care information resources, the expansion of for-profit medical care, and increasing cost pressure are transforming the role of the health care consumers from passive recipients to active participants in many health care decisions. The main goal of this course is to educate students to become knowledgeable health care consumers and providing them with opportunities to learn how to gather, analyze, and synthesize information about health and health care to make sound health care choices. Students will learn practical information, key terminology and where/how to find reliable, up-to-date information on different sectors of the health care system (e.g. physicians, hospitals, commercial and public health insurance, mental health, long-term care)."
     },
     {
@@ -20,7 +22,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "Health insurance is important for maintaining health and wellness across the lifespan, yet health insurance in the United States is incredibly complex. This course equips students with key health literacy skills enabling them to make informed decisions about health insurance coverage and care choices. Students learn health insurance terminology and concepts as well as study primary mechanisms for obtaining coverage (public and private). The challenges associated with choosing and using health insurance as well as how to maximize the value of one's health insurance are explored. Students study who makes up the un- and underinsured populations and how a lack of (adequate) insurance impacts access to care and health. Throughout the course students' complete practical activities that mirror real-life scenarios and decisions."
     },
     {
@@ -64,7 +68,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "HPA101"
+            ]
+          }
         ]
       },
       "description": "This course covers basic concepts and issues related to health insurance and payment of health care services in the United States. Students learn insurance related concepts including factors that influence the purchase of insurance and those insurance companies considered when determining rates. Sources and uses of health care dollars are examined as well as how laws, policies, and regulations influence health insurance and payment. Both public insurance programs and private health insurance are studied. Students explore reimbursement and payment methodologies and assess how health care payment influences provider behavior and care delivery. Budgeting concepts and spreadsheet software are introduced."
@@ -109,7 +118,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "HPA101",
+              "PLSC1"
+            ]
+          }
         ]
       },
       "description": "This course provides students with a basic framework for health policy analysis and examines major strands of U.S. health policy. Detailed consideration and discussion are given to the relationship of national policy to the planning, implementation, and funding of health care services, with particular emphasis on low-income and minority populations. This course will cover topics such as the healthcare policy environment in the U.S, government-funded health care through Medicaid and Medicare, and contemporary health care reform initiatives."
@@ -151,7 +166,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BBH101"
+          {
+            "oneOf": [
+              "BBH101",
+              "BISC4",
+              "BIOL141",
+              "BIOL161"
+            ]
+          }
         ],
         "concurrent": [
           "HPA101"
@@ -186,7 +208,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HPA211",
+          {
+            "oneOf": [
+              "HPA211",
+              "ACCTG211"
+            ]
+          },
           "HPA101"
         ]
       },
@@ -292,7 +319,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "HPA301W"
+          {
+            "oneOf": [
+              "HPA301W",
+              "HPA311",
+              "HPA332"
+            ]
+          }
         ]
       },
       "description": "The objectives of HPA 430 are: (1) to help students learn about their own strengths and weaknesses as leaders; (2) to give students an opportunity to build their skills in small group leadership; and, (3) to explore the leadership challenges in health care. On successful completion of the course students should be able to do the following: 1) Describe, compare, and contrast several leadership competency models in current use in health care; 2) Understand the four cornerstones of health care leadership;self-awareness, vision, interpersonal relationships, and execution. Explain two to four significant leadership challenges in the current health care system; 3) Identify their leadership strengths and weaknesses and develop a plan for improving their leadership skills and/or explore ways to improve those skills; 4) Understand the leadership skills required for leading small group projects and discussions."
@@ -341,12 +374,26 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BBH310",
-          "STAT200"
+          {
+            "oneOf": [
+              "BBH310",
+              "BIOL230W",
+              "HPA311"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          }
         ],
         "minGrades": {
           "BBH310": "C",
-          "STAT200": "C"
+          "BIOL230W": "C",
+          "HPA311": "C",
+          "STAT200": "C",
+          "STAT250": "C"
         }
       },
       "description": "This course is designed to provide students with a basic understanding of the principles of Epidemiology and to familiarize students with the methods and applications of epidemiology to understanding the bases for heterogeneity of disease and health among populations. The goals of the course are: 1) recognize and use basic principles, concepts, terminology, and techniques in Epidemiology as applied to the study of infectious disease, chronic diseases, and other health-related problems; 2) examine and understand measures of risk and burden of illness on populations defined in terms of age, race, gender, class, time, and other relevant socio-cultural and demographic factors; 3) be able to interpret and critique epidemiological research reports on the identification of risk factors and casual factors for diseases in populations; 4) assess the health status and burden of diseases and health problems of populations at multiple levels of analysis for the purpose of planning health promotion activities and health care services; 5) have a basic understanding of the epidemiology tools for disease screening and other methods for primary and secondary prevention of disease and health problems; 6) examine the validity and applicability of various health interventions used to improve health status and the barriers for successful interventions; and 7) have a basic understanding of the epidemiology of the major causes of morbidity and mortality in the U.S. and for other selected regions and nations of the world. This is a required course in the Biobehavioral Health major and an elective course in the Health Policy and Administration major. The course is also appropriate for students intending to advance to post-baccalaureate graduate and professional programs in medicine, public health, health policy and planning, and other health-related careers. Students will be evaluated based on their performance on a combination of written assignments, a term paper or project, and exams."
@@ -394,7 +441,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON302"
+          {
+            "oneOf": [
+              "ECON302",
+              "ECON315",
+              "ECON323"
+            ]
+          }
         ]
       },
       "description": "Economic analysis of U.S. health care system; planning, organization, and financing; current public policy issues and alternatives."
@@ -407,7 +460,12 @@
       "requisites": {
         "previous": [
           "ECON102",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "In this course, students will learn about health systems and policies in low- and middle-income countries (LMIC). The course begins by exploring the link between health and economic development in LMICs. The majority of the course examines LMICs' performance in the United Nations health-related Sustainable Development Goals (e.g. clean water and sanitation, zero hunger, etc.). Through an in-depth reading of seminal articles, class discussion and guest lectures, student's will attempt to understand policy measures that researchers and policymakers have investigated to address the most pressing health related challenges in these countries."
@@ -461,7 +519,15 @@
       ],
       "requisites": {
         "previous": [
-          "HPA301"
+          {
+            "oneOf": [
+              "HPA301",
+              "HPA301W",
+              "HPA301H",
+              "PLSC202",
+              "PUBPL304W"
+            ]
+          }
         ]
       },
       "description": "This course provides an overview of the health policy-making stages at the federal level of government. Students will have an opportunity to explore how policy agendas are created by policy stakeholders (e.g., advocates, interest groups, etc.) in defining social problems and identifying possible solutions. Students will next examine the steps for the development of legislation (e.g., bill introduction, committee referral, hearings, floor action, etc.). Students will also learn about the implementation of policy at the federal level after the formal enactment of legislation (e.g., programmatic guidance and final rules, etc.). Students will also learn about the Congressional budget process and judicial branch reviews and their impact on federal health policy formulation, implementation, and modification."
@@ -537,7 +603,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          }
         ],
         "concurrent": [
           "HPA471"

@@ -16,7 +16,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "SCM 200 introduces basic statistical concepts and models within the framework of business problems and applications. Students learn about the usefulness of business statistics to decision making, how to perform basic statistical and analytical procedures, and how to interpret, critically evaluate, and analyze data. Special emphasis is given to active learning methods."
     },
     {
@@ -28,7 +30,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "SCM 200H Honors Introduction to Statistics for Business introduces basic statistical concepts and models within the framework of business problems and applications. Students learn about the usefulness of business statistics to decision making, how to perform basic statistical and analytical procedures, and how to interpret, critically evaluate, and analyze data. Special emphasis is given to active learning methods."
     },
     {
@@ -47,7 +51,12 @@
         "previous": [
           "ACCTG211",
           "ECON102",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "SCM 301 is an introductory course that provides an overview of key logistics and supply chain management processes, concepts, and methodologies. Emphasis is given to the framework for supply chain management, the analysis of logistics cost, and service trade-offs among inventory, transportation, and warehousing activities, the strategic role of information technology in supply chains, the use of third-party logistics providers, and the methods of measuring the value of logistics performance. Instruction is based on problem-based learning pedagogy."
@@ -62,7 +71,12 @@
         "previous": [
           "ACCTG211",
           "ECON102",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "SCM 301H focuses on supply chain management concepts, principles, and methodologies for effective and efficient management of product and service operations across supply chain networks. The course explores the framework for supply chain management, the key issues and challenges, the key cost and service elements, the basic analytical tools, and the strategic role of information technology. Major themes embedded in this course include: principles and framework of supply chain management such as processes, drivers, and common decisions; the complexities of matching supply and demand in an uncertain business environment; performance metrics in determining a corporation's top and bottom lines; and the globalization of supply chains and the integration of these chains throughout all business disciplines."
@@ -74,7 +88,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "SCM301"
+          {
+            "oneOf": [
+              "SCM301",
+              "MKTG301"
+            ]
+          }
         ]
       },
       "description": "Strategic role of freight transportation systems and services in supply chain networks. Not available to baccalaureate business students in Smeal. SCM 320 Transport Systems (3) SCM 320 develops an understanding of the strategic role of freight transportation systems in supply chain networks. Emphasis is given to the components of transportation systems, including their technological features, operational processes, and cost conditions, the buyer-seller channels for acquiring transportation services, and the strategic and tactical alternatives for transport procurement. Instruction is based on problem-based learning pedagogy."
@@ -112,7 +131,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA302"
+          {
+            "oneOf": [
+              "BA302",
+              "SCM301"
+            ]
+          }
         ]
       },
       "description": "Analysis of demand fulfillment and the role of distribution operations management in the supply chain. SCM 404 Demand Fulfillment (3)This course introduces the student to how customer demand is managed and how subsequent orders are filled in both business-to-business and business-to-consumer markets. Topics focus on the demand fulfillment process, which encompasses flows of goods, information, and funds from the moment a business receives an order from a customer until all requirements for the order are satisfied in full. These topics include: *role of demand management and distribution operations in the supply chain*transportation management*distribution center processes *inventory control and order management elements*facility costing and productivity analysis*strategic demand management and distribution operations issues in the supply chain.Both theoretical and quantitative perspectives will be offered on these topics. Additionally, each topic will be addressed from strategic and financial perspectives. After completing this course, students will have the knowledge, skills, and abilities to: *Explain the role of demand management in the supply chain*Explain the role of distribution operations in demand management*Determine the strategic and financial impacts of demand management and distribution operations management*Articulate the role of information systems in demand management and distribution operations management*Use quantitative techniques to analyze supply chain processes*Describe related system software. This is one of three prescribed foundation courses for the Supply Chain and Information Systems major for which SCM 301 Supply Chain Management is a prerequisite. This course also satisfies the prerequisite for SCM 421 Supply Chain Modeling and Analysis. Student evaluations are based on individual and group homework assignments and computer-lab exercises, as well as on at least three written examinations."
@@ -124,7 +148,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA302"
+          {
+            "oneOf": [
+              "BA302",
+              "SCM301"
+            ]
+          }
         ]
       },
       "description": "Investigates manufacturing and services strategies in supply chain networks. SCM 405 Manufacturing and Services Strategies (3)This course examines manufacturing and services strategies, with special emphasis given to quality management concepts, methods, and issues. After completing this course, students will have the knowledge, skills, and abilities to: � Explain the role of manufacturing or services operations from the boundary-spanning perspective of supply chain management and how supply chain management can be used as a strategic competitive advantage � Articulate how the various components of a manufacturing strategy are integrated, particularly with respect to the use of information technologies for supply chains � Effectively apply operational and quality tools useful in implementing manufacturing strategies. Individual and team assignments form the basis for evaluation. Evaluation methods include a combination of class participation, exams, 'hands-on' exercises, case studies, and written assignments. This is one of three prescribed foundation courses in the Supply Chain and Information Systems major for which B A 302 'Supply Chains' is a prerequisite. The course is also an important prerequisite for the capstone course in the major, SC&IS 450 'Supply Chain Leadership.'"
@@ -136,7 +165,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA302"
+          {
+            "oneOf": [
+              "BA302",
+              "SCM301"
+            ]
+          }
         ]
       },
       "description": "Analysis of strategic procurement in the supply chain. SCM 406 Strategic Procurement (3) SCM 406 provides an in-depth analysis of the procurement process and supplier management, with strong emphasis placed on managing a supplier base for both products and services. Elements examined include the strategic role of procurement in supply chains, the identification and evaluation of requirements, the strategic make-versus-buy decision, how to identify, evaluate, and select potential suppliers and conduct a post-purchase evaluation; and the impact of information technology on strategic procurement. Both theoretical and quantitative perspectives will be offered. In addition, the topics will be addressed from strategic, financial, and global perspectives. In light of these perspectives, the course objectives are to develop a comprehensive understanding of: (1) the supplier selection and evaluation process (2) the relationship between product design and the supplier base (3) the types of relationships that exist between buyers and sellers (4) the impact of information technology on strategic purchasing and supply management. Students will also develop skills in using quantitative tools to select and evaluate suppliers. This is the third of three prescribed foundation courses in the Supply Chain and Information Systems major."
@@ -149,7 +183,13 @@
       "requisites": {
         "previous": [
           "SCM301",
-          "MGMT409"
+          {
+            "oneOf": [
+              "MGMT409",
+              "MGMT410",
+              "BA421"
+            ]
+          }
         ]
       },
       "description": "An advanced course in project management focusing on portfolio planning and control within the context of specific organizational challenges. MGMT 415 Project Portfolio Management and Organizations (3) Project Portfolio Management (PPM) is a strategically-focused course on the management of projects, programs, and portfolios in organizations. The management of individual projects is a complex, multi-level challenge involving myriad issues of planning, organizing, and controlling all project elements. Project portfolio management addresses a more strategic need; namely, the process of project selection in order to develop a balanced portfolio of projects designed to support organizational initiatives. As a result, this course addresses the critical issues of maximizing value in a portfolio, linking projects to organizational strategy, understanding the critical organization effects of structure, environment, and culture on project success, and creating a coherent PPM framework for the firm. Because the focus is more strategic, the role of the instructor in this course is to go beyond the mechanics of planning and controlling a single project to training students how to think strategically where projects and programs are concerned; to recognize their role in creating a PPM plan for an organization, selecting projects for value, rebalancing a project portfolio, and maintaining this focus within the organization."
@@ -173,7 +213,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "SCM404"
+          {
+            "oneOf": [
+              "SCM404",
+              "SCM405",
+              "SCM406"
+            ]
+          }
         ]
       },
       "description": "Models and Methodologies for supply chain analysis. SCM 421 Supply Chain Analytics (3) This course provides a spreadsheet-based, example-driven approach to learn about important supply chain models, problems, and solution methodologies. The objectives of this course are: (1) to develop valuable modeling skills that students can appreciate and use effectively in their careers (2) reinforce and enrich your understanding of supply chain theories, principles, and concepts studied previously in foundation courses. Student evaluation is based on: (1) individual and team group performance on problem-based exercises (2) individual performance on examinations (3) class participation."

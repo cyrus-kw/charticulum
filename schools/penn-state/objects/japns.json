@@ -62,7 +62,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "JAPNS12"
+          {
+            "oneOf": [
+              "JAPNS12",
+              "JAPNS1"
+            ]
+          }
         ]
       },
       "description": "Step-by-Step Japanese 3 is the third in a series of four two-credit Japanese language courses ( JAPNS 11 , JAPNS 12 , JAPNS 21 , and JAPNS 22 ), designed for students who prefer a slower pace or have demanding schedules. This course is for students who have successfully completed Step-by-Step Japanese 2 ( JAPNS 12 ), JAPNS 1 , or an equivalent course. It covers the first half of the material in JAPNS 2 : Level One Japanese B (4 credits) and focuses on reinforcing and mastering fundamental grammatical structures through aural-oral practice. By the end of this course, students will be able to read and write approximately one hundred kanji characters, building on those introduced in previous courses, while further developing both their reading and writing fluency. The course also introduces aspects of Japanese culture and customs, which are essential for socio-culturally appropriate communication."
@@ -108,7 +113,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "Japanese literature and film from classical through contemporary times, with attention to changing cultural settings. Taught in English. This course is intended to provide an introduction to the literature of Japan from the seventh century to the postmodern era. Prior study of Japan is not required and materials will be available in English. Students will learn about major eras of Japanese literature and culture, such as the age of the Man'yoshu, the age of the Genji monogatari (The Tale of Genji), the age of No and Kyogen, the age of Wit and Learning, the age of Meiji, the age of industrialization, the postwar years, and postmodernity. The readings will include several genres, such as poetry, folktale, short story, and novel, with an emphasis on prose fiction. The course is structured so that students develop a historical/cultural perspective in order to understand the contexts that have inspired the literary works. By examining literature in its cultural contexts, students will investigate such topics as the relation between social institutions and the individual, the traditional patriarchal system, the changing roles of women, westernization, the Emperor system, and postmodern consumer culture, among others.Students will read literature and related materials from different periods, with occasional presentations of films. Class work includes some lecture but emphasizes guided discussions, group discussions, and student presentations. This participatory approach is intended to deepen appreciation of the texts, to help students understand value systems that may differ from, or else be shared with, those predominant in modern Western cultures, and to assist them in developing both analytical and expressive abilities. The course is designed to be suitable for all students generally interested in Japan, or interested in various fields of humanistic study, whether or not they have previously studied the culture of Japan."
     },
     {
@@ -120,7 +127,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "Japanese literature and film from classical through contemporary times, with attention to changing cultural settings. Taught in English. JAPNS 120W Japanese Literature in its Cultural Context (3) (GH;IL)(BA) This course meets the Bachelor of Arts degree requirements. This course is intended to provide an introduction to the literature of Japan from the seventh century to the postmodern era. Prior study of Japan is not required and materials will be available in English. Students will learn about major eras of Japanese literature and culture, such as the age of the Man'yoshu, the age of the Genji monogatari (The Tale of Genji), the age of No and Kyogen, the age of Wit and Learning, the age of Meiji, the age of industrialization, the postwar years, and postmodernity. The readings will include several genres, such as poetry, folktale, short story, and novel, with an emphasis on prose fiction. The course is structured so that students develop a historical/cultural perspective in order to understand the contexts that have inspired the literary works. By examining literature in its cultural contexts, students will investigate such topics as the relation between social institutions and the individual, the traditional patriarchal system, the changing roles of women, westernization, the Emperor system, and postmodern consumer culture, among others. Students will read literature and related materials from different periods, with occasional presentations of films. Class work may includes both lectures and guided discussions, group discussions, and students' presentations. This participatory approach is intended to deepen students' appreciation of the texts, to help them understand value systems that may differ from, or else be shared with, those predominant in modern Western cultures, and to assist students in developing both analytical and expressive abilities. The course is designed to be suitable for all students generally interested in Japan, or interested in various fields of humanistic study, whether or not they have previously studied the culture of Japan."
     },
     {
@@ -132,7 +141,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Humanities",
+        "Inter-Domain"
+      ],
       "description": "Survey of Japanese film and new media in the twentieth century and beyond, with attention to changing cultural settings. Taught in English. JAPNS 121N Japanese Film and New Media (3) (GH;GA;IL) (BA) This course meets the Bachelor of Arts degree requirements.This course is intended to provide an introduction to modern and cutting-edge forms of cultural production in Japan from the twentieth century to the present day. Prior study of Japan is not required and materials will be available in English. Students will learn about major technologies and forms of media, including film, manga, anime, and various forms of new media (cell-phone novels, blogs, MMOGs, IM, and Web 2.0 for instance). Readings and screenings will cover several artistic modes including formalism, historiography, documentary, period drama, and experimental works. The course, or individual units within the course, will be structured so that students develop an historical perspective, allowing them to understand the cultural contexts that have inspired the creative works under study. By examining Japanese film and new media with attention to changing cultural settings, students will investigate such topics as the relation between social institutions and the individual, the formation and expression of identity, changing gender roles and family structures, the impact of technological and economic trends on social structure, and changing climates of censorship and freedom of expression. In addition, students will learn to think critically about various media's techniques and aesthetics of representation, and will become more engaged, critical spectators of film and related media. Class work includes some lecture but emphasizes guided discussions, group work, writing exercises, and some student presentations. This participatory approach is intended to deepen students' appreciation of the works, to help them understand value systems that may differ from those predominant in western cultures, and to assist students in developing both analytical and expressive abilities. Through critical reading, group discussion and interpretive writing, students will hone skills for evaluating modes of cultural production and consumption in modern Japan. The course is designed to be suitable for all students generally interested in Japan, or interested in various fields of humanistic study, whether or not they have previously studied the culture of Japan."
     },
     {
@@ -143,7 +156,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This course will examine the formation of Japanese culture through the lens of exchange and adaptation. Seeking to examine our understanding of \"Japan\" and \"culture,\" the course will explore the interplay between culture and identity, with the Japanese experience providing a viewpoint that differs from the standard Western-centric narrative in important ways. Focusing primarily on cultural studies and history, we will also consider not only how the world influenced Japan, as is the standard narrative, but also, how Japanese culture impacted other cultures, both near and far, as the country emerged from being an obscure Asian island to a cultural superpower at the beginning of the 21st century."
     },
     {
@@ -154,7 +169,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This course surveys the development of civilization in Japan from ancient times to the present. Among the key goals of this course is to discuss what is distinctive about \"Japanese civilization.\" As a survey of Japan it includes topics such as external relations and cultural exchanges with Japan's neighbors and the world more broadly; the nature of indigenous beliefs, Shinto and Buddhism; the making of the Japanese bureaucratic state and gentry society; the rise of the commercialized economy; the growth of Japanese culture; Tokugawa Japan, It offers a basic knowledge of the cultural, political, economic, artistic and historical background of this vital region of the world."
     },
     {

@@ -9,7 +9,12 @@
       "requisites": {
         "previous": [
           "PHYS212",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "This course will provide an overview and introduction to the field of acoustics from a physics and engineering viewpoint. Topics will include the physics of oscillation and wave motion, frequency spectrum analysis, sound pressure levels, sound wave propagation in air and water, models of sound sources (monopoles, dipoles, quadrupoles, line arrays), standing waves and mode shapes in (string, membranes, pipes), acoustics of large and small rooms, noise and vibration measurements, human hearing and psychoacoustics, loudspeaker design and performance, and other engineering applications."

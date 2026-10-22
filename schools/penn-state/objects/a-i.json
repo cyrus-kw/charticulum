@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "This course introduces students to key artificial intelligence (AI) capabilities and their broad real-world applications. It first introduces students to the interdisciplinary intellectual underpinnings of artificial intelligence and the high-level computational architectures of intelligence. This foundational knowledge prepares the stage for introducing students to representative examples of artificial intelligence in action (from the lenses of \"what, why, and social and ethical implications\"), including playing games, learning from data, perception, language processing and question answering, making decisions, planning actions, interacting in multi-agent teams, and creative composition of text, music, and art/imagery. The course will also introduce ethical implications of AI and its impacts on society. Upon successful completion of the course, students will be able to articulate the big picture of AI, including basic understanding of AI's key capabilities such as natural language understanding, visual perception, prediction, learning, as well as ethics issues related to AI."
     },
     {
@@ -26,11 +28,36 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC132",
-          "MATH220",
-          "MATH231",
-          "CMPSC360",
-          "STAT414"
+          {
+            "oneOf": [
+              "CMPSC132",
+              "CMPSC122"
+            ]
+          },
+          {
+            "oneOf": [
+              [
+                "MATH220",
+                "MATH231"
+              ],
+              "MATH225"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC360",
+              "MATH311W"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT414",
+              "STAT418",
+              "STAT318",
+              "STAT401",
+              "EE465"
+            ]
+          }
         ]
       },
       "description": "This course introduces students to essential algorithm design and analysis techniques with a focus on application in data science and machine learning. The course introduces students to elementary and advanced data structures to store and manipulate data. The course teaches different algorithm design and analysis techniques including classical paradigms such as divide and conquer, greedy, and dynamic programming, and advanced techniques such as randomized methods and algorithm tailored to machine learning such as gradient descent and online decision making. The course explores these techniques in context of different data types used in machine learning such as matrices, graphs and sequences. Students' learning of these concepts, techniques, and methods will be facilitated by exemplary programming demonstrations and coding exercises so that the students can utilize these algorithmic solutions in practical applications."
@@ -47,7 +74,13 @@
         ],
         "concurrent": [
           "A-I370",
-          "CMPSC448"
+          {
+            "oneOf": [
+              "CMPSC448",
+              "DS310",
+              "CMPSC445"
+            ]
+          }
         ]
       },
       "description": "This course aims to equip students with the necessary conceptual frameworks, best practices, and technical tools for addressing challenges of designing and deploying systems that maximize the benefits of AI while minimizing their potential for harm. By examining case studies, students will be introduced to real-world examples related to AI fairness, privacy protection in relation to AI, generative AI, and accountability of AI systems. In addition, students will learn relevant methods, approaches, and best practices that can address related ethical considerations. Through this course, students will develop an awareness and understanding of the key social and ethical challenges that AI poses-issues of fairness, privacy, autonomy, trust, and democratic accountability, as well as become equipped to play an active role in addressing and overcoming such challenges in their future work. As a Writing Across the Curriculum course, students will be given individual writing assignments that are spaced at regular intervals to encourage active, regular writing. The students will write a draft for each individual assignment, receive peer and instructor feedback, revise their drafts, and then get final feedback from the instructor."
@@ -61,10 +94,21 @@
         "previous": [
           "A-I100",
           "CMPSC132",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "DS200"
+            ]
+          }
         ],
         "concurrent": [
-          "CMPSC465",
+          {
+            "oneOf": [
+              "CMPSC465",
+              "DS305",
+              "CMPSC462"
+            ]
+          },
           "STAT401"
         ]
       },
@@ -90,7 +134,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC448",
+          {
+            "oneOf": [
+              "CMPSC448",
+              "DS310"
+            ]
+          },
           "A-I341W",
           "EE456"
         ]

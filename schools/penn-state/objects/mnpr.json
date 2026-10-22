@@ -8,7 +8,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM110",
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM106"
+            ]
+          },
           "MATH141"
         ]
       },
@@ -22,7 +27,12 @@
       "requisites": {
         "previous": [
           "MNPR301",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "Unit operations for processing particulate materials: comminution, screening, classification, slurry pumping, thickening, filtration, etc.; application to mineral processing plant design."
@@ -46,7 +56,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EME301"
+          {
+            "oneOf": [
+              "EME301",
+              "MATSE401"
+            ]
+          }
         ]
       },
       "description": "A study of the chemical and engineering principles pertinent to metal processing in aqueous systems: hydrometallurgical extraction, plating, materials preparation. MATSE (MN PR) 426 Aqueous Processing (3) This 3-credit course deals with the chemical and engineering principles underlying the aqueous processing of metals: metal extraction from primary and secondary sources, electroplating, and metal finishing, powder synthesis, energy storage and conversion, and treatment of recycling of metal-containing toxic wastes.1. Physico-Chemical Principles - Thermodynamic, chemical kinetic and transport factors which control hydrochemical processes (leaching; precipitation; adsorption; solvent extraction; ion exchange; electrowinning, electrorefining and electroplating; membrane processes; energy storage and conversion); graphical representation of homogeneous and solid/solution equilibria; chemical reagents.2. Engineering Principles - Reactor design and staged operations; ideal batch, continuous stirred-tank and plug-flow reactors; fluidized bed reactors; electrochemical reactors; multistage separation processes (solid-liquid, liquid-liquid, and gas-liquid systems).3. Process Synthesis - Design of metal separation (extraction, refining, waste treatment) materials synthesis, metal finishing, and energy storage/conversion processes and system-integration of unit operations, industrial practice. Emphasis on closing circuits to minimize or eliminate waste effluents."

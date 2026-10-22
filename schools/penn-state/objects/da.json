@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "description": "This course is designed around storytelling with data. It is designed to introduce students to foundational concepts in data analytics. Students will learn key concepts used in the data analytics industry to understand and frame projects. The core dimensions of analytics prescribed by current data analytics professional guidelines will be introduced and demonstrated through case studies. Students will be exposed to spreadsheets, scripting languages for analytics, and current statistical software packages. The importance of communicating findings to different constituents will be emphasized throughout this class."
     },
     {
@@ -20,8 +22,20 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "STAT200",
-          "DS200"
+          {
+            "oneOf": [
+              "STAT200",
+              "PSYCH200",
+              "STAT250",
+              "SCM200"
+            ]
+          },
+          {
+            "oneOf": [
+              "DS200",
+              "DA101"
+            ]
+          }
         ],
         "concurrent": [
           "DA301"
@@ -93,7 +107,14 @@
           "DA201W"
         ],
         "concurrent": [
-          "ENGL202C"
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202A",
+              "ENGL202B",
+              "ENGL202D"
+            ]
+          }
         ]
       },
       "description": "The majority of non-numeric data is unstructured (e.g., blogs, emails, forums). DA 402 is an overview of data analytics techniques for non-numeric data (e.g., text, videos or images). The methodological reasons for a qualitative rather than a quantitative approach, and the underlying challenges with this type of data depend on the hypothesis or research question. Often, research questions and organizational problems can best be answered by qualitative, non-numeric data. Students in data analytics will be exposed to situations and conditions where these practical analyses would be applicable rather than students in data sciences who create or improve the algorithm for analysis. This course will enable students to pursue further study in these types of practical applications. Students need a strong background in statistics before scheduling this course."

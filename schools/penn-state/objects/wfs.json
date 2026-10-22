@@ -18,7 +18,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "The conservation and management of our natural resources is critical to all aspects of human existence. Wildlife and fishery resources are integral to our food supplies, the quality of our lands, and form a deep foundation of our culture. This course will introduce students to fisheries and wildlife and basic ecological principles as they relate both to the natural and human-influenced environment. It is open to all students with a basic background in biology. Students will learn to identify and analyze the interacting components of fisheries and wildlife systems and to apply basic ecological principles to current wildlife and fisheries management and conservation issues. The course will explore the basic tools, practices, and concepts used in the conservation and management of fish, wildlife, and their respective habitats. The course will also explore the human dimensions aspects of managing common property resources, like fish and wildlife, including the roles various stakeholders have in the management of these resources."
     },
     {
@@ -74,7 +78,13 @@
       "requisites": {
         "concurrent": [
           "BIOL110",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "Wildlife and Fisheries Measurements will introduce students to basic measurements used to describe fish and wildlife populations and their habitats. Laboratory exercises will stress sampling approaches and implementation, common techniques for collecting information about amphibians, fish, birds, and mammals and their respective habitats, mapping and orienteering, and methods for summarizing and reporting findings."
@@ -86,10 +96,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ],
         "minGrades": {
-          "STAT200": "C"
+          "STAT200": "C",
+          "STAT240": "C",
+          "STAT250": "C"
         }
       },
       "description": "Statistics for Conservation of Wild Populations provides an overview of the statistical techniques used by wildlife and fisheries biologists to research wild animal populations and guide management and conservation. Wildlife and fisheries researchers use many approaches that are not taught in general statistics classes, because they deal with wild populations that cannot be censused, randomly sampled, or consistently resampled. We will cover methods used to estimate animal abundance, survival, occupancy, and habitat use, as well as how we can test hypotheses about individual, temporal, and spatial variation. Students will learn how to implement these methods using standard statistical software (such as program R and MARK), how to determine the best method for answering a question, and how to interpret statistical results in the context of management and conservation."
@@ -213,7 +231,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "Wildlife and Fisheries Population Dynamics focuses on the concepts and tools needed to make predictions about how populations of fish and wildlife respond to changes in their environment, external stressors, and management actions. Students will learn the mathematical and programming tools needed to measure population processes and make predictions about future population sizes. The students will have opportunities to apply these concepts and tools to address fish and wildlife population management problems. Examples include assessing the effects of harvest, managing invasive species and wildlife diseases, reducing extinction risk and recovering small populations, and predicting the efficacy of a range of management actions affecting population demography. Students taking the class will need to have an understanding of basic fish and wildlife ecology, tools and techniques for monitoring populations, and general concepts related to the conservation and fish and wildlife management."
@@ -322,10 +346,20 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              "FOR203"
+            ]
+          }
         ],
         "concurrent": [
-          "BIOL220W"
+          {
+            "oneOf": [
+              "BIOL220W",
+              "FOR308"
+            ]
+          }
         ]
       },
       "description": "Restoration ecology is a discipline that integrates principles from ecology, engineering, landscape architecture, economics and other select social sciences to repair ecosystems that have been degraded, damaged, or destroyed. The goal of restoration is to restore the structure of biological communities and the ecological functions and ecosystem services they provide to society. This course will cover the field of restoration ecology for students who see themselves someday practicing or participating in restoration projects during their careers. The course will cover the conceptual and theoretical foundations that underlie restoration efforts and link these to real-world applications in past and ongoing restoration projects in a variety of types of ecosystems. Examples of local and regional restoration projects will be used to reinforce principles discussed in class."

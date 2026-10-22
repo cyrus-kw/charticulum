@@ -23,7 +23,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "From house cats to hippos, this course takes students on a journey through the fascinating world of animal wellness and welfare. Designed for non-science majors, A to Zoo explores how animals stay healthy, how humans help them when they don't, and why welfare matters in both wild and domestic settings. Students will learn about basic anatomy, common diseases, animal behavior, nutrition, and preventative care across a variety of species. We'll also tackle ethical questions, explore careers in animal care, and bust common myths about animal health. Whether you love animals or are simply curious about how the animal world works, this course invites you to think critically - and compassionately - about creatures great and small. Topics include animal anatomy & physiology (in everyday terms!), common health issues in pets, farm, and wild animals along with nutrition, behavior, and enrichment. You will learn about animal diseases that affect human health. In addition, lessons on the ethics of animal care and welfare for pets, agricultural animals, and biomedical research will be addressed. A to Zoo will also explore the human-animal bond and cultural perspectives, explain vet visits, and engage students with field trips and guest speakers."
     },
     {
@@ -41,7 +43,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness"
+      ],
       "description": "All humans are impacted by disease, either personally or through friends or family members who are affected. Understanding Human Disease is an overview of disease processes for individuals not majoring in a scientific field. Students will have the opportunity to study the basic knowledge tools required to understand how different diseases arise, how they progress, how they are treated and in many cases, how they can be prevented.The course material is divided into two segments: the first portion discussing the different ways that diseases develop and includes explanations on normal and abnormal inflammatory processes, different types of infectious diseases, genetic diseases and congenital abnormalities (birth defects), diseases that affect the immune system and metabolic diseases. Diseases that are affecting significant populations such as HIV, diabetes, cancer and heart disease will be discussed. The second segment includes a discussion of the significant diseases affecting different organ systems of the body. Student participation is encouraged through questions. Additional topics of immediate interest as identified by the news media or class interest will be discussed. The course is intended for those who wish to better understand published medical journalism, for individuals who want to be able to discern the caliber of medical information in the popular press, for those students who wish to make healthy choices in their lifestyle and for individuals who may not be destined for a career in a scientific field."
     },
     {
@@ -80,11 +84,29 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Natural Sciences",
+        "Inter-Domain"
+      ],
       "requisites": {
         "previous": [
-          "ENGL15",
-          "BIOL110"
+          {
+            "oneOf": [
+              [
+                "ENGL15",
+                "BIOL110"
+              ],
+              [
+                "BIOL114",
+                "BIOL115"
+              ],
+              [
+                "BIOL114",
+                "BIOL116"
+              ]
+            ]
+          }
         ]
       },
       "description": "Discussion of the social, ethical, and economic aspects of current and emerging issues related to animal ownership and veterinary medicine emphasizing the appropriate citation of sources and writing about contemporary issues facing this field. Writing assignments will center on new and emerging issues facing today's veterinary professionals. Students completing this course will produce a writing portfolio that includes a range of works appropriate for different audiences, as well as having participated in extensive self and peer evaluation of writing. Students scheduling this course will first complete Engl 15 and Biol 110. Course objectives include teaching written communication skills that will prove valuable to VBSC majors. Upon completion of this course, students should be able to: develop focused writing objectives based on some knowledge of the target audience, find reliable sources of evidence, critically evaluate evidence and sources, correctly cite sources for various types of material, develop an effective outline, write and revise drafts for a final piece of written communication, perform self and peer evaluations of writing, and produce a final piece of written communication that achieves the original objective and is valuable to the target audience. Topics will surround veterinary shortages and possible solutions, gender demographics, animal rights versus animal welfare, small animal care inequity, euthanasia, laboratory testing and medicine, and more."
@@ -129,7 +151,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL230W"
+          {
+            "oneOf": [
+              "BIOL230W",
+              "BIOL230M"
+            ]
+          }
         ]
       },
       "description": "This course teaches the general principles of pharmacology and mechanisms of drug action. The objectives of this course include: Explain fundamental principles of drug action, including how drugs affect the body and how the body affects drugs; Map a drug's path in the body based on route of administration; Explain factors contributing to varied drug response among a population; Describe the mechanism of action, general effect(s), and therapeutic use(s) for major drug classes, and ; Apply pharmacological principles in discussing novel or emerging therapeutic strategies. This course is designed for those interested in becoming health care professionals in the fields of medicine, nursing and pharmacy, as well as those interested in basic scientific research and biotechnology."
@@ -150,7 +177,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course introduces the discipline of One Health as it relates to human and veterinary public health. Areas of emphasis include the definitions of human public health, veterinary public health, and One Health, the history and examples of public health successes, agencies in human and veterinary settings, an overview of various public health professions and institutions, and an in-depth examination of the core One Health disciplines that influence principles and practice of human and veterinary population medicine and health. Examples and case studies will be utilized to facilitate the classroom discussions, student assignments, and accomplish the course learning objectives. The course will stimulate the students' interest in other public health courses and different communities and societies in the One Health field."
     },
     {
@@ -192,7 +223,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB106"
+          {
+            "oneOf": [
+              "MICRB106",
+              "MICRB201"
+            ]
+          }
         ],
         "concurrent": [
           "ANSC301"
@@ -208,7 +244,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB106"
+          {
+            "oneOf": [
+              "MICRB106",
+              "MICRB201"
+            ]
+          }
         ],
         "concurrent": [
           "ANSC301"
@@ -237,7 +278,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ANSC308"
+          {
+            "oneOf": [
+              "ANSC308",
+              "ANSC309",
+              "VBSC403",
+              "ANSC310"
+            ]
+          }
         ]
       },
       "description": "The course will provide students with basic and foundational knowledge regarding herd health programs in ruminant production systems. The student will explore crucial areas of managing production systems such as implementation and development of standard operating procedures (SOPs) and protocols and biosecurity programs for common diseases that threaten the sustainability of the human food supply worldwide, such as Brucellosis and Tuberculosis. Furthermore, the student will explore important concepts regarding diagnosis, treatment, management and prevention of ruminant diseases in an organized manner, moving from younger to older animals, and following them through their production cycle. In addition, the course will integrate on-farm field data collection with farm record analysis to provide students with critical thinking skills for troubleshooting a variety of health issues in production systems. Students enrolling in this course must possess basic information regarding animal biology and farm management. The information provided in this course will complement several courses regarding cattle operation management and prevention of diseases in production animals."
@@ -261,8 +309,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB201",
-          "BMB251"
+          {
+            "oneOf": [
+              "MICRB201",
+              "MICRB201H"
+            ]
+          },
+          {
+            "oneOf": [
+              "BMB251",
+              "MICRB251",
+              "BMB251H",
+              "BIOL230W",
+              "BIOL230M"
+            ]
+          }
         ]
       },
       "description": "The MICRB 410 / VBSC 410 Theories of immunity (3cr.) course provides a basic foundation in immunology with a focus on the progression from antigen recognition and innate immune responses to the development of acquired immunity. During the course, students will have the opportunity to learn about key topics that lead to an understanding of the how the human immune system functions. Such topics include the primary cells and anatomical sites of the immune system as well as the activation and processes of innate immunity. In addition, students will learn about the organization and generation of lymphocyte antigen receptors, major histocompatibility complexes, and antigen presentation. Topics will also be presented that allow students to build an understanding of how antigen recognition and presentation leads to the development, selection, and survival of B and T lymphocytes. T-cell mediated immunity, humoral immunity, and the dynamics of the immune response will also be discussed in depth. Topics such as the immunobiology of allergy, transplantation, autoimmunity, immunodeficiency, diseases, vaccines, and/or cancer will also be presented in order to help students build an understanding of the interplay between the immune system and health and disease will be discussed throughout the semester."
@@ -274,7 +335,12 @@
       "credits": 2,
       "requisites": {
         "concurrent": [
-          "BIOL230W"
+          {
+            "oneOf": [
+              "BIOL230W",
+              "BMB251"
+            ]
+          }
         ]
       },
       "description": "Research Practice in VBSC provides practical training in laboratory research, which is integrated with formal training in responsible conduct of research, experimental design and data analysis and in-depth discussion of key concepts in the current scientific literature."
@@ -314,7 +380,20 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "BIOL129"
+          {
+            "oneOf": [
+              "BIOL129",
+              "BIOL141",
+              "BIOL220W",
+              "BIOL220M",
+              "BIOL230W",
+              "BIOL230M",
+              "BIOL240W",
+              "BIOL240M",
+              "BMB251",
+              "BMB251H"
+            ]
+          }
         ]
       },
       "description": "BIOL 421 / VBSC 421 Comparative Anatomy of Vertebrates Students will study vertebrate anatomy from an evolutionary and developmental perspective. They will become familiar with important structures, terminology and function; a basic requirement of the biomedical sciences. Comparisons between representative vertebrate groups (including fish, amphibians, reptiles, birds and mammals) will be used to illustrate structural adaptations of each organ system from an evolutionary perspective. Specific examples comparing ancestral and descendant species will demonstrate the relationships between the lifestyle of an organism and the morphology of homologous structures. A study of early embryonic development, differentiation of primary germ layers and organ formation will provide a basis for understanding organ structure and function. Laboratory activities will involve work with preserved specimens and will focus heavily on anatomic structure identification and function. Topics include anatomic directional terminology, vertebrate classification systems, early embryonic development and a detailed examination of the various organ systems. Specimens are selected to illustrate the anatomy of ancestral vertebrate species, the evolutionary changes observed in descendant species and the association of morphology with lifestyle. Although students will invest the majority of their time becoming familiar with the anatomy of a representative mammal (the cat), multiple species will be examined, and students will be expected to recognize selected anatomic structures in each species studied."
@@ -327,7 +406,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BMB211",
+          {
+            "oneOf": [
+              "BMB211",
+              "BMB401"
+            ]
+          },
           "ANSC301"
         ]
       },
@@ -340,8 +424,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB106",
-          "MICRB107"
+          {
+            "oneOf": [
+              [
+                "MICRB106",
+                "MICRB107"
+              ],
+              [
+                "MICRB201",
+                "MICRB202"
+              ]
+            ]
+          }
         ],
         "concurrent": [
           "ANSC311"
@@ -356,8 +450,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL110",
-          "BIOL240W"
+          {
+            "oneOf": [
+              [
+                "BIOL110",
+                "BIOL240W"
+              ],
+              "BMB211",
+              "BMB401"
+            ]
+          }
         ]
       },
       "description": "Introduction to the biomedical aspects of toxicology with emphasis on the mechanisms and fate of chemical interaction with biological systems."
@@ -383,8 +485,21 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BMB251",
-          "MICRB410"
+          {
+            "oneOf": [
+              "BMB251",
+              "MICRB251",
+              "BIOL230W",
+              "BMB251H",
+              "BIOL230M"
+            ]
+          },
+          {
+            "oneOf": [
+              "MICRB410",
+              "VBSC410"
+            ]
+          }
         ]
       },
       "description": "The study of signaling pathways that regulate the immune response. BMB 432 / MICRB 432 / VBSC 432 Advanced Immunology: Signaling in the Immune System (3)This course will use the immune system as a model in which to study how cells communicate in order to coordinate an immune response. We will focus on signaling mechanisms that regulate such immune responses as T cell activation, Thl/Th2 differentiation, macrophage activation, and migration of immune cells to sites of inflammation. All lectures are based on recent reviews by key investigators in each field, as well as primary articles to present students with the most recent advances, techniques, and approaches used. The goal of the course will be to convey a basis understanding of intracellular signaling mechanisms that will pertain to all areas of biology, an appreciation for current questions and future directions in the field, and an in depth understanding of the signals that govern immune responses. The material presented will build on the basic concepts learned in BMB 400 and MICRB 410 , and will lay the foundation for more advanced courses at the graduate level."
@@ -396,7 +511,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BMB401"
+          {
+            "oneOf": [
+              "BMB401",
+              "BMB401H",
+              "BMB211"
+            ]
+          }
         ]
       },
       "description": "In-depth coverage of processes by which drugs/chemicals interact with biological systems and the experimental approaches used to study these interactions."
@@ -408,8 +529,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB201",
-          "BMB252"
+          {
+            "oneOf": [
+              [
+                "MICRB201",
+                "BMB252"
+              ],
+              "BIOL230W"
+            ]
+          }
         ]
       },
       "description": "Viral Pathogenesis provides students with a general knowledge of medically relevant viruses, with a specific focus on important human viral pathogens. The course is meant to help students understand how viruses cause diseases in humans and animals. Lectures and in-class discussions will focus both on the fundamentals of viral infection and disease mechanisms, and on contemporary virology-related topics in the scientific literature. Topics discussed can be divided into two main areas: (1) general concepts related to viral pathogenesis and the control of viral infections; and (2) specific viruses that cause human disease including HIV-1, herpes viruses, papillomaviruses, influenza virus, West Nile virus, Ebola virus, and SARS virus. Although prior knowledge of virology is not required for taking this course, a working knowledge of molecular biology, cell biology, immunology, and some microbiology is helpful."
@@ -423,7 +551,13 @@
         "previous": [
           "CHEM202",
           "BIOL110",
-          "BMB211"
+          {
+            "oneOf": [
+              "BMB211",
+              "BIOL230W",
+              "BMB251"
+            ]
+          }
         ]
       },
       "description": "Upon completion of this course the student will be able to correlate their knowledge of basic and organic chemistry, biochemistry and physiology to the understanding of drug actions. The molecular interactions between drugs and their tissue receptors and possible modifications of drugs to target different receptors will be discussed. Drugs used to treat infectious disease, treat cardiovascular disease, modulate the immune system, and treat cancer will be examined for their molecular interactions. Students will understand the complexities of new drug design and development from the initial stages of laboratory development to final approval for use by the Food and Drug Administration."
@@ -448,7 +582,12 @@
       "requisites": {
         "previous": [
           "BIOL110",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "Overall, the emphasis of this course will be on the core epidemiologic concepts of infectious diseases. Epidemiology is the study of how health and diseases are distributed in populations and the factors that influence or determine this distribution. Infectious disease epidemiology monitors the occurrence of diseases and develops strategies for preventing and controlling disease. In addition to understanding basic epidemiological methods, the course will provide an introduction to infectious disease epidemiology. It will focus on tools and epidemiological methods used for identifying, preventing and controlling infectious disease problems and present a review of epidemiology of many major infectious diseases. The lectures and discussions are designed to provide theoretical and practical framework and principles of infectious disease epidemiology to prepare students majoring in biology, pathobiology, animal science, food science, molecular biology and human nutrition to face the infectious diseases challenge in real world."
@@ -460,7 +599,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200",
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          },
           "VBSC444"
         ]
       },
@@ -487,7 +631,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB201"
+          {
+            "oneOf": [
+              "MICRB201",
+              "BMB251"
+            ]
+          }
         ]
       },
       "description": "An in depth discussion of the effect of xenobiotics and drugs on host immune mechanisms. VB SC 451 Immunotoxicology of Drugs and Chemicals (3) Maintaining good health is a priority for most of us, and a key element in staying healthy is a properly functioning immune system. However, we are constantly exposed to a barrage of chemicals in the environment both natural and man-made. Some of the key questions asked included: 1) do environmental chemicals affect the generation of immunity?, 2) is our environment to blame for bad health? , and 3) can natural compounds cause immunotoxicity? These questions and more will be addressed in Immunotoxicology. This course will focus primarily on the effects of chemicals in the environment but will also cover the impact of other factors such as therapeutics, recreational drugs, and dietary factors on the immune system. Immunomodulatory mechanisms will be examined at systemic, cellular and molecular levels. Discussions will include theory, principles, and methodology and key issues in immunotoxicity, host immune mechanisms, and tumorigenesis. Key issues in regulatory immunotoxicology will be discussed to make students prepared for jobs in Federal Regulatory Agencies. Grading for undergraduates will include midterm and finals, and class participation; while graduate students will be required to also write a short, immunotoxicologically-related research proposal. Our intent is to provide a bridge between the two sciences and the undergraduate majors of Immunology and Toxicology, with an introduction to the basic mechanisms by which environmental, occupational, and therapeutic agents may interfere with immunologic systems. Immunotoxicology is offered every fall semester and is designed for undergraduate students from toxicology, immunology, and forensic science majors."
@@ -524,7 +673,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "VBSC211"
+          {
+            "oneOf": [
+              "VBSC211",
+              "VBSC410",
+              "MICRB410"
+            ]
+          }
         ]
       },
       "description": "This course provides a foundation in vaccinology, the science of developing vaccines. Specific focus areas include historical vaccine approaches and new strategies under development. During the course, students will learn about general aspects of vaccination including vaccine immunology, correlates of protection, vaccine adjuvants, vaccine formulations, and vaccine manufacturing. The course will review select licensed vaccines and then cover vaccines in development and new technologies being introduced to the vaccine landscape. The course will consist of an instructor led lecture component and weekly presentations by students on vaccine-related manuscripts. Once a basic understanding of vaccination has been developed, additional topics will include vaccination of special or target groups, vaccine safety, and public health and regulatory issues. Upon completion of the course, students will be able to read and evaluate vaccine literature. Students will also have an understanding of how vaccines are developed and the advantages and limitations of vaccines."

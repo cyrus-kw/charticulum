@@ -78,7 +78,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "LATIN203"
+          {
+            "oneOf": [
+              "LATIN203",
+              "LATIN3"
+            ]
+          }
         ]
       },
       "description": "Selected works by Plautus, Lucretius, Catullus, Cicero (content varies)."
@@ -90,7 +95,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "LATIN203"
+          {
+            "oneOf": [
+              "LATIN203",
+              "LATIN3"
+            ]
+          }
         ]
       },
       "description": "Selected works by Virgil, Horace, Propertius, Tibullus, Ovid, Livy (content varies)."
@@ -102,7 +112,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "LATIN203"
+          {
+            "oneOf": [
+              "LATIN203",
+              "LATIN3"
+            ]
+          }
         ]
       },
       "description": "Selected works by Petronius, Seneca, Tacitus, Juvenal, Martial, Pliny the Younger (content varies)."

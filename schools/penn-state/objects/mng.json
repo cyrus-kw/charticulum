@@ -112,7 +112,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CE360",
+          {
+            "oneOf": [
+              "CE360",
+              "EME303"
+            ]
+          },
           "MNG230"
         ],
         "concurrent": [

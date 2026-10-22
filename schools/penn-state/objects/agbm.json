@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "This course introduces students to microeconomic principles in the context of food and agriculture. More specifically, the course examines market supply and market demand in various food and agricultural products, then examines how consumers make decisions about food to maximize their utility subject to a budget constraint, then examines profit-maximizing decisions by farms and food industry firms, and finally looks at special topics related to food and agriculture. By the end of the course, students will have key literacies on economic modeling and decision making as well as the food and agricultural sectors of the U.S. economy."
     },
     {
@@ -27,10 +29,21 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "STAT200",
+              "AGBM101",
+              "STAT240",
+              "STAT250",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Development of quantitative problem-solving skills applied to specific examples of agribusiness management problems, using EXCEL spreadsheets. AGBM 106 Agribusiness Problem Solving (3) The goal of this course is to develop agribusiness problem solving skills. These skills include optimization, marginal analysis, time discounting, and measuring efficiency. Examples will be implemented using Microsoft EXCEL spreadsheets rather than algebra, calculus and abstract mathematics. This course, then, plays an important role by building skills for use in later agribusiness management courses as well as teaching important problem-solving skills to non-majors who want to learn quantitative economics problem-solving skills in the context of agribusiness management. Material will be organized according to the course topics areas: optimization, marginal analysis, time discounting, and efficiently measurement. Each topic area presentation will rely on specific examples of agribusiness management problems. The first lecture of each week will be a standard lecture emphasizing concepts, presented in a passive learning format. The second lecture of each week will be presented in a technology classroom with spreadsheet examples being worked out by the professor in front of the class, who will guide the students. The third lecture of each week will be taught in a computer laboratory, with students solving the problems actively, but with supervision. Problem solving skills will be reinforced by assigning problem sets for students to do on their own after the computer laboratory experience. It is permitted for students to submit identical lab answers but problem sets should not be identical."
@@ -43,7 +56,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Our food system is a product of complex interaction of three systems: the natural ecosystem, the managed agricultural system, and the socio-economic system. Farming, food processing, food distribution, and consumption decisions are all governed by the interaction of these systems. Consequences of these decisions, along with the interactions themselves, have generated a number of overarching scientific and social \"hot-button\" topics that affect or are affected by the food system such as genetically modified organisms (GMOs), organic crops and food, agricultural and food policy, environmental implications from agriculture food safety, food safety, diet and health, agricultural trade and international development, and food insecurity and food access."
     },
     {
@@ -55,7 +70,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "The American food system is a product of complex interaction of three systems: the natural ecosystem, the managed agricultural system, and the socio-economic system. Farming, food processing, food distribution, and consumption decisions are all governed by the interaction of these systems. Consequences of these decisions, along with the interactions themselves, have generated a number of overarching scientific and social \"hot-button\" topics that affect or are affected by the food system such as genetically modified organisms (GMOs), organic crops and food, agricultural and food policy, environmental implications from agriculture, food labeling, food safety, diet and health, agricultural trade and international development, household food insecurity and food access, and food waste. Students in this course will investigate and discuss all of these topics by reading both popular press accounts and peer-reviewed academic research, and by hearing guest speakers from a variety of fields and academic disciplines. However, to provide additional relevance, the course will use specific foods or crops to provide a more concrete examination of these topics. For a wide range of foods and crops grown in or imported to the U.S, students will learn the following: 1. Where many of our crops are grown and why. 2. How labor intensive, chemical intensive, biotechnology intensive, equipment intensive, and land intensive many of our crops are. 3. What U.S. policies affect production, distribution, and consumption of many crops and food. 4. How large agribusiness companies may influence our crops' production, distribution, and consumption. 5. How consumer groups may influence our crops' production, distribution, and consumption. And, 6. Whether or not alternative production and marketing systems exist for many crops. In general, most of these questions will be answered in a social science framework that includes business, economics, and sociology, but also from a natural science framework that includes agronomy, plant science, environmental science, and climate science. The following individual foods or crops examined within both the social science and natural science contexts will be featured as case studies: tomatoes, bananas, lettuce, corn, apples, chicken, and beef. Finally, when attempting to answer the above six main questions for each of the individual foods and crops, the class will explore the context of current U.S. cultural attitudes and beliefs, and when possible, a cultural history."
     },
     {
@@ -100,7 +119,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102",
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          },
           "AGBM102",
           "AGBM106"
         ]
@@ -115,7 +139,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102",
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          },
           "AGBM102",
           "AGBM106"
         ]
@@ -129,10 +158,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102",
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          },
           "AGBM102",
           "AGBM106",
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Students learn how prices are determined and learn how to analyze and forecast how prices change as the underlying conditions change. This involves learning those tools that are used to analyze and understand how commodity markets work and how prices are determined. The class mixes theory with practical knowledge and examples, and aims to create a balanced representation of the tools used in market analysis. The students learn how to find data, manipulate it and analyze and apply these skills to test the validity of simple economic models, to forecast commodity prices, to understand market trends and learn the use of derivative instruments to manage price risk. One objective of this class is to improve the understanding of economic modeling and to increase the familiarity of students when applying statistical functions and regression analysis to solve applied problems. These core competencies rely on previous knowledge of basic statistic tools and data manipulation. In the process, students will learn to analyze market fundamentals and better understand those forces that affect prices. This will also help them better understand supply and demand and the ability of market participants to adjust to changing conditions."
@@ -144,7 +183,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102",
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          },
           "AGBM102",
           "AGBM106"
         ]
@@ -165,7 +209,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102",
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          },
           "AGBM106"
         ]
       },
@@ -179,7 +228,12 @@
       "requisites": {
         "previous": [
           "AGBM106",
-          "BA301"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          }
         ]
       },
       "description": "Develop financial management and business analysis skills, integrating previous course work and finance training; principles of financial management, planning, control."
@@ -232,7 +286,12 @@
       ],
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          }
         ]
       },
       "description": "The nature, operation, and management of retail garden centers, winery tasting rooms, and independent food retailers. Overview of retail marketing principles and practices as they pertaining to horticultural retail businesses. Lectures, discussions, and projects focus on: selecting and pricing goods and services ; how independent retailers effectively use traditional promotion avenues and social media networks to connect with customers; and how to develop a relevant brand, cause marketing effort, and loyalty program. Students will also learn: about retail layout and display strategies; that each consumer segment has different wants, interests, and abilities to obtain goods and services, and about effective employee management."
@@ -272,7 +331,12 @@
       ],
       "requisites": {
         "previous": [
-          "INTAG470A"
+          {
+            "oneOf": [
+              "INTAG470A",
+              "AGBM470A"
+            ]
+          }
         ]
       },
       "description": "Explore key differences and similarities in the food and agricultural systems of the United Sates and France. INTAG 470B / AGBM 470B Comparing Agricultural and Food Systems in the US and France: Travel (0.5) This course is designed to explore key similarities and differences in the food and agricultural systems of the United States and France. It introduces students to a number of overarching food and agricultural topics that pertain to both countries, and students explore and analyze these key issues from both countries perspective. These overarching topics include the structure of agricultural and environmental policies, the use agricultural land for biofuel production, organic agriculture, food safety, attitudes and policies surrounding the use of genetically modified crops, the role of large agribusiness firms, attitudes towards diet and health, and several others important topics. Students conduct background reading on these topics, hear lectures -- sometimes from guest presenters -- that frame the topics from both the U.S. and France's perspective, and write reports on specific crops or foods that expose key similarities and differences between the two food systems. Finally, students pick one crop or food for an oral presentation that contains background information on how that crop fits into the two food systems, U.S. and France, and analyzes the key issues that relate to the overarching topics already identified. This course has two components that must be taken in partnership: 470A (FOOD SYS US/FRANCE I) and 470B (FOOD SYS US/FRANCE II). The first is a classroom - based course, and meets regularly during the semester. The second is a two - week component that takes place after the end of the semester. In this second component, after traveling to France, students hear presentations from the French perspective on the overarching topics identified earlier and also explore the topics first hand via field trips to farms, wholesale markets, retail markets, and other places relevant to the French food system. This component is organized by a host university, AgroParisTech. For these two weeks, students live in dorms within the city of Paris. Knowledge of French is not required."

@@ -23,7 +23,12 @@
       "credits": 2,
       "requisites": {
         "concurrent": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "BIOL161",
           "BIOL162"
         ]
@@ -37,15 +42,28 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "PT120"
         ],
         "concurrent": [
           "PT384",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT271",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "PT120": "C"
         }
       },
@@ -58,7 +76,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "PT120"
         ],
         "concurrent": [
@@ -66,6 +89,7 @@
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "PT120": "C"
         }
       },
@@ -78,10 +102,25 @@
       "credits": 1,
       "requisites": {
         "concurrent": [
-          "PT250",
-          "PT260",
-          "PT395E",
-          "PT280"
+          {
+            "oneOf": [
+              [
+                "PT250",
+                "PT260",
+                "PT395E",
+                "PT280"
+              ],
+              "PT280W",
+              [
+                "PT281",
+                "PT282"
+              ],
+              [
+                "PT281",
+                "PT282W"
+              ]
+            ]
+          }
         ]
       },
       "description": "Preparation for the national PTA licensure examination. P T 201 Licensure Preparation for the PTA (1) This course is an elective course for PTA students, in preparation for the national licensure examination. The course will consist of a review of the entire PTA curriculum through the use of licensure examination practice tests. The course will also include practice sessions with the computerized licensure tests. A review of strategies for succeeding on multiple choice tests will be presented. Prerequisites for this course are a C or better in the P T 100 and P T 384 courses.Class size, frequency of offering, and evaluation methods will vary by location and instructor, For these details, check the specific course syllabus."
@@ -124,7 +163,12 @@
       "credits": 5,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "BIOL161",
           "BIOL162",
           "BIOL163",
@@ -132,6 +176,7 @@
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "BIOL161": "C",
           "BIOL162": "C",
           "BIOL163": "C",
@@ -148,7 +193,12 @@
       "credits": 5,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "BIOL161",
           "BIOL162",
           "BIOL163",
@@ -156,6 +206,7 @@
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "BIOL161": "C",
           "BIOL162": "C",
           "BIOL163": "C",
@@ -171,7 +222,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "BIOL161",
           "BIOL162",
           "BIOL163",
@@ -179,6 +235,7 @@
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "BIOL161": "C",
           "BIOL162": "C",
           "BIOL163": "C",
@@ -195,7 +252,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "BIOL161",
           "BIOL162",
           "BIOL163",
@@ -203,6 +265,7 @@
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "BIOL161": "C",
           "BIOL162": "C",
           "BIOL163": "C",
@@ -218,10 +281,16 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PT271"
+          {
+            "oneOf": [
+              "PT271",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
-          "PT271": "C"
+          "PT271": "C",
+          "PT271W": "C"
         }
       },
       "description": "This course is designed to give the PTA student a working knowledge of the physiology of disease states and conditions commonly seen in physical therapy. Basic signs, symptoms, causes, and processes of disease and conditions will be covered. Diagnostic criteria, progression, and interventions, including physical therapy interventions, medical and surgical interventions, and pharmaceutical interventions will be addressed. Areas of study in the course may include, but are not limited to, disorders of the following systems: neurological, hematologic, hepatic, gastrointestinal, hepatic and biliary, renal and urological, genital and reproductive. Genetic disorders, cancer, and mental health will also be addressed. By the completion of this course, students should be able to: (1) Identify conditions, diseases, and problems with the body systems, including the neurological, hematologic, gastrointestinal, hepatic, biliary, renal and urological, genital and reproductive. (2) Discuss cancer in terms of pathophysiology, risk factors, and various types of cancer. (3) Discuss special considerations for the PTA when working with patients who are geriatric, in specialized acute care units, and with various comorbidities. (4) Identify mental health issues and appropriate interactions and interventions with patients with mental or emotional health issues. Course content will be delivered in lecture and on-line materials. This course is available to students enrolled in the PTA major."
@@ -233,15 +302,27 @@
       "credits": 5,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "PT120"
         ],
         "concurrent": [
           "PT384",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "PT120": "C"
         }
       },
@@ -255,15 +336,26 @@
       "credits": 5,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "PT120"
         ],
         "concurrent": [
           "PT384",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT271"
+            ]
+          }
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "PT120": "C"
         }
       },
@@ -276,15 +368,28 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "PT120"
         ],
         "concurrent": [
           "PT384",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT271",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "PT120": "C"
         }
       },
@@ -298,11 +403,21 @@
       "requisites": {
         "previous": [
           "PT281",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT271",
+              "PT270W",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
           "PT281": "C",
-          "PT270": "C"
+          "PT270": "C",
+          "PT271": "C",
+          "PT270W": "C",
+          "PT271W": "C"
         }
       },
       "description": "In this course, neuroanatomy and neurophysiology will be reviewed and principles of specific neuro-rehabilitation techniques, and neuromotor development will be explored. This course will address rehabilitation techniques for patients with selected conditions seen in physical therapy neurological and rehabilitation settings. Selected neurological conditions will be covered, including etiology, clinical presentation, medical management, and physical therapy interventions. Neurologic conditions and developmental delays associated with pediatric clients will also be included. By the completion of this course, students should be able to identify specific areas in the brain, spinal cord, and peripheral nervous system associated with neurological signs, symptoms, and conditions; perform and discuss the value and use of various data collection tools associated with neuro-rehabilitation; demonstrate safe and effective physical therapy interventions as applied to patients with neurological disorders; discuss and demonstrate basic physical therapy interventions for patients with vestibular dysfunction; discuss the basic developmental milestones associated with human growth and development; and demonstrate and discuss safe and effective handling and positioning principles used with pediatric patients. Gait deviations and interventions, wheelchair fitting and use, and specific physical therapy interventions for various diagnoses will be covered. Using extensive examples, exercises, and real life scenarios, this course teaches students skills to assess, treat and document functional outcomes in a clear and logical progression. Lecture, lab activities, and written assignments will be used to discuss clinical decision-making and intervention strategies for related impairments. Enrollment is limited to students admitted to the 2PTA major."
@@ -316,14 +431,20 @@
       "requisites": {
         "previous": [
           "PT281",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT271"
+            ]
+          }
         ],
         "concurrent": [
           "PT272"
         ],
         "minGrades": {
           "PT281": "C",
-          "PT270": "C"
+          "PT270": "C",
+          "PT271": "C"
         }
       },
       "description": "In this course, neuroanatomy and neurophysiology will be reviewed and principles of specific neuro-rehabilitation techniques, and neuromotor development will be explored. This course will address rehabilitation techniques for patients with selected conditions seen in physical therapy neurological and rehabilitation settings. Selected neurological conditions will be covered, including etiology, clinical presentation, medical management, and physical therapy interventions. Neurologic conditions and developmental delays associated with pediatric clients will also be included. By the completion of this course, students should be able to identify specific areas in the brain, spinal cord, and peripheral nervous system associated with neurological signs, symptoms, and conditions; perform and discuss the value and use of various data collection tools associated with neuro-rehabilitation; demonstrate safe and effective physical therapy interventions as applied to patients with neurological disorders; discuss and demonstrate basic physical therapy interventions for patients with vestibular dysfunction; discuss the basic developmental milestones associated with human growth and development; and demonstrate and discuss safe and effective handling and positioning principles used with pediatric patients. Gait deviations and interventions, wheelchair fitting and use, and specific physical therapy interventions for various diagnoses will be covered. Using extensive examples, exercises, and real life scenarios, this course teaches students skills to assess, treat and document functional outcomes in a clear and logical progression. Lecture, lab activities, and written assignments will be used to discuss clinical decision-making and intervention strategies for related impairments. This is a writing-intensive course that will include instructor written evaluation and feedback of student writing. Writing assignments will be specific to the Physical Therapy discipline and include multiple and varied assignments. Writing will be a factor in the final grade for this course. Course content will be delivered in lecture and on-line materials.A variety of evaluation tools will be used to assess student performance in this course. Written examinations, quizzes, written assignments, including homework may be utilized to assess cognitive understanding of course content. For assessment of psychomotor skills, lab practical examinations, skill evaluations, and oral questioning may be used. Group projects and peer assessment might also be included at some campuses. Enrollment is limited to students admitted to the 2PTA major."
@@ -335,16 +456,40 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PT150",
-          "PT160",
-          "PT290",
-          "PT270"
+          {
+            "oneOf": [
+              [
+                "PT150",
+                "PT160",
+                "PT290",
+                "PT270"
+              ],
+              "PT270W",
+              "PT271",
+              "PT271W",
+              [
+                "PT272",
+                "PT395E",
+                "PT250",
+                "PT260",
+                "PT280"
+              ]
+            ]
+          }
         ],
         "minGrades": {
           "PT150": "C",
           "PT160": "C",
           "PT290": "C",
-          "PT270": "C"
+          "PT270": "C",
+          "PT270W": "C",
+          "PT271": "C",
+          "PT271W": "C",
+          "PT272": "C",
+          "PT395E": "C",
+          "PT250": "C",
+          "PT260": "C",
+          "PT280": "C"
         }
       },
       "description": "This course will provide PTA students with opportunities to synthesize, prioritize, and apply rehabilitation principles from many different PTA courses. Students will learn strategies to combine data collection skills, interventions, and techniques in an integrated manner. Communication, documentation skills and therapeutic intervention skills will be developed through activities and class assignments. Patient scenarios will be utilized to afford students opportunities to develop their skills in choosing and applying effective treatment strategies for patients with complex diagnoses and/or cultural or intellectual differences, all while simultaneously addressing their patient's comorbidities, past medical history, family dynamics and anticipated discharge destination. Using extensive examples, exercises, and real life scenarios, this course teaches students skills to assess, treat and document functional outcomes in a clear and logical progression. Additionally, concepts, principles, skills and techniques will be reviewed in preparation for the final clinical experiences and the PTA licensure examination. This course is available to students enrolled in the PTA major."
@@ -356,15 +501,28 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "PT100"
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          }
         ],
         "concurrent": [
           "PT150",
           "PT160",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT271",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
-          "PT100": "C"
+          "PT100": "C",
+          "PT100S": "C"
         }
       },
       "description": "This course is an introduction to the professional issues related to the physical therapist assistant's role in the current health care environment. The course is designed to foster professional development of the physical therapist assistant student and to prepare the student to complete essential competencies and behaviors of health care related to the field of physical therapy. The course will guide the student in preparing the necessary documents for clinical practicum. Areas of study in the course may include but are not limited to, the role of the physical therapist assistant as defined by the American Physical Therapy Association and state practice acts, Values-Based Behaviors for the Physical Therapist Assistant, Standards of Ethical Conduct for the Physical Therapist Assistant, ethical problem solving in healthcare including recognizing and discussing legal and ethical issues in physical therapy, cultural diversity and cultural competence, lifelong learning and continuing competence, professional communication in clinical situations including HIPAA, billing and reimbursement in physical therapy, and medical documentation including the value and necessity of thorough documentation, recognition of the PTA role in documentation, completion of appropriate medical documentation and appropriate use of medical abbreviations. Enrollment is limited to students admitted to the 2PTA major."
@@ -377,13 +535,31 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PT100"
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          }
         ],
         "concurrent": [
-          "PT150"
+          {
+            "oneOf": [
+              "PT150",
+              "PT160",
+              "PT270",
+              "PT271",
+              [
+                "PT271W",
+                "PT120",
+                "PT384"
+              ]
+            ]
+          }
         ],
         "minGrades": {
-          "PT100": "C"
+          "PT100": "C",
+          "PT100S": "C"
         }
       },
       "description": "This course is an introduction to the professional issues related to the physical therapist assistant's role in the current health care environment. The course is designed to foster professional development of the physical therapist assistant student and to prepare the student to complete essential competencies and behaviors of health care related to the field of physical therapy. The course will guide the student in preparing the necessary documents for clinical practicum. Areas of study in the course may include but are not limited to, the role of the physical therapist assistant as defined by the American Physical Therapy Association and state practice acts, Values-Based Behaviors for the Physical Therapist Assistant, Standards of Ethical Conduct for the Physical Therapist Assistant, ethical problem solving in healthcare including recognizing and discussing legal and ethical issues in physical therapy, cultural diversity and cultural competence, lifelong learning and continuing competence, professional communication in clinical situations including HIPAA, billing and reimbursement in physical therapy, and medical documentation including the value and necessity of thorough documentation, recognition of the PTA role in documentation, completion of appropriate medical documentation and appropriate use of medical abbreviations. Since this course is a writing-intensive (\"W\") course, students will be expected to successfully complete written assignments, focusing on appropriate medical documentation for clinical situations. Written work will constitute 25% or more of a student's final grade in the course. Enrollment is limited to students admitted to the 2PTA major."
@@ -429,7 +605,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PT100",
+          {
+            "oneOf": [
+              "PT100",
+              "PT100S"
+            ]
+          },
           "PT120"
         ],
         "concurrent": [
@@ -437,10 +618,18 @@
           "PT160",
           "PT384",
           "PT290",
-          "PT270"
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT271",
+              "PT271W"
+            ]
+          }
         ],
         "minGrades": {
           "PT100": "C",
+          "PT100S": "C",
           "PT120": "C"
         }
       },
@@ -456,8 +645,21 @@
         "previous": [
           "PT250",
           "PT260",
-          "PT280",
-          "PT270",
+          {
+            "oneOf": [
+              "PT280",
+              "PT280W",
+              "PT282",
+              "PT282W"
+            ]
+          },
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT272"
+            ]
+          },
           "PT285",
           "PT395E"
         ],
@@ -465,7 +667,12 @@
           "PT250": "C",
           "PT260": "C",
           "PT280": "C",
+          "PT280W": "C",
+          "PT282": "C",
+          "PT282W": "C",
           "PT270": "C",
+          "PT270W": "C",
+          "PT272": "C",
           "PT285": "C",
           "PT395E": "C"
         }
@@ -482,8 +689,21 @@
         "previous": [
           "PT250",
           "PT260",
-          "PT280",
-          "PT270",
+          {
+            "oneOf": [
+              "PT280",
+              "PT280W",
+              "PT282",
+              "PT282W"
+            ]
+          },
+          {
+            "oneOf": [
+              "PT270",
+              "PT270W",
+              "PT272"
+            ]
+          },
           "PT285"
         ],
         "concurrent": [
@@ -493,7 +713,12 @@
           "PT250": "C",
           "PT260": "C",
           "PT280": "C",
+          "PT280W": "C",
+          "PT282": "C",
+          "PT282W": "C",
           "PT270": "C",
+          "PT270W": "C",
+          "PT272": "C",
           "PT285": "C"
         }
       },
@@ -511,9 +736,26 @@
           "PT395E"
         ],
         "concurrent": [
-          "PT250",
-          "PT260",
-          "PT270"
+          {
+            "oneOf": [
+              [
+                "PT250",
+                "PT260",
+                "PT270"
+              ],
+              "PT270W",
+              [
+                "PT272",
+                "PT280"
+              ],
+              "PT280W",
+              "PT282",
+              [
+                "PT282W",
+                "PT285"
+              ]
+            ]
+          }
         ],
         "minGrades": {
           "PT290": "C",

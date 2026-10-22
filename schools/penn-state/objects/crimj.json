@@ -9,7 +9,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "SOC12"
       ],
@@ -24,7 +26,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "SOC12H"
       ],
@@ -38,7 +42,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "SOC13"
       ],
@@ -52,7 +58,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Criminal Justice 100 is an overview of the United States criminal justice system and the major components of police, courts and corrections. Students will engage in reviews of, evaluate and consider legal foundations, types and causes of crime, the development of policing, the influence and evolution of the court process, and rehabilitative and reintegrative components of corrections. Specific topics can include, but are not limited to, the extent of crime in the United States; competing and complementary goals within the criminal justice system; sources of criminal law; interactions between various agencies within the criminal justice system; and the impact of crime on victims. During the course of study of the criminal justice system, students will have various opportunities to examine how age, gender, race and ethnicity impact and are impacted by the criminal justice system at critical phases."
     },
     {
@@ -71,7 +79,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Health and Wellness",
+      "genEdAreas": [
+        "Health and Wellness",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course will consider the overlapping responsibilities and epistemologies of criminal justice and public health. Both fields concerned with the promotion of population welfare, the public health and criminal justice systems nevertheless confront the same social problems from different ethical perspectives, research methodologies, and knowledge bases. Each may further mobilize different institutional actors driven by divergent political agendas. While we will discuss the productive collaboration between public health and public safety agencies, we will also consider ongoing ownership struggles over certain issues, behaviors, and even populations. Given its practical relevance to many ongoing social issues and controversies of general importance, this course is motivated by a commitment to community-engaged scholarship, and thus will include topics, readings, assignments, speakers, and field trips of local and state importance. At the same time, specific topics will be framed in terms of their national and international importance, and students will be encouraged to link micro-level problems to macro-level processes."
     },
     {
@@ -82,7 +94,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "internalEquivalents": [
         "HIST159"
       ],
@@ -103,7 +117,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "internalEquivalents": [
         "PSYCH204"
       ],
@@ -118,7 +134,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "EDUC205N",
         "SOC205N"
@@ -184,7 +204,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification"
+      ],
       "requisites": {
         "previous": [
           "CRIMJ100"
@@ -277,7 +299,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CRIM12"
+          {
+            "oneOf": [
+              "CRIM12",
+              "CRIMJ12",
+              "CRIMJ100",
+              "CRIM100"
+            ]
+          }
         ]
       },
       "description": "In this course students will learn what kinds of offenses constitute the various types of white collar crime including occupational crime, corporate crime, governmental crime, state-corporate crime, avocational white collar crime, and contrepreneurial crime. The course will explore how white collar crime is measured and will examine the victimization and offending patterns revealed by data on white collar crime. The course will further examine the usefulness of various criminological theories such as strain, control, and learning theories in explaining white collar offending. Comparisons to street crime in terms of seriousness, punishment, and offender and victimization patterns will be discussed throughout the course."
@@ -306,7 +335,12 @@
       ],
       "requisites": {
         "previous": [
-          "SOC12",
+          {
+            "oneOf": [
+              "SOC12",
+              "CRIM12"
+            ]
+          },
           "CRIMJ250W"
         ]
       },
@@ -322,7 +356,13 @@
       ],
       "requisites": {
         "previous": [
-          "CRIMJ12"
+          {
+            "oneOf": [
+              "CRIMJ12",
+              "CRIMJ13",
+              "SOC5"
+            ]
+          }
         ]
       },
       "description": "Research on and theory of criminal careers and crime organizations, emphasizing recruitment and disengagement; offender characteristics and lifestyles; policy implications."
@@ -341,7 +381,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "SOC12"
+          {
+            "oneOf": [
+              "SOC12",
+              "CRIM12",
+              "CRIMJ12",
+              "CRIM100",
+              "CRIMJ100"
+            ]
+          }
         ]
       },
       "description": "The death penalty is the ultimate punishment in the criminal justice systems in the world. The United Sates is one of the few democratic nations that still uses this punishment. The death penalty is also one of the most central and debated topics for candidates in high-profile political elections. In this course, students are introduced with the complexity and implications of this punishment to better understand the American exceptionalism regarding criminal sanctions in comparison to the rest of the world; the focus is on the development of the death penalty in the modern-era United States. Surrounding the death penalty debate, issues such as deterrence, retribution, incapacitation, cost, innocence, and constitutionality are critically examined using key Supreme Court cases and important scholarly readings. In addition, six foreign countries are discussed to offer a comparative view in the procedural and substantive domains of the death penalty."
@@ -353,7 +401,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CRIMJ12"
+          {
+            "oneOf": [
+              "CRIMJ12",
+              "SOC12"
+            ]
+          }
         ]
       },
       "description": "This course is primarily a discussion-based seminar, engaging in a critical analysis of hate crime, extremism, and terrorism from a criminological perspective. First, students will engage with issues related to genocide and the role of the state in fostering hate. Students will then grapple with the arguments surrounding legislation relevant to hate speech and hate crime. There will also be an overview of the nature of hate crime, focusing on victims, motivations, and explanations of such crime. After discussing organized hate and extremist groups, students will also engage with the debate on the nature of the hate crime-terrorism relationship. The second half of the course focuses on terrorism as students learn about complexity of defining and explaining terrorism, focusing on the wide array of definitions of terrorism and the main theories of terrorism across a variety of disciplines. Students will examine different types of terrorism, including state and dissident terrorism generally as well right-wing, left-wing, religious, and international terrorism in the United States. The course will end with an overview of responses to hate crime, extremism, and terrorism, including issues surrounding the War on Terror. Students will further develop research, writing, and critical analysis skills after writing a term paper addressing a topic related to hate crime, extremism, and/or terrorism."
@@ -547,7 +600,12 @@
       ],
       "requisites": {
         "previous": [
-          "SOC12"
+          {
+            "oneOf": [
+              "SOC12",
+              "CRIM12"
+            ]
+          }
         ]
       },
       "description": "In this course you will learn about how crime levels vary across different types of neighborhoods and about the role of different socioeconomic, demographic, spatial, and informal social control aspects of neighborhoods in promoting or buffering crime. We will address the patterns, concepts, theories, methods, and policies related to communities and crime. We will critically assess theory and research on the effects of neighborhood structure and social organization on crime, focusing in particular on the classic and contemporary thinking on poverty, social disorganization, disorder, collective efficacy, institutional trust, cultural heterogeneity, segregation, immigration and how they affect criminal behavior and victimization. Through readings, class discussions, and activities, writing projects, and presentations, you will be given the opportunity to reflect on what you are learning and to apply the theoretical concepts to real-life examples and to new contexts in and out of the class."
@@ -559,7 +617,17 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CRIMJ100"
+          {
+            "oneOf": [
+              "CRIMJ100",
+              [
+                "CRIM100",
+                "CRIMJ12",
+                "CRIM12",
+                "SOC12"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course examines the development of the criminal justice system in England in the long nineteenth century in the context of social and political changes."
@@ -588,7 +656,13 @@
       ],
       "requisites": {
         "previous": [
-          "CRIM12"
+          {
+            "oneOf": [
+              "CRIM12",
+              "CRIMJ12",
+              "CRIMJ100"
+            ]
+          }
         ]
       },
       "description": "Law and society studies the social origins of law and legal systems; occupational careers, and decision-making of legal officials. SOC (CRIMJ/CRIM) 467 Law and Society (3) (BA) This course meets the Bachelor of Arts degree requirements.Law and society teaches students' knowledge of key concepts and core ideas about the role of law in society. The course will cover the basics of key legal philosophies, major social science theories of law and society, research in law and society, the structure of the legal profession, and vital contemporary issues involving the role of law in society. CRIM/ CRIMJ 113 and CRIM/ CRIMJ 250W are prerequisites. The evaluations methods will include written assignments on course readings, and essay-style exams. Law and Society may be counted toward the credits required for the B.A. and B.S. in Crime, Law and Justice. It would fulfill one of the 400-level requirements in the 'Law' component of the major. The course may also be counted toward credits required for the B.A. and B.S. in Sociology for students with the Deviance and Criminology specialization."

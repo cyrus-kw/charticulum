@@ -11,10 +11,18 @@
       ],
       "requisites": {
         "previous": [
-          "HM101"
+          {
+            "oneOf": [
+              "HM101",
+              "AGBM170",
+              "AGBM170N"
+            ]
+          }
         ],
         "minGrades": {
-          "HM101": "C"
+          "HM101": "C",
+          "AGBM170": "C",
+          "AGBM170N": "C"
         }
       },
       "description": "The course will incorporate economic and managerial dimensions to the discussion of food decisions in foodservice away-from-home eating contexts, particularly emphasizing the behavioral aspect of decisions - how individuals (consumers, providers, managers) make choices in the food system, and what might be the consequences of these choices. The course will use evidence from multiple farm-to-fork perspectives to allow students to analyze food systems problems and solutions. It will also require students to engage directly with the local food service system through course projects and tours. The major topics of discussion will be organized under each of the value chain components of the farm-to-fork continuum: production, distribution, purchasing, preparation, and consumption. Specific topics under each of these value chain components will include: nutrition, food safety, food waste, sustainable practices, social justice, consumer utility, economic profits, ethics, government policy, and decision-making. In particular, the course will be motivated by economic theories such as: agency relationship, information asymmetry, transaction cost economics, and behavioral economics topics such as self-rationing, and time discounting."

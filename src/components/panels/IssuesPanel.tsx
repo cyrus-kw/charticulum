@@ -1,7 +1,7 @@
 "use client";
 
 import type { ChartIssue } from "../../engine/index";
-import { askReason, Badge, Button, newId, Panel } from "../ui";
+import { askReason, Badge, Button, GroupHeading, newId, Panel } from "../ui";
 import { planIssues } from "../../planner/issues";
 import { courseCode, withCourseCodes } from "../../planner/layout";
 import type { PanelProps } from "./types";
@@ -177,21 +177,6 @@ function withoutSubject(issue: ChartIssue, state: PanelProps["state"]): string {
   if (!subject || !issue.message.startsWith(`${subject} `)) return issue.message;
   const rest = issue.message.slice(subject.length + 1);
   return rest.charAt(0).toUpperCase() + rest.slice(1);
-}
-
-// A group's heading, in the same grey text as the Plan box's labels
-// (School, Program, ...), so it reads as quieter than the Issues title
-// above it, with a thin line running from it to the right side, so the
-// groups read as separate sections. It's in a 20px row (h-5), so the
-// first group's heading is centered on the line under the undo/redo row
-// in the Plan column (see Panel's `toolbar`).
-function GroupHeading({ children }: { children: string }) {
-  return (
-    <h3 className="mb-1.5 flex h-5 items-center gap-2 text-sm font-normal text-zinc-500">
-      {children}
-      <span className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" aria-hidden />
-    </h3>
-  );
 }
 
 // A tag that can be clicked (to select the course or term it names). It

@@ -188,7 +188,14 @@
           "EMCH211",
           "EMCH213",
           "EDSGN401",
-          "CMPSC200"
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
         ]
       },
       "description": "Students will study principles and properties of engineering materials and manufacturing processes with a focus on their appropriate selection in design. Based on these principles and properties, as well as hands-on laboratory experiences, students will develop systematic methods for matching material and process choices to the mechanical, thermal, electro-magnetic, and environmental constraints set by the technical requirements of a design problem or project. Knowledge of current manufacturing processes is required to align appropriate processes and materials with the requirements of designed products. Students will develop basic, practical knowledge and skills in operating manual and CNC machine tools. Both subtractive and additive manufacturing processes will be explored, and students will learn best practices for making informed choices between them based on design needs. Computer aided manufacturing will be introduced to provide background for future courses (e.g., senior capstone projects)."
@@ -200,8 +207,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "IE312",
-          "EE316"
+          {
+            "oneOf": [
+              "IE312",
+              "EDSGN402"
+            ]
+          },
+          {
+            "oneOf": [
+              "EE316",
+              "ME357"
+            ]
+          }
         ],
         "concurrent": [
           "ENGR490W"
@@ -216,8 +233,20 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "EE316",
-          "CMPSC200",
+          {
+            "oneOf": [
+              "EE316",
+              "CMPEN472"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          },
           "EE310",
           "EMCH212"
         ]
@@ -302,7 +331,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH211"
+          {
+            "oneOf": [
+              "EMCH211",
+              "EMCH210"
+            ]
+          }
         ]
       },
       "description": "This course delivers methods and techniques necessary to become proficient in applying CAD as a design tool for engineering design and analysis. Students will gain a deep understanding in principles, best practices, and strategies for solid-model representation of engineering designs. The use of CAD as a design tool will prepare students to effectively develop, analyze, and communicate engineering designs. Learning is reinforced through lectures, tutorials, quizzes, laboratory assignments, design projects, and online design portfolios. Students will learn how to recognize and capture design intent by using symmetry and parametric associativity; virtually test fit, form, and function of assembled components; analyze and improve models using analysis tools (e.g., finite element analysis); obtain, edit, and integrate existing non-native file formats; prepare models for stereolithography apparatus and other CNC machinery for prototyping; produce and manage part family models, and prepare technical drawings and illustrations. Through all these, students will be able to master special techniques for engineering design and analysis with CAD. The exercises, laboratory assignments, quizzes, midterm design projects, final design projects, and online design portfolios will enhance students' understanding of how engineering design and analysis efforts are supported through the use of CAD as a design tool and will prepare students to effectively develop, analyze, and communicate engineering designs with the use of CAD. The course will be taught in each semester with different sections utilizing different CAD packages, such as AutoCAD, CATIA, and SolidWorks. The course may be repeated if taken to learn a second software package. Credit toward the major will not be granted a second time for taking the course with the same CAD package."
@@ -314,7 +348,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "IE408"
+          {
+            "oneOf": [
+              "IE408",
+              "IE419"
+            ]
+          }
         ]
       },
       "description": "Consumer product design for a global market, incorporating human factors principles and user desires in a multicultural perspective. EDSGN (I E) 479 Human Centered Product Design and Innovation (3)This course will focus on consumer product design for a global market, incorporating human factors and ergonomics principles as well as user needs and emotional desires. The students will be led through product design process, various product design strategies, product planning, managing the development process, product evaluation, decision making tools, and market entry. Special emphasis will placed on user centered design, incorporating user characteristics, user needs and emotional desires (including Kansei engineering approaches), survey methodology, and usability testing. To emphasize the multicultural perspectives in today's global product design, interdisciplinary teams from two universities on opposites of the globe will apply these principles on actual industrial product designs for leading consumer product manufacturers."

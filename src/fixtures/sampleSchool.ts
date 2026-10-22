@@ -25,7 +25,7 @@ const statsCourses: CurriculumObject[] = [
     internalEquivalents: [],
     externalEquivalents: [],
     categories: ["minor", "general-education"],
-    genEdArea: "Quantitative",
+    genEdAreas: ["Quantitative"],
     availability: { seasons: EVERY_TERM },
   },
   {
@@ -75,11 +75,9 @@ export const sampleSchoolData: SchoolDataInput = {
   school: { id: "example-state", name: "Example State University" },
   calendar: { start: { season: "fall", year: 2026 }, seasons: ["fall", "spring"] },
   objects: [...sampleCatalog.values(), ...statsCourses],
-  globalRequirementSets: [
+  programRequirements: [
     {
-      id: "gen-ed",
-      name: "General education",
-      scope: "global",
+      degree: "bachelor",
       requiredObjectIds: ["ENG101", "HIST110", "PHIL120", "SPAN-PROF"],
       minCreditsByCategory: { "general-education": 12 },
       minTotalCredits: 40,
@@ -90,14 +88,13 @@ export const sampleSchoolData: SchoolDataInput = {
   ],
   templates: [
     {
-      id: "bs-cs",
+      code: "bs-cs",
       version: "2025-26",
-      name: "B.S. Computer Science",
-      requirementSets: [
+      title: "B.S. Computer Science",
+      degree: "bachelor",
+      localRequirements: [
         {
-          id: "bs-cs-2025",
-          name: "Computer science major (2025-26)",
-          scope: "local",
+          category: "major",
           requiredObjectIds: csCore,
           minCreditsByCategory: { major: 32 },
         },
@@ -111,14 +108,13 @@ export const sampleSchoolData: SchoolDataInput = {
       ]),
     },
     {
-      id: "bs-cs",
+      code: "bs-cs",
       version: "2026-27",
-      name: "B.S. Computer Science",
-      requirementSets: [
+      title: "B.S. Computer Science",
+      degree: "bachelor",
+      localRequirements: [
         {
-          id: "bs-cs-2026",
-          name: "Computer science major (2026-27)",
-          scope: "local",
+          category: "major",
           // New this year: an internship is required.
           requiredObjectIds: [...csCore, "CS390"],
           minCreditsByCategory: { major: 32, elective: 3 },
@@ -133,14 +129,13 @@ export const sampleSchoolData: SchoolDataInput = {
       ]),
     },
     {
-      id: "minor-stats",
+      code: "minor-stats",
       version: "2026-27",
-      name: "Statistics minor",
-      requirementSets: [
+      title: "Statistics minor",
+      degree: "bachelor",
+      localRequirements: [
         {
-          id: "minor-stats-2026",
-          name: "Statistics minor (2026-27)",
-          scope: "local",
+          category: "minor",
           requiredObjectIds: ["STAT200", "STAT300", "STAT310"],
           minCreditsByCategory: { minor: 9 },
           maxSharedCredits: 8,

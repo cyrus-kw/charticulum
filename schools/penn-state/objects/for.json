@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "This course focuses on the relationships among forests, trees, and people. Trees are the building blocks of forests, so the course begins with an introduction to how trees work: how do they grow? how do they use water? how do they store carbon? how do they reproduce? how do people and wildlife use trees? From there the course moves on to forest ecosystem services such as timber and non-timber products, carbon storage, watershed protection, and cultural connection. How are ecosystem services measured and how does society place monetary and non-monetary values on the services? The diversity of relationships between people and forests is discussed throughout the course, and common professions centered around trees and forests are introduced."
     },
     {
@@ -40,7 +44,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Ecosystems across the planet are facing unprecedented pressures and changes as society seeks to support continued population growth and increasing standards of living. The course provides students with a general understanding of global change, ecosystems, and linkages among them. This course: 1) Surveys the diversity of Earth's ecosystems, considering life on land and water and linkages among terrestrial and aquatic ecosystems. 2) Explores human drivers of global change, including climate, land use, and pollution. 3) Presents major environmental issues confronting humanity and the natural world. 4) Considers ecosystem and societal responses to climate change. 5) Considers options for mitigating and adapting to climate change in ecosystems, toward sustainability. 6) Develops critical thinking skills, considering the many relationships between society and natural systems."
     },
     {
@@ -57,7 +65,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "FOR203"
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
         ]
       },
       "description": "Foresters are tasked to manage and/or restore forest ecosystems to sustain the provision of ecological goods (e.g., timber and non-timber forest products) and services (e.g., water, habitat, carbon sequestration). To successfully achieve these objectives, it is essential to know the life history and characteristics of trees (silvics). Specifically, knowledge about tree (co-)occurrences in forest communities, their tolerances and growth responses to different environmental conditions, their life history traits regarding different disturbance regimes, and their interactions that shape stand dynamics and stand development pathways, is prerequisite for practicing silviculture and forestry. This course is designed for forestry and wildlife professionals, conservation biologists, and natural resource professionals interested in the silvics of forest trees and stand dynamics of different forest types across North America as the scientific foundation for implementing sustainable forest management. The course is intended to lay the foundation for developing critical thinking skills linking silvics, site factors, and disturbances to multiple stand development pathways."
@@ -90,11 +103,28 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "FOR203"
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
         ],
         "concurrent": [
-          "FOR255",
-          "STAT200"
+          {
+            "oneOf": [
+              "FOR255",
+              "FORT260",
+              "WILDL211"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ]
       },
       "description": "This course focuses on the collection, analysis, and presentation of quantitative and qualitative data that describe forest resources and are used in the management and stewardship of forest resources. Sampling techniques, procedures, and equipment used to measure trees and forest parameters, including various forest products, are covered, as is statistical analysis of data. Students learn how the data provides the basis for making informed, science-based management decisions concerning the growth, health, and/or volume of forest resources."
@@ -129,7 +159,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
     },
     {
@@ -153,7 +185,12 @@
       "credits": 3,
       "requisites": {
         "concurrent": [
-          "FOR203"
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
         ]
       },
       "description": "FOR 308 FOR 308 Forest Ecology (3)This class will provide the basic concepts of forest ecology and silvics. The class will emphasize (a) community concepts such as sampling, succession, productivity, disturbance, and animal factors, (b) ecosystem concepts such as nutrient and energy cycles and plant-soil relationships, and (c) environmental factors such as light, temperature, moisture, and pollution, and their effects on individual tree species and community structure and function. Other special topics of interest (allelopathy, seed behavior, tropical forests, etc.) will be included as time permits. The class will also include a field component that allows students to observe the effects of various conditions or treatments on forest community structure and growth, and to practice field methods commonly used to measure site factors and environmental processes in forest communities."
@@ -165,7 +202,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FOR203"
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
         ]
       },
       "description": "This course will provide the fundamentals of wildland fire behavior and effects as they relate to natural resource management. The role of fuels, weather, and topography on fire behavior will be covered in depth, and fire behavior and effects models will be used. The ecological role of fire will be examined through the concept of fire regimes and fire adaptations, and students will be introduced to prescribed burning as a land management tool."
@@ -177,10 +219,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
         ],
         "minGrades": {
-          "STAT200": "C"
+          "STAT200": "C",
+          "STAT240": "C",
+          "STAT250": "C"
         }
       },
       "description": "Quantitative approaches for characterization, monitoring, and comparison of forest ecosystems. FOR 350 Forest Ecosystem Monitoring and Data Analysis (3) The overall goal of this course is to provide students with opportunities to develop a quantitative approach to the management and conservation of forest ecosystems. The course Comprises three sections, each of a different length. The first section reviews descriptive statistics and basic concepts needed to understand sampling design in the context of forest ecosystem monitoring and data analysis. The second section addresses concepts and steps for designing a monitoring plan, and sampling designs for forest ecosystem monitoring. Sampling designs discussed include (but are not limited to): simple and stratified random sampling, double sampling, and cluster sampling. The third section covers data analysis and modeling tools. Students are expected to know two-sample inference, correlation analysis, analysis of variance and linear regression. The focus of this third section is on the application of these to forest ecosystem issues. The course also covers concepts of statistical model development, selection, and evaluation. Students will develop an understanding of strengths and limitations of using statistical models for forest ecosystem management and conservation. Finally, a broad overview of spatial statistical analysis will be offered. The objective is for the students to know about available tools and be able to look for more information. Major emphasis is placed on case studies and real-world data."
@@ -220,7 +270,12 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              "BIOL127"
+            ]
+          }
         ]
       },
       "description": "Fundamentals of the relationship of the basic physiological functions of forest trees to form. Tree Physiology is the study of how trees grow and develop in terms of genetics; biochemistry; cellular, tissue, and organ functions; and interaction with environmental factors. While many physiological processes are similar in trees and other plants, trees possess unique properties that help determine their outward appearance. These processes include carbon relations (photosynthesis, carbohydrate allocation), cold and drought resistance, water relations, and mineral nutrition. The characteristics of trees that define their physiology are longevity, height, and simultaneous reproductive and vegetative growth. Trees have physiological processes that are more adaptable than those in other plants. Height allows trees to successfully compete for light, but also creates transport and support problems. This course investigates the anatomy, morphology and physiology of growth, development, and responses of woody plants with particular consideration of the influence of environmental factors on physiological processes. To develop an understanding of tree physiology the following topics will be presented: Organization, development, and function of woody plant tissues Photosynthesis, respiration, and assimilation in forest trees Water relations and mineral nutrition. Tree growth responses to atmospheric and soil condition. Physiology variation among tree species. Herbicides and tree physiology. Methods and tools of tree physiology research."
@@ -246,10 +301,22 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FOR266"
+          {
+            "oneOf": [
+              "FOR266",
+              [
+                "FORT105",
+                "FORT110",
+                "FOR308"
+              ]
+            ]
+          }
         ],
         "minGrades": {
-          "FOR266": "C"
+          "FOR266": "C",
+          "FORT105": "C",
+          "FORT110": "C",
+          "FOR308": "C"
         }
       },
       "description": "This course explores the methods available to apply ecological concepts to actively manage forested ecosystems for a variety of societal objectives. It addresses methods used to blend the maintenance of biodiversity in forest ecosystems with extraction of commodities under the paradigms of Ecosystem Management and Ecological Forestry. Course objectives include gaining the ability to 1) apply silvicultural terminology and basic ecological concepts as they relate to forest development and silvicultural practices, 2) predict how silvicultural practices influence soil resources, water issues, forest health, timber production, wildlife habitat, and biodiversity, 3) integrate ecological and social considerations into silvicultural practices, and 4) employ silvicultural concepts to actual forest stands by developing silvicultural prescriptions. Topics include silvicultural systems, silvics, cover types, soil, habitat types, ecological classification systems, growth and yield, stand descriptions, crown classes, the site index, release, precommercial thinning, wood quality and pruning, herbicides and vegetation management, commercial thinning, crop tree management, stocking charts, maintaining forest health, natural and anthropogenic disturbances, forest stand dynamics, succession, regeneration inventories, managing for complexity, natural regeneration, seed-tree and shelterwood methods, uneven aged silviculture (selection and control methods), coppice, irregular shelterwood, deer browsing, clearcutting, site preparation, direct seeding, planting, ecosystem management across different scales, prescribed fire, and management techniques that maintain critical ecosystem processes and components such as soil, water, and wildlife. This is a core course in forestry, although it is also designed for wildlife professionals, conservation biologists, and natural resource professionals interested in the scientific foundation and practical application and implementation of forest management techniques. Whereas the disciplines of ecology and conservation biology help us understand the biological consequences of human manipulation, it falls upon the field of silviculture to balance the often conflicting demands between ecological integrity and society's demand for forest products in practice."
@@ -286,8 +353,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FOR203",
-          "FOR266"
+          {
+            "oneOf": [
+              [
+                "FOR203",
+                "FOR266"
+              ],
+              [
+                "FORT105",
+                "FORT110"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course provides hands-on experience with all of the activities associated with overseeing a timber sale, including the legal aspects of arranging a sale, marking timber and calculating volume, road and sale layout, best management practices, inspections, harvesting equipment, working with contractors and loggers, and liability issues. The objectives of the course are to 1) obtain and translate a property deed onto the ground and create a professional map of the timber sale area; 2) design a timber sale, including cutting boundaries, skid trails, haul roads, and landings such that site impact is minimized, harvesting efficiency and safety is maximized and productivity is maintained; 3) collect sufficient information for a professional timbersale prospectus, including which harvesting systems would be best suited to the situation; 4) complete an erosion and sedimentation plan, a stream crossing permit, and local harvesting ordinance requirements; 5) develop a timber sale contract and a landowner-consultant contract to protect all parties and address all possible legal scenarios; 6) work with, inspect, supervise and provide meaningful feedback to harvesting, road building, and herbicide application contractors; 7) retire a timber sale area to prevent erosion, create habitat variety and/or recreational opportunities, and maintain aesthetic qualities."
@@ -299,7 +376,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "AGBM101"
+            ]
+          }
         ]
       },
       "description": "This course focuses on economic and financial concepts and tools used in managing forests and natural resources. Specifically, students will: a) use financial tools including cost-benefit analysis to analyze forest investments, b) recognize forest-related business operations and management issues, c) apply economic principles to forest and natural resource management decisions including environmental and nonmarket valuation methods, and d) discuss current issues in forest management and economics such as climate change, bioenergy and tropical deforestation. Students will carry out a case study of a forest-related business."
@@ -318,7 +401,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FOR203"
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
         ]
       },
       "description": "This course covers concepts of wildlife habitat ecology and management. Topics include the relationship between wildlife and their habitat, identification of important plant structure and composition, quantifying vegetation structure at both stand and landscape scales, understanding disturbance ecology as a basis for habitat management practices (e.g., silvicultural applications and prescribed burning), and determining how specific management practices can be used to achieve future habitat goals and objectives."
@@ -338,7 +426,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FOR255"
+          {
+            "oneOf": [
+              "FOR255",
+              "FORT260",
+              "GEOG160",
+              "GEOG260",
+              "WILDL211"
+            ]
+          }
         ]
       },
       "description": "FOR 455 is an advanced remote sensing and geospatial technology course emphasizing the use of remote sensors and geographic information systems to study the Earth's land surface. The course emphasizes the use of these technologies primarily in the context of forestry but also in the broader context of natural resources management. Remote sensing technologies that are emphasized include aircraft and satellite-borne sensors in the visible and near-infrared portions of the electromagnetic spectrum, as well as active sensing devices like lidar (Light-detection and Ranging) technology. Students gain proficiency in the use of advanced remote sensing/image processing and geographic information systems (GIS) software to display, analyze, and map land surface features."
@@ -353,10 +449,20 @@
       ],
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              "FOR203"
+            ]
+          }
         ],
         "concurrent": [
-          "BIOL220W"
+          {
+            "oneOf": [
+              "BIOL220W",
+              "FOR308"
+            ]
+          }
         ]
       },
       "description": "Restoration ecology is a discipline that integrates principles from ecology, engineering, landscape architecture, economics and other select social sciences to repair ecosystems that have been degraded, damaged, or destroyed. The goal of restoration is to restore the structure of biological communities and the ecological functions and ecosystem services they provide to society. This course will cover the field of restoration ecology for students who see themselves someday practicing or participating in restoration projects during their careers. The course will cover the conceptual and theoretical foundations that underlie restoration efforts and link these to real-world applications in past and ongoing restoration projects in a variety of types of ecosystems. Examples of local and regional restoration projects will be used to reinforce principles discussed in class."
@@ -369,7 +475,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FOR255",
+          {
+            "oneOf": [
+              "FOR255",
+              "FORT260",
+              "WILDL211"
+            ]
+          },
           "FOR421",
           "FOR440"
         ]

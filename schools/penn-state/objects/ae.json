@@ -31,7 +31,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
     },
     {
@@ -43,7 +45,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is an Inter-Domain GenEd course."
     },
     {
@@ -105,7 +111,13 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210",
+              "EMCH210H"
+            ]
+          }
         ]
       },
       "description": "Algebraic and graphical methods of analysis of determinate members, deflections; introduction to indeterminate analysis methods. Course includes practicums. AE 308 Introduction to Structural Analysis (4) In this introductory course, students develop skills to perform analysis of structures, with emphasis on buildings and their structural elements. The objectives of this course are as follows: 1) to determine loads that the buildings/structural elements are likely to be subjected to during the lifetime of the building; 2) to discuss procedures used to determine reactions and internal forces in trusses, beams, and frames; 3) to introduce methods that can be used to calculate deflections. These objectives can be seen as three general steps that define structural analysis. Although the main emphasis in this course is the analysis of planar, statically determinate structures, an introduction to the analysis of indeterminate structures is also given. The course is required to be taken by all architectural engineering undergraduate students in the third year. A knowledge of statics and strength of materials is required and this course serves as prerequisite for steel and concrete design courses in the Architectural Engineering Program."
@@ -230,8 +242,18 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "AE308",
-          "AE402"
+          {
+            "oneOf": [
+              "AE308",
+              "CE340"
+            ]
+          },
+          {
+            "oneOf": [
+              "AE402",
+              "AE404"
+            ]
+          }
         ]
       },
       "description": "This course prepares students in the analysis, evaluation, and design of the most commonly used foundation systems to support buildings with an emphasis on shallow foundations. Included is a discussion of how all structural loads on buildings, most notably gravity loads and wind/seismic lateral loads, are transferred to the soil supporting the building. The design of foundation systems is a function of soil material properties, foundation material, and the selected foundation system. Topics include the basics of soil mechanics for foundation design for both strength (load capacity) and settlement (serviceability), and the design of the most commonly used types of foundation systems. This course provides students with the knowledge, tools, and understanding of material properties, analysis and design principles, and methods necessary for successful design and construction of common shallow foundation systems within the framework of quality control, code compliance, economic considerations and safety, while minimizing failure risks. Students are also provided with an overview of the most common forms of deep foundation systems including piles and drilled shafts."
@@ -292,7 +314,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AE402"
+          {
+            "oneOf": [
+              "AE402",
+              "CE341"
+            ]
+          }
         ]
       },
       "description": "Design of Masonry Structures ( AE 432 ) prepares students to design load-bearing and non load-bearing masonry structures. Although the emphasis is on reinforced masonry, some topics in unreinforced masonry are also covered. The course begins with a discussion of the materials used in masonry construction: clay units, concrete units, mortars, grout, and reinforcement. Since masonry code covers both allowable and strength design methods, a discussion of both design philosophies is necessary. The primary focus is on the analysis and design of reinforced masonry lintels, columns, shear walls, as well as out of plane walls. Additional topics such as deep beams, deflection, anchorage, and development length are also covered. By the end of the course, students will be able to analyze and design lintels in flexure and shear; analyze and design concrete masonry columns and pilasters under restrained or unrestrained conditions; analyze distribution of lateral loads to shear walls with openings; analyze and design masonry wall (load bearing and non-load bearing) in flexure and shear for in-plane loads; analyze and design concrete masonry walls and out-of-plane loads; design deep beams; detail miscellaneous steel attachments to masonry."
@@ -347,7 +374,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AE202"
+          {
+            "oneOf": [
+              "AE202",
+              "AE470",
+              "ARCH412"
+            ]
+          }
         ]
       },
       "description": "This course covers the principles, methods, and verification processes behind passive building design, with a focus on building envelope and mechanical system design, while providing a foundation in fundamental building science principles. The course focuses on ultra-high performance design principles, including continuous insulation, strict air tightness limits, reduction of thermal bridging, and thermal comfort via balanced ventilation and heat recovery, resulting in buildings with significantly lower energy use and higher occupant comfort than conventional construction. These principles are applicable to all building types. Students will also learn how to analyze Passive House performance during the design stage using relevant software, and during construction using blower door tests and infrared camera measurements."
@@ -517,7 +550,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EE210"
+          {
+            "oneOf": [
+              "EE210",
+              "AE311",
+              "EE211",
+              "EE212"
+            ]
+          }
         ]
       },
       "description": "This course offers in-depth study in the areas of solar energy sources, photovoltaic (PV) systems design, and their interface with building electrical systems. The course provides an overview of PV systems and common applications in residential and commercial buildings, including the availability, intensity, and utilization methods of solar irradiance and insolation based on latitude and climate as well as site survey and assessment methods for the positioning of PV systems. Technical topics include solar radiation modeling, calculations, and simulation, traditional and emerging photovoltaic technologies, DC-AC power inversion, energy storage systems, and system sizing and design. The integration of PV systems with the building electrical system, including discussions of the pertinent building codes, utility interconnection, and the economic analysis of PV systems, is also included in this course. By the end of the course, students will be able to calculate and account for the factors which affect the performance of PV systems in various climates and conditions; distinguish the features and performance variables of solar modules and inverters in the design of PV systems; calculate string sizing and inverter matching variables in the design of PV systems; communicate the critical design features of safe and efficient PV system integration with buildings and utilities; evaluate and quantify the factors affecting the successful installation and performance of PV systems in a variety of settings; and apply newly acquired inquiry skills to assess new products entering the solar energy marketplace. In addition to understanding the key issues with system design, students will be able to choose components properly and to design a basic grid-tied system for a chosen building. Students will also be able to conduct an economic analysis of PV systems in the context of residential and commercial building construction. Lecture material is reinforced with homework, hands-on exercises, and a semester-long project completed by each student."
@@ -529,7 +569,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AE372"
+          {
+            "oneOf": [
+              "AE372",
+              "CE332"
+            ]
+          }
         ]
       },
       "description": "Residential Building Design and Construction ( AE 470 ) familiarizes students with the residential construction industry and allows students to apply principles studied in other coursework to residential buildings. The content of this course provides an understanding of the residential construction process and the overall design of the various structural and enclosure systems within residential buildings. This course also focuses on the role of building science and the building enclosure in the performance and efficiency of residential buildings. The scope of residential construction considered in this course is primarily focused on single-family and multi-family dwellings. Furthermore, most of the topics covered are applicable to new construction, remodeling, as well as repair projects. By the end of the course, students will be knowledgeable of the operation of the residential construction industry and its role in the local and national economy; understand the construction process and the overall design of various systems within residential dwellings; and have experience with the role that building physics and the building envelope play in the performance and efficiency of residential buildings."
@@ -541,7 +586,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "AE372"
+          {
+            "oneOf": [
+              "AE372",
+              "CE332"
+            ]
+          }
         ]
       },
       "description": "Understanding residential project planning, management, contracts, budget, administration, and execution; discussion of the life cycle of a residential construction business. AE 471 Construction management of Residential Building Projects (3) The course Construction Management of Residential Building Projects is designed to introduce the students to a general understanding of the construction industry, basic principles of project planning and management, contracts, budget and project administration and execution as applied to residential building construction. The content of the course is intended to provide the student with the knowledge, tools, and understanding of processes and tasks necessary to manage residential building projects to completion successfully and within the framework of quality control, code compliance, and safety, while minimizing risks. The scope of the residential construction considered in this course is primarily focused on single-family dwellings and multi-family dwellings. Furthermore, most of the topics covered can be applicable to new construction, remodeling, as well as repair projects."

@@ -13,10 +13,6 @@
       "type": "course",
       "title": "Digital Design: Theory and Practice",
       "credits": 4,
-      "internalEquivalents": [
-        "CMPEN271",
-        "CMPEN275"
-      ],
       "requisites": {
         "concurrent": [
           "PHYS212"
@@ -77,8 +73,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPEN270",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPEN270",
+              "CMPEN271"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "INTRODUCTION TO MAJOR COMPONENTS OF A COMPUTER SYSTEM, HOW THEY FUNCTION TOGETHER IN EXECUTING A PROGRAM, HOW THEY ARE DESIGNED. CMPEN 331 Computer Organization and Design (3) The goals of the course are to introduce students to the major components of a computer system (the data path, the control path, the memory system, the I/O system), how they function together in executing a program, and how they are designed. The relationships between instruction set design, addressing modes, fetch and execute operations, and their impact on the underlying architecture are presented. Students will develop skills both in assembly language programming and in designing architecture components in a hardware description language (VHDL or verilog). CMPEN 331 is a required course for both computer engineering and computer science majors. CMPEN 331 requires access to PCs/workstations with commercial hardware description language tools (e.g., Synopsys VSS compiler and simulator) and a modern assembler/debugger (e.g., SPIM MIPS assembler, simulator, and debugger)."
@@ -104,7 +111,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPEN351",
+          {
+            "oneOf": [
+              "CMPEN351",
+              "CMPEN472"
+            ]
+          },
           "EE210"
         ]
       },
@@ -120,10 +132,24 @@
       ],
       "requisites": {
         "previous": [
-          "CMPEN270"
+          {
+            "oneOf": [
+              "CMPEN270",
+              "CMPEN271"
+            ]
+          }
         ],
         "concurrent": [
-          "STAT418"
+          {
+            "oneOf": [
+              "STAT418",
+              "STAT318",
+              "STAT414",
+              "STAT401",
+              "MATH414",
+              "MATH418"
+            ]
+          }
         ]
       },
       "description": "Data transmission, encoding, link control techniques; communication network architecture, design; computer communication system architecture, protocols. CMPEN 362CMPEN (E E) 362 Communication Networks (3)CMPEN (E E) 362 is an elective course in both the electrical and computer engineering curricula which provides an overview of the broad field of data and computer communications. First, a general model of the communication task is presented, including the layered concept by which each layer provides services for the layer above. First, the lowest (physical) layer is studied. This involves signal design, Fourier analysis representations, bandwidth concepts, transmission impairments and communication media properties. Then the next higher (link) layer is considered which involves organizing bits into frames, data link and error control methods (including frame sequence numbering and error detection principles). Multiplexing to share a link is studied, including frequency division multiplexing, dedicated time division multiplexing, and statistical time multiplexing.At the network layer level, there are two categories: broadcast (usually local area) and switching networks. Broadcast and local area network studies include bus, tree and star topologies, Ethernet, optical fiber bus networks, ring networks, and medium access control protocols.Switching and routing concepts for networks are explained, including both circuit and packet switching, datagrams and virtual circuits. Properties of frame relay and asynchronous transfer mode (ATM) networks are described. Internetworking frame structures, routing and protocols are studied. Also, bridge routing for local networks is described.At the still higher transport (network end-to-end control) layer, transport protocols, including TCP/EP, are described."
@@ -137,7 +163,12 @@
         "previous": [
           "CMPEN271",
           "CMPEN275",
-          "EE210"
+          {
+            "oneOf": [
+              "EE210",
+              "EE211"
+            ]
+          }
         ]
       },
       "description": "Theory, design, and implementation of digital circuits based on combinational and sequential circuits; implementation of designs using hardware description language. CMPEN 371 Advanced Digital Design (3) Students will learn advanced concepts in digital design for complex combinational and sequential logic, and learn how to effectively use minimization and synthesis techniques. Contemporary CAD tools and target digital technologies including Field Programmable Gate Arrays (FPGAs) are utilized. The use of a hardware-description language for digital design is introduced. In the laboratory portion, students will implement, simulate, and test designs."
@@ -149,7 +180,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPEN270"
+          {
+            "oneOf": [
+              "CMPEN270",
+              [
+                "CMPEN271",
+                "CMPEN275",
+                "CMPSC121"
+              ]
+            ]
+          }
         ]
       },
       "description": "This course is an intermediate introduction to microprocessors and microcontrollers, intended to better prepare students to employ embedded systems in their Capstone projects and other designs in school and the workplace. It draws on previous coursework in digital logic circuits and computer programming. Emphasis in lectures will be on low-level programming in assembly language, digital circuits, and architecture for popular microprocessor families such as Intel and ARM. Emphasis in labs will be placed on use and interfacing of a comprehensive, modern microcontroller. Topics include an overview of architecture, computational and storage resources, interfacing capabilities, supported programming languages, and user interface options. Interfaces to be covered may include general-purpose serial and parallel input/output (I/O), Ethernet, Universal Serial Bus (USB), Inter-Integrated Circuit (I2C), Serial Peripheral Interface (SPI), and Universal Asynchronous Receiver/Transmitters (UARTs), as well as handling of analog inputs, analog outputs, and pulse-width modulated (PWM) outputs."
@@ -213,7 +253,12 @@
       "requisites": {
         "previous": [
           "MATH220",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
         ]
       },
       "description": "This course will introduce practical quantum computing using commercially available noisy quantum computers. The complex relationships among quantum computing, mathematics, physics and computer science and engineering will be conveyed to the students through activities, lab assignments, and class projects. The course is designed for upper-level undergraduate students and graduate students majoring in science or engineering. Although a basic understanding of quantum science and engineering provides important background for the field of quantum computing, this course does not focus on quantum physics. Rather it will focus on the software side of things which only needs logical understanding of quantum bits (qubits) and not the physical implementation. Hence this course is meant for students to contribute to quantum computing without getting into the complexity of quantum mechanics. Upon completing the course, the students are expected to understand the quantum computing taxonomy at the introductory level with simple worked out examples using superconducting qubits. They will also learn techniques to program a real quantum computer to solve combinatorial problems."
@@ -255,7 +300,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPEN331"
+          {
+            "oneOf": [
+              "CMPEN331",
+              "CMPEN371"
+            ]
+          }
         ]
       },
       "description": "Introduction to computer architecture. Memory hierarchy and design, CPU design, pipelining, multiprocessor architecture. CMPEN 431 Introduction to Computer Architecture (3) This course will introduce students to the architecture-level design issues of a computer system. They will apply their knowledge of digital logic design to explore the high-level interaction of the individual computer system hardware components. Concepts of sequential and parallel architecture including the interaction of different memory components, their layout and placement, communication among multiple processors, effects of pipelining, and performance issues, will be covered. Students will apply these concepts by studying and evaluating the merits and demerits of selected computer system architectures."
@@ -282,9 +332,20 @@
       ],
       "requisites": {
         "previous": [
-          "MATH230",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
           "MATH220",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "Introduction to topics such as image formation, segmentation, feature extraction, matching, shape recovery, object recognition, and dynamic scene analysis. CMPEN 454CMPEN 454 Fundamentals of Computer Vision (3) CMPEN 454 is an introduction to computer vision. The goal of computer vision is to make computers understand and interpret visual information. Computer vision systems bring together imaging devices, computers, and sophisticated algorithms for solving problems in areas such as industrial inspection, medicine, document analysis, autonomous navigation, and remote sensing. The course involves both pedagogical written assignments and computer projects.The beginning of the course gives an overview of computer vision and introduces low level image analysis techniques for binary images. Binary vision systems are useful when the silhouette of imaged objects convey enough information to recognize them. Examples can be found in optical character recognition, chromosome analysis and recognition of industrial parts. Moreover, many techniques developed for binary systems can be applied to gray level or color images. Next, the course covers image segmentation and contours. These topics are the foundation of most computer vision techniques. For an image to be correctly interpreted, it must be partitioned into regions that correspond to distinct objects or parts of objects. First, region based techniques such as thresholding, split and merge, region growing and texture analysis are introduced. Next, edge based techniques using gradient and Laplacian operators are discussed. Finally, contour representations and curve approximations linking edges into region boundaries are studied.Next, depth from vision, with emphasis in stereo vision, is considered. Calculating distances to and among various points in the scene is important in many computer vision tasks such as inspection, robot manipulation, and autonomous navigation. In this part of the course the geometry of stereo systems and how to obtain depth maps from stereo image pairs is studied. Also, alternative 3D imaging sensors such as laser based range finders and radars are discussed.Following stereo, the topic of computer vision is broaden to understand sequences of images over time. In this section techniques using information on spatial and temporal changes are used to design computer vision systems capable of coping with moving and changing objects, changing illumination and changing viewpoints. Visual motion is important primarily for two reasons. First, motion is a very important cue to understand the scene structure. Second, biological systems do use motion to infer properties of the surrounding world with very little a priori knowledge.Finally, the topic of 3D object recognition is discussed. Object recognition entails two main issues: object identification and object localization. Identification determines the objects being imaged while localization determines their position in the world and with respect to the sensors. This topic builds upon all the different techniques discussed until this point."
@@ -299,8 +360,20 @@
       ],
       "requisites": {
         "previous": [
-          "EE350",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "EE350",
+              "EE353",
+              "EE352"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "Overview of digital image processing techniques and their applications; image sampling, enhancement, restoration, and analysis; computer projects. E E (CMPEN) 455 An Introduction to Digital Image Processing (3) E E/ CMPEN 455 , a technical elective available to both electrical and computer engineering seniors and graduate students, discusses many current techniques for processing and manipulating digital images. The course involves both pedagogical written assignments and computer projects.The beginning of the course gives an overview of digital image processing systems and digital image fundamentals. During this unit, important elements of human visual perception are reviewed; these ideas help motivate many of the computer-based techniques described in subsequent units. Also, the standard model for a digital image, in addition to the concepts of sampling and quantization, are described. Finally, basic topological concepts between digital image pixel are discussed.The next unit considers image transform analysis, with a primary focus on Fourier-based techniques. The one-dimensional Fourier transform is reviewed, and then two-dimensional Fourier transform analysis is discussed. To bridge the gap from the continuous world to the digital world, the sampling theorem is introduced. Next, the Discrete Fourier Transform and its properties are described. Fourier-based filtering techniques, such as the ideal low-pass and Butterworth filters are then introduced. The Fast Fourier Transform is also discussed. Finally, the Discrete Cosine Transform, used later in JPEG and MPEG, is introduced.The next unit discusses techniques for image enhancement and segmentation. These techniques include point-based techniques based on histogram analysis. They also involve linear and nonlinear mask-based methods for noise reduction and region sharpening. Further, techniques of mathematical morphology, which involve an application of set-theoretic concepts to image processing, are described. Finally, image segmentation methods, based on edge detection and thresholding, are described.The final unit considers the concept of image compression. Techniques for image encoding and decoding are discussed. A brief model of the encoding-decoding process is described. Next, compression techniques, such as run-length encoding and Huffman coding, are described. Finally, the multimedia image-compression methodologies, JPEG and MPEG, are discussed."
@@ -313,7 +386,12 @@
       "requisites": {
         "previous": [
           "CMPEN271",
-          "CMPSC121"
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "Data transmission, encoding, link control techniques, network architecture, design, protocols, and multiple access. CMPEN 461 Communication Networks (3) This course introduces students to fundamental concepts and principles underlying data communication networks, with an emphasis on the Internet and its five-layer architecture: the application, transport, network, link, and physical layers. The fundamental issues to be covered include, but not limited to, reliable communication over an unreliable network layer, connection establishment/teardown and handshaking, congestion and flow control, path determination, multiple access control. The student learning these principles will gain knowledge that lasts long after today's network standards and protocols have become obsolete."
@@ -325,7 +403,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPEN362"
+          {
+            "oneOf": [
+              "CMPEN362",
+              "EE362"
+            ]
+          }
         ]
       },
       "description": "This course explores the fundamental concepts and engineering processes of wireless communication systems, sensors, and security algorithms through the design, implementation, and evaluation of next generation wireless network architectures, and network and cryptographic protocols. This course is intended as a senior level course for computational majors such as computer science and computer engineering since it covers hardware and software design concepts associated with wireless access, data transmission, and computational security, security models, and privacy in a broad range of settings. The first part of the course studies programmatic, computational, and engineering issues associated with wireless systems and sensors at the physical protocol layer. Hardware, software, and engineering design considerations associated with MIMO, low latency, high reliability, and high data rate constraints will be analyzed. The next part of this course will introduce virtual machines, function virtualization, and network-slicing for constraint matching, resource scheduling, and mobility management at the data link and network protocol layers. The final component of the course focuses on the security and privacy for wireless systems and sensors including models and algorithms. The design and implementation of cryptographic algorithms for cellular, Wi-Fi, Bluetooth, Zigbee, and next generation systems including Device to Device (D2D), Vehicle to Vehicle (V2V),and Machine Type Communications (MTC) are studied and analyzed. Upon completion of the course students will be able to critically analyze the design, implementation, and protocols associated with wireless systems and sensors and assess the computational security and privacy vulnerabilities associated with these systems."

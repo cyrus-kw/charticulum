@@ -15,9 +15,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL240W",
-          "CHEM112",
-          "MATH141"
+          {
+            "oneOf": [
+              [
+                "BIOL240W",
+                "CHEM112",
+                "MATH141"
+              ],
+              "BIOL141"
+            ]
+          }
         ],
         "concurrent": [
           "PHYS212",
@@ -33,9 +40,19 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "BIOL141",
+          {
+            "oneOf": [
+              "BIOL141",
+              "BIOL240W"
+            ]
+          },
           "PHYS212",
-          "MATH250",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
           "CMPSC200"
         ]
       },
@@ -48,8 +65,24 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH211",
-          "EMCH213"
+          {
+            "oneOf": [
+              [
+                "EMCH211",
+                "EMCH213"
+              ],
+              [
+                "MATH230",
+                "MATH231",
+                "MATH232",
+                "MATH251"
+              ],
+              [
+                "BIOL141",
+                "EMCH210"
+              ]
+            ]
+          }
         ]
       },
       "description": "Mechanical properties of fluids and solids with applications to tissue mechanics and vascular system. BME 303 Bio-continuum Mechanics (3) The course serves as an introduction to continuum mechanics for students of biomedical engineering providing a foundation for studies in fluid and solid mechanics, material sciences, and other applications of science and engineering to the biomedical field. It will provide an introduction to concepts of solid and fluid mechanics, analysis in the context of mechanical properties of biological tissues, physiological models and measurement systems. For success in the course, students will draw from their prerequisite background in calculus, physics, statics, strength of materials, vector analysis, and elementary differential equations."
@@ -61,9 +94,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH231",
-          "MATH232",
-          "MATH251"
+          {
+            "oneOf": [
+              [
+                "MATH231",
+                "MATH232",
+                "MATH251"
+              ],
+              [
+                "BIOL141",
+                "CHEM112",
+                "MATH230"
+              ]
+            ]
+          }
         ]
       },
       "description": "Chemical processes, including material and energy balances and heat transfer with emphasis on biological and biomedical applications. BME 313 Thermodynamics for Biomedical Engineering (3) The course provides and introduction to thermodynamics, including the fundamentals of material and energy balances with specific emphasis placed on physiological and biomedical engineering applications. This course will cover equations of state, the first and second laws of thermodynamics in both open and closed systems, and Maxwell Relations. Examples of biological applications that can be considered are the application of thermodynamic analyses to understanding thermoregulation, the cardiac cycle, respiratory gas exchange, cell potentials and to osmosis. This course also covers heat transfer including Fourier's law of conduction, convective and radiative heat transfer. Specific biological examples that may be discussed include applications to bioinstrumentation, thermoregulation and tissue heating by radiation for cancer therapy. A general knowledge of physiology and chemistry are prerequisites; the analytical approach of the course will also require an ability to work with basic differential and multivariable calculus."
@@ -89,8 +133,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH250",
-          "EE210"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "EE210",
+              "BME301",
+              "EE212",
+              "PHYS402"
+            ]
+          }
         ]
       },
       "description": "Biomedical measurements, including consideration of techniques, equipment, and safety. BME 402 Biomedical Instrumentation and Measurements (3) This course is designed to introduce students to the principles, applications, and design of instruments used in biomedical research and applications. The emphasis is on engineering design and analysis with supplemental discussion of relevant physiological principles. Topics covered include: sensors, biopotential signal origin, amplifiers, filtering, electrodes and signal processing; pressure and flow measurement in the cardiovascular and respiratory systems, chemical biosensors, therapeutic devices, and medical imaging modalities. Students will learn to analyze and design instrumentation and measurement systems through a variety of techniques including in-class examples, homework problems, and active participation."
@@ -115,7 +171,12 @@
       "requisites": {
         "previous": [
           "PHYS212",
-          "CMPSC200"
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
         ]
       },
       "description": "Physical principles and clinical applications of medical imaging methods. BME 406 Medical Imaging (3) This course covers all four major diagnostic medical imaging modalities including x-ray, ultrasound, radioisotope imaging, and magnetic resonance imaging. Physical principles, instrumentation, and biomedical applications of these modalities, as well as the basics of imaging signals and image processing will be discussed. Success in this course will require background in physics and electrical circuits, and some experience with Matlab."
@@ -144,7 +205,12 @@
         "previous": [
           "MATH230",
           "MATH251",
-          "BIOL141"
+          {
+            "oneOf": [
+              "BIOL141",
+              "BIOL240W"
+            ]
+          }
         ]
       },
       "description": "The fundamental relations in fluid mechanics and their application to biofluids including steady/unsteady flows, diseased states, devices and biorheology. BME 409 Biofluid Mechanics (3) This course is a first course in fluid mechanics, with application to biomedical problems. This course incorporates understanding of fluid properties of biological materials and applies the fundamental laws (mass, momentum, and energy) that govern fluid mechanics to solve biofluid applications such as those in the cardiovascular system, including diseased states. The course will enable students to use approximation methods and constraints in fluid mechanics to help model and solve biofluid examples. Biorheology and cardiovascular prosthetics in the context of fluid mechanics will be discussed. The students will be able to understand and apply problem solving techniques to steady and unsteady biological flows and be exposed to wave propagation theory and oscillatory flow. Students will be exposed to biofluid devices and flow measurement techniques used to assess these devices."
@@ -160,7 +226,15 @@
           "PHYS211"
         ],
         "concurrent": [
-          "ME320"
+          {
+            "oneOf": [
+              "ME320",
+              "BME303",
+              "CHE330",
+              "AERSP308",
+              "PHYS213"
+            ]
+          }
         ]
       },
       "description": "Study of fluid mechanics at small length scales including fabrication of microfluidic devices and microfluidic components, lab-on-chip concept and applications. BME 410 Biomedical Applications of Microfluids (3) Microfluidics is the study of flow phenomena at small length scales with characteristic channel dimensions typically less than the diameter of human hair. Small length scale effects become important as surface forces such as viscous drag and surface tension govern flow behavior rather than body forces (inertia) as seen in macroscale fluid mechanics. Miniaturization of fluid handling systems also allows the development of micro Total Analysis Systems (microTAS) or so called \"lab on a chip\" which combines biological sample preparation, separation and analysis in a single device. Topics explored in this class include: silicon based microfabrication and non-conventional micro/nano fabrication techniques; flow phenomena at small length scales, including laminar flow and flow resistance, inertial flow, diffusion, capillary effect, electrokinetic flow like electroosmosis, electrophoresis, and dielectrophoresis (DEP); microfluidic components including valves, pumps, mixers, sensors, actuators; lab-on-chip system concept and applications; hands-on lab to make and test microfluidic device; finite element simulation lab to gain better understanding of microfluidic devices."
@@ -172,9 +246,26 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ME300",
-          "MATH250",
-          "BIOL141"
+          {
+            "oneOf": [
+              "ME300",
+              "BME313",
+              "CHE220",
+              "PHYS213"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "BIOL141",
+              "BIOL240W"
+            ]
+          }
         ]
       },
       "description": "An integrated study of the fundamentals of mass transport processes with emphasis on the analysis of physiological systems. BME 413 Mass Transport in Biological Systems (3) This course provides an introduction to mass transport phenomena in biological systems. The course builds upon thermodynamic concepts of phase and chemical equilibrium to analyze ion transport and cell membrane potentials including Nernst potentials, Gibbs-Donnan equilibrium and osmotic pressure. In particular, the course provides fundamental understanding of the diffusion of gases, electrolytes and non-electrolytes in biological applications. Furthermore, the principles of oxygen transport in tissues are specifically described and analyzed using the Krogh Cylinder Modes and hemoglobin-oxygen binding relationships. The transport of substances across biological membranes is discussed and analyzed for various biological transport mechanisms including: passive diffusion, active transport and facilitated transport. Convective transport through porous media is introduced using Darcy's Law and the Brinkman Equation. Finally, fundamental concepts of pharmacokinetic modeling are introduced and utilized for the analysis of drug transport and distribution within tissues."
@@ -186,8 +277,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL141",
-          "CMPSC200"
+          {
+            "oneOf": [
+              "BIOL141",
+              "BIOL240W",
+              "BIOL472"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC121"
+            ]
+          }
         ]
       },
       "description": "Analysis of function and consideration of design concerns for biomedical implants, including prosthetic joints, electrical stimulators, and cardiovascular pumps. BME 419 Artificial Organs and Prosthetic Devices (3) This course provides an overview of artificial organs and medical devices (ranging from blood pumps, hemodialysis, BioMEMS, tissue engineered technology, orthopaedic devices, cardiovascular implants, pacemakers, etc.) and how engineers use a design methodology, need to understand the clinical need, and what FDA regulations must be considered to develop these technology. Guest speakers and experts provide lectures on the various technology and students are exposed to industry and academic device development. The basics of biomaterials and biocompatibility are discussed within the context of the technology."
@@ -199,9 +302,19 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL141",
+          {
+            "oneOf": [
+              "BIOL141",
+              "BIOL240W"
+            ]
+          },
           "CHEM112",
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
         ]
       },
       "description": "Chemical kinetics and reaction equilibria with applications to the analysis of physiological function and the design of synthetic organs. BME 423 Reaction Kinetics of Biological Systems (3) Chemical reactions are the underlying mechanism for numerous biological processes such as energy metabolism, biosynthesis pathways, mass transport, and detoxification. This course will introduce the basic concepts in chemical equilibrium and reaction kinetics. The course will then apply these chemical kinetics and analytical approaches to understand the underlying mechanisms of selected biological and physiological processes, which will include metabolic engineering, catalysis, bioreactors, and drug discoveries."
@@ -227,8 +340,20 @@
       "requisites": {
         "previous": [
           "CHEM112",
-          "BME201",
-          "BME413"
+          {
+            "oneOf": [
+              "BME201",
+              "BIOL230W",
+              "BMB251"
+            ]
+          },
+          {
+            "oneOf": [
+              "BME413",
+              "BE302",
+              "CHE410"
+            ]
+          }
         ]
       },
       "description": "Engineering and biological principles as applied to pharmaceutical transport and designing drug carriers. BME 433 Drug Delivery (3) The success of drug delivery depends on not only the understanding of chemical synthesis, polymer sciences, and cell biology, but also the fundamental understanding of drug transport that is affected by both drug's properties and physiological barriers, which are very critical but often overlooked in the design of drug delivery systems. Therefore, this course covers two main issues: 1) physiological barriers and drug transport; 2) design and characterization of drug delivery systems. The first section of this course introduces transport mechanisms of drug delivery at the levels of cell, tissue and wholebody from the engineering viewpoint. The second section describes the rational design of various drug delivery systems and emphasizes nanomedicines. Case studies of cancer therapy/tissue engineering are described to compare, contrast and analyze current drug delivery systems."
@@ -257,8 +382,18 @@
       ],
       "requisites": {
         "previous": [
-          "MATSE201",
-          "MATH230"
+          {
+            "oneOf": [
+              "MATSE201",
+              "CHEM112"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ]
       },
       "description": "Describe properties of materials and composites and their in vivo interactions. BME 443 ( MATSE 403 ) Biomedical Materials (3) Metals, polymers, and ceramics, and their composites, which are capable of emulating the functions of hard and soft tissues, are the subjects of this course.The subject matter shall be confined to implanted materials; external appliances, such as casts, braces, etc are not considered The topical content of this course will be grouped into four areas. A general introduction to selected aspects of physiology will be presented. This will provide the background necessary to appreciate the factors which govern the selection of biomedical materials. Specific emphases will be placed on polymerization of biopolymers (polypeptides and polysaccharides) and the general relationships between conformation and biological function, the biochemistry of blood and blood surface interactions, the formation of teeth and bone and the relationships between microstructure, composition and function, the immune responses to implanted materials, the resorption of bone (osteoporosis) and the development of caries. The perspective placed on these topics will be that of materials science. 'The selection of ceramics for hard tissue prosthesis will be discussed. Orthopaedic and dental applications for ceramics will be discussed. Specific ceramic materials to be treated include dental porcelain, alumina- and zirconia-based ceramics, and bioglasses and pyrolytic carbons. Various classes of inorganic cements, gypsum, zinc phosphates, zinc carboxylates, silicates, and glassionomer cements will also be considered as ceramics. Hydroxyapatite, Hap-based composites and Hap-metal interactions will be discussed in particular Relationships among physical properties, mechanical properties, and chemical interactions with biological fluids will be described. Dental and orthopedic applications of metals will be described. The fracture toughness of metals, their electrochemical responses in vivo, and the nature of the interfacial interactions with hard tissues will be treated Dental amalgams and the noble metals for dental applications will be considered. Metals and alloys, such as Ti, Co-Cr, and vitallium, used in prosthetic applications, will be described and their properties and limitations discussed The phenomenon of stress shielding and the immune responses associated with the accumulation of metallic and polymeric particular debris in the vicinity of an implant will be discussed in particular Polymeric materials are important in a broad range of biomedical applications. Among these are soft tissue prostheses, hemostatic agents, dental restoratives, bone replacement materials, and surgical adhesives. In some applications it is desirable that a polymeric material biodegrade while in others property retention is desirable."
@@ -273,7 +408,12 @@
       ],
       "requisites": {
         "previous": [
-          "CHEM112"
+          {
+            "oneOf": [
+              "CHEM112",
+              "MATSE112"
+            ]
+          }
         ]
       },
       "description": "Focus is on special properties of surface as an important causative and mediating agent in the biological response to materials."
@@ -286,7 +426,13 @@
       "requisites": {
         "previous": [
           "CHEM112",
-          "BME201",
+          {
+            "oneOf": [
+              "BME201",
+              "BIOL230W",
+              "BMB251"
+            ]
+          },
           "PHYS211"
         ]
       },
@@ -299,8 +445,20 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH211",
-          "EMCH213"
+          {
+            "oneOf": [
+              [
+                "EMCH211",
+                "EMCH213"
+              ],
+              [
+                "CHEM112",
+                "CHEM113",
+                "CHEM202",
+                "EMCH210"
+              ]
+            ]
+          }
         ]
       },
       "description": "Foundations in polymer chemistry and physics, polymer design, characterization, and processing with a focus on biomedical applications."
@@ -312,8 +470,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ENGL202C",
-          "ECON102"
+          {
+            "oneOf": [
+              "ENGL202C",
+              "BE391"
+            ]
+          },
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
         ]
       },
       "description": "This course provides an overview of the FDA regulatory process for drug, biologics, and device development. Through course work and class based discussion, students will have an opportunity to develop the foundations necessary to build a strong understanding of regulatory affairs. Topics include the historical perspective the development of U.S. drug laws, law vs. regulation, FDA and industry functions, drug, biologics and device approvals, Good Laboratory/Manufacturing/Clinical Practice and global regulatory frameworks. The class utilizes collaborative group work and case study based learning exercises."
@@ -338,7 +506,17 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL230W"
+          {
+            "oneOf": [
+              "BIOL230W",
+              "BIOL240W",
+              "BME201",
+              "BMB251",
+              "BIOL240M",
+              "BIOL230M",
+              "BMB251H"
+            ]
+          }
         ]
       },
       "description": "This course will give an overview of milestones in stem cell research and will expose students to current topics at the frontier of this field. It will introduce students to the different types of stem cells as well as factors and signals that are implicated in regulating stem cell fate. The course will highlight techniques for engineering of stem cells and their micro-environment. The course will also discuss gene editing and the application of gene editing in stem cell research. Furthermore, it will evaluate the use of stem cells for tissue engineering and therapies. Emphasis will be placed on discussions of current research areas and papers in this rapidly evolving field. The class is designed for upper undergraduates and graduate students with a strong interest in stem cell biology, and the desire to actively contribute to discussions in the class."

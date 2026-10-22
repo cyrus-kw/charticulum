@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "How does reduced rainfall impact the lives of people growing coffee in Hondur... and immigration in the USA? How does increasing consumption of meat in China influence deforestation of the Amazon Rainforest? How do subsidies for cotton in the USA effect cotton growers in Mali and the price of a t-shirt in Italy? These are a few of the complex issues we will explore this semester. ¿ Agriculture affects all of us. Every time we eat, go to the grocery store, or even buy clothing, we are participating in complex agricultural systems that are increasingly more globally integrated. This course takes an interdisciplinary approach, combining both natural and social science theory and scholarship to investigate topics such as climate change, technological applications to agriculture (e.g. GMOs), soil and water usage, the role of culture and local knowledge, and population growth. Over the course of the semester we will investigate issues receiving widespread attention from policymakers, national governments, academics, farmers, consumers, and many others. This class will place a specific emphasis on agriculture in the global South examining issues related to food security. As we explore the issues related to international agriculture, we will confront implications for national and global security, human rights, sustainability, and other ethical questions."
     },
     {
@@ -104,7 +108,12 @@
       "credits": 0.5,
       "requisites": {
         "previous": [
-          "INTAG470A"
+          {
+            "oneOf": [
+              "INTAG470A",
+              "AGBM470A"
+            ]
+          }
         ]
       },
       "description": "Explore key differences and similarities in the food and agricultural systems of the United Sates and France. INTAG 470B / AGBM 470B Comparing Agricultural and Food Systems in the US and France: Travel (0.5) This course is designed to explore key similarities and differences in the food and agricultural systems of the United States and France. It introduces students to a number of overarching food and agricultural topics that pertain to both countries, and students explore and analyze these key issues from both countries perspective. These overarching topics include the structure of agricultural and environmental policies, the use agricultural land for biofuel production, organic agriculture, food safety, attitudes and policies surrounding the use of genetically modified crops, the role of large agribusiness firms, attitudes towards diet and health, and several others important topics. Students conduct background reading on these topics, hear lectures -- sometimes from guest presenters -- that frame the topics from both the U.S. and France's perspective, and write reports on specific crops or foods that expose key similarities and differences between the two food systems. Finally, students pick one crop or food for an oral presentation that contains background information on how that crop fits into the two food systems, U.S. and France, and analyzes the key issues that relate to the overarching topics already identified. This course has two components that must be taken in partnership: 470A (FOOD SYS US/FRANCE I) and 470B (FOOD SYS US/FRANCE II). The first is a classroom - based course, and meets regularly during the semester. The second is a two - week component that takes place after the end of the semester. In this second component, after traveling to France, students hear presentations from the French perspective on the overarching topics identified earlier and also explore the topics first hand via field trips to farms, wholesale markets, retail markets, and other places relevant to the French food system. This component is organized by a host university, AgroParisTech. For these two weeks, students live in dorms within the city of Paris. Knowledge of French is not required."

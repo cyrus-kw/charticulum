@@ -34,8 +34,15 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "BIOL163",
-          "BIOL164",
+          {
+            "oneOf": [
+              [
+                "BIOL163",
+                "BIOL164"
+              ],
+              "BISC4"
+            ]
+          },
           "BE_T204W",
           "BE_T206"
         ]

@@ -118,7 +118,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "PLET50",
+          {
+            "oneOf": [
+              "PLET50",
+              "EDSGN100S"
+            ]
+          },
           "PLET222"
         ]
       },
@@ -277,7 +282,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "PLET222"
+          {
+            "oneOf": [
+              "PLET222",
+              "PES351"
+            ]
+          }
         ]
       },
       "description": "This course provides instruction in the methods and practices used in the manufacturing of plastic devices in the medical industry. PL ET 484 Medical Manufacturing Methods (3) This course provides instruction in the methods and practices used in the manufacturing of plastic devices in the medical industry. The course includes both manufacturing and regulatory requirements. A large portion of the class will involve a simulated process validation exercise. The concepts will be introduced in lecture, parts will be manufactured and measured in the processing lab, and data analysis will be completed in a computer lab. Injection molding will be emphasized as the major plastic part production method, but other processes will be used as needed. Clean room requirements, sterilization and material handling, and common assembly methods will also be covered."

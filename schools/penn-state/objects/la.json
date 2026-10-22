@@ -31,7 +31,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "Concentrated on the 21st-century, this course engages students in cutting-edge information about the critical roles the humanities and social sciences play in the high-tech global economy, now and in the future. In this course, students will learn what is vital about the humanities and social sciences in the global economy and society more generally. This class helps students to understand what is meant by the knowledge and creative economies, and why the modern economy's need for the core skills and knowledge developed through a humanities and social science education opens excellent career opportunities to students. Importantly, students will explore both humanistic and social science inquiry that challenges the dominant narratives and distorted facts that relegate the humanities and social sciences as insignificant and turn students away from these majors. Students will also learn to understand and explain in concrete ways the core skills and knowledge that humanities and social science students possess that are in high demand in business and industry so they can hone these skills in college as they prepare for life after college as contributing citizens through work and public life."
     },
     {
@@ -100,7 +104,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Humanities",
+        "Inter-Domain"
+      ],
       "description": "This course introduces students to the ideas and skills that comprise \"public humanities,\" with a focus on digital media tools. It aims to develop student understanding of how public humanities work can address present-day problems, fostering empathy within and building bridges between persons, groups, and communities. It offers hands-on training in three forms of digital media: documentary film, podcasting, and web publishing. Through honest and respectful engagement with a diverse range of ideas, perspectives, and experiences, students will develop creative and critical thinking and problem-solving skills by locating, analyzing and applying information in project formation and production."
     },
     {
@@ -158,7 +166,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "LA335N"
+          {
+            "oneOf": [
+              "LA335N",
+              "COMM335N"
+            ]
+          }
         ]
       },
       "description": "This course is the Capstone Experience for Public Humanities Fellows in the Humanities Institute. The course provides students with hands-on experience applying skills and insight gained during the prerequisite course, Introduction to Public Humanities. Students will gain substantive experience in research, digital media production, and community engagement. The centerpiece of the course is an individual digital public humanities project on a topic of the student's choosing. Students will also participate in public outreach events in conjunction with the Humanities Institute, actively participating in a community engagement plan in coordination with the Institute's documentary film series, HumIn Focus."

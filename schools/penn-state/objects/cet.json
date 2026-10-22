@@ -25,7 +25,13 @@
           "MATH140"
         ],
         "concurrent": [
-          "EMCH213"
+          {
+            "oneOf": [
+              "EMCH213",
+              "ET322",
+              "MET213"
+            ]
+          }
         ]
       },
       "description": "This course presents the fundamentals of engineering soil mechanics related to civil engineering. CET 343 Soil Mechanics (3) This course presents the fundamentals of engineering soil mechanics related to civil engineering. The course provides the initial exposure to soil mechanics, presenting the fundamentals essential to further study in foundation engineering and other advanced courses. The course begins with coverage of how soil properties influence the different types of structures or facilities built by structural and construction engineers. Students study the formation of natural soil deposits by the geological and biological events in the earth's history. The soil sampling procedures are briefly explained, and then various index properties of soils are determined, and utilized in engineering classifications of soils. Options available for compacting soils in the lab and field are studied. The laboratory tests for finding soil permeability are studied, followed by coverage of empirical equations for estimating the permeability. Simple cases of seepage are analyzed using graphical flow net method. Elastic half-space theories and approximate methods are used for estimating the stress distribution in soils. The concepts of pore water pressure and effective stress are introduced. The covered strength theories include the unconsolidated undrained shear strength parameters. Elastic compression and consolidation compression are covered in this course. The course ends with simple field soil investigation procedures."

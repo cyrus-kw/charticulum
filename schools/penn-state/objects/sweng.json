@@ -90,7 +90,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC472"
+          {
+            "oneOf": [
+              "CMPSC472",
+              "CMPSC473",
+              "CMPEN441"
+            ]
+          }
         ]
       },
       "description": "The design and implementation of real time systems. SWENG 452W Embedded Real Time Systems (3) Real time operating systems is the study of hardware/software systems in which timing constraints must be met for correctness. Real time systems are embedded in applications ranging from the antilock brakes in cars to the flight control systems for jetliners. Students are first introduced to the concept of systems with real time constraints by examining case studies. The unified modeling languages (UML) with real time extension is introduced allowing students to capture the constraints present in the systems in a variety of models allowing the problem to be described at several levels of abstraction. Tasks and messages are introduced as programming structures which can satisfy the constraints described by the UML models. With a basic understanding of real time systems and how to implement them, the focus of the course shifts away from these technical concerns towards understanding the documentation of the requirements using the Volere Requirements Specification template. All the writing assignments in the class will revolve around Volere in one way or another. Increasingly complex case studies will give the class the opportunity to explore more sophisticated inter-task communications mechanisms as well as common pitfalls present in RTOS applications. Students will learn how to verify the correctness of their applications in order to guarantee that the real time constraints can be met when the system is deployed. Discussion will turn to application programmer interfaces used by hardware vendors to port hardware into a RTOS. The class will end by designing and building a complex RTOS by a team of students using the techniques learned in the class. The project will outline the needs of the RTOS application in a project proposal using the Volere template. The proposal will be developed iteratively with the faculty member until its scope and definition are clear. This proposal will be developed into a complete requirement specification including a time-line and identification of development benchmarks. This system resulting from the development will be documented in the final report write-up."
@@ -114,7 +120,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CMPSC221"
+          {
+            "oneOf": [
+              "CMPSC221",
+              "SWENG311"
+            ]
+          }
         ]
       },
       "description": "This course introduces the students to a contemporary computing paradigm called \"service-oriented computing.\" SWENG 465 Web Services (3) This course focuses on a new computing paradigm called \"service-oriented computing\", which has been greatly impacting a wide array of software systems. It covers \"service-oriented architecture.\" Students will not only gain an in-depth understanding of the concepts and technical issues underpinning Web services, but also gain hands-on experience of the development of software systems built upon Web services."

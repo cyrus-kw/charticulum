@@ -1,5 +1,6 @@
 import { earliestSatisfyingTerm, placementTerms, satisfies } from "./catalog";
 import { chartGpa, meetsGrade } from "./grades";
+import { closestOption, describeRequired, isRequiredMet, requiredOptions } from "./required";
 import {
   CATEGORY_NAMES,
   EXTERNAL_TERM,
@@ -19,6 +20,8 @@ export interface RequirementReport {
   creditsByCategory: Partial<Record<Category, number>>;
   // Credit rule id -> credits counted toward it.
   creditsByRule: Record<string, number>;
+  // Required objects not on the chart (for a choice, what its closest
+  // option still needs).
   missingRequired: string[];
   // Credits counted toward more than one category.
   sharedCredits: number;
@@ -27,11 +30,20 @@ export interface RequirementReport {
   issues: ChartIssue[];
 }
 
+// How a credit rule is written for people: its name, or else its area
+// ("Quantification"), or else its id.
+export function creditRuleName(rule: CreditRule): string {
+  return rule.name ?? (typeof rule.area === "string" ? rule.area : rule.id);
+}
+
 // Does a course count toward a credit rule? It has to fit every field
 // the rule gives (see CreditRule).
 export function matchesCreditRule(rule: CreditRule, object: CurriculumObject): boolean {
   if (rule.objectIds && !rule.objectIds.includes(object.id)) return false;
-  if (rule.genEdAreas && !(object.genEdArea && rule.genEdAreas.includes(object.genEdArea))) return false;
+  const list = (areas: string | string[]) => (typeof areas === "string" ? [areas] : areas);
+  const courseAreas = object.genEdAreas ?? [];
+  if (rule.area !== undefined && !list(rule.area).some((area) => courseAreas.includes(area))) return false;
+  if (rule.notArea !== undefined && list(rule.notArea).some((area) => courseAreas.includes(area))) return false;
   if (rule.subjects && !(object.code && rule.subjects.includes(object.code.subject))) return false;
   if (rule.minNumber !== undefined && !(object.code && object.code.number >= rule.minNumber)) return false;
   return true;
@@ -89,17 +101,45 @@ export function evaluateRequirements(
   }
 
   const placements = placementTerms(chart);
-  const missingRequired = requirements.requiredObjectIds.filter(
-    (id) => earliestSatisfyingTerm(catalog, placements, id) === undefined,
-  );
-  for (const id of missingRequired) {
-    issues.push({
-      code: "MISSING_REQUIRED_OBJECT",
-      // Named by its type: "Required course CS390…", "Required milestone…".
-      message: `Required ${catalog.get(id)?.type ?? "item"} ${id} is not in the chart.`,
-      summary: "Required, not on the plan",
-      objectId: id,
-    });
+  const isDone = (id: string) => earliestSatisfyingTerm(catalog, placements, id) !== undefined;
+  const missingRequired: string[] = [];
+  // Named by its type: "Required course CS390…", "Required milestone…".
+  const typeOf = (id: string) => catalog.get(id)?.type ?? "item";
+  for (const item of requirements.requiredObjectIds) {
+    if (isRequiredMet(item, isDone)) continue;
+    const option = closestOption(item, isDone);
+    const done = option.filter(isDone);
+    const missing = option.filter((id) => !isDone(id));
+    missingRequired.push(...missing);
+    if (done.length > 0) {
+      // Part of an option is there (MATH 231 of "MATH 231 & MATH 232"):
+      // name each missing part, with what it goes with.
+      for (const id of missing) {
+        issues.push({
+          code: "MISSING_REQUIRED_OBJECT",
+          message: `Required ${typeOf(id)} ${id} is not in the chart (it goes with ${done.join(" & ")}).`,
+          summary: `Required with ${done.join(" & ")}, not on the plan`,
+          objectId: id,
+        });
+      }
+    } else if (typeof item !== "string") {
+      // Nothing of a choice yet: one problem, about its first option, so
+      // "Add to plan" adds that one and "Waive" waives the whole choice.
+      const others = requiredOptions(item).slice(1);
+      issues.push({
+        code: "MISSING_REQUIRED_OBJECT",
+        message: `Required: ${describeRequired(item)}; none is in the chart.`,
+        summary: `Or ${describeRequired({ oneOf: others })}; none on the plan`,
+        objectId: option[0],
+      });
+    } else {
+      issues.push({
+        code: "MISSING_REQUIRED_OBJECT",
+        message: `Required ${typeOf(item)} ${item} is not in the chart.`,
+        summary: "Required, not on the plan",
+        objectId: item,
+      });
+    }
   }
 
   // Object.entries turns { major: 30 } into [["major", 30]]. The "as" tells
@@ -121,23 +161,36 @@ export function evaluateRequirements(
 
   // Credit rules. A graded course under the rule's minimum grade doesn't
   // count; one not graded yet is planned, so it counts for now.
+  const counts = (rule: CreditRule, object: CurriculumObject) => {
+    if (!matchesCreditRule(rule, object)) return false;
+    const grade = chart.grades?.[object.id];
+    return !(rule.minGrade && grade && !meetsGrade(grade, rule.minGrade));
+  };
   const creditsByRule: Record<string, number> = {};
-  for (const rule of requirements.creditRules ?? []) {
-    let earned = 0;
+  for (const group of requirements.creditRules ?? []) {
+    for (const rule of group.rules) creditsByRule[rule.id] = 0;
     for (const object of countedObjects) {
-      if (!matchesCreditRule(rule, object)) continue;
-      const grade = chart.grades?.[object.id];
-      if (rule.minGrade && grade && !meetsGrade(grade, rule.minGrade)) continue;
-      earned += object.credits;
+      const fits = group.rules.filter((rule) => counts(rule, object));
+      if (fits.length === 0) continue;
+      if (group.eachCourseOnce) {
+        // The first rule that still needs credits; when every one it fits
+        // is full, the first it fits (where it shows as extra).
+        const rule = fits.find((r) => creditsByRule[r.id] < r.credits) ?? fits[0];
+        creditsByRule[rule.id] += object.credits;
+      } else {
+        for (const rule of fits) creditsByRule[rule.id] += object.credits;
+      }
     }
-    creditsByRule[rule.id] = earned;
-    if (earned < rule.credits) {
-      issues.push({
-        code: "CREDIT_RULE_SHORTFALL",
-        message: `${rule.name} has ${earned} credits; ${rule.credits} are required.`,
-        requirement: rule.name,
-        summary: moreCredits(rule.credits - earned),
-      });
+    for (const rule of group.rules) {
+      const earned = creditsByRule[rule.id];
+      if (earned < rule.credits) {
+        issues.push({
+          code: "CREDIT_RULE_SHORTFALL",
+          message: `${creditRuleName(rule)} has ${earned} credits; ${rule.credits} are required.`,
+          requirement: creditRuleName(rule),
+          summary: moreCredits(rule.credits - earned),
+        });
+      }
     }
   }
 

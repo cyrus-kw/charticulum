@@ -51,7 +51,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This seminar will introduce students to the study of Russian literature, film and culture in their first year at Penn State. Students will read significant texts (in English), view videos (with subtitles), listen to music and explore Russian thought and culture in general. These experiences will help prepare students for additional courses in literature and in Russian as well as provide a point of comparison with U.S. culture. In addition to the academic topic explored in this course, students can expect to gain a general introduction to the University as an academic community and have the opportunity to explore their responsibilities as members of that community. Students will develop an understanding of the learning tools and resources available to them including the opportunity to develop relationships with faculty and other students who share their academic interests."
     },
     {
@@ -69,7 +71,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This course acquaints students with the general contours of Russian culture and civilization, tracing its evolution from ancient origins to the recent past. It explores the development of the Russian state, as well as Russian language, literature, folklore, religion, music, art, and film. While the primary focus is on culture, key historical contexts are integrated throughout to provide a deeper understanding and interpretation of Russia's cultural legacy. The course also features selected readings from some of the most renowned works of Russian literature. No prior knowledge of Russian is required, as all lectures, discussions, and readings are conducted in English."
     },
     {
@@ -81,7 +85,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Arts",
+      "genEdAreas": [
+        "Arts",
+        "Humanities",
+        "Inter-Domain"
+      ],
       "description": "This course surveys filmmaking in pre-Revolutionary, Soviet, and post-communist Russia as well as other regions of the USSR from the avant-garde era to the years following the Soviet Union's collapse. It highlights major works by renowned directors such as Dziga Vertov, Sergei Eisenstein, Grigori Aleksandrov, Mikhail Kalatozov, Sergei Parajanov, Andrei Tarkovsky, and others mapping cinematic developments onto key historical events and cultural trends. Special attention is given to the portrayal of ethnic minorities and cultural \"others\" in Soviet and modern Russian cinema. The course also serves as an introduction to film analysis and criticism. It is taught entirely in English, and no prior knowledge of Russian history, culture, or film is required."
     },
     {
@@ -108,7 +116,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "This course, which is cross-listed between Russian and German, aims to acquaint students with an important and troubling chapter of 20th-century culture. The regimes of Stalin and Hitler have had a decisive impact not only on life in Russia and Germany, but in much of Europe and the world at large. Espousing a comparative perspective, the course explores the culture produced by Stalinist Russia and Nazi Germany, considering both the culture of daily life and selected works of \"high culture,\" including literature, the visual arts, architecture, music, and film. A knowledge of Russian or German is not required, as class lectures and discussions as well as all reading assignments are in English."
     },
     {
@@ -119,7 +129,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "Russia, even today, is more accurately described as an empire than a nation, encompassing over 170 ethnic, racial, linguistic, and religious groups. For most of the past two centuries, this empire was even larger and more diverse. During the early Soviet era, this diversity was celebrated as part of the \"friendship of peoples\" in the Communist state. However, this policy was later reversed, leading to the suppression of many literary works that provide invaluable insights into the lives of these diverse peoples. This course examines key works by authors from ethnic minorities within modern Russia, as well as writers from former Soviet and Russian colonies. No prior knowledge of Russian culture or history is required, and the course is taught in English."
     },
     {
@@ -130,7 +142,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Humanities",
+      "genEdAreas": [
+        "Humanities"
+      ],
       "description": "The 1991 collapse of the Soviet Union led Russia toward political, economic, and cultural liberalization. However, post-Soviet Russia evolved into an authoritarian state defined by crony capitalism and historical revanchism, culminating in its 2022 invasion of Ukraine. Why did Russia's transition fail, and how did Vladimir Putin's regime rise and endure? This course explores these questions through creative and analytical works by writers, filmmakers, journalists, and activists in Putin's Russia. No prior knowledge of Russian culture or history is required; the course is taught in English."
     },
     {
@@ -281,8 +295,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "RUS401",
-          "RUS402"
+          {
+            "oneOf": [
+              [
+                "RUS401",
+                "RUS402"
+              ],
+              "RUS403"
+            ]
+          }
         ]
       },
       "description": "In-depth study of selected grammar topics pertaining to the phonology, morphology, and syntax of Modern Standard Russian with glimpses into the history of the Russian language. The course aims to both enhance students' understanding of linguistic structures in general and at improving their proficiency in Russian."

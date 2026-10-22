@@ -27,7 +27,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EMCH211"
+          {
+            "oneOf": [
+              "EMCH211",
+              "ET300",
+              "MET111"
+            ]
+          }
         ]
       },
       "description": "Motion of a particle, relative motion; kinetics of translation; rotation and plane motion; conservation of energy and momentum. ET 321 Dynamics (3)The students will be introduced to the fundamental concepts of dynamics for particles motion along straight and curved paths. The students will learn and utilize concepts in particle kinematics and study the relationship between the forces acting on a body, the mass of the body and the motion of the body by using Newton's second law of motion, the principle of work and energy and the principle of linear momentum and impulse. This will be followed by analyzing the rotation of a rigid body about a fixed axis, and extending kinematic concepts to plane motion of rigid bodies.The concepts of work, energy, linear momentum and angular momentum of a rigid body in plane motion will be introduced. The students will learn how to apply the principle of impulse/momentum to solve rigid-body planar kinetic problems that involve force, mass, velocity and time, and the principle of work/energy to solve problems that involve force, mass, velocity and displacement.Dynamics course will also provide students with the tools to obtain desired information from those models by solving the equations governing the motion of the system. Topics covered in Dynamics include: kinematics of particles, application of Newton's laws to particles, energy and momentum methods for particles, kinematics of rigid bodies, application of the laws of Newton and Euler to rigid bodies, and energy and momentum methods for rigid bodies."

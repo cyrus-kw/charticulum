@@ -2,6 +2,7 @@ import { isOffered } from "./availability";
 import { earliestSatisfyingTerm, placementTerms, satisfies } from "./catalog";
 import { isBackedByExternal } from "./equivalents";
 import { meetsGrade } from "./grades";
+import { closestOption, describeRequired, isRequiredMet } from "./required";
 import { EXTERNAL_TERM, type Catalog, type Chart, type ChartIssue } from "./types";
 
 // Check a chart against the object-attribute rules and return every
@@ -60,30 +61,41 @@ export function validateChart(catalog: Catalog, chart: Chart): ChartIssue[] {
         });
       }
 
-      for (const requisiteId of object.requisites.previous) {
-        const doneIn = earliestSatisfyingTerm(catalog, placements, requisiteId);
-        if (doneIn === undefined || doneIn >= term.index) {
-          issues.push({
-            code: "PREVIOUS_REQUISITE_NOT_MET",
-            message: `${id} needs ${requisiteId} completed in an earlier term.`,
-            objectId: id,
-            termIndex: term.index,
-            requisiteId,
-          });
-        }
-      }
-
-      for (const requisiteId of object.requisites.concurrent) {
-        const doneIn = earliestSatisfyingTerm(catalog, placements, requisiteId);
-        if (doneIn === undefined || doneIn > term.index) {
-          issues.push({
-            code: "CONCURRENT_REQUISITE_NOT_MET",
-            message: `${id} needs ${requisiteId} in the same term or earlier.`,
-            objectId: id,
-            termIndex: term.index,
-            requisiteId,
-          });
-        }
+      // Requisites: each must be met by the time this term starts (previous)
+      // or by the end of it (concurrent). For a choice, one option is enough.
+      const needs = [
+        ...object.requisites.previous.map((item) => ({ item, concurrent: false })),
+        ...object.requisites.concurrent.map((item) => ({ item, concurrent: true })),
+      ];
+      for (const { item, concurrent } of needs) {
+        const doneIn = (req: string) => earliestSatisfyingTerm(catalog, placements, req);
+        const inTime = (req: string) => {
+          const at = doneIn(req);
+          return at !== undefined && (concurrent ? at <= term.index : at < term.index);
+        };
+        if (isRequiredMet(item, inTime)) continue;
+        // The one to name and waive: in the option the plan has the most
+        // of, the first course that isn't there in time.
+        const option = closestOption(item, (req) => doneIn(req) !== undefined);
+        const requisiteId = option.find((req) => !inTime(req)) ?? option[0];
+        const what = typeof item === "string" ? item : describeRequired(item);
+        issues.push(
+          concurrent
+            ? {
+                code: "CONCURRENT_REQUISITE_NOT_MET",
+                message: `${id} needs ${what} in the same term or earlier.`,
+                objectId: id,
+                termIndex: term.index,
+                requisiteId,
+              }
+            : {
+                code: "PREVIOUS_REQUISITE_NOT_MET",
+                message: `${id} needs ${what} completed in an earlier term.`,
+                objectId: id,
+                termIndex: term.index,
+                requisiteId,
+              },
+        );
       }
 
       // An F is a problem on the course itself, like a grade under a

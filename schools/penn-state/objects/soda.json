@@ -10,7 +10,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Quantification",
+      "genEdAreas": [
+        "Quantification",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "description": "SoDA 110N introduces students to the landscape of artificial intelligence (AI) and digital technology through the lens of human-generated data and societal applications. Emphasizing how data is produced and structured before it is ever used in algorithmic systems, the course examines the pipeline from raw human-generated data to AI implementation. Through real-world case studies and hands-on exercises, students develop foundational literacy in data systems and analytics processes, while critically exploring the social, political, and ethical implications of AI. Designed for students from diverse disciplines, the course requires no prior programming experience and fulfills General Education requirements."
     },
     {
@@ -34,7 +38,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "SODA110N"
+          {
+            "oneOf": [
+              "SODA110N",
+              "A-I100"
+            ]
+          }
         ]
       },
       "description": "This course offers advanced, applied training in the use and understanding of artificial intelligence technologies and their applications to large-scale, human-generated information. Students gain hands-on experience with tools such as open-source generative models, APIs, and agentic systems, learning how these systems function and how to integrate them into research and communication workflows. Alongside technical learning, the course emphasizes critical evaluation of AI applications, ethical risks, and broader consequences for social institutions and human well-being. This integrated approach prepares students to be both capable expert users and thoughtful evaluators of AI."

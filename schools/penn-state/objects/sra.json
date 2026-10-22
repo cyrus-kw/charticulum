@@ -16,7 +16,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "Introduction to Security and Risk Analysis is a preliminary course with a broad focus, spanning the areas of security, risk and analysis. In addition to familiarizing the student with basic technical terminology, it will also touch upon social and legal issues, risk analysis and mitigation, crime intelligence and forensics, and information warfare and assurance.This course will motivate students to understand the requirements for security in any government agency or business organization through the use of case studies. Included in this segment are cases related to cyberterrorism, bioterrorism, and critical infrastructure protection. Some concepts to be covered in the area of information security are: confidentiality, integrity, availability, and non-repudiation. Various methods of safe guarding these security concerns will be discussed, such as: single- and multi-factor authentication, encryption, digital signatures, prevention of denial of service attacks, and so forth. This course also covers the principles and the approaches to risk analysis. Here students study vulnerability analysis, crime and intelligence analysis, forensics, techniques for risk assessment and risk mitigation."
     },
     {
@@ -47,7 +49,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "SRA211",
+          {
+            "oneOf": [
+              "SRA211",
+              "IEC200"
+            ]
+          },
           "STAT200"
         ]
       },
@@ -125,10 +132,16 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ],
         "minGrades": {
-          "STAT200": "C"
+          "STAT200": "C",
+          "SCM200": "C"
         }
       },
       "description": "Theoretical foundations and practice of intermediate statistics. SRA 365 Statistics for Security and Risk Analysis (3) SRA 365 is an intermediate-level statistics course emphasizing how to summarize data using descriptive statistics, how to make data-driven decisions using inferential statistics, and how to critically evaluate data presented in the media, all within the context of security, risk, and analysis. This is both a theory and application course. Students will learn about statistical theories, such as regression, and chi-square analyses, and apply their knowledge of these theories by analyzing and interpreting data using a statistical software package."
@@ -184,7 +197,12 @@
       "requisites": {
         "previous": [
           "SRA311",
-          "ENGL202C"
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202D"
+            ]
+          }
         ]
       },
       "description": "This course is designed to provide IST students enrolled in their last year of study in the SRA major to experience a semester-long security and risk analysis scenario or problem-solving exercise by providing realistic analytic dilemmas requiring solutions that incorporate facets of the three SRA Options. The problems selected for the Capstone should lend themselves to team collaboration and group solutions."

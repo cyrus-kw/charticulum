@@ -49,6 +49,24 @@ export function Panel({
   );
 }
 
+// A group's heading inside a Panel (Issues' "On the chart", Requirements'
+// "General Education"), in the same grey text as the Plan box's labels
+// (School, Program, ...), so it reads as quieter than the panel's title
+// above it, with a thin line running from it to the right side, so the
+// groups read as separate sections. `end` goes after the line, at the
+// right edge (Requirements puts a group's credit count there). It's in a
+// 20px row (h-5), so a first group's heading is centered on the line
+// under the undo/redo row in the Plan column (see Panel's `toolbar`).
+export function GroupHeading({ children, end }: { children: string; end?: ReactNode }) {
+  return (
+    <h3 className="mb-1.5 flex h-5 items-center gap-2 text-sm font-normal text-zinc-500">
+      {children}
+      <span className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" aria-hidden />
+      {end}
+    </h3>
+  );
+}
+
 // "destructive" is the solid rose twin of "primary", for the main button
 // of a question about deleting something (in ConfirmDialog).
 type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "destructive";

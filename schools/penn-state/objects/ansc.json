@@ -16,7 +16,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This course will introduce students to the breadth and scope of animal agriculture in North America with emphasis on food producing animals. Additionally, fiber producing animals, pets, pleasure animals, and alternative livestock will also be studied. Students will be exposed to biological concepts and their relationship to contemporary production systems, economics, terminology and industry issues to enhance understanding of and appreciation for various uses of animals in North America. The course is available in a web-based format with extensive use of video tours of animal housing facilities, expert interviews, and explanations of the biology behind common production and food safety practices."
     },
     {
@@ -27,7 +29,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "description": "This web based course provides students with basic knowledge about equine science and its application to the industry to prepare them to be more effective communicators with industry personnel. Inductive and deductive reasoning are introduced as a part of the scientific method and its application in critically evaluating products and concepts important to equine science and the industry. Equine science topics include basics of equine evolution, genetics and breeds, anatomy, physiology, reproduction, and nutrition. While these topics focus on the horse as a target, each topic also allows for comparisons to other mammalian species. Equine industry topics include history of use, disciplines, organization of the industry, components and careers; and prepare students to proceed into further studies in equine science. The course features presentations and interaction with industry professionals and instructors of higher level equine science courses at Penn State. In addition to the academic topics addressed, the course introduces students to using the university course management system, and the utilization of web based communication tools as individuals and as a team."
     },
     {
@@ -126,7 +130,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "CHEM110",
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM101",
+              "CHEM130"
+            ]
+          },
           "BIOL110"
         ]
       },
@@ -140,7 +150,9 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Social and Behavioral Sciences",
+      "genEdAreas": [
+        "Social and Behavioral Sciences"
+      ],
       "description": "ANSC 215 Pets in Society (3) (GS)Companion animals have far-reaching influence on many aspects of human society. How humans relate to pets varies from individual to individual and is influenced by many factors. The field of human-animal interactions is quickly evolving and is supported by a variety of disciplines and empirical research. This course provides a broad introduction to the varied roles and influences of pets on human life and society. Topics of discussion include the historical, social, economic, scientific, and legal roles of pets in American society. The influence of companion animals on human development and mental health throughout the lifespan and in the case of disability is examined from a social science perspective. Genetics, breed, physical, and environmental influences play obvious and important roles in the development of canine and feline behavior and are used as examples of the multiple causes of behavioral development and expression. Learning theory and operant conditioning are discussed as they relate to dog and cat training. Newly discovered risks and benefits of animal ownership on human health are discussed, including the influence of pet ownership on cardiovascular disease and allergy development. Issues of responsible pet selection and ownership are discussed in relation to animal welfare and societal responsibility. Because of the emerging nature of human-animal interaction research, an important goal of the course is to instruct students on the scientific method and recognition of research methodologies. Critical evaluation of theoretical models and empirical research in class and small group discussions is used to show how these questions can be addressed scientifically. Throughout the course, students have the opportunity to gather information from various sources and make informed decisions on controversial topics and to understand the impact of individual actions and decisions on broader society."
     },
     {
@@ -290,7 +302,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB106"
+          {
+            "oneOf": [
+              "MICRB106",
+              "MICRB201"
+            ]
+          }
         ]
       },
       "description": "Introduction to the principles of small animal health, including the recogniti recognition, prevention and control of common small animal diseases. ANSC 315 Small Animal Health and Disease (3) Small animals play increasingly important roles in human lives. In addition to their function as pets, they serve the disabled; protect human well-being through the police, military and border inspection services; and act as research subjects for the development of medical and technological advances. Control of disease and promotion of animal health is important in all small animal industries and uses.This course is designed to provide a basic background in the principles of health in small animal species (primarily dogs and cats). Emphasis will be on the maintenance of a healthy animal system, including the recognition, prevention and control of the most common small animal diseases.Because of the increasing among of information available to all people through the internet and media, students will be given tools to understand basic medical terminology and will practice reading and interpreting scientific research. In addition, the importance of animal disease on public health will be addressed.Diagnosis and treatment of disease will only be covered in a general, illustrative fashion. This course is not intended to train students in the diagnosis and treatment of specific diseases, but rather to recognize the conditions and factors which encourage disease, but rather to recognize the conditions and factors which encourage disease spread and to understand how to control and rectify those situations.Because of the varied situations in which small animals function, a primary objective will be to be able to apply the principles of animal health and disease prevention to varied facets of the small animal industry (e.g. private ownership, veterinary medicine, shelter work and management, service animal breeding/training, biomedical and nutritional research).This course is designed for students planning to work in or having a special interest in the small animal industry, including veterinary medicine, the pet food and pet products industry, the working dog industry, live animal sales, pharmaceutical sales, and research."
@@ -314,7 +331,15 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              [
+                "BIOL11",
+                "BIOL12"
+              ]
+            ]
+          }
         ]
       },
       "description": "Fundamental principles of genetics as applied to breeding farm animals. ANSC 322 Animal Genetics and Selection (3) This course teaches fundamental concepts related to genetic variation and how genetic change occurs in domestic animal populations. Students are introduced to the structure of animal genomes and molecular genetics. We discuss transcription, translation and factors that alter gene expression. Examples of mutations that underlie phenotypic variation are given and the contrast between traits influenced by single genes versus variation across the genome is emphasized. Students will learn how genetic material is passed from parent to offspring and how principles of inheritance are extended to populations. The concept of heritability for quantitative traits and factors that determine breeding values and the rate of genetic change for quantitative traits are considered. We discuss how biotechnologies can be used to alter genetic response in domestic animals, how genetic change for one trait can alter expression of correlated traits, and the animal welfare consequences that can arise due to genetic change. Genetic relationships among animals and inbreeding control strategies such as crossbreeding are considered. Students are also exposed to controversial issues relating to genetics and selection. Students participate in a breeding simulation and contrast population genetic change throughout semester to changes observed by their classmates."
@@ -367,7 +392,11 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences",
+        "Social and Behavioral Sciences",
+        "Inter-Domain"
+      ],
       "internalEquivalents": [
         "GEOG332N",
         "METEO332N"
@@ -474,7 +503,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ANSC322"
+          {
+            "oneOf": [
+              "ANSC322",
+              "BIOL222"
+            ]
+          }
         ]
       },
       "description": "The fundamental concepts, relevant technologies, and applications of genetically engineered animals, with an emphasis on livestock and poultry species, are discussed in the class. Topics will include the history and progression of the animal genetic engineering field, the development and applications of genome editing technologies (e.g., CRISPR/Cas), and discussions about the regulations and ethics of genetically engineered animals. Upon completion of this course, students will be able to: (1) Provide an overview of how the developments in the basic sciences such as Molecular biology, Cell biology, Developmental biology, and Genomics are being applied to generate Transgenic animals; (2) Discuss the history and current state of animal genetic engineering; (3) Design a transgenic animal using gene-editing technologies; (4) Skillfully elaborate on ethical and regulatory considerations regarding genetically engineered animals. Assessments include in-class quizzes, take-home exams, group presentations, and class participation. There is a greater emphasis on finding and interpreting information from available resources than on memorization of materials."
@@ -501,8 +535,17 @@
       ],
       "requisites": {
         "previous": [
-          "BIOL11",
-          "BIOL12"
+          {
+            "oneOf": [
+              [
+                "BIOL11",
+                "BIOL12"
+              ],
+              "BIOL110",
+              "BIOL127",
+              "BISC3"
+            ]
+          }
         ]
       },
       "description": "AGECO 418 / ANSC 418 / SOILS 418 Nutrient Management in Agricultural Systems is a senior-level course that applies the fundamentals of animal, plant and soil sciences to the issues and solutions in the area where livestock production intersects with water and air quality. Modern regionalization and concentration of animal production systems comes with environmental implications due to a net influx of nutrients to livestock farms. While some nutrients leave the farm in the form of animal products, 60 to 70% of the nutrients are excreted and applied to nearby crop land. If not properly managed these nutrients represent a risk to environmental quality. Students in this cross-listed course gain both scientific and practical understanding of sound nutrient management principals and strategies. The course considers big picture concepts such as nutrient cycling as well as farm-level implementations such as Nutrient Management Planning."
@@ -547,7 +590,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "ANSC322"
+          {
+            "oneOf": [
+              "ANSC322",
+              "BIOL222"
+            ]
+          }
         ]
       },
       "description": "The course will focus on understanding the role of records and available information in designing breeding programs. Students will gain an understanding of breeds, conformation and genetic evaluation methods throughout the world. Topics will include type appraisal and linear classification, reading information sources such as sire summaries and pedigrees, and evaluating and integrating data to make herd breeding program decisions and merchandising selections. Industry breeding programs and current issues will be emphasized. A major focus throughout the course will be information management to make informed breeding decisions to maximize genetic progress and herd improvement."
@@ -586,8 +634,18 @@
       ],
       "requisites": {
         "previous": [
-          "MICRB106",
-          "MICRB107"
+          {
+            "oneOf": [
+              [
+                "MICRB106",
+                "MICRB107"
+              ],
+              [
+                "MICRB201",
+                "MICRB202"
+              ]
+            ]
+          }
         ],
         "concurrent": [
           "ANSC311"
@@ -602,7 +660,14 @@
       "credits": 2,
       "requisites": {
         "previous": [
-          "ANSC225"
+          {
+            "oneOf": [
+              "ANSC225",
+              "ANSC217",
+              "ANSC421",
+              "ANSC424"
+            ]
+          }
         ]
       },
       "description": "ANSC 426 provides students with critical thinking and communication skills through evaluation and selection of animals. This course provides intensive training in evaluation and selection of dairy, poultry, horses or meat animal livestock using subjective and objective measurements as well as the use of oral reasons to explain and defend decisions. Enrolled students may compete against students from other colleges and universities at regional and national contests."
@@ -651,7 +716,12 @@
       "credits": 1,
       "requisites": {
         "previous": [
-          "ANSC309"
+          {
+            "oneOf": [
+              "ANSC309",
+              "ANSC310"
+            ]
+          }
         ]
       },
       "description": "Demonstration and practice in cattle artifical insemination technique and semen handling. Instruction in reproductive systems anatomy, estrous cycle and estrus synchronization programs. ANSC 432 Techniques in Cattle Reproduction (1) This course provides instruction in the technique of artificial insemination and the associated applications of this technology. A minimum level of expertise in this technique will be achieved through an understanding of cattle reproductive system anatomy, the estrus cycle and estrus synchronization programs. There will be a significant amount of time spent practicing artificial insemination technique in cows. This will be accompanied by instruction in semen handling and the proper use of the equipment used to store semen and to inseminate a cow. Evaluation will be based on proficiency in artificial insemination technique and semen handling in addition to a written exam. This course is offered during the fall semester by appointment."
@@ -676,10 +746,18 @@
       "categories": [
         "general-education"
       ],
-      "genEdArea": "Natural Sciences",
+      "genEdAreas": [
+        "Natural Sciences"
+      ],
       "requisites": {
         "previous": [
-          "BIOL110"
+          {
+            "oneOf": [
+              "BIOL110",
+              "ANSC201",
+              "ANSC327"
+            ]
+          }
         ]
       },
       "description": "ANSC 447 , Equine Exercise Physiology, is a 3 credit junior/senior-level course for students interested in the basic and applied aspects of exercise physiology of the horse. The course begins with discussion on the history of equine sport. Students then explore the biochemistry and energetics of exercise followed by the anatomy and physiology that make the horse a unique mammalian athlete. The course then moves to the more applied aspects of exercise and training responses and training regimes specific for different disciplines. Finally, student will explore important management practices associated with the care of the equine athlete. Upon completion of this course students should be able to: 1. Apply an understanding of form and function of the horse to the diverse and unique athletic capabilities of the horse. 2. Discuss physiologic responses of the muscular, skeletal, respiratory, and cardiovascular systems of the horse to various exercise and training regimes. 3. Prepare and/or evaluate appropriate training regimes for horses preparing for different disciplines. An important component of this will be the ability to use knowledge of the basic science to improve application. 4. Design and describe physical therapy strategies for horse recovering from exercise or training related injuries. 5. Communicate to clients, customers and peers important information about exercise physiology, training, and exercise related issues, enabling them to improve the health and performance of their horse"
@@ -720,7 +798,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MICRB106"
+          {
+            "oneOf": [
+              "MICRB106",
+              "MICRB201"
+            ]
+          }
         ]
       },
       "description": "This course will be focused on three main aspects of the application of 'Omics' techniques in research to answer real-world problems. Students will be introduced to the concepts of multiple 'Omics' techniques, study designs, and data analysis methods. The roles played by the microbiome in different species will be discussed. Those concepts will then be put into practice through appraisal of primary literature. By the end of the semester, students will be able to apply the concepts learned to discuss scientific literature and be familiar with data analysis techniques."

@@ -11,8 +11,18 @@
           "MATH141"
         ],
         "concurrent": [
-          "STAT414",
-          "MATH230"
+          {
+            "oneOf": [
+              "STAT414",
+              "MATH414"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
         ],
         "minGrades": {
           "MATH141": "C"
@@ -48,9 +58,24 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BA301",
-          "MATH140",
-          "STAT200"
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Introduction to decision-making under uncertainty. Mathematical probability and statistics, decision theory and game theory will be studied. R M 301 Risk and Decisions (3) Most tough business decisions involve risk. Smark risk-taking requires special analytical problem solving skills and careful consideration of the relevant data. In this course, you will learn how to conceptualize decisions involving risk, how to analyze your choices, how to estimate the risk, and how to communicate and defend your analysis to others. The skills and tools you will learn come from economics, probability, statistics, and game theory. The focus will be on how the tools from these fields are applied to real world business decisions in risky environments. The concept of risk diversification will be discussed under both independent and correlated risks. Decision rules such as expected value maximization and expected utility maximization will be covered. The role of risk aversion of the decision-making process will be discussed along with how it can be measured. The study of decision analysis will include the use of decision tress. The basic concepts in game theory will be introduced. Students will learn what a Nash equilibrium is and how to derive such an equilibrium. More complicated games with incomplete information will be introduced which are important in decision-making where parties often are missing key pieces of information but must still choose a business strategy. Problems of asymmetric information will be studied; these situations arise when one party to a transaction or contract has more information relevant to the decision than the other party. For these types of problems, such as adverse selection and moral hazard, optimal solutions will be discussed."
@@ -78,8 +103,18 @@
       "requisites": {
         "previous": [
           "FIN301",
-          "MATH140",
-          "STAT200"
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "Goals and methods of risk management. Commercial insurance and alternative risk transfer (ART) methods in addition to the characteristics of insurance markets and intermediaries used by risk managers. This course covers the risk management process used by organizations to deal with the risks that they face with an emphasis on the types of risk commonly handled through the commercial insurance market. It addresses the costs and benefits of risk management, the goals of the process and the methods available to handle risks. The methods covered include both traditional and nontraditional ones including retention, commercial insurance, captive insurers, loss sensitive contracts, finite risk plans and securitization. The characteristics of the insurance markets and intermediaries used by risk managers are studied. These include insurance company organizational forms, operational structures, measures of performance, regulation and the role of brokers. The risks to organizations that are addressed include risks to employees, risks to customers, risks to shareholders and risks to third parties. The types of insurance covered include workers compensation, employment practices liability, products liability, general liability, directors and officers liability and environmental impairment liability. In addition, the failure of risk management during the recent financial crisis is analyzed. The course ends with a case study of risk management at Penn State University to give students a detailed perspective of the risk management program of a complex organization and to provide insight into how changes in the market environment can significantly affect such a program."
@@ -113,7 +148,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "RM302"
+          {
+            "oneOf": [
+              "RM302",
+              "RM320W"
+            ]
+          }
         ]
       },
       "description": "Analysis of pension regulation, funding, vesting, retirement annuities under insured and self-insured plans, actuarial cost analysis, plan termination insurance."
@@ -125,7 +165,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "RM302"
+          {
+            "oneOf": [
+              "RM302",
+              "RM320W"
+            ]
+          }
         ]
       },
       "description": "Risk management for firms and organizations; loss control, risk transfer, and loss financing alternatives; Corporate employee benefit program design and financing."
@@ -165,11 +210,17 @@
       "requisites": {
         "previous": [
           "RM410",
-          "STAT414"
+          {
+            "oneOf": [
+              "STAT414",
+              "MATH414"
+            ]
+          }
         ],
         "minGrades": {
           "RM410": "C",
-          "STAT414": "C"
+          "STAT414": "C",
+          "MATH414": "C"
         }
       },
       "description": "A study of the mathematical theory of life contingencies, single-life functions, and their applications. The course provides a solid understanding of the mathematics of life insurance and annuities, and helps actuarial students prepare for the long-term part of the Fundamentals of Actuarial Mathematics (FAM) actuarial exam. Students will gain an understanding of key concepts for selling insurance to various constituents, which includes among other things pricing based on a person's age and gender. Additional topics covered in the course include: 1) Key features of long-term insurance coverages, 2) Key concepts concerning survival models for individual lives, 3) Calculations on the present value random variables associated with long-term insurance benefits and expenses, 4) The premium and policy value calculation process, and 5) Pricing simple financial options under the binomial and Black-Scholes models."
@@ -227,11 +278,17 @@
       "requisites": {
         "previous": [
           "RM410",
-          "STAT415"
+          {
+            "oneOf": [
+              "STAT415",
+              "MATH415"
+            ]
+          }
         ],
         "minGrades": {
           "RM410": "C",
-          "STAT415": "C"
+          "STAT415": "C",
+          "MATH415": "C"
         }
       },
       "description": "RM 421 provides a solid understanding of actuarial methods and concepts used to develop loss models for property and casualty insurance and health insurance. The course makes use of real world numerical examples in order to demonstrate how actuaries use historical claims and pricing data, both company specific and industry, to determine rates and increases. Topics covered include: 1) Understand the key features of insurance and reinsurance coverages, 2) Understand the characteristics of severity, frequency and aggregate models, 3) Understand the concepts and applications of credibility theory, 4) Apply basic methods for calculation of premiums and reserves for short term insurance coverages. The course helps actuarial students to prepare for the international Fundamentals of Actuarial Mathematics (FAM) exam."
@@ -258,7 +315,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "BLAW341"
+          {
+            "oneOf": [
+              "BLAW341",
+              "BLAW243"
+            ]
+          }
         ]
       },
       "description": "Analyze contemporary law applicable to various types of ownership interests and rights, methods of transferring ownership, and use of real property. B LAW 424 B LAW (R M) 424 Real Estate Law (3) Analysis of contemporary law applicable to various types of ownership interests and rights, methods of transferring ownership, and use of real property. The objectives for this course are: (1) to provide students with an understanding of essential U.S. real estate property law, including the rights private property owners may obtain, how ownership and transfer are handled in view of present and future interests, constitutional issues that impact real estate ownership, and the legal aspects of modern real estate contractual transactions; (2) to teach students the ability to spot the legal issues arising from the above as future business leaders and (3) to introduce students to the legal reasoning process necessary to address and avoid the legal dilemmas presented by such issues. Instructional methods for the course will include detailed lectures and classroom discussion of readings and other materials. Student progress and mastery of the material will be evaluated through periodic examinations."
@@ -282,7 +344,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "RM302"
+          {
+            "oneOf": [
+              "RM302",
+              "RM320W"
+            ]
+          }
         ]
       },
       "description": "Industrial organization of the US life-health insurance industry; economic issues related to organizational structure, operational functions, and the supply and demand for life-health products."
@@ -307,7 +374,14 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "RM302"
+          {
+            "oneOf": [
+              "RM302",
+              "RM303",
+              "RM320W",
+              "RM330W"
+            ]
+          }
         ]
       },
       "description": "One of the key ways that a business attempts to manage risk it anticipates and confronts in markets is through organizational-level elements such as its business strategy, structure, and culture. These elements emerge from a series of decisions guided by the insights and biases of individuals. As such, the management of enterprise risk must also include an understanding of how individuals (e.g. managers) approach risk through their decisions and decision making processes. In this course, we look at some of these critical elements separately and then together as they integrate to guide and define enterprise risk management. The basic course objectives are to come away with an understanding of the following: Forms of strategic risk - From market to internally-driven risk; from emotional to economic-driven, how does strategic risk present itself? How do executives recognize/assess and respond to the \"portfolio of risk\" that they must address to make the business successful? Business strategy and structure - One way risk is addressed and articulated is through a business strategy. What is strategy? What are the key decisions that comprise a business strategy? How are organizations structured to implement these strategies and move information across the firm? Where and how is risk assessed in these processes and structures, and incorporated into a strategic risk plan? Decision making - Decision making around strategy and risk management plays out in various forms and across different levels (i.e., individuals and groups). What goes right and wrong? How are these processes systematically linked to perceptions and actions associated with risk management. Organizational culture - Perhaps one of the most critical elements in enterprise risk management is the role played by organizational culture (or simply \"How we do things around here and my role as an organizational member doing it.\") We examine the roots of organizational culture and how it is aligned to perspectives of risk and its management. Descriptive vs. prescriptive perspectives - Once we \"described\" what does/could go on, we need to engage in looking at ways that organizations can prevent pitfalls and correct suboptimal practices."
@@ -319,7 +393,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "RM303"
+          {
+            "oneOf": [
+              "RM303",
+              "RM330W"
+            ]
+          }
         ]
       },
       "description": "Historical performance, land use issues, market valuation, real estate development, public policy issues."
@@ -331,7 +410,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FIN305W"
+          {
+            "oneOf": [
+              "FIN305W",
+              "RM303",
+              "RM330W"
+            ]
+          }
         ]
       },
       "description": "Debt and equity financing, capital structure, \"creative financing,\" risk analysis, corporate asset management. FIN (R M) 460 Real Estate Financial Analysis (3) The objective of this course is to provide in-depth coverage of real estate investment and financing decisions. The focus is on the private market, including corporate asset management. Investment analysis moves from the basics of forecasting cash flows, through advanced topics including the impact of real option value on investment and development decisions. Risk measurement is given particular attention with a focus on sensitivity and simulation analysis. There is some coverage of asset pricing models like the Capital Asset Pricing Model, which is critically analyzed with respect to its applicability in real estate markets. The impact of illiquidity, management costs, and the suspicion of non-normally distributed returns are explored, as are the implications of relative market inefficiency. The financing module begins with the basics of mortgage debt mathematics, which is then extended to include comparisons of various repayment programs. Included are interest-only, balloon, shared appreciation, growing equity, graduated payment and reverse annuity loans, as well as various creative financing of commercial properties.The latter include participating mortgages, convertible mortgages, and mezzanine debt. Featured in the corporate asset management section is the lease/buy decision. Other topics may be addresses based on current events. It is anticipated that guest speakers will be invited where appropriate."
@@ -343,7 +428,13 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "FIN305W"
+          {
+            "oneOf": [
+              "FIN305W",
+              "RM303",
+              "RM330W"
+            ]
+          }
         ]
       },
       "description": "Analysis of publicly-traded real estate of both the equity, (REITs) and debt (MBSs) sides. The course also provides international perspectives. FIN 470 / RM 470 Real Estate and Capital Markets (3) The objectives of this course are to expose the student and explore the issues associated with the analysis of \"public\" (\"Wall Street\") real estate, including both equities (such as Real Estate Investment Trusts or REITs) and debt vehicles (such as Mortgage-Backed Securities or MBSs). In addition, the course will focus on the increasingly globalization of real estate capital markets as the real estate sector becomes integrated into the global financial system. The differences between private and public real estate analysis will also be explored, including the suitability of traditional asset pricing models for real estate analysis. Topics include the growing impact of institutional real estate forces on the real estate sector, the use of modern financial economics methods to real estate including the concept of market efficiency, modern portfolio theory applications, market measures of risk and return, the use of option-based models, and other advances. The rise of Wall Street's interest in real estate securities is an important institutional development and serves as the underlying background for the analysis of MBSs using fixed-income security techniques. As globalization has spread, the real estate sector has moved with these changes and prospects for a global real estate market are examined and evaluated. This course serves as a compliment to FIN 460 , which emphasizes traditional financial analyses of individual real estate projects. In FIN 470 , real estate securities are viewed as a natural extension towards the complete integration of real estate and capital markets. In this sense, these courses will enable traditional and modern analyses of the real estate sector for years to come."
@@ -355,7 +446,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "STAT200"
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
         ]
       },
       "description": "This course provides students with working knowledge of some widely used quantitative methods, such as Monte Carlo simulations, t-tests, linear regressions, nonlinear regressions, regressions with dummy variables, and regressions with interacting explanatory variables, as well their applications in business. The course will focus on understanding and applying each method, but not on statistical theory or their proof. Monte Carlo simulations will be used to substitute for mathematical proofs. By the end of the course, students should understand the purposes of the above methods and how to use them to solve real estate, financial, marketing, and risk management problems. Students should also be able to interpret results in ways that are correct, insightful, and useful, should be aware of potential problems of each method, such as the omitted variable bias, multicollinearity, heteroskedasticity of regressions, and should know how to make corrections if these problems are present. Students should also have developed working knowledge of R, which is a programming language and software environment widely used by quantitative analysts. Students should know how to use R to conduct basic data manipulation, do simple Monte Carlo simulations, do t-tests, and run linear and non-linear regressions."

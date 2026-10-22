@@ -22,7 +22,12 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "MATH82"
+          {
+            "oneOf": [
+              "MATH82",
+              "MATH41"
+            ]
+          }
         ]
       },
       "description": "AC and DC circuits; machinery; controls; and introduction to electronic devices, circuits, and instrumentation. EET 100 Electric Circuits, Power, and Electronics (3) Electric Circuits, Power, and Electronics is a course for non-major students who will be working with electronic equipment in industry. This course starts with basic knowledge of DC and AC components and concepts used in industrial electrical work. Topics such as circuits, electromagnetism, sources, energy conversion and electrical instruments prepare students to continue with topics in electronics. Beginning with the basics of semiconductors and moving through diodes and transistors, the student is prepared to learn the concepts of rectification and amplification. These form a foundation for the completion of the course with a look at understanding the concepts and use of analog and digital circuitry found in Programmable Logic Control (PLC) systems used in industry today."
@@ -191,7 +196,13 @@
       "requisites": {
         "concurrent": [
           "MATH140",
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS150",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "EET 310 provides an introduction to basic electrical principles and covers the DC and AC circuit analysis techniques necessary for most upper-level EET courses. The course covers DC and AC sources, capacitors and inductors, impedance, mutual inductance, ideal transformers, phasor diagrams, power and energy calculations in DC and AC Circuits, signal and energy transfer, and an introduction to three-phase systems. It also introduces ideal amplifier models and ideal operational amplifiers and their use in performing mathematical operations on analog signals. Circuit analysis techniques covered include nodal analysis, mesh analysis, linearity, superposition, source transformation, and one-port networks (Thevenin's and Norton's Theorems) and two-port networks (Z, Y, h, and T) as equivalent circuits. Topics covered in the course are supported by weekly hands-on laboratory experiences."
@@ -207,7 +218,13 @@
         ],
         "concurrent": [
           "MATH140",
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS150",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "EET 311 Alternating Current Circuits (4) EET 311 is intended to provide competency in analysis of circuits and application of basic electrical principles including equivalent circuits and models, power and energy, and signal/energy transfer. The course will introduce ideal amplifier models, ideal op-amps and ideal transformers as circuit elements and one-port networks (Thevenin, Norton, and driving point impedance), and two-port networks (Z, Y, H, G, T, and T-l) as equivalent circuits. Since this is the first required course taken by all upper division electrical engineering technology students, ethics and professionalism will be discussed by and expected of the students. This course requires calculus through integral and differential calculus of transcendental functions. It provides the circuit analysis skills required in almost every other EET course and is a specific prerequisite for analysis of signals and systems ( EET 312 ) and understanding semiconductor models and electronic circuits ( EET 330 )."
@@ -219,11 +236,23 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "EET310"
+          {
+            "oneOf": [
+              "EET310",
+              "EET311",
+              "EE314"
+            ]
+          }
         ],
         "concurrent": [
           "MATH141",
-          "PHYS212"
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS151",
+              "PHYS251"
+            ]
+          }
         ]
       },
       "description": "EET 312 is designed to provide students with a strong foundation in transient circuit analysis in addition to introduction to signals and systems. The primary objective of the course is to reinforce continuous-time system fundamentals in order to prepare the students for more advanced work in a broad range of areas including communications, control, signal processing and image processing. The topics covered in this course include: Applied differential equations; Transient analysis of RC, RL, and RLC circuits, using differential equations; Complex frequency; Network functions; Bode plots and frequency response; Filter networks and resonant circuits; Laplace transform pairs and their applications in circuit analysis; Fourier analysis techniques and their applications in circuit analysis; State-variable circuit analysis. This course is a required course in the Electrical Engineering Technology BS curriculum and is intended to be taken by students who have completed their first circuits course requirements."
@@ -238,7 +267,12 @@
           "CMPET301"
         ],
         "concurrent": [
-          "MATH250"
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH211"
+            ]
+          }
         ]
       },
       "description": "Introduction to the principles and operation of linear and discrete systems. EET 315 Linear and Discrete System Analysis (3) Linear and Discrete System Analysis is a required course for junior-level students in the Electrical and Computer Engineering Technology (ECET) baccalaureate degree program. The purpose of the course is to introduce the students to linear system analysis, primarily using Laplace transforms. Students learn the concept of a transfer function, and are able to analyze both the transient and steady state response of a system. Students then learn about discrete time systems, including z-transforms, difference equations, and basic digital filters. Laboratory exercises reinforce concepts developed in lecture."
@@ -251,7 +285,13 @@
       "requisites": {
         "previous": [
           "MATH140",
-          "PHYS211"
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS150",
+              "PHYS250"
+            ]
+          }
         ]
       },
       "description": "Basic circuit theory applied to DC/AC circuits containing resistors, inductors, capacitors; magnetic circuits; power; control; electronic applications. EET 320 Industrial Electricity and Electronics (3) This course is designed to offer non-electrical students the opportunity to become familiar with the theory and operation of electrical, electronic, and electromechanical devices that are widely used in practice. The course concentrates on the most important concepts, rather than in-depth treatment of any individual area. The number of units covered depends on the class background. The topics covered in this course include:1. Introduction 2. DC Networks 3. AC Networks 4. Magnetics 5. DC & AC Machinery 6. Selected topics depending on class background (if time permits): Basic electronic devices and their applications; Integrated circuits and their applications; Power Distribution; Transducers & signal conditioning; Control Systems Electronic Instrumentation."
@@ -280,9 +320,17 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "EE315",
-          "EE310",
-          "EET312"
+          {
+            "oneOf": [
+              [
+                "EE315",
+                "EE310",
+                "EET312"
+              ],
+              "EET311",
+              "EE314"
+            ]
+          }
         ]
       },
       "description": "Analog/Digital and Digital/Analog Converters; advanced and nonlinear Op-Amp circuit design; noise analysis; Active Filters and Waveform Generators. EET 331 Electronic Design (4)E E T 330 is intended to provide competency in the application of basic electronic principles to design with operational amplifiers and integrated circuits. The course will include analog-to-digital and digital-to-analog conversion techniques; introduction to the feedback principles and non-ideal aspects of operational amplifiers including noise - needed for advanced design with op-amps; some nonlinear op-amp circuits - including comparators, Schmitt triggers, pulse width modulation, and ideal rectifiers, active filter design and waveform generator design. Grades will be based on 3 or 4 exams including a final exam (65%), laboratory work, computer projects requiring the use of circuit simulation software, spreadsheets, and math packages, and homework (30%), and student professionalism (5%). The IEEE code of ethics and the Penn State policy on academic integrity will be applied in the instructor's judgment of student professionalism. This course requires calculus through integral and differential calculus of transcendental functions, advanced circuit analysis techniques (E E T 311, E ENG 354, or E ENG 352), and knowledge of frequency response analysis techniques (E E T 312). It provides the electronic circuit analysis and design skills required in the Electronics, Systems, and Technical Electives in the General Electrical Engineering Technology Option and the Applications and Technical Electives in the Computer Engineering Technology Option."
@@ -298,7 +346,12 @@
           "EET212W"
         ],
         "concurrent": [
-          "MATH141"
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH210"
+            ]
+          }
         ]
       },
       "description": "Measurement concepts, transducers, electronic-aided measurement, mechanical and electrical measurements. Intended for electrical engineering technologists. EET 341 Measurements and Instrumentation (3) Measurements and Instrumentation is a required course for junior-level students in the Electrical and Computer Engineering Technology (ECET) baccalaureate degree program. The purpose of the course is to understand the principles of measurement systems. The course enables students to design software for programming PC-based data acquisition (DAQ) systems, understand various sensors, design signal conditioning circuits for interfacing sensors to DAQ systems, and design various types of measurement systems. Laboratory exercises reinforce concepts developed in lecture."
@@ -324,7 +377,12 @@
       "credits": 4,
       "requisites": {
         "previous": [
-          "EE310",
+          {
+            "oneOf": [
+              "EE310",
+              "EET212W"
+            ]
+          },
           "EET312"
         ]
       },
@@ -399,7 +457,12 @@
       "requisites": {
         "previous": [
           "EET315",
-          "MATH231",
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH211"
+            ]
+          },
           "MATH250"
         ]
       },
@@ -413,12 +476,22 @@
       "requisites": {
         "previous": [
           "ENGL202C",
-          "CAS100A"
+          {
+            "oneOf": [
+              "CAS100A",
+              "CAS100S"
+            ]
+          }
         ],
         "concurrent": [
           "EET312",
           "EET331",
-          "CMPEN372"
+          {
+            "oneOf": [
+              "CMPEN372",
+              "CMPET211"
+            ]
+          }
         ]
       },
       "description": "This course guides students in the development of their capstone design project proposal and will mimic the problems encountered by an engineer working in commercial, industrial, and governmental entities. Students will select a topic, do the initial research for the topic, prepare a timeline, and prepare a well-written proposal that would make a suitable capstone project. The proposal will incorporate relevant engineering standards and integrate realistic economic, environmental, sustainability, manufacturability, ethical, health and safety, social, and political constraints. The time devoted to the careful selection of a topic, research of that topic, development of a timeline, and formal proposal preparation makes for a much better capstone design experience in EET 420W ."
@@ -486,7 +559,12 @@
           "CMPET403"
         ],
         "concurrent": [
-          "MATH220"
+          {
+            "oneOf": [
+              "MATH220",
+              "EET433"
+            ]
+          }
         ]
       },
       "description": "Introduction to robotic systems and automation. Emphasis includes robot motion, control, and components, as well as programming PLCs. EET 456 Automation and Robotics (4) The objective of this course is to use a hands-on approach to introduce the basic concepts in robotics, focusing on mobile robots and illustrations of current state of the art applications. The course is offered at the senior undergraduate level with emphasis on kinematics, dynamics and control of robot arms. Course materials are tied to lab experiments in which students will work in teams to build and test mobile robots (such as LEGO-based robots)."
@@ -499,8 +577,21 @@
       "requisites": {
         "previous": [
           "EET212W",
-          "EET214",
-          "EET315"
+          {
+            "oneOf": [
+              "EET214",
+              "EET213W"
+            ]
+          },
+          {
+            "oneOf": [
+              "EET315",
+              [
+                "EET312",
+                "EET331"
+              ]
+            ]
+          }
         ]
       },
       "description": "Fundamentals of power electronic circuits, semiconductor power devices, power conversion equipment. Circuit topologies, closed-loop control strategies, equipment design consideration. EET 461 Power Electronics (3) Power electronics is a technical elective for senior-level students in the Electrical and Computer Engineering Technology (ECET) baccalaureate degree program. The course introduces students to the different topologies used to convert electrical power via the use of solid state switching. Specifically, the course presents ac-dc, ac-ac, dc-dc and dc-ac converters. The different switching devices used (diodes, SCRs, MOSFETs, etc.) are discussed. Laboratory exercises complement the lecture material. Relevant topics such as power quality, EMI and applications of power electronics are presented."
@@ -512,8 +603,18 @@
       "credits": 3,
       "requisites": {
         "previous": [
-          "EET275",
-          "EET315"
+          {
+            "oneOf": [
+              "EET275",
+              "CMPET211"
+            ]
+          },
+          {
+            "oneOf": [
+              "EET315",
+              "EET312"
+            ]
+          }
         ]
       },
       "description": "Application of programmable logic controllers (PLCs) to data acquisition, automation and process control. EET 475 Intermediate Programmable Logic Controllers (3) Programmable logic controllers (PLCs) are the workhorse of the automation and process control industry. Their rugged design and ease of programming enables PLCs to operate in almost any manufacturing environment. PLCs are employed wherever measurement equipment and computers are needed to control large electrical equipment such as motors and actuators. In this course, students apply their knowledge of basic PLC programming to see how the PLC can be used to communicate with other equipment, sense and react to external stimuli, and provide both open loop and closed loop system control."
@@ -526,12 +627,22 @@
       "requisites": {
         "previous": [
           "EET341",
-          "EET330",
+          {
+            "oneOf": [
+              "EET330",
+              "CMPET333"
+            ]
+          },
           "CMPET355",
           "ENGL202C"
         ],
         "concurrent": [
-          "ECON102"
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
         ]
       },
       "description": "Concepts of career development; project management; engineering design documentation; industrial design examples. EET 480 Electrical and Computer Systems Senior Seminar (1) Electrical and Computer Systems Senior Seminar is a required course for senior-level students in the Electrical and Computer Engineering Technology (ECET) baccalaureate degree program. The purpose of the course is to introduce students to the practices associated with managing an industrial-based project. Student teams begin working on a capstone project. Project definition, specification development, scheduling, engineering constraints, and budgeting of both time and money are discussed. Other issues of career development are presented, such as interviewing, resume preparation, and career opportunities. Ethical issues related to the discipline are discussed. Engineering economy is introduced."
