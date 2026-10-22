@@ -96,7 +96,7 @@ describe("required choices", () => {
       ...sampleSchoolData,
       programRequirements: [
         ...(sampleSchoolData.programRequirements ?? []),
-        { degree: "choice", requiredObjectIds: [{ oneOf }] },
+        { programType: "choice", requiredObjectIds: [{ oneOf }] },
       ],
     });
     expect(parseSchoolData(school(["CS101", ["CS102", "CS102L"]])).ok).toBe(true);

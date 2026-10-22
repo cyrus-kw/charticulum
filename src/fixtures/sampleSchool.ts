@@ -77,7 +77,7 @@ export const sampleSchoolData: SchoolDataInput = {
   objects: [...sampleCatalog.values(), ...statsCourses],
   programRequirements: [
     {
-      degree: "bachelor",
+      programType: "bachelor",
       requiredObjectIds: ["ENG101", "HIST110", "PHIL120", "SPAN-PROF"],
       minCreditsByCategory: { "general-education": 12 },
       minTotalCredits: 40,
@@ -91,7 +91,7 @@ export const sampleSchoolData: SchoolDataInput = {
       code: "bs-cs",
       version: "2025-26",
       title: "B.S. Computer Science",
-      degree: "bachelor",
+      programType: "bachelor",
       localRequirements: [
         {
           category: "major",
@@ -111,7 +111,7 @@ export const sampleSchoolData: SchoolDataInput = {
       code: "bs-cs",
       version: "2026-27",
       title: "B.S. Computer Science",
-      degree: "bachelor",
+      programType: "bachelor",
       localRequirements: [
         {
           category: "major",
@@ -132,7 +132,7 @@ export const sampleSchoolData: SchoolDataInput = {
       code: "minor-stats",
       version: "2026-27",
       title: "Statistics minor",
-      degree: "bachelor",
+      programType: "bachelor",
       localRequirements: [
         {
           category: "minor",

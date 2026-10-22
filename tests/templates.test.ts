@@ -25,8 +25,8 @@ const catalog = createCatalog([
 ]);
 
 const globalSets: RequirementSet[] = [
-  { id: "bachelor", name: "bachelor", scope: "global", degree: "bachelor", requiredObjectIds: ["ENG101"] },
-  { id: "associate", name: "associate", scope: "global", degree: "associate", requiredObjectIds: ["NEVER"] },
+  { id: "bachelor", name: "bachelor", scope: "global", programType: "bachelor", requiredObjectIds: ["ENG101"] },
+  { id: "associate", name: "associate", scope: "global", programType: "associate", requiredObjectIds: ["NEVER"] },
 ];
 
 const term = (index: number, objectIds: string[]) => ({ index, label: `Term ${index}`, objectIds });
@@ -35,7 +35,7 @@ const cs2026: ChartTemplate = {
   code: "bs-cs",
   version: "2026-27",
   title: "B.S. Computer Science",
-  degree: "bachelor",
+  programType: "bachelor",
   requirementSets: [
     { id: "cs", name: "CS major", scope: "local", requiredObjectIds: ["CS102", "STAT200"] },
   ],
@@ -55,7 +55,7 @@ const statsMinor: ChartTemplate = {
   code: "minor-stats",
   version: "2026-27",
   title: "Statistics minor",
-  degree: "bachelor",
+  programType: "bachelor",
   requirementSets: [
     {
       id: "stats",

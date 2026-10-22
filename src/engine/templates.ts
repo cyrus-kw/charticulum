@@ -47,7 +47,7 @@ export function forkTemplate(template: ChartTemplate, name = `${template.title} 
 }
 
 // The rules a chart is checked against: the school's global sets for each
-// degree its pinned templates lead to, plus those templates' own local sets.
+// program type of its pinned templates, plus those templates' own local sets.
 export function resolveRequirements(
   library: TemplateLibrary,
   globalSets: RequirementSet[],
@@ -55,7 +55,7 @@ export function resolveRequirements(
 ): { requirements: Requirements; issues: ChartIssue[] } {
   const issues: ChartIssue[] = [];
   const localSets: RequirementSet[] = [];
-  const degrees = new Set<string>();
+  const programTypes = new Set<string>();
   for (const ref of chart.pinnedTemplates ?? []) {
     const template = findTemplate(library, ref);
     if (!template) {
@@ -66,10 +66,10 @@ export function resolveRequirements(
       continue;
     }
     localSets.push(...template.requirementSets);
-    degrees.add(template.degree);
+    programTypes.add(template.programType);
   }
-  const degreeSets = globalSets.filter((set) => set.degree !== undefined && degrees.has(set.degree));
-  return { requirements: mergeRequirementSets([...degreeSets, ...localSets]), issues };
+  const programTypeSets = globalSets.filter((set) => set.programType !== undefined && programTypes.has(set.programType));
+  return { requirements: mergeRequirementSets([...programTypeSets, ...localSets]), issues };
 }
 
 // Combine two charts, e.g. a major plus a minor. Terms with the same index

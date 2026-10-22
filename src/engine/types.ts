@@ -187,9 +187,9 @@ export interface ChartTemplate {
   version: string;
   // How it's written for people, e.g. "Computer Science, B.S.".
   title: string;
-  // The degree it leads to ("baccalaureate"), which picks the school-wide
-  // set its charts are checked against (programRequirements).
-  degree: string;
+  // Its program type ("baccalaureate"), which picks the school-wide
+  // set its charts are checked against (the school's programRequirements).
+  programType: string;
   // This program's local r-o-s.
   requirementSets: RequirementSet[];
   // The school's suggested plan.
@@ -325,9 +325,9 @@ export interface RequirementSet extends Partial<Requirements> {
   id: string;
   name: string;
   scope: RequirementScope;
-  // For a global set, the degree it's for ("baccalaureate"): a chart gets
-  // the global sets of its programs' degree.
-  degree?: string;
+  // For a global set, the program type it's for ("baccalaureate"): a chart
+  // gets the global sets of its programs' program types.
+  programType?: string;
 }
 
 // ---------------------------------------------------------------------------

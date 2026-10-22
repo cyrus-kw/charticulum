@@ -77,10 +77,12 @@ A school can also be split into a folder of files
 together, with errors naming the file:
 
 ```
-school.json          id, name, calendar, school-wide rules, AP/transfer table
+school.json          id, name, calendar, program types ("programs"), AP/transfer table
+requirements.json    { "programRequirements": [...] }: school-wide rules per program type (optional)
 subjects.json        { "subjects": [{ "code": "CMPSC", "name": "Computer Science" }] }
 objects/cmpsc.json   { "subject": "CMPSC", "objects": [{ "number": 121, "title": ..., "credits": 3 }] }
-programs/*.json      program templates (optional)
+programs/baccalaureate/cmpsc-bs.json
+                     program templates (optional), one folder per programType
 ```
 
 A subject's file only gives each course's number and letter; its id
@@ -92,13 +94,14 @@ with descriptions) and its school-wide rules (120 credits, 2.00 GPA,
 and the 45-credit General Education program), built from its
 [Undergraduate Bulletin](https://bulletins.psu.edu) by
 `scripts/penn-state.ts`. Its programs are written by hand in
-`programs/` (the script leaves them alone): so far the Computer Science
-B.S. `--save` also saves it to the database, with the folder's programs
+`programs/`, in a folder per program type (the script leaves them
+alone): so far the Computer Science B.S., in `programs/baccalaureate/`. `--save` also saves it to the database, with the folder's programs
 and any others already saved there.
 
-A program (a template in `programs/`) has the school's `code` for it
+A program (a template in `programs/<its programType>/`; one in the wrong
+folder is an error) has the school's `code` for it
 (Penn State's plan code, `"CMPSC_BS"`; charts pin it with its version),
-a `title` ("Computer Science, B.S."), its `degree`, the credits the
+a `title` ("Computer Science, B.S."), its `programType`, the credits the
 whole program needs (`minTotalCredits`), its requirements by category,
 and a suggested plan. `localRequirements` lists the categories, e.g.
 `{ "category": "major", "requiredObjectIds": [...], "minGrades": {...} }`
@@ -122,10 +125,11 @@ only, the first in order that still needs it. A group whose category is
 one of the app's (`general-education`) counts that category's credit
 minimum in its heading when a set gives one, otherwise its rules added
 up. Rules shared by every program (Penn State's gen ed) go in the
-school's global set (`programRequirements`, one per degree:
-`{ "degree": "baccalaureate", "minTotalCredits": 120, ..., "globalRequirements":
+school's global set (`programRequirements`, at most one per program type,
+each one of the school's `programs`, e.g. `["associate", "baccalaureate", "graduate"]`:
+`{ "programType": "baccalaureate", "minTotalCredits": 120, ..., "globalRequirements":
 [{ "category": "general-education", "eachCourseOnce": true, "rules": [...] }] }`,
-its categories listed like a program's; a program names its degree, `"degree":
+its categories listed like a program's; a program names its type, `"programType":
 "baccalaureate"`, and its charts get that set only), programs' own in theirs; and minimum grades in
 required courses (`minGrades`, e.g. `{ "CMPSC221": "C" }`; one on a
 course of a choice applies to all its options).

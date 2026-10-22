@@ -126,11 +126,11 @@ const categorySet = requirementRules.omit({ creditRules: true, minTotalCredits: 
   rules: z.array(creditRule).optional(),
 });
 
-// A school-wide set, for every program toward one kind of degree
-// ("baccalaureate"). Every one is global, and the degree names it. Its
+// A school-wide set, for every program of one type ("baccalaureate"),
+// named by its programType. Every one is global. Its
 // requirements by category (gen ed) are listed like a program's.
 const programRequirement = requirementRules.omit({ creditRules: true }).extend({
-  degree: id,
+  programType: id,
   globalRequirements: z.array(categorySet).optional(),
 });
 
@@ -146,7 +146,7 @@ const template = z.object({
   code: id,
   version: z.string().regex(/^\d{4}-\d{2}$/, 'Use an academic year like "2026-27".'),
   title: z.string(),
-  degree: id,
+  programType: id,
   // Credits the whole program needs (more than the degree's 120, say).
   minTotalCredits: credits.optional(),
   // Its own requirements by category (the degree's are global).
@@ -190,6 +190,11 @@ export const schoolDataSchema = z.object({
   // course's subject must be one of them.
   subjects: z.array(subjectSchema).default([]),
   objects: z.array(courseObject).min(1),
+  // The kinds of program the school offers ("associate", "baccalaureate",
+  // "graduate"). Every requirement set and program names one of these.
+  // Left out, it's every type programRequirements names (parseSchoolData
+  // fills it in).
+  programs: z.array(id).optional(),
   programRequirements: z.array(programRequirement).default([]),
   templates: z.array(template).default([]),
   // A school's transfer/AP table, kept separate from the objects because
@@ -276,10 +281,14 @@ export function parseSchoolData(input: unknown): ParseResult {
       check(`requirementSets.${set.id}.creditRules.${rule.id}`, rule.objectIds ?? []);
     }
   }
-  const degrees = new Set(data.programRequirements.map((set) => set.degree));
+  data.programs ??= [...new Set(data.programRequirements.map((set) => set.programType))];
+  const programTypes = new Set(data.programs);
+  for (const set of data.programRequirements) {
+    if (!programTypes.has(set.programType)) errors.push(`programRequirements.${set.programType}: ${set.programType} is not one of the school's programs`);
+  }
   const versions = new Set<string>();
   for (const t of data.templates) {
-    if (!degrees.has(t.degree)) errors.push(`templates.${t.code}.degree: no programRequirements for ${t.degree}`);
+    if (!programTypes.has(t.programType)) errors.push(`templates.${t.code}.programType: ${t.programType} is not one of the school's programs`);
     const key = `${t.code} ${t.version}`;
     if (versions.has(key)) errors.push(`templates: ${key} appears twice`);
     versions.add(key);
@@ -363,17 +372,17 @@ function templateFromData(t: SchoolData["templates"][number]): ChartTemplate {
   return { ...rest, requirementSets: sets };
 }
 
-// The school-wide sets as the engine's RequirementSets: for each degree,
-// one with its own rules (id and name: the degree), then one per category.
-// Each carries the degree, so a chart gets only its programs' degree's.
+// The school-wide sets as the engine's RequirementSets: for each program
+// type, one with its own rules (id and name: the type), then one per category.
+// Each carries the programType, so a chart gets only its programs' type's.
 function globalSets(data: Pick<SchoolData, "programRequirements">): RequirementSet[] {
-  return data.programRequirements.flatMap(({ degree, globalRequirements = [], ...rules }) => [
-    { id: degree, name: degree, scope: "global" as const, degree, ...rules },
-    ...categorySets(degree, "global", globalRequirements).map((set) => ({ ...set, degree })),
+  return data.programRequirements.flatMap(({ programType, globalRequirements = [], ...rules }) => [
+    { id: programType, name: programType, scope: "global" as const, programType, ...rules },
+    ...categorySets(programType, "global", globalRequirements).map((set) => ({ ...set, programType })),
   ]);
 }
 
-// A program's (or degree's) categories as RequirementSets, one each, its
+// A program's (or program type's) categories as RequirementSets, one each, its
 // credit rules one group under the category's heading.
 function categorySets(
   owner: string,

@@ -61,12 +61,32 @@ describe("parseSchoolData", () => {
     expect(parseSchoolData(broken).ok).toBe(false);
   });
 
-  it("rejects a program for a degree the school has no set for", () => {
+  it("rejects a program for a program type the school has no set for", () => {
     const broken = structuredClone(sampleSchoolData) as SchoolData;
-    broken.templates[0].degree = "doctorate";
+    broken.templates[0].programType = "doctorate";
     const result = parseSchoolData(broken);
     expect(result.ok).toBe(false);
-    if (!result.ok) expect(result.errors).toContain("templates.bs-cs.degree: no programRequirements for doctorate");
+    if (!result.ok) expect(result.errors).toContain("templates.bs-cs.programType: doctorate is not one of the school's programs");
+  });
+
+  it("lists the school's program types, worked out from its requirement sets when left out", () => {
+    const parsed = parseSchoolData(sampleSchoolData);
+    if (!parsed.ok) throw new Error(parsed.errors.join("\n"));
+    expect(parsed.data.programs).toEqual(["bachelor"]);
+
+    // A listed type needs no requirement set of its own.
+    const withGraduate = structuredClone(sampleSchoolData) as SchoolData;
+    withGraduate.programs = ["bachelor", "graduate"];
+    withGraduate.templates[0].programType = "graduate";
+    expect(parseSchoolData(withGraduate).ok).toBe(true);
+
+    // But every requirement set's type has to be listed.
+    const unlisted = structuredClone(sampleSchoolData) as SchoolData;
+    unlisted.programs = ["graduate"];
+    unlisted.templates = [];
+    const result = parseSchoolData(unlisted);
+    expect(result.ok).toBe(false);
+    if (!result.ok) expect(result.errors).toContain("programRequirements.bachelor: bachelor is not one of the school's programs");
   });
 
   it("names a credit rule after its area, but a list of areas needs a name", () => {

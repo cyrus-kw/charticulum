@@ -3,10 +3,13 @@
 // writes it as a folder of JSON files (the layout is described in
 // src/engine/schoolFiles.ts):
 //
-//   schools/penn-state/school.json         id, name, calendar, school-wide rules
+//   schools/penn-state/school.json         id, name, calendar, program types
+//   schools/penn-state/requirements.json   school-wide rules for each program type
 //   schools/penn-state/subjects.json       every subject: code and name
 //   schools/penn-state/objects/cmpsc.json  one subject's courses, by number
-//   schools/penn-state/programs/*.json     programs, written by hand (left alone here)
+//   schools/penn-state/programs/baccalaureate/cmpsc-bs.json
+//                                          programs, one folder per program type,
+//                                          written by hand (left alone here)
 //
 //   npx tsx scripts/penn-state.ts          # writes the folder
 //   npx tsx scripts/penn-state.ts --save   # also saves it to the database in .env,
@@ -20,7 +23,7 @@
 // - The program pages in PROGRAMS, only as hints: which courses their
 //   suggested plans use (to put the likeliest option of an "A or B"
 //   first). It doesn't write any programs; those are made by hand, in
-//   programs/, with their own "A or B" lines as choices.
+//   programs/<program type>/, with their own "A or B" lines as choices.
 //
 // Downloaded pages are kept in node_modules/.cache/penn-state, so running
 // it again doesn't download them again (delete that folder to refresh).
@@ -555,9 +558,12 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
     school: { id: "penn-state", name: "Penn State University Park" },
     calendar: { start: { season: "fall", year: START_YEAR }, seasons: ["spring", "summer", "fall"] },
     objects,
+    // No associate or graduate programs so far, so those types have no
+    // school-wide rules yet.
+    programs: ["associate", "baccalaureate", "graduate"],
     programRequirements: [
       {
-        degree: "baccalaureate",
+        programType: "baccalaureate",
         // Senate Policy 82-00 and 83-80: at least 120 credits, 45 of them
         // gen ed (the rules below), and a 2.00 GPA; more than 19 credits
         // in a semester needs the dean's approval.
@@ -568,9 +574,6 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
         allowedOverrides: ["waive-requirement", "waive-requisite", "substitute"],
         globalRequirements: [GEN_ED],
       },
-      // Not filled in yet: no associate or graduate programs so far.
-      { degree: "associate" },
-      { degree: "graduate" },
     ],
     subjects: subjects.map(({ code, name }) => ({ code, name })),
     // Programs and their plans are made by hand.
@@ -581,8 +584,8 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
 
 const { data, subjects } = await build();
 
-// Write the folder: the school's own settings, the subject list, and one
-// file per subject with its courses by number. An object's id and subject
+// Write the folder: the school's own settings, its school-wide rules, the
+// subject list, and one file per subject with its courses by number. An object's id and subject
 // aren't repeated in its subject's file; they come from the file.
 const json = (value: unknown) => JSON.stringify(value, null, 2) + "\n";
 // The same object without its empty lists and empty objects.
@@ -593,8 +596,9 @@ function withoutEmpty<T extends object>(value: T): Partial<T> {
 }
 await rm(join(OUT, "objects"), { recursive: true, force: true });
 await mkdir(join(OUT, "objects"), { recursive: true });
-const { objects, subjects: subjectList, templates, ...school } = data;
+const { objects, subjects: subjectList, templates, programRequirements, ...school } = data;
 await writeFile(join(OUT, "school.json"), json(school));
+await writeFile(join(OUT, "requirements.json"), json({ programRequirements }));
 await writeFile(join(OUT, "subjects.json"), json({ subjects: subjectList }));
 let written = 0;
 for (const subject of subjects) {

@@ -79,4 +79,49 @@ describe("combineSchoolFiles", () => {
     expect(result.ok).toBe(false);
     if (!result.ok) expect(result.errors[0]).toMatch(/^objects\/cas-2\.json: objects\.0\.type: /);
   });
+
+  it("reads the school-wide rules from requirements.json", () => {
+    const parts = files();
+    parts.school.json = { ...(parts.school.json as object), programs: ["associate", "baccalaureate"] };
+    parts.requirements = {
+      name: "requirements.json",
+      json: { programRequirements: [{ programType: "baccalaureate", minTotalCredits: 120 }] },
+    };
+    const result = combineSchoolFiles(parts);
+    if (!result.ok) throw new Error(result.errors.join("\n"));
+    expect(result.data.programs).toEqual(["associate", "baccalaureate"]);
+    expect(result.data.programRequirements).toMatchObject([{ programType: "baccalaureate", minTotalCredits: 120 }]);
+
+    parts.requirements.json = { programRequirements: [{ programType: "baccalaureate", minTotalCredits: "lots" }] };
+    const broken = combineSchoolFiles(parts);
+    expect(broken.ok).toBe(false);
+    if (!broken.ok) expect(broken.errors[0]).toMatch(/^requirements\.json: programRequirements\.0\.minTotalCredits: /);
+  });
+
+  it("needs a program to be in its program type's folder", () => {
+    const parts = files();
+    parts.school.json = {
+      ...(parts.school.json as object),
+      programs: ["associate", "baccalaureate"],
+    };
+    const program = {
+      code: "CAS_BA",
+      version: "2026-27",
+      title: "Communication Arts, B.A.",
+      programType: "baccalaureate",
+      localRequirements: [],
+      terms: [],
+    };
+    parts.programs = [{ name: "programs/baccalaureate/cas-ba.json", programType: "baccalaureate", json: program }];
+    expect(combineSchoolFiles(parts).ok).toBe(true);
+
+    parts.programs = [{ name: "programs/associate/cas-ba.json", programType: "associate", json: program }];
+    const result = combineSchoolFiles(parts);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.errors).toEqual([
+        "programs/associate/cas-ba.json: CAS_BA is a baccalaureate program, so it goes in programs/baccalaureate/",
+      ]);
+    }
+  });
 });

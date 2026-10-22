@@ -39,7 +39,7 @@ export {
   type CsvResult,
   type EquivalencyRow,
 } from "./equivalencyCsv";
-export { combineSchoolFiles, type SchoolFile, type SchoolFiles } from "./schoolFiles";
+export { combineSchoolFiles, type ProgramFile, type SchoolFile, type SchoolFiles } from "./schoolFiles";
 export {
   chartSchema,
   compactSchoolData,
