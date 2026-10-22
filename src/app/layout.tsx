@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "@xyflow/react/dist/style.css";
+import { ConfirmDialogs } from "../components/ConfirmDialog";
 import { ThemeScript } from "../components/ThemeScript";
 import { Tooltips } from "../components/Tooltips";
 import "./globals.css";
@@ -22,6 +23,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         {/* Draws the label for anything with a data-tooltip, on every page. */}
         <Tooltips />
+        {/* Draws the "Are you sure?" popup (askToConfirm), on every page. */}
+        <ConfirmDialogs />
       </body>
     </html>
   );

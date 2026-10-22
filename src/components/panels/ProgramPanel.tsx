@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { TemplateRef } from "../../engine/index";
+import { askToConfirm } from "../ConfirmDialog";
 import { Button, Panel, Select } from "../ui";
 import type { PanelProps } from "./types";
 
@@ -47,8 +48,9 @@ export function ProgramPanel({ state, dispatch }: PanelProps) {
         </Select>
         <Button
           disabled={!startKey}
-          onClick={() => {
-            if (window.confirm("Replace your current plan with this program's suggested plan?")) {
+          onClick={async () => {
+            const message = "Replace your current plan with this program's suggested plan?";
+            if (await askToConfirm({ message, confirmLabel: "Replace" })) {
               dispatch({ type: "startProgram", ref: parseKey(startKey) });
             }
           }}

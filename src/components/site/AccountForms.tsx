@@ -8,6 +8,7 @@ import {
   updateNameAction,
   type FormResult,
 } from "../../app/settings/actions";
+import { askToConfirm } from "../ConfirmDialog";
 import { Button, inputClass } from "../ui";
 import { CODE_LENGTH, CodeBoxes, emptyCode } from "./CodeBoxes";
 
@@ -121,8 +122,9 @@ export function DeleteAccountButton() {
       variant="danger"
       className="border border-rose-300 dark:border-rose-800"
       disabled={pending}
-      onClick={() => {
-        if (window.confirm("Delete your account and all your charts? This can't be undone.")) {
+      onClick={async () => {
+        const message = "Delete your account and all your charts? This can't be undone.";
+        if (await askToConfirm({ message, confirmLabel: "Delete account", danger: true })) {
           startTransition(() => deleteAccountAction());
         }
       }}

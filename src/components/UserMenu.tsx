@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type FormEvent, type MouseEvent } from "react";
+import { useEffect, useRef, useState, useTransition, type FormEvent } from "react";
 import { signOutAction } from "../app/auth/actions";
 import { ChevronDownIcon, SettingsIcon, SignOutIcon } from "./icons";
 import { SettingsDialog } from "./SettingsDialog";
@@ -36,8 +36,8 @@ export function UserMenu({
   user: MenuUser;
   look: "circle" | "row";
   // Asked before leaving the page (the planner uses it to warn about
-  // unsaved changes). Returning false stays put.
-  confirmLeave?: () => boolean;
+  // unsaved changes). Answering false stays put.
+  confirmLeave?: () => Promise<boolean>;
 }) {
   const ref = useRef<HTMLDetailsElement>(null);
   // Whether the Settings panel is open. Only in this page's memory, so a
@@ -51,9 +51,14 @@ export function UserMenu({
     document.addEventListener("pointerdown", close);
     return () => document.removeEventListener("pointerdown", close);
   }, []);
-  // preventDefault cancels the click or the form's submit, so nothing happens.
-  const guard = (event: MouseEvent | FormEvent) => {
-    if (confirmLeave && !confirmLeave()) event.preventDefault();
+  const [, startTransition] = useTransition();
+  // Signing out with a question to ask first: the popup waits for an
+  // answer but the form can't, so cancel the submit (preventDefault) and
+  // sign out ourselves on "Leave".
+  const guard = async (event: FormEvent) => {
+    if (!confirmLeave) return;
+    event.preventDefault();
+    if (await confirmLeave()) startTransition(() => signOutAction());
   };
 
   const initial = (

@@ -146,19 +146,15 @@ export function TrashIcon() {
   );
 }
 
-// A magic wand with a sparkle at its tip: Build for me (the builder lays
-// out the plan by itself). The sparkle is four rays around a point, kept
-// apart from the wand so the two read separately at 16px. The wand and
-// the sparkle are about the same size, and together fill the 2-to-22
-// square evenly, so neither looks like an afterthought.
-export function WandIcon() {
+// A circle arrow turning back (counterclockwise): Build for me, which
+// starts the plan over and lays it out fresh. The circle (3 to 21) and
+// the arrowhead's corner at the top left fill the square like the other
+// icons; it reads as "reset", unlike undo's single bent arrow.
+export function ResetIcon() {
   return (
     <Icon>
-      <path d="m3 21 9-9" />
-      <path d="M16 2v4" />
-      <path d="M16 10v4" />
-      <path d="M10 8h4" />
-      <path d="M18 8h4" />
+      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+      <path d="M3 3v5h5" />
     </Icon>
   );
 }

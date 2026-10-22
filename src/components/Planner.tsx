@@ -2,11 +2,13 @@
 
 import { useEffect, useMemo, useReducer, useState, type MouseEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { EXTERNAL_TERM, loadSchool, parseSchoolData, type SchoolData, type SchoolDataInput } from "../engine/index";
 import { historyReducer, startHistory } from "../planner/history";
 import { derive, openedState } from "../planner/state";
 import type { SavedChart } from "../storage/types";
 import { ChartFlow } from "./ChartFlow";
+import { askToConfirm } from "./ConfirmDialog";
 import { OpenIcon, RedoIcon, UndoIcon } from "./icons";
 import { CatalogPanel } from "./panels/CatalogPanel";
 import { DetailsPanel } from "./panels/DetailsPanel";
@@ -91,19 +93,45 @@ export function Planner({
 
   // Closing the tab or reloading with unsaved changes: the browser asks
   // "Leave site?" first.
+  // Browsers only allow their own box there, so it can't match the app.
+  // Reloading with the keyboard (F5, Ctrl/Cmd + R) reaches the page
+  // first, though, so for that the app asks in its own popup instead.
   useEffect(() => {
     if (!unsaved) return;
     const warn = (event: BeforeUnloadEvent) => event.preventDefault();
+    const onKey = async (event: KeyboardEvent) => {
+      const reload = event.key === "F5" || ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "r");
+      if (!reload) return;
+      // Stop the browser's reload; reload ourselves if the answer is yes.
+      event.preventDefault();
+      const yes = await askToConfirm({ message: "Reload without saving your changes?", confirmLabel: "Reload" });
+      if (!yes) return;
+      // Already asked: take the browser's box away so it doesn't ask again.
+      window.removeEventListener("beforeunload", warn);
+      window.location.reload();
+    };
     window.addEventListener("beforeunload", warn);
-    return () => window.removeEventListener("beforeunload", warn);
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("beforeunload", warn);
+      window.removeEventListener("keydown", onKey);
+    };
   }, [unsaved]);
 
   // Moving to another page of the site (the dashboard, Sign out)
   // isn't a page reload, so the browser won't ask; ask here instead.
-  const confirmLeave = () => !unsaved || window.confirm("Leave without saving your changes?");
-  // For links: preventDefault cancels the click, so the page stays.
-  const guardLeave = (event: MouseEvent) => {
-    if (!confirmLeave()) event.preventDefault();
+  // (Closing the tab still shows the browser's own box above: browsers
+  // don't let a page draw its own there.)
+  const confirmLeave = async () =>
+    !unsaved || askToConfirm({ message: "Leave without saving your changes?", confirmLabel: "Leave" });
+  const router = useRouter();
+  // For links: the popup waits for an answer, but a click can't wait, so
+  // cancel the click (preventDefault) and go to the link ourselves on "Leave".
+  const guardLeave = async (event: MouseEvent<HTMLAnchorElement>) => {
+    if (!unsaved) return;
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    if (href && (await confirmLeave())) router.push(href);
   };
 
   // Ctrl/Cmd+Z undoes; Ctrl/Cmd+Shift+Z or Ctrl+Y redoes. Not while typing

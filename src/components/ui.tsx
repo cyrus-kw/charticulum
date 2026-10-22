@@ -1,7 +1,7 @@
 // Small shared building blocks so panels look and behave the same.
 import {
   Children,
-  type ButtonHTMLAttributes,
+  type ComponentProps,
   type KeyboardEvent,
   type ReactNode,
   type SelectHTMLAttributes,
@@ -49,8 +49,11 @@ export function Panel({
   );
 }
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & { variant?: ButtonVariant };
+// "destructive" is the solid rose twin of "primary", for the main button
+// of a question about deleting something (in ConfirmDialog).
+type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "destructive";
+// ComponentProps<"button"> includes ref, so a Button can be focused.
+type ButtonProps = ComponentProps<"button"> & { variant?: ButtonVariant };
 
 // The look of a Button, on its own, so a link that acts like a button
 // (e.g. "Open your dashboard") can look exactly like one.
@@ -64,6 +67,7 @@ export function buttonClass(variant: ButtonVariant = "secondary"): string {
       "border border-zinc-300 bg-white text-zinc-800 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800",
     variant === "ghost" && "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
     variant === "danger" && "text-rose-700 hover:bg-rose-50 dark:text-rose-400 dark:hover:bg-rose-950",
+    variant === "destructive" && "bg-rose-600 text-white hover:bg-rose-700",
   );
 }
 

@@ -2,6 +2,7 @@
 
 import { useTransition } from "react";
 import { deleteChartAction } from "../../app/actions";
+import { askToConfirm } from "../ConfirmDialog";
 import { Button } from "../ui";
 
 export function DeleteChartButton({ id, name }: { id: string; name: string }) {
@@ -13,8 +14,8 @@ export function DeleteChartButton({ id, name }: { id: string; name: string }) {
       variant="danger"
       disabled={pending}
       aria-label={`Delete ${name}`}
-      onClick={() => {
-        if (window.confirm(`Delete “${name}”? This can't be undone.`)) {
+      onClick={async () => {
+        if (await askToConfirm({ message: `Delete “${name}”? This can't be undone.`, confirmLabel: "Delete", danger: true })) {
           startTransition(() => deleteChartAction(id));
         }
       }}

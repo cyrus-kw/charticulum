@@ -1,7 +1,8 @@
 "use client";
 
 import { EXTERNAL_TERM, type Chart } from "../../engine/index";
-import { WandIcon } from "../icons";
+import { ResetIcon } from "../icons";
+import { askToConfirm } from "../ConfirmDialog";
 import { cn, ICON_BUTTON, Panel } from "../ui";
 import { SaveButtons } from "./SaveButtons";
 import type { PanelProps } from "./types";
@@ -64,12 +65,13 @@ export function PlanInfoPanel({
             type="button"
             aria-label="Build for me"
             data-tooltip="Build for me"
-            onClick={() => {
-              if (window.confirm("Replace the current plan with one the builder lays out?")) dispatch({ type: "build" });
+            onClick={async () => {
+              const message = "Replace the current plan with one the builder lays out?";
+              if (await askToConfirm({ message, confirmLabel: "Replace" })) dispatch({ type: "build" });
             }}
             className={ICON_BUTTON}
           >
-            <WandIcon />
+            <ResetIcon />
           </button>
         </div>
       }
