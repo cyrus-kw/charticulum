@@ -146,6 +146,45 @@ export function TrashIcon() {
   );
 }
 
+// A magic wand with a sparkle at its tip: Build for me (the builder lays
+// out the plan by itself). The sparkle is four rays around a point, kept
+// apart from the wand so the two read separately at 16px. The wand and
+// the sparkle are about the same size, and together fill the 2-to-22
+// square evenly, so neither looks like an afterthought.
+export function WandIcon() {
+  return (
+    <Icon>
+      <path d="m3 21 9-9" />
+      <path d="M16 2v4" />
+      <path d="M16 10v4" />
+      <path d="M10 8h4" />
+      <path d="M18 8h4" />
+    </Icon>
+  );
+}
+
+// A floppy disk: save. A square with one corner cut, the label at the
+// bottom and the metal shutter at the top.
+export function SaveIcon() {
+  return (
+    <Icon>
+      <path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+      <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7" />
+      <path d="M7 3v4a1 1 0 0 0 1 1h7" />
+    </Icon>
+  );
+}
+
+// Two overlapping sheets: save a copy.
+export function CopyIcon() {
+  return (
+    <Icon>
+      <rect x="8" y="8" width="14" height="14" rx="2" />
+      <path d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2" />
+    </Icon>
+  );
+}
+
 // A gear with six broad teeth: settings (the Account page). Six rather
 // than the usual eight, so it doesn't look busier or darker than the
 // other icons at 16px.

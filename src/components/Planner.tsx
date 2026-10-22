@@ -15,7 +15,6 @@ import { IssuesPanel, listPlanIssues } from "./panels/IssuesPanel";
 import { chartIssues } from "../planner/issues";
 import { ExternalCreditPanel } from "./panels/ExternalCreditPanel";
 import { ProgramPanel } from "./panels/ProgramPanel";
-import { SavePanel } from "./panels/SavePanel";
 import { SchoolPanel } from "./panels/SchoolPanel";
 import { SummaryPanel } from "./panels/SummaryPanel";
 import { cn, Tabs } from "./ui";
@@ -161,8 +160,9 @@ export function Planner({
           onToggle={() => panels.toggle("left")}
           onResize={(width, done) => panels.setWidth(width, done)}
           heading={
-            // flex-1 fills the header, so the dashboard button lands at the
-            // far right, framing the wordmark with the side panel button.
+            // flex-1 fills the header, so the theme and dashboard buttons
+            // land at the far right, framing the wordmark with the side
+            // panel button.
             <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
               {/* The wordmark leads to the dashboard too, like on the
                   site's other pages. */}
@@ -174,41 +174,45 @@ export function Planner({
                 <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
                 <p className="text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</p>
               </Link>
-              {/* Link (not <a>) moves to the page without reloading the app. */}
-              <Link
-                href="/dashboard"
-                onClick={guardLeave}
-                aria-label="Open dashboard"
-                data-tooltip="Open dashboard"
-                style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
-                className={HEADER_BUTTON}
-              >
-                <OpenIcon />
-              </Link>
+              {/* The light/dark button, then the dashboard button, 4px
+                  apart like undo and redo. */}
+              <div className="flex shrink-0 items-center gap-1">
+                <ThemeToggle />
+                {/* Link (not <a>) moves to the page without reloading the app. */}
+                <Link
+                  href="/dashboard"
+                  onClick={guardLeave}
+                  aria-label="Open dashboard"
+                  data-tooltip="Open dashboard"
+                  style={{ width: TOGGLE_SIZE, height: TOGGLE_SIZE }}
+                  className={HEADER_BUTTON}
+                >
+                  <OpenIcon />
+                </Link>
+              </div>
             </div>
           }
           footer={
             <>
               <UserMenu user={user} look="row" confirmLeave={confirmLeave} />
-              <ThemeToggle />
             </>
           }
         >
           {/* Two tabs: the plan itself, and the school's courses and data.
-              The tab row stays in view just under the header. */}
+              The tab row stays in view at the top of the scrolling part,
+              just under the header. */}
           <Tabs
             id="tools"
             label="Tools"
             value={panels.open.tab}
             onChange={panels.setTab}
-            stickyTop={PANEL_HEADER_HEIGHT + 1}
+            stickyTop={0}
             tabs={[
               {
                 value: "plan",
                 label: "Plan",
                 content: (
                   <>
-                    <SavePanel {...panelProps} unsaved={unsaved} onSaved={setSavedChart} />
                     <ProgramPanel {...panelProps} />
                     <ExternalCreditPanel {...panelProps} />
                   </>
@@ -265,7 +269,7 @@ export function Planner({
                 <div ref={setZoomSlot} className="ml-auto flex shrink-0" />
               </div>
               <div className="min-h-0 flex-1 overflow-y-auto">
-                <PlanInfoPanel {...panelProps} />
+                <PlanInfoPanel {...panelProps} unsaved={unsaved} onSaved={setSavedChart} />
               </div>
             </div>
             <div className={cn(COLUMN, "overflow-y-auto")}>

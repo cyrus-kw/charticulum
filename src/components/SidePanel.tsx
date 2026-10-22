@@ -198,19 +198,18 @@ export function SidePanel({
         >
           {/* A fixed width inside, so the contents slide rather than squish.
             flex-col: the footer can then sit at the bottom even when the
-            contents above it are short. */}
-          <div className="flex h-full flex-col overflow-y-auto lg:w-(--panel-inner)">
+            contents above it are short. Only the middle part scrolls: the
+            header and footer sit outside it, so they never move and the
+            scrollbar runs only beside the contents. */}
+          <div className="flex h-full flex-col lg:w-(--panel-inner)">
             <div
               // +1 for the bottom border, so the toggle is TOGGLE_INSET from the top.
               style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
-              // sticky top-0: the header stays put while the rest scrolls
-              // under it. It needs a solid background (the page's) and z-10
-              // to cover what scrolls beneath. shrink-0: when the contents
-              // are taller than the side panel, the column would otherwise
-              // squeeze the header down to its text's height, leaving a gap
-              // above the tab row (which sticks just below the full height).
+              // shrink-0: when the contents are taller than the side panel,
+              // the column would otherwise squeeze the header down to its
+              // text's height.
               className={cn(
-                "sticky top-0 z-10 flex shrink-0 items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
+                "flex shrink-0 items-center gap-3 border-b border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950",
                 side === "right" && "flex-row-reverse",
               )}
             >
@@ -221,17 +220,16 @@ export function SidePanel({
                 </span>
               )}
             </div>
-            {/* flex-1 takes up the spare height, pushing the footer down. */}
-            <div className="flex-1">{children}</div>
+            {/* flex-1 takes up the spare height, pushing the footer down;
+              min-h-0 lets it shrink below its contents' height so it
+              scrolls instead of pushing the footer off the bottom. */}
+            <div className="min-h-0 flex-1 overflow-y-auto">{children}</div>
             {footer && (
-              // sticky bottom-0: when the contents are long, the footer
-              // stays in view and they scroll under it. It's as tall as the
-              // header (+1 for its top border), so its middle lines up with
-              // the chart's bottom controls (the zoom buttons), which sit
-              // TOGGLE_INSET from the bottom and are TOGGLE_SIZE tall.
+              // Outside the scrolling part, so it always stays in view. It's
+              // as tall as the header (+1 for its top border).
               <div
                 style={{ height: PANEL_HEADER_HEIGHT + 1, paddingInline: TOGGLE_INSET }}
-                className="sticky bottom-0 z-10 flex shrink-0 items-center gap-3 border-t border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950"
+                className="flex shrink-0 items-center gap-3 border-t border-zinc-200 bg-page dark:border-zinc-800 dark:bg-zinc-950"
               >
                 {footer}
               </div>

@@ -1,13 +1,25 @@
 "use client";
 
-import { EXTERNAL_TERM } from "../../engine/index";
-import { cn, Panel } from "../ui";
+import { EXTERNAL_TERM, type Chart } from "../../engine/index";
+import { WandIcon } from "../icons";
+import { cn, ICON_BUTTON, Panel } from "../ui";
+import { SaveButtons } from "./SaveButtons";
 import type { PanelProps } from "./types";
 
 // What this plan is, at a glance: its school, its programs, the terms it
 // spans, how many courses are on it, and its GPA. Sits under undo/redo and the
-// plan's name in the panel above the chart.
-export function PlanInfoPanel({ state, view }: PanelProps) {
+// plan's name in the panel above the chart. Its title row holds the
+// save buttons and Build for me.
+export function PlanInfoPanel({
+  unsaved,
+  onSaved,
+  ...props
+}: PanelProps & {
+  // Passed on to the save buttons.
+  unsaved: boolean;
+  onSaved: (chart: Chart) => void;
+}) {
+  const { state, view, dispatch } = props;
   const { library, data } = state.school;
   const pinned = state.chart.pinnedTemplates ?? [];
   // Pre-Credit isn't a term the student takes, so it's left out.
@@ -39,7 +51,29 @@ export function PlanInfoPanel({ state, view }: PanelProps) {
   );
 
   return (
-    <Panel title="Plan">
+    <Panel
+      title="Plan"
+      actions={
+        <div className="flex items-center gap-1">
+          <SaveButtons {...props} unsaved={unsaved} onSaved={onSaved} />
+          {/* The builder lays out every course of the plan's programs so all
+              their rules are met, replacing the current plan (undo brings
+              it back, but it asks first since it changes everything at
+              once). */}
+          <button
+            type="button"
+            aria-label="Build for me"
+            data-tooltip="Build for me"
+            onClick={() => {
+              if (window.confirm("Replace the current plan with one the builder lays out?")) dispatch({ type: "build" });
+            }}
+            className={ICON_BUTTON}
+          >
+            <WandIcon />
+          </button>
+        </div>
+      }
+    >
       <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-1 text-sm">
         {row("School", data.school.name)}
         {pinned.length === 0

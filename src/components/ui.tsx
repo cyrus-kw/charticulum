@@ -75,7 +75,7 @@ export function Button({ variant = "secondary", className, ...props }: ButtonPro
 // plain one is grey; the danger one is rose, for removing or leaving
 // (the course trash button, Sign out). Icon-only buttons also need an
 // aria-label and a data-tooltip.
-const ICON_BUTTON_BASE = "flex size-7 shrink-0 items-center justify-center rounded-md";
+export const ICON_BUTTON_BASE = "flex size-7 shrink-0 items-center justify-center rounded-md";
 export const ICON_BUTTON = cn(
   ICON_BUTTON_BASE,
   "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100",
