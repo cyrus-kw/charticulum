@@ -1,0 +1,248 @@
+{
+  "subject": "RADSC",
+  "courses": [
+    {
+      "number": 101,
+      "title": "Radiographic Introduction and Procedures/Lab I",
+      "credits": 4,
+      "description": "Radiology history, basic radiation protection principles, medical terminology, introduction to radiography and radiographic procedures/lab. As is consistent with the core courses in the Radiography program, a passing grade for enrolled radiography students is 75%."
+    },
+    {
+      "number": 102,
+      "title": "Radiographic Procedures/Lab II",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "RADSC101",
+          "RADSC110",
+          "BIOL163",
+          "BIOL164",
+          "RADSC295B"
+        ]
+      },
+      "description": "Continuation of Radiographic Procedures/Lab I to include finish appendicular skeleton, axial skeleton and introduction to skull anatomy and positioning."
+    },
+    {
+      "number": 103,
+      "title": "Radiographic Procedures/Lab III",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "RADSC102",
+          "RADSC295C"
+        ]
+      },
+      "description": "Continuation of Radiographic Procedures/Lab II to include digestive, urinary, and biliary systems and facial bone work."
+    },
+    {
+      "number": 110,
+      "title": "Patient Care in Radiologic Sciences",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "BIOL161",
+          "BIOL162"
+        ]
+      },
+      "description": "This course includes the basic concepts of patient care, including consideration for the physical and psychological needs of the patient and the family. Routine and emergency patient care procedures are addressed from the radiographer's perspective. Students will learn proper infection control techniques and will prove competency in CPR for healthcare workers. Students will learn drug nomenclature, legend drugs and different types of contrast used for procedures. As is consistent with the core courses in Radiological Sciences, students must achieve a grade of \"C\" or better"
+    },
+    {
+      "number": 204,
+      "title": "Radiographic Exposure I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "RADSC103"
+        ]
+      },
+      "description": "This course establishes a knowledge base in factors that govern and influence the production and recording of radiographic images. Topics include the importance of imaging standards, discussion of technique problem-solving for image evaluation and the factors that affect image quality. As is consistent with the core courses in Radiological Sciences students must achieve a grade of \"C\" (minimum of 75% average) or better for successful completion of the course."
+    },
+    {
+      "number": 205,
+      "title": "Radiographic Exposure II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "RADSC204"
+        ]
+      },
+      "description": "This course is a continuation of Radiographic Exposure I, with emphasis on electronic imaging, image formation, quality assurance, & related areas. As is consistent with the core courses in Radiological Sciences, students must achieve a grade of \"C\" or better."
+    },
+    {
+      "number": 206,
+      "title": "Advanced Radiographic Procedures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL161",
+          "BIOL162",
+          "BIOL163",
+          "BIOL164",
+          "RADSC295E"
+        ]
+      },
+      "description": "Emphasis on specialized positioning and advanced radiographic procedures; includes introduction to cross-sectional anatomy. As is consistent with the core courses in the Radiography program, a passing grade for enrolled radiography students is 75%."
+    },
+    {
+      "number": 207,
+      "title": "Registry Review",
+      "credits": {
+        "min": 2,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "concurrent": [
+          "RADSC206"
+        ]
+      },
+      "description": "Registry Review includes material from all radiological science courses, with emphasis on National Certification Examination, and career planning."
+    },
+    {
+      "number": 210,
+      "suffix": "W",
+      "title": "Radiographic Pathology",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "BIOL161",
+          "BIOL162",
+          "BIOL163",
+          "BIOL164"
+        ]
+      },
+      "description": "RADSC 210W Radiographic Pathology (3) A writing-intensive study of the basic fundamentals of pathology (disease process) with emphasis placed on radiographic presentation. Material covered includes the basic concepts of disease and terms related to pathology, systemic classifications of disease including etiology, examples, complications and prognosis, radiographic procedures and presentation, and the health process. Writing requirements include shorter and longer sequenced papers. All papers will receive instructor feedback and subsequent submission of a final revised paper. An informal writing assignment with peer review is also required. The writing process evolves throughout the course as the student applies knowledge learned to current assignments. This course is a requirement of the radiography (radiological sciences) curriculum and could be utilized as an option for students interested in a visual study of disease process such as health science and biology majors or for students in need of a writing-intensive course. As is consistent with the core courses in the Radiography program, a passing grade of a C or higher is required for all RADSC majors."
+    },
+    {
+      "number": 220,
+      "title": "Radiation Biology and Protection",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "RADSC101"
+        ]
+      },
+      "description": "Study the principles of interaction of radiation with living systems, effects on cells and tissues, biological response, and radiation protection. The content of this course includes the basic fundamentals of radiation interactions, basic biology with emphasis placed on effects of radiation exposure on cells and on radiation protection mandates and techniques. This course is a requirement of the radiography (radiologic technology) curriculum and could be utilized as an option for other students interested in radiation effects such as health science, biomedical engineering, health physics or physics and biology majors. As is consistent with the core courses in the Radiography program, a passing grade for enrolled radiography students is 75%."
+    },
+    {
+      "number": 230,
+      "title": "Radiographic Physics",
+      "credits": 3,
+      "description": "Basic knowledge of atomic structure, characteristics of radiation, x-ray production, photon interactions, circuitry, imaging equipment and quality control. This course is a requirement of the radiography curriculum and could be utilized as an option for other students interested in radiation interactions and imaging equipment such as health science, biomedical engineering, health physics or physics majors. As is consistent with the core courses in the radiography program, a passing grade for enrolled radiography students is 75%."
+    },
+    {
+      "number": 295,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 2
+      },
+      "repeatable": {
+        "maxCredits": 2
+      }
+    },
+    {
+      "number": 295,
+      "suffix": "A",
+      "title": "Radiologic Science Clinical Internship I",
+      "credits": 1.5,
+      "repeatable": {
+        "maxCredits": 1.5
+      },
+      "requisites": {
+        "concurrent": [
+          "RADSC101",
+          "RADSC110"
+        ]
+      },
+      "description": "Supervised off-campus, non-group instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 295,
+      "suffix": "B",
+      "title": "Radiological Sciences Clinical Internship II",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 1
+      },
+      "requisites": {
+        "previous": [
+          "RADSC295A",
+          "RADSC102"
+        ]
+      },
+      "description": "Supervised off-campus, non-group instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 295,
+      "suffix": "C",
+      "title": "Radiological Sciences Clinical Internship III",
+      "credits": 1.5,
+      "requisites": {
+        "previous": [
+          "RADSC102",
+          "RADSC295B"
+        ]
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 295,
+      "suffix": "D",
+      "title": "Radiologic Science Clinical Internship IV",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 1
+      },
+      "requisites": {
+        "previous": [
+          "RADSC103",
+          "RADSC295C"
+        ]
+      },
+      "description": "Supervised off-campus group instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 295,
+      "suffix": "E",
+      "title": "Radiologic Science Clinical Internship V",
+      "credits": 1.5,
+      "requisites": {
+        "previous": [
+          "RADSC295D",
+          "RADSC206"
+        ]
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 295,
+      "suffix": "F",
+      "title": "Radiologic Science Clinical Internship VI",
+      "credits": 1.5,
+      "requisites": {
+        "previous": [
+          "RADSC295E"
+        ]
+      },
+      "description": "Supervised off-campus, non-group instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 295,
+      "suffix": "G",
+      "title": "Radiologic Science Clinical Internship VI-A",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "RADSC295E"
+        ]
+      },
+      "description": "Supervised clinical education activities under the direction of registered radiologic technologists."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "subject": "NANO",
+  "courses": [
+    {
+      "number": 521,
+      "title": "Pattern Transfer at the Nano-scale",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC520"
+        ]
+      },
+      "description": "Engineering at the nano-scale often requires creating and then transferring a pattern when fabricating a desired nano-scale structure. This course explores the basic processes of pattern design and then addresses the techniques used to transfer a nano-scale pattern to a surface or structure. The course looks into pattern transfer techniques that employ particles, photons, and additional chemical and physical means as the transfer mechanisms. Included in the photon approaches are studies of deep UV and X-ray pattern transfer. Particle transfer mechanisms discussed include ion and neutral particle approaches. Physical-contact pattern transfer is also explored including discussions of nano-imprinting lithography, nano-molding lithography, and scanning probe lithography. Chemical pattern transfer is another approach to pattern transfer and one that uniquely uses chemical processes to create patterns. Examples to be discussed in this course include molecular self-assembly lithography and block co-polymer lithography. Emerging pattern transfer techniques, such as magneto-lithography, will be included in E SC 521 for completeness. In many of these pattern transfer methodologies, a \"writing\" of the transferring pattern into some intermediary medium termed a resist is required. In pattern technologies requiring resists, the resist materials and their positioning as well as required physical and chemical properties will be discussed."
+    },
+    {
+      "number": 523,
+      "title": "Fabrication and Characterization for Bottom-up Nano-manufacturing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC412",
+          "ESC520",
+          "ESC521"
+        ]
+      },
+      "description": "There are two broad approaches to fabrication and manufacturing at the nano-scale: bottom-up and top-down nanofabrication. These are complementary with the former having strong ties to biology and the latter having strong ties to traditional semiconductor processing. E SC 523 focuses on the bottom-up approaches, which provide an increasingly important alternative to top-down techniques. Bottom-up approaches to nano-scale fabrication mimic nature in harnessing fundamental chemical or physical forces operating at the nano-scale to assemble basic units into larger structures. The bottom-up, or self-assembly, techniques explored in this course cover material synthesis, structure fabrication, and material and structure characterization. The production of 0-D, 1-D, 2-D, and 3-D materials will be discussed and then the assembly of these materials into structures will be explored. Fabrication topics to be covered will include block co-polymer manipulation, vapor-liquid-solid growth, the Langmuir-Blodgett technique, surface functionalization, molecular self-assembly, DNA Origami, and bacterial and viral assembly. The characterization techniques to be covered will include those emerging tools capable of ultra-precise resolution such as tip-enhanced Raman scanning microscopy, scanning helium ion microscopy, and magnetic resonance sub-nanometer imaging."
+    }
+  ]
+}

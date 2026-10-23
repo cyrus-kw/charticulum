@@ -1,0 +1,62 @@
+{
+  "subject": "BIOST",
+  "courses": [
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, research-oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Ph.D. Dissertation"
+    },
+    {
+      "number": 890,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Continuing, professionally oriented seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    }
+  ]
+}

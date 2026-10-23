@@ -1,0 +1,35 @@
+{
+  "subject": "INTAD",
+  "courses": [
+    {
+      "number": 577,
+      "title": "Global Agricultural Systems",
+      "credits": 3,
+      "description": "Global food demand is expected to double over the next few decades and agriculture is arguably the world's major driver of global environmental change. Therefore the challenge is increasing agricultural production and yields without comprising biophysical processes and environmental sustainability. This course tackles this issue through a review and survey of world farming and agricultural production systems from a biophysical, technical and agro-ecological perspective. Students will learn about basic environmental factors, constraints, threats, and solutions to these systems. Emerging topics and key innovations such as sustainable intensification, GMOs, precision farming, global climate change, and biodiversity are discussed in the context of complex socio-technical and agro-ecological systems. The focus is on developing countries but includes different agro-ecological zones, from cold temperate regions to the sub-tropics, and from the arid tropics to the sub-humid and humid tropics."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 820,
+      "title": "International Agricultural Development Seminar",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Students will examine international agricultural development issues through observation of systems, methods, and policies."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "subject": "IET",
+  "courses": [
+    {
+      "number": 101,
+      "title": "Manufacturing Materials, Processes, and Laboratory",
+      "credits": 3,
+      "description": "Mechanical properties of materials; primary processing methods used in manufacturing; ferrous and nonferrous metals; important plastic plus ceramic materials; dimensional verification and measurements; mechanical properties evaluation; laboratory methods; statistical interpretation of data."
+    },
+    {
+      "number": 215,
+      "title": "Production Design",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "IET101"
+        ]
+      },
+      "description": "The study of manufacturing processes for the purpose of part creation and/or part feature creation using both current and advanced technologies."
+    },
+    {
+      "number": 216,
+      "title": "Production Design Laboratory",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "IET215"
+        ]
+      },
+      "description": "Laboratory methods in production design including conventional and advanced manufacturing processes, computer applications, and automation/robotics."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 308,
+      "title": "Statistical Quality Control",
+      "credits": 3,
+      "description": "Fundamentals of probability and statistics, introduction to quality control fundamentals, control charts, acceptance sampling."
+    },
+    {
+      "number": 311,
+      "title": "Elements of Metallurgy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ET322"
+        ]
+      },
+      "description": "Introduction to metallurgical concepts, metallurgical testing, phase diagram studies, heat treating concepts, ferrous and nonferrous systems."
+    },
+    {
+      "number": 321,
+      "title": "Manufacturing Processes",
+      "credits": 3,
+      "description": "Manufacturing processes for producing metal, plastic, and ceramic items. Primary emphasis is placed on machine tool processes."
+    },
+    {
+      "number": 333,
+      "title": "Engineering Economics for Technologists",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH26",
+              "MATH41",
+              "MATH83"
+            ]
+          }
+        ]
+      },
+      "description": "Fundamentals of engineering economics; equivalence and rate of return analysis; replacement models; depreciation and tax considerations; and economic decision making for technologists."
+    }
+  ]
+}

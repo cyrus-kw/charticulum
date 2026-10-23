@@ -1,0 +1,1236 @@
+{
+  "subject": "PHYS",
+  "courses": [
+    {
+      "number": 1,
+      "title": "The Science of Physics",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "PHYS 1 The Science of Physics (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Introduction to the basic concepts of physics at a conceptual level for students in non-technical majors. This course provides a broad survey of the history, concepts, and applications of physics including topics such as classical mechanics in one- and two-dimensions, Newton's laws of motion, work and energy, momentum, rotational motion, vibration, sound, waves, heat and the laws of thermodynamics, electricity and magnetism( including simple electrical circuits), and topics in 20th century physics, including relativity and quantum mechanics. Course objectives include the development of an understanding of the scientific method, and its application to physics problems of historical interest, and modern physics applications; providing an appreciation of the historical role played by physics in the development of modern science, its role in important cultural and societal issues, and in understanding the basic laws of nature, as applied to everyday experience, natural phenomena, or applications technologies (old and new); the development of scientific literacy, to help motivate the many connections of physics to other fundamental scientific fields and applications disciplines; providing experience in problem solving and the conceptual understanding of physics, and emphasizing the recurring role of a few important concepts, cutting across many scientific disciplines, such as the fundamental laws of classical mechanics, the basic laws of thermodynamics (including conservation of energy), and applications of modern quantum theory."
+    },
+    {
+      "number": 10,
+      "title": "Physics Behind the Headlines",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "Select topics in modern physics with emphasis on understanding science related articles in the news (For students in non-mathematical fields.) PHYS 10 Physics Behind the Headlines (3) (GN) Introduction for non-science majors to select topics in the modern physics of quantum mechanics and relativity with the goal of understanding recent technological advances, scientific breakthroughs and social events related to science as they appear in the news. These range from the discovery of the Higgs boson and dark energy to developments in lasers or superconductors. Social events in the news where science played a large role such as the Roswell \"UFO\" event in 1947 or the Fukushima nuclear crisis in 2011 will also be discussed. Course objectives include the understanding of the scientific method and scientific reporting; learning the conceptual aspects of the structure of matter from atoms to quarks, waves, energy and light; quantum mechanics and its applications to high tech such as computers and lasers; relativity E=mc2, nuclear forces, gravity and the Big-Bang theory. Particular emphasis will be put on learning the scientific standards for a hypothesis to be truly established as a working theory and how the simple laws of physics apply broadly to many different systems. This class will emphasize conceptual aspects and there is no mathematics prerequisite."
+    },
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 150,
+      "title": "Technical Physics I",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "Elementary treatment of topics in mechanics, heat, wave motion, and sound leading toward an understanding of technical applications. PHYS 150 Technical Physics I (3) (GN) (BA) This course meets the Bachelor of Arts degree requirements. Technical Physics provides an algebra-based introduction to mechanics, heat, wave motion, and sound exemplifying scientific method and leading toward an understanding of technical applications. PHYS 150 is the first course in a two-course sequence with PHYS 151 surveying all of physics. It includes topics such as measurement, dimensional analysis, systems of units, describing motion in one dimension, scalars and vectors, describing motion in two and three dimensions, projectile motion, circular motion, particle dynamics via Newton's Laws of Motion, forces, work and energy, momentum, systems of particles, collisions, rotational motion of rigid bodies, torque, moment of inertia, static equilibrium, mechanical advantage, mechanical properties of materials, fluids, vibrations, wave motion, sound, temperature, heat, thermodynamics, and heat transfer. Students attend two lecture/recitation classes and one two-hour laboratory/activity period per week. Classes emphasize conceptualizing the basic ideas, terminology, and principles of the physical phenomena of nature; their quantitative expression through algebra and trigonometry; their relation to applications in science and technology; and their use in quantitative problem solving. Both computer-based and traditional lab exercises and activities illustrate class material and scientific method while giving students experience with a variety of measuring tools and the general principles of measurement, including the analysis of error. Students work collaboratively in small groups to plan their measurements, collect and analyze data, make judgments based on their results, and communicate their efforts and conclusions in a written lab/activity report. This course requires some algebra as a prerequisite. It is a prerequisite for PHYS 151 and is a required course for many engineering technology programs. It is offered at least once per academic year at all Penn State locations with engineering technology programs. Course evaluation is based on a combination of assessment including homework assignments and/or quizzes, written lab/activity reports, and exams."
+    },
+    {
+      "number": 151,
+      "title": "Technical Physics II",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS150"
+        ]
+      },
+      "description": "PHYS 151 Technical Physics II (3) (GN) provides an algebra-based introduction to electricity, light, and modern physics exemplifying scientific method and leading toward an understanding of technical applications. It is the second course in a two-course sequence with PHYS 150 surveying all of physics. It includes topics such as electric charge, electric force, electric field, electric potential difference, capacitance, cathode-ray tube, electric current, Ohm's Law, batteries, direct current circuits, resistors, ammeters, voltmeters, magnetic force, magnetic field, electromagnetic induction, motors, generators, transformers, inductors, alternating current circuits, electromagnetic waves, light, reflection, refraction, interference, diffraction, atomic physics, atoms in combination, and the nucleus.Students attend two lecture/recitation classes and one two-hour laboratory/activity period per week. Classes emphasize conceptualizing the basic ideas, terminology, and principles of the physical phenomena of nature; their quantitative expression through algebra and trigonometry; their relation to applications in science and technology; and their use in quantitative problem solving. Both computer-based and traditional lab exercises and activities illustrate class material and scientific method while giving students experience with a variety of measuring tools and the general principles of measurement, including the analysis of error. Students work collaboratively in small groups to plan their measurements, collect and analyze data (often using modern computer hardware and software), make judgments based on their results, and communicate their efforts and conclusions in a written lab/activity report.The prerequisite for this course is PHYS 150 . It is a required course for many engineering technology programs. It is offered at least once per academic year at all Penn State locations with engineering technology programs.Course evaluation is based on a combination of regular homework assignments and/or quizzes, written lab/activity reports, two or three exams, and a final exam."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 211,
+      "title": "General Physics: Mechanics",
+      "credits": 4,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "concurrent": [
+          "MATH140"
+        ]
+      },
+      "description": "PHYS 211 General Physics: Mechanics (4) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Calculus-based introduction to classical mechanics, including such topics as: measurement, dimensional analysis, motion in one-dimension, vectors, motion in 2 and 3 dimensions, relative and circular motion, force and dynamics, Newton's Laws, friction, kinetic energy, work, potential energy, energy conservation, systems of particles, center of mass and momentum, elastic and inelastic collisions, rotation (moments of inertia), rolling motion, torque, angular momentum, static equilibrium, gravitational force and Kepler's laws, gravitational potential energy, oscillations, waves (transverse and longitudinal, superposition of waves). This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications, and to enhance their conceptual understanding of physical laws. The exact model of instruction varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in both small class sessions. The introduction of data acquisition and analysis methods (often making use of modern computer tools) will be stressed in the laboratory/activity period. Course evaluation is based on a combination assessments such as homework, quizzes, lab reports, midterm and final exams, and other evaluative tools. The course is an important prerequisite for later work in many science and engineering disciplines."
+    },
+    {
+      "number": 211,
+      "suffix": "H",
+      "title": "General Physics: Mechanics",
+      "credits": 4,
+      "attributes": [
+        "GN",
+        "BA-N",
+        "HON"
+      ],
+      "requisites": {
+        "concurrent": [
+          "MATH140"
+        ]
+      },
+      "description": "Calculus-based introduction to classical mechanics, including such topics as: measurement, dimensional analysis, motion in one-dimension, vectors, motion in 2 and 3 dimensions, relative and circular motion, force and dynamics, Newton's Laws, friction, kinetic energy, work, potential energy, energy conservation, systems of particles, center of mass and momentum, elastic and inelastic collisions, rotation (moments of inertia), rolling motion, torque, angular momentum, static equilibrium, gravitational force and Kepler's laws, gravitational potential energy, oscillations, waves (transverse and longitudinal, superposition of waves). This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications, and to enhance their conceptual understanding of physical laws. The exact model varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in both small class sessions. The introduction of data acquisition and analysis methods (often making use of modern computer tools) will be stressed in the laboratory/activity period. As an honors course, compared to PHYS 211 , in this course examples from the current research literature and more applications to physics research/applications can be made. The course is an important prerequisite for later work in many science and engineering disciplines."
+    },
+    {
+      "number": 212,
+      "title": "General Physics: Electricity and Magnetism",
+      "credits": 4,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "PHYS211"
+        ],
+        "concurrent": [
+          "MATH141"
+        ]
+      },
+      "description": "PHYS 212 General Physics: Electricity and Magnetism (4) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Calculus-based introduction to classical electricity and magnetism, including such topics as, electric charge and electric fields, Gauss's law, electric potential, capacitance, current, resistance, and circuits, magnetic fields, and fields due to currents, induction and inductance, magnetism of matter, Maxwell's equations, and electromagnetic oscillations. This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications, and to enhance their conceptual understanding of physical laws. The exact model of instruction varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in both small class session. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in both small class settings. The introduction of data acquisition and analysis methods (often making use of modern computer tools) will be stressed in the laboratory/activity period.Course evaluation is based on a combination assessments such as homework, quizzes, lab reports, midterm and final exams, and other evaluative tools.The course is an important prerequisite for later work in many science and engineering disciplines."
+    },
+    {
+      "number": 212,
+      "suffix": "H",
+      "title": "General Physics: Electricity and Magnetism",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "attributes": [
+        "GN",
+        "BA-N",
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "PHYS211"
+        ],
+        "concurrent": [
+          "MATH141"
+        ]
+      },
+      "description": "Calculus-based introduction to classical electricity and magnetism, including such topics as, electric charge and electric fields, Gauss's law, electric potential, capacitance, current, resistance, and circuits, magnetic fields, and fields due to currents, induction and inductance, magnetism of matter, Maxwell's equations, and electromagnetic oscillations. This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications, and to enhance their conceptual understanding of physical laws. The exact model varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in both small class session. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in both small class settings. The introduction of data acquisition and analysis methods (often making use of modern computer tools) will be stressed in the laboratory/activity period. As an honors course, compared to PHYS 212 , in this course, examples from the current research literature and more applications to physics research/applications can be made The course is an important prerequisite for later work in many science and engineering disciplines."
+    },
+    {
+      "number": 213,
+      "title": "General Physics: Fluids and Thermal Physics",
+      "credits": 2,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "PHYS211"
+        ],
+        "concurrent": [
+          "MATH141"
+        ]
+      },
+      "description": "Calculus-based study of the basic concepts of fluids and sound, heat, kinetic theory, and entropy. PHYS 213 General Physics: Fluids and Thermal Physics (2) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Calculus-based introduction to the basic concepts of fluids and sound, heat, kinetic theory, and entropy, including such topics as: fluid mechanics and motion, sound Waves: speed, harmonic waves, intensity, temperature and heat: thermal expansion, heat capacity, conduction and radiation, kinetic theory of gases: First Law of Thermodynamics, internal energy of a gas, heat capacities, adiabatic expansion, entropy and the Second Law: concept of equilibrium and entropy, heat engines, efficiency of heat engines and refrigerators, introduction to statistical mechanics.This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications, and to enhance their conceptual understanding of physical laws. The exact model of course instruction varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in small class settings. The introduction of data acquisition and analysis methods (often making use of modern computer tools) will be stressed in the laboratory/activity period. Course evaluation is based on a combination assessments such as homework, quizzes, lab reports, midterm and final exams, and other evaluative tools.The course is an important prerequisite for later work in many science and engineering disciplines."
+    },
+    {
+      "number": 214,
+      "title": "General Physics: Wave Motion and Quantum Physics",
+      "credits": 2,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "PHYS211",
+          "PHYS212"
+        ]
+      },
+      "description": "Calculus-based study of the basic concepts of wave motion, geometrical optics, interference phenomena, photons, wave mechanics, and the structure of matter. PHYS 214 General Physics: Wave Motion and Quantum Physics (2) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Calculus-based introduction to the basic concepts of wave motion, geometrical optics, interference phenomena, photons, wave mechanics, and the structure of matter, including such topics as: electromagnetic waves: Poynting Vector, polarization and reflection, geometrical optics: mirrors, refraction, lenses, optical instruments, interference and diffraction, photons and matter waves, energy quantization, structure of matter: hydrogen atom, conduction of electrons in solids, and nuclear physics and nuclear energy.This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications, and to enhance their conceptual understanding of physical laws. The exact model of course instruction varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Use of a combination of computer-based and traditional lab exercises is expected and collaborative learning exercises will be used in small class settings. The introduction of data acquisition and analysis methods (often making use of modern computer tools) will be stressed in the laboratory/activity period. The course is an important prerequisite for later work in many science and engineering disciplines."
+    },
+    {
+      "number": 230,
+      "title": "Introduction to Relativity",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          "MATH141"
+        ],
+        "concurrent": [
+          "MATH220",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to special and general relativity including space-time diagrams and relativistic kinematics, length contraction, time dilation, equivalence principles, curved space and cosmology. PHYS 230 Introduction to Relativity (3) This course is designed for science or engineering students who have successfully completed calculus-based physics courses through electricity and magnetism ( PHYS 212 ), and differential and integral calculus ( MATH 140 and MATH 141 ). Concurrent courses of linear algebra ( MATH 220 ) and vector calculus ( MATH 230 or MATH 231 ) are required. This course should provide the student with a mathematical and physical understanding of relativity theory beyond that which one encounters in semi-popular treatments of the subject. The mathematical skills which this course will develop, e.g. tensors and tensor analysis, should be especially useful to students in a wide range of science and engineering fields from computer science to physics and electrical engineering."
+    },
+    {
+      "number": 237,
+      "title": "Introduction to Modern Physics",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ],
+        "concurrent": [
+          "PHYS214"
+        ]
+      },
+      "description": "Relativity and quantum theory with applications to selected topics in atomic, molecular, solid state, or nuclear physics. This course covers much of the modern physics curriculum focusing on special relativity, the concepts and mathematical formalism of quantum mechanics in one- and three-dimensional model systems, and some applications of quantum theory to modern topics such as atomic/molecular, nuclear, particle, condensed matter physics or astrophysics as time permits. The course is a prerequisite for a upper level courses in physics and astronomy majors, and in particular quantum mechanics."
+    },
+    {
+      "number": 237,
+      "suffix": "H",
+      "title": "Introduction to Modern Physics",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ]
+      },
+      "description": "Relativity and quantum theory applied to selected topics in atomic, molecular, solid state, and nuclear physics. PHYS 237H Introduction to Modern Physics (3) The course covers much of the modern physics curriculum including topics such as special relativity, the concepts and mathematical formalism of quantum mechanics, both in one- and three-dimensional model systems, and the applications of quantum theory to topics ranging from atomic/molecular, nuclear, particle, and condensed matter physics to astrophysics.In contrast to the non-honors version, PHYS 237H typically makes more frequent use of higher level mathematical concepts and involves the solution of more sophisticated problems. A number of topics are considered in more depth, and these often focus on connections of the material to real-life science research applications."
+    },
+    {
+      "number": 250,
+      "title": "Introductory Physics I",
+      "credits": 4,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "PHYS 250 Introductory Physics I (4) (GN)(BA) This course meets the Bachelor of Arts degree requirements.Algebra-based introduction to classical mechanics, including such topics as one- and two-dimensional motion, vectors, relative and circular motion, force and dynamics, Newton's laws of motion, work and kinetic energy, potential energy and energy conservation, momentum, rotational motion and angular velocity, static equilibrium and properties of materials, static and moving fluids, vibrations, simple harmonic motion, general properties of waves, sound and human hearing, temperature and kinetic theory, heat and calorimetry, and the basic laws of thermodynamics.This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications to everyday phenomena and to the life sciences, to enhance their conceptual understanding of physical laws, and to increase their problem solving abilities especially as applied to physical systems. The mathematical prerequisites for this course (and the subsequent PHYS 251 ) are mathematics at the level of algebra and trigonometry, demonstrated by suitable coursework or demonstration of satisfactory performance on the mathematical proficiency exam. The exact model of course instruction varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Students perform laboratory experiments, discuss their results, and write up their conclusions in weekly lab reports. The course is a prerequisite for the second semester continuation, PHYS 251 ."
+    },
+    {
+      "number": 251,
+      "title": "Introductory Physics II",
+      "credits": 4,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
+        ]
+      },
+      "description": "Selected topics in light, electricity, and magnetism. PHYS 251 Introductory Physics II (4) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Algebra-based introduction to classical electricity and magnetism, optics, and areas of modern physics, including such topics as electric charge and fields, electrical potential and energy, electric currents and resistance, direct current (DC) circuits, magnetism, electromagnetic induction and applications to devices, electromagnetic waves, light and geometrical optics, wave nature of light, basic optical instruments (microscopes, telescopes, etc.), basics of quantum mechanics, applications of quantum theory to atoms, molecules, and solids, nuclear physics and radioactivity, applications of nuclear energy and radiation.This course is designed to provide students with a working knowledge of the elementary physics principles mentioned above, as well as their applications to everyday phenomena and to the life sciences, to enhance their conceptual understanding of physical laws, and to increase their problem solving abilities, especially as applied to physical systems. The mathematical prerequisites for this course (and the prerequisite PHYS 250 ) are mathematics at the level of algebra and trigonometry, demonstrated by suitable coursework or demonstration of satisfactory performance on the mathematical proficiency exam. The exact model of instruction varies at different campuses due to different resources and class sizes. Students attend several class meetings including at least one lab or activity period per week. Students perform laboratory experiments, discuss their results, and write up their conclusions in weekly lab reports. The course is a continuation of the first-semester course PHYS 250 ."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 296,
+      "suffix": "H",
+      "title": "Study of the Historical Background, Formulation and Consequences of Einstein's Theory of Rela",
+      "credits": 1,
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 337,
+      "title": "Introduction to Quantum Information Science and Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "PHYS214"
+        ]
+      },
+      "description": "This course will introduce quantum mechanics from the perspective of quantum information science and engineering, focusing on two-level systems and the concepts of entanglement and decoherence. It will educate students on how quantum information can be used in quantum communication and quantum computing, both in theory and experiment. The course covers basic concepts such as two-level systems, Schroedinger equation, Bloch sphere, superposition, entanglement, quantum bits, quantum gates, Bell¿s inequalities, and mixed states. Covering these basic concepts prepare the students for more advanced courses in the minor where they learn in depth about quantum algorithms, physical implementation of different quantum systems, and how to compute with existing quantum computers."
+    },
+    {
+      "number": 400,
+      "title": "Intermediate Electricity and Magnetism",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          "PHYS213",
+          "PHYS214",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ]
+      },
+      "description": "Electrostatics and magnetostatics in vacuum; electrical and magnetic properties of matter; electrodynamics, Maxwell's equations, conservation laws, electromagnetic waves and radiation. PHYS 400 Intermediate Electricity and Magnetism I (3-4) A second undergraduate course in electricity and magnetism, required of all physics majors who typically take it in their fifth or sixth semester. The course includes a review of vector calculus, and in-depth discussions of electrostatics, magnetostatics, in vacuum and in matter, time-varying electric and magnetic fields and electrodynamics, leading to Maxwell's equations. Discussions of conservation laws for charge, energy, and momentum, electromagneti waves (in vacuum and in matter and at boundaries), electromagnetic vector and scalar potentials and fields, and an introduction to radiation are included."
+    },
+    {
+      "number": 402,
+      "title": "Electronics for Scientists",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          "PHYS212",
+          "PHYS213",
+          "PHYS214"
+        ]
+      },
+      "description": "Circuit and network theory; active devices; amplifiers; introduction to digital electronics; noise theory. PHYS 402 Electronics for Scientists (4) A junior-senior theory/laboratory course providing a survey of modern electronics from a data acquisition and analysis point of view. One of several possible lab-based courses taken by physics majors in several options to satisfy a lab requirement, typically taken by physics majors in their senior year. This course is very useful for students interested in experimental research work and includes examples such as digital data acquisition, the lab study of various electronic devices, fast Fourier transform methods and other topics."
+    },
+    {
+      "number": 404,
+      "title": "Introduction to Acoustics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide an overview and introduction to the field of acoustics from a physics and engineering viewpoint. Topics will include the physics of oscillation and wave motion, frequency spectrum analysis, sound pressure levels, sound wave propagation in air and water, models of sound sources (monopoles, dipoles, quadrupoles, line arrays), standing waves and mode shapes in (string, membranes, pipes), acoustics of large and small rooms, noise and vibration measurements, human hearing and psychoacoustics, loudspeaker design and performance, and other engineering applications."
+    },
+    {
+      "number": 406,
+      "title": "Subatomic Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS410"
+        ]
+      },
+      "description": "Introductory treatment of elementary particles, fundamental strong and electroweak interactions, nuclear structure, accelerators, particle detection, nuclear astrophysics."
+    },
+    {
+      "number": 410,
+      "title": "Introduction to Quantum Mechanics I",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          "PHYS237"
+        ]
+      },
+      "description": "Basic postulates; Schrodinger wave equation; stationary states; variational method; scattering in one dimension; orbital angular momentum; hydrogen atom; numerical methods."
+    },
+    {
+      "number": 411,
+      "title": "Introduction to Quantum Mechanics II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS410"
+        ]
+      },
+      "description": "General theory of angular momentum; approximation methods; scattering theory; radiation theory; applications to atomic, molecular, condensed matter, nuclear and particle physics."
+    },
+    {
+      "number": 412,
+      "title": "Solid State Physics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ],
+        "concurrent": [
+          "PHYS410"
+        ]
+      },
+      "description": "This course provides an introduction to solid-state physics, which is the study of quantum, thermal, electrical, magnetic and structural properties of solids. Specific topics include crystal symmetry, X-ray structure analysis, lattice vibrations, thermal properties and phonons, free electron transport theory, elementary one-electron quantum theory of solids."
+    },
+    {
+      "number": 414,
+      "title": "Solid State Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "PHYS237"
+        ]
+      },
+      "description": "Crystal structure; reciprocal lattice; X-ray diffraction; lattice vibrations; thermal properties; free electron gas model; energy bands; semiconductors; magnetism."
+    },
+    {
+      "number": 419,
+      "title": "Theoretical Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          "PHYS212",
+          "PHYS213",
+          "PHYS214"
+        ]
+      },
+      "description": "Principles of Newtonian, Lagrangian, and Hamiltonian mechanics of particles with applications to vibrations, rotations, orbital motion, and collisions. PHYS 419 / MATH 419 Theoretical Mechanics (3) A second course in classical mechanics, required of all physics majors who typically take it in their 5th or 6th semester. The course includes a review of relevant mathematics, detailed discussions of advanced topics in Newtonian mechanics, introductions to Lagrangian and Hamiltonian dynamics, and applications to such forced oscillations, orbital motion, vibrational motion and normal modes, rigid body motion, and collisions.It is a prerequisite for Physics 461, which is a second semester extension. It is also a valuable background for most 400-level physics courses, especially Physics 410."
+    },
+    {
+      "number": 420,
+      "title": "Thermal Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          "PHYS237"
+        ]
+      },
+      "description": "Basic postulates of statistical mechanics and thermodynamics, microscopic quantum states and macroscopic parameters; partition functions; Maxwell- Boltzmann and quantum statistics."
+    },
+    {
+      "number": 421,
+      "suffix": "W",
+      "title": "Research Methods in Physics",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS237"
+        ]
+      },
+      "description": "Methodology focusing on the theory of measurement and experiment design."
+    },
+    {
+      "number": 430,
+      "title": "Introduction to Computational Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          "PHYS237"
+        ]
+      },
+      "description": "This course will cover basic techniques for writing computational simulations of systems of interest to physicists. The course will aim to provide tools and techniques necessary for simulating initial value problems, chaotic systems, particle distributions on a grid or in the continuum, random processes (Monte Carlo), phase transitions, and numerical solution of equations. Numerical techniques which will also be covered include numerical differentiation (ordinary and partial differential equations), numerical integration, Fourier transforms, linear and nonlinear fitting, root finding, plotting and data presentation. Physical systems to study can include chaotic pendulum motion, diffusion driven motion, the Ising spin model, and dilute gas molecular dynamics. Students will learn to simulate multiple physical systems, and analyze their simulated data using multiple numerical techniques in order to compare their results to expected theoretical behavior. Students' competency in simulation, analysis and presentation of simulated results will be assessed through independently designed programming projects using learned techniques."
+    },
+    {
+      "number": 437,
+      "title": "Physical implementation of qubits",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS337"
+        ]
+      },
+      "description": "Introduction to the physical implementation of quantum bits (qubits) based on state-of-the-art technologies. The course will consider issues in quantum information technology from an experimental point of view. The various types of qubits that will be discussed include those made with superconducting circuits, atoms (including ions, atoms and molecules), electron spins, and photons. In each case, the goal will be to develop a physical understanding of the various approaches, to get a sense of their strengths and weaknesses, and to learn about the state of the art and future prospects."
+    },
+    {
+      "number": 444,
+      "title": "Topics in Contemporary Physics",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "PHYS237"
+        ]
+      },
+      "description": "A course required of all Physics majors, designed to be taken in the third year. Introduces students to modern research areas in physics at Penn State and elsewhere. Provides background on career choices available with an undergraduate physics degree, including employment opportunities, planning for graduate study, and tailoring the physics curriculum to meet career goals. The course structure is typically comprised of talks by Penn State faculty, outside visitors, students panels, and other information speakers, with students writing short and long reports using the class presentations discussions, and research from outside sources (research journals, internet, etc.) as background material."
+    },
+    {
+      "number": 457,
+      "suffix": "W",
+      "title": "Experimental Physics",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          "PHYS213",
+          "PHYS214",
+          "PHYS237"
+        ]
+      },
+      "description": "An intermediate laboratory course, required of all Physics majors and taken by other students, typically in their third or fourth year, this course provides an introduction to modern laboratory techniques and instrumentation used in research labs. Typical experiments include X-ray diffraction, Compton scattering, velocity of light determination, high-temperature superconductors, Raman scattering, Hall effect, scanning tunneling microscopy (STM), and many others. This course also serves as the writing-intensive course at the 400-level for most Physics majors."
+    },
+    {
+      "number": 458,
+      "title": "Intermediate Optics",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          "PHYS213",
+          "PHYS214",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ]
+      },
+      "description": "Geometrical and physical optics: theory of lens systems, aberrations, apertures, interference, diffraction, polarization. PHYS 458 Intermediate Optics (4) An intermediate optics course which builds on the wave and optics used in the 200-level introductory course, this course (which includes a lab component) focuses on physical and geometrical optics, propagation of light and its interaction with matter, polarization, interference, and diffraction. Optical components such as lenses, mirrors, prisms, fiber optics, spectrometers, and interferometers are discussed and employed. The laboratory component includes a number of 1-2 period experiments designed to illustrate the principles of applied geometrical and physical optics. Longer (5 period) experiments are also included which utilize modern, computer-controlled multi-channel detection systems and are applied to such systems as thin-film optics and the optics of semi-conductors."
+    },
+    {
+      "number": 462,
+      "title": "Applications of Physics in Medicine",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS250"
+            ]
+          }
+        ]
+      },
+      "description": "Recommended Preparations: ( PHYS 212 , PHYS 213 , PHYS 214 ,) PHYS 251 ; Applications of physics in human physiology and in instrumentation for medical diagnosis and treatment. PHYS 462 Applications of Physics in Medicine (3) This course is a general survey of applications of physics in understanding the physiology of the human body and the physical principles behind diagnostic medical measurement , including imaging modalities: X-ray, nuclear, magnetic resonance, and ultrasound. Treatment applications such as laser surgery and radiation therapy are also covered. The course is appropriate for students intending work in a health profession."
+    },
+    {
+      "number": 465,
+      "title": "Network analysis of biological systems",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH140",
+              "BIOL230W",
+              "BMB251",
+              "BME201"
+            ]
+          }
+        ]
+      },
+      "description": "The survival of a cell, organism or population in a variable environment depends on mounting specific responses to external stimuli. Each of these responses is governed by the coordinated action of multiple (potentially numerous) individual functional components. Understanding the collective behavior of such a complex interacting system is enabled by representing the system as a network, where we denote the components of the system with nodes and their interactions by edges. The properties of these interaction networks can then be analyzed by computational methods. This analysis can lead to important conclusions and predictions about the possible collective, dynamical behaviors of the system. The course will cover examples of network analysis and modeling in biology and medicine, focusing on systems at the molecular and cellular level. After taking this course students will be able to integrate information to construct a network model corresponding to a biological system, to use graph theoretical measures to describe this network, and to use mathematical or computational methods to model the dynamic processes that take place in this system. These skills are important for careers in life science and medical research, in bioengineering and biotechnology."
+    },
+    {
+      "number": 472,
+      "title": "Elements of Nuclear Physics and its Applications to Medical Imaging and Treatments",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS211",
+          "PHYS212",
+          "PHYS213",
+          "PHYS214",
+          "PHYS237"
+        ]
+      },
+      "description": "Introduction to the theory of nuclei, interactions with fast particles, and applications to medical imaging and radiation oncology. PHYS 472 Elements of Nuclear Physics and its Applications to Medical Imaging and Treatments (3) Modern physics tools are used now in numerous medical diagnostic methods, for various treatments of tumors, and so on. The class will focus several aspects of modern physics relevant to medical applications: (i) mechanisms of interaction of high energy particles, i.e. photons, electrons, protons, neutrons, and nuclei, with materials and methods of generating beams of such particles, (ii) applications of such beams for obtaining images of the body, (iii) radioactive decays of nuclei and use of the nuclear decays for imaging of dynamical processes in the body, (iv) shell structure of nuclei and applications of nuclear magnetic resonance in imaging. The course will allow students to understand the physics underlying the medical application of modern physics and physics of a wide range of new tools used in medicine, including computer tomography, positron emission tomography, and magnetic resonance imaging, as well as use of photon, proton and nuclear beams for tumor treatments."
+    },
+    {
+      "number": 479,
+      "title": "Special and General Relativity",
+      "credits": 3,
+      "attributes": [
+        "BA-Q"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS237",
+          "PHYS400",
+          "PHYS419",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ]
+      },
+      "description": "Mathematical description, physical concepts, and experimental tests of special and general relativity. MATH 479 / PHYS 479 Special and General Relativity (3) This course is intended as an elective course (within the undergraduate Physics program) for Physics majors to be taken in their senior year. Intended to be cross-listed with MATH, it can also be used in support of a Mathematics minor and, in some options, within the Math program as a program elective as well. The course significantly expands upon the introduction to Special Relativity (SR) seen in PHYS 237 , including discussions of experimental tests of SR and applications to relativistic mechanics. It then introduces students to the mathematical machinery required to understand General Relativity (GR), starting with the description of curved spacetimes and geodesics. It discusses solutions to the Einstein equations and surveys the classic tests which established the validity of General Relativity. It concludes with applications of GR in such areas as black hole physics, the generation and detection of gravitational waves, other topics (such as cosmology, relativistic astrophysics, etc.)."
+    },
+    {
+      "number": 483,
+      "title": "Astrophysics of the Dark Universe",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS237"
+        ]
+      },
+      "description": "This course covers the astrophysics of the dark universe, including the gravitational framework used to describe astrophysical and cosmological systems and the observational evidence for dark matter, dark energy, and black holes. It introduces the Newtonian, special-relativistic, and general-relativistic concepts needed to study gravity on astrophysical and cosmological scales, and develops the physical basis for interpreting key observations that require dark components in the universe. Topics include Newtonian particle dynamics, the two-body and restricted three-body problems, evidence for dark matter from galactic rotation curves and galaxy clusters, special relativity and spacetime, black holes in Schwarzschild and Kerr spacetimes, the expansion history of the universe, the Friedmann equations, cosmological distance measures, observational evidence for cosmic acceleration, and gravitational waves from compact binaries. Emphasis is placed on connecting theory to observation through analytic calculations, physical interpretation, and quantitative estimates. Students learn how gravitational dynamics, cosmic expansion, black hole physics, and gravitational radiation provide evidence for the dark sector and how current observations constrain its nature. The course also introduces methods used to probe dark matter and dark energy through galaxy dynamics, cosmological observables, large-scale structure, and gravitational-wave sources."
+    },
+    {
+      "number": 494,
+      "title": "Physics Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Investigation of an original research problem, including a literature search. Preparation of a formal thesis is optional."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Physics Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Investigation of an original research problem, including a literature search. Preparation of a formal thesis is optional."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 510,
+      "title": "General Relativity I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS557"
+        ]
+      },
+      "description": "Foundations of general relativity, elements of differential geometry, Einstein's equation, Newtonian limit, gravity waves, Friedmann cosmologies and Schwarzschild solution."
+    },
+    {
+      "number": 511,
+      "title": "Topics in General Relativity",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS510"
+        ]
+      },
+      "description": "Selected topics from: Cauchy problem, Hamiltonian formulation, positive energy theorems, asymptotics, gravitational radiation, singularity theorems, black-holes, cosmology, observational tests."
+    },
+    {
+      "number": 512,
+      "title": "Quantum Theory of Solids I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS412"
+        ],
+        "concurrent": [
+          "PHYS517"
+        ]
+      },
+      "description": "Electrons in periodic potentials; single electron approximations; lattice dynamics; electrical, optical, and magnetic properties of solids; transport theory."
+    },
+    {
+      "number": 513,
+      "title": "Quantum Theory of Solids II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS512"
+        ]
+      },
+      "description": "Electron-phonon interaction, BCS theory; Landau Fermi-liquid theory; disorder and localized states; spin-wave theroy; many-body theory."
+    },
+    {
+      "number": 514,
+      "title": "Physics of Surfaces, Interfaces, and Thin Films",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS412"
+        ]
+      },
+      "description": "This course focuses on interfacial and surface phenomena; structural, electronic, vibrational and thermodynamic properties; physisorption and chemisorption; phase transitions and ultrathin film nucleation; and growth phenomena."
+    },
+    {
+      "number": 515,
+      "title": "Density Functional Theory and Practice",
+      "credits": 3,
+      "description": "This course gives students an overview of the theory and practice of calculations performed with Density Functional Theory (DFT). DFT is a powerful tool to calculate the structural and electronic properties of collections of atoms. The course emphasizes the practical aspects of the calculations and the theory will be only described as necessary to understand and perform correct calculations. The target audience of the course is students of Physics, Chemistry, Materials Science, Chemical or Mechanical Engineering, and other science/engineering disciplines that need to learn to perform calculations based on DFT with a minimum of exposure to the theoretical details underlying this technique."
+    },
+    {
+      "number": 517,
+      "title": "Statistical Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS561"
+        ]
+      },
+      "description": "Thermodynamics, classical and quantum statistics; Bose and Fermi gases; Boltzmann transport equation; phase transitions, critical phenomena; Ising model."
+    },
+    {
+      "number": 518,
+      "title": "Critical Phenomena and Field Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS517"
+        ]
+      },
+      "description": "Critical phenomena using field theoretical and renormalization group techni- ques; solvable statistical models and conformal field study; fluctuations and random processes. PHYS 518 Critical Phenomena and Field Theory (3) The application of field theoretical methods, in particular, the renormalization group approach, has profoundly influenced our understanding of the physics of continuous phase transitions. In particular, they reveal the origin of universality between seemingly unrelated phase transitions, and the reason for the failure of the Landau Ginzburg theory close to the critical point. This course will begin with the concepts of the order parameter and spontaneous symmetry breaking, and the shortcomings of the Landau Ginzburg theory that neglects fluctuations of the order parameter. Subsequently, we will introduce field theoretical techniques and Feynman diagrams, and the basic foundations of the renormalization group method for integrating out rapidly fluctuating modes of the order parameter. These concepts will be applied to various classes of phase transitions, including the Heisenberg ferromagnet, nonlinear sigma model, and the Kosterlitz-Thouless model. Epsilon expansion will be performed in detail starting from both four and two dimensions, and a connection will be made to experiments, such as superfluid transition in thin helium films. No prior knowledge of field theory is required. The course grade will be based upon homework assignments and a term paper."
+    },
+    {
+      "number": 520,
+      "title": "Topology in Condensed Matter",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS561",
+          "PHYS557",
+          "PHYS517",
+          "PHYS512"
+        ]
+      },
+      "description": "This course explores the role of topology and geometry in condensed matter physics. This course will cover a variety of topics, including Berry phase and Berry curvature, quantum Hall effect and quantum anomalous Hall effect, time reversal symmetry and quantum spin Hall effect, Landauer-Buttiker formalism, 3D topological insulators, Dirac and Weyl semimetals, as well as other research frontiers in topological physics of condensed matter systems. Students will engage with current research literature, discussing prototypical models, formal theory and experiments on topological states of matter."
+    },
+    {
+      "number": 524,
+      "title": "Physics of Semiconductors and Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS412"
+        ]
+      },
+      "description": "Electronic structure, optical and transport properties of crystalline and amorphous semiconductors, quantum wells, superlattices; quantum devices; quantum Hall effect."
+    },
+    {
+      "number": 525,
+      "title": "Methods of Theoretical Physics I",
+      "credits": 3,
+      "description": "Complex variables, Hilbert spaces, linear operators, calculus of variations, Fourier analysis, Green's functions, distributions, differential equations, and special functions."
+    },
+    {
+      "number": 526,
+      "title": "Methods of Theoretical Physics II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS525"
+        ]
+      },
+      "description": "Finite and Lie groups, representations and application to condensed matter and particle physics; selected topics from differential geometry."
+    },
+    {
+      "number": 527,
+      "title": "Computational Physics and Astrophysics",
+      "credits": 3,
+      "description": "This course provides an advanced overview of applications of numerical methods and computer programming to physics and astrophysics. Numerical calculations provide a powerful tool for understanding physical phenomena, complementing laboratory experiment and analytical mathematics. The main objectives of the course are: to survey the computational methods used for modeling physical and astrophysical systems; to apply the computational methods to solve real world problems in physics and astrophysics; to assess the reliability of numerical results using convergence tests and error estimates; and to use scientific visualization as a tool for computer programming development and for physical understanding of numerical results. Strong programming skill in any of the common programming languages such as C, C++, or Python, is highly recommended."
+    },
+    {
+      "number": 529,
+      "title": "Neural Control Engineering",
+      "credits": 3,
+      "description": "The ability to use formal control theory to observe and control neuronal systems is rapidly becoming more feasible as our models of neural systems become more realistic and as our advances in nonlinear Kalman filtering become more sophisticated. This course will explore the cutting edge of nonlinear state estimation of neuronal systems and the construction of control algorithms based on that state estimation. We will give an overview of several canonical neuroscience models, which represent experimental systems that can be controlled: the Hodgkin-Huxley equations, their reduction with the Fitzhugh-Nagumo equations, the Wilson-Cowan model of cortex, and recent models of Parkinson's disease. We will then apply nonlinear state estimation to measurements from such systems and construct control algorithms that interact with such models."
+    },
+    {
+      "number": 530,
+      "title": "Theoretical Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS419"
+        ]
+      },
+      "description": "Newtonian mechanics, noninertial coordinate system, Lagrangian mechanics, small oscillations, Hamiltonian formulation, canonical transformations, Hamilton-Jacobi theroy, dynamical systems."
+    },
+    {
+      "number": 541,
+      "title": "Elementary Particle Phenomenology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS562"
+        ]
+      },
+      "description": "Baryons and mesons; leptons and quarks; electromagnetic and weak inter- actions and their unification; quantum chromodynamics; experimental techni- ques."
+    },
+    {
+      "number": 542,
+      "title": "Standard Model of Elementary Particles Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS564"
+        ]
+      },
+      "description": "Weinberg-Salam model of electroweak interactions, spontaneous symmetry breaking, quantum chromodynamics; selected topics from grand unified theories and superstring theory."
+    },
+    {
+      "number": 545,
+      "title": "Cosmology",
+      "credits": 3,
+      "description": "Modern cosmology of the early universe, including inflation, the cosmic microwave background, nucleosynthesis, dark matter and energy. ASTRO (PHYS) 545 Cosmology (3)Cosmology is the scientific study of the universe as a whole: its physical contents, principal physical processes, and evolution through time. Modern cosmology, which began in the early 20th century, is undergoing a renaissance as a precision science as powerful ground- and space-based telescopes allow us to observe the formation of the first starts, galaxies and galaxy clusters; the echoes of the inflationary epoch as they are impressed upon the cosmic microwave background; and evidence for and clues to the nature of the mysterious dark energy, which is driving the accelerating expansion of the universe. This course will introduce students to the key observations and the theoretical framework through which we understand the physical cosmology of the early universe."
+    },
+    {
+      "number": 555,
+      "title": "Polymer Physics I",
+      "credits": 3,
+      "description": "Introduction to the fundamental concepts needed to understand the physics applicable to polymer melts, solutions and gels. MATSE (PHYS) 555 Polymer Physics I (3) This course develops fundamental understanding of the conformations of polymers in solution and melt states. We start with ideal chains that have random walk statistics. Next excluded volume is introduced to understand the self-avoiding walk conformation and collapsed conformation of real chains. The behavior ideal and real chains are studied in extension, compression and adsorption. While positive excluded volume leads to swelling, negative excluded volume leads to collapse and phase separation. The phase behavior of polymer mixtures and solutions is described in detail Semidilute solutions are understood in terms of two length scales where each chain changes it's conformational statistics. Scattering is used to determine the conformation of chains, their molar mass and their interactions with surroundings. Percolation theory is introduced to model the statistics of random branching and gelation. The rubber elasticity of fully developed networks is understood in terms of the stretching laws for network chains. Entanglement effects, swelling and viscoelasticity are discussed in detail. Once the conformations of polymers are understood, dynamics of polymer liquids are considered. In dilute solutions hydrodynamic interactions dominate and the viscoelasticity predicted by the Zimm model is derived. In unentangled melts of short chains, hydrodynamic interactions are screened and the Rouse model is used to understand viscoelasticity. Unentangled polymers in semidilute solutions have Zimm dynamics on small length scales and Rouse dynamics on longer length scales. Dynamic scattering techniques are discussed for measuring polymer dynamics. Entanglement effects are described using the tube model, where surrounding chains confine the motion of a given polymer to a tube-like region. The effects of concentration, chain length and polydispersity of linear chain polymer liquids are discussed in detail. The effects of branching on polymer dynamics are introduced at the level of simple structures such as star polymers and comb polymers. The course assumes some prior knowledge of polymers, usually obtained through an introductory undergraduate course. The students should attain a working understanding of the basic concepts of polymer physics in this course, allowing them to tackle more difficult problems in their research. Such skills are reinforced through homework and take-home examinations."
+    },
+    {
+      "number": 557,
+      "title": "Electrodynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS400"
+        ]
+      },
+      "description": "Special relativity, electromagneti fields, Maxwell's equations, conservation laws, electrostatics and magnetostatics. PHYS 557 Electrodynamics (3) The first half of the course starts from special relativity and uses Hamilton's principle to derive relativistic dynamics and Maxwell's equations. This approach, developed by Landau and Lifshitz, sets classical electrodynamics in a broad base of theoretical physics, and provides insights to solving many interesting problems that might be hard to solve starting from the traditional approach of deriving Maxwell's equations empirically through Coulomb's law, the law of Biot and Savart, Faraday's law, and Maxwell's inclusion of displacement current. The second half is based on the classic textbook by Jackson, and is devoted to application of electrodynamics in various settings. This includes dynamics of charged particles in given electromagnetic fields, with special emphasis on problems with symmetry and the guiding center dynamics. Examples of such topics include electromechanical problems with the use of Lagrangian; fields generated by given distributions of charges and currents, especially for case of small sources, and the use of multiple expansions; polarization and magnetization, and Maxwell's equations in continuous media; boundary value problems; electromagnetic waves with single frequency in vacuum and medium; wave guides and resonant cavities; the generation of electromagnetic radiation."
+    },
+    {
+      "number": 559,
+      "title": "Graduate Laboratory",
+      "credits": 2,
+      "description": "Study and applications of techniques and instrumentation used in modern physics laboratories."
+    },
+    {
+      "number": 561,
+      "title": "Quantum Mechanics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS410"
+        ]
+      },
+      "description": "Postulates of quantum mechanics, Hilbert space methods, one dimensional potentials, spin systems, Harmonic oscillator, angular momentum, Hydrogen atom."
+    },
+    {
+      "number": 562,
+      "title": "Quantum Mechanics II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS561"
+        ]
+      },
+      "description": "Addition of angular momenta, perturbation theory, variational principle, scattering theory, density matrices, identical particles, interpretations of quantum mechanics, Dirac theory."
+    },
+    {
+      "number": 563,
+      "title": "Quantum Field Theory I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS562"
+        ]
+      },
+      "description": "Canonical and functional integral quantization of relativistic and non- relativistic field theories; Feynman diagrams; spontaneous symmetry breaking; renormalization group."
+    },
+    {
+      "number": 564,
+      "title": "Quantum Field Theory II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS563"
+        ]
+      },
+      "description": "Abelian and non-Abelian gauge theories; renormalization group and operator product expansions; BRST quantization; scattering theory, other related topics."
+    },
+    {
+      "number": 565,
+      "title": "Interface of General Relativity and Quantum Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS510",
+          "PHYS563"
+        ]
+      },
+      "description": "Limitations of perturbative methods, conceptual problems; selected topics from black hole thermodynamics, canonical quantum gravity, loop space methods and string-theory."
+    },
+    {
+      "number": 570,
+      "title": "Particle Astrophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO502",
+          "PHYS400",
+          "PHYS406",
+          "PHYS557"
+        ]
+      },
+      "description": "Particle astrophysics is a discipline at the interface between physics and astronomy, which has undergone tremendous growth in the 21st century, with the commissioning and exciting results from very large facilities detecting the highest energy cosmic rays, neutrinos, gravitational waves, and gamma-rays. There is a rapid and ongoing expansion of the understanding of these radiations, their physics and their sources, which include supernovae, gamma-ray bursts, and active galactic nuclei, and there are major new facilities aimed at characterizing particle properties of dark matter and its cosmological effects. Students will be given an overview of the basics of particle astrophysics and to the latest data and its interpretation, stressing issues currently discussed by the community, with particular attention on major projects in which Penn State faculty are involved. The course is designed for graduate students in physics and astronomy and astrophysics, being also appropriate for students in nuclear engineering or related disciplines."
+    },
+    {
+      "number": 571,
+      "title": "Modern Atomic Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PHYS411",
+              "PHYS561",
+              "CHEM565"
+            ]
+          }
+        ]
+      },
+      "description": "Light-atom interactions, atomic structure, laser cooling and trapping, interferometry, and Bose-Einstein condensation. PHYS 571 Modern Atomic Physics (3) Students will learn the physics behind most of the major recent developments in the field of atomic physics, at the level required for research at the graduate level. Material to be covered will include selected topics from the following list: Light-atom interactions, atomic structure, laser cooling, atom trapping and atomic optics, atom interferometry, precision measurements with atoms, quantum computing with atoms, atomic Bose-Einstein condensates, degenerate Fermi gases, reduced dimensionality systems, simulating condensed matter physics with atoms. Students will enhance their technical writing and presentation skills. Students will use the background they have acquired to develop an oral presentation related on a research advance related to modern atomic physics."
+    },
+    {
+      "number": 572,
+      "title": "Laser Physics and Quantum Optics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PHYS410",
+              "PHYS561",
+              "CHEM565"
+            ]
+          }
+        ]
+      },
+      "description": "Theory of modern lasers, non-linear and quantum optics, photon statistics, laser spectroscopies, pulsed lasers. PHYS 572 Laser Physics and Quantum Optics (3) Students will learn the basic physics of lasers, how they work and how they are used, primarily for physics research at the graduate level. They will become familiar with a broad array of the most important topics of laser physics including mode competition, pulsed lasers, pulse propagation, non-linear laser spectroscopy, laser stabilization, and the quantum nature of laser light. Students will enhance their technical writing and presentation skills. Students will use the background they have acquired to develop an oral presentation related on a research advance related to lasers."
+    },
+    {
+      "number": 580,
+      "title": "Elements of Network Science and Its Applications",
+      "credits": 3,
+      "description": "Introduction to elements of network theory used to describe and model complex networks; applictions in social, biological, and technological networks. PHYS 580 Elements of Network Science and Its Applications (3) Network Science is the study of network representations of physical, biological, and social phenomena leading to predictive models of these phenomena. This class will focus on four main questions asked by network science: (i) How do we use data analysis methods to determine or infer the interaction graphs underlying complex systems? (ii) How can we characterize the organizational features of large-scale networks? (iii) What are the mechanisms that determine the common topological features of a wide variety of networks? (iv) To what extent does the organization of the interaction network underlying a complex system determine the dynamical behavior (e.g. steady state or oscillations) of the system? Applications in social, biological and technological networks will be examined. As Network Science is an interdisciplinary field of research, the course is open and should be of interest to a wide range of graduate students in degree programs in physics, social sciences, life sciences, mathematics, engineering, and computer science."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in teaching and orientation to other selected aspects of the profession at The Pennsylvania State University"
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 801,
+      "title": "Foundations of Teaching in Physics",
+      "credits": 1,
+      "description": "An overview of the science of teaching and learning physics. This course will prepare physics graduate students to become both better learners and teachers through reading about, discussing, observing and practicing inclusive, evidence-based instructional and learning strategies."
+    }
+  ]
+}

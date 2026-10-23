@@ -1,0 +1,1443 @@
+{
+  "subject": "GEOSC",
+  "courses": [
+    {
+      "number": 1,
+      "title": "Physical Geology",
+      "credits": 3,
+      "description": "Earth processes and their effects on the materials, structure, and morphology of the earth's crust. Practicum includes field work, study of rocks, minerals, dynamic models, and topographic maps. (This course includes from one to several field trips for which an additional charge will be made to cover transportation.)"
+    },
+    {
+      "number": 10,
+      "title": "Geology of the National Parks",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "\"Geology of the National Parks\" uses the unsurpassed features of national parks to address the key questions of geology and the environment. Each topic is introduced with a virtual field trip to a specially chosen national park (involving pictures of the park, a brief history, other highlights of the park, with supplemental materials and links provided on-line). Key questions about the park (Why has Death Valley been getting wider? Why is much of Mt. St. Helens spread across neighboring states?) then motivate discussion of the topic (here, the spreading or squeezing associated with drifting continents), with special attention to implications for humans (for example, predicting earthquakes and volcanic eruptions associated with these features). A suite of exercises provides the opportunity for analytical experience. There are no prerequisites for the course; however, students must meet the university's technical requirements for running Canvas. This course is offered online during the fall, spring, and summer sessions. The goals of the course are to help students learn how certain common-sense ideas allow science to be such a successful human endeavor, that the Earth efficiently but slowly recycles almost everything, that the Earth's environment has been nearly balanced for very long times, that human-induced changes are among the fastest Earth has ever experienced, and that the National Parks are critical but challenged living laboratories, museums, and repositories of biodiversity. In doing so, the students will see the applications to real-world problems of related fields including physics, chemistry, biology, and mathematics, and will develop a greater appreciation of these other subjects. Students will be challenged to reason from data to generalizations, and from these generalizations back to cases, through exercises, quizzes, and examinations."
+    },
+    {
+      "number": 20,
+      "title": "Planet Earth",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "GEOSC 20 is a 3-credit, introductory level course about the Earth, and since you live on the Earth, you will be affected by the topic we will cover this semester. We will emphasize earth processes and materials that affect the landscape of Earth. You will be learning about fundamental geologic processes and how they impact humans and the environment on regional and global scales. Some of these processes are slow, such as the movements of continents, and change the Earth over a period of millions of years. Others are rapid, such as earthquakes and floods. You will learn how these processes are related and interact with each other."
+    },
+    {
+      "number": 21,
+      "title": "Earth and Life: Origin and Evolution",
+      "credits": 3,
+      "attributes": [
+        "BA-N"
+      ],
+      "description": "Introduction to the origin and evolution of life on Earth from the perspective of geologic time and the fossil record. GEOSC 021"
+    },
+    {
+      "number": 30,
+      "title": "Volcanoes",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "Basic concepts in Volcanology and Geosciences are explored through a series of virtual field trips to historic eruptions. Since the dawning of history, humankind has been faced with the destructive power of volcanoes. Volcanic eruptions can wipe out entire populations, destroy food supplies, and alter the Earth's climate for years at a time. At the same time, volcanoes provide fertile soil for growing crops and natural geothermal energy. This course uses virtual field trips to one pre-historic and five historic volcanic eruptions to introduce basic concepts in geosciences and volcanology. Each visits a different type of volcano with unique characteristics and impacts - a shield volcano, a cinder cone, a fissure, a stratovolcano, a lava dome, and a supervolcano. We will examine the tectonic driving forces behind these volcanoes as well as their hazards and environmental impacts. Students will use real data from active volcanic fields, as well as original data collected during home experiments, to calculate physical properties of magmas and to interpret the potential impacts of various volcanic hazards. Sidebars will delve into the less obvious interactions between humans and volcanoes from the perspective of mythology, art, and history. Observations and ideas will be logged in virtual field notebooks."
+    },
+    {
+      "number": 40,
+      "title": "The Sea Around Us",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "Introduction to marine sciences and the world ocean, including physical, chemical, biological, and geological aspects of oceanography. GEOSC 40 The Sea Around Us (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. The Sea Around Us introduces students to the basic workings of the ocean. The course covers the origin of the ocean's rock-walled boundaries, the evolution of its coastlines, the motion of currents, waves and tides and their destructive power, the source and composition of seawater, and the role of the ocean in local and global climate. The majority of the Earth's surface is covered by water and thus it seems likely that the human race will become increasingly dependent on oceanic resources in the future. This course seeks to illuminate how the ocean will respond to increased anthropogenic pressure. Students are shown how such issues can be addressed through detailed understanding of the complex interplay between the physical, chemical and biological properties of the ocean. Lectures focus on fundamental principles of natural sciences as related to the ocean using extensive graphics, video clips and demonstrations."
+    },
+    {
+      "number": 40,
+      "suffix": "H",
+      "title": "The Sea Around Us",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "description": "Introduction to marine science, including physical, chemical, biological, and geological aspects of oceanography; the sea as a multipurpose natural resource."
+    },
+    {
+      "number": 50,
+      "title": "Planetary Geology",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "Planetary Geology will introduce students to the rocky planets and moons of the solar system. Students will learn the geological processes that are important in the shaping of planetary surfaces and interiors, as well as their ancient or current potential habitability. Throughout the course, students will learn about the various geologic processes that are relevant for each planet and moon, including volcanism, impact cratering, sediment transport, differentiation, and plate tectonics, among others. Students will understand the geologic history of planets using the best available data, but will also learn about the evolution of our knowledge through successive planetary missions to collect more data. The course will couple scientific material and real data with historical perspectives surrounding space and planetary exploration missions."
+    },
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 97,
+      "suffix": "N",
+      "title": "Special Topics - InterDomain",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "GH",
+        "GN",
+        "INTER"
+      ],
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is an Inter-Domain GenEd course."
+    },
+    {
+      "number": 107,
+      "suffix": "N",
+      "title": "Rocks, Minerals, and the History of Art",
+      "credits": 3,
+      "attributes": [
+        "GA",
+        "GN",
+        "INTER"
+      ],
+      "description": "This online course investigates select rocks and minerals used in the production of art between the Prehistoric Era and the Early Modern period. Topics covered include chemical and physical properties, occurrence in nature, the processes by which natural materials are acquired and worked, their symbolic and monetary value, and specific works of art in which they are found. Each material (ochre, garnet, lapis lazuli, rock crystal [quartz], igneous rocks [basalt, diorite and porphyry], alabaster and marble) is addressed in a 2-week unit. The seven units are split equally between scientific analysis of the materials and art historical case studies. A final project integrates Geosciences and Art History topics to investigate the use of a chosen natural material in a specific work of art. Each material addressed in the course plays a crucial role in the history of art, and each one was particularly prized for its physical and material properties (color, hardness, etc.). Ochre was the first known pigment, and was in use by early humans for bodily adornment and for drawing and painting in caves and shelters as early as 100,000 years ago for bodily adornment and 40,0000 years ago in cave art. Its availability worldwide and in multiple strong colors made it a desirable choice. Lapis lazuli, by contrast, was difficult to obtain, and difficult to refine as a pigment. It was first used to make small sculptures and cylinder seals in the Ancient world, and was prized for its brilliant blue color. The difficulty in grinding and purifying blue pigment from lapis lazuli made it one of the most expensive pigments in the Medieval and Renaissance world--it was worth its weight in silver! Pure blue lapis pigment, when found in a painting, is always a sign of great expense and importance. Rock crystal was valued for its clarity and purity, and its extreme brittleness meant that works made from it were valued for their intricacy and fragility. Nero reportedly destroyed two elaborate crystal goblets in a rage, and in so doing, deprived future generations of masterpieces of the sculptor's art. In the Ancient Near East and Ancient Egypt, rock crystal was frequently used for amulets and other magical objects, while in the Medieval world, its purity was seen as a metaphor for the Virgin Mary. Garnet had a similar symbolic value in the Middle Ages: its red color was related to the blood of Christ, and it was thus used frequently in liturgical vessels. In the Ancient world, the rich red tone of garnets was prized in jewelry and in small-scale relief carvings. Igneous stones like porphyry, basalt and diorite were particularly prized for their extreme hardness and permanence, and thus the Law Code of Hammurabi was iinscribed on basalt to ensure its permanence. Other Ancient Near Eastern rulers had images of themselves made from basalt and diorite in order to ensure that those works would survive for centuries. Imperial porphyry, an igneous stone with a rich red-purple color, came from a single remote quarry in the Egyptian mountains. Its use was reserved just for the Imperial family in Rome, and it was used for carved sarcophagi, for columns, for colored veneers on floors and walls, etc., as a sign of Imperial authority. Marble is of course one of the most familiar of all art materials, used frequently for sculpture from the very beginnings of art production. The Greeks and Romans in particular took great pains to obtain different types of marbles with specific colors, veining patterns, etc., for use in both sculpture and architecture. Finally, alabaster is one of the easiest of all stones to work: it is so soft that one can make a mark simply with a fingernail! Its intricate banding and translucency made it a favorite material for thin-walled bowls and vases in the Ancient Near East, Ancient Egypt, and in the Classical world. Later, in Early Christian and Medieval Italy, it was used for windows instead of glass--sun shining through alabaster casts a golden glow into a church interior. By the Late Gothic period, alabaster was being exploited as an easily sculpted material throughout Europe, with major quarries and workshops in England (Nottingham), France, and Northern Spain."
+    },
+    {
+      "number": 109,
+      "suffix": "H",
+      "title": "Earthquakes and Society",
+      "credits": 3,
+      "attributes": [
+        "BA-N",
+        "HON"
+      ],
+      "description": "Introduction to earthquakes and seismology, and their relationship to society, including monitoring for nuclear weapons and seismic hazards. GEOSC 109H"
+    },
+    {
+      "number": 110,
+      "suffix": "H",
+      "title": "The Science of Gemstones",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N",
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH26"
+        ]
+      },
+      "description": "From Biblical times to the present, gems and precious metals have served as the standard by which empires have measured their worth. Through the ingenious marketing of an international cartel, diamonds have become identified with the oldest and most sacred of human contracts. To what can we attribute the unique allure of beautiful minerals? In this course, students will learn the underlying science of what distinguishes a gemstone from dross. A broad historical introduction will trace the social role that gemstones have played in human history over tens of thousands of years. After a review of the properties of atoms, they will learn the connections between atomic bonds and the physical hardness that has preserved diamonds and other gems against billions of years of abrasive forces. Students also will engage in directed discussions of ethical issues raised by gem materials: Why are gems so costly? Is it moral to purchase an expensive gemstone? What ethical hazards do synthetic gems pose? In addition, the course will explain the surprisingly simple physical processes that account for the magnificent optical properties of gemstones. Students will understand in a quantitative way how the bending of light (refraction) within a gem produces its sparkle: how variation in refraction generates fire (dispersion); how the interference of light rays from periodic structures in some rare gems like opal can yield colors that change with viewing angle (diffraction); and how vanishingly small traces of impurity atoms can generate the deep coloration of rubies, sapphires, and emeralds. In addition, students will learn about the atomic symmetries that govern the physical character of gemstones and allow modern mineralogists to distinguish imposters from real gems."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 201,
+      "title": "Earth Materials",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "Elements of crystallography and crystal chemistry; origin, occurrence, and identification of sedimentary, igneous, and metamorphic rocks and their minerals. This course has one or more required field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 202,
+      "title": "Chemical Processes in Geology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GEOSC1",
+          "MATH140"
+        ],
+        "concurrent": [
+          "CHEM113"
+        ]
+      },
+      "description": "An in-depth examination of the application of chemical principles to geological processes."
+    },
+    {
+      "number": 203,
+      "title": "Physical Processes in Geology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GEOSC1"
+        ],
+        "concurrent": [
+          "PHYS211",
+          "MATH140"
+        ]
+      },
+      "description": "An in-depth examination of various physical processes that operate within and at the surface of the earth. GEOSC 203 Physical Processes in Geology applies basic principles from physics and mathematics to explore and understand the Earth and the processes that operate within the Earth and at the Earth's surface. The course includes the study of Earth's gravity and magnetic fields, focusing on how they reveal the internal structures and dynamics related to plate tectonics. The basic physics and mathematics of plate motions are also explored in some detail. We will also examine the elastic properties and behaviors of rocks, which form the basis for understanding seismic waves, rock fracture, and fault slip. The next major topic of the class is the flow of heat through the solid Earth system, involving the study of conduction, convection, and advection. The study of heat will provide the basis for understanding the application of simple differential equations with boundary conditions to geological processes; this will also introduce the mathematics of diffusion, which will permeate much of the course. This study of diffusion will enable us to move from steady state conditions to non-steady state conditions that typify most geological settings. We will examine the fluid dynamics relevant to the flow of the mantle and less viscous fluids at the surface such as lava flows and glaciers. The fluid dynamics will also lead us into an exploration of the basic physics of ocean circulation, stream flow, and erosion on land. Throughout the course, students will learn how to use calculus and very simple computer programming in MATLAB to provide a quantitative framework for understanding the physical processes that shape the Earth. The class involves a weekly lab that involves several field trips to make measurements using a variety of geophysical instruments to solve problems related to gravity, stream flow, and heat flow. Other lab activities involve studies of rock friction and fracture, ocean currents, glacial flow, seismology, and plate motions."
+    },
+    {
+      "number": 204,
+      "title": "Geobiology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "BIOL110",
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "An introduction to how biological processes and materials are used to solve geological problems. GEOSC 204"
+    },
+    {
+      "number": 210,
+      "title": "Geoscience Data Analytics",
+      "credits": 3,
+      "attributes": [
+        "GQ"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "Modern geoscience careers require students to be versatile in managing and analyzing data, solving quantitative problems, comfortable in statistical analysis and projection, and adept in presenting numerical interpretations to stakeholders. The proposed course will provide students with the numerical skills to be successful in their undergraduate careers and in the workplace and will serve as entry for more advanced quantitative courses in Geosciences and the College of Earth and Mineral Sciences. The course has five major objectives: (1) To give students an overview of the different types of geoscience data and the skills to organize, manipulate and structure them appropriately for conducting simple analyses including regression, import/export, conditional subsetting, creating and using database structures and design, queries, and metadata; (2) To train students in the fundamentals of a widely used programming language (e.g., Python, Matlab), including variables, functions, loops, boolean logic, and arrays; (3) To teach students how to use programming skills to conduct a range of basic numerical and statistical analyses; (4) To show students how to integrate and analyze several related datasets in solving complex geoscience problems; and (5) To train students how to summarize and present data in an effective manner, including appropriate data visualizations, and to communicate interpretations to stakeholders. Instruction will consist of demonstrations followed by hands-on activities in which students learn skills on laptops. Assessment will include these activities and follow-on homework problems. In addition, students will conduct a capstone project in the last few weeks of the course in which they integrate several data sets to interpret a complex geoscience problem. The course map is designed to reinforce key concepts and skills through scaffolding: Unit 2 applies the principles of geoscience data and data analysis introduced in Unit 1 in a basic programming environment. Unit 3 reinforces the programming concepts from Unit 2 while developing more advanced data analytics skills. Unit 4 applies and synthesizes the concepts and skills covered in the previous three units in the completion of a capstone project."
+    },
+    {
+      "number": 212,
+      "suffix": "N",
+      "title": "Earthquakes and Human History",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GN",
+        "INTER"
+      ],
+      "internalEquivalents": [
+        "HIST212N"
+      ],
+      "description": "A natural disaster is the result of a natural hazard impinging upon human society. In this course we examine seismicity as a geophysical phenomenon and as a natural hazard that interacts with the built environment and the social structures of human societies. Whenever possible, we approach this subject historically. Among other topics, we examine the history of how earthquakes have been understood as well as the impact of earthquakes and seismicity on the history and development of certain societies. Our specific perspectives include: Earthquakes as understood by modern and contemporary earth science Major conceptions of earthquakes in the past Impacts of seismic hazards on the built environment of past societies Impacts of seismic hazards on politics, economic development and social policies of past societies Seismic hazards, earthquake-related technology, and contemporary societies By examining earthquakes in these ways, the study of earthquakes becomes a vehicle for enhancing skills in analytical reasoning. In particular, this course focusses on applications of modern scientific analysis and the approaches commonly employed in historical investigation. Specific skills addressed in this course include, processing and quantifying information, problem solving using evidence and sound reasoning, and expressing ideas with clarity. Immersion in the study of earthquakes affords an opportunity to think more broadly about how people have dealt with natural disasters in the past and to explore the roles that science, technology, and social policy play in defining and addressing natural hazards in contemporary societies and in the future. Class meetings include lectures, discussions, and in-class activities. We analyze scientific observations that have led to increased understanding of earthquakes, earthquake hazards and risk. We also make extensive use of case studies as concrete examples of different types of earthquakes, the historical evolution of ideas about earthquakes, and the range of social impacts of earthquakes. Reading assignments provide essential background for class sessions."
+    },
+    {
+      "number": 294,
+      "title": "Undergraduate Student Research",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projcts, including research and design, which are suprvised on an individual basis and which fall ouside the scope of formal courses."
+    },
+    {
+      "number": 296,
+      "suffix": "H",
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projcts, including research and design, which are suprvised on an individual basis and which fall ouside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 301,
+      "title": "Plate Tectonics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "Plate Tectonics plays a primary role in virtually all geologic/tectonic processes, and is the foundation for most disciplines within geosciences. This course will cover plate tectonic topics in depth and will explore the processes that link plate tectonics to the geologic record. The course has two overarching goals: (1) Develop an improved understanding of the Plate Tectonic framework for use in their other geosciences studies, and (2) exploit its broad application across the geosciences to further develop student skills in scientific reasoning, data analysis, science communication, and integrating knowledge across earth science sub-disciplines. Since the development and acceptance of plate tectonic theory in the earth sciences is relatively recent (since - 1970's), students will also be exposed to how science thinking evolves with the addition of new data and new hypotheses. It will combine lectures, labs, case studies, and discussions to address fundamental questions in plate tectonics."
+    },
+    {
+      "number": 302,
+      "title": "Global Biogeochemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          "GEOSC202"
+        ]
+      },
+      "description": "Biogeochemistry is the exploration of the physical, chemical, and biological processes that govern the exchange of energy and elements between the biosphere and geosphere. This course will examine principal biogeochemical cycles (e.g., C, O, S, N, P,) with a focus on geologic processes and geologic origins. Drawing from the primary literature, we will investigate how biogeochemical cycling has changed over Earth's history and as a result of human activities."
+    },
+    {
+      "number": 303,
+      "title": "Introduction to Environmental Geology",
+      "credits": 3,
+      "description": "Origin of earth and earth materials; natural resources, geologic barriers and hazards, and relationships to human use of the environment. (This course includes from one to several field trips for which an additional charge will be made to cover transportation.)"
+    },
+    {
+      "number": 310,
+      "title": "Earth History",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GEOSC201"
+        ]
+      },
+      "description": "The principles of stratigraphy and paleontology and their use, in combination with plate tectonics, in reconstructing the earth's history. This course has one or more required field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 320,
+      "title": "Geology of Climate Change",
+      "credits": 3,
+      "description": "Geologic evidence for climate change and mechanisms of change, especially from the Ice Age through the near future. GEOSC 320"
+    },
+    {
+      "number": 340,
+      "title": "Geomorphology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC1"
+        ]
+      },
+      "description": "Physical and chemical processes operating at the earth's surface and their resulting landforms. This course has one or more required field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 400,
+      "title": "Paleoclimatology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC204"
+        ]
+      },
+      "description": "This course will discuss past climate dynamics, as well as touch on what we know about ancient environments, human interactions and responses to changing climates, and methodological developments within the field. We will emphasize topics that span the Earth system (atmosphere-biospheregeosphere-oceans) and use the paleoclimate record to inform future global change. We will also think about what a proxy and archive mean for a signal being recorded and use real data to extract and interpret past climate signals. The first 2/3 of the semester will be a combination of paired lectures and student-led discussion of foundational and recent exciting scientific literature around topics that help us explore what drives climate change over different timescales. The last 1/3 of the semester will allow students to work with real paleoclimate data by exploring existing datasets that inform their own research or interests and applying statistical techniques common in the field. Student participation is important for success in this course, and paleoclimate datasets will serve as the basis for a capstone project."
+    },
+    {
+      "number": 401,
+      "title": "Geosciences Entrepreneurship: Embrace Change",
+      "credits": 3,
+      "description": "This course explores the intersection of entrepreneurship and geoscience, focusing on emerging fields and the changing dynamics of traditional industries. Targeted at upper-level undergraduate and graduate students of all majors, the course aims to equip participants with entrepreneurial skills and a mindset that goes beyond starting new companies. By incorporating case studies, guest lectures, and practical exercises, and student led-research, students will gain a comprehensive understanding of the entrepreneurial opportunities within geoscience. The course may cover a range of topics, including critical minerals, geothermal energy, carbon sequestration, and geological hydrogen, which are becoming increasingly important to society. Students will explore the geoscience principles, technological innovations, market dynamics, policy considerations, and environmental impacts associated with these fields. Additionally, the course emphasizes the value of entrepreneurial thinking for researchers and employees within legacy companies, such as the hydrocarbon industry, encouraging them to embrace intrapreneurship and drive innovation. Throughout the course, students will develop essential entrepreneurial skills, including opportunity identification, market analysis, business planning, financing strategies, and ethical considerations. They will also learn about collaboration, networking, and leadership within the entrepreneurial ecosystem. By the end of the course, students will be equipped with the knowledge and mindset to navigate emerging fields, adapt to shifting landscapes, and create value in geoscience-related ventures, whether as entrepreneurs or intrapreneurs and researchers."
+    },
+    {
+      "number": 402,
+      "suffix": "Y",
+      "title": "Natural Disasters",
+      "credits": 3,
+      "attributes": [
+        "IL",
+        "W"
+      ],
+      "description": "Case studies of the causes and consequences of natural disasters; analysis of disaster impact in different economic, cultural, and social conditions. GEOSC 402 Natural Disasters (3) (IL)(WAC) Is anywhere safe from natural disasters? Can we hide, or should we learn to live with the hazards around us? This course will explore the causes, effects, and societal response to disasters. By learning from previous disasters, we can develop strategies to avert the disasters or at a minimum mitigate their affects. We will look at a variety of natural hazards and related disasters including flooding, volcanoes, landslides, earthquakes, hurricanes, and tsunami. By the sue of case studies of recent occurences of natural disasters, we will determine how damaging disasters can be, and what we can do to minmimize their impact on society. This course will provide an in-depth, hands-on study of natural hazards, their geography, and their impact on societies worldwide. We will focus on both the physical processes (e.g. underlying geoglogy or geophysics) of selected natural hazards and the humn systems that have developed to minimize the impact of natural disasters.The course will place emphasis on active learning exercises to investigate processes and responses to natural hazards. We will meet for two periods each week which will include both lecture and group research activities (approximately 30% of time is in lectures, 70% time is in group research activities). Grading will be based on reports for each topic, a disaster diary, and a term report. The term report is an independent project which focuses on a selected city facing significant natural hazards. Cities will be selected from both the developed and developing world to allow comparsions of the impacts of natural disasters under different socio-economic and cultural conditions.The course is offered once each year with a target enrollment of 25-30 students.Prerequisites for the course are at least 6 credits in science courses (inluding GN courses)."
+    },
+    {
+      "number": 405,
+      "title": "Hydropedology",
+      "credits": 3,
+      "internalEquivalents": [
+        "SOILS405"
+      ],
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Soil and water interactions across scales, integrated studies of landscape- soil-water relationships, fundamental processes of water flow and chemical transport. SOILS (GEOSC) 405 Hydropedology (3)Hydropedology is the study of the fluxes, storages, pathways, residence times, and spatio-temporal organization of water in the root and deep vadose zones, and their relations to climate, ecosystem, land use, and contaminant fate. The aim is to characterize integrated physical, chemical, and biological processes of soil-water interactions across scales (including chemicals and energy transported by water flow). This course embraces interdisciplinary and multiscale studies of interactive pedological and hydrological processes in the earth's surface and subsurface environments. The course will address the fundamental issues and practical applications of hydropedology (as a sister discipline of hydrogeology). This course emphasizesin situsoils that have distinct characteristics of pedogenic features, structures, layers, and soil-landscape relationships in the real world. Students will gain an in-depth understanding of soil and water interactions across scales from point observations to watershed phenomena, and will gain skills in predicting flow pathways and water fluxes in the landscape. This course promotes active learning, critical thinking, and hands-on skills. Course format will consist of two lectures and one laboratory/field exercise each week. The course will utilize a network of local watersheds with different land uses for demonstrations and class projects. Grading will be based on weekly lab/field exercise (20%), class research project (40%), homework (10%), one midterm exams (15%), and one final exam (15%). Since hydropedology is linked to a wide array of environmental, ecological, geological, agricultural, and natural resource issues of societal importance, SOILS (GEOSC) 405 will support interdisciplinary training of students in Soil Science as well as in other disciplines of the College of Agricultural Sciences, especially Agricultural and Biological Engineering, Agronomy, and Forest Resources. Students in the College of Earth and Mineral Sciences, College of Engineering, Eberly College of Science, and the Intercollege Graduate Degree Program in Ecology also will find this course useful when undertaking research on the vadose zone, the hydrologic cycle, and the earth system."
+    },
+    {
+      "number": 409,
+      "suffix": "W",
+      "title": "Geomicrobiology",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20",
+              "GEOSC40",
+              "EARTH2",
+              "BIOL110",
+              "MICRB201"
+            ]
+          }
+        ]
+      },
+      "description": "Investigation of modern and ancient microbial interactions with soils, sediments, the atmosphere, minerals, rocks, nutrients, and pollutants."
+    },
+    {
+      "number": 410,
+      "title": "Marine Biogeochemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          {
+            "oneOf": [
+              "EARTH2",
+              [
+                "GEOSC1",
+                "GEOSC20",
+                "GEOSC40"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "Exploration of the ways in which life influences and is influenced by chemical, physical, and geological processes in the ocean. GEOSC 410"
+    },
+    {
+      "number": 413,
+      "suffix": "W",
+      "title": "Techniques in Environmental Geochemistry",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE475",
+          "CHEM402",
+          "GEOSC202",
+          "SOILS419"
+        ]
+      },
+      "description": "This course teaches techniques needed for the collection, chemical analysis, and data analysis of environmental geochemical measurements. This course has one or more required field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 414,
+      "title": "Carbonate Geochemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "CHEM112"
+        ]
+      },
+      "description": "Carbonate minerals that form in lakes, soils, and oceans help us understand the chemistry and biology of their environment. In this course, we build a foundation of carbonate equilibrium chemistry as a framework for discussions of carbonate-forming environments, the impacts of chemical, thermal, and biological processes on the carbonate rock record, and carbonate-based proxies for ancient Earth conditions."
+    },
+    {
+      "number": 415,
+      "title": "Geochemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          "GEOSC201"
+        ]
+      },
+      "description": "Element abundance and genesis, application of chemical principles to earth materials, element fractionation in geologic processes."
+    },
+    {
+      "number": 416,
+      "title": "Stable and Radioactive Isotopes in Geosciences: Introduction",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "CHEM112",
+          "CHEM111",
+          "CHEM113",
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "Discussions on theories for natural isotopic and element variations and their applications to the solution of geologic and cosmologic problems."
+    },
+    {
+      "number": 418,
+      "title": "Soil Environmental Chemistry",
+      "credits": 3,
+      "internalEquivalents": [
+        "SOILS419"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          "SOILS101"
+        ]
+      },
+      "description": "Introduction to chemical constituents and processes occurring in soils. Topics include mineral weathering, soil solution chemistry and adsorption of solutes. GEOSC 418GEOSC 418 ( SOILS 419 ) Soil Environmental Chemistry (3) Upon completion of the course, the students will be able to identify the soil components and properties responsible for the chemical reactivity of soils and will know the fundamental chemical processes that occur in soils. The students will also be able to link theoretical concepts to real life environmental problems. The students will be evaluated on examinations, homework, and class participation. GEOSC 418 ( SOILS 419 ) is offered every Spring semester. Class limit: 25 students."
+    },
+    {
+      "number": 419,
+      "title": "The Organic Geochemistry of Natural Waters and Sediments",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "CHEM112"
+        ]
+      },
+      "description": "Composition, sources, and fates of particulate and dissolved organic matter in natural environments; biogeochemical processes; organic geochemistry of anthropogenic contaminants."
+    },
+    {
+      "number": 420,
+      "title": "Paleobotany",
+      "credits": 3,
+      "description": "Classification, morphology, phylogeny, and stratigraphic occurrence of fossil plants; practicum includes field trips and study of paleobotanical techniques and specimens. GEOSC 420 BIOL (GEOSC) 420 Paleobotany (3) Land plants provide the oxygen, food, and forest structure that make our lives on land possible. They are sensitive indicators of global change in the past as well as today. This course will examine the history of green plants on the dynamic Earth from their beginnings in the Proterozoic oceans to today, with emphasis on central topics such as the colonization of land, the histories and relationships of major plant groups, the evolution of seeds and flowers, the evolution of plant-animal interactions, extinction and diversification, paleoclimates, and the origins of modern biomes such as rainforests and grasslands.This course is strongly recommended to graduate students and advanced undergraduates with interests in paleobiology and/or plant biology. Specimen observation and field trips will be important course components. Exams, assignments, and class participation will be the primary bases of evaluation."
+    },
+    {
+      "number": 422,
+      "title": "Vertebrate Paleontology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC1",
+          "BIOL110"
+        ]
+      },
+      "description": "Course covers scientific thinking and skills in scientific writing, the history of vertebrates, and modern evolutionary theory applied to vertebrates."
+    },
+    {
+      "number": 424,
+      "title": "Paleontology and Fossils",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "Concepts and procedures using fossils to solve problems in systematics, evolution, biostratigraphy, correlation, sedimentation, paleoecology, and global change."
+    },
+    {
+      "number": 434,
+      "title": "Volcanology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC201"
+        ]
+      },
+      "description": "Phenomena and products of volcanic eruptions; physical characteristics of lava and pyroclastic material."
+    },
+    {
+      "number": 435,
+      "title": "GEOSCHOLARSHIP",
+      "credits": 3,
+      "attributes": [
+        "GWS"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15",
+          "GEOSC1",
+          "GEOSC201"
+        ]
+      },
+      "description": "The goal of this class is to learn how to function as a geoscientist engaged in the relentless pursuit of knowledge. This course aims to benefit students in professional development, preparation for advanced courses, and senior thesis research and writing. The most important topic is peer-reviewed scientific literature, the currency of science. Recognizing, accessing, databasing, annotating, writing about, summarizing, critically discussing, and correctly citing peer-reviewed papers are the principal activities. There will be regular assigned activities involving much reading, writing, presenting, and discussion. Other topics will include professionalism, gathering data, how to handle specimens and data, publishing, talking to the media, what graduate programs are looking for and how to approach them, and participation in scientific meetings. There will be a major final paper due during exam week (and no exams). This will be a review article written in the style of a top review journal series such as Annual Reviews. For grading, simply, the strongest possible participation, enthusiasm, completeness, and quality of work is expected at all times, and the professor's perception of this is what the grade will be based on, with a heavy weighting from the term paper. Students will receive comments and other feedback all the way through that will make it clear how they are progressing, and the term paper will receive a formal grade."
+    },
+    {
+      "number": 439,
+      "title": "Principles of Stratigraphy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC201"
+        ]
+      },
+      "description": "An introduction to the description and genesis of sedimentary rock bodies, the determination of their stratal geometries, and their correlation. (This course includes from one to several field trips for which an additional charge will be made to cover transportation.)"
+    },
+    {
+      "number": 440,
+      "title": "Marine Geology",
+      "credits": 3,
+      "description": "Chemical and physical processes affecting the topography and sediments of the sea floor."
+    },
+    {
+      "number": 444,
+      "title": "Matlab Applications for Geoscience",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
+        ]
+      },
+      "description": "An introduction to Matlab: m-file development, descriptive statistics, bootstrapping, Fourier transforms, regression, interpolation, least-squares, differentiation, integration, differential equations, signal analysis, graphics. GEOSC 444 Matlab Application for Geoscience (2)The goal of this class is that students become familiar with Matlab so that they can conduct scientific research without needing to manipulate spreadsheets or other non-mathematically based software. The course is geared towards, beginning graduate and advanced undergraduate students with little or no previous Matlab experience, and examples are focused on applications in the science and engineering with a focus on the geosciences, including problems from groundwater hydrology, tectonics, geochemistry, rock physics, and climate change. Some basic concepts about vectors and matrices will be helpful, but are not required."
+    },
+    {
+      "number": 450,
+      "title": "Risk Analysis in the Earth Sciences",
+      "credits": 3,
+      "description": "An introduction to concepts and methods of quantitative risk anlaysis with focus on water, climate, and energy related risks. GEOSC 450 Risk Analysis in the Earth Sciences is an introduction to concepts and methods of quantitative risk analysis in the Earth system. Key concepts include probability, impacts, risk, uncertainty, statistical estimation, and decision-making under uncertainty. Important methods to be covered are sensitivity studies, probabilistic prediction, and uncertainty analysis. Examples of risks to be analyzed include: drought, flooding, nuclear waste storage, and anthropogenic climate change. Students will also use simple risk analysis software (provided by the instructor and accessible without prior programming experience) to actively apply these concepts to example problems. The course is designed for advanced undergraduate students with a prior exposure to basic statistics and calculus."
+    },
+    {
+      "number": 451,
+      "title": "Natural Resources: Origins, Economics and Environmental Impact",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          }
+        ]
+      },
+      "description": "Geologic, economic and environmental issues related to exploitation of non-renewable natural resources (metals, minerals, rocks, and fossil fuels). GEOSC 451GEOSC 451 Natural Resources: Origins, Economics and Environmental Impact (3) All the materials needed for health and prosperity in our complex society come from the earth, such as water, iron and other metals to make steel, silica to make glass, limestone to make concrete, potash and phosphate to make fertilizers, and oil, natural gas, coal and uranium to generate heat and electricity. Most of these natural resources are non-renewable, and easily recoverable quantities are limited. The main purpose of this course is to increase understanding and appreciation of geological, economical and environmental aspects of exploitation of mineral and energy resources. Approximately two-thirds of the lectures/discussions will focus on geological, geochemical and biological processes that have governed the concentration and dispersion of economically important elements and natural materials on Earth, including water, heavy metals (aluminum, iron, copper, zinc, lead, etc.), precious metals (gold, silver, platinum, etc.), industrial minerals and rocks (clays, limestone, gypsum, salts, etc.), nuclear-energy sources (uranium and thorium) and fossil fuels (petroleum, natural gas and coal). The remaining one-third of the lectures/discussions will focus on: (i) exploration methods to discover new mineral (and fossil fuel) deposits; (ii) economic aspect of mineral commodities (usages, production statistics, economic of mining and concentration); and (iii) environmental issues related to mining, nuclear waste disposal, and constructions. There will be two half-day field trips to study the nature of sulfide mineralization and acid-water pollution."
+    },
+    {
+      "number": 452,
+      "title": "Hydrogeology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          {
+            "oneOf": [
+              "GEOSC1",
+              "GEOSC20"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH110"
+            ]
+          }
+        ]
+      },
+      "description": "Hydrologic cycle: occurrence, movement, quality, and quantity of groundwater; solute transport; quantitative hydrogeologic methods; role of water in geologic processes. This course has one or more required field trips for which a fee may be charged to the student. GEOSC 452GEOSC 452 Hydrogeology (3) GEOSC 452 is the study of the relation between geological and hydrological processes in the earth's surface and subsurface environments. The course will address the fundamental issues and practical applications of natural flow systems, emphasizing the occurrence, movement, quality, and quantity of groundwater and its relations to contaminate fate and transport. The primary objective is to provide students with the fundamental knowledge and tools that are necessary to understand the hydrologic cycle. Students will gain an in-depth understanding of fluid flow across scales from point observations to watershed phenomena, and will gain skills in using mathematics to describe water fluxes. The course format consists of two lectures each week, and includes two field trips. Grading is based on weekly homework assignments, exams, and participation on the field trips. Because hydrogeology is linked to a wide array of environmental, ecological, engineering, and natural resource issues of societal importance, GEOSC 452 will support interdisciplinary training of students in the natural sciences and engineering. Students will find this course useful when undertaking research about fluids in geologic processes."
+    },
+    {
+      "number": 454,
+      "title": "Geology of Oil and Gas",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC1"
+        ]
+      },
+      "description": "Properties, origin, migration, and occurrence of oil and gas. This course has one or more required field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 460,
+      "title": "Principles of Igneous and Metamorphic Petrology",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "GEOSC201"
+        ]
+      },
+      "description": "Igneous and metamorphic processes drive planetary evolution. This course is designed to provide an understanding of the formative processes of igneous and metamorphic rocks through application of simple physical and chemical processes. Through a combination of petrographical observations and applied thermodynamics, students will learn how to treat rocks as chemical systems and, in doing so, equip themselves with a skillset that is of tremendous utility in industry and academia."
+    },
+    {
+      "number": 465,
+      "title": "Structural Geology",
+      "credits": 4,
+      "requisites": {
+        "concurrent": [
+          "GEOSC203",
+          "GEOSC310"
+        ]
+      },
+      "description": "Effects and mechanics of deformation of the earth's crust; practicum includes field trips and studies of maps and structural problems. This course has one or more field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 470,
+      "suffix": "W",
+      "title": "Introduction to Field Geology",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "GEOSC1"
+        ]
+      },
+      "description": "Field interpretation of geologic features; principles and techniques of geologic mapping; interpretation of geologic maps and diagrams. This course has one or more required field trips for which a fee is charged to the student."
+    },
+    {
+      "number": 472,
+      "suffix": "A",
+      "title": "Field Geology I: Geoscience Field Methods",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "GEOSC310"
+        ]
+      },
+      "description": "Investigation of geologic systems requires wrestling with the complexity of real-world landscapes-making decisions about which observations are meaningful, and which are noise, tradeoffs between detail and scope, and synthesizing disparate geospatial data. This course focuses on the development of skills and concepts needed to collect and interpret geologic field data and serves as preparation for the GEOSC 472B - Geosciences Field Investigations. Throughout the course, students will develop the skills to collect, organize, analyze, and communicate geologic observations, and learn to construct a professional-grade geologic map and cross section using geographical information systems (GIS) software."
+    },
+    {
+      "number": 472,
+      "suffix": "B",
+      "title": "Field Geology II: Geoscience Field Investigations",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GEOSC310",
+          "GEOSC465"
+        ],
+        "concurrent": [
+          "GEOSC472A"
+        ]
+      },
+      "description": "This course is a capstone course that provides a natural laboratory for a synthesis of the geological sciences, focusing on the application of geologic field methods to the 3-D characterization of Earth structure, the interpretation of geological processes, and the reconstruction of geologic histories. The exercises and field areas are selected to provide a diverse array of rock types and geological processes that characterize the geology and geologic history of western North America. Through selected field exercises, students will gain hands-on experience with modern geoscience field methods and synthesize observations into geologic maps, cross sections, and written report The ultimate objective of this course is to go beyond the technical aspects of mapping and collection of field data to solve geologic problems based on field observations using the knowledge and analytical skills that are fostered in the core courses of the Geosciences major. This course includes travel outside the University for which an additional charge will be made to cover transportation, food, and lodging."
+    },
+    {
+      "number": 474,
+      "title": "Astrobiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "BIOL110H"
+            ]
+          },
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM110H"
+            ]
+          }
+        ]
+      },
+      "description": "Astrobiology is the study of life in the universe. Astrobiology has become a major focus of scientific research in the United States and a topic often discussed in popular science literature. The recent interest in astrobiology has resulted in the formation of an Astrobiology Institute at Penn State University. This advanced undergraduate course in astrobiology will cover many topics in the field including, biochemical evolution, the origin and evolution of life on Earth, microbial diversity, protein evolution, and the distribution of life in the universe. This course is intended to provide students of the natural sciences with the opportunity to prepare for a research career in the rapidly expanding field of astrobiology. The course will also present astrobiology as a cross-disciplinary framework that ties together the diverse courses the students have already taken. The students will learn new concepts while having, to draw on their previous knowledge of chemistry, biology, and the geosciences. In summary, this course has the following objectives: (1) to develop the student's literacy in astrobiology so that they can critically evaluate claims that they encounter well after the course has ended; (2) to present a scientific question that requires the sum of the student's previous education to solve; (3) to provide a deep background to some of the astrobiological concepts that are often only briefly mentioned in other classes or in the media; (4) to develop research and communication skills required for a young scientist through a class term paper and short oral presentation; and (5) to prepare the students for graduate research in astrobiology by giving them a broad background of the field and by demonstrating many of the outstanding problems yet to be solved."
+    },
+    {
+      "number": 479,
+      "title": "Advanced Stratigraphy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC439"
+        ]
+      },
+      "description": "Modern topics of sequence stratigraphy are addressed, with a heavy emphasis on field and laboratory data analysis and interpretation."
+    },
+    {
+      "number": 480,
+      "title": "Planetary Geophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "PHYS211"
+        ]
+      },
+      "description": "GEOSC 480 is an advanced geophysics course that introduces students to the mathematics and physics behind the processes governing planet formation and planet evolution. Students will learn about planet and star formation, and differentiation of planetesimals into cores and mantles. Students will learn about heat transfer by conduction and convection, and apply this knowledge to learn about the temperature distribution within planets, and how they evolve over time. The course also covers the interior structure of planets, and uses basic physical laws to determine the pressure, density, and gravity profiles through planetary interiors. Students will also learn about gravitational interactions between planetary bodies, including tidal interactions between the Earth and moon. We will then cover geophysical techniques for constraining the interior structure and properties of planets, including moment of inertia, gravity, and lithospheric flexure. Homework problems will be used to hone student's skills, including simple exercises in plotting and modeling with MATLAB. The course will be capped off by a term project, where each student will conduct research on a topic of their choice relevant to planetary interiors and their evolution."
+    },
+    {
+      "number": 481,
+      "title": "Petroleum Seismology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "GEOSC203",
+              "GEOSC454"
+            ]
+          }
+        ]
+      },
+      "description": "The proposed course will be specially designed for undergraduate students (junior or senior) who are eager to pursuing a career in petroleum energy industry or pursuing a grad school in exploration seismology as well as new graduate students who did not have a petroleum seismology class in their previous studies. This course provides an overview of the physical principles of petroleum seismology with emphasis on exploring and characterizing petroleum reservoirs using seismic methods. The content will include the physical basis of the seismic methods, including wave properties, wave propagation in the Earth, seismic reflections & refractions, data processing, seismic migration, seismic interpretation and well logs, and borehole seismology. Hands-on experience working with field data examples will be provided through computer lab exercises throughout the semester."
+    },
+    {
+      "number": 482,
+      "title": "Satellite Remote-Sensing For Earth Observation",
+      "credits": 4,
+      "description": "Comprehensive introduction to theory and methods in remote-sensing, covering optical, thermal and radar methods and their application in geosciences."
+    },
+    {
+      "number": 483,
+      "title": "Environmental Geophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS211",
+          "PHYS212"
+        ]
+      },
+      "description": "This course presents the principles and applications of the variety of techniques geophysicists use to address environmental problems."
+    },
+    {
+      "number": 487,
+      "title": "Analysis of Time Series",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "MATH141"
+        ]
+      },
+      "description": "Nonstatistical approach to data analysis; spectral and correlation analysis; filter theory; signal-to-noise improvement applied to geoscience data."
+    },
+    {
+      "number": 488,
+      "title": "An Introduction to Seismology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH140",
+          "MATH141"
+        ]
+      },
+      "description": "An overview of the observations, methods, and frameworks used in seismogram analysis for earthquake and earth-structure investigations (includes laboratory). GEOSC 488"
+    },
+    {
+      "number": 489,
+      "title": "Dynamics of the Earth",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GEOSC203",
+          "GEOSC310",
+          "PHYS211"
+        ]
+      },
+      "description": "Constitution and dynamics of the solid earth; mechanics and consequences of Plate Tectonic processes."
+    },
+    {
+      "number": 494,
+      "suffix": "M",
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "W",
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual, or small group basis. ,"
+    },
+    {
+      "number": 494,
+      "suffix": "W",
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "attributes": [
+        "W"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual, or small group basis. ,"
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 500,
+      "title": "Issues in Geosciences",
+      "credits": 3,
+      "description": "Introduction of first year graduate students to issues in geosciences. GEOSC 500"
+    },
+    {
+      "number": 501,
+      "title": "Words to Live by: Professional Communication in the Geosciences",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC500"
+        ]
+      },
+      "description": "This course develops writing skills for graduate students seeking careers in the geosciences. It emphasizes expression of research questions, methods, and findings with engaging text, compelling arguments and narratives, and impactful figures. The course covers scientific editing and publishing, professional correspondence, and broader science communication using news and social media"
+    },
+    {
+      "number": 502,
+      "title": "Evolution of the Biosphere",
+      "credits": 3,
+      "description": "The geologic history of the co-evolution of life and the surface environment is examined from an Earth systems perspective. The course will examine significant events in Earth history through a combination of lectures, discussions, papers, and presentations. In particular, the class will use selected events in Earth history to highlight the various and varied geochemical and molecular records or proxies related to life on Earth. Assessment will include an examination, required discussions, research proposals, and peer evaluation of research proposals."
+    },
+    {
+      "number": 508,
+      "title": "Mechanics of Earthquakes and Faulting",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC465",
+          "GEOSC489",
+          "MATH251"
+        ]
+      },
+      "description": "An in-depth treatment of fundamental concepts in brittle faulting and earthquake mechanics with emphasis on physical processes. GEOSC 508"
+    },
+    {
+      "number": 511,
+      "suffix": "B",
+      "title": "Transmission Electron Microscopy",
+      "credits": 1,
+      "internalEquivalents": [
+        "MATSE511B"
+      ],
+      "description": "Principles and practice of transmission electron microscope operation. Students undertake individual projects."
+    },
+    {
+      "number": 514,
+      "title": "Data Inversion in the Earth Sciences",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220"
+        ]
+      },
+      "description": "This course focuses on how one finds theoretical parameters to explain observed data using discrete inverse theory."
+    },
+    {
+      "number": 518,
+      "suffix": "A",
+      "title": "Isotope Geochemistry Fundamentals",
+      "credits": 2,
+      "description": "This course covers the fundamental knowledge and quantitative approaches used in the application of isotopes and their relative abundances within the natural and applied sciences. Students will gain understanding of the theory and guiding principles of isotope systems, including isotope fractionation, radioactive decay, mass balance, isotope notation, and quantitative treatment of isotopic data. The course will cover methods of isotope analyses and the quantitative treatment of isotope data. After successfully completing the course, students will be able to apply theory and methods in isotope systems to diverse disciplines spanning Earth, material, biological, and environmental sciences."
+    },
+    {
+      "number": 518,
+      "suffix": "B",
+      "title": "Isotope Biogeochemistry",
+      "credits": 2,
+      "description": "This course explores knowledge and quantitative approaches used in the application of isotopes within the biogeochemical sciences. Students will gain advanced understanding of isotopic data relevant to the cycling of life-sustaining elements and substrates, including carbon assimilation, metabolic processes and products, and energy metabolism. The course will focus on isotopes of the major elements (C,H,N,O,S) and include examples involving minor elements or metals relevant to biogeochemistry. Each course module will cover a core concept (or concepts) that provides a theoretical framework for understanding isotopic distributions in a certain type of system, and then apply this concept to a range of real-world topics. After successfully completing this course, students will be able to apply methods in isotope biogeochemical systems in fields relevant to the biological, ecological, environmental, soil, and earth sciences."
+    },
+    {
+      "number": 518,
+      "suffix": "C",
+      "title": "Isotopes in Oceans and Climate",
+      "credits": 2,
+      "description": "Students in this course will explore the isotopes that build the major molecules involved in Earth's oceans and atmospheres. In particular, the course investigates how isotopes within Earth materials can record and reconstruct: climate from an anthropogenic and deep-time perspective, hydroclimate, climate states in Earth's past, atmospheric chemistry, ocean chemistry, and the carbon cycle."
+    },
+    {
+      "number": 518,
+      "suffix": "D",
+      "title": "Isotopic Analysis in the Geosciences",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "GEOSC518A"
+        ]
+      },
+      "description": "This course covers the principles and practice of analyzing the isotopic composition of natural geological and biological materials. In particular, the course investigates the physical and chemical principles underlying: the conversion of matter into atomic and molecular ions, the separation of charged particles by mass, and the detection of ion beam intensities for the purpose of precise, accurate, reproducible determination of isotopic ratios in geoscientific applications. The course delves into the principles behind, and practical considerations of, the equipment that enables contemporary mass analysis techniques, such as power supplies, vacuum systems and monitoring, signal detecting and processing, data handling, and standardization. Students will gain advanced understanding of how isotopic ratios are measured, an appreciation of how analytical developments guide (and have guided) research questions in isotope geochemistry, along with practical training in the operation and maintenance of modern mass spectrometers. Through analysis of the scope and limitations of existing techniques and instrumentation, students will be empowered to incorporate isotopic analysis into their research and design methods to support new research directions."
+    },
+    {
+      "number": 518,
+      "suffix": "E",
+      "title": "Isotope Geochemistry: Solid Earth",
+      "credits": 2,
+      "description": "This course covers specific tools using isotope geochemistry to understand the Solid Earth. Students will build on a fundamental knowledge of isotope geochemistry and learn how to apply that fundamental knowledge to specific problems in crustal evolution, geochronology, and high-temperature planetary processes. Through in-class discussions and weekly problem sets, students will gain awareness and practical experience with both solid Earth science questions, and the utility of isotope geochemistry for answering such questions. Students will leave this course with an understanding of which isotope systems can be used to answer particular scientific questions, and importantly, which cannot."
+    },
+    {
+      "number": 519,
+      "title": "Mineral Equilibria",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM450"
+        ]
+      },
+      "description": "A thermodynamic treatment of minerals and their reactions under geochemically important conditions of temperature and pressure."
+    },
+    {
+      "number": 521,
+      "title": "Thermal State of the Earth",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Analytical and numerical solutions to earth-related heat conduction and convection problems; geothermal energy; earth's heat flow and temperature."
+    },
+    {
+      "number": 522,
+      "title": "Geochemistry of Aqueous Systems",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "CHEM450",
+          "CHEM452"
+        ]
+      },
+      "description": "Ionic and molecular equilibria related to stabilities and solubilities of minerals, with applications to ground water, sea water, and hydrothermal fluids."
+    },
+    {
+      "number": 523,
+      "title": "Sedimentary Geochemistry",
+      "credits": 2,
+      "description": "Kinetics and thermodynamics of low-temperature processes in sediments. Applications to weathering processes, natural waters, deposition of sediments, and diagenesis."
+    },
+    {
+      "number": 533,
+      "title": "Principles of Geochemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM450"
+        ]
+      },
+      "description": "A comprehensive treatment of the principles of geochemistry applied to a wide variety of geologic settings and scales."
+    },
+    {
+      "number": 536,
+      "title": "Topics in Biogeochemistry",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "internalEquivalents": [
+        "SOILS536"
+      ],
+      "description": "This seminar addresses chemical interactions between the biosphere and the physical environment over Earth's history and as impacted by humans. This course will provide a broad survey of biogeochemical principles, and offer a community-building experience for students with biogeochemical interests from diverse departments. Students will complete the course with a synthetic knowledge of the key topics in the field of biogeochemistry. Each week we will focus on a topic within the broad field of biogeochemistry such as: origins of the elements, reactions in the atmosphere, soil development, the distribution of redox reactions and microbial metabolic pathways, and the global cycles of carbon, water, nitrogen, phosphorus, sulfur, mercury, and perhaps other elements. For each topic, we will focus on the questions: What is known or can be observed? How is this information used to understand biogeochemical phenomena and process? How are these processes scaled over time and space? What are emerging and important questions in the subspecialties of biogeochemistry?"
+    },
+    {
+      "number": 542,
+      "title": "Quantitative Methods in Hydrogeology",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "previous": [
+          "GEOSC452"
+        ]
+      },
+      "description": "Investigation of groundwater systems and resources, emphasizing both the practical use and limitations of modeling techniques."
+    },
+    {
+      "number": 548,
+      "title": "Surface Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC340"
+        ]
+      },
+      "description": "Principles, application, and interpretation of Quaternary geochronology, surface process studies, and landscape evolution."
+    },
+    {
+      "number": 555,
+      "title": "Advanced Structure and Petrofabrics",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Macroscopic and mesoscopic recognition, measurement, and interpretation of small-scale rock structures and mineral orientation patterns in deformed rocks."
+    },
+    {
+      "number": 558,
+      "title": "Multi-channel Seismic Processing and Interpretation",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "GEOSC454"
+        ]
+      },
+      "description": "This course covers the basics of seismic energy propagation, modern 2- and 3-D multi-channel seismic data acquisition methods, and data processing."
+    },
+    {
+      "number": 559,
+      "title": "Seismology II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH524A",
+              "EMCH524B",
+              [
+                "MATH405",
+                "MATH406"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "Rigorously covers the methods of computing wave fields for point and distributed seismic sources in vertically inhomogeneous elastic media."
+    },
+    {
+      "number": 560,
+      "title": "Kinetics of Geological Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM450",
+          "GEOSC519"
+        ]
+      },
+      "description": "General development of the kinetic theory of crystal growth, diffusion, irreversible thermodynamics, and heterogeneous reactions needed for geosciences and related fields with applications to current problems."
+    },
+    {
+      "number": 561,
+      "title": "Mathematical Modeling in the Geosciences",
+      "credits": 4,
+      "description": "The process of transforming a conceptual geoscience model into a numerical model is presented; students create and solve numerical models."
+    },
+    {
+      "number": 565,
+      "title": "Tectonic Geomorphology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOSC340",
+          "GEOSC465"
+        ]
+      },
+      "description": "Tectonic geomorphology examines interactions between tectonic and surface processes, paleosceismology, geodesy, structure, active deformation, and landform evolution."
+    },
+    {
+      "number": 572,
+      "title": "Field Stratigraphy",
+      "credits": {
+        "min": 1,
+        "max": 2
+      },
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "requisites": {
+        "previous": [
+          "GEOSC439",
+          "GEOSC472A",
+          "GEOSC472B",
+          "GEOSC479"
+        ]
+      },
+      "description": "This course introduces students to field techniques used by stratigraphers, with the capstone experience being a field trip during May."
+    },
+    {
+      "number": 585,
+      "title": "Sedimentary Geology",
+      "credits": 3,
+      "description": "An integrated approach to the study of modern and ancient sedimentary environments and their deposits."
+    },
+    {
+      "number": 587,
+      "title": "Preparing for an Academic Career in the Geosciences",
+      "credits": 3,
+      "description": "The course focuses on successful strategies for the academic job market and for launching an academic career. GEOSC 587 Preparing for an Academic Career in the Geosciences (3) This seminar is designed for advanced doctoral students who are ready to launch their own search for an academic position. We will explore important elements of the transition into an academic career, including the application and interview process and strategies to establish teaching and research programs. During the semester students will: (a) learn about roles and responsibilities of faculty members in different educational settings (e.g., community colleges, four-year colleges, universities); (b) Design a teaching and research plan suitable for the next career stage and write teaching and research statements to summarize these plans; (c) Learn strategies for documenting their strengths and accomplishments in teaching and research; (d) Learn \"the inside scope\" about job searches including how to navigate the application process, interviews, and negotiation; (e) Learn how to give an effective job talk; (f) Discuss strategies for balancing the many demands and expectations they will face in an academic career. Finally, students will develop a self-inventory of preferred options for the next career stage and a personal action plan."
+    },
+    {
+      "number": 589,
+      "title": "Critical Zone Science Seminar",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "SOILS589"
+      ],
+      "description": "This course will explore the foundations, discoveries, and applications linked to the Critical Zone concept through primary literature, class discussions, and original student projects. We will start by spending one week each on the four foundational science domains that are woven together to make Critical Zone science: hydrology, geoscience, soil science, and ecology. Then we will spend several weeks highlighting key discoveries that arise from the interdisciplinary Critical Zone perspective. The end of the class explores whether the Critical Zone science perspective might have useful applications for land and water management. Throughout the class, students take a co-leadership role with the instructors in terms of selecting readings, lecturing, and designing active learning allied with key concepts."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 597,
+      "suffix": "C",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 597,
+      "suffix": "D",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 2
+    },
+    {
+      "number": 597,
+      "suffix": "E",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 1
+    },
+    {
+      "number": 597,
+      "suffix": "F",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 1
+    },
+    {
+      "number": 597,
+      "suffix": "I",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 2
+    },
+    {
+      "number": 598,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in teaching geosciences courses."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

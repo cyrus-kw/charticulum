@@ -1,0 +1,336 @@
+{
+  "subject": "SPSY",
+  "courses": [
+    {
+      "number": 472,
+      "title": "Human Development, Health, & Education From A Global Perspective",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Intended to address the University's global community objectives and provide scholarly background on human development in other cultures."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 500,
+      "title": "Professional Issues in School Psychology",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Orientation to the field through study of unique problems, current issues, ethical and legal matters, unique cases, and research projects."
+    },
+    {
+      "number": 503,
+      "title": "Development Across the Life Span",
+      "credits": 3,
+      "description": "This is a graduate level survey course on the scientific discipline of human development across the life span. S PSY 503 Development Across the Life Span (3) The purpose of this course is to give graduate students, especially in the professional practice areas of psychology, such as counseling psychology, school psychology, and clinical psychology and other developed practice areas (e. g., counselor education), an overview of the study of human development across the life span. This survey of the scientific discipline of human development will cover three major areas, with a cultural emphasis: theory, methodology, and research findings. A variety of influential development theories (non exhaustive), in conjunction with classic and contemporary research, will be examined with the goal of providing a framework for comparing and contrasting various theories, concepts, and supporting research as well as understanding their use in the professional practice and research endeavors."
+    },
+    {
+      "number": 510,
+      "title": "Supervision of Pupil Service Personnel",
+      "credits": {
+        "min": 1,
+        "max": 10
+      },
+      "repeatable": {
+        "maxCredits": 10
+      },
+      "requisites": {
+        "previous": [
+          "SPSY595A"
+        ]
+      },
+      "description": "Program supervision and professional leadership in university clinics and school systems."
+    },
+    {
+      "number": 517,
+      "title": "Social Aspects of Behavior in Education",
+      "credits": 3,
+      "description": "A critical and detailed examination of social behavior in canons of classic and contemporary theoretical and empirical work. S PSY 517 Social Aspects of Behavior in Education (3) Social aspects of behavior are fundamental to the practice of professional psychology. This course is designed to provide graduate students in the professional areas of psychology and other developed practice areas a critical and detailed examination of social behavior. Specifically, the course is also designed to illustrate how the individual and social interaction shape and are shaped by the cultures and social situations in which they exist. Students will have the opportunity to acquire and demonstrate substantial understanding of and competence in the current body of knowledge in mainstream social aspects of behavior. Topics that will be addressed are the social cognition, attribution, affiliation, attraction, and social comparison, aggression, equity, and social exchange attitudes and attitude change, conformity, prejudice and discrimination, and group dynamics. Presented within each of these topics will be: (a) the canons of classic research and theory, (b) contemporary theoretical and empirical work, and (c) recent events that show the presence of the social aspects of psychology in daily life. As a result, a focus of each topic will be on the application of social aspects to the practice of psychology and student's own research."
+    },
+    {
+      "number": 530,
+      "title": "Psychoeducational Interventions",
+      "credits": 3,
+      "description": "Development of empirically validated psychoeducational interventions for academic and behavioral problems experienced in school by children and adolescents."
+    },
+    {
+      "number": 535,
+      "title": "School-Based Psychological Interventions for Children and Youth",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDPSY450",
+          "EDPSY475",
+          "PSYCH461"
+        ]
+      },
+      "description": "Development of empirically supported psychological and psychoeducational interventions for behavioral and emotional concerns among school-aged children. S PSY 535 School-Based Psychological Interventions for Children and Youth (3) This course is an advanced graduate course that will be offered in the spring semester. Topics will include (a) psychological theories underpinning psychological interventions, (b) introduction to basic individual and group helping and communication skills, (c) criteria for empirically supported psychoeducational interventions, (d) issues related to individual characteristics and medical needs that potentially can impact educational progress, and (e) school-based individual and group crisis intervention skills."
+    },
+    {
+      "number": 540,
+      "title": "Academic Instruction and Intervention",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "requisites": {
+        "previous": [
+          "SPSY500"
+        ]
+      },
+      "description": "This course complements the school-based intervention sequence for students enrolled in the School Psychology doctoral program. Academic Instruction and Intervention complements the school-based intervention sequence for students enrolled in the School Psychology doctoral program. This course covers the theoretical and empirical foundation for effective instruction, academic skills assessment, and academic intervention for K-12 students. This course will provide an overview of specific teaching behaviors associated with positive student outcomes and provide a framework for assessing those behaviors. In addition, this course will explore effective academic interventions for students who need support beyond what is typically provided in the classroom environment. Coursework will emphasize theoretical and empirical issues; however, students will also work to apply intervention skills in practice."
+    },
+    {
+      "number": 551,
+      "title": "Professional Development of School Psychologists in Working with English Language Learners (ELL)",
+      "credits": 3,
+      "description": "This course is designed to educate school psychology graduate students on accommodations and adaptions for diferse learners, per Pennsylvania's guidelines. S PSY 551 Professional Development of School Psychologists in Working with English Language Learners (ELL) (3) This course is designed to situate information about language and English learners in the context of working school psychologists. The first half of the course will provide foundational information on the history and sociopolitical influence of language, native language development, and second language acquisition through the lens and application of a school psychologist. The second half of the course will carry over the information learned and focus on directly applying it to the best practice of a school psychologist as a scientist-practitioner by understanding and using sound research outcomes in providing educational services (assessment, intervention, and consultation) to ELL students (K-12) with disabilities or at-risk."
+    },
+    {
+      "number": 554,
+      "title": "Psychological and Educational Evaluation of Exceptional Children",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SPSY559"
+        ]
+      },
+      "description": "Administration and interpretation of individual tests other than the Stanford- Binet, WISC, WAIS."
+    },
+    {
+      "number": 555,
+      "title": "Special Education, School Governance, and School Law",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Special Education, law, and school governance will provide a framework of how schools operate to help school psychologists effect change. This course will provide a basic framework of how school systems operate in order to help school psychologists and other potential school leaders effect change. Individuals involved in the operation of public schools must be familiar with the laws that govern these educational institutions because legal developments impact schools, educators, and parents. Schools are political systems that affect the working world of educators through the use of power and influence, bargaining, and negotiation. Thus, related topics will include educational leadership, policy and governance, negotiations and personnel management, legal aspects of public schools, business and finance, and school and community relations."
+    },
+    {
+      "number": 556,
+      "title": "Psychological Assessment of Preschool and School-Aged Children",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDPSY400",
+          "EDPSY450",
+          {
+            "oneOf": [
+              "EDPSY554",
+              "SPSY559"
+            ]
+          }
+        ]
+      },
+      "description": "Study of cognitive/affective tests; use of systems (analytic, multivariate statistical, actuarial methods of data combination) in decision-making processes. Studies indicate that a major job function of school psychologists is the evaluation and classification of children who are thought to be exceptional. Diagnosis of learning and personal/ social problems of children is complex and highly dependent upon assessment strategies. Although individual-level diagnostic tools are still a hallmark of school psychological practice, up-and-coming professionals also need to be prepared to think through universal screening, progress monitoring, program implementation, and systems-change to support children with social-emotional problems as part of three-tiered service delivery models such as School-Wide Positive Behavior Intervention and Supports, school-based mental health, and Response to Intervention frameworks. Within this overall \"blueprint\" the course will focus on six critical areas: 1. The evaluation of specific assessment techniques in relation to acceptable psychometric standards to include a review of universal screening, progress monitoring, and individual-level/ targeted techniques (to include lethality risk assessment including risk for harm to self or others). 2. The statistical selection, use, and adaptation of diagnostic batteries. 3. The use and interpretation of computer output in the evaluation of predictive validity, clinical utility, bias, and clustering of both psychological variables and children. 4. Comprehensive case planning for social-emotional assessment in school settings and carrying out mock evaluations that emphasize social-emotional concerns for students. 5. The use of diagnostic reports as vehicles for facilitating instructional and social-emotional goal planning for children. 6. The reporting of results of screening and diagnostic results to parents and teachers to facilitate shared understanding."
+    },
+    {
+      "number": 559,
+      "title": "The Individual Psychological Examination",
+      "credits": 3,
+      "description": "Demonstrations and practice in widely used ability and aptitude tests; psychological report writing."
+    },
+    {
+      "number": 561,
+      "title": "Consultation in Educational Settings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDPSY450",
+          "SPLED401"
+        ]
+      },
+      "description": "Prepares students to consult with teachers, administrators, parents, and other professionals about academic, behavioral, social-emotional, and programmatic issues. S PSY 561 Consultation in Educational Settings (3) This course will be an advanced graduate seminar which will be offered in the fall semester by the School Psychology program. Topics will include: (a) the history of consultation; (b) a review of the major consultation models (mental health, behavioral, instructional, organizational development); (c) research literature on consultation; (d) application of the consultation models in practice; (e) cross-cultural consultation; and (f) ethical and legal issues in consultation. Students completing this course will have a solid grounding in consultation theory and research as well as supervised experiences consulting with educators. Final grades will be based on a number of criteria including classroom participation, analyses of daily readings, a mid-semester examination, a final paper, written logs of consultation activities, regular attendance, and active participation in classroom discussions and activities. Although a mandatory course for advanced graduate students in School Psychology, the course will also be a useful addition to the training of other graduate students who will be consulting with parents or teachers around psycho-educational issues. To benefit from the course, students should have some prior training in assessment and intervention. Prior to working with educational professionals, students will participate in role-plays and simulations to hone their skills. Actual consultation sessions will be videotaped and students will also be expected to critically analyze the videotapes as part of the process of self-improvement and to demonstrate their ability to learn from their own mistakes."
+    },
+    {
+      "number": 575,
+      "title": "Child and Adolescent Psychopathology",
+      "credits": 3,
+      "description": "This course will familiarize students with specific psychiatric disorders of childhood and adolescence encountered by mental health professionals in schools. S PSY 575 Child and Adolescent Psychopathology (3) This course will familiarize students with many of the child and adolescent disorders that mental health professionals encounter in working with preschool and school-age children. The primary focus of the course is to provide students with an historic understanding of the epidemiology, etiology, diagnostic criteria, and long-term implications of specific childhood disorders, with an emphasis on those likely to be encountered by practicing school psychologists. In addition to these topics, class discussion will focus on current controversies and research directions regarding the study of childhood psychopathology as well as ongoing changes to diagnostic systems. Individual class sessions will consist of discussion, group activities, student presentations, and the observation of actual casework. Students are expected not only to participate in but also to facilitate group discussions. Students will be encouraged to share their experiences working with children and adolescents with psychological disorders. Because childhood psychopathology is a broad domain, discussion topics for the course primarily reflect the disorders most frequently observed in typical school populations. Through individual projects, however, students will have the opportunity to explore areas of child or adolescent psychopathology that may not have been addressed in this course."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "EDPSY475",
+                "EDPSY406",
+                "EDPSY450"
+              ],
+              "EDPSY554"
+            ]
+          }
+        ]
+      },
+      "description": "Graduate seminar examining current research in the field of School Psychology."
+    },
+    {
+      "number": 595,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 10
+      }
+    },
+    {
+      "number": 595,
+      "suffix": "A",
+      "title": "Practicum",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Clinical experience with children under supervision in a variety of settings requiring service, including practice in synthesizing data and observations."
+    },
+    {
+      "number": 595,
+      "suffix": "B",
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 10
+      },
+      "repeatable": {
+        "maxCredits": 10
+      },
+      "description": "Long-term placement in settings providing work for school psychologists with children, parents, teachers, administrators, and service agencies, under supervision."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject that may be offered infrequently; several different topics may be taught in one year or semester. A specific title may be used in each instance and will be entered on the student's transcript. Multiple offerings may be accommodated by the use of suffixes, A, B, etc."
+    },
+    {
+      "number": 597,
+      "suffix": "A",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 1
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised Experience in College Teaching."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 843,
+      "title": "Prevention Strategies and Programming",
+      "credits": 3,
+      "description": "Addresses prevention program development, implementation, and evaluation, along with theoretical and empirical underpinnings, ethical and multicultural issues related to prevention."
+    }
+  ]
+}

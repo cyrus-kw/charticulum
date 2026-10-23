@@ -1,0 +1,125 @@
+{
+  "subject": "FINAN",
+  "courses": [
+    {
+      "number": 518,
+      "title": "Financial Markets and the Economy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUSEC502",
+          "BUSEC503"
+        ]
+      },
+      "description": "Operation, regulation, use, and evaluation of principal financial markets and institutions; monetary policy, asset pricing, and their effects on business. FINAN 518 Financial Markets and the Economy (3) This course will give students a thorough understanding of the major components and operation of our financial system. This system is used to finance businesses and consumer spending as well as for the management of money (payments and investments). FINAN 518 is a graduate course that adds to both your breadth (variety of topics) and depth (rigor, sophistication) of understanding of financial markets and institutions. The course consists of six inter-related major topics: � Over-view of the financial system � Survey and analysis of financial institutions that are used by businesses and by consumers and investors � A rigorous analysis of interest rates and asset prices, including an introduction to asset pricing models � An explanation and evaluation of our most important financial markets � Study of important financial assets (chapters 16-25) that are used by businesses to raise funds and are used by investors to increase their wealth and income � An introduction to the relatively new, and growing, markets for financial derivatives, covering the pricing of derivatives (principally futures and options contracts and their use for hedging price risk and for speculation)"
+    },
+    {
+      "number": 521,
+      "title": "Corporate Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCT501"
+        ]
+      },
+      "description": "An in-depth analysis of concepts and techniques of corporate financial management."
+    },
+    {
+      "number": 522,
+      "title": "Investment and Portfolio Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FINAN521"
+        ]
+      },
+      "description": "Investment analysis and portfolio management theory and applications."
+    },
+    {
+      "number": 523,
+      "title": "Risk Management of Modern Financial Institutions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FINAN521"
+        ]
+      },
+      "description": "Evaluating and managing risks faced by modern financial institutions in a dynamic financial market."
+    },
+    {
+      "number": 526,
+      "title": "International Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FINAN521"
+        ]
+      },
+      "description": "Basics of corporate finance extended to the international environment through a special consideration of exchange rate behavior and its management."
+    },
+    {
+      "number": 527,
+      "title": "Derivative Securities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FINAN521"
+        ]
+      },
+      "description": "Use of financial futures, options, and swaps for risk management and investment; pricing models, trading strategies hedging price risk."
+    },
+    {
+      "number": 530,
+      "title": "Corporate Finance II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FINAN521"
+        ]
+      },
+      "description": "In-­depth analysis of capital budgeting, mergers and acquisition, raising capital, leasing, working capital management, risk management, and international finance."
+    },
+    {
+      "number": 531,
+      "title": "Managing Financial Operations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FINAN521"
+        ]
+      },
+      "description": "A course for financial managers: working capital management, financial planning, financial controls, reporting, financial strategies; theory and practice."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 596,
+      "suffix": "A",
+      "title": "Independent Study Investment Portfolio Management",
+      "credits": 3,
+      "description": "Investment analysis and portfolio management theory and applications."
+    },
+    {
+      "number": 597,
+      "title": "Special topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

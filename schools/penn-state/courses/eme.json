@@ -1,0 +1,404 @@
+{
+  "subject": "EME",
+  "courses": [
+    {
+      "number": 200,
+      "title": "Subsurface Energy Engineering",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "This introductory course provides a comprehensive overview of subsurface energy resources and their engineering principles. Students will explore the energy industry, focusing on the geological and petrological aspects of subsurface reservoirs. Key topics include the origin and occurrence of hydrocarbons, the characteristics of subsurface reservoirs, low-permeability reservoirs, shale formations, heavy oil and bitumen reservoirs, natural gas hydrates, and coalbed methane. In addition, the course delves into renewable and sustainable energy sources such as geothermal energy. Students will learn about geologic carbon sequestration technologies, hydrogen geo-storage, and enhanced recovery techniques. These topics are self-contained and taught in a way that assumes no prior knowledge in this area, although having enough of a mathematical background to understand equations and formulas will be beneficial. Through a combination of lectures, case studies, and practical exercises, students will gain both a solid foundation and a broad perspective on existing and emerging practices in subsurface energy engineering. This course is a stand-alone General Education course that contributes to the General Education Learning objectives of Critical and Analytical Thinking and Integrative Thinking. Furthermore, it is a single-domain course in the Natural Sciences (GN)."
+    },
+    {
+      "number": 210,
+      "title": "Data Analytics for Energy Systems",
+      "credits": 3,
+      "attributes": [
+        "GQ"
+      ],
+      "description": "Data Analytics for Energy Systems merges introductory statistics with coding through simulation-based inference. Class lectures are split between discussing the concepts and illustrating their application through coding examples. The course is highly data-centric, using mostly datasets pertaining to the energy industry or grand challenges related to energy and sustainability (although some data are generated through fun in-class exercises). The course starts by discussing different types of data and introducing students to basic coding skills to manipulate datasets and extract summary statistics. The course then moves into data visualization, discussing common types of graphical tools and the types of data for which they are appropriate. Simulation-based inference then begins around the third week with bootstrapping in the context of finding confidence intervals, which then moves into hypothesis testing through randomization distributions. The concepts from hypothesis testing carry over into chi-square tests, ANOVA, and regression, which also delves into prediction. Neural Networks and Random Forests are covered at a conceptual and applied level (not getting into the theory) towards the end of the course. The course concludes with some topics in basic probability that weren't covered earlier in the semester."
+    },
+    {
+      "number": 301,
+      "title": "Thermodynamics in Energy and Mineral Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          "PHYS212",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "Treatment of classical thermodynamics targeted to the needs of students in the Department of Energy and Mineral Engineering."
+    },
+    {
+      "number": 303,
+      "title": "Fluid Mechanics in Energy and Mineral Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          "PHYS211"
+        ]
+      },
+      "description": "Treatment of fluid mechanics targeted to the needs of students in the Department of EME."
+    },
+    {
+      "number": 407,
+      "title": "Electrochemical Energy Storage",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ME300",
+              "EME301",
+              "CHE220"
+            ]
+          },
+          {
+            "oneOf": [
+              "ME320",
+              "EME303",
+              "CHE330"
+            ]
+          }
+        ]
+      },
+      "description": "Electrochemical concepts in energy storage devices, cell construction and materials involved in batteries and capacitors, electrochemical testing methods and applications."
+    },
+    {
+      "number": 428,
+      "title": "Negative Emissions Technologies",
+      "credits": 3,
+      "description": "Large-scale deployment of negative emissions technologies (NET's) will be critical to minimize the worst impacts of climate change. NET's encompass technologies that can permanently sequester CO2 emissions, and specifically technologies that remove CO2 from earth systems such that the CO2 balance is net negative. This course covers fundamental technologies for carbon capture and sequestration, with a focus on integrated systems capable of achieving net-negative emissions - including bio-energy production with carbon capture and storage, and direct air capture coupled with geologic carbon sequestration or mineralization. We will integrate methods to assess emission balances and the sustainability of emerging technologies, including life cycle and techno-economic assessment, and the main course deliverable will be a guided sustainability assessment on an NET system. The goal of this course is to help students gain a broad understanding of NET pathways and learn to think critically about these complex systems, as well as the dual challenges of meeting demands for energy and CO2 emission reductions, through a lens of holistic sustainability."
+    },
+    {
+      "number": 432,
+      "title": "Energy Policy",
+      "credits": 3,
+      "internalEquivalents": [
+        "GEOG432"
+      ],
+      "requisites": {
+        "previous": [
+          "EBF200",
+          "EGEE120",
+          "PLSC490"
+        ]
+      },
+      "description": "Analysis, formulation, implementation, and impacts of energy-related policies, regulations, and initiatives."
+    },
+    {
+      "number": 444,
+      "title": "Global Energy Enterprise",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON104",
+          "EGEE102",
+          "EGEE120"
+        ]
+      },
+      "description": "Global Energy Enterprise provides in-depth insight into the role that public and private nonmarket actors and actions play in contemporary energy markets through a variety of artifacts and case studies. Students perform a nonmarket analysis of a current energy policy case study through series of guided steps using a well-regarded analytical framework. The course also provides an overview of technical, environmental, economic, and sociopolitical aspects of modern energy sources, as well as an overview of international energy and policy regimes."
+    },
+    {
+      "number": 450,
+      "title": "Energy Crisis Leadership",
+      "credits": 3,
+      "description": "Energy Crisis Leadership accelerates developing leadership skills, self-awareness, confidence, and character through evidence-based and experiential learning activities. This course equips students with the tools, experience, and knowledge to navigate and manage crises in the energy, natural resources, and transportation sectors. Through immersive case studies and innovative action-based simulations, students will analyze high-profile, real-world events and tackle complex, ambiguous problems under pressure. Students consider these scenarios in global, economic, environmental, legal, and societal contexts, and recognize the ethical and professional responsibilities of the leaders involved. The semester culminates in a 24-hour crisis leadership challenge, where students synthesize their learning to manage a simulated disaster. Graduates of this course will be better equipped to think critically on their feet, maintain poise under pressure, and strategize effectively through turbulent conditions."
+    },
+    {
+      "number": 460,
+      "title": "Geo-resource Evaluation and Investment Analysis",
+      "credits": 3,
+      "description": "The course covers engineering evaluation of geo-resources, present value and rate of return analysis, mineral property and reserve estimation, and cost estimation and engineering economy concepts applied to geo-resources including energy and minerals."
+    },
+    {
+      "number": 466,
+      "title": "Energy and Sustainability in Society",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOG30N",
+          "GEOG432"
+        ]
+      },
+      "description": "EME 466 provides the culminating experience for Energy and Sustainability Policy majors through an individualized inquiry-based capstone project in which students tackle the wicked problems of sustainability they see and experience in their own communities. Students identify, organize, execute, and reflect on a local issue related to energy, the environment, or sustainability with particular emphasis on policy-based solutions."
+    },
+    {
+      "number": 501,
+      "title": "Design Under Uncertainty in Energy and Mineral Systems",
+      "credits": 3,
+      "description": "This class is designed to present a broad range of tools for evaluating energy projects, technologies, and systems. Topics will include project evaluation methods (NPV, discounting), tools for decision/design under uncertainty (Monte Carlo simulation, decision trees, lattices, real options), optimization (linear programming, stochastic programming), and economics/markets/regulation (review of microeconomics, market failures, regulation, and market design). Students will focus both on the intuition and appropriate application of the various methods and theories."
+    },
+    {
+      "number": 504,
+      "title": "Foundations in Sustainability Systems",
+      "credits": 3,
+      "description": "Theoretical background of sustainability issues and studies of sustainability systems."
+    },
+    {
+      "number": 511,
+      "title": "Interfacial Physical-Chemical Systems, Processes, and Measurements",
+      "credits": 3,
+      "description": "The boundary between two phases, the interface between the phases (referred to as the \"interface\") has very different properties from that of the bulk phase and such interfaces are important in a variety of energy, chemical, and mineral engineering processes. The interface may control transport between the phases, e.g., liquid-liquid extraction, reaction at the interface, e.g., heterogeneous catalysis, or accumulation of a component from one of the bulk phases, e.g., adsorption. All of these are examples of interfacial phenomena relevant to energy conversion, mineral extraction, and oil recovery processes. Course topics are drawn from physical and interfacial chemistry to address engineering and applied science needs in fuel science, fossil fuel recovery, renewable fuel processing, mineral processing, environmental science, and health. Topics include interfacial forces, phase behavior, adsorption/desorption, reaction kinetics, and solution chemistry. The applications of these subjects in various fields such as reservoir engineering, fuel science, mineral separations, reacting flows, and water systems will also be covered. Analytical surface characterization techniques and particle sizing methods will also be covered, including selected demonstrations."
+    },
+    {
+      "number": 521,
+      "title": "Mathematical Modeling of Energy and Mineral Systems",
+      "credits": 3,
+      "description": "This class develops the understanding of methods of modeling used for important physical and chemical phenomena involved in energy and mineral engineering systems. These include both separate and mixed solid (solid mechanics) and fluid (computational fluid mechanics) systems, including reactive components. The emphasis is on finite element methods but also includes other continuum methods (LBM, SPH), integral methods, and discontinuum methods. Students will develop working programming modules of simple-through-complex models of interactive physical systems and research materials on some form of computational methods."
+    },
+    {
+      "number": 522,
+      "title": "Computational Methods for Electric Power Systems Analysis",
+      "credits": 3,
+      "description": "This course covers the formulation of and solution methods for a full range of economic-engineering investment and operations problems for electric power systems. Application problems include economic dispatch, unit commitment, optimal power flow, generation capacity expansion, transmission expansion, and modeling of competitive electricity markets. Solution methods include linear programming, mixed integer programming, decomposition methods for stochastic programming (e.g., Lagrangian Relaxation, Benders Decomposition), and mixed complementarity problems, with an emphasis on numerical implementation."
+    },
+    {
+      "number": 523,
+      "title": "Stochastic Optimization Methods of Energy and Environmental Systems",
+      "credits": 3,
+      "description": "This course covers the theory and implementation of computational methods for stochastic simulation and stochastic optimization, with an emphasis on algorithms and implementation. The course emphasizes the quantitative analysis or numerical modeling of complex systems in fields such as civil, environmental, energy, mechanical, and industrial engineering or energy, environmental, and natural resource economics. Topics include Monte Carlo simulation, quasi-random and pseudo-random sampling methods, Markov Chains, Dynamic Programming, Approximate Dynamic Programming, and Stochastic Programming decomposition techniques."
+    },
+    {
+      "number": 524,
+      "title": "Machine Learning for Earth and Energy Systems",
+      "credits": 3,
+      "description": "This course provides an overview of the application of machine learning algorithms to problems in earth and energy system sciences and engineering. The course addresses the strengths and weaknesses of various machine learning approaches, as well as appropriate testing and validation techniques for these complex models. Topics include machine learning applications in regression and classification, ranging from linear regression to neural networks. The course focuses on the practical application and interpretation of statistical machine learning methods, while also providing an understanding of the basis and theory behind these methods. An emphasis of this course is for students to apply these methods to specific research problems of interest. Additionally, this course teaches a modern programming language (e.g., R). Students with some background in statistics, but no previous formal training in machine learning algorithms will find this course most useful. Students do not need to have prior experience with a specific programming language to enroll in this course, however, some previous training in statistics or programming will be beneficial."
+    },
+    {
+      "number": 525,
+      "title": "Theory and Practice of Policy Analysis for Engineers",
+      "credits": 3,
+      "description": "The course provides a broad introduction to analytical methods commonly used in science, technology, and energy policy analysis."
+    },
+    {
+      "number": 526,
+      "title": "Solar Utility and Portfolio Management",
+      "credits": 3,
+      "description": "EME 526 covers the theoretical frameworks and quantitative methods for evaluating and designing solar resource projects. Methods will include quantitative solar resource measurement, forecasting, uncertainty quantification, dynamical systems modeling, and game theoretic models. Students will compare and assess alternative theoretical and quantitative approaches in terms of their ability to address a range of important objectives, including economic, technical constraints, robustness to uncertainty, varying risk preferences of stakeholders, and other ethical and cultural considerations. The course utilizes data sets and modeling resources drawn from actual case studies to provide students context in which to apply and evaluate the methods."
+    },
+    {
+      "number": 527,
+      "title": "Stochastic Modeling of Spatial Variability in Energy and Environmental Systems",
+      "credits": 3,
+      "description": "This course covers the theory, methods, and implementation of modeling spatial variability and uncertainty with special consideration of the structure of energy, natural resource, and environmental system models. The course draws heavily upon geostatistical methods, and covers random functions, Semivariograms, Kriging, spatial simulation, and data assimilation into spatial simulation models."
+    },
+    {
+      "number": 528,
+      "title": "Negative Emissions Technologies",
+      "credits": 3,
+      "description": "Large-scale deployment of negative emissions technologies (NET's) will be critical to minimize the worst impacts of climate change. NET's encompass technologies that can permanently sequester CO2 emissions, and specifically technologies that remove CO2 from earth systems such that the CO2 balance is net-negative. This course covers fundamental technologies for carbon capture and sequestration, with a focus on integrated systems capable of achieving net-negative emissions -including bio-energy production with carbon capture and storage, and direct air capture coupled with geologic carbon sequestration or mineralization. We will integrate methods to assess emission balances and the sustainability of emerging technologies, including life cycle and techno-economic assessment, and the main course deliverable will be a guided sustainability assessment on an NET system. The goal of this course is to help students gain a broad understanding of NET pathways and learn to think critically about these complex systems, as well as the dual challenges of meeting demands for energy and CO2 emission reductions, through a lens of holistic sustainability."
+    },
+    {
+      "number": 531,
+      "title": "Thermodynamics of Energy and Mineral Systems",
+      "credits": 3,
+      "description": "This course presents linear and non-linear irreversible thermodynamics as a means to explore the coupling between physicochemical, kinetic, and transport processes. Linear irreversible thermodynamics will be illustrated by well-known and practical phenomena such as Seebeck effect (thermocouple), Peltier effect (dehumidifier), Soret effect (thermal diffusion), etc. Non-linear irreversible thermodynamics will be used for demonstrating the phenomena of bifurcation, self-organization, and dissipative structures that take place in nature and human society. The self-organizing economy will also be discussed to show how the far-from-equilibrium thermodynamics can be applied to some economic phenomena."
+    },
+    {
+      "number": 541,
+      "title": "Electrochemical Science and Engineering Fundamentals",
+      "credits": 3,
+      "description": "Fundamentals of electrochemical science and engineering based on electrochemical thermodynamics and kinetics. EME 541 Electrochemical Science and Engineering Fundamentals (3) The course focuses on the fundamental concepts of electrochemical science and engineering based on thermodynamics and kinetics. The course provides a synopsis of a variety of electrochemical systems and processes and shows their applicability for a number of industrial applications."
+    },
+    {
+      "number": 551,
+      "title": "Safety and Environmental Risk Analysis for Energy and Mineral Engineering Systems",
+      "credits": 3,
+      "description": "In the energy and minerals sector, environmental health and safety (EHS) concerns have critical importance to engineering design, operations, and applied research. Contemporary experience has demonstrated that the integration of these priorities into the conceptualization, design, development, and management of energy and mineral technologies is essential. This course will begin with an overview of quantitative analytical techniques to assess probabilistic risks that arise due to the design and maintenance of engineered systems. The balance of the course will be devoted to study of effective approaches to analyzing, mitigating, and managing risk, environmental impacts, behavioral/psychological dimensions (e.g., cognitive biases), and the application and validation of interventions to achieve goals. The intent of this course is to give students an understanding of the challenges and successful approaches that should be part of every engineering project and operation."
+    },
+    {
+      "number": 570,
+      "title": "Catalytic Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE570"
+      ],
+      "description": "Preparation and characterization of solid catalytic materials and the relationships between their surface, defect, and electronic properties and catalytic activity. MATSE (EME) 570 Catalytic Materials (3)This course covers the preparation and characterization of solid catalytic materials, and the relationships between the surface and electronic properties and pore structure of the materials and their catalytic activity and selectivity. The course includes the following materials: zeolites and molecular sieves; metals and alloys; metal oxides; metal sulfides; and other catalytic materials. Also included are the major applications of catalytic materials in chemical and petroleum industries and in other manufacturing industries for environmental protection. This course can be grouped into three parts: (1) introduction to catalysis and analytical techniques; (2) synthesis and characterization of catalytic materials; and (3) catalysis at surfaces of solid materials. The course is suitable for a broad spectrum of students in energy and mineral engineering, materials science and engineering, fuel science, chemical engineering, chemistry, solid -state science, and environmental engineering."
+    },
+    {
+      "number": 580,
+      "title": "Methodology of Research in EME",
+      "credits": 3,
+      "description": "Analysis of the methodology of the research process through a discussion of the methodology of reading and writing peer-reviewed publications. The students will learn how to more efficiently understand and explain the results available in the published literature, so that they can apply this methodology to organize, present, and discuss their own results by applying the essential principles of research ethics and integrity."
+    },
+    {
+      "number": 581,
+      "title": "Research and Geostatistics Methods",
+      "credits": 3,
+      "description": "Presents methods essential for the conduct and analysis of scientific research and spatial characterization in energy and mineral engineering disciplines."
+    },
+    {
+      "number": 589,
+      "title": "Management and Design of Renewable Energy and Sustainability Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EME504",
+          "EME801",
+          "EME802",
+          "BIOET533"
+        ]
+      },
+      "description": "Most professional opportunities within renewable energy and sustainability systems require working in interdisciplinary teams on complex problems. This course will use a case-study approach to provide realworld management, and leadership, and research experiences and utilize the technical, economic, and ethical concepts learned in other course work in the field of renewable energy and sustainable systems (RESS). Following an intensive session on project management, team dynamics, and leadership, students will identify a team and external company or another stakeholder with a challenge relevant to the program. The teams will then conduct research evaluate alternatives, assess feasibility, and complete a detailed techno¿economic analysis for their case. This analysis will serve as a platform from which to define sustainability metrics, evaluate alternatives, and assess feasibility and complete life-cycle and environmental impact analysis as part of the final design. Projects outcomes will be presented to both external stakeholders, and peers, and program faculty for constructive feedback that will be incorporated in the project final report."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "PNG590"
+      ],
+      "description": "Continuing seminars that consist of individual lectures by faculty, students or outside speakers on energy and mineral engineering issues."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 597,
+      "suffix": "B",
+      "title": "Geomechanics",
+      "credits": 2,
+      "description": "Discussion of current and foundational research contributions in Geomechanics including ongoing work by current students"
+    },
+    {
+      "number": 597,
+      "suffix": "C",
+      "title": "Creating University/Industry Collaboration",
+      "credits": 2,
+      "description": "This course will provide students hands-on experience designing research programs to address external market needs that will lead to enhanced Penn State / external collaboration. Classroom lectures will cover topics important for design a new technology program."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis research culminating into the doctoral degree in Energy and Mineral Engineering."
+    },
+    {
+      "number": 601,
+      "title": "Thesis Preparation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis research after successful comprehensive exam culminating into the doctoral degree in Energy and Minerl Engineering."
+    },
+    {
+      "number": 801,
+      "title": "Energy Markets, Policy, and Regulation",
+      "credits": 3,
+      "description": "Structure and function of energy markets; existing and emerging environmental regulations; decision-making by energy companies."
+    },
+    {
+      "number": 802,
+      "title": "Renewable and Sustainable Energy Systems",
+      "credits": 3,
+      "description": "An overview of renewable energy technologies and sustainable energy system analysis."
+    },
+    {
+      "number": 803,
+      "title": "Applied Energy Policy",
+      "credits": 3,
+      "description": "Provides in-depth exploration of energy policy development, implementation, and assessment at multiple governmental and corporate scales with emphasis on energy markets."
+    },
+    {
+      "number": 805,
+      "title": "Renewable Energy and Nonmarket Enterprise",
+      "credits": 3,
+      "description": "Industry perspective on the resources, technologies, engineering approaches and externalities involved in deploying renewable energy businesses profitably and sustainably."
+    },
+    {
+      "number": 807,
+      "title": "Technologies for Sustainability Systems",
+      "credits": 3,
+      "description": "This course examines strategies and applications of sustainable technologies in manufacturing, energy, water, transportation, food, and building systems."
+    },
+    {
+      "number": 810,
+      "title": "Solar Resource Assessment and Economics",
+      "credits": 3,
+      "description": "Methods, economic criteria, and meteorological background for assessing the solar resource with respect to solar energy conversion technologies."
+    },
+    {
+      "number": 811,
+      "title": "Solar Thermal Energy for Utilities and Industry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EME810"
+        ]
+      },
+      "description": "Applications of solar thermal energy (STE) including district heating/cooling (buildings), industrial process heating, fuel synthesis, desalination, and materials processing."
+    },
+    {
+      "number": 812,
+      "title": "Utility Solar Power and Concentration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EME810"
+        ]
+      },
+      "description": "Technical and theoretical background for utility scale solar energy conversion technologies to generate electric power."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

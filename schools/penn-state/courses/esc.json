@@ -1,0 +1,1117 @@
+{
+  "subject": "ESC",
+  "courses": [
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 120,
+      "title": "Design for Failure--First-Year Seminar",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "This seminar, through the utilization of commonly used examples, discusses the engineering principles which are exploited by such designs. ESC 120 Design for Failure (1) (FYS) Although an important facet of engineering design is to minimize the possibility of failure of a system component, there are many devices which actually protect a system by their controlled 'failure'. Further, some components are designed to \"work\" through failure. In the former situation are such devices as: a shear pin in an outboard motor driveline, a fuse in an electrical circuit, a valve actuated by heat in a sprinkler system. In the latter situation, \"tab tops \" allow one to open a beverage can, perforations cause the paper towel to \"tear\" in a prescribed manner, plasticity/elasticity allows stamped parts, such as automobile hoods, to retain their new shape following stamping."
+    },
+    {
+      "number": 121,
+      "title": "Science/Engineering Fiction and the Engineering Sciences--First-Year Seminar",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "Examines the technology predictions of authors in view of the engineering sciences on which the underlying devices of their stories are based. E SC 121S Science/Engineering Fiction and the Engineering Sciences (1) (FYS) From the times of Jules Verne, books, then movies and TV, have utilized engineering/science and pseudo-engineering, in envisioning devices which were not then available, but perhaps became so in later times. From Verne's nuclear driven submarine to his voyage to the moon; to Mary Shelly's electrically created monster; to Dick Tracy's wrist radio (cell phone); to the warp speed of the Jedi, there are successes and failures as to predictions of what would some day be possible. These are examined and discussed."
+    },
+    {
+      "number": 125,
+      "suffix": "S",
+      "title": "An introduction to sustainable development in engineering",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "This First - year Seminar course serves as an introduction to modern engineering, sustainability, and their spectrum of interconnected fields and underlines the implications of engineering solutions on society and environment . It is an interactive class where the discussion is focused on the role of sustainability and on recent technological advancements implementing concepts of sustainable development and its assessment. This seminar also introduces students to university life in general and to varied resources available to them in the College of Engineering This is accomplished through visits from undergraduate students organizations, and current undergraduate and graduate students."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 211,
+      "title": "Material, Safety and Equipment Overview for Nanotechnology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM101",
+          "MATH81",
+          {
+            "oneOf": [
+              "PHYS211",
+              "PHYS150",
+              "PHYS250",
+              "PHYS211H"
+            ]
+          }
+        ]
+      },
+      "description": "Nanotechnology processing equipment and materials handling procedures with a focus on safety, environment, and health issues. E SC 211 Material, Safety, and Equipment Overview for Nanotechnology (3) This course overviews basic material properties as well as environment, health, and safety (EHS) issues in equipment operation and materials handling in \"top down\" and \"bottom up\" nanofabrication. The chemical and physical materials properties underlying nanotechnology are surveyed. EHS topics arising from the processing and disposal of these materials are addressed including: cleanroom operation, OSHA lab standard safety training, health issues, biosafety levels (BSL) guidelines, and environmental concerns. Specific safety issues dealing with nanofabrication equipment, materials, and processing will also be discussed including those pertinent to wet benches, thermal processing tools, vacuum systems and pumps, gas delivery systems and toxic substance handling and detection."
+    },
+    {
+      "number": 212,
+      "title": "Basic Nanotechnology Processes",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ESC211"
+        ]
+      },
+      "description": "Step-by-step description of equipment and processes needed in top-down, bottom-up, and hybrid nanotechnology processing. E SC 212 Basic Nanotechnology Processes (3) This course is an overview of the broad spectrum of processing approaches involved in \"top down\", \"bottom up\", and hybrid nanofabrication. The majority of the course details a step-by-step description of the equipment, facilities processes and process flow used in today's device and structure fabrication. Students learn to appreciate processing and manufacturing concerns including safety, process control, contamination, yield, and processing interaction. The students design process flows for micro- and nano-scale systems. Students learn the similarities and differences in \"top down\" and \"bottom up\" equipment and process flows by undertaking hands-on processing. This hands-on overview exposure covers basic nanofabrication processes including deposition, etching, and pattern transfer."
+    },
+    {
+      "number": 213,
+      "title": "Materials in Nanotechnology",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ESC211",
+          "ESC212"
+        ]
+      },
+      "description": "The processing of materials in nanotechnology as well as the unique material properties available at the nano-scale. ESC 213 Materials in Nanotechnology (3) This course is an in-depth, hands on exposure to the producing and tailoring of the materials used in nanofabrication. The course will cover chemical materials production techniques such as colloidal chemistry; atmosphere, low-pressure and plasma enhanced chemical vapor deposition; nebulization; and atomic layer deposition. It will also cover physical techniques such as sputtering, thermal and electron beam evaporation, and spin-on approaches. This course is designed to give students experience in producing a wide variety of materials tailored for their mechanical, electrical, optical, magnetic, and biological properties."
+    },
+    {
+      "number": 214,
+      "title": "Patterning for Nanotechnology",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ESC211",
+          "ESC212"
+        ]
+      },
+      "description": "Pattern transfer techniques from photolightography to nanoimprinting and nanomolding. ESC 214 Patterning for Nanotechnology (3) This course is a hands-on treatment of all aspects of advanced pattern transfer and pattern transfer equipment including probe techniques; stamping and embossing; e-beam; and optical contact and stepper systems. The course is divided into five major sections. The first section is an overview of all pattern generation processes covering aspects from substrate preparation to tool operation. The second section concentrates on photolithography and examines such topics as mask template, and mold generation. Chemical makeup of resists will be discussed including polymers, solvents, sensitizers, and additives. The role or dyes and antireflective coatings will be discussed. In addition, critical dimension (CD) control and profile control of resists will be investigated. The third section will discuss the particle beam lithographic techniques such as e-beam lithography. The fourth section covers probe pattern generation and the fifth section explores imprinting lithography, nano-molding lithography, step-and-flash, stamp lithography, and self-assembled lithography."
+    },
+    {
+      "number": 215,
+      "title": "Nanotechnology Applications",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ESC211"
+        ]
+      },
+      "description": "Applications of nanotechnology including those in medicine, biology, electronics, energy, and materials. E SC 215 Nanotechnology Applications (3) This course covers the applications of nano-scale devices and systems and the material chemical, physical, biological, or multiple-property requirements necessitated in these applications. Material modifications to meet these requirements will be addressed including structure control, composition control, surface property control, strain control, functionalization, and doping."
+    },
+    {
+      "number": 216,
+      "title": "Characterization, Testing of Nanotechnology Structures and Materials",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ESC211",
+          "ESC212"
+        ]
+      },
+      "description": "Measurements and techniques essential for controlling device fabrication. E SC 216 Characterization, Testing of Nanotechnology Structures and Materials (3) This course examines a variety of techniques and measurements essential for testing and for controlling material fabrication and final device performance. Characterization includes electrical, optical, physical, and chemical approaches. The characterization experience will include hands-on use of tools such as the Atomic Force Microscope (AFM), Scanning Electron Microscope (SEM), fluorescence microscopes, and fourier transform infrared spectroscopy."
+    },
+    {
+      "number": 220,
+      "suffix": "N",
+      "title": "Ethics, Society, and Science Fiction",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER"
+      ],
+      "internalEquivalents": [
+        "HHUM220N"
+      ],
+      "description": "This inter-domain (GH and GS) course will introduce students to the application of technology-ethics and bioethics, as well as the humanities (especially health and medical humanities) and the social sciences, through the lens of science fiction and speculative fiction. As an inter-domain course, it will: (1) develop foundational knowledges across the disciplines of the humanities and the social and behavioral sciences; and (2) encourage an appreciation for the plethora of stakeholders and often-competing values and interests underlying bioethical/technology-ethics concerns. By applying ethics-based, analytical arguments and counterarguments, students will engage in civil, reasoned debate on highly charged, challenging topics using ethical frameworks. In addition, given exposure to a wide range of non-canonical authors and other creators with varied intersectionalities, students will engage with the concepts of diversity, equity, and inclusion."
+    },
+    {
+      "number": 261,
+      "suffix": "M",
+      "title": "Computational Methods in Engineering",
+      "credits": 3,
+      "attributes": [
+        "W",
+        "HON"
+      ],
+      "requisites": {
+        "concurrent": [
+          "MATH141"
+        ]
+      },
+      "description": "Computational methods for solving engineering problems using C++ and MATLAB. Reports on root finding, systems of algebraid equations. E SC 261M Computational Methods in Engineering (3) E SC 261M covers programming language fundamentals (organization strategies) and language grammar (syntax) of C++, MATLAB software libraries and packaged tools, and the following numerical methods: root searching techniques, solvers for systems of algebraic equations, curve fitting methods. E SC 261M is taught in a modern technology classroom. E SC 261M is essential for courses on advanced computational methods for engineers, finite element methods, and for all the other engineering courses which rely on computational methods and computer programs to analyze and interpret experimental data."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 312,
+      "title": "Engineering Applications of Wave, Particle, and Ensemble Concepts",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS214"
+        ]
+      },
+      "description": "The engineering applications of the wave and ensemble pictures of the physical world. E SC 312 Engineering Applications of Wave, Particle, and Ensemble Concepts (3) This course covers the engineering applications of wave based and ensemble-formulated pictures of the physical world. It begins by discussing criteria for the applicability of geometrical optics and of physical optics and moves into a general discussion of wave phenomena. An introduction to the formalism of physical optics is then given along with examples of its use in engineering applications. The course then moves to discussing the criterion for the applicability of classical mechanics and of quantum mechanics. The parallelism between the geometrical optics/physical optics and classical mechanics/quantum mechanics criteria is underscored. An introduction to the formalism of quantum mechanics is then undertaken followed by a discussion of engineering applications of quantum mechanics. The impact of quantum mechanics on particle, quasi-particle, and cooperative phenomena is discussed. The course then treats the problem of determining the physical properties of ensembles of particles and quasi-particles. Statistical mechanics concepts are introduced and the effects of quantum mechanics on ensemble predictions is covered. Fermi-Dirac, Bose-Einstein, and Boltzmann statistics are developed and discussed. The connection is also made between statistical mechanics and thermodynamics. Engineering applications of statistical mechanics are presented and discussed.The objective of this course is to give engineering students a broad technical picture of physical concepts that will affect much of the engineering advances of this century. Students will be exposed to the duality of the wave-particle picture and to that picture's critical engineering important to the fields of optics and mechanics. They will be taught the influence of quantum mechanics on physical properties and the need for ensemble approaches for predicting the expected values of those properties for many particle systems. The impact of wave and ensemble approaches on engineering applications will be stressed and the students will be given hands-on exposure to this impact in three laboratory experiences.Evaluation methods to be used in this course will be two in-class examinations and one final period examination."
+    },
+    {
+      "number": 313,
+      "title": "Introduction to Principles, Fabrication Methods, and Applications of Nanotechnology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM110H"
+            ]
+          },
+          "PHYS212"
+        ]
+      },
+      "description": "Principles, fabrication methods and applications of nanoscale. E SC 313 Introduction to Principles, Fabrication Methods, and Applications of Nanotechnology (3) This course covets the unique opportunities provided by the nano-scale and focuses on the engineering issues of fabricating and applying structures designed to take advantage of these opportunities. The course begins with defining nanotechnology and nanofabrication. It then moves to the unique features available in nano-scale structures such as large surface-to-volume ratios, quantum size effects, unique chemical bonding opportunities, dominance of physical optics, surface control of reactions and transport, and the creation of structures on the same size scale as basic features in living cells. With this understanding of the uniqueness of the nano-scale, the course progresses into the fabrication methods used in nanotechnology and then into nanostructure applications. The various nanofabrication approaches found in top-down, bottom-up, and hybrid fabrication approaches are explained and discussed in the lecture format. The principles behind the application of structures fabricated at the nano-scale are then addressed in more depth. This section of the course includes an introduction to nano-scale electronic devices, an introduction to nano-scale sensing devices, an introduction to nano-scale optics and optical devices, an introduction to material property modification at the nano-scale, and an introduction to the biology/nano-scale interface. Specific applications of the structures made using various combinations of top-down and bottom-up fabrication techniques are overviewed in various applications including sensors, nano-electronics, molecular electronics, photonics, nano-optics, information storage and computing, materials, nano-mechanics, and nano-biotechnology and medicine. The course concludes with an introduction to the manufacturing issues encountered when fabricating, assembling, and interfacing nano-scale structures as well as with an overview of health, environmental, and societal issues The objective of this course is to give a broad technical picture of nanotechnology to engineering students from various engineering disciplines. In so doing, the course will develop a sound background for making informed judgments concerning the potential of nanotechnology for various technical applications and a sound background for assessing the societal and health issues as well as environmental impact of nanotechnology. The course objectives are to have students be able to consider nanotechnology solutions to technical problems, be able to fabricate these nanotechnology solutions in a manufacturable manner, be able to determine if there are any potential health or environmental issues involved in their solutions, and be able to assess the societal impact of their solutions. The course will require a college-level chemistry and physics background. Evaluation methods to be used in this course will be two in-class examinations and one final period examination."
+    },
+    {
+      "number": 337,
+      "title": "Introduction to Quantum Information Science and Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS337"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "PHYS214"
+        ]
+      },
+      "description": "This course will introduce quantum mechanics from the perspective of quantum information science and engineering, focusing on two-level systems and the concepts of entanglement and decoherence. It will educate students on how quantum information can be used in quantum communication and quantum computing, both in theory and experiment. The course covers basic concepts such as two-level systems, Schroedinger equation, Bloch sphere, superposition, entanglement, quantum bits, quantum gates, Bell¿s inequalities, and mixed states. Covering these basic concepts prepare the students for more advanced courses in the minor where they learn in depth about quantum algorithms, physical implementation of different quantum systems, and how to compute with existing quantum computers."
+    },
+    {
+      "number": 386,
+      "title": "Engineering Principles of Living Organisms",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "MATH251",
+          "PHYS214"
+        ]
+      },
+      "description": "This course will explore how engineering principles apply to living organisms. E SC 386 Engineering Principles of Living Organisms (3) This course uses an engineering approach that applies basic physical and mathematical principles to the fundamental problems living organisms encounter. The objectives of the course are to understand the role of scaling in size and construction trade-offs in living organisms, how diffusion shapes and limits cellular processes, the role of electrical fields and concentration gradients in signaling, the statistical mechanics of ion channel and receptor gating, how the dynamics of transcriptional interactions can generate genetic circuits, the role of mechanical amplification in hearing. At the completion of the course, students will have insight into how to use quantitative techniques from engineering and the physical sciences to analyze biological systems."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 400,
+      "title": "Electromagnetic Fields",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "EE210",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "MATH251H"
+            ]
+          }
+        ]
+      },
+      "description": "Irrotational and solenoidal fields, potentials, vector and scalar field and wave equations, harmonic and wave functions in various coordinates, radiation. E SC 400H Electromagnetic Fields (3) E SC 400H is a required senior-level course for students pursuing a bachelor's of Engineering Science. At the conclusion of this course, students will be able to: 1. Apply the basic principles of electrostatics, such as Coulomb's Law, electric field intensity, electric flux density, Gauss's Law, the concepts of divergence and gradient, and potential functions to solve basic and applied problems. 2. To compute resistance and capacitance for a variety of geometric configurations. 3. They will apply the basic principles of steady magnetic fields, such as the Biot-Savart Law, Amper6s Circuital Law, magnetic flux and flux density, Stoke's Theorem and the concept of the curl and Maxwell's equations for static electric and steady magnetic fields to solve basic and applied problems. 4. Compute self and mutual inductance for a variety of geometric configurations. 5. Understand the necessary modifications of Maxwell's equations for time varying fields including Faraday's Law and the concept of displacement current and apply these to solve basic and applied problems. 6. Understand the solutions of the reduced wave equation, for time-harmonic excitations, for plane wave propagation in both perfect and lossy dielectrics, the concepts of skip depth and wave polarization, plane wave reflection at planar boundaries, Snell's Law, Brewster's angle, and the concept of standing wave ratio and apply these to solve basic and applied problems. 7. Understand the basic principles of waves on transmission lines and apply these to solve basic and applied problems.Topics include: Vector Analysis; Coulomb's Law and Electric Field Intensity; Electric Flux Density, Gauss's Law, and Divergence; Energy and Potential; Conductors, Dielectrics, and Capacitance; Poisson's and Laplace's Equations; the Steady Magnetic Field; Magnetic Forces, Materials, and Inductance; time-Varying Fields and Maxwell's Equations; the Uniform Plane Wave; Waves at Boundaries and in Dispersive Media. A typical course assessment includes homework assignments, mid-semester examinations and a final examination. The course is offered, in a lecture format, each spring at the University Park Campus. A typical enrollment is 25-30 students. This course is not a prerequisite for other courses."
+    },
+    {
+      "number": 404,
+      "title": "Analysis in Engineering Science",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "Unified application of coordinate transformations; Laplace's, heat, and wave equations to boundary value problems and problems of continua in engineering."
+    },
+    {
+      "number": 407,
+      "title": "Computer Methods in Engineering Science, Honors",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "MATH220",
+              "MATH220H"
+            ]
+          }
+        ]
+      },
+      "description": "Numerical solution of differential equations including fundamentals: roots of single nonlinear and simultaneous (Matrix) equations, least squares fitting and staistical goodness, interpolation, finite differences, differentiation, integration, eigensolutions. E SC 407H Computer Methods in Engineering Science, Honors (3) The overall objective of this course is the creation of mathematical continuum models in the form of differential equations and the application of numerical methods to solve them. To reach this goral, fundamental methods dealing with numerical approximation, specifically starting with Taylor's series, are covered: differentiation, integration, and root search of single nonlinear equations. Mathematical models are transformed into discrete models using the finite difference method, hence the solution of simultaneous algebraic equations in matrix and iterative forms is also covered. In addition, eigenvalue problems are also covered in order to characterize models, both continuous and discrete. The concept of vector-variable and vector-valued functions are used to form algorithms, cast them into computer code, in a language of student choice, usually Mathematica or MATLAB because graphical output is required in doing assignments. This course relates to programs of study in most engineering disciplines based upon the physics of solids and fluids. Evaluation methods include assessment of written reports, at least one midterm examination and either a final examination or a final report."
+    },
+    {
+      "number": 409,
+      "title": "Senior Research and Design Project Preparation, Honors",
+      "credits": 1,
+      "attributes": [
+        "HON"
+      ],
+      "description": "Preliminary identification and planning for the senior year research and design project. ESC 409 Senior Research and Design Project Preparation, Honors (1) is the first of a three-part series of courses that constitute the Engineering Science honors capstone research and design project. Engineering Science students participate in projects in all engineering disciplines and employ design principles before, during, and after analysis, experimentation and/or simulation. The resulting designs of systems, components or processes are then tested and refined by changing material, geometric, stochastic or other parameters, as required. Students will spend the first few weeks of the course investigating various areas of research being conducted at the university. They will then interview key faculty and graduate students in several research groups and ultimately select one area to be the focus of their senior thesis research. After obtaining the agreement of a faculty member to supervise the thesis project, they will spend time familiarizing themselves with the people, equipment, materials, and software available in their selected research group as well as reading and summarizing key literature in preparation for conducting research. As an end product of this 1 credit course, students will develop a detailed set of project objectives and create a timeline for the year-long project. Class time will be spent exposing students to a variety of different research areas. In addition, time will be given for students to support each other through facilitated discussions to share their success stories as well as difficulties encountered in the process of identifying and selecting their research topics. Students will also be given the opportunity to present the preliminary details of their intended research topic. ESC 409 (1 credits) will be followed by ESC 410 (3 credits) where students will conduct their research, subsequently followed by ESC 411 (2 credits) where students will complete their research and prepare a written honors thesis. Through these combined 6 credits, students will integrate the scientific principles of research, design, and analysis and apply them to a particular field of engineering."
+    },
+    {
+      "number": 410,
+      "suffix": "H",
+      "title": "Senior Research and Design Project I, Honors",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "ESC409"
+        ]
+      },
+      "description": "Design and synthesis in the context of a specific design project undertaken during the senior year. ESC 410 Senior Design Project, Honors (3) is the second of a three-part series of courses that constitute the Engineering Science honors capstone research and design project. Engineering Science students participate in projects in all engineering disciplines and employ design principles before, during, and after analysis, experimentation and/or simulation. The resulting designs of systems, components or processes are then tested and refined by changing material, geometric, stochastic or other parameters, as required. ESC 410 is the continuation of ESC 409 and constitutes the core effort in the honors senior research and design project for Engineering Science majors. It is followed by ESC 411 . All three courses are required of Engineering Science majors and together they comprise the capstone research and design project, which integrates the scientific principles of research, design, and analysis and applies them to a particular field of engineering. In-class lectures and discussions on a wide range of topics such as design, engineering ethics, international relations, engineering management, safety, government and public policy, environmental issues, workforce preparation and graduate school occur in tandem with the students' development of their individual topics."
+    },
+    {
+      "number": 411,
+      "title": "Senior Research and Design Project II, Honors",
+      "credits": 2,
+      "attributes": [
+        "HON"
+      ],
+      "description": "Design and synthesis in the context of a specific design project undertaken during the senior year. ESC 411 Senior Research and Design Project II, Honors (3) is the third of a three-part series of courses that constitute the Engineering Science honors capstone research and design project. Engineering Science students participate in projects in all engineering disciplines and employ design principles before, during, and after analysis, experimentation and/or simulation. The resulting designs of systems, components or processes are then tested and refined by changing material, geometric, stochastic or other parameters, as required. ESC 411 is the continuation of ESC 409 and ESC 410. All three courses are required of Engineering Science majors and together they comprise the capstone research and design project, which integrates the scientific principles of research, design, and analysis and applies them to a particular field of engineering. In-class lectures and discussions on a wide range of topics such as design, engineering ethics, international relations, engineering management, safety, government and public policy, environmental issues, workforce preparation and graduate school occur in tandem with the students' development of their individual topics."
+    },
+    {
+      "number": 412,
+      "title": "Nanotechnology: Materials, Infrastructure, and Safety",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Cleanroom based nano/micro fabrication and related environmental health and safety issues. The nanotechnology consumer products market currently has more than 1,000 nanomaterial-containing products varying from makeup, sunscreen, food storage products, appliances, clothing, electronics, computers, sporting goods, and coatings to drug delivery systems. These products exist in the market place and are expanding in number because nano-scale materials and structures can have properties that are very different from larger size-scale versions of the same materials and structures. These property differences at the nano-scale can make nanotechnology products unique and desirable for specific applications. However, the uniqueness of the nano-scale can also affect toxicity and environmental repercussions due to differences in physicochemical properties arising from size but also from shape, chemistry, surface properties, agglomeration, bio-persistence, solubility, and charge, as well as from differences caused by attached functional groups, as outlined in this course. The greater surface-area-to-mass ratio of nanoparticles makes them generally more reactive than their macro-sized counterparts. These properties that make nanomaterials unique and valuable in manufacturing many products also make manufacturing at this scale an endeavor which must be studied and appreciated for its potential safety, health, and environmental impact. Practicing engineering at the nano-scale requires awareness of the nanotechnology safety, health concerns, and environmental issues laid out in E SC 412."
+    },
+    {
+      "number": 414,
+      "suffix": "M",
+      "title": "Elements of Material Engineering",
+      "credits": 3,
+      "attributes": [
+        "W",
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210H",
+              "EMCH210"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "ESC312",
+              "PHYS237"
+            ]
+          }
+        ]
+      },
+      "description": "Structure and imperfections in engineered materials; their influence on properties, behavior, and processing. Applications of metals, ceramics, polymers, and composites. E SC 414M Elements of Material Engineering (3) This course is a junior-level, writing-intensive engineering science course designed to introduce students to the fundamentals of materials science and engineering. In the early part of this honors course, structure property relationships in materials are explored. The student will examine how atomic structure and bonding influence engineering properties such as strength and electrical properties Next, solidification, strengthening mechanisms, and phase diagrams for some common engineering materials are discussed to further examine structure property relationships and to provide the basis for the study of more complex materials The second half of the course introduces properties and attributes of each of the major classes of materials (metals, ceramics, polymers, and composites) to acquaint the student with the wide array of material properties and choices available for design. Next, electrical, optical, and thermal properties of the various classes of materials are introduced Finally, the course closes with an introduction to the topics of materials selection and design Throughout the course, integrated writing assignments allow the student to explore the properties of a specific material or materials process in detail and gain insight the design process."
+    },
+    {
+      "number": 417,
+      "title": "Electrical and Magnetic Properties",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE417"
+      ],
+      "requisites": {
+        "concurrent": [
+          "MATSE400",
+          "MATSE413"
+        ]
+      },
+      "description": "Electrical conductivity, dielectric properties, piezoelectric and ferroelectric phenomena; magnetic properties of ceramics. ESC 417 / MATSE 417 Electrical and Magnetic Properties (3) is designed to provide students with a fundamental understanding of the different responses a material can have to crapplied electrical or magnetic fields. Important properties are introduced and correlated with knowledge of material chemistry, crystal structure, and microstructure to provide an understanding of the mechanisms responsible for controlling the observed properties, as well as the ways in which properties can be engineered. Electronic and magnetic properties encompass dielectric, ferroelectric, conductor, superconductor, and ferromagnetic materials. Material properties and structures are related to sensors, energy storage and conversion devices, biomedical devices and electronic components in telecommunications."
+    },
+    {
+      "number": 419,
+      "title": "Electronic Properties and Applications of Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC312"
+        ]
+      },
+      "description": "The course covers the electrical, optoelectronic, dielectric, and other electron-based properties of solids, semiconductors in particular, and their engineering/ device applications. E SC 419 Electronic Properties and Applications of Materials (3) This course is designed primarily as a Foundation Elective for Engineering Science majors. It covers the electron-based properties of materials and their engineering applications. Building upon the strong foundation of wave, particle and ensemble concepts covered in the prerequisite course (E SC 312), it will offer an advanced introduction to the behavior of electrons in crystalline as well as non-crystalline solids, and its impact on properties. A comprehensive treatment of electrons in solids is essential to understand the electronic, optical, thermal, magnetic and other properties of materials and their incorporation in functional devices. The topics will address many facets of electrons in solids, their interaction with fields, cooperative phenomena and low-dimensional effects, and lead up to a broad range of elementary device applications. It will draw upon the results of quantum mechanics and band theory of solids that will provide the broad umbrella needed for understanding the properties of materials and designing them into practical devices and nanosystems. The importance of structure on material properties will be emphasized, so as to bring forth the importance of artificially synthesized structures and emergence of new phenomena. Along with a detailed coverage of semiconductors due to their widespread applications and their dominance in modern micro- and optoelectronics, dielectric, magnetic and superconducting materials will also be discussed in the course. The role of defects, impurities and interfaces on electrical, optical, dielectric and other properties will be discussed, along with corresponding applications in device structures. The broad topical coverage will prepare students for advanced studies in a variety of fields including micro- and optoelectronics, functional nanosystems and synthesized nanostructures. The course will provide a solid background for senior technical electives such as E SC 481 (Elements of Nano/Micro-electromechanical Systems Processing and Design) E SC 445 (Semiconductor Optoelectronic Devices) offered in ESM, as well as Electrical Engineering and Materials Science and Engineering Courses. It will also complement (and be independent of) E SC 414M that encompasses atomic structure and mechanical properties of materials."
+    },
+    {
+      "number": 433,
+      "title": "Engineering Science Research Laboratory Experience",
+      "credits": 1,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH141E",
+              "MATH141B",
+              "MATH141H"
+            ]
+          }
+        ]
+      },
+      "description": "Hands-on lab experience and exposure to campus-wide interdisciplinary experimental research. Experimental probability and statistics. Appplications across all Engineering Science disciplines. E SC 433H Engineering Science Research Laboratory Experience (1) This course provides an introduction to experimental research, including hands-on laboratory experience. In addition, students take part in campus-wide laboratory tours that illustrate the variety of experimental practice, as well as the strongly interdisciplinary nature of contemporary experimental research in Engineer Science. Lab tours involve laboratories in a variety of disciplines, both within the Department of Engineering Science and Mechanics, and in other departments with related interdisciplinary activities. The classroom content focuses on the fundamentals of experimental probability and statistics, including: the experimental process; probability distributions and error; statistical estimators; least squares; and confidence limits and hypothesis testing. Applications of the statistical analysis of experimental data are drawn from across all Engineering Science disciplines and illustrated in the labs and lab tours. There will be three hands-on laboratories. Each lab will include additional introductory lecture material, specific handouts, and readings A report will be required for each lab that represents a significant writing component to the class, and includes both descriptive and analytical components Assessment for the course is based on the laboratory reports, which include analytical and descriptive components, as well as exercises involving the material discussed in lectures."
+    },
+    {
+      "number": 437,
+      "title": "Physical implementation of qubits",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS437"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS337"
+        ]
+      },
+      "description": "Introduction to the physical implementation of quantum bits (qubits) based on state-of-the-art technologies. The course will consider issues in quantum information technology from an experimental point of view. The various types of qubits that will be discussed include those made with superconducting circuits, atoms (including ions, atoms and molecules), electron spins, and photons. In each case, the goal will be to develop a physical understanding of the various approaches, to get a sense of their strengths and weaknesses, and to learn about the state of the art and future prospects."
+    },
+    {
+      "number": 445,
+      "title": "Semiconductor Optoelectronic Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC419"
+        ]
+      },
+      "description": "The course will present the basic engineering science and technology involved in modern semiconductor optoelectronic devices. E SC 445 Semiconductor Optoelectronic Devices (3) This course deals with the optoelectronic properties of semiconductors and their application in functional devices for detection, emission, amplification and conversion of optical and electrical signals. A comprehensive introduction to the various optical absorption and emission processes in semiconductors is followed by an outline of specific properties of important optoelectronic semiconductors. The physical basis of detectors operating in the visible and near-visible regions is covered with an exploration of various photon detection phenomena present in solids. The devices discussed at length include intrinsic and extrinsic photoconductive detectors, p-n and Schottky detectors, p-i-n and heterojunction devices, avalanche photodiodes and photoemissive detectors, and light emitting and laser diodes Novel structures based on variable gap and superlattice structures are also considered The topical coverage includes basic operating principles, design considerations and performance assessment of each of these devices The course will enable students to apply the physics of optoelectronic devices to applications such as displays, fiber optic communications, imaging, and integrated optoelectronics.The course is offered once every year, and complements related courses on semconductor device offered by the departments of Engineering Science and Mechanics, and Electrical Engineering. Student assessment is from homework, exams and a writing assignment involving a device application note."
+    },
+    {
+      "number": 450,
+      "title": "Synthesis and Processing of Electronic and Photonic Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE450"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATSE201",
+              "ESC414M"
+            ]
+          }
+        ]
+      },
+      "description": "The materials science of applying thin film coatings, etching, and bulk crystal growth; includes materials transport, accumulation, epitaxy, and defects."
+    },
+    {
+      "number": 455,
+      "title": "Electrochemical Methods Engineering and Corrosion Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATSE259",
+              "EGEE441"
+            ]
+          }
+        ]
+      },
+      "description": "The objective of the course is to give students hands-on experience in assessing environmental degradation of engineering materials. E SC 455 E SC 455 Electrochemical Methods in Corrosion Science and Engineering (3)The objective of the course is to give students hands-on experience in assessing environmental degradation of engineering materials. Students will be introduced to a variety of experimental electrochemical methods and will use their training to evaluate corrosion of steel, stainless steel, and aluminum. Techniques that will be used in this laboratory-intensive course include potentiodynamic and potentiostatic polarization, galvanic corrosion measurements, localized corrosion measurements (scratch, critical pitting temperature, and metastable pitting experiments), evaluation of sensitization (double-loop electrochemical potentiokinetic reactivation), cyclic voltammetry, and electrochemical impedance spectroscopy of painted and unpainted specimens."
+    },
+    {
+      "number": 456,
+      "title": "Introduction to Neural Networks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          },
+          "MATH220"
+        ]
+      },
+      "description": "Artificial Neural Networks as a solving tool for difficult problems for which conventional methods are not applicable. E E (E SC/EGEE) 456 Introduction to Neural Networks (3) This course is in response to students needs to learn Artificial Neural Networks (ANN) as a solving tool for difficult problems for which conventional methods are not available. The objective of this course is to give students hands-on experiences in identifying the best types of ANN, plus developing and applying ANN to solve difficult problems. Students will be introduced to a variety of ANN and will use their training skills to solve their own applications. During this course the students will develop a final project, in which they will apply ANN to widely varied problems.Examples: I) students from E E may be interested in applying ANN to solve control problems; II ) students from Material Sciences may be interested in applying ANN to predict the pitting corrosion of components; III) students from Petroleum Engineering may be interested in applying ANN to characterize the life of a reservoir; IV ) students from Agricultural Engineering may be interested in applying ANN to sort apples automatically, etc."
+    },
+    {
+      "number": 460,
+      "suffix": "M",
+      "title": "Multidisciplinary Design Project",
+      "credits": 3,
+      "attributes": [
+        "W",
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "MATH251H"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS212H"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide students with the opportunity to learn the design process in the context of an industry- or government-sponsored or service-based design project that demands delivering a working solution. The design projects in this course will be structured for students from two or more different engineering majors, as defined by the project sponsors in collaboration with the instructor and departmental project coordinators. While the projects may be supplied/supported/initiated by industry, topics may be related to the cutting-edge multidisciplinary research areas represented by the strengths and diversity of the Engineering Science faculty, such as nanotechnology, biomaterials, and other areas requiring cross-discipline collaboration. The project sponsor will provide the technical expertise for the project, a clear definition of all project deliverables, and the financial support to cover needed materials and supplies and travel costs. Project sponsors will be invited to attend two key events each semester: Project Kickoff in week 1 of the semester to define the project and answer questions from the students as well as the Design Showcase in week 15 of the semester, when teams present their project results to sponsors, faculty, other students, and the public. The College of Engineering will provide the facilities where the design teams will work together to develop the design concept and prototype solutions. Faculty members in the Department of Engineering Science and Mechanics will administer the course, including reading, evaluating, and grading the final project report, provide lectures on topics including on project management, design, product manufacturing, intellectual property, engineering ethics, societal/global/contemporary/professional issues, and related technical topics, and organize invited technical lectures related to industry projects. In accordance with standard procedures, specific multidisciplinary projects will be selected for this course to provide challenging design experiences for all students. The selection of these projects will be done by the course instructor prior to the start of each semester of the course offering. Multidisciplinary teams are be formed based on specific technical elements of the project and project scope."
+    },
+    {
+      "number": 460,
+      "suffix": "W",
+      "title": "Multidisciplinary Design Project",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251",
+              "MATH251H"
+            ]
+          },
+          {
+            "oneOf": [
+              "PHYS212",
+              "PHYS212H"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide students with the opportunity to learn the design process in the context of an industry- or government-sponsored or service-based design project that demands delivering a working solution. The design projects in this course will be structured for students from two or more different engineering majors, as defined by the project sponsors in collaboration with the instructor and departmental project coordinators. While the projects may be supplied/supported/initiated by industry, topics may be related to the cutting-edge multidisciplinary research areas represented by the strengths and diversity of the Engineering Science faculty, such as nanotechnology, biomaterials, and other areas requiring cross-discipline collaboration. The project sponsor will provide the technical expertise for the project, a clear definition of all project deliverables, and the financial support to cover needed materials and supplies and travel costs. Project sponsors will be invited to attend two key events each semester: Project Kickoff in week 1 of the semester to define the project and answer questions from the students as well as the Design Showcase in week 15 of the semester, when teams present their project results to sponsors, faculty, other students, and the public. The College of Engineering will provide the facilities where the design teams will work together to develop the design concept and prototype solutions. Faculty members in the Department of Engineering Science and Mechanics will administer the course, including reading, evaluating, and grading the final project report, provide lectures on topics including on project management, design, product manufacturing, intellectual property, engineering ethics, societal/global/contemporary/professional issues, and related technical topics, and organize invited technical lectures related to industry projects. In accordance with standard procedures, specific multidisciplinary projects will be selected for this course to provide challenging design experiences for all students. The selection of these projects will be done by the course instructor prior to the start of each semester of the course offering. Multidisciplinary teams are be formed based on specific technical elements of the project and project scope."
+    },
+    {
+      "number": 475,
+      "title": "Particulate Materials Processing",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE475"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATSE259",
+              "EMCH315",
+              "ESC414M"
+            ]
+          }
+        ]
+      },
+      "description": "Fundamentals of processing particulate materials including production, characterization, handling, compaction, and sintering of metal, carbide, intermetallic, and composite powders."
+    },
+    {
+      "number": 481,
+      "title": "Elements of Nano/Micro-electromechanical Systems Processing and Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH315",
+              "ESC312"
+            ]
+          }
+        ]
+      },
+      "description": "Interdisciplinary fundamentals of nano/microelectromechanical systems (NEMS/ MEMS), including design, fabrication and machining of miniature systems. Draws from mechanics, science and materials. E SC 481 Elements of Nano/Micro-electromechanical Systems Processing and Design (3) The objective of the course is to introduce students to the theory and technology of nanofabrication. This objective is realized via the study of materials and devices for NEMS as well as nano-system's design, manufacture and packaging,. Emphasis on the interrelationships between material properties and processing, device/system structure, and the mechanical, electrical, optical, or (bio)chemical behavior of devices/systems. As taught, the course is multidisciplinary and requires adequate background in materials science, mechanics, and device physics. The course comprises lecture presentations and laboratory demonstrations. Students attending this course come from different engineering majors, physics, and materials science. The students are assessed using a combination of homework assignments, class presentations, group projects, and written quizzes and exams."
+    },
+    {
+      "number": 482,
+      "title": "Micro-Optoelectromechanical Systems (MOEMS) and Nanophotonics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS214"
+        ]
+      },
+      "description": "Principles and applications of Micro-Optoelectromechanical and Nanophotonic devices and systems. E SC 482 Micro-Optoelectromechanical Systems (MOEMS) and Nanophotonics (3) E SC 482 provides the engineering student with a unifying and multifaceted description of MOEMS and nanophotonics. Students will learn the fundamental principles behind many novel micro- and nanophotonic devices and systems and their practical applications in the fields of communication, sensor and image technology.The course starts with an overview of the fundamental physics of semiconductors with emphases on silicon, III-V and II-V compound semiconductors due to their important applications in MOEMS and active nanooptoelectronic devices. Semiconductor nanostructures, such as epitaxial grown quantum wells and quantum dots, and chemically synthesized nanowires and collodial nanocrystals will be introduced through discussions on their unique electronic structures carrier transport and excitonic dynamics. In addition to inorganic materials, the structures and critical characteristics of electro-optic and light emitting polymers will also be reviewed for their fast-growing applications in display technology, sensory and information processing systems.The general principles for the design and operation of MOEMS and nanooptoelectronic devices will be discussed in the frame of geometrical optics, electromagnetic theory, and semiconductor physics. The reflection of light at dielectric interfaces will be reviewed to reveal the critical features of optical waveguide structures and to introduce the concept of surface plasma waves. In-depth descriptions will be given for the interband-and intraband- electron transition and exciton emission process in semiconductor quantum structures. Important instances of applying the 'quantum confinement' in nanostructures to tailor their optical and optoelectronic properties will be underscored during the mechanism-analysis of laser diodes, detectors and modulators. The new concept of 'photonic crystals' will be introduced through the analysis of parallelism between electron transport in semiconductor lattices and light propagation in periodic dielectric media.Following a brief survey of the state-of-the-art technologies for the fabrication of MOEMs and nanophotonic devices, the course topics will move to their application examples in the fields of communication, sensor and image technology. For each application example, analysis will be carried out on the design, fabrication, and characterization issues of the involved systems/devices. Their merit-of-performance will be linked to the application practice to illustrate how the introduction of MOEMs/nanophotonic devices advances the technology in each specific field. Important topics to be covered in this part include micromachined lightwave systems, microcavity light emitting devices, fiber based biological nanosensors, nanoparticle enhanced surface plasma resonance sensors, microspectrometers, and digital micromirror device (DMD)-based projection display engine."
+    },
+    {
+      "number": 483,
+      "title": "Simulation and Design of Nanostructures",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE483"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PHYS214",
+              [
+                "ESC312",
+                "MATH230"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to computer simulation techniques and their applications at the physical/life sciences interface. E SC (MATSE) 483 Simulation and Design of Nanostructures (3) Students will learn the simulation techniques and the design rules of nanostructures. Basic concepts of computer modeling will be introduced using quantum and classical approaches. Fundamental physical phenomena encountered in the molecular fields of computational physics, chemistry, and biology will be studied. Applications are drawn from a broad range of fields including soft and condensed matter to build an understanding of nanostructures.The course will assume knowledge and skill developed in the prerequisite courses of PHYS 214 and MATH 230 . Students are expected to combine knowledge from other courses with information presented here to develop sophisticated interpretations and understanding of physical and chemical principles of nanostructures and their design rules.Evaluation methods to be used in this course will be two in-class examinations and one final period examination. The course contains a computer code generation and implementation component. Students will use commercial or educational computer codes (e.g. Matlab, Mathematica, AMBER, CHARMM, VASP, etc.) which are available at our high performance computing clusters (http://gears.aset.psu.edu/hpc/)/ Students will use the computing clusters to perform simulations which are accessible from any classroom or laboratory at Penn State.The principal objectives of the course is to learn the fundamental physics of nanostructures and to design them with computer simulations. This approach starts from classical molecular dynamics that apply on the large scale biological and synthetic assemblies and encompasses quantum mechanics for the molecular and atomic sizes. This course will give a broad scientific picture of simulation techniques in the area of nano-science and technology."
+    },
+    {
+      "number": 484,
+      "title": "Biologically Inspired Nanomaterials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS214",
+          "MATH230"
+        ]
+      },
+      "description": "Advances in biomolecular-based Science and technology at the physical/life sciences interface. E SC 484 Biologically Inspired Nanomaterials (3) Students will learn the concepts of molecular engineering and the advances in biomolecular-based science and technology at the physical/life sciences interface. Basic concepts of protein structure and function will be introduced. Applications from a broad range of fields, including condensed and living matter to build an understanding of device applications including biologically-inspired molecular-scale devices will be introduced.The course will assume knowledge and skill developed in the prerequisite courses of PHYS 214 and MATH 230 . Students are expected to combine knowledge from other courses with information presented here to develop sophisticated interpretations and understanding of physical and chemical principles of molecular structures and their design rules.Evaluation methods to be used in this course will be two in-class examinations and one final period examination. The course contains a substantial writing component. Students will prepare bio-science and technology reports.The principal objective of the course is to learn and analyze molecular engineering technologies at the bio and nano interface. This course will give a broad technological picture of emerging protein technologies in the area of biomolecular materials."
+    },
+    {
+      "number": 494,
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Students must have approval of a thesis adviser before scheduling this course."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Students must have approval of a thesis adviser before scheduling this course."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 501,
+      "title": "Solar Cell Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE442",
+              "PHYS412"
+            ]
+          }
+        ]
+      },
+      "description": "Principles of photovoltaic energy conversion and their utilization in engineering devices. Emphasis on current solar cell research and development efforts. ESC 501 Solar Cell Devices (3) Photovoltaic energy conversion using organic and inorganic absorbers and liquid and solid materials is examined in depth. The emphasis is on photovoltaic energy conversion using sun light and covers solar cell device physics, materials, and design as well as all four types of photovoltaic structures; i.e., homojunctions, heterojunctions, surface barrier cells, and dye sensitized cells. Basic topics covered in the course include: solar spectra and industry standards; material properties and physics key to photovoltaic structures; and the role of scale in photovoltaics including the use of nano-structures. Computer modeling topics include an introduction to the AMPS code for transport analysis and an introduction to Maxwell's equations solvers for light trapping analysis. The use of such codes in the design of solar cells for light, carrier collection, and efficiency optimization is explored. Solar cell industry developments and research advancements are discussed throughout the course."
+    },
+    {
+      "number": 502,
+      "title": "Semiconductor Heterojunctions and Applications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC414M"
+        ]
+      },
+      "description": "Theory, fabrication techniques, and electronic applications of semiconductor heterojunctions, including metal-semiconductor and electrolyte-semiconductor junctions."
+    },
+    {
+      "number": 503,
+      "title": "Low Dimensional Nanoelectronics",
+      "credits": 3,
+      "description": "This course will cover advanced concepts which are essential to understand modern state-of-the art electronic devices based on novel nanomaterials. The course is designed for experimentalists, material scientists, and device physicists who are interested to learn how carrier transport takes place in low dimensional semiconductors such as zero dimensional quantum dots, one dimensional nanotubes (CNT), quasi-one dimensional nanowires, and two dimensional nanosheets (graphene, MoS2). The course will begin with a review of semiconductor physics which includes Fermi-Dirac statistics, dispersion relationship (E-k), density of states, electron density, various definition of carrier velocities, and discussion on traditional drift-diffusion (DD) model for carrier transport. We will then adopt a bottom-up approach to understand current flow through a device with only one energy level, which will eventually lead to the formalism of Landauer-Datta (LD) transport model for ballistic conductors. The concept of quantum conductance and transport modes will be taught. We will also learn how to incorporate different scattering mechanisms into the LD model. The LD model will be used to understand current flow through a carbon nanotube (CNT), graphene, and MoS2. Next, the LD model will be extended to describe heat flow in nanomaterials which forms the basis of various thermoelectric phenomena such as the Seebeck effect, Peltier cooling, etc. The second part of the course will focus on the electrostatics and transport in ballistic and quasi-ballistic metal-oxide-semiconductor field effect transistors (MOSFETs). We will learn how to solve Poisson's equation self-consistently with LD model for Si MOSFET and extend it to ultra-thin-body-silicon-on-insulator (UTMSOI) FETs, FinFETs, CNTFETs, graphene and MoS2 FETs. The advantage of ultra-thin body channel material for MOSFET scaling and how nanomaterials help in overcoming short channel effects will also be taught. Concepts such as quantum capacitance limit will be introduced. Contact resistance and related issues will also be extensively taught. Various beyond Boltzmann novel device concepts tunnel FETs, phase change FETs, negative capacitance FETs, excitonic FETs, strain FETs for low power computing will be introduced. In the third part of the course we will learn multiple quantum mechanical effects related to transport in nanomaterials such as Quantum Hall effect, energy level broadening, and Coulomb Blockade phenomena in quantum dots. We will also learn multi-electron picture through Folk's Space in order to understand many body interactions. Finally, we will study the matrix version of Schrodinger equation to derive band-structure of different nanomaterials using nearest neighbor semi-empirical approach in orthogonal basis. Generalized transport equations will be obtained using Non Equilibrium Green's Function (NEGF) formalism. Students will be asked to do literature reviews on multiple topics taught in the course. They will also use their learning and solid foundation developed through out the course to execute group projects that are either exploratory in nature or relevant to the state-of-the-art technological problems of the semiconductor industry. This will prepare them for independent and innovative research."
+    },
+    {
+      "number": 505,
+      "title": "Wearable Electronics",
+      "credits": 3,
+      "description": "Recent advances in wearable electronics have led to the development of powerful biomedical devices that monitor vital physiological signals and provide means of treatment, Conventional electronics today are formed on the planar surfaces of brittle wafer substrates and are not compatible with the textured skin or tissue surfaces. Therefore, stretchable and resorbable electronics are the two missing links in the design process of implantable monitors and in-vivo therapeutics. Novel design strategies present unique opportunities to address the challenges in such a potential medical device that (a) integrates with human physiology, and (b) dissolves completely after its effective operation. In this course, we will apply novel strategies to address challenging issues in these emerging electronics, with examples ranging from sensors for thermal, mechanical, electrical, and electrochemical monitoring to integrated systems that can serve as human-machine interfaces and biomedical devices. This course covers a broad range of topics related to the novel strategies for the emerging electronics, including design and analysis of stretchable and dissolvable electronics, manufacturing techniques for biomedical devices, characterization techniques of soft sensors and actuators, applications, and opportunities for these emerging electronics, among others."
+    },
+    {
+      "number": 507,
+      "title": "Bioarchitecture",
+      "credits": 3,
+      "description": "Fundamentals of biological architecture observed in nature with emphasis on symmetry and topology with examples from recent literature. Bioarchitecture is the use and implementation of concepts and principles from nature to design functional materials, devices, and systems. Inspired by the structure and utility of biological surfaces, various surfaces have been engineered with micro- and nanoscale features. Bio-derived materials hold great promise to provide a broad range of industrial solutions. These materials can be shaped into various geometries such as fibers, colloids, and thin films. Recombinant expression or direct extraction of bio-derived materials from biological organisms can provide a new generation of recyclable-engineered materials. Understanding the structures and functional characteristics of biological architecture will expedite the design, fabrication, and synthesis of eco-friendly, recyclable, advanced materials, with novel physical properties."
+    },
+    {
+      "number": 514,
+      "title": "Engineering Science and Mechanics Seminar",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 99
+      },
+      "description": "Current literature and special problems in engineering mechanics."
+    },
+    {
+      "number": 515,
+      "title": "Research Practices in Engineering",
+      "credits": 3,
+      "description": "This course is designed to help incoming graduate students prepare to conduct independent thesis research as part of a research group and become part of the broader research enterprise at Penn State. It introduces students to various elements in the research practices domain categorized as discovery and innovation, cooperation, governance, daily life, resources, and career. The elements of discovery and innovation are to: know the state of the art and knowledge gaps, know how to formulate a research objective, know the past literature, think critically and make connections, know what colleagues in your community do, create intellectual merit, and know what facilities are available. Cooperation entails: sharing information, cooperatively developing documents, developing modular procedures/codes, and being part of a team. Participation in governance involves: reviewing the work of others (publications and proposals) and knowing how to become part of professional societies and the review process for funding agencies. Daily life includes knowing the scientific method in general, how research groups function, documentation of progress, ethical norms, the forms of bias, safety standards, handling data and the associated ethics, protecting privacy, how to work with human subjects, humane treatment of animals, and reporting misconduct. Conducting research requires resources and knowing about funding sources, labor and material costs, and lab usage fees. Research practices are integral to establishing a career through planning, networking, dissemination of results, and incorporation of feedback into plans and documents. This course will introduce students to a range of good research practices in Engineering. Topics covered will include: the organization of a research group; a set of standard tools for performing research including writing, bibliographic organization, version control, data management and backups; tools and good practices for collaboration; good laboratory practices; responsible conduct of research. A large fraction of the course will focus on how to design and conduct research, including reading papers critically, developing bibliographies, writing papers, designing a research project, and writing a research proposal. Full participation in the course satisfies the university requirements for scholarship and research integrity training."
+    },
+    {
+      "number": 516,
+      "title": "Solid State Phase Transformations in Metallic Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE516"
+      ],
+      "description": "Metallic material systems or alloys are used across a wide range of applications. In order to obtain the desired properties, these materials are subjected to a range of thermo-mechanical processing steps and post-processing heat treatments which drive phase transformations while the material is in the solid state. The mechanisms of these solid-state phase transformations involve a wide range of fundamental materials science concepts, including crystallography, nucleation, grain growth, and diffusion. Practitioners must have knowledge across a range of materials disciplines, including thermodynamics, kinetics, and crystallography, in order to synthesize and capture the complex processes occurring over a wide range of spatial and temporal scales. Knowledge of these fundamental concepts along with their interactions over a range of length scales is applicable across a range of conventional and emerging materials processing fields, from primary steelmaking through heat treatment of nickel and aluminum-base alloys through the additive manufacturing of a wide range of advanced materials. In this course, a comprehensive study of solid state phase transformations in metallic materials will be undertaken. Beginning with the underlying crystal structures prominent in common alloy systems, the role of diffusion and nucleation and grain growth will be undertaken to describe the early stages of phase transformations. The resulting interfaces between different phases will be investigated along with the orientation relationships and the development of equilibrium precipitate morphologies. Building on solid state nucleation theory, microstructural development and precipitation and growth of secondary phases in both equilibrium and non-equilibrium conditions will be studied, to include common invariant transformations as well as spinodal decomposition, order-disorder transformations, and the formation of bainite and martensite. These fundamental materials processes will then be investigated for conditions prevalent in advanced manufacturing processes and correlated with advanced and emerging characterization tools."
+    },
+    {
+      "number": 518,
+      "title": "Bioprinting",
+      "credits": 3,
+      "description": "This course covers the principles of bioprinting in tissue engineering and regenerative medicine for use in fabrication of biomedical related products such as implants, tissue scaffolds, engineered tissues, organs and biological systems."
+    },
+    {
+      "number": 520,
+      "title": "Engineering at the Nano-scale",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC412"
+        ]
+      },
+      "description": "Engineering at the nano-scale, its current applications, its future directions, and its impact on society are the subjects of E SC 520. The uniqueness of the nano-scale is addressed by first reviewing the basic aspects of our picture of the physical world (e.g. Newtonian and quantum mechanics, geometrical and physical optics) and then exploring the relative impact of these aspects on physical, chemical, and biological phenomena at the nano-scale. Which phenomena dominate as a function of scale and how this competition affects properties and structures is explored in detail allowing the opportunities of the nano-scale to emerge. Impact of the uniqueness of the nano-scale on engineering and the possibilities offered for engineering applications, ranging from manufacturing processing to better building materials to better drug delivery systems, are discussed throughout the course. These creative possibilities afforded by engineering at the nano-scale are highlighted by a varying array of applications taken from fields including medicine and biotechnology, agriculture and food, environmental mitigation, electronics and spintronics, opto-electronics, photonics, sensing, materials, transportation technology, energy production, energy storage, and informatics."
+    },
+    {
+      "number": 521,
+      "title": "Pattern Transfer at the Nano-scale",
+      "credits": 3,
+      "internalEquivalents": [
+        "NANO521"
+      ],
+      "requisites": {
+        "previous": [
+          "ESC520"
+        ]
+      },
+      "description": "Engineering at the nano-scale often requires creating and then transferring a pattern when fabricating a desired nano-scale structure. This course explores the basic processes of pattern design and then addresses the techniques used to transfer a nano-scale pattern to a surface or structure. The course looks into pattern transfer techniques that employ particles, photons, and additional chemical and physical means as the transfer mechanisms. Included in the photon approaches are studies of deep UV and X-ray pattern transfer. Particle transfer mechanisms discussed include ion and neutral particle approaches. Physical-contact pattern transfer is also explored including discussions of nano-imprinting lithography, nano-molding lithography, and scanning probe lithography. Chemical pattern transfer is another approach to pattern transfer and one that uniquely uses chemical processes to create patterns. Examples to be discussed in this course include molecular self-assembly lithography and block co-polymer lithography. Emerging pattern transfer techniques, such as magneto-lithography, will be included in E SC 521 for completeness. In many of these pattern transfer methodologies, a \"writing\" of the transferring pattern into some intermediary medium termed a resist is required. In pattern technologies requiring resists, the resist materials and their positioning as well as required physical and chemical properties will be discussed."
+    },
+    {
+      "number": 522,
+      "title": "Fabrication and Characterization for Top-down Nano-manufacturing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC521"
+        ]
+      },
+      "description": "There are two broad approaches to fabrication and manufacturing at the nano-scale. They are bottom-up and top-down nanofabrication. The two approaches are complementary, with the former having strong ties to biology and the latter having very strong ties to traditional semiconductor processing. E SC 522 focuses on top-down nanofabrication which makes use of two distinct approaches: additive processes and subtractive processes. These are studied in detail in this course by first focusing on the additive processes which deposit or grow materials. The effort then shifts to the subtractive processes which remove materials with a mixture of chemistry and physics, in techniques varying from wet chemical etching to deep ion etching. Achieving nano-scale features with top-down techniques is controllable and verifiable with today's characterization techniques. This control and verification aspect is an integral part of top-down fabrication at the nano-scale. Characterization tools commonly used in top-down nanofabrication are discussed in this course in the context of process development and manufacturing. These tools include optical microscopies, electron and ion beam microscopies, spectroscopies, and scanning probe techniques."
+    },
+    {
+      "number": 523,
+      "title": "Fabrication and Characterization for Bottom-up Nano-manufacturing",
+      "credits": 3,
+      "internalEquivalents": [
+        "NANO523"
+      ],
+      "requisites": {
+        "previous": [
+          "ESC412",
+          "ESC520",
+          "ESC521"
+        ]
+      },
+      "description": "There are two broad approaches to fabrication and manufacturing at the nano-scale: bottom-up and top-down nanofabrication. These are complementary with the former having strong ties to biology and the latter having strong ties to traditional semiconductor processing. E SC 523 focuses on the bottom-up approaches, which provide an increasingly important alternative to top-down techniques. Bottom-up approaches to nano-scale fabrication mimic nature in harnessing fundamental chemical or physical forces operating at the nano-scale to assemble basic units into larger structures. The bottom-up, or self-assembly, techniques explored in this course cover material synthesis, structure fabrication, and material and structure characterization. The production of 0-D, 1-D, 2-D, and 3-D materials will be discussed and then the assembly of these materials into structures will be explored. Fabrication topics to be covered will include block co-polymer manipulation, vapor-liquid-solid growth, the Langmuir-Blodgett technique, surface functionalization, molecular self-assembly, DNA Origami, and bacterial and viral assembly. The characterization techniques to be covered will include those emerging tools capable of ultra-precise resolution such as tip-enhanced Raman scanning microscopy, scanning helium ion microscopy, and magnetic resonance sub-nanometer imaging."
+    },
+    {
+      "number": 525,
+      "title": "Neural Engineering: Fundamentals of Interfacing with Brain",
+      "credits": 3,
+      "description": "Biophysical basis of neural function, measurable signals, and neural stimulations."
+    },
+    {
+      "number": 527,
+      "title": "Brain Computer Interfaces (BCI)",
+      "credits": 3,
+      "description": "Biophysical basis of non-invasive brain signals (electroencephalograms); real-time signal processing."
+    },
+    {
+      "number": 529,
+      "title": "Neural Control Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS529"
+      ],
+      "description": "The ability to use formal control theory to observe and control neuronal systems is rapidly becoming more feasible as our models of neural systems become more realistic and as our advances in nonlinear Kalman filtering become more sophisticated. This course will explore the cutting edge of nonlinear state estimation of neuronal systems and the construction of control algorithms based on that state estimation. We will give an overview of several canonical neuroscience models, which represent experimental systems that can be controlled: the Hodgkin-Huxley equations, their reduction with the Fitzhugh-Nagumo equations, the Wilson-Cowan model of cortex, and recent models of Parkinson's disease. We will then apply nonlinear state estimation to measurements from such systems and construct control algorithms that interact with such models."
+    },
+    {
+      "number": 531,
+      "title": "Neuroethics: Science, Technology, and Society",
+      "credits": 3,
+      "internalEquivalents": [
+        "NEURO531"
+      ],
+      "description": "This course provides a close examination into the field of neuroethics and the responsible application of advances in neuroscience research and neuroengineering. Neuroethics is a relatively young and interdisciplinary field of inquiry that aims to be a platform for different stakeholders, including neuroscientists, clinicians, lawyers, engineers, policy makers and the general public to discuss the future of neuroscience and the different applications of neurotechnologies. Neuroethics is a field that brings normative, descriptive, theoretical and practical considerations at the table. This course will cover topics such as different perspectives on neuroethics, its scope and role in recent brain initiatives, ethical and societal implications of brain imaging for medical and non-medical purposes, ethical and societal implications of the use of pharmacological and neuromodulation interventions on the brain, uses of neuromodifiers for enhancement purposes, issues around personhood and other emerging topics relevant to neuroethics. Among the ethical issues examined in the course are issues related to mental privacy, safety considerations, responsibility, agency, and social justice."
+    },
+    {
+      "number": 534,
+      "title": "Advanced Solidification Processes in Metallic Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE534"
+      ],
+      "description": "The emergence of advanced manufacturing processes, such as additive manufacturing, has introduced high levels of uncertainty in well-established process - structure - property- performance relationships. A comprehensive understanding of solidification across spatial and temporal scales is needed in order to identify the underlying phenomena driving these unique structures and properties. In this course, the processes driving solidification and the properties of liquid metals will be covered to provide a framework for understanding more complex solidification processes in multi-component systems. Building on a fundamental understanding of both the thermodynamics and kinetics of solidification processes, the properties of interfaces and nucleation and growth will be studied across a range of material systems, including those exhibiting eutectic and peritectic transformations. With this basic knowledge, the role of complex processing conditions and their impact on multi-component alloy systems will be investigated for conditions prevalent in advanced manufacturing processes and correlated with advanced and emerging characterization tools."
+    },
+    {
+      "number": 536,
+      "title": "Wave Propagation and Scattering",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH524A",
+              "EMCH524B"
+            ]
+          }
+        ]
+      },
+      "description": "Survey of analytical and numerical methods for solving acoustic, electro- magnetic and elastic wave propagation and scattering problems."
+    },
+    {
+      "number": 537,
+      "title": "Multiple Scattering Theories and Dynamic Properties of Composite Materials",
+      "credits": 3,
+      "description": "Acoustic, dielectric, elastic dynamic properties; periodic, random composites; wave propagation and scattering; attenuation, dispersion; super- viscous absorption; sonar, optical, ultrasonic applications."
+    },
+    {
+      "number": 540,
+      "title": "Laser Optics Fundamentals",
+      "credits": 3,
+      "description": "Selected topics in optics and laser physics, and their application in laser-materials processing. E SC 540 Laser Optics Fundamentals (3) Over the past two decades, new technologies such as laser-materials processing have moved from laboratory research to commercial applications. Engineers must now understand and apply many concepts of physics that in the past lay outside the boundaries of engineering. This course is intended for graduate students and practicing engineers whose exposure to physics has been limited to two or three undergraduate courses. It summarizes theories of geometric optics, physical optics, quantum optics and laser physics relevant to laser-materials processing, and it is designed to bridge the gap between abstract concepts and applications. Upon completion of this course, students will have developed sufficient proficiency in these theories to understand the intricacies of their use and application in laser-materials processing as described in the current technical literature. The student's accomplishment will be evaluated by mid-semester and final examinations.E SC 540 will be offered each fall semester. Classes will meet twice a per week; each class will be 75 minutes long. The enrollment for this course is anticipated to be 15 to 30 students."
+    },
+    {
+      "number": 541,
+      "title": "Laser-Materials Interactions",
+      "credits": 3,
+      "description": "Laser beam interactions with metallic, ceramic, polymeric and biological materials; effects of wavelength, power, spatial and temporal distributions of intensity. E SC 541 Laser-Materials Interactions (3) This course covers laser beam interactions with metals, insulators, semiconductors, polymers and biological materials relevant to laser-materials processing, and is designed to bridge the gap between abstract concepts and applications. Interactions such as heat flow, thermal stresses, melting, material removal, property changes and plasma effects are related to laser characteristics such as wavelength, power and the spatial and temporal distribution of intensity. Upon completion of this course the student will have developed sufficient knowledge of laser-materials interactions to understand their application in the current technical literature on laser-materials processing. the student's accomplishments will be evaluated by mid-semester and final examinations.This course will be offered each year in the spring semester. The class will meet once a week; each class period will be 150 minutes long. The enrollment for the course is anticipated to be 15-30."
+    },
+    {
+      "number": 542,
+      "title": "Laser-Integrated Manufacturing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC540"
+        ]
+      },
+      "description": "Integration of lasers into manufacturing processes: laser-assisted surface modifications; laser joining; laser-based material shaping processes. E SC 542 Laser-Integrated Manufacturing (3) E SC 542 is intended for graduate students and practicing engineers who have completed E SC 540 and E SC 541. It utilizes classroom lectures to provide a basis for students to develop an understanding of the integration of laser systems into manufacturing processes. Various lasers applicable to macro-processing, optical systems and manipulation components are discussed in terms of integration for industrial processing of materials, which include laser-assisted surface modification, laser joining and laser-based material removal processes. The unique characteristics and attributes of laser processing are discussed and contrasted with other contemporary manufacturing processes. Students will participate in a group project to develop and design an integrated system for selected laser manufacturing processes. Upon completion of this course, the student will understand the system requirements for laser-based manufacturing processes in terms of processing capabilities, equipment capabilities, safety requirements and economic considerations.This course will be offered each year in the fall semester. Classes will meet once per week; each meeting period will be 150 minutes long."
+    },
+    {
+      "number": 543,
+      "title": "Laser Microprocessing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC540"
+        ]
+      },
+      "description": "Laser microprocessing of engineered and biological materials for electronic, opto-electronic, MEMS and medical/therapeutic applications. E SC 543 Laser Microprocessing (3) This course is intended for graduate students and practicing engineers who have completed E SC 540 and E SC 541. It covers laser processing to produce features and modify properties in metals, organic polymers, inorganic insulators, superconductors, semiconductors and biological materials on the meso, micro and nano scales. The lectures comprise analysis and discussion of selected technical papers on the use of laser microprocessing in electronic, opto-electronic, MEMs and medical-therapeutic applications. Upon completion of this course, the student will have developed sufficient knowledge of laser microprocessing to understand its applications as described in the current technical literature.This course will be offered each year in the spring semester. Classes will meet once per week; each class period will be 150 minutes long."
+    },
+    {
+      "number": 544,
+      "title": "Laser Laboratory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC540"
+        ]
+      },
+      "description": "Laser systems for materials processing, safety, critical processing parameters, diagnostic measurements, automation, sensing and control. E SC 544 Laser Laboratory (3) This course is intended for graduate students and practicing engineers who have completed E SC 540 and E SC 541. It covers laser systems for materials processing such as carbon dioxide, neodymium-YAG and ultraviolet laser systems; safety; identification of critical process parameters; measurement of spatial and temporal distributions of intensity, power, polarization, absorptivity and reflectivity; beam and work piece manipulators; automation' methods of sensing and process control. Students will attend lectures, observe demonstrations and perform hands-on measurements. Upon completion of this course, the student will have developed sufficient proficiency in laser techniques to perform them safely in a laboratory setting and to understand the intricacies of their use as described in the current technical literature on laser-materials processing. The student's accomplishment is evaluated by laboratory reports and a final examination.This course will be offered each summer."
+    },
+    {
+      "number": 545,
+      "title": "Engineering and Scientific Principles of Additive Manufacturing",
+      "credits": 4,
+      "description": "In additive manufacturing (AM), components are fabricated via sequential joining using a bonding agent, curing, sintering, or fusing. AM fabrication of metals, ceramics, polymers, and organics has been demonstrated and is actively being used in industry and academia. ESC 545 / AMD 545 explores these processes with a focus on the fundamentals of sintering and fusion of metals, ceramics, and polymers. The topic is multi-disciplinary, requiring examination of individual AM system components, the physics of energy-material interactions, and the materials science at play during heat-reheat cycles. Opportunities for process sensing and real-time control are explored, as well as the role of post-process technologies in realizing serviceable components. These topics will lead to a discussion of methods and strategies to optimize component properties and characteristics. Current and potential impacts of AM on society are also covered."
+    },
+    {
+      "number": 546,
+      "title": "Advanced Metallic Material Feedstocks for Additive Manufacturing",
+      "credits": 4,
+      "internalEquivalents": [
+        "MATSE546"
+      ],
+      "requisites": {
+        "previous": [
+          "ESC545",
+          "MATSE567",
+          "IE527"
+        ]
+      },
+      "description": "Additive manufacturing (AM) processes use a variety of metallic material forms to produce complex components. These material forms can vary from metallic powders with a rather wide range of size distributions to metal wire to sheet and other more complex composite material types. Knowledge of the processing of these different feedstock forms along with means to characterize them is needed to develop AM processes and procedures capable of being more widely used, particularly in critical applications. In this course, the production, handling, blending, and characterization of common metallic and composite feedstock materials will be covered. Feedstock forms to be addressed include metal and metal-ceramic composite powders, wire, and sheets, along with new product forms becoming available. A multi-disciplinary approach will be taken to elucidate the connections between production, characterization, and handling to develop an understanding of the role of feedstocks on the resulting process-structure-property relationships for AM processes and products."
+    },
+    {
+      "number": 550,
+      "title": "Power Semiconductor Devices",
+      "credits": 3,
+      "description": "Power electronic devices: Physics of operation, materials, architectural design, processing, reliability of operations, reliability with applications and challenges. E SC 550 Power Semiconductor Devices (3) The design and operation, of the emerging transformative power semiconductor devices, is founded on basic quantum mechanics and solid state physics principles. Power Semiconductor Devices, PSDs, handle high currents, high voltages and operate at high temperatures. Consequently, PSDs are complex in design, and challenging in long-term reliability. We study the fundamentals of PSDs architecture, processing, reliability, materials and characterization. We study Schottky- and P-i-N- rectifiers, the low power range MOSFETs transistors, the middle power range IGBT transistors, and high power range Thyristors. It is estimated that more than 50% of world electricity passes through power semiconductor devices; hence, optimizing the performance and reliability of these emerging power devices coupled with advancing power materials processing may lead to significant future energy savings. The subject matter is appropriate to students of physical sciences, electrical and materials engineering; in addition to broadening their knowledge base, it exposes them to this frontier research area and a new career-path option."
+    },
+    {
+      "number": 551,
+      "title": "High Power Energy Storage",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME551"
+      ],
+      "description": "High-power energy storage technologies including advanced batteries, ultracapacitors, and flywheels. E SC (M E) 551 High Power Energy Storage (3) The course focuses on high-power, in-vehicle energy storage technologies used in hybrid electric vehicles, including advanced batteries, fuel cells, ultracapacitors, and flywheels. An interdisciplinary approach with mechanical, materials, electrical, and chemistry-based concepts provides the foundation to understand the operation and application of these energy storage devices. The course provides a synopsis of hybrid electric and fuel cell vehicle design, control, and simulation to determine the effect of energy storage components on performance and fuel efficiency."
+    },
+    {
+      "number": 555,
+      "title": "Neuroscience Data Analysis",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "BIOL469"
+        ]
+      },
+      "description": "Modern methods for the analysis of neural data. E SC 555 Neuroscience Data Analysis (3) Modern neuroscience experimental methods can generate enormous amounts of complicated data, and a wealth of techniques has sprung up drawing from a wide variety of fields to analyze it. In this course, students will learn how to utilize a toolbox of mathematical and computational techniques to analyze electrophysiological, optical and anatomical data. This course will cover the biophysical origin and measurement of brain signals, as well as the theoretical background of modern analysis methods and their practical implementation. Topics covered include spectral methods, neural encoding and decoding, information theory and image analysis."
+    },
+    {
+      "number": 565,
+      "title": "Nondestructive Evaluation for Additive Manufacturing",
+      "credits": 4,
+      "description": "This course provides a foundational introduction to nondestructive evaluation (NDE) techniques tailored for additively manufactured (AM) components. Students will explore the core principles behind methods such as ultrasound, resonance testing, and X-ray computed tomography (CT), with a focus on assessing the effectiveness and adaptability of traditional NDE approaches for AM parts."
+    },
+    {
+      "number": 577,
+      "title": "Engineered Thin Films",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251",
+          "PHYS237"
+        ]
+      },
+      "description": "Broad overview of the preparation-characterization-porperty relations for thin films used in a wide range of industrial applications."
+    },
+    {
+      "number": 581,
+      "title": "Microelectromechanical Systems/Smart Structures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ESC414M"
+        ]
+      },
+      "description": "Methods of micromachining, smart structure fabrication. Design, modeling for physical, chemical, biomedical microsensors/actuators. Smart structures and microsystems packaging/integration."
+    },
+    {
+      "number": 582,
+      "title": "Micro- and Nano-Structured Light Emitting Devices",
+      "credits": 3,
+      "description": "Principles and applications of Micro- and Nano-Structured Light Emitting Devices."
+    },
+    {
+      "number": 583,
+      "title": "Micro- and Nano-Optoelectronic Devices and Applications",
+      "credits": 3,
+      "description": "Principles and applications of micro- and nano-optoelectronic devices."
+    },
+    {
+      "number": 584,
+      "title": "Bioarchitecture",
+      "credits": 3,
+      "description": "Fundamentals of biological architecture observed in nature with emphasis on symmetry and topology with examples from recent literature. Bioarchitecture is the use and implementation of concepts and principles from nature to design functional materials, devices, and systems. Inspired by the structure and utility of biological surfaces, various surfaces have been engineered with micro- and nanoscale features. Bio-derived materials hold great promise to provide a broad range of industrial solutions. These materials can be shaped into various geometries such as fibers, colloids, and thin films. Recombinant expression or direct extraction of bio-derived materials from biological organisms can provide a new generation of recyclable-engineered materials. Understanding the structures and functional characteristics of biological architecture will expedite the design, fabrication, and synthesis of eco-friendly, recyclable, advanced materials, with novel physical properties."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

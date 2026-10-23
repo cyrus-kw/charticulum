@@ -1,0 +1,117 @@
+{
+  "subject": "AEREC",
+  "courses": [
+    {
+      "number": 503,
+      "title": "Agricultural Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON502"
+        ]
+      },
+      "description": "Economic analysis of food marketing firms and institutions; identification and measurement of dimensions of market performance; public policy."
+    },
+    {
+      "number": 533,
+      "title": "Rural Development Research Methods and Topics",
+      "credits": 3,
+      "internalEquivalents": [
+        "CEDEV533"
+      ],
+      "requisites": {
+        "previous": [
+          "ECON521"
+        ]
+      },
+      "description": "Advanced theories and methods for rural economic development research."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of specific interest."
+    },
+    {
+      "number": 597,
+      "suffix": "A",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Thesis Preparation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

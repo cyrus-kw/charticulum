@@ -1,0 +1,101 @@
+{
+  "subject": "ECLGY",
+  "courses": [
+    {
+      "number": 510,
+      "title": "Classical Ecology",
+      "credits": 2,
+      "description": "Classical Ecology."
+    },
+    {
+      "number": 515,
+      "title": "Advances in Ecology",
+      "credits": 3,
+      "description": "Advances in Ecology."
+    },
+    {
+      "number": 526,
+      "title": "Community Ecology",
+      "credits": 3,
+      "description": "This course will focus on teaching graduate students the fundamental basis and advanced concepts in community ecology used to study and interpret patterns of biological diversity across divergent systems. Concepts and study cases presented in class will vary across different ecosystems and biomes and will include different organismal types (plants, animals, and microorganisms). Four main goals of this course are: (i) promote understanding of ecological processes responsible for the distribution and maintenance of biodiversity; (ii) provide knowledge to better interpret, critically discuss, and analyze current research articles and theories in community ecology; (iii) instruct students to better communicate their research in line with ecological principles and mechanisms; and (iv) allow students to lead discussions on papers related to broader community ecology concepts."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in development of instructional materials, organizing and conducting lectures, laboratories, and evaluating students in Ecology- related undergraduate courses."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

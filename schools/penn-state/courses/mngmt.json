@@ -1,0 +1,136 @@
+{
+  "subject": "MNGMT",
+  "courses": [
+    {
+      "number": 505,
+      "title": "Managing Human Resources",
+      "credits": 3,
+      "description": "Issues in human resource management including recruitment and selection, employee development, performance management, employee and labor relations, and employee safety. MNGMT 505 Managing Human Resources (3) This course examines the primary functions and responsibilities of those who manage human resources in formal organizations. The emphasis of this course is on the practical application of the methods human resource specialists, generalists, and managers use to perform their duties. The course is designed to appeal not only to future (or current) human resource practitioners, but also to anyone who aspires to manage people in organizations. Topics covered include management practices, the legal and regulatory environment of human resources, employee recruiting, selection and placement, training and development, performance management, compensation and benefits, employee and labor relations, and employee health, safety, and security.This course surveys the major functions and responsibilities of human resource managers. In doing so, a primary objective is to gain greater factual knowledge of human resource issues by studying organizational practices, analyzing cases, conducting research using the World Wide Web, and utilizing other sources of information. It is also hoped that each student will develop a philosophy concerning the relationships among the employee, employer, union, and government agencies involved in employment issues.Students' knowledge is evaluated, in part, using written examinations. Each student is also typically the member of a small team that will research a specific challenge, trend, or issue that currently confronts human resource managers. Each team prepares a concise and focused presentation and written summary on its chosen topic. Other means of evaluating student knowledge may include case analyses, investigations of human resource practices within specific organizations, or other related projects."
+    },
+    {
+      "number": 511,
+      "title": "Organizational Behavior",
+      "credits": 3,
+      "description": "Individual and group behavior in organizations' motivation, performance, rewards, satisfaction, decision processes, conflict; job and organizational design; structure and culture. The field of organizational behavior is intended to further our understanding of human behavior in work and organizational contexts. The field draws upon research emanating from any social science discipline (e.g., psychology, social psychology, sociology, anthropology, etc.) that might offer insight as to how individuals and groups function effectively within work contexts. The overall goal is 1) to explore how individuals' work experience can be made more satisfying and personally fulfilling to them, and 2) to explore how organizations can manage and shape human behavior in ways that optimize organizational effectiveness and organizational goal accomplishment. Particular emphasis is placed upon the study of individual and group-level dynamics within organizations, including topics such as motivation, individual differences, ethics, emotional intelligence, group dynamics, decision-making, stress, power and politics, leadership, and organizational culture and structure."
+    },
+    {
+      "number": 514,
+      "title": "Organizational Innovation and New Venture Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNGMT511"
+        ]
+      },
+      "description": "Advanced study of the process of innovation from an organizational perspective. Includes analyses of individual, organizational, and environmental variables. The subject of MNGMT 514 is the process of innovation in organizations and the factors associated with its successful implementation. Among the topics covered are the creative process as the wellspring of innovation and elements of organizational architecture (structure and culture) that influence the process of innovation. Entrepreneurial strategy is discussed as a means for creating competitive advantage through innovation. During the last third of the course, students will develop a new venture model for an innovation by applying the concepts developed in the first part of the course. New venture models will be developed using collaborative learning groups established at the beginning of the course."
+    },
+    {
+      "number": 515,
+      "title": "Labor Management Relations",
+      "credits": 3,
+      "internalEquivalents": [
+        "PADM515"
+      ],
+      "description": "Labor relations issues; collective bargaining agreement, negotiations, and administration; legal framework of collective bargaining; labor relations in larger social context."
+    },
+    {
+      "number": 520,
+      "title": "Organizational Transformation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNGMT511"
+        ]
+      },
+      "description": "Treats methods, practices, and theory of organizational empowerment, quality management, process redesign, re-engineering, restructuring, and planned change. MNGMT 520 Organizational Transformation (3) The objective of this course is to review the current theory and practice of organizational development (OD), and applied field of social science. ODs primary aim is helping to improve the alignment between individuals and the organization, and between the organization and its environment in order to achieve greater effectiveness, performance, and stakeholder satisfaction. The course provides an overview of theories, research findings, approaches, and concepts of OD. Particular attention is paid to discussing practitioner-centered cases in OD. Large-scale, system-wide organizational development - usually one that involves a paradigm shift is often referred to as Organizational Transformation or Re-engineering. The paradigm shift often involves a re-conceptualization of management philosophies, principles, practices, and behavior leading to a high performing, empowering organization."
+    },
+    {
+      "number": 522,
+      "title": "Operations and Supply Chain Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUS505"
+        ]
+      },
+      "description": "Design, development, management of manufacturing systems in a supply chain context; tools, techniques, and applications at tactical and strategic levels. MNGMT 522 Operations and Supply Chain Management (3) The purpose of Operations and Supply Chain Management is to provide students with tools and knowledge that can help them increase productivity and profitability in a manufacturing environment. Both strategic and tactical aspects of operations management will be emphasized. The course is taught in supply chain context meaning that decisions made in manufacturing must consider the overall impact of the suppliers and customers in the supply chain. Students will be asked to read and participate in the discussion of articles dealing with progressive operations and supply chain methods. The course also incorporates the case study method, in order to provide students an opportunity to apply their knowledge in class."
+    },
+    {
+      "number": 523,
+      "title": "Service Operations Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUS505"
+        ]
+      },
+      "description": "Design, development, and management of service systems. Tools and techniques for non-manufacturing oeprations at tactical and strategic levels. MNGMT 523 Service Operations Management (3) This course is designed to introduce students to the operational aspect of a service organization, the kinds of decisions that operations managers make, and the impact these decisions have on the tactical and strategic position of the firm. Students will be introduced to tools and concepts that have the ultimate objective of increasing the productivity of the firm and the customer satisfaction of its clientele."
+    },
+    {
+      "number": 570,
+      "title": "Leadership Development",
+      "credits": 3,
+      "description": "Experientially based skill-building for development of managerial and leadership competencies."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 841,
+      "title": "Entrepreneurial Funding Strategies",
+      "credits": 3,
+      "description": "Entrepreneurial Funding Strategies is an in-depth analysis of concepts, strategies, and techniques to obtain funding for start-ups and entrepreneurs. This course covers an overview of entrepreneurship, techniques for analyzing cash needs, strategies for financing the new venture, building venture relationships, and exit strategies."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 897,
+      "suffix": "A",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    }
+  ]
+}

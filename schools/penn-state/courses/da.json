@@ -1,0 +1,188 @@
+{
+  "subject": "DA",
+  "courses": [
+    {
+      "number": 101,
+      "title": "Introduction to Data Analytics",
+      "credits": 3,
+      "attributes": [
+        "GQ"
+      ],
+      "description": "This course is designed around storytelling with data. It is designed to introduce students to foundational concepts in data analytics. Students will learn key concepts used in the data analytics industry to understand and frame projects. The core dimensions of analytics prescribed by current data analytics professional guidelines will be introduced and demonstrated through case studies. Students will be exposed to spreadsheets, scripting languages for analytics, and current statistical software packages. The importance of communicating findings to different constituents will be emphasized throughout this class."
+    },
+    {
+      "number": 201,
+      "suffix": "W",
+      "title": "Descriptive Analytics",
+      "credits": 4,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT200",
+              "PSYCH200",
+              "STAT250",
+              "SCM200"
+            ]
+          },
+          {
+            "oneOf": [
+              "DS200",
+              "DA101"
+            ]
+          }
+        ],
+        "concurrent": [
+          "DA301"
+        ]
+      },
+      "description": "DA 201W is a four-credit course with lecture and writing components. (DA201W, DA 302W , and DA 401W each carry only one credit of \"writing\"; completion of all three courses is required to meet the writing requirement.) This course introduces students to the core areas of descriptive analytics, where the main objective is to answer \"what happened\" in the project. Students will learn how to accurately describe the attributes of data variables available to them for their projects. Students will have the opportunity to work on real-life projects and cases throughout the course. The course will expose students to spreadsheets, scripting languages for analytics, and current statistical software packages. The instructor will emphasize the importance of communicating findings to different constituents throughout this class."
+    },
+    {
+      "number": 301,
+      "title": "Diagnostic Analytics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "DA101"
+        ],
+        "concurrent": [
+          "DA201W"
+        ]
+      },
+      "description": "This course introduces students to the core areas of diagnostic analytics. The diagnostic analysis takes descriptive data a step further by examining the relationships between variables through root cause analysis. Students will learn current tools and techniques, including external environmental factors, that allow analysts to explain why the patterns are observed in data and discover relationships between two or more attributes of the data. Students will have the opportunity to review case studies and work on real-world projects throughout the course."
+    },
+    {
+      "number": 302,
+      "suffix": "W",
+      "title": "Predictive Analytics",
+      "credits": 4,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "DA301",
+          "DA201W"
+        ]
+      },
+      "description": "DA 302W is a four-credit course with lecture and writing components. (DA201W, DA 302W , and DA 401W each carry only one credit of \"writing\"; completion of all three courses is required to meet the writing requirement.) The principal objective of this course is to help students predict ¿what will happen¿ in future events based on historical data. This course exposes students to predictive analytics techniques that are consistent with best practices in the data analytics industry. Students will learn how to properly examine problem contexts to use the most appropriate method to develop the best predictive model. Students will also learn how to evaluate their results and interpret findings to users at different levels of an organization. This course focuses on the application of spreadsheets, scripting languages for data analytics, and current statistical software packages."
+    },
+    {
+      "number": 305,
+      "title": "Data Ethics and Privacy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "DA101"
+        ]
+      },
+      "description": "DA 305 will cultivate students¿ awareness of ethical, privacy, and security rules and standards to guide how to use and analyze data and communicate the report findings. The course will demonstrate appropriate ethical, privacy, and security standards. This course will utilize case studies to demonstrate the realworld implications of these topics in data analytics and identify the appropriate communication styles. The course will emphasize ethics at various stages of data analytics. This includes the communication of the implications of the data analysis to stakeholders, including how data are collected and stored as well as how it is analyzed and presented to different stakeholders. Students will be able to define who has access to which data, where and how long the data will be stored, and which procedures will be implemented for further use."
+    },
+    {
+      "number": 401,
+      "suffix": "W",
+      "title": "Prescriptive Analytics",
+      "credits": 4,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "DA302W"
+        ]
+      },
+      "description": "DA 401W is a four-credit course with lecture and writing components. (DA201W, DA 302W , and DA 401W each carry only 1 credit of \"writing\"; all three courses must be taken to meet the writing requirement). This course will introduce students to how data analytics assists in making decisions and advocating for a course of action. The core objective of this course is to help students develop a set of viable decision options (based on considerations including costs and benefits, key stakeholder preferences, ethical guidelines, etc.), ranking those decision options to create alternative courses of action, and how to achieve an optimal decision. Topics covered will include optimization, sensitivity analysis, decision making, linear programming, and simulation."
+    },
+    {
+      "number": 402,
+      "title": "Qualitative Analytics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "DA201W"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202A",
+              "ENGL202B",
+              "ENGL202D"
+            ]
+          }
+        ]
+      },
+      "description": "The majority of non-numeric data is unstructured (e.g., blogs, emails, forums). DA 402 is an overview of data analytics techniques for non-numeric data (e.g., text, videos or images). The methodological reasons for a qualitative rather than a quantitative approach, and the underlying challenges with this type of data depend on the hypothesis or research question. Often, research questions and organizational problems can best be answered by qualitative, non-numeric data. Students in data analytics will be exposed to situations and conditions where these practical analyses would be applicable rather than students in data sciences who create or improve the algorithm for analysis. This course will enable students to pursue further study in these types of practical applications. Students need a strong background in statistics before scheduling this course."
+    },
+    {
+      "number": 475,
+      "title": "Data Analytics Implementation Capstone I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "DA302W",
+          "DA305",
+          "MIS447"
+        ],
+        "concurrent": [
+          "MGMT409"
+        ]
+      },
+      "description": "DA 475 is the first semester of a two-semester sequence and completion of the BS in Data Analytics. The course requirements enable the student to demonstrate the student's ability to use industry or organization data to develop a descriptive, diagnostic, predictive, and prescriptive analysis. This portion of the capstone addresses the understanding of the industry data, project scope, data journalism, and descriptive analysis."
+    },
+    {
+      "number": 476,
+      "title": "Data Analytics Implementation Capstone II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "DA475"
+        ]
+      },
+      "description": "DA 476 is the second semester of a two-semester sequence and completion of the BS in Data Analytics. The course requirements will include a continuation of industry project (assigned in DA 475 ) and the remaining three-part analysis of organization-specific analysis (diagnostic, predictive, and prescriptive)."
+    },
+    {
+      "number": 494,
+      "title": "Research Projects",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Study",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    }
+  ]
+}

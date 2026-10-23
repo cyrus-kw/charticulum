@@ -1,0 +1,57 @@
+{
+  "subject": "AGBIO",
+  "courses": [
+    {
+      "number": 520,
+      "title": "Agricultural Biosecurity: Protecting a Key Infrastructure",
+      "credits": 3,
+      "description": "Course will explore intentional and unintentional threats to the agriculture- food system, history and current approaches for safeguarding this key infrastructure."
+    },
+    {
+      "number": 521,
+      "title": "Food Defense: Prevention Planning for Food Processors",
+      "credits": 3,
+      "internalEquivalents": [
+        "FDSC521"
+      ],
+      "description": "Course prepares current and aspiring professionals to learn, recognize and apply measures to prevent intentional contamination of the food supply. FD SC (AGBIO) 521 Food Defense: Prevention Planning for Food Processors (3)This course will not only provide participants with knowledge of the domestic and international food industry, but it also provides tools for food industry and homeland security professionals to develop food defense programs to protect the food supply from terroristic activities leading to intentional contamination. The course will introduce and apply: examples where intentional contamination has been used in the food industry; biological, chemical and physical hazards of primary concern in the food industry; methods for detecting hazards in the food supply; systems employed to monitor foodborne illness in the general public; management practices employed in food production to deal with recalls and other crises; vulnerabilities and mitigation procedures unique to food production; as well as agencies, resources, and tools needed to protect, prepare, and respond to intentional contamination incidents. This course is a required course for the certificate program in Agricultural Biosecurity as well as the Master of Professional Studies in Homeland Security/Agricultural Biosecurity Option. These principles also will be incorporated into a food defense plan, recall plan, and emergency preparedness plan for an assigned food establishment."
+    },
+    {
+      "number": 594,
+      "title": "Agricultural Biosecurity and Food Defense Capstone Experience",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AGBIO520",
+          "AGBIO521",
+          "AGBIO801",
+          "AGBIO802"
+        ]
+      },
+      "description": "Culminating experience in the iMPS-HLS for the online Agricultural Biosecurity and Food Defense option."
+    },
+    {
+      "number": 801,
+      "title": "Veterinary Infectious Disease Diagnostic and Surveillance Systems",
+      "credits": 3,
+      "internalEquivalents": [
+        "PATH801"
+      ],
+      "requisites": {
+        "previous": [
+          "AGBIO520"
+        ]
+      },
+      "description": "This course provides knowledge of diagnostic and surveillance systems used to detect infectious diseases and protect against animal agricultural biological attack."
+    },
+    {
+      "number": 802,
+      "title": "Plant Protection: Responding to Introductions of Threatening Pests and Pathogens",
+      "credits": 3,
+      "internalEquivalents": [
+        "PPATH802"
+      ],
+      "description": "This course provides knowledge of plant biosecurity, plant disease, regulations, and technologies using case study examples."
+    }
+  ]
+}

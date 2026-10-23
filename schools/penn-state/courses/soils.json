@@ -1,0 +1,564 @@
+{
+  "subject": "SOILS",
+  "courses": [
+    {
+      "number": 71,
+      "title": "Environmental Sustainability",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "This class provides an introduction to environmental sustainability for students with no background in environmental science or soils. The concept of sustainability provides a framework for understanding environmental problems by balancing the needs of current society with the long-term needs of future societies and the environment. Sustainability also provides a framework for linking international cultures because environmental problems and solutions often cross political and cultural boundaries. The goal of the course is to develop critical thinking skills related to sustainable environmental choices. As we explore the concept of sustainability, we will discover the role of soil in mediating human-environment interactions by determining natural plant and animal abundance, supporting agriculture, and buffering the environment against modern pollution. The four themes of the class are: 1) Environment, Sustainability and Natural Resources, which introduces students to the scientific method and value systems that affect environmental choices, to fundamental ecological principles and to basic concepts of soil science and environmental science, 2) Challenges to Sustainability, in which we consider some of the major challenges to global sustainability; climate change, loss of biodiversity and ecosystem services, human population growth and resource consumption and waste management, 3) Feeding the World and its Impact on the Environment in which we consider the Malthusian dilemma of how we can feed ~10 billion of people in the near future together with the conservation dilemma of how we can maintain a healthy environment, and 4) Sustainability Solutions, in which we consider what has been done to achieve environmental protection while sustainably increasing food production and students are challenged to develop their own sustainability solution to a current issue somewhere in the world. The class will include \"soils cases\" in which examples from environmental soil science are used to convey principles of sustainability, and \"sustainability activities\" to see examples of sustainable environmental choices on campus or in State College. Students will complete the class with: 1) a survey of the key issues in global environmental sustainability, 2) exposure to current scientific information related to these issues, 3) an enhanced ability to interpret environmental data, 4) an increased knowledge of the role of soils in maintaining environmental quality, 5) an increased understanding of how environmental problems and solutions are global phenomena, requiring cooperation among many international cultures, and 6) a significant depth of knowledge about \"what it takes\" to feed 10 billion people while maintaining a healthy environment."
+    },
+    {
+      "number": 101,
+      "title": "Introductory Soil Science",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "This survey and foundational course introduces students to a broad range of subject matter from most sub-disciplines of soil science. We study a range of soil characteristics and seek to understand their relationship to soil function, land use, plant growth, environmental quality, and society/culture. This course introduces students to the variety and complexity of soils on a local, national, and international scale. We identify the physical, chemical, and biological properties and processes of soils and relate these to the way that societies use and abuse soils. Students acquire a working knowledge of the technical terminology of soil science and begin developing observational skills needed to describe and/or locate soil properties for specific locations and to interpret those properties for various uses. We learn to recognize and explain various land use and management practices and to select those that are appropriate at a given site. Students also evaluate the impact of land use and management decisions on agricultural productivity and sustainability, environmental and ecological health, and on community relationships. This course is required or on a list from which students select for many environmental and agricultural majors. It is specifically listed as a prerequisite for many other SOILS courses and for several soils-related courses taught at Penn State."
+    },
+    {
+      "number": 102,
+      "title": "Introductory Soil Science Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "SOILS101"
+        ]
+      },
+      "description": "This laboratory course is designed for students who plan to work directly with soils, make land use and management decisions, or to be involved in projects requiring practical application of soil science principals. By conducting weekly laboratory and field exercises and writing reports on their work, students will deepen their understanding of, and learn to apply, the fundamental soil properties and processes introduced in SOILS 101 . This laboratory course, in conjunction with the SOILS 101 lecture course, will provide foundational learning in soil science and prepare students for upper level soil science courses. This laboratory course is also designed to provide students with hands on experience in analytical procedures for soil assessment, testing, and interpretation, as well as field experience in observing, characterizing and describing soils."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 401,
+      "title": "Soil Composition and Physical Properties",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Advanced study of mineralogical and physical properties of soils which affect soil-plant-water relationships."
+    },
+    {
+      "number": 402,
+      "title": "Soil Nutrient Behavior and Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "SOILS101"
+        ]
+      },
+      "description": "Soil Nutrient Behavior and Management is a senior/graduate level course that covers the chemical and biological processes that determine the behavior of essential plant nutrients in soils. As this understanding of basic nutrient behavior is developed in the course, it is applied directly to explain the basis for management of nutrients for optimum plant availability. This same nutrient behavior is linked to the fate of nutrients either applied as sources of plant nutrition or through disposal of nutrient containing materials on soils, which is a major environmental issue. Management practices necessary to minimize environmental impacts from nutrients are also covered. From this background students will be able to understand nutrient behavior and management recommendations and adapt management to a variety of soil-plant systems and situations both for plant growth and environmental protection. Real world examples of developing and adapting management systems are used to illustrate this process. The laboratory exposes the student to common soil testing procedures, methods for studying soil nutrient-plant interactions, and examples of practical application of management practices in the field."
+    },
+    {
+      "number": 403,
+      "title": "Soil Morphology Practicum",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Students develop field skills to describe soil morphology, classify soils, and make land use interpretations. SOILS 403 Soil Morphology Practicum (2 per semester/maximum of 4) SOILS 403 is an eight week course that provides students with the opportunity to: make detailed soil morphological descriptions and interpretations; evaluate soil properties and their suitability for different land uses; and observe various soils throughout the Northeastern U.S. SOILS 403 synthesizes techniques used to describe soil morphology and site characteristics, classify soils, and make land use interpretations. The field skills taught are highly applicable to those pursuing careers in fields of environmental studies, engineering, waste disposal, horticulture, landscape architecture, agricultural, forestry, consulting, and by those describing soils for research. Students also have the opportunity to try out for the Penn State Undergraduate Collegiate Soil Judging Team each fall."
+    },
+    {
+      "number": 404,
+      "title": "Urban Soils",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "This course introduces the student to natural and human-influenced soils. SOILS 404 Urban Soils (3) This course introduces the student to the management of soils in urban and suburban settings via comparisons in soil physical, chemical, and biological properties. The soil is also examined as the interface between the biotic and abiotic components of an urban site. Therefore, site management of soil during or following placement is examined in detail. Urban soil physical and chemical properties are discussed in terms of site stability. The interactions between stormwater management, erosion control, soil mechanics, and the soil's ability to support vegetation are examined in the context of sustaining urban environments. The soil design process is presented: site assessment, biophysical analysis, profile construction, specification formulations, and conformance testing and inspection protocols. Professional practical examples such as mine reclamation, brown field restoration, and landscape construction are presented to illustrate the process. The student completes a series of exercises to gain experience in soil examination, soil/land use interpretation, site assessment, soil erosion calculations and a group assignment that evaluates soil issues on a reclamation or construction project."
+    },
+    {
+      "number": 405,
+      "title": "Hydropedology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Soil and water interactions across scales, integrated studies of landscape- soil-water relationships, fundamental processes of water flow and chemical transport. SOILS (GEOSC) 405 Hydropedology (3)Hydropedology is the study of the fluxes, storages, pathways, residence times, and spatio-temporal organization of water in the root and deep vadose zones, and their relations to climate, ecosystem, land use, and contaminant fate. The aim is to characterize integrated physical, chemical, and biological processes of soil-water interactions across scales (including chemicals and energy transported by water flow). This course embraces interdisciplinary and multiscale studies of interactive pedological and hydrological processes in the earth's surface and subsurface environments. The course will address the fundamental issues and practical applications of hydropedology (as a sister discipline of hydrogeology). This course emphasizesin situsoils that have distinct characteristics of pedogenic features, structures, layers, and soil-landscape relationships in the real world. Students will gain an in-depth understanding of soil and water interactions across scales from point observations to watershed phenomena, and will gain skills in predicting flow pathways and water fluxes in the landscape. This course promotes active learning, critical thinking, and hands-on skills. Course format will consist of two lectures and one laboratory/field exercise each week. The course will utilize a network of local watersheds with different land uses for demonstrations and class projects. Grading will be based on weekly lab/field exercise (20%), class research project (40%), homework (10%), one midterm exams (15%), and one final exam (15%). Since hydropedology is linked to a wide array of environmental, ecological, geological, agricultural, and natural resource issues of societal importance, SOILS (GEOSC) 405 will support interdisciplinary training of students in Soil Science as well as in other disciplines of the College of Agricultural Sciences, especially Agricultural and Biological Engineering, Agronomy, and Forest Resources. Students in the College of Earth and Mineral Sciences, College of Engineering, Eberly College of Science, and the Intercollege Graduate Degree Program in Ecology also will find this course useful when undertaking research on the vadose zone, the hydrologic cycle, and the earth system."
+    },
+    {
+      "number": 412,
+      "suffix": "W",
+      "title": "Soil Ecology",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL11",
+              "BIOL127",
+              "BIOL110"
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to soil organisms; includes interactions between organisms, their processes, and metabolism with a major focus on microorganisms."
+    },
+    {
+      "number": 416,
+      "title": "Soil Genesis, Classification, and Mapping",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Lecture and laboratory course on the genesis of soils, their classification, mapping, and interpretation for land use. SOILS 416 Soil Genesis and Classification (3) The study of soil genesis, classification, and mapping examines the evolution of soils, their organization into natural units, and their distribution throughout the world. Physical, chemical, and morphological soil characteristics are studied both in the field and classroom and then used to classify soils. These classification units are in turn used to study the processes that influence soil development. Students acquire a detailed knowledge of the technical terminology of soil genesis and develop observational and analysis skills needed to describe and/or interpret soil morphologies in the context of the landscape a profile is found in. Students learn to recognize and explain soil genetic pathways due to current or past soil forming periods (as affected by climate change for example). Students also evaluate the effect of soil genesis on land use and management decisions, learn how to map soils at multiple scales, and deliver soil mapping information. The course is comprised of weekly lectures and a laboratory. Exercises in the field and laboratory are designed to further develop a student's ability to ascertain a natural soil's origin using the five soil forming factors. Field skills that will be refined over the course of the semester include profile description, site description, soil mapping, and measurement and characterization of soil physical and chemical properties. Upon completion of SOILS 416 , students will demonstrate: 1) deep understanding of fundamental soil processes that result in the genesis of soils around the world; 2) familiarity with soil analytical and testing protocols for common laboratory and field measurements used in studying the genesis of soils; 3) skills for interpreting soil profiles from the soil orders of the world; 4) accurate prediction of soil genesis pathways for a given landform; 5) the ability to interpret soil profile physical and chemical data, classify a soil according to US Soil Taxonomy, map soils to an order 1 level, and be able to apply soil profile information as gathered from the US Soil Survey program to make land use interpretations."
+    },
+    {
+      "number": 418,
+      "title": "Nutrient Management in Agricultural Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "BIOL11",
+                "BIOL12"
+              ],
+              "BIOL110",
+              "BIOL127",
+              "BISC3"
+            ]
+          }
+        ]
+      },
+      "description": "AGECO 418 / ANSC 418 / SOILS 418 Nutrient Management in Agricultural Systems is a senior-level course that applies the fundamentals of animal, plant and soil sciences to the issues and solutions in the area where livestock production intersects with water and air quality. Modern regionalization and concentration of animal production systems comes with environmental implications due to a net influx of nutrients to livestock farms. While some nutrients leave the farm in the form of animal products, 60 to 70% of the nutrients are excreted and applied to nearby crop land. If not properly managed these nutrients represent a risk to environmental quality. Students in this cross-listed course gain both scientific and practical understanding of sound nutrient management principals and strategies. The course considers big picture concepts such as nutrient cycling as well as farm-level implementations such as Nutrient Management Planning."
+    },
+    {
+      "number": 419,
+      "title": "Soil Environmental Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM112",
+          "SOILS101"
+        ]
+      },
+      "description": "Introduction to chemical constituents and processes occurring in soils. Topics include mineral weathering, soil solution chemistry and adsorption of solutes. GEOSC 418GEOSC 418 ( SOILS 419 ) Soil Environmental Chemistry (3) Upon completion of the course, the students will be able to identify the soil components and properties responsible for the chemical reactivity of soils and will know the fundamental chemical processes that occur in soils. The students will also be able to link theoretical concepts to real life environmental problems. The students will be evaluated on examinations, homework, and class participation. GEOSC 418 ( SOILS 419 ) is offered every Spring semester. Class limit: 25 students."
+    },
+    {
+      "number": 420,
+      "title": "Remediation of Contaminated Soils",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Basic principles and technical aspects of remediation of contaminated soils. SOILS 420 Remediation of Contaminated Soils (3) Remediation of contaminated soils is an introduction to the basic principles and techniques of remediation. Upon completion of this course, students will be able to determine what type of remediation technology needs to be used in real-world conditions depending upon the chemical nature and extent of contamination and learn about protocols for soil sampling and leach testing. They will learn about regulatory background and many different types of wastes that will be encountered in contaminated soils. Students gain knowledge of various cationic and anionic species of metal contaminants and how best to fix these using chemical fixation and solidification technique, which is an established remediation technology. In addition, they will learn about other established technologies such as on-site and off-site incineration and innovative technologies such as bioremediation, phytoremediation, vacuum extraction, thermal desorption, soil washing, solvent extraction, ex-situ supercritical oxidation, in-situ vitrification etc. They will be able to determine which technology is cost-effective for a particular contaminated soil. Students are evaluated through written testing of their understanding of basic remediation concepts and an oral presentation about a novel remediation technology through literature search. Soils 420 has no laboratory component."
+    },
+    {
+      "number": 422,
+      "title": "Natural Resources Conservation and Community Sustainability",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Conservation, land-use, and community (soil, water, air, plants, animals, and humans) impacting quality of life and sense of place. SOILS 422 provides the student with practical knowledge of community and natural resources conservation. The course covers symbiotic aspects of soil, water, air, plants, animals, and humans and their impact on the community. The course focuses on developing methods for the conservation and sustainable use of resources. This involves understanding the land ethic and developing a sense of place. Conservation awareness has grown in recent years. Originally, erosion control was the sole reason for conservation planning. Eventually water conservation also became a concern addressed by planning. We have now moved into an era of ecosystem-based planning, where soil health, water and air quality, sustainable communities, and much more are considered in conservation planning. This planning involves both natural and human resources. SOILS 422 covers understanding, designing, and developing best management practices (BMPs) for addressing resource conservation and maintaining sustainable farmland and communities. Calculating runoff and soil loss are researched and integrated into conservation planning as tools for establishing the need for BMPs. Resources and technologies are covered, such as soil surveys, geographic information systems (GIS), global positioning systems (GPS), and ground penetrating radar (GPR). Networking and partnerships are also covered to give the student a practical knowledge of the critical nature of teamwork. Additionally, workings and interactions between federal, state, and local organizations and agencies are explored. Land-use patterns, such as urban and suburban sprawl, mining, logging, and resource utilization are explored. Education is enhanced in the form of a community/sense of place project. This project utilizes classroom knowledge and incorporates student research into a practical plan for developing an appreciation and awareness for one's community. Throughout the course the various aspects of soil, water, air, plants, animals and humans are woven together to emphasize the importance of all decisions on the ecosystem. After completing SOILS 422 , the student will be equipped to make valuable and educated decisions to positively affect the community. Hands-on aspects of the course include various field trips to experience field conservation and community stability. At the end of the course the student will be able to evaluate effects of human activities on the landscape; make sustainable landuse decisions; determine the need for, and design best management practices; and develop a sense of place and describe individual roles and responsibilities in the community."
+    },
+    {
+      "number": 440,
+      "title": "Chemistry of the Environment: Soil, Water, and Air",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "CHEM110",
+                "CHEM111",
+                "CHEM112"
+              ],
+              "CHEM202",
+              "CHEM210"
+            ]
+          }
+        ]
+      },
+      "description": "This course is designed for junior and senior undergraduates with some previous chemistry background. The course will advance students¿ understanding of chemical concepts and link them to applications in environmental chemistry. The course focuses on topics in environmental soil chemistry such as: soil minerology, mineral weathering, sorption and ion exchange, chelation and complex formation, soil pH and acidic/alkaline soils, oxidation/reduction, soil salinity, soil biochemistry, and the dissolution/precipitation of common metals and compounds. The solid phase is emphasized, but solid/solution equilibria, aquatic chemistry, metals in the aqueous environment, and aquatic pollution will also be covered. The course also covers a detailed overview of stratospheric chemistry, tropospheric chemistry, and climate change."
+    },
+    {
+      "number": 450,
+      "title": "Environmental Geographic Information Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Use of geographic information systems (GIS) and digital spatial databases to characterize landscapes for environmental assessment and management."
+    },
+    {
+      "number": 489,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Participate with instructors in teaching an undergraduate soil science course; assist with teaching and evaluation and with development of instrucitonal materials."
+    },
+    {
+      "number": 494,
+      "title": "Undergrad Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Independent study directed by a faculty supervisor that culminates in the production of a SOILS honors thesis The course involves research and other scholarly activities (such as writing) necessary for completion of an approved SOILS honors thesis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in-depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 502,
+      "title": "Soils Properties and Functions",
+      "credits": 3,
+      "description": "Introduction to soil science for graduate students including fundamentals of and applications to plant production and environmental sustainability. SOILS 502 Soils Properties and Functions (3)This course provides an introduction to soil science, emphasizing the three areas of biological, chemical and physical properties of soils. It is intended as an introductory course in soil science for graduate students whose work would benefit from background knowledge of soil science but who have not previously been exposed to the science of soils as an undergraduate. As a graduate course, the pace of learning will be rapid, and the material covered will be quite comprehensive. The breadth of material is comparable to that covered in an undergraduate introduction to soil science, but with greater depth. The class will incorporate a substantial level of experiential components, including chemical analysis lab practice overview, some labs for gaining insight into physical properties, and field trips to help students gain an appreciation of how soils are influenced by, and also influence, the landscape in which they exist. Landscape visits with guided discussions, research proposal development and analysis, and selected soil management problem analysis provide students opportunities to synthesize classroom and textbook based material. Students will be evaluated based on quizzes, exams and written assignments."
+    },
+    {
+      "number": 504,
+      "title": "Unsaturated Zone Hydrology and Chemical Transport",
+      "credits": 3,
+      "description": "Recommended Preparations: At least one undergraduate course in Mathematics and in Chemistry. GEOSC 452 This course provides the theoretical basis for and mathematical description of the transport of water and chemicals through the unsaturated zone between the soil surface and the regional water table. This zone is frequently referred to as the vadose zone. In particular, the course investigates the solutions to problems involving the transport of water and chemicals through the vadose zone, such as might be the case when attempting to predict direction and rate of a contaminant spill, or to determine the length of time required for contaminant remediation, or to protect buried waste from infiltrating water. Students will recognize parameters required in order to develop solutions to identified problems, will identify means to obtain values of the needed parameters, and will develop model solutions in order to gain insight into expected outcomes of proposed solutions."
+    },
+    {
+      "number": 507,
+      "title": "Soil Physics",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Soil physical properties emphasizing water, heat, gas, and ion movement in unsaturated soils. Laboratory included with 4 credits."
+    },
+    {
+      "number": 510,
+      "title": "Geographic Information System Applications",
+      "credits": 3,
+      "description": "Soil data bases, image processing, and geographic information systems will be used to model and understand land and water resources."
+    },
+    {
+      "number": 512,
+      "title": "Environmental Soil Microbiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BMB401"
+        ]
+      },
+      "description": "Biology and ecology of microorganisms in terrestrial environments; microbiological and molecular analysis methods; microbial processes in carbon and nitrogen cycling. SOILS 512 Environmental Soil Microbiology (3) Environmental Soil Microbiology ( SOILS 512 ) examines the major groups of microorganisms and their processes and interactions in terrestrial systems, with an emphasis on carbon and nitrogen cycling. Students will obtain an overview of the biology, ecology, and functions of bacteria, archaea, and fungi in soils, rhizospheres, sediments, and organic wastes. This course is intended for students interested in spatial and temporal distribution and activities of microorganisms in the environment, as well as in appropriate methods for analyzing microbes in environmental samples. Course format will consist of two weekly lectures, each followed by a 25 -min discussion period. Class discussions will include exercises and reviews of recent literature on classical and molecular soil/environmental microbiology. Grading will be based on participation in class discussions (20%), two midterm exams (20 % each), one final take-home exam (20%), and a 10-page research proposal to be presented to the class in late April (20%). SOILS 512 will support interdisciplinary training of graduate students in Soil Science as well as in other disciplines of the College of Agricultural Sciences, especially Plant Pathology, Horticulture, Entomology, and Agricultural and Biological Engineering. Graduate students in the Intercollege Graduate Degree Program in Ecology (IGDPE), College of Earth and Mineral Sciences, Eberly College of Science, and College of Engineering also will find this course useful when undertaking research on systems involving microorganisms (e.g., biogeochemistry, plant or animal systems, or environmental engineering). Course will be offered every other spring semester with an anticipated enrollment of 20 students per class."
+    },
+    {
+      "number": 513,
+      "title": "Soil Environmental Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM450"
+        ]
+      },
+      "description": "Chemical constituents and processes occurring in soils. Discussion of soil components, reactions at the solid-solution interface, and soil chemical processes."
+    },
+    {
+      "number": 516,
+      "title": "Soil Genesis",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "previous": [
+          "SOILS416"
+        ]
+      },
+      "description": "Field trip to study the genesis, classification, and geomorphology of the major soils of the northeastern United States."
+    },
+    {
+      "number": 519,
+      "title": "Nature of Soil Minerals",
+      "credits": 3,
+      "description": "Constituent minerals of soils: modern methods for identification; relations to soil formation and agricultural practices."
+    },
+    {
+      "number": 536,
+      "title": "Topics in Biogeochemistry",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "This seminar addresses chemical interactions between the biosphere and the physical environment over Earth's history and as impacted by humans. This course will provide a broad survey of biogeochemical principles, and offer a community-building experience for students with biogeochemical interests from diverse departments. Students will complete the course with a synthetic knowledge of the key topics in the field of biogeochemistry. Each week we will focus on a topic within the broad field of biogeochemistry such as: origins of the elements, reactions in the atmosphere, soil development, the distribution of redox reactions and microbial metabolic pathways, and the global cycles of carbon, water, nitrogen, phosphorus, sulfur, mercury, and perhaps other elements. For each topic, we will focus on the questions: What is known or can be observed? How is this information used to understand biogeochemical phenomena and process? How are these processes scaled over time and space? What are emerging and important questions in the subspecialties of biogeochemistry?"
+    },
+    {
+      "number": 571,
+      "title": "Ecosystem Nutrient Cycles",
+      "credits": 3,
+      "description": "Ecological theory and applications related to water, carbon, nitrogen, phosphorus, and cation cycling in managed and unmanaged terrestrial ecosystems. SOILS 571 Ecosystem Nutrient Cycles (3)This course is designed to benefit basic and applied environmental scientists that want to understand how nutrients cycle in terrestrial ecosystems. Students will develop knowledge of the biologically important nutrient cycles in terrestrial ecosystems, including linkages between nutrient cycling and energy (carbon) and water flow. The material covers the major theoretical advances in ecosystem ecology and applications of ecosystem theory to environmental management and problem solving. The water, carbon, nitrogen, phosphorus, and nutrient cation cycles will be covered. For each nutrient, inputs, outputs and internal cycling in plants and soils are discussed. Class time will include a mixture of lectures, discussions of primary literature and case studies, and group projects. Each student will write a paper on a topic related to their research that will be reviewed by student peers. Field and laboratory experiences will expose students to methods used by ecosystem ecologists. Students will complete the class with an understanding of: (1) classic and contemporary theories of nutrient cycling at the ecosystem scale, 2) variability in nutrient cycling among the major unmanaged and managed ecosystem types, 3) ecosystem responses to natural disturbance and human management, and 4) common and cutting-edge methods of ecosystem analysis."
+    },
+    {
+      "number": 589,
+      "title": "Critical Zone Science Seminar",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "This course will explore the foundations, discoveries, and applications linked to the Critical Zone concept through primary literature, class discussions, and original student projects. We will start by spending one week each on the four foundational science domains that are woven together to make Critical Zone science: hydrology, geoscience, soil science, and ecology. Then we will spend several weeks highlighting key discoveries that arise from the interdisciplinary Critical Zone perspective. The end of the class explores whether the Critical Zone science perspective might have useful applications for land and water management. Throughout the class, students take a co-leadership role with the instructors in terms of selecting readings, lecturing, and designing active learning allied with key concepts."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "WFS590"
+      ],
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "NO DESCRIPTION."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "NO DESCRIPTION."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience In College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "GRADUATE STUDENT INVOLVEMENT IN PREPARATION, PRESENTATION, AND EVALUATION OF COURSE MATERIALS FOR UNDERGRADUATE FORMAL COURSES."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off-Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "NO DESCRIPTION."
+    },
+    {
+      "number": 804,
+      "title": "Soil Ecosystem Analytical Techniques",
+      "credits": 3,
+      "description": "SOILS 804 is a three-credit quantitative laboratory instrumentation course that is designed to give students a deeper understanding and application of modern laboratory instrumental techniques for the isolation, identification, detection, and quantitation of soil ecosystem chemical substances. Upon completion of the course, students should be well versed in appropriate techniques used to collect and process a sample and measure the chemical constituents and assess the condition of soil ecosystems: soil gases; soil inorganic and organic solids, and soil solutions/digests/extracts. Instrumental techniques covered in the course include spectroscopic, chromatographic, spectrometric, electrochemical, and thermal methods for soil ecosystem measurements. As such, the course has laboratory and lecture components. In the lectures, students learn good laboratory practices, sampling and sample processing and preparation methods, selection of analytical instruments and the chemical and/or physical principles exploited during the measurement, how the instrument performs the measurement and some of the techniques used to increase accuracy, precision, sensitivity, selectivity, and measurability. In the laboratory, students will put the theory and principles into practice by performing various analytical experiments designed to provide examples of the usefulness of selected instruments or techniques in a way that will enable the student to understand and operate a wide range of other related instruments for soil ecosystem analyses. Thus, while the laboratory experiments and demonstrations will illustrate some of the applications of the instruments, students will be expected to develop a deep understanding of the advantages and disadvantages of different instrument analytical techniques in terms of their usability, sensitivity, cost, and other parameters with emphasis on the applicability and complementarity of different techniques to soil ecosystem chemical measurements."
+    },
+    {
+      "number": 896,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects with a professional orientation, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

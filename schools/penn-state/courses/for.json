@@ -1,0 +1,843 @@
+{
+  "subject": "FOR",
+  "courses": [
+    {
+      "number": 123,
+      "suffix": "N",
+      "title": "Forests, Trees, and People",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER"
+      ],
+      "description": "This course focuses on the relationships among forests, trees, and people. Trees are the building blocks of forests, so the course begins with an introduction to how trees work: how do they grow? how do they use water? how do they store carbon? how do they reproduce? how do people and wildlife use trees? From there the course moves on to forest ecosystem services such as timber and non-timber products, carbon storage, watershed protection, and cultural connection. How are ecosystem services measured and how does society place monetary and non-monetary values on the services? The diversity of relationships between people and forests is discussed throughout the course, and common professions centered around trees and forests are introduced."
+    },
+    {
+      "number": 150,
+      "suffix": "S",
+      "title": "First-Year Seminar",
+      "credits": 2,
+      "attributes": [
+        "FYS"
+      ],
+      "internalEquivalents": [
+        "WFS150S"
+      ],
+      "description": "The objectives of this first-year seminar course are to: (1) Engage and prepare first-year college students for academic success by orienting them to the scholarly community and introducing them to available academic resources. (2) Introduce students to Pennsylvania's forests and some of the research and other activities currently underway at Penn State that supports the conservation and management of these resources. (3) Introduce students to strategies they can use while at Penn State to prepare for careers related to forestry, wildlife/fisheries, and other natural resources disciplines."
+    },
+    {
+      "number": 200,
+      "title": "The Profession of Forestry",
+      "credits": 1,
+      "description": "Introduction to the profession of forestry and related career opportunities."
+    },
+    {
+      "number": 201,
+      "suffix": "N",
+      "title": "Global Change and Ecosystems",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER"
+      ],
+      "description": "Ecosystems across the planet are facing unprecedented pressures and changes as society seeks to support continued population growth and increasing standards of living. The course provides students with a general understanding of global change, ecosystems, and linkages among them. This course: 1) Surveys the diversity of Earth's ecosystems, considering life on land and water and linkages among terrestrial and aquatic ecosystems. 2) Explores human drivers of global change, including climate, land use, and pollution. 3) Presents major environmental issues confronting humanity and the natural world. 4) Considers ecosystem and societal responses to climate change. 5) Considers options for mitigating and adapting to climate change in ecosystems, toward sustainability. 6) Develops critical thinking skills, considering the many relationships between society and natural systems."
+    },
+    {
+      "number": 203,
+      "title": "Field Dendrology",
+      "credits": 3,
+      "description": "Field identification of native and introduced trees and shrubs. FOR 203 Field Dendrology (3) This course establishes the basic skills of woody plant and tree species identification necessary for students of natural resource management, ecology, and natural history. The objectives of the course are for students to 1) recognize many of the common woody plant species encountered in Pennsylvania (and the region) and the taxonomic traits used in their identification, 2) employ the diagnostic skills useful for woody plant identification, including the use of dichotomous keys, and 3) identify resources for identification and continued study of woody plants in Pennsylvania and the region. This field-based course introduces native, ornamental, and invasive woody plant species in a diversity of landscapes including forested, urban, suburban, and riparian areas."
+    },
+    {
+      "number": 204,
+      "title": "Silvics and Forest Dynamics",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
+        ]
+      },
+      "description": "Foresters are tasked to manage and/or restore forest ecosystems to sustain the provision of ecological goods (e.g., timber and non-timber forest products) and services (e.g., water, habitat, carbon sequestration). To successfully achieve these objectives, it is essential to know the life history and characteristics of trees (silvics). Specifically, knowledge about tree (co-)occurrences in forest communities, their tolerances and growth responses to different environmental conditions, their life history traits regarding different disturbance regimes, and their interactions that shape stand dynamics and stand development pathways, is prerequisite for practicing silviculture and forestry. This course is designed for forestry and wildlife professionals, conservation biologists, and natural resource professionals interested in the silvics of forest trees and stand dynamics of different forest types across North America as the scientific foundation for implementing sustainable forest management. The course is intended to lay the foundation for developing critical thinking skills linking silvics, site factors, and disturbances to multiple stand development pathways."
+    },
+    {
+      "number": 228,
+      "title": "Chainsaw Safety, Maintenance, and Operation in Forest Management",
+      "credits": 1,
+      "description": "This course covers the detailed use of the modern chainsaw. The course begins with safety and personal protective equipment (PPE), Occupational Safety and Health Agency (OSHA) regulations, saw selection, and an introduction into safe saw handling skills and techniques. The course then transitions to saw maintenance and proper care of the chainsaw, and then to a hazard recognition, mitigation, and avoidance component that addresses both the work site and the resource being harvested and processed. Once these objectives have been understood, the remaining two-thirds of the course focuses on the practice of chainsaw handling skills and techniques that are necessary for safe operation. This course has an extensive hands-on, experiential learning component in actual tree-felling and processing in the forest, including on-site discussion of harvesting as a forest management tool. The course concludes with training in proper log manufacturing, including scaling and grading of the harvested resource. Efficient recovery of the timber resource that minimize damage on the residual stand is emphasized. (In the B.S. program in Forest Ecosystem Management, this course counts only as an Elective.)"
+    },
+    {
+      "number": 242,
+      "title": "Elements of Project Supervision in Forestry",
+      "credits": 3,
+      "description": "Supervisory techniques developed through an understanding of the behavioral sciences applied to field forestry personnel management."
+    },
+    {
+      "number": 255,
+      "title": "GPS and GIS Applications for Natural Resources Professionals",
+      "credits": 3,
+      "description": "FOR 255 GPS and GIS Applications for Natural Resources Professionals (3) FOR 255 , GPS and GIS Applications for Natural Resources Professionals, teaches students to apply Global Positioning Systems (GPS) and Geographical Information Systems (GIS) in the management of natural resources. Students learn how GPS works and how to use GPS to find locations in the field and to capture spatial data and transfer it to a GIS system. Students learn how GIS data are structured and how to find, use and edit existing GIS databases and to create new ones. They learn to use various software applications to work with and analyze GIS databases, including both spatial and non-spatial data, to address a variety of natural resources management questions and issues. Finally, they learn to present spatial information in a map that effectively communicates information relevant to a variety of natural resources situations."
+    },
+    {
+      "number": 266,
+      "title": "Forest Resources Measurements",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "FOR255",
+              "FORT260",
+              "WILDL211"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
+        ]
+      },
+      "description": "This course focuses on the collection, analysis, and presentation of quantitative and qualitative data that describe forest resources and are used in the management and stewardship of forest resources. Sampling techniques, procedures, and equipment used to measure trees and forest parameters, including various forest products, are covered, as is statistical analysis of data. Students learn how the data provides the basis for making informed, science-based management decisions concerning the growth, health, and/or volume of forest resources."
+    },
+    {
+      "number": 295,
+      "title": "Forestry Internship",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Supervised field experience related to the student's major."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 297,
+      "suffix": "G",
+      "title": "Special Topics - GenEd",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "GN"
+      ],
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 303,
+      "title": "Herbaceous Forest Plant Identification and Ecology",
+      "credits": 3,
+      "description": "This course focuses on developing herbaceous plant identification skills with emphasis on important plant structural features, common taxonomic terms, dichotomous keys, and botanical nomenclature. This course provides a practical, applied approach to understanding biological and ecological concepts relevant to plants occurring in forested environments. Human dimensions and ethnobotany, and relevant economic, management, and conservation issues are also included, along with the methods by which botanists collect and preserve plant specimens for historical documentation and research purposes."
+    },
+    {
+      "number": 308,
+      "title": "Forest Ecology",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
+        ]
+      },
+      "description": "FOR 308 FOR 308 Forest Ecology (3)This class will provide the basic concepts of forest ecology and silvics. The class will emphasize (a) community concepts such as sampling, succession, productivity, disturbance, and animal factors, (b) ecosystem concepts such as nutrient and energy cycles and plant-soil relationships, and (c) environmental factors such as light, temperature, moisture, and pollution, and their effects on individual tree species and community structure and function. Other special topics of interest (allelopathy, seed behavior, tropical forests, etc.) will be included as time permits. The class will also include a field component that allows students to observe the effects of various conditions or treatments on forest community structure and growth, and to practice field methods commonly used to measure site factors and environmental processes in forest communities."
+    },
+    {
+      "number": 320,
+      "title": "Wildland Fire Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide the fundamentals of wildland fire behavior and effects as they relate to natural resource management. The role of fuels, weather, and topography on fire behavior will be covered in depth, and fire behavior and effects models will be used. The ecological role of fire will be examined through the concept of fire regimes and fire adaptations, and students will be introduced to prescribed burning as a land management tool."
+    },
+    {
+      "number": 350,
+      "title": "Forest Ecosystem Monitoring and Data Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
+        ],
+        "minGrades": {
+          "STAT200": "C",
+          "STAT240": "C",
+          "STAT250": "C"
+        }
+      },
+      "description": "Quantitative approaches for characterization, monitoring, and comparison of forest ecosystems. FOR 350 Forest Ecosystem Monitoring and Data Analysis (3) The overall goal of this course is to provide students with opportunities to develop a quantitative approach to the management and conservation of forest ecosystems. The course Comprises three sections, each of a different length. The first section reviews descriptive statistics and basic concepts needed to understand sampling design in the context of forest ecosystem monitoring and data analysis. The second section addresses concepts and steps for designing a monitoring plan, and sampling designs for forest ecosystem monitoring. Sampling designs discussed include (but are not limited to): simple and stratified random sampling, double sampling, and cluster sampling. The third section covers data analysis and modeling tools. Students are expected to know two-sample inference, correlation analysis, analysis of variance and linear regression. The focus of this third section is on the application of these to forest ecosystem issues. The course also covers concepts of statistical model development, selection, and evaluation. Students will develop an understanding of strengths and limitations of using statistical models for forest ecosystem management and conservation. Finally, a broad overview of spatial statistical analysis will be offered. The objective is for the students to know about available tools and be able to look for more information. Major emphasis is placed on case studies and real-world data."
+    },
+    {
+      "number": 370,
+      "title": "Watershed Ecohydrology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOILS101"
+        ]
+      },
+      "description": "Watershed Ecohydrology is an interdisciplinary scientific field that studies the interactions between water and ecological systems. This course presents foundational concepts in ecohydrology of watersheds, considers coupled hydrological and ecological processes that shape water quality and watershed health, and explores ecohydrology as a tool for the sustainable management of freshwater resources. Examples will be drawn from forested watersheds at multiple spatial and temporal scales."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 401,
+      "title": "Urban Forest Management",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Nature's role in community development, landscapes, arboriculture, administering urban forestry programs, land-use planning and regulatory policy, open-space conservation, civic environmentalism. The purpose of this course is to provide a broad exploration of planning for and managing trees and natural landscapes to support development of community. Healthy natural resources such as air, water, soil, and vegetation are critical components of community development. Students will explore arboriculture practices, goal-oriented urban forest management, land use planning and regulatory policy, and civic environmentalism. They will learn about ecosystem services of trees and landscapes; arboricultural practices including tree planting in urban areas, tree pruning, tree risk assessment, and amenity tree valuation; policy development and analysis including street tree ordinances and municipal tree commissions; street and park tree assessments and inventories; development of community tree plans and goal oriented urban forest management; land use planning and regulatory policy to conserve natural resources including zoning, subdivision and land development ordinances, comprehensive plans, and open space conservation; civic environmentalism and volunteerism; and conflict resolution. This course will provide students a practical understanding of planning for, and managing, trees and other natural resources associated with human communities."
+    },
+    {
+      "number": 403,
+      "title": "Invasive Forest Plants: Identification, Ecology, and Management",
+      "credits": 3,
+      "description": "This course addresses the impacts and challenges associated with \"exotic\" plant invasions in eastern North American forests through an interdisciplinary exploration of topics including invasive plant identification and management, ecological interactions and impacts, human roles and influences, and management and policy options. Students are also exposed to a variety of scientific and societal perspectives related to monitoring, managing, and controlling invasive plants."
+    },
+    {
+      "number": 409,
+      "title": "Tree Physiology",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "BIOL127"
+            ]
+          }
+        ]
+      },
+      "description": "Fundamentals of the relationship of the basic physiological functions of forest trees to form. Tree Physiology is the study of how trees grow and develop in terms of genetics; biochemistry; cellular, tissue, and organ functions; and interaction with environmental factors. While many physiological processes are similar in trees and other plants, trees possess unique properties that help determine their outward appearance. These processes include carbon relations (photosynthesis, carbohydrate allocation), cold and drought resistance, water relations, and mineral nutrition. The characteristics of trees that define their physiology are longevity, height, and simultaneous reproductive and vegetative growth. Trees have physiological processes that are more adaptable than those in other plants. Height allows trees to successfully compete for light, but also creates transport and support problems. This course investigates the anatomy, morphology and physiology of growth, development, and responses of woody plants with particular consideration of the influence of environmental factors on physiological processes. To develop an understanding of tree physiology the following topics will be presented: Organization, development, and function of woody plant tissues Photosynthesis, respiration, and assimilation in forest trees Water relations and mineral nutrition. Tree growth responses to atmospheric and soil condition. Physiology variation among tree species. Herbicides and tree physiology. Methods and tools of tree physiology research."
+    },
+    {
+      "number": 410,
+      "title": "Elements of Forest Ecosystem Management",
+      "credits": 3,
+      "description": "Changing public attitudes towards the environment during the last several decades have led to a philosophical shift in how we manage our forests. The primary focus of a sound stewardship of many of our public forests has now shifted to the recognition that sustaining ecological integrity of forest ecosystems, including the maintenance and restoration of native biological diversity, may be more important than focusing primarily on commodity production. Ecosystem management has become policy on national forests managed by the U.S. Forest Service and Pennsylvania state forests managed by the Pennsylvania Department of Natural Resources. This course invites students to critically examine the concept of ecosystem management from an ecological, economic, and social perspective, Students will review the evolution of ecosystem management and learn how it is being implemented. Basic questions addressed in this course include: What is ecosystem management? How can concepts such as biodiversity preservation, ecosystem integrity, sustainability, and forest health be achieved in forested landscapes? How can human needs be balanced with ecological goals? How can competing societal goals be balanced? This course is designed for forestry majors and places contemporary management approaches into the larger ecosystem context that uses knowledge of forest history, landscape ecology, conservation biology, forest restoration, and forest certification requirements to develop management solutions that pay particular attention to the maintenance of biodiversity (habitat) and soils. Forest management approaches are investigated with regards to the issue of long-term sustainability, recognizing the often challenging and conflicting demands on forestry to satisfy a diverse set of values given ecological, social, and economic constraints."
+    },
+    {
+      "number": 418,
+      "title": "Agroforestry: Science, Design, and Practice",
+      "credits": 3,
+      "attributes": [
+        "US",
+        "IL"
+      ],
+      "description": "Agroforestry integrates trees in agricultural landscapes, and/or agriculture products into forested areas for multiple benefits. FOR 418 Agroforestry: Science, Design, and Practice (3) (US;IL) Agroforestry is the intentional design of land use systems that combine tree crops with plants and/or animals in a manner that seeks to promote ecological and economic benefits within the landscape. Two possible arrangements for such systems are (1) the integration of trees within non-forested settings; and/or (2) the introduction of high value 'crop' species into existing forestlands. The objective of the course is to foster a practical working knowledge of agroforestry as it is experienced both in Pennsylvania and throughout the world, so that students from a variety of backgrounds can integrate agroforestry practices and thinking into their own disciplines, interests, and lives. Although agroforestry is an ancient land use approach, it is new in many places, and improvements and adaptations to traditional practices are needed to meet local circumstances. This course will provide a framework for critical assessment and implementation within this context.One of the fundamental aspects of agroforestry is that it is a land use system that operates at a landscape or ecosystem scale. For agroforestry to succeed, many factors, including ones external to the agroforestry practice itself must be considered. Therefore the course is interdisciplinary in nature and topics in ecology, economics, sociology, and policy that are related to agroforestry practices will be discussed. In evaluating the students, the primary emphasis is on class discussion. Students will be expected to review and discuss papers and contribute to the ongoing dialogue and debate about agroforestry as a sustainable land use. Students will be required to carry out critical reviews of agroforestry papers and publications as well as design and develop an agroforestry project pertinent to their individual field of interest and expertise. The course will be offered every Spring semester."
+    },
+    {
+      "number": 421,
+      "title": "Silviculture: Applied Forest Ecology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR266",
+              [
+                "FORT105",
+                "FORT110",
+                "FOR308"
+              ]
+            ]
+          }
+        ],
+        "minGrades": {
+          "FOR266": "C",
+          "FORT105": "C",
+          "FORT110": "C",
+          "FOR308": "C"
+        }
+      },
+      "description": "This course explores the methods available to apply ecological concepts to actively manage forested ecosystems for a variety of societal objectives. It addresses methods used to blend the maintenance of biodiversity in forest ecosystems with extraction of commodities under the paradigms of Ecosystem Management and Ecological Forestry. Course objectives include gaining the ability to 1) apply silvicultural terminology and basic ecological concepts as they relate to forest development and silvicultural practices, 2) predict how silvicultural practices influence soil resources, water issues, forest health, timber production, wildlife habitat, and biodiversity, 3) integrate ecological and social considerations into silvicultural practices, and 4) employ silvicultural concepts to actual forest stands by developing silvicultural prescriptions. Topics include silvicultural systems, silvics, cover types, soil, habitat types, ecological classification systems, growth and yield, stand descriptions, crown classes, the site index, release, precommercial thinning, wood quality and pruning, herbicides and vegetation management, commercial thinning, crop tree management, stocking charts, maintaining forest health, natural and anthropogenic disturbances, forest stand dynamics, succession, regeneration inventories, managing for complexity, natural regeneration, seed-tree and shelterwood methods, uneven aged silviculture (selection and control methods), coppice, irregular shelterwood, deer browsing, clearcutting, site preparation, direct seeding, planting, ecosystem management across different scales, prescribed fire, and management techniques that maintain critical ecosystem processes and components such as soil, water, and wildlife. This is a core course in forestry, although it is also designed for wildlife professionals, conservation biologists, and natural resource professionals interested in the scientific foundation and practical application and implementation of forest management techniques. Whereas the disciplines of ecology and conservation biology help us understand the biological consequences of human manipulation, it falls upon the field of silviculture to balance the often conflicting demands between ecological integrity and society's demand for forest products in practice."
+    },
+    {
+      "number": 430,
+      "title": "Conservation Biology",
+      "credits": 3,
+      "internalEquivalents": [
+        "WFS430"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL220W",
+              "FOR308"
+            ]
+          }
+        ]
+      },
+      "description": "The application of biological principles to issues in the conservation of biodiversity. FOR (W F S) 430 Conservation Biology (3) This course applies basic principles of ecology and genetics to issues regarding the conservation forested ecosystems and their associated fisheries and wildlife. The objective of this course is to provide a broad appreciation of the concepts in conservation biology that are important to solving contemporary natural resources problems. Students will be exposed to the history of conservation biology, values of biodiversity, definitions of species concepts, protecting the genetic structure of species, extinction as a natural process, vulnerability to extinction, biodiversity at the community, ecosystem, and landscape levels, habitat fragmentation, metapopulations, legal aspects of conservation, ecosystem management, exotic species, pollution, human population issues, measuring genetic diversity, attitudes towards nature, ex-situ conservation, and ecosystem restoration."
+    },
+    {
+      "number": 431,
+      "title": "Conservation Genetics",
+      "credits": 3,
+      "internalEquivalents": [
+        "WFS431"
+      ],
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "This course will provide a comprehensive overview of evolution and conservation genetics, an interdisciplinary science that focuses on understanding the processes that influence genetic diversity at the individual and population levels. Foundational concepts in evolutionary ecology, population, and quantitative genetics, and tools described therein will be applied to conservation design, management, and restoration strategies for species of conservation or commercial importance to address real-world challenges in conservation science. This course will cover issues including inbreeding, climate change, invasive species, conservation of threatened and endangered species, adaptation and climate change, and habitat restoration using examples from a broad range of biological systems."
+    },
+    {
+      "number": 439,
+      "title": "Timber Sale Administration",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "FOR203",
+                "FOR266"
+              ],
+              [
+                "FORT105",
+                "FORT110"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This course provides hands-on experience with all of the activities associated with overseeing a timber sale, including the legal aspects of arranging a sale, marking timber and calculating volume, road and sale layout, best management practices, inspections, harvesting equipment, working with contractors and loggers, and liability issues. The objectives of the course are to 1) obtain and translate a property deed onto the ground and create a professional map of the timber sale area; 2) design a timber sale, including cutting boundaries, skid trails, haul roads, and landings such that site impact is minimized, harvesting efficiency and safety is maximized and productivity is maintained; 3) collect sufficient information for a professional timbersale prospectus, including which harvesting systems would be best suited to the situation; 4) complete an erosion and sedimentation plan, a stream crossing permit, and local harvesting ordinance requirements; 5) develop a timber sale contract and a landowner-consultant contract to protect all parties and address all possible legal scenarios; 6) work with, inspect, supervise and provide meaningful feedback to harvesting, road building, and herbicide application contractors; 7) retire a timber sale area to prevent erosion, create habitat variety and/or recreational opportunities, and maintain aesthetic qualities."
+    },
+    {
+      "number": 440,
+      "title": "Forest and Conservation Economics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104",
+              "AGBM101"
+            ]
+          }
+        ]
+      },
+      "description": "This course focuses on economic and financial concepts and tools used in managing forests and natural resources. Specifically, students will: a) use financial tools including cost-benefit analysis to analyze forest investments, b) recognize forest-related business operations and management issues, c) apply economic principles to forest and natural resource management decisions including environmental and nonmarket valuation methods, and d) discuss current issues in forest management and economics such as climate change, bioenergy and tropical deforestation. Students will carry out a case study of a forest-related business."
+    },
+    {
+      "number": 442,
+      "title": "Forest Conservation: Principles and Practices",
+      "credits": 3,
+      "description": "Forest conservation is the promotion and maintenance of healthy, resilient, and functioning forest ecosystems that ensure the continued provision of high-quality ecosystem services and socio-economic benefits. To achieve desired conservation outcomes, on-the-ground forest practices must comply with minimum standards detailed in regulatory and/or voluntary management guidelines (i.e., Best Management Practices, BMPs) to not be harmful to the environment or local people. Further, many private and public forest management entities follow voluntary global and national third-party forest certification schemes that promote environmentally responsible management of the world's forests. Compliance with certification standards is evaluated through annual field audits as the central element to verify that forest operations meet sustainability criteria. Because timber harvesting now constitutes the predominant disturbance regime in northeastern forests, poorly planned, timed, and executed logging operations constitute the most serious threat to forest conservation and sustainability in managed forests and thus receive particular scrutiny in field audits. Foresters must therefore ensure that forest practices do not injure advance tree regeneration and ground flora, damage structural legacies such as residual trees and deadwood, reduce the potential to sequester carbon, undermine biodiversity and wildlife goals (e.g., breeding success), or adversely affect soil structure and site productivity (e.g., compaction and soil erosion), water quality, wetlands, riparian areas, visual quality, and cultural and spiritual values. This course traces the evolution of forest conservation and sustainability and introduces students to modern, low impact timber harvest systems and a variety of other forest practices intended to safeguard biodiversity, maintain the productive capacity of forests, and protect soil and water resources. Students will become familiar with BMPs and principles, criteria, and sustainability indicators of common certification schemes. These indicators are the basis for planning and conducting field audits following harvesting operations that evaluate to what extent the intent various BMPs and certification standards have been met."
+    },
+    {
+      "number": 445,
+      "title": "Wildlife Habitat Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR203",
+              "FORT150"
+            ]
+          }
+        ]
+      },
+      "description": "This course covers concepts of wildlife habitat ecology and management. Topics include the relationship between wildlife and their habitat, identification of important plant structure and composition, quantifying vegetation structure at both stand and landscape scales, understanding disturbance ecology as a basis for habitat management practices (e.g., silvicultural applications and prescribed burning), and determining how specific management practices can be used to achieve future habitat goals and objectives."
+    },
+    {
+      "number": 450,
+      "suffix": "W",
+      "title": "Human Dimensions of Natural Resources",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Addresses human needs and desires, from individuals to nations, for social, ecological, and economic benefits derived from natural resource decisions."
+    },
+    {
+      "number": 455,
+      "title": "Remote Sensing and Spatial Data Handling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR255",
+              "FORT260",
+              "GEOG160",
+              "GEOG260",
+              "WILDL211"
+            ]
+          }
+        ]
+      },
+      "description": "FOR 455 is an advanced remote sensing and geospatial technology course emphasizing the use of remote sensors and geographic information systems to study the Earth's land surface. The course emphasizes the use of these technologies primarily in the context of forestry but also in the broader context of natural resources management. Remote sensing technologies that are emphasized include aircraft and satellite-borne sensors in the visible and near-infrared portions of the electromagnetic spectrum, as well as active sensing devices like lidar (Light-detection and Ranging) technology. Students gain proficiency in the use of advanced remote sensing/image processing and geographic information systems (GIS) software to display, analyze, and map land surface features."
+    },
+    {
+      "number": 465,
+      "title": "Restoration Ecology",
+      "credits": 4,
+      "internalEquivalents": [
+        "WFS465"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "FOR203"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "BIOL220W",
+              "FOR308"
+            ]
+          }
+        ]
+      },
+      "description": "Restoration ecology is a discipline that integrates principles from ecology, engineering, landscape architecture, economics and other select social sciences to repair ecosystems that have been degraded, damaged, or destroyed. The goal of restoration is to restore the structure of biological communities and the ecological functions and ecosystem services they provide to society. This course will cover the field of restoration ecology for students who see themselves someday practicing or participating in restoration projects during their careers. The course will cover the conceptual and theoretical foundations that underlie restoration efforts and link these to real-world applications in past and ongoing restoration projects in a variety of types of ecosystems. Examples of local and regional restoration projects will be used to reinforce principles discussed in class."
+    },
+    {
+      "number": 466,
+      "suffix": "W",
+      "title": "Forest Management and Planning",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FOR255",
+              "FORT260",
+              "WILDL211"
+            ]
+          },
+          "FOR421",
+          "FOR440"
+        ]
+      },
+      "description": "Students learn the rationale, processes, and tools for forest management decision-making and planning. Developing and communicating forest plans for forested properties. FOR 466W Forest Management and Planning (3) Students learn the rationale, processes, and tools for forest management decision-making and planning. They learn to identify and obtain information needed for management decision-making and planning. They learn to develop management alternatives and to use appropriate data and tools to evaluate those alternatives. Students learn to apply financial analysis to evaluate the financial viability of stand-level forest management activities. Students develop and write forest management plans for small (< 250 acres) and large (> 250 acres) forested properties. Students identify how alternative forest management objectives are balanced in developing management plans. Students evaluate and critique public agency forest management plans."
+    },
+    {
+      "number": 470,
+      "title": "Watershed Management",
+      "credits": 3,
+      "description": "Management of wild land watersheds for control of the amount and timing of water yield, water quality, erosion, and sedimentation. FOR 470 Watershed Management (3) In FOR 470 Watershed Management students are expected to learn the fundamentals of watershed hydrology and how management of natural resources, especially forest resources, can be adapted to protect and enhance the natural flow, quantity and quality of water resources.Emphasis is placed on acquisition of available hydrologic and climatic data over the internet, solving basic hydrologic problems using the proper units, writing short essays summarizing assigned papers or lectures, and in-class tests on managing impacts of timber harvesting, road construction, application of forest chemicals, and other land uses activities. The course is primarily, but not exclusively, intended as a course for upper-level undergraduate and graduate students in forest resources and wildlife and fisheries majors or other majors such as ERM with related natural resources backgrounds and interests.The course is a Prescribed Course for Forest Resources undergraduates in the Forest Management and Watershed Management options and is a Water Science breadth course for students in the Graduate Option in Watershed Stewardship. A companion one-credit course FOR 471 -Watershed Management Laboratory - may be taken concurrently with or following FOR 470 . This course is offered each Spring Semester and generally has an enrollment of about 80-90 students."
+    },
+    {
+      "number": 471,
+      "title": "Watershed Management Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "FOR470"
+        ]
+      },
+      "description": "Introduction to hydrologic and climatic measurements and computations useful in watershed management."
+    },
+    {
+      "number": 475,
+      "title": "Principles of Forest Soils Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FOR308"
+        ]
+      },
+      "description": "Effect of current forest management practices on the properties and productive capacity of forest soils."
+    },
+    {
+      "number": 477,
+      "title": "Field Methods in Watershed Ecohydrology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FORT240"
+        ],
+        "concurrent": [
+          "FOR470"
+        ]
+      },
+      "description": "The fields of watershed hydrology and ecohydrology, and the careful management of forested watershed and their water resources, rely heavily on observations and accurate time series data. The collection of reliable data is a career unto itself, and the proper understanding of field methods is equally important in the prudent use of ecohydrological data. This course is intended for upper-level undergraduate students and will give a detailed introduction to and experience with field methods and calculations of important fluxes in watershed ecohydrology. Topics will span the hydrologic cycle from evapotranspiration to the partitioning of precipitation, groundwater, and streamflow, as well as water quality. Detailed units will include measurements of rainfall, evapotranspiration, and streamflow, pipe flow through culverts on forest roads, water quality sampling as well as a host of tree-soil-water fluxes including canopy throughfall, stemflow, and sapflow."
+    },
+    {
+      "number": 480,
+      "title": "Policy and Administration",
+      "credits": 3,
+      "description": "Forest resources policy objectives; criteria and goals of society; policy implementation by ownership classes; planning, administration, and evaluation of programs."
+    },
+    {
+      "number": 489,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "The Supervised Experience in College Teaching course provides select undergraduate students with formal, supervised teaching experience in a Forestry (FOR) course. Faculty recruit students who excel in a particular course to serve as undergraduate teaching assistants for subsequent offerings of that course. Duties may include serving as peer tutors, teaching assistants, or laboratory assistants, and developing and/or evaluating course activities and materials. Students participating in this course will develop a deeper understanding of the focus course material by actively helping to teach the material. The course is only available to students who are invited to serve as teaching assistants for a Forestry course and enrollment is by permission of the instructor."
+    },
+    {
+      "number": 494,
+      "title": "Undergraduate Research",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Independent study directed by a faculty supervisor that culminates in the production of a Forestry honors thesis. This course is the means by which Forest Ecosystem Management honors students receive credit for thesis research. The course involves research and other scholarly activities (such as writing) necessary for completion of an approved honors thesis."
+    },
+    {
+      "number": 495,
+      "title": "Forestry Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised field experience related to the student's major."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 508,
+      "title": "Forest Ecology",
+      "credits": 3,
+      "description": "The forest ecosystem, variations in space and time, classification, ordination techniques, dynamic aspects such as energy flow and nutrient cycling."
+    },
+    {
+      "number": 517,
+      "title": "Ecology of Plant Roots",
+      "credits": 2,
+      "description": "This course covers the form and function of roots from an ecological perspective. Emphasis is placed on identifying and interpreting the diversity of root strategies used by plants to meet the essential functions of water and nutrient acquisition, transport, storage and structural support under various environmental conditions. Additional topics include how root systems may modify ecosystem processes associated with carbon, mineral nutrient and water cycles. Specialized topics include cost/benefit analysism, root evolution, root architecture, root herbivory-defense, mycorrhizas, root respiration, root longevity, resource competition and interference and weathering and soil formation. Both wild and crop plants are discussed."
+    },
+    {
+      "number": 521,
+      "title": "Advanced Silviculture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FOR421"
+        ]
+      },
+      "description": "Specific silvicultural practices for the establishment and manipulation of forest stands with respect to recent developments and research needs."
+    },
+    {
+      "number": 530,
+      "title": "Conservation Genetics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FOR430"
+        ]
+      },
+      "description": "Discussion of the use of genetic principles and technologies in the conservation and management of biological diversity. FOR 530 Conservation Genetics (3) This course will familiarize students with the roles of population genetics, phylogenetics, molecular genetics and quantitative genetics in conservation biology, and to examine in depth pertinent examples from the literature dealing with current applications of conservation genetics including genetic diversity, genetics at the landscape level, the effects of fragmentation on the genetic structure of species, and the role of modern genetics within ecosystem management. FOR 530 will provide a new and valuable component to the graduate curriculum of students interested in genetics, forestry, wildlife, fisheries, conservation, and endangered species. The current scientific literature will be critically reviewed and discussed in relation to case studies, on a range of topics. Evaluation will be based on participation, class presentations, and written papers. The course is to be offered biennially in the Spring in even numbered years."
+    },
+    {
+      "number": 555,
+      "title": "Multispectral Remote Sensing",
+      "credits": 3,
+      "description": "Computer analysis of data from nonimaging remote sensors as applied to mapping of natural resources and land use."
+    },
+    {
+      "number": 565,
+      "title": "GIS Based Socio-Ecological Landscape Analysis",
+      "credits": 3,
+      "description": "GIS-based socio-ecological analysis of landscape context for natural resources in relations to present and prospective patterns of land use. FOR 565 GIS Based Socio-Ecological Landscape Analysis (3)This course seeks synthesis to bridge a gap between the contemporary spatially-oriented biophysical analysis of landscape ecology and use of geospatial technologies for analysis of past, present, and prospective human influences operative at landscape scale - both of which use geographic information systems as analytical platforms. Interest is reciprocal - human influences on landscape, and landscape conditioning of human economic development. Instruction takes place in a GIS laboratory facility, and evidence of learning arises from ability to access, manipulate, and display spatial information."
+    },
+    {
+      "number": 570,
+      "title": "Watershed Stewardship Practicum I",
+      "credits": 3,
+      "description": "Application of integrated community-based watershed planning for water resources management."
+    },
+    {
+      "number": 571,
+      "title": "Watershed Stewardship Practicum II",
+      "credits": 5,
+      "requisites": {
+        "previous": [
+          "FOR570"
+        ]
+      },
+      "description": "Application of integrated community-based watershed planning for water resources management."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "SOILS590",
+        "WFS590"
+      ],
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "suffix": "A",
+      "title": "Seminar in Watershed Stewardship Issues",
+      "credits": 1,
+      "description": "Exploration of watershed stewardship issues."
+    },
+    {
+      "number": 591,
+      "suffix": "B",
+      "title": "Seminar in Watershed Stewardship Planning",
+      "credits": 1,
+      "description": "Exploration of watershed stewardship planning processes."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides an opportunity for supervised and graded teaching experience in forestry courses."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 880,
+      "title": "Bioenergy Feedstocks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABE884"
+        ]
+      },
+      "description": "This course comprehensively addresses the characteristics, production, and improvement of plants as feedstocks for conversion to energy."
+    }
+  ]
+}

@@ -1,0 +1,912 @@
+{
+  "subject": "EDUC",
+  "courses": [
+    {
+      "number": 99,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 100,
+      "title": "First-Year Seminar in Education",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "attributes": [
+        "FYS"
+      ],
+      "description": "This seminar explores theories of teaching and learning, the education of teachers and other school employees, issues of professional practice, and selected topics in national educational policy. The seminar also supports students' transition to college through small group discussions and other activities. Class sizes are limited; the frequency of offering and evaluation methods vary by location and instructor."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Study of educational topics in a country other than the United States."
+    },
+    {
+      "number": 205,
+      "suffix": "N",
+      "title": "Critical Race Theory in the Humanities and Social Sciences",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER"
+      ],
+      "internalEquivalents": [
+        "SOC205N"
+      ],
+      "description": "This course closely examines the place and power of race in America. By tracing the history of how race works in particular American institutions, such as public education, criminal justice, and federal housing, students will gain a deep sense of how social categories and understandings shape material conditions and human welfare. Through the study of policies, court cases, memoirs, documentary films, and freedom struggles, this course will interrogate the many Americas that race has created and their implications for democracy and justice. Not only will this course focus on making race visible, but also the many ways that race intersects with class, gender, and sexuality and how these concepts empower and marginalize at the same time. All the while, students will use Critical Race Theory methods to reach empathy and strengthen social (GS) and historical (GH) literacies. Discussion, writing, critical reading, and primary source analysis will be integral to this class. Class sessions will include whole- and small-group discussion where active listening and thoughtful participation will be taught and required. Students will be encouraged to explore their own conceptions of race and how those ideas shape knowledge and experience. Ultimately, this is a course that will weave data, theory, and story as we encourage students to move toward empathy through comprehensive understandings of race. This course therefore examines race as both deeply personal and structural."
+    },
+    {
+      "number": 294,
+      "title": "Research Project Courses",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 295,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, non-group instruction including field experience, practica, or internships."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 302,
+      "title": "Basic Preparation for Teaching",
+      "credits": 3,
+      "description": "Philosophical, psychological issues in education; instructional objectives, lesson planning; evaluation, grading procedures; assessment, instruction of individual children. Field experience."
+    },
+    {
+      "number": 303,
+      "title": "Inclusive Practices in General Education Classrooms",
+      "credits": 3,
+      "description": "This course is designed to examine the procedures, characteristics and strategies for working with special learners in the elementary school. EDUC 303 Inclusive Practices in General Education Classrooms (3) This course examines the foundations and strategies for educating exceptional learners and for including students with disabilities in general education classrooms /inclusive settings, grades PK-4 and 4-8. Students will gain the knowledge and skills to respond effectively to learners with varying abilities and diverse needs in inclusive classrooms. Course content will address the following: foundations for inclusive education including legal provisions, ethical principles and policies; characteristics of various disabilities; the special education process including evaluation, IEP and service delivery models; assessment of student learning in a standards aligned system including diagnostic, formative, benchmark and summative assessment; pre-referral intervention, including universal screening and response to intervention; evidence-based instructional strategies that are effective in meeting the needs of students with disabilities in inclusive settings including universal design, accommodations, modifications and adaptations of curriculum and instruction, differentiated instruction, improving memory, attention and independent learning; and partnerships including effective communication and collaboration, teaming, co-teaching and communication with families. The course format will include discussion, collaborative group work, student presentations, simulations, classroom observations, case studies, online activities, review of research and some lectures."
+    },
+    {
+      "number": 304,
+      "title": "Classroom Organization and Management",
+      "credits": 3,
+      "description": "Organization, integration of the elementary school day; classroom management, control techniques; audio-visual techniques."
+    },
+    {
+      "number": 305,
+      "title": "Creative Arts",
+      "credits": 3,
+      "description": "Experiences in self-expression through a variety of visual and performing arts. Techniques for guiding school children in artistic expression. EDUC 305 Creative Arts (3) This is an arts education course for elementary education majors. The course is designed to provide pre-service teachers with knowledge of the elements of the performing arts and the visual arts. Today's public school population is diverse, and teachers encounter heterogeneous groups of students with unique interests, distinctive strengths, special needs, and varied languages. The arts provide a beneficial bridge to assist teachers in connecting with all persons. Not only do the arts enhance the quality and depth of lesson content, each of the arts contains the possibility of reaching students of all levels and backgrounds no matter what their cognitive ability, learning style, or native language. The purpose of this course is to equip students with the necessary tools to implement meaningful and effective arts education into the regular education curriculum."
+    },
+    {
+      "number": 306,
+      "title": "Physical Education, Health, and Safety in Elementary Schools",
+      "credits": 2,
+      "description": "A study of appropriate activities for elementary-age children. Student participation in physical activities is required. This course is designed to prepare elementary classroom teachers to provide age appropriate instruction related to issues of health and safety encountered in the school, home, and community. Understanding and demonstrating a knowledge of foundations, lesson planning, instructional strategies, and assessment is a key component of the program. In addition, the pre-service teachers are prepared to organize and implement physical education activities that may be carried out in the classroom, playground and/or appropriate indoor facilities. The physical education aspects of the program are generally provided as ancillary activities to the program provided under the guidance and direction of a certified Health and Physical Education instructor."
+    },
+    {
+      "number": 313,
+      "title": "Secondary Education Field Experience",
+      "credits": 2,
+      "description": "Secondary classroom observation and participation - Students in this course engage in an extended (10 weeks, 2 days a week) field experience while concurrently enrolled in EDUC 314 . Students are assigned to a middle or high school classroom associated with their chosen field/discipline and report to their placement for at least two half-days per week over a span of ten weeks. While in the host classroom, students engage in a variety of activities under the supervision of the host teacher to gain important classroom experiences. Such activities and procedures include but are not limited to, classroom observation (of teaching, assessment, and classroom management strategies as well as student engagement and behavior); tutoring individual students; working with small groups of students; co-teaching or individually teaching a lesson to one or more classes; and attending department and faculty meetings and professional development sessions. Students participate in online discussions; conduct an interview with their assigned mentor; and create a reflective project."
+    },
+    {
+      "number": 314,
+      "title": "Learning Theory and Instructional Procedures",
+      "credits": 3,
+      "description": "Theories of learning in relation to instructional practices. Analysis of motivation, transfer of learning, and retention (3) This learning theory and practice course provides students with an understanding of major concepts, principles and theories, and related research of teaching and learning framed by young adolescent and adolescent development. This course also explores how theory is translated into instructional practice and is linked to students' field experiences while concurrently enrolled in EDUC 313 . Students engage in scholarly reading, collaborative and multimodal activities, and assignments as they translate learning theory to instructional practice."
+    },
+    {
+      "number": 315,
+      "suffix": "Y",
+      "title": "Social and Cultural Factors in Education",
+      "credits": 3,
+      "attributes": [
+        "US",
+        "W"
+      ],
+      "description": "Critical examination of how different experiences linked to race, ethnicity, religion, gender, and sexual orientation influence education."
+    },
+    {
+      "number": 320,
+      "title": "Methods in Teaching Beginning Readers",
+      "credits": 3,
+      "description": "Concepts, methods, and materials for developing beginning reading abilities, with emphasis on personalized instruction through diagnostic teaching."
+    },
+    {
+      "number": 321,
+      "title": "Methods in Teaching Intermediate and Advanced Readers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC320"
+        ]
+      },
+      "description": "Concepts, methods, and materials for personalizing reading instruction with emphasis on extending personal and functional reading abilities beyond beginning reading."
+    },
+    {
+      "number": 352,
+      "title": "Teaching Language Arts",
+      "credits": 3,
+      "description": "Teaching the writing process, including speaking and listening skills in relation to oral and written composition."
+    },
+    {
+      "number": 353,
+      "title": "Teaching Elementary Social Studies",
+      "credits": 3,
+      "description": "The theory and practice of elementary social studies instruction."
+    },
+    {
+      "number": 385,
+      "title": "Professional Development in Teaching",
+      "credits": 3,
+      "description": "This course addresses practical issues central to the profession of teaching and, in some cases, specific to Pennsylvania."
+    },
+    {
+      "number": 395,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, non-group instruction including field experiences, practica, or internships. Written and oral critique of activity required. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction"
+    },
+    {
+      "number": 400,
+      "title": "Diversity and Cultural Awareness Practices in the K-12 Classroom",
+      "credits": 3,
+      "description": "This course addresses diversity, cultural awareness and sensitivity about cultures, concepts and methods in society, communities and educational settings. EDUC 400 Diversity and Cultural Awareness Practices in the K-12 Classroom (3)This course is an examination of diverse cultures, stereotypes, concepts and issues that impact the way individuals interact with one another in society. In relation to EDUC 315, it takes students to the next level as they experience cultural attributes from a media perspective, as well as being immersed into diverse settings throughout the course. It is designed for students to develop sensitivity and awareness of cultural influences in America and the public school systems. An emphasis is placed on sociopolitical aspects of the United States and other world cultures, sources of cross-cultural conflict, and approaches to cross-cultural conflict resolution as they relate to P-12 settings, their communities and the communities in which they teach. Cultural awareness is concrete and/or visible in society and is necessary for promoting sensitivity and respect of cultural beliefs and values amongst teachers, administrators and students. Course participants will be required to demonstrate knowledge of with regard to developing sensitivity and awareness of cultural influences on behavior as these relate to the community, society and schooling processes. Course participants will be required to analyze methods of teaching Multicultural Education and its various camps including: Culturally Responsive Pedagogy, Critical Multiculturalism, and Anti-Racist Pedagogy. The creative tension between dominant and subordinate voices will lead to both visual and written responses. The major goal of the course is to help students identify their diversity in American society and to develop their own creative voices, while drawing on issues of race, ethnicity, gender, geographical location, sexual identity, age, ability, social class, social status and other cultural attributes that make individuals uniquely diverse."
+    },
+    {
+      "number": 402,
+      "title": "Early Learning: Language and Concept Development",
+      "credits": 3,
+      "description": "Examining the development of language and self-expression in young children, and the role of children's literature in facilitating development. EDUC 402 Early Learning: Language and Concept Development (3) This course examines foundations and strategies related to encouraging language development and concept acquisition of young children infant through age five. Students will gain the knowledge and skills to design relationships, environments, activities, and responses to young children at varying stages of early language and conceptual development. Course content will address the following: foundations for approaches to early learning including young children's characteristics, multiple factors that influence child construction of language and concept development, the importance of teacher child relationships, the emerging nature of children's learning patterns, and the benefits of providing books and experiences that support present knowledge levels while challenging new learning. Students will gain knowledge to use to design supportive relationships, documentation of observation, other assessment tools, and intentional instructional strategies that encourage early development of vocabulary and content concepts.Students will design instruction that encourages child awareness of concepts of receptive language, such as phonemic awareness; concepts of self-expression, such as vocabulary, concepts of comprehension, such as read aloud recall; concepts of early writing, such as alphabet and phonics; and concepts related to reading, such as illustrations and meaning. In science, students will design instruction that encourages child awareness of the value of questioning, observing and experimenting for answers about life science, earth science and physical science issues. In mathematics, students will design instruction that encourages child awareness of numbers, operations, geometry, measurement, patterns, and data representation. In social studies, students will design instruction that encourages child awareness of concepts related to families, communities, early economics, and local geographical characteristics. In the arts, students will design instruction that encourages child awareness of ways to express self with drawings, paintings, sculpture, drama, music and dance. In the areas of social and emotional skills, students will design instruction that encourages child sensitivity to social and emotional skills that do and do not work well in group settings. Emphasis will be placed on the need to differentiate instruction for each young learner and the need to differentiate relationship interactions with each family. The course format will include discussion, collaborative group work, student presentations, simulations, child care classroom observations, case studies, online activities, review of research and some lectures. In addition, each student will design and complete a teacher inquiry."
+    },
+    {
+      "number": 403,
+      "title": "Curriculum for Early Childhood",
+      "credits": 3,
+      "description": "Examining early childhood programs and methodology, focusing on areas of social studies, mathematics, and science."
+    },
+    {
+      "number": 404,
+      "title": "Young Children's Behavior: Observation and Evaluation",
+      "credits": 3,
+      "description": "Observation, recording and evaluation of student behaviors, and the use of prescription techniques for early childhood students with special needs."
+    },
+    {
+      "number": 408,
+      "title": "Administration of Early Childhood Education Programs",
+      "credits": 3,
+      "description": "The role of the early childhood administrator as it relates to regulations, staffing, management, funding and curriculum."
+    },
+    {
+      "number": 410,
+      "title": "The Child and Social Institutions",
+      "credits": 3,
+      "description": "The effects of the family on a child's development, especially in the infancy and preschool years."
+    },
+    {
+      "number": 414,
+      "title": "Teaching Secondary Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC314"
+        ]
+      },
+      "description": "Study of the objectives, content, methods, and evaluation procedures of science. This course is designed to prepare students with the knowledge and methods necessary to teach secondary science in authentic integrative contexts. Teaching science with integrative concepts requires educators to be proficient in integrating various technologies and highlighting interdisciplinary connections to other disciplines such as engineering (the national and state standards for science call for science educators to teach both science and engineering concepts). Science pedagogies, strategies, approaches, content knowledge, and practices needed to teach with a focus on building students' problem-solving skills and understanding will be highlighted. Research-based learning theories and their role in science classrooms/labs are discussed and sample teaching strategies are safely modeled. Discussions are also based on prior and/or current field experiences and case study analyses. State and national science, technology, and engineering standards emphasized and demonstrated throughout the course. Long- and short- range planning of teaching units and lesson plans address disciplinary core content, practices, assessment, technological integration, historical connections and current trends in science and engineering education disciplines, equity for all students, English learners, and adaptations or modifications for students with special needs. A problem-solving/constructivist approach to learning and assessment is emphasized. Students are engaged in cooperative learning experiences, using lab equipment/materials and technology such as spreadsheets, statistical simulation and analysis software, and probeware. They are assessed through both formative and summative evaluations, including the creation of an interdisciplinary secondary science unit plan. The content and processes of scientific inquire and engineering design emphasized throughout this course are presented with three principal goals in mind: (1) to inform students about current research related to teaching science and engineering, (2) to enhance students' pedagogical scientific and engineering knowledge and skills, and (3) to help students develop as competent secondary science teaching professionals."
+    },
+    {
+      "number": 415,
+      "title": "Teaching Secondary Social Studies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC315Y"
+        ]
+      },
+      "description": "Study of the objectives, content, methods, and evaluation of procedures of social studies. Students design units and lesson plans. EDUC 415 Teaching Secondary Social Studies (3) This course is designed to prepare social studies candidates with the teaching methods and content knowledge required to teach the many social studies subjects at the middle and high school level. Stressing a constructivist approach, students learn to utilize various instructional strategies to meet learning goals and objectives based on the National Council for the Social Studies (NCSS) thematic strands and relevant PA Academic and Core Standards. Long and short range planning of teaching units address content, assessment, technological integration, historical connections, equity for all students, ELL, and adaptations for special needs students. Students engage in focused classroom discussions on assigned readings and analyze critical issues in teaching social studies in order to develop a coherent and relevant social studies teaching and assessment philosophy. Students are evaluated based on lesson planning competence, the knowledge of and ability to promote NCSS thematic strands and PA standards in both planning and teaching, leading discussions on relevant social studies topics and readings, implementing a preplanned lesson to the class, and the development of a complete middle level or high school level unit of study."
+    },
+    {
+      "number": 416,
+      "title": "Teaching Secondary English and the Humanities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC315Y"
+        ]
+      },
+      "description": "Study of the objectives, content, and methods of English and humanities courses. EDUC 416 Teaching Secondary English and the Humanities (3) This course is designed to prepare candidates with the objectives, content, methods and knowledge necessary to teach English in today's secondary classrooms in middle and high schools. The pedagogical approaches, dispositions, and skills appropriate for adolescent learners will be highlighted. Instructional strategies include multiple types of texts, genres, and modes to address diverse learners' needs and 21st century literacies in society and the workplace. Developmentally appropriate practices and theories will be discussed and modeled. Course content, strategies, and dispositions are consistent with literacy research, adolescent development, best practice pedagogy, and content and professional standards appropriate for English language arts candidate preparation. This course adheres to professional and content area standards and practices from: National Council of Teachers of English (NCTE), the National Writing Project (NWP), International Reading Association (IRA), and National Center for Literacy Education (NCLE). Candidates will design a range of learning experiences for their future students consistent with Commonwealth of Pennsylvania Common Core standards (PACC) and NCTE/IRA Standards for the English Language Arts. Candidates will engage with constructivist learning practices that center on collaboration, authentic learning, critical reflective practice, ongoing assessment, instructor coaching, and peer review."
+    },
+    {
+      "number": 417,
+      "title": "Teaching Secondary Mathematics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC315Y"
+        ]
+      },
+      "description": "Study of the objectives, content, methods, and evaluation procedures of mathematics. EDUC 417 Teaching Secondary Mathematics (3) This course is designed to prepare students with the methods and knowledge necessary to teach mathematics in today's middle level and secondary classrooms. The pedagogical approaches and content needed to teach with a focus on understanding will be highlighted. Learning theories and their role in the mathematics classroom will be discussed and sample teaching strategies will be modeled. Discussions will also be based on field experiences and case study analyses. The National Council of Teachers of Mathematics standards addressed in the Principles and Standards for School Mathematics (2000), the Common Core State Standards for Mathematics (2010), the PA Core Standards in Mathematics (2013), as well as the Pennsylvania Standards Aligned System will be emphasized and demonstrated throughout the course. Long and short range planning of teaching units will address content, assessment, technological integration, historical connections, equity for all students, ELL, and adaptations for special needs students. A problem solving/constructivist approach to learning and assessment will be emphasized. Students will be engaged in cooperative learning experiences, use manipulatives and technology, and will be assessed through both formative and summative evaluations. The content and processes of mathematics emphasized throughout this course will be presented with three principal goals in mind: to inform students about current research related to teaching mathematics, to enhance students' pedagogical mathematical knowledge and skills, and to help students develop as competent mathematics teaching professionals."
+    },
+    {
+      "number": 418,
+      "title": "Positive Classroom Climate for Positive Attitudes About Learning",
+      "credits": 3,
+      "description": "Participants will learn strategies for creating classroom climates which encourage positive attitudes toward learning while preventing and correcting student misbehavior."
+    },
+    {
+      "number": 421,
+      "title": "Children's Literature",
+      "credits": 3,
+      "description": "Knowledge of literature appropriate for elementary school children and utilization of literature-related activities in teaching reading."
+    },
+    {
+      "number": 422,
+      "title": "Literature for Children and Adolescents",
+      "credits": 3,
+      "description": "Literature for children and adolescents, approaches for using such literature in the school curriculum. EDUC 422 Literature for Children and Adolescents (3)This course, which is required for students enrolled in the Reading Specialist Program and those who wish to complete the language arts option in the Teaching and Curriculum Program, is designed to assist Pre-K through grade 12 educators who are interested in incorporating children's and/or adolescent literature into the curriculum. The course will focus on an in-depth exploration of selecting, evaluating, and using a wide range of contemporary (published in the last ten years) literature for children and young adults. This course will provide participants the opportunity to explore reader response theory and its relationship to classroom teaching practices, in particular to reading and literacy instruction. The study and application of principles and techniques of integrating literature circles, discussion strategies and literature extension projects will be addressed."
+    },
+    {
+      "number": 425,
+      "title": "Literacy Assessment",
+      "credits": 3,
+      "description": "This course emphasizes alternative literacy measures focusing on portfolio assessment and performance assessments."
+    },
+    {
+      "number": 432,
+      "title": "Children's Literature in Teaching Writing",
+      "credits": 3,
+      "description": "Introduction to introduces methods for transferring writing skills and literary devices from literature to student writing in all subject areas."
+    },
+    {
+      "number": 435,
+      "title": "Addressing the Needs of Special Learners",
+      "credits": 1,
+      "description": "An examination of attitudes toward, barriers experienced by, and special needs of special learners in the schools."
+    },
+    {
+      "number": 440,
+      "title": "Educational Statistics and Measurements",
+      "credits": 3,
+      "description": "Descriptive statistics, correlation, reliability, validity, scaling techniques, and introduction to item analysis."
+    },
+    {
+      "number": 450,
+      "title": "Current Topics in Education",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "No description."
+    },
+    {
+      "number": 452,
+      "title": "Teaching Writing",
+      "credits": 3,
+      "description": "Techniques for teaching the writing process, kindergarten through grade 12, including writing in content areas; workshop format."
+    },
+    {
+      "number": 454,
+      "title": "Modern Elementary Science Education",
+      "credits": 3,
+      "description": "This course exposes candidates to content, knowledge and teaching pedagogy as they relate to science and science education. The science content knowledge is primarily focused on Biological Sciences, Physical Sciences and Earth and Space Sciences at the K-5 level. Current research is sued to ensure that the best practices in teaching and learning K-5 Sciences are explored. At the conclusion of this course, all candidates should have a strong understanding of the best practices in teaching and learning K-5 science. Candidates should have an awareness of the Physical Sciences, Biological Sciences, and Earth Space Sciences taught at the K-5 level. They should be able to utilize best practices in the teaching of these sciences."
+    },
+    {
+      "number": 458,
+      "title": "Behavior Management Strategies for Inclusive Classrooms",
+      "credits": 3,
+      "description": "Provides knowledge and skills essential for designing positive learning environments in secondary classrooms with the inclusion of exceptional learners. EDUC 458 Behavior Management Strategies for Inclusive Classrooms (3)Well-organized and effectively managed classrooms provide task-focused instructional environments where students are actively engaged in learning. The inclusion of exceptional learners in the general education classroom has brought the need for a unique set of knowledge and skills to promote student task engagement and prosocial behavior. Topics to be addressed include: characteristics and specific (or unique) needs of exceptional learners and their effect on student learning; components of effective classroom organization and management; principles of applied behavior analysis and research-based behavior management strategies appropriate for use with exceptional learners in the secondary classroom. This course will be a required course for all Secondary English, Math, and Social Studies students seeking initial certification. Course delivery methods will include lectures, reflections, online discussions, projects, class presentations, library research, and other relevant media"
+    },
+    {
+      "number": 459,
+      "title": "Strategies for Effective Teaching in Inclusive Classrooms",
+      "credits": 3,
+      "description": "Course examines effective strategies for accommodating and adapting instruction for exceptional learners in secondary classrooms. EDUC 459 Strategies for Effective Teaching in Inclusive Classrooms (3)This course will examine strategies for teaching exceptional students in inclusive secondary classrooms. The course will focus on academic assessment; instructional planning, development and implementation; and strategies for making the curriculum more accessible, flexible and supportive for diverse learners. Topics to be addressed include the following: multidisciplinary evaluation and programming for exceptional learners; designing instruction based on assessment data; progress monitoring; technology for teaching and learning as a way to promote access to curriculum; designing appropriate and legally acceptable accommodations and/or modifications to promote access to the standards-based curriculum for students with exceptional learning needs; research-based instructional strategies to facilitate literacy development and instruction across academic content areas and collaborative structures to support exceptional learners in general education classrooms. This course will be required for all Secondary English, Math, and Social Studies Education students seeking initial certification and will be offered during the 8th semester (student teaching) to optimize performance of students during their student teaching experience. Course delivery methods will include lectures, reflections, online discussions, projects, class presentations, case studies, and other relevant forms of media."
+    },
+    {
+      "number": 463,
+      "title": "Teaching With Modern Web Technologies",
+      "credits": 3,
+      "description": "Relates educational theory and practice to applications of the modern Web, applying content from educational foundations, curriculum, and research. EDUC 463 Teaching With Modern Web Technologies (3) This course focuses on the World Wide Web as a valuable resource for P-12 education. Designed for teachers, curriculum supervisors, and building administrators, this course relates educational theory and practice to applications of the Web and Web 2.0 technologies in classrooms and schools. Class participants apply resources available through the Web to content from the fields of educational foundations, learning theories, curriculum development, educational assessment and evaluation, and educational research. The impact that the Web and technology in general has had on the educational experience of both teachers and students, including the working relationship between the two, is also a main focus. Students maintain a documentation of weekly assignments that form the basis for the final project: the development of a web-based teaching portfolio. Students also complete a mid-term project that entails the design of an online learning activity for students that utilizes Web technologies. This activity requires the student to apply principles of learning theory to web-based resources identified and evaluated to support an identified classroom learning objective or set of objectives. The final project consists of a technology-based teaching portfolio, demonstrating application of the key concepts covered in the course."
+    },
+    {
+      "number": 464,
+      "title": "Technology and the Learning Process",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC463"
+        ]
+      },
+      "description": "Evaluates the relationship between technology-based resources and learning theories through design, implementation, and evaluation of online instructional modules. EDUC 464 Technology and the Learning Process (3)Designed for teachers, curriculum supervisors, and building administrators, this course examines and evaluates the relationship between technology-based resources and learning theories. Students explore learning theories in terms of how technology may or may not support implementation of those theories in the classroom. Students also examine problem-based learning approaches and how they can be combined with technology, resulting in what has been defined by Dr. Bernie Dodge as a 'WebQuest' for classroom use. In the WebQuest development process, students identify a real life problem for their students to solve. They correlate that problem to their academic standards and district curriculum. They then design, implement, and evaluate instructional modules with integrated technology resources designed to lead to a solution of the identified problem, while promoting student acquisition of higher order thinking skills. Through this experience, students must plan for their students' learning tasks and activities, resource needs, performance evaluation and rubrics. As a culminating experience, students design an action research project related to the implementation of their learning module in the classroom setting."
+    },
+    {
+      "number": 466,
+      "suffix": "N",
+      "title": "Foundations of Teaching English as a Second Language",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EDPSY10",
+              "EDPSY14",
+              "EDTHP115",
+              "EDUC100",
+              "HDFS129",
+              "PSYCH83S",
+              "PSYCH100",
+              "PSYCH105"
+            ]
+          }
+        ]
+      },
+      "description": "Overview of various legal, historical, and socio-cultural implications of teaching and learning English as a Second Language. This course is the first course in a five-course sequence designed to meet the Pennsylvania Department of Education's (PDE) requirements for the ESL Program Specialist endorsement. EDUC 466 addresses the legal, historicalm, and socio-cultural issues related to non-native speakers of English, and the implications for ESL curriculum, instruction, and assessment within the K-12 school setting. The course is designed: (1) to encourage understanding and appreciation for language diversity and culture, and (2) to enhance the knowledge and skills of teachers working with culturally and linguistically diverse learners, their families, and their communities. The course specifically addresses two of the PDE competencies necessary for a teacher to acquire in order to be endorsed as an ESL Program Specialist: PDE Competency IV-Developing cultural awareness/sensitivity. The four areas of emphasis within EDUC 466 are: a)The legal, historical, and cultural implications of English as a Second Language, which explores the legal and historical bases of ESL and analyzes the differences among home and school cultures, especially as they relate to language; b)Fundamentals of developing English language skills, which provides an introduction to the structure of the English language, grammar, and pronunciation, including lexical, morphological, syntactical, and phonological components; c) An overview of second language acquisition, which introduces the topics of linguistic skill development, and first and second language acquisition; and d) Multicultural education, which focuses on helping teachers acquire knowledge, develop cultural sensitivity, and identify educational strategies that address the needs of multilingual and multicultural learners and their families."
+    },
+    {
+      "number": 467,
+      "title": "English Language Structure for English as a Second Language Teachers",
+      "credits": 3,
+      "description": "An in-depth study and review of general linguistic concepts and their application to ESL pedagogy. EDUC 467 English Language Structure for ESL Teachers (3) EDUC 467 is the second course in a four-course, 12-credit sequence designed to meet the Pennsylvania Department of Education's (PDE) requirements for an ESL Program Specialist Certificate. The 12-credit sequence which has previously been approved by PDE has been offered as 'Special Topics' courses. The 12-credit sequence is consistent with other approved ESL certificate programs. EDUC 467 introduces students to general linguistic concepts and their application to ESL pedagogy and practice. The course provides an intensive study and review of major linguistic concepts and issues, including but not limited to: phonetics, phonology, morphology, syntax, semantics, pragmatics and discourse analysis, sociolinguistics and dialectology, historical linguistics and world languages, and writing systems. The course specifically addresses two of the PDE competencies necessary for a teacher to acquire to meet the minimum requirements as an ESL Program Specialist: PDE Competency I-English usage and developing linguistic awareness; and PDE Competency III-English language learners [ELLS] language and language services knowledge. The three areas of emphasis within EDUC 467 are:a)Language and communication , which explores the use of dictionaries, English use and usage, social conventions and English usage, American English variations, meaning and significance. b)Grammar, pronunciation, literacy development for second language learners,which focuses on the significance of these areas for ESL learners; and c)Evaluative classroom instruments to measure student progress in grammar, pronunciation and English language structure,which highlights the incorporation of linguistic tools in the assessment of ESL learners' language skills and needs."
+    },
+    {
+      "number": 468,
+      "title": "Language Acquisition for English as a Second Language Teachers",
+      "credits": 3,
+      "description": "Study of the theory, research, and processes involved in first and second language development, acquisition, and assessment. EDUC 468 Language Acquisition for ESL Teachers (3) EDUC 468 is the third course in a four-course sequence designed to meet the Pennsylvania Department of Education's (PDE) requirements for an ESL Program Specialist Certificate. The 12-credit sequence has previously been approved by PDE. The 12-credit sequence is consistent with what other PDE-approved ESL certificate programs offer. This course builds upon EDUC 466, Foundations of Teaching English as a Second Language, and EDUC 467 , English Language Structure for Teachers, with an emphasis on the processes involved in second language acquisition. EDUC 468 explores first and second language learning, socio-cultural contexts and learner variables, and the issues related to cognition and developmental psycholinguistics. The course specifically addresses two of the PDE competencies necessary for a teacher to acquire to meet the minimum requirements as an ESL Program Specialist: PDE Competency I-English usage and developing linguistic awareness; and PDE Competency III-English language learners [ELLS] language and language services knowledge. The four areas of emphasis within EDUC 468 are:a)Learning a first language,which provides an in-depth study of the process involved in the acquisition and development of first language interrelations between psycholinguistics and cognition, as well as understanding of the processes involved in the acquisition and development of language in human species. b)Learning a second language , which explores the interrelationships between psycholinguistics and cognition, and first and second language acquisition, as well as identifying issues related to developmental psycholinguistics? c)Differences in how children, adolescents and adults learn language , major contributions of leaders in the field of the psychology of language learning. d)Evaluative classroom instruments to measure student progress in listening, speaking, reading and writing,which identifies linguistic tools that can be used to assess the language skills and needs of ESL learners."
+    },
+    {
+      "number": 469,
+      "title": "Teaching Methods and Assessment of English as a Second Language",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC468"
+        ]
+      },
+      "description": "Integration of theory, research, and practice about ESL curriculum, instructional methods, assessment, and literacy development. EDUC 469 Teaching Methods and Assessment of English as a Second Language (3) EDUC 469 is the fourth and final course in a four-course sequence designed to meet the Pennsylvania Department of Education's (PDE) requirements for an ESL Program Specialist Certificate. The 12-credit sequence has previously been approved by PDE. The 12-credit sequence is consistent with what other PDE-approved ESL certificate programs offer. The emphasis in EDUC 469 is to learn and integrate curricular, instructional, and assessment theories and practices into the K-12 classroom setting to promote language and literacy development. The course specifically addresses three of the PDE competencies necessary for a teacher to acquire to meet the minimum requirements as an ESL Program Specialist: PDE Competency I-English usage and developing linguistic awareness; PDE Competency II-English as a Second Language-instructional materials/development; and PDE Competency III-English language learners [ELLS] language and language services knowledge. The three areas of emphasis within EDUC 469 are:a.English as a Second Language methods and collaboration with academic content areas,which focuses on: the preparation for ESL teaching by exploring trends, major theories, methodologies, and assessment in second language learning; the study of second language teaching approaches applicable to elementary and secondary students; materials development and evaluation; and the development of a broad base of knowledge and skills that will enhance teacher effectiveness in meeting the needs of diverse learners through appropriate instructional, curricular, and behavioral strategies; b.Assessment and evaluation of English Language Learners (ELLs),which explores: the use of multiple measures of assessment to evaluate academic achievement; the development and implementation of authentic assessment tools; and various approaches and challenges to classroom assessment; and c.Literacy development,which focuses on elementary and secondary ESL students by exploring ways in which to enhance English language learning in elementary students and to enrich content-area instruction for secondary ESL students."
+    },
+    {
+      "number": 470,
+      "suffix": "W",
+      "title": "Higher-Order Thinking for Educators",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Presentation of strategies, techniques, and principles of higher-order thinking which are grounded in relevant research and practice will be presented. EDUC 470W Higher Order Thinking for Educators (3)This required course for elementary education majors focuses on three primary objectives. The first objective is to develop students' metacognitive, critical thinking, creative thinking, decision making, problem solving and reflection skills. A second objective is for students to become aware of ways to increase the higher order thinking of children in the elementary classroom. The third objective is to improve the students' ability to write critical thinking/reflection papers on educational problems and issues. This course serves as one of the foundation courses for the Elementary Education Program as one of the goals of the program is to develop reflective practitioners. Students are evaluated on the quality of eight writing samples, the quality and quantity of their contributions during whole class discussions, and the quality of their performance during cooperative group activities."
+    },
+    {
+      "number": 471,
+      "title": "Best Practices in Literacy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EDUC320",
+              "EDUC321"
+            ]
+          }
+        ]
+      },
+      "description": "An application of best literacy practices to classroom instruction and assessment of reading, writing, listening, and speaking. EDUC 471 Best Practices in Literacy (3) This course is offered to support the Masters of Education degree in Teaching and Curriculum at Penn State Harrisburg by providing an application of research in best language arts It is a required course in the Reading Specialist Certification Program. The course acquaints students with an instructional and assessment framework that has been embraced by the educational community on a nationwide basis. Objectives for the course include the following: (1) Students will demonstrate an understanding of the theoretical underpinnings of the established best practices in literacy. (2) Students will demonstrate the ability to implement effective literacy practices. (3) Students will be able to assess and evaluate student performance according to established best practices. Evaluation methods will include: (1) attendance and participation in class discussion and exercises (10%); (2) a 5-7 page paper dealing with the use of children's books to teach reading and writing (25%); (3) a 5-7 page paper on the most current methods of assessing students' reading, writing, speaking, and listening skills (25%); and (4) the creation of an integrated Thematic Unit for instruction (40%)."
+    },
+    {
+      "number": 472,
+      "title": "Teaching Reading Through the Content Areas",
+      "credits": 3,
+      "description": "Designed to enable teachers of content areas to improve the reading/study skills needed by their students."
+    },
+    {
+      "number": 475,
+      "title": "ESL Leadership, Research and Advocacy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC469"
+        ]
+      },
+      "description": "Teachers will develop their skills as instructional leaders and researchers by conducting school-based action research projects. EDUC 475 ESL Leadership, Research and Advocacy (3) EDUC 475 , the capstone course in the ESL Specialist and Leadership Certificate program (now the online SCOPE program), is a hybrid course involving online readings and discussions and field-based action research in PreK-12 educational settings with English Language Learners. ESL faculty will provide mentoring/coaching in the field. This course is designed to familiarize ESL candidates with the processes for developing, implementing, and evaluating action research projects. The ESL candidates will explore best practices in ESL pedagogy through implementation of various models of action research. The four areas of emphasis within EDUC 475 are as follows: a) the principles of ethical and methodologically sound action research related to ELLs; b) culturally and linguistically inclusive best practices supported by ESL research; c) collaborative partnerships between school and community to advocate for ELLs and their families; and d) ESL research, evaluation, and assessment for dissemination of research findings, professional development, and continuous quality improvement within ESL programs. ESL faculty will coach and mentor ESL candidates in the field while they conduct action research. By the conclusion of this course, ESL candidates will have gathered, analyzed, and summarized their data into a research paper for potential publication, as well as developed either: a) a workshop training presentation for their school or district; or b) a draft of a conference proposal for a national, regional, or state conference.By conducting action research projects and subsequently disseminating the results of their research through professional development presentations and potential publications, candidates are expected to become instructional leaders in the ESL field. This course is the final capstone 3-credit ESL course for the ESL Specialist and Leadership Certificate program."
+    },
+    {
+      "number": 477,
+      "title": "Literacy Instruction and Evidence-Based Interventions",
+      "credits": 3,
+      "description": "Students in this course will demonstrate knowledge of multi-tiered comprehensive literacy programs that incorporate all essential elements of reading: vocabulary development, early intervention, early literacy, assessment, phonological awareness, phonics, phonemic awareness, comprehension, fluency, and literacy grouping and instruction. Students will also be able to determine appropriate literacy screening, diagnostic, and progress monitoring assessments and align evidence-based instruction to identified student needs."
+    },
+    {
+      "number": 478,
+      "title": "Secondary Transition for Students with Disabilities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC459"
+        ]
+      },
+      "description": "Process and procedures for successful transition of secondary students with disabilities."
+    },
+    {
+      "number": 484,
+      "title": "School Law for Teachers",
+      "credits": 3,
+      "description": "This course will focus on increasing teacher awareness of law and how it impacts on daily performance and job security."
+    },
+    {
+      "number": 490,
+      "title": "Student Teaching",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Observation and teaching in selected elementary or secondary schools under direction of cooperating classroom teachers and University supervisors. Regular seminars. GPA 3.0 or higher. Passing scores on required Praxis I tests. EDUC 490 Student Teaching (1-12) This course fulfills one of the certification requirements established by the Commonwealth of Pennsylvania. Students are assigned for a period of twelve weeks to teach in either an elementary or secondary school. Students have the option of selecting either the primary or intermediate level in elementary education, or the middle or high school level in secondary education. Cooperating classroom teachers provide the day-to-day direction, evaluation and mentoring, and an assigned university supervisor makes weekly visits and observations. Students are phased into the full responsibilities of a classroom teacher, with the ultimate goal being, the assumption of all duties and responsibilities for a period of several weeks. Students plan, implement, evaluate and reflect on a variety of instructional activities throughout their experience. In addition to planning and implementing instruction, students assume responsibilities for classroom management, assessing student progress, communicating with all stakeholders, and participating in professional and co-curricular activities. Student teacher evaluations are based on clearly defined expectations and criteria. The assessment criteria are linked to Commonwealth and national standards."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised off-campus, non-group instruction including individual field experiences, practicums or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "title": "Junior Field Experience",
+      "credits": 1,
+      "description": "EDUC 495A Junior Field Experience (1) This course is designed to provide Elementary Education majors with an intensive field experience that acquaints the student with the 'real' world of elementary education in a suburban setting. The experience will be under the direction of a certified elementary teacher in a suburban Harrisburg setting. Students will have an opportunity to actively work at the primary (K-3) and/or the intermediate (4-5) level, and will be directed to accomplish specific field tasks assigned by their course instructors. These tasks are directly related to each course in which the student is enrolled. Students are assigned a university supervisor who observes and consults with the students throughout the experience. Specific activities will vary depending on the grade level and the school district's curriculum. Students are evaluated by both the cooperating teacher and the university supervisor, and the evaluations are based on classroom observations. This course is offered each semester and is required of all students enrolled in the Elementary Education program."
+    },
+    {
+      "number": 495,
+      "suffix": "B",
+      "title": "Senior Field Experience",
+      "credits": 3,
+      "description": "EDUC 495B Senior Field Experience (1) This course is designed to provide Elementary and Middle-Level Education majors with an intensive field experience that acquaints the student with the `real¿ world of elementary education in an urban or suburban setting. The experience will be under the direction of a certified elementary and middle-level teacher in a school setting in the Harrisburg area. Students will have an opportunity to actively work at the K-4 or the middle (4-8) level, and will be directed to accomplish specific field tasks assigned by their course instructors. These tasks are directly related to each course in which the student is enrolled. Students are assigned a university supervisor who observes and consults with the students throughout the experience. Specific activities will vary depending on the grade level and the school district¿s curriculum. Students are evaluated by both the cooperating teacher and the university supervisor, and tile evaluations are based on classroom observations. This course is offered each semester and is required of all students enrolled in the Elementary Education program."
+    },
+    {
+      "number": 495,
+      "suffix": "C",
+      "title": "Early Childhood Field Experience",
+      "credits": 1,
+      "description": "EDUC 495C Early Childhood Field Experience (1) This course is designed to provide Early Childhood Education majors with an intensive field experience that acquaints the student with the, \"real\" world of early childhood education in an urban setting. The experience will be under the direction of a certified elementary teacher in an urban Harrisburg setting. Students will have an opportunity to actively work at the primary (K-3) level and will be directed to accomplish specific field tasks assigned by their course instructor. These tasks are directly related to early childhood courses in which the student was previously enrolled. Students are assigned a university supervisor who observes and consults with the students throughout the experience. Students are evaluated by both the cooperating teacher and the university supervisor. The evaluations are based on classroom observations and the completion of learning activities correlated with the required text. This course is offered each semester and is required of all students enrolled in the Early Childhood Education program."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Study of educational topics in a country other than the United States."
+    },
+    {
+      "number": 560,
+      "title": "Classroom Management",
+      "credits": 3,
+      "description": "Analysis of teaching styles, classroom behavior and interaction, organization and correlation of classroom activities and subject areas. (Requires practical application in an actual teaching situation.)"
+    },
+    {
+      "number": 561,
+      "title": "Theoretical Foundations of Literacy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC477"
+        ]
+      },
+      "description": "The primary goals for this course are to (1) examine the theoretical paradigms that inform the field of literacy education, including philosophical, cognitive, sociocultural, critical literacy, and multimodal/digital literacies and (2) to assist participants in becoming more aware of sociocultural, diversity, gender, and identity in relationship to literacy and schooling. Throughout the course, participants will examine the complexity of literacy to become aware of how to situate one's own literacy practice and experience in multiple contexts. Participants become reacquainted with mainstream theories and explore those of critical theorists who challenge traditional perspectives that have often marginalized race, class, and linguistic variety in learning and in literacy development."
+    },
+    {
+      "number": 572,
+      "title": "Comparative Education: World Perspectives",
+      "credits": 3,
+      "description": "An evaluative comparison of American education with Western and non-Western educational systems."
+    },
+    {
+      "number": 582,
+      "title": "Spirituality and Culture in Health and Education Professions",
+      "credits": 3,
+      "internalEquivalents": [
+        "HLHED582"
+      ],
+      "description": "This course focuses on the cultural aspects of spirituality and its place in the health and education professions. EDUC (HLHED) 582 Spirituality and Culture in Health and Education Professions (3)This course will focus on the examination of the place of the cultural aspects of spirituality and its place in the education and health professions and its implications for culturally responsive education and/or health care in a multicultural society. In particular the goals of the course are as follows: 1) To clarify the difference between spirituality and religion and to understand how spirituality is currently being examined in the fields of adult education, medical education and the health professions. 2) To examine how culture informs spirituality generally, and more specifically, to examine how culture relates to one's own spiritual development and overall health in the world. 3) To develop a sense of how people construct knowledge through image and symbol, which for many people, maps to their spirituality and culture, as they make new and deeper meaning of their own lives. 4) To begin to consider WHEN and HOW one might appropriately draw on one's own spirituality and that of participants in adult and higher educational practices and health care settings to increase cultural understanding and/or responsiveness to patient needs and when such discussion might seem to impose a spiritual or religious agenda. 5) To examine the connections among spirituality, culture, some complementary and alternative medicine modalities and overall holistic health and education."
+    },
+    {
+      "number": 586,
+      "title": "Educational Research Designs",
+      "credits": 3,
+      "description": "Focuses on methods of research in educational settings to help participants become informed consumers of the educational research literature. EDUC 586 Educational Research Designs (3)This course focuses on methods of research appropriate in educational settings to help participants become informed consumers of the educational research literature. Throughout the course participants will 1) identify an appropriate research problem and justify the importance for investigation; 2) identify and classify the types of variables used in research; 3) utilize electronic search and communication tools; 4) critically examine various research designs and their practical applications; 5) interpret analysis of data using statistical treatments; 6) describe strengths and weaknesses in research designs; 7) critique research studies; 8) describe PSU requirements for conducting research with human subjects; and 9) develop a writing style consistent with scientific/research work with emphasis on objectivity and utilizing appropriate APA style. The key assessment for the course is a critique of a published research article. Instructors will also include assessments such as: midterm or final examinations, quizzes, class presentations, online activities or discussions, research projects, research proposals, dialogue journals, research problem descriptions, article analyses, or class participation."
+    },
+    {
+      "number": 587,
+      "title": "Master's Project",
+      "credits": 3,
+      "description": "The development of an original master's project (paper, essay, production, practicum) supervised and judged by an appropriate faculty committee."
+    },
+    {
+      "number": 589,
+      "title": "Problems in Urban Education",
+      "credits": 3,
+      "description": "Independent study of selected topics related to urban education."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "title": "Education Seminar",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "EDUC586"
+        ]
+      },
+      "description": "The capstone seminar course for the M.Ed. degree requiring an appropriate scholarly term paper. EDUC 591 Education Seminar (6)This performance-based course is intended to serve as a culminating or capstone experience for students enrolled in the Master of Education degree program in Teaching and Curriculum. A constructivist seminar format, augmented by significant readings, will be used to facilitate in-depth discussions of important, timely, and controversial issues in education. Students will be asked to reflect upon all previous course work toward the degree as a foundation for analyzing the past, evaluating the present, and speculating about the likely future of the numerous issues that collectively constitute the education arena. Students will be expected to demonstrate their ability to analyze and synthesize material through the guiding of, and participation in, class discussions of the readings, through satisfactory completion of in-class assignments, and through the completion of a major scholarly paper and a corresponding class presentation that both focus on the same aspect of an educational theme."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 801,
+      "title": "Global Trends in Education Culture",
+      "credits": 3,
+      "description": "This course provides a survey of major trends in the field of comparative and international education in the last half of the 20th century. The course presents problems and issues that are of global concern in the 21st century and provides students with readings and databases that will allow them to make their own comparisons. Students will be given an overview of international organizations and the frameworks in which important contemporary education trends and issues are discussed around the world. Finally, potential future solutions will be explored."
+    },
+    {
+      "number": 802,
+      "title": "Educational Research Design",
+      "credits": 3,
+      "description": "This course provides students with an overview of the skills necessary to design, implement, and assess research studies. Students learn the declarative, conceptual, and procedural knowledge needed for successful preparation for the conduct of research investigations. This introduction includes elements of qualitative, quantitative, and mixed methods research. After course completion, students will have the knowledge and skills necessary to evaluate published research reports, apply research methods to contextualized problems, and initiate conduct of applied research projects."
+    },
+    {
+      "number": 804,
+      "title": "Program Evaluation",
+      "credits": 3,
+      "description": "This course gives students an overview of the fundamentals of reading, evaluating, and conducting evaluations of programs in educational settings. This course will cover theories and methods in program evaluation, ask students to analyze multiple examples of program evaluations in the real-world, and provide students with the opportunity to conceptualize and carry out a program evaluation of their choosing. Through these activities, this course will emphasize both best practices and practical considerations in program evaluation. Students will be asked to engage in the cyclical process of evaluation design, including developing evaluation questions, formulating an assessment plan, gathering quantitative and qualitative data and analyzing results, and formulating recommendations. Students will likewise be asked to critically evaluate each of these program evaluation components when reading and making decisions based on program evaluation reports. As an outcome of this course, students will be able to design a logic model, based on program features, develop an assessment plan, carry out the assessment plan, and compose a program evaluation report, including data-based recommendations for program improvement. In addition to these applied components of evaluation conceptualization and execution, the course will also ask students to adopt a critical lens on program evaluation, including grappling with foundational questions like: what is the role of the evaluator in relation to a program and the community it serves?, what is the purpose of program evaluation and who benefits?, whose perspectives are incorporated into determining program quality and whose perspectives are excluded?, and who defines program quality?"
+    },
+    {
+      "number": 805,
+      "title": "Curriculum Foundations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC820"
+        ]
+      },
+      "description": "This course provides a comprehensive overview of the philosophical, historical, psychological, and social foundations that affect the school curriculum. The course calls attention to the global and multicultural perspective in education. It involves the study of the implications and applications of these curricular foundations in the form of issues and theoretical trends that shape the field of curriculum. Participation in the course activities allows candidates to identify and analyze their personal values, beliefs, and perspectives, as well as theories and research which shape their own professional practice as educations within diverse educational settings with children. By the end of the course, participants will be able to 1) develop and demonstrate understanding of how major foundations (disciplines) shape the curriculum of schooling, including philosophy, history, politics/policy, social psychology, and cultural studies; 2) consider and critique selected educational issues, both past and present, examining how they are anchored in and influenced by the foundations of curriculum; 3) investigate how social, economic, cultural, and political/policy debates and representations in the public sphere help to shape the foundations of curriculum; 4) engage in critical inquiry regarding the future roles of teachers, students, and other stakeholders in the learning community and society at large, and exercise the faculty of imagination as a means of thinking \"outside the box\" for educational purposes; 5) demonstrate professional scholarly attitudes, skills, and dispositions, including critical analysis and constructive use of questioning; scholarly use of research; dedication to continuous learning; positive group interaction and participatory collaboration; and reflective envisioning and enacting of curricular reform; 6) examine issues of race/ethnicity, linguistic variation, social class, gender, and sexual orientation and their relationships to the curriculum and schooling; and 7) demonstrate a professional scholarly writing style with a practical focus sharpened by theoretical awareness, using the APA Writing Manual as a style guide."
+    },
+    {
+      "number": 806,
+      "title": "Curriculum Development and Instructional Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC805"
+        ]
+      },
+      "description": "The course focuses on an examination of theory, issues, problems, organization, and application of instructional design for teachers in planning and developing a curriculum. The course presents examples of effective strategies including concept-based curricula, backward design, interdisciplinary approaches, integrated curricula (curriculum mapping), assessment, and reporting techniques."
+    },
+    {
+      "number": 810,
+      "title": "Quantitative Data Analysis Workshop",
+      "credits": 3,
+      "description": "This course is designed for professional master's and doctoral students with a desire to increase their conceptual understanding of basic statistics and their proficiency with analytic techniques. In this hands-on workshop class, students are provided a conceptual review of quantitative statistical analysis. Hands-on activities and practice with provided datasets allow students to learn techniques and interpretation of conducted analysis. Through this course students become more comfortable with analyzing quantitative datasets. Topics include teacher-directed review, modeled analyses, and guided practice. Participants will practice analyses and interpretation with provided example data sets. Students exit the course with a set of models to reference in their future work. Students may use personal datasets for many assignments."
+    },
+    {
+      "number": 811,
+      "title": "Qualitative Data Analysis and Design",
+      "credits": 3,
+      "description": "This course for professional master's and doctoral students focuses on the development of qualitative methods and analytic skills. Through course readings and the engagement of qualitative research techniques, course participants will situate and assess qualitative research studies within a broader research context, develop the ability to articulate a coherent research design, gain experience in foundational qualitative methods and analysis, be able to discern what questions are appropriate to qualitative research, and synthesize and write up results of data analysis."
+    },
+    {
+      "number": 815,
+      "title": "Foundations of Education Research",
+      "credits": 3,
+      "description": "While researchers working in the natural sciences typically share a common set of assumptions concerning their object of study, appropriate methods for investigating that object, and explanatory principles and concepts, the social and human sciences, including education, do not have this unity. Instead, a range of positions that developed in philosophy, primarily through the Nineteenth and Twentieth Centuries, have led to very different, sometimes incongruous orientations to research involving human phenomena. These include Post-Positivism, Interpretivism, the Critical Tradition, Post-Structuralism, and Pragmatism. Although the beliefs, concerns, and priorities underlying these orientations are not always made explicit by researchers, they each offer specific views concerning how knowledge is produced and how that knowledge can best be put to use in the service of humankind. This course engages with these traditions in order to identify the assumptions and commitments underlying them, to appreciate the research that has emerged from each perspective, and to understand what each has to offer education professionals."
+    },
+    {
+      "number": 820,
+      "title": "Learning Theory for the Classroom",
+      "credits": 3,
+      "description": "This course is an application of learning theories from psychological, sociological, and physiological disciplines to educational settings for children and adolescents. At the conclusion of the course, participants will be able to 1) analyze the educational implications of cognitive, language, personal, and social/emotional development; 2) describe and distinguish among major learning theories from biological, psychological, and sociological disciplines; 3) employ knowledge of learning theories to analyze learning strategies, strengths, and needs; 4) apply learning theories to optimize learning for all students that complements their cultural background, race, gender, ethnicity, socioeconomic status, or special needs; and 5) analyze through a theoretical lens the impact on student learning of current educational issues and trends."
+    },
+    {
+      "number": 839,
+      "title": "Educational Assessment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC820"
+        ]
+      },
+      "description": "This course will prepare students with the knowledge and skills necessary to monitor, assess, and report student achievement."
+    },
+    {
+      "number": 862,
+      "title": "Literacy Assessment and Evaluation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC561"
+        ]
+      },
+      "description": "This is a required course in the M.Ed. in Literacy Education graduate degree and reading specialist certification programs. The course is designed to familiarize participants with (1) factors related to learners who exhibit difficulty with literacy learning; (2) appropriate selection of valid, reliable, fair, and appropriate print and digital assessment tools to evaluate literacy achievement; (3) proper techniques for administering, scoring, and interpreting formal and informal literacy assessments; (4) procedures for analyzing findings, summarizing results, and advocating for appropriate literacy practices and recommendations that meet the diverse needs of K-12 learners."
+    },
+    {
+      "number": 863,
+      "title": "Literacy Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC862"
+        ]
+      },
+      "description": "This course examines the literacy curriculum and teaching practices in various real world contexts to support the diverse needs of K-12 learners. Graduate students review and apply current literacy research to inform instruction within the context of their individual classrooms. Students also employ a mulitliteracies framework in their lessons as they locate digital resources and tools to model critical viewing, representing, and thinking for their K-12 learners. Students enrolled in EDUC 863 : Literacy Methods plan, adapt, and implement innovative instructional approaches that will support their professional practice and future role as K-12 literacy educators and reading/literacy specialists."
+    },
+    {
+      "number": 864,
+      "title": "Literacy Clinic",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDUC863"
+        ]
+      },
+      "description": "This capstone course for the Master of Education in Literacy Education with the Reading Specialist certification program is designed to address the major theories and empirical research that addresses the cognitive, linguistic, and sociocultural foundations of literacy development, processes, and components, including word recognition, language comprehension, strategic knowledge, critical literacy, and interdisciplinary connections. To demonstrate mastery of these concepts, students engage in an action research case study project in which they design, develop, and implement within their respective curriculum to meet the needs of K-12 learners who are experiencing difficulties with literacy. Through this case study, students demonstrate and apply pedagogical and professional knowledge, skills, and dispositions. Students select a variety of appropriate texts, consider multimodalities, determine learners' backgrounds and interests, and administer appropriate assessments to evaluate and monitor progress. Students also have the opportunity to further enhance their ability to collaborate with professional colleagues, interact with families, and demonstrate leadership in literacy education."
+    },
+    {
+      "number": 865,
+      "title": "Literacy Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "LLED445",
+          "EDUC863"
+        ]
+      },
+      "description": "EDUC 865 Literacy Leadership is a required course in the Master of Education in Literacy Education and Reading Specialist certification program that is designed to prepare students to assume the role of literacy leader within a school or school district. This role includes the implementation, management, and evaluation of the literacy program. The course allows students to connect theory to the development of effective literacy programs and intervention frameworks, and to understand the interrelated nature of literacy policy, curriculum, assessment, and instruction. Throughout the course, students develop dispositions that allow them to work collaboratively alongside classroom teachers, district officials, and other professionals as they develop curriculum, determine appropriate assessments, conduct professional learning workshops, and evaluate program effectiveness."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "EDUC 894 is a practicum research experience for the Doctor of Education program (D.Ed.); as such, the course expects the student to research and critically analyze a topic aligned with the student's career interests. The course covers all phases of the research process from identifying problems of practice, to reviewing literature, identifying study methods and analytical techniques, and scholarly writing of research papers. Students in a D.Ed. degree program must communicate a high level of knowledge of the subject based upon their development of research questions, gathering of sources, and completion of a high-quality scholarly paper that integrates their knowledge. This course provides the student an opportunity to apply knowledge, concepts, and theories to investigate a problem of practice. The overall goals of this research practicum are to provide students with a supervised opportunity to participate in the process of conceptualizing, implementing, and analyzing, and/or writing research studies directed towards problems of practice. Practicum experiences may encompass early, mid, and late phases of research activity."
+    },
+    {
+      "number": 895,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised, professionally oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 896,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects with a professional orientation, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "subject": "TREES",
+  "courses": [
+    {
+      "number": 574,
+      "title": "Integrated Perspectives in Transdisciplinary Research on Environment and Society",
+      "credits": 3,
+      "description": "Introduction to the integration and application of interdisciplinary concepts to contemporary natural resource and environmental issues."
+    },
+    {
+      "number": 575,
+      "title": "Ethical Issues in Transdisciplinary Research on Environment and Society",
+      "credits": 3,
+      "description": "This course foregrounds research in the frontiers of knowledge related to environmental ethics and trans-disciplinary research on the environment and society. It establishes a foundation in key environmental ethics concepts and then helps students develop an interdisciplinary set of ethical, cognitive, reflexive, and professional skills for exploring environmental ethics issues in more detail. As a required course in the TREES dual-title Graduate Program, the course integrates TREES's philosophical and applied approaches to understanding how different value systems in multiple societal contexts influence the management, use, conservation, and preservation of natural resources and the environment. However, the course may also be taken electively by students outside the TREES dual-title program."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium in Transdisciplinary Research on Environment and Society",
+      "credits": 1,
+      "description": "Professional socialization and training, development, and assessment of meta-theoretical frameworks and cohort building."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, research-oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

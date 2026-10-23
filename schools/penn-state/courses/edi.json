@@ -1,0 +1,45 @@
+{
+  "subject": "EDI",
+  "courses": [
+    {
+      "number": 582,
+      "title": "Multi-disciplinary Studio",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDSGN581",
+          "ENGR411",
+          "LPE853"
+        ]
+      },
+      "description": "This course serves as the culminating experience for the Engineering Design and Innovation (EDI) M.Eng. degree and will also be available as an elective to EDI students in the M.S. degree option. In this course students will reflect on and balance the depth and breadth of their experience and capabilities. Students from all EDI focus areas will complete the program by participating in a common culminating experience. Having focused on different themes of engineering design and innovation, students will work together and apply their perspectives of engineering design and innovation to a joint innovation design challenge. Though the specific design challenge may change, successfully navigating and addressing the challenge will require the teams to apply knowledge and techniques learned across their multi-disciplinary course sequence. Through this structure, EDI students will demonstrate their collective acquired knowledge, skills, and abilities as they collaborate and innovate. The final deliverables could take many forms and will reflect the outputs necessary to communicate and validate the proposed solution to the innovation challenge from various perspectives. Through this course, it is expected that students will complete a portfolio, through which they will communicate-in a readily digestible format-how they have applied concepts learned throughout their degree program to their work while also demonstrating the four core learning objectives for the Engineering Design and Innovation master's program. The portfolio is expected to include projects (3+) completed throughout the EDI program. Students will complete a singular design, with an emphasis on integrating perspectives from entrepreneurship, leadership and innovation management, engineering design, and law policy and engineering. Building on their unique focus areas with the program, this course will enable students to work collaboratively across each of these areas, to rigorously examine their work within a larger engineering context. Examples include life cycle analyses, lean startup methods, and systems optimization. The culminating experience in this course is the semester project. Teams apply what they have learned throughout the EDI program as they engage in design and innovation activities to respond to scenarios posed by clients. The final results are presented in oral and written reports, as well as detailed prototypes."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "description": "Thesis Research"
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "description": "Thesis Research Off Campus"
+    }
+  ]
+}

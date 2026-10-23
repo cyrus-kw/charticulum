@@ -1,0 +1,96 @@
+{
+  "subject": "CMPSY",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Theories and Issues in Community Psychology",
+      "credits": 3,
+      "description": "Contemporary issues in community psychology will be discussed within the framework of its development from clinical and social psychology."
+    },
+    {
+      "number": 510,
+      "title": "Change Processes",
+      "credits": 3,
+      "description": "Social change as it takes place within institutions and communities."
+    },
+    {
+      "number": 511,
+      "title": "Social Impacts on Psychological Functioning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSY500"
+        ]
+      },
+      "description": "Psychological functioning, as it is affected by social contexts."
+    },
+    {
+      "number": 519,
+      "title": "Research Methods I",
+      "credits": 3,
+      "description": "In-depth examination of research methods utilized by community psychologists and social change activists; course followed by CMPSY 520 . CMPSY 519CMPSY 519 Research Methods I (3)This course, along with CMPSY 520 -Research Methods II, will examine the key research methods available to community psychologists and social change activists. The course will emphasize a hands-on experience for students so that they can understand all the components of conducting program assessments. All students will develop pilot projects under the guidance of the instructor that will give the students experience in developing action research/program evaluation questions, completing research literature reviews, developing specific methodologies appropriate to their action research/program evaluation questions, data base design, data analysis, and report writing. There will be a balance between action research, program evaluation, quantitative and qualitative approaches. A final report and presentation of the findings of the pilot project are required. This course is the research methods course required of all community psychology and social change graduate students. This course assumes a basic understanding of introductory statistics and the use of statistical software will be undertaken in the course. The course is the introductory research methods course and will be offered in a sequence with CMPSY 520 -Research Methods II. Both CMPSY 519 and CMPSY 520 must be taken in order to complete the Community Psychology and Social Change research methods requirement for graduation. This course is for 3 credits.Faculty: Richard Fiene and Robert Colman"
+    },
+    {
+      "number": 520,
+      "title": "Research Methods II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSY519"
+        ]
+      },
+      "description": "In-depth examination of research methods utilized by community psychologists and social change activists. (Continuation of CMPSY 519 ). CMPSY 520CMPSY 520 Techniques in Action Research (3)This course is the second of two research methods courses required of all Community Psychology and Social Change graduate students, emphasizing action research, program evaluation, and both qualitative and quantitative measurement.Faculty: Richard Fiene and Robert Colman"
+    },
+    {
+      "number": 521,
+      "title": "Roles and Methods in Community Psychology",
+      "credits": 3,
+      "description": "Advanced course entailing the development of Master's Projects with both fieldwork and research; each student writes a formal proposal."
+    },
+    {
+      "number": 522,
+      "title": "Practicum",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "CMPSY500",
+          "CMPSY510",
+          "CMPSY511",
+          "CMPSY520",
+          "CMPSY521"
+        ]
+      },
+      "description": "Fieldwork implementing planned change."
+    },
+    {
+      "number": 594,
+      "title": "Research",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised research on a master's paper."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

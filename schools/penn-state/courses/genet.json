@@ -1,0 +1,135 @@
+{
+  "subject": "GENET",
+  "courses": [
+    {
+      "number": 581,
+      "title": "Genetics of Model Organisms: Bacterial and Viral Pathogenesis: A",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS503"
+        ]
+      },
+      "description": "Examines uses of genetic studies in understanding biological processes associated with bacterial and viral pathogenesis. GENET 581GENET 581 Genetics of Model Organisms: Bacterial and Viral Pathogenesis: A (1) This course presents the use of genetic analysis in bacteria and viruses with its application to the study and dissection of biological pathways and processes. Bacterial and viral pathogenesis will be used to develop concepts and techniques that are critical components of genetic studies. Integration of studies will be used to compare and contrast the specific methods and techniques that underlie the use of genetic approaches in bacteria and viruses."
+    },
+    {
+      "number": 582,
+      "title": "Genetics of Model Organisms: Molecular Genetic Analysis of Signaling Pathways: B",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS503"
+        ]
+      },
+      "description": "Examines uses and interrelationships of genetic studies with model systems from yeast to mice in elucidating signaling pathways. GENET 582GENET 582 Genetics of Model Organisms: Molecular Genetic Analysis of Signaling Pathways: B (1) This course presents the use of genetic analysis in model organisms and systems with its application to the study and dissection of biological pathways and processes. elucidation of target of rapamycin (TOR) signal transduction pathway will be used to develop concepts and techniques that are critical components of genetic studies. Integration of studies from multiple model systems will be used to compare and contrast the specific methods and techniques that underlie the use of similar genetic concepts in different organisms and systems."
+    },
+    {
+      "number": 585,
+      "title": "Human Genetics B: Non-mendelian Genetics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course explores genetic disease mechanisms that alter chromosome behavior or show non-mendelian patterns of inheritance. GENET 585GENET 585 Human Genetics B: Non-mendelian Genetics (1) Many genetic diseases do not show straightforward patterns of inheritance. Was Gregor Mendel wrong? How can a disorder be inherited without causing primary DNA sequence changes? What is the biological basis behind disorders that do not show simple mendelian inheritance? What are the phenotypic consequences of disorders that alter fundamental aspects of chromosome mechanics? These topics and more will be covered in this selective course.This course will be offered as part of 3 one-unit courses in Human Genetics that cover (1) identification and analysis of chromosomes and disease genes, (2) the human genome and complex traits, and (3) chromosome behavior and non-mendelian inheritance. The full three unit series may be taken in its entirety although each one-unit course is completely independent of the other two courses.Students will be evaluated by their class participation and performance on take-home assignments that require the students to solve problems, evaluate experiments, or logically address research questions."
+    },
+    {
+      "number": 586,
+      "title": "Human Genetics C: Complex Traits",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course explores the human genome landscape, how individuals vary, and gene identification for multigenic traits and disorders. GENET 586 Human Genetics C: Complex Traits (1) With the completion of the human genome project, genes underlying almost all \"simple\" mendelian traits have now been identified. A new challenge is to identify genes involved in common traits and disorders such as hypertension or obesity. This course will explore the human genome landscape, human genome variation, principals of population genetics and experimental approaches to identify genes involved in these important complex disorders. This course will be offered as part of 3 one-unit courses in Human Genetics that cover (1) identification and analysis of chromosomes and disease genes, (2) the human genome and complex traits, and (3) chromosome behavior and non-mendelian inheritance. The full three unit series may be taken in its entirety although each one-unit course is completely independent of the other two courses. Students will be evaluated by their class participation and performance on take-home assignments that require the students to solve problems, evaluate experiments, or logically address research questions."
+    },
+    {
+      "number": 587,
+      "title": "Genetic Approaches to Biomedical Problems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "Advanced training of students with interest in genetic approaches to problem solving."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

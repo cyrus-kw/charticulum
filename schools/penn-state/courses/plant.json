@@ -1,0 +1,208 @@
+{
+  "subject": "PLANT",
+  "courses": [
+    {
+      "number": 129,
+      "suffix": "N",
+      "title": "Chocolate Worlds",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GN",
+        "INTER",
+        "BA-H",
+        "BA-N",
+        "BA-WC"
+      ],
+      "description": "This course will examine the \"world\" of chocolate throughout human history. First cultivated by the ancient peoples of the Americas and then manufactured by Europeans and Pennsylvanians alike, chocolate has played a privileged role as a luxury good. An interdomain course, \"Chocolate Worlds\" is interdisciplinary, taught by faculty in the departments of Plant Science, Anthropology, and History. As a team we investigate the how diverse societies have differentially interacted with this crop. Rather than be organized chronologically, this course will be divided into course Units, such as the history of cocoa uses and cultivation, cocoa plant science and farming issues, chocolate making and markets, and the state of the global chocolate industry. The course's lectures and assigned readings work in concert equally directed by scientific inquiry and the queries of the social sciences and humanities. Assignments will address real world questions relating to contemporary cocoa cultivation and production, and its role in international development and social justice. As a class we will take field trips to sites such as local chocolate manufacturing facilities and cocoa research sites and laboratories. The learning objectives of this course include students' broad knowledge of cacao production, its history, and ethnical issues surrounding its cultivation in today's global economy. Additionally, students will gain an historical appreciation for the role this crop his played in diverse human societies and a scientific understanding of its genetic structure."
+    },
+    {
+      "number": 150,
+      "suffix": "S",
+      "title": "Plant Science First Year Seminar",
+      "credits": 2,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "Plant 150S is the First Year Engagement course for first-year students in the Department of Plant Science majors of Plant Sciences, Turfgrass Science, and Landscape Contracting at University Park campus. First Year DUS students may enroll. Students will explore the various academic fields of the plant sciences (horticulture and agronomy), turfgrass science and management, and landscape contracting through literature review, library searches, field studies, critical thinking, exercises, and exposure to appropriate Penn State faculty and staff. Students will also be introduced to the breadth of University resources at their disposal."
+    },
+    {
+      "number": 200,
+      "title": "Introduction to Agricultural Crop Growth, Form, and Function",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "SOILS101"
+            ]
+          }
+        ]
+      },
+      "description": "About 12,000 years ago, humans began harvesting their food from the natural biological diversity that surrounded them, resulting eventually to domesticated agricultural crops. Over thousands of years farmers selected for desirable traits in crops, and thus improved the plants for agricultural purposes. Agricultural Crop Growth, Form, and Function is a required introductory course for options in the Plant Science major. This course provides fundamental information on agricultural crop growth needed for understanding course content of upper level courses within the major. The major focus areas will include general crop growth and function, environmental and plant interactions in agriculture, Pests of agricultural crops, and breeding and genetics of agriculturally important crops. Upon successful completion of the course students should have a better understanding of the following topics: structural components of cells and plants; growth of tissue systems; plant interactions with their environment; physiological processes in plant growth; basic components of plant genetics; and the impact of human selection, genetic engineering, and climate modifications on plant development and food production."
+    },
+    {
+      "number": 201,
+      "title": "Introductory Agroecology",
+      "credits": 3,
+      "description": "This course focuses on the fundamental ecological principles of population, community, and ecosystem ecology applicable to agroecosystems. Students will be taught about the history and consequences of modern industrial agricultural systems and the urgent need for more sustainable management practices. By the end of this course, students will be able to demonstrate how integrating the fields of ecology with agricultural sciences provides opportunities to develop and implement innovative strategies for sustainable agriculture. These include managing soil health and fertility, pathogen suppression and pest control, reduction of external inputs of chemicals in agroecosystems, and strategies for decreasing the negative effects of agricultural practices on the environment."
+    },
+    {
+      "number": 202,
+      "title": "Introduction to Crop Genetics, Biotechnology and Genomics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PLANT200",
+              "BIOL110"
+            ]
+          }
+        ]
+      },
+      "description": "PLANT202 introduces basic concepts in plant genetics, biotechnology and genomics, and considers their importance in areas such as plant breeding, conservation, agronomy and horticulture. The course aims to make the latest technological innovations accessible and to provide students with the basis to critically evaluate these developments and to communicate their implications to a broader audience."
+    },
+    {
+      "number": 217,
+      "title": "Landscape Soil and Water Management",
+      "credits": 3,
+      "description": "PLANT 217 Landscape Soil and Water Management (3) PLANT 217 is a course developed to meet the needs of the Landscape Contractors program. This course covers the following topics: Influence of weather on irrigation management; design, layout and management of residential and commercial landscape irrigation systems; sprinkler selection, scheduling and irrigation system management; irrigation uniformity and control systems; the importance of drip and subsurface irrigation; the effects of rainfall and irrigation on soil erosion and sedimentation on landscape sites especially under construction. The course also includes short field trips to various local industry-related facilities for educational evaluation."
+    },
+    {
+      "number": 220,
+      "title": "Gardening for Fun and Profit",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "The objective of PLANT 220 (GN), Gardening for Fun and Profit is to provide students with science-based fundamentals of establishing and maintaining residential landscapes and gardens. The course provides information that is especially useful to those with minimal to intermediate knowledge of horticultural plants. A background in gardening or landscaping is not needed. Class topics are presented by guest speakers who are scientists and experts in the topic area. Major topics include proper plant selection, soil preparation for establishing plantings, the basics of seeding, growing transplants and planting, the basics of planting and maintaining trees and shrubs, avoiding common mistakes in the garden and landscape, gardening resources, storage and processing fruits and vegetables for home use and ideas for making profit from gardening activities. This course includes a weekly laboratory session where students gain practical skills needed for developing and maintaining residential landscapes and edible gardens through hands-on activities and field trips."
+    },
+    {
+      "number": 240,
+      "title": "Fundamentals of Cannabis: An Introduction to the Botany, Cultivation, and Harvesting of Hemp",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "Fundamentals of Cannabis provides a broad overview of hemp's natural ecosystem, biology, domestication, phenotypic plasticity, industrial cultivation, and business models within the hemp industry that foster bioeconomic empowerment for growers. The course starts with the basic biology of Cannabis species the effects of light on the production of cannabinoids, the various uses in the economic fabric of industrialized nations, and concludes with what makes hemp (THC < 0.3%) a unique plant for industrial production. Despite the legalization of hemp, optimal conditions for indoor and outdoor cultivation of cannabis remain not well understood. The purpose of this course is to introduce students to basic principles, best horticultural practices, and specific concepts for getting started in industrial hemp production. Throughout this course, potential business opportunities are emphasized for various aspects of the hemp industry."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 427,
+      "title": "Pennsylvania Pesticide Applicator Exam Preparation",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "AGRO28"
+        ]
+      },
+      "description": "Graduates from the Crop Production option within the Plant Sciences Major may desire to have professional licenses related to their anticipated area of employment. This course will assist students as they prepare for the licensing exam which will allow them to legally apply pesticides. Professionals in the field will provide study materials and guide students as they study and prepare to take the licensing exam. Students will be guided through the technical material and requirements necessary to successfully complete the exam. This course and successful passing of the exam will make the graduate more employable than students that have not obtained this professional license. The course is intended for students in the Crop Production option, but students outside the option and with the necessary prerequisite may take the course. Upon completion of this course, students will be prepared to take the exam for the Pesticide Applicators License offered by the Pennsylvania Department of Agriculture."
+    },
+    {
+      "number": 428,
+      "title": "Certified Crop Advisor Exam Preparation",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "AGRO423",
+          "AGRO425",
+          "AGRO438"
+        ]
+      },
+      "description": "Graduates from the Crop Production option within the Plant Sciences Major may desire to have professional certifications and licenses related to their anticipated area of employment. This course will assist students as they prepare for the exam to become Certified Crop Advisors. Professionals in the field will provide study materials and guide students as they study and prepare for the exam. Students will be guided through the technical material and requirements necessary to successfully complete the exam. This course and successful completion of the exam will make the graduate more employable than students that have not obtained this professional certificate. The course is intended for students in the Crop Production option, but students outside the option and with the necessary prerequisites may take the course. Upon completion of this course, students can take the licensing exam offered by the American Society of Agronomy to become a Certified Crop Advisor."
+    },
+    {
+      "number": 461,
+      "title": "Emerging Issues in Plant Sciences",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "AGRO28",
+              "HORT101"
+            ]
+          },
+          {
+            "oneOf": [
+              "AGECO201",
+              "PLANT200",
+              "HORT202"
+            ]
+          },
+          "ENT313",
+          "SOILS101"
+        ]
+      },
+      "description": "Emerging Issues in Plant Sciences is a capstone course designed for the Plant Sciences, and is also available to students from other majors. This highly participatory course emphasizes many of the interdisciplinary topics in the plant sciences today, with a focus on balancing plant production with environmental conservation. Topics include: conservation cropping systems and tillage, soil health; transgenic crops; managing landscapes for ecosystem services, climate change, pest and nutrient management alternatives; biofuels; urbanization and regional food systems. It is a team taught course with guest lectures by experts on specific topics and includes student analysis and discussion with the guidance of the instructors. Students will read and write about publications from the peer reviewed literature and research and present about an emerging issue."
+    },
+    {
+      "number": 494,
+      "title": "Undergraduate Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Independent study directed by faculty supervisor a Plant Science faculty member."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Independent study directed by faculty supervisor culminating in a Plant Science honors thesis."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

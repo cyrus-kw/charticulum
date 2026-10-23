@@ -1,0 +1,29 @@
+{
+  "subject": "CIC",
+  "courses": [
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Formal courses taken on a special interest subject which will be offered on a C I C institution by C I C traveling scholars; several different topics may be taken each semester."
+    },
+    {
+      "number": 598,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Formal courses taken on a special interest subject which will be offered on a C I C institution by C I C traveling scholars; several different topics may be taken each semester."
+    }
+  ]
+}

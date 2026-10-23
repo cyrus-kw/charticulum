@@ -1,15 +1,22 @@
-// Builds Penn State's school data (subjects, courses, and school-wide
-// rules) from its public Undergraduate Bulletin, bulletins.psu.edu, and
+// Builds Penn State's school data (subjects, courses, attributes, and
+// school-wide rules) from its public bulletins, bulletins.psu.edu, and
 // writes it as a folder of JSON files (the layout is described in
 // src/engine/schoolFiles.ts):
 //
-//   schools/penn-state/school.json         id, name, calendar, program types
-//   schools/penn-state/requirements.json   school-wide rules for each program type
+//   schools/penn-state/school.json         id, name, calendar
+//   schools/penn-state/attributes.json     course labels: gen ed, US/IL, W, ...
 //   schools/penn-state/subjects.json       every subject: code and name
-//   schools/penn-state/objects/cmpsc.json  one subject's courses, by number
-//   schools/penn-state/programs/baccalaureate/cmpsc-bs.json
-//                                          programs, one folder per program type,
-//                                          written by hand (left alone here)
+//   schools/penn-state/courses/cmpsc.json  one subject's courses (undergraduate
+//                                          and graduate), by number
+//   schools/penn-state/requirements/credentials/bachelors.json
+//                                          the rules every bachelor's degree follows
+//
+// Two parts are written by hand, and left alone here:
+//
+//   schools/penn-state/structure.json      levels (and their course numbers),
+//                                          credentials, colleges
+//   schools/penn-state/programs/bachelors/cmpsc-bs.json
+//                                          programs, one folder per credential
 //
 //   npx tsx scripts/penn-state.ts          # writes the folder
 //   npx tsx scripts/penn-state.ts --save   # also saves it to the database in .env,
@@ -17,9 +24,11 @@
 //                                          # ones already saved there
 //
 // What it reads:
-// - The subject list (.../university-course-descriptions/undergraduate/),
-//   then each subject's course list: each course's title, description,
-//   credits, prerequisites, and gen ed area.
+// - The undergraduate and graduate subject lists
+//   (.../university-course-descriptions/undergraduate/ and .../graduate/),
+//   then each subject's course lists: each course's title, description,
+//   credits, prerequisites, and attributes (the labels listed in
+//   .../university-course-descriptions/, under Course Attributes).
 // - The program pages in PROGRAMS, only as hints: which courses their
 //   suggested plans use (to put the likeliest option of an "A or B"
 //   first). It doesn't write any programs; those are made by hand, in
@@ -47,7 +56,11 @@ import { readSchoolFolder } from "../src/server/schoolFolder";
 
 const BULLETIN = "https://bulletins.psu.edu";
 const COLLEGES = `${BULLETIN}/undergraduate/colleges`;
-const COURSES = `${BULLETIN}/university-course-descriptions/undergraduate`;
+// The course lists, one section per level. A subject can be in both
+// (CMPSC 121 is undergraduate, CMPSC 598 graduate); its courses go in one
+// file either way, and their numbers say their level (structure.json).
+const LEVELS = ["undergraduate", "graduate"] as const;
+const COURSES = `${BULLETIN}/university-course-descriptions`;
 // The bulletin's year starts this fall.
 const START_YEAR = 2026;
 const CACHE = "node_modules/.cache/penn-state";
@@ -63,47 +76,72 @@ const PROGRAMS = [
   "engineering/mechanical-engineering-bs",
 ];
 
-// What an Inter-Domain course lists among its gen ed areas, besides its
-// two domains.
-const INTER_DOMAIN = "Inter-Domain";
+// Penn State's course attributes, as the bulletin lists them under
+// Course Attributes, in families (groups). Each course lists its own, one
+// paragraph each ("General Education: Humanities (GH)", "United States
+// Cultures (US)"); `label` is that paragraph. The gen ed group is the
+// general-education category, so its attributes are also a course's gen
+// ed areas (by name). Inter-Domain comes last, so an Inter-Domain course
+// shows a domain's letter on its card.
+const ATTRIBUTE_GROUPS = [
+  { id: "gen-ed", name: "General Education", category: "general-education" as const },
+  { id: "bachelor-of-arts", name: "Bachelor of Arts" },
+  { id: "cultural-diversity", name: "Cultural Diversity" },
+  { id: "first-year", name: "First-Year Engagement" },
+  { id: "writing", name: "Writing Across the Curriculum" },
+  { id: "honors", name: "Honors" },
+];
+const ATTRIBUTES = [
+  { id: "GWS", name: "Writing and Speaking", group: "gen-ed", label: "General Education: Writing/Speaking (GWS)" },
+  { id: "GQ", name: "Quantification", group: "gen-ed", label: "General Education: Quantification (GQ)" },
+  { id: "GA", name: "Arts", group: "gen-ed", label: "General Education: Arts (GA)" },
+  { id: "GH", name: "Humanities", group: "gen-ed", label: "General Education: Humanities (GH)" },
+  { id: "GN", name: "Natural Sciences", group: "gen-ed", label: "General Education: Natural Sciences (GN)" },
+  { id: "GS", name: "Social and Behavioral Sciences", group: "gen-ed", label: "General Education: Social and Behavioral Scien (GS)" },
+  { id: "GHW", name: "Health and Wellness", group: "gen-ed", label: "General Education: Health and Wellness (GHW)" },
+  { id: "INTER", name: "Inter-Domain", group: "gen-ed", label: "General Education - Integrative: Interdomain" },
+  { id: "BA-A", name: "BA: Arts", group: "bachelor-of-arts", label: "Bachelor of Arts: Arts" },
+  { id: "BA-H", name: "BA: Humanities", group: "bachelor-of-arts", label: "Bachelor of Arts: Humanities" },
+  { id: "BA-N", name: "BA: Natural Sciences", group: "bachelor-of-arts", label: "Bachelor of Arts: Natural Sciences" },
+  { id: "BA-Q", name: "BA: Quantification", group: "bachelor-of-arts", label: "Bachelor of Arts: Quantification" },
+  { id: "BA-S", name: "BA: Social and Behavioral Sciences", group: "bachelor-of-arts", label: "Bachelor of Arts: Social and Behavioral Sciences" },
+  { id: "BA-WC", name: "BA: World Cultures", group: "bachelor-of-arts", label: "Bachelor of Arts: World Cultures" },
+  { id: "BA-WL12", name: "BA: World Language (12th Unit)", group: "bachelor-of-arts", label: "Bachelor of Arts: World Lang (12th Unit)" },
+  { id: "BA-WL", name: "BA: World Language (All)", group: "bachelor-of-arts", label: "Bachelor of Arts: World Language (All)" },
+  { id: "US", name: "United States Cultures", group: "cultural-diversity", label: "United States Cultures (US)" },
+  { id: "IL", name: "International Cultures", group: "cultural-diversity", label: "International Cultures (IL)" },
+  { id: "FYS", name: "First-Year Seminar", group: "first-year", label: "First-Year Seminar" },
+  { id: "W", name: "Writing Across the Curriculum", group: "writing", label: "Writing Across the Curriculum" },
+  { id: "HON", name: "Honors", group: "honors", label: "Honors" },
+];
+const ATTRIBUTE_BY_LABEL = new Map(ATTRIBUTES.map((a) => [a.label, a.id]));
 
 // The baccalaureate degree's 45 gen ed credits, for every program
 // (bulletins.psu.edu/undergraduate/general-education/baccalaureate-degree-general-education-program/):
 // Foundations 15, Knowledge Domains 15, Integrative Studies 6, and
 // Exploration 9. A course counts toward one of them only, the first in
 // this order that still needs it, so the narrow rules come first.
-const DOMAINS = ["Arts", "Humanities", "Natural Sciences", "Social and Behavioral Sciences"];
+const NOT_INTER = ["INTER"];
 const GEN_ED = {
   category: "general-education",
   eachCourseOnce: true,
   rules: [
     // Foundations: C or better, and not Inter-Domain courses.
-    { id: "WS", area: "Writing and Speaking", credits: 9, minGrade: "C" as Grade, notArea: INTER_DOMAIN },
-    { id: "Q", area: "Quantification", credits: 6, minGrade: "C" as Grade, notArea: INTER_DOMAIN },
+    { id: "WS", name: "Writing and Speaking", attributes: ["GWS"], credits: 9, minGrade: "C" as Grade, notAttributes: NOT_INTER },
+    { id: "Q", name: "Quantification", attributes: ["GQ"], credits: 6, minGrade: "C" as Grade, notAttributes: NOT_INTER },
     // Knowledge Domains: not Inter-Domain courses.
-    { id: "HW", area: "Health and Wellness", credits: 3, notArea: INTER_DOMAIN },
-    { id: "N", area: "Natural Sciences", credits: 3, notArea: INTER_DOMAIN },
-    { id: "A", area: "Arts", credits: 3, notArea: INTER_DOMAIN },
-    { id: "H", area: "Humanities", credits: 3, notArea: INTER_DOMAIN },
-    { id: "S", area: "Social and Behavioral Sciences", credits: 3, notArea: INTER_DOMAIN },
+    { id: "HW", name: "Health and Wellness", attributes: ["GHW"], credits: 3, notAttributes: NOT_INTER },
+    { id: "N", name: "Natural Sciences", attributes: ["GN"], credits: 3, notAttributes: NOT_INTER },
+    { id: "A", name: "Arts", attributes: ["GA"], credits: 3, notAttributes: NOT_INTER },
+    { id: "H", name: "Humanities", attributes: ["GH"], credits: 3, notAttributes: NOT_INTER },
+    { id: "S", name: "Social and Behavioral Sciences", attributes: ["GS"], credits: 3, notAttributes: NOT_INTER },
     // Integrative Studies.
-    { id: "INT", name: "Integrative Studies", area: INTER_DOMAIN, credits: 6 },
+    { id: "INT", name: "Integrative Studies", attributes: ["INTER"], credits: 6 },
     // Exploration: Natural Sciences (may be Inter-Domain), then any domain
     // or Inter-Domain.
-    { id: "EXN", name: "Exploration: Natural Sciences", area: "Natural Sciences", credits: 3 },
-    { id: "EX", name: "Exploration", area: [...DOMAINS, INTER_DOMAIN], credits: 6 },
+    { id: "EXN", name: "Exploration: Natural Sciences", attributes: ["GN"], credits: 3 },
+    { id: "EX", name: "Exploration", attributes: ["GA", "GH", "GN", "GS", "INTER"], credits: 6 },
   ],
-};
-
-// Penn State's gen ed areas, by their code.
-const GEN_ED_AREAS: Record<string, string> = {
-  GWS: "Writing and Speaking",
-  GQ: "Quantification",
-  GA: "Arts",
-  GH: "Humanities",
-  GS: "Social and Behavioral Sciences",
-  GN: "Natural Sciences",
-  GHW: "Health and Wellness",
 };
 
 type Course = SchoolDataInput["objects"][number];
@@ -174,10 +212,31 @@ function linkedCourses(html: string): string[] {
   return [...html.matchAll(/showCourse\(this, '([^']+)'\)/g)].map((m) => courseId(m[1]));
 }
 
-// The first number in a credits text: "3 Credits" → 3, "2-3" → 2, "1.5" → 1.5.
-function firstNumber(value: string): number {
-  const match = /\d+(\.\d+)?/.exec(value);
-  return match ? Number(match[0]) : 0;
+// A course's credits text: "3 Credits", "1.5 Credits", a range "1-3
+// Credits", and either with a limit for taking it again, "3
+// Credits/Maximum of 6" (repeatable, up to 6 in all).
+function parseCredits(value: string): Pick<Course, "credits" | "maxCredits" | "repeatable"> {
+  const match = /^(\d+(?:\.\d+)?)(?:\s*-\s*(\d+(?:\.\d+)?))?\s*Credits?(?:\s*\/\s*Maximum of\s*(\d+(?:\.\d+)?))?/i.exec(value);
+  if (!match) throw new Error(`Can't read credits "${value}"`);
+  const [, low, high, maximum] = match;
+  return {
+    credits: Number(low),
+    ...(high && Number(high) !== Number(low) ? { maxCredits: Number(high) } : {}),
+    ...(maximum ? { repeatable: { maxCredits: Number(maximum) } } : {}),
+  };
+}
+
+// Course codes written out as plain text, not links ("CMPEN362 ; E E 353"),
+// as graduate pages often do: any known subject's code followed by a
+// number and letters. A space may come between the code's letters, since
+// older text writes EE as "E E 353". Set once the subject lists are read
+// (useSubjectCodes). Not inside a § marker.
+let plainCode: RegExp | undefined;
+function useSubjectCodes(codes: string[]) {
+  const patterns = [...codes]
+    .sort((a, b) => b.length - a.length)
+    .map((code) => [...code.replace(/\s+/g, "")].map((c) => c.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&")).join(" ?"));
+  plainCode = new RegExp(`(?<![§\\w-])(${patterns.join("|")})\\s*(\\d{1,3}[A-Z]{0,2})(?![\\w§])`, "g");
 }
 
 // ---------------------------------------------------------------------------
@@ -196,8 +255,10 @@ type Requirement =
 
 function parseRequirement(html: string): Requirement {
   // Swap each course link for a marker, so the rest can be read as text.
-  const marked = html.replace(/<a [^>]*showCourse\(this, '([^']+)'\)[^>]*>.*?<\/a>/g, (_, code: string) => ` §${courseId(code)}§ `);
-  const tokens = text(marked).match(/§[^§]+§|\(|\)|,|;|[^\s(),;§]+/g) ?? [];
+  const linked = html.replace(/<a [^>]*showCourse\(this, '([^']+)'\)[^>]*>.*?<\/a>/g, (_, code: string) => ` §${courseId(code)}§ `);
+  // Codes that aren't links get a marker too.
+  const marked = plainCode ? text(linked).replace(plainCode, (_, subject: string, number: string) => ` §${courseId(subject + number)}§ `) : text(linked);
+  const tokens = marked.match(/§[^§]+§|\(|\)|,|;|[^\s(),;§]+/g) ?? [];
   let at = 0;
 
   // One level of the sentence: items joined by "and", "or", or commas,
@@ -225,6 +286,13 @@ function parseRequirement(html: string): Requirement {
       } else if (token.startsWith("§")) {
         endWords();
         items.push({ kind: "course", id: token.slice(1, -1) });
+      } else if (/^\d{1,3}[A-Z]{0,2}$/.test(token) && words.length === 0 && joins.length === items.length && items.at(-1)?.kind === "course") {
+        // A number right after "MATH 140 or" is the same subject's course
+        // ("MATH 140 or 141"), when the text isn't a link.
+        const previous = items.at(-1) as { kind: "course"; id: string };
+        const subject = parseCourseCode(previous.id)?.subject;
+        if (subject) items.push({ kind: "course", id: courseId(subject + token) });
+        else words.push(token);
       } else if (/^(and|or|,|;)$/i.test(token)) {
         join(token.toLowerCase());
       } else {
@@ -236,12 +304,27 @@ function parseRequirement(html: string): Requirement {
     }
     endWords();
     joins.length = Math.max(0, items.length - 1);
-    // "A, B, or C": a comma means whichever join comes after it.
+    // "A, B, or C": a comma means whichever join comes after it (up to
+    // the next semicolon).
     for (let i = joins.length - 1, next = "and"; i >= 0; i--) {
-      if (joins[i] === "," || joins[i] === ";") joins[i] = joins[i] === ";" ? "and" : next;
-      else next = joins[i];
+      if (joins[i] === ",") joins[i] = next;
+      else next = joins[i] === ";" ? "and" : joins[i];
     }
-    // "and" binds tighter than "or": "A and B or C" is "(A and B) or C".
+    // A semicolon splits the sentence into parts that are all needed:
+    // "CMPEN 362; EE 353 or EE 350" is CMPEN 362 and (EE 353 or EE 350).
+    const parts: { items: Requirement[]; joins: string[] }[] = [{ items: [], joins: [] }];
+    items.forEach((item, i) => {
+      const part = parts[parts.length - 1];
+      part.items.push(item);
+      if (joins[i] === ";") parts.push({ items: [], joins: [] });
+      else if (joins[i] !== undefined) part.joins.push(joins[i]);
+    });
+    const needed = parts.filter((part) => part.items.length > 0).map((part) => anyOfAll(part.items, part.joins));
+    return needed.length === 1 ? needed[0] : { kind: "all", parts: needed };
+  }
+
+  // "and" binds tighter than "or": "A and B or C" is "(A and B) or C".
+  function anyOfAll(items: Requirement[], joins: string[]): Requirement {
     const options: Requirement[][] = [[]];
     items.forEach((item, i) => {
       options[options.length - 1].push(item);
@@ -331,7 +414,7 @@ function requisiteItems(rule: Requirement, catalog: Set<string>, prefer: Set<str
 }
 
 // ---------------------------------------------------------------------------
-// Course lists: one page per subject, e.g. .../undergraduate/cmpsc/
+// Course lists: one page per subject and level, e.g. .../undergraduate/cmpsc/
 // ---------------------------------------------------------------------------
 
 // One labeled part of a course's requisites, e.g. "Enforced Concurrent at
@@ -377,30 +460,22 @@ function parseCourseList(html: string): CourseDraft[] {
         code: parseCourseCode(courseId(code)),
         type: "course",
         title,
-        credits: firstNumber(text(creditsText[1])),
-        categories: [],
+        ...parseCredits(text(creditsText[1])),
         ...(description ? { description } : {}),
       },
       requisites: [],
       crossListed: [],
     };
     for (const [, paragraph] of block.matchAll(/<p class="noindent">([\s\S]*?)<\/p>/g)) {
-      // "General Education: Humanities (GH)", one paragraph per area; an
-      // Inter-Domain course has two, and "General Education - Integrative:
-      // Interdomain".
-      const genEd = /^General Education: .*\((G[A-Z]+)\)/.exec(text(paragraph));
-      const interDomain = /^General Education\s*-\s*Integrative:\s*Interdomain/i.test(text(paragraph));
-      if (genEd || interDomain) {
-        if (!draft.course.categories!.includes("general-education")) draft.course.categories!.push("general-education");
-        const area = genEd ? (GEN_ED_AREAS[genEd[1]] ?? genEd[1]) : INTER_DOMAIN;
-        const areas = (draft.course.genEdAreas ??= []);
-        // Domains first and "Inter-Domain" last, whatever order the page
-        // lists them in, so a card shows a domain's letter.
-        if (!areas.includes(area)) {
-          const before = areas.indexOf(INTER_DOMAIN);
-          if (area === INTER_DOMAIN || before === -1) areas.push(area);
-          else areas.splice(before, 0, area);
-        }
+      // An attribute is a paragraph of its own ("General Education:
+      // Humanities (GH)"); an Inter-Domain course has its two domains and
+      // "General Education - Integrative: Interdomain". Kept in
+      // attributes.json's order.
+      const attribute = ATTRIBUTE_BY_LABEL.get(text(paragraph));
+      if (attribute) {
+        const own = new Set([...(draft.course.attributes ?? []), attribute]);
+        draft.course.attributes = ATTRIBUTES.map((a) => a.id).filter((id) => own.has(id));
+        continue;
       }
       // A paragraph can hold several labeled parts: "Enforced Prerequisite
       // at Enrollment: ... Concurrent Courses: ... Recommended Preparation:
@@ -428,7 +503,7 @@ function parseCourseList(html: string): CourseDraft[] {
           if (joinedByOr && draft.requisites.length > 0) draft.requisites.at(-1)!.push(part);
           else draft.requisites.push([part]);
         } else if (/cross-listed/i.test(label)) {
-          draft.crossListed.push(...linkedCourses(clause));
+          draft.crossListed.push(...namedCourses(parseRequirement(clause)));
         }
         joinedByOr = endsInOr && kind !== undefined;
       }
@@ -468,19 +543,29 @@ function parseProgram(html: string): ProgramDraft {
 // Putting it together
 // ---------------------------------------------------------------------------
 
-// The subject list: "Accounting (ACCTG)" links, one per subject.
-function parseSubjects(html: string): { code: string; name: string; page: string }[] {
-  const subjects = new Map<string, { code: string; name: string; page: string }>();
-  for (const [, slug, label] of html.matchAll(/<a href="\/university-course-descriptions\/undergraduate\/([^"/]+)\/">([^<]*)<\/a>/g)) {
-    const match = /^(.*) \(([^)]*)\)$/.exec(text(label));
-    if (!match) continue;
-    const code = courseId(match[2]);
-    subjects.set(code, { code, name: match[1].trim(), page: slug });
-  }
-  return [...subjects.values()].sort((a, b) => a.code.localeCompare(b.code));
+type Level = (typeof LEVELS)[number];
+
+interface SubjectDraft {
+  // The app's code ("EE") and the bulletin's ("E E").
+  code: string;
+  written: string;
+  name: string;
+  // Its course list's address under each level it's taught at ("cmpsc").
+  pages: Partial<Record<Level, string>>;
 }
 
-async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<typeof parseSubjects> }> {
+// A level's subject list: "Accounting (ACCTG)" links, one per subject.
+function parseSubjects(html: string, level: Level): { code: string; written: string; name: string; page: string }[] {
+  const pattern = new RegExp(`<a href="/university-course-descriptions/${level}/([^"/]+)/">([^<]*)</a>`, "g");
+  return [...html.matchAll(pattern)].flatMap(([, page, label]) => {
+    const match = /^(.*) \(([^)]*)\)$/.exec(text(label));
+    if (!match) return [];
+    const written = match[2].replace(/\u200b/g, "");
+    return [{ code: courseId(written), written, name: match[1].trim(), page }];
+  });
+}
+
+async function build(): Promise<{ data: SchoolDataInput; subjects: SubjectDraft[] }> {
   const programs: ProgramDraft[] = [];
   for (const slug of PROGRAMS) {
     console.log(`program  ${slug}`);
@@ -490,14 +575,29 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
   // The courses on each suggested plan, and on any of them.
   const planSets = programs.flatMap((p) => p.plans.map((plan) => new Set(plan.flat())));
   const planCourses = new Set(planSets.flatMap((set) => [...set]));
-  const subjects = parseSubjects(await download(`${COURSES}/`));
+  // Every subject, from both levels' lists (157 are in both).
+  const byCode = new Map<string, SubjectDraft>();
+  for (const level of LEVELS) {
+    for (const { code, written, name, page } of parseSubjects(await download(`${COURSES}/${level}/`), level)) {
+      const subject = byCode.get(code) ?? { code, written, name, pages: {} };
+      subject.pages[level] = page;
+      byCode.set(code, subject);
+    }
+  }
+  const subjects = [...byCode.values()].sort((a, b) => a.code.localeCompare(b.code));
+  useSubjectCodes(subjects.map((s) => s.written));
+
   const drafts = new Map<string, CourseDraft>();
   for (const subject of subjects) {
-    console.log(`subject  ${subject.code}`);
-    const html = await download(`${COURSES}/${subject.page}/`);
-    for (const draft of parseCourseList(html)) {
-      // Only courses of this subject (a page could mention others).
-      if (draft.course.code?.subject === subject.code && !drafts.has(draft.course.id)) drafts.set(draft.course.id, draft);
+    for (const level of LEVELS) {
+      const page = subject.pages[level];
+      if (!page) continue;
+      console.log(`subject  ${subject.code} (${level})`);
+      const html = await download(`${COURSES}/${level}/${page}/`);
+      for (const draft of parseCourseList(html)) {
+        // Only courses of this subject (a page could mention others).
+        if (draft.course.code?.subject === subject.code && !drafts.has(draft.course.id)) drafts.set(draft.course.id, draft);
+      }
     }
   }
   const catalog = new Set(drafts.keys());
@@ -558,12 +658,12 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
     school: { id: "penn-state", name: "Penn State University Park" },
     calendar: { start: { season: "fall", year: START_YEAR }, seasons: ["spring", "summer", "fall"] },
     objects,
-    // No associate or graduate programs so far, so those types have no
-    // school-wide rules yet.
-    programs: ["associate", "baccalaureate", "graduate"],
+    attributeGroups: ATTRIBUTE_GROUPS,
+    attributes: ATTRIBUTES.map(({ label, ...attribute }) => attribute),
+    // Only bachelor's degrees have school-wide rules so far.
     programRequirements: [
       {
-        programType: "baccalaureate",
+        programType: "bachelors",
         // Senate Policy 82-00 and 83-80: at least 120 credits, 45 of them
         // gen ed (the rules below), and a 2.00 GPA; more than 19 credits
         // in a semester needs the dean's approval.
@@ -584,9 +684,11 @@ async function build(): Promise<{ data: SchoolDataInput; subjects: ReturnType<ty
 
 const { data, subjects } = await build();
 
-// Write the folder: the school's own settings, its school-wide rules, the
-// subject list, and one file per subject with its courses by number. An object's id and subject
-// aren't repeated in its subject's file; they come from the file.
+// Write the folder: the school's own settings, its attributes, its
+// school-wide rules, the subject list, and one file per subject with its
+// courses by number. A course's id and subject aren't repeated in its
+// subject's file; they come from the file. structure.json and programs/
+// are written by hand, so they're left as they are.
 const json = (value: unknown) => JSON.stringify(value, null, 2) + "\n";
 // The same object without its empty lists and empty objects.
 function withoutEmpty<T extends object>(value: T): Partial<T> {
@@ -594,27 +696,35 @@ function withoutEmpty<T extends object>(value: T): Partial<T> {
     Object.entries(value).filter(([, v]) => !(Array.isArray(v) ? v.length === 0 : typeof v === "object" && v !== null && Object.keys(v).length === 0)),
   ) as Partial<T>;
 }
-await rm(join(OUT, "objects"), { recursive: true, force: true });
-await mkdir(join(OUT, "objects"), { recursive: true });
-const { objects, subjects: subjectList, templates, programRequirements, ...school } = data;
+for (const old of ["objects", "courses", "requirements.json", join("requirements", "credentials")]) {
+  await rm(join(OUT, old), { recursive: true, force: true });
+}
+await mkdir(join(OUT, "courses"), { recursive: true });
+await mkdir(join(OUT, "requirements", "credentials"), { recursive: true });
+const { objects, subjects: subjectList, templates, programRequirements, attributeGroups, attributes, ...school } = data;
 await writeFile(join(OUT, "school.json"), json(school));
-await writeFile(join(OUT, "requirements.json"), json({ programRequirements }));
+await writeFile(join(OUT, "attributes.json"), json({ groups: attributeGroups, attributes }));
+for (const { programType, ...rules } of programRequirements ?? []) {
+  await writeFile(join(OUT, "requirements", "credentials", `${programType}.json`), json(rules));
+}
 await writeFile(join(OUT, "subjects.json"), json({ subjects: subjectList }));
 let written = 0;
 for (const subject of subjects) {
   const own = objects.filter((o) => o.code?.subject === subject.code);
   if (own.length === 0) continue;
-  const entries = own.map(({ id, code, type, title, credits, description, requisites, ...rest }) => ({
+  const entries = own.map(({ id, code, type, title, credits, maxCredits, description, requisites, ...rest }) => ({
     number: code!.number,
     ...(code!.suffix ? { suffix: code!.suffix } : {}),
-    type,
+    // Every one is a course, which is what a course file assumes.
     title,
-    credits,
+    credits: maxCredits === undefined ? credits : { min: credits, max: maxCredits },
     // Empty lists are left out; the format fills them in.
     ...withoutEmpty({ ...rest, requisites: withoutEmpty({ ...requisites }) }),
     ...(description ? { description } : {}),
   }));
-  await writeFile(join(OUT, "objects", `${subject.page}.json`), json({ subject: subject.code, objects: entries }));
+  // Named like the bulletin's page for the subject ("cmpsc").
+  const file = subject.pages.undergraduate ?? subject.pages.graduate!;
+  await writeFile(join(OUT, "courses", `${file}.json`), json({ subject: subject.code, courses: entries }));
   written++;
 }
 

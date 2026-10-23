@@ -1,0 +1,339 @@
+{
+  "subject": "BMMB",
+  "courses": [
+    {
+      "number": 502,
+      "title": "Critical Scientific Analysis",
+      "credits": 2,
+      "description": "In this course, students learn how to read and critically evaluate the scientific literature in biochemistry, microbiology, and molecular biology. Students will identify the hypotheses underlying each paper, and examine the experimental approaches and the rationale for the experimental design, with particular focus on how a rigorous scientific argument is constructed. Students will also practice designing meaningful experiments and evaluating unpublished manuscripts."
+    },
+    {
+      "number": 507,
+      "title": "Seminar in Biochemistry, Microbiology, and Molecular Biology",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "No description."
+    },
+    {
+      "number": 509,
+      "title": "Ethics in Biomedical Science",
+      "credits": 1,
+      "description": "Discussion of ethical issues relevant to scientific research in the biomedical sciences."
+    },
+    {
+      "number": 511,
+      "title": "Molecular Immunology",
+      "credits": 2,
+      "internalEquivalents": [
+        "MCIBS511",
+        "VBSC511"
+      ],
+      "requisites": {
+        "previous": [
+          "BMB400",
+          "MICRB410"
+        ]
+      },
+      "description": "The study of molecular and biochemical events that influence immune responses and define current questions in immunology. BMMB 511 / MCIBS 511 / VBSC 511 Molecular Immunology (2) The goals of the course are to integrate the current questions of immunology with other disciplines, in particular cell biology and biochemistry, and to provide training in critical thinking and evaluation of data and experiments. The course will be approximately 2/3 lecture by the instructor and 1/3 student presentations of papers related to the material. In addition, written critical reviews of recently published papers and a short research proposal will be assigned. By focusing on the mechanisms involved in immunity and disease, this course complements several existing courses on immunology, virology, and biochemistry. The prerequisites of MICRB 410 and BMB 400 assure that the students enrolling in the course have a general understanding of immunology and biochemistry. This course is projected as an elective for the Molecular Medicine and Immunobiology focus areas in the MCIBS graduate program and for the Pathobiology and BMMB graduate programs. The course will be offered in the fall semester with an enrollment limit of 20 students"
+    },
+    {
+      "number": 521,
+      "title": "Advanced Microbiology",
+      "credits": 3,
+      "description": "This course presents graduate students in the life sciences with foundational concepts in the biology of microorganisms in the form of broad graduate-level lectures by research-active faculty and student presentations of related challenge problems/discussion subjects. The course is designed for graduate students studying microbiology, biochemistry, and other life science disciplines. The aim is to increase the students' knowledge and appreciation of diverse aspects of microbial physiology, ecology, pathogenesis, molecular biology, and genomics; to familiarize students with microbial faculty and their research at Penn State; to help students think critically about microbiological research methods, experimental design, and data interpretation; and to help students through participation and feedback to improve their oral and written communication skills in presenting scientific data to others."
+    },
+    {
+      "number": 525,
+      "title": "Analytical Separations",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM525"
+      ],
+      "description": "Fundamentals and applications of modern chromatographic separations."
+    },
+    {
+      "number": 531,
+      "title": "Biomolecular Structure",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BMB401"
+        ]
+      },
+      "description": "This course presents graduate students in the life sciences with foundational concepts in structural biology in the form of broad graduate-level lectures by research-active faculty. The course is designed for students studying biochemistry and other life-science disciplines. The aim is to increase the students' knowledge and appreciation of (i) macromolecular structure determination at high resolution using two different techniques x-ray crystallography and cryo electron microscopy (Cryo-EM) and (ii) how the structure of the molecules relate to their function as molecular machines in the natural world. The course will help familiarize students with the faculty engaged in this field of research as well as the instrumentation available at Penn State; to think critically about structural biology research methods, design their own experiments, and develop comprehension to critically assess the published works of others."
+    },
+    {
+      "number": 533,
+      "title": "Protein Evolution",
+      "credits": 2,
+      "description": "Consequences of evolution of protein-coding sequences: structures and functions. BMMB 533 Protein Evolution (2) Most biological functions are carried out by proteins, and evolutionary logic can be used to infer functions. This course will focus on evolution of protein-coding sequences, conformations and functions of proteins. Different species show varying characteristics of structure, metabolism, and regulatory control networks. Most of these differences are the product of the evolution of protein-coding sequences. DNA mutations can change amino acid sequences, protein structures and protein functions; and favorable mutations are selected, in ways that are integrated to form an organism adapted at both macroscopic and molecular levels. The availability of large databanks of protein amino acid sequences, and protein three-dimensional structures, and the annotation of protein function in the entries in these databanks, has allowed investigation of evolutionary changes that impact proteins. One of the goals of the course will be to describe these databanks and the computational tools available to apply them in research in molecular biology. Many students will find these tools useful in their own research projects. The evolutionary divergence of proteins has shown several types ofeffects. In some cases, related proteins in different species retain similar functions, but show differences in amino acid sequence and structure. The nature of observed changes in sequence and structure will be described and the relationship between sequence changes and structural changes examined in several well-documented examples, including globins, and serine proteases. In some cases, proteins diverge within a single species to form large families of related molecules with specialized functions. For example, the human genome encodes hundreds of odorant receptors. The comparison of related proteins that have adopted novel functions reveals how cells can expand their functional repertoire. In most cases it is easier to adapt an existing structure to a new function than to create a new protein \"from scratch\". For example, the proteolytic enzymes of the chymotrypsin family are related to haptoglobin, an iron scavenger that has lost its enzymatic activity. Beyond the description of individual proteins and individual protein families, there is the more general question of how changes in functions of individual proteins are integrated to create a smoothly-running cellular \"operating system\". The evolution of sequences encoding regulatory proteins to achieve this will be discussed. Methods of bioinformatics to address these questions will bepresented, with emphasis on study and comparison of structures with computer graphics."
+    },
+    {
+      "number": 536,
+      "title": "Medicinal Chemistry and Chemical Biology",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM536"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM476",
+              "BMB401"
+            ]
+          }
+        ]
+      },
+      "description": "The goal of this course is to provide a foundation in development and application of chemical technologies to the understanding and manipulation of biological systems. Chemical biology is a relatively new field that spans the traditional fields of chemistry and biology by applying chemical technologies to the understanding and manipulation of biological systems. As such, this course should be accessible and provide benefit to students working in both chemical and biological areas. Lectures include higher-level biological chemistry (assuming prior knowledge of biological chemistry at an undergraduate level, such as CHEM 476 or BMB 401 ) and synthetic chemistry and biology principles along with current literature in the field of chemical biology."
+    },
+    {
+      "number": 538,
+      "title": "Spectroscopic Methods in Bioinorganic Chemistry",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM538"
+      ],
+      "description": "Foundations in spectroscopic methods employed for the determination of the geometric and electronic structure of transition metal clusters in nature."
+    },
+    {
+      "number": 539,
+      "title": "Biochemical Reaction Mechanisms",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM539"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM476",
+              "BMB401"
+            ]
+          }
+        ]
+      },
+      "description": "Mechanisms of the most important biochemical reactions, with emphasis on enzyme catalysis."
+    },
+    {
+      "number": 541,
+      "title": "Molecular Biology of Animal Development",
+      "credits": 3,
+      "description": "The course emphasizes comparative molecular genetic analyses of developmental gene networks using vertebrate and Drosophila model systems. BMMB 541 BMMB 541 Molecular Biology of Animal Development (3) This is a required course for graduate students in the IBIOS Cell and Developmental Biology Program. Approximately half of the class sessions will consist of lectures and class discussions related to lecture material. The other half will consist of primary literature presentations by the students and class discussion pursuant to these. The course will provide students with a broad overview of essential signaling pathways and gene regulatory networks that coordinate cellular activities to establish and maintain the complex communities of cells that comprise animal tissues."
+    },
+    {
+      "number": 542,
+      "title": "Eukaryotic Cell Biology",
+      "credits": 3,
+      "description": "This course covers current areas of cell biology research, focusing on processes affecting the cell as a whole. BMMB 542 Eukaryotic Cell Biology (3)This course in eukaryotic cell biology will provide a foundation for those students whose thesis research focuses on cell biology or the cellular aspects of development. The primary focus will be to understand how the cell functions as a unit. Areas to be covered include compartmentalization of the cell and transport between different sub-cellular compartments; the control of cell shape and how cell shape and polarity changes drive cell movement and tissue shape; the life cycle of cells; and the regulation of these processes by extracellular signals. We will also investigate current research techniques and tools that are used to investigate these processes."
+    },
+    {
+      "number": 543,
+      "title": "Current Topics in Gene Regulation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BMB400"
+        ]
+      },
+      "description": "This course explores structural, biochemical and genetic approaches in gene regulation. BMMB 543 Current Topics in Gene Regulation (3) This course is intended to bring students up to the leading edge of research in gene regulation. It will explore structural, biochemical and genetic approaches in this field of research, covering processes from nuclear structure to RNA decay. It will also illustrate progress from many different model organisms including: prokaryotes, yeast, Drosophila, and humans. This course will include introductory lectures by faculty and student presentations of recent literature."
+    },
+    {
+      "number": 551,
+      "title": "Genomics",
+      "credits": 3,
+      "internalEquivalents": [
+        "MCIBS551"
+      ],
+      "description": "This course will deal with the structure and function of genomes including the use of some current web-based tools and resources for studies and research in genomics. The overall objective is to learn current information about the structure and function of genomes, to develop facility in the many web-based tools and resources for further studies and research in genomics, and to appreciate the power and limitations of current resources and knowledge."
+    },
+    {
+      "number": 554,
+      "title": "Foundations in Data Driven Life Sciences",
+      "credits": 3,
+      "internalEquivalents": [
+        "IBIOS554",
+        "MCIBS554"
+      ],
+      "description": "Expanded overview of current developments and technique in computational biology and genomics. BMMB (MCIBS) 554 Foundations in Data Driven Life Sciences (3) The successful progression of data-driven biomedical research is obscured by a wide-range of logistical problems related to data handling and processing, a widespread disconnect between developers and consumers of biomedical analysis software, and lack of accessible, well-developed curricula and active learning opportunities necessary for the development of key data analysis skills in the next generation of researchers and clinicians. This course aims a filling these gaps. Topics include fundamental concepts that underpin analysis of sequence data, design of complex experiments, research transparency and reproducibility, as well as result disseminations practices relevant to presentations and publications."
+    },
+    {
+      "number": 566,
+      "title": "Algorithms and Data Structures in Bioinformatics",
+      "credits": 3,
+      "internalEquivalents": [
+        "CSE566"
+      ],
+      "requisites": {
+        "previous": [
+          "CMPSC465"
+        ]
+      },
+      "description": "This course covers elegant algorithmic and data structure techniques that underpin modern biological data analysis. Bioinformatics is a growing field with immediate implications for our understanding of biology and treatment of disease. This course covers elegant algorithmic and data structure techniques and their use in bioinformatics. The emphasis is on recurrent ideas that underpin modern biological data analysis, presented in conjunction with their biological applications. The course is suitable both for students interested in doing bioinformatics research and those interested in applications of algorithms to the natural sciences. Some of the algorithms/data-structures that may be covered include exact string matching, suffix trees, suffix arrays, de Bruijn graphs, hidden Markov models, breakpoint graphs, succinct data structures, the Burrows-Wheeler transform, the FM-index, network flow, and bidirected graphs. Some of the biological applications will include sequence alignment and assembly, cancer genomics, phylogeny, gene finding, and variation detection. No prior biological or bioinformatics knowledge is required. A basic understanding of data structures and algorithms (equivalent to CMPSC465) is a prerequisite; however, exceptionally motivated students can contact the instructor to discuss their options. This course is complementary to existing bioinformatics courses offered through other programs on campus. These courses may be taken concurrently but are not prerequisites. Prerequisites: CMPSC465 Cross Listings: BMMB 566 will be added as a cross-listed course."
+    },
+    {
+      "number": 572,
+      "title": "Nucleic Acids Chemistry",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM572"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM212",
+          "CHEM450"
+        ]
+      },
+      "description": "Biophysical and biochemical approaches for studying structure-function relationships in nucleic acids. BMMB (CHEM) 572 Nucleic Acids Chemistry (3) The goal of this course is to provide a foundation in biophysical approaches for studying the quantitative and structure-function relationships in nucleic acids systems, including DNA, RNA, and their interactions with proteins, salt, and water. Lectures include basic physical chemistry and statistical mechanics principles along with current literature in the biochemical sciences. At the end of the course, you should be able to meaningfully dissect molecular biological papers at the level of the physical chemistry of these processes. Current topics are introduced through reading and presenting papers from the literature."
+    },
+    {
+      "number": 573,
+      "title": "NMR Spectroscopy for Synthetic and Biological Chemistry",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM573"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM452"
+        ]
+      },
+      "description": "Nuclear magnetic resonance approaches for characterizing the structure and dynamics of synthetic compounds, natural products, and biological macromolecules."
+    },
+    {
+      "number": 574,
+      "title": "Metals in Biology: Structure and Mechanism",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM574"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM476",
+              "BMB401"
+            ]
+          }
+        ]
+      },
+      "description": "The goal of this course is to acquaint students with the many important roles that metal ions play in biological systems (bioinorganic chemistry). We will explore how structural biology, enzymology, spectroscopy, cell biology, and chemical biology methods have been used to understand how metal ions are used in biological molecules. These approaches have enabled discovery of the chemistry of these systems, and an understanding of how that chemistry fits into the broader biological context. We will apply bioinorganic chemistry in solving important challenges in energy, health, and the environment. Course activities include application of basic inorganic chemistry and biochemical principles, discussion of current literature in the biochemical sciences, implementation of biomolecular structure visualization software, and problem solving. At the end of the course, students will be able to critically engage with the bioinorganic literature and propose experimental approaches to unresolved questions in the field."
+    },
+    {
+      "number": 581,
+      "title": "Advances in Biochemistry",
+      "credits": 3,
+      "description": "The course will develop a detailed molecular view of the building blocks of biological systems and a brief review of the structural and functional properties of these biomolecules. The course also will cover modern methods of biomolecule synthesis, purification, and modification. Subject matter will be approached using case studies highlighting techniques that allow us to gain a chemical understanding of biological processes. Examples include identification of drug binding sites, probing protein-protein interactions, targeting protein degradation, and modulating transcription. Important advances in our understanding of biological systems brought about by these techniques will also be discussed. Discussion of primary literature readings will include benefits/drawbacks of the various techniques, complementarity of methods, and the applicability of various aspects of chemical biology to dissect new problems."
+    },
+    {
+      "number": 582,
+      "title": "Advances in Genetics and Genomics",
+      "credits": 3,
+      "description": "This course will develop a detailed view of genetic information, how it is stored and used by cells, and how it can be manipulated and analyzed to answer research questions. Both experimental and computational methods will be covered, with an emphasis on design and analysis of genetic, genomic, imaging, and dry-lab experiments."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 598,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Teaching of biochemistry undergraduate laboratory and recitation classes under faculty supervision."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 801,
+      "title": "Foundations of Teaching in Biochemistry, Microbiology, and Molecular Biology",
+      "credits": 1,
+      "description": "An overview of the science of learning and teaching in biochemistry, microbiology, and molecular biology. This course is designed to prepare BMMB graduate students to become teachers and communicators, and specifically to prepare students to teach undergraduate students in labs or lecture courses. Students will explore how people learn, develop evidence-based teaching strategies to promote learning, and acquire confidence to create effective and inclusive classrooms."
+    },
+    {
+      "number": 852,
+      "title": "Applied Bioinformatics",
+      "credits": 2,
+      "description": "This course provides a foundation for students with biology backgrounds in the computational analysis and interpretation of biological data. BMMB 852 Applied Bioinformatics (2) The purpose of this course is to provide students with a foundation in the various applications of high-throughput sequencing including: chip-Seq, RNA-Seq, SNP calling, metagenomics, de-novo assembly and others. The course material will concentrate on presenting complete data analysis scenarios for each of these domains of applications and will introduce students to a wide variety of existing tools and techniques. By the end of the course work students will understand common bioinformatics data formats and standards, become familiar with the practice of analyzing sequencing data from various instruments and will develop the computationally oriented thinking that is necessary to take on large-scale data analysis projects."
+    }
+  ]
+}

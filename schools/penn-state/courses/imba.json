@@ -1,0 +1,171 @@
+{
+  "subject": "IMBA",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Markets, Industry Analysis, and Business Strategy",
+      "credits": 3,
+      "description": "How markets determine prices and activity in the business firm; the firm's microeconomic and macroeconomic environments; formulation of competitive strategy."
+    },
+    {
+      "number": 502,
+      "title": "Financial and Accounting Tools",
+      "credits": 3,
+      "description": "Introduction to financial systems and reports, ability to analyze financial information, apply financial tools, and communicate financial information."
+    },
+    {
+      "number": 513,
+      "title": "Data Analysis Resource Module",
+      "credits": 2,
+      "description": "Applications of statistical methods in business management: selection of methods, interpretation of results, and presentation."
+    },
+    {
+      "number": 515,
+      "title": "Accounting for External Reporting",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "IMBA501",
+          "IMBA502"
+        ]
+      },
+      "description": "Ability to read financial reports and analyze their content."
+    },
+    {
+      "number": 516,
+      "title": "Organizational Behavior and Performance",
+      "credits": 2,
+      "description": "Analysis of conceptual models, systems, and decision processes consistent with high levels of individual, group, and organizational performance. IMBA 516 Organizational Performance Management (2) The primary objective of this course is to provide an introduction to the research and case study findings relating to the performance of people and groups in organizations. These findings, when taken in the context of contemporary social, ethical, and legal contextual factors, are employed by managers at all levels of high performing organizations to establish, direct, enhance, and deploy desired behavior of individuals, groups, and the organization itself. Course topics will also focus upon mechanisms for continuous system improvement methods such as employee involvement, training, satisfaction, and well-being. Information regarding work system effectiveness, as well as effectiveness of measurement, control, and support systems is also considered."
+    },
+    {
+      "number": 517,
+      "title": "Corporate Governance",
+      "credits": 2,
+      "description": "Study of interrelationships among shareholders, boards of directors, and managers (owner agents) and other stakeholders in a modern public corporation. IMBA 517 Corporate Governance (2) The subject matter of corporate governance deals with the nature of the interrelationships among shareholders (owners), boards of directors (representatives of the owners), and mangers (agents of the owners). These interrelationships from the basis for the modern corporation. As their agents, managers are supposed to run a company in the interest of its shareholders; the board of directors is expected to monitor the performance of managers and to ensure that they do not stray from their primary obligation to the owners. The subject of corporate governance also encompasses the study of corporations' relationships with its employees, creditors, supplies, and customers. Finally, as corporations are expected to be good citizens of their communities, corporate governance also extends to the study of corporations; relationships with their communities.Periodic scandals involving major, publicly held companies have underscored the fundamental importance of these relationships. The larger interests of society and of its citizens required that various stakeholders perform their roles in an ethical manner. This course reviews major theories of ethical and moral development, provides cases and exercises to heighten students' awareness of these areas, and reviews heuristics and decisions-models for ethical conduct. This course thus also addresses the emerging area of ethical corporate governance, specifically exploring the how ethical conduct and the ethical underpinnings of corporate governance function to safeguard the interests of all stakeholders."
+    },
+    {
+      "number": 521,
+      "title": "Strategic Analysis",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "IMBA501",
+          "IMBA502",
+          "IMBA513",
+          "IMBA515"
+        ]
+      },
+      "description": "Analysis of a company case; development of the ability to draw sound conclusions on business strategies and proformance."
+    },
+    {
+      "number": 522,
+      "title": "Financial Management",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "IMBA515"
+        ]
+      },
+      "description": "Analyze capital investment projects, examine the general principles of asset valuation, and study the valuation of stocks and bonds."
+    },
+    {
+      "number": 523,
+      "title": "Organizational Development, Intervention and Change",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "IMBA516"
+        ]
+      },
+      "description": "Analysis and assessment of conceptual models, systems, and decision processes for organizational development, intervention and change; transformation and reengineering processes. IMBA 523 Organizational Development, Intervention and Change (2) This course will analyze organizational models using current theory and case study application to discuss the topics surrounding organizational development, intervention and change. The course focuses on the human and social aspects of the organization as a way to improve the \"fit\" between individuals and the organization and between the organization and the environment. This analysis and assessment helps to improve the organization's overall performance and stakeholder satisfaction. The course emphasizes the use of Organization Development (OD) as one of the most effective approaches to introduce changes to organizations and to facilitate intervention. The course elaborates on knowledge and techniques from the behavioral sciences to create a learning environment through increased trust, open confrontation of problems, employee empowerment and participation, knowledge and information sharing, the design of meaningful work, cooperation and collaboration between groups and the full use of human potential."
+    },
+    {
+      "number": 530,
+      "title": "Marketing in a Global Environment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IMBA501",
+          "IMBA513"
+        ]
+      },
+      "description": "Global marketing planning and strategic formulation for profit and non-profit firms in creation, promotion, pricing, and distribution of goods and services."
+    },
+    {
+      "number": 531,
+      "title": "Project Management",
+      "credits": 2,
+      "description": "A problem-based, interdisciplinary course in project management skills and techniques needed to manage projects in a modern business environment. IMBA 531 Project Management (2) Project management has been labeled by Fortune Magazine as the number one career choice for the coming decade. Increasingly, organizations are adopting project management techniques and structures within their business framework. Project management offers the twin advantages of allowing organizations to create products and processes efficiently, through optimal use of resources, and rapidly, to respond to rapid time-to-market demands. This course would give business majors a competitive advantage in the job market, as companies are in great need of a trained cadre of qualified project managers who can allow the business firm to operate to its highest potential. The role of the instructor in this course is to train students in the wide variety of demands and skills for which they must be qualified: the ability to exert leadership in managing project teams, an understanding of people and behavioral skills, and the ability to effectively use computer-based scheduling and tracking software to keep to timetables and schedules. The course will involve semester-long projects, either developed by the instructor or developed (in collaboration with the instructor) by students involved in business enterprises. As a result, students would have real-time experience in the challenges of creating a unified team, solving problems, tracking their projects, and presenting a final paper and presentation on the process."
+    },
+    {
+      "number": 543,
+      "title": "Accounting for Internal Decision Making",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "IMBA502"
+        ]
+      },
+      "description": "Covers basic concepts, issues, tools, and techniques in the use of accounting information for internal decision making."
+    },
+    {
+      "number": 544,
+      "title": "Managing Human Resources",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IMBA501",
+          "IMBA513"
+        ]
+      },
+      "description": "Processes and issues related to staffing and retaining human resources."
+    },
+    {
+      "number": 550,
+      "title": "Corporate Information Strategy",
+      "credits": 3,
+      "description": "Information technology supporting management decision making, operations, and creation of new products and services; electronic commerce in global markets."
+    },
+    {
+      "number": 560,
+      "title": "Corporate Innovative Strategies",
+      "credits": 3,
+      "description": "Formulation and implementation of a corporate innovation or technology strategy."
+    },
+    {
+      "number": 561,
+      "title": "Global Operations and Supply Chain Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IMBA513"
+        ]
+      },
+      "description": "Effective management of the flow of goods and services."
+    },
+    {
+      "number": 562,
+      "title": "Global Business Management",
+      "credits": 3,
+      "description": "Establishing and expanding businesses in global markets and managing multinational firm strategies and operations. IMBA 562 Global Business Management (3) This course examines the unique opportunities and problems that confront multinational companies and international managers as they navigate the company through the extreme complex and ever-changing global economic, political-legal, socio-cultural, and technological environments. It studies the decision choices of international managers regarding business strategies for production and marketing of product and services, the modes of entry into foreign markets, the management of such functions as physical and human resources, production of goods and services, financial management, controlling of operations, labor relations, and conducting businesses ethically. It is designed to help students to gain insights into the complexities of managing across borders and cultures."
+    },
+    {
+      "number": 573,
+      "title": "Strategic Planning",
+      "credits": 3,
+      "description": "Application of knowledge in creating and sustaining competitive advantage; development of skills necessary for writing a strategic plan."
+    },
+    {
+      "number": 574,
+      "title": "Strategic Financial Decisions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IMBA502",
+          "IMBA522"
+        ]
+      },
+      "description": "Advanced capital project analysis; evaluating levered investments; application of option valuation principles to strategic decisions."
+    }
+  ]
+}

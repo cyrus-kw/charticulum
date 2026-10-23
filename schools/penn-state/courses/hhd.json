@@ -1,0 +1,242 @@
+{
+  "subject": "HHD",
+  "courses": [
+    {
+      "number": 100,
+      "suffix": "H",
+      "title": "Honors Seminar on Longevity, Health, and Human Development",
+      "credits": 1,
+      "attributes": [
+        "HON"
+      ],
+      "description": "This course aims to provide students with an overview of the impact the growth in human longevity is having on society, viewed through the lens of current research in the fields of health and human development. Students will explore the recent research on growth in the human lifespan and how this is having impacts on individuals, families, employers, governments, and communities. Through readings and discussions with faculty working on research related to aging and longevity, students can see how these issues connect with physical activity, nutrition, communication, health behaviors, health policy, cognition and the effects longer life is having on restaurants, hotels, parks, tourism, health care facilities, schools, and other service industry employers."
+    },
+    {
+      "number": 101,
+      "title": "Peer-Assistant Workshop",
+      "credits": 1,
+      "description": "This course is a requirement for First-Year Peer Assistants in the College of Health and Human Development (HHD). Course content will train and support Peer Assistants (PAs) who will be co-facilitating a section of PSU14 (first-year seminar). This discussion and activity-based course will familiarize PAs with the PSU14 curriculum and provide them with supplemental activities and materials to use in the classroom. PAs will complete team building activities, assess their leadership skills, and become familiar with campus resources to use as a referral. By the conclusion of this course, PAs will have the tools necessary to serve as a peer resource for first-year students and to facilitate class activities and discussions in PSU14."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 200,
+      "suffix": "N",
+      "title": "Addiction Science to Society",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER"
+      ],
+      "description": "Addiction is commonly defined as set of compulsive behaviors that cannot be stopped despite negative consequences. The term itself is controversial and defined differently by various disciplines. This has resulted in skewed perceptions of addiction by society as a whole. This course aims to inform students on the biological, psychological, and sociological viewpoints of addiction and how they interact to form an integrated perspective (the biopsychosocial model). By understanding the current knowledge on the biological and psychological bases of addiction, students will be better prepared to make knowledgeable decisions on their own behaviors, understand the behavior of others, and generate informed opinions on the social aspects of addiction. We will begin by comparing and contrasting the different ways addiction has been defined in various fields and exploring the debate on which substances/behaviors are actually considered addictive. Throughout the course, students will broadly explore basic concepts in biology (cells, neural communication, brain anatomy, use of animal models, pharmacology, genetics, epigenetics, and comorbidity), psychology (memory, conditioning, reward, expectancy, bias, and mental health) and sociology (family systems theory, stress theory, developmental theory, feminist theory). These concepts will be practically applied to various questions concerning 1. The status of addiction as a disease. 2. How addiction is or should be treated. 3. The effects of addiction on family and society. 4. Policies concerning the criminalization of drugs and compulsive behaviors. In addition, methods and data from primary research in all three domains of the biopsychosocial model will be analyzed. Several assignments using various forms of communication will serve to illustrate the connections and asses integrated learning."
+    },
+    {
+      "number": 294,
+      "title": "Research in HHD",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis"
+    },
+    {
+      "number": 295,
+      "title": "Internship in Health and Human Development",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "description": "Supervised internship, field experience, or practicum related to student career objectives."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 401,
+      "title": "Women's Leadership Initiative: Leadership Concepts and Competencies I",
+      "credits": 2,
+      "description": "HHD 401 is the first semester of the year-long program for students selected to participate in the Women's Leadership Initiative (WLI). The course designed to work in concert with WLI activities to support students in their development of the foundational values, knowledge, skills, and confidence to realize their potential as effective, life-long leaders. Through their participation in this course and the spring semester course, students will develop a deeper knowledge of themselves and others, be able to define and critically assess leadership concepts, develop leadership skills, and practice leadership skills in various settings. Students will accomplish these objectives through the completion of assessment tools, discussions with leaders from the campus and the community, mentoring by women leaders, and the delivery of course topics pertaining to leadership. Students will be evaluated through communication skills assignments, reflection assignments, class participation, and completion of assessment tools. Students must apply and be selected to participate in the Women's Leadership Initiative in order to take this course."
+    },
+    {
+      "number": 402,
+      "title": "Women's Leadership Initiative: Leadership Concepts and Competencies II",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "HHD401"
+        ]
+      },
+      "description": "HHD 402 is the second semester of the year-long program for students selected to participate in the Women's Leadership Initiative (WLI). The course designed to work in concert with WLI activities to support students in their development of the foundational values, knowledge, skills, and confidence to realize their potential as effective, life-long leaders. Through their participation in this course and the spring semester course, students will develop a deeper knowledge of themselves and others, be able to define and critically assess leadership concepts and incorporate these into a personal leadership philosophy, develop leadership skills, and practice leadership skills in various settings. Students will accomplish these objectives through the completion of assessment tools, discussions with leaders from the campus and the community, mentoring by women leaders, and the delivery of course topics pertaining to leadership. Students must apply and be selected to participate in the Women's Leadership Initiative in order to take this course."
+    },
+    {
+      "number": 410,
+      "title": "Clinical Research Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL161",
+              "KINES203"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250"
+            ]
+          }
+        ]
+      },
+      "description": "As new molecules progress from the laboratory to the bedside, the clinical trials enterprise needs a fresh generation of professionals with knowledge of the application of research applied to human health and disease; professional skills in regulatory oversight, human subjects' protections, and research administration; and a willingness to share health interventions in communities. In this course students will develop a deeper understanding of clinical research practice including legal requirements and oversight, good clinical practice, essential elements of clinical practice/operations, data management, the financing/budgeting of clinical trials, and socio-political factors impacting trials; all of which will help prepare students for internships and jobs in clinical research organizations. The course is best suited to students with fifth semester standing or higher who are considering future careers and professional certification in clinical research specialties."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship in Health and Human Development",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "description": "Approved experiential learning related to student career objectives"
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 497,
+      "suffix": "I",
+      "title": "Intergenerational Communication",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER"
+      ],
+      "description": "How can a person grow to become more truly themselves? How do our habits inform our future? This course examines current research on happiness, aging, and well-being alongside the lived experience of older adults. Together students and older adult community members will discuss research as well as compare perceptions and perspectives of the aging experience. We will use an aging lens to explore what it means to grow as a human being, how to become the person we would like to be, and how to help others do the same. Students will partner with older adults for engagement experiences and a collaborative project."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 499,
+      "suffix": "H",
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL",
+        "HON"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

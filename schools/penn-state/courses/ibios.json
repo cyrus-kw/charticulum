@@ -1,0 +1,77 @@
+{
+  "subject": "IBIOS",
+  "courses": [
+    {
+      "number": 541,
+      "title": "Critical Analysis of Bioinformatics and Genomics Research Topics",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "A weekly review of current literature related to the area of bioinformatics and genomics research. IBIOS 541 Critical Analysis of Bioinformatics and Genomics Research Topics (1 per semester/maximum of 2) Critical Analysis of Bioinformatics and Genomics Research Topics reviews the recent developments made in the understanding of basic genomics and bioinformatics research. This approach provides an insight into the topics that are shaping the current and future directions in a field that is rapidly evolving and literally transforming lives. Tutorials provide a comprehensive overview of the new and fundamental developments in genomics research and highlight the way in which genomic concepts are applied to basic biological processes. This course will provide insights into computational, evolutionary, and functional aspects of genomic sciences. Basic concepts that describe how life was organized and evolved and applications that promise huge advances in biomedical and biotechnological fields will be discussed. In addition to helping students develop critical oral and written presentation skills, this course is intended to kindle excitement about genomic research among graduate students and provide an intellectual framework for identifying potentially challenging and interesting questions that may be pursued."
+    },
+    {
+      "number": 551,
+      "title": "Genomics",
+      "credits": 3,
+      "description": "Stucture and function of genomes including use of some current web-based tools and resources for studies and research in genomics. IBIOS (BMMB) 551 Genomics (3) IBIOS/ BMMB 551 will deal with the structure and function of genomes including the use of some current web-based tools and resources for studies and research in genomics. The overall objective is to learn current information about the structure and function of genomes, to develop facility in the many web-based tools and resources for further studies and research in genomics, and to appreciate the power and limitations of current resources and knowledge. This course is designed as a basic course for any student in the life sciences who needs to exploit the developments and tools in genomics in their own research and who wants to broaden their understanding of the current knowledge and research in the life sciences that are increasingly drawing on genomics advances. The course will be taught by a team of faculty (members active in genomics research and will be video-conferenced. Students' grades will be based on take home exams or assignments that require their understanding of the concepts in genomics and the hands-on use of web-based analysis tools, as well as on class discussion participation. Students will be assigned one or more projects, tutorials, problem sets or essays to complete. Reading assignments will further help students explore the materials, do the assignments and participate in classroom discussions."
+    },
+    {
+      "number": 554,
+      "title": "Foundations in Data Driven Life Sciences",
+      "credits": 3,
+      "internalEquivalents": [
+        "MCIBS554"
+      ],
+      "description": "Expanded overview of current developments and technique in computational biology and genomics. BMMB (MCIBS) 554 Foundations in Data Driven Life Sciences (3) The successful progression of data-driven biomedical research is obscured by a wide-range of logistical problems related to data handling and processing, a widespread disconnect between developers and consumers of biomedical analysis software, and lack of accessible, well-developed curricula and active learning opportunities necessary for the development of key data analysis skills in the next generation of researchers and clinicians. This course aims a filling these gaps. Topics include fundamental concepts that underpin analysis of sequence data, design of complex experiments, research transparency and reproducibility, as well as result disseminations practices relevant to presentations and publications."
+    },
+    {
+      "number": 572,
+      "title": "Benchmark Papers",
+      "credits": 2,
+      "description": "Discussion of current literature on molecular, cellular and developmental biology. IBIOS 572 Benchmark Papers (2) This is a required course for all CDB graduate students during their second fall semester. It will be team taught using papers selected by the participating faculty members. One to few paper(s) on a specific topic will be assigned each week prior to the meeting between a faculty and the students. The students will read the papers, and then come to the meeting ready for discussion. The faculty member will moderate and guide the discussion, including asking questions, pointing out key aspects that might be missed by students, and giving time to those students who have not had a chance to speak."
+    },
+    {
+      "number": 593,
+      "title": "Molecular biology Laboratory",
+      "credits": 3,
+      "description": "An intensive laboratory course on the principles and techniques of nucleic acid purification, analysis by restriction enzymes, gel electrophoresis, nucleic acid labeling and hybridization, cloning, sequencing, PCR amplification, and analysis of cloned heterologous gene expression by western blotting."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in teaching and orientation to other selected aspects of the profession at The Pennsylvania State University."
+    }
+  ]
+}

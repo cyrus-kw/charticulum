@@ -1,0 +1,57 @@
+{
+  "subject": "INTST",
+  "courses": [
+    {
+      "number": 100,
+      "title": "Introduction to International Studies",
+      "credits": 3,
+      "attributes": [
+        "GS",
+        "BA-S",
+        "IL",
+        "FYS"
+      ],
+      "description": "An introductory multidisciplinary course designed to familiarize students with critical international issues. INTST 100 Introduction to International Studies (3) (GS;IL)(BA) This course meets the Bachelor of Arts degree requirements. This is an interdisciplinary course designed to provide students with an introduction to a range of global issues. The course will emphasize the themes of international interdependence and globalization and their development over time. A key component of this course is cultural diversity and the connecting international and domestic issues, particularly those of race and culture. In both their written and oral work, students will be required to relate international issues to their own fields of study. The disciplines involved are mainly political science and economics, ecology, history, and cultural studies."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written or oral critique of activity required."
+    }
+  ]
+}

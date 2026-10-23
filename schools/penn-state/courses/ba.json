@@ -1,0 +1,1138 @@
+{
+  "subject": "BA",
+  "courses": [
+    {
+      "number": 100,
+      "title": "Introduction to Business",
+      "credits": 3,
+      "attributes": [
+        "GS"
+      ],
+      "description": "A comprehensive view of the contemporary environment of business. This course provides a broad overview of the study of business and its environment, organization, operation, and interrelationships with government and society. Topic areas include; economic systems, forms of business ownership, information, accounting, finance, management, marketing and supply chain principles, legal and regulatory environments, business ethics and international business. A student majoring in business will develop a broad basis for further study in a specific area in business, while other majors will become familiar with the American enterprise system and the functions and issues facing business today."
+    },
+    {
+      "number": 100,
+      "suffix": "S",
+      "title": "Introduction to Business",
+      "credits": 3,
+      "attributes": [
+        "GS",
+        "FYS"
+      ],
+      "description": "BA 100S is a broad overview of American business practices and policies. The course introduces the functions of business and how each interacts and shapes the legal, political, social, cultural and economic environments. Students who successfully complete this course will understand how a) the American free enterprise system operates b) businesses operate in our modern political, social, and economic environment c) how to analyze the methods and procedures used by people in business to arrive at effective decisions d) ethics and corporate social responsibility affect business decisions e) globalization has transformed American businesses."
+    },
+    {
+      "number": 101,
+      "title": "Smeal Across the Commonwealth",
+      "credits": 1,
+      "description": "Designed for pre-major students at Penn State Commonwealth campuses entering a Smeal major, this course covers entrance-to-major requirements and planning; major and career exploration; transition to University Park resources; and core professional skills for business, including ethical decision-making and strategies for academic success."
+    },
+    {
+      "number": 150,
+      "title": "Preparation for Careers in Business",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PSU6",
+              "BA101"
+            ]
+          }
+        ]
+      },
+      "description": "BA 150 is for students beginning their career readiness journey. The course provides a clear overview of the internship and employment search process while developing key people skills - including active listening, confidence, and strategic networking - to effectively engage with employers and recruiters. The course prepares students for employer recruitment and interview cycles that occur each semester. The course aligns with the National Association of Colleges and Employers (NACE) Career Readiness Competencies with emphasis on Career and Self Development, Communication, and Professionalism."
+    },
+    {
+      "number": 195,
+      "title": "Cooperative Practicum with Business Offices",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Cooperative practical work with business offices under the supervision of the instructor."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 205,
+      "title": "Accounting",
+      "credits": 3,
+      "description": "BA 205 introduces students to the discipline of accounting through an introduction to two of accounting's sub-disciplines, financial and managerial accounting. The more specific purpose is to provide non-business students with a basic understanding of the role of financial and managerial accounting information in the decisions of capital market participants external to a business enterprise (e.g., stockholders, banks, financial analysts, prospective stockholders), and in the decisions of those who manage business enterprises. The first portion of the class will cover introductory concepts of financial accounting, including developing an understanding of foundational accounting concepts, business transactions, basic financial statements, and financial statement analysis. The second portion of the course will expose students to introductory content in managerial accounting. This includes covering the concepts of managerial cost, short term and long-term decision making, and time value of money. This course is intended for non-business major students."
+    },
+    {
+      "number": 241,
+      "title": "Legal Environment of Business",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "Examines the legal system's role and impact regarding business transactions, liability issues, and ownership of intellectual property. Students earning credit for B A 241 may not earn credit toward Smeal College baccalaureate degree for B Law 243 and/or B A 243. B A 241B A 241 Legal Environment of Business (2)As an integral part of planning and management responsibilities, a business decision-maker must be able to identify risks and opportunities from many sources. The legal environment represents a significant segment of the decision-maker's landscape. This survey course is designed to develop the student's awareness and recognition skills with respect to the major inputs in the increasingly complex commercial legal environment. Students in this course will examine the design and function of the U.S. legal system in its roles as protector of property interests and facilitator of business transactions. Alternatives to judicial resolution and enforcement will also be examined. In addition, students will learn about the legal issues affecting the formation and enforcement of business agreements. This will include studying the impact of our economy's continued shift to digital technology for communication and documentation. Finally, tort liability and intellectual property issues from a business perspective will be examined with a special emphasis upon issues created by the Internet's rapid growth. Students earning credit for B A 241 may not earn credit toward a Smeal College baccalaureate degree for B LAW 243 and/or B A 243."
+    },
+    {
+      "number": 242,
+      "title": "Social and Ethical Environment of Business",
+      "credits": 2,
+      "description": "Explores the social and ethical environment of business and ethical decision making in a business context. B A 242 Social and Ethical Environment of Business (2) Modern businesses operate in an increasingly interdependent environment. The actions of businesses have major impacts on society. Conversely, society influences a wide range of corporate actions through laws and regulations as well as via public opinion and the media. With changes in information technology, corporate decisions that were once considered private are now subject to public scrutiny. Therefore, more than ever, these decisions must take into account the larger social environment. In this course, students will learn about a broad range of stakeholders and societal issues that affect corporate decision-making and they will consider the corporation's responsibility to society. They will also learn to apply ethical decision-making frameworks to a variety of ethical decisions faced by corporate managers. This course is taught in the sophomore year and therefore lays a broad foundation for other core business courses. For example, other courses tend to focus on a single stakeholder group such as customers (marketing), employees (management), or stockholders (finance). This course teaches students to think broadly about how a business fits into a more complex web of relationships within society."
+    },
+    {
+      "number": 243,
+      "title": "Social, Legal, and Ethical Environment of Business",
+      "credits": 4,
+      "attributes": [
+        "US"
+      ],
+      "description": "Explores the ethical, political, social, legal and regulatory, technological, and demographic diversity environment of business. A student may not receive credit toward graduation for both B LAW 243 and B A 243."
+    },
+    {
+      "number": 250,
+      "title": "Small Business Management",
+      "credits": 3,
+      "description": "Analysis of problems of the small firm, particularly for the student who wishes to venture into business."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 301,
+      "title": "Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
+        ]
+      },
+      "description": "The goal of BA 301 is to provide insight into the thinking of both the financial manager and the functional manager that is needed to effectively lead and manage not only their business organization but also their personal financial lives. The course will enable the student to learn the key financial concepts, constructs, and models that are used by financial managers every day around the world. Understanding of the mathematics of finance, the use of financial calculators, and development of Excel financial model problem solving will be emphasized. Ethical financial decision-making will be a common theme that is integrated throughout the course. Using a survey overview approach, the first third of the course will cover concepts such as financial statements and analysis, financial ratios and analysis, long-term financial planning and budgeting, time value of money, discounted cash flow analysis, capital budgeting, break-even analysis, and systematic/unsystematic risk. The second third of the course will provide an overview of financial topics that are normally covered in detail in financial markets courses. These topics include financial systems, money markets, the Federal Reserve and monetary policy, derivatives and speculative markets, and legal and operational issues in financial markets. The final third of the course will cover general personal finance topics of interest such as money management strategies, insurance and risk management, consumer credit, tax strategies, investing in stocks, bonds, and Exchange-Traded Funds, and retirement and estate planning. A student may receive credit toward graduation for only one of the following; BA 301 , FIN 100 , or FIN 301 ."
+    },
+    {
+      "number": 302,
+      "title": "Supply Chains",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          },
+          "ACCTG211",
+          {
+            "oneOf": [
+              "STAT200",
+              "DS200",
+              "SCM200",
+              "STAT250",
+              "ECON306",
+              "IE424"
+            ]
+          }
+        ]
+      },
+      "description": "BA 302 provides non-business students with an introduction to the issues and decisions routinely faced by supply chain managers and the impact of effective supply chains on today's business environment. Using the Supply Chain Operations Reference model as a framework, this course considers how successful firms plan, integrate and execute sourcing, manufacturing, customer fulfillment, reverse logistics and sustainment processes across a complex marketplace to provide value to the customer. The course looks at the interplay and coordination of product, financial and information flows through a supply chain resulting in value creation for the customer and competitive advantage for the firm. Students will consider the roles of drivers such as cost, quality, time, flexibility, innovation and information sharing in designing supply chain strategies in support of overarching business strategies. Through detailed exploration of models, case studies and real world events, coupled with the application of operations management tools and techniques, the course provides the opportunity to identify and dissect issues, and develop solutions to supply chain challenges not only faced by today's business managers, but also impact the customer. The course examines supply chain organization, implementation and management planning, the evaluation and control of manufacturing processes, and the execution of supplier and customer management activities. Students will use basic information technologies and programs to leverage tools like business process mapping, value indexing, and total cost analysis to aid in the identification and mitigation of supply chain issues in a global business environment. Students will also be exposed to current supply chain issues such as sustainability and the impact of boundary-spanning information technologies as relevant keys to competitive advantage. The course provides the basic supply chain knowledge and skills necessary for the non-business major to be an effective member of a cross functional team in a professional business environment while providing a level of understanding to benefit the student in navigating the complex customer fulfillment issues present as a consumer of goods and services in today's globally connected marketplace. A student may not receive credit towards graduation for both BA 302 and and SCM 301 ."
+    },
+    {
+      "number": 303,
+      "title": "Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
+        ]
+      },
+      "description": "BA 303 provides broad-based exposure and understanding of marketing and its processes. The course is a stand-alone marketing course for those interested in the role of marketing within the business context. It covers a range of topics from the basic (what is marketing), to the processes (market segmentation, marketing strategy, development of product, price, place and promotion), to the broader societal questions (why marketing exists, ethics, the future of marketing). There is also the opportunity to examine marketing from the perspective of various industries for non-business students. Assessment will test factual knowledge of marketing and the marketing process. Written assignments will ask students to work both individually and in teams to apply course concepts. These can include assignments developing one's skill set in consumer psychology, target market selection, writing a positioning statement, developing a marketing plan, new product development concepts, promotional campaign ideas, and ethical questions to discuss and debate. Students may also be asked to form small groups for discussion and/or make presentations to the class based on set marketing topics specific to one's area of interest. Students will also be expected to participate in class discussions. A student may not receive credit towards graduation for both B A 303 and MKTG 221 or MKTG 221W . Furthermore, a student may not receive credit towards graduation for both B A 303 and MKTG 301 or MKTG 301W ."
+    },
+    {
+      "number": 304,
+      "title": "Management and Organization",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          }
+        ]
+      },
+      "description": "BA 304 is an overview of a body of knowledge that exists concerning the management of modern organizations. Management is critical to business success no matter the industry, the field or the arena. Eight key functions for any manager will be covered - organizational structure, operations, staffing, recruitment, leadership, culture and ethics, planning, and innovative and responsible practices. A key take away for BA 304 is the difference between leadership and management and what do these terms mean. In recent years the focus has been on leadership as the preferred ability to strive for with management skills losing favor. In general, it has been said that leaders focus on \"doing the right things\" and managers focus on \"doing things right\". This will be a theme for review and discussion throughout the course as each subject area is covered. A student may not receive credit towards graduation for both B A 304 and MGMT 100 or MGMT 100W . Furthermore, a student may not receive credit towards graduation for both B A 304 and MGMT 301 or MGMT 301W ."
+    },
+    {
+      "number": 321,
+      "title": "Contemporary Skills for Business Professionals",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ACCTG211",
+              [
+                "ACCTG201",
+                "ACCTG202"
+              ]
+            ]
+          },
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          },
+          "ENGL15"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          },
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
+        ]
+      },
+      "description": "BA 321 Contemporary Skills for Business Professionals (3) This course is designed to provide fundamental skills necessary for success in the business environment, and emphasizes the development of individual, group, critical thinking, and presentation skills. BA 321 is one of a series of courses that collectively develop the skills and competencies required of a successful business administration student. As a foundational course in the degree program, BA 321 emphasizes the following: An introduction to student-centered learning, especially with opportunities for active and collaborative learning utilizing state of the art elements of the technological business environment. An introduction to inquiry-based processes necessary for understanding and addressing issues and opportunities in current and emerging business environment relevant subsequent course work in the student's chosen option and professional practice. Development of basic communications skills, including oral, written, and multimedia, relevant to individual and group effectiveness. Team building and participation while completing projects that focus on understanding individual and cultural diversity and respecting the views of others. An understanding of and competence in the multiple roles that define successful teamwork. Establishing and respecting the roles within a team. Awareness of the importance of the needs and opportunities of the community with which the individual contributes as a business professional. Application of the hardware and software skills necessary for transferring knowledge of business topics in both face-to-face and virtual settings academic and professional."
+    },
+    {
+      "number": 322,
+      "title": "Negotiation Skills for Business Professionals",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ACCTG211",
+              [
+                "ACCTG201",
+                "ACCTG202"
+              ]
+            ]
+          },
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          },
+          "ENGL15"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          },
+          {
+            "oneOf": [
+              "MIS204",
+              "MIS250"
+            ]
+          }
+        ]
+      },
+      "description": "BA 322 Negotiation Skills for Business Professionals (3) This course integrates the experiential and intellectual components of negotiation, and emphasizes the preparation and conduct of business negotiations in a range of situations. These situations include integrative and distributive scenarios, development of negotiation relationships, and negotiation in multi-organization, multi-industry, multi-cultural, and multi-national environments. Basic negotiation theories will be addressed and applied through the recognition and the resolution of conflict by applying various bargaining strategies. Students will learn how to prepare for a negotiation event. Students will learn to select the appropriate negotiation strategies in order to match the needs of the situation. Students will develop the negotiation skills needed to meet the challenges facing today's executives. Students will develop the sophistication to analyze bargaining and conflict relationships, and an awareness of their individual bargaining style. Students will apply various techniques in order to: understand the basic elements of negotiation; make informed decisions about continuing a negotiation or walking away; participate or lead in team-based negotiations; and effectively manage international negotiations. A primary component of this course is application of negotiation theories through exercises in which the student assumes various roles within a negotiation scenario. Through practice and role playing, students will develop effective personal and professional negotiation skills."
+    },
+    {
+      "number": 342,
+      "title": "Socially Responsible, Sustainable and Ethical Business Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MGMT301",
+              "MGMT301W",
+              "BA304"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          },
+          {
+            "oneOf": [
+              "MKTG301",
+              "BA303"
+            ]
+          },
+          {
+            "oneOf": [
+              "SCM301",
+              "BA302"
+            ]
+          }
+        ]
+      },
+      "description": "Course examines actions taken by corporations that impact global citizenship, environmental sustainability, and the economic stability of international societies. It further looks at relationships, rights, and responsibilities between businesses, business decision-makers and their stakeholders. B A 342 Socially Responsible, Sustainable and Ethical Business Practice (3) Businesses and other large organizations have come to influence nearly all aspects of life in contemporary industrialized societies. The actions taken by businesspeople have major impacts on individuals and on society as a whole. Conversely, the expectations of citizens and their representative bodies (e.g., governments, communities, unions, interest groups) influence a wide range of corporate actions. Students of B A 342 will examine these relationships, rights, and responsibilities between businesses, business decision-makers and their stakeholders. As students enter their field of study, this course will introduced them to current ethical, social responsibility and sustainability issues that face business practitioners within their field and across related disciplines. Each business function &ndash; accounting, finance, marketing, risk, supply chain, human resource policies, etc. &ndash; has relationships and responsibilities within the larger social environment. This course considers commonalities across the business functions and teaches students to think broadly about how a business fits into a more complex web of relationships within society. The course begins with an overview of the corporation&rsquo;s place and role in society as well as key concepts in understanding why knowledge related to corporate governance, ethics, sustainability and social responsibility issues is critical to professional managers&rsquo; responsibility and long-term career success. The stakeholder model is reviewed along with the study and application of ethical decision-making frameworks to current ethical dilemmas. Sustainability and global responsibility are introduced within the context of government regulation versus responsible stewardship. The closing section of the course provides thought and discussion on issues facing business practitioners across key business functions."
+    },
+    {
+      "number": 364,
+      "suffix": "Y",
+      "title": "International Business and Society",
+      "credits": 3,
+      "attributes": [
+        "US",
+        "IL",
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "MGMT301",
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202A",
+              "ENGL202B",
+              "ENGL202D"
+            ]
+          }
+        ]
+      },
+      "description": "This writing-intensive course will provide an overview of the relationship between business organizations and the sociocultural environment. Current issues in the media and the scholarly literature will be used to discuss and analyze this relationship. Special attention will be given to the topics of business and government relationships, corporate responsibility, environmental issues, and topics related to international and multinational business environments."
+    },
+    {
+      "number": 395,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 395,
+      "suffix": "A",
+      "title": "Practicum in Business Administration",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 1
+      },
+      "description": "Professional and guided work experience in business administration with private or public organizations. May be taken only as an elective."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 411,
+      "title": "Analyzing Business and Industry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG211",
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          },
+          {
+            "oneOf": [
+              "BA302",
+              "SCM301"
+            ]
+          },
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          },
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
+        ]
+      },
+      "description": "Prepares students to obtain an enterprise-wide view of business and industry by integrating operational and financial decisions in a team and learning environment. B A 411B A 411 Analyzing Business and Industry (3) The course provides the students with a methodology for analyzing the business, introduces the students to sources of financial information available from private and public sources and trains the student to prepare and professionally present business analysis reports. The course, which adopts a user perspective, extends the students' basic knowledge of financial reporting and provides them with a broader context for understanding business that includes economic and social forces, the regulatory environment of businesses and their financial reporting, capital market operations and corporate governance. It applies concepts and decision tools that are studied throughout the curriculum such as present value, financial ratio analysis, break-even point analysis and statistical analysis."
+    },
+    {
+      "number": 412,
+      "suffix": "H",
+      "title": "Honors Integration and Research",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "ACCTG211",
+          {
+            "oneOf": [
+              "BA301",
+              "FIN301"
+            ]
+          },
+          {
+            "oneOf": [
+              "BA302",
+              "SCM301"
+            ]
+          },
+          {
+            "oneOf": [
+              "BA303",
+              "MKTG301"
+            ]
+          },
+          {
+            "oneOf": [
+              "BA304",
+              "MGMT301"
+            ]
+          }
+        ]
+      },
+      "description": "The integration of the business core into a detailed financial, strategy and market analysis of actual companies selected by student teams. BA 412H Honors Integration and Research (2-3 credits)The purpose of this course is to assist students in developing their Schreyer Honors Thesis. It proceeds by exposing students to research conducted within the various business majors; the research conducted by prior honors students; and having student teams conduct research or contemporary businesses and industries. Typical readings include materials related to evaluating an actual company, prior Schreyer Honors theses, contemporary business articles, prior course projects and supporting academic literature. Written company analyses and oral presentations are made by the teams."
+    },
+    {
+      "number": 420,
+      "title": "Preparation for Career Management",
+      "credits": 1,
+      "description": "This course emphasizes effective career planning by closely examining oneself, the business world, communication styles and strategies. B A 420 Preparation for Career Management (1) BA 420 develops students' career preparation and management skills through the close examination of self, the world of work and communication styles and strategies. This course is one of a series in the program which collectively develop the skills and competencies necessary for the business administration student. The course is designed on the belief that (1) career decision-making is greatly enhanced by considering personal traits such as one's interests, values, goals, and approach to making decisions; and (2) through the exploration of self and world through out-of-classroom learning experiences. The student becomes empowered to apply prior classroom learning outside of the academic environment. These skills are utilized throughout a person's career Students who successfully complete the course will be able to: -Prepare resumes targeted to a range of industries and positions. -Write effectively to prospective employers. -Identify personal traits and qualities in the context of career management. -Demonstrate effective interview techniques."
+    },
+    {
+      "number": 421,
+      "title": "Project Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BA321",
+              "BA322"
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to Project Management covering all phases of a project including proposal development, planning, execution, and closing. BA 421 Project Management (3) BA 421 is designed to provide the fundamental skills necessary for success in the business environment. BA 421 is one of a series of courses that collectively develop the the skills and competencies necessary for business administration students. BA 421 is designed to provide students with the fundamental understanding of the Project Management Book of Knowledge that defines the standards of the Project Management Institute (PMI) which is the professional credentialing body of the discipline. This introductory course in project management covers all phases of a project, including; proposal development, planning, execution and closing. The course will also explore the application of the Theory of Constraints to project management, and will use project management software to demonstrate and reinforce class concepts. The software will also be instrumental in the execution of a business project. By the end of the proposed new course, students should be able to:&bull; Identify the role of the project manager within organizations and projects. * Understand the Processes and Procedures needed to Plan and Control a Project. * Recognize the options available as well as the inherent strengths and weaknesses of different approaches. * Define the project scope and priorities. * Create Work Breakdown Structure (WBS) and integrate it with the organization. * Estimate and interpret project times and costs. * Construct project networks and find critical paths. * Understand and Implement Activity Precedence Logic * Identify, assess and respond to project risks. * Schedule project resources and evaluate resource constrained projects. * Differentiate between the options to accelerate project completion. * Use Microsoft Project Management Software as a skilled tool for Project Management."
+    },
+    {
+      "number": 422,
+      "suffix": "W",
+      "title": "Strategic Business Planning",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "BA321",
+          "BA322",
+          "BA421",
+          "FIN301",
+          "MGMT301",
+          "MKTG301",
+          "SCM301"
+        ]
+      },
+      "description": "Study of strategic planning and implementation in multi-industry, multi- cultural, and multi-national settings with emphasis on sustaining competitive advantages. BA 422W Strategic Business Planning is the capstone of the series of business administration courses in the BSB degree. These courses collectively develop the the skills and competencies necessary for the business administration student. BA 422W is designed for students to examine the discipline of strategic management and to develop an appreciation of the criticality of strategic management in guiding a business entity through a changing and challenging environment. The course requires students to build upon their knowledge of business structure, internal and external environments, and functional design as each relates to strategy development and implementation. Students explore methods and techniques to identify strategies best suited to accomplish an entity's mission and its business objectives. As a writing intensive (W) course, there is a strong emphasis on development and reinforcement of effective writing skills. Students prepare well reasoned, organized, and constructed bodies of work. Upon successful completion of the course, students will be able to: 1. Identify environmental threats and opportunities impacting a firm. 2. Identify strengths, weaknesses and competencies of a firm. 3.Effectively apply critical thinking skills to design strategic alternatives and then the best Alternative. 4. Critique and evaluate strategic actions taken by firms. 5. Explain the profound effects that a strategic move (either at the corporate level or at the business level) can have on the entire organization. 6. Demonstrate exceptional skills in presenting complex business information and issues. 7. Efficiently research a firm or industry using a variety of sources. 8. Demonstrate proficiency in analyzing business cases and formulating well reasoned recommendations when no \"right\" answer exists. 9. Demonstrate effective leadership skills in a group environment."
+    },
+    {
+      "number": 441,
+      "title": "Strategies for Enterprise Sustainability",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BA342"
+        ]
+      },
+      "description": "An understanding and analysis of how environmental and sustainability issues are impacting business strategies and ultimately profits. B A 441 Strategies for Enterprise Sustainability (3) Enterprise globalization warrants a greater level of awareness and responsibility in seeing that products and services maintain a high level of integrity, quality, and reliability; products need to be produced and moved throughout the supply chain in a manner that does not cause unacceptable environmental or social burdens, but that also allows for acceptable profits. We will examine both external and internal forces, such as environmental groups, policy-makers, and consumers that impact business strategies. This will be put into the context of the \"triple bottom line\" with an understanding of its challenges and opportunities. Business students will benefit by a better understanding of environmental/sustainability issues that impact operations and strategies. Students will learn via analyses of cases studies and by working in teams to solve real-world problems faced by chosen organizations. Focus will include all key aspects of an enterprise, from procurement to product development, and from human resources to supply chain solutions."
+    },
+    {
+      "number": 442,
+      "title": "Sustainable Behavior of Consumers, Firms, and Societies",
+      "credits": 3,
+      "internalEquivalents": [
+        "MKTG442"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BA342",
+              "SUST200",
+              "CED152"
+            ]
+          }
+        ]
+      },
+      "description": "Sustainability is a broad domain concerning the extent to which environmental, economic, and social practices are viable for current and future generations. Consumer awareness of sustainability issues has evolved from an emerging social movement to mainstream values, but increasing sustainable behavior remains a challenge. This course is designed to provide students with the knowledge to enhance sustainable behaviors in firms, among consumers, and in society at large. In doing so, this course will include frameworks for understanding how to influence sustainable practices, consumer response to sustainability, and marketing communication issues as well as real-world examples of sustainable practices and issues, offering both a theoretical and applied approach. The course may also include a project which will entail student teams working on a real-world sustainable behavior problem in collaboration with a business or segment of the university campus when available or other course project addressing a relevant sustainability issue. Students should leave the course with an understanding of sustainability issues in the current marketplace and the knowledge and ability to influence sustainable behaviors. Students will enter their career with the knowledge and skills to be a sustainable business decision-maker and foster sustainable behavior."
+    },
+    {
+      "number": 462,
+      "title": "Business Strategy",
+      "credits": 3,
+      "description": "Interpretation of business concept in the analysis of problems related to the successful management of a company, institution, or organization. Business Strategy is the study of managerial decision­making in a firm's competitive space. As such, the course focuses on the formulation and implementation of corporate strategy sets as if the student was on the top management team (TMT) inside a for­profit organization. The course covers topics such as decision­making under uncertainty, environmental scanning and sequential updating, industry structure, the firm's regulatory constraints, relative bargaining power, Porters Five Forces, industry barriers to entry, industry value chain analysis, firm­level resources and capabilities, competitive advantage, corporate­level strategy, business­level strategy, and collaborative strategies such as franchising, licensing and joint ventures. The overarching goal of the strategic manager is to ensure that the firm survives and thrives and, with these goals in mind, Business Strategy addresses the actions and outcomes to corporate decisionmaking. The course has a number of objectives in addition to learning and retaining information on the aforementioned topics. These include (i) obtaining critical thinking skills necessary to function as a strategic manager or to perform the tasks comprising the strategic management process, (ii) integrate and apply the knowledge accumulated in various functional areas, such as marketing, human resource management, operations, accounting and finance, (iii) prepare you for management careers by providing in­class opportunities for you to enhance your ability to communicate orally and in written formats, (iv) to lead and to work with others in realistic work settings, (v) expose you to the ethical and societal issues raised in operating an enterprise, and (vi) to provide you with experience in dealing with real strategic decision issues facing managers in all types of organizations. This is accomplished through a number of pedagogical mechanisms that include news articles, case studies, academic articles, documentaries, simulations and written assignments."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 3,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      }
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "title": "Business Internship",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "BA420"
+        ]
+      },
+      "description": "B A 495A Business Internship (3-6 per semester/maximum of 6) B A 495A facilitates the application of students' prior classroom learning in a field setting. This course is one of a series in the business program which collectively develop the skills and competencies necessary for success as a business administration student. The course is designed to provide students with a firsthand opportunity to experience the challenges and rewards of the business professional. Essentially, an internship bridges the gap between the academic environment and the professional environment. Internships provide an opportunity for students to link theory with practice in a nonacademic setting. Internships provide practical, real-world experiences which cannot be simulated in the classroom. Upon successful completion of an internship, students will: -Have a better understanding of employer expectations related to career advancement. -Have an enhanced strategic view of the industry/business segment in which they worked. -Have experience integrating and using their knowledge and skills from the classroom. -Have increased awareness of professional and technical areas of strengths and weakness."
+    },
+    {
+      "number": 495,
+      "suffix": "B",
+      "title": "Undergraduate Research in Business",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "BA321",
+          "BA322",
+          "BA420"
+        ]
+      },
+      "description": "B A 495B Undergraduate Research in Business (3-6 per semester/maximum of 6) BA 495B provides students an opportunity to apply prior coursework to address a business problem or research question in far greater depth than a traditional research paper. This course is one of a series in the business program which collectively develop the skills and competencies necessary for success as a business administration student. The course provides the students with an opportunity to work intensively on a research project of extended duration and depth of analysis with a supervising faculty member. This course introduces the students to conducting business research on a more advanced level. Students will have the opportunity to develop the research question(s), read extensively in the academic literature, gather and analyze data, and thereby extend learning from prior coursework in a research setting."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Study--Business Administration",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "IL"
+      ],
+      "requisites": {
+        "previous": [
+          "ACCTG211",
+          {
+            "oneOf": [
+              "ECON102",
+              "ECON104"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          }
+        ]
+      },
+      "description": "Study in selected countries of business institutions, functions, and current business problems."
+    },
+    {
+      "number": 511,
+      "title": "Seminar on Statistical Analysis",
+      "credits": 3,
+      "description": "This course provides a breadth of statistical skills necessary for advanced data analysis. Students will learn how to employ data analytic processes that address challenges associated with experiments, surveys, time-series, panels, and/or multilevel models. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interest."
+    },
+    {
+      "number": 512,
+      "title": "Quantitative Analysis for Managerial Decision Making",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course is an introduction to the mathematical methods and tools of managerial decision making under uncertainty. While the main topics of the course are probability, statistics, decision analysis, simulation, and regression which are mathematical by nature, emphasis is placed on improving an intuitive understanding of the underlying issues in these topics. Rather than simply memorizing mathematical formulas, the student is encouraged to gain a better understanding of why certain concepts are used, and to learn what type of information is relevant to evaluate different situations of uncertainty. Students are expected to apply and discuss how the quantitative analysis they develop aides in business decision making. Students are expected to gain familiarity with various state of the art software packages for this analysis."
+    },
+    {
+      "number": 513,
+      "title": "Advanced Microeconomic Analysis for Business",
+      "credits": 3,
+      "description": "This course discusses topics in advanced microeconomic analysis with an emphasis on applications to applied research areas in business and other related disciplines. Topics include (but are not limited to) general equilibrium, choice under uncertainty, game theory, mechanism design, and behavioral economics. An area of particular focus is how incomplete and asymmetric information impacts competitive and strategic behavior by individuals and firms in a variety of applied settings. The materials emphasize theoretical models prevalent in microeconomic research, and students are expected to develop a familiarity with the use of mathematical modeling in economics. Whenever possible applications to related applied disciplines such as those in finance, supply chain management, accounting, and agricultural economics will be highlighted and discussed. Experimental methods will be used at times to motivate and discuss various economic principles."
+    },
+    {
+      "number": 523,
+      "title": "IT Strategy",
+      "credits": 2,
+      "description": "An introduction to information technologies critical to business organizations."
+    },
+    {
+      "number": 528,
+      "title": "Business Simulation",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "A team-based course during which students will manage a simulated firm. B A 528 Business Simulation (1-3)Using the business simulation, teams of 4-5 students will compete against other teams in a particular industry. The team members will have to make all the decisions about how to run the firm, including overall strategy, product design, detailed marketing plans, factory operations, and financing."
+    },
+    {
+      "number": 533,
+      "title": "Economics for Managers",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course provides students with an overview of the foundations of microeconomic analysis. The primary objective is to develop their ability to apply fundamental microeconomic concepts from price theory and game theory to a wide range of managerial decisions, as well as public policy issues."
+    },
+    {
+      "number": 545,
+      "title": "Business, Government and International Economics",
+      "credits": 2,
+      "description": "Understand how macroeconomic events and policies affect the global economy and business decisions. B A 545 Business, Government and International Economics (2)Changes in interest rates, swings in the business cycle, new international trade agreements: All are macroeconomic events, and all can dramatically impact business. Accordingly the class is a synthesis of institutional, theoretical and historical perspectives."
+    },
+    {
+      "number": 559,
+      "title": "Qualitative Analysis in Business",
+      "credits": 3,
+      "description": "This course provides the foundational skills necessary for conducting qualitative research in an applied business context. Students will explore some of the following topics: ethnography, observation, interviewing, grounded theory, discourse analysis, case method, narrative analysis, and action research. Through this process, students will be introduced to the epistemological foundations of qualitative research, learn different methods of data collection, introduce different techniques for coding and analyzing qualitative data, and provide guidance on creating rigorous qualitative research."
+    },
+    {
+      "number": 560,
+      "title": "Applied Business Research",
+      "credits": 3,
+      "description": "This course grounds students in the process of developing translational research broadly within the business domain. Students will learn how to identify applied challenges, develop research questions to address these challenges, design applied studies, and frame their work using rhetoric that connects with the applied community."
+    },
+    {
+      "number": 571,
+      "title": "Strategic Management",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Analysis and application of concepts and techniques aimed at successfully developing and implementing competitive strategy in a complex business environment. B A 571 B A 571 Strategic Management for Converging Economies (3)This course introduces students to the field of strategic management and the skills and tools used by general managers to make strategic decisions. Students learn to use frameworks and perspectives for analyzing industries, competitors, and companies with an overall objective of positioning the firm to attain and sustain competitive advantage. Students learn how to identify the industry and firm-level determinants of profitability and then relate those factors to the development of competitive strategy within the context of responsible business practice. Students also learn how to evaluate strategies to understand how and why companies are successful or not. Finally, students will learn how senior managers use integrative approaches for solving strategic problems."
+    },
+    {
+      "number": 575,
+      "title": "Capstone Business Case",
+      "credits": 4,
+      "description": "A team-based project course that requires students to analyze an actual business problem from a firm or nonprofit organization. B A 575 Capstone Business Case (4)The Capstone Business Case course is designed to allow second-year MBA students the chance to integrate the knowledge they have gained to date in the program. True business problems are not narrow, functional area problems; rather they require teams of people to come together to jointly solve a problem that extends across many areas. For example, to assess the commercial viability for a new product requires contributions from economics, marketing, supply chain, finance, strategy, and corporate innovation. The more opportunities students have to work on real cross-functional problems, the better prepared they will be to solve them once they are actually on the job. In addition, working on a team and having to present the results gives students the ability to practice communication, teamwork, and leadership skills that are vital to success on the job."
+    },
+    {
+      "number": 580,
+      "title": "Doctorate of Business Administration Culminating Research Project",
+      "credits": 9,
+      "repeatable": {
+        "maxCredits": 27
+      },
+      "requisites": {
+        "previous": [
+          "BA560"
+        ]
+      },
+      "description": "This course provides Doctorate of Business Administration students with the opportunity to identify a practice problem or clinical question and investigate the literature related to this selected area of interest. Students will develop and implement a comprehensive project to address the problem. Students will also disseminate the results in both a scholarly presentation and manuscript for publication."
+    },
+    {
+      "number": 591,
+      "title": "Applied Communications",
+      "credits": 1,
+      "description": "Develop oral and written communication strategies to succeed in professional and academic contexts. B A 591 B A 591 Professional Development for Business Academics (1)This course is designed to equip doctoral students in business with skills and knowledge that will assist them in successfully completing their doctoral studies and moving on to a successful career as a business academic. These skills fall into three broad categories: 1) communication skills, 2) research skills, and 3) interpersonal skills (which include ethical behavior). The course is designed to cover many crucial skills and career issues that may be overlooked during a doctoral student's normal course of study."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 596,
+      "suffix": "A",
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 6
+      }
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 599,
+      "title": "Foreign Study--Business Administration",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Full-time graduate-level foreign study at an overseas institution with whom linkages have been established."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 800,
+      "title": "Marketing Management",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course provides an examination of the competitive landscape faced by marketing managers and the techniques used to provide data-driven insights to improve firm decision making. Students will learn how to assess the marketing environment which include the 5 Cs (Customer, Company, Collaborator, Competition, and Context) and how the 5 Cs impact marketing decision making. Students will learn how to utilize the marketing environment to establish a data-driven marketing strategy, i.e., segmentation, targeting, and positioning. As an example, this can include understanding how to conduct cluster analysis for segmentation, discriminant analysis for targeting, and perceptual and preference mapping for positioning. Students will learn how to make data-driven tactical marketing decisions, i.e., product, price, place, and promotion. As an example, this can include understanding how to conduct conjoint analysis for new product developing, base price analysis (BPA) for pricing, and marketing mix models for promotion decisions. Finally, students will learn how to link their data-driven marketing decision to important business outcomes, e.g., market share, return on marketing investment (ROMI), and profitability. Marketers will find the course provides them skills to immediately utilize data in their marketing decisions. Non-marketers will build skills related to understanding how data can be utilized for general business decision making. This course provides basic foundations of theories and tools used in subsequent elective courses in marketing."
+    },
+    {
+      "number": 801,
+      "title": "Management",
+      "credits": 2,
+      "description": "This course is concerned with understanding and managing the behavior of people in organizations. The course will provide exposure to many of the concepts and skills that will help students become a more effective manager and organizational leader. This course includes tools that help students diagnose, understand, and develop solutions to management problems. The course will draw upon both the academic and practitioner literature to understand many facets of organizations and of the thoughts, feelings, and actions of people who work in them. It will focus on: 1) developing students' conceptual understanding of issues involved in managing people; 2) providing opportunities for direct or vicarious learning of managerial skills that have been identified by practicing managers as being most important to their performance; 3) giving students insight into their own attitudes, beliefs, and management philosophy; 4) creating a forum for discussing management issues with colleagues."
+    },
+    {
+      "number": 802,
+      "title": "Team Process and Performance",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "This course provides students with basic knowledge about predictable team dynamics and how to constructively deal with issues that arise in the first year M.B.A. teams. The course focuses on observation, diagnosis, and intervention skills for developing effective teams. Topics include diagnosing group dynamics, giving and receiving feedback to teammates, cross-cultural communication, and conflict management techniques. The course provides a real-time practicum for diagnosing team issues and addressing team problems and conflicts. Students apply team process concepts and techniques as they work to complete team projects in their other core M.B.A. classes. Students leave the course with an understanding of how to successfully lead a team and how to diagnose and correct dysfunctional team behaviors."
+    },
+    {
+      "number": 803,
+      "title": "BUSINESS ETHICS",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "A study of ethical conduct in organizations and how cultural differences and personal conduct impact business decisions. This course focuses on developing the ability to understand ethical conduct in business organizations. Understanding how to think about and manage personal ethical conduct is a key learning objective along with a review of how an organization fosters a culture that supports ethical behavior. Students will also learn how cultural differences impact business decisions in a global environment."
+    },
+    {
+      "number": 804,
+      "title": "Ethical Leadership",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "The objective of the ethical leadership course is to raise awareness of the key role played as a manager and leader in creating and maintaining responsible business conduct in work groups and organizations. The course is also intended to enhance the student's ability to deal with the complexities of ethical decision making in today's dynamic business environment by clarifying and applying personal values."
+    },
+    {
+      "number": 805,
+      "title": "Negotiation Theory and Skills",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "The ability to effectively negotiate is an essential skill for managers. Negotiations not only occur with customers or clients, but also between bosses and subordinates, among teammates and across departments. Being able to craft a successful deal, especially in difficult circumstances, requires knowledge of yourself, as well as the substantive material that you are negotiating. Effective negotiators know their own limitations as well as their strengths. They also listen well and have good analytical skills. And, they can craft agreements that garner gains for themselves as well as for other if such gains are possible. Successful negotiating is also closely allied with successful teamwork since both processes require listening, persuasion, influence skills, and creativity. This course will give students an overview of the difference between traditional (distributive) bargaining and interest-based (or integrative) negotiations. Students will learn the rudiments of interest-based negotiating and practice it in several negotiation simulations. They will learn how to identify their own and others' interests, to create and claim value and to craft constructive agreements for all parties. The course will concentrate on two person and small group negotiations as well as to deal with difficult opponents."
+    },
+    {
+      "number": 806,
+      "title": "Career Strategy and Professional Development",
+      "credits": 1,
+      "description": "This course provides graduate-level content and strategies related to career readiness and professional development. The course covers career management frameworks, professional communications strategies, and career development strategies."
+    },
+    {
+      "number": 809,
+      "title": "Strategic Business Architecture",
+      "credits": 3,
+      "description": "BA 809 focuses on the development and application of business architecture as a holistic discipline that produces a common understanding of the organization that is used to align strategic objectives and tactical initiatives. Business architecture bridges the gap between a company's strategy and its successful execution. A business architecture approach that delivers business value to the enterprise produces several things: - An articulation of the strategic requirements of the enterprise - Models of the future state which illustrate what the enterprise should look like across multiple business viewpoints in support of the business strategy - A road map of the change initiatives required to reach that future state - The requirements, principles, standards, and guidelines that will steer the implementation of change initiatives The primary purpose of describing the business architecture of an enterprise is to improve the effectiveness or efficiency of the business itself. This includes innovations in the structure of an organization, the centralization or federation of business processes, the quality and timeliness of business information, and ensuring that money spent at the project level is in support of the strategic objectives of the larger enterprise. The course also develops additional capabilities for communicating, explaining, and justifying decisions relating to business architecture."
+    },
+    {
+      "number": 810,
+      "title": "Supply Chain and Operations Management",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "This course is designed to provide students with an overview of the role of operations in the organization, the kinds of decisions operations and supply chain managers make, and the impact of these decisions on the strategic and tactical position of the firm. Supply chain management is a particular focus in the course. The interaction of production, distribution and information resources plays a critical role in developing and sustaining a firm's competitive advantage."
+    },
+    {
+      "number": 811,
+      "title": "Financial Accounting",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "Business enterprises convey information to their present and potential investors and creditors through financial reports. This course focuses on these financial reports, the data they contain, how users should read and interpret financial statements, and how users can incorporate this information into their investment decision making. It also examines how managers attempt to window dress these financial statements and how the numbers might affect managerial behavior."
+    },
+    {
+      "number": 815,
+      "title": "Business Statistics for Contemporary Decision Making",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course provides an overview of statistical concepts and methods including descriptive statistics, probability, statistical inference, hypothesis testing, ANOVA, Correlation analysis, Contingency Tables, and Simple, Multiple, and Logistic Regression. The approach to course material will be both numerical and applied in order to provide a conceptual understanding of statistics. Applications of these methods will be applied to problems in various business settings such as Marketing, Finance, Accounting and Supply Chain."
+    },
+    {
+      "number": 817,
+      "title": "Communication Skills for Management",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "One of the most important skills M.B.A.s develop in business school is the ability to demonstrate the value of their experiences. This course provides students with targeted opportunities to develop this skill as they clearly, forcefully, and professionally represent ideas, opinions, and solutions. Students will participate in various oral, written, and graphic projects during the course. After completing this class, students will have proficiency in representing their skills, expertise, and views to business partners (clients, colleagues, employers, and shareholders). This course is spread over two semesters (2 semesters, 4 M.B.A. modules). Residential M.B.A. students must complete all 4 credits (1 credit each in mods 1,2,3,4 for a total of 4 credits). The material builds on each prior module and applies communications skills to various applications."
+    },
+    {
+      "number": 821,
+      "title": "Foundation in Managerial Accounting",
+      "credits": 2,
+      "description": "Foundations in Management Accounting has two broad aims. First, it is designed to help students grasp the technical aspects of accounting for activities and processes within and between firms. Therefore, students will study methods of a) cost classification & estimation; b) cost measurement & allocation; c) profit planning; and d) evaluation and control of behavior. Second, the course emphasizes the context of managerial accounting. The firm suspends market prices that regulate behavior impersonally. Students will study how economic arrangements are organized in such non-market settings. Unlike financial accounting, the field of management accounting integrates notions from diverse fields including economics and sociology. Crucially, management accounting is situational and therefore requires and hones students' facility in both quantitative analyses and qualitative judgments."
+    },
+    {
+      "number": 830,
+      "title": "Emerging Technology Trends in Business",
+      "credits": 1,
+      "description": "This course will empower future business leaders to embrace the concepts and bring the state-of-the-art technologies into their organizations to improve the bottom line of their businesses. This course focuses on emerging technologies that are characterized by novelty, relatively fast growth, prominent impact, and uncertainty. They are the tools that can disrupt industries. The appropriate application of emerging technologies can become the foundation of an organizational transformation journey that leads to improved organizational competitiveness. Conversely, the inappropriate application of any technology can lead to business setbacks and failures."
+    },
+    {
+      "number": 831,
+      "title": "Foundations in Finance",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course will provide students an understanding of the major financial decisions faced by modern corporations. These activities include investing, financing, mitigating risks, and returning capital to shareholders. Investing activities include acquisitions, mergers, and major capital expenditure investments. Students will estimate investment cashflows and determine how the investment affects firm value. Financing activities include valuing and issuing debt and equity securities to fund investments. Students will evaluate overall capital structure to determine optimal financing composition. Risk mitigation activities include designing hedging strategies to hedge commodity price risk. Students will select risk coverage ratios and evaluate specific forward and option contracts. Finally, students will assess how corporations return capital to its shareholders. These activities include stock repurchases and paying dividends. Students will build financial models to assess the risks and returns of the firm's activities. The models will primarily use spreadsheet software. The spreadsheets will be augmented with VBA programs, macros, and simulation add-ins. Current finance theories will be evaluated and applied to real-world decision making using current tools and technology. This course is relevant to both financial and non-financial managers. Non-financial managers will use course insights to assess the financial risks and returns of investments in areas such as marketing and supply chain. This course provides a foundation of theories and tools used in subsequent elective courses in finance."
+    },
+    {
+      "number": 832,
+      "title": "Global Business Environment",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "This course provides students with an introduction to the foundations of macroeconomic analysis. The primary objective is to develop their ability to apply fundamental macroeconomic concepts from GDP, interest rates, fiscal and monetary policy to understand how policies impact macroeconomic conditions and the environment firms face. Foundational topics in microeconomics include GDP, interest rates, inflation rates and exchange rates. We use modeling techniques to evaluate how different agents in the economy interact (consumers, firms, governments, international trade and the federal reserve) and what the impact of those interactions are on the fundamentals of the economy (GDP and interest rates). The course heavily relies on mathematical and numerical modeling in the analysis of the macroeconomy."
+    },
+    {
+      "number": 835,
+      "title": "Global Perspectives",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "This course starts with the reality that the United States is less influential in global trade, finance, economics, and business than it was in previous decades. Consequently, M.B.A. students need to be aware of the business environments of other countries, the influence of these countries in the global political economy, and new competitors emanating from other parts of the world. About two-thirds of the course is focused on understanding macroeconomic concepts, and analyzing the challenges and opportunities posed by some of the most important countries and regions and the companies headquartered there. Approximately one-third of the course examines global themes that affect virtually all companies, regardless of nationality. Companies that respond creatively to the challenges posed by technology, sustainability, demographic change, urbanization, civil society, and related issues are likely to be more successful than those that do not. The course uses an interdisciplinary approach to explore the dynamics of international business, globalization, and country/political risk. After reviewing important features of the international business landscape, we will examine the business environments of the world's major regions and select countries, particularly those where students will be going for Global Immersion, while surveying macroeconomic terms and concepts along the way. The course concludes by examining how transnational themes may affect international business in the coming years."
+    },
+    {
+      "number": 836,
+      "title": "Global Immersion",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Global Immersion is designed around a visit to another economic region. In the past. MBA students have visited such countries as Belgium, Brazil, Chile, China, Czech Republic, France, Ireland, Turkey, and Singapore. In each country, students visit both local and multinational businesses to understand how a business gets established and run in another country; students also meet with industry and government officials to get their perspectives on the economic policies of the country. Each Immersion is coordinated by a faculty leader who plans the visit so as to appeal to a wide range of student interests."
+    },
+    {
+      "number": 840,
+      "title": "Business Data Management",
+      "credits": 3,
+      "description": "Business Data Management will enable students to use various database designs to acquire the information needed to make effective business decisions. Successful students will be able to design, create, and implement a relational database and be able to write SQL statements to obtain information from a database. In addition, students will investigate the next generation approaches for storing, manipulating, and managing web data in unstructured formats. Students will gain an understanding of the advantages and disadvantages among XML, NoSQL, NewSQL, and Relational databases. After successfully completing this course, students will have the knowledge, skills, and abilities to: - structure a database, configure it, perform analysis within it, and report from it - have adequate understanding of SQL to retrieve data from a database using SQL query language - design a database system including an ER Model and a UML class diagram, and implement the design in an enterprise database application - understand NoSQL databases, XML native databases, NewSQL databases, and the advantages and disadvantages of these databases."
+    },
+    {
+      "number": 841,
+      "title": "Business Intelligence",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "BA840"
+        ]
+      },
+      "description": "Business intelligence encompasses the IT tools for exploring, analyzing, integrating, and reporting business data for fact-based, intelligent decision making. This course primarily investigates methods and tools for exploring and analyzing large amounts of business data, also called \"Big Data\". Learning methods emphasize active learning in the application of methods and tools to real data and the presentation of the results. Students will be exposed to a variety of methods for analyzing both structured and unstructured data and they will work with business data sets to understand the value that can be extracted from large data sets. They will also learn how to classify and associate data to discover business rules that can be used to support decision making. The course will also cover methods to analyze social media information and tools that can facilitate such analysis and discovery. Students will work with data from real social networks to gain an appreciation of how value can be obtained from such networks. Finally, they will learn about techniques for visualizing, presenting, and communicating information in a useful way, e.g. through dashboards and with other technologies on various platforms. Upon successful completion of this course, students will have: - acquired the tools and techniques of data cleaning and preparation, data mining, and data visualization - become competent in analyzing both structured and unstructured data - developed an understanding of, and an appreciation for, the complexities of mining unstructured data such as text data including documents, web pages, emails, etc. - developed an understanding of social networks as well as mobile and location-based analytics"
+    },
+    {
+      "number": 850,
+      "title": "Sustainability Driven Innovation",
+      "credits": 3,
+      "description": "This course explores sustainability as a business opportunity for developing innovative products and services. It will focus on consumer needs related to sustainability, willingness to pay for these needs, and the innovative processes necessary to create sustainable solutions."
+    },
+    {
+      "number": 865,
+      "title": "Strategic Leadership",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "This course presents a senior executive perspective on the key opportunities and challenges faced by business leaders. Course content is based on extensive research on the experiences of senior leaders from major organizations around the world. The lessons from these experiences form the backbone of a series of discussions on the changing context for setting strategy and leading organizations in an evolving business environment. Students who complete the course will demonstrate the ability to think strategically about organizational issues and challenges, develop effective strategies for organizational performance and success, and shape organizational cultures that facilitate strategy implementation and organizational change."
+    },
+    {
+      "number": 880,
+      "title": "Leadership Immersion",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BA801",
+          "BA802"
+        ]
+      },
+      "description": "This course will provide practical and hands-on exposure to leadership training and exercises that can be applied in a diverse range of professional environments and business settings. Students will assess their own leadership strengths and development areas, develop an individual leadership development plan, apply that plan in a Leadership Immersion experience, and complete a reflection paper upon return. The course provides an opportunity to apply and integrate the knowledge and skills students developed throughout the program with strategic management and leadership concepts. Leadership Immersion off-site components take students to one- to two- day leadership development programs such as: the Fire Department of the City of New York (FDNY) Fire Academy; the U.S. Marine Corps Officer Candidate School in Quantico, Virginia; the U.S. Military Academy at West Point; and Gettysburg National Military Park. All of these off-site immersion experiences focus on leadership in situations that require rapid decision-making, communication, and team cohesion in a stressful or uncertain environment."
+    },
+    {
+      "number": 888,
+      "title": "Executive Leadership",
+      "credits": 3,
+      "description": "A central tenet of this course is that leadership matters. It is a primary driver of organizational success and effectiveness. The course examines a wide range of theories on leadership and various executive leadership styles and increases student awareness of current issues in executive leadership. Students will learn how to apply the different leadership theories and styles to practical settings. The course uses practical methodologies such as case analysis, discussion and debate, and self-analysis to help students explore and apply executive leadership skills in upper-level organizational settings in a manner that motivates their peers and lower-level supervisors and employees toward achieving organizational effectiveness. It will explore how different leadership styles affect others and their organizations, and reflect on their own development as leaders and how improve their own leadership skills. Learning outcomes include developing an understanding of different execute leadership theories, understanding the effectiveness of different leadership styles in different settings and organizational contexts, applying theory to practice, and developing personal execute leadership skills."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently."
+    }
+  ]
+}

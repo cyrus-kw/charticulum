@@ -1,0 +1,259 @@
+{
+  "subject": "RSOC",
+  "courses": [
+    {
+      "number": 11,
+      "title": "Intro Rural Sociology",
+      "credits": 3,
+      "attributes": [
+        "GS",
+        "BA-S",
+        "US"
+      ],
+      "description": "Basic sociological concepts applied to rural societal institutions and rural communities; causes and consequences of rural social change as applied to domestic and global regions. The objectives of the course are (1) to acquaint students with the fundamental concepts, principles and research methods of rural sociology; and (2) to assist students in applying these concepts and principles to gain an understanding of rural societal institutions and the forces leading to social change in rural America and globally. Lectures and readings are designed to encourage students to examine their assumptions and understanding of the structure and functioning of rural communities, the forces leading to rural social change, and the likely course of these changes in the future. A major objective is to challenge students to critically analyze rural society and rural social institutions from a sociological perspective. Understanding the changing nature of rural society in an increasingly urbanizing and integrated world is a key consideration."
+    },
+    {
+      "number": 400,
+      "suffix": "N",
+      "title": "Exploring Indigenous Ways of Knowing in Great Lakes Region: Lecture",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER",
+        "US"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "RSOC11",
+              "SOC1"
+            ]
+          }
+        ]
+      },
+      "description": "Exploring Indigenous Ways of Knowing in the Great Lakes Region explores concepts and values distinctive to indigenous ways of knowing (IK) in the Great Lakes Region through readings, video segments, and lectures. Five structural concepts or key themes - local knowledge, relational knowledge, empirical knowledge, spiritual knowledge, and traditional knowledge - provide a conceptual framework for understanding indigenous cultures and knowledge production and their unique contributions to western society in the 21st century. Students will be introduced to the Algonquian cultures of the Great Lakes Region and to the Ojibwe (Anishinaabeg), Odawa, and Potawatomi (Three Fires) cultures in particular. This course will introduce students to the distinctive ways indigenous people experience, understand, and know the world through their relationship with the land or region to which they belong. Too often, colonizers around the world have ignored indigenous knowledge systems even though these ways of knowing have sustained peoples, cultures, and environments for thousands of generations. Because these ways of knowing are generally preserved and transmitted through stories, music, ceremony, and embodied traditions, they are seldom understood and frequently dismissed by those who control the production of knowledge in the modern world. The knowledge of the indigenous peoples of the Great Lakes region will, in this course, be presented as an empirically grounded scientific body of knowledge and theory comparable and complementary to the European tradition and, in specific ways, enhancing the sustainability of western scientific knowledge and practice. This course is a prerequisite for the Maymester field experience - Exploring Indigenous Ways of Knowing among the Ojibwe CED 401 which offers students an opportunity to experience indigenous ways of knowing by engaging with Ojibwe educators, traditional knowledge holders, elders, and families in several of the three largest Ojibwe reservations in the US."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Study--Rural Sociology",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Study in selected countries of rural social institutions and current rural sociological problems."
+    },
+    {
+      "number": 502,
+      "title": "Use of Theory in Rural Sociology",
+      "credits": 3,
+      "description": "Examine and evaluate metasociology of alternative theoretical systems applicable to rural society, with emphasis on American society."
+    },
+    {
+      "number": 508,
+      "title": "Sociology of Agriculture",
+      "credits": 3,
+      "description": "Sociological analysis of changes in the organization of agriculture and food systems in the United States and developing countries."
+    },
+    {
+      "number": 513,
+      "title": "Research Methods in Rural Social Sciences",
+      "credits": 3,
+      "description": "Scientific method in planning and conducting research."
+    },
+    {
+      "number": 514,
+      "title": "Qualitative Research Methods",
+      "credits": 3,
+      "description": "Learn core approaches for collecting, interpreting and analyzing qualitative data within rural sociology. RSOC 514 Qualitative Research Methods (3) This course provides tools often described as qualitative methods of social inquiry. The course covers basic techniques for collecting, interpreting and analyzing qualitative data, paying particular attention to their application within rural sociology. Special focus is given to two methods - ethnographic observation and in-depth interviewing. The course operates on two interrelated dimensions, one focused on the theoretical traditions underlying different approaches to qualitative research, the other focused on the practical techniques. These dimensions are linked through reading and critiquing diverse examples of qualitative research, some clearly exemplary, some problematic. The goal is to understand the promise and possible pitfalls of qualitative social research."
+    },
+    {
+      "number": 516,
+      "title": "Change in Rural Society",
+      "credits": 3,
+      "description": "Social change in rural society, emphasizing prediction and control of the change process. Even years. R SOC (CEDEV) 516 Change in Rural Society (3) Rural America has experienced change throughout its history, but the most rapid have occurred in the past three decades. Forces of urbanization, industrialization, technological change and globalization of the economy drive change in rural America, and the effects of these forces differ across the United States. Some rural areas benefit from the changes that occur while others are devastated. Some rural people and places are able to adapt and view change as an opportunity, while others are unable to respond to the forces that threaten them. Individuals, families and communities have changed in response to these broad forces. This becomes manifest in new patterns of inequality, family life, educational attainment, migration, age and racial patterns, health and well-being, and local service availability. Questions examined in this course include: What are the theories that explain or describe the social change that has been affecting rural people and places? What industrial restructuring and economic change has occurred in rural areas, how has it affected rural areas, and what drives this restructuring? What other social change has taken place, and can we determine potential sources of that change? What are the options available to rural people and communities as they adapt to forces of change, and how much can they influence their own futures? Underlying each of these questions is the issue of whether the well-being of rural people, families, and communities has improved or is threatened by these changes, and which rural areas are most likely to benefit and which are threatened. Students will leave the class with a broad understanding of the forces affecting rural America, and how and why those forces influence some people and places differently. Grades are assigned in this class based on a term paper on a topic related to rural social change, reaction papers written about each set of reading assignments, serving as discussion leader, and class participation."
+    },
+    {
+      "number": 517,
+      "title": "International Rural Social Change",
+      "credits": 3,
+      "description": "Implications of planned change for international rural societies, considering basic structural constraints, known institutional linkages, and potential synergetic consequences. R SOC (CEDEV) 517 International Rural Social Change (3) Three-quarters of the world's population live in developing countries where problems of hunger, malnutrition, underemployment, high morbidity and mortality, overurbanization, and inadequate housing, (to name just a few) often are severe. This seminar covers the sociology of economic change in developing countries. Through an extensive list of readings, a series of topical videos, and in-depth class discussions, seminar participants should come away with a firm grounding in the ways development has been defined, the social and economic problems facing developing countries today, the basic ways in which economic development has been approached theoretically and empirically, the implications for developing countries of being embedded in a larger world economy, the influence of multinational corporations, the policies that developing countries have followed in fostering economic growth, the nature of foreign aid, the causes and consequences of Third World debt, the nature of the informal economy, rural development and land reform, world hunger and the Green Revolution, and other topics."
+    },
+    {
+      "number": 522,
+      "title": "Data Analysis in Rural Sociology",
+      "credits": 1,
+      "description": "Analysis of research data in rural sociology using computer library programs."
+    },
+    {
+      "number": 525,
+      "title": "Fertility, Population Change, and Development",
+      "credits": 3,
+      "description": "Fertility and population growth in less-developed countries; theories of fertility change, agricultural development, and population policies."
+    },
+    {
+      "number": 530,
+      "title": "Sociology and Demography of Poverty in the United States",
+      "credits": 3,
+      "description": "An in-depth treatment of sociological and demographic dimensions of poverty in rural and urban areas of the United States."
+    },
+    {
+      "number": 552,
+      "title": "Theoretical Frameworks for Rural Community Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CED452"
+        ]
+      },
+      "description": "Application of community theories to the study of communities in rural areas. R SOC 552 Theoretical Frameworks for Rural Community Research (3) Communities form the fabric of social life in rural areas. It is in these communities that individuals live and work, and experience the broader society and culture. It also is in these communities that individuals deal with the past and make decisions about their own futures. Knowing the theoretical underpinnings of communities in rural areas is crucial for understanding issues of social and economic well-being. This course examines sociological theories of community and how they relate to understanding the organization, structure, interactions and development of rural communities. Rural community theory also plays a role in understanding how community context influences individual and family well-being. In this course, students will gain an appreciation for the role of rural sociology in the study of community. They will read and evaluate theoretical essays and how the theories have been applied in empirical studies of rural communities. The goal is to increase student knowledge and understanding of the research process that links theory and hypothesis development as it relates to the study of community in rural areas. Students will enhance their skills and obtain experience in organizing and leading class discussions; reading, interpreting and integrating theoretical and empirical studies; writing a book review; and writing essays that integrate ideas from assigned materials with student evaluations of the materials. Students will be evaluated on class participation, written essays evaluating key topics, organizing and leading class discussion, and a written book review. Rural Sociology 452, or its equivalent, is a prerequisite for this class."
+    },
+    {
+      "number": 555,
+      "title": "Human Dimensions of Natural Resources",
+      "credits": 3,
+      "description": "Identification of the interrelationships and influence of human behavior and natural resources."
+    },
+    {
+      "number": 573,
+      "title": "Multivariate Statistics for the Social Sciences",
+      "credits": 3,
+      "description": "This graduate level course focuses on developing, interpreting, and presenting the results from theoretically-informed multivariate regression analyses. The course begins by reviewing basic statistical concepts, descriptive and inferential statistics, ways to handle missing data, bivariate ordinary least squares (OLS) regression, and basic features of statistical software programs. The course proceeds with concepts of multivariate regression, and covers issues such as nonlinearity, outliers, and interaction terms. The final section covers methods for handling complex survey data and estimation techniques for binary, nominal, ordinal, and count outcomes. Students will learn how to choose the best method for the research question; where to locate and how to extract secondary survey data; and how to accurately, clearly, and succinctly describe analytic methods, interpret results, and report findings."
+    },
+    {
+      "number": 575,
+      "title": "Ethical Issues in Transdisciplinary Research on Environment and Society",
+      "credits": 3,
+      "internalEquivalents": [
+        "TREES575"
+      ],
+      "description": "This course foregrounds research in the frontiers of knowledge related to environmental ethics and trans-disciplinary research on the environment and society. It establishes a foundation in key environmental ethics concepts and then helps students develop an interdisciplinary set of ethical, cognitive, reflexive, and professional skills for exploring environmental ethics issues in more detail. As a required course in the TREES dual-title Graduate Program, the course integrates TREES's philosophical and applied approaches to understanding how different value systems in multiple societal contexts influence the management, use, conservation, and preservation of natural resources and the environment. However, the course may also be taken electively by students outside the TREES dual-title program."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers"
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      }
+    },
+    {
+      "number": 597,
+      "suffix": "G",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides advanced standing graduate students from a research oriented curriculum the opportunity to receive experience/supervision in resident instruction in higher education."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

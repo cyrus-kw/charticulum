@@ -1,0 +1,135 @@
+{
+  "subject": "BUS",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Negotiation, Communication, Teamwork",
+      "credits": 2,
+      "description": "Experience-based learning approach to developing effective teams and work organizations; emphasis on developing reflective thinking and interpersonal skill sets. BUS 500BUS 500 Negotiation, Communication, Teamwork (2) This course provides students with an enhanced understanding of their own behavior, the behavior of others, and the capability to deal more effectively with people and groups in organizations. Primary emphasis is placed upon application of experiential learning theory in developing the ability to perform well as a member of a team, and also in facilitating team effectiveness. As adult learners, students are empowered to become active creators of their own learning, and working with the"
+    },
+    {
+      "number": 502,
+      "title": "Business Research Applications",
+      "credits": 3,
+      "description": "Critical evaluative techniques of business research."
+    },
+    {
+      "number": 505,
+      "title": "Data Analysis for Business Decisions",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Selection and application of statistical methods and use of business databases to support managerial decision-making, interpretation and presentation."
+    },
+    {
+      "number": 510,
+      "title": "Business Analytics and Decision Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUS505"
+        ]
+      },
+      "description": "Methods for solving problems that include both time evolution and uncertainty. Focus on regression analysis, simulation and advanced data analytics. This course discusses concepts and tools to make informed managerial decisions through interpretation and analysis of data. The aim is to (1) familiarize students with the concepts of data interpretation; (2) provide students with language, insights, and tools used to analyze data and model operations; (3) provide students with the opportunity to use these tools, to understand their various applications, and to interpret analyses done by others. The course will focus on regression analysis, non-linear regression analysis, mathematical and simulation modeling, and advanced data analysis techniques. When students successfully complete this course, they will be able to demonstrate use of analytical tools for modeling and optimizing business decisions and also analyze the results."
+    },
+    {
+      "number": 515,
+      "title": "Business Ethics and Corporate Governance",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Legal aspects of managing for-profit corporations including (i) corporate governance, (ii) ethical decision-making, and (iii) public policy and legislation regarding business decisions. BUS 515 -Business Ethics, Governance, and Law;covers a wide range of important topics regarding how firms are governed. The first part of the course grounds students in the inner workings of corporate boards of directors (BODs). Topics in this section include: - The need for governance and BODs; - The types of people that sit on publicly traded BODs; - The role of committees within BODs; - The voting process in corporations; - The types of decisions that BODs are involved in; and - The role of shareholders and activist investors. The course then delves into the setting and execution of ethics policy within firms, often either initiated or approved by the BOD. Students read a number of \"Codes of Conduct\" from firms that they are familiar with (i.e. Dell, Apple, etc) and then perform research that allows them to see if the firms match their actions with their words. Analysis is done through measuring the negative externalities that flow from certain decisions. Specific topics in the ethics section include: - The larger purpose of corporations in society; - Corporate political activity; - Decision-making and anti-trust violations; and - Bankruptcy filing and a BOD's ethical and fiduciary duty to shareholders. Finally, the course considers general business law that managers must be cognizant of during the decision -making process. Topics include: - Federalism in the U.S.: The difference between state and federal law; - Incorporation and Bylaws; - Criminal vs. Civil Law; and - Consumers and the Law."
+    },
+    {
+      "number": 580,
+      "title": "Business and Sustainability",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUSEC502",
+          "MNGMT511"
+        ]
+      },
+      "description": "An inter-disciplinary and global perspective on the business case for social responsibility, environmental stewardship, and transparency in corporate governance. This course provides an overview of principles and practices from the natural and social sciences, arts, humanities, and professional disciplines that contribute to understanding and responding to increasing concerns over the consequences of world population growth (now in excess of eight billion people), climate change, energy, natural resource use, environmental degradation, and calls for a more fair distribution of limited and diminishing resources. Issues of corporate sustainability and social responsibility are examined particularly as they pertain to the development and application of business strategy and practices that build social equity, and restore environmental quality while maintaining long-term profitability and enhanced competitive advantage. While the concept of sustainability has existed for some time, it is relatively recently that managers have started to explore its applications to organizations and managerial behavior beyond the basic ideas of corporate social responsibility and recycling. This course moves beyond these basic ideas to place sustainability in its historical and conceptual context by examining the history and definitions of sustainability in organizational management, the role of current drivers and stakeholders, and the advantages and disadvantages of various frameworks and methods for integrating and managing sustainability within organizations, and in their environments. Selected examples of contemporary research and organizational cases will be analyzed to gain a sense of effective and ineffective approaches to sustainability, as well as addressing issues of standards, measurement, and transparent reporting."
+    },
+    {
+      "number": 588,
+      "title": "Strategic Management",
+      "credits": 3,
+      "description": "Analyzing external and internal environments of firms to develop sustainable competitive advantages. Strategic Management is the MBA capstone course designed for students to integrate analytical skills learned in functional courses with core principles of strategy formulation, implementation, and performance review. Students will analyze internal and external factors and make recommendations for how firms can create sustainable competitive advantage in the global market environment."
+    },
+    {
+      "number": 589,
+      "title": "Strategic Venture Planning and Innovation",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BUS588"
+        ]
+      },
+      "description": "Development and presentation of a venture plan including product development; market research; competitive analysis; financing and capitalization; organizational structure. BUS 589BUS 589 Strategic Venture Planning and Innovation (2) The purpose of BUS 589 is to have the business student apply strategic management theories and practices acquired in BUS 588 to a specific, practical project in order to further the understanding of the process of creating and managing a strategy based on innovation (an entrepreneur strategy). This course is a direct extension of BUS 588 and should be taken immediately following it. The process of innovation is analyzed in detail together with the influences on it. The effects of various contexts on entrepreneurial strategy will be considered. Finally, issues related to the implementation and management of a strategy based on innovation will be discussed.Students are required to develop a comprehensive new venture plan for an actual business organization to demonstrate knowledge of organizational design from a strategic perspective. Students will have to apply management, marketing, finance, information systems, and accounting knowledge in the new venture proposal. They must also demonstrate their knowledge of the influence of external (environmental) contexts on strategy formulation and implementation through the use of appropriate analytic frameworks. Finally, they must demonstrate a grasp of what constitutes competitive advantage within the strategic context that they have chosen for their project."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 890,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Continuing, professionally oriented seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently."
+    }
+  ]
+}

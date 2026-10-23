@@ -1,0 +1,403 @@
+{
+  "subject": "PADM",
+  "courses": [
+    {
+      "number": 502,
+      "title": "Governmental Fiscal Decision Making",
+      "credits": 3,
+      "description": "Nature, function, and technique of governmental budgeting viewed as mechanism for allocating resources among alternative public uses."
+    },
+    {
+      "number": 503,
+      "title": "Research Design",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Examination of research methodologies relevant to administration, planning, and public policy."
+    },
+    {
+      "number": 504,
+      "title": "Data Analysis for Policy and Administration",
+      "credits": 3,
+      "description": "This course is intended to prepare students to conduce independent research in policy analysis, program evaluation, and public management. Students will not only learn statistical methods, but how to use them to evaluate public problems and suggest solutions. The course begins with a review of basic research design practices and how statistical analysis fits into the research process. This will be followed with an overview of probability theory as a foundation for inferential statistics. We will then move through the core components of hypothesis testing - the normal distribution, confidence intervals, p-values, and the central limit theorem. All of this lays the foundation for addressing specific types of statistical techniques that administrators and analysts are likely to either conduct or interpret. These include basic descriptive statistics, contingency tables, comparing means, correlation, linear regression, and logistic regression. We will also cover how to effectively visualize data in tables, graphs, and basic spatial displays of data (i.e., mapping using online software). These skills are particularly important for writing professional and academic research reports in public policy and administration and presenting complex information in a straightforward way that the public can understand. The emphasis in the course is on how these tools can be used for public sector and academic research, as well as how to solve policy and management problems. It prepares students for more advanced courses in policy analysis and program evaluation."
+    },
+    {
+      "number": 505,
+      "title": "Human Resources in the Public and Nonprofit Sectors",
+      "credits": 3,
+      "description": "Concepts and approaches contributing to effective use of human resources in public and non-profit organizations; legal issues and requirements."
+    },
+    {
+      "number": 506,
+      "title": "Public Information Management and Technology",
+      "credits": 3,
+      "description": "This course provides a broad exploration of government information management and technology issues and organizational and social impacts of these initiatives in government. Understanding policy and management issues in information technology is critical to improve service qualities and performance since public organizations have heavily utilized information technology applications. This course is designed to demonstrate key concepts, issues, trends, and practices of government use of information management and technology, such as government information technology initiatives, implementation of information technology initiatives, e-democracy, e-business, open government, security and privacy, digital divide, e-performance, and information management systems. This course examines managerial, political, and legal challenges and opportunities while managing information technology in the public sector. This course provides students with an opportunity to enhance knowledge and skills for analyzing, evaluating, and managing major policy and managerial practices in information technology. Students will gain better perspectives of managing information technology issues in public and nonprofit organizations."
+    },
+    {
+      "number": 507,
+      "title": "Introduction to Public Policy Analysis",
+      "credits": 3,
+      "description": "Introduction to the analysis of public policy within its organizational and political contexts, including an emphasis on an economic perspective. P ADM 507 Introduction to Public Policy Analysis (3) The course is an introduction to the field of policy analysis that focuses on the process of public policy formulation, implementation, and modification. Basic principles of microeconomics are used to examine public policy-making. Students will review basic economic and microeconomic principles, theories, and models, with an emphasis on justification for government intervention. Students will understand the process of policy analysis, including problem formulation, selection of criteria, comparison of alternatives, political and organizational constraints, and implementation and evaluation. The course will be offered once per year and is projected to enroll about 20 students per section.Course Objectives: a) to understand the economic rationale for government action b) to understand the economic component of policy analysis c) to understand government failure, such as inefficient pork-barrel decision-making and excessive bureaucratic red tape d) to understand better the practice of policy analysis e) to understand the stages of the policy process f) to understand the economic and political context in which policy analysis takes place"
+    },
+    {
+      "number": 510,
+      "title": "Organization Behavior",
+      "credits": 3,
+      "description": "Examines the concepts of human behavior in formal organizations, systems analysis, conceptual models, and decision processes."
+    },
+    {
+      "number": 511,
+      "title": "Organizational Change and Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "HADM510",
+              "PADM510"
+            ]
+          }
+        ]
+      },
+      "description": "Theory of organizational change and development; case analysis of applications in actual situations. PADM 511 Organization Change and Development (3) This course is designed to lead to the understanding of the process of introducing planned change into complex organizations. Specific course goals include gaining an understanding of organization development (OD) as a specific type of change strategy acquiring knowledge of various OD approaches, learning how to assess organizations to enable effective organization change to be introduced, obtaining an understanding of the phases of the OD process and how to manage planned change efforts in organizations, and developing skills in applying the concepts learned to real-life organizational situations. Students will receive \"hands-on\" experience in designing and implementing organizational change by completing individual reports on OD and the change project as well as a team project report. Grading will be based on development of consulting skills and knowledge through involvement in class activities (10%), being an effective member of the project team (10%), demonstrating understanding of key OD concepts and processes via individual reports and contributions to project team work (40%), and by producing a high quality project based on evaluation of OD process, the final report, and class presentations (40%). PADM 511 is an elective course for the MPA degree and is offered every third semester."
+    },
+    {
+      "number": 512,
+      "title": "Issues in Human Resources",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PADM505",
+              "PADM510",
+              "HADM510"
+            ]
+          }
+        ]
+      },
+      "description": "A survey of major human resource issues such as job stress, burnout, and the many forms of discrimination in organizations. P ADM 512 Issues in Human Resources (3) The course has three specific objectives: (1) to become familiar with the subtleties and complexities (interpersonal, legal/regulatory, and effectiveness) of the major human resource issues which confront the human resource manager in public and nonprofit organizations; (2) to develop a practical strategy for handling and coping with the major human resource issues; and (3) to improve research, analytical, and presentation skills.This course will address the following major human resources issues: appraisal and reward systems; various types and forms of discrimination; sexual harassment; disabilities; alcohol and drug abuse; workplace violence; stress and burnout; workplace ethics; and reforming a human resource system.Student grades are based on a final exam (40%); an issue paper (40%); and class participation (20%). P ADM 512 is an elective course for the MPA degree and is offered in a six-week session during the summer semester."
+    },
+    {
+      "number": 515,
+      "title": "Labor Management Relations",
+      "credits": 3,
+      "description": "Labor relations issues; collective bargaining agreement, negotiations, and administration; legal framework of collective bargaining; labor relations in larger social context."
+    },
+    {
+      "number": 516,
+      "title": "Strategic Planning",
+      "credits": 3,
+      "description": "A survey of strategic planning purposes, approaches and methods, and expected outcomes in small and large organizations."
+    },
+    {
+      "number": 517,
+      "title": "Nonprofit Organizations: History and Evolution",
+      "credits": 3,
+      "description": "A study of the history, development and current role of nonprofit organizations as a distinguishing feature of American society. PADM 517 Nonprofit Organizations: History and Evolution (3) This course is designed to trace the evolution of nonprofit organizations in the United States from colonial times to the present, focusing on the definition, legal foundations, missions, and accomplishments of these entities. The course will offer a review of various nonprofit sectors including healthcare, education, religion, human services, advocacy and the arts. Course objectives are to: - increase student knowledge and understanding of the history and nature of the broad spectrum of nonprofit organizations; - stimulate critical thinking about the role of nonprofit organizations in addressing public problems; and - examine and understand trends and challenges for nonprofit organizations in a market economy. The course will include a combination of lectures, group discussions, review of readings, and student research. Course requirements involve a primary text, Lester M. Salailloil, An7erica's Noiiprofit Sector, A Pri7i7er, 2iid ed. New York: The Foundation Center, 1999, and secondary readings from such areas as history, law, economics, and public administration, e.g., Gronbjerg, Kirsten A., \"The U.S. Nonprofit Human Service Sector: A Creeping Revolution,\" Nonprofit and Voluntary Sector Quarterly, Vol. 30, No. 2, June 2001, pp.279-297. Hammack, David C., \"Introduction: Growth, Transformation, and Quiet Revolution in the Nonprofit Sector over Two Centuries,\" Nonprofit and Voluntary Sector Quarterly, Vol. 30, No. 2, June 2001, pp. 157-173. Independent Sector and National Center for Nonprofit Boards, What you Should Know about Nonprofits. Najam, Adil, \"The Four-C's of Third Sector - Government Relations: Cooperation, Confrontation, Complementarity, and Co-optation,\" Nonprofit Management and Leadership, Vol. 10, No. 4, Spring, 2000, pp. 375-396. Smith, Jr., J. Kellum, \"Prologue,\" in Brown, William G., Thomas L. Nygren, Sarah E. Turner, Elizabeth A. Duffy, The Charitable Nonprofit: An Analysis of Institutional Dynamics and Characteristics, Jossey-Bass, San Francisco, 1994. pp. xxxix-xxxvi. Weisbrod, Burton A., Conclusions and Public Policy Issues: Commercialism and the Road Ahead, \"in Weisbrod, Editor, To Profit or Not to Profit: The Commercial Transformation of the Nonprofit Sector, Cambridge University Press, United Kingdom, 1998. Young, Dennis R.,\" Alternative Models of Government-Nonprofit Sector Relations: Theoretical and International Perspectives,\" Nonprofit and Voluntary Sector Quarterly , Vol. 29, No. 1, March, 2000, pp. 149-172."
+    },
+    {
+      "number": 518,
+      "title": "Nonprofit Organizations: Management and Leadership",
+      "credits": 3,
+      "description": "A study of the theoretical and practical issues involved in management and leadership of nonprofit organizations. P ADM 518 Nonprofit Organizations: Management and Leadership (3 )This course is designed to study the intellectual foundations and application of leadership and management in nonprofit organizations. The course will explore organizational design, leadership, quality management, and performance measurement as applied in social enterprises. Course objectives are: - to increase student knowledge and understanding of the fundamental concepts of leadership and management in nonprofit organizations - to examine trends and challenges for leading and managing nonprofit organizations; and - to stimulate critical thinking about the application of nonprofit leadership and management concepts in a changing environment. The course will include a combination of lectures, group discussions, review of readings, and student research. Student grades will be determined by classroom participation (10%), weekly reading abstracts (10%), midterm examination (20%), major term paper (30%), and final examination (30%). Course requirements involve a primary text and secondary readings from such areas as business, law, and public administration, as well as major term paper. The course is part of a nonprofit concentration in the public administration program and extends the collection of courses in the nonprofit organization area of public administration. Course is expected to be offered once each year."
+    },
+    {
+      "number": 519,
+      "title": "Nonprofit Organizations: Resource Development and Management",
+      "credits": 3,
+      "description": "Process by which nonprofit organizations assure that resources are obtained and used effectively and efficiently toward the achievement of objectives. P ADM 519 Nonprofit Organizations: Resource Development and Management (3) Course Description: This course will examine theory, strategies and practices for securing and managing resources for a nonprofit organization. Students will study a variety of fund-raising and other resource acquisition strategies and will examine mechanisms for prudent management of these resources. Course objectives are to increase student knowledge and understanding of the fundamental concepts of resource development for long-term stability of nonprofit organizations and to stimulate critical thinking about the strategies for financial operations of nonprofit organizations in a changing environment. This course extends the collection of courses in the nonprofit concentration area of public administration and further develops the concentration. The course will include a combination of lectures, group discussions, review of readings, and student research. Course requirements involve a primary text and secondary readings from such areas as business, law, grantsmanship, and public administration. The course will be offered every third semester."
+    },
+    {
+      "number": 521,
+      "title": "Performance Measurement and Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM800"
+        ]
+      },
+      "description": "This course is designed to enhance students' ability to develop and use performance measurement systems in the public sector. P ADM 521 Performance Measurement and Management (3) This course provides a foundation in performance measurement and management in the public sector. It is designed to enhance the ability of students to develop and use performance measurement systems for purposes of improving the management and performance of government programs; and to enhance their ability to think critically about result-oriented governance and managing for results. In this course students will become familiar with the general context that surrounds public sector performance management, key elements associated with the development of performance measurement systems, and opportunities and challenges associated with the implementation and use of performance measurement systems. Despite its emphasis on the public sector, many concepts covered in the course are also applicable to non-profit organizations."
+    },
+    {
+      "number": 522,
+      "title": "Government Financial Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM502"
+        ]
+      },
+      "description": "Theories and techniques of financial planning and control, with emphasis on their application in government and nonprofit agencies. P ADM 522 Government Financial Management (3) The focus of this course is on a laboratory in local government budget and financial analysis, concentrating on the theories and applications which also relate to hospitals, businesses, and nonprofit agencies. Applied methods of budgetary decision-making are employed to formulate and to implement a budget based on actual city data.The course places the student in the role of a member of a budget department staff asked to prepare a budget for presentation, debate, and ultimate acceptance by a deliberative body. The work requires one to acquire knowledge of and apply financial management techniques without losing sight of the basic theories from which the techniques grew.The final course grade consists of materials completed by students throughout the course (75%) and the final examination (25%). P ADM 522 is offered every spring semester as an elective in the government concentration of the MPA program."
+    },
+    {
+      "number": 523,
+      "title": "Governmental and Nonprofit Accounting",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM502"
+        ]
+      },
+      "description": "Accounting, reporting, and auditing principles and procedures for public sector agencies and nonprofit organizations."
+    },
+    {
+      "number": 532,
+      "title": "Urban Government",
+      "credits": 3,
+      "description": "Administrative processes and policy problems associated with managing urban communities; political, intergovernmental, fiscal, structural, and analytical concepts in urban government."
+    },
+    {
+      "number": 533,
+      "title": "Local Planning Law and Administration",
+      "credits": 3,
+      "description": "Structure and function of local and regional government from perspective of local planning law and its administration. P ADM 533 Planning Law and Administration (3) The course covers structure and function of local and regional government from the perspective of local planning law and its administration. Objectives: To develop students' abilities in (a) understanding state and local policies and laws related to planning and administration, local development, regionalism, and regionalization of services; (b) analytic ability, involving the process of careful, rigorous, and systematic thinking at both abstract (theoretical) and concrete (practical) levels; (c) perception of the studies processes from a theoretically informed point of view, through development and application of concepts, models and other course materials; and (d) application of models and techniques in course assignments. Evaluation: class participation (10%), portfolio, including literature review essay (60%), project/poster (30%). Frequency of offerings: every two years."
+    },
+    {
+      "number": 535,
+      "title": "Policy Analysis and Planning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM503"
+        ]
+      },
+      "description": "The course will cover the theoretical issues in and basic methods of policy analysis and planning (prospective policy analysis). P ADM 535 Policy Analysis and Planning (3) Policy analysis is a systematic inquiry into the nature of policy problems and public policies. It offers a set of principles and methods that can be used in constructing public policies and evaluating their outcomes. This course covers the theoretical approaches and methods in prospective policy analysis and planning. Emphasis will be on the quantitative/analytical methods, but qualitative methods in individual and group problem solving and planning will also be covered. These methods and techniques will be discussed in their theoretical contexts. The course will be divided into three sections. The first section will provide students with an overview of the nature of public policy problems, history of policy analysis, and the current competing theories. The second section will focus on the problems in and methods of gatering and disseminating policy-analytical information. In the policy-analytical process, information is gathered and disseminated in political and cultural contexts; the characteristics of this process and its contexts will be covered in this section. In the third section of the class, the stages and some of the basic methods of policy analysis will be discussed. The focus will be on problem structuring and forecasting methods, cost-benefit analysis, decision trees, and implementation design."
+    },
+    {
+      "number": 550,
+      "title": "Policy and Program Evaluation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM503"
+        ]
+      },
+      "description": "The course will cover the theoretical issues in and basic methods of policy and program evaluation (retrospective policy analysis). P ADM 550 Policy and Program Evaluation (3) This course is designed to cover the theoretical issues and perspectives in policy and program evaluation, ethical issues in evaluation, and basic methods of evaluation research. The methods of needs assessment, monitoring social programs, impact assessment, and measuring efficiency will be discussed. Students will learn how to conduct randomized experiments, quasi-experiments, evaluation of full coverage programs, and efficiency measurement in evaluation research. The primary goal of this course is to help students become informed consumers of the products of evaluation research. They will also learn the basic skills of designing and conducting evaluation projects. Class time will be devoted mainly to discussions of theoretical concepts and examples. During the semester, students will be given written assignments. They will also conduct policy or program evaluation studies in the areas of their choice."
+    },
+    {
+      "number": 556,
+      "title": "State Government Administration",
+      "credits": 3,
+      "description": "Study of structures, systems, processes, problems, and issues affecting state government administration; case studies, field observations, and research. P ADM 556 State Government Administration (3) State Government Administration aims to provide students with an introduction to management tools and techniques for administering state government agencies and programs in the context of intersector and intergovernmental relations within a system of representative democracy. The course deals both with management tools as well as policy and management leadership, focusing especially on the nexus between policy and management.Specific course objectives: to foster understanding of the tools and techniques associated with the administration of state government within the context of the broader governance environment; to develop an understanding of the interaction among politics, policy, and management processes at the state level and the role of state officials within institutions and processes; to develop a working knowledge of appropriate tools, models, and concepts associated with state administration via the completion of applied assignments; and to improve communication, writing, and technical skills.Students will be graded on overall discussion (15%), five written news analyses (15%), management papers (40%), and final exam (30%). P ADM 556 is an elective for the MPA degree and is offered every two years."
+    },
+    {
+      "number": 557,
+      "title": "Federalism and Intergovernmental Relations",
+      "credits": 3,
+      "description": "Study of the impact of a federal system of government on the administration of public functions. National-state-local dimensions. P ADM 557 Federalism and Intergovernmental Relations (3) The course aims to develop students' abilities in four broad categories: (1) understanding of intergovernmental relations and management as it relates to past, present, and future trends in American governance and the historical, normative, and institutional context of American public administration; (2) analytic ability, involving the process of careful, rigorous, and systematic thinking at both abstract and concrete levels; (3) perception of public administration from a theoretical informed point of view, through development and application of concepts, models, and other course materials related to intergovernmental topics; and (4) application of specific information and skills, with emphasis on issue identification and problem solving. The course offers the students an opportunity to develop the self-awareness and personal capacities that are vital to becoming a dynamic public administrator.The course will be graded on written and oral seminar participation (20%); research and presentations (40%); and two examinations (40%). P ADM 557 is an elective for the MPA degree and is offered every two years."
+    },
+    {
+      "number": 558,
+      "title": "Legislative Processes",
+      "credits": 3,
+      "description": "Legislatures in American government, emphasizing comparative state legislatures: constitutional patterns; organization, administration; interaction with bureaucracy, constituencies, and organized interests. PADM 558 Legislative Processes (3) The course examines development of the modern congress and the general assembly; campaigns and elections; party organization and the leadership; committees and the rules of procedure; the \"Republicans take over congress;\" congress, the President and the bureaucracy: the congressional campaign; congress, interest groups, and the congressional enterprise; congress, the budget, and domestic policy making; the decline of representative democracy. The Pennsylvania state legislature will receive particular attention. The course is designed to equip students to manage programs within the political environment of public and nonprofit administration. The course is evaluated on two short, written reports (25% each); final exam (40%); class participation and presentations (10%). PADM 558 is offered every third semester as an elective for the MPA degree."
+    },
+    {
+      "number": 570,
+      "title": "Scope and Methods of Public Administration",
+      "credits": 3,
+      "description": "Examination of theoretical approaches to public administration and the role of theory in the field. PADM 570 Scope and Methods of Public Administration (3) Course objectives: At the conclusion of the semester, each participant should have gained a solid grasp of the literature of public administration; understand the major issues that have created the boundaries and horizons of the field; understand the importance of systematic research and methods of inquiry to the field of public administration; and have a sense of the likely directions research and practice will take in the future. Evaluation for the course will be: Class participation, 10%; individual reports (briefing papers on required assignments), 30%; final paper in the 25-35-page range, 30%; final examination, 30%. This course is the basic core course in the Ph.D. program and is a prerequisite course for the remaining core Ph.D. courses. It is offered each fall to incoming Ph.D. students, with an enrollment of 5-12 students."
+    },
+    {
+      "number": 571,
+      "title": "Seminar in Organizational Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PADM510",
+              "PADM570"
+            ]
+          }
+        ]
+      },
+      "description": "Selected theories of organizations and their applications to the study of public organizations."
+    },
+    {
+      "number": 572,
+      "title": "Research and Theory in Public Budgeting and Finance",
+      "credits": 3,
+      "description": "The course is designed to provide students with an understanding of the seminal theories and literature in the various topical areas that define the study of public budgeting and public finance. Students will be able to understand and apply the theories in their own research as well as to understand the strengths and limitations of the theory in the context of the topical area. These areas include principles of public budgeting and public finance; the budget process; budget practices; taxation; non-tax revenues; and debt administration. While emphasis is placed on public budgeting and finance as it relates to the U.S. government at the federal, state, and local levels, international experiences are also studied."
+    },
+    {
+      "number": 573,
+      "title": "Research and Theory in Public Policy and Governance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM570"
+        ]
+      },
+      "description": "This seminar provides an overview of policy analysis, basic stages of the policy process, and key theoretical frameworks associated with the subject. The course also addresses ethics in policy analysis and policy analysis as a profession. The stages of the policy process will be considered in detail, from problem definition to termination. Key theories associated with each will be discussed. Additional concepts to be considered include: policy instruments, policy design, issue networks, policy typologies and the politics associated with each. The institutional context of these stages will be considered. Students will explore the impact of positivism and postpositivism on our understanding of policy. Finally, public policy will be examined in light of a variety of approaches to democratic theory and practice."
+    },
+    {
+      "number": 574,
+      "title": "Research and Theory in Public and Nonprofit Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM570"
+        ]
+      },
+      "description": "This course provides a broad exploration of public and nonprofit management issues to improve students' abilities to analyze the given institutional matrix of modern public management. The informed and skillful practices of public and nonprofit management will improve public values and service delivery in effective and efficient ways. This course is designed to understand the theories, perspectives, and functions of management in the public managersand nonprofit sectors; and to assess management practices, possibilities, and challenges encountered with emerging issues. The topics include traditional approaches of management, new public management, history of management, general management theory, structural issues, institutionalized values of management, managerial functions, strategic management, performance management, accountability and leadership, organizational design and institutional governance, global perspectives of management, challenges for public governance, and frontier of management Students will gain better perspectives of managing the public and nonprofit sectors and build skills to analyze and evaluate management issues and practices."
+    },
+    {
+      "number": 575,
+      "title": "Advanced Research Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM503"
+        ]
+      },
+      "description": "Experimental, quasi-experimental, survey, aggregate, and other research designs applied to organizational, managerial, and policy analysis research problems."
+    },
+    {
+      "number": 576,
+      "title": "Multivariate Statistical Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM575"
+        ]
+      },
+      "description": "Multivariate statistical methods, with special emphasis on their use in organizational, managerial, and policy analysis research settings."
+    },
+    {
+      "number": 578,
+      "title": "Applied Social Network Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PADM504",
+              "CRIMJ503"
+            ]
+          }
+        ]
+      },
+      "description": "This course covers foundational concepts and methods of social network analysis (SNA). In particular, it covers the mathematical foundations of SNA, SNA research designs, data collection and management methods for SNA, network visualization methods; analytical methods, and applications of SNA. It provides students with basic knowledge of SNA methods and their applications in public policy and administration, sociology, economics, political science, communication/media studies, cultural studies, criminology, business management, and other related fields. Students will learn about the applications of SNA in published journal papers. They will also apply SNA methods in network text analyses and analyses of social media data."
+    },
+    {
+      "number": 591,
+      "title": "Readings in Public Administration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PADM570"
+        ]
+      },
+      "description": "Directed readings in selected areas of public administration."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "requisites": {
+        "previous": [
+          "PADM503"
+        ]
+      },
+      "description": "Supervised student activities on research projects identified on an individual basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "requisites": {
+        "previous": [
+          "PADM503"
+        ]
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 800,
+      "title": "Foundations of Public Administration",
+      "credits": 3,
+      "description": "PADM 800 is an overview of the study and practice of public administration and non-proft management. It gives students an overview of the basic concepts and issues in the field, including theories of organization, public policy, public management, decision making, public law, program implementation and evaluation, and ethics, and notes how the field has developed over time. Students develop skills in decision making, and in appreciating the multiple perspectives, values, and ethical challenges of public service. The course shows the interrelationships of organizations, public policies, and management activities within the public sector, including the role of nonprofit organizations in delivering services to the public. Theories from social psychology, economics, political science, jurisprudence, ethics, and organizational studies are covered to illustrate the range of ideas used in governance and management. Contemporary efforts to reform organizations and management activities are assessed, and future directions in which the field is likely to head are considered."
+    },
+    {
+      "number": 813,
+      "title": "Leadership in Public and Nonprofit Organizations",
+      "credits": 3,
+      "description": "The course presents historical and contemporary leadership theories and concepts to provide a strategic foundation for public leaders in government and nonprofit organizations. The purpose of the course is to increase our student's capacity to lead and to help develop the skills to analyze and address leadership challenges and opportunities."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    }
+  ]
+}

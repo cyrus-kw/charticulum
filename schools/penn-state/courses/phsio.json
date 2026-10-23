@@ -1,0 +1,113 @@
+{
+  "subject": "PHSIO",
+  "courses": [
+    {
+      "number": 510,
+      "title": "Physiological Adaptations to Stress",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHSIO571",
+          "PHSIO572"
+        ]
+      },
+      "description": "Students will learn how to address problems in physiological adaptations to stress through parallel molecular, cellular, and systemic approaches."
+    },
+    {
+      "number": 567,
+      "title": "Advanced Exercise Physiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL472"
+        ]
+      },
+      "description": "Physiological changes during exercise with emphasis on the effects of physical conditioning and training."
+    },
+    {
+      "number": 571,
+      "title": "Integrative and Cellular Mammalian Physiology I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL472"
+        ]
+      },
+      "description": "Mammalian cardiovascular, respiratory, renal, and gastrointestinal systems. This course in Cellular and Integrative Mammalian Physiology covers all major aspects of physiology. A special emphasis will be placed on how cellular aspects of physiology are integrated with organ and systems physiology. It is designed for students that either major in Physiology or are interested in integrating physiology concepts into their education. An in depth presentation of membrane biophysics, muscle dynamics, cardiovascular and circulatory regulation, respiratory and renal function, as well as acid base balance are addressed."
+    },
+    {
+      "number": 572,
+      "title": "Integrative and Cellular Mammalian Physiology II Endocrine Physiology",
+      "credits": 3,
+      "description": "The course in Cellular and Integrative Mammalian Physiology II covers all major aspects of endocrine physiology. A special emphasis will be placed on how cellular aspects of physiology are integrated with organ and systems physiology. This course is designed for graduate students in the Physiology or Animal Science graduate programs, or students who are interested in integrating physiology concepts into their work in another program. Although there are no prerequisites for the course, prior courses in physiology, endocrinology, and/or biochemistry are beneficial. The course will include the following topics: gastrointestinal physiology, pancreatic hormones and integrated metabolism, hypothalamic pituitary function, thyroid, parathyroid and bone, as well as physiology of growth and lactation. Additional topics will encompass adrenal function, sexual differentiation, male and female reproduction, embryo and adult derived stem cells, aging, obesity, and metabolic syndrome."
+    },
+    {
+      "number": 577,
+      "title": "Cardiovascular Physiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "KINES484"
+        ]
+      },
+      "description": "In-depth study of the heart and circulatory system with emphasis on the effects of exercise on cardiovascular function."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

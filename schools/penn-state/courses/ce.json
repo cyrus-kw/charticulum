@@ -1,0 +1,1548 @@
+{
+  "subject": "CE",
+  "courses": [
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 100,
+      "suffix": "S",
+      "title": "Topics and Contemporary Issues in Civil and Environmental Engineering: First-Year Seminar",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "First-Year Seminar exploring a specific topic or contemporary issue in civil and environmental engineering. CE 100S Topics and Contemporary Issues in Civil and Environmental Engineering: First-Year Seminar (1) (FYS)The first-year seminar in civil engineering will provide an opportunity for students to explore a specific topic or contemporary issue, which may fall within one of the Department of Civil and Environmental Engineering's technical emphasis areas, or include many of the facets of civil engineering. Civil engineers plan, design, construct, operate, and maintain the physical works and facilities essential to modern life: highways, streets, bridges, dams and levees, water distribution and wastewater collection, and treatment systems. Civil engineers work with architects and other engineers in the design and construction of buildings and industrial structures and facilities. They also have a major responsibility for identifying and remediating environmental hazards.The specific course topic, chosen by the course instructor, will vary by section and semester and will be indicated by the section subtitle. Examples of the topics that may form the core of a seminar section include droughts and floods, lessons from structural failures, engineers as environmental change agents, beneficial reuse of treated wastewater, highway accident reconstruction and engineering, and landmark civil engineering projects.Within the context of the specific seminar topic, each section will provide students with an introduction to the civil engineering field, exposure to some of the professional skills and competencies associated with academic study and the practice of engineering, and access to relevant student and professional societies.Each seminar section will include an active learning element that may include laboratory experiments, group projects, class discussions, and possible trips, providing close interaction with the faculty member teaching the course. This seminar course will help incoming students become acclimated to University life and become aware of available resources and support services."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 209,
+      "title": "Fundamentals of Surveying",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "MATH141"
+        ]
+      },
+      "description": "Fundamental surveying measurements, traverse computations, coordinate geometry, mapping, CAD applications. Intended for architectural engineering students. (The lecture will be taught concurrently with C E 211.)"
+    },
+    {
+      "number": 254,
+      "title": "Personal & Occupational Safety",
+      "credits": 3,
+      "attributes": [
+        "US"
+      ],
+      "description": "Students will learn about principles of safety in work and personal settings. C E 254 Personal & Occupational Safety (3) (GHA; US) This is a 3 credit course designed for students who want an understanding of safety, practices related to the individual's wellness and developing knowledge, attitudes, habits and skills needed for a safe healthful lifestyle. General safety topics that are relevant to students as they adjust to the transition into and through college are introduced through a values and decision making approach to learning. The students will understand direct and indirect cost related to an accident; identifying the major occupational and general injuries and deaths and the role of workers compensation, and safe procedures. OSHA will be discussed including its structure & organization, citations & fines, inspections, various standard areas, and developing an effective safety program. The course content will also be related to principles of personal and general safety including, preventive and protective systems, highway/road safety, general child safety, emergency response, and how safety is integrated with their lifestyle and our society.The course is designed to give students a broader understanding of both short-term and long-term wellness and how it is affected by safety behavior."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 310,
+      "title": "Surveying",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDSGN100",
+          "MATH141"
+        ]
+      },
+      "description": "Fundamental surveying measurements, traverse computations, coordinate geometry, mapping, GPS and GIS, circular and parabolic curves, earthwork, boundary surveys, CAD applications. C E 310 Surveying (3) This is an introductory course in the fundamentals of surveying designed for Civil Engineering students. It includes basic measurement techniques of distance and angles, both horizontal and vertical. Traverse measurements analysis and mapping are discussed. Boundary surveys and legal descriptions are studied. Instruction includes the analysis of circular and parabolic curves, earthwork, and the use of coordinate geometry. Global positioning and graphic information systems are studied."
+    },
+    {
+      "number": 321,
+      "title": "Highway Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE310"
+        ]
+      },
+      "description": "Highway engineering principles, vehicle and driver characteristics; geometric and pavement design; highway drainage; traffic engineering, capacity analysis, and signal timing. C E 321 Highway Engineering (3) This course provides an introduction to highway engineering and is designed for civil engineering students. It includes topics such as vehicle motion, highway cross-sections, horizontal and vertical alignment, and sight distance. Other topics are pavement design, drainage analysis, traffic engineering and highway capacity. The students will also have a CAD lab where they design a highway using computer software. The semester project provides hands-on highway design experience. This course serves as a prerequisite for advanced highway engineering study."
+    },
+    {
+      "number": 332,
+      "title": "Professionalism, Economics & Construction Project Delivery",
+      "credits": 3,
+      "description": "Introduction to engineering management process; economic analysis; pricing; contract documents; estimating; ethics; professional practice and engineering economy. C E 332 C E 332 Project Development (3) The first five weeks of the course introduces concepts relating to engineering ethics, professionalism including the importance of licensure, and engineering economy. The remainder of the semester concentrates on project development and the design and construction of the delivery process. Topics include: scope of design services; conceptual cost estimates; the bidding process, estimating; and risk management."
+    },
+    {
+      "number": 333,
+      "suffix": "W",
+      "title": "Construction Management I",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Components of a construction organization, managerial terminology and documents, labor laws and relations, insurance and safety. C E 333W C E 333W Construction Management I (3) The object of this course is to have a broad understanding of the business process in the construction industry. The construction industry offers a variety of organization with each having specialized needs and processes in operating an effective business. The professional constructor deals with a complex process of decisions and auctions that start from the time of projects conception until the project is completed. The course addresses issues involving legal and code requirements, necessary documents in selecting projects, developing estimates, determining delivery systems, planning and scheduling, and managing a construction project. Also covered are the liability issues that will be required, insurances or bond requirements, and the ethical role of the constructor. The managerial and safety role of the professional constructor is also introduced."
+    },
+    {
+      "number": 335,
+      "title": "Engineering Mechanics of Soils",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
+        ],
+        "concurrent": [
+          "GEOSC1"
+        ]
+      },
+      "description": "Soil compositions, classification, subsurface exploration, ground water flow, stress analysis, compaction, soil behavior, bearing capacity, lateral earth pressure, slope stability. C E 335 C E 335 Engineering Mechanics of Soils (3) This course explores the engineering properties of soils, fundamental soil mechanics, and their applications of foundation design and analysis. Specific topics covered in this course include soil compositions, soil classification, subsurface exploration, ground water flow and seepage analysis, stress analysis, compaction, consolidation, strength behavior, bearing capacity, lateral earth pressure, and slope stability analysis."
+    },
+    {
+      "number": 336,
+      "title": "Materials Science for Civil Engineers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "IE424",
+              "STAT401"
+            ]
+          }
+        ]
+      },
+      "description": "C E 336 Materials Science for Civil Engineers (3) This course introduces engineering students to the structure, properties and behavior of construction materials, providing the bridge between engineering mechanics and engineering design. The course is an engineering science course focused at providing the students with a working knowledge of the nature and engineering properties of construction materials to understand prediction models and statistical variations for quality control. The course provides an introduction to aggregates, concrete, asphalt, timber, steel, structural alloys, and polymers used in civil infrastructure and in building construction. Durability, life expectancy, recycling, and variability of materials will be examined in addition to their mechanical properties. The students will achieve these objectives through in-class practices or quizzes, homework exercises, reading assignments and exams."
+    },
+    {
+      "number": 337,
+      "title": "Civil Engineering Materials Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          {
+            "oneOf": [
+              "CE335",
+              "CE336"
+            ]
+          }
+        ]
+      },
+      "description": "Laboratory investigating the physical and mechanical properties of civil engineering materials; soils, aggregates, concrete; steel; wood; and polymers. C E 337 C E 337 Civil Engineering Materials Laboratory (1) The understanding of the structure, physical and mechanical properties and behavior of engineering materials is at the very core of engineering design. A command of this knowledge is essential for all civil engineers. This 1-credit laboratory provides a hands-on experience with the testing and evaluation of civil engineering materials, including soils, aggregates, concrete, steel, wood and polymers. In addition, this lab builds on the topics of professional communication and engineering in groups that are present throughout the Civil Engineering curriculum. This course is required for all Civil Engineering majors and is a required laboratory component for ABET review. The course also may serve selected Architectural Engineering students that currently enroll in Material Science for Engineers. The laboratory will be taught every semester with an offering of 4-6 sections per semester.The Civil Engineering Materials Laboratory is directly tied to Engineering Mechanics of Soils and Material Science for Civil Engineers. It replaces the laboratory component of both of the existing courses to create a comprehensive materials laboratory experience. By creating a stand-alone course, students may schedule the laboratory separate from the lecture time, eliminating multiple course conflicts. The course meets 3 hours each week throughout the semester with an introductory lecture and training session on lab safety. Concurrent or previous enrollment in Engineering Mechanics of Soils or Material Science for Engineers ensures that the students have completed the Strength of Materials course and have a clear point of reference to the relevance of the material in the course.The Civil Engineering Materials Laboratory will incorporate the use of a variety of equipment, including universal testing machines, Charpy fracture toughness device, Rockwell Hardness device, soil compaction devices, sieves, plasticity index devices, concrete mixing equipment, electronic strain devices, direct/biaxial/triaxial shear devices and other similar equipment."
+    },
+    {
+      "number": 340,
+      "title": "Structural Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EMCH213",
+              "EMCH210"
+            ]
+          }
+        ]
+      },
+      "description": "Analysis of statically determinate and indeterminate trusses, beams, and frames; reactions, axial forces, shears, moments, deflections. Introduction to influence lines. The course includes an introduction to structural systems and basic analysis methods for beams, frames, and trusses. Topics covered include the analysis of statically determinate and indeterminate structures, deflection calculations, influence lines, and an introduction to the stiffness method and a software package for structural analysis."
+    },
+    {
+      "number": 341,
+      "title": "Design of Concrete Structures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE340"
+        ],
+        "concurrent": [
+          "CE336"
+        ]
+      },
+      "description": "Design of reinforced concrete beams, slabs, and columns, with emphasis on ultimate-strength methods; prestressed concrete; building and bridge applications. C E 341 Design of Concrete Structures (3) This course provides students with an understanding of the structural design process, the mechanics of reinforced concrete, and the ability to design and proportion structural concrete members including slabs, beams, and columns for strength, serviceability, and economy. Design procedures are based on the Building Code Requirements for Structural Concrete published by the American Concrete Institute. The mechanics underlying the code design equations are explained as well as their application to practical design problems. In addition to regular homework assignments the students complete a design project in which the design of specific components is integrated into the design of the structure as a whole."
+    },
+    {
+      "number": 342,
+      "title": "Design of Steel Structures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE340"
+        ],
+        "concurrent": [
+          "CE336"
+        ]
+      },
+      "description": "This is a first course in the design of steel structures intended to develop fundamental abilities to evaluate and design steel tension members, beams, columns, beam-columns, composite beams, and connections. The discussion of design requirements focuses on failure mechanisms and behavior, the evaluation of existing components, and the process of developing economical steel member designs. All discussions are based on the current steel design specifications of the American Institute of Steel Construction, with an overview of historical requirements as appropriate. Students will complete a design project for a multi-story, steel commercial building that synthesizes the course material and creates a realistic context for the course. Weekly assignments are typically derived from the course project, with computer applications being an important component of these assignments."
+    },
+    {
+      "number": 352,
+      "title": "Construction Safety and Risk Management",
+      "credits": 3,
+      "description": "This course introduces construction safety practices and management in civil infrastructure projects. It also covers the standards, policies, and procedures of the Occupational Safety and Health Administration (OSHA) as related to creating and maintaining safe construction sites. Topics include introduction to OSHA, workers' rights, employer responsibilities, compliance with OSHA safety requirements, record-keeping, mandatory training, site safety meetings, emergency planning, inspection procedures, hazard analysis, accident prevention, OSHA Focus Four Hazards, health hazards, excavations, scaffolds, stairways and ladders, electrical safety, confined spaces, cranes and derricks, motor vehicles and mechanized equipment, and fire prevention. The course also introduces the student to the concepts of risk management and control."
+    },
+    {
+      "number": 360,
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212"
+        ]
+      },
+      "description": "Mechanics of fluids; flow in conduits and around bodies, friction and energy loss, fluid measurements. C E 360 Fluid Mechanics (3) The course objective is to provide students with the fundamental physical and analytical principles of fluid mechanics through the understanding of the: conservation of mass, conservation of energy, and the conservation of momentum equations. The student will demonstrate the understanding of these fundamentals by solving problems dealing with: fluid properties, fluid statics, pressure on plane and curved surfaces, buoyancy and floatation, kinematics, systems, control volumes, conservation principles, ideal imcompressible flow, impulse-momentum, and flow of a real fluid.Fluid mechanics is a prerequisite to all courses in hydrosystems and environmental engineering. It is typically offered fall and spring semesters and during summer session. A series of homework problems are assigned after each lecture and there are typically 3 examinations given during the semester and final examination during the final examination period."
+    },
+    {
+      "number": 370,
+      "title": "Introduction to Environmental Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          }
+        ]
+      },
+      "description": "Nature and scope of environmental issues; air, water, land impacts; fundamentals and processes of pollution control. CE 370 Introduction to Environmental Engineering (3) The objectives of this course are to introduce science and engineering principles for dealing with natural and engineered environmental systems; to provide quantitative tools to solve environmental engineering problems dealing with water and wastewater treatment, air pollution control, and management of solid and hazardous wastes; and to identify alternative ways to deal with pollution and to minimize pollution."
+    },
+    {
+      "number": 371,
+      "title": "Water and Wastewater Treatment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE360",
+          "CE370"
+        ]
+      },
+      "description": "Water treatment; water storage; design of water distribution and wastewater systems; pumping stations. CE 371 Water and Wastewater Treatment (3)This course includes engineering design of water and wastewater treatment facilities, and it emphasizes quantitative problem solving. Numerous examples pertain to contemporary water and wastewater treatment facility designs. This course will nurture the ability to use the techniques, skills and state-of-the-art engineering tools so as to prepare students for water and wastewater treatment engineering practice.Water treatment-related topics include: water quality criteria for potable water, reactor characteristics, reaction rates in water and wastewater treatment, mixing and flocculation sedimentation, rapid sand filtration, chlorination and alternative disinfection. Wastewater pretreatment, biological principles for treatment of wastewater, suspended growth bio-systems, attached film bio-systems, nutrient removal processes, and de-watering and treatment processes for sludges is also included."
+    },
+    {
+      "number": 396,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 402,
+      "title": "Computing Methods for Civil and Environmental Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
+        ],
+        "concurrent": [
+          "MATH251"
+        ]
+      },
+      "description": "This course will cover essential computing methods, implementations, and applications in civil and environmental engineering. Computing is essential for the civil and environmental engineering profession. It is used in many aspects of civil and environmental engineering, for example analyzing data and making impressive visualizations, computing backwater curve in a river, solving species concentration in chemical reactors, finding deflection of a beam, or calculating seepage and consolidation of soils. In engineering practice, computers are used to solve real world, complex problems beyond the capability of hand calculations. Major topics covered in this course include basic programming with Python, scientific and technical visualization, root finding, interpolation and curve fitting, direct and iterative solution of linear equation systems, numerical integration, numerical differentiation, and numerical solution of ordinary differential equations. Application examples of these computing techniques will be introduced and explained to help students understand the context. For example, root finding can be used to solve the nonlinear Manning's equation to design drainage channels, curve fitting and regression can be used to analyze measurement data, the solution of linear equation systems is at the core of many modern engineering software solving governing differential equations, numerical integration can be used to calculate wind load on buildings, numerical differentiation is essential for solving governing differential equations, the solution of ordinary differential equations can be used to model the dynamics of a structure or a reaction system. The objectives are for the students to have a fundamental understanding of algorithms and solution techniques for common computing problems in civil and environmental engineering, the ability to correctly implement computing algorithms with a programming language, and the ability to utilize existing numerical libraries and understand their strength and limitations. The course is structured to have two lectures and one computer lab session per week. Students will work on simple problems with manual calculations and more complex problems with computer codes which implement the covered computing methods. Homework and exams will draw on many application examples students may encounter in their coursework for the civil and environmental engineering major and in their future professional career."
+    },
+    {
+      "number": 403,
+      "title": "Energy Use, Climate Change, and Our Engineered Infrastructure",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          }
+        ]
+      },
+      "description": "Massive changes to our personal consumption patterns and civil infrastructure systems are needed to decrease CO2 emissions and minimize the impacts of climate change. In this course we will quantify energy use; study how much energy, water, and food we use in our daily lives; and determine how much CO2 gets emitted from these personal activities and by components of our public infrastructure (including buildings, electric power industries, food systems, and transportation). We will evaluate how design choices in our homes, buildings, agricultural systems, and transportation infrastructure can be modified to reduce energy consumption and carbon emissions. Greenhouse gases that cause climate change include more than just carbon from fossil fuels; we will therefore also discuss sources of other greenhouse gases and natural and engineered strategies to mitigate and reduce their emissions. Other topics include modeling rates of renewable energy growth, energy storage, climate science, infrastructure's role in environmental and climate justice, and the economic aspects of climate solutions."
+    },
+    {
+      "number": 404,
+      "title": "Probabilistic Modeling and Machine Learning for Civil and Environmental Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC204",
+              "CE402"
+            ]
+          },
+          "MATH140",
+          "MATH141",
+          "MATH220",
+          {
+            "oneOf": [
+              "STAT401",
+              "IE424"
+            ]
+          }
+        ],
+        "minGrades": {
+          "CMPSC121": "C",
+          "CMPSC131": "C",
+          "CMPSC200": "C",
+          "CMPSC201": "C",
+          "CMPSC204": "C",
+          "CE402": "C",
+          "MATH140": "C",
+          "MATH141": "C",
+          "MATH220": "C",
+          "STAT401": "C",
+          "IE424": "C"
+        }
+      },
+      "description": "This course introduces Civil and Environmental Engineering (CEE) applications and solutions that can be addressed by probabilistic machine learning techniques. Students will learn CEE related foundational concepts in probability theory, data science, and statistics, explore Monte Carlo simulation solutions, and get familiar with optimization methods. Predictive modeling based on analytical/computational models and acquired data will be covered, as well as condition identification and classification techniques based on available information, and decision-making under uncertainty concepts. Several CEE applications will be analyzed and demonstrated throughout the course. Through coding exercises students will also gain practical experience, preparing them to integrate probabilistic modeling and machine learning methodologies into their professional engineering practice."
+    },
+    {
+      "number": 405,
+      "title": "Introduction to Artificial Intelligence for Civil, Environmental, and Water Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH111"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "ESC261M"
+            ]
+          }
+        ],
+        "minGrades": {
+          "MATH141": "C",
+          "MATH111": "C",
+          "CMPSC121": "C",
+          "CMPSC131": "C",
+          "CMPSC200": "C",
+          "CMPSC201": "C",
+          "ESC261M": "C"
+        }
+      },
+      "description": "This course offers a comprehensive introduction to domain-oriented Artificial Intelligence (AI) and Machine Learning (ML) methods, equipping future engineers and scientists with cutting-edge AI/ML skills, preparing them for advanced AI tasks and making them proficient in solving complex problems with AI models. In today's rapidly evolving technological landscape, AI/ML is transforming the way problems are approached and solved across industries, including Civil and Environmental Engineering. Employers increasingly seek professionals with AI expertise to address complex challenges and drive innovation. By learning AI/ML methods in the context of their career interests, students will be well-equipped to excel in their fields and stand out in the job market. The course bridges fundamental principles of ML with domain-relevant examples taken from Civil, Environmental, and Water Engineering, providing students with the skills necessary to train and run AI/ML models in their respective fields. Examples include examining pavement performance with a Random Forest, predicting water quality and floods with Recurrent Neural Networks, and identifying microbes and examining building safety with Convolutional Neural Networks. The covered methods are selected to cover domain problems and practices, so that by the end of the course, students will be familiar with AI model concepts and the usefulness of AI and ML models in their domains and industries. They will be exposed to hands-on coding exercises, model training, benchmarking, and finetuning. The content related to statistics and math is limited. For those unfamiliar with Python, the first few sessions of the course will include exercises on Python and PyTorch, a popular ML library in Python. AI algorithms to be covered include regularized linear regression, regression trees and random forest, boosting, convolutional and recurrent neural networks, unsupervised learning, generative models, and the effective use of generative AIs for model training, all in the context of Civil, Environmental, and Water Engineering (CEWE) applications."
+    },
+    {
+      "number": 410,
+      "title": "Sustainable Residential Subdivision Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CE332",
+              "AE372"
+            ]
+          }
+        ]
+      },
+      "description": "C E 410 provides students with a working knowledge of the residential land development design process, including conservation and green design approaches, site assessment, grading and earthwork, utility design and layout, and stormwater management. The course covers the subdivision and land development regulatory processes, zoning issues, and the elements of civil infrastructure design required in the residential land development process. Conservation design and sustainable development techniques are emphasized throughout the course. For effective residential subdivision design, students must be proficient in applying basic principles of mathematics, science, and economics included in accredited academic engineering programs. An understanding of design software and its application has also become an integral part of the land development design process. The course discusses the scope and nature of the residential land development process. Students will be expected to perform design and analysis necessary for appropriate subdivision layout and infrastructure design. Issues in engineering ethics and professional responsibility related to land development are interwoven into class discussions and assignments. The course is an elective for students in the Civil Engineering major and an elective in the Residential Construction Minor."
+    },
+    {
+      "number": 411,
+      "title": "Residential Construction Design Project",
+      "credits": 1,
+      "description": "Interdisciplinary teams will develop a complete design and investment package for a real life new residential or real estate development."
+    },
+    {
+      "number": 421,
+      "suffix": "W",
+      "title": "Transportation Design",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE321"
+        ]
+      },
+      "description": "Design of streets and highway facilities; emphasis on geometric elements, intersections and interchanges, roadway drainage, and pavement design. C E 421W C E 421W Transportation Design (3)This course provides advanced study in highway engineering and is designed for civil engineering students who are interested in Transportation Engineering careers. It includes topics such as functional classification, highway cross-sections, horizontal and vertical alignment and sight distance. Other topics are pavement design, drainage intersection and interchange design and highway signs. The students will also have a CAD lab where they design a complete highway system. The semester project provides hands-on highway design experience and includes the planning and operational aspects of a new highway design. This course serves as a capstone design course with writing projects. Students are expected to do in-class presentations of their projects."
+    },
+    {
+      "number": 422,
+      "title": "Transportation Planning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT401",
+              "IE424"
+            ]
+          }
+        ]
+      },
+      "description": "C E 422 Transportation Planning (3) In this course, students acquire basic knowledge on the history and recent developments in transportation planning problems and quantitative methods. They will develop an understanding of transportation planning, transportation modeling, transportation system simulation, data collection techniques, and gain laboratory experience with each. Students will use mathematical/statistical models and GIS software to analyze, simulate, and forecast the demand for transport services. They will gain familiarity with the software used in transportation planning practice."
+    },
+    {
+      "number": 423,
+      "title": "Traffic Operations",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "CE321"
+        ]
+      },
+      "description": "This course focuses on the concepts and techniques essential for the practice of traffic engineering. The content includes topics such as use of traffic control devices, field studies for traffic data collection, traffic signal warrants, signal phasing and timing plans, and analysis of signalized intersection operation. The course also provides an introduction to several key texts and references, including the Manual on Uniform Traffic Control Devices, Highway Capacity Manual and ITE Trip Generation Handbook."
+    },
+    {
+      "number": 424,
+      "title": "Project Info. Modeling",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "EDSGN100",
+          {
+            "oneOf": [
+              "CE332",
+              "CE333W"
+            ]
+          }
+        ]
+      },
+      "description": "Project Information Modeling is the process of constructing a 3D digital model of a project with attached information. Project Information Modeling (PIM) is an integrated process built on coordinated, reliable information about a project from design through construction and into operations. It is a new approach to project delivery in which a digital representation of the project process is used to facilitate the exchange and interoperability of information. Implementation of PIM generates significant benefits, including improved design quality, reduction in design errors, improved field productivity, reduction in conflicts and changes, and finally reduction in construction cost and time. In this course, students will learn applications of PIM used in the industry by different disciplines (e.g., architectural, engineering and construction), design model-based development and coordination (e.g., 3D, 4D, 5D, and XD), value engineering concepts, system clash prevention, and understand the benefits of various parametric modeling applications that can be used. Upon completion of this course, students will have full understanding of PIM concepts throughout the lifecycle of a building or an infrastructure project, from planning, design, pre-construction, construction and operations."
+    },
+    {
+      "number": 432,
+      "title": "Construction Project Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE332"
+        ]
+      },
+      "description": "Fundamentals of project management, construction scheduling using the CPM technique, construction project preplanning, and control of quality, safety, and costs. C E 432 C E 432 Construction Project Management (3) This course introduces students to the basic practical aspects of the construction process and the quantitative methods used to manage projects within budget, deadline, and prescribed quality. Students will understand the construction market and the inter-relationships among the various players involved. Focus in this course is on integrating the various facets of construction cost estimating, planning, scheduling, control, and overall project management."
+    },
+    {
+      "number": 434,
+      "title": "Geotechnical Engineering Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE335"
+        ]
+      },
+      "description": "This is an advanced design course in geotechnical engineering, offered to undergraduate senior and graduate students in civil engineering. This course covers fundamental engineering geology, subsurface exploration including geophysical techniques, principles of shallow and deep foundation designs, slope stability, geosynthetics design, groundwater and drainage, and geotechnical earthquake engineering. The course is typically delivered in lecture format and concentrates on practice-oriented design problems in geotechnical engineering."
+    },
+    {
+      "number": 435,
+      "title": "Foundation Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE335"
+        ]
+      },
+      "description": "C E 435 provides students with a working knowledge of the state-of-practice of foundation engineering, covering bearing capacity, settlement, and structural design of shallow foundations; lateral earth pressure; design of retaining and sheet-pile walls; and an introduction to deep foundations. The course is an elective for students in the civil engineering major and serves as an essential prerequisite for continued study in the areas of construction and structural engineering. The course concentrates on practice-oriented design problems in foundation engineering."
+    },
+    {
+      "number": 436,
+      "title": "Construction Engineering Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE336",
+          {
+            "oneOf": [
+              "STAT401",
+              "IE424"
+            ]
+          }
+        ]
+      },
+      "description": "C E 436 Construction Engineering Materials (3) The course provides students with a working knowledge of the safe design, production and application of quality construction materials unique to civil engineering. The course builds upon the understanding of civil engineering materials gained in the introductory course. C E 436 focuses on the materials design and quality control of aggregates, steel, portland cement concrete, and asphalt concrete."
+    },
+    {
+      "number": 437,
+      "title": "Engineering Materials for Sustainability",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE336"
+        ]
+      },
+      "description": "Environmental impact of materials; life-cycle assessment; material selection to optimize performance; design, evaluation, and production of green construction materials."
+    },
+    {
+      "number": 438,
+      "suffix": "W",
+      "title": "Construction Engineering Capstone Design",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE432",
+          {
+            "oneOf": [
+              "CE435",
+              "CE436"
+            ]
+          }
+        ]
+      },
+      "description": "Construction project integrating geotechnical reports; materials specifications; quality control; equipment; estimation; scheduling; design details: excavations, foundations, retaining walls, formwork, pavements. C E 438W C E 438W Construction Engineering Capstone Design (3) This course is intended to establish the foundation for organizational and procedural understanding in construction engineering. The student will gain the knowledge necessary to apply engineering principles in analyzing economical approaches to construction problems. This course will cover construction methods, equipments, and cost estimation of the construction materials, excavation, foundation, and other phases of civil engineering construction projects."
+    },
+    {
+      "number": 439,
+      "suffix": "W",
+      "title": "Geotechnical and Materials Engineering Design Capstone",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE435",
+          {
+            "oneOf": [
+              "CE436",
+              "CE437"
+            ]
+          }
+        ]
+      },
+      "description": "Subsurface site evaluation; integrated design of retaining walls, foundations, pavements, and materials for airports, highways, dams, or other facilities."
+    },
+    {
+      "number": 441,
+      "title": "Structural Design of Foundations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE341"
+        ],
+        "concurrent": [
+          "CE342"
+        ]
+      },
+      "description": "Design of concentrically and eccentrically loaded square, rectangular, and combined footings; analysis and design of mat foundations; retaining walls; piles caps; flexible retaining design, and caissons. C E 441 Structural Design of Foundations (3)This course prepares the structural engineering student to analyze, proportion, size reinforcing, and select steel sections for structural foundations designs based on the state of practice presented in ACI 318, AISC, and available industry literature. Structural foundation analysis techniques for many foundation types are presented with extensive use of EXCEL in the design process. Analysis and design of foundation systems are developed for concrete shear walls, concentrically loaded square and rectangular footings, eccentrically loaded square and rectangular footings, and combined footings. Use of approximate and finite element analysis methods for analyzing mat foundations and grid foundations are presented. Working knowledge of retaining wall, pile cap, and flexible earth retaining structure design methods are also developed. This course is an elective for students in the civil engineering major and serves as an essential prerequisite for continued study in structural engineering and advancement to the structures capstone course. This course is delivered in lecture format and concentrates on practice-oriented structural foundation analysis and design problems."
+    },
+    {
+      "number": 445,
+      "title": "Advanced Structural Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE340"
+        ]
+      },
+      "description": "Analysis of trusses and frame stiffness matrix method of analysis. Analysis of indeterminate beams, trusses, and frames using classical methods. C E 445 C E 445 Advanced Structural Analysis (3) The course is an advanced analysis which includes an analysis of structures using classical and matrix methods. Topics covered include the analysis of statically determinate and indeterminate beams; trusses and frames. An introduction to the stiffness method and a software package for structural analysis will also be covered."
+    },
+    {
+      "number": 447,
+      "title": "Structural Analysis by Matrix Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE340"
+        ]
+      },
+      "description": "Analysis of truss and frame structures using flexibility and stiffness methods of matrix analysis. Computer applications."
+    },
+    {
+      "number": 448,
+      "suffix": "W",
+      "title": "Structural Design Capstone",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE342"
+        ],
+        "concurrent": [
+          "CE341"
+        ]
+      },
+      "description": "The objectives of the course are for students to develop an understanding of advanced structural engineering design issues in a capstone context that will merge knowledge gained in prerequisite structural design and analysis courses. By building on concepts introduced in introductory steel building, concrete building, and foundation design, students will gain additional proficiency in structural conceptualization, environmental and induced load determination, modeling and analysis, detailed design of steel and concrete structures, and graphical communication."
+    },
+    {
+      "number": 449,
+      "title": "Advanced Structural Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE340",
+          "CE341",
+          "CE342"
+        ]
+      },
+      "description": "Special systems, frames and bracing in steel, wood and reinforced or precast concrete. Introduction to composite construction. C E 449 C E 449 Advanced Structural Design (3) This course provides students with an understanding of advanced structural design processes, the mechanics of special systems (such as prestressed concrete) as well as the ability to design and proportion structural connections and bracing members including reinforced concrete and steel. The course will also introduce the LRDF approach and composite construction in which the design of specific components is integrated into the design of the structure as a whole."
+    },
+    {
+      "number": 455,
+      "title": "Construction Cost Estimating",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CE332",
+              "AE372"
+            ]
+          }
+        ]
+      },
+      "description": "This course focuses on introducing the fundamental principles of detailed cost estimating and bidding in civil infrastructure projects, including classifying work in accordance with specifications standards, extracting quantity take-offs from drawings, compiling and pricing estimates, finalizing bids, and the utilization of software and spreadsheets to automate estimating functions. The course also introduces estimating methods used for the preparation of conceptual and preliminary estimates."
+    },
+    {
+      "number": 456,
+      "title": "Planning and Scheduling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CE332",
+              "CE333W"
+            ]
+          }
+        ]
+      },
+      "description": "Theory and practice used in planning and scheduling projects; defining task and resources, creating logic diagrams, and monitoring the projects. C E 456 C E 456 Planning & Scheduling (3) \"Planning and Scheduling\" encompasses construction tenets and fundamentals including organizing, staffing, directing, and controlling representing concepts and principles integral to career applications in project and design management. Students who successfully complete this course will be able to: 1) understand and use planning, scheduling, and control techniques for managing construction projects 2) understand scheduling techniques and computer applications in critical path methods, PERT, and resource scheduling 3) understand construction financing and schedule / cost relations 4) understand the principles of project tracking, progress measurements, trend analysis, and forecasting"
+    },
+    {
+      "number": 457,
+      "title": "Construction Equipment and Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CE332",
+              "AE372"
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to major construction equipment along with selected construction methods for civil infrastructure projects. This includes understanding construction equipment economics, selection of appropriate equipment based on operational parameters, principles of equipment productivity analysis and measurement, methods for equipment productivity improvement, safe operation of construction equipment, techniques for optimizing equipment utilization, and technologies for enhancing equipment integration and automation."
+    },
+    {
+      "number": 458,
+      "title": "Construction Management II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE333W",
+          "CE456"
+        ]
+      },
+      "description": "Procedures in construction organization including procurement, ethics, field supervision, legal and managerial problems, personnel, cost accounting, and construction business practices. C E 458 C E 458 Construction Management II (3) This course presents policies, procedures, and applications in construction management and organization including procurement, ethics, field supervision, legal and managerial problems, personnel, cost accounting, and construction business practices. The course encompasses construction tenets and fundamentals including planning, organizing, staffing, directing, and controlling. Students who successfully complete this course will be able to: 1) understand organizational issues concerning development of a project delivery system 2) comprehend the roles and responsibility of the Resident Project Representative and members of the construction team and the respective utility of the resident inspection office responsibilities 3) know the various documentation construction records/reports normally 4) recognize the salient features of specifications and drawings and the fundamentals for using them in contract administration 5) become familiar with the prevailing construction laws, policies, and procedures dealing with labor and safety 6) understand the utility of meetings during construction and the principles and techniques of negotiation 7) apply risk management through contractual allocation of rush and liability 8) become well versed in planning/orchestrating during reconstruction operations 9) apply management principles of directing and controlling construction operations and resources including CPM scheduling, inspections, tests, and contractor submittals 10) understand the concept of value engineering in construction operations 11) understand the critical control issues involved with measurement and payments, controlling construction materials and workmanship, and changes and extra work"
+    },
+    {
+      "number": 461,
+      "title": "Water-resource Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE360"
+        ]
+      },
+      "description": "Qualitative and quantitative description of the hydrologic cycle, flood and drought frequency analysis, climate and land use change impacts, risk analysis and uncertainty, water resource management at regional, national and global scale."
+    },
+    {
+      "number": 462,
+      "title": "Open Channel Hydraulics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE360"
+        ]
+      },
+      "description": "Free surface flow in rivers, canals, steep chutes, stilling basins, and transitions. C E 462 Open Channel Hydraulics (3) This is an advanced senior level course dealing with steady gradually varied flow. The laws of conservation of mass, energy and momentum are applied to gradually varied steady flow problems in rectangular and non-rectangular channels. Basic definitions and equations governing flow are developed for uniform and nonuniform flow conditions. The students will use their knowledge of fluid mechanics, calculus, numerical analysis and computer science to solve practical open channel flow problems."
+    },
+    {
+      "number": 465,
+      "suffix": "W",
+      "title": "Water Resources Capstone Course",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE461"
+        ],
+        "concurrent": [
+          "CE462"
+        ]
+      },
+      "description": "Hydraulic design of river structures and open channels including supercritical and spatially varied flow; hydrologic/hydraulic computer modeling; design project. C E 465W C E 465W Water Resources Capstone Course (3) This course is designed to provide seniors in the water resources area with a major design project. In addition, the course has a writing component, which satisfies the University's writing across the curriculum requirement.Projects cover hydrologic and hydraulic design. Hydrologic analysis is performed to size the hydraulic structure systems that convey the design flows. The students utilize Geographic Information Systems data bases, utilize several state of the art computer models, and are required to write several computer programs."
+    },
+    {
+      "number": 472,
+      "suffix": "W",
+      "title": "Environmental Engineering Capstone Design",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CE370"
+        ]
+      },
+      "description": "Principles and design of unit operations for water; domestic and industrial wastewater treatment; equipment selection and application. C E 471 C E 472W Environmental Engineering Capstone Design (3)This course will integrate engineering science and design skills through application to an open-ended environmental problem dealing with one or more of the following: industrial sustainability and pollution prevention; water transmission and treatment; wastewater collection and treatment; solid waste collection, treatment, and disposal; remedial investigation and feasibility studies for a hazardous waste site."
+    },
+    {
+      "number": 473,
+      "title": "Ecological Design of Regenerative Aquatic Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE370"
+        ]
+      },
+      "description": "This course begins with an introduction to natural wetlands, and then extends those fundamental ecological principles to the design of constructed wetlands for wastewater and mine water treatment. In the second half of the course, these ecological principles are applied to the design of a variety of aquaponics systems for fish and vegetable production. Throughout the semester, emphasis is given to how beneficial byproducts (food, energy, water) can be produced in ecological systems to support sustainable communities in both developed and developing countries. The course culminates with a final team project on the design of an ecological system for a real community."
+    },
+    {
+      "number": 475,
+      "title": "Water Quality Chemistry",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "CE370"
+        ]
+      },
+      "description": "C E 475 Water Quality Chemistry (4) Water Quality Chemistry is focused on both theoretical aspects of water chemistry and applied aspects of engineering practice. The course will cover a wide range of fundamental chemical principles that will be investigated further in the laboratory exercises and through an independent research project. The course covers reaction stoichiometry and reaction type with specific examples of processes typically encountered in water, wastewater and hazardous waste treatment situations. The course distinguishes between kinetic and equilibrium reactions and presents mathematical formulations for both types of reactions. The course reviews thermodynamics and electrochemistry and relates them to equilibrium constants and the spontaneity of reactions. The course covers redox reactions especially with respect to the corrosion of civil infrastructure, the generation of acid rock drainage, and biological wastewater treatment processes. The course covers acid/base reactions especially with respect to disinfection of drinking water and pH adjustments commonly used to enhance air stripping of pollutants. The course introduces the use of computer models for determining chemical speciation of acid/base constituents. The course covers alkalinity and the carbonate system especially with respect to the issues of acid rain, acidification of the Earth's oceans, and limestone buffering of surface waters in Pennsylvania. Computer models are used to calculate chemical speciation in carbonatecontaining systems. The course covers pH-dependent solubility of common minerals - primarily carbonates, hydroxides and aluminosilicates. The course covers engineering applications related to metal solubility including water softening, coagulation for turbidity removal in water treatment plants, heavy metal generation from acid rock drainage, and heavy metal removal in hazardous waste treatment. The course covers complexation reactions especially with respect to effects on metal solubility and toxicity. Computer models are used to calculate chemical speciation in multi-complexant systems. The course covers analytical chemistry especially with respect to the most common parameters measured in water and wastewater treatment systems, and with respect to the principles of measurement (i.e. gravimetric, spectrometric, volumetric, potentiometric analyses). The course involves a research project on a local water quality problem of concern. In the past, this project has focused on the proposed \"Beneficial Reuse\" of wastewater in Centre County, and on the impact of acid rock drainage from the construction of I-99 on Buffalo Run in Centre County."
+    },
+    {
+      "number": 476,
+      "title": "Solid and Hazardous Wastes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE370"
+        ]
+      },
+      "description": "With industrialization, humans have produced a variety of solid and hazardous wastes that have negatively impacted ecosystems and human health around the world. This course covers three main topics: 1) municipal solid waste handling and disposal (including landfill-gas-to energy, direct waste-to-energy, and recycling options); 2) the fate and transport of hazardous wastes that have been released into the environment through air, soil, and water; and 3) the selection and design of appropriate remediation technologies for soil and groundwater contaminated with hazardous wastes."
+    },
+    {
+      "number": 479,
+      "title": "Environmental Microbiology for Engineers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE370"
+        ]
+      },
+      "description": "Environmental Microbiology for Engineers is comprised of three main sections: (1) the fundamentals of microbial structure, function, nutrition, and growth for students with no prior formal instruction in microbiology; (2) microbial diversity and ecology; and (3) the application of these fundamental microbial principles to environmental systems. In the fundamentals section, the course covers microbial nomenclature, macromolecules, cell biology, energetics, growth, and genetic regulation. This is illustrated with calculations of thermodynamic constraints in microbially catalyzed reactions, the calculation of efficiencies based on energy conservation from common pathways, and the connection of these efficiencies to microbial growth in a chemostat. Building on these fundamental concepts of metabolic potential and conserving energy and acquiring reducing equivalents from redox reactions, the second section covers the reactions and energetics of the primary microbial functional diversity such as phototrophy, lithotrophy, autotrophy, anaerobic respirations, and fermentations. It also introduces modern molecular biology techniques for studying microbial systems, and pulls the concepts of functional diversity together by illustration with the major nutrient cycles, including discussions of environments in which each reaction might be encountered. Finally, the last section applies these ecological principles to several specific engineered environments of interest. Homework assignments throughout the semester involve questions about the methods, findings, or applications of recent articles that highlight the recently covered material, giving the students experience in the critical evaluation of primary literature and demonstrating the relevance of the material to environmental microbiology research and application. Complementing the progression of the lectures are eight instructional laboratories that provide hands-on application of diagnostic microbiological techniques to the characterization of environmental enrichment cultures and pure cultures. For example, a microscopy lab immediately follows the lecture material on cell biology, an enrichment experiment follows the material on nutrition, an enumeration experiment follows the section on microbial growth, etc. The final seven weeks of the laboratory period are devoted to group projects, in which students apply the techniques the have learned as appropriate to answer specific short-term research hypotheses. The final period is devoted to group presentations of their projects."
+    },
+    {
+      "number": 488,
+      "suffix": "C",
+      "title": "Capstone Project - Construction",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "concurrent": [
+          "CET430",
+          "CET431",
+          "CET432",
+          "CET435",
+          "CE456"
+        ]
+      },
+      "description": "This course consists of a project either selected by the students with approval or assigned by the instructor. C E 488C Capstone Project - Construction (4) This course integrates the structural design and construction skills through an application to a project focusing in the construction management area. The course is serves as the capstone of the senior student's education courses. The course C E 488C identifies the student selection of a construction capstone project. The student works on a team during the course project process. The team will evaluated on different assignments during the project as well the final product. The team will submit a final written report as well make an oral presentation. The SDCET advisory board is invited to participate in the oral participations. The 4 credit hour course is separated into two parts which are taken in two consecutive semesters. The first course offering is for 1 credit to provide the students an overview of the course and an introduction to the project. The course is then repeated for 3 credits the following semester for the project. This is to allow the necessary time for students to complete the project."
+    },
+    {
+      "number": 488,
+      "suffix": "D",
+      "title": "Capstone Project - Structural Design",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "concurrent": [
+          "CET430",
+          "CET431",
+          "CET432",
+          "CET435"
+        ]
+      },
+      "description": "This course consists of a structural design project either selected by the students with approval or assigned by the instructor. C E 488D Capstone Project - Structural Design (4) This course integrates the structural design and construction skills through an application to a project focusing in the construction management area. The course is serves as the capstone of the senior student's education courses. The course C E 488D identifies the student selection of a structural design capstone project. The student works on a team during the course project process. The team will evaluated on different assignments during the project as well the final product. The team will submit a final written report as well make an oral presentation. The SDCET advisory board is invited to participate in the oral participations. The 4 credit hour course is separated into two parts which are taken in two consecutive semesters. The first course offering is for 1 credit to provide the students an overview of the course and an introduction to the project. The course is then repeated for 3 credits the following semester for the project. This is to allow the necessary time for students to complete the project."
+    },
+    {
+      "number": 494,
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Students must have approval of a thesis adviser before scheduling this course."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Investigation of an original project in the area of Civil Engineering. C E 494H C E 494H Honors Senior Thesis (1-6) Investigation of an original project in the area of Civil Engineering. The thesis topic must be approved by the honors advisor and thesis advisor and submitted as a thesis proposal to the Schreyer Honors College prior to scheduling the course. Students may register for a total of 6.0 credits over their last two semesters."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 511,
+      "title": "Engineering Soil Characteristics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE335"
+        ]
+      },
+      "description": "Applications of physico-chemical principles in soil engineering; soil composition; factors influencing engineering soil properties."
+    },
+    {
+      "number": 512,
+      "title": "Soil Mechanics II",
+      "credits": {
+        "min": 2,
+        "max": 5
+      },
+      "repeatable": {
+        "maxCredits": 5
+      },
+      "description": "Evaluation of strength parameters and compressibility of soils; elastic analysis of stress and strain; techniques of forecasting foundation settlement; slope stability analysis."
+    },
+    {
+      "number": 513,
+      "title": "Advanced Foundation Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE335"
+        ]
+      },
+      "description": "Practical applications of soil mechanics principles to geotechnical engineering problems; dewatering techniques; design of deep foundations and retaining structures."
+    },
+    {
+      "number": 521,
+      "title": "Transportation Networks and Systems Analysis",
+      "credits": 3,
+      "description": "Techniques of transportation network, user, stochastic user, and variable demand equilibrium; transportation activity system; computer simulation techniques and forecasting methods."
+    },
+    {
+      "number": 522,
+      "title": "Traffic Flow Theory and Simulation",
+      "credits": 3,
+      "description": "This course will cover advanced topics related to traffic operations and traffic flow theory. Students will be exposed to a variety of theories, methodologies, and principles that are used to assess traffic operations on surface transportation systems, as well as their applications. The course will be divided into two major subject areas: 1) operations on uninterrupted facilities, such as freeways; and, 2) operations on interrupted facilities, such as urban streets and large urban networks. Topics in the former area include kinematic wave theory, cell and link transmission models, variational theory, moving-bottlenecks, bottleneck identification and incident management. Topics in the latter include signal coordination, macroscopic fundamental diagrams, multimodal conflicts and their impacts. The course also includes an overview of traffic microsimulation software and its applications to both areas."
+    },
+    {
+      "number": 523,
+      "title": "Analysis of Transportation Demand",
+      "credits": 3,
+      "description": "Theories of travel behavior, least squares and maximum likelihood, estimation methods, continuous dependent variable models, utility maximization, discrete econometric techniques."
+    },
+    {
+      "number": 525,
+      "title": "Transportation Operations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE423"
+        ]
+      },
+      "description": "Tools for analyzing transportation operations, including: properties of traffic streams, queuing, traffic dynamics, networks, probability and estimation of traffic properties. C E 525 Transportation Operations (3) This course presents the concepts of traffic and transportation operations necessary for students pursuing an advanced degree in transportation engineering. While the course focuses on surface traffic and related systems, the tools and methods discussed can be used in other sub-disciplines (e.g., public transportation, aviation, and bicycle/pedestrian movement) to analyze operations. Logic and methods are emphasized as opposed to recipes that are specific to certain modes."
+    },
+    {
+      "number": 526,
+      "title": "Highway and Street Design",
+      "credits": 3,
+      "description": "Technical analysis of the design elements of roadways, alinement, cross- section features, and intersection and interchange design considerations."
+    },
+    {
+      "number": 527,
+      "title": "Roadside Design and Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE421W"
+        ]
+      },
+      "description": "Roadside safety and design, safety management, pavement management, lighting, signs, signals, and markings, clear zone, guiderail, impact attenuators."
+    },
+    {
+      "number": 528,
+      "title": "Transportation Safety Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT401"
+        ]
+      },
+      "description": "Issues and methods in transportation safety analysis; factors contributing to crashes; crash causation; modeling accident occurrence; identifying sites for treatment. C E 528C E 528 Transportation Safety Analysis (3) This course introduces students to issues and methods in transportation safety analysis; factors contributing to crashes; methods of analysis for determining crash causation; modeling accident occurrence; identifying crash sites for treatment. Students will be evaluated using periodic homework assignments, a mid-term exam, and a class project. Students are expected to learn fundamental aspects of highway accident occurrence and modeling. They will be introduced to modeling techniques and methods used to assess causality in crashes. The course is offered annually in the fall semester."
+    },
+    {
+      "number": 529,
+      "title": "Infrastructure Systems Analysis and Decision Making",
+      "credits": 3,
+      "description": "This course focuses on the physical infrastructure systems that provide essential public services, including transportation, energy, water, communications, etc. These complex, large-scale, expensive systems must be planned for and managed. This course emphasizes different tools (including basic economic theory, mathematical modeling, and optimization techniques) that can be used to study these complex systems, drawing examples from transportation. This includes evaluation of infrastructure investments; better informing the data collection and inspection process; modeling deterioration of infrastructure components such as pavement; and maintenance and repair decision-making at both the single facility and system level."
+    },
+    {
+      "number": 531,
+      "title": "Legal Aspects of Engineering and Construction",
+      "credits": 3,
+      "description": "Basic legal doctrines, contractual relationships between parties, analysis of construction contract clauses, contract performance, and professional practice problems."
+    },
+    {
+      "number": 536,
+      "title": "Topics in Biogeochemistry",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "internalEquivalents": [
+        "GEOSC536",
+        "SOILS536"
+      ],
+      "description": "This seminar addresses chemical interactions between the biosphere and the physical environment over Earth's history and as impacted by humans. This course will provide a broad survey of biogeochemical principles, and offer a community-building experience for students with biogeochemical interests from diverse departments. Students will complete the course with a synthetic knowledge of the key topics in the field of biogeochemistry. Each week we will focus on a topic within the broad field of biogeochemistry such as: origins of the elements, reactions in the atmosphere, soil development, the distribution of redox reactions and microbial metabolic pathways, and the global cycles of carbon, water, nitrogen, phosphorus, sulfur, mercury, and perhaps other elements. For each topic, we will focus on the questions: What is known or can be observed? How is this information used to understand biogeochemical phenomena and process? How are these processes scaled over time and space? What are emerging and important questions in the subspecialties of biogeochemistry?"
+    },
+    {
+      "number": 538,
+      "title": "Earthquake Resistant Design of Buildings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AE401",
+          "AE402",
+          "AE430"
+        ]
+      },
+      "description": "Introductory engineering seismology, basic principles of structural dynamics, application of earthquake design provisions of model building codes to design of buildings. A E (C E) 538 Earthquake Resistant Design of Buildings (3) The main objective of this course is to familiarize students with basic principles of design of buildings to resist earthquake effects. Since building design is governed by the Building Code, currently, International Building Code that adopts American Society of Civil Engineers (ASCE) document ASCE-7 for load determination, the seismic provisions of ASCE-7 will be used as the basis for design. The course starts by introducing earthquake phenomenon and engineering seismology concepts. The basic principles of structural dynamics are then covered for single degree of freedom systems starting from free vibration to random loading so that students learn how a ground acceleration time-history subjected to the base of a building can be converted to a time varying effective seismic load on the mass. After introduction of response spectrum, introductory material on multi-degree of freedom systems is introduced so that students can determine natural frequencies and mode shapes for multi-story buildings and perform modal superposition analysis to determine displacement and force responses. Next, the principles of earthquake resisting design related to energy dissipation, ductility, over-strength, and redundancy followed by seismic provision of the building code are discussed. The main design principles related to the two main materials for building construction consisting of reinforced concrete and structural steel are next discussed. The focus will be to illustrate how lateral load resisting systems such as shear walls, moment resisting frames, or braced frames made with such materials as appropriate are designed to resist earthquake effects based on respective material code provisions, that is, American Concrete Institute (ACI) for concrete and American Institute of Steel Construction (AISC) for steel. The last part of the course will introduce seismic retrofit, base isolation systems and the concept of performance based design."
+    },
+    {
+      "number": 539,
+      "title": "Approximate Methods of Structural Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE340"
+        ]
+      },
+      "description": "Structural analysis through the application of initial-value methods, Newmark's method, Fourier series, finite difference techniques, and work and energy procedures."
+    },
+    {
+      "number": 540,
+      "title": "Statically Indeterminate Structures",
+      "credits": 3,
+      "description": "Analysis of statically indeterminate straight/curved beams, grids, 2D/3D frames, arches, cables, and shells using classical and modern techniques. C E 540C E 540 Statically Indeterminate Structures (3) This course introduces students to various methods for analyzing statically indeterminate structural systems, including: straight and curved beams, grids, 2D and 3D frames, arches, cables, and shells. Both classical hand calculation approaches and more modern computer based approaches that utilize force and displacement based methods are discussed. Additional analysis topics, such as plastic analysis and the examination of beams on elastic foundations are presented. The procedures are introduced to the students so that their ability to analyze statically indeterminate structural systems is enhanced. In addition, practical applications for the methods that are discussed are presented."
+    },
+    {
+      "number": 541,
+      "title": "Structural Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE447"
+        ]
+      },
+      "description": "Theory of various finite elements as applied to civil engineering structures. Term paper required."
+    },
+    {
+      "number": 542,
+      "title": "Building Enclosure Science and Design",
+      "credits": 3,
+      "description": "The building enclosure: nature, importance, loadings; building science: control of heat, moisture, air, hygrothermal analysis; design: walls, windows, roofs, joints. A E 542 A E (C E ) 542 Building Enclosure Science and Design (3) The building enclosure, or envelope, is the environmental separator in any building and is, like the superstructure and the service systems, one of the major physical components of the building. The primary objective of this course is to develop an understanding of the nature, importance, functions, and performance of the building envelope in general. The necessary building science--concerning primarily heat, moisture, and air--is covered, and hygrothermal analysis procedures are developed. A generalized categorization system for enclosure elements, i.e., walls (both above- and below-grade), roofs, and other enclosure sub-assemblies is proposed. General design strategies are developed. The design of specific wall systems (both above- and below-grade), roof systems, base floors, windows, and their joints is then addressed in some detail. The integration of structures (composite action, restraints, etc.), service systems (especially energy consumption), and finish (exterior and interior) is considered in sonic detail. Evaluation is based on an equal combination of assignments (6) and examinations (2). This course complements courses in architecture, civil engineering, architectural engineering, and mechanical engineering."
+    },
+    {
+      "number": 543,
+      "title": "Prestressed Concrete Behavior and Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CE341",
+              "AE402"
+            ]
+          }
+        ]
+      },
+      "description": "Design and behavior of prestressed concrete structures: materials and systems losses, flexure, shear, bond, deflections, partial prestressing, continuous beams."
+    },
+    {
+      "number": 544,
+      "title": "Design of Reinforced Concrete Structures",
+      "credits": 3,
+      "description": "Advanced topics in design of reinforced concrete structures. Torsion and shear; beam moment-curvature; two-way slab systems; slender columns; strut- and-tie methodology. C E 544 C E 544 Design of Reinforced Concrete Structures (3) This course explores advanced topics in the design of reinforced concrete structures in conformance with standardized building codes. Topics covered include load combinations, principles of structural modeling, torsion and shear in reinforced concrete members, two-way slab systems, moment-curvature of beams, slender columns, and strut-and-tie models. Students enrolled in this course should have prior knowledge of the design of reinforced concrete beams, one-way slabs, and short columns. Due to the course content, students must be familiar with the American Concrete Institute (ACI) Building Code Requirements for Reinforced Concrete.This course will generally be offered each fall, with an anticipated enrollment of 10. Grades will be based on two examinations, assignments, and a comprehensive final examination."
+    },
+    {
+      "number": 545,
+      "title": "Metal Structure Behavior and Design",
+      "credits": 3,
+      "description": "Design philosophies and basis; seismic loading; fatigue; bending, column, plate, and beam-column stability; tapered members; torsion; connections; bracing; frame stability. C E 545 C E 545 Metal Structure Behavior and Design (3) This course presents advanced topics in elastic and inelastic structural metal member behavior and the theoretical basis of modern design codes and procedures. Philosophies of design, fatigue, bending stability and tapered members, torsion, stability of plates, stability of columns, stability of beam-columns and bi-axial bending, connections, and frame stability are covered in depth in addition to other topics relating to advanced behavior and design of metal structures. Students interested in this course must be familiar with the American Institute of Steel Construction (AISC)Manual of Steel Construction. This course will generally be offered each fall, with an anticipated enrollment of 12. Grades will be based on homework assignments, a semester project, two examinations, and a comprehensive final examination."
+    },
+    {
+      "number": 548,
+      "title": "Structural Design for Dynamic Loads",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH212",
+          "CE340"
+        ]
+      },
+      "description": "Dynamic behavior of structural systems of one and more degrees of freedom; earthquake, blast-resistant analysis, and design of structures."
+    },
+    {
+      "number": 549,
+      "title": "Bridge Engineering I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE448W"
+        ]
+      },
+      "description": "Engineering of modern steel and concrete bridge structures; loading; analysis; design."
+    },
+    {
+      "number": 550,
+      "title": "Engineering Construction Management",
+      "credits": 3,
+      "description": "Management fundamentals for construction contracting; organization, project planning, scheduling and control, bonding and insurance, labor legislation and regulation, cost and control."
+    },
+    {
+      "number": 551,
+      "title": "Random Processes in Hydrologic Systems",
+      "credits": 3,
+      "description": "Hydrologic systems analysis, simulation; design using probability, time series and dynamical systems; formulating models, parameter estimation, environmental impact, resource assessment."
+    },
+    {
+      "number": 555,
+      "title": "Groundwater Hydrology: Analysis and Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251"
+        ]
+      },
+      "description": "Introduction to groundwater resource analysis, model formulation, simulation, and design of water resource systems using symbolic and numerical methods."
+    },
+    {
+      "number": 556,
+      "title": "Environmental Electrochemistry",
+      "credits": 3,
+      "description": "This goal of this course is to prepare students to perform and interpret research in the field of environmental electrochemistry. Students will learn the fundamental mechanisms of electrochemistry and will apply this knowledge to (1) design theoretical experiments to address research questions relevant to environmental engineering and science and (2) analyze and re-interpret results from recently published peer-reviewed studies in this field. Within the field of environmental engineering and science, electrochemical techniques are commonly used to characterize the reactivities and thermodynamic properties of environmental samples, such as soils, minerals, and natural waters. Electrochemical techniques are also frequently used to solve environmental problems, with applications including the treatment and remediation of polluted water and the generation of renewable electricity from waste sources. This course is designed to enable students to critically read environmental electrochemical literature and to design and develop their own electrochemical experimental systems. To achieve this goal, the course consists of five sections that are roughly equal in length. Section 1 covers the underlying chemistry and thermodynamics relevant to electrode potentials and redox chemistry. Section 2 covers galvanic and electrolytic reactions by covering examples of batteries and fuel cells relevant to environmental engineers. Section 3 addresses the role that kinetics and transport play in electrochemical systems and the mathematical expressions used to cover them. Section 4 covers electrochemical techniques used to study environmental systems and solve environmental engineering problems, such as pollution remediation and renewable energy production. Section 5 covers electrochemical impedance spectroscopy, a complex electrochemical technique used to determine how an electrochemical system can be best approximated as a circuit. As a whole, these sections develop students with the educational foundation necessary to further study specific topics relevant to their research or interests."
+    },
+    {
+      "number": 561,
+      "title": "Surface Hydrology",
+      "credits": 3,
+      "description": "Quantification of the processes that govern the movement and storage of water near the land-surface including precipitation, evapotranspiration, and runoff. C E 561 C E 561 Surface Hydrology (3)Water is an important factor in numerous engineering and scientific problems. It can be both a hazard and a resource. Knowledge of the movements and storage of water in the terrestrial, oceanic, and atmospheric environments is fundamental in many such applications. This course provides a graduate level introduction to surface hydrology, which focuses on the quantification of water pathways near the land-surface. It presents basic properties of the terrestrial, oceanic, and atmospheric environments and develops water and energy budget equations for different settings and scales. The course also provides detailed quantitative descriptions of the main processes responsible for the movement of water in the environment including precipitation, evapotranspiration, snowmelt, infiltration, surface runoff, groundwater recharge, subsurface runoff, and streamflow."
+    },
+    {
+      "number": 563,
+      "title": "Systems Optimization Using Evolutionary Algorithms",
+      "credits": 3,
+      "description": "Comprehensive introduction to genetic and evolutionary computation: genetic algorithms, evolutionary strategies, multi-objective optimization, parallelization approaches, and fitness approximation. C E 563 C E 563 Systems Optimization Using Evolutionary Algorithms (3) A comprehensive introduction to the field of genetic and evolutionary computation. The course emphasizes state-of-the-art methods for designing and implementing evolutionary algorithms for computationally intensive engineering and science problems. Course concepts are demonstrated using case studies drawn from the disciplines of the students enrolled. The course is offered every spring semester."
+    },
+    {
+      "number": 564,
+      "title": "Sediment Transport in Alluvial Streams",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE462"
+        ]
+      },
+      "description": "River flow, river channel formation, the physical characteristics of rivers, responses of rivers to natural and human-made changes. C E 564C E 564 Sediment Transport in Alluvial Streams (3) A comprehensive presentation of river processes and engineering must be built upon the foundations of fluvial geomorphology, hydraulics of river flow, and sediment transport. The course is organized into the following five principal parts:Part I. Fluvial Geomorphology Part II. Foundations of Fluvial Process Part III. Regime Rivers and Processes Part IV. Mathematical Modeling of River Channel Changes Part V. River Engineering"
+    },
+    {
+      "number": 566,
+      "title": "Uncertainty and Reliability in Civil Engineering",
+      "credits": 3,
+      "description": "Introduction to probabilistic modeling, simulation, uncertainty analysis, and reliability estimates applied to civil engineering. C E 566C E 566 Uncertainty and Reliability in Civil Engineering (3) The objective of this course is to develop understanding of the uncertainty in Civil Engineering analyses, design, and construction and to introduce reliability-based methods of analysis. The course covers review of probability and statistics, uncertainty analysis, probabilistic models of load and resistance, and the application of reliability analysis to problems in Civil Engineering."
+    },
+    {
+      "number": 567,
+      "title": "River Engineering",
+      "credits": 3,
+      "description": "Introduction to river mechanics and fluvial geomorphology applied to problems of sediment transport and channel morphology. C E 567C E 567 River Engineering (3)River Engineering will introduce students to the concepts of flow and sediment transport in canals and alluvial rivers. This course covers: river morphology and hydraulic geometry; hydraulics of flow in river channels; measurement of velocity; rating curves; properties of sediment; scour-related problems; stream stability and classification; sediment movement in rivers; channel design; software for erodible channels; stream bank, bridge pier, and bridge abutment protection; environmental considerations; and stream restoration. During the semester, the students will visit local streams for the purpose of making various observations and measurements. Faculty: Peggy A. Johnson"
+    },
+    {
+      "number": 570,
+      "title": "Environmental Aquatic Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE475"
+        ]
+      },
+      "description": "Speciation, reactivity, and distribution of contaminants in water, with emphasis in inorganic chemicals."
+    },
+    {
+      "number": 571,
+      "title": "Physical-Chemical Treatment Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE475"
+        ]
+      },
+      "description": "The theory of physical-chemical processes used in the treatment of potable water and municipal and industrial wastewaters."
+    },
+    {
+      "number": 572,
+      "title": "Biological Treatment Processes",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "CE475"
+        ]
+      },
+      "description": "The theory and application of biological processes to treat organic wastes, including wastewater, solid residuals, and toxic priority pollutants."
+    },
+    {
+      "number": 573,
+      "title": "Environmental Organic Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE475"
+        ]
+      },
+      "description": "Theory, measurement, and estimation of the characteristics and environmental transformations of hazardous materials."
+    },
+    {
+      "number": 574,
+      "title": "Reactive Transport Processes in Porous Media",
+      "credits": 3,
+      "description": "Recommended Preparations: It is recommended that the students have taken courses on principles of water chemistry, biogeochemistry, or water-rock interactions. This course teaches principles and modeling of flow, transport, and reaction processes in the natural and built environment. The course targets students from a range of disciplines where water-mineral-microbe interactions play a key role. This includes, but not limited to, environmental engineering, water resources, geosciences, petroleum and natural gas engineering, agricultural engineering, civil engineering, chemical engineering, and applied mathematics. The course teaches fundamental concepts, mathematical formulation, and quantitative representation, and applications of multi-component reactive transport processes. The learning outcomes are to 1) understand fundamental concepts of biogeochemical reactions, flow, and solute transport; 2) understand reactive transport equations and concepts of numerical solution; 3) develop computational skills using a reactive transport modeling code. The students will grasp reactive transport concepts, as well as skills to set up reactive transport models, interpret data, and predict subsurface physical flow and geochemical and microbiological process coupling."
+    },
+    {
+      "number": 575,
+      "title": "Industrial Waste Management",
+      "credits": 3,
+      "description": "Surveys and analysis, pollution prevention, regulatory requirements, treatment and disposal of liquid, gaseous and solid residues."
+    },
+    {
+      "number": 576,
+      "title": "Environmental Transport Processes",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHE576"
+      ],
+      "requisites": {
+        "previous": [
+          "CE475"
+        ]
+      },
+      "description": "Fundamentals of chemical transport in engineered environments, such as biofilm reactors, and natural systems including aquifers and rivers. C E 576C E 576 Environmental Transport Processes (3)Environmental Transport Processes covers the fundamental of mass transport of chemicals between air, water, soil, and biota. Material is divided into three subject areas: mass transfer theory, transport processes related to engineered reactors, and transport in the natural environment. The focus of the course is on chemical calculations particular to dilute systems, with emphasis on quantifying chemical transport rates and distributions in natural and engineered environments. Special topics of interest to environmental engineers include biofilm models, bioreators, chemical partitioning in thin fluid film bioreactors, and fate of anthropogenic chemicals from spills and discharges into the environment (i.e., rivers, lakes, and groundwaters).Faculty: Bruce E. Logan"
+    },
+    {
+      "number": 577,
+      "title": "Treatment Plant Design",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Design of works for the treatment of water and wastewater for municipalities and industries."
+    },
+    {
+      "number": 578,
+      "title": "Groundwater Remediation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE475"
+        ]
+      },
+      "description": "Application of fundamental physical/chemical/biological processes in natural and engineered systems for remediation of contaminated soil and groundwater."
+    },
+    {
+      "number": 579,
+      "title": "Environmental Pollution Microbiology",
+      "credits": 3,
+      "description": "Fundamentals of microorganisms in water and wastewater treatment; indicators of pollution; activities of microorganisms in polluted waters, including biogeochemical cycles."
+    },
+    {
+      "number": 580,
+      "title": "Hydrodynamic Mixing Processes",
+      "credits": 3,
+      "description": "Physical mixing processes in rivers, estuaries, lakes, and oceans. Analytic methods and computational modeling. C E 580C E 580 Surface Water Quality Models (3) Hydrodynamic Mixing Processes is concerned with the transport and dispersal of tracers in natural water and air environments. It straddles the boundary between traditional civil engineering fluid mechanics (concerned with water quantity) and environmental engineering (concerned with water quality). Emphasis is placed on understanding the physical hydrodynamic processes responsible for tracer dispersal and application to practical problems through use of freely-available numerical models."
+    },
+    {
+      "number": 581,
+      "title": "Civil Infrastructure Asset Management",
+      "credits": 3,
+      "description": "This course provides students with comprehensive knowledge of civil infrastructure asset management at the systems level - from state-of-the-practice to research frontiers. Particular emphasis is placed on transportation and networked infrastructure across multiple modes, including pavements, bridges, geotechnical structures, roadside appurtenance and signs, waterways, airfields, railways, and pipelines. Applications to other civil infrastructure assets (e.g., dams) are also considered. The life-cycle management of public infrastructure has become increasingly critical in the 21st century. For most countries, the infrastructure to support various modes of transportation - railways, roadways, bikeways, pedestrian facilities, pipelines, waterways, and airfields - is the most valuable publicly owned infrastructure. Transportation infrastructure asset management, or civil infrastructure asset management, is the systematic process of making decisions regarding the construction, maintenance, repair, and replacement of infrastructure components to maximize the functional performance of the system within economic constraints of both agencies and users. In this course, the key components of an effective infrastructure asset management system are examined in the context of contemporary and future challenges--including sustainability, resilience, climate change, autonomous vehicles and smart infrastructure, and equity."
+    },
+    {
+      "number": 582,
+      "title": "Pavement Design and Analysis",
+      "credits": 3,
+      "description": "Viscoelastic analysis; non-linear analysis; fatigue and permanent deformation; back-calculation of layer moduli; mechanistic-empirical design methods."
+    },
+    {
+      "number": 583,
+      "title": "Bituminious Materials and Mixtures",
+      "credits": 3,
+      "description": "Composition, physical behavior, production, and performance of bituminous materials and mixtures."
+    },
+    {
+      "number": 584,
+      "title": "Concrete Materials and Properties",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "AE221",
+              "CE336"
+            ]
+          }
+        ]
+      },
+      "description": "Study of concrete properties and associated variables, prediction models, testing, preventative measures, pozzolans, admixtures."
+    },
+    {
+      "number": 585,
+      "title": "Advanced Characterization of Cementitious Materials",
+      "credits": 3,
+      "description": "This graduate level course will familiarize students with advanced experimental and characterization techniques that are commonly used for studying cement and concrete materials. In addition, students will learn and practice on several advanced topics related to cement chemistry. The methods that are commonly covered include electron microscopy, X-ray diffraction, thermogravimetric analysis, mercury porosimetry, gas adsorption and BET, particle charcterization, isothermal calorimetry, and thermodynamic modeling. Students will learn the principles and theories behind each technique as well as the correct methods for sample preparation and data analysis that are unique to cementitious materials. Students will learn and practice these techniques through reading assignments, interactive classroom discussions, laboratory demonstrations, and a term project."
+    },
+    {
+      "number": 587,
+      "title": "Computational Ecohydrology",
+      "credits": 3,
+      "description": "Ecohydrology is an integrative science that studies mutual interactions between hydrological, biogeochemical, and ecological processes. The lectures of the course will discuss the undamental processes controlling the flow of water in the biosphere (in land, atmosphere, soil, and plants) and the interactions with ecological processes, implications of ecohydrological feedbacks covering broad range of issues including global environmental change, land use change, global desertification/land degradation, urbanization, soil erosion, and the food-energy-water nexus. The computational lab will provide hands-on experience on ecohydrological analysis with geographic information system software and ecohydrologic model. The course will also introduce students to parallel computing and optimization methods."
+    },
+    {
+      "number": 589,
+      "title": "Critical Zone Science Seminar",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "GEOSC589",
+        "SOILS589"
+      ],
+      "description": "This course will explore the foundations, discoveries, and applications linked to the Critical Zone concept through primary literature, class discussions, and original student projects. We will start by spending one week each on the four foundational science domains that are woven together to make Critical Zone science: hydrology, geoscience, soil science, and ecology. Then we will spend several weeks highlighting key discoveries that arise from the interdisciplinary Critical Zone perspective. The end of the class explores whether the Critical Zone science perspective might have useful applications for land and water management. Throughout the class, students take a co-leadership role with the instructors in terms of selecting readings, lecturing, and designing active learning allied with key concepts."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "title": "Environmental Engineering Seminar",
+      "credits": 1,
+      "description": "Seminar topics selected by faculty and students based on research interests on topics related to environmental engineering and science. C E 591C E 591 Environmental Engineering Seminar (1) This is a seminar course offered primarily for graduate students in Environmental Engineering, although other graduate students with interests in environmental research take this course. Graduate students may receive only 1 credit of this seminar towards a degree in Environmental Engineering, however, they are encouraged to register and attend every semester during their graduate career. This course is offered for 1 credit for both fall and spring semesters. Students making presentations receive letter grades, while others receive a satisfactory/unsatisfactory grade.Seminar topics are selected by faculty and students based on research interests on topics related to environmental engineering and science. Most of the talks will be by environmental engineering graduate students. However, during the semester there will typically be three outside speakers that will be invited to give talks. Students in this class are expected to meet with these outside speakers in the laboratory to discuss their own research projects.Students in this class give short presentations on their research topics. Each presentation should be about 20 minutes in length, allowing for 10 minutes of questions concerning the technical content of the presentation. The rest of the class is sued for general discussion. Students are encouraged to give a seminar even though they have not completed all of their research (i.e. prior to their defense). Feedback from faculty and other students in this informal setting can be used to help improve research ideas and stimulate new ideas and research directions during the course of their research work."
+    },
+    {
+      "number": 592,
+      "title": "Environmental Engineering & Science Topics",
+      "credits": 1,
+      "description": "Current topics in environmental engineering and science. C E 592C E 592 Environmental Engineering & Science Topics (1) This is a literature review course for graduate students interested in topics related to environmental engineering. The subject of this seminar changes each semester. Examples of topics include: membrane bioreactors; biological hydrogen production; metal reduction by soil bacteria; anaerobic respiratory pathways used by bacteria for pollutant degradation.This class is highly participation-oriented. Each week we review a single paper selected by the instructor or by a student in the class. The first two papers are selected by the instructor. Thereafter, students choose the paper. The paper must be selected one week in advance, and sufficient copies will either be brought to class or a pdf file will be provided by email to all participants one week prior to the class. The student choosing the paper will be expected to lead the discussion by: prompting others to provide a summary of the paper or of key items; suggesting areas that require closer inspection; stimulating a critical evaluation of the paper. No background is needed on this topic other than general environmental engineering courses typical of an M.S. program in Environmental Engineering."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 598,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 599,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 2
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in college teaching."
+    },
+    {
+      "number": 603,
+      "title": "Foreign Academic Experience",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Foreign study and/or research contituting progress towards the degree at a foreign university."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 835,
+      "title": "Integrated Project Management for Civil Engineers",
+      "credits": 3,
+      "description": "This course will present the project management process to students pursuing a graduate degree in Civil Engineering. The course will utilize a project/group-based learning process to teach project management's value, methodology, and application to civil and environmental engineering projects in the student's particular emphasis area (Infrastructure, Transportation Systems, or Water and Environment). Students will learn how to initiate, plan, organize, staff, direct, control, and closeout a project. Key topics to be discussed include: the role of the project manager, civil engineering project procurement/proposal development, importance and skills of communications, project team development and leadership, team conflict resolution, design management, scope management, work breakdown structure (WBS), scheduling/time management, budgeting/cost management, risk management, resource management, crisis management, earned value, project evaluation and control, and project closeout and termination."
+    }
+  ]
+}

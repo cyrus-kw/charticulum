@@ -1,0 +1,137 @@
+{
+  "subject": "ACCT",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Financial Statement Analysis",
+      "credits": 3,
+      "description": "Study of financial reporting, financial statement analysis, capital markets, asset pricing and impact of ethical, legal, regulatory and environmental concerns."
+    },
+    {
+      "number": 504,
+      "title": "Auditing Theory and Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG403"
+        ]
+      },
+      "description": "Auditing theory pertaining to the regulatory environment, risk assessment, internal controls, materiality, computerization, analytical procedures, sampling, fraud, ethics, and professional responsibilities. ACCT 504 Auditing Theory and Practice (3) This course provides in-depth coverage of the theory and practice of auditing. Topics may include the regulatory environment, risk assessment and planning, internal controls, materiality, computerized auditing, analytical procedures and sampling, accounting fraud, ethics and professional responsibilities. Students are expected to apply professional judgment in practical applications of course concepts, building on technical knowledge acquired in undergraduate accounting coursework."
+    },
+    {
+      "number": 510,
+      "title": "Business Tax Planning Theory and Practice",
+      "credits": 3,
+      "description": "Tax theory pertaining to corporations, partnerships and conduit entities, estates, trusts, ethics, and professional tax responsibilities. ACCT 510 Business Tax Planning Theory and Practice (3) This course provides in-depth coverage of the theory and practice of tax planning for corporations, partnerships and other related pass-through entities. Topics will include tax research, corporate formation and capital structure, corporate non-liquidating distributions, corporate acquisitions and reorganizations, consolidated tax returns, partnership formation and operation, special partnership issues, S corporations, taxation of gifts, estates and trusts, and professional responsibilities and ethics."
+    },
+    {
+      "number": 532,
+      "title": "Accounting Information and Decision Systems",
+      "credits": 3,
+      "description": "The study of business processes, transactions cycles, and internal control structure with an emphasis on computerized accounting information systems. ACCT 532 Accounting Information and Decision Systems (3) The course includes the study of business processes, transactions cycles, and internal control structure with an emphasis on computerized accounting information systems. The course explores the need for communication of information across functional areas to meet an organization's contemporary auditing, professional and legal considerations. The role of information systems is demonstrated by a focus on reporting objectives, management needs, transaction trails, documentation, security, internal controls, and the integration of accounting systems in the evaluation and selection of software."
+    },
+    {
+      "number": 540,
+      "title": "Accounting for Managerial Decisions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCT501"
+        ]
+      },
+      "description": "Application of accounting to monitoring and improving the internal operation of an organization. ACCT 540ACCT 540 Managerial Accounting (3) Accounting is the language of economic activity. Managers in all organizations - business, government, and not-for-profit - use accounting information to make decisions. As such, managerial accounting is an important competency area for MBA graduates.Managerial Accounting addresses resource-related questions from a cost perspective. Relevant issues include resources consumed and the related cost of producing goods and providing services, and the effectiveness and efficiency of resource usage."
+    },
+    {
+      "number": 545,
+      "title": "Strategic Cost Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCT540"
+        ]
+      },
+      "description": "Current managerial accounting topics such as activity-based costing, theory of constraints, performance measures and their use in organizations."
+    },
+    {
+      "number": 550,
+      "title": "Professional Responsibilities and Ethics in Accounting",
+      "credits": 3,
+      "description": "The study of ethical systems and ethical decision making and their application in Accounting. ACCT 550 Professional Responsibilities and Ethics in Accounting (3) This course provides students with a foundation in professional codes of conduct and ethics adopted by professional associations and licensing boards for accountants, auditors, and fraud examiners. Topics include research into and discussions of selected historical and contemporary ethical cases and issues as they relate to accounting and business. The course includes an introduction to the concepts of ethical reasoning, integrity, objectivity, independence, core values, and professional issues in accounting. The course provides a working knowledge of ethical and justice theories on which students will be able to build as their careers progress. Some of the ethical issues that they may have to address include corporate social responsibility, distributive justice, accounting and economic development, accounting and the environment, professionalism, whistleblowing, and tax avoidance and evasion. Students will gain an understanding of the ethical foundations from which they can address the ethical issues that they will face as a professional."
+    },
+    {
+      "number": 561,
+      "title": "Financial Statement Analysis II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCT501"
+        ]
+      },
+      "description": "The exploration of conventional and advanced methods of analyzing financial statements, including earnings quality and financial distress assessment. ACCT 561ACCT 561 Financial Statement Analysis II (3) The objective of this course is to explore conventional and advanced analytical methods of analyzing financial statements. Expanding on the material covered in a financial accounting or financial statement analysis course and using actual financial statements, students: � review and apply the traditional methods for analyzing financial statements, such as ratio analysis, trend analysis, and common-size analysis � apply advanced tools for analyzing financial statements, such as financial distress prediction models and earning manipulation prediction models � evaluate accounting policies and disclosures and their impact on the financial statements through the assessment of earnings qualityEvaluation methods include case studies of actual companies and a comprehensive project to analyze the financial statements of a publicly-traded company. This course typically will be offered once a year."
+    },
+    {
+      "number": 572,
+      "title": "Financial Reporting I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG472"
+        ]
+      },
+      "description": "Accounting theory and practice for reporting consolidations, foreign currency transactions, and preparing financial statements for governmental and NGOs. ACCT 572 Financial Reporting I (3) This course covers accounting theories and procedures as they pertain (a) to the preparation of financial statements for consolidated entities, (b) to the use of foreign currency and (c) to the financial reporting of activities of governmental and of not-for-profit entities. Contemporary reporting issues are reviewed and explored. This course may utilize textbooks, lectures and/or cases. It is guided by financial reports. It explores the means of preparing certain financial statements and the ways of interpreting them. This course is recommended for students who did not take Advanced Accounting and/or Governmental Accounting at the undergraduate level."
+    },
+    {
+      "number": 573,
+      "title": "Financial Reporting II",
+      "credits": 3,
+      "description": "Topics involving consolidated financial statements, special purpose entities, derivative financial instruments, and use of the Financial Accounting Research System (FARS). ACCT 573 Financial Reporting II (3) This course covers (a) advanced topics related to the preparation of consolidated financial statements, (b) accounting for derivative financial instruments, (c) accounting for off-balance sheet financing and special purpose entities, and (d) the use of the Financial Accounting Research System (FARS) to explore advanced financial reporting issues. This course relies upon textbooks-based, lecture-based, and case-based learning. It is guided by financial reports. It explores the means of preparing certain financial statements and the ways of interpreting them. It is assumed that students taking this course have either completed ACCT 572 or have completed courses providing significant coverage of consolidations, foreign currency trasactions, governmental accounting and not-for-profit accounting at either the undergraduate or graduate level."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 834,
+      "title": "Information Technology (IT) Auditing",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ACCT504"
+        ]
+      },
+      "description": "This course centers on auditing elements of the information technology environment that are required for any financial or operational audit that is significantly dependent on computerized systems. This course exposes students to the key areas of IT auditing - security, system development, operations including business resilience - using a risk management and controls approach. The course helps students develop the ability to evaluate automated and manual controls within the IT infrastructure for potential impacts on critical attributes like confidentiality, availability, and privacy. Control failures will be covered to highlight the unique judgment decision making paradigm that auditing brings to the operation of the IT control environment. Finally, the IT related frameworks and regulations that exist within the United States will be examined."
+    }
+  ]
+}

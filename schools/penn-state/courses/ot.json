@@ -1,0 +1,481 @@
+{
+  "subject": "OT",
+  "courses": [
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 100,
+      "title": "Structural Foundations of Occupational Therapy",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "An overview of the structural foundations of the occupational therapy profession."
+    },
+    {
+      "number": 101,
+      "title": "Conceptual Foundations of Occupational Therapy Practice",
+      "credits": 2,
+      "description": "An overview of the conceptual foundations of occupational therapy practice. Observation of therapists in treatment settings. O T 101 Conceptual Foundations of Occupational Therapy Practice (3) The focus of the course is to provide students with the conceptual foundations of occupational therapy. These foundations form the basis for subsequent occupational therapy courses and are expanded upon in those courses. Topics will include: clinical reasoning, diversity issues, ethics and conflict management, occupation, models of O T, the Practice Framework, principles of management, and occupational therapy literature. Upon successful completion of OT 101 the student will be able to:1. Describe occupation from the perspective of an occupational therapy practitioner.2. Identify the critical differences between the models of OT theory: cognitive, biomechanical, Person Environment Occupation, and sensory integration.3. Identify cultural, contextual, and diversity issues which impact the practice of occupational therapy in a variety of practice settings and describe their impact.4. Identify and define types of clinical reasoning utilized in occupational therapy.5.. Identify professional literature appropriate to the practice of occupational therapy; read and summarize selected articles.6. Demonstrate knowledge of liability issues related to OT and the AOTA Code of Ethics and apply the code to given situations which present ethical dilemmas.7 . Identify issues common to the management of occupational therapy departments and the role of the OTA in these issues."
+    },
+    {
+      "number": 103,
+      "title": "Occupational Performance Across the Life Span",
+      "credits": 3,
+      "attributes": [
+        "US"
+      ],
+      "requisites": {
+        "previous": [
+          "OT101"
+        ]
+      },
+      "description": "Analysis of occupations from birth to death including descriptions of occupational performance and factors which influence performance. O T 103 Occupational Performance Across the Life Span (3)The focus of this course is an in-depth understanding of occupations across the life span. Students engage in an analysis of occupations including: activities of daily living, instrumental activities of daily living, education, work, play, leisure, and social participation. Specific descriptors are used to discuss occupational performance from the perspective of the Occupational Therapy Practice Framework. Areas which influence performance skills and patterns are studied and applied. Topics include: areas of occupations engaged in by individuals from birth to death; performance skills and patterns, context, activity demands, and client factors which impact occupational performance, definitions of grading, adapting, and analyzing occupational performance to support meaningful and socially relevant participation in day-to-day occupations. This course is required in the accredited 20T major and provides the foundation for understanding and applying the concepts related to occupations within the occupational therapy assistant intervention courses which follow. Evaluation methods include: written examination, and graded written/oral assignments. Enrollment is limited to students admitted to the 20T major."
+    },
+    {
+      "number": 195,
+      "suffix": "E",
+      "title": "Fieldwork Level I Experience in Occupational Therapy",
+      "credits": 1,
+      "description": "This is the first fieldwork level I experience. It involves observation and engagement with individuals and/or groups to develop a better understanding of occupational performance, challenges and occupation-based interventions. The purpose is to process the information learned in didactic coursework as related practice. An emphasis is placed on peer collaboration, professionalism and interactions with clients, on-site providers, and/or family members."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 205,
+      "title": "Group Process Across The Lifespan",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT103",
+          "BIOL161",
+          "BIOL162",
+          "BIOL163",
+          "BIOL164"
+        ],
+        "concurrent": [
+          "OT207",
+          "OT209"
+        ]
+      },
+      "description": "The course addresses concepts & theories related to group processes and dynamics within the OT therapeutic context. Topics addressed in the course, include but are not limited to: types of groups, group roles, leadership styles, theory of group development & implementation, group norms, and the selection of appropriate activities based on age and occupational performance areas or components, safety, management of the environment, and time management."
+    },
+    {
+      "number": 207,
+      "title": "Assistive Technologies and Methods of Adaptation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT103",
+          "BIOL161",
+          "BIOL162",
+          "BIOL163",
+          "BIOL164"
+        ],
+        "concurrent": [
+          "OT205",
+          "OT209"
+        ]
+      },
+      "description": "Addresses a variety of assistive technology and assistive devices people use to assist them in completing daily and life occupations. Students engage several assistive technologies and learn to identify, create, and practice implementation of adaptations for clients that optimize occupational performance. Students will be expected to identify, describe, explain, and demonstrate knowledge and skills related to assistive technology and methods of adaptation along with client and caregiver safety."
+    },
+    {
+      "number": 209,
+      "title": "Management, Leadership and Ethics in Occupational Therapy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT103",
+          "BIOL161",
+          "BIOL162",
+          "BIOL163",
+          "BIOL164"
+        ],
+        "concurrent": [
+          "OT205",
+          "OT207"
+        ]
+      },
+      "description": "Focus on management, leadership and ethics in occupational therapy practice will be addressed. Importance of intraprofessional and interprofessional collaboration, as well as, reimbursement and policies related to the delivery of services will be emphasized. A keen understanding of the occupational therapy practitioner-client relationship driven by therapeutic use of self will be applied to all aspects the teaching-learning process. Interprofessional and intraprofessional collaborative practice will be addressed, as well as, the essentials of advocacy and professionalism."
+    },
+    {
+      "number": 210,
+      "suffix": "W",
+      "title": "Clinical Reasoning and Documentation in Occupational Therapy",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "OT205",
+          "OT207",
+          "OT209",
+          "OT195E"
+        ],
+        "concurrent": [
+          "OT212",
+          "OT214",
+          "OT216",
+          "OT295E"
+        ]
+      },
+      "description": "This courses entails a broad scope experience in clinical reasoning strategies, proficient writing and documentation skills required by the occupational therapy assistant across a wide variety of practice settings. The objective of this course is to provide intensive & rigorous teaching-learning opportunities for students to utilize verbal and written clinical reasoning to facilitate occupation-based assessments, interventions and discharge planning. Additionally, student will be able to demonstrate knowledge of the use of technology in practice for electronic documentation, virtual environments, and telehealth platforms."
+    },
+    {
+      "number": 212,
+      "title": "Occupational Therapy for Child & Adolescent Health",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "OT205",
+          "OT207",
+          "OT209",
+          "OT195E"
+        ],
+        "concurrent": [
+          "OT210W",
+          "OT214",
+          "OT216",
+          "OT295E"
+        ]
+      },
+      "description": "Students will utilize clinical reasoning to facilitate occupation-based interventions that address client factors as related to conditions associated or the prevention of such with children and adolescents. Focused interventions will include areas of Course Justification occupation, performance skills, performance patterns, contexts and environments. Students learn about and gain skills related to occupational therapy evaluation, intervention, and documentation related to conditions associated with children & adolescents."
+    },
+    {
+      "number": 214,
+      "title": "Occupational Therapy for Psychosocial and Behavioral Health",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "OT205",
+          "OT207",
+          "OT209",
+          "OT195E"
+        ],
+        "concurrent": [
+          "OT210W",
+          "OT212",
+          "OT216",
+          "OT295E"
+        ]
+      },
+      "description": "Students will utilize clinical reasoning to facilitate occupation-based interventions that address client factors as related to psychosocial and behavioral health. Focused interventions will include areas of occupation, performance skills, performance patterns, contexts and environments. In-depth work will be engaged, as related to psychosocial and behavioral health interventions and programming in various clinical and community settings with individuals and groups. Overall, students will learn about and gain skills related to occupational therapy evaluation, intervention, doc"
+    },
+    {
+      "number": 216,
+      "title": "Occupational Therapy for Physical Health and Rehabilitation",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "OT205",
+          "OT207",
+          "OT209",
+          "OT195E"
+        ],
+        "concurrent": [
+          "OT210W",
+          "OT212",
+          "OT214",
+          "OT295E"
+        ]
+      },
+      "description": "Students will utilize clinical reasoning to facilitate occupation-based interventions that address client factors as related to physical health and rehabilitation. Focused interventions will include areas of occupation, performance skills, performance patterns, contexts and environments. Students learn about and gain skills related to occupational therapy evaluation, intervention, and documentation related to physical health and rehabilitation. Students will be expected to identify, describe, explain, and demonstrate knowledge and skills related to physical health and rehabilitation along with client and caregiver safety."
+    },
+    {
+      "number": 295,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 6
+      }
+    },
+    {
+      "number": 295,
+      "suffix": "B",
+      "title": "Field Experience in Occupational Therapy II",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "description": "Part II of supervised experience in select occupational therapy settings in the role of an occupational therapy assistant; seminars included."
+    },
+    {
+      "number": 295,
+      "suffix": "E",
+      "title": "Fieldwork Level I Experience in Occupational Therapy",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "OT195E"
+        ],
+        "concurrent": [
+          "OT210W",
+          "OT212",
+          "OT214",
+          "OT216"
+        ]
+      },
+      "description": "This is the second fieldwork level I experience taken alongside of coursework during the 4th semester. It involves observation and engagement with individuals and/or groups to develop a better understanding of occupational performance, challenges and occupation-based interventions. The purpose is to apply knowledge and skills learned in didactic coursework to practice. An emphasis is placed on peer collaboration, professionalism and interactions with clients, on-site providers, and/or family members."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 395,
+      "suffix": "A",
+      "title": "Fieldwork Level II Experience in Occupational Therapy",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "description": "This is the first 8-week supervised fieldwork experience in a community or clinical based setting. Level II fieldwork may be completed in acute care facilities, rehabilitation facilities, out-patient centers, behavioral/mental health facilities, school systems, home health agencies, outpatient centers, or skilled nursing facilities. Level II fieldwork includes hands-on experience with individuals and/or groups. Knowledge of the occupational therapy processes, professional conduct, and effective communication between supervisor and student is essential to accomplish fieldwork goals and objectives. The goal of Level II Fieldwork is to develop competent, entry-level, generalist occupational therapy assistants."
+    },
+    {
+      "number": 395,
+      "suffix": "B",
+      "title": "Fieldwork Level II Experience in Occupational Therapy",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "requisites": {
+        "previous": [
+          "OT395A"
+        ]
+      },
+      "description": "This is the second 8-week supervised fieldwork experience in a community or clinical based setting. Level II fieldwork may be completed in acute care facilities, rehabilitation facilities, out-patient centers, behavioral/mental health facilities, school systems, home health agencies, outpatient centers, or skilled nursing facilities. Level II fieldwork includes hands-on experience with individuals and/or groups. Knowledge of the occupational therapy processes, professional conduct, and effective communication between supervisor and student is essential to accomplish fieldwork goals and objectives. The goal of Level II Fieldwork is to develop competent, entry-level, generalist occupational therapy assistants."
+    },
+    {
+      "number": 495,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      }
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 810,
+      "title": "Applied Anatomy, Physiology, and Neuroscience in Occupational Therapy",
+      "credits": 4,
+      "description": "The organization, development, and function of the nervous, musculoskeletal, cardiovascular, respiratory, and immune and lymphatic systems of the human body will be examined. The relationship between these systems in terms of their function on occupational performance across the lifespan will be studied. In conjunction, with exploration of movement and brain work of humans, examination of the development, assessment, selection, use of technologies, and modification of environments to enable and enhance participation in meaningful occupation will be applied throughout the course content."
+    },
+    {
+      "number": 820,
+      "title": "Leadership, Management, and Collaboration in Occupational Therapy",
+      "credits": 3,
+      "description": "Mindful leadership and organizational management processes applied to occupational therapy service delivery will be the focus of the course. Leadership in personnel relationships, systems analysis, program planning, budgeting, advocating for occupational therapy services, and ethical and legal issues will be addressed. Topics are viewed within the perspective of the dynamics of the current health and community systems of occupational therapy practice."
+    },
+    {
+      "number": 830,
+      "title": "Professional Reasoning: The Flow of Occupation-based Skills and Knowledge",
+      "credits": 4,
+      "description": "Synthesis and integration of professional reasoning, skills, and knowledge required to be positive agents of innovation and/or change occupational therapy education, practice, and research."
+    },
+    {
+      "number": 840,
+      "title": "Occupational Narratives of Mental and Behavioral Health",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT810",
+          "OT820",
+          "OT830"
+        ]
+      },
+      "description": "Explores the complex interactions of mental and behavioral health as related to the mind, spirit, and self. Occupational therapy theory and practice are studied and applied to the continuum of mental and behavioral health across the lifespan through the lens of occupational coaching. Human functioning and occupational implications of mental and behavioral conditions of individuals, groups, and society in various environmental and social contexts will be explored."
+    },
+    {
+      "number": 850,
+      "title": "The Nature of Human Occupation: Infant to Young Adult",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT810",
+          "OT820",
+          "OT830"
+        ]
+      },
+      "description": "Examines occupations, contexts, performance patterns, performance skills, and client factors for infants to young adults. The occupational therapy process is applied for persons, groups, and populations related to methods to address the complex nature of occupation and how it contributes to occupational performance related to disease, injury, and well-being."
+    },
+    {
+      "number": 860,
+      "title": "The Nature of Human Occupation: Adult to Older Adult",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT810",
+          "OT820",
+          "OT830"
+        ]
+      },
+      "description": "Examines occupations, contexts performance patterns performance skills, and client factors for adult to older adult. The occupational therapy process is applied for persons, groups, and populations related to methods to address occupational performance related to disease, injury, and well-being."
+    },
+    {
+      "number": 870,
+      "title": "Contemporary Occupational Therapy Practice",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "OT840",
+          "OT850",
+          "OT860"
+        ],
+        "concurrent": [
+          "OT895E"
+        ]
+      },
+      "description": "Focused exploration on contemporary and developing areas of occupational therapy practice for individuals, groups, and society. Teaching by faculty will be expanded upon in an area of occupational therapy practice of special interest to the student."
+    },
+    {
+      "number": 880,
+      "title": "Occupational Therapy Coaching in Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT870",
+          "OT895E"
+        ],
+        "concurrent": [
+          "OT895A"
+        ]
+      },
+      "description": "This course is the first of two courses where the student creates an occupational therapy coaching practice portfolio, supported by systemic review of the literature related to student's area of interest. Students are required to demonstrate critical thinking along with the ability to synthesize information gained through didactic and fieldwork components of the curriculum. This is accomplished through a practice-based coaching portfolio alongside of a systemic review of the literature."
+    },
+    {
+      "number": 885,
+      "title": "Master Practice Scholar in Occupational Therapy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT880",
+          "OT895A"
+        ],
+        "concurrent": [
+          "OT895B"
+        ]
+      },
+      "description": "This is the second of two courses focused on occupational therapy coaching practice portfolio. This course serves as the culminating experience in the occupational therapy program. Students are required to demonstrate critical thinking along with the ability to synthesize information gained through didactic and fieldwork components of the curriculum. This is accomplished through a practice-based coaching portfolio alongside of a systemic review of the literature. The highlight of this course is the design & presentation of a professional poster to campus & greater community."
+    },
+    {
+      "number": 895,
+      "suffix": "A",
+      "title": "Part I: Fieldwork Level II Experience",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "OT870",
+          "OT895E"
+        ],
+        "concurrent": [
+          "OT880"
+        ]
+      },
+      "description": "Part I: Supervised Level II Fieldwork in occupational therapy practice; seminars included."
+    },
+    {
+      "number": 895,
+      "suffix": "B",
+      "title": "Part II: Fieldwork Level II Experience",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "OT880",
+          "OT895A"
+        ],
+        "concurrent": [
+          "OT885"
+        ]
+      },
+      "description": "Part II: Supervised Level II Fieldwork in occupational therapy practice; seminars included."
+    },
+    {
+      "number": 895,
+      "suffix": "E",
+      "title": "Fieldwork Level I & Seminar: The Nature of Human Occupation Across the Lifespan",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "OT840",
+          "OT850",
+          "OT860"
+        ],
+        "concurrent": [
+          "OT870"
+        ]
+      },
+      "description": "Level I fieldwork is intended to introduce students to fieldwork, apply knowledge to practice, and develop understanding of the needs of clients."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "subject": "DAAN",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Quantitative Methods",
+      "credits": 3,
+      "description": "This course aims to provide essential quantitative skills required for advanced studies and practical applications that are important in algorithm optimization, signal processing, data manipulation, analysis, and data-driven decision making under uncertainty. It covers a range of topics including vector and matrix operations, advanced calculus with a focus on differentiation and integration techniques, Fourier transformations, and basic statistics and probability."
+    },
+    {
+      "number": 501,
+      "title": "Analytics Research and Problem Framing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT500"
+        ]
+      },
+      "description": "Students in this course will explore the elements of the research process within quantitative, qualitative, and mixed methods approaches as it applies to research into data analytics and its use. The ethical principles and challenges of research will be covered including human-subject research guidelines and the Institutional Review Board approval process. Students will use these theoretical underpinnings to begin to critically review literature in the analytics domain, determine how research findings are useful in forming their understanding of their work, and place their own research within the context of the extant literature."
+    },
+    {
+      "number": 545,
+      "title": "Data Mining",
+      "credits": 3,
+      "description": "Practical benefits of data mining will be presented; data warehousing, data cubes, and underlying algorithms used by data mining software."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Thesis Research"
+    },
+    {
+      "number": 810,
+      "title": "Artificial Intelligence in Practice",
+      "credits": 3,
+      "description": "This course offers a comprehensive exploration of the foundational concepts, techniques, and applications of Artificial Intelligence (AI). Designed to cater to a wide range of learners, including those with limited programming experience, this course emphasizes practical hands-on learning. Students will delve into key AI topics such as search algorithms, multi-agent systems, data processing, machine learning, deep learning, natural language processing, computer vision, and reinforcement learning. The course also features a group project, enabling participants to collaborate on solving real-world problems using AI. The course is structured to be accessible for those without extensive programming experience, utilizing low-code/no-code tools to facilitate learning and hands-on case studies from accounting, finance, marketing, innovation, creative work and entrepreneurship."
+    },
+    {
+      "number": 820,
+      "title": "Generative Artificial Intelligence",
+      "credits": 3,
+      "description": "Generative AI is a transformative technology that is reshaping industries such as healthcare, finance, education, and entertainment. Understanding its technical fundamentals and ethical implications is essential for any AI practitioner or leader. This comprehensive course is designed to provide students with in-depth knowledge of generative AI, from foundational models to advanced techniques, while emphasizing the importance of ethical considerations. Students will gain hands-on insights into the intricacies of building, training, and optimizing foundation models, exploring the diverse applications of generative AI, and understanding its broader impact on society. The course emphasizes a human-centric approach, ensuring that the development and deployment of AI technologies align with ethical standards and societal values. The course is structured to be accessible for those without extensive programming experience, utilizing low-code/no-code tools to facilitate learning and hands-on case studies from accounting, finance, marketing, innovation, creative work and entrepreneurship."
+    },
+    {
+      "number": 822,
+      "title": "Data Collection and Cleaning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT500"
+        ]
+      },
+      "description": "This course focuses on the tools and techniques required for collecting data and preparing them for further analysis. The presence of incorrect and inconsistent data can significantly distort the results of the analysis often negating the potential benefits of information-driven approaches. As a result a variety of research over the last decades has focused on data cleansing: computational procedures to automatically or semi-automatically identify - and, when possible, correct - errors in large data sets. The goal of this course is to explore and discuss different data collection tools and techniques in addition to learning skills for retrieving data from existing databases. To further enforce data quality and reliability this course will cover techniques for error detection and data cleaning on large databases. Students will learn the available tools and techniques for data collection including automated data collection for databases, retrieving data from available databases, data preparation and cleansing techniques, data quality and reliability and finally learn techniques to identify issues in data collection and how to clean the data."
+    },
+    {
+      "number": 825,
+      "title": "Large-Scale Database and Warehouse",
+      "credits": 3,
+      "description": "This course provides a broad exploration of current and emerging practices for handling large quantities of data using large-scale database systems. Data is being generated at an exponential rate and handling and analyzing such data needs highly customized tools and processes to handle data-intensive tasks. In particular, this course investigates methods to effectively design, develop, and implement the two dominant types of large-scale databases: data warehouses for dimensional data and NoSQL databases for loosely-structured data. Students will learn to design a wide variety of large database solutions, apply extract-transform-load (ETL) strategies, maintain and evolve large-scale databases, explore the fundamentals of NoSQL systems, and understand the properties of different database technologies against atomicity, consistency, isolation, and durability (ACID) properties."
+    },
+    {
+      "number": 826,
+      "title": "LARGE SCALE DATABASES FOR REAL-TIME ANALYTICS",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "DAAN825"
+        ]
+      },
+      "description": "This course provides an exploration of current and emerging big data solutions for handling large quantities of data in real-time. In particular, this course investigates methods to design, develop, and implement several systems used for real-time data analysis and storage such as document databases, column-based databases, queueing systems, and real-time processing systems. Students will learn to design a wide variety of large database solutions, and how to interconnect those systems to create a lambda architecture. Using this platform, students will collect, process, store, and report real-time data."
+    },
+    {
+      "number": 830,
+      "title": "Applied Machine Learning",
+      "credits": 3,
+      "description": "This course covers practical knowledge and skills in supervised machine learning and data mining, emphasizing real-world business applications. Students will learn how to acquire, explore, and preprocess data, apply supervised and unsupervised learning techniques, and understand the importance of fairness and explainability in AI. Utilizing low-code/no-code tools, the course fosters hands-on experience through group projects, enabling students to make data-driven decisions and present actionable insights effectively with applications from accounting, finance, marketing, innovation, creative work and entrepreneurship."
+    },
+    {
+      "number": 840,
+      "title": "Responsible AI",
+      "credits": 3,
+      "description": "Responsible AI involves developing, deploying, and utilizing artificial intelligence (AI) systems in ways that are ethical, transparent, accountable, and aligned with societal values. This course focuses on understanding and applying the principles and practices of Responsible AI, ensuring that AI technologies are developed and used in ways that are fair, unbiased, and beneficial to individuals, communities, and society. Through practical exercises and real-world scenarios, students will learn to conduct bias audits, implement governance frameworks, conduct stakeholder consultations, and form cross-disciplinary teams to tackle the multifaceted challenges associated with AI ethics. The course is structured to be accessible for those without extensive programming experience, utilizing low-code/no-code tools to facilitate learning and application."
+    },
+    {
+      "number": 846,
+      "title": "Network and Predictive Analytics for Socio-Technical Systems",
+      "credits": 3,
+      "internalEquivalents": [
+        "INSC846"
+      ],
+      "description": "The objective of this course is to provide a foundation in the principles of network and predictive analytics along with hands-on experience with statistical analysis software for studying the interrelatedness of cyber-social and cyber-technical aspects of our society as a whole that have transformed physical communities into virtual communities. Fundamental principles of network and predictive analytics, the importance of studying network structures, and how network structures can facilitate communication, coordination and cooperation will be discussed. Statistical analysis software will be used for analyzing the structure of an organization or a society as whole to detect and capture the dynamic patterns of group membership and structure, and predict threats, attacks, criminal behavior and evolution of criminal networks."
+    },
+    {
+      "number": 850,
+      "title": "Autonomous AI Agents",
+      "credits": 3,
+      "description": "This course delves into the theoretical underpinnings and practical implementation of intelligent agents and autonomous AI systems. Students will learn to design systems that can perceive complex environments, formulate long-horizon plans, and execute multi-step workflows with minimal human intervention. The course covers foundational agentic concepts, advanced transformer-based language models, sophisticated prompt engineering, hierarchical planning, memory systems, and robust tool integration. A significant focus will be placed on developing modular Large Language Models (LLM) based-agent systems and addressing the ethical and governance challenges inherent in autonomous AI. This course prepares students to be leaders in the design, implementation, and responsible deployment of AI Agent with cutting-edge platforms."
+    },
+    {
+      "number": 860,
+      "title": "AI-Driven Automation and Planning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I850"
+        ]
+      },
+      "description": "This course examines the theoretical foundations and practical methodologies for automating complex workflows using both symbolic and data-driven AI techniques. Students will explore classical planning formalisms, Large Language Model (LLM)-guided task planning, and workflow orchestration and scheduling to design, implement, and govern end-to-end automated systems. The course also includes topics such as process mining, multimodal and IoT-driven automation. Ethical, security, and regulatory considerations are integrated throughout, preparing graduates to lead responsible AI automation initiatives across diverse sectors."
+    },
+    {
+      "number": 862,
+      "title": "Analytics Programming in Python",
+      "credits": 3,
+      "description": "This course will explore the development of analytics systems and the application of best practices and established software design principles using the Python programming language and its several toolkits. Students will manipulate, analyze and visualize complex data sets and implement statistical, machine learning, information visualization, text analysis, and social network analysis techniques through popular Python toolkits to gain insight into their data."
+    },
+    {
+      "number": 871,
+      "title": "Data Visualization",
+      "credits": 3,
+      "description": "This course provides a foundation in the principles, concepts, techniques and tools for visualizing large data sets. DAAN 871 Data Visualization (3) The course provides a foundation in the principles, concepts, techniques and tools for visualizing information in large complex data sets. Unlike scientific visualization, which focuses on the presentation of data that has a spatial or physical correspondence, data visualization focuses on mapping complex, abstract information to a physical representation. The development of effective visualization strategies is crucial for not only facilitating an understanding of large complex data sets but also for driving knowledge discovery and the decision making processes in a given domain. In this course, students will learn the key principles involved in data visualization and will explore a wide range of visualization approaches that can be applied for understanding complex data across different data types. Specifically, techniques for visualizing one-dimensional data (e.g., temporal data); two-dimensional data (e.g., geospatial data); multidimensional data (e.g., mapping relational data in n-dimensional space); hierarchies and graphs (e.g., tree structures); networks (e.g., social networks) and text (e.g., mining text and hypertext from Web) will be discussed. Emphasis will be placed on the identification of patterns, trends and differences in visualizations of data from variety of domains (e.g., science, business, engineering, social media, etc.). In addition, students will gain hands-on experience with a variety of visualization tools including: Gephi, ManyEyes, Excel, Science of Science (Sci2), Pajek, Lattix, R, Cfinder, MapEquation, NodeXL, and/or Gapminder."
+    },
+    {
+      "number": 881,
+      "title": "Data-Driven Decision Making",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT500",
+          "DAAN501"
+        ]
+      },
+      "description": "Application & interpretation of analytics for real-life decision making. DAAN 881 Data-Driven Decision Making (3) The theory and application of several quantitative decision-making tools will be studied. The usefulness of these tools will be illustrated using projects and case studies throughout the course. Emphasis will be placed on the application of the tools and techniques and the results they generate. Finding patterns in data and appropriately grouping them are essential in the extraction of information in large datasets. This course will use Principal Component Analyses to transform highly correlated sets of data by means of orthogonal transformation. Cluster analysis will be used to properly group data when working with large datasets. When the outcomes involve categorical variables, Logistic regression techniques will be used to estimate the probabilistic values of the output. The decision space will be divided into smaller regions using Regression tree analyses. When factors are too numerous and highly collinear, Partial Least Square Regression methods will be performed.Public access datasets in the healthcare, transportation and finance industries will be used to demonstrate the applications and the limitations of these techniques."
+    },
+    {
+      "number": 888,
+      "title": "Design and Implementation of Analytics Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INSC521",
+          "DAAN825",
+          "DAAN881"
+        ]
+      },
+      "description": "Design and implement data science and analytics systems using contemporary tolls and techniques."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

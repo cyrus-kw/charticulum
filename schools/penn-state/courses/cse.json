@@ -1,0 +1,697 @@
+{
+  "subject": "CSE",
+  "courses": [
+    {
+      "number": 505,
+      "title": "Writing in Computer Science and Engineering",
+      "credits": 3,
+      "description": "Writing is an integral part of a CSE student's graduate and post-graduate career. In this class, students will learn principles of good writing, including how to control information flow and emphasis, how to structure long sentences, and how to write concisely, cohesively, and coherently. Students will learn how to create a narrative about their research and structure their introduction and conclusion. Other topics that will be covered as time permits include how to write an abstract and a title, how to write a methods section, how to write mathematical sections, how to write a README for a software, how to write a referee report, and how to write text for slides for a presentation."
+    },
+    {
+      "number": 511,
+      "title": "Operating Systems Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC473"
+        ]
+      },
+      "description": "Concurrent programming; design of I/O subsystem, memory management, and user interface; kernel design; deadlocks, protection and security; case studies."
+    },
+    {
+      "number": 513,
+      "title": "Distributed Systems",
+      "credits": 3,
+      "description": "Protocol hierarchies; routing and flow control algorithms; distributed operating systems; communication and synchronization mechanisms; resource allocation problems."
+    },
+    {
+      "number": 514,
+      "title": "Computer Networks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPEN362",
+          {
+            "oneOf": [
+              "EE353",
+              "EE350"
+            ]
+          }
+        ]
+      },
+      "description": "Network subsystems, ARPANET, SNA, DECNET, network protocols (physical databank, network, transport, sessions, presentation, application), routing and congestion control, network optimization. CSE 514 CSE 514 Computer Networks (3)This course discusses the characteristics and low-level protocols of computer networks. It provides basic background, design, and evaluation skills in telecommunication and communication networks.The course will cover International Standards Organization Open System Interconnection (ISO-OSI) reference model, design issues and protocols in the data link layer, network layer and transport layer; architectures and control algorithms of local-area networks, and point-to-point networks; standards in network access protocols; models of network interconnection; and overview of networking and communication software.The course will emphasize on Internet standards such as TCP/IP and many advanced topics in networking. Students should already have some network background before taking this course. Students should also have necessary analytical and programming skills to do networking projects."
+    },
+    {
+      "number": 515,
+      "title": "Reliable Data Communications",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE565"
+      ],
+      "requisites": {
+        "previous": [
+          "STAT418"
+        ]
+      },
+      "description": "Discussion of problems and solutions for ensuring reliable and efficient communication over wired and wireless links and data networks."
+    },
+    {
+      "number": 516,
+      "title": "Mobile Networking",
+      "credits": 3,
+      "description": "This course explores the fundamental concepts, algorithms, and engineering processes of analyzing mobile telecommunication voice and data networks and provides simple analytical tools for designing and evaluating these networks. The course is divided into three parts. First, the architecture and algorithms for mobility management and service control in cellular networks is presented. Using simple queuing models, students analyze the performance of these networks and examine design trade-offs. The latest generation network (5G, etc.) is used as a case study. Second, the architecture (radio access and core network) and algorithms for mobility management in packet-based mobile telecommunications networks is presented. Finally, protocols, algorithms, and performance consideration for the mobile Internet are presented. This course focuses on the practical applications of these concepts, using real systems to illustrate architecture and protocol trade-offs. The course provides students with a venue in which to pursue research in mobile networking that complements several core areas of the graduate CSE curriculum (e.g., networks, architectures, algorithms, and formal analysis). Following the course in networking, this course enables students to learn the skills and obtain the background knowledge necessary to generate publishable research in the area of mobile networks. This course will serve as an elective for students interested in mobile networking and telecommunications."
+    },
+    {
+      "number": 517,
+      "title": "Performance Evaluation",
+      "credits": 3,
+      "description": "Tools and techniques for PE, Analytical and Simulation models, evaluation of multiprocessors, multicomputer and LANs, scheduling policies, case studies."
+    },
+    {
+      "number": 519,
+      "title": "Hardware Security",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE519"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE416",
+              "CMPEN416"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide a broad overview of topics related to hardware security. Upon completing the course, the students are expected to understand the vulnerabilities in current digital system design flow and the physical attacks to these systems; to learn that security starts from hardware design and to be aware of the tools and skills available for building secure and trusted hardware. This course will cover key research topics such as design of basic and advanced cryptographic engines, basic and advanced attacks on computer hardware, secure hardware architectures and post-Silicon computing technologies and their security challenges and opportunities. Introductory lectures will cover basic background on cryptography, authentication, secret sharing, VLSI design, test and verification."
+    },
+    {
+      "number": 521,
+      "title": "Compiler Construction",
+      "credits": 3,
+      "description": "Design and implementation of compilers."
+    },
+    {
+      "number": 522,
+      "title": "Program Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC461",
+              "CMPSC464"
+            ]
+          }
+        ]
+      },
+      "description": "This course explores the fundamental concepts, algorithms, and engineering processes of analyzing programs for correctness, security, and performance. It is intended as a course for first-year or second-year graduate students in computational majors such as computer science and computer engineering since it covers how to analyze programs rigorously based on program semantics. First, the course will cover basic static analysis algorithms, from dataflow analysis to complex points-to analysis. This part will also cover logical programming and ask students to implement static-analysis algorithms using logical programming. The next part will give an overview of the theory of static analysis, using the framework of abstract interpretation. The third part will focus on dynamic analysis and its instances such as taint tracking. The final part will discuss one application of static analysis in analyzing binary code for security. Upon successful completion of the course students will be able to demonstrate understanding of and implement the basic program analysis algorithms and be able to customize these algorithms for specific applications."
+    },
+    {
+      "number": 523,
+      "title": "Programming Languages",
+      "credits": 3,
+      "description": "This course explores advanced concepts of programming languages and how the concepts are applied to language-based security. The course first covers programming language theory, including program semantics, Induction, lambda calculus. Then, the course covers language-based techniques, such as type system and program verification, that can provably rule out incorrect/insecure programs. Finally, the course engages the students with hands-on projects to apply the techniques to solve security problems, such as analyzing information flow leakage in programs and automatic code rewriting to avoid side channel attacks. Upon completion of the course, students will demonstrate understanding of advanced programming language concepts and be ready to apply them for specific applications."
+    },
+    {
+      "number": 530,
+      "title": "Fundamentals of Computer Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPEN431"
+        ]
+      },
+      "description": "Advances in computer architecture, Pipelining, parallelism, and multiprocessing."
+    },
+    {
+      "number": 531,
+      "title": "Parallel Processors and Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE530"
+        ]
+      },
+      "description": "Parallel processor organization; basic algorithms suitable for such systems; parallel sorting and interconnection networks; applications and discussion of specific processors."
+    },
+    {
+      "number": 532,
+      "title": "Multiprocessor Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE530"
+        ]
+      },
+      "description": "Fundamental structures of multiprocessors; interprocess communications, system deadlocks and protection, scheduling strategies, and parallel algorithms; example multiprocessor systems."
+    },
+    {
+      "number": 536,
+      "title": "Fault Tolerant Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE530"
+        ]
+      },
+      "description": "Attributes of fault-tolerant systems and their definitions; realability and availability techniques; maintainability and testing techniques; practice of reliable system design."
+    },
+    {
+      "number": 539,
+      "title": "Topics in Computer Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE530"
+        ]
+      },
+      "description": "Study of current advanced issues in design, implementation and applications of complex computer systems."
+    },
+    {
+      "number": 541,
+      "title": "Database Systems I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC431W"
+        ]
+      },
+      "description": "Data models and relational database design; database integrity and concurrency control; distributed database design and concurrency control; query optimization."
+    },
+    {
+      "number": 543,
+      "title": "Computer Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC461"
+        ]
+      },
+      "description": "Specification and design of secure systems; security models, architectural issues, verification and validation, and applications in secure database management systems."
+    },
+    {
+      "number": 544,
+      "title": "System Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE543"
+        ]
+      },
+      "description": "Review current research in computer and operating system security. CSE 544 System Security (3)This course is built around the problem of authorization (access control). After a discussion of threats of systems security, we will examine the fundamental mechanism for access control, the reference monitor. We will define the principle of the reference monitor and review how it is used to implement access control. The second major topic is mandatory access control (MAC). We will examine the implementation of MAC in Linus via the Linux Security Modules (LSM) framework. This part of the class relies heavily on a case study of the SELinux system to illustrate how MAC can be implemented and how security goals can be enforced by using MAC. The third major topic focuses on how network security functions are implemented in the operating system. Such functions include authentication, firewalls, and secure communication via IPsec. The implementations of such functions in the Linux operating system will be the focus of this particular section of the course. The third major topic examines system security architectures for distributed systems. The main foci are mechanisms based on public key systems, such as trust management, integrity measurement, and web-based operating systems. We will investigate research results in these areas and hypothesize where this emerging space may evolve. The fourth major topic focuses on lower level features of operating systems and their impact on security. We will first review virtual machine systems and recent research results that indicate an emergence of virtual machine mechanisms as a practical basis for achieving strong systems security guarantees. We will then explore work on protecting access to data on systems that is resident in traditional (file systems) and unexpected (other temporary) storage locations. The final two sections, Special Topics and Wrap-Up, will cover a number of areas of importance to system security, but not really falling into the traditional system areas. This includes emerging topics such as language-based security, the use of source code analysis for achieving system security goals, host intrusion detection, and emerging areas of recent interest. These topics will change over time as interests and technology develop. We will conclude with a discussion of the major challenges and state of system security, and make predictions about the future of system security."
+    },
+    {
+      "number": 545,
+      "title": "Network Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE543"
+        ]
+      },
+      "description": "Advanced methods and technologies for network security. CSE 545 Network Security (3) CSE 545 covers the major topics and emerging trends in network security. We begin with a discussion of the basic problems, architectures and devices in current and next generation networks. This will include a discussion of how these topics relate to popular articles and the press. This part of the class relies heavily on case studies to illustrate how security impacts the social and technical aspects of the Internet and computing systems. The second major topic focuses on the use of applied cryptography supporting network protocols. This will provide a deeper view of the basics of cryptographic constructions and consider formal methods for proving their correctness. The realities and limitations of the current use of cryptography will be considered. Students will spend a considerable amount of time developing and analyzing their own security protocols. The third section of this course will focus on the management and vulnerabilities of current network environments. This will begin with a discussion of emerging authentication systems (federated authentication, graphical passwords, biometrics), and then turn to the security problems of large-scale network management. The class will then review major thrusts in network security: the management and vulnerabilities of wireless systems. The course concludes with a discussion of topical areas in network security. This is the most flexible part of the class, and will reflect the needs and desires of the instructors and students on a semester-to-semester basis."
+    },
+    {
+      "number": 546,
+      "title": "Cryptography",
+      "credits": 3,
+      "description": "Introduction to the theory and techniques of modern cryptography, with emphasis on rigorous analysis and mathematical foundations. CSE 546 Cryptography (3)This course provides an introduction to the theory and techniques of modern cryptography. The course begins by reviewing relevant mathematical tools and moves on to develop definitions and examples of secure protocols for important cryptographic tasks such as symmetric- and private-key encryption, authentication, and digital signatures. Students will be evaluated primarily on weekly problem sets designed to verify and improve their understanding of the materials. Grades will be based on problem sets, a mid-semester examination, a final examination, and class participation/lecture notes. With regard to \"lecture notes,\" students (in teams) must prepare a written summary of one lecture during the course. The goal of this exercise is to practice technical writing and exposition. This course will serve as an elective for graduate students in Computer Science & Engineering and the Post-Baccalaureate Credit Certificate Program in Computer & Network Security (under development)."
+    },
+    {
+      "number": 547,
+      "title": "Wireless and Mobile Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC443",
+              "CSE543"
+            ]
+          }
+        ]
+      },
+      "description": "While wireless communications and mobile applications have made our daily life much easier, they also bring to us various security and privacy threats that did not exist in the wired networks. This course explores the latest research literature in security and privacy of emergent wireless and mobile systems including sensor networks, smartphones, cellular networks, Internet of Things (IoT), drones, autonomous driving, and wearable devices. Students will learn the theoretical framework, analytical skills and research methodology and tools in the this field, and synthesize their knowledge to formulate security models, design security protocols, apply principled security analysis techniques for network and software flaws, and malware detection, evaluate the security and privacy threats of various mobile systems as well as the challenges and design solutions for addressing them. Research papers on these topics in recent computer-science conferences and journals will be included for reading and discussion."
+    },
+    {
+      "number": 550,
+      "title": "Numerical Linear Algebra",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATH550"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH441",
+              "MATH456"
+            ]
+          }
+        ]
+      },
+      "description": "Solution of linear systems, sparse matrix techniques, linear least squares, singular value decomposition, numerical computation of eigenvalues and eigenvectors."
+    },
+    {
+      "number": 551,
+      "title": "Numerical Solution of Ordinary Differential Equations",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATH551"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH451",
+              "MATH456"
+            ]
+          }
+        ]
+      },
+      "description": "Methods for initial value and boundary value problems; convergence and stability analysis, automatic error control, stiff systems, boundary value problems."
+    },
+    {
+      "number": 552,
+      "title": "Numerical Solution Of Partial Differential Equations",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATH552"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH404",
+          {
+            "oneOf": [
+              "MATH451",
+              "MATH456"
+            ]
+          }
+        ]
+      },
+      "description": "Finite difference methods for elliptic, parabolic, and hyperbolic differential equations; solutions techniques for discretized systems; finite element methods for elliptic problems."
+    },
+    {
+      "number": 554,
+      "title": "Error Correcting Codes for Computers and Communication",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE564"
+      ],
+      "description": "Block, cyclic, and convolutional codes. Circuits and algorithms for decoding. Application to reliable communication and fault-tolerant computing."
+    },
+    {
+      "number": 555,
+      "title": "Numerical Optimization Techniques",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATH555"
+      ],
+      "requisites": {
+        "previous": [
+          "CMPSC456"
+        ]
+      },
+      "description": "Unconstrained and constrained optimization methods, linear and quadratic programming, software issues, ellipsoid and Karmarkar's algorithm, global optimization, parallelism in optimization."
+    },
+    {
+      "number": 556,
+      "title": "Finite Element Methods",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATH556"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH502",
+          "MATH552"
+        ]
+      },
+      "description": "Sobolev spaces, variational formulations of boundary value problems; piecewise polynomial approximation theory, convergence and stability, special methods and applications."
+    },
+    {
+      "number": 557,
+      "title": "Concurrent Matrix Computation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC451",
+              "CMPSC455",
+              "CMPSC450",
+              "MATH451",
+              "MATH455"
+            ]
+          }
+        ]
+      },
+      "description": "This course discusses matrix computations on architectures that exploit concurrency. It will draw upon recent research in the field."
+    },
+    {
+      "number": 559,
+      "title": "Wireless and Mobile Sensing in the Age of IoT",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE559"
+      ],
+      "description": "This course covers state-of-the-art research on Internet of Things (IoT), with a focus on wireless networking and mobile sensing. Topics of discussion include high precision localization, GPS, smart healthcare, autonomous vehicles and drones, Augmented/Virtual Reality, Battery free communication, 5G basics, Security etc. The course begins with a basic background in linear algebra, signal processing, wireless communications in the context of applications. Thereafter, the topics will be organized into various applications and research from top notch conferences will be presented. In addition, within each application, the appropriate background and common principles underlying Bayesian Filtering, Maximum Likelihood, Sensor design basics etc will be emphasized."
+    },
+    {
+      "number": 561,
+      "title": "Data Mining Driven Design",
+      "credits": 3,
+      "internalEquivalents": [
+        "EDSGN561",
+        "IE561",
+        "IST561"
+      ],
+      "description": "The study and application of data mining/machine learning (DM/ML) techniques in multidisciplinary design. CSE 561 / EDSGN 561 / IE 561 / IST 561 Data Mining Driven Design (3) This course examines how theoretical data mining/machine learning (DM/ML) algorithms can be employed to solve large-scale, complex design problems. Knowledge Discovery in Databases (KDD) is the umbrella term used to describe the sequential steps involved in capturing and discovering hidden, previously unknown knowledge in large databases. The course begins with foundational information regarding engineering design and provides an overview of KDD and the emergence of the digital age. Students will investigate data acquisition and storage techniques where they will learn the difference between stated and revealed data as related to design. Students will construct their own databases and learn essential techniques in data base queries (SQL) and management. Data transformation techniques, such as binning and dimensionality reduction, will be examined in the data transformation section of the course. This course has a design-driven focus, which will enable students to solve real-life design challenges spanning diverse domains.Students will work on project-based exercises aimed at proposing novel data mining algorithms, or employing existing algorithms to solve design problems in fields relating to engineering, healthcare, financial markets, military systems, to name a few. Data visualization techniques will also be studied to help communicate complex data mining models in a timely and efficient manner."
+    },
+    {
+      "number": 562,
+      "title": "Probabilistic Algorithms",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE565"
+        ]
+      },
+      "description": "Design and analysis of probabilistic algorithms, reliability problems, probabilistic complexity classes, lower bounds."
+    },
+    {
+      "number": 563,
+      "title": "Network Optimization and Learning",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE563"
+      ],
+      "description": "This course targets a fundamental understanding of communication networks as well as their principled network algorithm design. We explore methods for analyzing the performance of communication networks and principled network algorithm design. In particular, we first present an overview of basic convex optimization and its application for Internet congestion control and routing design. Then, we present a stochastic network optimization framework and its application for scheduling design. Finally, we delve into a multi-agent learning framework for emerging network applications such as networking for virtual/augmented reality. By the end of this course, students will have acquired a solid theoretical foundation at the intersection of networking, optimization, and machine learning for both traditional communication networks and emerging network applications."
+    },
+    {
+      "number": 564,
+      "title": "Complexity of Combinatorial Problems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSE565"
+        ]
+      },
+      "description": "NP-completeness theory; approximation and heuristic techniques; discrete scheduling; additional complexity classes."
+    },
+    {
+      "number": 565,
+      "title": "Algorithm Design and Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC465"
+        ],
+        "concurrent": [
+          "CMPSC464"
+        ]
+      },
+      "description": "An introduction to algorithmic design and analysis."
+    },
+    {
+      "number": 566,
+      "title": "Algorithms and Data Structures in Bioinformatics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC465"
+        ]
+      },
+      "description": "This course covers elegant algorithmic and data structure techniques that underpin modern biological data analysis. Bioinformatics is a growing field with immediate implications for our understanding of biology and treatment of disease. This course covers elegant algorithmic and data structure techniques and their use in bioinformatics. The emphasis is on recurrent ideas that underpin modern biological data analysis, presented in conjunction with their biological applications. The course is suitable both for students interested in doing bioinformatics research and those interested in applications of algorithms to the natural sciences. Some of the algorithms/data-structures that may be covered include exact string matching, suffix trees, suffix arrays, de Bruijn graphs, hidden Markov models, breakpoint graphs, succinct data structures, the Burrows-Wheeler transform, the FM-index, network flow, and bidirected graphs. Some of the biological applications will include sequence alignment and assembly, cancer genomics, phylogeny, gene finding, and variation detection. No prior biological or bioinformatics knowledge is required. A basic understanding of data structures and algorithms (equivalent to CMPSC465) is a prerequisite; however, exceptionally motivated students can contact the instructor to discuss their options. This course is complementary to existing bioinformatics courses offered through other programs on campus. These courses may be taken concurrently but are not prerequisites. Prerequisites: CMPSC465 Cross Listings: BMMB 566 will be added as a cross-listed course."
+    },
+    {
+      "number": 567,
+      "title": "The Markov Chain Monte Carlo Method",
+      "credits": 3,
+      "description": "This course will offer a foundation to the Markov chain Monte Carlo (MCMC) method, focusing on the theoretical developments and algorithmic applications that give prominence to the MCMC method in science and engineering for sampling complex probability distributions."
+    },
+    {
+      "number": 569,
+      "title": "Topics in Bioinformatics",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "requisites": {
+        "previous": [
+          "CSE566"
+        ]
+      },
+      "description": "This course explores cutting-edge areas within the rapidly evolving field of bioinformatics. Designed to be taken multiple times for credit, each course offering focuses on a distinct theme or emerging topic at the intersection of biology, computer science, and data science. The course is suitable both for students interested in doing bioinformatics research and those interested in applications of algorithms to the natural sciences. It is intended to be taken after the Algorithms and Data Structures in Bioinformatics course ( CSE 566 ), which introduces the basic concepts of bioinformatics."
+    },
+    {
+      "number": 575,
+      "title": "Architecture of Arithmetic Processors",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPEN411"
+        ]
+      },
+      "description": "Algorithms and techniques for designing arithmetic processors; conventional algorithms and processor design; high-speed algorithms and resulting architectural structures."
+    },
+    {
+      "number": 577,
+      "title": "VLSI Systems Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPEN411"
+        ]
+      },
+      "description": "Engineering design of large-scale integrated circuits, systems, and applications; study of advanced design techniques, architectures, and CAD methodologies."
+    },
+    {
+      "number": 578,
+      "title": "VLSI Computer-Aided Design Tools",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPEN411"
+        ]
+      },
+      "description": "VLSI circuit design tools: placement, routing, extraction, design rule checking, graphic editors, simulation, verification, minimization, silicon compilation, test pattern generation."
+    },
+    {
+      "number": 580,
+      "title": "Foundations of Deep Learning",
+      "credits": 3,
+      "description": "Deep Neural Networks (DNNs) have revolutionized artificial intelligence, enabling machines to perceive, understand, and interact with the world in ways that were once thought impossible, from defeating world champions in complex problems to generating human-like text and creating stunning artwork. This graduate level course covers fundamental concepts in DNNs such as the expressiveness of neural networks, optimization techniques, and generalization principles. Students will also learn foundations of various neural network architectures, including feedforward networks, Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), Graph Neural Networks (GNNs), Transformers, and generative models such as Generative Adversarial Network (GANs) and diffusion models. The course also addresses crucial topics like scalability, efficient training and fine-tunning methods, accelerated inference, and advanced concepts and modern paradigms such as transfer learning, mixture of experts, and model merging. A strong background in machine learning and linear algebra is required. Through a combination of theoretical lectures and hands-on programming assignments, students will gain a deep understanding of the core principles driving deep learning, enabling them to analyze, implement, and improve state-of-the-art AI models."
+    },
+    {
+      "number": 582,
+      "title": "Natural Language Processing",
+      "credits": 3,
+      "description": "The question addressed by the field of natural language processing (NLP), or computational linguistics, is how to get computers to process human language in a useful manner, such as to extract information from text, to generate text from semantic representations, or to support human-machine interaction through language. This overview course presents natural language processing in two ways. From one perspective, it is an applied computational discipline, where the main goal is to turn language data into computable data. This makes it possible to build many applications where human language is processed, and to invent new applications. NLP is also a theoretical discipline that addresses problems in how to identify the units and structures of language, such as how to specify the vocabulary of a language, how to describe the allowable combinations of words, how to represent the meanings of words and phrases, and how to get at the implicit intentions of language users. The class covers both aspects of NLP."
+    },
+    {
+      "number": 583,
+      "title": "Pattern Recognition and Machine Learning",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE552"
+      ],
+      "description": "This course is a comprehensive overview of the fields of pattern recognition and machine learning. The content covers both classification and recursion, model selection, decision theory, information theory, linear and non-linear models, graphical models, kernel methods, mixture models and EM as well as neural networks. It assumes no previous knowledge of pattern recognition or machine learning concepts. Knowledge of multivariate calculus and basic linear algebra is required, and some familiarity with probability would be helpful."
+    },
+    {
+      "number": 584,
+      "title": "Machine Learning: Tools and Algorithms",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT584"
+      ],
+      "description": "Computational methods for modern machine learning models, including applications to big data and non-differentiable objective functions."
+    },
+    {
+      "number": 585,
+      "title": "Digital Image Processing II",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE555"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPEN455",
+              "EE455"
+            ]
+          }
+        ]
+      },
+      "description": "Advanced treatment of image processing techniques; image restoration, image segmentation, texture, and mathematical morphology."
+    },
+    {
+      "number": 586,
+      "title": "Topics in Computer Vision",
+      "credits": 3,
+      "internalEquivalents": [
+        "EE554"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPEN454",
+              "EE454"
+            ]
+          }
+        ]
+      },
+      "description": "Discussion of recent advances and current research trends in computer vision theory, algorithms, and their applications."
+    },
+    {
+      "number": 587,
+      "title": "Deep Learning for Natural Language Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC448",
+          "CSE582"
+        ]
+      },
+      "description": "Natural Language Processing (NLP) is a critical part of Artificial Intelligence and Data Science. Over the past few years, deep learning based on neural networks has become the de facto approach for a wide range of NLP tasks. In this course, we will start with foundations of deep learning including multi-layer perceptrons, backpropagation, and specialized types of neural networks for different forms of data. The second part focuses on cutting-edge NLP progress. We will start with fundamental natural language understanding tasks, then cover text generation models, and progress to applications spanning different modalities and languages. We will also discuss methods for explainability, interpretability, bias and fairness, and efficiency."
+    },
+    {
+      "number": 588,
+      "title": "Large-Scale Machine Learning: Mathematical Foundations and Applications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC448"
+        ]
+      },
+      "description": "This course covers various mathematical aspects of big and high-dimensional learning arising in data science and machine learning applications. The focus will be on building a principled understanding of randomized methods via a mixture of empirical evaluations and mathematical modeling. Specifically, we will explore large-scale optimization algorithms for both convex and non-convex optimization, dimension reduction and random projection methods, large-scale numerical linear algebra, sparse recovery and compressed sensing, low-rank matrix recovery, convex geometry and linear inverse problems, empirical processes and generalization bounds, as well as theory and optimization landscape of neural networks, etc. The course material builds upon the basic principles of machine learning, using multivariate calculus, linear algebra, basic probability, and algorithms. Emphasis will be on producing mathematical arguments and rigorous proofs."
+    },
+    {
+      "number": 589,
+      "title": "Vision and Language",
+      "credits": 3,
+      "description": "Multi-modal data processing with vision and language inputs is ubiquitous in various applications and faces the challenges from visual and language representation, efficient learning and cross-modal reasoning, etc. This course covers the latest techniques in deep learning for various vision and language tasks. Neural network architectures such as convolutional neural network, recurrent neural network and transformer will be leveraged to build deep learning models for cross-modal retrieval, captioning, visual question answering and referring expression in both image and video domain. Efficient learning techniques such as weakly-supervised learning, unsupervised learning and few-shot/zero-shot learning will be utilized to maximize the label usage in these tasks. It will also introduce visual structure representation in the form of scene graphs and incorporate external knowledge graphs for cross-modal reasoning among text and image/video. This course prepares students to conduct graduate level research using deep learning, computer vision and natural language processing techniques."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "title": "Research Experience in Computer Science and Engineering",
+      "credits": 1,
+      "description": "Research experience for new doctoral students in computer science and engineering. Research is performed in conjunction with another 500-level CSE course."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 598,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.d. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Supervised experience in teaching and orientation to other selected aspects of the profession at The Pennsylvania State University."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off-Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 820,
+      "title": "Software & Hardware Project Management",
+      "credits": 3,
+      "description": "Students study the theory and practice of hardware and software project management. CSE 820 Software & Hardware Project Management (3) This course provides a broad exploration of the field of software, hardware, and integrated software/hardware project management. In particular, it investigates the fundamentals of risk, scope, time and cost management, quality assurance, scheduling, and human resource functions. It considers the nuances of software, hardware, and integrated hardware/software project management, as distinct from the management of projects in, say, building construction or manufacturing. Building on these insights, the student will learn how to apply these techniques to a real-world project of his or her choosing. Students will learn to recognize, identify, and apply the functions of project management to the types of projects which they will encounter in industry. This course supports the professional nature of the MEng degree."
+    }
+  ]
+}

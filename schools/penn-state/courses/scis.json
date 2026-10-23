@@ -1,0 +1,191 @@
+{
+  "subject": "SCIS",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Business Analytics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BA511"
+        ]
+      },
+      "description": "SCIS 501 develops students¿ understanding of and ability to apply a variety of business analytic tools and techniques to describe data, make predictions, and prescribe optimal solutions. Students will explore some of the following topics: Data Visualization, Exploring Data with R, Regression simple and multiple, Logistic regression, Classification trees, Machine learning for regression (data adaptive), Deterministic optimization (linear, integer, nonlinear), Monte Carlo Simulation, Decision Analysis. These topics enable students to address issues in descriptive, predictive, and prescriptive business analytics. Students will learn how to bridge descriptive, predictive, prescriptive analytics across a variety of business scenarios. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interest. This course is focused more on the methodological aspects of business analytics."
+    },
+    {
+      "number": 502,
+      "title": "Supply Chain Strategy",
+      "credits": 3,
+      "description": "SCM 502 develops students' ability to understand strategic decisions across the end-to-end supply chain. This course takes a systems perspective to understand critical decisions in the supply chain that encompasses issues related to make, source, deliver and return of goods and services. It links these decisions to the firm¿s business strategy and financial outcomes. The course also connects these decisions to related research in supply chain management and emerging issues in practice. It takes a problem-driven approach to scholarship in supply chain management, where we examine problems in supply chain management, connect these problems to research, and explore new research questions to study. Students will learn critical decisions in supply chain management, key concepts to understand these decisions, and the ability to formulate new research questions."
+    },
+    {
+      "number": 505,
+      "title": "Management Information Systems Research",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Research problems and issues in supply chain and information systems. SC&IS 505 Management Information Systems Research (3) This is a Ph.D. level course designed to familiarize students with information systems theories and research methodologies. Special emphasis is given to the design science paradigm and, specifically, to process and data modeling of information systems problems using techniques like UML, XML, and Petri-nets. In addition, workflow systems as an application of process modeling will be studied. After completing this course, students will have the knowledge, skills, and abilities to discuss and critically reflect on:a) Information system research paradigms b) Information system modeling techniques c) Coordination theory d) Workflow models, management and architectures e) Information systems in supply chainsThis is a prescribed research foundation course. Student evaluations are based on class participation, individual and group assignments, and exams. This course will be offered during Fall semester for 5-10 students."
+    },
+    {
+      "number": 510,
+      "title": "Introduction to Supply Chain and Information Systems",
+      "credits": 3,
+      "description": "Introduction to the strategic framework, issues, and methods for integrating supply and demand management within and across companies. SC&IS 510 Introduction to Supply Chains and Information Systems (3) This course introduces the strategic framework, the managerial issues, and the methodologies for integrating supply and demand management within and across companies. Both theoretical and quantitative perspectives will be offered on these topics. Additionally, each topic will be addressed from strategic, financial, and research perspectives. After completing this course, students will have the knowledge, skills, and abilities to discuss and critically reflect on:a) supply chain theories, methodologies, trends, best practices, and research issues b) core supply chain processes c) strategic and financial impacts of supply chain management d) role of information systemsThis is the first of four prescribed foundation courses. Student evaluations are based on class participation, individual and group assignments, and exams. This course will be offered during Fall semester with resident enrollment limits set at 20 students."
+    },
+    {
+      "number": 516,
+      "title": "Applied Stochastic Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT318",
+              "IE322"
+            ]
+          }
+        ]
+      },
+      "description": "Study of stochastic processes and their applications to engineering and supply chain and information systems. I E (SC&IS) 516 Applied Stochastic Processes (3) This course covers the mathematical fundamentals and tools for analyzing stochastic systems evolving over time, including concepts and techniques related to Poisson Processes, renewal processes, and discrete and continuous time Markov chains. Students will also learn to build probabilistic intuition and insights when thinking about random processes. Additionally, students will learn to apply the essential techniques of stochastic processes to real world problems in the supply chain and information systems area.This is a prescribed research foundation course for Ph.D. students in SC&IS. Student evaluations are based on class participation, individual and group assignments, and exams. This course will be offered during Spring semester to approximately 5-10 students."
+    },
+    {
+      "number": 519,
+      "title": "Dynamic Programming",
+      "credits": 3,
+      "description": "Theory and application of dynamic programming; Markov decision processes with emphasis on applications in engineering systems, supply chain and information systems. I E (SC&IS) 519 Dynamic Programming (3) This course presents the basic theory and applications of dynamic programming. The focus of the course will be on the theory of Markov decision processes (MDP), which provides an analytical tool to optimally control the behavior of a Markov Chain. The students will learn fundamental MDP models, computational methods and applications in supply chain and information systems, including production and inventory control, quality control, logistics, scheduling, queueing network, and economic problems.Student evaluations are based on class participation, individual and group assignments, and projects. This course will be offered during Spring semester for approximately 5-10 students."
+    },
+    {
+      "number": 520,
+      "title": "Principles of SC&IS I",
+      "credits": 3,
+      "description": "Initial course on principles of supply chain and information systems with special emphasis on potential research topics. SC&IS 520 Principles of SC&IS I (3) This is the first of two courses covering principles, research problems and issues in supply chain and information systems. The course familiarizes students with a wide range of appropriate research topics and prepares them to initiate doctoral level research in these areas. Topics include: logistics network design, transportation and distribution, management production and inventory management, supply chain integration and coordination, workflow systems, and process and data modeling of information systems.Evaluation methods include homework assignments, research paper(s), presentations, and class participation and discussion.Offered in the fall semester only. SC&IS 510 is a prerequisite."
+    },
+    {
+      "number": 525,
+      "title": "Supply Chain Optimization",
+      "credits": 3,
+      "description": "Introduction to theory and practice of optimization methods and models for analyzing and improving the performance of supply chain environments. SC&IS 525 Supply Chain Optimization (3) This course introduces students to the optimization methods and models that are applicable to managing supply chains and provides a quantitative foundation for research in supply chain management. The primary objective is to investigate the theory and practice of optimization methods, especially as they apply to managing large, interconnected supply chains. The investigation includes mathematical programming techniques, modeling approaches, and optimization languages.This is a required course for Ph.D. students in SC&IS and an element of a set of methodological courses designed to provide a framework for analytical study of supply chain management. The course may also serve graduate students in related fields of study. Student evaluations are based on individual and group assignments or projects and examinations. This course will be offered during Spring semester to approximately 5-10 students."
+    },
+    {
+      "number": 530,
+      "title": "Principles of SC&IS II",
+      "credits": 3,
+      "description": "Sequel on principles of supply chain and information systems with special emphasis on potential research topics. SC&IS 530 Principles of SC&IS II (3) This sequel to SC&IS 520 is directed at first and second year Ph.D. students in the SC&IS program. Other graduate students are welcome to attend with instructor's permission. The objectives are to (1) study supply chain and information system principles, (2) expose students to a wide range of appropriate research topics, and (3) prepare students to conduct doctoral level research in these areas. Topics include planning, integration, and coordination; value and impact of information; game theory models, auctions, and behavioral issues.Evaluation methods include homework assignments, research paper(s), presentations, and class participation and discussion.This is the second part of a two-course sequence covering research problems and issues in supply chain and information systems. Offered in the spring term only. SC&IS 510 is a prerequisite."
+    },
+    {
+      "number": 535,
+      "title": "Statistical Research Methods for Supply Chain and Information Systems",
+      "credits": 3,
+      "description": "Current statistical research methods for modeling and analysis of supply chain and information systems. SC&IS 535 Statistical Research Methods for Supply Chain and Information Systems (3) This is a Ph.D. level course that requires in-depth study of statistical research methods for observational analysis and modeling of supply chain and information systems. Special emphasis is given to five methods of statistical inference:a) Estimation b) Comparison of K-groups c) Forecasting d) Data mining e) Decision-making under uncertaintyStudent evaluations are based on class participation, individual and group assignments, and exams. This course will be offered during Fall semester for approximately 5-10 students."
+    },
+    {
+      "number": 540,
+      "title": "Transportation and Distribution Management",
+      "credits": 3,
+      "description": "Transportation and distribution systems in supply chains. Emphasis on role of system cost, price, service elements in total order management. SC&IS 540 Transportation and Distribution Management (3) This course focuses on the role of transport and distribution systems in new supply chain business models, with special emphasis given to total order management. Transportation system topics cover economic conditions, managerial strategies, governmental policies, and other phenomena, which affect the demand for and supply of transport and distribution services. Course design is directed toward graduate students with relatively little or no previous academic work in transport management and economics. Student evaluations are based on class participation, individual and group assignments, and exams. This course will be offered during the Fall semester with resident enrollment limits set at approximately 20 students."
+    },
+    {
+      "number": 545,
+      "title": "Supply Chain Systems Simulation",
+      "credits": 3,
+      "description": "Application of computer simulation to analysis and design of supply chain and information systems design; simulation experiments in SC&IS research. SC&IS 545 Supply Chain Systems Simulation (3) This course will provide an introduction to Monte Carlo and discrete-event simulation. Material will be aimed at the students who need to use simulation as a research tool at a sophisticated level. Although the focus of the course is the application of simulation to the analysis and design of supply chain and information decision systems, the material in this course will be appropriate for a much broader range of applications. Some time will be spend constructing simulation models of real-world systems, but the bulk of the course will be devoted to the statistical analysis required for correctly specifying input processes and interpreting the output of simulation models.This is an elective course for graduate students in SC&IS, which may also serve graduate students in related fields of study. Student evaluations are based on a series of classroom assignments. This course will be offered during Spring semester to approximately 5-10 students."
+    },
+    {
+      "number": 546,
+      "title": "Procurement and Supply Management",
+      "credits": 3,
+      "description": "Analysis, planning, and management of domestic and international procurement and supply activities. SCIS 546 Procurement and Supply Management (3) SCIS 546 provides an overview of procurement and supply management in the context of domestic and global supply-chain networks. Special emphasis is given to strategic sourcing relationships, supply management \"best practices,\" and E-perspectives on supply management. The course uses problem-based learning and emphasizes the case method. The goal is to learn through the application of course materials to relevant supply management case problems and scenarios. Collaboration in case preparation is required. Student evaluations are based on class participation, individual and group assignments, and exams. This course will be offered during the Fall semester with resident enrollment limits set at 20 students."
+    },
+    {
+      "number": 560,
+      "title": "Seminar in Transport Economics and Policy",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Comparative analysis of theoretical and empirical studies in transport cost, demand, pricing, and policy problems. SC&IS 560 Seminar in Transport Economics and Policy (3-6) This course is designed for Ph.D. students interested in intensive study of transportation economics and policy research and current issues. Student evaluations are based on class participation, individual and group assignments, and written exams. This course will be offered during the Spring semester with resident enrollment limits set at approximately 20 students."
+    },
+    {
+      "number": 565,
+      "title": "Supply Chain Strategy",
+      "credits": 3,
+      "description": "Strategies, issues and best practices in technology adoption, change management, financial/capability assessments, critical aspects of relationship management in supply-chain networks. SC&IS 565 Supply Chain Strategy (3) The course focuses on the strategic design and the effective operation of supply chains. It specifically seeks to integrate topics foundation course and to engage students in the critical analysis and in probing discussions of specific supply chain leadership issues. Special emphasis is given to supply chain technology adoption, change management, shareholder value assessment, capability assessment, relationship management, and performance metrics."
+    },
+    {
+      "number": 570,
+      "title": "Supply Chain Engineering",
+      "credits": 3,
+      "description": "Use of operations research models and methods for solving problems in supply chain systems. IE 570 / SCIS 570 Supply Chain Engineering (3) The course provides state-of-the-art mathematical models, concepts and solution methods important in the design, control, operation and management of global supply chains. It provides an understanding of how companies plan, source, make and deliver their products to create/or maintain a global competitive advantage. It emphasizes the application of operations research models and methods to optimize the various components of an integrated supply chain. The course is appropriate for graduate students interested in working in the supply chain area in industry as well as those planning to pursue research in supply chain optimization."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Thesis Preparation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Thesis Preparation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

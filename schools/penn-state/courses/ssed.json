@@ -1,0 +1,142 @@
+{
+  "subject": "SSED",
+  "courses": [
+    {
+      "number": 100,
+      "suffix": "N",
+      "title": "Foundations of History and Social Studies Concepts for K-8 Teachers",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER",
+        "US",
+        "IL"
+      ],
+      "description": "SSED 100N provides foundational historical content integrated with key geographic and economic concepts relevant to social studies curriculum at the elementary and middle level (grades K-8). Its main objective is to support educational inquiry (learning based in compelling questions) into historical, geographical, and economic connections across and between past eras, world regions, and the contemporary global context as academic preparation for teaching social studies to young learners. Topic areas include broad overviews of world civilizations from ancient times to the modern era and of U.S. history; fundamental geographic and economic concepts and their effects on human history; and global cultures and economy in contemporary times. The course is arranged as online unit modules that provide instruction, guide reading, and assess learning and cumulative understanding in a sequence and pace that supports building connections across this diverse range of topics and to K-8 education."
+    },
+    {
+      "number": 411,
+      "title": "Teaching Secondary Social Studies I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEOG30N"
+        ]
+      },
+      "description": "SSED 411 Teaching Secondary Social Studies I is the first methods courses in a two-course sequence in preparation for teaching social studies in the secondary grades (7-12), with emphasis on the the subjects most frequently taught in schools and specified in academic standards (civics/government, economics, geography, and history). The principal goal is to provide prospective teachers with a better understanding of the nature, curriculum, and educational structures of social studies in the U.S.; of how to identify, select, instruct, and assess rigorous content and learning outcomes; and of effective strategies for designing, planning, and implementing instruction. Additional topics may be included as determined by the section instructor."
+    },
+    {
+      "number": 412,
+      "suffix": "W",
+      "title": "Teaching Secondary Social Studies II",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "SSED411"
+        ],
+        "concurrent": [
+          "CI495C"
+        ]
+      },
+      "description": "Writing-intensive course focusing on study of the social studies teacher's role in planning instruction; strategies for teaching. SS ED 412W Teaching Secondary Social Studies II (3)Advanced study and practice of teaching social studies in the secondary grades (7-12) with emphasis on content and methods for the major subject areas (citizenship and government, economics, geography, and history). The principal goal is to provide prospective teachers with intellectual preparation and relevant practice in selecting and applying rigorous content knowledge to higher-order thinking in the classroom and practical experience designing, planning, and implementing social studies instruction. Topics include the social studies teacher's role in planning and practicing instruction, strategies for implementing and assessing teaching in the social studies, and others as determined by the section instructor. As a writing course (W), SS ED 412W engages students in professional in-depth writing experiences that involve planning, process, development, teaching and learning social studies content, and other relevant writing that teachers are expected to perform."
+    },
+    {
+      "number": 430,
+      "suffix": "W",
+      "title": "Teaching Social Studies in the Elementary Grades",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Social studies transforms the social sciences and humanities to promote civic competence (National Council for the Social Studies, 2002). In this course, teacher candidates learn to coordinate and conceptualize the richness of anthropology, economics, geography, history, civics, and sociology for elementary classroom pedagogy. Candidates become familiar with various instructional strategies that support social studies. Candidates gain an understanding of the information, concepts, theories, analytical approaches, and different perspectives-including global and multicultural perspectives-that are important to teaching social studies. Candidates also learn how to assess social studies learning in a variety of ways. This course stresses technology, content integration, social science competence, differentiated instruction, multicultural/global knowledge, teaching social historical inquiry, and constructing democratic learning communities. Teacher candidates learn how to apply the State Learning Frameworks and National Standards in their classroom instruction. At the conclusion of the course, candidates have a good understanding of elementary social studies and are able to develop and demonstrate powerful social studies curricula. Being a \"W\" course, SSED 430 incorporates both formal and informal writing into in-class and graded assignments to encourage teacher candidates to develop as critical thinkers and productive writers. This writing includes an essay describing one's own experiences as a social studies learner, reading responses, the creation of a unit of instruction, and several lesson plans that describe significant activities. These writing tasks are meant to professionalize the communication skills required to effectively teach social studies as well as to effectively communicate with parents, educators, and administrators. SSED 430W is a part of a block of courses in a PSU teacher education program that is unified by a basic set of principles and a field experience component."
+    },
+    {
+      "number": 470,
+      "title": "Issues in Social Studies Education",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Concentration on particular issues, trends, and developments in the social studies."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 533,
+      "title": "Research on Social Studies Education",
+      "credits": 3,
+      "description": "This course examines current and influential theory and research on social studies education in the context of K-12 schools and curriculum. The field of social studies education is broad and inclusive of different disciplines and academic content that relate to the social education of learners: histories of countries, peoples, social groups, movements, and the world; historical narratives and counternarratives of identities and heritage; notions of citizenship/civic belonging, civic engagement, and social justice; politics and ideologies; media and technology; sociology and sociocultural analyses; economic development, equity, and socioeconomic analyses; geography and world cultures; globalization and globalism; place and environments; and the interplay of individuals, groups, and institutions. How is social content positioned (or neglected) in school curriculum and educational policy? How is social content taught by teachers and learned by young people? How is that learning assessed and used? What are the implications for how young people learn about the world, cultures, social phenomena, and the past? These are kinds of questions that the social studies education research field explores. This course offers an overview of the research base and significant current scholarship on social studies education. It provides students with a grounding in reading and analyzing that literature, synthesizing ideas from across bodies of research, and applying research findings and interpretations to curricular and educational work. Course activities and assignments give students exposure to critically evaluating this research and scholarship and applying research findings to educational practice, curriculum design, professional development, or future academic inquiry."
+    },
+    {
+      "number": 535,
+      "title": "Teaching and Learning Historical Literacy with Media",
+      "credits": 3,
+      "description": "Study of how historically oriented media influence learning about past and connect to present with challenges and potential for education."
+    },
+    {
+      "number": 536,
+      "title": "Historical Nonfiction for Teaching History",
+      "credits": 3,
+      "description": "This course is an intensive study of different nonfiction history texts and the historical interpretations they offer for K-12 social studies teaching and curriculum. Through engaging with these texts and their ideas, the student will gain stronger understanding of historical research and scholarship broadly and on particular topics to apply to history education. Works of historical nonfiction include-and often combine features from across-the following different types: - academic historiography (original historical research for specialized audiences) - public scholarship (intellectual writing for informed public audiences) - popular history (texts that don't require extensive prior knowledge for mass audiences) - narrative history (factual storytelling to inform and entertain). Focus is on learning to analyze historical nonfiction for factual evidence, claims, warrants, concepts, and interpretations that can support intellectually rigorous instruction and curriculum design. Course exercises will give the student opportunities to think about age-appropriate adaptation of complex historical content. Students will learn to synthesize conclusions from across texts to form generalizations that address compelling questions for K-12 history education.."
+    },
+    {
+      "number": 537,
+      "title": "Teaching Citizenship for Civic Engagement",
+      "credits": 3,
+      "description": "This course explores citizenship education for civic engagement. Lessons revolve around three essential questions culled from the research literature: What kind of citizens and civic engagement does a 21st century democracy need? What should these citizens know, believe, and be able to do? What practices, programs, and structures in educational settings promote active citizenship? Activities and written assignments work to answer each of these questions, encouraging students to grapple with competing theories of citizenship that have shaped citizenship education programs in schools and universities. Course exercises will give students opportunities to think about and weigh their commitment to different definitions and theories of democracy, civic engagement, and citizenship. Students will analyze how educators have put those definitions and theories into practice across educational settings. In analyzing how civic engagement can be fostered across the educational lifespan-from the earliest grades to university education-students should take note of commonalities in approach as well as age-appropriate differences."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Formal courses given on a topical or special interest subject which maybe offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

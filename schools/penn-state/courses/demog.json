@@ -1,0 +1,115 @@
+{
+  "subject": "DEMOG",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Demographic Foundations",
+      "credits": 3,
+      "description": "This course introduces graduate students to the foundations of formal demography and social demography. Students will learn essential demographic concepts, theories, and interdisciplinary perspectives used in the study of populations, their structure, and how they change. The class will discuss the social determinants and social consequences of demographic change."
+    },
+    {
+      "number": 510,
+      "title": "Seminars in Formal Demography",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "This course is a seminar series focused on demographic processes, such as fertility, family transitions, migration, aging, and mortality. Formal demography considers the social, cultural, economic, health, geographic, and policy factors predicting these demographic processes, as well as the consequences of demographic processes for population size, composition, spatial distribution, and change. Students will learn the meaning, measurement, and appropriate analysis of these demographic processes, often with an emphasis on statistical and quantitative analyses. Specific dimensions of formal demography will vary across course offerings and students can repeat this course as topics change to meet Demography program requirements. Students are advised to reach out to the instructor to learn the specific course focus and to select courses in consultation with their adviser."
+    },
+    {
+      "number": 520,
+      "title": "Seminars in Social Demography",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "This course is a seminar series focused on the consequences of demographic change for societies, population subgroups, communities, households and individuals, as well as how demographic characteristics and processes interact with biological, psychological, behavioral, social, cultural, economic, policy, and/or spatial processes to affect individual, group, and population outcomes. Example seminar topics include (1) kinship demography, (2) demography of the life course, (3) immigration and population health, (4) climate change and demographic processes, and (5) demographic patterns and education policy. Specific seminar topics will vary across course offerings and students can repeat this course as topics change to meet Demography program requirements. Students are advised to reach out to the instructor to learn the specific course focus and to select courses in consultation with their adviser."
+    },
+    {
+      "number": 530,
+      "title": "Research Methods in Demography",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "This course is a seminar series focused on advanced research methods used in demographic research. It is recommended that students have taken demographic methods and at least one course on multivariate regression/econometric regression. Specific seminar topics will vary across course offerings and students can repeat this course as topics change to meet Demography program requirements. Students are advised to reach out to the instructor to learn the specific course focus and to select courses in consultation with their adviser."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are superivsed on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 801,
+      "title": "Principles of Demography",
+      "credits": 3,
+      "description": "This course examines fundamental concepts and ideas in Demography, and U.S. and world population trends associated with these concepts. This course provides an overview of demographic research and scholarship as a basis for the Applied Demography certificate and the Masters in Professional Studies degree in Applied Demography. The scope of the course content is broad, rather than in-depth, covering central disciplinary concepts and associated key theoretical ideas and empirical population trends. In particular the course investigates topics such as population growth, transitions in family patterns, fertility patterns and policy, immigration and growing population diversity, race and ethnic population inequality, internal migration and residential segregation, health and mortality patterns, population aging, and economic well-being and the environment.Building on insights from the study of the above topics, students conduct a comparative population analysis of a developed vs. developing country or of two regionally dispersed U.S. states using census and vital statistics demographic data to document five or more key over-time population trends. Results from this analysis are then used to address applied demography questions about the relationships with outcomes for either business demography or public policy demography.Students will learn fundamental disciplinary concepts, central theoretical scholarship ideas, major empirical U.S. and world population trends, and experience a hands-on skill-enhancing population data analysis project which integrates knowledge and application learning."
+    },
+    {
+      "number": 802,
+      "title": "Data, GIS, and Applied Demography",
+      "credits": 3,
+      "description": "This course provides an overview of key demographic data sets, and promotes familiarity with, and appropriate use of, these data. This course offers a comprehensive introduction to the wide variety of different government (and commercial) data sets that are among the most frequently utilized by practicing applied demographers. While US data sets are emphasized throughout the course international data products also will be discussed. Raw population data needed for demographic research comes from a variety of sources. The course will introduce students to the fundamental principles and design considerations of the different types of data collection systems that are used: censuses, 'rolling' censuses, surveys, vital statistics and administrative records. While contemporary issues are often studied using the latest available data many demographic questions necessitate the inclusion of a historical perspective (e.g., studies of population change) and as such linking and analyzing data across time also will be discussed. The analytical sections of the course will focus on the strengths and limitations of data products (e.g., including issues of data reliability and appropriate data use). A review and discussion of future directions in data collection and data sources wraps up the course. Enormous amounts of demographic data are now made available in aggregate form for geographical units (neighborhoods, cities, counties, states). These aggregate data are of interest in their own right but also are increasingly relevant to questions related to the role of geographic context on individual-level demographic outcomes. In this course students will learn about nested and non-nested geographical hierarchies of different data products and fundamental principles for handling and analyzing geospatial demographic data (e.g., how and when data sets can be linked together, how to visualize demographic data, spatial coverage, the influence of scale, and how to detect, and the consequences of, spatial dependence). This is a hands-on applied course in which students will be expected to access, understand, manage, and analyze different kinds of demographic data sets. The emphasis on data interpretation and analysis will be on descriptive statistical analysis, data visualization, and exploratory spatial data analysis using open source and/or available software."
+    },
+    {
+      "number": 803,
+      "title": "Applied Demography in Practice",
+      "credits": 3,
+      "description": "This course provides an overview of applications in applied demography in business, non-profit organizations, public policy, and health; including a focus on international applications. Students will learn to apply critical and analytic skills to case studies, identify the most appropriate data sources and methods to help solve practical problems (e.g., business siting; school redistricting; emergency evacuation; labor market projections; relief efforts). Emphasis throughout will be on recognizing and reinforcing best practices in the use, linkage, and interpretation of data in real world situations."
+    },
+    {
+      "number": 804,
+      "title": "Business Demography",
+      "credits": 3,
+      "description": "This course provides a broad coverage of business demography questions that draw upon knowledge, data, and methods associated with applied demography. The course begins with an overview of the goals of business demography applications, major data and methods, and mega population trends that address practical problems in business. The course addresses several key topics in business demography. Part 1 focuses on the application of local and national population characteristics and dynamics to target consumer behavior marketing and market segmentation. The analysis of demographic data integrated with consumer characteristics data is fundamental to corporate decision making on generational marketing strategies. Part 2 analyzes the impact of demographic factors on business site selection, notably population growth trends and the human capital characteristics of local area labor markets. Integration of current and projected population characteristics with sales data informs local, national, and world business site selection decisions. Part 3 focuses on the impact of mega demographic trends in population size, growth, characteristics, and dynamics on corporate investment strategies in local labor markets, states, nations, and international locations. Part 4 examines within-corporation human resource management problems involving the demography of work force size and characteristics. Worker population entry, turnover, and the flow of individuals through positions in the workplace are analyzed. Part 5 focuses on the interface between demographic characteristics of business client and worker populations and compliance with local, state, and national regulations in the conduct of business. Issues of business non-discrimination and the dynamics of community population characteristics are considered. This course covers a diverse set of topics related to business and corporate activities. It provides students with a substantive understanding of key business demography topics and the population data and analytical tools to help them address practical problems faced by business decision makers. The course concludes with a consideration of possible newly emerging applied business demography issues and future data challenges and opportunities."
+    },
+    {
+      "number": 805,
+      "title": "Public Sector Demography",
+      "credits": 3,
+      "description": "This course provides an analysis of selected public sector, non-profit, and public policy demography issues that draw upon knowledge, data, and methods associated with applied demography. The course begins with an overview of the goals of public sector demography applications, major public data sources and methods, and mega population trends that address practical problems in the public sector. The course addresses such topics as the following: Part 1 focuses on the impact of area population characteristics and change on the allocation of public program resources. Changes in current and projected target population groups in local, state, and national areas is a key factor in public infrastructure and program funding as well as human service program planning. Part 2 focuses on the impact of cohort population change for elementary, secondary, and college educational system planning. Understanding school enrollment population projection techniques is fundamental in this area of applied demography. Part 3 examines the demographic dynamics of agency client populations and within-organization work force size and characteristics. Worker population entry, turnover, and the flow of individuals through public sector and non-profit organization workplaces are topics of interest. Part 4 focuses on population data and trends that are the bases for apportionment of governmental representation among areas and population groups. Redistricting area populations for voting equity is an important local, state, national, and international applied demography issue. Part 5 examines the interface between area population characteristics and change and compliance with local, state, and national non-discrimination policy regulations related to public program activities, such as law enforcement, school administration, etc. This course covers a diverse set of topics related to public sector, non-profit, and public policy organizational activities. It provides students with a substantive understanding of key applied demography issues of interest to public sector administrators and governing boards. The course concludes with a consideration of possible newly emerging applied public sector demography issues and future public data challenges and opportunities."
+    },
+    {
+      "number": 806,
+      "title": "Applied Demography & Health",
+      "credits": 3,
+      "description": "This course provides an overview of data, methods, and techniques in applied demography used to help address public health questions. This course provides a wide-ranging coverage of substantive health questions that draw upon data and analytical methods closely associated with applied demography. The course opens with an overview of the substantive connections between health and applied demography. The remainder of the course is divided up into three main parts: (1) Local/Regional Health Assessments; (2) Methods and Case Studies in Morbidity and Mortality; and (3) Emergent Trends in Applied Demography and Health. Part 1 focuses on data needs and commonly used methods (and their limitations) related to local/regional community health assessments - including diverse contexts (rural-urban, developed and developing countries). These data and methods are utilized to examine health disparities, health service planning (based on catchment area analysis and location-allocation modeling as well as methods for measuring accessibility and utilization of health services), environmental pollution, and emergency/disaster response. Part 2 covers the connections between demographics and the epidemiological transition. This section includes a broad focus on a specific classification of human health and disease (i.e., provisioning care and disease prevention, communicable disease, non-communicable disease, and accidents and other causes of injury and death). Across each classification of health and disease the heterogeneity of data needs, time scales, spatial scales, and population at risk is wide. Applications of methods and use of case studies will facilitate the discussion of these different kinds of contemporary health challenges. Part 3 focuses briefly on the future, including an examination of global health questions (broad processes and forecasts associated with migration, urbanization, and environmental change) and new types of data and methods (including challenges and opportunities) that applied demographers will likely use in the next decade. This course covers a diverse set of topics related to human health. Some of the most important health problems of the early 21st Century (in the U.S. and globally) relate to health inequalities in access to resources (e.g., access/use of health services) and in the variation in individual exposure to risks (e.g., environmental pollution, neighborhood deprivation, obesogenic environments, and crime), and how both access to resources and exposure to risk are associated with health disparities across populations (by race, socioeconomic status, gender, age, and other forms of social stratification). This course will provide students with an understanding of key health topics, and specific data and analytical tools that can be used to address them."
+    },
+    {
+      "number": 807,
+      "title": "Small Area Estimation",
+      "credits": 3,
+      "description": "This course provides an overview of applications in small areas population estimation techniques used in public policy, business and academia, including case studies from the United States and other international programs. In particular, the course considers the growing needs of the public and private sector and non-profit organization to produce and disseminate quality disaggregated data on population that support public policy programming and business planning. It considers small area data sources and different methodological approaches to small area estimation. Building from relevant policy examples, students will conduct a review of classical design-base approaches and apply indirect and inference techniques using auxiliary information. Students will recognize, identify and apply, with diverse types of demographic and socio-economic data, small area estimation methods, using open source and/or available software. From these insights, students will also compare case studies based on data disaggregation and Big Data Analytics."
+    },
+    {
+      "number": 808,
+      "title": "Capstone Project",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SOC573"
+        ]
+      },
+      "description": "Students will utilize methods acquired during their program and apply them in a Capstone This is a Capstone course and a requirement for all students in the M.P.S. in Applied Demography. During their final semester, students will work closely with a faculty adviser (selected to match the student on substantive and/or methodological expertise) on a self-selected applied demography-related project. The student is expected to draw on data and methods encountered during their prior course work. At the end of the semester the student will be required to make a formal peer presentation to other enrolled students and all their faculty advisers. The student also will be required to submit a final report/paper to their faculty adviser by the end of the semester. The format of the course will vary by student, their faculty adviser and the scope and nature of the Capstone project itself. The intent is that the student conduct an independent study-like project that results in a both a formal oral presentation and a written report."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "subject": "ENGMT",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Engineering Management Science",
+      "credits": 3,
+      "description": "Mathematical models involving optimization, simulation and forecasting to provide quantitative solutions to engineering management problems; scheduling, distribution, inventory control."
+    },
+    {
+      "number": 510,
+      "title": "Economics and Financial Studies for Engineers",
+      "credits": 3,
+      "description": "Economic feasibility of projects, systems and products. Project budgets, estimation, return on investment, supply and demand, and earned value management."
+    },
+    {
+      "number": 511,
+      "title": "Engineering for Energy and the Environment",
+      "credits": 3,
+      "description": "Engineering analysis of new technologies with environmental consideration leading to alternative energy sources and sustainable development."
+    },
+    {
+      "number": 520,
+      "title": "Systems Optimization",
+      "credits": 3,
+      "description": "Theory/practice of linear programming will be developed including determination of optimum mix of products, levels of staffing, blending, network analysis, multi-period planning."
+    },
+    {
+      "number": 530,
+      "title": "Engineering Law",
+      "credits": 3,
+      "description": "Overview of the legal system and legal issues applied to engineering: contracts, bidding, proposals, torts, professional liability, the intellectual property."
+    },
+    {
+      "number": 536,
+      "title": "Decision and Risk Analysis in Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "SYSEN536"
+      ],
+      "description": "This course examines the analysis of decisions under uncertainty within the context of engineering and technology. It focuses on understanding and improving the decision-making process of individuals and groups in technical organizations. Emphasis is placed on evaluation methods; identification, modeling, and problem resolution; consequences/outcomes of the action taken; risk analysis and quantification."
+    },
+    {
+      "number": 539,
+      "title": "Engineering Management Strategy",
+      "credits": 3,
+      "description": "Project- and discussion-based capstone to the engineering management program."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 805,
+      "title": "Technical Project Management",
+      "credits": 3,
+      "internalEquivalents": [
+        "SYSEN805"
+      ],
+      "description": "Analysis and construction of project plans for the development of complex engineering products taken from a variety of problem domains."
+    },
+    {
+      "number": 841,
+      "title": "Application of Statistics in Quality and Continuous Improvement in Engineering",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Application of quality tools to improve products and processes including lean processes and six sigma principles. ENGMT 841 is about learning to apply sophisticated statistical tools for the continuous improvement of products and processes in the manufacturing and service industries. Students will learn how to identify defects (nonconformation to specifications) and provide appropriate solutions that will not only eliminate defects, but also improve the performance. They will be able to take samples from the population, apply appropriate statistical tools and relate the sample characteristics to the population. Students will also apply various control charts to identify the variations in the process and be able to separate the common and special cause variations. Students will be expected to apply the various phases of LEAN and Six Sigma methodologies to a project that will identify various non­value added activities and improve the product or process performance."
+    },
+    {
+      "number": 850,
+      "title": "Creativity & Problem Solving I",
+      "credits": 3,
+      "internalEquivalents": [
+        "SYSEN850"
+      ],
+      "description": "The primary objective of this course is to help students become better and more effective problem solvers through a basic, yet rigorous, understanding of the cognitive processes involved in problem solving and individual creative behavior. To meet this objective, selected elements of cognitive psychology are examined, along with general and domain-specific models of the problem solving process, a variety of problem solving techniques, and illustrative examples and case studies related to these topics in a variety of contexts (including science, engineering, and management). In addition, students will explore their personal preferences for problem solving strategies and the ways these preferences can impact both personal and professional life. Here, the objective is to provide students with an assessment of their strengths and weaknesses in the domain of problem solving, as well as a basis of understanding and appreciating the diverse problem solving abilities and styles of others. With its focus on effective problem solving at the individual level, this course is appropriate for students in all disciplines and areas of study. It also serves as the foundation for additional courses in problem solving, which may build upon the theoretical elements presented here (e.g., group problem solving) or serve as in-depth application studies in specific topical areas (e.g., invention)."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

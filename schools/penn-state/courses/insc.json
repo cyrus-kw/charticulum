@@ -1,0 +1,111 @@
+{
+  "subject": "INSC",
+  "courses": [
+    {
+      "number": 431,
+      "title": "Information Systems Architecture",
+      "credits": 3,
+      "description": "Principles and priorities of enterprise system design, middleware and service-oriented architectures and web services."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that they may be topical or of special interest."
+    },
+    {
+      "number": 521,
+      "title": "Database Design Concepts",
+      "credits": 3,
+      "description": "The requirements capture, design, and development of relational database applications; analysis of business requirements and development of appropriate database systems."
+    },
+    {
+      "number": 525,
+      "title": "Applied Data Mining",
+      "credits": 3,
+      "description": "Functional overviews of algorithms used in data mining will be presented and contemporary data mining software used to conduct a project."
+    },
+    {
+      "number": 526,
+      "title": "Business Process Management and Integration",
+      "credits": 3,
+      "description": "Design and development of business processes that align business objectives with Information Technology (IT) systems."
+    },
+    {
+      "number": 531,
+      "title": "Information Technology Law",
+      "credits": 3,
+      "description": "Examines the legal concepts/issues applicable to the field of information technology and to information technology, software engineering, and computer professionals."
+    },
+    {
+      "number": 539,
+      "title": "Information Science Emerging Topics",
+      "credits": 3,
+      "description": "Computing and network technologies are constantly changing. However, they must be well adopted to help transform enterprise information systems to better support business operations and management. This course will explore various emerging theories and technologies in information science, including at least cloud computing, mobile application, Internet of things, blockchain, machine learning, and artificial intelligence. Students will learn how the emerging theories and technologies can be applied to addressing the weakness of legacy enterprise information systems in which the emerging technologies are not employed yet."
+    },
+    {
+      "number": 561,
+      "title": "Web Security and Privacy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CSE543",
+              "IST815"
+            ]
+          }
+        ]
+      },
+      "description": "A web-centric look at the latest techniques and practices in computer security as they apply to the Internet."
+    },
+    {
+      "number": 568,
+      "title": "Enterprise Integration",
+      "credits": 3,
+      "description": "Advances in design, development, and deployment of control and management software for enterprise and production information systems."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 831,
+      "title": "Contemporary Information Systems Architecture",
+      "credits": 3,
+      "description": "Computing and network technologies are constantly changing and must be adopted appropriately to help transform enterprise information systems that better support business operations and management. This course will investigate the evolution of information systems architecture. Students will learn to employ contemporary information systems architecture to enhance IT support for business operations and management in organizations. Students will explore contemporary information systems architecture from different perspectives, including perspectives in technology, business operations, and management."
+    },
+    {
+      "number": 846,
+      "title": "Network and Predictive Analytics for Socio-Technical Systems",
+      "credits": 3,
+      "description": "The objective of this course is to provide a foundation in the principles of network and predictive analytics along with hands-on experience with statistical analysis software for studying the interrelatedness of cyber-social and cyber-technical aspects of our society as a whole that have transformed physical communities into virtual communities. Fundamental principles of network and predictive analytics, the importance of studying network structures, and how network structures can facilitate communication, coordination and cooperation will be discussed. Statistical analysis software will be used for analyzing the structure of an organization or a society as whole to detect and capture the dynamic patterns of group membership and structure, and predict threats, attacks, criminal behavior and evolution of criminal networks."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

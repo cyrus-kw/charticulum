@@ -1,0 +1,111 @@
+{
+  "subject": "HPS",
+  "courses": [
+    {
+      "number": 801,
+      "title": "Physical Preparation 1",
+      "credits": 3,
+      "description": "This course emphasizes the understanding and translation of principles related to the anatomy and physiology of the neuromuscular system toward the advancement of human performance within competitive settings. Focus will be placed on planning and preparatory tactics used within strength, power, and speed-based sports. Students will also gain knowledge and experience on the current practices of data collection and interpretation within an athlete monitoring system."
+    },
+    {
+      "number": 802,
+      "title": "Sport Biomechanics",
+      "credits": 3,
+      "description": "This course is designed for graduate students pursuing careers in human performance fields such as strength and conditioning, sport nutrition, athletic training, applied sport science, sport psychology, and coaching. This course emphasizes the use of science technologies to analyze and optimize human movement. Students will develop skills to enhance athletic performance, assess movement efficiency, and use biomechanical data to inform training strategies and mitigate injury risk."
+    },
+    {
+      "number": 803,
+      "title": "Data Science for Performance Practitioners 1",
+      "credits": 3,
+      "description": "This graduate course provides an introduction to data science techniques within sport performance analysis. Students will explore various sport science technologies, such as GPS systems, accelerometers, and force platforms, to understand their role in capturing and assessing athletic performance data. The course also covers essential data management skills, including data cleaning, organization, storage, and visualization. Additionally, students will learn foundational statistical methods and how to apply these techniques to interpret performance data, leading to data-driven decision-making for optimizing athletic outcomes. This course prepares students for roles in applied sport science, focusing on data collection, management, and analysis."
+    },
+    {
+      "number": 804,
+      "title": "Physical Preparation 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPS801"
+        ]
+      },
+      "description": "This course is designed as an advanced study of the physiological responses to performance training with an emphasis on aerobic sport involvement. The course is structured to focus on the cardiovascular, metabolic, and pulmonary responses to aerobic exercise and implications for the design of comprehensive athletic performance plans. Students will also gain practical experience in the usage of both laboratory and field-based tests in the study of adaptive responses to training."
+    },
+    {
+      "number": 805,
+      "title": "Motor Learning and Skill Acquisition for Performance Practitioners",
+      "credits": 3,
+      "description": "This course provides an in-depth exploration of motor learning and skill acquisition theories and their practical applications in human performance fields. Students will gain a deeper understanding of how motor skills are developed and refined through training, practice, and feedback. Core topics include procedural memory development, long-term potentiation, the constraints-led approach, and various practice design methods (blocked, serial, random). By the end of the course, students will be able to design and implement effective practice regimes for optimizing skill acquisition."
+    },
+    {
+      "number": 806,
+      "title": "Data Science for Performance Practitioners 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPS803"
+        ]
+      },
+      "description": "This graduate-level course extends the foundational knowledge of data science techniques in sport performance introduced in HPS 803 . Students will engage with advanced statistical analysis, predictive modeling, and data visualization methods, learning to transform raw performance data into actionable insights that can optimize athletic performance. The course emphasizes practical applications, including injury prevention, athlete development, and performance enhancement. Using data analytic tools, students will create visual data representations and effectively communicate their findings to coaches and performance staff. This course is designed to prepare students for applied sport science roles, focusing on data-driven decision-making in a performance context."
+    },
+    {
+      "number": 807,
+      "title": "Player Care and Injury Management for Performance Practitioners",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HPS801",
+          "HPS802",
+          "HPS804",
+          "HPS805"
+        ]
+      },
+      "description": "This course focuses on injury care and management from an interdisciplinary perspective, preparing students from diverse performance fields - such as strength and conditioning, nutrition, psychology, applied sport science, and athletic training - to collaborate in mitigating, treating, and managing sports injuries. This course explores common injuries and introduces best practices within sport medicine modalities. Students will develop interdisciplinary Return to Play protocols that address the athlete's physical and mental health, highlighting the importance of teamwork across various professions in sports performance."
+    },
+    {
+      "number": 808,
+      "title": "Performance Systems Management",
+      "credits": 3,
+      "description": "This graduate-level course equips students with the knowledge and skills to manage high-performance environments using systems thinking. Students will explore how to apply systems theory to optimize organizational structures, resource management, and personnel decisions within sport and human performance settings. Key topics include crisis management, conflict resolution, and fostering high-performance cultures by leveraging the interconnectedness of human performance initiatives. The course is ideal for those pursuing careers in strength and conditioning, sports medicine, nutrition, psychology, applied sport science, and coaching, preparing them to lead interdisciplinary teams using a comprehensive systems-based approach."
+    },
+    {
+      "number": 809,
+      "title": "Applied Mental Performance and Sport Psychology",
+      "credits": 3,
+      "description": "This course prepares graduate students in the human performance field to understand and apply psychological principles that enhance athlete performance and well-being. The course covers key topics such as motivation, goal setting, resilience, focus, and mental strategies for coping with pressure, providing students with tools to support athletes' mental and emotional development. Students will engage with evidence-based mental performance training methods and learn to work collaboratively with performance professionals in various fields, including coaching, athletic training, sport nutrition, and sport science."
+    },
+    {
+      "number": 810,
+      "title": "Experiential Learning in Human Performance",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "This is a graduate-level course offering hands-on experience in human performance, with a focus on sport science and strength & conditioning. Students will work within Penn State University's Intercollegiate Athletics (ICA) High Performance Department, applying their knowledge in real-world settings to enhance athlete performance and well-being. Throughout the course, students will engage in performance monitoring, data analysis, and program development. They will design sport-specific training plans, implement injury prevention strategies, and collaborate with interdisciplinary teams that include strength coaches, and sport scientists. This practical experience is supported by reflective journals, performance reports, and final presentations that demonstrate the student's learning and professional growth."
+    },
+    {
+      "number": 894,
+      "title": "Capstone in High Performance Sport",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "HPS801",
+          "HPS802",
+          "HPS803",
+          "HPS804",
+          "HPS805",
+          "HPS806",
+          "HPS807",
+          "NUTR487"
+        ],
+        "concurrent": [
+          "HPS808",
+          "HPS809"
+        ]
+      },
+      "description": "As a culmination of the Master of Professional Studies in High Performance Sport, this course will guide students through compiling a professional portfolio, showcasing their expertise in human performance. Students will collect and synthesize the knowledge and skills they have acquired throughout their academic studies and experiential work in intercollegiate athletics into a comprehensive capstone project. The portfolio will include strength and conditioning plans, return-to-play protocols, practice plans, applied sport science reports, and case studies that demonstrate interdisciplinary performance-related problem-solving. The course emphasizes professional development, critical reflection, and the ability to present complex information effectively."
+    }
+  ]
+}

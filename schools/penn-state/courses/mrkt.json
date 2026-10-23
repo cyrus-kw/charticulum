@@ -1,0 +1,90 @@
+{
+  "subject": "MRKT",
+  "courses": [
+    {
+      "number": 513,
+      "title": "Marketing Management",
+      "credits": 3,
+      "description": "Analysis of market opportunities, development of marketing strategies, implementation of marketing plans, and control of marketing processes. This course examines concepts, techniques, and developments of marketing plans and programs within domestic and international market environments. The major focus of the course will be on the analysis of market opportunities; development of marketing strategies, plans, and programs; organization of the marketing activities; implementation of the marketing plans, strategies, and programs; and control of the marketing processes. Furthermore, important contemporary issues of social responsibility, green marketing, and marketing ethics will be explored conceptually and analytically."
+    },
+    {
+      "number": 514,
+      "title": "Strategic Mrkt",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MRKT513"
+        ]
+      },
+      "description": "Analysis and implementation of strategic marketing concepts and techniques in complex domestic and global business environments. The objective of this course is to provide students with a deeper understanding of marketing management in a strategy-planning context. The course is concerned with the development, evaluation, and implementation of marketing management in complex domestic and global business environments. The course deals primarily with an in-depth analysis of theories, facts, analytical procedures, techniques, and models related to marketing institutions and processes."
+    },
+    {
+      "number": 571,
+      "title": "Consumer Behavior",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MRKT513"
+        ]
+      },
+      "description": "Factors influencing buyer behavior; contributions of the behavioral sciences to the study of selected phenomena. MRKT 571 Consumer Behavior (3) This course is intended to introduce graduate students to the basic theoretical ideas and techniques of investigations into consumer behavior phenomenon. Such a study will, it is hoped, provide an appreciation of the problems of consumer behavior and the techniques available for their solution. Specific objectives are: (a) The prepared graduate students who will enter a wide range of careers with a substantial knowledge of consumer behavior theory, research, and state-of-the art conclusions, that will permit them to use more sophisticated analytical techniques in anticipating and meeting consumer needs and demand. (b) To offer strategic how-to, and \"insider\" information for using theoretical concepts and techniques and give graduate students specific opportunities, within the course."
+    },
+    {
+      "number": 572,
+      "title": "Marketing Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MRKT513"
+        ]
+      },
+      "description": "Management information needs, evaluation of research proposals and findings, methods of data collection and analysis, integration of research and decisions. MRKT 572 Marketing Research (3) This is a graduate level Marketing Research course and deals with collection, processing, analysis and interpretation of information, which are main steps in completing a successful market research project. The course provides students with an understanding of marketing research and its is designed in the belief that one must understand market research jobs and use it effectively in managerial decision-making. It is practical oriented and aligned with scientific, scholarly and logical truth. The course will cover the research process including problem identification, secondary and primary data collection questionnaire design, sampling, coding process, research methodology, data analysis and interpretations, and communication with management through research reports and presentations."
+    },
+    {
+      "number": 585,
+      "title": "Business-to-Business Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MRKT513"
+        ]
+      },
+      "description": "Marketing of products and services to other businesses and organizations including strategy, planning, research, communications, pricing, distribution, and global issues. MRKT 585 Business-to-Business Marketing (3) This course builds upon marketing management concepts and focuses on the special elements and requirements of business-to-business marketing. Emphasis is given to managerial decision-making in the areas of business marketing environment, business buying functions, business marketing strategy, business marketing systems, business marketing planning, business marketing research, business marketing segmentation and demand analysis, product strategy in business marketing, business marketing communications, promotion, pricing, and distribution and globalization strategy in business marketing. The course employs real marketing situations treated analytically and emphasizing business marketing situations. In order to present the materials in a real life environment, case problems from business-to-business marketing will be used. Heavy student preparations and participation are expected. The course will also cover business marketing strategies on the Internet."
+    },
+    {
+      "number": 587,
+      "title": "Global Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MRKT513"
+        ]
+      },
+      "description": "Exploration of strategic marketing planning concepts and techniques from a global perspective within diverse overseas market environments. MRKT 587 Global Marketing (3) This course is a systematic treatment and application of marketing management knowledge on a global scale. The objective of the course is to develop knowledge and understanding of the global marketing environment and of concepts, tools, and theory that will prepare students to take responsibility for successful global market penetration. The perspective of the course is managerial: i.e., the ability to identify market opportunities, develop plans/programs, resolve problems, and implement strategies. This course will provide graduate students with an understanding of marketing planning and strategy from a global perspective. The world should be viewed as a marketplace with a resulting need for familiarity with various environmental similarities and/or differences. These may necessitate adaptation and/or standardization of marketing programs, strategies and plans from region/nation to region/nation. A major focus of this course will be a strategic marketing management techniques, issues, strategies and problems within a global marketing framework. As well, an understanding and appreciation of world cultures, socioeconomic, and legal/political conditions which have a profound effect on a US firm's target market selection and marketing strategy development, will be established."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

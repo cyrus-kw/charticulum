@@ -1,0 +1,396 @@
+{
+  "subject": "SWENG",
+  "courses": [
+    {
+      "number": 311,
+      "title": "Object-Oriented Software Design and Construction",
+      "credits": 3,
+      "description": "Design, documentation, testing, and construction of software using software engineering strategies embodied in object-oriented programming languages. SWENG 311 Object-Oriented Software Design and Construction (3) Object-oriented design and programming embody powerful design strategies that are based on practical and proven software engineering techniques. In this class, students will learn how existing object-oriented languages support these strategies, how to apply these strategies to moderately-sized systems, and how to use a visual object-oriented modeling tool such as the Unified Modeling Language (UML). Students will build on programming skills acquired in prerequisite programming courses by programming in a major object-oriented programming language."
+    },
+    {
+      "number": 395,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 396,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "title": "Introduction to Software Engineering Studio",
+      "credits": 3,
+      "description": "Provides an introduction to the principles of software engineering and includes complementary instruction in one programming language."
+    },
+    {
+      "number": 411,
+      "title": "Software Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC122"
+        ],
+        "concurrent": [
+          "SWENG311"
+        ]
+      },
+      "description": "Software engineering principles including life cycle, dependability, process modeling, project management, requires specification, design analysis, implementation, testing, and maintenance. SWENG 411 Software Engineering (3) This is an introductory course in software engineering, addressing the software development process, including aspects such as software requirements documentation, design specification, implementation, system integration, testing, and maintenance by individuals and teams. Topics include software process modeling, requirements elicitation and documentation, software architecture design and analysis, detailed design and programming, graphical user interface (GUI's) design and prototyping, software quality assessment, software testing, software maintenance and evolution management, personal and team-based development. In lab students gain practical experience by completing programming assignments and utilizing computer-aided software engineering (CASE) tools for their personal projects tailored to each stage of the software life cycle. A semester long team-based project is required that reinforces teamwork fundamentals and the concepts covered in lecture. The projects and assignments provide an opportunity for student teamwork, document writing, and oral presentations."
+    },
+    {
+      "number": 421,
+      "title": "Software Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SWENG411"
+        ]
+      },
+      "description": "The analysis and design of software systems using canonical design patterns. SWENG 421 Software Architecture (3)This course introduces the frequently-used software infrastructures in software development by experienced engineers. The formal UML notations are utilized to design software architecture and help communicate the design visually. Students will learn the real practice of architectural styles, design patterns and design reuse. As to certain complex problems, alternative architectures will be proposed and their design trade offs will be evaluated. For instance, students compare two-tier with three-tier client/server architectures for distributed systems, and employ multi-process and multi-thread concurrent architectures for high performance computation systems. Moreover, students learn to conduct high level quality analysis from the design artifacts. The quality evaluation will focus on a number of attributes, including reusability, extendibility and performance. A great deal of effort is placed on the major categories of design types containing dozens of separate design patterns. Students first review the most fundamental design patterns. Afterwards, they apply creational patterns to effectively create objects, partitioning patterns to categorize objects, structural patterns to allocate objects, behavioral patterns to interface the communication between objects, and concurrent patterns to handle tasks simultaneously. These skills will enable students to extend their own knowledge after graduation by giving them the skills to learn new patters on their own. Finally, students will integrate their programs with native code applications to enlarge the application domains. To achieve best reusability, they also learn modular designs to develop component-based software. These help them meet today's software needs of cross applications and architectures."
+    },
+    {
+      "number": 431,
+      "title": "Software Verification, Validation, and Testing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SWENG411",
+          "STAT318"
+        ]
+      },
+      "description": "Introduction to methods of software verification, validation, and testing; mathematical foundations of testing, reliability models; statistical testing. SWENG 431 Software Verification, Validation, and Testing (3) Provides a background necessary for verification, validation, and testing of software systems. Verification addresses the question: 'are we building the product right?' In other words, does the product meet the engineering specifications? Validation addresses whether the right product is being built and if it meets the design requirements. The testing aspect of the course addresses many of the methods available to test software systems. The levels of testing explored are 1) unit level (each module is tested independently), 2) integration testing (where the modules are integrated together and tested as a complete system), and 3) acceptance testing (the testing requirements of the users). Following this, specific test methodologies are addressed. By the end of this course the student should also be able to develop an appropriate test plan."
+    },
+    {
+      "number": 452,
+      "suffix": "W",
+      "title": "Embedded Real Time Systems",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC472",
+              "CMPSC473",
+              "CMPEN441"
+            ]
+          }
+        ]
+      },
+      "description": "The design and implementation of real time systems. SWENG 452W Embedded Real Time Systems (3) Real time operating systems is the study of hardware/software systems in which timing constraints must be met for correctness. Real time systems are embedded in applications ranging from the antilock brakes in cars to the flight control systems for jetliners. Students are first introduced to the concept of systems with real time constraints by examining case studies. The unified modeling languages (UML) with real time extension is introduced allowing students to capture the constraints present in the systems in a variety of models allowing the problem to be described at several levels of abstraction. Tasks and messages are introduced as programming structures which can satisfy the constraints described by the UML models. With a basic understanding of real time systems and how to implement them, the focus of the course shifts away from these technical concerns towards understanding the documentation of the requirements using the Volere Requirements Specification template. All the writing assignments in the class will revolve around Volere in one way or another. Increasingly complex case studies will give the class the opportunity to explore more sophisticated inter-task communications mechanisms as well as common pitfalls present in RTOS applications. Students will learn how to verify the correctness of their applications in order to guarantee that the real time constraints can be met when the system is deployed. Discussion will turn to application programmer interfaces used by hardware vendors to port hardware into a RTOS. The class will end by designing and building a complex RTOS by a team of students using the techniques learned in the class. The project will outline the needs of the RTOS application in a project proposal using the Volere template. The proposal will be developed iteratively with the faculty member until its scope and definition are clear. This proposal will be developed into a complete requirement specification including a time-line and identification of development benchmarks. This system resulting from the development will be documented in the final report write-up."
+    },
+    {
+      "number": 455,
+      "title": "Engineering Quality and Security in Software",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SWENG411"
+        ]
+      },
+      "description": "Software systems are becoming an integral part of our daily life. In many domains the failure of a software system in not acceptable. Such a failure will have catastrophic effects. Hence, the quality of such software systems becomes so crucial. This course introduces software quality, the associated quality factors, software errors and the software quality assurance system. As software systems advance in complexity so does the threats that they face. Hence, the security of these systems has become so essential. Traditionally, security has been thought off as an add-on to an existing system. In this course, students will understand that this is not sufficient. Students will learn to consider security throughout the development process by extending the traditional software development life cycle and UML. For the requirements phase, this course will teach students to collect secure requirements, perform security requirements planning, and perform vulnerability mapping. For the design phase, this course will teach students to design a secure software architecture and perform architectural risk analysis. For the implementation phase this course will introduce students to secure coding. For the testing phase, the course will introduce students to secure testing. Finally students will be introduced to secure deployment and secure maintenance. A semester long team-based project will be part of this course to practice the concepts covered in the class."
+    },
+    {
+      "number": 465,
+      "title": "Web Services",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC221",
+              "SWENG311"
+            ]
+          }
+        ]
+      },
+      "description": "This course introduces the students to a contemporary computing paradigm called \"service-oriented computing.\" SWENG 465 Web Services (3) This course focuses on a new computing paradigm called \"service-oriented computing\", which has been greatly impacting a wide array of software systems. It covers \"service-oriented architecture.\" Students will not only gain an in-depth understanding of the concepts and technical issues underpinning Web services, but also gain hands-on experience of the development of software systems built upon Web services."
+    },
+    {
+      "number": 480,
+      "title": "Software Engineering Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SWENG431"
+        ]
+      },
+      "description": "Concepts of engineering ethics, economy, and project management, senior capstone project selection, and technical communication skills. SWENG 480 Software Engineering Design (3)This course prepares senior software engineering students for industrial engineering design and project management. It covers the engineering design process, project planning and evaluation, engineering ethics, and engineering economy. In addition, students select, specify, and start their capstone design project, which is completed, in the follow-up course, SWENG 481 . Students are expected to carry out a group design project that is on par with industrial expectations. Upon completion of this course a student should have a solid understanding of the engineering design process, a clear capstone project description, should have completed some preliminary design work, and be adequately prepared to complete the project in SWENG 481 ."
+    },
+    {
+      "number": 481,
+      "title": "Software Engineering Project",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SWENG480"
+        ]
+      },
+      "description": "Capstone group design projects in software engineering. SWENG 481 Software Design Projects (3) In this course students complete their group senior design project started in SWENG 480 . Design groups meet regularly with a faculty advisor to report progress and resolve technical issues. Oral and written progress reports are expected at selected times. The class culminates with a final technical defense of the project."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activites on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 510,
+      "title": "Secure Software Engineering",
+      "credits": 3,
+      "description": "This course provides a foundation in software enginering techniques for developing secure software systems."
+    },
+    {
+      "number": 541,
+      "title": "Advanced Database Design Concepts",
+      "credits": 3,
+      "description": "Practical benefits of a Database Management System; three-stage process to create and implement a relational database to meet defined requirements."
+    },
+    {
+      "number": 569,
+      "title": "Service Oriented Architecture",
+      "credits": 3,
+      "description": "The principles of service oriented architecture; modeling, design and implementation of services; mapping business processes to services. SWENG 569 Service Oriented Architecture (3)Service-Oriented Architecture (SOA) is a design principle for guiding the design, development, deployment, and sustaining of flexible and agile IT solutions. SOA has become increasingly viable because of the widespread adoption of Web services technology that makes creating SOA practical and cost effective. SOA essentially makes IT agile, interoperable, and more responsive. This course is structured to be appropriate for graduate students in software or systems engineering, or information science. Many of the topics covered in this course may be applied to a wide variety of research areas. Usually this course would cover the following topics: 1) Model, design, and implement SOA; 2) Create agile and reusable SOA; 3) Automate business processes by mapping to the architectural model; 4) Orchestrate services and execute processes with the Business Process Execution Language (BPEL); 5) Achieve interoperability within SOA using proven design patterns and/or best practices; and 6) Implement loosely coupled services using WSDL-first techniques. Students will be evaluated on their understanding of the course material by completing one examination (20%), weekly assignments (40%), and an individual project with presentation (40%)."
+    },
+    {
+      "number": 580,
+      "title": "Advanced Software Engineering",
+      "credits": 3,
+      "description": "Description of tools and techniques in the software development lifecycle; Mitigation and managing time-to-market and quality of large software systems."
+    },
+    {
+      "number": 582,
+      "title": "Real-Time Software Design and Analysis",
+      "credits": 3,
+      "description": "A holistic, systems-based approach to design and analysis of real-time systems; design and implementation of a small real-time system."
+    },
+    {
+      "number": 584,
+      "title": "Genetic Algorithms",
+      "credits": 3,
+      "description": "Application of genetic algorithms to problems in engineering and science including combinatorial optimization, multi-criteria optimization, biology, chemistry, and neural networks."
+    },
+    {
+      "number": 585,
+      "title": "Pattern Oriented Design",
+      "credits": 3,
+      "description": "This class examines well-known heuristics, principles and patterns in the design and construction of reusable frameworks, packages and components. SWENG 585 Pattern Oriented Design (3) This course studies the heuristics, principles and patterns of object-oriented design in the construction of extendable frameworks, reusable packages and pluggable components. Topics covered include Riel's object-oriented design heuristics, Martin's principles of class and package design, the \"Gang of Four\" design pattern catalog, refactoring and framework evolution."
+    },
+    {
+      "number": 588,
+      "title": "Program Understanding",
+      "credits": 3,
+      "description": "Techniques for the analysis and visualization of large software systems to assess the quality of the design and architecture. SWENG 588 Program Understanding (3)It is a general observation that software engineers learn about software design, programming languages, paradigms, patterns and tools, and are expected to produce high quality designs and code, often without ever having seen good examples. This approach is akin to teaching students the syntax of the English language and writing techniques and then expecting them to become expert writers without ever having read great literary works. The course in Program Understanding seeks to educate graduate software engineering students beyond their understanding of code syntax and best construction practices with analytical evaluation of \"great works\" of software code. This approach includes manual code reading, the use of visualization techniques, and automated approaches to assessment of design and code quality."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 805,
+      "title": "Software Project Management",
+      "credits": 3,
+      "description": "Analysis and construction of project plans for the development of complex software products; how to manage change and cost control."
+    },
+    {
+      "number": 826,
+      "title": "Applied Human-Computer Interaction",
+      "credits": 3,
+      "description": "Evaluate and design interactive products that support how people work and communicate from both a theoretical and practical perspective. SWENG 826 Applied Human-Computer Interaction (3) This course introduces the student to the broad area of human-computer interaction. Emphasis is placed on applying theories and techniques to the evaluation and design of software-based products that are both useful and usable. Students will gain an understanding of these concepts primarily by analyzing existing interfaces and developing prototypes. Students will be exposed to the challenges of usability testing through review of published studies and by developing a usability study design. Objectives:The course objectives are for Information Science professionals and software engineers to: 1. Identify examples of positive and negative user experiences in both everyday life and the work environment 2. Gain an overview of HCI theories, principles, and guidelines 3. Learn ho to design for usability 4. Learn how to incorporate usability design into the software development process 5. Use usability principles to evaluate and compare software-based products 6. Learn how to effectively test for usabilityPerformance will be evaluated through projects where students will apply what they have learned to design and evaluation problems. It is anticipated that this course will be offered once every year with expected enrollment of 20 students per offering."
+    },
+    {
+      "number": 837,
+      "title": "Software System Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC483W"
+        ]
+      },
+      "description": "The application of engineering best practices to the requirements, analysis and design of large software-centric systems will be presented. This will include the state of the art in software modeling techniques, the Unified Modeling Language and the Unified Process, along with tried and tested structured approaches. Students will learn how to analyze customer requirements and then systematically develop complete software specifications to meet those requirements using appropriate techniques for the application domain."
+    },
+    {
+      "number": 861,
+      "title": "Software Construction",
+      "credits": 3,
+      "description": "Students will learn and practice the elements of constructing a large-scale distributed software system using current technologies. SWENG 861 Software Construction (3) This course will expose the student to the elements and activities of software construction with a particular emphasis in the development of large-scale distributed software systems. Through investigation of large-scale distributed applications, the student will have the knowledge to be much more productive at modern software development. This course will begin by covering the foundation that surrounds large scale software construction such as performance, scalability, fault-tolerance, and security. Following the foundation, a particular emphasis in this course is on technologies that are used to build applications for modern devices and systems as well an emphasis on overcoming the issues that large-scale distributed systems encounter such as security and availability. The student will also investigate web services that help with the interoperability across heterogeneous platforms as well as learn how to handle concurrency, persistence and unit testing across all tiers of the application. Finally, the students will learn how to deal with deployment and security in large-scale distributed systems. Students will learn and practice software construction by developing a project that evolves gracefully as the technology discussion evolves but will have the freedom to work on either Java EE or MS. NET platforms."
+    },
+    {
+      "number": 881,
+      "title": "Software Testing",
+      "credits": 3,
+      "description": "This course provides a rigorous formal framework and practical information on the testing of software throughout its life cycle. Emphasis will be placed on software testing activities throughout the software lifecycle, testing of object-oriented and non-object-oriented software, and on formal methodologies for software testing. Documentation of software testing activities will also be covered."
+    },
+    {
+      "number": 886,
+      "title": "Requirements Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "SYSEN886"
+      ],
+      "description": "This course is a thorough treatment of the theoretical and practical aspects of discovering, analyzing, modeling, validating, testing and writing requirements for systems of all kinds, with an intentional focus on software-intensive systems. The course will bring to bear a variety of formal methods, social models, and modern requirements writing tools to be useful to the theorist and practicing engineer. Students will be led through a series of weekly activities that culminate in the delivery of a complete software requirements specification project for a hardware/software system (first in draft, then in final form). The project is broken down into four subprojects, Requirements Elicitation, Requirements Analysis and Representation, Requirements Validation and Testing, and Final Requirements Documentation."
+    },
+    {
+      "number": 887,
+      "title": "Software Systems Architecture",
+      "credits": 3,
+      "description": "Architecture is an abstract view of a software system distinct from the details of how such a system is implemented. A robust architecture is key to developing software systems that meet quality expectations (such as performance, scalability, availability, maintainability, etc.) of their stakeholders. This course introduces basic concepts of software architecture, architectural design principles, and patterns. Students also learn how to document and evaluate software architectures, and reuse architectural assets through software product lines. This course is structured to be appropriate for graduate students in software or systems engineering. Many of the topics covered in this course may be applied to a wide variety of research areas. Students will be evaluated on their understanding of the course material by completing one examination (25%), weekly assignments (35%), and an individual project with presentation (40%)."
+    },
+    {
+      "number": 888,
+      "title": "Mobile Computing and Applications",
+      "credits": 3,
+      "description": "design and development of mobile computing-based applications and services utilizing current and emerging mobile computing technologies. The purpose of this course is to provide students with an advanced and hands-on exploration of mobile computing paradigms. Mobile computing addresses the mobility needs of business operations and management in organizations, with the increasing trend of leveraging a variety of deployed enterprise information systems. Hence, well-designed and developed mobile applications can meet the needs of business mobility on both the service provider and the customer sides. This course is designed to explore and discuss approaches to the design and development of mobile applications. It builds an awareness of the business need for operational agility and mobility, and the value of existing IT investments in organizations. Specifically, this course investigates the fundamental design and development of mobile applications and services using platform technologies; area topics include mobile application and services design patterns, user interface, animation, location & mapping, and integration. Through working on exercises, labs, and projects, students will be able to identify and apply appropriate mobile platform technologies in their assignments and will gain skills and coding experience in the development of adaptable and sustainable mobile application solutions. Consequently, with this course, students will learn mobile development environments, application and service design and development, device emulators, data and mobility management, and enterprise solution-based integration. Cross Listings: IST 888 will be added as a cross-listed course."
+    },
+    {
+      "number": 889,
+      "title": "AI-Assisted Software Engineering",
+      "credits": 3,
+      "description": "Artificial Intelligence is rapidly transforming software engineering practice, from requirements analysis and code generation to testing, code review, and DevOps support. Understanding both the technical foundations and the ethical and engineering implications of these tools is increasingly essential for software engineers and technology leaders. This course offers a foundational and applied approach to AI-Assisted Software Engineering, with emphasis on Generative AI, LLMs, AI agents, and low-code/no-code workflows. Participants will learn how to collaborate with AI in activities such as requirements generation, coding, testing, debugging, code review, and documentation, while maintaining engineering control, validation, and accountability. Through hands-on exercises and a group project, students will design and evaluate AI-enabled solutions for software engineering tasks across the software development lifecycle (SDLC). The course also introduces Software Engineering for AI Systems, highlighting the distinct challenges of building reliable systems that include AI/ML/LLM components."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, professionally oriented student activities that constitute the culminating experience for the program."
+    }
+  ]
+}

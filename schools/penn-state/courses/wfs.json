@@ -1,0 +1,626 @@
+{
+  "subject": "WFS",
+  "courses": [
+    {
+      "number": 150,
+      "suffix": "S",
+      "title": "First-Year Seminar",
+      "credits": 2,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "The objectives of this first-year seminar course are to: (1) Engage and prepare first-year college students for academic success by orienting them to the scholarly community and introducing them to available academic resources. (2) Introduce students to Pennsylvania's forests and some of the research and other activities currently underway at Penn State that supports the conservation and management of these resources. (3) Introduce students to strategies they can use while at Penn State to prepare for careers related to forestry, wildlife/fisheries, and other natural resources disciplines."
+    },
+    {
+      "number": 209,
+      "suffix": "N",
+      "title": "Wildlife and Fisheries Conservation",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER",
+        "BA-N"
+      ],
+      "description": "The conservation and management of our natural resources is critical to all aspects of human existence. Wildlife and fishery resources are integral to our food supplies, the quality of our lands, and form a deep foundation of our culture. This course will introduce students to fisheries and wildlife and basic ecological principles as they relate both to the natural and human-influenced environment. It is open to all students with a basic background in biology. Students will learn to identify and analyze the interacting components of fisheries and wildlife systems and to apply basic ecological principles to current wildlife and fisheries management and conservation issues. The course will explore the basic tools, practices, and concepts used in the conservation and management of fish, wildlife, and their respective habitats. The course will also explore the human dimensions aspects of managing common property resources, like fish and wildlife, including the roles various stakeholders have in the management of these resources."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 300,
+      "title": "The Vertebrates",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Overview of the evolution, systematics, ecology, and behavior of the subphylum vertebrata. W F S 300 The Vertebrates (2) The purpose of this course is to introduce students to vertebrate zoology and will include overviews of vertebrate evolution, systematics, anatomy, physiology, ecology, and behavior. The course will begin by introducing the phylum Chordata. The cephalochordata, amphioxus (Branchiostoma lanceolatum), will be discussed and used as a model of a prevertebrate. The basic organization and theories of vertebrate evolution will be reviewed. The superclasses, Agnatha and Gnathostomata, will be introduced. The origin of each of the major group of vertebrates will be traced. The general approach will be phylogenetic and include discussions of the major changes associated with each group's evolution and selected elements of their extant diversity and biology."
+    },
+    {
+      "number": 301,
+      "title": "Vertebrate Laboratory",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "BIOL110",
+          "WILDL101"
+        ]
+      },
+      "description": "W F S 301 Vertebrate Laboratory (2) The purpose of this course is to introduce students to the anatomy of the vertebrates and to expose students to the diversity of vertebrates that reside in Pennsylvania. Students will dissect and learn the anatomy of the dogfish, frog, and cat or mink. Additional laboratory periods will concentrate on collecting/observing, and identifying fish, amphibians, reptiles, birds, and mammals. Museum curation techniques will be taught, and students will be required to construct dichotomous keys to specimens that inhabit Pennsylvania. The identification part of the course is meant to introduce students to representatives of the taxa that occur within the Commonwealth in preparation for higher-level courses in ichthyology, herpetology, ornithology, or mammalogy. Collection techniques will emphasize the proper collection and preservation of organisms for natural history museums."
+    },
+    {
+      "number": 310,
+      "title": "Wildlife and Fisheries Measurements",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "BIOL110",
+          "WILDL101",
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
+        ]
+      },
+      "description": "Wildlife and Fisheries Measurements will introduce students to basic measurements used to describe fish and wildlife populations and their habitats. Laboratory exercises will stress sampling approaches and implementation, common techniques for collecting information about amphibians, fish, birds, and mammals and their respective habitats, mapping and orienteering, and methods for summarizing and reporting findings."
+    },
+    {
+      "number": 340,
+      "title": "Statistics for Conservation of Wild Populations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
+        ],
+        "minGrades": {
+          "STAT200": "C",
+          "STAT240": "C",
+          "STAT250": "C"
+        }
+      },
+      "description": "Statistics for Conservation of Wild Populations provides an overview of the statistical techniques used by wildlife and fisheries biologists to research wild animal populations and guide management and conservation. Wildlife and fisheries researchers use many approaches that are not taught in general statistics classes, because they deal with wild populations that cannot be censused, randomly sampled, or consistently resampled. We will cover methods used to estimate animal abundance, survival, occupancy, and habitat use, as well as how we can test hypotheses about individual, temporal, and spatial variation. Students will learn how to implement these methods using standard statistical software (such as program R and MARK), how to determine the best method for answering a question, and how to interpret statistical results in the context of management and conservation."
+    },
+    {
+      "number": 406,
+      "title": "Ornithology Laboratory",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "WFS407"
+        ]
+      },
+      "description": "W F S 406 Ornithology Laboratory (2) Ornithology Laboratory establishes the basic skills for identifying bird species in the field. This laboratory and field course is open to students with some background in wildlife and should be taken after completing or at the same time as the ornithology lecture course. The objectives of this course are for students to use laboratory specimens, identification software, field guides, and instructor-led field trips to 1) define, locate, and recognize anatomical features used to describe birds and characterize families; 2) recognize and identify approximately 160 species of birds by sight and approximately 60 by song in the field and/or lab; and 3) describe habitat, seasonal abundance, and distribution of bird species within the state. Most weeks include an introductory lecture followed by field instruction."
+    },
+    {
+      "number": 407,
+      "title": "Ornithology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Introduction to the biology, ecology, adaptations, and conservation of birds."
+    },
+    {
+      "number": 408,
+      "title": "Mammalogy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "IDENTIFICATION, SYSTEMATICS, CHARACTERISTICS, ADAPTATIONS, ECOLOGY, BEHAVIOR, NATURAL HISTORY AND CONSERVATION, AND SOCIO-ECONOMIC ASPECTS OF MAMMALS."
+    },
+    {
+      "number": 409,
+      "title": "Mammalogy Laboratory",
+      "credits": 2,
+      "requisites": {
+        "concurrent": [
+          "WFS408"
+        ]
+      },
+      "description": "W F S 409 Mammalogy Laboratory (2) Mammalogy Laboratory provides the necessary skills for identifying North American mammals. Taken concurrently with or after completing the mammalogy lecture course, this laboratory and field course is open to students with some background in wildlife. The objectives of this course are for students to 1) identify North American mammals by skulls and skins, 2) identify eastern North American mammals by tracks in the field, 3) capture and measure small mammals, and 4) gain an understanding of the characteristic behavior and ecology of North American mammals. Fields skills include animal handling, tracking, and observation. Additional skills may include skin and skull preparation and museum techniques for the care of mammals."
+    },
+    {
+      "number": 410,
+      "title": "General Fishery Science",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "WILDL101"
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to the study, management, and uses of fish populations; methods of investigation, culture, and harvest of fishes."
+    },
+    {
+      "number": 422,
+      "title": "Ecology of Fishes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Role of fishes in aquatic communities and general ecosystems. Environmental factors influencing fish as individuals, populations, and communities."
+    },
+    {
+      "number": 425,
+      "title": "Aquatic Invertebrate Ecology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "This course is designed to provide students with an understanding of the life histories, ecology and importance of macroinvertebrates in freshwater aquatic ecosystems. Special attention will be given to taxonomy and diversity, the role of aquatic invertebrates in food webs, the implications of non-indigenous invertebrates on native aquatic environments and the use of macroinvertebrates in aquatic biomonitoring. The primary focus will be on aquatic insects, although other key aquatic invertebrates will also be included. The laboratory component of the course will involve learning to identify major groups of aquatic macroinvertebrates and is designed to provide students with skills in invertebrate sampling and identification, including the use of dichotomous keys. Field trips will include sampling several local aquatic habitats, and students will be required to develop a curated scientific collection of aquatic invertebrates during the semester. The course will provide training towards certification for the Society for Freshwater Science's aquatic invertebrate Taxonomic Certification Program (https://freshwater-science.org/about/taxonomic-certification)."
+    },
+    {
+      "number": 430,
+      "title": "Conservation Biology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL220W",
+              "FOR308"
+            ]
+          }
+        ]
+      },
+      "description": "The application of biological principles to issues in the conservation of biodiversity. FOR (W F S) 430 Conservation Biology (3) This course applies basic principles of ecology and genetics to issues regarding the conservation forested ecosystems and their associated fisheries and wildlife. The objective of this course is to provide a broad appreciation of the concepts in conservation biology that are important to solving contemporary natural resources problems. Students will be exposed to the history of conservation biology, values of biodiversity, definitions of species concepts, protecting the genetic structure of species, extinction as a natural process, vulnerability to extinction, biodiversity at the community, ecosystem, and landscape levels, habitat fragmentation, metapopulations, legal aspects of conservation, ecosystem management, exotic species, pollution, human population issues, measuring genetic diversity, attitudes towards nature, ex-situ conservation, and ecosystem restoration."
+    },
+    {
+      "number": 431,
+      "title": "Conservation Genetics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "This course will provide a comprehensive overview of evolution and conservation genetics, an interdisciplinary science that focuses on understanding the processes that influence genetic diversity at the individual and population levels. Foundational concepts in evolutionary ecology, population, and quantitative genetics, and tools described therein will be applied to conservation design, management, and restoration strategies for species of conservation or commercial importance to address real-world challenges in conservation science. This course will cover issues including inbreeding, climate change, invasive species, conservation of threatened and endangered species, adaptation and climate change, and habitat restoration using examples from a broad range of biological systems."
+    },
+    {
+      "number": 435,
+      "title": "Limnology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110",
+          "BIOL220W",
+          "CHEM110"
+        ]
+      },
+      "description": "Biogeochemistry and natural history of freshwater ecosystems. W F S (E R M) 435 Limnology (3)This course will define and describe major principles (physical, chemical, biological, and ecological) that govern the structure and function of freshwater ecosystems (ponds, lakes, and rivers). Current scientific literature will be critically reviewed and discussed in relation to comparative philosophy, methodology, and case studies that cover a range of topics in limnology. The objectives of E R M (W F S) 435 are to familiarize students with the major physical properties, chemical cycles, taxonomic groups of organisms, and ecological interactions that define and describe the natural function of aquatic ecosystems. The course will use case studies to illustrate and examine pertinent issues (e.g., excessive material loading, introduction to exotic species, habitat fragmentation, and climate change) that can alter the structure and function of aquatic ecosystems. Knowledge of these basic ecosystem principles will be applied towards formulating real-life resolutions to the issues identified in class, in order to better manage aquatic resources (methods to reduce material loads, transport controls of exotic species, habitat restoration, and reduction of global gases). This course will be useful to both undergraduate and graduate students seeking degrees in Environmental Resource Management, Wildlife and Fisheries Science, Ecology, and other related subjects. At the undergraduate level, the course will serve as a 400-level selection in both the Environmental Resource Management and Wildlife and Fisheries Science degree programs. At the graduate level, the course will compliment several Wildlife and Fisheries courses that form the compliment of that degree program. Moreover, the course can satisfy the course requirement for ecosystems ecology in the inter-college Ecology graduate program and serve as a breadth course in Water Resources for graduate students in the Watershed Stewardship program."
+    },
+    {
+      "number": 446,
+      "title": "Wildlife and Fisheries Population Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "WILDL101",
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT240",
+              "STAT250"
+            ]
+          }
+        ]
+      },
+      "description": "Wildlife and Fisheries Population Dynamics focuses on the concepts and tools needed to make predictions about how populations of fish and wildlife respond to changes in their environment, external stressors, and management actions. Students will learn the mathematical and programming tools needed to measure population processes and make predictions about future population sizes. The students will have opportunities to apply these concepts and tools to address fish and wildlife population management problems. Examples include assessing the effects of harvest, managing invasive species and wildlife diseases, reducing extinction risk and recovering small populations, and predicting the efficacy of a range of management actions affecting population demography. Students taking the class will need to have an understanding of basic fish and wildlife ecology, tools and techniques for monitoring populations, and general concepts related to the conservation and fish and wildlife management."
+    },
+    {
+      "number": 447,
+      "suffix": "W",
+      "title": "Wildlife Management",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Management of renewable wildlife resources by applying ecological concepts, habitat evaluation, and decision-making; writing and editing reports are emphasized."
+    },
+    {
+      "number": 450,
+      "title": "Wetland Science and Sustainability",
+      "credits": 3,
+      "description": "Wetlands are unique ecosystems, differing in many ways from both terrestrial and aquatic environments. The study of wetlands is interdisciplinary, requiring background knowledge in science, management and policy disciplines. This course will explore the variety of wetland types and classification schemes, and emphasize the diverse hydrological, biological, chemical, and physical interactions that occur within wetlands. They provide recognized ecosystem services and values to society, so issues surrounding wetland management, regulation, climate change impacts, and sustainability will be addressed. Topics will also include the restoration of degraded wetlands and wetland creation, along with the construction of wetlands for pollution abatement. Students will also develop an understanding of important international, national and state policies and regulations pertaining to wetlands and their protection and delineation. Opportunities for professional certification in wetland science will also be discussed."
+    },
+    {
+      "number": 452,
+      "title": "Ichthyology",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Ichthyology is the study of fishes, the largest and most diverse group of vertebrate animals. This course covers a wide range of topics including systematics, classification, morphology, physiology, behavior, and ecology of fishes. Students will learn the characteristics and natural history of the major groups of fishes and consider conservation and management implications."
+    },
+    {
+      "number": 453,
+      "title": "Ichthyology Laboratory",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Ichthyology Laboratory establishes the basic skills for identifying freshwater fish with a focus on the fishes of Pennsylvania. Students use laboratory specimens, field guides, and dichotomous keys to define and recognize anatomical features used to describe fish and characterize families. Students learn to identify fish species using scientific and common names and to describe factors that affect the distribution and abundance of species across the state. Field trips to local waterways allow students to learn collecting techniques and practice identification skills in the field."
+    },
+    {
+      "number": 454,
+      "title": "Field Ichthyology",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Field Ichthyology is designed familiarize students with collection, observation, and field identification of Pennsylvania's fish fauna. Students will get hands-on instruction on how to collect, preserve, catalog, curate, and observe fishes. Additionally, students will learn how to gather pertinent in situ behavioral and distribution information on fishes and how to manage, record, and store field data. With the increasing emphasis on biodiversity and environmental monitoring, students need to be able to collect, manage, and store data as well as secure the chain of custody. This course is offered annually in partnership with agencies, research centers, and universities within Pennsylvania. Classes begin Sunday evening and extend until Friday afternoon. After the three-hour introductory class on Sunday evening, students meet each day for field collections/observations from 8am-5pm (weather dependent). In the evenings, students reassemble in the laboratory for additional activities and lectures. On one day, a series of night collections is made that extends until midnight. Students are responsible for their motel and food expenses during the week. All transportation to and from the collection sites is provided. The class will meet at least four times by appointment during the fall semester to enable students to process preserved samples that they collected."
+    },
+    {
+      "number": 460,
+      "title": "Wildlife Behavior",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Scholarly discussion and critique of history, concepts, and application of wildlife behavioral concepts to conservation issues. The course will give an in-depth coverage of concepts related to an understanding of wildlife behavior. Particular focus will be given to a discussion, critique, and development of these concepts and their application to contemporary issues in conservation and natural resource management of wildlife because there is a general lack of understanding of behavior by conservationists and natural resource managers."
+    },
+    {
+      "number": 461,
+      "title": "Animal Welfare: Science and Ethics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "Understanding animal welfare and well-being in farmed, wild and captive animals, and the implications for policy, legislation and conservation. Whether we interact with farmed animals, wild animals in natural settings, or captive reared wild animals bred for research or for re-introductions, there is a growing interest in their welfare. What do animals need to manifest good welfare and well-being? To find answers we need to devise experiments that determine what animals want and what they find aversive. This allows us to find ways to decrease fear and stress associated with handling and captivity. This course covers the practical issues of animal welfare; animal ethics in wildlife management, conservation, and agriculture; and the use of animals in research. The course provides a framework with which to consider philosophical positions on animal use (covering aspects such as rights-based views versus utilitarian views) and the history of ethical debate over the interactions that humans have with other species. The course also addresses the current social, economic, and legal developments related to animal welfare and animal ethics."
+    },
+    {
+      "number": 462,
+      "title": "Amphibians and Reptiles",
+      "credits": 3,
+      "description": "This course explores the evolution, ecology, and conservation of amphibians and reptiles. This course is open to all students with some background in biology. The objectives of this course are for students to 1) describe the evolution, anatomy, reproduction, and physiology of amphibians and reptiles, 2) place contemporary research in the context of the natural history traits and behavioral ecology of herps, and 3) critically evaluate the application of these concepts to natural resource management for salamander, frog, turtle, lizard, and snake species and populations."
+    },
+    {
+      "number": 463,
+      "suffix": "W",
+      "title": "Fishery Management",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "WFS300",
+          "WFS301",
+          "WFS310"
+        ]
+      },
+      "description": "Management of sport and commercial fisheries, including biological, political, social, and economic factors; regulations and other management techniques. W F S 463W Fishery Management (3) This course will introduce students to the management of recreational and commercial fisheries. The course emphasizes fishery management as a goal-oriented process that adapts over time to changes in fish populations and societal goals. Students will learn to recognize and understand that ecological, economic, political, and social forces shape this management process. Major methods of fisheries management involving people, population, and habitat management will be surveyed. Case studies highlighting the application of these management strategies to current fishery management are explored. Writing reports and management plans is emphasized."
+    },
+    {
+      "number": 465,
+      "title": "Restoration Ecology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "FOR203"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "BIOL220W",
+              "FOR308"
+            ]
+          }
+        ]
+      },
+      "description": "Restoration ecology is a discipline that integrates principles from ecology, engineering, landscape architecture, economics and other select social sciences to repair ecosystems that have been degraded, damaged, or destroyed. The goal of restoration is to restore the structure of biological communities and the ecological functions and ecosystem services they provide to society. This course will cover the field of restoration ecology for students who see themselves someday practicing or participating in restoration projects during their careers. The course will cover the conceptual and theoretical foundations that underlie restoration efforts and link these to real-world applications in past and ongoing restoration projects in a variety of types of ecosystems. Examples of local and regional restoration projects will be used to reinforce principles discussed in class."
+    },
+    {
+      "number": 489,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "The Supervised Experience in College Teaching course provides select undergraduate students with formal, supervised teaching experience in a Wildlife and Fisheries Science course. Faculty recruit students who excel in a particular course to serve as undergraduate teaching assistants for subsequent offerings of that course. Duties may include serving as peer tutors, teaching assistants, or laboratory assistants, and developing and/or evaluating course activities and materials. Students participating in this course will develop a deeper understanding of the focus course material by actively helping teach the material. The course is only available to students who are invited to serve as teaching assistants for a Wildlife and Fisheries Science course and enrollment is by permission of the instructor."
+    },
+    {
+      "number": 494,
+      "title": "Undergraduate Research",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Undergraduate Research",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small group basis"
+    },
+    {
+      "number": 495,
+      "title": "Wildlife/Fisheries Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised field experience related to the student's major."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 500,
+      "title": "Professionalism in Natural Resources",
+      "credits": 3,
+      "description": "Scholarly discussion and critique of skills important to professionalism of students in natural resources, wood products, and related science-based disciplines. W F S 500 Professionalism in Natural Resources (3) The course will give an in-depth coverage of issues and skills pertinent to the professionalism of graduate students in natural resources, wood products, or related science-based disciplines. Particular focus will be given to a discussion, critique, and development of communication skills (oral and written). In addition, a spectrum of pertinent topics and issues relevant to graduate students will be discussed in depth, ranging from the philosophy and land-grant institutions and to those important to the academic success of graduate students and their success in future careers. This course will be offered in fall semester each year."
+    },
+    {
+      "number": 510,
+      "title": "Design of Ecological Field Studies",
+      "credits": 2,
+      "description": "Application of the scientific method and general principles of designing ecological field studies through discussion and critique of the primary literature."
+    },
+    {
+      "number": 542,
+      "title": "Systematics",
+      "credits": 3,
+      "description": "Principles and methods of classification, phylogeny, and speciation; taxonomic techniques; analysis of species; causal interpretation of animal diversity."
+    },
+    {
+      "number": 552,
+      "title": "Systematics and Evolution of Fishes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL421",
+          "WFS452"
+        ]
+      },
+      "description": "Detailed study of the systematics, evolution, identification, and natural history of fishes."
+    },
+    {
+      "number": 560,
+      "title": "Population Estimation and Modeling",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT500",
+              "STAT501",
+              "STAT502"
+            ]
+          }
+        ]
+      },
+      "description": "Application of statistical models to estimating population parameters to test ecological theories. W F S 560 Population Estimation and Modeling (4)The purpose of this course is to impart a working knowledge of statistical methods for estimating fish and wildlife populations. Primary emphasis will be on methods of estimating population size, survival rates, and birth rates as they relate to testing hypotheses about population dynamics. Most of the course will focus on mark-recapture models for both open and closed populations, but other methods such as distance sampling and removal models that do not require marked animals will be studied."
+    },
+    {
+      "number": 585,
+      "title": "Applied Spatial Ecology",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Students will develop skills in understanding and processing complex datasets while learning traditional and innovative methods for spatial data analysis. The purpose of this course is to assist researchers on methods for data management and analysis using a state-of-the-art statistical program after data has been collected in the field or for designing field experiments. The course focuses on wildlife/fisheries research, both basic and applied, that rely on large ecological datasets that provide unique opportunities to explicitly incorporate sources of spatial and temporal variability into understanding motivations for an organism's movements, resource selection, subpopulation structuring, or presence in a landscape. The impetus behind this course and resulting manual was to import data from spreadsheet software, import Geographical Information Systems (GIS) layers, and conduct statistical analysis of datasets all in a single software platform. In the past several decades, advancements in data acquisition have resulted in datasets often with thousands of records. Concurrent with these advancements in acquisition, methods of handling and manipulating large datasets, GIS capabilities, and methods of estimators for home range, movements, resource selection, and spatial epidemiology have increased dramatically."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides an opportunity for supervised and graded teaching experience in wildlife courses."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No Description."
+    }
+  ]
+}

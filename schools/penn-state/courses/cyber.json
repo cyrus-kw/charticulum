@@ -1,0 +1,338 @@
+{
+  "subject": "CYBER",
+  "courses": [
+    {
+      "number": 99,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 100,
+      "title": "Computer Systems Literacy",
+      "credits": 3,
+      "description": "This is an introductory university-level course in computer systems literacy. The history, architecture and operation of computing systems and underlying computing theory are covered. The intent of this course is to ensure that students with diverse backgrounds can gain the information technology fundamental skills and understanding to succeed with subsequent in-depth courses in the Cybersecurity Analytics and Operations curriculum. At the same time the general nature of the introduction may make it useful for other programs that involve education in concepts and skills relating to information and computing systems."
+    },
+    {
+      "number": 100,
+      "suffix": "S",
+      "title": "Computer Systems Literacy",
+      "credits": 3,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "This is an introductory university-level course in computer systems literacy. The history, architecture and operation of computing systems and underlying computing theory are covered. The intent of this course is to ensure that students with diverse backgrounds can gain the information technology fundamental skills and understanding to succeed with subsequent in-depth courses in the Cybersecurity Analytics and Operations curriculum. At the same time the general nature of the introduction may make it useful for other programs that involve education in concepts and skills relating to information and computing systems."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 221,
+      "title": "Overview of Information Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SRA111",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC101",
+              "IST140"
+            ]
+          }
+        ]
+      },
+      "description": "Provides an understanding of the overview of information security including security architecture, access control, and internet secure applications. CYBER 221 Overview of Information Security (3) CYBER 221 focuses on an overview of information security. Students will learn the principles of information security, security architectures and models, aspects and methods of information security such as physical security control, operations security, access control, hacks/attacks/defense, systems and programs security, cryptography, network and web security, worms and viruses, and other Internet secure applications. Students will also learn how to plan and manage security, security policies, business continuity plans, disaster recovery plans, and social and legal issues of information security. A major component of the course will be several hands-on exercises and a final team-based project. This course will incorporate collaborative and action-learning experiences wherever appropriate. Emphases will be placed on developing and practicing writing and speaking skills through application of the concepts, theories and technologies that define the course."
+    },
+    {
+      "number": 262,
+      "title": "Cyber-Defense Studio",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CYBER100",
+              "CYBER100S"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "IST140"
+            ]
+          }
+        ]
+      },
+      "description": "This studio course teaches four basic hands-on cyber-defense skills: configuring a firewall, implementing a host-based intrusion detection software tool, using the Metasploit tool to do penetration testing, and implementing a network intrusion detection tool. The first cyber-defense skill is on configuring an ACL (Access Control List) firewall. This module provides the students with a practical exercise applying their analytical skills to properly configure the ACL of a firewall and to verify the correctness of their firewall configurations. Through this exercise, the students also learn firewall oriented network security policies. The second cyber-defense skill is on implementing a host-based intrusion detection software tool which can detect suspicious user sessions on a computer. This module provides the students with a practical exercise applying their programming skills to solve anomaly detection problems. The third cyber-defense skill is on using the Metasploit tool to do penetration testing. This module provides the students with a practical exercise applying their programming skills to do penetration testing. The fourth cyber-defense skill is on implementing a network intrusion detection software tool which can detect suspicious network flows. This module provides the students with a practical exercise applying their programming skills to solve signature-based intrusion detection problems"
+    },
+    {
+      "number": 294,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses offered infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 342,
+      "suffix": "W",
+      "title": "Cyber Incident Handling and Response",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CYBER262",
+          "CYBER221",
+          "SRA231"
+        ]
+      },
+      "description": "Cyber Incident Handling and Response is an intermediate course appropriate for students who are majoring in Cybersecurity. This course provides the student with the background, experience and perspective that is required to document organizational preparation for cyber incidents, document cyber incident impact and resolution, document response strategies, as well as integrate business continuity planning into the organization. This is a writing intensive course, which requires each student to individually document cyber security incidents and communicate the impact of those incidents to the organization. Peer writing evaluation will help students to consider how effective their written communication skills are. Team writing assignments will provide students will the real-world experience of writing portions of organizational documents such as preparedness documentation, documenting the organization of computer incident response teams, documenting organizational disaster recovery plans, and documenting post-incident recovery plans. Students will receive peer feedback on their writing assignments, as well as direct feedback from the instructor with a goal of improving writing skills and conforming their writing styles to the expectations of organizations and industry."
+    },
+    {
+      "number": 362,
+      "title": "Cybersecurity Analytics Studio",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT200",
+              "SCM200"
+            ]
+          },
+          {
+            "oneOf": [
+              "IST256",
+              "IST261",
+              "HCDD361"
+            ]
+          },
+          "CYBER262"
+        ]
+      },
+      "description": "Cyberattacks involve advanced and sophisticated techniques to infiltrate corporate computers, networks and enterprise systems and critical infrastructures. Types of attacks include advanced malware, zero day attacks and advanced persistent threats. Advance warning about attackers and intelligence about the threat landscape is considered by many security leaders to be essential features in cyber-defense. The massive increase in the rate of novel cyberattacks has made data-mining-based analytics techniques a critical component in detecting security threats. Big data analytics in security involves the ability to gather massive amounts of digital information to analyze, visualize and draw insights that can make it possible to predict and stop cyberattacks. This studio course teaches fundamental data-driven cybersecurity analytics skills using programming skills acquired in earlier courses. The course will be divided into three modules. The first module prepares students for security analytics, by refreshing or making them familiar with two popular data analytics programming languages (e.g., R and Python). The second module focuses on understanding the key cybersecurity analytics process including data exploration, data visualization and data preparation and examining popular data mining algorithms such as linear and logistic regression, decision trees, support vector machine, and neural networks and similar techniques for security analytics. In the third module, students use analytics process and methods for selected cybersecurity problems, such as security breaches, ZeroAccess Infection, Log Analytics, Access Analytics and Web Hacking Analytics. Through this studio course, the students will gain concrete understanding of security analytics processes, methodologies and how to apply these concepts and tools to real-world cybersecurity. A major component of the course will be several hands-on exercises and a final team-based project. Hands-on exercises provide students with knowledge, skills and hands-on experience of learning security analytics process and methodologies to address security problems. The team-based project allows students to apply what they have learned to address real world security threat. This course will incorporate collaborative and action-learning experiences wherever appropriate. Emphasis will be placed on developing and practicing writing and speaking skills through application of the concepts, theories and technologies that define the course."
+    },
+    {
+      "number": 366,
+      "title": "Malware Analytics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "IST256",
+              "IST261",
+              "HCDD311"
+            ]
+          },
+          "CYBER262"
+        ]
+      },
+      "description": "Malware Analytics is an intermediate course required for students who are majoring in Cybersecurity Analytics and Operations. It is a three-credit hands-on course that teaches principles and practice of malware detection, analysis, and defense. The course begins by introducing the foundations of malware, including history, vulnerability, types, analysis methods, and defenses. It then builds on this foundation by teaching students how to address malware issues using analysis techniques such as reverse engineering and static program analysis, as well as how to use analytic approaches such as automatic malware trace classification and clustering. The course relies extensively on hands-on laboratory activities to help students obtain practical experience in malware analysis and analytics. Through this course, the students will gain concrete understandings on principles and practices of malware analysis and defense."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 440,
+      "title": "Cybersecurity Capstone",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CYBER342W",
+          {
+            "oneOf": [
+              "ENGL202C",
+              "ENGL202D",
+              "IST489"
+            ]
+          }
+        ]
+      },
+      "description": "Cybersecurity Capstone is an advanced, culminating course for students who are majoring in Cybersecurity. This course provides the student with a practical exercise, designed by the instructor. The initial weeks of the semester provide the student with an overview of several analytic frameworks that are used in cybersecurity shops and organizations. Then, the student reviews specific technical analysis methods in malware, static and dynamic analysis, file system exploration, security log file analysis and network analysis. The findings from these analyses are then integrated into the analytic framework, gaps are identified, further analysis is conducted to fill the gaps. In the final weeks of the semester, students construct a high level briefing that supplies appropriate levels of technical detail to top level executives."
+    },
+    {
+      "number": 451,
+      "title": "Network Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST220",
+          "CYBER221"
+        ],
+        "minGrades": {
+          "IST220": "C",
+          "CYBER221": "C"
+        }
+      },
+      "description": "Fundamental issues and concepts of network security, network security technologies and protocols, and emerging technologies in network security. CYBER 451 Network Security (3) Information technology has become a key component to support critical infrastructure services in various sectors of our society. In an effort to share information and streamline operations, organizations are creating complex networked systems and opening their networks to customers, suppliers, and other business partners. Increasing network complexity, greater access, and a growing emphasis on the Internet have made information/network security a major concern for organizations. CYBER 451 focuses on network security. The course will provide the students with a comprehensive understanding of the fundamental issues and concepts of network security, and the mainstream network security technologies and protocols that are widely used in the real world. The course will also address emerging technologies in network security.A major component of the course will be several team-based hands-on attack-defense projects. Each project has two phases: the attack phase and the defense phase. A group may be asked to defend against the attacks enforced by another group. This course will incorporate collaborative and action-learning experiences wherever appropriate. Emphasis will be placed on developing and practicing writing and speaking skills through application of the concepts, theories and technologies that define the course."
+    },
+    {
+      "number": 454,
+      "title": "Computer and Cyber Forensics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "IST220",
+              "CYBER221"
+            ]
+          }
+        ],
+        "minGrades": {
+          "IST220": "C",
+          "CYBER221": "C"
+        }
+      },
+      "description": "Fundamental issues and concepts of computer forensics; aspects of computer and cyber crime; methods to uncover, protect, exploit, and document digital evidence; tools, techniques, and procedure to perform computer and cyber crime investigation. CYBER 454 Computer and Cyber Forensics (3) Computer and communication technologies have become the key components to support critical infrastructure services in various sectors of our society. In an effort to share information and streamline operations, organizations are creating complex networked systems and opening their networks to customers, suppliers, and other business partners. Increasing network complexity, greater access, and a growing emphasis on the Internet have made information and network security a major concern for organizations. CYBER 454 focuses on computer and cyber forensics. Students will learn different aspects of computer and cyber crime and ways in which to uncover, protect, exploit, and document digital evidence. Students will be exposed to different types of tools (both software and hardware), techniques and procedure, and be able to use them to perform rudimentary forensic investigations. A major component of the course will be several hands-on exercises and a final team-based project. This course will incorporate collaborative and action-learning experiences wherever appropriate. Emphasis will be placed on developing and practicing writing and speaking skills through application of the concepts, theories and technologies that define the course. Integrated throughout are perspectives of computer and related legal process, including computer crimes from state and federal law, methods of interaction with law enforcement and prosecutors, admissibility of expert witness testimony and the use of forensic reports in civil, regulatory and internal investigations."
+    },
+    {
+      "number": 456,
+      "title": "Information Security Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "IST220",
+          "CYBER221"
+        ],
+        "minGrades": {
+          "IST220": "C",
+          "CYBER221": "C"
+        }
+      },
+      "description": "Contemporary Security Issues; security management processes, architecture and models; risk analysis and management; security planning, analysis and safeguards; security policies development and administration; contingency planning, incidence handling and response; and security standards and certification processes. CYBER 456 Information Security Management (3) Communication technologies have become a key component to support critical infrastructure services in various sectors of our society. In an effort to share information and streamline operations, organizations are creating complex networked systems and opening their networks to customers, suppliers, and other business partners. Increasing network complexity, greater access, and a growing emphasis on the Internet have made information systems and network security a major concern for organizations. CYBER 456 focuses on security and risk management. Students will learn contemporary security issues; security management processes, architecture and models; risk analysis and management; security planning, analysis and safeguards; security policies development and administration; contingency planning, incidence handling and response; and security standards and certification processes. A major component of the course will be several case studies and a final team-based project. This course will incorporate collaborative and action-learning experiences wherever appropriate. Emphasis will be placed on developing and practicing writing and speaking skills through application of the concepts, theories and technologies that define the course."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses offered infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

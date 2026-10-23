@@ -1,0 +1,195 @@
+{
+  "subject": "ABA",
+  "courses": [
+    {
+      "number": 457,
+      "title": "Understanding Communication: Verbal Behavior",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH100"
+        ]
+      },
+      "description": "This course focuses on the behavioral processes in the development of language and communication. Topics include the acquisition and development of listener, speaker, reader, and writer behaviors; the application of theory to instructional practices and treatment; and the implications for empirical research."
+    },
+    {
+      "number": 494,
+      "title": "Research Projects in Behavior Analysis",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on behavioral research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship in Behavior Analysis",
+      "credits": {
+        "min": 3,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, non-group instruction including behavioral field experiences, practice, or internship. Requirements and assessment will include skills including but not limited to national certification requirements."
+    },
+    {
+      "number": 500,
+      "title": "Science and Behaviorism",
+      "credits": 3,
+      "description": "This course will provide students with a foundation in the assumptions and philosophies of Applied Behavior Analysis. Students will learn about the development and advancement of behavioral theory. Special emphasis will be placed on the application of behavioral theory to problems of social significance and research-based clinical practice. Finally, considerations for extending behavioral theory beyond traditional areas of application will be discussed throughout the course."
+    },
+    {
+      "number": 510,
+      "title": "Behavioral Assessment and Intervention: Functional Skills",
+      "credits": 3,
+      "description": "This course will provide students an overview of the foundations and applications of evidence-based practice for teaching functional skills across ages, environments, and types of skills. Students will learn how to identify and apply evidence-based practices to teach clients and stakeholders. Special emphasis will be placed on behavioral assessment, behavior-change procedures, and selecting and implementing interventions. Finally, considerations and guidelines related to approaching functional skill instruction and the synthesis of evidence-based practice and research will be discussed throughout the course."
+    },
+    {
+      "number": 511,
+      "title": "Behavioral Assessment and Treatment",
+      "credits": 3,
+      "description": "This course provides students with the research-based principles and procedures of applied behavior analysis. The course teaches students how to review research-based procedures, analyze, interpret, and develop research-based intervention programs for a wide range of populations and behaviors. The course provides advanced discussion on the empirical and theoretical underpinning of behavior intervention procedures."
+    },
+    {
+      "number": 512,
+      "title": "Behavioral Assessment and Intervention: Problem Behavior",
+      "credits": 3,
+      "description": "This course will provide students an overview of the foundations and applications of evidence-based practice for reducing problem behavior. Students will learn how to identify and apply evidence-based practices to reduce problem behaviors. Special emphasis will be placed on behavioral assessment, behavior-change procedures, and selecting and implementing interventions. Finally, considerations and guidelines related to approaching reduction of problem behavior and the synthesis of evidence-based practice and research will be discussed throughout the course."
+    },
+    {
+      "number": 522,
+      "title": "Behavioral Research Methods",
+      "credits": 3,
+      "description": "This course will examine the multiple facets of behavioral research and single-case design. Students will learn to conduct single-case design research and critically evaluate published behavioral research to apply to their own research. Special emphasis will be placed on the analysis, strategies, tactics, and application of single-case experimental research methodologies related to research-based clinical practices. Finally, the ethical implications of the aforementioned areas will be discussed throughout the course"
+    },
+    {
+      "number": 523,
+      "title": "Advanced Behavioral Research and Dissemination",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABA522"
+        ]
+      },
+      "description": "This course will advance and generalize the application of behavioral research methodologies involving systematic literature reviews, single-case design experiments, and correlational behavioral research. Students will learn to complete and disseminate research to a scientific audience. Special emphasis will be placed on data analysis, scientific writing processes, and professional presentations and trainings."
+    },
+    {
+      "number": 533,
+      "title": "Principles of Behavior Analysis",
+      "credits": 3,
+      "description": "This course will provide students with a foundation in the concepts, principles, and techniques of Applied Behavior Analysis. Students will learn about the relationship between behavior and environment and the variables that influence behavior and affect meaningful change. Special emphasis will be placed on the application of learning principles related to research-based clinical practice. Finally, considerations and guidelines for the use of behavioral techniques and principles will be discussed throughout the course."
+    },
+    {
+      "number": 534,
+      "title": "Advanced Principles of Behavior Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABA533"
+        ]
+      },
+      "description": "This course will provide students with a foundation in the experimental analysis of behavior. Students will learn the historical discovery of the principles of behavior described in basic and translational research and the contemporary application of experimental analysis. Special emphasis will be placed on the translation of research to inform research-based clinical practice. Finally, the implications of the experimental analysis of behavior on understanding behavior will be discussed."
+    },
+    {
+      "number": 544,
+      "title": "Behavioral Systems Support",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABA511",
+          "ABA533"
+        ]
+      },
+      "description": "ABA 544 Behavioral Systems Support concentrates on personnel supervision and management knowledge with additional components of skill training. The class will include the research/evidence-based practices for behavioral system-wide instructional techniques, personnel management, and supervisory methodologies. Within the course, students will be exposed to evidence-based behavioral staff training methodologies for a variety of environments (e.g., group home, business, health, educational, etc.), behavioral skills straining for parents/caregivers, and training methodologies within organizations. Behavioral research-based personnel and behavior-analytic supervisory management related to staff management, behavioral treatment integrity, performance management (e.g, assessment, expectation, and feedback), ethics, and functionally-based assessment and performance feedback will be taught."
+    },
+    {
+      "number": 555,
+      "title": "Behavioral Intervention in Autism & Developmental Disabilities",
+      "credits": 3,
+      "description": "For many decades, behavior analysis has contributed significantly to the understanding and treatment of autism and related developmental disabilities. This course will provide students with the knowledge and skills needed to work with individuals with autism and related developmental disabilities not only in early intervention efforts but across the entire spectrum of settings, age ranges, and developmental levels. Autism and related developmental disabilities will be addressed in terms of assessment, education, and treatment. Some specific areas targeted that are characteristic of autism will include language, social skills, self-injury, sleep disorders, and stereotypic behavior. Some specific educational strategies emphasized will include discrete trial training, incidental teaching, prompting and fading. The students will gain a knowledge of the major issues related to the use of behavior analysis with individuals with autism and related developmental disabilities including education issues such as due process and inclusion and legal and ethical issues surrounding the certification of behavior analysts. Students also will learn how to evaluate the research related to various treatments and educational practices for autism."
+    },
+    {
+      "number": 566,
+      "title": "Behavioral Pediatrics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABA511",
+          "ABA533"
+        ]
+      },
+      "description": "ABA 566 Behavioral Pediatrics provides an overview of behavioral pediatrics and discusses the role of Behavior Analysis within this field. Behavior analysis significantly contributes to the field of behavioral pediatrics. This course will provide an overview of behavioral pediatrics and evaluate research related to operant contingencies in infant, child, and adolescent learning, social development, and behavioral/medical pediatric issues. Research-based behavior analytic interventions and change procedures also will be assessed and evaluated as they apply to skill development, behavioral reduction, medical compliance and adherence, and behavioral interventions for medical/behavioral issues. Behavioral approaches to health promotion and injury prevention will be discussed."
+    },
+    {
+      "number": 577,
+      "title": "Case Conceptualization and Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ABA511",
+          "ABA533"
+        ]
+      },
+      "description": "The purpose of this course is to give students an overview of case conceptualization and development according to the foundations of behavior analysis. The course will include behavior assessment foundations related to types of behavior assessment and their relationship to the development of research-supported treatments. Students will be asked to learn ABA assessment methods to evaluate specific behavior within broad diagnostic categories, develop data analysis methods based upon ABA research, and analyze and justify behavior treatment decisions based upon research."
+    },
+    {
+      "number": 588,
+      "title": "Ethics in Research and Professional Practice",
+      "credits": 3,
+      "description": "This ethics course will provide students with an overview of ethical and legal issues related to applied behavior analysis research and practice. Students will learn the current Behavior Analysis Certification Board's ethics standards, review the application of ethical practice and research codes, apply ethical research and codes to ethical situations, and identify and develop possible new ethical issues and guidelines."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 594,
+      "suffix": "A",
+      "title": "RESEARCH TOPICS",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised research project in behavior analysis for degree candidates."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "subject": "FDSYS",
+  "courses": [
+    {
+      "number": 407,
+      "title": "The Sustainable Fork: Food Systems Decisions for Away-From-Home Eating",
+      "credits": 3,
+      "internalEquivalents": [
+        "HM407"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "HM101",
+              "AGBM170",
+              "AGBM170N"
+            ]
+          }
+        ],
+        "minGrades": {
+          "HM101": "C",
+          "AGBM170": "C",
+          "AGBM170N": "C"
+        }
+      },
+      "description": "The course will incorporate economic and managerial dimensions to the discussion of food decisions in foodservice away-from-home eating contexts, particularly emphasizing the behavioral aspect of decisions - how individuals (consumers, providers, managers) make choices in the food system, and what might be the consequences of these choices. The course will use evidence from multiple farm-to-fork perspectives to allow students to analyze food systems problems and solutions. It will also require students to engage directly with the local food service system through course projects and tours. The major topics of discussion will be organized under each of the value chain components of the farm-to-fork continuum: production, distribution, purchasing, preparation, and consumption. Specific topics under each of these value chain components will include: nutrition, food safety, food waste, sustainable practices, social justice, consumer utility, economic profits, ethics, government policy, and decision-making. In particular, the course will be motivated by economic theories such as: agency relationship, information asymmetry, transaction cost economics, and behavioral economics topics such as self-rationing, and time discounting."
+    },
+    {
+      "number": 442,
+      "title": "Changing Food Systems: Comparative Perspectives",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AGBM170"
+        ]
+      },
+      "description": "The course begins with an overview of the scope of food systems and an orientation to interdisciplinary and community - based approaches for understanding and addressing social and ecological problems and potential changes in food systems. Two weeks are dedicated to reviewing selected challenges facing the food and agricultural system to underscore the complexity of these issues and illustrate how they have been approached and analyzed by different disciplinary fields. The next two weeks of the course are devoted to critical exploration of theoretical and policy models for understanding how food systems function and change. These conceptual and analytical tools are then applied in three subsequent course modules, focused on 1) Changing Agricultural Production Systems; 2) Changing Food and Farm Work; and 3) Changing Food Consumers and Eaters. Each of these three - week modules will focus on 3 - 4 cases of change efforts either led from \"above\" through government policies or business initiatives or from \"below\" by grassroots groups or social movements. Cases will be selected to compare and contrast U.S. contexts with other international contexts and to highlight the diverse experiences and perspectives across racial - ethnic, class, cultural and gender differences within the food and agricultural system. The course will conclude by synthesizing ideas and insights about the limitations and potentials of different approaches to food systems change. In the last week of class, students will also give \"lightning talks\" distilling their learning about food systems change through an individual semester long field - project with a local or regional community group, business, agency or farm."
+    },
+    {
+      "number": 490,
+      "title": "From Agriculture to Culture: Perspectives on your food from seed to plate",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "FDSYS495"
+        ]
+      },
+      "description": "This course explores a diversity of contemporary topics of the food system, as well as current and emergent career opportunities. Emphasis is on the multi-disciplinary and interdisciplinary nature of work inherent to many careers throughout the food value chain. The food system has received greater public attention over the past 15-20 years as we face increasingly complex challenges of environmental resource quality and quantity; climate change impacts; health, hunger and malnutrition; and distributional equity and ethics of the food. Beyond growing public awareness and interest, the need exists for fuller knowledge about complexity and change across the food system. The course provides a framework where students see the food system as a comprehensive value chain encompassing producers, processors and distributors who jointly deliver food to consumers, and do so embedded in community, cultural, institutional and regulatory contexts that are variously supportive or constraining of the multiple goals for the food system. During the course, a combination of in-class presentations by food systems stakeholders, reading of relevant literature and reflection on students' own immersive experiences in the food system will expose students to issues and opportunities along the entire value chain."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "FDSYS 495 is an internship experience with a food systems related organization or entity. This individualized course includes three components: a proposal of the individualized internship, developed in conjunction with the sponsor organization, to be approved by a supervising faculty member and the minor coordinator before registering for the course; the completion of the internship experience, monitored by the sponsor organization and supervising faculty member; and a written and/or oral presentation detailing the internship experience. The course is designed to help students refine their skills in problem solving, critical reflection, systems thinking, community engagement, and oral and written communication."
+    }
+  ]
+}

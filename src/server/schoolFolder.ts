@@ -2,7 +2,7 @@
 // described in src/engine/schoolFiles.ts) and combine it into one school.
 import { access, readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { combineSchoolFiles, type ParseResult, type ProgramFile, type SchoolFile } from "../engine/index";
+import { combineSchoolFiles, type ParseResult, type ProgramFile, type RequirementsFile, type SchoolFile } from "../engine/index";
 
 async function readJson(folder: string, name: string): Promise<SchoolFile> {
   const text = await readFile(join(folder, name), "utf8");
@@ -27,7 +27,7 @@ async function readAll(folder: string, subfolder: string): Promise<SchoolFile[]>
 }
 
 // Every program file, from programs/'s subfolders, one per program type
-// (programs/baccalaureate/cmpsc-bs.json). Each file gets its folder's name
+// (programs/bachelors/cmpsc-bs.json). Each file gets its folder's name
 // as its type, so a program in the wrong folder is caught. A file left
 // loose in programs/ gets no type, so its error says which folder it
 // belongs in instead of it being skipped without a word.
@@ -49,6 +49,12 @@ async function readPrograms(folder: string): Promise<ProgramFile[]> {
   return [...loose, ...perType.flat()];
 }
 
+// Each credential's rules: requirements/credentials/<credential>.json.
+async function readRequirements(folder: string): Promise<RequirementsFile[]> {
+  const files = await readAll(folder, join("requirements", "credentials"));
+  return files.map((file) => ({ ...file, credential: file.name.replace(/^.*[\\/]/, "").replace(/\.json$/, "") }));
+}
+
 // A file that may be left out, or undefined if it isn't there.
 async function readOptional(folder: string, name: string): Promise<SchoolFile | undefined> {
   try {
@@ -62,9 +68,11 @@ async function readOptional(folder: string, name: string): Promise<SchoolFile | 
 export async function readSchoolFolder(folder: string): Promise<ParseResult> {
   return combineSchoolFiles({
     school: await readJson(folder, "school.json"),
+    structure: await readOptional(folder, "structure.json"),
+    attributes: await readOptional(folder, "attributes.json"),
     subjects: await readJson(folder, "subjects.json"),
-    requirements: await readOptional(folder, "requirements.json"),
-    objects: await readAll(folder, "objects"),
+    courses: await readAll(folder, "courses"),
+    requirements: await readRequirements(folder),
     programs: await readPrograms(folder),
   });
 }

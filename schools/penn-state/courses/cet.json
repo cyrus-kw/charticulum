@@ -1,0 +1,122 @@
+{
+  "subject": "CET",
+  "courses": [
+    {
+      "number": 308,
+      "title": "Construction Methods and Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EDSGN100",
+              "EGT102"
+            ]
+          }
+        ]
+      },
+      "description": "The study of the methods and materials used in the construction industry."
+    },
+    {
+      "number": 342,
+      "title": "Civil Engineering Materials - Concrete and Bituminous",
+      "credits": 3,
+      "description": "Properties and tests for aggregates, portland cement, fresh and hardened concrete, concrete mix designs. Bituminous Materials: properties, mixtures and tests."
+    },
+    {
+      "number": 343,
+      "title": "Soils Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "EMCH213",
+              "ET322",
+              "MET213"
+            ]
+          }
+        ]
+      },
+      "description": "This course presents the fundamentals of engineering soil mechanics related to civil engineering. CET 343 Soil Mechanics (3) This course presents the fundamentals of engineering soil mechanics related to civil engineering. The course provides the initial exposure to soil mechanics, presenting the fundamentals essential to further study in foundation engineering and other advanced courses. The course begins with coverage of how soil properties influence the different types of structures or facilities built by structural and construction engineers. Students study the formation of natural soil deposits by the geological and biological events in the earth's history. The soil sampling procedures are briefly explained, and then various index properties of soils are determined, and utilized in engineering classifications of soils. Options available for compacting soils in the lab and field are studied. The laboratory tests for finding soil permeability are studied, followed by coverage of empirical equations for estimating the permeability. Simple cases of seepage are analyzed using graphical flow net method. Elastic half-space theories and approximate methods are used for estimating the stress distribution in soils. The concepts of pore water pressure and effective stress are introduced. The covered strength theories include the unconsolidated undrained shear strength parameters. Elastic compression and consolidation compression are covered in this course. The course ends with simple field soil investigation procedures."
+    },
+    {
+      "number": 361,
+      "title": "Fluid Flow",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Fluid flow theory; hydrostatics; dimensional analysis and similitude; pipe flow; flow measurement; open channels; flow forces; fluid machinery."
+    },
+    {
+      "number": 430,
+      "title": "Structural Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ]
+      },
+      "description": "Analysis of determinate structures; use of influence lines; deflection of structures; classical methods of analysis of statically indeterminate structures."
+    },
+    {
+      "number": 431,
+      "title": "Structural Design-Steel",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ],
+        "concurrent": [
+          "CET430"
+        ]
+      },
+      "description": "Design of steel beams, columns, truss members, decks, bar joists and selected connections."
+    },
+    {
+      "number": 432,
+      "title": "Structural Design-Reinforced Concrete",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH140"
+        ],
+        "concurrent": [
+          "CET430"
+        ]
+      },
+      "description": "Design of reinforced concrete beams, columns, slabs, and selected framing systems for bending and shear. Introduction to formwork design."
+    },
+    {
+      "number": 434,
+      "title": "Foundations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CET343",
+          "CET430",
+          "CET432"
+        ]
+      },
+      "description": "Analysis and design of footings, piling, retaining walls; consideration of contruction problems involving soils and foundations of structures."
+    },
+    {
+      "number": 435,
+      "title": "Construction Estimating",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ET200",
+          "CE333W"
+        ]
+      },
+      "description": "Methods and techniques used in estimating construction cost; practice in takeoffs, costing and final bid preparation; microcomputer applications/class projects."
+    }
+  ]
+}

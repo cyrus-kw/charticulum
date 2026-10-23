@@ -1,0 +1,35 @@
+{
+  "subject": "AML",
+  "courses": [
+    {
+      "number": 550,
+      "title": "Proseminar",
+      "credits": 3,
+      "internalEquivalents": [
+        "CAMS550"
+      ],
+      "description": "This proseminar aims to provide students a foundation for scholarly work in any of the disciplines included within Ancient Mediterranean Studies. The proseminar will be interdisciplinary in nature and stress the interactions among the ancient cultures of the Mediterranean region. While specific course content will vary depending on the current research interests of the department faculty and the work being undertaken by participating students, the proseminar will provide students with an overview of the scope and nature of the ancient evidence (e.g., literary, documentary, material, as well as the history and historiography of modern study of that evidence and the ways in which research methodologies and techniques have evolved). In addition, the proseminar will introduce students to the nature of contemporary academic presentation and publishing, thereby assisting them in preparing research papers for scholarly dissemination."
+    },
+    {
+      "number": 560,
+      "title": "Research Seminar",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "The specific aim of this seminar is to provide a research experience in one of the disciplines included within Classics and Ancient Mediterranean Studies. This seminar will therefore give students an overview of the scope and nature of the ancient evidence (literary, documentary, material [archaeological]), the history and historiography of modern study of that evidence and the ways in which research methodologies and techniques have evolved in a specific discipline of CAMS."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

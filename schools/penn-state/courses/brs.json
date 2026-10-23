@@ -1,0 +1,186 @@
+{
+  "subject": "BRS",
+  "courses": [
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 393,
+      "title": "Industry Tour",
+      "credits": {
+        "min": 1,
+        "max": 2
+      },
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "A week-long tour of bioproducts and agricultural systems industries. BRS 393 Bioresources Industry Tour (1) This is a week long course, in which students will travel to tour relevant manufacturing facilities. Roughly half of the time (2.5 days) will be dedicated to the bioproducts industry, and the remaining time will be focused on agricultural systems. Bioproducts and agricultural systems are the two key components of the BioRenewable Systems major."
+    },
+    {
+      "number": 437,
+      "title": "Bioproduct Marketing and Sales",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ECON102",
+              "AGBM101"
+            ]
+          }
+        ]
+      },
+      "description": "Business-to-business bioproduct sales and marketing fundamentals and market overview of key forest industry sectors including biorefinery value chain outputs. BRS 437 Bioproduct Marketing and Sales (4) This course covers business-to-business (B2B) bioproduct marketing fundamentals and a market overview of key forest industry sectors (solid wood, composite panels, and engineered wood products) including biorefinery value chain outputs (environmental services, energy, fuels, and co-products) and personal selling of bioproducts. Students will apply B2B market principles and concepts toward an understanding of bioproducts industries and markets. Personal selling techniques will be developed and applied to enhance understanding of the industrial sales function within bioproduct firms. Marketing research for decision-makers will be examined."
+    },
+    {
+      "number": 500,
+      "title": "Research Methods",
+      "credits": 3,
+      "description": "Foundation in research philosophies, methodologies, issues and policies; measures of research quality; critical thinking and discourse; research report writing; professional development; research ethics. A B E (BRS) 500 Research Methods (3) A B E/ BRS 500 is a course designed to assist students entering and advancing in their research career to: better investigate and practice the art of scientific investigation; openly explore and discuss what it means to be a part of the scientific and research enterprise at a major academic setting; gain skills and experiences in critical evaluation and discourse; learn the process of developing and preparing a research proposal from initial concept to near-final written product; better understand the expectations for responsible and ethical conduct as a scientist/student/individual; and further develop their philosophies and capabilities as future scientists and professionals. During this course students will continually read, think, discuss, write, critique, re-read, re-think, re-write, and communicate with other students, faculty, and professionals. The course will provide a setting to allow them to further develop their personal, professional, academic, and scientific goals and capabilities."
+    },
+    {
+      "number": 501,
+      "title": "Biobased Polymers",
+      "credits": 3,
+      "description": "The chemistry, structure-property relationships, and industrial applications of biobased polymers from plant and agricultural feedstocks."
+    },
+    {
+      "number": 502,
+      "title": "Human Behavior and ethics in Management and Technology",
+      "credits": 3,
+      "description": "Ethical leadership continues to be a key issue in our society and is a topic of growing interest to the public and researchers alike. Our world more than ever needs ethical leadership to address critical sociotechnological problems such as climate change, sustainable energy and materials, quality food and water, population growth, prejudice, and global conflict to name just a few. This course will provide students with an improved mechanistic understanding of basic human behavior foundational to ethical leadership and decision making. Specifically, a series of important psychological studies will be examined which provide insights into human needs, personality, individual and social behavior, and leader-follower dynamics which are needed to identify new approaches for developing and managing leadership. Students will explore the literature themselves and share their findings and insights with the larger group. Students will apply what they learn by proposing new management processes for ensuring ethical leadership and decision making and share those with their peers."
+    },
+    {
+      "number": 504,
+      "title": "Biorenewable Systems Analysis",
+      "credits": 3,
+      "description": "This course will introduce students to the major foundational concepts in the field of Sustainability and cover in-depth technoeconomic (TEA) and life cycle analysis (LCA), the two predominant tools utilized to quantitatively evaluate economic, social, and environmental sustainability of products, processes or services. While the course emphasizes quantitative methods, readings and discussions will also include social and ethical aspects of sustainability, which are critically important and will help to frame analyses with these considerations in mind. Social considerations will include issues of race, equity and justice. TEA is a methodology for the assessment and comparison of the technical and economic feasibility of emerging technologies. LCA is a systematic and holistic approach that enables designers and planners to identify the most impactful stages of a supply chain so that we might strategically intervene to improve the system. Emphasis on the unique challenges of bio-based systems will be highlighted throughout. Students will also develop estimation, data verification skills, how to consider uncertainty in analysis, and learn how materials and energy flows lead to impacts to ecological and human systems. This course will facilitate development of critical thinking skills to holistically consider systems to develop the human, materials and energy transactions that can lead to more renewable and sustainable systems."
+    },
+    {
+      "number": 511,
+      "title": "Structural BioComposites",
+      "credits": 3,
+      "description": "Manufacture and practices related to the production of engineered biocomposites processed from lignocellulosic materials."
+    },
+    {
+      "number": 550,
+      "title": "Applied Bioproducts Marketing",
+      "credits": 3,
+      "description": "Bioproduct marketing applications for solid and engineered wood products and biorefinery value chain output including environmental services, energy, fuels, and co-products."
+    },
+    {
+      "number": 551,
+      "title": "Sustainable Business Strategies",
+      "credits": 2,
+      "description": "Coverage of business strategies that relate to sustainability and environmental issues."
+    },
+    {
+      "number": 568,
+      "title": "Applied Biomanufacturing Laboratory",
+      "credits": 3,
+      "description": "In partnership with the Center of Excellence in Industrial Biotechnology, this hands-on course takes place in the state-of-the-art CSL Behring Fermentation Facility. Students gain experience in the principles and methods used to produce bio-based products. Lab activities span upstream to downstream processing with exposure to fermentation processes in bioreactors, cell lysis, filtration, and chromatography."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised, research-oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experiences in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides an opportunity for supervised and graded teaching experience in undergraduate biorenewable systems courses."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

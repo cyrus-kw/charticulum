@@ -1,0 +1,21 @@
+{
+  "subject": "QC",
+  "courses": [
+    {
+      "number": 450,
+      "title": "Quality Control and Quality Improvement",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH141",
+              "MATH210"
+            ]
+          }
+        ]
+      },
+      "description": "Review of quality control and improvement methods including SPC applications, acceptance sampling, regression analysis, and design of experiments."
+    }
+  ]
+}

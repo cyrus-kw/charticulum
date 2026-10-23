@@ -1,0 +1,58 @@
+{
+  "subject": "EMGT",
+  "courses": [
+    {
+      "number": 810,
+      "title": "Ecosystem Monitoring",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT500"
+        ]
+      },
+      "description": "This course provides students with an overview of ecosystem monitoring methods and analyses. Students completing the course will have the ability to apply a quantitative approach to the monitoring of ecosystems. Students will learn about monitoring planning, various sampling designs, and specific measurement methods used to accomplish particular monitoring objectives associated with ecosystem management. Students will be able to apply specific sampling, measurement, and data analysis methods for monitoring vegetation, wildlife, water quantity and quality, and soils, and they will have a statistical foundation for evaluating the various types of data that are collected. Specifically, students will be able to calculate reliability measures, trends, and indicators of ecosystem change, and apply hypothesis testing to these measures to determine their statistical significance. Specific sampling designs will be presented, such as simple random sampling, stratified random sampling, systematic sampling, and cluster sampling."
+    },
+    {
+      "number": 820,
+      "title": "Environmental Law and Policy",
+      "credits": 3,
+      "description": "This course provides a broad exploration of the basic legal principles, regimes, and issues related to environmental protection and natural resource management. Part 1 of the course gives students an overview of how the U.S. legal system works and relevant principles of constitutional and common law. Part 1 also reviews the fundamentals of environmental law and policy. After building this foundation, part 2 of the course focuses primarily on federal statutes, including the National Environmental Policy Act, the Clean Water Act, the Endangered Species Act, Superfund, and the Clean Air Act. Part 3 uses case studies to illustrate how these laws fit together, and how they also relate to state and international issues. In addition to learning about foundational legal principles, students will learn the core principles of environmental law and regulation, and how they are changing over time. They will also better understand how federal, state, and even international environmental laws and policies fit together through the use of case studies to help illustrate key points."
+    },
+    {
+      "number": 830,
+      "title": "Ecosystem Management, Planning, and Economics",
+      "credits": 3,
+      "description": "Making decisions as an ecosystem manager requires knowledge of economics, planning, and finance. The course provides students with a solid understanding of the key finance, planning, and economic principles needed to manage a variety natural resources and ecosystems. The first part of the course discusses cost benefit analysis from a financial perspective. Cost benefit analysis is fundamental to making decisions in ecosystem management. The module covers topics such as time value of money, discounting, inflation, risk, appraisal, and taxes, and culminates in understanding the criteria to make investment decisions with limited budgets. The second part provides students with an understanding of planning processes and tools for developing management plans for natural resources systems. This part focuses on the unique aspects of managing ecosystems, including biodiversity management and dealing with multiple stakeholders and multiple competing objectives. Students are given an overview of the use of models and decision support systems for aiding in the exploration and evaluation of large numbers of management alternatives within complex social and biological systems. The third part provides an overview of ecosystem economic concepts and principles in a market economy. Importantly, it discusses the common issue of markets not working (failures) especially in natural resources and ecosystems. This last part of the course begins by discussing how the market should work and the critical importance of well-defined property rights. Then market failures such as pollution and other externalities are discussed. In this context it is important to value many of the non-market goods and services, which is the next topic discussed. Innovative valuation methods of ecosystem benefits such as recreation and biodiversity are described. Finally, a series of applications and case studies of various ecosystem resources including carbon pricing, bioenergy, water quality, and food is provided."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "requisites": {
+        "previous": [
+          "STAT500",
+          "MANGT510",
+          "OLEAD409",
+          "OLEAD410",
+          "OLEAD411",
+          "OLEAD464",
+          "OLEAD465",
+          "CAS404",
+          "GEOG482",
+          "EMGT810"
+        ],
+        "concurrent": [
+          "EMGT820",
+          "EMGT830"
+        ]
+      },
+      "description": "Supervised, professionally oriented student activities that constitute the culminating experience for the program."
+    }
+  ]
+}

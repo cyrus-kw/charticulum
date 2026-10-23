@@ -1,0 +1,165 @@
+{
+  "subject": "ECE",
+  "courses": [
+    {
+      "number": 295,
+      "title": "Field Experience for Practicing Early Childhood Educators",
+      "credits": 3,
+      "description": "This course uses an internship education approach comprised of field placement hours and weekly seminars. Students in 295 will be supervised during their current, off-campus full-time work (to count as the early childhood field experience) and will practice strategies learned in previous coursework as well as in weekly seminars under the direction and supervision of Penn State Early Childhood Instructors. Learning opportunities for students will include designing and implementing holistic experiences and associated assessment practices to support all young children, 0-5 years old. In seminars and in the field, support will also be offered to complete the required portfolio and assignments for a Child Development Associate certificate."
+    },
+    {
+      "number": 353,
+      "title": "Parent Involvement in Home, Center, and Classroom Instruction",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EDPSY10",
+              "EDPSY11",
+              "HDFS229"
+            ]
+          }
+        ]
+      },
+      "description": "This course is designed to apprentice teachers in early childhood education to the policies, theories, practices, skills, and knowledge(s) of home-school, community-school partnerships in the globally diversifying 21st century. Students will learn about and discuss family uniqueness and strengths. Very few families are \"traditional,\" and no two families are alike. Teachers must learn to recognize what makes a family unique and the individual strengths that children and families bring into the classroom. Students will consider using this knowledge in the development of effective family engagement programs for their school and classroom. Experiences are active, challenging, and designed to help students work effectively with families and see teaching as an active engagement for understanding, communication, partnership building, and ultimately social change."
+    },
+    {
+      "number": 451,
+      "title": "Instruction in Early Childhood Education Derived from Development Theories",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "EDPSY11",
+          "HDFS229"
+        ]
+      },
+      "description": "Curriculum and instruction for early childhood education; program practice with pluralistic theoretical foundations for early childhood education."
+    },
+    {
+      "number": 479,
+      "title": "The Young Child's Play as Educative Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDPSY10",
+          "EDPSY11",
+          "HDFS229"
+        ]
+      },
+      "description": "Young child's play as educative processes and uses of materials in curricular settings are examined; early childhood education practicum."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 572,
+      "title": "Issues and Trends in Early Childhood Education",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "requisites": {
+        "previous": [
+          "EDPSY400"
+        ]
+      },
+      "description": "Research, experimental programs, and emerging trends in early childhood education; relationships between educational experiences and later intellectual and emotional development."
+    },
+    {
+      "number": 587,
+      "title": "Curriculum, Culture, and Child Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HDFS429"
+        ]
+      },
+      "description": "Examines human development and cultural factors in planning, designing, and implementing curriculum and instruction in early childhood and childhood education."
+    },
+    {
+      "number": 588,
+      "title": "Educational Role of the Family",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HDFS418"
+        ]
+      },
+      "description": "Parent-child-teacher relationships, cognitive socialization, and academic attainments; proximal/distal variables: family structure, history, processes, content, community, culture."
+    },
+    {
+      "number": 589,
+      "title": "Play and Early Childhood Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "HDFS429",
+              "PSYCH415"
+            ]
+          }
+        ]
+      },
+      "description": "Developmental significance of play, processes, and development; role of the adult in child's play; educational practices."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

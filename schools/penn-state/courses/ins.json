@@ -1,0 +1,23 @@
+{
+  "subject": "INS",
+  "courses": [
+    {
+      "number": 575,
+      "title": "Risk Management",
+      "credits": 2,
+      "description": "Develop an understanding of the risks facing corporations and the methods available to deal with those risks."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

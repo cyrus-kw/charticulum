@@ -1,0 +1,52 @@
+{
+  "subject": "CIVCM",
+  "courses": [
+    {
+      "number": 211,
+      "suffix": "N",
+      "title": "Foundations: Civic and Community Engagement",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER",
+        "US",
+        "IL"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ENGL15",
+              "ENGL30H",
+              "CAS137H",
+              "ENGL137H"
+            ]
+          }
+        ]
+      },
+      "description": "Through readings, discussion, deliberation, listening, and individual as well as collaborative action, this course gives students the opportunity to learn about and practice theories and habits of civic and community engagement and public scholarship with the goal of helping to build democratic capacity and sustain participatory democracy. This course emphasizes concepts and case studies that focus on the people's role in shared governance. The course also provides a foundation for understanding how a wide range of other individual and collective practices have an equally important role to play in building and sustaining community. The course draws from studies in demography, political science, sociology, psychology of racial identity formation and education to help students communicate better about and in shared governance. Among the core concepts are the role of students and other citizens in sustaining and transforming their communities, the historical and contemporary mission of Land Grant universities, the centrality of rhetoric and communication to collaborative judgment, and the relationship among media, cultures, and politics as they affect civic and community engagement. Students also learn together about the range of ways that citizens do, can, and might participate in democratic decision-making and will observe and practice these forms in several communication media and across a range of differences. Finally, learn about models of and opportunities for engaging other citizens across and beyond Penn State, including in global environments."
+    },
+    {
+      "number": 494,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Supervised student activities on research projects identified on an individual basis."
+    },
+    {
+      "number": 495,
+      "title": "CIVCM Internship",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    }
+  ]
+}

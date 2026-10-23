@@ -1,0 +1,128 @@
+{
+  "subject": "QMM",
+  "courses": [
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 552,
+      "title": "Applied Statistical Process Control and Experimental Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "QMM851"
+        ]
+      },
+      "description": "Concepts and techniques of statistical process control and the design of experiments."
+    },
+    {
+      "number": 561,
+      "title": "Manufacturing Systems Planning and Control I",
+      "credits": 3,
+      "description": "Systems, components and configurations, flow of material and information in a manufacturing system."
+    },
+    {
+      "number": 562,
+      "title": "Manufacturing Systems Planning and Control II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "QMM561"
+        ]
+      },
+      "description": "Flow of material and information in a manufacturing system; emphasis on systems integration."
+    },
+    {
+      "number": 581,
+      "title": "Manufacturing Processes of Materials",
+      "credits": 3,
+      "description": "Characteristics of materials with respect to their properties and associated choices of processing to create a range of products."
+    },
+    {
+      "number": 582,
+      "title": "Manufacturing and Supply Chain Strategy",
+      "credits": 3,
+      "description": "Strategic decision context of manufacturing and its supply chains with linkage to corporate and business strategy."
+    },
+    {
+      "number": 593,
+      "title": "Field Experience in Manufacturing",
+      "credits": {
+        "min": 1,
+        "max": 2
+      },
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "Experiential learning through the firsthand study of manufacturing plants and by interacting with manufacturing leaders."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 851,
+      "title": "Quality Management",
+      "credits": 3,
+      "description": "Concepts of design, assessment, and improvement of quality systems; customer needs analysis, identification of opportunities for application of measurement techniques."
+    },
+    {
+      "number": 871,
+      "title": "Design Practice for Manufacturing I",
+      "credits": 3,
+      "description": "Contemporary concepts in design and design practice with emphasis on engineering, business, and human strategic issues."
+    },
+    {
+      "number": 872,
+      "title": "Design Practice for Manufacturing II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "QMM871"
+        ]
+      },
+      "description": "Contemporary concepts in design and design practice with emphasis on logistics, risk, design and manufacturing readiness, and production."
+    },
+    {
+      "number": 891,
+      "title": "Communication and Leadership Skills for Manufacturing Managers",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Applied principles of managerial, visual, and written communication that support the needs of manufacturing leaders."
+    }
+  ]
+}

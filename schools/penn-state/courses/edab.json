@@ -1,0 +1,29 @@
+{
+  "subject": "EDAB",
+  "courses": [
+    {
+      "number": 199,
+      "title": "Temporary Education Abroad Registration",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 99
+      },
+      "description": "This course is used to temporarily register students that are studying overseas. Permanent courses will be entered after the student returns."
+    },
+    {
+      "number": 499,
+      "title": "Temporary Education Abroad Registration for",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 99
+      },
+      "description": "This course is used to temporarily register students that are studying overseas. Permanent courses will be entered after the student returns."
+    }
+  ]
+}

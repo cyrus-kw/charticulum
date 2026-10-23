@@ -1,0 +1,152 @@
+{
+  "subject": "MNPR",
+  "courses": [
+    {
+      "number": 301,
+      "title": "Elements of Mineral Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM106"
+            ]
+          },
+          "MATH141"
+        ]
+      },
+      "description": "Introduction to mineral process engineering. Sampling, sizing, comminution, physical and chemical processes, applications to industrial practice. Pollution control."
+    },
+    {
+      "number": 401,
+      "title": "Mineral Process Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNPR301",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "Unit operations for processing particulate materials: comminution, screening, classification, slurry pumping, thickening, filtration, etc.; application to mineral processing plant design."
+    },
+    {
+      "number": 413,
+      "title": "Mineral Processing Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "MNPR301"
+        ]
+      },
+      "description": "A laboratory study of the chemical and physical principles involved in practical mineral processing operations."
+    },
+    {
+      "number": 426,
+      "title": "Aqueous Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EME301",
+              "MATSE401"
+            ]
+          }
+        ]
+      },
+      "description": "A study of the chemical and engineering principles pertinent to metal processing in aqueous systems: hydrometallurgical extraction, plating, materials preparation. MATSE (MN PR) 426 Aqueous Processing (3) This 3-credit course deals with the chemical and engineering principles underlying the aqueous processing of metals: metal extraction from primary and secondary sources, electroplating, and metal finishing, powder synthesis, energy storage and conversion, and treatment of recycling of metal-containing toxic wastes.1. Physico-Chemical Principles - Thermodynamic, chemical kinetic and transport factors which control hydrochemical processes (leaching; precipitation; adsorption; solvent extraction; ion exchange; electrowinning, electrorefining and electroplating; membrane processes; energy storage and conversion); graphical representation of homogeneous and solid/solution equilibria; chemical reagents.2. Engineering Principles - Reactor design and staged operations; ideal batch, continuous stirred-tank and plug-flow reactors; fluidized bed reactors; electrochemical reactors; multistage separation processes (solid-liquid, liquid-liquid, and gas-liquid systems).3. Process Synthesis - Design of metal separation (extraction, refining, waste treatment) materials synthesis, metal finishing, and energy storage/conversion processes and system-integration of unit operations, industrial practice. Emphasis on closing circuits to minimize or eliminate waste effluents."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 505,
+      "title": "Particle Separation",
+      "credits": 3,
+      "description": "This course will provide the students with the fundamentals and state-of-the-art techniques in particle separations and their applications in recovery of minerals and elements from primary and secondary sources. The topics covered in this course include: Data Evaluation and Mass Balancing, Gravity Concentration, Forth Flotation, Advanced Dry Separations, Advanced Dewatering Techniques, Classifications, Magnetics, Clarification, Processing of Primary Mineral Resources, and Recycling."
+    },
+    {
+      "number": 507,
+      "title": "Hydrometallurgical Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE426"
+        ]
+      },
+      "description": "Fundamental physico-chemical factors underlying the aqueous extraction and recovery of metals and nonmetals from ores, minerals, and scrap metal. MN PR 507 ( MATSE 560 ) Hydrometallurgical Processing (3) This 3-credit course is concerned with the fundamental physico-chemical processes associated with the processing, utilization, and recycling of materials in aqueous systems. The topics covered cut across a wide range of practical applications. The course is therefore suitable for a broad spectrum of scientists and engineers concerned with processes and processing in aqueous systems, e.g., in materials science and engineering, mineral processing, geoscience, soil science, environmental engineering, chemistry, chemical engineering, petroleum and natural gas engineering, mining engineering, nuclear engineering, and electronic and electrical engineering. A required term paper provides a formal mechanism for ensuring that students have the opportunity to apply ideas discussed in the course to their specific areas of interest."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

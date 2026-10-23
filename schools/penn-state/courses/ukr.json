@@ -1,0 +1,171 @@
+{
+  "subject": "UKR",
+  "courses": [
+    {
+      "number": 1,
+      "title": "Elementary Ukrainian I",
+      "credits": 4,
+      "attributes": [
+        "BA-WL"
+      ],
+      "description": "An introduction to the fundamentals of the language and culture with emphasis on communicative proficiency, clarity of pronunciation, and basic skills in reading, writing, and conversation. This course assumes no prior knowledge of Ukrainian. Students who grew up in a home where Ukrainian was spoken must take a placement interview with the course instructor at least a week prior to the beginning of classes."
+    },
+    {
+      "number": 2,
+      "title": "Elementary Ukrainian II",
+      "credits": 4,
+      "attributes": [
+        "BA-WL"
+      ],
+      "description": "Continued introduction to the fundamentals of the language and culture with emphasis on communicative proficiency, clarity of pronunciation, and basic skills in reading, writing, and conversation. Students who grew up in a home where Ukrainian was spoken must take a placement interview with the course instructor at least a week prior to the beginning of classes."
+    },
+    {
+      "number": 3,
+      "title": "Intermediate Ukrainian",
+      "credits": 4,
+      "attributes": [
+        "BA-WL12",
+        "BA-WL"
+      ],
+      "description": "Continued study of grammar and review of basic grammatical structures with emphasis on acquisition of vocabulary and continued development of conversational, writing, and reading skills. Students who grew up in a home where Ukrainian was spoken must take a placement interview with the course instructor at least a week prior to the beginning of classes. Upon successful completion of this course, students are expected to attain Intermediate Low level of speaking proficiency according to the ACTFL guidelines."
+    },
+    {
+      "number": 99,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 100,
+      "title": "Ukrainian Culture and Civilization",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "IL"
+      ],
+      "description": "This course introduces students to the general contours of Ukrainian culture and civilization, tracing its evolution from ancient origins to the present. It explores the development of the Ukrainian nation, as well as its language, literature, folklore, religion, music, art, and film. While the primary focus is on culture, key historical contexts are integrated throughout to provide a deeper understanding and interpretation of Ukraine's cultural heritage. The course also features selected readings from some of the most renowned works of Ukrainian literature. No prior knowledge of Ukrainian is required, as all lectures, discussions, and readings are conducted in English."
+    },
+    {
+      "number": 175,
+      "suffix": "Y",
+      "title": "Writers in the Storm: Ukrainian Literature in English Translation",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "BA-H",
+        "IL",
+        "W"
+      ],
+      "description": "This is a survey of classical works of Ukrainian literature, from its genesis of in the late seventeenth century to present. Designed with a diverse audience in mind, from a complete novice to a more seasoned reader, the course pays special attention to the intersection of literature and Ukraine's centuries-long struggle for its cultural and political liberation and independence. Far from being limited to political themes, course materials offer a great deal of variety, including much humor, lyricism, fantasy, and experimentation."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

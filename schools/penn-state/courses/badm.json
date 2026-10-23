@@ -1,0 +1,126 @@
+{
+  "subject": "BADM",
+  "courses": [
+    {
+      "number": 510,
+      "title": "Cost Management for Decision Making and Control",
+      "credits": 3,
+      "description": "The study and use of accounting information for cost management, product costing, planning and controlling operations, and managerial decision making."
+    },
+    {
+      "number": 512,
+      "title": "Managing Effective Organizations",
+      "credits": 3,
+      "description": "Understanding the critical and changing role of management in contemporary organizations. BADM 512 Managing Effective Organizations (3) The objective of this course is to provide MBA students with an understanding of the challenges confronting managers of contemporary organizations and a knowledge of the tools and techniques available to help them confront those challenges in dynamic workplace settings. The course will be structured around the POLC framework, a system that emphasizes the four essential functions of management: Planning, Organizing, Leading, and Controlling as an ongoing process of interrelated activities."
+    },
+    {
+      "number": 513,
+      "title": "Quantitative Methods for Business",
+      "credits": 3,
+      "description": "This course is designed to provide a systematic understanding of design, operation, and control of business processes that transform inputs into outputs. B ADM 513 Quantitative Methods for Business (3) This course is designed to provide a systematic understanding of design, operation and control of business processes that transform inputs into outputs. The course encompasses both manufacturing and services. The focus is managerial decision-making with an emphasis on quantitative methods of analysis. Topics include operations planning and strategy, systems design, inventory management, capacity and materials planning, JIT and lean operations, quality control and management, scheduling, and project management. Quantitative methods include linear programming, decision analysis, inventory models, forecasting, simulation and queuing models."
+    },
+    {
+      "number": 514,
+      "title": "Strategic Planning and Business Policy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BADM510",
+          "BADM512",
+          "BADM513"
+        ]
+      },
+      "description": "Formulation of objectives and the implementation of programs to promote long- range success of the organization in a changing environment. BADM 514 Strategic Planning and Business Policy (3) Drawing from concepts in competitive strategy, organizational economics, financial economics, and industrial organization, this course will describe the skills that managers must command to create economic value through firm strategy. These skills include the ability to apply analytical tools to assess industry structure and competitors' strategies, the ability to assess the optimal scope and boundaries of the firm, and the ability to design administrative structures, systems, and processes that facilitate the development and deployment of corporate resources. Even though the course incorporates various theoretical perspectives, it ultimately is designed to focus on the essential issues and problems of competitive strategy as experienced by managers."
+    },
+    {
+      "number": 523,
+      "title": "International Business",
+      "credits": 3,
+      "description": "Survey of the theory and practice of international business."
+    },
+    {
+      "number": 525,
+      "title": "Innovation and Change Management",
+      "credits": 3,
+      "description": "Analysis of innovation sources, effects on industry structure and firm resources, and how firms can manage adoption and implementation process."
+    },
+    {
+      "number": 526,
+      "title": "Leadership and Ethics",
+      "credits": 3,
+      "description": "A multiperspective review of leadership theory and research with special emphasis given to the ethical dimensions of leadership. BADM 526 Leadership and Ethics (3) The objectives of this course are to: a) increase moral awareness of ethical issues in organizations, b) consider the interrelationships between organizations and their stakeholders, c) analyze the ethical impacts of managerial decision-making, d) understand how to manage the ethical performance of people and organizations, e) develop an understanding of the ethical dimensions of leadership theory and research, f) explore the relationship between the concepts of leadership effectiveness and ethical leadership. Ethical conduct is an important issue for managers in all functional areas of business organizations. Long-term success in business depends not only on mastery of the immediate technical environment and competitive domain, but also consideration of and attention to the broader social and ethical environments in which all organizations and institutions are embedded. Leaders have an important role to play in managing the financial and ethical performance of individuals and organizations. Even though leadership is one of the most researched topics in management, most reviews of the leadership literature rarely mention the ethical dimensions of leadership. Understanding what ethical leadership is and why it is important can provide a more comprehensive view of what it means to be an effective leader."
+    },
+    {
+      "number": 532,
+      "title": "Corporate Finance",
+      "credits": 3,
+      "description": "Application of modern corporate finance theory to corporate practice."
+    },
+    {
+      "number": 555,
+      "title": "New Product Development and Management",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "This course will cover the concepts of new product/service development and brand management strategies for competition intensive firms. Identifying opportunities, developing strategies, and designing processes for the creation of new products are key responsibilities for both entrepreneurs and managers in established firms. But developing new products is also fraught with risk: an overwhelming majority fail when introduced to the market. This course is about improving the odds of placing winning bets on new products. This course is especially recommended to students who expect to (i) launch their own businesses, (ii) work as brand or product managers, or (iii) have responsibilities requiring knowledge of product strategies and management of new product initiatives. Consultants who advise clients on product strategies may also benefit from taking the course. Strategies and processes for new product development will be the core of the course. Strategy provides the context for product development --- without it, each product development project is a separate and disjointed effort that has a much lower chance of success. This is one major reason why so many new products fail. Strategy for new products requires aligning new product development with market opportunities (for example in emerging markets, or by exploiting new inventions and technologies); selecting business models; and choosing effective marketing and manufacturing strategies. Process includes choosing a sequence of activities that is both rational and effective for converting ideas into compelling new products. These activities include concept development, design, prototyping, demand estimation, costing and pricing, branding, packaging, product testing, and market testing. However, not all products use the same development processes, and it is important to understand when to use which processes. It is expected that students enrolling in BADM 555 will be familiar with fundamental marketing concepts and practices. These are generally addressed in an undergraduate marketing course or equivalent professional training."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topic or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 828,
+      "title": "Negotiations",
+      "credits": 3,
+      "description": "Negotiating is an essential task of management. Successful managers bargain, negotiate, and resolve disputes with bosses, co-workers, subordinates, suppliers, customers, competitors, and other stakeholders. Effective negotiation can improve an individual's own outcomes as well as those of the other parties involved. Ineffective negotiation not only hurts the negotiator's ability to get \"things done\" but can also lead to poorly constructed or failed agreements in which everybody loses. The goals of this course are to improve students' negotiating skills. In this course, students will learn the theory and practice of negotiation. Course readings, discussions, and exams are designed to develop the theoretical foundation that is needed to understand the principles of effective (and ineffective) approaches to negotiations. Students will practice what they have learned by taking part in negotiation exercises and simulations."
+    },
+    {
+      "number": 834,
+      "title": "Portfolio Management",
+      "credits": 3,
+      "description": "The course is designed to expand the student's knowledge of the broad field of financial and investment analysis. The student will examine the basic tools of asset valuation and inputs for portfolio management. Security Analysis requires a thorough understanding of financial statement analysis, quantitative techniques, and economics. The major objectives of this course are to gain a working knowledge of the fundamentals of portfolio management - including creating an investment policy statement, asset allocation, optimal portfolio selection, and analyzing equity, debt, and alternative assets. The student will also have the opportunity to apply those principles to the management of their own (virtual) $100,000 investment portfolio. This course expects students to be familiar with the fundamental finance concepts and practices, either through successful completion of an undergraduate finance course or equivalent professional training."
+    },
+    {
+      "number": 841,
+      "title": "Principles of Applied Project Management",
+      "credits": 3,
+      "description": "This course is a problem-based course in the application of project management processes, methods, techniques, and tools needed to manage projects in a modern business environment. The course covers the fundamental project management principles associated with initiating, planning, executing, controlling, and closing projects. Project charters, schedules, resource assignment matrices, and communication, risk, and quality control plans are all tools that can enhance effective project management and which are covered in the course. This course assumes that project management in the modern organization is a complex team-based activity, where application of effective leadership and team management principles are critical and where various types of technologies (including project management software as well as software to support group collaboration) are an inherent part of the project management process. This course also acknowledges that project management involves both the use of resources from within the firm, as well as contracted from outside the organization."
+    },
+    {
+      "number": 854,
+      "title": "Marketing Strategy",
+      "credits": 3,
+      "description": "This is a graduate-level marketing management course that explores strategic marketing issues with a strong focus on integrating marketing analytics tools. It covers both conceptual and empirical approaches to analyze, plan, implement, and control marketing activities in the competitive marketing landscape. The course emphasizes key areas such as market assessment, competitive analysis, target marketing strategy, buyer behavior analysis, and marketing mix strategies. Students must complete a required research component, utilizing cutting-edge marketing analytic tools to connect data-driven marketing decisions to critical business outcomes (e.g., market share, return on marketing investment, and profitability). Upon completion of this course, students will be able to derive actionable strategic marketing insights and implications from their analyses."
+    },
+    {
+      "number": 871,
+      "title": "Business Analytics",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "This course provides a broad understanding of business analytics and managerial best practices for leveraging analytics. Advances in computational technologies, coupled with the massive amounts of data available through business activities as well as the surrounding ecosystems, have created an amazing potential for managers to leverage analytics in order to gain organizational and competitive advantages. This course takes a two-fold approach to address Analytics Methodologies. The first section of the course provides a broad understanding of business analytics and the second section demonstrates the managerial best practices for leveraging analytics. The course covers concepts such as analytics problem framing, data understanding and preparation, as well as descriptive and predictive modeling. The course incorporates applications and real-world datasets from marketing and other business disciplines for a hands-on learning experience. Best practices derived from cases are also incorporated into the course structure in order to learn the strategies required to implement and manage analytics initiatives in businesses. Students are initially introduced to business analytics through a series of examples, use cases, and applications. Next, descriptive analytics through the use of dashboard and business reporting techniques is presented as a means for business performance management. Following this, the overall predictive analytics process is explained with emphasis on framing the analytics problem from an understanding business context. Additionally, fundamental predictive modeling concepts are covered concurrently with the introduction of exemplary modeling techniques. Students then receive an opportunity to apply these techniques through the use of different problem scenarios and real world datasets. Related topics including overfitting and visualizing model performance are covered as well. Students are presented an expected value framework to assist approaching business problems with a decision-analytic perspective. The course also covers managerial aspects of integrating business analytics within the enterprise by linking business strategy to business analytics initiatives. Approaches to initiate, manage, and sustain analytics initiatives to gain a competitive advantage are discussed with cases. At the end of the course, students are expected to have the competencies required to analyze possible opportunities for leveraging analytics across the boundaries of functional business domains, as well as apply key analytic techniques and interpret results for decision-making."
+    },
+    {
+      "number": 895,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised, professionally-oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    }
+  ]
+}

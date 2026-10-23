@@ -1,0 +1,93 @@
+{
+  "subject": "MBADM",
+  "courses": [
+    {
+      "number": 571,
+      "title": "Global Strategic Management",
+      "credits": 3,
+      "description": "Integrating multiple functional business areas to resolve global business problems and improve organizational performance. As the capstone course in the online MBA program, this course covers the study of strategic management, and is designed to integrate many of the components and key concepts that students have studied throughout the core curriculum. This course will enable students to develop skills to deal with complex situations, identify and evaluate alternative courses of actions for their organizations, and communicate their assessments and recommendations succinctly yet comprehensively. This course centers on factors that influence the competitive behavior and performance of the firm and the major focus throughout is firm success. Upon completion of this course, students will be able to describe, analyze, explain, and apply strategy concepts and techniques to virtually any type of organization, business or otherwise, in its pursuit of competitive advantage. More importantly, students will be prepared to think logically and critically about actual strategic situations that managers confront. By the conclusion of this course, students will be able to take a strategic manager's perspective to resolve business problems and issues with the goal of improving their organizations' performance."
+    },
+    {
+      "number": 810,
+      "title": "Team Performance",
+      "credits": 3,
+      "description": "Overview of concepts, applications, and research on group and team processes and performance in an organizational context. This course provides students with an understanding of team processes and performance as well as other current issues that affect interpersonal dynamics in the workplace. This course provides an overview of the concepts of groups and teams as related to process and performance in organization. The course will blend theory, research, and practice to enable students to create, manage, and participate in teams more effectively. Broad topic areas include team design, context, and process. Specific areas of focus include learning orientation; group process skills; managing emotions, diversity, and conflict in groups; various workplace teams (e.g., virtual, cross-functional); and designing effective teams."
+    },
+    {
+      "number": 811,
+      "title": "Financial Accounting",
+      "credits": 3,
+      "description": "Accounting rules, practices, and applications that characterize the accounting presentations that for-profit organizations provide to the public. This course provides students with a foundation in the basic principles, procedures, and objectives of financial accounting that govern the reporting of information about a business to individuals, institutions, and other external groups. Course content focuses on: (1) conveying the conventions and institutional framework that define accounting rules and practice, including basic exposure to Generally Accepted Accounting Principles; (2) developing familiarity with financial statements; (3) teaching fundamental accounting transactions; and (4) training students in rudimentary analysis of the financial statements. Participation in synchronized discussions at specified times will be required."
+    },
+    {
+      "number": 812,
+      "title": "Economics for Business Strategy",
+      "credits": 3,
+      "description": "Introduction to microeconomic and macroeconomic environments of business, pricing determination, market structures, and formulation of competitive strategy. This course is concerned with the economics way of thinking, the economics of effective management, the economic foundation of business strategy, and the economic environment of business. It draws on, and integrates, microeconomic and macroeconomic principles to bring new insights to business strategy and effective management. It provides a study of how markets are structured, how competitors and market participants behave, how prices and levels of activity in the business firm are determined, and how pricing is used by firms as a competitive strategy. The elements of the demand-and-supply framework are used to explain and resolve issues concerning production and sales levels, resource acquisition and allocation, and new value propositions. Also introduced are the basics of macroeconomics in the analysis of business cycles and in an understanding of government policies intended to influence the economic environment and affect where and how firms choose to compete. The effects of the global context (e.g., exchange rate policies, etc.) on economic conditions and business landscapes are analyzed. Throughout this course, students will be engaged in discussion of economic concepts and theories relevant to the concepts of competitive forces, competitive advantage, and competitive strategy, as well as the industry environment (market and competitors and their behaviors) and the industry's general economic environment. They will gain an understanding of how markets affect the elements of the firm's internal operations and how markets shape the firm's external environments which are often challenging and complex. They will also learn how to use the concepts and theories covered in this course to formulate a business strategy for the firm."
+    },
+    {
+      "number": 813,
+      "title": "Data Analysis for Decision Making",
+      "credits": 3,
+      "description": "Applying statistical concepts to quantify uncertainty and gain insights from data in business settings. This course is designed to provide students with an exposure to the most commonly used statistical concepts, methods, and techniques, and their applications to business problems. The course covers the basic concepts of business statistics and data analysis using appropriate statistical software. The course emphasizes practical applications and business decision-making under uncertainty."
+    },
+    {
+      "number": 814,
+      "title": "Leadership Communications and Change Management",
+      "credits": 3,
+      "description": "This course provides students with an overview of current theories and practices of organizational communication through the application and understanding of organizational change models. The primary aim is to enhance written, oral, and graphic communication by applying, assessing, and presenting organizational change assessments in team and individual forums. The course focuses on developing an understanding of the paradigm shift necessary to achieve organizational transformation and re-conceptualization of management principles through effective and efficient communication."
+    },
+    {
+      "number": 815,
+      "title": "Ethical and Responsible Business Leadership",
+      "credits": 3,
+      "description": "Managing ethical conduct in organizations, including corporate social responsibility, sustainability, and stakeholder analysis. This course develops students' ability to understand and manage ethical conduct and social responsibility in business organizations. Topics and readings teach students to identify and understand their values with respect to others' and common ethical dilemmas. Philosophical and prescriptive approaches to decision making are applied to real and hypothetical ethical dilemmas. Individual differences and cognitive barriers are studied to understand their role in ethical judgement. Students learn to voice their values and to analyze whistle-blowing situations. Techniques for leading individuals and teams toward ethical conduct are discussed. Organizational culture is audited to understand its role in corporate actors' decision making. Corporate social responsibility, stakeholder analysis, and sustainability are discussed from an historical and applied perspective. Global issues including bribery, human rights, corruption, and global standards as guiding principles are discussed."
+    },
+    {
+      "number": 816,
+      "title": "Managing and Leading People in Organizations",
+      "credits": 3,
+      "description": "Overview of human behavior in organizations, and implications for managing and leading individuals, teams, and organizations. This course provides an overview of the theories, concepts, applications, and research findings of human behavior in formal organizations and their implications for individual, team, and organizational performance. This study of organizational behavior and performance will take place at three levels of analysis: (1) The Individual in the Organization, including topics such as personality, attitudes, perception, and motivation; (2) Groups in Organizations, including group and team dynamics, influence and political behavior, negotiation, and managing conflict, and; (3) Organizational Processes, such as work design, behavior modification, communication, and decision making."
+    },
+    {
+      "number": 820,
+      "title": "Financial Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MBADM811"
+        ]
+      },
+      "description": "Application of techniques available to aid managers in sound financial decision making. This course is an intensive examination of techniques available to aid the financial manager in decision making. It is designed to provide the principles and tools of sound financial decision making involving cash flows over time under uncertainty. The course is also a basis and prerequisite for other graduate courses in finance and business. The topics covered include time value of money, valuation of bonds and stocks, capital budgeting, risk and return, valuation of a firm, capital markets and financing, international finance, and options."
+    },
+    {
+      "number": 821,
+      "title": "Marketing in a Global Environment",
+      "credits": 3,
+      "description": "Examining strategic issues in global marketing, including opportunity analysis, planning, and implementation. This is a comprehensive marketing management course examining strategic issues in marketing. The areas of analysis, planning, implementation, and control of marketing activities and processes are examined. Marketing is presented as more than a business function; but rather, a philosophy of doing business. The main emphases of the course are on market assessment and measurement; analysis of consumer and business markets and buyer behavior; competitive marketing strategies; market segmentation, target marketing, and positioning strategy; product development and commercialization; pricing; channels of distribution; and communication and promotion strategies. The course uses a combination of readings, online discussions, presentations, group projects and a comprehensive simulation to help students not only gain a broad understanding of marketing strategies but also acquire hands-on experience in taking control of an enterprise operation involving marketing, production, and financial decision making at both strategic and tactic levels."
+    },
+    {
+      "number": 822,
+      "title": "Managing Supply Chains in Global Markets",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MBADM813"
+        ]
+      },
+      "description": "Analyzing and applying key concepts, tools, and strategies in managing supply chains in global markets. This course addresses the concepts, tools, and strategies required to manage supply chains in a global market environment. The primary focus of the course is to enable students to develop a good understanding of strategic, tactical, and operational issues of Supply Chain Management (SCM) and to apply the various SCM concepts, tools, and strategies to make decisions for effective and efficient management of supply chains. The concepts of supply chain management are linked to provide an integrated decision making framework for managers. Specific skills acquired in this course include those needed for Inventory management, Network modeling, Contracting in Supply Chains, understanding the Value of Information, building strategic Alliances, Distribution strategies, Procurement strategies, Risk management, Supply chain design, and Global logistics."
+    },
+    {
+      "number": 830,
+      "title": "Managing in the Digital Economy",
+      "credits": 3,
+      "description": "How digital innovation, technology, and market disruption transforms industries, business practices, and market strategies. This course addresses the ways digital technological innovations transform industry, business models, strategies, operations, and management, and create new markets and products. The Economics and Markets module builds a foundation for understanding the role of disruptive technologies and their transformational impact on business strategies and models. The module has three focus areas - behavioral and informational economics, power laws, and platform competition. The Disruptive Information Technologies module is based on Clayton Christensen's concept of disruptive innovations with discussions centered on Clouds and Mobility, Internet of Things, 3D printing, robotics, transportation. The Implications of Data module focuses on the collection, analysis, and use of massive amounts of data driven by digital technologies. The topics covered include big data, privacy and security, search and ad technologies, health, and current/emerging topics. The Transformational Impact module discusses strategic implications of digital innovations on work, business, industry, and society."
+    },
+    {
+      "number": 850,
+      "title": "Corporate Innovation and Entrepreneurship",
+      "credits": 3,
+      "description": "This course focuses on understanding, exploring, and applying innovation-related concepts, principles, and practices to corporate environments involved with product development, new venture creation, and other contexts, such as startup companies. Innovation and creativity are examined from multiple perspectives and levels of analysis, including individual, team, organization, industry, business process, culture, and technology, to name a few. In addition, this course seeks to demonstrate how innovation, and its associated best practices, can be integrated and applied to improve organizational performance. This course is intended to provide a broad overview of corporate innovation and entrepreneurship that students can build upon in a work or educational setting. Students will learn the basics of how to assess innovation competency maturity, perform innovation processes and activities in an organization, and identify opportunities and ideas that can lead to new venture creation."
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "subject": "ANAT",
+  "courses": [
+    {
+      "number": 503,
+      "title": "Gross Anatomy",
+      "credits": 6,
+      "description": "Gross structure, organization, and function of the human body with laboratories devoted to dissection of the human body."
+    },
+    {
+      "number": 505,
+      "title": "Histology and Embryology I",
+      "credits": 2,
+      "description": "Light and electron microscopic structure of cells, specialized tissues, organization, basic organogenesis, correlation between cellular structure and physiological function."
+    },
+    {
+      "number": 506,
+      "title": "Histology and Embryology II",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "ANAT505"
+        ]
+      },
+      "description": "Continuation of ANAT 505 ; microscopic structure of cells, specialized tissues, organization, basic organogenesis, correlation between cellular structure and physiological function."
+    },
+    {
+      "number": 512,
+      "title": "Human Embryology and Teratology",
+      "credits": 2,
+      "description": "Study of developing human embryo including gamete production and fusion, implantation, organogenesis and major abnormalities of organ systems."
+    },
+    {
+      "number": 515,
+      "title": "Developmental Neurobiology",
+      "credits": 2,
+      "internalEquivalents": [
+        "NEURO515"
+      ],
+      "description": "Development of the nervous system in all its aspects."
+    },
+    {
+      "number": 585,
+      "title": "Human Anatomy and Development B: Human Development",
+      "credits": 1,
+      "description": "Explores human embryology and organogenesis beginning at the third week of gestation through parturition. ANAT 585 ANAT (PHARM) 585 Human Anatomy and Development B: Human Development (1) This course will provide a concise but thorough description of embryology of the major systems in the human. It will provide an awareness of how genetics, environment, and maternal-fetal relationships impact on nora ml human development, and the importance of understanding embryology for biomedical and translational research. An emphasis will be placed on the role of molecular biology in normal embryology and human development. Primary literature will be consulted for a description of major signaling pathways and key signaling molecules associated with each system. Some discussion of abnormal development will be included."
+    },
+    {
+      "number": 586,
+      "title": "Human Anatomy and Development C: Stem Cell Biology and Regenerative Medicine",
+      "credits": 1,
+      "description": "Exploration of stem cell biology and the role of stem cells in regenerative medicine. ANAT 586 ANAT (PHARM) 586 Human Anatomy and Development C: Stem Cell Biology and Regenerative Medicine (1) This course will provide an evaluation of stem cell biology and regenerative medicine. In particular, discussions will focus on the five sources of embryonic stem cells (adult stem cells, amniotic fluid-derived stem cells, embryonic stem cells derived usingin vitrofertilization technologies, somatic cell nuclear transfer cloning-derived stem cells, and stem cells derived by parthenogenetically-activating oocytes). In addition to providing detailed information on the biology underlying stem cells, group discussions will focus on ethical advantages and disadvantages for each of the five distinct types of stem cells. Work will then turn to current understanding of changes in transcriptome and proteome control of differentiation. As well, discussions will focus on attempts to use stem cells in regenerative medicine. This course will be designed as a mixture of didactic lectures with a particular focus on the current literature. This latter aspect of the course is essential in that much of our current understanding of stem cells has not yet made it into any common text books."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 99
+      },
+      "description": "Supervised experience in the development of instructional materials, the organization and conduct of lectures/laboratories, the evaluation and counseling of students."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "subject": "MBIOM",
+  "courses": [
+    {
+      "number": 550,
+      "title": "Current Issues in Microbiome Sciences",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 8
+      },
+      "description": "This course will take a seminar approach to provide a broad survey of current questions being asked involving the microbiome in various systems. Students will complete the course with an improved understanding of current microbiome research goals and techniques. Each week we will focus on a different topic from a diverse pool of areas, presented by established researchers as well as early-career investigators. In addition to sharing scientific results and accomplishments, this course also offers a community-building experience for students with microbiome interests from diverse departments."
+    },
+    {
+      "number": 551,
+      "title": "Microbiome Sciences: From Origins to Biotechnological Applications",
+      "credits": 1,
+      "description": "This course provides graduate students with a historical and conceptual framework for microbiome sciences, spanning foundational discoveries to modern biotechnological applications. Students will engage with key technological milestones, including sequencing innovations, meta-omics, genetic editing, and computational tools, by critically reading primary scientific literature and participating in guided discussions led by peers and moderated by the instructor and diverse faculty. Emphasis will be placed on understanding the appropriate contexts for applying these tools in both research and translational settings."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

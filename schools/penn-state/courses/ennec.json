@@ -1,0 +1,58 @@
+{
+  "subject": "ENNEC",
+  "courses": [
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 540,
+      "title": "Economic Analysis of Energy Markets",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON502"
+        ]
+      },
+      "description": "This course uses economic analysis to explain the history of world energy and its regulation since 1945."
+    },
+    {
+      "number": 560,
+      "title": "Mineral and Energy Finance I",
+      "credits": 3,
+      "description": "Introduction to theory of finance and application of financial tools to commodity market analysis. Emphasis on mineral and energy markets."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

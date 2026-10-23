@@ -1,0 +1,25 @@
+{
+  "subject": "PATH",
+  "courses": [
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 1
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students or outside speakers."
+    },
+    {
+      "number": 801,
+      "title": "Veterinary Infectious Disease Diagnostic and Surveillance Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AGBIO520"
+        ]
+      },
+      "description": "This course provides knowledge of diagnostic and surveillance systems used to detect infectious diseases and protect against animal agricultural biological attack."
+    }
+  ]
+}

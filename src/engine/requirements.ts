@@ -46,6 +46,10 @@ export function matchesCreditRule(rule: CreditRule, object: CurriculumObject): b
   if (rule.notArea !== undefined && list(rule.notArea).some((area) => courseAreas.includes(area))) return false;
   if (rule.subjects && !(object.code && rule.subjects.includes(object.code.subject))) return false;
   if (rule.minNumber !== undefined && !(object.code && object.code.number >= rule.minNumber)) return false;
+  if (rule.maxNumber !== undefined && !(object.code && object.code.number <= rule.maxNumber)) return false;
+  const attributes = object.attributes ?? [];
+  if (rule.attributes && !rule.attributes.some((a) => attributes.includes(a))) return false;
+  if (rule.notAttributes && rule.notAttributes.some((a) => attributes.includes(a))) return false;
   return true;
 }
 

@@ -1,0 +1,95 @@
+{
+  "subject": "GEODZ",
+  "courses": [
+    {
+      "number": 511,
+      "title": "Geodesign History, Theory, Principles",
+      "credits": 3,
+      "description": "Students study the theory and principles of geospatially-based design by investigating the methods and collaborative nature of the geodesign process. GEODZ 511 Geodesign History, Theory, Principles (3) GEODZ 511 consists of lectures, readings in course literature, small group discussion forums, and individual topic investigation. In this course students will explore the questions, challenges, and the values of the geodesign framework. The course provides a comprehensive overview of the geodesign process, including designing in geographic space, issue identification, process evaluation, fast iteration and alterative scenario generation, multidisciplinary collaboration, and the role of science- and value-based decision making. The course culminates in a final project in which students independently research the physical and social characteristics, data, and teaming-expertise required to deploy a study for their topic, and report on how their proposed geodesign framework enables creative change for that location. Students who successfully complete the course will be able to associate different types of design and planning issues and challenges to the appropriate geodesign workflow and identify possible models to use to promote creative change for a place. They will be able to prepare a description of a scenario and the team needed to perform a geodesign study, and illustrate which tools or techniques may be best suited for a scenario."
+    },
+    {
+      "number": 596,
+      "suffix": "A",
+      "title": "Individual Studies--Geodesign Capstone Project Proposal and Peer Review",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEODZ852"
+        ]
+      },
+      "description": "Preparation and peer-review presentation of proposal for an individual capstone geodesign project."
+    },
+    {
+      "number": 596,
+      "suffix": "B",
+      "title": "Individual Studies--Geodesign Capstone Project Dissemination",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEODZ596A"
+        ]
+      },
+      "description": "Preparation and dissemination of geodesign capstone project results in a formal professional venue."
+    },
+    {
+      "number": 822,
+      "title": "GeoDesign Models I: Evaluation and Decision",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEODZ511"
+        ]
+      },
+      "description": "The principles, inherent values and practical applications of Evaluation and Decision models as implemented within the Geodesign Framework."
+    },
+    {
+      "number": 824,
+      "title": "GeoDesign Models II: Process and Impact",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEODZ822"
+        ]
+      },
+      "description": "The principles, inherent values and practical applications of Process and Impact models as implemented within the Geodesign Framework."
+    },
+    {
+      "number": 826,
+      "title": "GeoDesign Models III: Representation and Change",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "GEODZ822"
+        ]
+      },
+      "description": "The principles, inherent values and practical applications of Representation and Change models as implemented within the Geodesign Framework."
+    },
+    {
+      "number": 842,
+      "title": "Geodesign Studio I: Rural/Regional Challenges",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "GEODZ824",
+              "GEODZ826"
+            ]
+          }
+        ]
+      },
+      "description": "Problems-based workshop where students apply geodesign process, in a collaborative setting, to regional-scale landscape change and land planning topics."
+    },
+    {
+      "number": 852,
+      "title": "Geodesign Studio II: Urban/District-scale Challenges",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "GEODZ842"
+        ]
+      },
+      "description": "Problems-based workshop where students apply geodesign process, in a collaborative setting, to urban-scale landscape change and land planning topics."
+    }
+  ]
+}

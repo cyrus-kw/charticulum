@@ -1,0 +1,86 @@
+{
+  "subject": "SBN",
+  "courses": [
+    {
+      "number": 505,
+      "title": "Seminar in Social and Behavioral Neuroscience",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NEURO520",
+              "NEURO521"
+            ]
+          }
+        ]
+      },
+      "description": "Each section of this course explores an important topical area within contemporary social and behavioral neuroscience, exploring pertinent concepts, theories, and empirical findings. Topics explored may include the neuroscience underpinnings of social, personality, and emotional development; the neuroscience of aging and memory; and social and affective neuroscience. The intention of this course is to lay a foundation so that students may critically read and conduct research in the topical area, with an emphasis on how the topic can be examined at different levels of analysis, and how integrating information across levels of analysis furthers advancement in the field. Levels of analysis include neurochemical and cellular processes, neural networks and systems, behavioral manifestation, and dynamic feedback from the environmental context. The course will emphasize class participation and provide multiple opportunities to examine related topics in written and spoken form"
+    },
+    {
+      "number": 508,
+      "title": "Methods in Social and Behavioral Neuroscience",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NEURO520",
+              "NEURO521"
+            ]
+          }
+        ]
+      },
+      "description": "Different sections of SBN 508 will explore important topical areas in the broader domain of research design, experimental and measurement techniques, and data analytic methods that are common to Social and Behavioral Neuroscience or are newly developed, cutting edge methods in the field. Courses will include an examination of (a) the biological process being measured (e.g. what type of neural activity is and is not captured in fMRI), (b) the foundational principles of the experimental and/or measurement technique, (c) the analytical approaches pertinent to the type of data being generated, and (d) methodological issues of particular relevance to the experimental technique and/or design being used. The intent of SBN 508 is to provide students with a strong foundation in research design, procedures,measurement, and data analytic approaches that students can carry forward and use in research projects in Social and Behavioral Neuroscience. SBN 508 will emphasize class participation and provide multiple opportunities to examine related topics in written and spoken form. Courses will also provide students with the opportunity to work with the relevant data types to provide an immersive experience in design and analysis. We anticipate that SBN 508 course sections will be continually revised and updated to reflect new and innovative experimental, measurement, and data analytical techniques that continually appear in the scientific literature."
+    },
+    {
+      "number": 511,
+      "title": "Translational Applications of Social and Behavioral Neuroscience",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NEURO520",
+              "NEURO521"
+            ]
+          }
+        ]
+      },
+      "description": "This course explores translational applications of Social and Behavioral Neuroscience to a particular population or populations at risk, how neuroscience contributes to a broader multi-level understanding of the phenomenon and more comprehensive theory and evidence-based intervention approaches, and how understandings derived from neuroscience can inform policy and best practice. Content may also address how neuroscience can contribute to the evaluation of behavioral interventions to inform factors such as (a) etiological heterogeneity that may moderate treatment efficacy, (b) neurological processes that mediate the behavioral effects of intervention, and (c) the implications of neuroscience evidence for assessing individual-level responsivity to intervention. These topics naturally integrate advances in the idea of \"personalized medicine\" to include behaviorally targeted prevention and intervention programs. Topics explored may include the neuroscientific substrates of: substance use, misuse, and addiction, learning disabilities, developmental disability, and behavioral problems. SBN 511 will incorporate transdisciplinary, transactional developmental models that take into account individual characteristics across multiple levels of analysis (i.e. genetic, neurobiological, psychological, behavioral) throughout childhood, adolescence, and adulthood, in interaction with contextual and experiential conditions (family, peers, adversity) that bear directly on individual risk and resilience and, more broadly, policy and best practice. This course aims to lay a foundation so that students may critically read and conduct research in the topical area and understand how the topic can be examined at different levels of analysis. The course will emphasize class participation and provide multiple opportunities to examine related topics in written and spoken form."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

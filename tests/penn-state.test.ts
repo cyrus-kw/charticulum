@@ -43,6 +43,28 @@ describe("schools/penn-state", () => {
     expect(course.description).toMatch(/oral communication/);
   });
 
+  it("has graduate courses, in the same subject files as undergraduate ones", async () => {
+    const { catalog, data } = await loadPennState();
+    expect(catalog.get("CMPSC121")).toBeDefined();
+    // Graduate computer science is its own subject, CSE.
+    expect(catalog.get("CSE565")!.title).toBe("Algorithm Design and Analysis");
+    expect(data.structure?.levels.map((l) => l.id)).toEqual(["undergraduate", "graduate", "medicine", "law"]);
+    // "1-9 Credits/Maximum of 9".
+    expect(catalog.get("CMPSC598")).toMatchObject({ credits: 1, maxCredits: 9, repeatable: { maxCredits: 9 } });
+    // Graduate pages write requisites as plain text: "CMPEN362 ; E E 353 or E E 350".
+    expect(catalog.get("CSE514")!.requisites.previous).toEqual(["CMPEN362", { oneOf: ["EE353", "EE350"] }]);
+  });
+
+  it("reads every attribute, with gen ed ones as the course's areas", async () => {
+    const { catalog } = await loadPennState();
+    // Effective Speech: Writing and Speaking, and United States Cultures.
+    const speech = catalog.get("CAS100A")!;
+    expect(speech.attributes).toEqual(expect.arrayContaining(["GWS"]));
+    expect(speech.genEdAreas).toEqual(["Writing and Speaking"]);
+    expect(speech.categories).toContain("general-education");
+    expect(catalog.get("CMPSC483W")!.attributes).toContain("W");
+  });
+
   it("reads prerequisites, including grades and same-term courses", async () => {
     const { catalog } = await loadPennState();
     // "(CMPSC 122 or CMPSC 132) and (CMPSC 360 or MATH 311W)": two choices,

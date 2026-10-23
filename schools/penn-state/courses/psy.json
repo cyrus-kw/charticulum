@@ -1,0 +1,714 @@
+{
+  "subject": "PSY",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Seminar in General Psychology",
+      "credits": 1,
+      "description": "Orientation course for first-year graduate students in Psychology."
+    },
+    {
+      "number": 502,
+      "title": "Health: Biobehavioral Perspectives",
+      "credits": 3,
+      "description": "Introduction to the role of psychology in maintaining health and in treating nonpsychiatric disorders."
+    },
+    {
+      "number": 505,
+      "suffix": "M",
+      "title": "SEMINAR IN CURRENT PERSPECTIVES IN PSYCHOLOGY",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "The course will review the latest research methods, design, and findings from a broad range of psychological topics. Emphasis will be placed on empirical research, yet also cover timely reviews and professional development emphasis. Students will gain an in depth understanding of the current research in the field as well as an appreciation for emerging methods and research practices."
+    },
+    {
+      "number": 507,
+      "title": "Analysis of Psychological Data I",
+      "credits": 3,
+      "description": "Overview of analysis techniques for psychological data. PSY 507 Analysis of Psychological Data I (3) Research in psychology employs a variety of methods, many of which are unique to the study of the mind and behavior. This course assumes some familiarity with psychological research and concerns the analysis of psychological data, including the results from self-report and observational studies, factorial and repeated-measures experiments, and designs that mix two or more types of factor or measure. An introduction to the current methods of describing and reporting psychological data will be provided, as will a primer on the special issues surrounding data reduction and measurement error that arise when working with human subjects."
+    },
+    {
+      "number": 508,
+      "title": "Analysis of Psychological Data II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY507"
+        ]
+      },
+      "description": "Overview of advanced analytic techniques for psychological data. PSY 508 Analysis of Psychological Data II (3) This course deals with the analysis and interpretation of multivariate data of the sort often obtained in psychological research. It discusses data analysis when there are multiple independent variables (e.g., various applications of multiple regression), when there are multiple dependent variables (e.g., multivariate analysis of variance), and when the aim of the data analysis is to understand the latent structure of a set of variables (e.g., factor analysis, structural equation modeling). The course uses a number of data-analytic platforms, focusing on: (1) using SPSS syntax to structure complex analyses, and (2) using AMOS to carry out analyses involving both latent and observed variables."
+    },
+    {
+      "number": 509,
+      "title": "Seminar in Quantitative Methods",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "The Seminar in Quantitative Methods is designed to provide a seminar experience for graduate students in Psychology and related programs. Topics will vary by semester and instructor, but will be related to quantitative methods (e.g., research design, measurement, data analysis). Each section will provide an in-depth look at different topics in quantitative methods. Although the topics covered will vary across sections, all sections are focused on achieving the following goals: - To provide students with a broad theoretical understanding of the specific topics addressed in the seminar, - To provide students with the technical skills necessary to incorporate appropriate data analytic techniques into their research projects, and - To provide students with a cursory treatment of the mathematical foundations of these topics, so that interested students have the requisite background to pursue additional training in these areas."
+    },
+    {
+      "number": 511,
+      "title": "Seminar in Contemporary Psychology",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Critical review of readings on a topic of current interest, either in content or methodology, within psychology. PSY 511 Seminar in Contemporary Psychology (1-3 per semester/maximum of 12) The Seminar in Contemporary Psychology is designed to provide a seminar experience for graduate students in Psychology and related programs. Topics will vary by semester and instructor. Each section will provide an in-depth look at a current area of scientific research in psychology. Assigned readings will include material from the original scientific literature (journal articles, chapters, or books). Evaluation methods vary by section, but are writing-based and typically include a combination of short writing assignments (30%), class participation (10%), and longer papers requiring library research in the original literature (60%)."
+    },
+    {
+      "number": 512,
+      "title": "Developmental Cognitive Neuroscience of Adolescence",
+      "credits": 3,
+      "description": "In this course students will evaluate a mix of foundational and cutting-edge research and theory investigating various changes during adolescence principally from a developmental cognitive neuroscience perspective. Particular emphasis will be placed on understanding the application of non-invasive neuroimaging techniques (e.g., functional magnetic resonance imaging, EEG) and the critical role these tools have played in our understanding of adolescent development. Topics to be discussed include (but will not be limited to) structural brain development, maturation in cognitive control functions (e.g., working memory, inhibitory control), as well as affective (e.g., emotion and reward processing), and social information processing. We will also examine factors contributing to adolescent decision-making and risk-taking behaviors."
+    },
+    {
+      "number": 517,
+      "title": "Advanced Social Psychology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH420",
+          {
+            "oneOf": [
+              "STAT200",
+              "PSYCH200"
+            ]
+          }
+        ]
+      },
+      "description": "Problems of theory and of research methods with emphasis on persisting issues relevant to contemporary developments in social psychology."
+    },
+    {
+      "number": 520,
+      "title": "Seminar in Psycholinguistics",
+      "credits": {
+        "min": 3,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Consideration of theoretical and research issues relevant to psychological aspects of language sounds, syntax and semantics, and other cognitive support. LING (PSY) 520 Seminar in Psycholinguistics (3 per semester/maximum of 9) In this seminar, psycholinguistic approaches to bilingualism will be examined. Bilingualism is of interest for a number of reasons. First, despite the prevalence of monolinguals in the United States, most people of the world are bilingual. To have a genuinely universal account of human cognition will therefore require a detailed understanding of the relations between language and thought in individuals who speak and understand more than one language. It will be essential that research on basic cognitive functions in bilinguals examines both the course and the consequence of second language acquisition. Second, bilingualism provides a unique vantage point from which the relations between thought and language may be viewed. Historically, this issue was the focus of the debate over the Whorfian hypothesis (i.e., does language determine thought?). In contemporary psychology, it has emerged as a central issue in the debate over modularity. Understanding the form of language and memory representation in the bilingual may provide an important set of constraints in modeling the fundamental categories of the mind. Finally, bilingualism can provide a research tool for examining cognitive functions that are sometimes impenetrable within an individuals first language. The examination of the mapping of form to meaning in Constructing syntactically well-formed sentences in two languages with contrasting syntax, or in understanding the meaning of words that have similar form but differ in meaning in two languages, provides a tool for developing converging sources of evidence to test theories of language comprehension and memory. Topics to be covered include second language acquisition in children and adults, language comprehension and memory in second language, code switching and language mixing, the consequences of bilingualism, and the neuropsychology of bilingualism."
+    },
+    {
+      "number": 521,
+      "title": "Cognitive Studies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH456"
+        ]
+      },
+      "description": "Survey of theories, methods, and issues in cognitive science."
+    },
+    {
+      "number": 522,
+      "title": "Personnel Selection and Appraisal",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH404",
+          "PSYCH482"
+        ]
+      },
+      "description": "Evaluation of models for personnel selection, placement, and performance appraisal in business and industry."
+    },
+    {
+      "number": 523,
+      "title": "Social-Organization Psychology in Industry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH484"
+        ]
+      },
+      "description": "Analysis of the role of social and organizational variables as they affect employee performance and employee attitudes."
+    },
+    {
+      "number": 524,
+      "title": "Proseminar in Cognitive Psychology",
+      "credits": 3,
+      "description": "An historical introduction to theories and critical findings in the field of cognitive psychology."
+    },
+    {
+      "number": 525,
+      "title": "Cog Psy Sem",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "An advanced seminar in a topical or research area in the field of cognitive psychology."
+    },
+    {
+      "number": 526,
+      "title": "Measurement in Human Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EDPSY450",
+              "PSYCH404"
+            ]
+          },
+          "HDFS519"
+        ]
+      },
+      "description": "Principles and methods for assessment of human developmental processes across the life span."
+    },
+    {
+      "number": 528,
+      "title": "Observational Methodologies for Development",
+      "credits": 3,
+      "description": "Design and application of observational methods in developmental research."
+    },
+    {
+      "number": 529,
+      "title": "Seminar in Child Development",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Readings and reports on recent findings in child development."
+    },
+    {
+      "number": 531,
+      "title": "Multilevel Theory, Measurement, and Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY507"
+        ]
+      },
+      "description": "This course is designed to provide students with an overview of multilevel theory building and testing. Issues to be discussed include: multilevel theory & multilevel constructs, multilevel measurement models including composition and compilation models, data aggregation, aggregation bias, the role of within-group agreement in multilevel measurement, cross-level inference & cross-level bias, cross-level interactions, and multilevel regression models/hierarchical linear models/random coefficient regression models. This course has three goals: 1) To provide students with a broad theoretical understanding of multilevel modeling, 2) To provide students with the technical skills necessary to incorporate multilevel data analytic techniques into their research projects 3) To provide students with a cursory treatment of the mathematical foundations of these topics so that the interested student has the requisite background to pursue advanced training in these areas."
+    },
+    {
+      "number": 532,
+      "title": "Psychological Foundations of Leadership",
+      "credits": 3,
+      "description": "Students will examine the social and psychological processes underlying leadership in organizations. PSY 532 Psychological Foundations of Leadership (3) Emerging organizational challenges underscore the criticality of leadership in successful organizational functioning - a trend that is as true for the corporate world as it is for non-profit and governmental institutions. Underlying the need for well-trained, effective leaders is the requirement that future leaders have a fundamental understanding of the psychological processes driving successful leadership. This course provides a broad exploration of the theoretical bases for understanding leadership. Specifically, in this course, students will have the opportunity to learn about the psychological, cognitive, and social foundations underpinning leadership thinking and theory. In particular, course readings and activities will explore traits associated with leadership, psychodynamic perspectives on leaders, skills and styles used by effective leaders, contingency approaches to leadership, the role of power and influence, leader-member exchanges, team-based leadership, transformational leadership, and servant and authentic leadership. By exploring these topics, students will improve their critical thinking about their roles as leaders and expand their skillset to operate more effectively as future leaders. Students will consolidate and demonstrate their understanding of and ability to apply conceptual bases of understanding leadership to analysis of leadership situations and to improving their own capacity for leadership by participating in a number of course activities. For example, students will learn to apply their learning about course topics such as psychological perspectives on leadership to real-world examples of leadership. Moreover, students will gain a deep understanding of the complexities surrounding effective leadership by reviewing representations of leadership in popular culture and carrying out activities that require reflection on those representations. Such deep understanding will be reinforced through exposure to relevant examples, discussion, and cases that emphasize the application of leadership models and theory to practice. Final writing assignments will serve as a vehicle for students to recognize and identify concepts such as leadership styles and types of leadership and to apply them to developing reflective awareness of the psychological processes that drive successful leadership. The conceptual framework for the course will be the psychological principles guiding the development and instantiation of successful leadership."
+    },
+    {
+      "number": 534,
+      "title": "Practicum in Industrial/Organizational Psychology",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "PSYCH484",
+          "PSYCH482"
+        ]
+      },
+      "description": "Supervised application of psychological principles in industrial and governmental settings."
+    },
+    {
+      "number": 535,
+      "title": "Research Methods in I/O Psychology",
+      "credits": 3,
+      "description": "This seminar is designed to help students develop a broad understanding of applied research by exposing them to the various research methods commonly used in Industrial/Organizational Psychology. The objectives for the course include: 1) developing a solid core understanding of the concepts underlying the research endeavor; 2) building an appreciation of the strengths and limitations of various designs and methods of research; 3) developing the skills to apply these methods to research problems; 4) creating an understanding of the connections between theory, method, and the advancement of knowledge; 5) becoming aware of ethical issues in research; and 6) making significant progress toward the completion of the master's thesis proposal."
+    },
+    {
+      "number": 537,
+      "title": "Topics in Organizational Psychology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY523"
+        ]
+      },
+      "description": "PSY 537 builds on the basic learning blocks of organizational psychology in order to be on the frontiers of knowledge about multilevel and interpersonal dynamics in organizations from the employee, to the team, to the broader organization. The course objective is to gain in-depth knowledge of the theories and research evidence in an area of organizational psychology, and then to develop a novel research idea that contributes to and expands beyond existing research. Specific topic in this course include: employee emotions and motivation, employee well-being, leadership and social influence, workplace diversity, and team-level processes and climate."
+    },
+    {
+      "number": 538,
+      "title": "Psychology of Personnel Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PSYCH482",
+              "EDPSY421"
+            ]
+          }
+        ]
+      },
+      "description": "Industrial training in relation to psychological learning theory and experimental findings."
+    },
+    {
+      "number": 539,
+      "title": "Foundations of Behavior, Motivation, and Attitudes at Work",
+      "credits": 3,
+      "description": "Students will examine the psychological and social processes underlying behavior, motivation, and attitudes in work settings. PSY 539 Foundations of Behavior, Motivation, and Attitudes at Work (3) Ongoing changes in the nature of work (e.g., increasingly jobs are knowledge-based), the workforce (e.g., more diverse), and employee-organizational linkages (e.g., greater mobility of employees from organization to organization; increased employee responsibility for maintaining work-relevant skills and knowledge) result in increasing complexity and variability in individual motivation and attitudes at work that, in turn, lead to challenges for leaders in their attempts to influence and develop their employees. Knowledge of the many psychological factors affecting motivation and attitudes, and related skills in understanding the specific ones that may be relevant in a given organizational setting, are critical for effective leadership. This course will provide a broad exploration of research and theory concerning the psychological factors that underlie motivational and attitudinal processes related to human behavior in work and organizational settings. In particular, the course investigates both positive and dysfunctional work behaviors, and their causes and consequences; work attitudes, including job satisfaction and organizational commitment; work motivation theories, including need and trait approaches, behavioral approaches, and cognitive approaches; the role of work content and context and social factors on motivation and attitudes; the importance of aligning such factors to create a work environment supporting effective employees and work groups; and how the changing nature of work and organizations may impact the importance of these factors. The course will focus on the development of the students' ability to think critically about the complexity of factors that influence behavior and the wide range of individual differences in behavior, emotions, and thinking that occur even when individuals experience a common work environment. Building on these insights, students will learn to recognize and identify in specific work settings the situational conditions that may enhance and/or inhibit effective employee motivation, attitudes, and behavior. Students will also develop skill in aligning various organizational programs and policies to maximize the overall positive impact on effective employee behavior. Synthesis of the various theories and sets of research findings will be developed by the use of relevant examples, cases, and discussions that allow students to demonstrate their knowledge in relation to the development of leadership behaviors likely to be effective in various organizational situations."
+    },
+    {
+      "number": 540,
+      "title": "Seminar in Clinical Problems",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "requisites": {
+        "previous": [
+          "PSY542",
+          "PSY560"
+        ]
+      },
+      "description": "Contemporary psychological theory, research, and methodology in relation to clinical psychology."
+    },
+    {
+      "number": 542,
+      "title": "Lifespan Development and Psychopathology - Adulthood",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH470"
+        ]
+      },
+      "description": "This course covers knowledge about typical development in adulthood and about atypicality and the development of adult psychological disorders."
+    },
+    {
+      "number": 543,
+      "title": "Research Design in Clinical Psychology",
+      "credits": 3,
+      "description": "Experimental and quasi-experimental designs, methodological problems, and techniques of experimental control in clinical psychology research."
+    },
+    {
+      "number": 547,
+      "title": "Fundamentals of Social Development",
+      "credits": 3,
+      "description": "An introduction to theories, current issues, and critical psychological research findings relating to social and emotional development. PSY 547 Fundamentals of Social Development (3) This course will focus on children's social and emotional development with an emphasis on the various agents that play a part in children's socialization. An important assumption underlying this course and guiding its content is that growth in social and emotional competence emerges from children's experiences in their relationships with other people, especially parents, siblings, and friends. In addition, we will assume that socialization is bi-directional, that is, that children influence their relationships even as their relationships influence them. The goals for the course are as follows: To enhance understanding and familiarity with the methods and findings of the scientific literature on social development; to provide an understanding of the how of theory and cultural assumptions influence empirical research and how to recognize the implications of theory for research; to enhance understanding of the variability that exists among individuals in terms of social experiences and the growth and development of social competence; to develop or extend students' skills for scholarly communication by providing opportunities to make presentations and produce written work in formats that mimic those used by professionals in the field."
+    },
+    {
+      "number": 548,
+      "title": "Fundamentals of Cognitive Development",
+      "credits": 3,
+      "description": "Fundamentals of Cognitive Development will provide students with a broad background in theories, methods, and empirical findings in cognitive development. Discussions will address cognitive development across the lifespan, although empirical work will emphasize cognitive development during infancy, childhood, and adolescence. Students will study varied theoretical frameworks and methods, and will obtain experience in evaluating research from different theoretical perspectives, considering the role of diverse contexts and individuals, and addressing implications of research for applied issues such as education."
+    },
+    {
+      "number": 549,
+      "title": "Developmental Theory",
+      "credits": 3,
+      "description": "Conceptual frameworks and major contributions to the study of individual development across the life-span."
+    },
+    {
+      "number": 552,
+      "title": "Child Maltreatment: Developmental Processes and Biological Embedding",
+      "credits": 3,
+      "description": "The purpose of this course is to review the breadth of literature on the biological and developmental impact of child maltreatment including sexual abuse, physical abuse, and neglect on youth victims. Students will learn how to integrate child maltreatment research into a relevant, cohesive framework for understanding child maltreatment's wide-reaching effects. The biological focus of the course will be on the health consequences of child maltreatment as well as the neurological, neuroendocrine, and genetic embedding of child maltreatment. The course will also focus on the developmental antecedents and sequelae of child maltreatment through childhood, adolescence, and the transition to adulthood, including addressing how intergenerational transmission, parenting, interpersonal relationships, and attachment are associated with exposure to child maltreatment."
+    },
+    {
+      "number": 553,
+      "title": "Child Maltreatment: Policy, Administrative Data Systems, Prevention, and Treatment",
+      "credits": 3,
+      "description": "The course will provide an overview of the major components of the child welfare system (e.g., child protection, family court, foster care, congregate care) involved in the community response to child maltreatment and promote a critical analysis of key federal policies that guide system activities. Course participants will also become familiar with Federal, state, and community data systems, and with methods to develop integrated data systems and their relevance to evaluating system outcomes and policy effects related to the child welfare system. Next, the course will give an overview of a range of experimental, quasi-experimental, and observational research designs and analytic methods relevant to evaluating the effects of child welfare policies and practices on child and family outcomes related to child maltreatment and system involvement. Finally, class participants will apply course content to develop applied research proposals that leverage administrative data for systems research and examine methods for communicating research findings to impact policy and practice at the community and federal levels. This course will also provide an in-depth examination of the major behavioral interventions, both preventive and treatment, applied with the child maltreatment population. Students will first be given an overview of the philosophy of science and experimental methods used to establish behavioral interventions for child maltreatment. From there, students will review emerging paradigms within national funding agencies that focus on identifying and targeting mechanisms to optimize intervention effects."
+    },
+    {
+      "number": 554,
+      "title": "Clinical Assessment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY542"
+        ]
+      },
+      "description": "Development of psychological measures; evaluation of reliability and validity. Predictive utility of tests in clinical settings emphasized."
+    },
+    {
+      "number": 555,
+      "title": "Theory and Practicum in Clinical Assessment",
+      "credits": {
+        "min": 3,
+        "max": 9
+      },
+      "requisites": {
+        "previous": [
+          "PSY542"
+        ]
+      },
+      "description": "Theoretical issues and research in clinical assessment with special reference to administration and interpretation of testing procedures and clinical interviewing."
+    },
+    {
+      "number": 556,
+      "title": "Neuropsychological Assessment",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "PSYCH478",
+          "PSY554"
+        ]
+      },
+      "description": "Survey of human neuroanatomy, neuropathology, behavioral correlates of cerebral dysfunction, and the assessment of neurological disorders."
+    },
+    {
+      "number": 558,
+      "title": "Whole-Community Disaster Preparedness",
+      "credits": 3,
+      "description": "Whole-community disaster preparedness describes a fairly wide range of issues of relevance to the homeland security mission space that essentially encompasses aspects of emergency management, such as \"ensuring resilience to disasters\" as one of the core missions of the U.S. Department of Homeland Security (DHS) - since after 9/11 and the creation of DHS, the Federal Emergency Management Agency (FEMA) came under the roof of DHS, forming one of its so-called department components. Academically and professionally, disaster psychology contributes an important perspective to emergency management within an all-hazards and a whole-of-community approach to homeland security: Based on a general civil security perspective, it addresses the way people perceive and experience disasters, the way they react to them, and the way they recover from them. Within this context, the course explores the psychological impact of disasters and terrorist attacks on victims, families, rescuers, and society and methods of reducing negative psychological effects. Topics covered include the perception and communication of risk, psychological effects of traumatic events, and psychological interventions to reduce harmful psychological effects of disasters."
+    },
+    {
+      "number": 560,
+      "title": "Practicum in Clinical Methods",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "PSY555"
+        ]
+      },
+      "description": "SUPERVISED PRACTICE IN THE PSYCHOLOGY CLINIC, INCLUDING ASSESSMENT, THERAPY, REPORT WRITING, AND STAFF PARTICIPATION."
+    },
+    {
+      "number": 561,
+      "title": "Clinical Practicum with Children",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "PSYCH415",
+          "PSYCH412",
+          "PSY555"
+        ]
+      },
+      "description": "Diagnosis and counseling of child-parent problems of learning and adjustment."
+    },
+    {
+      "number": 563,
+      "title": "Behavior Modification I",
+      "credits": 3,
+      "description": "Conceptual foundations of principles, assessment methods, and research strategies."
+    },
+    {
+      "number": 566,
+      "title": "Multicultural Perspectives in Clinical Psychology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSYCH420",
+          "PSYCH438"
+        ]
+      },
+      "description": "Experimental and descriptive research on culture and behavior in both Western and non-Western settings."
+    },
+    {
+      "number": 568,
+      "title": "Psychology of Terrorism",
+      "credits": 3,
+      "description": "This course examines the causes and consequences of terrorism, and the responses to terrorism from a psychological perspective, to include Christian extremism, Islamic Fundamentalism, Jihadism, Left wing extremism and Marxist terrorism, Right wing extremism, and single-issue terrorism. It draws on research from a variety of disciplines in order to examine terrorist ideologies; the motives, strategies, and behaviors of terrorists and terrorist leaders; how people come to join terrorist groups; methods of recruitment; terrorist tactics; the psychological consequences of terrorism on individuals, communities, and global societies; psychological counterterrorism; reactions to counterterrorism efforts; terrorism prevention; and possibilities for disengagement and deradicalization."
+    },
+    {
+      "number": 569,
+      "title": "Advanced Theory and Practicum in Counseling and Psychotherapy",
+      "credits": {
+        "min": 3,
+        "max": 9
+      },
+      "description": "Theoretical issues, research, and practicum experience in psychotherapy."
+    },
+    {
+      "number": 571,
+      "title": "Seminar in Social Psychology",
+      "credits": {
+        "min": 3,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Historical development of theory and methods; determinants and principles of complex social or interactional behavior; contemporary problems and research."
+    },
+    {
+      "number": 572,
+      "title": "Psychology of Gender",
+      "credits": 3,
+      "description": "Theory and research on the psychology of gender, emphasizing gender in social interaction, and in individual identity. PSY (WMNST) 572 Psychology of Gender (3) This seminar is a graduate-level introduction to the psychology of gender. Our goal is to understand what \"gender\" is, and how and when gender matters in our evaluations of ourselves and in our interactions with others. Gender is considered as a system of power relations, as an aspect of personality, and as a cue. The course provides a background and fundamental skills for more advanced courses on the topic or independent study. The course will serve as one of the regular seminars that students can take to meet graduate program requirements in Psychology. Students will be evaluated on preparation and participation (20%), weekly reaction papers (30%), individual research paper (30%), and class presentation on research paper or other topic (20%). This course will be offered once a year with 15 seats per offering."
+    },
+    {
+      "number": 575,
+      "title": "Lifespan Development and Psychopathology - Childhood and Adolescence",
+      "credits": 3,
+      "description": "This course covers knowledge about typical development in childhood and about atypicality and the development of child psychological disorders."
+    },
+    {
+      "number": 576,
+      "title": "Clinical Child Interventions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY575"
+        ]
+      },
+      "description": "Clinical-child therapeutic techniques from a developmental-clinical perspective with emphasis on theoretical basis and empirical evaluation of various techniques."
+    },
+    {
+      "number": 577,
+      "title": "Clinical Child Assessment",
+      "credits": 3,
+      "description": "Overview of major methods used in clinical assessment of infants, pre-school children, and grade-school children with emphasis on social-emotional functioning."
+    },
+    {
+      "number": 578,
+      "title": "Contemporary Issues in Interdisciplinary Educational Intervention Sciences",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "Proseminar exploring contemporary issues in the design and evaluation of educational interventions from an interdisciplinary perspective."
+    },
+    {
+      "number": 583,
+      "title": "Designing Research in Social Psychology",
+      "credits": 3,
+      "description": "Designs and procedures useful in social psychology and cognate disciplines; quasiexperimental designs and analysis, field experimentation, validity of inferences."
+    },
+    {
+      "number": 584,
+      "title": "Attitude Formation and Change",
+      "credits": 3,
+      "internalEquivalents": [
+        "SOC584"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PSYCH420",
+              "SOC403"
+            ]
+          },
+          "SOC3"
+        ]
+      },
+      "description": "Theory and method in research on attitude formation and change with emphasis on critical analysis."
+    },
+    {
+      "number": 589,
+      "title": "Social Cognition and Social Perception",
+      "credits": 3,
+      "description": "Overview of how social behavior and social perception (e.g., impression formation, attitudes, the self, stereotyping) are influenced by cognitive processes."
+    },
+    {
+      "number": 591,
+      "title": "Seminar on Teaching Psychology",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Objectives and content of psychology; organization and presentation of material; teaching aids and techniques."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised training in lecture content and presentation, examination construction, and individual instruction."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 811,
+      "title": "Global and Cross-Cultural Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Students will examine the relation of cultural variations in psychological and social factors affecting the effective leadership of individuals and groups in work organizations. PSY 811 Global and Cross-Cultural Leadership (3) Contemporary organizations have become increasingly focused on both the global marketplace and global competition. Large organizations frequently have physical locations and employees in numerous countries around the globe, but many relatively small organizations compete on a global scale even if physically located in one or a few countries. One consequence of the global marketplace is that organizational leaders need a global mindset in order to be effective in their leadership roles, that is, an awareness of the impact of culture on factors such as work-related values, norms, and expectations such that cultural differences are an automatic part of leader and organization decision-making. This course provides a comprehensive examination of the psychological, social, and cultural factors that underlie expectations, preferences, and judged effectiveness of leadership practices and styles in organizations and work groups in the major cultural regions of the world. The course will focus on the development of the students' ability to think critically about the complexity of the direct, indirect, and interactive impact of these factors on leading within multinational organizations that operate worldwide. Considerable attention will be placed on the extensive findings of the major research effort related to global leadership, Project GLOBE, that assessed the expectations, preferences, and perceived effectiveness of a comprehensive set of leadership styles and behaviors in 3 industrial sectors in a total of 60 cultures located in all geographic regions of the world. Students will be able to use the Globe Project's framework of cultural differences and similarities related to organizational leadership to analyze specific cultural settings in terms of desired leadership approaches. Students will understand the paradoxical needs for both flexibility and consistency when attempting to lead with a global perspective. They will also be able to develop leadership approaches in their organizations that can achieve sufficient levels of both consistency across various global and cultural settings (needed for perceptions of fairness and predictability) and flexibility (necessary for adaptation to cultural and social differences). Students will also be exposed to research on the challenges faced by expatriate leaders who are given international assignments outside of their native cultures. Over the semester students will explore relevant examples, cases, and discussions that emphasize the application of psychological theory and research findings from varied cultural settings to the practice of leadership functions in global organizations and work situations. Some examples of the course material that will be addressed include: dimensions of national culture relevant for work organizations; research on the differences and similarities of preferred and effective leadership across dimensions of cultural differences; developing a global mindset and global leaders; leading multinational and culturally diverse teams; challenges of expatriate leadership assignments."
+    },
+    {
+      "number": 812,
+      "title": "Group Leadership and Effective Decision Making",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Students will examine the influence of leadership on the psychological and social processes related to effective decision making in work groups. PSY 812 Group Leadership and Effective Decision Making (3) Contemporary organizations can easily suffer from an \"information explosion\" with the ready availability of large quantities of data of possible relevance to decisions and problem-solving. Psychological research has identified numerous factors that can result in work groups' failing to make effective decisions. These factors include cognitive biases and heuristics that can be employed with little or no awareness by individuals and groups, usually to simplify information processing to make a decision quickly. They also include psychosocial factors related to how decisions are influenced by conformity, social power, and overconfidence about decision outcomes. In addition, psychological research has shown that groups do not always include effectively new information into revisions of the perceived consequences of decision alternatives. Leaders can help work groups be less influenced by such factors by use of approaches that require more in-depth processing of information and that increase group member awareness of potential biases and constraints that affect decision making. This course provides a comprehensive exploration of the psychological and social factors that underlie decision making in work groups in organizational settings, and in addition emphasizes the role that group leadership plays in making these decision processes more effective. The course focuses on the development of the students' ability to think critically about the complexity of factors that influence group decision making and the range of approaches to decision making that may be effective across various types of decisions and situational contexts. Particular attention will be paid to how group members process information related to the decision at hand and make judgments about uncertain future events. Over the semester students will be exposed to relevant examples, cases, and discussions that emphasize the application of psychological theory and research findings to the practice of leadership functions in work settings that help develop effective group decision making. Building on this knowledge, students will develop the skill to recognize and identify in specific organizational settings the cognitive and psychosocial factors that may influence information processing and decision making. They will be able to draw on these insights to develop action plans for minimizing the dysfunctional effects that certain of these factors may have on decision making, while aligning leader behaviors to support group processes that encourage decision effectiveness. Students will learn how to apply principles of in-depth information processing and evidence-based analytic processes to their own decision making."
+    },
+    {
+      "number": 813,
+      "title": "Leadership for Creativity and Innovation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Students will examine the influence of leadership on the psychological and social processes related to developing creative ideas and implementing them within work groups and organizations. PSY 813 Leadership for Creativity and Innovation (3) Organizations face continuous and strong pressures to be innovative with regard to all types of organizational functions. Creativity and innovation are not just important with regard to developing new products and services that organizations can offer to their customers, but with regard to developing more effective administrative, production, and delivery systems. At the same time individuals and groups within the organization are likely to resist change because of its inherent uncertainty and risk. Furthermore, while innovation and creativity may be strategic goals for the organization, at the same time the organization is also likely pursuing goals of efficiency, standardization, and quality that conflict with introducing change into the organization. Leaders in the organization thus face difficult paradoxes related to the achievement of multiple, conflicting goals. Organizational and work group creativity and innovation face a number of obstacles that leaders must minimize if the organization is to be successful or even survive. Leading for innovation is a critical skill in today's organizations. Students will have the opportunity to learn about the psychological and social factors that underlie creativity and innovation in work groups in organizational settings with an emphasis on the role that group leadership plays in the development and implementation of novel idea and processes. The course will focus on the development of the students' ability to think critically about the complexity of factors that influence creativity and innovation and the range of approaches to dealing with the normative resistance to change that often exists in organizations. Particular attention will be paid to how individuals and groups develop alternative potential ideas, evaluate those alternatives, and implement a novel approach to the issue at hand. Over the semester students will be exposed to relevant examples, cases, and discussions that emphasize the application of psychological theory and research findings to the practice of leadership functions in work settings that help develop and implement novel ideas. Some examples of the course material that will be addressed include: models of the creativity-innovation process within organizations; resistance to change; individual, group, and organizational factors affecting creativity; individual, group, and organizational factors affecting innovation; role of leadership in creativity and innovation; paradoxes related to concurrent need to lead for innovation and lead for efficiency; special challenges related to leading for innovation in multinational and virtual teams."
+    },
+    {
+      "number": 814,
+      "title": "Psychology of Leading Work Groups and Teams",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Students will examine the psychological and social processes related to leading work groups and teams. PSY 814 Psychology of Leading Work Groups and Teams (3) The nature of work in contemporary organizations has been changing from being performed largely by individuals to being increasingly performed by work groups and teams. Furthermore, employees are often members of multiple work groups over relatively short intervals of time or even members of several work teams at one time. Add to this trend the increasing diversity of the workforce and the increasing use of work groups that are geographically and temporally distributed around the world, and the role of being an effective work unit leader is much more difficult than it was in the past. The multiple challenges that leaders face in their attempts to influence, motivate, and develop their employees require knowledge of the psychological and social factors affecting group performance and processes, and related skills in understanding the specific factors that may be relevant in a given organizational setting. This course provides a comprehensive examination of the psychological and social factors that underlie group and team processes in work and organizational settings. The course will focus on the development of the students' ability to think critically about the complexity of factors that influence group processes and the wide range of individual differences in behavior and emotions that can occur within a work group. Over the semester students will be exposed to relevant examples, cases, and discussions that emphasize the application of psychological theory and research findings to the practice of leadership functions in work settings that help develop effective work groups and positive intra- and inter-group relations. Particular attention will be paid to those factors that work unit leaders can directly create and maintain (such as developing and coaching individual employees and the intact team; recognizing effective work behaviors and motivation; task assignments and delegation of responsibility). Utilizing this method of deployment, students will be exposed to personal experiences of the instructor as well as those of other students, thereby encouraging the use of multiple approaches to analyzing situations and designing action plans. Emphasis will be placed on applying knowledge and theories to real world situations through both the use of case studies and discussion. Topics will range from basic definitional and theoretical framing, to critical evaluation of the utility of theories, as related to the students' goals as future organizational leaders."
+    },
+    {
+      "number": 815,
+      "title": "Follower-Centric Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Leadership research and theory most often focuses on leaders and what it takes for them to achieve results through others. However, some leadership research and theory takes a different approach by focusing more on followers and how leaders can empower those followers to achieve their own results. The purpose of this course is to explore these more follower-centric approaches to leading others, including transformational leadership, servant leadership, and authentic leadership. The course will begin with an overview of follower-centric leadership in which the concept will be contrasted with more leader-centric theories such as trait theory, authoritarian leadership, transactional leadership, and charismatic leadership. The core of the course will be divided into three units, covering transformational leadership, servant leadership, and authentic leadership. The final unit of the course will provide an opportunity for students to compare and contrast the three different approaches or styles."
+    },
+    {
+      "number": 816,
+      "title": "Dysfunctional Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Students will explore the impact of negative and destructive leader behaviors including toxic leadership, abusive supervision and leader error. PSY 816 Dysfunctional Leadership (3) Leaders face a variety of psychological, cognitive, social, and decision-making challenges in organizational life. Even the noblest leaders may be tempted by the opportunities and trappings afforded by influential leadership positions. It is necessary, then, to teach less experienced leaders about the potentially negative components of supervisory roles. As such, this course approaches the psychological processes surrounding the darker side of leadership, with specific foci on destructive leadership, toxic supervision, leader error and error recovery. The course will provide students with foundational information regarding psychological concepts of dark leadership with the aim of reducing the scope, frequency, and impact of negative leadership. Over the semester, students will be exposed to the causes and antecedents of negative leadership with a particular focus on multilevel influences. Students will also learn means and methods of appropriately and ethically recovering from errors. Learning objectives include providing a basic understanding of what factors cause destructive leadership and how to avoid potentially pit-falling situations. Emphasis will be placed on teaching students how to assess and identify contextual factors that may drive harmful leadership influence. By applying such understanding, students will learn to limit the effect of destructive leadership on themselves and their followers."
+    },
+    {
+      "number": 817,
+      "title": "Psychology of Shared and Collective Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Students will examine the topic of shared and collective leadership, which includes the psychological processes surrounding collective, team-based, and dyadic leadership in organizations. PSY 817 Psychology of Shared and Collective Leadership (3) Given the complexity faced by leaders in organizations, it will not always be possible to operate alone as a leader. At times, it will be beneficial to share that process with one or more other individuals, hence the growing emphasis on \"we-based\" leadership. With psychology serving as the disciplinary framework for the course, students will have the opportunity to learn about the process and framework of shared leadership with the express goal of allowing them to utilize this, and similar, leadership processes in their own professional careers. The course will focus on providing a broad exploration of collective leadership. In particular, it will provide an understanding of the varying approaches to understanding and thinking about shared and collective leadership. In the investigation of course material, students will be exposed to real life examples and experiences - drawing heavily on instructor and student experiences as well as chosen case studies. Learning objectives for the course will center first on providing a foundation in the relatively new concept of \"we-based\" leadership to students. With this foundation, students will begin to apply this knowledge to understanding the conditions under which we-based approaches are most and least effective. Finally, students will be provided with a greater understanding of the contextual factors that shape the need for we-based leadership, with a focus on sustaining long-term leadership effectiveness."
+    },
+    {
+      "number": 818,
+      "title": "Leadership Assessment and Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532",
+          "PSY539"
+        ]
+      },
+      "description": "Organizations use personality and other types of assessments for a variety of purposes, including employee selection, team building, and employee development. Many assessments are well-developed with extensive research to support their use for specific purposes. These assessments can add tremendous value to organizations and individuals by providing insights related to interests, traits, and other characteristics. There are also many popular personality inventories that are used for purposes that the publisher does not intend and/or that research does not support. This course will serve two primary goals. First, by educating class participants concerning the advantages and limitations of a variety of popular personality inventories and other types of assessments, students will become educated consumers, better able to make choices for themselves and their organizations concerning appropriate assessment methodologies. Second, by completing different assessments during the course, students will gain personal insights concerning their individual strengths, talents, interests, and developmental needs. Examples of the course topics that will be addressed include: an overview of leadership competency models, including models such as Bartram's Great Eight which is used in Penn State's Leadership Assessment Center; measurement issues, including topics such as reliability and validity; strengths and limitations of different assessment techniques; multi-rater feedback, including creating and administering a short feedback survey; theories underlying different approaches to measuring personality traits and styles; how to integrate different assessment sources; setting goals; and creating a professional development plan."
+    },
+    {
+      "number": 833,
+      "title": "Ethics and Leadership: Psychological and Social Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSY532"
+        ]
+      },
+      "description": "Ethical decisions must be made by leaders at all levels of an organization. Thus, students in this course will have the opportunity to learn about important issues in ethical leadership that will provide a foundation of the basic principles of operating as an ethical leader in organizations. The term \"organizations\" is intentionally broadly defined and will include reference to business, non-government organizations, government entities, and non-profit entities. Specifically, students will be exposed to topics such as the role of psychological development in ethical decision making, theoretical foundations of choosing ethical pathways from the field of psychology, the role of personality and cognition in ethicality, developing and sustaining an ethical climate, ethics during crises, ethics in a global environment, and the psychological underpinnings of leading groups toward ethical ends. The course will be grounded in psychological theory, with particular emphasis on social, cognitive, and affective frameworks. Through the presentation and investigation of the course material, students will be exposed to the core principles of ethical leadership as well as a series of real-world case examples and experiences. In addition, students will share their personal experiences and work through the often challenging and difficult decisions that surround ethical leadership. These practical discussions will be couched and framed in the discipline of psychology. Such practical applications are intentional and aimed at providing a bridge between psychological theory and application. Building on these insights, the learning outcomes of the course will be to teach students to effectively and accurately assess complex leadership situations, possessing the capacity to make ethical decisions and take ethical action. Moreover, students will develop an awareness of key psychological principles guiding ethical choices and be able to apply such awareness to identify key barriers to leading ethically, with the intent of encouraging students to remove such barriers in organizations. Finally, students will possess the ability to teach others how to operate in ethically-bound ways, further enhancing the performance and sustainability of the organization."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": 3,
+      "description": "Supervised, professionally oriented student activities that constitute the culminating experience for the program."
+    }
+  ]
+}

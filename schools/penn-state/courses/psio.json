@@ -1,0 +1,106 @@
+{
+  "subject": "PSIO",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Scientific Analysis and Presentation",
+      "credits": 1,
+      "description": "Journal club format used to develop critical analytical and presentation skills for understanding and clearly presenting current scientific data."
+    },
+    {
+      "number": 504,
+      "title": "Cellular and Integrative Physiology",
+      "credits": 3,
+      "description": "PSIO 504 is a physiology course that integrates cellular and organ-based physiology concepts. PSIO 504 Cellular and Integrative Physiology (3) The course in Cellular and Integrative Physiology is a one semester, three credit course that will cover all major aspects of physiology. A special emphasis will be placed on how cellular aspects of physiology are integrated with organ physiology. The course will meet for 1 hour sessions, three times per week. The course will be offered in the fall semester. It is designed for graduate students that either major in Physiology or are interested in integrating physiology concepts into their graduate education. Although there are no prerequisites for the course prior introductory courses in physiology and/or biochemistry are beneficial.The course will expand upon material in an assigned physiology textbook. Text chapters will be assigned as reading material prior to each meeting. The instructor will review the assigned material during the beginning of each meeting, after which more detailed aspects of the material will be discussed.The course will have three examinations. The exams will be composed of a mixture of short essays, multiple choice and problem-solving questions. The lectures in PSIO 503 form the first block of the lectures in the more comprehensive PSIO 504 course. Students should enroll in either PSIO 503 or PSIO 504 ."
+    },
+    {
+      "number": 505,
+      "title": "Cellular and Integrative Physiology II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PSIO504"
+        ]
+      },
+      "description": "This is a physiology course that integrates cellular and organ-based physiology concepts. PSIO 505 Cellular Integrative Physiology II (3) The course, is a one-semester, 3-credit-course that will cover major aspects of physiology not covered in Cellular and Integrative Physiology I. A special emphasis will be placed on how cell function and differentiation are integrated with organ physiology. The course will meet for one-hour sessions, three times per week. The course will be offered in the spring semester. It is designed for graduate students that either major in Physiology or are interested in integrating physiology concepts into their graduate education. PSIO 504 (Cellular and Integrative Physiology I) is a prerequisite for the course. Prior introductory courses in physiology and/or biochemistry are beneficial. The course will expand upon material in an assigned physiology textbook. Text chapters will be assigned as reading material prior to each meeting. The instructor will review the assigned material during the beginning of each meeting, after which more detailed aspects of the material will be discussed. The course will have two examinations. The exams will be composed of a mixture of short essays, and multiple-choice and problem-solving questions."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects including nonthesis research, supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

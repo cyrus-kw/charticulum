@@ -162,6 +162,45 @@ describe("evaluateRequirements", () => {
       expect(report.creditsByRule).toEqual({ Q: 4 });
       expect(codes(report)).toEqual(["CREDIT_RULE_SHORTFALL"]);
     });
+
+    it("counts courses by attribute, leaving out notAttributes", () => {
+      const labeled = createCatalog([
+        obj("ENGL15", { credits: 3, attributes: ["GWS"] }),
+        obj("CAS100A", { credits: 3, attributes: ["GWS", "US"] }),
+        obj("AFAM100", { credits: 3, attributes: ["GWS", "INTER"] }),
+      ]);
+      const report = evaluateRequirements(
+        labeled,
+        chartOf([[], ["ENGL15", "CAS100A", "AFAM100"]]),
+        requirements({
+          creditRules: [
+            {
+              category: "general-education",
+              name: "General Education",
+              rules: [
+                { id: "WS", name: "Writing and Speaking", credits: 9, attributes: ["GWS"], notAttributes: ["INTER"] },
+                { id: "US", name: "United States Cultures", credits: 3, attributes: ["US"] },
+              ],
+            },
+          ],
+        }),
+      );
+      expect(report.creditsByRule).toEqual({ WS: 6, US: 3 });
+    });
+
+    it("leaves out courses over a rule's maxNumber", () => {
+      const withGraduate = createCatalog([...courses.values(), obj("CMPSC565", { code: { subject: "CMPSC", number: 565 } })]);
+      const report = evaluateRequirements(
+        withGraduate,
+        chartOf([[], ["CMPSC465", "CMPSC565"]]),
+        requirements({
+          creditRules: [
+            { category: "elective", name: "Electives", rules: [{ id: "upper", name: "400-level CMPSC", credits: 6, subjects: ["CMPSC"], minNumber: 400, maxNumber: 499 }] },
+          ],
+        }),
+      );
+      expect(report.creditsByRule).toEqual({ upper: 3 });
+    });
   });
 
   describe("gen ed rules counting each course once", () => {

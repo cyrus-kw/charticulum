@@ -1,0 +1,2213 @@
+{
+  "subject": "EE",
+  "courses": [
+    {
+      "number": 8,
+      "title": "Introduction to Digital Music",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "First-year seminar that discusses digital music from an electrical engineering perspective; topics include sampling, digital filtering, compression, and music synthesis. E E 008S Introduction to Digital Music (1) (FYS) E E 008S is a lab-oriented first-year seminar course aimed at students interested in the field of digital music. Specifically, this course discusses how the various digital music formats (and other types of digital audio) relate to the electrical engineering sub-discipline of digital signal processing. Students will come out of this course with a more technical understanding of the digital audio formats that they listen to every day.This course is structured to have alternating periods of lecture and lab. New concepts are first covered in the lectures and then reinforced with a variety of laboratory activities. In the laboratory experiments, students will use various computer programs and will also get exposure to standard test equipment used by electrical engineers.Topics covered in the lectures/labs include investigating the physics of sound, sampling and quantization of music signals, generating audio special effects through the use of digital filters, compression techniques used in digital audio, and mathematically synthesizing instrument sounds. Current popular digital audio formats such as compact disc audio, WAV, MP3, and MIDI will also be investigated throughout this course.No musical experience/talent is necessary."
+    },
+    {
+      "number": 9,
+      "title": "First-Year Seminar in Electrical Engineering",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "First-year seminar covering a variety of Electrical Engineering topics that vary from year to year. E E 009S First-Year Seminar in Electrical Engineering (1) (FYS) The overall objectives of Engineering First-Year Seminars are to engage students in learning about engineering and orient them to the scholarly community in a way that will bridge to, and enhance their benefit from, later experiences in the College and the University.Seminars adhere to the two specific goals identified below by including one or more of the three strategies following each goal:(1)Introduce students to a specific field, or encourage their exploration of a number of fields, of study in engineering; familiarization with the engineering majors and career options and with the objectives of general education and other components of the curriculum; development of a particular topic, contemporary issue, emerging or interdisciplinary field of concentration, or professional responsibilities in engineering; plant tours or demonstrations of engineering facilities(2)Acquaint students with tools, resources and opportunities available to them in the department(s), College and University; exposure to learning support services and career development resources"
+    },
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to exlore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 200,
+      "title": "Design Tools",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPEN270",
+              [
+                "CMPEN271",
+                "CMPEN275",
+                "CMPSC121"
+              ]
+            ]
+          }
+        ],
+        "minGrades": {
+          "CMPEN270": "C",
+          "CMPEN271": "C",
+          "CMPEN275": "C",
+          "CMPSC121": "C"
+        }
+      },
+      "description": "A working knowledge of electrical engineering design tools and hardware realization of electrical engineering systems. E E 200 Design Tools (3) E E 200 provides students with a working set of design tools that are required to complete subsequent courses in the electrical engineering design curriculum. This course directly builds upon circuit analysis/design concepts in the required introductory courses in electrical circuits, digital systems and computer programming. Specific topics covered in this course include automated instrument control, hardware realization using field programmable devices, hardware realization using embedded microcontroller systems, circuit simulation and printed circuit board layout. Student performance is evaluated using exams, homework assignments, and projects. Concepts introduced in lecture are reinforced with hands-on experience provided by laboratory projects."
+    },
+    {
+      "number": 210,
+      "title": "Circuits and Devices",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ],
+        "minGrades": {
+          "PHYS212": "C"
+        }
+      },
+      "description": "EE 210 serves as the gateway course for all subsequent coursework in Electrical Engineering. It introduces engineering circuit analysis to students headed towards Electrical Engineering and related fields. The course includes both a theoretical component, covered in the lecture portion of the course, and a practical hands-on component, covered in the laboratory portion of the course. The lecture portion of the class begins with a review of basic concepts of charge, current, voltage, electric power and electric energy. Next, circuit elements and devices used in DC circuits are introduced - independent and dependent sources, resistors, potentiometers, and operational amplifiers. Circuit analysis theorems (KVL, KCL, resistor and source combinations, voltage division, current division, source transformations, nodal analysis, mesh analysis, linearity, superposition, Thevenin's theorem, and Norton's theorem) are then presented and used to analyze DC circuits. In the next part of the course, circuit elements with time-varying properties (capacitors and inductors) are introduced and algorithms for analyzing transient RC, RL, and RLC circuits are formulated. In the final part of the course, the concepts of phasors and impedances are developed and these tools are used to analyze AC steady state circuits. These tools are then extended to calculate the frequency response of RLC circuits. In the laboratory portion of the course, students first learn how to use basic electrical engineering test equipment - oscilloscopes, function generators, digital multimeters, and power supplies. Students then perform a series of experiments that parallel the theory learned in the lecture-portion of the course. Experiments involve electrical devices such as resistors, potentiometers, capacitors, and operational amplifiers. Circuit analysis modeling software is introduced as a tool for circuit analysis and design."
+    },
+    {
+      "number": 211,
+      "title": "Electrical Circuits and Power Distribution",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ]
+      },
+      "description": "D.C. and A.C. circuits, transformers, single and three-phase distribution systems, A.C. motors and generators."
+    },
+    {
+      "number": 212,
+      "title": "Introduction to Electronic Measuring Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ]
+      },
+      "description": "Electronic devices and characteristics, amplifiers and feedback, electronic instruments and recording systems. Designed for non-electrical engineering students."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to exlore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 300,
+      "suffix": "W",
+      "title": "Design Process",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "EE200",
+          "EE310"
+        ],
+        "concurrent": [
+          "ENGL202C"
+        ]
+      },
+      "description": "Introduction to the electrical engineering design process, project teaming and management, and technical communication. E E 300W Design Process (3) E E 300W course will introduce students to the electrical engineering design process, project teaming, and project management in preparation for conducting a senior design project. In the lab, students will get practice managing a project from pre-definition to completion within constraints of customer needs, technical parameters and budgets. The principles of systems engineering will be introduced. The student-engineer will gain professional skills (in areas such as technical communication, teaming, conflict resolution and life-long learning) important for a successful career in a wide range of engineering environments. There will also be discussion of engineering ethics and the responsibilities of the engineer in the emerging global marketplace. A series of lectures by outside speakers will provide perspectives on life as an engineer."
+    },
+    {
+      "number": 310,
+      "title": "Electronic Circuit Design I",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE210",
+              "EE315",
+              "EET310"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE210": "C",
+          "EE315": "C",
+          "EET310": "C"
+        }
+      },
+      "description": "EE 310 provides the foundational education in electronic circuit analysis and design through lecture, laboratory, and out-of-class assignments. In EE 310 , students learn about the electrical properties of different fundamental semiconductor devices and their basic circuit design applications. This course deals explicitly with both linear and nonlinear applications of devices, and with the practical aspects of design such as the inherently nonlinear nature of semiconductor devices. The lecture portion of the class begins with the introduction of diodes (their characteristics and DC/AC models), followed by methods for analysis and design of diode circuits, such as rectifiers, regulators, and limiters. Next, both metal-oxide-semiconductor field-effect transistors (MOSFET) and bipolar junction transistors (BJT) are introduced with an emphasis on their characteristics and DC/AC models as well as the analysis (gain and input/output resistance) of different amplifier configurations with transistors. The design and analysis of integrated-circuit analog MOSFET amplifiers and digital MOSFET logic gates are also covered in this course. EE 310 also introduces the design and analysis of circuits containing ideal operational amplifiers (op amps), such as buffers, inverting/noninverting amplifiers, summers, integrators, differentiators, and instrumentation amplifiers, as well as the effects of non-ideal op-amp characteristics on circuits. In the laboratory portion of the course, students first learn how to use basic electrical engineering test equipment. Students then perform a series of experiments that parallel the theory learned in the lectures. Experiments involve electronic devices such as diodes, transistors (both MOSFET and BJT), and operational amplifiers. Circuit analysis modeling software is utilized as a tool for circuit analysis and design."
+    },
+    {
+      "number": 311,
+      "title": "Electronic Circuit Design II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE310"
+        ],
+        "minGrades": {
+          "EE310": "C"
+        }
+      },
+      "description": "Electronic circuit design with consideration to single and multi-device subcircuits, frequency response characteristics, feedback, stability, efficiency, and IC techniques. E E 311 Electronic Circuit Design II (3) E E 311 is intended to provide competency in the application of basic electronic principles to design with operational amplifiers and integrated circuits. The course will include passive and active filter design, and feedback principles and non-ideal aspects of operational amplifiers (op-amps) including compensation, stability, and sensitivity needed for advanced design with op-amps, as well as some nonlinear op-amp circuits including comparators, Schmitt triggers, pulse width modulators, and waveform generators."
+    },
+    {
+      "number": 312,
+      "title": "Electrical Circuit Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210"
+        ]
+      },
+      "description": "Circuit analysis techniques; mutual inductance; frequency response; FOURIER series; LAPLACE transform."
+    },
+    {
+      "number": 313,
+      "suffix": "W",
+      "title": "Electronic Circuit Design II",
+      "credits": 4,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "EE310"
+        ]
+      },
+      "description": "Design/analysis of electronics circuits including: single/multistage transistor amplifiers, op amp circuits, feedback amplifiers, filters, A/D and D/A converters. E E 313W Electronic Circuit Design II (4) The prerequisite course, E E 310 - Microelectronics 1, covers the basic operation of microelectronic devices and their use in logic circuit design. This course focuses on the design of electronic circuits for amplification, filtering, and A/D and D/A conversion. Advanced circuit design concepts, such as IC biasing, feedback, and frequency response, are covered. This course is designated as writing intensive, and students are required to produce a variety of technical documents based on laboratory work."
+    },
+    {
+      "number": 314,
+      "title": "Signals and Circuits II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210",
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200"
+            ]
+          }
+        ]
+      },
+      "description": "Circuit analysis including op-amps, and ideal transformers; one/two port network models; three-phase and industrial loads; engineering professionalism."
+    },
+    {
+      "number": 315,
+      "title": "Electrical Signals and Circuits with Lab",
+      "credits": 5,
+      "requisites": {
+        "concurrent": [
+          "MATH250"
+        ]
+      },
+      "description": "Introduction to circuits, signals, energy, circuit analysis; frequency response, Bode diagrams, two-port networks; Laplace transforms, Polyphase circuits."
+    },
+    {
+      "number": 316,
+      "title": "Introduction to Embedded Microcontrollers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPEN271",
+              "CMPEN270"
+            ]
+          }
+        ],
+        "concurrent": [
+          "EE310"
+        ]
+      },
+      "description": "Introduction to microcontrollers in electronic and electromechanical systems. Hardware and software design for user/system interfaces, data acquisition, and control."
+    },
+    {
+      "number": 317,
+      "title": "Circuit Design Tools and Data Acquisition",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210"
+        ]
+      },
+      "description": "This course provides students with hands-on experience in circuit design, modeling, and simulation tools. The first part of the course focuses on using MATLAB as a computational and visualization tool for solving Electrical Engineering problems. This includes performing matrix computations, using symbolic mathematics, and implementing numerical solution techniques. Students will learn to design user-defined functions, incorporating loops, selection structures, and relational and logical operators, with applications in circuit analysis and modeling. The second part of the course covers printed circuit board (PCB) design, including board shapes and restrictions, footprint creation, placement and routing, constraint management, and two-layer board design. Students will design their own PCB, have it manufactured, and then mount and solder the components to produce a working prototype. The final part of the course is dedicated to learning to program in LabVIEW. Students will build virtual instruments using the graphical user interface and integrate MyDAQ for analog and digital data acquisition and output of control signals."
+    },
+    {
+      "number": 320,
+      "title": "Introduction to Electro-Optical Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          }
+        ]
+      },
+      "description": "An introduction covering several fundamental areas of modern optics, optical PROCESSES, AND DEVICES."
+    },
+    {
+      "number": 330,
+      "title": "Engineering Electromagnetics",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE210",
+              "EE315"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE210": "C",
+          "EE315": "C",
+          "MATH230": "C",
+          "MATH232": "C"
+        }
+      },
+      "description": "Static electric and magnetic fields; solutions to static field problems, Maxwell's equations; electromagnetic waves; boundary conditions; engineering applications."
+    },
+    {
+      "number": 331,
+      "title": "Electromagnetic Fields and Waves",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210",
+          "MATH230"
+        ]
+      },
+      "description": "Electromagnetic field theory and applications; Maxwell's equations; plane wave propagation; boundary conditions; basic antenna theory; impedance matching. E E 331 Electromagnetic Fields and Waves (3) After completing this course the student should understand, and be able to demonstrate a working knowledge of the following topics: 1)Vector Calculus 2)Coulomb's Law and applications 3)Gauss's Law and applications 4)Electric potential and electric fields 5)Static boundary conditions 6)Computation of capacitance 7)Laplace's equation 8)Current density and Ohm's Law 9)The Biot-Savart Law 10)Magnetic field characteristics 11)Computation of Inductance 12)Faraday's Law of electromagnetic induction 13)Maxwell's equations 14)Time-harmonic fields 15)Plane electromagnetic waves in various media 16)Plane waves at boundaries 17)Transmission lines 18)Smith charts 19)Basic antenna theory 20)Impedance matching."
+    },
+    {
+      "number": 337,
+      "title": "Introduction to Quantum Information Science and Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "ESC337",
+        "PHYS337"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH220",
+          "PHYS214"
+        ]
+      },
+      "description": "This course will introduce quantum mechanics from the perspective of quantum information science and engineering, focusing on two-level systems and the concepts of entanglement and decoherence. It will educate students on how quantum information can be used in quantum communication and quantum computing, both in theory and experiment. The course covers basic concepts such as two-level systems, Schroedinger equation, Bloch sphere, superposition, entanglement, quantum bits, quantum gates, Bell¿s inequalities, and mixed states. Covering these basic concepts prepare the students for more advanced courses in the minor where they learn in depth about quantum algorithms, physical implementation of different quantum systems, and how to compute with existing quantum computers."
+    },
+    {
+      "number": 340,
+      "title": "Introduction to Nanoelectronics",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "PHYS214",
+          "EE210"
+        ],
+        "minGrades": {
+          "PHYS214": "C",
+          "EE210": "C"
+        }
+      },
+      "description": "Introduction to the physics and technology of nanoelectronic devices. E E 340 Introduction to Nanoelectronics (4) This is a required course for junior-level electrical engineering students. The first part of the course provides an introduction to the key aspects of electronic materials, quantum mechanics, and solid state physics needed to understand nanoelectronic devices. The second part is devoted to the fundamental theory of carrier transport including ballistic transport, drift, diffusion, and recombination/generation. The third part of the course applies the fundamentals to describe the operation of several basic semiconductor devices: p-n junctions, metal-semiconductor junctions, and metal oxide semiconductor field effect transistors (MOSFETs), and provides an introduction to fabrication methods used to create these devices. This portion of the course also highlights contemporary concepts in thin film electronics, optoelectronic devices, and solar energy conversion.The course includes several in-class demonstrations and also web-based remote device measurement laboratories. One of the in-class demonstrations uses a Breeze interface to link a field emission scanning electron microscope session to the classroom. The students can see and communicate with the microscope operator to visualize real nanoelectronic materials and devices at different levels of magnification. The remote device measurement laboratories use web-based labview software to collect device characteristics from silicon p-n junctions and MOSFETs fabricated in the senior level device technology class. The students are given microscope images of the devices and an assignment to analyze the device performance. This allows the students to compare ideal text book performance to non-ideal device response."
+    },
+    {
+      "number": 341,
+      "title": "Semiconductor Device Principles",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110",
+          "PHYS214"
+        ],
+        "concurrent": [
+          "EE210"
+        ]
+      },
+      "description": "This course prepares students to learn electronic design by providing an understanding of how semiconductor devices work, how they are made, how they are modeled, how they fail, and how they are applied as discrete and integrated components. Emphasis will be placed on silicon devices, especially diodes, bipolar junction transistors, field-effect transistors, optoelectronic devices, microelectromechanical devices, and integrated circuits. Lectures will transition along the progression from the underlying physics to the fabrication process, and end with an introduction to diode and transistor circuit design, using material from the textbook, with supplemental material added where applicable."
+    },
+    {
+      "number": 350,
+      "title": "Continuous-Time Linear Systems",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EE210",
+          "MATH220",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE210": "C",
+          "MATH220": "C",
+          "MATH250": "C",
+          "MATH251": "C"
+        }
+      },
+      "description": "Introduction to continuous-time linear system theory: differential equation models, sinusoidal steady-state analysis, convolution, Laplace transform and Fourier analysis."
+    },
+    {
+      "number": 351,
+      "title": "Discrete-Time Linear Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE350"
+        ],
+        "minGrades": {
+          "EE350": "C"
+        }
+      },
+      "description": "Introduction to discrete-time signal processing: sampling, linear time- invariant systems, discrete-time Fourier transform and discrete Fourier transform, Z transform."
+    },
+    {
+      "number": 352,
+      "title": "Signals and Systems: Continuous and Discrete-Time",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH250",
+          {
+            "oneOf": [
+              "EE210",
+              "EE314",
+              "EE315"
+            ]
+          }
+        ]
+      },
+      "description": "Transient response, frequency response, Bode plots, resonance, filters, Laplace transform, Fourier series and transform, discrete-time signals/ systems; sampling z-transform. E E 352 Signals and Systems (4) E E 352 is a course designed to study the characteristics of continuous and discrete time linear systems. These include signal and power input/output relationships in both domains, impulse responses, and the differential equations that describe these systems. Convolution is an essential component of any linear systems course, therefore several classes will be devoted to this topic in order that students fully understand the concept. Fourier series is used to determine the spectral content of periodic signals thus illustrating how a signal is distributed in frequency. This is very important when determining bandwidth requirements. There will be a brief refresher on the trigonometric Fourier series then the exponential series will be studied extensively. The Fourier transform can be used to determine the spectral content of virtually any signal encountered in the undergraduate curriculum, aperiodic, or periodic. It is also valuable in determining the frequency response characteristics of linear systems. Some filter theory is included in the course along with the Laplace transform. Much of the signal processing performed today is done digitally so the remainder of the course will approach most of the aforementioned topics from the viewpoint of the discrete domain with a strong emphasis on sampling and aliasing. Finite impulse response filters will be introduced along with recursive filters using the bilinear transform method."
+    },
+    {
+      "number": 353,
+      "title": "Signals and Systems: Continuous and Discrete-Time",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE210",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "Fourier series and Fourier transform; discrete-time signals and systems and their Fourier analysis; sampling; z-transform. E E 353Signals and Systems: Continuous and Discrete Time (3) is a core course taken by all computer engineering students that provides exposure to a variety of topics in linear systems. The material in this course is needed for further study in image processing and data communications, both of which are major areas of specialization within the computer engineering curriculum.This course is divided into three main sections - continuous-time linear system analysis, sampling and reconstruction, and discrete-time (digital)linear system analysis. Although the material covered in the first and last sections is similar, fundamental differences between continuous- and discrete-time exist. One of the goals of this course is to make the student aware of these differences.The first part of the course discusses continuous-time linear system analysis. It begins with basic time-domain mathematical descriptions of various signals and systems. The bulk of the analysis, however, is in frequency domain approaches such as the Fourier Series and the Fourier Transform. Applications such as modulation and multiplexing are understood much easier using frequency-domain analysis approaches.The middle part of the course deals with the bridge between continuous- and discrete-time, namely signal sampling and reconstruction. Theoretical and practical approaches to sampling/reconstruction are covered. Finally the Nyquist sampling theorem, which is the key to all digital signals, is developed. At this point, students are ready to study discrete-time systems.The final part of this course revisits system analysis, although now discrete-time (or digital) systems are considered. As in the continuous-time case, both time-domain and frequency-domain approaches to the analysis problem are discussed. The course ends with select topics in the z-transform, which is the digital counterpart to the Laplace transform."
+    },
+    {
+      "number": 360,
+      "title": "Communications Systems I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE350",
+              "EE352"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE350": "C",
+          "EE352": "C"
+        }
+      },
+      "description": "Generic communication system; signal transmission; digital communication systems; amplitude modulation; angle modulation. E E 360 Communications Systems (3) E E 360 is a junior-level elective course in the electrical engineering curriculum that provides a detailed foundation of communications systems, expanding on the topics covered in a standard linear systems class. The first part of the course deals with analog communications. First, analog amplitude modulation (AM) is presented, covering double-sideband suppressed carrier, double-sideband large carrier, single sideband, and vestigial sideband modulation formats. Detection techniques for these modulation schemes are also covered. The phase-locked loop for coherent carrier tracking is also presented. Second, analog angle modulation is presented in the forms of frequency modulation (FM) and phase modulation (PM). Estimating the bandwidth of the angle modulated carrier is covered, as well as various generation and detection methods. After analog communications are covered, the basics of digital modulation are presented. Sampling theory and analog-to-digital conversion are covered. Particular attention is paid to the signal-to-noise ratio and the aggregate bit rate at the output of the digital modulator. The principles of Nyquist pulse shaping are presented. Particular topics include intersymbol interference, line coding, and power spectral density. A presentation of emerging digital communications technologies concludes the course. Topics may include mobile radio, high definition television, broadband services, video compression, and high-speed local area networks."
+    },
+    {
+      "number": 362,
+      "title": "Communication Networks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPEN270",
+              "CMPEN271"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "STAT318",
+              "STAT414",
+              "STAT418",
+              "STAT401",
+              "MATH414",
+              "MATH418"
+            ]
+          }
+        ]
+      },
+      "description": "Data transmission, encoding, link control techniques; communication network architecture, design; computer communication system architecture, protocols. CMPEN 362CMPEN (E E) 362 Communication Networks (3)CMPEN (E E) 362 is an elective course in both the electrical and computer engineering curricula which provides an overview of the broad field of data and computer communications. First, a general model of the communication task is presented, including the layered concept by which each layer provides services for the layer above. First, the lowest (physical) layer is studied. This involves signal design, Fourier analysis representations, bandwidth concepts, transmission impairments and communication media properties. Then the next higher (link) layer is considered which involves organizing bits into frames, data link and error control methods (including frame sequence numbering and error detection principles). Multiplexing to share a link is studied, including frequency division multiplexing, dedicated time division multiplexing, and statistical time multiplexing.At the network layer level, there are two categories: broadcast (usually local area) and switching networks. Broadcast and local area network studies include bus, tree and star topologies, Ethernet, optical fiber bus networks, ring networks, and medium access control protocols.Switching and routing concepts for networks are explained, including both circuit and packet switching, datagrams and virtual circuits. Properties of frame relay and asynchronous transfer mode (ATM) networks are described. Internetworking frame structures, routing and protocols are studied. Also, bridge routing for local networks is described.At the still higher transport (network end-to-end control) layer, transport protocols, including TCP/EP, are described."
+    },
+    {
+      "number": 380,
+      "title": "Introduction to Linear Control Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE350",
+              "EE312"
+            ]
+          },
+          "MATH220"
+        ],
+        "minGrades": {
+          "EE350": "C",
+          "EE312": "C",
+          "MATH220": "C"
+        }
+      },
+      "description": "State variables; time-domain and frequency-domain design and analysis; design of feedback control systems; Root Locus."
+    },
+    {
+      "number": 383,
+      "title": "Signals and Controls Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "EE352",
+          "EE380"
+        ]
+      },
+      "description": "Design, computer simulation, and practical implementation of systems in the areas of filtering, digital signal processing, and controls. E E 383 Signals and Controls Laboratory (1) In this course, students will be exposed to designing, simulating and implementing practical circuits for filtering of signals, digital signal processing, and control of physical processes. The design aspect of the course will be a direct extension of the two associated lecture courses (E E 352 and E E 380). The simulations will use industry standard software tools (e.g., MATLAB, Hyperception, C/C++) while the actual implementation will be accomplished using PC based DSP hardware in addition to analog circuitry. This will be a hands-on laboratory intended to augment the material presented in E E 352 and E E 380. Students will be expected to do a large portion of pre-lab work before starting the laboratory session."
+    },
+    {
+      "number": 385,
+      "title": "Energy Systems and Electric Machines",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE210",
+              "EE314",
+              "EE315",
+              "EET310",
+              "EET311"
+            ]
+          }
+        ]
+      },
+      "description": "This course covers essential topics in power and energy systems. Students will delve into alternating circuit (AC) power calculations, including complex, real, and reactive power and power factor correction techniques, focusing on single-phase and three-phase systems. It then explores mutual inductance and transformers, emphasizing advanced concepts, design, and analysis. Energy conversion is discussed, focusing on mechanical-to-electrical and electrical-to-mechanical energy conversion processes and efficiency and loss calculation. The course also includes a detailed study of electric machines and their operational characteristics, such as direct-current (DC), induction, and synchronous machines. The course also comprehensively studies electric drives, covering fundamentals, types (DC and AC drives), control strategies, and applications. Students will study power electronics, including power semiconductor devices, converters (DC/DC, DC/AC, AC/DC, and DC/AC), and applications in renewable energy systems and electric drives. The course concludes with renewable energy systems, focusing on photovoltaic (PV) and wind power systems and their design, operation, and integration into the power grid. This course is designed for advanced students aiming to deepen their understanding of these critical areas of electrical engineering."
+    },
+    {
+      "number": 387,
+      "title": "Energy Conversion",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE350",
+              "EE312"
+            ]
+          }
+        ]
+      },
+      "description": "Modeling of induction machines, synchronous machines, transformers, and transmission lines. E E 387 Energy Conversion (3) E E 387 is an electrical engineering technical elective course intended for students with an interest in energy conversion in electrical, electromagnetic, electromechanical, and electrochemical systems.The course begins with a review of static and quasi-static electromagnetics. In particular, methods of determining electromagnetic forces and torques will be discussed in detail. The course will then present methods of developing models for electromagnetic, electromechanical, and electrochemical systems and discuss the use of these models in the analysis and design of devices such as inductors, transformers, actuators, transducers, and rotating machines. Furthermore, fundamental concepts related to the operation of power electronic circuits, which often interface with these types of devices, will be presented.The course includes a lab component where students gain experience with the analysis and design of energy conversion systems. E E 350, Continuous-Time Linear Systems, is a prerequisite for this course."
+    },
+    {
+      "number": 388,
+      "title": "Energy Conversion Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "EE387"
+        ]
+      },
+      "description": "Learn the basic rules of electrical safety, power factor correction, and power measurement for balanced/unbalanced loads. This also includes operation and characteristics of single-phase and three-phase power transformers, main characteristics and operation of synchronous generators, and synchronization of a three-phase synchronous generator to an ac power network. Operation and the main characteristics of synchronous motors, three-phase squirrel-cage induction motors, and characteristics of various dc motors are also covered."
+    },
+    {
+      "number": 395,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 396,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Junior-level honors course involving special individual projects under the direction of an electrical engineering faculty member."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "FORMAL COURSES GIVEN INFREQUENTLY TO EXPLORE, IN DEPTH, A COMPARATIVELY NARROW SUBJECT THAT MAY BE TOPICAL OR OF SPECIAL INTEREST."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "title": "Engineering Design Concepts",
+      "credits": 3,
+      "description": "Engineering design and modelling, engineering economy, project planning, capstone project selection, and technical communication skills. E E 400 Engineering Design Concepts (3) This course prepares senior electrical engineering students for industrial engineering design and project management. It covers the engineering design process, project planning and evaluation, engineering ethics, and engineering economy. . In addition, students select, specify, and start their capstone design project which is completed in the follow-up course, EE BD 481. Students are expected to carry out a group design project that is on par with industrial expectations. Upon completion of this course a student should have a solid understanding of the engineering design process, a clear capstone project description, should have completed some preliminary design work, and be adequately prepared to complete the project in E E 401."
+    },
+    {
+      "number": 401,
+      "title": "Electrical Design Projects",
+      "credits": 3,
+      "description": "Group design projects in the areas of electronics and electrical/computer systems. E E 401 Electrical Design Projects (3) In this course students complete their senior design project started in E E 400. Design groups meet regularly with a faculty advisor to report progress and resolve design issues. Oral and written progress reports are expected at selected times. The class culminates with a final technical defense of the project."
+    },
+    {
+      "number": 403,
+      "suffix": "W",
+      "title": "Capstone Design",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "EE300W",
+          "ENGL202C"
+        ]
+      },
+      "description": "Design projects in the various areas and subdisciplines of electrical engineering, with an emphasis on technical communication skills. EE 403 Capstone Design (3) will give electrical engineering students a \"real-world simulation\" of a total design experience. Students will address design challenges in one of several ways: a. Projects submitted by corporate sponsors which emphasize teaming and interaction with a customer and with professional engineers in a pseudo-professional engineering environment. Some of these projects require multi-disciplinary teams. b. Projects in \"Special Focus\" sections in which all of the projects will loosely deal with a particular electrical engineering topic . Examples of Special Focus topics include: Microwave engineering, RF engineering, Acoustics and Microcontrollers. Small-team projects or class-wide projects will be offered at the discretion of the instructor. c. \"Projects with Faculty\" are arranged on the initiative of individual students or student teams, who solicit a mentoring relationship with faculty in an area of shared interest. Projects with faculty may include research projects, projects associated with internship experiences, and projects associated with student organization competitions or activities. In addition to the completion of a capstone project, EE 403 includes an emphasis on technical communication and professional behavior. Students will develop their skills at conveying technical information through technical writing, oral presentation and graphics (such as a project poster or web page). Students will be expected to conduct themselves in a professional manner during project-related interactions with fellow students, faculty, and practicing engineers. Student work is evaluated on the technical merit of the completed project and the degree to which constraints and priorities (as expressed in the engineering requirements) are acknowledged throughout the design process."
+    },
+    {
+      "number": 405,
+      "title": "Capstone Proposal Preparation",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "requisites": {
+        "previous": [
+          "ENGL202C",
+          {
+            "oneOf": [
+              "CAS100A",
+              "CAS100S"
+            ]
+          }
+        ],
+        "concurrent": [
+          "CMPEN372",
+          "EE311",
+          {
+            "oneOf": [
+              "EE461",
+              "EE481",
+              "EE488"
+            ]
+          }
+        ]
+      },
+      "description": "This course guides students in the development of their capstone design project proposal and will mimic the problems encountered by an engineer working in commercial, industrial, and governmental entities. Students will select a topic, do the initial research for the topic, prepare a timeline, and prepare a well-written proposal that would make a suitable capstone project. The proposal will incorporate relevant engineering standards and integrate realistic economic, environmental, sustainability, manufacturability, ethical, health and safety, social, and political constraints. The time devoted to the careful selection of a topic, research of that topic, development of a timeline, and formal proposal preparation makes for a much better capstone design experience in EE 406W ."
+    },
+    {
+      "number": 406,
+      "suffix": "W",
+      "title": "Electrical Engineering Capstone Design",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "EE405"
+        ]
+      },
+      "description": "Project designs of analog and digital systems, interfacing, and relevant electronic circuits, with an emphasis on technical communications skills. EE 406 Electrical Engineering Capstone Design(3) is designed with the following goals and objectives: * The students will enter the course with a well-defined capstone design proposal and a timeline for which the first task will be to write the specifications. Upon the specifications' approval, the student teams will begin designing and building the projects. * Each student will maintain a laboratory notebook that documents the day-to-day activities of the project in a style that could be used for patent documentation. * Team members will provide short oral and written reports every week for the first five to six weeks, and then, every two weeks until the end of the semester. * The students will incorporate engineering standards and constraints, i.e., consideration of economic, environmental, sustainability, manufacturability, ethical, safety, etc., in their project and final report. * A draft copy of the final report will be collected, critiqued, and returned to students with comments and suggestions for changes. * A final project oral report (20 - 25 minutes) will be given by the project team during the last week of the semester. * An extensive well-written report describing the project that has been designed and built, is the major outcome of the capstone design course. This course is a required course in the Electrical Engineering BS curriculum and is intended to be taken by seniors as the capstone course for the major. As such, the course integrates materials from many of the undergraduate electrical courses in addition to related math, engineering, and science courses."
+    },
+    {
+      "number": 410,
+      "title": "Linear Electronic Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE311"
+        ]
+      },
+      "description": "Linear circuit design via integrated circuit processes; A/D converters, switched capacitor filters, phase lock loops, multipliers, and voltage- controlled oscillators. E E 410 Linear Electronic Design (3) E E 410 is a technical elective intended for electrical engineering students who wish to specialize in semiconductor circuits, especially in linear circuit design. The course emphasizes integrated circuit process-compatible circuit design techniques in recognition of the amazing synergy that has characterized the relationship between modern circuits and integrated circuit processing technology. This course is the third in a series of three courses dealing with the analysis and design of electronics circuits, following E E 310 and E E 311. E E 410 includes three lectures and a two-hour laboratory each week.E E 410 begins with a deeper look into several key concepts previously considered in earlier course work, such as node voltage and mesh current methods for solving circuits, which are emphasized throughout the course. The small-signal method is revisited and thoroughly examined. The more advanced Ebers-Moll bipolar junction transistor model is introduced and the metal oxide semiconductor field effect transistor device model is reviewed.The next phase of the course introduces the vertical geometries of integrated circuit devices commonly used in linear circuits. Unwanted parasitic devices that are introduced as a result of the integrated circuit processes are revealed and their effects on circuit sign techniques operation are discussed. Both the limitations and the opportunities provided by integrated circuit technology are examined, particularly in the light of de used to minimize the problems and to take advantage of the features.The last half of the course is devoted to applications of linear circuits, especially those which students have not previously encountered. The first topics in this series are analog-to-digital and digital-to-analog conversion. Various methods of accomplishing each of these functions are examined. The inverse relationship between speed and accuracy is emphasized. These topics are followed by studies of switched capacitor filters, phase lock loops, analog multipliers, and voltage-controlled oscillators.The emphasis of the laboratory component of the course is to successfully accomplish a student-chosen linear circuit design project. Students work in two- or three-person teams to select their project and do the design and evaluation. A three-way methodology is emphasized; mathematical analysis by hand, computer simulation, and laboratory breadboarding and measurement. At the end of the project students give an oral presentation and submit a formal engineering report."
+    },
+    {
+      "number": 413,
+      "title": "Power Electronics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE310"
+        ]
+      },
+      "description": "Switch-mode electrical power converters. Electrical characteristics and thermal limits of semiconductor switches. E E 413 Power Electronics (3) E E 413 is an elective course taken by undergraduate and graduate electrical engineering students. The objective of E E 413 is to introduce techniques for the analysis, design, and application of the switch-mode power converters that are used in power supplies, motor and actuator drives, and the interface between power distribution systems and emerging energy sources such as fuel cells, photovoltaics, and superconducting magnetic energy storage systems. Several laboratory experiments provide an opportunity to characterize the switching behavior of semiconductor devices, build and test various dc/dc and ac/dc converters, and consider alternatives for gate/base drive and feedback isolation circuits required to build practical converters.This course draws upon the students' background in time-domain circuit analysis, electronic devices and circuits, Fourier analysis, and use of software such as PSPICE and MATLAB. It does not require a background in power or electric machinery, although students with such a background will be able to appreciate many of the applications more fully.The course is divided into four major areas: rectifiers and phase-controlled converters, dc-to-dc converters, inverters, and design considerations for practical converters. The focus in each of the first three areas is to determine the relationship between the magnitude of the fundamental frequency component and/or average value of the voltages and currents at the two ports of the particular converter. Additional harmonic or ripple components are then considered and design guidelines for the switching and reactive components are derived. The fourth area encompasses the study of power device characteristics, the design of gate drive and feedback circuits, and the analysis/design of elementary controllers.As the name implies, students interested in either electronics or power will find this course worthwhile. Electronics students will gain a new perspective on the operation and analysis of electronic circuits as well as an opportunity to discover what has powered the circuits that they have studied up until this course. Power students will see how and why power electronics are revolutionizing motor control and power distribution as well as the power quality issues associated with electronic power conversion."
+    },
+    {
+      "number": 415,
+      "title": "Computing with Commercial Quantum Computers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH220",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          }
+        ]
+      },
+      "description": "This course will introduce practical quantum computing using commercially available noisy quantum computers. The complex relationships among quantum computing, mathematics, physics and computer science and engineering will be conveyed to the students through activities, lab assignments, and class projects. The course is designed for upper-level undergraduate students and graduate students majoring in science or engineering. Although a basic understanding of quantum science and engineering provides important background for the field of quantum computing, this course does not focus on quantum physics. Rather it will focus on the software side of things which only needs logical understanding of quantum bits (qubits) and not the physical implementation. Hence this course is meant for students to contribute to quantum computing without getting into the complexity of quantum mechanics. Upon completing the course, the students are expected to understand the quantum computing taxonomy at the introductory level with simple worked out examples using superconducting qubits. They will also learn techniques to program a real quantum computer to solve combinatorial problems."
+    },
+    {
+      "number": 416,
+      "title": "Digital Integrated Circuits",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE310"
+        ]
+      },
+      "description": "Analyses and design of digital integrated circuit building blocks, including logic gates, flip-flops, memory elements, analog switches, multiplexers, and converters. CMPEN 416CMPEN 416 Digital Integrated Circuits (3) CMPEN 416 is a technical elective available to electrical and computer engineering students. It is intended for students who wish to specialize in the field of digital circuits. This course introduces the basic concepts involved in the design of digital circuits, which find practical application as logic and memory circuits in computers and other digital processing systems. The course emphasizes integrated circuit process-compatible circuit design techniques in recognition of the amazing synergy that has characterized the relationship between computer circuits and integrated circuit processing technology. This course includes three lectures and a two-hour laboratory each week. The only prerequisite is E E 310, a basic circuits course required for both electrical engineering and computer engineering students. CMPEN 416 begins with a review of the bipolar junction transistor (BJT) device and proceeds into the more advanced Ebers-Moll device model. This is followed by an examination of a series of BJT-based saturating and non-saturating digital circuits of ever increasing complexity illustrating the evolution of the modern bipolar logic circuit families. The next phase of the course reviews the metal oxide semiconductor field effect transistor (MOSFET) and proceeds along the same path taken for the bipolar transistor circuits. Various MOSFET logic circuit families are introduced and analyzed. Computer semiconductor memory circuits are considered next. Both BJT and MOSFET versions of both static and dynamic read-write and read-only memories are considered. The cell array, memory addressing circuits, and sense amplifier designs are all examined in detail. This is followed by the related subject of programmable logic arrays, the final topic.The emphasis of the laboratory component of the course is to compare the performance of representatives of each class of circuits to computer simulations of the same circuits. Parameters such as input-output voltage transfer characteristics, noise margins, and propagation delays are evaluated by building and measuring laboratory models. Most of the laboratory exercises require the student to evaluate a specified circuit, but the final exercise requires the student to design a circuit to meet a predefined set of specifications, then to prove that the design meets the requirements by measuring the circuit performance. Students are required to write a formal engineering report detailing the results of each laboratory exercise."
+    },
+    {
+      "number": 417,
+      "title": "Digital Design Using Field Programmable Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPEN331"
+        ]
+      },
+      "description": "Field programmable device architectures and technologies; rapid prototyping using top down design techniques; quick response systems. CMPEN 417CMPEN (E E) 417 Digital Design Using Field Programmable Devices (3)Field Programmable Devices, such as Field Programmable Gate Arrays (FPGAs) and Complex Programmable Logic Devices (CPLDs) are widely used for rapid prototyping and quick response-time designs. The objective of this course is to introduce the student to digital design using Field Programmable ICs, and to provide an understanding of the underlying technologies and architectures of these Integrated Circuits.The course begins by introducing design alternatives for modern electronic systems identifying and classifying alternative system solutions, and evaluating when particular design solutions are optimal. These alternatives include microprocessors, microcontrollers, off-the-shelf digital ICs, Programmable logic ICs (FPGAs and CPLDs), and various forms of Application Specific Integrated Circuit (ASIC) designs. A homework assignment requires the student to quantitatively evaluate the cost, complexity, packaging, and time-to-market issues for a complex system design specification.Next, the underlying Field Programmable Logic IC architectures and technologies are studied in detail. Following a broad survey of available programmable IC vendors and on-chip programming technologies (and their cost/performance trade-offs), several specific case studies are presented in the class. The first is the Xilinx XC4000xl line, because of the target boards used in the CAD laboratory component for this class. The initial lab portions of the class help the students to specify their design using various forms of design entry tools and also allows them to see how their design map on to the underlying FPGA architecture. The students also learn the underlying algorithms used by the design software they use in their Labs.Next, the systematic top-down method for specifying complex designs using VHDL is introduced. Students are given a supporting homework assignment to develop high-level behavioral models for a simple digital system to reinforce this segment of the course. VHDL behavioral synthesis is now introduced as a preferred path to go from high-level system behavior to actual implementation on the FPGA. The strengths and weaknesses of synthesis are discussed, as are the emerging CAD tool trends. Additional VHDI-based homework assignments reinforce behavioral design and synthesis using commercial CAD tools.The final segment of the class covers special topics that identify current trends in digital system architecture and programmable logic design. These include such topics as partially reconfigurable architectures and dynamic reconfiguration techniques, system design for testability, and field programmable analog arrays. Applications of FPGAs in special purpose computing environments such as signal processing, Java acceleration and image processing are also introduced. In the laboratory, student design project assignments explore larger and more complete system specifications of such things as controllers, CPU and memory design, and signal processing blocks. These assignments reinforce the lecture content as the students model, synthesize and implement their digital designs on the target Xilinx FPGA boards."
+    },
+    {
+      "number": 420,
+      "title": "Electro-optics: Principles and Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "EE320",
+              "PHYS400",
+              "ESC400"
+            ]
+          }
+        ]
+      },
+      "description": "Spatially linear system and transform; diffraction theory, partial coherence theory, optical image detection, storage and display, holography."
+    },
+    {
+      "number": 421,
+      "title": "Optical Fiber Communications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "EE320",
+              "PHYS400",
+              "ESC400"
+            ]
+          }
+        ]
+      },
+      "description": "Operational principles of optical components, including sources, fibers and detectors, and the whole systems in optical fiber communications. E E 421 Optical Fiber Communications (3) E E 421 is an introduction course to fiber optic communications. This course is designed as an elective course for both the E E senior undergraduate students and E E graduate students. Students are expected to have a general knowledge on fiber optic communications after taking this course. The content of this course focuses on the engineering aspects of fiber optic communications. This course is offered once a year.This course basically consists of four major parts:The first part introduces the motivations of using fiber optic communication systems, which include the huge bandwidth, low attenuation, immune from the electromagnetic field interference, et al. (1 week)The second part of this course deals with light propagation in the optical waveguides. Both the simple geometrical approach and wave optics approach are used to calculate the light propagation in the optical fiber. The geometrical approach (i.e., total internal reflection) provides an intuitive feeling about light propagation in the fiber while the wave optics approach (i.e., Maxwell's equations) provides more accurate solutions. In particular, it can explain important concepts such as the conditions for single mode fiber and intramodal dispersions in single mode optical fiber. With the help of popular calculation software (e.g., Matlab, Mathcad), students are required to solve waveguide equations for single shape optical fibers (such as step index fiber). (5 weeks)The third part of this course introduces some critical components that are needed in fiber optic communication systems. This includes the optical transmitter (laser diode), optical receiver (i.e., photodetector), modulators and demodulators (such as driving current approach and optical waveguide modulators), optical coupler (how to connect more than two fibers together), optical amplifier (including the basic principle of erbium doped fiber optic amplifiers), fiber optic gratings (a critical component for the multiple wavelengths fiber optic network systems), dispersion compensation device (such as chirped fiber optic grating based device) et al. (6 weeks)The fourth part of this course talks about fiber optic networks. The major contents include fiber optic network architectures (such as star connect), multiplexing techniques in fiber optic networks (such as wavelength division multiplexing and time division multiplexing), connection fiber optic networks with non-fiber optic networks (such as copper wire based networks), current trends in fiber optic networks, et al. (2 weeks)."
+    },
+    {
+      "number": 422,
+      "title": "Optical Engineering Laboratory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "EE320",
+              "PHYS400",
+              "ESC400"
+            ]
+          }
+        ]
+      },
+      "description": "Hands-on experience covering areas of optical transforms, electro-optics devices, signal processing, fiber optics transmission, and holography."
+    },
+    {
+      "number": 424,
+      "title": "Principles and Applications of Lasers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "EE320",
+              "PHYS400",
+              "ESC400"
+            ]
+          }
+        ]
+      },
+      "description": "Principles of lasers--generation, propagation, detection and modulation; applications in fiber optics communication, remote sensing, holography, optical switching and processing."
+    },
+    {
+      "number": 430,
+      "title": "Principles of Electromagnetic Fields",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE330"
+        ],
+        "minGrades": {
+          "EE330": "C"
+        }
+      },
+      "description": "This course provides the grounding in fundamental laws of electromagnetics and provides practical training in solution of engineering electromagnetics problems. In particular, it investigates electric fields due to stationary charges and magnetic fields due to stationary currents in practical geometries, and solution of problems involving polarization and magnetization effects in material media. The course covers Maxwell's equations and propagation of transverse electromagnetic waves in lossy and lossless media. It explores the behavior of electromagnetic waves at the interface between different media at normal and oblique incidence, wave polarization, and applications to optics and fiber optics. The transmission line equations, transmission line transient waves and sinusoidal time variations are covered putting emphasis on solution of practical problems involving arbitrary impedance terminations. The retarded potentials, linear antennas and array antennas are also considered."
+    },
+    {
+      "number": 432,
+      "title": "RF and Microwave Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE310",
+          "EE330"
+        ],
+        "minGrades": {
+          "EE310": "C",
+          "EE330": "C"
+        }
+      },
+      "description": "Transmission line and waveguide characteristics and components; design of RF and microwave amplifiers, oscillators, and filters; measurement techniques; design projects."
+    },
+    {
+      "number": 434,
+      "title": "Introduction to Signal Integrity for Interconnects",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EE330",
+          {
+            "oneOf": [
+              "EE350",
+              "EE352"
+            ]
+          }
+        ]
+      },
+      "description": "This course provides a solid foundation in signal integrity for interconnects, the performance of which becomes the key factor in ensuring reliable system operation as the speed of new digital systems is pushed higher into the gigabit range. This course introduces parasitic elements that can impair the signal, such as coupling capacitances, ground capacitances, mutual inductances, self-inductances, and wire resistances. These parasitic elements can produce data losses, crosstalk, jitter, and time delays that can significantly degrade system performance and reliability. Students will also learn how the characteristics of materials and interconnect layout affect system performance and will develop models that can be simulated to verify that performance before production. This course will also cover necessary supporting ideas such as transmission line theory, impedance mismatch and reflection, lossy transmission lines, rise time degradation, material properties, crosstalk, and jitter. Students will be taught to make and interpret measurements in both the time and frequency domains."
+    },
+    {
+      "number": 437,
+      "title": "Physical implementation of qubits",
+      "credits": 3,
+      "internalEquivalents": [
+        "ESC437",
+        "PHYS437"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS337"
+        ]
+      },
+      "description": "Introduction to the physical implementation of quantum bits (qubits) based on state-of-the-art technologies. The course will consider issues in quantum information technology from an experimental point of view. The various types of qubits that will be discussed include those made with superconducting circuits, atoms (including ions, atoms and molecules), electron spins, and photons. In each case, the goal will be to develop a physical understanding of the various approaches, to get a sense of their strengths and weaknesses, and to learn about the state of the art and future prospects."
+    },
+    {
+      "number": 438,
+      "title": "Antenna Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE330"
+        ],
+        "minGrades": {
+          "EE330": "C"
+        }
+      },
+      "description": "Radiation from small antennas, linear antenna characteristics, arrays of antennas, impedance concepts and measurements, multifrequency antennas, and aperture antennas. E E 438 Antenna Engineering (3) E E 438 is an electrical engineering technical elective course intended for students with a specialization in electromagnetics. This course presents antenna engineering concepts including in-depth studies of various antennas and arrays and computer modeling of antennas for analysis and design. The course has three lectures each week as well as an additional period for demonstrations and discussions of outside lab and computer projects. This course requires E E 330, the undergraduate electromagnetics course, as a prerequisite.E E 438 begins with a review of electromagnetics which leads into an introduction of antennas. A lecture is given which shows how the evolution of a guided wave on a transmission line eventually leads into a device that can act as a wave launcher or antenna. A series of lectures are then given introducing the various classes and types of antennas. Performance parameters such as input impedance, radiation patterns, directivity, gain, polarization, and efficiency are then discussed. Examples and pictures of many antennas and their respective patterns are shown as part of these lectures.Next, extensive lectures are given which describe definitions and antenna parameters in detail. Much time is spent on how to visualize radiation patterns and beamwidth. Derivations are carried out for directivity and gain adhering to IEEE standard definitions.Theorems are discussed on the subject of reciprocity and how it can be related to practical measurements of patterns. Another lecture deals with the subject of antenna polarization and cross-polarization. Link analysis is discussed for communication systems and real-world examples are given for its use.The second half of the course involves extensive study of various types of antennas including center-fed dipoles, monopoles, loops, phased arrays, broadband antennas, Yagi antennas, traveling wave antennas, frequency antennas, and aperture antennas.Throughout the course, students are introduced to and utilize an advanced antenna computer modeling software package for carrying out assigned projects and use in homework problems. They are also assigned a group design project during the last third of the course where extensive use of the software package is required. Each group gives an oral presentation of the project and the results during the last week of class and turns in a final report."
+    },
+    {
+      "number": 441,
+      "title": "Semiconductor Integrated Circuit Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE340",
+              "EE341",
+              "ESC312",
+              "ESC313",
+              "MATSE413",
+              "PHYS412",
+              "PHYS414"
+            ]
+          }
+        ]
+      },
+      "description": "An overview of fundamentals of processes involved in silicon integrated circuit fabrication through class lectures and hands-on laboratory. E E 441 Semiconductor Integrated Circuit Technology (3) E E 441 is an elective electrical engineering course typically taken by seniors and graduate students from various majors including electrical engineering, materials engineering, engineering science, physics, and chemistry. Its objective is to introduce students to the processes and procedures involved in the manufacture of advanced silicon integrated circuits (IC) using tools and methods of semiconductor nanotechnology. In the sequence corresponding to the order of IC fabrication steps, the lecture portion of the course covers fundamentals of the formation of single-crystal silicon wafers, epitaxial deposition of thin silicon layers, fundamentals of thin film semiconductors, dielectric and metal deposition techniques, patter definition by photolithography and etching, dopant introduction, and finally, contact and interconnect metallization. In selected cases theoretical considerations regarding manufacturing steps discussed are supported by process simulation using dedicated software. Besides the specific objectives listed above this course has a more general goal. Manufacturing methods and tools used to process nanochips represent the most advanced technology across a broad range of engineering domains. Experiences gained in this course advance student's knowledge and understanding of state-of-the-art manufacturing technology that is applicable in several other domains such as nanomaterials, including nanowires, nanotubes, and nanodots, MEMS fabrication, as well as in bioelectronics, molecular electronics, spintronics and others. In addition to lectures, EE 441 has a laboratory portion that gives students an opportunity to gain hands-on experience with key processes used to manufacture advanced silicon integrated circuits. The laboratory experience helps students appreciate the intricacies of the integrated circuit fabrication procedures as well as establish connection between theoretical concepts and the outcome of the real-life manufacturing process. In the course of ten laboratory sessions students first process from scratch a simple MOS integrated circuit and then test its performance by carrying out a set of electrical tests."
+    },
+    {
+      "number": 442,
+      "title": "Solid State Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE340",
+              "EE341",
+              "ESC312",
+              "MATSE413",
+              "PHYS412",
+              "PHYS414"
+            ]
+          }
+        ]
+      },
+      "description": "The physics of semiconductors as related to the characteristics and design of solid state electronic devices. E E 442 Solid State Devices (3) The objective of E E 442, an electrical engineering elective course taken by seniors and graduate students, is to develop a rigorous introduction to the relevant concepts in quantum mechanics and statistical mechanics pertaining to understanding the key physical mechanisms that govern the electrical, optical and even mechanical behavior of semiconductor materials and devices. This course explicitly deals with the physics of operation of electronic and optoelectronic devices, and expounds on the practical aspects of device design given the inherently non-ideal nature of semiconductor devices in real life. The course typically features a couple of invited guest lectures from leading experts involved in the state-of-the-art research on semiconductor materials and devices so that seniors and first year graduate students learn about the recent advances in electronic and optoelectronic devices which reside outside the scope of the recent text books. Nanoelectronics today is a very broad discipline that extends the traditional solid-state devices such as transistors, diodes, resistors, capacitors, photodetectors, laser diodes commonly found in electronic and optoelectronic integrated circuits to a variety of emerging technologies such as large area flexible electronics, energy conversion devices, chemical and biological sensors, microelectromechanical devices. A continuous trend of fundamental breakthroughs at the materials and device architecture level keeps this field exciting and opens up new application space hitherto unexplored. The opportunity exists for the students taking this course to get introduced at a broad level to each of these areas. This course will serve as a cornerstone of the students' electronics education should they join the 275 billion dollar global semiconductor industry or should they decide to pursue graduate education in the area of advanced materials and devices."
+    },
+    {
+      "number": 443,
+      "title": "Introduction to Heterogeneous Integration & Packaging of Electronic Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE210",
+              "ME348",
+              "EE211",
+              "EE212",
+              "PHYS402"
+            ]
+          }
+        ]
+      },
+      "description": "The semiconductor industry is expected to become a trillion-dollar industry by 2030. With new applications such as artificial intelligence, computing, storage, communications, and others emerging the demand for semiconductors will only increase. As the cost of monolithic integration (single chip) in advanced nodes is increasing there is a strong trend towards heterogeneous integration in the semiconductor industry enabled by advanced packaging. In this course you will learn how heterogeneous integration and packaging with chiplets is revolutionizing the semiconductor industry. This course introduces the history, challenges, and opportunities arising in the packaging of electronic systems. Electronic systems contain transistors interconnected together in the package and hence understanding heterogeneous integration and packaging cannot be complete without understanding the workings of the transistor and its interaction with the package. The course therefore covers the basics associated with integrated circuits, and packaging with a focus on high speed signaling, power delivery, thermal management, and packaging technologies in the context of computer and AI applications. As part of this course, the students will work on projects for the design of packaged sub-systems using physical CAD tools, parasitic extraction tools, and circuit simulators as shown below."
+    },
+    {
+      "number": 453,
+      "title": "Fundamentals of Digital Signal Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE353",
+              "EE351",
+              "EE352"
+            ]
+          }
+        ]
+      },
+      "description": "Design of FIR and IIR filters; DFT and its computation via FFT; applications of DFT; filter implementation; finite arithmetic effects. E E 453 Fundamentals of Digital Signal Processing (3) The objective of E E 453, an electrical engineering elective course taken by seniors and graduate students, is to develop a rigorous, yet elementary, introduction to the fundamentals of one-dimensional discrete-time (digital) signal processing. The main topics in the course are the analysis and design of finite impulse response (FIR) and infinite impulse response (IIR) digital filters, the discrete Fourier transform (DFT) and its computation via the fast Fourier transform (FFT), and error analysis due to the constraints of finite arithmetic.The emphasis on the analysis and design of linear time-invariant discrete-time filters rests on the background acquired in the time as well as transform domain analysis of continuous-time and discrete-time signals and systems interfaced via the Shannon sampling theory.The students are alerted about topics outside the main thrust of the course mentioned above and these peripheral issues (that lead to more advanced subject matter pursued in depth in subsequent signal processing courses) include interpolation, decimation, and multirate digital signal processing.There is also a laboratory portion of E E 453 that exposes students to the use of digital signal processing workstations -- a collection of hardware and software that is used to acquire, digitize, filter, analyze, and display a variety of real-life signals. This hands-on experience helps the student appreciate and understand theoretical concepts covered in class like the sampling and reconstruction of continuous-time signals, IIR and FIR filter design, and error analysis."
+    },
+    {
+      "number": 454,
+      "title": "Fundamentals of Computer Vision",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          "MATH220",
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201"
+            ]
+          }
+        ]
+      },
+      "description": "Introduction to topics such as image formation, segmentation, feature extraction, matching, shape recovery, object recognition, and dynamic scene analysis. CMPEN 454CMPEN 454 Fundamentals of Computer Vision (3) CMPEN 454 is an introduction to computer vision. The goal of computer vision is to make computers understand and interpret visual information. Computer vision systems bring together imaging devices, computers, and sophisticated algorithms for solving problems in areas such as industrial inspection, medicine, document analysis, autonomous navigation, and remote sensing. The course involves both pedagogical written assignments and computer projects.The beginning of the course gives an overview of computer vision and introduces low level image analysis techniques for binary images. Binary vision systems are useful when the silhouette of imaged objects convey enough information to recognize them. Examples can be found in optical character recognition, chromosome analysis and recognition of industrial parts. Moreover, many techniques developed for binary systems can be applied to gray level or color images. Next, the course covers image segmentation and contours. These topics are the foundation of most computer vision techniques. For an image to be correctly interpreted, it must be partitioned into regions that correspond to distinct objects or parts of objects. First, region based techniques such as thresholding, split and merge, region growing and texture analysis are introduced. Next, edge based techniques using gradient and Laplacian operators are discussed. Finally, contour representations and curve approximations linking edges into region boundaries are studied.Next, depth from vision, with emphasis in stereo vision, is considered. Calculating distances to and among various points in the scene is important in many computer vision tasks such as inspection, robot manipulation, and autonomous navigation. In this part of the course the geometry of stereo systems and how to obtain depth maps from stereo image pairs is studied. Also, alternative 3D imaging sensors such as laser based range finders and radars are discussed.Following stereo, the topic of computer vision is broaden to understand sequences of images over time. In this section techniques using information on spatial and temporal changes are used to design computer vision systems capable of coping with moving and changing objects, changing illumination and changing viewpoints. Visual motion is important primarily for two reasons. First, motion is a very important cue to understand the scene structure. Second, biological systems do use motion to infer properties of the surrounding world with very little a priori knowledge.Finally, the topic of 3D object recognition is discussed. Object recognition entails two main issues: object identification and object localization. Identification determines the objects being imaged while localization determines their position in the world and with respect to the sensors. This topic builds upon all the different techniques discussed until this point."
+    },
+    {
+      "number": 455,
+      "title": "An Introduction to Digital Image Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE350",
+              "EE353",
+              "EE352"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201"
+            ]
+          }
+        ]
+      },
+      "description": "Overview of digital image processing techniques and their applications; image sampling, enhancement, restoration, and analysis; computer projects. E E (CMPEN) 455 An Introduction to Digital Image Processing (3) E E/ CMPEN 455 , a technical elective available to both electrical and computer engineering seniors and graduate students, discusses many current techniques for processing and manipulating digital images. The course involves both pedagogical written assignments and computer projects.The beginning of the course gives an overview of digital image processing systems and digital image fundamentals. During this unit, important elements of human visual perception are reviewed; these ideas help motivate many of the computer-based techniques described in subsequent units. Also, the standard model for a digital image, in addition to the concepts of sampling and quantization, are described. Finally, basic topological concepts between digital image pixel are discussed.The next unit considers image transform analysis, with a primary focus on Fourier-based techniques. The one-dimensional Fourier transform is reviewed, and then two-dimensional Fourier transform analysis is discussed. To bridge the gap from the continuous world to the digital world, the sampling theorem is introduced. Next, the Discrete Fourier Transform and its properties are described. Fourier-based filtering techniques, such as the ideal low-pass and Butterworth filters are then introduced. The Fast Fourier Transform is also discussed. Finally, the Discrete Cosine Transform, used later in JPEG and MPEG, is introduced.The next unit discusses techniques for image enhancement and segmentation. These techniques include point-based techniques based on histogram analysis. They also involve linear and nonlinear mask-based methods for noise reduction and region sharpening. Further, techniques of mathematical morphology, which involve an application of set-theoretic concepts to image processing, are described. Finally, image segmentation methods, based on edge detection and thresholding, are described.The final unit considers the concept of image compression. Techniques for image encoding and decoding are discussed. A brief model of the encoding-decoding process is described. Next, compression techniques, such as run-length encoding and Huffman coding, are described. Finally, the multimedia image-compression methodologies, JPEG and MPEG, are discussed."
+    },
+    {
+      "number": 456,
+      "title": "Introduction to Neural Networks",
+      "credits": 3,
+      "internalEquivalents": [
+        "EGEE456",
+        "ESC456"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131"
+            ]
+          },
+          "MATH220"
+        ]
+      },
+      "description": "Artificial Neural Networks as a solving tool for difficult problems for which conventional methods are not applicable. E E (E SC/EGEE) 456 Introduction to Neural Networks (3) This course is in response to students needs to learn Artificial Neural Networks (ANN) as a solving tool for difficult problems for which conventional methods are not available. The objective of this course is to give students hands-on experiences in identifying the best types of ANN, plus developing and applying ANN to solve difficult problems. Students will be introduced to a variety of ANN and will use their training skills to solve their own applications. During this course the students will develop a final project, in which they will apply ANN to widely varied problems.Examples: I) students from E E may be interested in applying ANN to solve control problems; II ) students from Material Sciences may be interested in applying ANN to predict the pitting corrosion of components; III) students from Petroleum Engineering may be interested in applying ANN to characterize the life of a reservoir; IV ) students from Agricultural Engineering may be interested in applying ANN to sort apples automatically, etc."
+    },
+    {
+      "number": 458,
+      "title": "Digital Image Processing and Computer Vision",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE352"
+        ]
+      },
+      "description": "Principles of DSP and computer vision, including sensing preprocessing, segmentation, description, recognition, and interpretation."
+    },
+    {
+      "number": 460,
+      "title": "Communication Systems II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE360",
+              "EE461"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT418",
+              "STAT414",
+              "STAT200",
+              "MATH418",
+              "MATH414"
+            ]
+          }
+        ]
+      },
+      "description": "EE 460 is an elective course in the electrical engineering curricula that provides detailed performance analysis of communications systems first studied in introductory communications courses such as EE 360 or EE 461 . The course begins with a review of topics in linear system theory, communication theory, and probability/random processes. Following the review of this important background material, this course studies the behavior of communication systems in the presence of noise. First, the behavior of analog communication systems in the presence of additive white Gaussian noise (AWGN) is analyzed. As a benchmark, signal-to-noise ratio is derived for a base band system. This is followed by a performance assessment of amplitude modulated and frequency modulated systems and comparison is made to the base band system performance. Concepts of optimum pre-and de-emphasis systems are explained. Next, behavior of digital communication systems in AWGN is studied. This includes optimum threshold detection and general analysis of optimum binary receivers. Performance of carrier modulation systems ASK, FSK, PSK and DPSK is derived in terms of average bit error rate (BER) as a function of bit-energy-to-noise density height. M-ary communications systems are analyzed. Synchronization issues are discussed. This is followed by the theory of optimum signal detection; geometrical representation of signals and signal spaces, Gaussian processes, optimum receiver and equivalent signal sets are illustrated by several examples. BER performance analysis of complex digital modulated systems is demonstrated, using the developed signal space concepts."
+    },
+    {
+      "number": 461,
+      "title": "Communications I",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EE352"
+        ]
+      },
+      "description": "Element of analog and digital communication systems, AM, FM, and digital modulation techniques, receivers, transmitters, and transmission systems, noise."
+    },
+    {
+      "number": 465,
+      "title": "Probability for Electrical and Computer Engineers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE350",
+              "EE353",
+              "EE352"
+            ]
+          }
+        ]
+      },
+      "description": "This course covers basic concepts in probability, including random variables, conditioning, independence, laws of large numbers, and statistical confidence. While covering these basic probability concepts, illustrative examples drawn from Electrical and Computer Engineering topics such as communications, signal processing, networking, image processing, and control systems will be used to show engineering applications of the probability and statistical theory. The course concludes with a module on linear filtering of wide-sense stationary processes, including in the frequency domain via power spectral density. The course consists of lectures and recitations. Recitations reinforce concepts learned in lecture through problem solving. Recitations are also used to study applications such as information theory and signal detection using binary hypothesis testing. Laboratory exercises demonstrate the use of software packages for simulation and calculations."
+    },
+    {
+      "number": 466,
+      "title": "Introduction to Software-Defined Radio",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE353",
+              "EE351",
+              "EE352"
+            ]
+          },
+          {
+            "oneOf": [
+              "EE360",
+              "EE461"
+            ]
+          }
+        ]
+      },
+      "description": "An overview of the principles of software-defined radio systems with laboratory component."
+    },
+    {
+      "number": 471,
+      "title": "Introduction to Plasmas",
+      "credits": 3,
+      "internalEquivalents": [
+        "NUCE490"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "PHYS400"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE330": "C",
+          "PHYS400": "C"
+        }
+      },
+      "description": "This course provides the education on models that are used for description of plasma phenomena as applicable to plasma confinement, plasma assisted materials processing, astrophysical plasmas and plasmas in the near Earth's space environment. It provides practical training in solution of problems involving collisional and collisionless plasmas. In particular, it investigates dynamics of charged particles in specified uniform, non-uniform and time varying electric and magnetic fields. It explores collective behavior of plasmas, including various electrostatic and electromagnetic waves that can be excited and propagate in plasmas parallel and perpendicular to the externally applied magnetic field. The course considers non-linear effects in plasmas, as typically occurring in the sheath regions near the plasma confining walls. It discusses concepts of equilibrium and stability of plasmas, and various models of unstable plasma motions, especially in relation to plasma confinement."
+    },
+    {
+      "number": 472,
+      "title": "Space Astronomy and Introduction to Space Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "PHYS400",
+              [
+                "METEO421",
+                "METEO431"
+              ]
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE330": "C",
+          "PHYS400": "C",
+          "METEO421": "C",
+          "METEO431": "C"
+        }
+      },
+      "description": "The physical nature of the objects in the solar system; the earth's atmosphere, ionosphere, radiation belts, magnetosphere, and orbital mechanics."
+    },
+    {
+      "number": 474,
+      "title": "Satellite Communications Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE360",
+          "EE330"
+        ],
+        "minGrades": {
+          "EE360": "C",
+          "EE330": "C"
+        }
+      },
+      "description": "Overview of satellite communications systems, principles, space platforms, orbital mechanics, up/down links and link budgets, modulation techniques. E E 474 Satellite Communications Systems (3) This course is designed to give seniors and graduate students an overview of the principles of satellite communications systems. Building on junior-level courses in electromagnetics and communications, it shows how complex satellite systems operate and provide services that we depend on, such as telephone, television, weather forecasting, and global positioning. Specific topics include: historical background on how satellite systems came to be, present uses of satellite systems, and future trends in satellite systems design, construction, and uses; orbital mechanics and launch systems and vehicles; earth stations; radio propagation and link analysis; signals and satellite access methods. Student performance is evaluated via exams, homework assignments, and projects. Hands-on experience in the design of satellite communications links is gained through the use of industry-standard satellite system analysis software. In their design, the student must achieve specific goals of satellite accessibility, earth coverage footprint, orbital launch and stability, and communications link budget."
+    },
+    {
+      "number": 477,
+      "title": "Fundamentals of Remote Sensing Systems",
+      "credits": 3,
+      "internalEquivalents": [
+        "METEO477"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "METEO436"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE330": "C",
+          "METEO436": "C"
+        }
+      },
+      "description": "The review of fundamental physical properties leads into discussions of various techniques, including imaging, spectroscopy, radiometry, and active sensing."
+    },
+    {
+      "number": 480,
+      "title": "Linear Systems: Time Domain and Transform Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE350",
+              "EE352"
+            ]
+          }
+        ]
+      },
+      "description": "Signals and systems representations, classifications, and analysis using; Difference and Differential equations, Laplace Transform, Z-Transform, Fourier series, FT, FFT, DFT. The major topics covered in this course include; Signals and Systems representations, classifications, and analysis using; Difference and Differential Equations, Laplace Transform, Z-Transform, Fourier series, Fourier Transform, Fast Fourier Transform (FFT), Discrete-Time Fourier Transform (DTFT) and Discrete Fourier Transform (DFT). The objective of this course is to develop intuitive and practical understanding of the essentials in signals and systems. The stress is on fundamentals of representation, and analysis of signals and their applications to systems in both discrete and continuous time and frequency domains. This course is designed to prepare the students for more advanced work in broad range areas including communications, control systems, power systems, computer engineering, signal processing and image processing."
+    },
+    {
+      "number": 481,
+      "title": "Control Systems",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "EE352",
+          "MATH220"
+        ]
+      },
+      "description": "This course presents both classical and modern approaches to modeling, analysis, and design of control systems for continuous time systems. Students learn how to model both mechanical and electrical systems in the time and frequency domains using differential equations, transfer functions, state space methods and frequency domain (Bode) techniques. Modeling is followed by an in-depth study of systems analysis, including stability, transient response and steady state characteristics. The study of stability involves examining the effects of pole and zero placement, and the Routh criterion is used extensively. In the consideration of transient response characteristics, students investigate rise time, peak time, overshoot, and settling time. The primary steady state feature studied is the error between the reference signal input and the system output, and students learn to characterize steady state error through the determination of system type and computation of the error constants. Design of control systems focuses on altering one or more of the system characteristics by adding compensation. Students employ a variety of root locus techniques as well as proportional-integral-derivative (PID), state feedback, and frequency response methods. Students begin with simple proportional, closed-loop control and examine pole migration through root locus plots. They then learn to apply more robust pole placement techniques using proportional and derivated (PD) control. Next, PID controllers are examined with a number of opportunities for design. After learning the classical control techniques, students then concentrate on state feedback control methods, including the design of partial- and full-order observers. Finally, students learn the relationship between time domain analysis and design and frequency domain (Bode) analysis of both magnitude and phase. This course includes a laboratory in which students use MATLAB and Simulink for modeling, analysis and control system design. To be successful in this course, students should have a solid background in differential equations, Laplace transform techniques, Bode analysis, linear algebra, complex variables, and they should have a familiarity with MATLAB."
+    },
+    {
+      "number": 482,
+      "title": "Introduction to Digital Control Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE380",
+          {
+            "oneOf": [
+              "EE351",
+              "EE352"
+            ]
+          }
+        ]
+      },
+      "description": "Sampling and hold operations; A/D and D/A conversions; modeling of digital systems; response evaluation; stability; basis of digital control; examples. E E 482 Introduction to Digital Control Systems (3) E E 482 introduces fundamental concepts that will enable the student to analyze, design, and synthesize closed-loop systems that contain a digital computer. In order to successfully complete this course the student must have a foundation in classical control (E E 380 or equivalent) and discrete-time system concepts (E E 351 or equivalent). Problem solving is emphasized. Concepts introduced in lecture are reinforced by a series of laboratory projects and weekly problem sets. Through these exercises the student will acquire competence in analytical and computer aided analysis techniques.The course covers several topic areas including modeling of sampled-data systems, system identification using the batch least squares method, time response characteristics, stability analysis techniques, discrete-time approximation of continuous-time controllers, classical design methods based on root locus and frequency response, and modern design methods including state and observer feedback design.Laboratory projects include system identification and control design based on the root locus, frequency response, and state-feedback methods. Each project involves the use of either a servomechanism or a fluid testbed. Laboratory projects and problem sets will develop the student's appreciation for computer aided control system analysis and design techniques. Student performance is assessed using homework, laboratory projects, hour exams, and a final exam."
+    },
+    {
+      "number": 483,
+      "title": "Introduction to Automation and Robotics Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE481"
+        ]
+      },
+      "description": "Introduction to robotics systems with emphasis on robotic motion and control, and robotic components such as actuators and sensors."
+    },
+    {
+      "number": 485,
+      "title": "Energy Systems and Conversion",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE210",
+              "EE314",
+              "EE315",
+              "EET310"
+            ]
+          }
+        ],
+        "concurrent": [
+          "MATH141"
+        ]
+      },
+      "description": "EE 485 is designed to give students an overview of available energy alternatives, and to study the fundamental theory of operation and system models for major energy conversion devices. The course is interspersed with consideration of emerging technologies and the power industry's impact on the environment, public safety, power quality, and health of the nation's electrical grid. Various forms of raw energy sources used in powering conventional electric generating plants such as coal, natural gas, oil, and uranium will be studied, along with worldwide distribution and reserves. The course also covers energy storage technology, power electronics, three phase power systems, and theory and applications of electric machines, including DC, induction, and synchronous motors."
+    },
+    {
+      "number": 486,
+      "title": "Sustainable Energy System Integration",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE210",
+              "EE211",
+              "EE212"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201"
+            ]
+          }
+        ]
+      },
+      "description": "EE 486 (Sustainable Energy System Integration) is an elective course that introduces typical renewable energy units and their integration and control strategies, including photovoltaic devices, wind power, batteries, supercapacitors, flywheels, and micro-turbines. Maximum power point tracking (MPPT), droop control, and V-F control will be discussed to integrate those sustainable energy units into the AC power system. Computer models will be developed for the sustainable energy units. Simulations will be given to show the control and system integration details. After completing this course, students should be able to: ¿ Describe the key operational features of typical sustainable energy resources ¿ Understand the operations and controls of typical sustainable energy resources ¿ Know the integration of sustainable energy units into the AC power system ¿ Calculate and analyze an energy system dominated by sustainable energy units ¿ Model and demonstrate the integration and operations of sustainable energy systems"
+    },
+    {
+      "number": 488,
+      "title": "Power Systems Analysis I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE387",
+              "EE485"
+            ]
+          }
+        ]
+      },
+      "description": "Fundamentals, power transformers, transmission lines, power flow, fault calculations, power system controls."
+    },
+    {
+      "number": 489,
+      "title": "Power Systems Analysis II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE488"
+        ]
+      },
+      "description": "Symmetrical components, unbalanced networks, unsymmetrical faults, unbalanced operation of rotating machines, transient transmission line modeling, system protection."
+    },
+    {
+      "number": 494,
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Students must have approval of a thesis adviser before scheduling this course."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Students must have approval of a thesis adviser before scheduling this course."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 500,
+      "title": "Colloquium",
+      "credits": 1,
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 510,
+      "title": "Linear Integrated Circuits",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE410",
+          "EE441"
+        ]
+      },
+      "description": "Design of monolithic, thin-film, and hybrid linear integrated circuits; D.C., video, tuned, r.f., and microwave applications. Emphasis on reliability."
+    },
+    {
+      "number": 517,
+      "title": "Electroanalytical Biosensors: From Fundamentals to Applications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE542"
+        ]
+      },
+      "description": "In this elective course, operation mechanisms of electrochemical biosensors and their applications will be discussed. The students will learn about design rules, theoretical and engineering considerations, and analytical methods. Emerging technologies and trends will be discussed."
+    },
+    {
+      "number": 518,
+      "title": "Neuromorphic Computing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE416",
+              "CMPEN416"
+            ]
+          }
+        ]
+      },
+      "description": "This course delves into developments in the field of brain-inspired neuromorphic computing. The course will offer an interdisciplinary perspective across the computing stack combining insights from machine learning, computational neuroscience to materials, devices, circuits and systems. The course will discuss recent research developments in the field by critiquing publications through presentations and will also provide the opportunity to develop a project focused on a particular layer of the computing stack."
+    },
+    {
+      "number": 519,
+      "title": "Hardware Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE416",
+              "CMPEN416"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide a broad overview of topics related to hardware security. Upon completing the course, the students are expected to understand the vulnerabilities in current digital system design flow and the physical attacks to these systems; to learn that security starts from hardware design and to be aware of the tools and skills available for building secure and trusted hardware. This course will cover key research topics such as design of basic and advanced cryptographic engines, basic and advanced attacks on computer hardware, secure hardware architectures and post-Silicon computing technologies and their security challenges and opportunities. Introductory lectures will cover basic background on cryptography, authentication, secret sharing, VLSI design, test and verification."
+    },
+    {
+      "number": 520,
+      "title": "Electro Optics--Systems and Computing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE420"
+        ]
+      },
+      "description": "Synthetic aperture radar, spatial light modulators, optical interconnection, optical computing, neural networks, and medical optics imaging."
+    },
+    {
+      "number": 521,
+      "title": "Fiber Optics and Integrated Optics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE421"
+        ]
+      },
+      "description": "Theories and applications of linear and nonlinear optical phenomena in optical fibers and integrated optical devices."
+    },
+    {
+      "number": 522,
+      "title": "Electro-Optics Laboratory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE420"
+        ]
+      },
+      "description": "Basic concepts and fundamentals of light diffraction, optical signal processing, and holography."
+    },
+    {
+      "number": 524,
+      "title": "Lasers and Optical Electronics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE424"
+        ]
+      },
+      "description": "Study of several advanced nonlinear optical phenomena, laser propagation, optical and optoelectronic devices, principles, and applications."
+    },
+    {
+      "number": 525,
+      "title": "Nanophotonics",
+      "credits": 3,
+      "description": "Nanophotonics is a rapidly growing and exciting field that merges the principles of nanotechnology and photonics to create new and innovative applications. This comprehensive course offers an in-depth exploration of the fundamental concepts of photonics and nanotechnology, with a specific focus on the interaction between light and semiconductors, metals, or composites at the nanoscale. Throughout the course, students will delve into a broad range of topics, including plasmonics, photonic crystals, metamaterials, metasurfaces, photonics integrated circuits, and their practical applications. By developing a comprehensive understanding of the principles and physics behind state-of-the-art nanophotonic materials, devices, and applications, students will be well-positioned to excel in nanophotonics research and development. This course also emphasizes the connection between fundamental physics, optics, nanotechnology, and material science. Students will gain a firm grasp of electromagnetism and the basic principles of light-matter interactions. Additionally, they will acquire valuable insights into surface plasmon polaritons and their associated effects. By the end of the course, students will have the ability to design and analyze a wide range of commonly used artificial sub-wavelength nanostructures, including photonics crystals, metamaterials, and metasurfaces. They will also have a solid understanding of their applications, providing them with valuable knowledge and skills that they can apply to a variety of research and industrial settings. Overall, this course provides a comprehensive overview of nanophotonics, positioning students at the forefront of this rapidly advancing field. Students completing this course will gain a deep understanding of the theoretical underpinnings of nanophotonics, as well as practical skills and knowledge that will serve them well in their future career endeavors."
+    },
+    {
+      "number": 526,
+      "title": "Nonlinear Optical Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE420",
+              "MATSE435"
+            ]
+          }
+        ]
+      },
+      "description": "Mechanisms of polarization nonlinearity, nonlinear optical processes and analyses, optoelectronic materials and their device application. E E (MATSE) 526 Nonlinear Optical Materials (3) Nonlinear Optical Materials is a course that will generally be offered in spring semesters. It is designed for students who are interested in the materials science-related interdisciplinary electronics/electro-optic engineering areas to provide an essential understanding of the mechanisms of the polarization nonlinearity in electronic materials as well as the principles of operation of these materials in various photonic and optoelectronic applications (e.g., frequency conversion, optical control/communication, and information storage). Analytical methods utilizing the electromagnetic wave theories and tensor operations will be covered in this course to treat anisotropic nonlinear optical materials for their wave-matter interaction processes and to enable device designs. Technological issues in research and development of advanced optoelectronic devices using nonlinear optical materials are discussed with students' participation.Students wishing to take this course should be familiar with optical properties of materials and basic tensor notations."
+    },
+    {
+      "number": 531,
+      "title": "Engineering Electromagnetics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE430"
+        ]
+      },
+      "description": "This course emphasizes advanced electromagnetic field theory concepts, with application to propagation of electromagnetic waves in material media, wave polarization, reflection and transmission of multiple interfaces, and rectangular and circular cross section waveguides and cavities. In this course, students learn electromagnetic theorems and principles with emphasis on induction equivalent and physical equivalent approximations for solution of electromagnetic scattering problems. At the completion of the course, students will be able to apply integral equations and their moment method solutions for practical electromagnetic radiation and scattering problems. The generalized Green's function method will be introduced, including development of closed form Green's functions in rectangular, cylindrical and spherical geometries."
+    },
+    {
+      "number": 533,
+      "title": "Advanced RF Integrated Circuits",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE410",
+          "EE432"
+        ]
+      },
+      "description": "This course will discuss the design of silicon-based radio-frequency integrated circuits for next-generation wireless communications and sensing, focusing on theoretical and practical design techniques from architecture down to transistor-level circuit design. The topics are 1) modern RF systems and applications, 3) opportunities and challenges of mmWave technologies, 2) wireless transceiver architecture, 3) high-frequency modeling of active and passive devices for RFIC in silicon, 4) design principles of RF functional blocks such as low-noise amplifiers, power amplifiers, mixers, and oscillators, 5) mmWave phased arrays, 6) utilization of simulation/design software for IC implementation and simulation based on a CMOS PDK,"
+    },
+    {
+      "number": 534,
+      "title": "Conformal Antennas",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE538"
+        ]
+      },
+      "description": "Introduction to advanced analysis and design techniques as well as applications for conformal antennas mounted on planar and curved surfaces. E E 534 Conformal Antennas (3) E E 534 provides an introduction to the rapidly growing field of conformal antennas. Analysis and design techniques are presented for conformal antennas mounted on planar as well as curved surfaces. Important applications of conformal antennas are also discussed with emphasis on their recent popularity as wireless PCS, GPS, and body-born antennas. Microstrip antenna design projects will be assigned, where students will gain valuable experience using one or more commercially available industry-standards modeling codes.E E 534 is the third and most advanced course in a three-course sequence of antenna engineering courses: E E 438 (Antenna Engineering, E E 538 (Antenna Engineering) and E E 534.E E 534 will be taught every other fall semester, with an anticipated enrollment of 20-30 students."
+    },
+    {
+      "number": 535,
+      "title": "Boundary Value Methods of Electromagnetics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE430",
+              "EE432",
+              "EE438"
+            ]
+          }
+        ]
+      },
+      "description": "Theory and application of boundary value problems in engineering electromagnetics; topics include microwave and optical waveguides, radiation, and scattering."
+    },
+    {
+      "number": 537,
+      "title": "Numerical and Asymptotic Methods of Electromagnetics",
+      "credits": 3,
+      "description": "Finite difference time domain, geometric theory of diffraction and method of moments applied to antennas and scattering."
+    },
+    {
+      "number": 538,
+      "title": "Antenna Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE438"
+        ]
+      },
+      "description": "In-depth studies of synthesis methods, aperture sources, broadband antennas, and signal-processing arrays."
+    },
+    {
+      "number": 541,
+      "title": "Manufacturing Methods in Microelectronics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE441"
+        ]
+      },
+      "description": "Methods, tools, and materials used to process advanced silicon integrated circuits."
+    },
+    {
+      "number": 542,
+      "title": "Semiconductor Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE442"
+        ]
+      },
+      "description": "Characteristics and limitations of bipolar transistors, diodes, transit time, and bulk-effect devices."
+    },
+    {
+      "number": 543,
+      "title": "Ferroelectric Devices",
+      "credits": 3,
+      "description": "Theoretical background of ferroelectric devices, practical materials, device designs, drive/control techniques, and typical applications."
+    },
+    {
+      "number": 544,
+      "title": "Solid-state Mechatronics",
+      "credits": 3,
+      "description": "This course provides a broad exploration of solid-state mechatronics. Mechatronics deals with solid state devices and systems enabled by piezoelectric effect, electrostatic force, and magnetic and magnetoelectric effect, which are ubiquitous in our society. This course covers key areas of mechatronics, including device fundamentals, key materials, device designs, typical applications and device examples. Applications and devices include solid state actuators and sensors, energy harvesting systems, filters and resonators in wireless communications, transducers in medical imaging and fault detection, and surface acoustic and other guided wave devices in sensing and communications. This course is suitable to graduate students majoring in electrical engineering, mechanical engineering, engineering science and mechanics, and other related fields, who are interested in learning the theory of solid state actuators, sensors, and transducers and designing them for industrial and biomedical applications."
+    },
+    {
+      "number": 545,
+      "title": "Semiconductor Characterization",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE545"
+      ],
+      "description": "Physical principles and experimental methods used to characterize the electrical, optical, structural and chemical properties of semiconductor materials."
+    },
+    {
+      "number": 546,
+      "title": "Field-Effect Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE442"
+        ]
+      },
+      "description": "The physical background, characteristics, and limitations of surface field- effect and junction field-effect devices and related structures."
+    },
+    {
+      "number": 547,
+      "title": "Dielectric Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE442"
+        ]
+      },
+      "description": "Applications of insulator physics and devices based on insulator properties."
+    },
+    {
+      "number": 549,
+      "title": "Acoustic Wave Devices",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE310",
+          "EE442"
+        ]
+      },
+      "description": "Examines materials commonly used for acoustic wave devices, fundamentals of acoustic waves and resonance modes, and characteristics of these devices. E E 549 Acoustic Wave Devices (3)E E 549 is an elective in the field of electronic and photonic materials. Solid state acoustic wave devices based on piezoelectric, ferroelectric, and microelectromechanical systems (MEMS) have a broad range of applications including chemical and biological sensors, electromechanical sensing and transduction, resonators and wave guides for material characterization and health monitoring, filters in telecommunication systems, and optic communications. The course will cover commonly used materials and phenomena for acoustic wave devices, characteristics of different waves and vibration modes, device configurations, their main characteristics and applications, as well as design considerations. Students will learn the key features and materials commonly used for acoustic wave devices, main acoustic mode and their characteristics, important device configurations, the equivalent circuits for acoustic wave modes and devices, and examples of the device applications. Students will also acquire basic skills in selecting acoustic wave devices for specific applications, in designing and characterizing acoustic wave devices for different applications, and in finding suitable available materials and/or phenomena for the acoustic wave device. This course will count as an elective for electrical engineering students in the electronics and photonics sub-discipline. Students wishing to take this course should be familiar with electronic circuit design and solid state devices."
+    },
+    {
+      "number": 550,
+      "title": "Foundations of Engineering Systems Analysis",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME550"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH436"
+        ]
+      },
+      "description": "Analytical methods are developed using the vector space approach for solving control and estimation problems; examples from different engineering applications. E E (M E) 550 Foundations of Engineering Systems Analysis (3) This 3-credit course is offered at the first-year graduate level and provides a systems-theoretic background for more advanced graduate courses in the disciplines of engineering and science. The course uses the vector space approach to develop the analytical foundations for solutions of science and engineering problems in diverse application areas such as optimal control, estimation, and signal processing. First, the theoretical foundation of vector spaces, function spaces, and Hilbert spaces are developed. Linear transformations are then introduced, followed by the Reisz-Frechet theorem and Hahn-Banach theorem, with applications to optimization problems. Spectral analysis is then covered. Finally, diverse applications of these various techniques are presented throughout this course to illustrate the wide range of engineering problems that can be solved using the vector space approach."
+    },
+    {
+      "number": 551,
+      "title": "Wavelets and Sparse Signal Representations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE453"
+        ]
+      },
+      "description": "Recommended Preparations: Linear algebra This course provides the foundation to understand and use wavelets and sparse signal representations. In particular, it develops sparse representations as an evolution of the discrete wavelet transform. Students will recognize, identify, and apply sparse and wavelet representations methodology to specific signal processing projects. Students will be shown multiple real world applications within this area and guided to apply the methodologies combined with their own domain knowledge."
+    },
+    {
+      "number": 552,
+      "title": "Pattern Recognition and Machine Learning",
+      "credits": 3,
+      "description": "This course is a comprehensive overview of the fields of pattern recognition and machine learning. The content covers both classification and recursion, model selection, decision theory, information theory, linear and non-linear models, graphical models, kernel methods, mixture models and EM as well as neural networks. It assumes no previous knowledge of pattern recognition or machine learning concepts. Knowledge of multivariate calculus and basic linear algebra is required, and some familiarity with probability would be helpful."
+    },
+    {
+      "number": 553,
+      "title": "Topics in Digital Signal Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE453"
+        ]
+      },
+      "description": "Parametric modeling, spectral estimation, efficient transforms and convolution algorithms, multirate processing, and selected applications involving non-linear and time-variant filters."
+    },
+    {
+      "number": 554,
+      "title": "Topics in Computer Vision",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPEN454",
+              "EE454"
+            ]
+          }
+        ]
+      },
+      "description": "Discussion of recent advances and current research trends in computer vision theory, algorithms, and their applications."
+    },
+    {
+      "number": 555,
+      "title": "Digital Image Processing II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPEN455",
+              "EE455"
+            ]
+          }
+        ]
+      },
+      "description": "Advanced treatment of image processing techniques; image restoration, image segmentation, texture, and mathematical morphology."
+    },
+    {
+      "number": 556,
+      "title": "Graphs, Algorithms, and Neural Networks",
+      "credits": 3,
+      "description": "Examine neural networks by exploiting graph theory for offering alternate solutions to classical problems in signal processing and control."
+    },
+    {
+      "number": 557,
+      "title": "Multidimensional Signal Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE453"
+        ]
+      },
+      "description": "Multidimensional sampling, weak causality, recursibility, multidimensional transforms, stability, global and local state-space models, multidimensional filters, and multidimensional spectrum estimation."
+    },
+    {
+      "number": 559,
+      "title": "Wireless and Mobile Sensing in the Age of IoT",
+      "credits": 3,
+      "description": "This course covers state-of-the-art research on Internet of Things (IoT), with a focus on wireless networking and mobile sensing. Topics of discussion include high precision localization, GPS, smart healthcare, autonomous vehicles and drones, Augmented/Virtual Reality, Battery free communication, 5G basics, Security etc. The course begins with a basic background in linear algebra, signal processing, wireless communications in the context of applications. Thereafter, the topics will be organized into various applications and research from top notch conferences will be presented. In addition, within each application, the appropriate background and common principles underlying Bayesian Filtering, Maximum Likelihood, Sensor design basics etc will be emphasized."
+    },
+    {
+      "number": 560,
+      "title": "Probability, Random Variables, and Stochastic Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE350",
+          "STAT418"
+        ]
+      },
+      "description": "Review of probability theory and random variables; mathematical description of random signals; linear system response; Wiener, Kalman, and other filtering."
+    },
+    {
+      "number": 561,
+      "title": "Information Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE460",
+          "STAT418"
+        ]
+      },
+      "description": "Mathematical measurement of information; information transfer in discrete systems; redundancy, efficiency, and channel capacity; encoding systems."
+    },
+    {
+      "number": 562,
+      "title": "Detection and Estimation Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE560"
+        ]
+      },
+      "description": "Detection decision theory, Bayes and Neyman-Pearson criteria, optimal receivers, classical estimation theory, signal-noise representations, optimum linear signal parameters estimation."
+    },
+    {
+      "number": 563,
+      "title": "Network Optimization and Learning",
+      "credits": 3,
+      "description": "This course targets a fundamental understanding of communication networks as well as their principled network algorithm design. We explore methods for analyzing the performance of communication networks and principled network algorithm design. In particular, we first present an overview of basic convex optimization and its application for Internet congestion control and routing design. Then, we present a stochastic network optimization framework and its application for scheduling design. Finally, we delve into a multi-agent learning framework for emerging network applications such as networking for virtual/augmented reality. By the end of this course, students will have acquired a solid theoretical foundation at the intersection of networking, optimization, and machine learning for both traditional communication networks and emerging network applications."
+    },
+    {
+      "number": 564,
+      "title": "Error Correcting Codes for Computers and Communication",
+      "credits": 3,
+      "description": "Block, cyclic, and convolutional codes. Circuits and algorithms for decoding. Application to reliable communication and fault-tolerant computing."
+    },
+    {
+      "number": 565,
+      "title": "Reliable Data Communications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT418"
+        ]
+      },
+      "description": "Discussion of problems and solutions for ensuring reliable and efficient communication over wired and wireless links and data networks."
+    },
+    {
+      "number": 567,
+      "title": "Wireless and Mobile Communications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE460",
+          "EE560"
+        ]
+      },
+      "description": "Development of key wireless networks systems analysis and design tools utilizing telecommunications principles; current and emerging mobile wireless techniques. E E 567 Wireless and Mobile Communications (3) E E 567, Wireless and Mobile Communications, extends basic principles ofcommunications systems and their associated performance into the world of wireless and mobile communications. This course has been designed primarily to provide a good understanding of fundamental problems and counter-measure techniques in digital communications over dispersive wireless mobile channels. It starts with a review of material necessary for advanced study in wireless communications: current wireless mobile systems and standards, frequency reuse and the cellular concept, co-channel interference and noise, receiver sensitivity and link budget calculations, coverage, and spectral efficiency and capacity.Next, various types of propagation modeling are presented, such as large-scale fading, small-scale fading, and multiple scattering (multi-path) phenomena. Examples of Rayleigh, Rician, and Nakagami fading channels are discussed, and level crossing rates and fade durations are determined. This is followed by methods for developing laboratory fading channel simulators for both single- and multiple-pathschannel models, including the laboratory simulation of shadowing. Conventional path-loss models in macro-cells such as Okumura-Hata and outdoors micro-cells, COST231-Hata, and Walfish-Ikegami models as well as path loss for indoor micro-cells are then detailed.The next part of the course covers fundamental limits introduced by co-channel interference, as multiple lognormal interferers are introduced. Specifically, Fenton-Wilkinson, Schwartz and Yeh, Farley's methods and a numerical comparison are presented. Outage probability evaluation is detailed. Modulation techniques used in wireless mobile applications and associated performance over fading channels are reviewed next, followed by a detailed investigation of diversity and combining techniques.TDMA and CDMA Cellular systems are presented next. Topics covered here include: Spread spectrum systems including direct sequence, frequency hopping, fading channel applications, RAKE receiver concepts, multi-input-multi-output (MIMO) systems using antenna arrays, space-timecoding and BLAST systems. As examples of mobile cellular architectures,TDMA (GSM) and CDMA cellular systems are covered.Finally, in order to initiate hard or soft handoffs, link quality measurement techniques are discussed. Optimal resource allocation in terms of channel assignment techniques are presented and analyzed.Students will be evaluated by means of assignments (25%), a mid-semesterexamination (35%), and a final examination (40%). The course will be offered every other spring, with an anticipated enrollment of 15-30 students."
+    },
+    {
+      "number": 568,
+      "title": "Digital Communications I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE460"
+        ],
+        "concurrent": [
+          "EE560"
+        ]
+      },
+      "description": "Linear and nonlinear digital modulation techniques; performance in additive Gaussian noise channel; continuous phase modulation; carrier acquisition and recovery."
+    },
+    {
+      "number": 569,
+      "title": "Digital Communications II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE560",
+          "EE568"
+        ]
+      },
+      "description": "Baseband pulse transmission; baseband systems optimization; bandlimited channels performance in ISI; equalization; MLSE and ISI; fading channels; diversity; CDMA."
+    },
+    {
+      "number": 573,
+      "title": "Constitution of the Ionosphere",
+      "credits": 3,
+      "description": "Properties of neutral and ionized atmosphere above 60 km; photochemical processes; solar, meteoric perturbations of the ionosphere; large-scale movements in ionization."
+    },
+    {
+      "number": 574,
+      "title": "Propagation Through Random Media",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE430",
+              "EE477"
+            ]
+          }
+        ]
+      },
+      "description": "RF/optical wave propagation through turbulent, turbid, and heterogeneous media (atmosphere/ionosphere/sea). Impacts and mitigation discussed for various scenarios."
+    },
+    {
+      "number": 576,
+      "title": "Inversion Techniques in Remote Sensing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE430",
+              "EE477"
+            ]
+          },
+          "STAT418"
+        ]
+      },
+      "description": "Introduce skills to address a wide variety of inverse problems such as found in atmospheric sensing, geosciences, and acoustics."
+    },
+    {
+      "number": 578,
+      "title": "Radar Systems",
+      "credits": 3,
+      "description": "This course provides a general understanding of radar systems at the graduate level, building upon material covered in undergraduate courses in electromagnetics, signals and systems, and antenna theory. In particular, it investigates the theory of radar systems and subsystems, and continues with the analysis of the radar equation, target detection in noise, and clutter phenomena. It includes radar techniques to enhance high range resolution of targets such as pulse compression. It also considers radar tracking, synthetic aperture radar, radar polarimetry, target recognition, scattering process, radar signal processing, electronic counter-measure techniques, and laser radar. Building on these concepts, students will understand the usage and applications of various types of radar system designs. Students will understand propagation, multi-path, and clutter phenomena and their effects on radar system performance. Students will recognize, identify, and apply proper radar techniques and apply these techniques to a variety of remote sensing radar applications."
+    },
+    {
+      "number": 579,
+      "title": "Microwave Radar Remote Sensing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE430",
+              "EE438"
+            ]
+          }
+        ]
+      },
+      "description": "Scientific and engineering principles of microwave radar remote sensing of land, sea, and the atmosphere."
+    },
+    {
+      "number": 580,
+      "title": "Linear Control Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE380"
+        ]
+      },
+      "description": "Continuous and discrete-time linear control systems; state variable models; analytical design for deterministic and random inputs; time-varying systems stability."
+    },
+    {
+      "number": 581,
+      "title": "Optimal Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE580"
+        ]
+      },
+      "description": "Variational methods in control system design; classical calculus of variations, dynamic programming, maximum principle; optimal digital control systems; state estimation."
+    },
+    {
+      "number": 582,
+      "title": "Adaptive and Learning Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE580"
+        ]
+      },
+      "description": "Adaptive and learning control systems; system identification; performance indices; gradient, stochastic approximation, controlled random search methods; introduction to pattern recognition."
+    },
+    {
+      "number": 584,
+      "title": "Robust Control Theory",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME558"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE580",
+              "ME555"
+            ]
+          }
+        ]
+      },
+      "description": "Fundamentals of Robust Control Theory with emphasis on stability, performance analysis, and design."
+    },
+    {
+      "number": 585,
+      "title": "Convex Optimization",
+      "credits": 3,
+      "internalEquivalents": [
+        "IE585"
+      ],
+      "requisites": {
+        "previous": [
+          "IE505"
+        ]
+      },
+      "description": "This course is designed to provide students with necessary skills to recognize or build convex optimization problems coming from diverse application areas and to solve them efficiently. It consists of five parts: 1) convex sets, 2) convex functions, 3) convex optimization, 4) algorithms and 5) real life applications. In the first part, important examples of convex sets will be given and the operations that preserve convexity of sets will be discussed. The second part will focus on convex functions, their basic properties, and the operations that preserve convexity of functions. In the third part, which is built on the first two parts, convex optimization problems will be formally introduced along with important examples ranging from linear and quadratic to semi-definite programming; second, Lagrange duality and optimality conditions will be covered. The fourth part will focus on the algorithms to solve convex problems and on their computational complexity. In the fifth part, various applications will be covered."
+    },
+    {
+      "number": 586,
+      "title": "Power Systems Dynamics, Stability, and Controls",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE488"
+        ]
+      },
+      "description": "This course provides a broad exploration of the principles of dynamics, stability, and control of power systems. In particular, it focuses on the angle stability aspect. It will cover dynamic modeling requirements of synchronous generators and dynamic load modeling for stability studies, modeling of generator excitation systems, different types of system stability, modeling and analysis of sub-synchronous oscillations, and some selected special topics relevant to modern power systems. Basic notions of Lyapunov stability will be briefly described. The synchronous generator modeling in rotating d-q-0 frame will be presented along with different degree of simplifications, magnetic saturation models, DC and AC excitation system modeling, and corresponding per unit systems. Integration of such models for stability study of multimachine system will be analyzed. Detailed treatment of small-signal stability analysis for a single-machine-infinite-bus system including the effect of excitation systems and design of power system stabilzers will be presented followed by special techniques to analyze small-signal stability of large-scale multi-machine systems. Numerical integration methods for solving the initial value problem of governing differential and algebraic equations describing power system dynamics will be described in the context of transient stability simulations followed by direct method of transient stability analysis. Fundamentals of subsynchronous oscillations and methods for corresponding stability analysis will be discussed. Finally, dynamic modeling of wind generation and VSC HVDC transmission system will be very briefly introduced."
+    },
+    {
+      "number": 587,
+      "title": "Nonlinear Control and Stability",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME559"
+      ],
+      "requisites": {
+        "previous": [
+          "EE380"
+        ]
+      },
+      "description": "Design of nonlinear automatic control systems; phase-plane methods; describing functions; optimum switched systems; Liapunov stability; special topics in stability."
+    },
+    {
+      "number": 588,
+      "title": "Power System Control and Operation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE488"
+        ]
+      },
+      "description": "Steady-state and dynamic model of synchronous machines, excitation systems, unit commitment, control of generation, optimal power flow."
+    },
+    {
+      "number": 589,
+      "title": "Smart Grid Control and Dynamics",
+      "credits": 3,
+      "description": "This course covers the application of advanced power electronics in power apparatus. The ¿rst step is to understand the design of power electronics systems for smart grids.The course starts with an overview of DC/DC converters and covers the controller design for DC/DC converters. Next, voltage source converters and control designs for voltage source converters are covered. Electrical machines are the main components of the smart grid system. Therefore, operation and modeling of AC machines are very important in modern smart grid systems. The additional topics to be covered in this course are: simplified model of an induction machine connected to the grid, modeling and analysis of doubly fed induction generators used in wind farms, modeling and control of permanent magnet synchronous machines, and modeling and analysis of transformers. Next, an overview of mathematical modeling of solar energy systems is provided and different control methodologies are discussed. Next, the state space modeling is covered and the concepts of eigenvalue analysis, Bode plots, and Nyquist stability criterion are implemented to analyze different generation units. Impedance modeling is another technique used to investigate the interactions between renewable energy sources and grids. The basics of impedance modeling technique are covered and case studies are defined to derive the impedance of voltage source converters in smart grids. Dynamic phasor modeling is another technique used to investigate the stability of a dynamic system, especially in unbalanced systems. The main components of dynamic phasor modeling are discussed and an analysis approach is covered to model renewable energy sources in smart grids."
+    },
+    {
+      "number": 594,
+      "title": "Research Projects",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Supervision of individual research projects leading to M.S. or M.Eng. papers. Written and oral reports are required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects including non-thesis research which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "College Teaching Experience"
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal course given on a topical or special interest subject with a professional orientation that may be offered infrequently."
+    }
+  ]
+}

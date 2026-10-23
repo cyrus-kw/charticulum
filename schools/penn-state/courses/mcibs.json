@@ -1,0 +1,217 @@
+{
+  "subject": "MCIBS",
+  "courses": [
+    {
+      "number": 503,
+      "title": "Critical Elements of Genetics and Molecular and Cellular Biology",
+      "credits": 4,
+      "internalEquivalents": [
+        "VBSC503"
+      ],
+      "description": "Foundational topics and critical analysis in evolution, genetics, molecular and cellular biology and cell differentiation. BIOL (/BMMB/MCIBS/VB SC) 503 Critical Elements of Genetics and Molecular and Cellular Biology (4) Central elements in genetics, genomics and molecular and cell biology will be covered. The course will focus on foundational principles and concepts that will allow students to understand the behavior of proteins and organelles within cells, and to appreciate how intracellular events influence interactions of cells with one another in multicellular systems and during development. Another major focus will be genome architecture, both in the context of evolution and gene expression. Students will also learn how genetic approaches can be used to understand cell and molecular biology, and will develop critical thinking skills through the analysis of the primary scientific literature. The course will include lecture and discussion sessions."
+    },
+    {
+      "number": 511,
+      "title": "Molecular Immunology",
+      "credits": 2,
+      "internalEquivalents": [
+        "VBSC511"
+      ],
+      "requisites": {
+        "previous": [
+          "BMB400",
+          "MICRB410"
+        ]
+      },
+      "description": "The study of molecular and biochemical events that influence immune responses and define current questions in immunology. BMMB 511 / MCIBS 511 / VBSC 511 Molecular Immunology (2) The goals of the course are to integrate the current questions of immunology with other disciplines, in particular cell biology and biochemistry, and to provide training in critical thinking and evaluation of data and experiments. The course will be approximately 2/3 lecture by the instructor and 1/3 student presentations of papers related to the material. In addition, written critical reviews of recently published papers and a short research proposal will be assigned. By focusing on the mechanisms involved in immunity and disease, this course complements several existing courses on immunology, virology, and biochemistry. The prerequisites of MICRB 410 and BMB 400 assure that the students enrolling in the course have a general understanding of immunology and biochemistry. This course is projected as an elective for the Molecular Medicine and Immunobiology focus areas in the MCIBS graduate program and for the Pathobiology and BMMB graduate programs. The course will be offered in the fall semester with an enrollment limit of 20 students"
+    },
+    {
+      "number": 530,
+      "title": "Regulation of gene expression by xenobiotics",
+      "credits": 3,
+      "description": "The course examines mechanisms by which foreign chemicals alter gene expression and techniques used to analyze these effects. MCIBS (VB SC) 530 Regulation of Gene Expression By Xenobiotics (3) The goals of the present course are to enhance the students' ability to read, design, implement and discuss studies focusing on how chemicals regulate gene expression. Through the use of current research articles, the students will understand the principles of experimental design. They will learn critical reading skills as well as enhance their own research and problem solving abilities. In addition, an emphasis will be placed on presentation clarity and ability to defend scientific inquiry from peers. Thus students will develop critical communication skills. Each student will give several presentations during the semester (depending on the number of students enrolled), each based on a current journal article. All students are expected to read the article and participate in in-class discussions. This course requires a good understanding of biochemistry and molecular biology."
+    },
+    {
+      "number": 535,
+      "title": "Oncology: Bench to Bedside",
+      "credits": 3,
+      "internalEquivalents": [
+        "VBSC535"
+      ],
+      "requisites": {
+        "previous": [
+          "MCIBS503",
+          "MCIBS590",
+          "BIOL416",
+          "VBSC534"
+        ]
+      },
+      "description": "This course is required for graduate students in the MCIBS program who are in the Cancer Biology Emphasis Area. It is designed to give students who are studying cancer at a molecular, reductive level experience with the clinical aspects of the disease. The course will be held at Mt. Nittany Medical Center once a week for 3 hrs, in both patient-oriented, hands-on and didactic settings to understand how cancer is diagnosed, imaged, and treated, how patient care and side effects of therapy are managed, and the importance of clinical trials in developing new treatments for cancer. For each subject area students will spend 2 hours engaged in a clinical experience related to cancer under the supervision of course directors or additional clinicians at Mt. Nittany, followed by a 1 hour lecture/didactic session on a related topic. In addition to broad learning objectives, this course will make students aware of critical issues in cancer biology and treatment that may serve as a springboard for future research."
+    },
+    {
+      "number": 551,
+      "title": "Genomics",
+      "credits": 3,
+      "description": "This course will deal with the structure and function of genomes including the use of some current web-based tools and resources for studies and research in genomics. The overall objective is to learn current information about the structure and function of genomes, to develop facility in the many web-based tools and resources for further studies and research in genomics, and to appreciate the power and limitations of current resources and knowledge."
+    },
+    {
+      "number": 554,
+      "title": "Foundations in Data Driven Life Sciences",
+      "credits": 3,
+      "description": "Expanded overview of current developments and technique in computational biology and genomics. BMMB (MCIBS) 554 Foundations in Data Driven Life Sciences (3) The successful progression of data-driven biomedical research is obscured by a wide-range of logistical problems related to data handling and processing, a widespread disconnect between developers and consumers of biomedical analysis software, and lack of accessible, well-developed curricula and active learning opportunities necessary for the development of key data analysis skills in the next generation of researchers and clinicians. This course aims a filling these gaps. Topics include fundamental concepts that underpin analysis of sequence data, design of complex experiments, research transparency and reproducibility, as well as result disseminations practices relevant to presentations and publications."
+    },
+    {
+      "number": 555,
+      "title": "Statistical Analysis of Genomics Data",
+      "credits": 3,
+      "internalEquivalents": [
+        "STAT555"
+      ],
+      "description": "Statistical Analysis of High Throughput Biology Experiments."
+    },
+    {
+      "number": 567,
+      "title": "Transcriptomic Analysis",
+      "credits": 3,
+      "description": "RNAseq is one of the most widely used technologies for understanding biology. However, due to a lack of bioinformatic skillset, students are still limited in applying this technology to their research. This course offers an end-to-end understanding of RNAseq analysis for biologists. The target audience is experimental biologists with little experience in bioinformatics. Hence, no prior experience in data analysis is required. The course consists of lectures/discussions and significant hands-on elements with individualized instructor support, covering both theory and tools associated with RNA-seq data analysis. Students will explore experimental design, technology usage, cost estimation, data generation, and data analysis (using command-line and R) of RNAseq data generated from the Illumina sequencing platform. The course is in a 2-week hands-on workshop format with line-by-line code provided, giving students the tools to plan and execute successful RNAseq experiments in their research."
+    },
+    {
+      "number": 571,
+      "title": "Current Issues in Biotechnology",
+      "credits": 2,
+      "description": "Lecture-discussion series by academic and industry experts on the cutting-edge of science, business, intellectual property, legal, social, and ethical issues in biotechnology. The course also requires a group project, involving case studies or market research on various areas of biotechnology. MCIBS 571 Current Issues in Biotechnology (2) Lecture-discussion series by academic and industry experts on the cutting-edge of science, business, intellectual property, legal, social, and ethical issues in biotechnology. The course also requires a group project, involving case studies or market research on various areas of biotechnology."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "title": "Ethics, Rigor, Reproducibility and Conduct of Research in the Life Sciences",
+      "credits": 2,
+      "description": "An examination of ethics, scientific rigor, data reproducibility, and scientific transparency in the conduct of research in life sciences"
+    },
+    {
+      "number": 592,
+      "title": "Current Research Seminar",
+      "credits": 2,
+      "description": "This course uses a weekly biological seminar as a springboard for discussion of a research topic of high current interest."
+    },
+    {
+      "number": 593,
+      "title": "Molecular Biology Laboratory",
+      "credits": 3,
+      "description": "An intensive laboratory course on the principles and techniques of nucleic acid purification, analysis by restriction enzymes, gel electrophoresis, nucleic acid labeling and hybridization, cloning, sequencing, PCR amplification, and analysis of cloned heterologous gene expression by western blotting. MCIBS 593 Molecular Biology Laboratory (3) An intensive laboratory course on the principles and techniques of nucleic acid purification, analysis by restriction enzymes, gel electrophoresis, nucleic acid labeling and hybridization, cloning, sequencing, PCR amplification, and analysis of cloned heterologous gene expression by western blotting."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in teaching and orientation to other selected aspects of the profession at The Pennsylvania State University."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

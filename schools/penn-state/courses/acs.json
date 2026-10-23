@@ -1,0 +1,412 @@
+{
+  "subject": "ACS",
+  "courses": [
+    {
+      "number": 404,
+      "title": "Introduction to Acoustics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "This course will provide an overview and introduction to the field of acoustics from a physics and engineering viewpoint. Topics will include the physics of oscillation and wave motion, frequency spectrum analysis, sound pressure levels, sound wave propagation in air and water, models of sound sources (monopoles, dipoles, quadrupoles, line arrays), standing waves and mode shapes in (string, membranes, pipes), acoustics of large and small rooms, noise and vibration measurements, human hearing and psychoacoustics, loudspeaker design and performance, and other engineering applications."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 501,
+      "title": "Elements of Acoustics and Vibration",
+      "credits": 3,
+      "description": "Vibrational acoustics including mechanical oscillation, forced and damped response, vibration of strings, membranes, rods, bars, and plates. ACS 501 Elements of Acoustics and Vibration (3) Acoustics is a broad subject that crosses and interacts with many engineering, science, mathematics, medical, and artistic disciplines. This course provides a thorough foundation necessary for studying structural acoustics and vibration problems and the exploration of acoustic waves in solids. A detailed analysis of the single-degree-of-freedom mechanical mass-spring system provides the building block for exploring lumped-element models of more complicated acoustic systems and the phenomena of resonance for forced and damped systems. Multiple-degree-of-freedom mechanical systems are used to investigate the coupled oscillation between oscillating systems, the design of vibration absorbers, and methods for modeling the low frequency behavior of guitars, violins, and vented-boxed loudspeakers. Extending the mass-spring model to an infinite number of degrees-of-freedom leads to a development of the wave equation and its solutions for longitudinal acoustic waves in elastic solids. Boundary conditions and the concept of mechanical impedance are used to explore standing waves in a bounded elastic medium and the transmission of waves between media with different elastic properties. Transverse waves on an elastic string, while fundamentally different from longitudinal waves, obey the same differential equation of motion and the same application of boundary conditions and mechanical impedance. For both longitudinal and transverse wave systems, the mechanical impedance approach and the method of separation of variables are used to study systems with specified boundary conditions. Longitudinal and transverse waves in structures with varying cross-section, density, or elastic properties are also explored. Torsional waves in elastic solids are explored with application to systems with various cross-sectional shapes. Membranes serve as a two-dimensional extension of transverse waves on an elastic string, and provide mode shapes which may be described using rectangular and cylindrical coordinates (with Bessel function solutions). The fourth-order differential equation of motion for flexural bending vibrations of thin beams is derived and solutions are explored using the separation of variables approach for boundary value problems. Finally, the flexural vibration of two-dimensional rectangular and circular plates are investigated. Homework problem sets will illustrate theory and applications to real world problems."
+    },
+    {
+      "number": 502,
+      "title": "Elements of Waves in Fluids",
+      "credits": 3,
+      "description": "Thermodynamic and hydrodynamic foundations of linear acoustics in fluids with applications to lumped-elements, reflection, refraction, radiation, attenuation, enclosures, and waveguides. The purpose of this course is to provide the foundation for understanding the behavior of waves in fluids in the \"linear acoustic\" limit for first-year graduate students entering the Graduate Program in Acoustics. The course provides a common ground for students coming from a broad range of varying undergraduate programs in sciences, engineering, mathematics, and the arts. This self-consistent foundation will be built upon an understanding of thermodynamics and the consequences for the behavior of gases and gas mixtures (i.e., ideal gas equations-of-state, heat capacity), and hydrodynamics (both dissipative and non-dissipative) as expressed from the Eulerian perspective. This perspective will be used to develop techniques for understanding oscillations in lumped-element acoustical networks that are smaller than the wavelength of sound and will be applied to extended media in which waves propagate, are reflected and transmitted through interfaces between media with different acoustical properties, and are refracted through media with continuously-varying acoustical properties. The same equations will be applied to the excitation of sound waves that propagate in 3-dimensions by vibrating bodies that are smaller than the wavelength of sound. Those results will be extended by superposition of such \"compact sources\" to produce both discrete and continuous one- and two-dimensional arrays. The directional properties and strength of such extended sources will be examined. The behavior of sound within 3-dimentional rectangular enclosures is studied via the method of \"separation of variables\" to identify the sound modes in such enclosures, their characteristic frequencies, and the selective excitation and detection of such modes. The frequency dependence of the density of modes is introduced to motivate the relationship between the modal and raytracing (i.e., ballistic) perspectives. The techniques of \"statistical energy analysis\" will be applied such enclosures to quantify architectural phenomena such as reverberation time and critical distance. Those results will be extended to non-rectangular enclosures and to rectangular and cylindrical waveguides, focusing on the concept of group and phase speed and the coupling of sources to planewave and higher-order waveguide modes. Attenuation of sound waves is also treated from the hydrodynamic perspective and results are derived for boundary-layer dissipation, classical thermoviscous sound absorption within bulk fluids, and the relaxation-time approximation is applied for sound absorption by chemical association-dissociation in seawater and the effects of humidity on collision-times in air. Problem sets that illustrate the theory and applications are a central component of this course."
+    },
+    {
+      "number": 503,
+      "title": "Signal Analysis for Acoustics and Vibration",
+      "credits": 3,
+      "description": "This course will provide students with an in-depth treatment of time/frequency analysis of acoustic or vibration signals with direct connection to physical measurements. Students will build an awareness of the various techniques of signal analysis and a proficiency with these techniques and the language of signal analysis, skills that will facilitate their independent reading and learning beyond this course. Students will develop their ability to check answers for validity. Applications will be discussed in the context of actual measurements as students explore the implications and limitations of conventional techniques as applied to real signals in the background of real noise. Building on these insights, the students will demonstrate proficiency in the application of the techniques of signal analysis using common analysis-software packages and will develop proficiency in interpretation of the results."
+    },
+    {
+      "number": 505,
+      "title": "Experimental Techniques in Acoustics",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "ACS501",
+          "ACS502"
+        ]
+      },
+      "description": "Properties of acoustical and vibrational transducers, electronic and other instrumentation used in fundamental data measurement, acquisition and analysis."
+    },
+    {
+      "number": 509,
+      "title": "Research Communications in Acoustics",
+      "credits": 3,
+      "description": "This course is intended for all acoustics students interested in pursuing careers in academia or industry. In this course, students will be taught best practices for communicating their research through technical writing and presenting. Students will get the opportunity to practice and receive feedback on selecting and critically reading journal publications, writing grants (including serving on mock grant review panels); writing technical papers, and presenting audiences to persuade and perform."
+    },
+    {
+      "number": 513,
+      "title": "Digital Signal Processing",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Discrete linear systems, transforms, digital filter design and applications, discrete fourier transforms, spectrum analysis."
+    },
+    {
+      "number": 514,
+      "title": "Electroacoustic Transducers",
+      "credits": 3,
+      "description": "The theory, design, and calibration of passive, linear, reciprocal electroacoustic transducers for use in both air and water media."
+    },
+    {
+      "number": 515,
+      "title": "Acoustics in Fluid Media",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EMCH524A"
+        ]
+      },
+      "description": "Wave propagation in stationary and moving fluids; acoustic radiation and scattering; standing waves in ducts and cavities."
+    },
+    {
+      "number": 516,
+      "title": "Acoustical Data Measurement and Analysis",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Presents the engineering applications of recent developments in correlation and spectral analysis to acoustical measurement problems."
+    },
+    {
+      "number": 519,
+      "title": "Sound-Structure Interaction",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACS501",
+          "ACS502",
+          "EMCH524B"
+        ]
+      },
+      "description": "Acoustic radiation from and effects of fluid-loading on vibrating infinite and finite plates and shells. Acoustic transmission through and reflection from elastic plates and shells, acoustic excitation of elastic plates and coupling between panels and acoustic spaces."
+    },
+    {
+      "number": 521,
+      "title": "Stress Waves in Solids",
+      "credits": 3,
+      "internalEquivalents": [
+        "EMCH521"
+      ],
+      "requisites": {
+        "previous": [
+          "EMCH524A",
+          "EMCH524B"
+        ]
+      },
+      "description": "Recent advances in Ultrasonic Nondestructive Evaluation: waves; reflection and refraction; horizontal shear; multi-layer structures; stress; viscoelastic media; testing principles."
+    },
+    {
+      "number": 523,
+      "title": "Signal Analysis for Acoustics and Vibration II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACS503"
+        ]
+      },
+      "description": "This course is concerned with the time and frequency-domain analysis of discrete-time signals and discrete-time linear systems, with an emphasis on developing and applying analysis techniques with applications in acoustics and vibrations. In this course, students will learn how to apply amplitude and frequency modulation to signals, evaluate the stability and causality of systems, extract features from measured acoustic signals, and design and use common filters (i.e. infinite impulse response, finite impulse response, adaptive, and tracking)."
+    },
+    {
+      "number": 524,
+      "title": "Transducers II and Acoustics System Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACS514"
+        ]
+      },
+      "description": "The course covers current research in the design analysis and performance prediction for acoustic transducers and acoustical systems that include transducers. Examples of such systems are microphones, loudspeakers, piezoelectric sources and sensors, and systems that include one or more of these devices. This course builds on the understanding developed in ACS 514 to synthesize knowledge necessary for understanding and analyzing the nonlinearities in transducer systems to enable improved designs with reduced distortion or compensation for nonlinear behavior."
+    },
+    {
+      "number": 530,
+      "title": "Flow-Induced Noise",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACS501",
+          "ACS502"
+        ]
+      },
+      "description": "Introduction to the basic and applied aspects of flow-induced noise created by subsonic flows of various complexities. ACS 530ACS 530 Flow-Induced Noise (3) The objective of this course is to introduce the basic and applied aspects of flow noise created by subsonic flows of various complexities. Basic concepts of noise and pressure fluctuations induced by unsteady fluid flows are discussed, including theoretical as well as experimental approaches. For a given class of flow, mechanisms for the creation of unsteady wall pressures and forces, radiated sound, and fluid-structure interactions are detailed. Various prediction schemes are presented which range from purely theoretical to empirical. The intent is to keep the material practical while at the same time introducing the student to a wide variety of specific topics. Some of the topics to be presented include: basic fluid mechanics, fundamental flow noise theory, flow noise measurement issues including wave vector-frequency spectral estimates of unsteady pressures and forces, compact Green's functions, unsteady forces and noise created by bluff bodies in flow, vortex shedding noise, wall pressure fluctuations and acoustics associated with turbulent boundary layers, including separated layers and transition zones, unsteady forces and noise due to flow over lifting surfaces, edge acoustic scattering mechanisms, axial-flow fan noise, rotor/flow interactions, turbulence ingestion, centrifugal blower noise, and noise generated by flow in pipes. The prerequisite for this course is a solid understanding of the fundamentals of acoustics, as demonstrated by successful completions of ACS 501 and 502 . Students with a minor in Acoustics from accredited universities may also have the proper background to take this course. Although basic fluid mechanics is covered in the course, any previous courses or experience in this area will be beneficial. Homework problems will be assigned weekly and graded. Some of the homework may involve reading technical papers and providing a written synopsis. The average of all homework grades will constitute one-third of the final course grade. Another third will come from the mid-term exam and the final third from the final exam."
+    },
+    {
+      "number": 533,
+      "title": "Outdoor Sound Propagation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACS502"
+        ]
+      },
+      "description": "The course provides an overview of the ongoing research, theory, and practice of outdoor sound propagation, also called atmospheric acoustics. Topics covered include sound propagation over realistic ground surfaces (including barriers and terrain) with temperature gradients and turbulence, computational methods for outdoor sound, outdoor sound metrics, and experimental techniques for measuring sound outdoors. Ongoing research in outdoor sound will be discussed, as prediction of sound levels in complicated environments, including in a real atmosphere and over real ground surfaces, does not match experimental measurements."
+    },
+    {
+      "number": 537,
+      "title": "Noise Control Engineering I",
+      "credits": 3,
+      "description": "As the first of three courses, this course provides an orientation to the program and covers fundamentals of noise control. ACS 537 Noise Control Engineering I (3) This course will introduce students to the application of acoustic and vibration fundamentals to the analysis and reduction of noise and vibration problems in industrial and residential settings. Topics will include: source-path-receiver model, human hearing and psychoacoustics, human response to noise and vibration, sound quality metrics and criteria for quantifying noise, acoustic standards related to noise and vibration control, instrumentation for measuring and analyzing noise and vibration, noise sources (distributed sources, impact sources, flow noise), absorption (materials, measurement, placement), control of sound in large and small rooms, partitions and barriers, mufflers, and vibration control techniques. Homework will combine problem solving with analysis of case studies. Group projects may be used to encourage collaborative approaches to problem solving."
+    },
+    {
+      "number": 540,
+      "title": "Nonlinear Acoustics in Fluids",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACS502"
+        ]
+      },
+      "description": "This course will analyze nonlinear acoustics, the study of loud sound waves where linear acoustics is not a good approximation. Active research in nonlinear acoustics spans many areas including noise control, biomedical ultrasound, underwater acoustics, and in the enhancement and control of industrial processes. This course is primarily focused on the nonlinear acoustics of fluids, but it is also a good background preparation for studies on the nonlinear acoustics of solids."
+    },
+    {
+      "number": 542,
+      "title": "Physical Principles in Biomedical Ultrasonics",
+      "credits": 3,
+      "internalEquivalents": [
+        "EMCH542"
+      ],
+      "description": "Physical principles of advanced ultrasonic imaging and quantitative data acquisition techniques in fields of biology and medicine. E MCH (ACS) 542 Physical Principles in Biomedical Ultrasonics (3) This course focuses on the phenomenon of ultrasound in the context of medical and biological applications, systematically discussing physical principles and concepts. Concepts of wave acoustics are examined and practical implications are explored - first, the generation and nature of acoustic fields and then their formal descriptions and measurement. Real tissues attenuate and scatter ultrasound in ways that have interesting relationships to their physical chemistry, and the course includes coverage of these topics. This course also includes critical accounts and discussions of the wide variety of diagnostic and investigative applications of ultrasound that are available in medicine and biology. The course encompasses the biophysics of ultrasound and its practical applications to therapeutic and surgical objectives. The course utilizes finite element methods for simulation."
+    },
+    {
+      "number": 544,
+      "title": "Computational Acoustics",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ACS501",
+          "ACS502"
+        ]
+      },
+      "description": "This course provides exposure to the field of computational acoustics including several important computational tools such as symbolic mathematics software, finite differences, finite elements, boundary elements, scientific visualization, and sound propagation algorithms. When possible, emphasis will be placed on commercially available software for solving noise and vibration problems. Guidelines will be given for choosing the right numerical approach, generating meshes, and solving problems in active research areas such as product noise, audio and telephony, structural acoustics, and automobile and aircraft interior noise. Time domain, frequency domain, and fluid-structure interaction problems are all addressed."
+    },
+    {
+      "number": 547,
+      "title": "Noise Control Applications",
+      "credits": 3,
+      "description": "Noise Control Applications explores research into predicting noise from sound sources, designing methods to muffle sounds from pipe and duct systems, and ongoing research into acoustic enclosures and vibration control to block noise."
+    },
+    {
+      "number": 549,
+      "title": "Acoustics Functional Materials",
+      "credits": 3,
+      "description": "This course is designed to introduce the latest developments in the emerging field of acoustic functional materials. Students will develop a deep understanding of the fundamental physics that governs interactions between mechanical waves and engineered materials, including phononic crystals, acoustic metamaterials, and metasurfaces. The course covers both analytical and numerical methods, equipping students with the skills to model and analyze the behavior of acoustic functional materials through band structures and effective medium theory."
+    },
+    {
+      "number": 551,
+      "title": "Spatial Sound and 3D Audio",
+      "credits": 3,
+      "description": "This course gives an overview of the recent research in virtual acoustics. These techniques are becoming increasingly more common to provide 3-D sound for home theatre systems, video games, displays for flight simulators, and other virtual reality and immersive environment systems. Virtual acoustic systems are also making their way into cellphones, VOIP and online communication, and automobile sounds. The course is integrative pulling from many subdisciplines of acoustics including psychoacoustics, physical acoustics, signal processing, active acoustic control, architectural acoustics, audio engineering, and computational acoustics."
+    },
+    {
+      "number": 552,
+      "title": "Architectural Acoustics Theory and Applications",
+      "credits": 3,
+      "description": "This course delves into current research into architectural acoustics. Topics will include research into the human auditory system, reflections, absorption, room modes, room impulse response (RIR) measurements, and room acoustics modeling."
+    },
+    {
+      "number": 553,
+      "title": "Signal Analysis for Audio Applications",
+      "credits": 3,
+      "description": "Signal analysis for audio applications provides a deep dive into audio acoustics research as it relates to designing audio devices, including digital audio formats and streaming, audio signal processing, microphone and loudspeaker systems, and audio amplifier design."
+    },
+    {
+      "number": 555,
+      "title": "Applications of Aero and Vibro Acoustics",
+      "credits": 3,
+      "description": "Applications of Aero- & Vibro Acoustics compares the natural frequencies of standing waves on strings and in pipes with the scale and intervals used in music. Current research will be discussed towards modeling acoustic instruments, including nonlinear mechanisms, using the generator-resonator-radiator paradigm."
+    },
+    {
+      "number": 560,
+      "title": "Ocean Acoustics",
+      "credits": 3,
+      "description": "Ocean acoustics will describe an engineering research approach to measuring and modeling sound propagation, reflection, scattering, and transmission in the ocean and seabed. Students will be exposed to the best practices and limitations of current research in ocean acoustics measurement and modeling."
+    },
+    {
+      "number": 580,
+      "title": "Contemporary Research in Acoustics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ACS501",
+              "ACS502",
+              "ACS505",
+              "ACS590",
+              "ACS594"
+            ]
+          }
+        ]
+      },
+      "description": "Contemporary research activities in acoustics: major research thrusts, including current research methodologies and their limitations."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 598,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 894,
+      "title": "Meng Capstone Experience",
+      "credits": 3,
+      "description": "Supervised, professionally oriented student activities that constitute the culminating experience for the program."
+    }
+  ]
+}

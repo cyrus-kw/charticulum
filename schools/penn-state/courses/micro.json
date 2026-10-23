@@ -1,0 +1,124 @@
+{
+  "subject": "MICRO",
+  "courses": [
+    {
+      "number": 550,
+      "title": "Current Topics in Virology",
+      "credits": 1,
+      "description": "This course will investigate current topics related to the field of virology. This may include investifations into host-virus relationships, ciruses as agents causing human disease, co-evoluation of viruses and their hosts, and antivirals and vaccines. The course will be based on primary literature and will involve an analysis and critque or recent advances and technologies."
+    },
+    {
+      "number": 551,
+      "title": "Medical Microbiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MICRO550"
+        ]
+      },
+      "description": "Principles of medical microbiology: host-parasite relationships; structure and function of viruses, bacteria, and fungi as agents causing human disease."
+    },
+    {
+      "number": 560,
+      "title": "Concepts in Immunology",
+      "credits": 2,
+      "description": "Concepts in Immunology is designed to instruct students in immunological topics that are typically not covered in depth in lower-level classes in microbiology and/or immunology. These topics usually represent emerging areas in immunology and the specific interests of the teaching faculty and students registered for the course. This course is team-taught and is offered primarily to graduate students. Most students enrolled in this course are either graduate students in the Virology and Immunology Option (VIRIM) of the Biomedical Sciences (BMS) Program or students in other options of the BMS Program but who are conducting thesis research in laboratories of faculty who are in the Department of Microbiology and Immunology. One major objective of this course is to reinforce the students' knowledge in the fundamentals of immunology and to provide a substantially deeper base of knowledge in selected fundamental areas. Another major objective is to broaden the students' scope of immunological concepts through the teaching of interdisciplinary topics in immunology. In the past, such topics have included neuroimmunology, immunological aspects of aging, immunology of atherosclerosis, regulation of the maternal immune response during pregnancy, and pathogenesis of rheumatoid arthritis. Achieving these objectives is accomplished though a combination of didactic lectures and readings/discussion of both primary and review literature. This course is typically offered in the Spring semester of each year and class enrollment usually ranges between three and six students."
+    },
+    {
+      "number": 572,
+      "title": "Literature Reports",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 99
+      },
+      "description": "Weekly analysis of current literature in microbiology."
+    },
+    {
+      "number": 581,
+      "title": "Immunology A: Basic Concepts in Innate and Adaptive Immunity",
+      "credits": 1,
+      "description": "Discuss innate immune mechanisms and the basic concepts and molecular/ cellular components of adaptive immune system. MICRO 581 Immunology A: Basic Concepts in Innate and Adaptive Immunity (1) This course will cover basic concepts, molecular/cellular components, and recognition mechanisms of innate immune system. It will also include an introduction of the molecular/cellular components of the adaptive immune system. Lectures are based on research literature, although an Immunology textbook will be recommended to the students."
+    },
+    {
+      "number": 582,
+      "title": "Immunology B: Adaptive Immunity",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "MICRO581"
+        ]
+      },
+      "description": "Discuss adaptive immune mechanisms. MICRO 582 Immunology B: Adaptive Immunity (1) This course focuses on the mechanisms in the development, activation, and effector functions of the adaptive immune system. It covers the development and activation of lympocytes, humoral and cellular immunity, cytokines, as well as immunological techniques."
+    },
+    {
+      "number": 583,
+      "title": "Viral Vectors",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "Use and design of viral vectors in research land use in gene therapy; exploration of viral vector strengths and limitations. MICRO 583 Viral Vectors (1) This course is designed to provide the student with the \"big picture\" regarding the properties, design, and use of viral vectors within the research laboratory. A basic understanding on the construction of viral vectors, the various methods used for transfection, choice of promoters, as well as considerations regarding Kozak's rules, distance requirements between the 5'-end and the ATG, internal initiation sites, splicing signals, nuclear export signals, polyadenylation etc. In addition, emphasis will also be placed on the future role vial vectors will play in gene therapy and vaccination. One of the strengths of this course is that it will address a subject in translational medicine that is rapidly evolving and the students will be exposed to the dynamic aspects regarding the development of viral vectors for their eventual use in treatment of disease."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are suprvised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Teaching students laboratory techniques and tests that are used to identify microorganisms and to aid in the diagnosis of disease."
+    }
+  ]
+}

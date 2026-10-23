@@ -1,0 +1,837 @@
+{
+  "subject": "WFED",
+  "courses": [
+    {
+      "number": 1,
+      "title": "Education for Work: Trends and Issues",
+      "credits": 3,
+      "description": "Overview of the history and philosophies of education for employment, current issues, and school to work transition system."
+    },
+    {
+      "number": 99,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest. Several different topics may be taught in one year or semester. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 100,
+      "title": "Orientation to Teaching Vocational Industrial Education/Health Occupations Education Subjects",
+      "credits": 2,
+      "description": "Basic elements of preparing to teach vocational trade and industrial/health occupations education subjects in the schools of Pennsylvania."
+    },
+    {
+      "number": 101,
+      "title": "Early Field Experience in Teaching Vocational Industrial Education/Health Occupations Education Sub",
+      "credits": 1,
+      "description": "Discussion and observation of in-school practices to aid the student in making vocational industrial education/health occupations education career decisions."
+    },
+    {
+      "number": 105,
+      "title": "Integrated Curriculum Implementation",
+      "credits": 3,
+      "description": "Occupational analysis for instructional planning; emphasis on instructional methods to deliver a competency based program in an integrated learning environment."
+    },
+    {
+      "number": 106,
+      "title": "Program and Facilities Management",
+      "credits": 3,
+      "description": "Organization and management of learning laboratory to facilitate the delivery of a competency based program in a safe environment."
+    },
+    {
+      "number": 119,
+      "title": "Career Planning and Life Design",
+      "credits": 3,
+      "attributes": [
+        "GHW"
+      ],
+      "description": "This course offers a comprehensive exploration of health and wellness through the lens of life-span career development and personal growth. Students embark on a transformative journey that integrates multiple dimensions of wellness-emotional, spiritual, environmental, physical, social, intellectual, and occupational-while developing career planning strategies that promote lifelong well-being. The curriculum emphasizes self-awareness and identity exploration as foundational to health maintenance, examining how personal identity, strengths, and values contribute to overall wellness, particularly in occupational health, self-actualization, and holistic well-being. Students learn to recognize and navigate the connections between professional choices and health outcomes, understanding how career decisions influence various wellness dimensions while developing strategies for maintaining balance and preventing career-related health risks. Beyond individual wellness, the course examines how students can become advocates for well-being in their professional and community roles, including exploring how organizational leadership can foster collective health and create healthier work environments. Through narrative creation and goal-setting exercises, students develop actionable strategies to identify potential health risks such as burnout, stress, and addiction in career pathways, create preventive measures for maintaining wellness across life stages, design sustainable approaches to work-life balance, and implement health-promoting practices in various professional contexts. The course culminates in the creation of comprehensive career and life plans that integrate professional aspirations with wellness strategies addressing all dimensions of health and the demands of various life roles, preparing students to be successful professionals and advocates for holistic well-being in their communities."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 197,
+      "suffix": "G",
+      "title": "Special Topics - GenEd",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "GQ"
+      ],
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course"
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest. Several different topics may be taught in one year or semester. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 207,
+      "suffix": "W",
+      "title": "Assessment Techniques",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "WFED105"
+        ]
+      },
+      "description": "Assessment, recording, and reporting of learning in an integrated competency based vocational education system."
+    },
+    {
+      "number": 270,
+      "title": "Introduction to Industrial Training",
+      "credits": 3,
+      "description": "Overview of training profession. Introduction to economic and psychological foundations. Examination of relationship of industrial training to education. WF ED 270 Introduction to Industrial Training (3) This course is designed to prepare individuals for a variety of training practitioner roles in businesses and industry. This course is actually the first of two courses and is an introduction to the required core courses for emphasizing the training and development professional curriculum in the Department of Adult Education, Instructional Systems and Workforce Education and Development. It is the intent of this course to equip participants with entry-level knowledge and skill to successfully pursue other designated professional core courses on needs assessment, organization development, and cross-cultural training. All of theses courses fall into the category called Human Resource Development (HRD).Industry trainers have had the opportunity to provide formal training to many persons with a wide variety of skills and competencies. Previous train-the-trainer courses in this series have addressed presentation techniques, assessment, facilities management and safety. This course will help trainers gain a total understanding of their role in the larger picture of Human Resource Development. Although traditional education is often focused on helping individuals lead better lives, training is usually focused specifically on the work that people do in one organizational setting. HRD deals with the financial value of human beings to organizations. In this course, the HRD field will be examined with respect to the training component with which participants are connected."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest. Several different topics may be taught in one year or semester. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 310,
+      "title": "Leadership Competencies for Supervisors",
+      "credits": 3,
+      "description": "Designed to teach contemporary supervisory leadership competencies for mid- career learners with front-line supervisory responsibilities in the workplace. WF ED 310 Leadership Competencies for Supervisors (3) Leadership Competencies for Supervisors is a course designed primarily for adult learners engaged in supervisory roles and functions in the workplace. Its purpose is to ensure that all students are equipped with the contemporary supervisory leadership competencies that are needed to function effectively in today's workplace. Upon completion of this course, the student should be able to a) Recognize the important role and function of supervisory leadership, b) Relate common critical situations experienced by supervisors and how they were handled, c) Demonstrate proficiency in competency areas important to supervisory success such as effective communication strategies, methods for resolving conflict, managing employees, etc., and d) Demonstrate ability to develop individuals and teams. Students will be assessed and evaluated through quizzes, instructor and peer observation, self-assessments and reflection, and demonstration of project deliverables."
+    },
+    {
+      "number": 323,
+      "title": "Vocational Student Organizations",
+      "credits": 3,
+      "description": "Methods in originating, managing, and advising vocational student organizations."
+    },
+    {
+      "number": 395,
+      "suffix": "A",
+      "title": "Trade and Industrial Occupational Experience",
+      "credits": {
+        "min": 1,
+        "max": 8
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "description": "Individual work experience in manufacturing environment or skilled craft area to develop professional competence in specific occupation."
+    },
+    {
+      "number": 395,
+      "suffix": "B",
+      "title": "Occupational Resources Competence",
+      "credits": {
+        "min": 1,
+        "max": 8
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "description": "WF ED 395B Occupational Resources Competence (1-8 per semester/maximum of 24) Occupational Resources Competence is a course designed primarily for adult learners who demonstrate an adequate understanding of contemporary resource usage and management related competencies that are needed to function effectively in today's global business environment. These competencies include: resource usage, resource management, computer and basic literacy, and understanding of systems in the workplace. Students will demonstrate competence through documentation of tasks performed and reflection on specialized accomplishments."
+    },
+    {
+      "number": 395,
+      "suffix": "C",
+      "title": "Occupational and Professional Competence",
+      "credits": {
+        "min": 1,
+        "max": 8
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "description": "WF ED 395C Occupational and Professional Competence (1-8 per semester/maximum of 24) Occupational and Professional Competence is a course designed primarily for adult learners who demonstrate an adequate understanding of contemporary professional mastery related competencies that are needed to function effectively in today's global business environment. These competencies include: interpersonal competence, oral and written communication, conceptual thinking, learning and information, self-responsibility and management in the workplace. Students will demonstrate competence through documentation of tasks performed and reflection on specialized accomplishments."
+    },
+    {
+      "number": 395,
+      "suffix": "D",
+      "title": "Occupational Work Experience",
+      "credits": {
+        "min": 1,
+        "max": 8
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "description": "Individual work experience in the manufacturing, health, service, or financial arena."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest. Several different topics may be taught in one year or semester. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 402,
+      "title": "Supervision of Vocational Education",
+      "credits": 3,
+      "description": "For administrators, supervisors, and teachers responsible for improvement of instruction through supervision or for students preparing for supervisory work."
+    },
+    {
+      "number": 403,
+      "title": "Technologies for Work Effectiveness",
+      "credits": 3,
+      "description": "This seminar-style course is designed to provide workforce professionals with opportunities to learn about contemporary workplace technologies, tools and platforms, share experiences, and to be able to make informed decisions regarding their use. The course will focus on technology affordance in specific contexts and a deeper understanding of the use of such technologies in terms of their benefits, costs and implementation challenges."
+    },
+    {
+      "number": 405,
+      "title": "Project Management for Professionals",
+      "credits": 3,
+      "description": "Covers the essential concepts and skills needed to make effective contributions on projects, on time and within budget. WF ED (ENGR) 405 Project Management for Professionals (3) Professionals in the workplace carry out many different projects every day ranging from somewhat small tasks, e.g.,planning events and designing courses, to big projects, e.g., launching an enterprise wide system. Project Management for Professionals is a practical \"hands-on\" course designed for mid-career adult students and covers the essential concepts and skills needed to make effective contributions and have an impact on the successful accomplishment of projects on time and within budget. Project management principles and techniques are presented with an emphasis on how they are applied to real world workforce development projects. Topics include the project management life cycle and process; techniques for planning, scheduling, budgeting, and controlling project performance; project manager responsibilities and skills; project team development and effectiveness; project communication; and organization structures."
+    },
+    {
+      "number": 410,
+      "title": "Leadership Competencies for Professionals",
+      "credits": 3,
+      "description": "Designed to teach contemporary professional leadership competencies for workforce professionals who do not currently have supervisory responsibilities. WF ED 410 Leadership Competencies for Professionals (3) Leadership Competencies for Professionals is a course designed primarily for adult learners who demonstrate high leadership potential and who may not have significant supervisory and managerial responsibilities. Its purpose is to ensure that all students develop an adequate understanding of the contemporary professional leadership competencies that are needed to function effectively in today's global business environment. These competencies include: collaboration / multi-disciplinary team-building, leadership in diversely distributed team environments, interpersonal communication in the workplace, conflict resolution / human performance management, project management, problem-solving / creative thinking / ethical decision making, and contemporary and emerging technology usage. Students will be assessed and evaluated through quizzes, instructor and peer observation, self-assessments and reflection, and team projects and presentations."
+    },
+    {
+      "number": 411,
+      "title": "Occupational Safety and Health for Workforce Education and Development Professionals",
+      "credits": 3,
+      "description": "This course assists participants in creating and supporting workplaces and educational environments free of occupational safety and health hazards. WF ED 411 Occupational Safety and Health for Workforce Education and Development Professionals (3) This course is designed to offer participants the knowledge and skills they need to create and support workplaces and educational environments free of occupational safety and health hazards. It provides Occupational Safety and Health Administration (OSHA) compliance and workplace safety training to educators, managers, supervisors, and other employees in the Career and Technical Education field as well as the Oil and Gas Drilling Industry, Advanced Manufacturing, and Construction industries."
+    },
+    {
+      "number": 413,
+      "title": "Workforce Education for Diverse Learners",
+      "credits": 3,
+      "description": "This course assists students in creating and supporting educational environments which promote enhanced learning and skill development for diverse learners. A primary focus is placed on program modifications, supplementary services, and resources required for diverse learners (including learners with disabilities) in workforce development and education programs. Topics such as the role of assessment and how it can be utilized to bring about positive changes in curriculum and pedagogy to promote the transfer of learning will be addressed. This course will also introduce participants to instructional tools and strategies that will help teach to multiple levels of student abilities. Workforce education program modifications, supplementary services, and resources required for diverse learners will be provided throughout this course. Students will also learn to develop specialized adaptations and accommodations for diverse learners."
+    },
+    {
+      "number": 414,
+      "title": "Teaching Career and Technical Education Content to Diverse Learners",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "WFED105"
+        ]
+      },
+      "description": "This course explores the legal aspects of transitioning students from school to college and work, to assist Career and Technical Education (CTE) teachers in becoming active participants in assisting learners with special needs. Topics such as the role of assessment and how it can be used to bring about positive changes in curriculum and pedagogy to promote enhanced learning and skill development will be addressed. This course will also introduce participants to instructional tools and strategies that will help teach to multiple levels of student abilities. This course explores the legal aspects of transitioning students from school to college and work, to assist Career and Technical Education (CTE) teachers in becoming active participants in assisting learners with special needs. Topics such as the role of assessment and how it can be used to bring about positive changes in curriculum and pedagogy to promote enhanced learning and skill development will be addressed. This course will also introduce participants to instructional tools and strategies that will help teach to multiple levels of student abilities. Workforce education program modifications, supplementary services, and resources required for diverse learners will be provided throughout this course. Students will learn to develop specialized adaptations and accommodations based on educational research to promote the transfer of knowledge and skill. Special attention will be placed on data driven decisions in workforce education and the role CTE teachers."
+    },
+    {
+      "number": 424,
+      "title": "Facilitating Career Development",
+      "credits": 3,
+      "description": "This course provides individuals with relevant skills and knowledge to assist others in planning careers and obtaining meaningful work. CN ED (WF ED) 424 Facilitating Career Development (3) This course provides individuals with relevant skills and knowledge to assist others in planning careers and obtaining meaningful work. This course addresses the following 12 Career Development Facilitator (CDF) competencies: 1) helping skills, 2) labor market information and resources, 3) assessment, 4) diverse populations, 5) ethical and legal issues, 6) career development models, 7) employability skills, 8) training clients and peers, 9) program management/implementation, 10) promotion and public relations, 11) technology, and 12) consultation. These 12 competencies are identified by the National Career Development Association (NCDA) for those who (will) deliver career development programs and services in a variety of settings. Potential job titles of CDFs include career group facilitator, job search trainer, career resource center coordinator, career coach, career development case manager, intake interviewer, occupational and labor market information resource person, human resource career development coordinator, employment/placement specialist, and workforce development staff. With certain years of work experience in career development, students who complete this course are eligible to apply for the Global Career Development Facilitator (GCDF) certification through the Center for Credentialing & Education (CCE), which is affiliated with the National Board for Certified Counselors (NBCC). A GCDF is a person who works in any career development setting or who incorporates career development information or skills in their work with students, adults, clients, employees, or the public. As of January 2011, about 18,000 individuals acquired the GCDF certification world-wide including Bulgaria, Canada, China, Germany, Japan, Romania, Turkey, South Korea, and New Zealand. The goal of the GCDF credential was to provide standards, training specifications, and credentialing for diverse career development practitioners. This GCDF credential differentiates two levels of career practice, which are 1) career counseling and 2) career facilitation that does not require a counseling degree. This differentiation reflected the reality where many individuals who are currently providing career assistance are not professional counselors. This course is taught by a nationally and internationally trained CDF Instructor (CDFI) who is certified by the NCDA. In addition, the CDF curriculum is updated every three years by the Career Development Leadership Alliance (CDLA) under the supervision of the NCDA CDF Advisory Council in order to keep up with recent changes in the field."
+    },
+    {
+      "number": 428,
+      "title": "Fiscal Accounting and Management for Workforce Development Professionals",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "This course explores the subject of accounting through the sub-disciplines of financial and managerial accounting for Workforce Development Professionals."
+    },
+    {
+      "number": 441,
+      "title": "Conceptual and Legal Bases for Cooperative Vocational Education",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "WFED445"
+        ]
+      },
+      "description": "History, conceptual and legal bases for a cooperative vocational education program."
+    },
+    {
+      "number": 442,
+      "title": "Operating Cooperative Vocational Education Programs",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "WFED441"
+        ]
+      },
+      "description": "Student and training station selection, training plan and related subject development, records and reporting systems, school-industry coordination."
+    },
+    {
+      "number": 445,
+      "title": "Vocational Guidance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "WFED105"
+        ]
+      },
+      "description": "Problems and possibilities of vocational guidance; the field of guidance and guidance literature; methods of field work; school guidance techniques."
+    },
+    {
+      "number": 450,
+      "title": "Cultural Diversity in the Workplace",
+      "credits": 3,
+      "attributes": [
+        "US",
+        "IL"
+      ],
+      "description": "Provides opportunities for students to explore different cultures and mores that are changing the dynamics of the workplace."
+    },
+    {
+      "number": 451,
+      "title": "Lean-Sigma for Professionals",
+      "credits": 3,
+      "description": "The course focuses on essential lean and six sigma concepts to improve processes in any industry."
+    },
+    {
+      "number": 471,
+      "title": "Training in Industry and Business",
+      "credits": 3,
+      "description": "Appraisal of training functions and development of competencies in work analysis, design, development, delivery, and evaluation of training."
+    },
+    {
+      "number": 472,
+      "title": "Platform Skills for Workplace Learning and Performance",
+      "credits": 3,
+      "description": "Platform skills focuses on theory and practice related to delivering well-crafted and effective training presentations. Platform skills are particularly critical in business, industry and technical education, as the content covered in these fields involves direct application of the cognitive, affective and psychomotor learning domains in real world situations. Therefore, the purpose of this course is to provide participants with the skills and abilities needed to develop and deliver high quality professional presentations within business, industry and applied educational settings. Through this highly dynamic and interactive course, students will enjoy using their creativity to successfully communicate important information through oral presentations. A major emphasis will be placed experiential teaching and learning techniques and theory to practice connections which will enable participants to develop and deliver well-crafted and effective training presentations, while having fun in the process."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "title": "Cooperative Education Practicum",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "WFED445"
+        ]
+      },
+      "description": "Validation of competencies learned in prerequisite courses during interaction with professional staff while functioning under the supervision of a certified cooperative coordinator."
+    },
+    {
+      "number": 495,
+      "suffix": "C",
+      "title": "Student Teaching",
+      "credits": 10,
+      "repeatable": {
+        "maxCredits": 10
+      },
+      "description": "Supervised observation and practice teaching in approved vocational industrial schools/health occupations education settings."
+    },
+    {
+      "number": 495,
+      "suffix": "D",
+      "title": "Instructional Internship in Industrial Training",
+      "credits": 5,
+      "requisites": {
+        "previous": [
+          "WFED105",
+          "WFED106",
+          "WFED207W",
+          "WFED270",
+          "WFED471"
+        ]
+      },
+      "description": "Supervised internship in industrial training. Interns will be expected to perform instructional duties in industrial environments."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest. Several different topics may be taught in one year or semester. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 501,
+      "title": "Scholarly Writing for Workforce Education and Development",
+      "credits": 3,
+      "description": "This course is grounded in the current research literature, theoretical frameworks, analysis, and methodologies within the discipline of Workforce Education and Development. Within this course students will engage in synthesis of knowledge and analytical work. The objective of this course is to contribute to the student's ability to expand the frontiers of knowledge, and produce creative scholarly writing products with a particular focus on scholarship within the field of Workforce Education and Development. The course content includes: (1) Research literature and theoretical frameworks in Workforce Education and Development; (2) The annotated bibliography foundation; (3) Analysis and methodologies within Workforce Education and Development; (4) The literature review process; (5) Developing positive writing habits; (6) Writing for publication in Workforce Education and Development; (7) Research presentation formats; and (8) Enhancement of Scholarship for the future."
+    },
+    {
+      "number": 508,
+      "title": "Workforce Education Management",
+      "credits": 3,
+      "description": "Introduction to theories and concepts of managing workforce education programs in the public and private sector."
+    },
+    {
+      "number": 518,
+      "title": "Curriculum and Instructional Leadership for Workforce Education",
+      "credits": 3,
+      "description": "Study of topics related to curriculum and instructional leadership in workforce education in the public and private sectors."
+    },
+    {
+      "number": 528,
+      "title": "Fiscal and Facilities Management for Vocational Administrators",
+      "credits": 3,
+      "description": "Sources of revenue, budget preparation, purchasing, and the management of physical facilities in vocational education."
+    },
+    {
+      "number": 529,
+      "title": "Ethical Issues in Workforce Education and Development",
+      "credits": 3,
+      "description": "A study of ethical issues in workforce education environments in inudstry and education."
+    },
+    {
+      "number": 538,
+      "title": "Administering Personnel Services in Vocational Education",
+      "credits": 3,
+      "description": "Planning and implementing staff development activities, student guidance services, admissions, student organizations, and placement."
+    },
+    {
+      "number": 540,
+      "title": "Data Analysis in Workforce Education and Development",
+      "credits": 3,
+      "description": "Provides opportunities to acquire and practice skills in descriptive and inferential statistics."
+    },
+    {
+      "number": 543,
+      "title": "Evaluation of Investments in Workforce Education and Development",
+      "credits": 3,
+      "description": "Use of labor supply models to evaluate investments in workforce education and development."
+    },
+    {
+      "number": 544,
+      "title": "Analysis of Policies for Workforce Education and Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "WFED550"
+        ]
+      },
+      "description": "Explores models and methods for analyzing policies for workforce education."
+    },
+    {
+      "number": 546,
+      "title": "Work Based Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "WFED441"
+        ]
+      },
+      "description": "Discussion of legislation and educational requirements for education based at the worksite including cooperative education, youth apprenticeship, and apprenticeship programs."
+    },
+    {
+      "number": 550,
+      "title": "Research in Workforce Education",
+      "credits": 3,
+      "description": "Research techniques in workforce education."
+    },
+    {
+      "number": 560,
+      "title": "Historical and Philosophical Foundations of Workforce Education",
+      "credits": 3,
+      "description": "An investigation of historical, philosophical, and professional foundations of workforce education."
+    },
+    {
+      "number": 572,
+      "title": "Foundations in Organization Development and Change",
+      "credits": 3,
+      "description": "Development of major concepts, skills and techniques required by workplace learning professionals to support and facilitate organization change."
+    },
+    {
+      "number": 573,
+      "title": "Needs Assessment for Workforce Development Professionals",
+      "credits": 3,
+      "description": "Acquire skills to identify training and development needs, distinguish problems with management versus training solutions, develop and evaluate training solutions. WF ED 573 Needs Assessment for Workforce Development Professionals (3) WF ED 573 is designed for workforce development professionals to familiarize them with the models, concepts, and techniques for designing, implementing, and analyzing the results of training needs assessments in organizations. After successfully completing this course, they will have the necessary skills and competencies to identify human performance problems, distinguish between training and non-training plans of action, and design and develop appropriate plans of action in response to human performance problems."
+    },
+    {
+      "number": 578,
+      "title": "Process Consultation in Organization Development",
+      "credits": 3,
+      "description": "This course provides a foundation in process consultation. Process refers to how groups interact and how people get along."
+    },
+    {
+      "number": 582,
+      "title": "Assessing Data: Organizational Diagnosis",
+      "credits": 3,
+      "description": "This course familiarizes students with approaches to assessing and feeding back data in organization development (OD) and consulting services. WF ED 582 Assessing Data: Organizational Diagnosis (3) This course familiarizes students with approaches to assessing and feeding back data in organization development (OD) and consulting services. It helps students to develop the specialized competencies essential to diagnosing organizations for change efforts/interventions.Students in the course will learn various ways by which to define and conceptualize assessment, feedback, and diagnosis for OD and consulting efforts. Students will learn how to distinguish between the unique approaches to organizational diagnosis used by OD consultants and by management consultants to detect the underlying root causes of problems rather than the mere symptoms of such problems. OD consultants who work inside organizations (internal consultants) may face unique challenges in organizational diagnosis that differ from those challenges faced by consultants who are brought in from outside (external consultants), and this course will explore those challenges faced by each type of consultant and how those consultants may overcome those special challenges. The course will encourage students to identify the consulting competencies that OD consultants need to diagnose organizational problems, and the students will be invited to compare themselves to those competencies so that they will know what special skills they need to develop to be effective organizational diagnosticians and how to develop those skills. The course reviews the important elements necessary in establishing a strategic diagnostic plan for OD, implementing it, and evaluating the assessment and feedback strategy. Students will learn how to demonstrate the skills essential to separating symptoms (presenting problems) from underlying root causes during initial meetings and contacts with prospective OD sponsors and clients. Additionally, the course will examine how to prepare assessment and feedback protocols and reports for OD and change management interventions. Finally, the course will summarize current thinking and research on organizational diagnosis, assessment and feedback methods as well as ethical issues affecting organizational diagnosis and OD assessment and feedback."
+    },
+    {
+      "number": 585,
+      "title": "Appraising Organization Change and Development and Consulting",
+      "credits": 3,
+      "description": "This course familiarizes students with approaches to evaluating organization development (OD) and consulting services."
+    },
+    {
+      "number": 588,
+      "title": "Platform Skills for Human Resource Development Professionals",
+      "credits": 3,
+      "description": "Platform skills focuses on theory and practice related to delivering well-crafted and effective training presentations."
+    },
+    {
+      "number": 590,
+      "title": "Industrial Training Professional Seminars",
+      "credits": 1,
+      "description": "Study of special topics relating to problems, practices, methodologies and special competency needs in industrial training."
+    },
+    {
+      "number": 595,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      }
+    },
+    {
+      "number": 595,
+      "suffix": "A",
+      "title": "Field Based Project for Workforce Development Professionals",
+      "credits": {
+        "min": 2,
+        "max": 5
+      },
+      "repeatable": {
+        "maxCredits": 5
+      },
+      "description": "WF ED 595A Field Based Project for Workforce Development Professionals (2-5 per semester/maximum of 5) WF ED 595A is a field based experiential learning course for students to identify a training and/or organization development project in business, industry, or government and carry out contract problem analysis and resolutions."
+    },
+    {
+      "number": 595,
+      "suffix": "B",
+      "title": "Workforce Education Administrative Internship",
+      "credits": {
+        "min": 2,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised study with an administrator or researcher at a cooperating school, state governmental agency, or research institution."
+    },
+    {
+      "number": 595,
+      "suffix": "C",
+      "title": "Internship in Cooperative Vocational Education",
+      "credits": {
+        "min": 1,
+        "max": 10
+      },
+      "repeatable": {
+        "maxCredits": 10
+      },
+      "requisites": {
+        "previous": [
+          "WFED441",
+          "WFED442"
+        ]
+      },
+      "description": "Validation of teaching and co-op coordinator competencies learned in prerequisite courses during interaction with professional staff while functioning under the supervision of a certified cooperative coordinator."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topic or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 597,
+      "suffix": "A",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "An opportunity for graduate students to teach a college level course under the supervision of an experience professor."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 806,
+      "title": "Program and Facilities Management for Work Force Development Professionals",
+      "credits": 3,
+      "description": "This course examines advanced learning laboratory organization and management processes to facilitate learning and skill development in a safe environment. WF ED 806 Program and Facilities Management for Work Force Development Professionals (3) Program and Facilities Management for Workforce Development Professionals thoroughly examines the two categories of managing an educational laboratory, which include the physical operations and program management responsibilities. The physical operations deal with the actual physical facility including the building, tools, equipment, and maintenance. The program management aspect deals with the safety organization and the functionality of the environment. This course will present advanced principles of managing facilities and focus on the safety and functionality aspects that are imperative in the development of successful learning environments. Additionally, students will explore advanced concepts of occupational safety and health as defined by the U.S. Department of Labor (i.e., OSHA & NIOSH), which are vital to every technical program and workplace. Emphasis will be placed on the individual laboratory and instructional strategies regarding safety within the educational environment and greater world-of-work. Throughout the course students will read and reflect upon practical, theoretical and research oriented literature about occupational education programs and facilities management, laboratory supervision and instruction as well as on occupational safety and health. At the end of the semester, students will design and showcase a comprehensive safety implementation plan, which promotes successful management, supervision and instruction."
+    },
+    {
+      "number": 807,
+      "title": "Career and Technical Student Organizations (CTSOs)",
+      "credits": 3,
+      "description": "This course examines principles and practices of Career and Technical Student Organizations to promote enhanced learning and skills development. WF ED 807 Career and Technical Student Organizations (CTSOs) (3) This course examines principles and practices of organizing, managing and advising Career and Technical Student Organizations (CTSOs) to promote enhanced learning and skill development within Career and Technical Education (CTE). Emphasis is placed on the integral relationship between CTSOs and CTE, as well as advisor responsibilities. Students will learn specific procedures for establishing programs of work; incorporating local, state and national events and activities into career and technical curriculum and instruction; advisor roles and ethical imperatives; financial operations; integration of academics; public relations; and student recruitment and retention."
+    },
+    {
+      "number": 808,
+      "title": "Assessment Techniques in Workforce Education",
+      "credits": 3,
+      "description": "This course examines advanced assessment techniques associated with learning in an integrated competency-based Career and Technical Education (CTE) program. This course examines advanced assessment techniques as well as recording and reporting procedures to promote enhanced learning and skill development within Career and Technical Education (CTE). Emphasis is placed on the integral relationship between competency-based learning and CTE, as well as instructor responsibilities. This course is designed to provide students with an opportunity to develop the competencies needed to facilitate their implementation and management of a classroom- and laboratory-based assessment program."
+    },
+    {
+      "number": 852,
+      "title": "Global Talent Development",
+      "credits": 3,
+      "description": "Global Talent Development (GTD) is the systematic process of developing employees to be in the right place at the right time to do the right things to achieve the right results in ways that align with business strategy, organizational values, and organizational ethics. The Global Talent Development Leader is the person in the organization who facilitates this process. Part of a larger talent management effort, GTD emphasizes growing the organization's internal talent to meet present and future needs."
+    },
+    {
+      "number": 865,
+      "title": "Implementing Training as an Organization Development Intervention",
+      "credits": 3,
+      "description": "In this course, students will be asked to do more than accept the conventional wisdom of organization development and change. Students will look at the standard approaches and then beyond them to examine critically the processes associated with planning, developing, and implementing training and development programs in the context of the whole organization. Students will focus on how to create changes that take into account the individuals who comprise the organization at the same time that the changes improve the organization's overall effectiveness. A key point of emphasis will be the connection between the models, theories, and strategies and the students' workplaces and their professional practices. Students will be encouraged to share stories about their experiences - both past and current - that illustrate or raise questions about concepts discussed in the course"
+    },
+    {
+      "number": 870,
+      "title": "Whole System Change for Workforce Professionals",
+      "credits": 3,
+      "description": "The Whole System Change Approach is a change model for transforming any business into a thriving organization by aligning internal systems with external forces and engaging every person in an organization. This course provides the background and theory for building a Whole System Change Approach that is sustainable and strategic. The approach is intended to alter the relationship between an organization and its environment, and to affect outcomes at the organization level, including revenue, profitability, and culture. WFED 870 (Whole System Change) is designed to familiarize students with the Whole System Change Approach, including models, concepts, techniques for designing large-scale changes, implementing, and evaluating results of the whole system change intervention in organizations."
+    },
+    {
+      "number": 875,
+      "title": "Current Policy and Practices in Organization Development",
+      "credits": 3,
+      "description": "The purpose of this course is to explore current policy and practices in contemporary organizations. This course is designed to familiarize students with recent trends, practices, theories, research, and cases. This knowledge will prepare students to become competitive OD/HRD professionals."
+    },
+    {
+      "number": 876,
+      "title": "Facilitating Organization Development and Change Through Technology",
+      "credits": 3,
+      "description": "This course aims to equip OD/HRD professionals with the technological acumen necessary for their consulting practice and work efficiency. Emerging topics such as security and big data have become integral to technology usage in the workplace. In this course, students will learn about such trends and develop an understanding of how to intervene in organization processes to improve performance by utilizing technological tactics and software programs to gather, visualize, and present data to client organizations. Other tools and technologies that enhance knowledge management, team-building, and project management will also be explored."
+    },
+    {
+      "number": 877,
+      "title": "Training-Group Seminar",
+      "credits": 1,
+      "description": "This course familiarizes students with self as an instrument of change and sensitizes individuals to their role in group dynamics."
+    },
+    {
+      "number": 880,
+      "title": "Facilitating Groups and Teams",
+      "credits": 3,
+      "description": "This course provides students with necessary skills to facilitate small groups and teams. WF ED 880 Facilitating Groups and Teams (3) This course acquaints students with the role of facilitator and provides a comprehensive introduction to facilitation. Small group facilitators focus on group process and help groups work collectively to accomplish common goals. The course will build student skills in facilitation, acquaint students with the competencies of facilitation, review the role of facilitation in small group situations, and explore current research and practice in small group/team facilitation. The course examines theoretical and practical perspectives of facilitation and provides opportunities to practice facilitation techniques and build facilitation skills."
+    },
+    {
+      "number": 881,
+      "title": "Marketing Organization Development",
+      "credits": 3,
+      "description": "This course familiarizes students with the unique issues in marketing organization development (OD) and OD consulting services."
+    },
+    {
+      "number": 883,
+      "title": "Organization Change and Development Interventions",
+      "credits": 3,
+      "description": "This course focuses on organization change and development interventions, where an intervention means a change effort."
+    },
+    {
+      "number": 884,
+      "title": "Appreciative Inquiry",
+      "credits": 3,
+      "description": "This course provides a foundation in the theories, principles and techniques of Appreciative Inquiry (AI). WFED 884 Appreciative Inquiry (3) This course provides a foundation in the theories, principles and techniques of Appreciative Inquiry (AI), sometimes called \"positive change theory\" or \"positive organizational scholarship.\" Students will build practical competencies necessary to carry out various AI interventions based on the theories and techniques of organization development and change management. The course will teach students how to define Appreciative Inquiry (AI) and distinguish it from alternative approaches to organization development (OD) and change management (CM). The course describes how AI relates to training and development and other performance improvement interventions, summarizes the history of AI, explains important theories of organizations and describes how small group and large group change interventions using AI differ from training interventions, describes each step in a common AI model and explain how it is applied. The course also reviews ethical issues affecting AI, identifies and summarizes future organizational trends affecting AI, and describes what they might mean for practitioners who use AI."
+    },
+    {
+      "number": 885,
+      "title": "Appreciative Inquiry Coaching",
+      "credits": 3,
+      "description": "Appreciative inquiry has been called the next generation of organization development. Appreciative inquiry is a strength-based approach to change methodology, as well as a paradigm of thought, a worldview, and a way of being in the world. For these reasons, appreciative inquiry coaching is a timely and important topic. The knowledge and skills related to appreciative inquiry coaching gained during this course will prepare students to become well-rounded OD/HRD professionals."
+    },
+    {
+      "number": 886,
+      "title": "Laboratory in Organization Change and Development",
+      "credits": 3,
+      "description": "Students will work in teams to carry out an OD intervention in a field setting."
+    },
+    {
+      "number": 888,
+      "title": "Developing Appreciative Leaders",
+      "credits": 3,
+      "description": "This course provides an in-depth look of appreciative leadership. Students will learn the story of appreciative leadership through assigned readings, discussions, and videos, as well as assignments that allow them to analyze and practice appreciative learning. They will also have the opportunity to practice applying class concepts to actual workplace situations and to develop their own leadership styles"
+    },
+    {
+      "number": 895,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, professionally oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    }
+  ]
+}

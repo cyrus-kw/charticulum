@@ -1,0 +1,131 @@
+{
+  "subject": "EPL",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Proseminar in Education Policy and Leadership",
+      "credits": 3,
+      "description": "This course familiarizes students to three topics that prepare them for future coursework and doctoral research. Students will gain foundational knowledge about educational systems and contemporary educational issues; leadership theory and practice; and the socialization, milestones, research paradigms, and interdisciplinary perspectives associated with doctoral study in education policy and leadership. This course is designed to meet the University's SARI requirements for first-year graduate students."
+    },
+    {
+      "number": 502,
+      "title": "Educational Policy and Politics",
+      "credits": 3,
+      "description": "This course will familiarize students with the role of politics and public policy in K-12 and higher education. The course will examine policy models and frameworks and their application to current policy and leadership issues in education with attention to efforts to improve education and reduce educational inequality."
+    },
+    {
+      "number": 503,
+      "title": "Equity and Diversity in Education Policy and Leadership",
+      "credits": 3,
+      "description": "This course will examine policy and programs in education and related institutions through the lens of diversity, equity, inclusion and belonging with the specific goal of building skills in ethical leadership. Students will be challenged to examine prior knowledge and experience about socially constructed concepts of identity that are associated with power and oppression including race, gender, sexuality and dis/ability. Building from individual understandings of bias and privilege, this course immerses students in scholarship focused on structural inequities that are embedded within policy and programs including racism, sexism, classism, homophobia, and ableism. Focus is on an intersectional approach to studying educational structures from PK3 through university in the US as well as internationally."
+    },
+    {
+      "number": 504,
+      "title": "Research Design in Education Policy and Leadership",
+      "credits": 3,
+      "description": "This course introduces students to research design in the social sciences as it applies to education policy and leadership. Students will consider the strengths and weaknesses of various research designs that education policy and leadership researchers often use to collect and analyze evidence. They will also gain the skills needed to begin designing and conducting research in this area."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, research-oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Supervised experience in teaching and orientation to other selected aspects of the profession at The Pennsylvania State University."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off-Campus",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description"
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

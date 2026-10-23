@@ -1,0 +1,106 @@
+{
+  "subject": "PLBIO",
+  "courses": [
+    {
+      "number": 512,
+      "title": "Plant Resource Acquisition and Utilization",
+      "credits": 4,
+      "description": "Advanced study of plant resource acquisition and utilization considering molecular, physiological, and whole plant perspectives through lectures and problem solving."
+    },
+    {
+      "number": 513,
+      "title": "Integrative Plant Communication and Growth",
+      "credits": 4,
+      "description": "Advanced study of plant communication, growth, and development considering molecular, physiological, and whole plant perspectives through lectures and problem solving."
+    },
+    {
+      "number": 514,
+      "title": "Modern Techniques and Concepts in Plant Ecophysiology",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BIOL220W"
+        ]
+      },
+      "description": "An intensive overview to concepts of plant ecophysiology and modern techniques used in this field."
+    },
+    {
+      "number": 515,
+      "title": "Modern Techniques and Concepts in Plant Cell Biology",
+      "credits": 2,
+      "description": "An intensive introduction to concepts of plant cell biology and modern techniques used in this field."
+    },
+    {
+      "number": 516,
+      "title": "Modern Techniques and Concepts in Plant Molecular Biology",
+      "credits": 2,
+      "description": "An intensive introduction to contemporary molecular biology methods as applied to the study of plants."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

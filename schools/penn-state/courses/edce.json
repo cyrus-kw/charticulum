@@ -1,0 +1,250 @@
+{
+  "subject": "EDCE",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Foundations of Education, Development, and Community Engagement",
+      "credits": 3,
+      "description": "Historical development, social and philosophical foundations, and current status in relation to the total vocational-technical education program."
+    },
+    {
+      "number": 505,
+      "title": "Leadership Development",
+      "credits": 3,
+      "description": "Exploration, understanding, and application of leadership roles, strategies, and principles in group and community settings."
+    },
+    {
+      "number": 508,
+      "title": "Administration and Supervision of Education, Development, and Community Engagement",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Basics of vocational funding, supervision, leadership, and management for agricultural education."
+    },
+    {
+      "number": 509,
+      "title": "Contemporary Research in Education, Development and Community Engagement",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Analysis of contemporary research issues in agricultural education and extension education through lecture, review of literature, discussion, speakers, and active participation."
+    },
+    {
+      "number": 511,
+      "title": "Youth Leadership Development",
+      "credits": 3,
+      "description": "This course will address youth leadership development theories and emphasize formal and nonformal youth programs in agricultural and life sciences. AEE 511 AEE 511 Youth Leadership Development in the Agricultural and Life Sciences (3) The course will provide learners with an understanding of how adolescents develop and emerge as leaders in their families, schools, organizations, and communities. The overall objective for this course is to provide future and current leaders of youth organizations in the agricultural, natural resource, and/or life sciences the knowledge, skills, and experiences to develop and enhance the leadership skills and behaviors of the youth in their organizations. This will be accomplished through a variety of educational methods and techniques. Exposure to theories of youth leadership development will be shared within the context of adolescent development, group dynamics, and opportunities for growth and self-development. A variety of youth organizations and their respective leadership based programs, curricula, and philosophies will be shared and analyzed. Assignments and evaluative-based activities will focus on investigating and comparing youth organizations, analyzing leadership-based resources, analyzing youth/adolescent development theory, and developing a proposal to secure extramural funding to support youth leadership development."
+    },
+    {
+      "number": 512,
+      "title": "Decolonial Methods for Interdisciplinary Research",
+      "credits": 3,
+      "description": "This course surveys contemporary scholarship in multiple disciplines to provide an overview of decolonial research methods and analytical frameworks. Each week, the readings will engage a different topic related to historical and contemporary ways of thinking about land, personhood, and power. Intended for students who are interested in initiating their own research projects in the future, the course is structured to enable students with little prior knowledge of archives or research methods to plan, begin, document, and revise an original project. Combining the study of theoretical readings with weekly research and reflection, students will develop critical tools for thinking, speaking, and writing about colonialism at the University and in a subject area of their choice. Theories are enabling, dynamic, and helpful tools for approaching texts, objects, situations, places, narratives. In this course, they will encounter things both familiar and unfamiliar in ways that unsettle not only their expectations but also their presumed relationship to what they know, where they are, and what might happen next."
+    },
+    {
+      "number": 515,
+      "title": "Engagement Through Outreach Scholarship in Higher Education",
+      "credits": 3,
+      "description": "To develop an understanding of outreach scholarship as a nonformal educational system and its relationship to relevant social systems. AEE 515 AEE 515. Engagement through Outreach Scholarship in Higher Education (3)Through this course, students will develop an understanding of outreach scholarship as a non-formal educational system and its relationship to relevant domestic and international social systems. Students will explore the historical and legislative history of how higher education evolved. Drawing from both contemporary as well as historical resources, students will understand the \"land-grant\" philosophy and outreach scholarship in higher education in order to define an engaged university. Using their definitions, students then critique outreach scholarship as it is carried out through specific institutions of higher education, both in the United States and around the world. Alternative institutional missions, organizational policies and procedures as well as organizational structures and financial arrangements will be explored to demonstrate how distinct approaches to outreach scholarship evolve and their perceived value within an institution. Within this framework, students explore today's definition for scholarship and appropriate standards for scholarly performance through outreach. Case studies, interviews, and guest lectures supplement the current and historical literature. Students carry out individual capstone projects in order to allow each of them to synthesize course content in terms of their own professional interests within an engaged university. Given the visibility of outreach scholarship in higher education today and the fluidity of its definition, implementation, and perceived value within institutions, this course reflects contemporary thought in addition to its historical underpinnings."
+    },
+    {
+      "number": 520,
+      "title": "Scientific Method in the Study of Education, Development and Community Engagement",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Methods of procedure in investigation and experimentation in education, accompanied by a critical examination of studies made in agricultural education."
+    },
+    {
+      "number": 521,
+      "title": "Basic Applied Data Analysis in Education, Development and Community Engagement",
+      "credits": {
+        "min": 1,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Continuation of AEE 520; emphasis upon statistical techniques for students' individual problems."
+    },
+    {
+      "number": 524,
+      "title": "Change in Education, Development and Community Engagement",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Analysis of occupational needs of students and employment prospects; organization of courses of study and other activities of teachers."
+    },
+    {
+      "number": 525,
+      "title": "Program Design and Delivery",
+      "credits": 3,
+      "description": "This course is designed to help students develop an advanced understanding of planning, developing, delivering, and evaluating educational programs in both formal and non-formal settings. Specifically, this course focuses on programming for youth, children, and adults, in both domestic and international contexts with a special emphasis on Cooperative Extension System and outreach in the United States. Students will study the history, organization structure, and program areas in Cooperative Extension, as well as design and delivery of programs. Enrollees will explore the principles, methods, models, and practices of designing and delivering educational programs in non-formal settings. Major emphasis will be on program development/planning, implementation, delivery methods, theories of planned behavior, and evaluation."
+    },
+    {
+      "number": 530,
+      "title": "Teaching and Learning in Agricultural Science",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Organization, planning and delivery of effective college teaching methods, matching/learning styles, evaluation of instruction and learning."
+    },
+    {
+      "number": 535,
+      "title": "Youth Civic Development",
+      "credits": 3,
+      "description": "This course critically examines processes enabling youth to become members of local communities and \"citizens\" of nations and global societies."
+    },
+    {
+      "number": 540,
+      "title": "Youth Participation in Educational Change: Examining Youth Activism, Child Rights, and Youth Voice",
+      "credits": 3,
+      "internalEquivalents": [
+        "EDTHP540"
+      ]
+    },
+    {
+      "number": 550,
+      "title": "Program Development and Evaluation in Youth, Families and Communities",
+      "credits": 3,
+      "description": "Examination of concepts, theories, models, and procedures relative to program development and evaluation in youth, families and communities."
+    },
+    {
+      "number": 555,
+      "title": "Volunteer Program Management",
+      "credits": 3,
+      "description": "The study and application of concepts and principles of volunteerism and administration relevant to volunteer program management."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects including non-thesis research, supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Involves experience in teaching undergraduate agricultural education courses under the supervision of the faculty."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off-Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 840,
+      "title": "Applied Youth Development",
+      "credits": 3,
+      "description": "Background and current issues related to youth development programs in their application to actual youth programs in community settings."
+    },
+    {
+      "number": 845,
+      "title": "Intergenerational Programs and Practices",
+      "credits": 3,
+      "description": "Background, intervention strategies, and issues related to developing intergenerational programs and practices aimed at addressing vital social and community issues."
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "subject": "SYSEN",
+  "courses": [
+    {
+      "number": 507,
+      "title": "Systems Thinking",
+      "credits": 3,
+      "description": "The theory and practice of systems thinking. General systems theory; system dynamics, emergent properties, strcuture, feedback and leverage."
+    },
+    {
+      "number": 510,
+      "title": "Engineering Analysis I",
+      "credits": 3,
+      "description": "The course includes applications of advanced engineering mathematics; the study of systems are described by ordinary/partial differential equations and methods of solutions."
+    },
+    {
+      "number": 520,
+      "title": "Systems Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SYSEN510"
+        ]
+      },
+      "description": "Fundamentals of Systems Engineering with focus on System methodology, design, and management; includes life cycle analysis, human factors, maintainability, serviceability/reliability."
+    },
+    {
+      "number": 522,
+      "title": "Systems Verification Validation & Testing",
+      "credits": 3,
+      "description": "The theory and practice of verification, validation and testing of engineering systems."
+    },
+    {
+      "number": 531,
+      "title": "Probability Models and Simulation",
+      "credits": 3,
+      "description": "Provides background in modeling problems containing random components that must be accounted for in a reasonable solution."
+    },
+    {
+      "number": 532,
+      "title": "Simulation in Systems Engineering: Discrete-Time Systems",
+      "credits": 3,
+      "description": "The scale and cost of typical systems engineering projects mandate that proposed solutions are explored through integrated models and simulations such that stakeholders are confident that the system will work as intended upon deployment. In this course we examine the use of discrete-time approaches to these integrated models and their application to systems engineering. The course covers fundamental concepts, methods, and applications of modeling and simulation with a particular emphasis on problem framing, conceptual model development, and modeling systems of interconnected heterogeneous systems using hybrid simulation. The course begins with an overview of different types of systems and models, model verification and validation processes, sources of randomness and uncertainty, and reviews basic concepts related to computer simulation. Students are given an overview of two types of simulation, namely Monte Carlo and discrete event simulation. Basic concepts related to input modeling, experimentation, and output analysis are covered. Students will then learn how to combine the two simulation methods and develop hybrid simulations to model a system of interconnected subsystems and the importance of modeling these interrelationships. The students also gain hands-on experience on additional topics such as simulation-based optimization by using a commercial simulation software package."
+    },
+    {
+      "number": 533,
+      "title": "Deterministic Models and Simulation",
+      "credits": 3,
+      "description": "Provides a background in simulation and the modeling of problems that contain differential equations as part of the system."
+    },
+    {
+      "number": 534,
+      "title": "Simulation in Systems Engineering: Continuous-Time Systems",
+      "credits": 3,
+      "description": "This course addresses system dynamics modeling and simulation for the analysis of complex systems. It provides the theoretical and technical knowledge necessary to conceptualize dynamics of complex systems, formulate appropriate simulation models, and use models to understand the system behavior and develop effective policy interventions. Students are exposed to the techniques used to form models of supply-demand, mechanical, electrical, biological, and hybrid systems. The course starts with an overview of system dynamics (SD) as a \"set of conceptual tools that enable us to understand the structure and dynamics of complex systems\". Then, students learn about tools and techniques that enable us to use SD as a rigorous modeling method to build formal computer simulations of complex systems. Also, the use of computer-based simulation software packages will be addressed. After understanding how to test the validity of the simulation model, and analyze the sensitivity of the model to uncertainty in parameters and/or structural changes, students will learn how to use SD to model and analyze basic electromechanical and hybrid systems. Advanced topics, including simulation-based optimization and application of SD in modeling interdependent infrastructure, socio-economic, and hybrid renewable energy systems, are covered to provide students with an insight to the applications of SD in studying contemporary issues."
+    },
+    {
+      "number": 536,
+      "title": "Decision and Risk Analysis in Engineering",
+      "credits": 3,
+      "description": "This course examines the analysis of decisions under uncertainty within the context of engineering and technology. It focuses on understanding and improving the decision-making process of individuals and groups in technical organizations. Emphasis is placed on evaluation methods; identification, modeling, and problem resolution; consequences/outcomes of the action taken; risk analysis and quantification."
+    },
+    {
+      "number": 552,
+      "title": "Creativity and Problem Solving II",
+      "credits": 3,
+      "description": "Theory and practical applications of group problem solving, including cognitive gap, coping behavior, agents of change, and managing cognitive diversity. SYSEN 552 Creativity and Problem Solving II (3) This course builds on an understanding of the individual problem solver to address the dynamics of group problem solving, with a particular focus on the domains of science, engineering, and technical management. At the core of the course material is cognitive gap, i.e., differences in cognitive characteristics that may exist between problem solvers (both individuals and groups) and/or between problem solvers and the problems they solve. Students will explore the impact different cognitive profiles on problem solving from multiple perspectives, including group efficiency, personal communication, and the quality of group outcomes. Strategies and tactics for improving the problem solving performance of groups of all sizes will be learned and applied using real-world examples and case studies. Upon completing this course, students will have a fundamental, rigorous understanding of cognitive diversity within groups and how it can be leveraged to make problem solving more effective. Skills learned will include: analyzing the cognitive resources of a problem solving group; breaking down complex problems based on cognitive variables; and matching cognitive resources appropriately with required skills.With its focus on effective problem solving at the group level, this course is appropriate for students in all disciplines and areas of study. It also serves as the foundation for additional courses in problem solving, which may build upon the theoretical elements presented here (e.g., problem solving leadership) or serve as in-depth application studies in specific topical areas (e.g., invention). Students' performance in this course will be evaluated through written examinations and homework assignments, as well as class participation. This course will be offered at least once each academic year."
+    },
+    {
+      "number": 554,
+      "title": "Problem Solving Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "SYSEN552"
+        ]
+      },
+      "description": "Models, processes, and techniques for solving complex problems, managing problem solving diversity, and facilitating change through problem solving in socio-technical systems. SYSEN 554 Problem Solving Leadership (3) As the problems faced by professionals become more complex, expertise in the domain of the problem must be supplemented with knowledge about the problem solver and the problem solving process. This course builds on an understanding of the individual problem solver and problem solving groups (and the individual's role within them) to focus on the facilitation of complex problem solving within socio-technical systems, including the role of the problem solving leader within problem solving groups.Students will learn and implement strategies for characterizing and coordinating the problem solving preferences and abilities of individuals and groups based on problem constraints and the solutions desired. Other topics and skill sets covered will include: systems models of leadership; practical leadership as problem solving; processes and techniques for characterizing complex needs, generating and assessing potential solutions, and evaluating problem solving outcomes; frameworks for modeling and coordinating problem solving diversity among people, problems, and products; and the modeling and facilitation of socio-technical change through problem solving.This course is appropriate for students in all disciplines and areas of study, although it is particularly relevant for students in engineering, science, and/or management. Students' performance in this course will be evaluated through written examinations, homework assignments, and a class project that extends over the semester."
+    },
+    {
+      "number": 555,
+      "title": "Invention and Creative Design",
+      "credits": 3,
+      "description": "This course focuses on the creative design process which leads to the development of new products, processes, and systems (i.e. invention)."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 805,
+      "title": "Technical Project Management",
+      "credits": 3,
+      "description": "Analysis and construction of project plans for the development of complex engineering products taken from a variety of problem domains."
+    },
+    {
+      "number": 850,
+      "title": "Creativity & Problem Solving I",
+      "credits": 3,
+      "description": "The primary objective of this course is to help students become better and more effective problem solvers through a basic, yet rigorous, understanding of the cognitive processes involved in problem solving and individual creative behavior. To meet this objective, selected elements of cognitive psychology are examined, along with general and domain-specific models of the problem solving process, a variety of problem solving techniques, and illustrative examples and case studies related to these topics in a variety of contexts (including science, engineering, and management). In addition, students will explore their personal preferences for problem solving strategies and the ways these preferences can impact both personal and professional life. Here, the objective is to provide students with an assessment of their strengths and weaknesses in the domain of problem solving, as well as a basis of understanding and appreciating the diverse problem solving abilities and styles of others. With its focus on effective problem solving at the individual level, this course is appropriate for students in all disciplines and areas of study. It also serves as the foundation for additional courses in problem solving, which may build upon the theoretical elements presented here (e.g., group problem solving) or serve as in-depth application studies in specific topical areas (e.g., invention)."
+    },
+    {
+      "number": 880,
+      "title": "Systems Architecture and Models",
+      "credits": 3,
+      "description": "System architecture is an abstract view of a complex system distinct from the details of how such a system is implemented. It plays a significant role in developing complex systems that meet expectations of their stakeholders and achieve the mission and life cycle concepts of the system. This course covers the fundamental concepts, techniques, and methods for creating and analyzing system architecture of complex systems. System engineers, system architects, product design engineers, product managers, and project managers working in system development of commercial or military engineering systems will benefit from this course. Major topics to be covered include analysis of form and function, the process of mapping form to function, and methods of decomposition and re-integration, application of model based systems engineering for development and analysis of system architecture, and view-based architectural frameworks for documentation of system architecture. Students will: - Learn the significance of system architecture, - Learn fundamental concepts underlying a system architecture, - Learn models, methods, and tools for architecture development and analysis, - Demonstrate understanding of influences on system architecture decisions - Explore architectural frameworks for documentation of system architecture"
+    },
+    {
+      "number": 886,
+      "title": "Requirements Engineering",
+      "credits": 3,
+      "description": "This course is a thorough treatment of the theoretical and practical aspects of discovering, analyzing, modeling, validating, testing and writing requirements for systems of all kinds, with an intentional focus on software-intensive systems. The course will bring to bear a variety of formal methods, social models, and modern requirements writing tools to be useful to the theorist and practicing engineer. Students will be led through a series of weekly activities that culminate in the delivery of a complete software requirements specification project for a hardware/software system (first in draft, then in final form). The project is broken down into four subprojects, Requirements Elicitation, Requirements Analysis and Representation, Requirements Validation and Testing, and Final Requirements Documentation."
+    },
+    {
+      "number": 895,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Supervised, professionally oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

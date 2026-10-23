@@ -1,0 +1,151 @@
+{
+  "subject": "CSC",
+  "courses": [
+    {
+      "number": 810,
+      "title": "Algorithms and Programming",
+      "credits": 3,
+      "description": "The Algorithms and Programming course is designed as the first course that students would take in the online Master's in Computer Science program. This course introduces the foundation of programming, data structures, and algorithms. The course is expected to create a level playing field for students entering with a variety of different backgrounds."
+    },
+    {
+      "number": 820,
+      "title": "Large-Scale Software Systems",
+      "credits": 3,
+      "description": "This course emphasizes the study of large-scale software systems through a software development project, serving as a central component. The focus is on understanding the design, construction, maintenance, and management of extensive software projects. The course begins with a detailed introduction exploring defining characteristics and challenges associated with large-scale systems, including distributed systems, concurrency, and parallelism. It then covers fundamental aspects like software development life cycle, DevOps principles, requirements engineering, and software architecture. Students will develop proficiency in construction technologies, front-end and back-end development, cloud computing, and specialized software testing strategies for large-scale systems. The course concludes with a thorough examination of software engineering operations and economic considerations, providing a comprehensive understanding of the multifaceted field."
+    },
+    {
+      "number": 830,
+      "title": "Distributed Systems",
+      "credits": 3,
+      "description": "This course provides a comprehensive exploration of distributed systems, focusing on the principles, design, and implementation of large-scale software systems across multiple computers. Students will gain a deep understanding of the fundamental challenges associated with distributed systems and explore techniques for achieving reliability, scalability, and consistency."
+    },
+    {
+      "number": 831,
+      "title": "Advanced Distributed Systems and Algorithms",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC810"
+        ],
+        "concurrent": [
+          "CSC830"
+        ]
+      },
+      "description": "This course facilitates students to learn and to apply the concepts of distributed computing environments along with the distributed algorithms in varied real-world scenarios. The distributed characteristics of such environments are to be learnt at the Systems and Software Architecture level where the various architectural design patterns and integration styles such as asynchronous / sync and their design implications are discussed, applied and verified in details. The course will also get in depths of learning how distributed algorithms and their optimizations when aligned with the characteristics of distributed systems, especially applied in the complex domains and their analytics, require to analyze and design solutions for Consensus, Agreements, Sustainability, Integrations and Aggregations in the systems. Solutions designed for Distributed Systems and Distributed Computing to inculcate the Security and Privacy attributes will be the other essential component of this course structure."
+    },
+    {
+      "number": 832,
+      "title": "Distributed Databases",
+      "credits": 3,
+      "description": "This course explores the design, implementation, and management of distributed database systems. Students will gain a comprehensive understanding of the challenges and solutions associated with storing and managing large datasets across geographically dispersed locations. This course delves into the core concepts of distributed database systems, equipping students with the knowledge and skills to design, implement, and manage these complex systems."
+    },
+    {
+      "number": 840,
+      "title": "Big Data Systems",
+      "credits": 3,
+      "description": "This course provides an overview of the underlying building blocks of big data stack architecture and infrastructure. It covers the foundational concepts and techniques of data acquisition, data storage, high-performance computing, and parallel data analysis. It provides hands-on experiments using advanced computing platforms and modern software tools to perform parallel data-intensive computing."
+    },
+    {
+      "number": 841,
+      "title": "Foundations of Quantitative Analysis",
+      "credits": 3,
+      "description": "This course emphasizes statistical ideas that inform the data life cycle, from generation of data through analysis and interpretation. The course begins with the science of how sampled data are used to study populations and the importance of understanding sources of bias. It addresses various aspects of statistical thinking such as multivariate data, descriptive statistics, and data visualization. It covers basic statistical inferential ideas of hypothesis testing and confidence intervals via a simulation-based approach that is particularly well-suited to data science. It lays the groundwork for later exploration of more advanced analytic techniques, e.g., prediction and classification models and algorithms, by introducing fundamental concepts of conditioning and Bayes' Theorem, basics of likelihood, and statistical optimization."
+    },
+    {
+      "number": 842,
+      "title": "Data Curation and Cleaning",
+      "credits": 3,
+      "description": "This course focuses on curating and cleaning large-scale datasets. The presence of incorrect and inconsistent data can significantly distort results of analysis, often negating the potential benefits of information-driven approaches. As a result, a variety of research over the last decades has focused on data cleansing: computational procedures to automatically or semi-automatically identify - and, when possible, correct - errors in large data sets. The goal of this course is to explore and discuss different data curation and cleaning tools and techniques that help improve data quality and reliability."
+    },
+    {
+      "number": 843,
+      "title": "Large-scale Databases for Real-time Analytics",
+      "credits": 3,
+      "description": "This course provides an overview big data solutions for handling large quantities of data in real-time including design, develop, and implementation of systems used for real-time data analysis and storage. It provides students with with hands-on experience in developing and interconnecting of large database solutions"
+    },
+    {
+      "number": 844,
+      "title": "Advanced Data Mining",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC841"
+        ]
+      },
+      "description": "The Advanced Data Mining course is designed to provide students with a strong foundation and practical skills in data mining techniques. The course covers how to analyze large datasets, discover patterns, and effectively apply data mining algorithms. It is suitable for individuals seeking comprehensive knowledge of Data Science in the context of practicing Data Analytics, Business Professionals/Analysts, Software Engineers, and Marketing Specialists."
+    },
+    {
+      "number": 850,
+      "title": "Machine Learning Systems",
+      "credits": 3,
+      "description": "This course equips students with the essential skills and knowledge required to actively participate as valuable team members in the field of data science, specifically focusing on big data, machine learning, and data analytics projects. This course is tailored for individuals seeking to gain a comprehensive understanding of data science within the context of a practicing Data Scientists and Machine Learning Engineers."
+    },
+    {
+      "number": 851,
+      "title": "Quantitative Methods for Machine Learning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC850",
+          "CSC841"
+        ]
+      },
+      "description": "Building upon quantitative and machine learning foundations introduced in earlier courses, CSC 851 provides an intermediate-level treatment of statistical learning, the basis of artificial intelligence and machine learning methods. The course begins with essential ideas such as bias-variance tradeoff and linear algebra as used in statistics. Additional topics include dimension reduction, model-based clustering, regularization via penalized regression, tree-based methods, and density estimation."
+    },
+    {
+      "number": 852,
+      "title": "Deep Learning and Neural Networks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC850",
+          "CSC851"
+        ]
+      },
+      "description": "This course provides a comprehensive introduction to Deep Learning, covering foundational concepts of neural networks, including multilayer perceptrons, convolutional neural networks, and recurrent neural networks. Advanced topics such as transformers, generative adversarial networks and recommender systems will also be explored. Students will gain practical experience implementing deep learning models using contemporary frameworks, addressing real-world problems in areas like image recognition, natural language understanding, and personalized recommendations. The course emphasizes both theoretical understanding and hands-on application."
+    },
+    {
+      "number": 853,
+      "title": "Natural Language Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC852"
+        ]
+      },
+      "description": "This course is designed to provide students with a strong foundation and practical skills in deep learning-based NLP techniques. The course covers how to process and analyze text data, build and evaluate modern NLP models, and apply various algorithms and techniques to solve common NLP tasks. It is suitable for individuals seeking comprehensive knowledge of natural language processing and developing end-to-end NLP systems."
+    },
+    {
+      "number": 854,
+      "title": "Large Language Models and Generative AI",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC850"
+        ]
+      },
+      "description": "This course provides a comprehensive study of Large Language Models (LLMs), exploring their theoretical foundations, architectures, and applications. Topics include transformer architecture, data wrangling, tokenization, pre-training, fine-tuning, and model optimization techniques like distillation and quantization. Students will learn evaluation metrics, multimodal LLM designs, and real-world applications in Natural Language Processing (NLP) and beyond. Ethical considerations, bias, safety, and security challenges are also addressed. Through lectures, hands-on projects, and presentations, learners will gain skills to design, evaluate, and deploy LLMs effectively."
+    },
+    {
+      "number": 861,
+      "title": "Foundations of Cybersecurity",
+      "credits": 3,
+      "description": "This course provides a comprehensive overview of cybersecurity, covering foundational topics such as network security, cryptography, access control, and risk management. Students will also explore advanced cybersecurity concepts, including ethical hacking, incident handling, intrusion detection systems, and the application of artificial intelligence in cybersecurity. Students will gain practical experience applying cybersecurity tools and techniques to real-world scenarios such as threat analysis, vulnerability assessment, and incident response. The course emphasizes both theoretical understanding and hands-on application to prepare students for professional roles in securing modern information systems."
+    },
+    {
+      "number": 894,
+      "title": "Computer Science Capstone",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CSC810",
+          "CSC820",
+          "CSC830",
+          "CSC840",
+          "CSC850"
+        ]
+      },
+      "description": "In this course students will have an opportunity to build a fully functioning product applying the principles and practices learned in their computer science courses to a real-world problem. They will be responsible for analyzing, designing and developing a complex distributed system that is secure, performant, scalable, and reliable, and leverages machine learning, and navigates large volumes of data."
+    }
+  ]
+}

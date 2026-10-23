@@ -1,0 +1,188 @@
+{
+  "subject": "EEFE",
+  "courses": [
+    {
+      "number": 510,
+      "title": "Econometrics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT462",
+          "STAT501"
+        ]
+      },
+      "description": "Econometrics is concerned with using aspects of economic theory, mathematics, and statistical inference to analyze economic phenomena and relationships. This course approaches econometrics with three broad considerations: 1.The role of econometrics in theoretical and applied economics; 2.The theoretical basis of econometrics; 3.The applied use of econometrics. Topics include general linear model, multicolinearity, specification error, autocorrelation, heteroskedasticity, restricted least squares, functional form, dummy variables, limited dependent variables."
+    },
+    {
+      "number": 511,
+      "title": "Econometrics II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE510"
+        ]
+      },
+      "description": "Econometrics II builds on the foundations of EEFE 510 to provide students with a good understanding of econometric methods that are frequently used in the empirical literature. Topics include endogeneity and moment-based estimators, linear systems of equations, maximum likelihood estimation, models for qualitative and limited dependent variables, models for time series data, models for panel data and treatment evaluation. This course is geared towards students who are interested in conducting empirical research on topics in applied economics and related fields."
+    },
+    {
+      "number": 512,
+      "title": "Applied Microeconomic Theory I",
+      "credits": 3,
+      "description": "This course covers basic principles of microeconomic theory with the use of calculus. The emphasis is on applied theory and problem solving, rather than formal proofs and derivations. By developing knowledge of microeconomic theory and economic reasoning skills, the goal of the course is to provide a foundation for more advanced courses and for applied research at the graduate level. Students who successfully complete this course should understand and be able to apply the microeconomic theory needed to solve applied economic problems in the following areas: Consumer choice and demand; Producer choice and supply; Choice under uncertainty; Strategic decision-making (game theory); The functioning of competitive and monopolistic markets; General equilibrium and welfare analysis."
+    },
+    {
+      "number": 519,
+      "title": "Resource and Environmental Economics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE512",
+          "ECON502"
+        ]
+      },
+      "description": "This course gives students an overview of essential theories and methods used in the economic analysis of natural resources. Objectives are to provide students with a command of theory and methods needed to teach the field and to conduct contemporary research. Topics include dynamic resource systems; dynamic optimization; nonrenewable resource theory; the Hotelling model; stock pollution externalities; common property; and option values."
+    },
+    {
+      "number": 527,
+      "title": "Quantitative Methods I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE512",
+          "ECON502"
+        ]
+      },
+      "description": "This is a course in quantitative economics and its applications, with heavier emphasis on linear models and how they relate to microeconomic theory in both static and dynamic settings. The first part of the course reviews the foundations of the mathematical analysis with the goal of modeling feasibility; i.e., the set of possible choices. This prepares us to next move to modeling the optimal choice with an extended presentation on optimization theory and application in the static setting. The final part of the course moves on to the methods for engaging in dynamic optimization."
+    },
+    {
+      "number": 529,
+      "title": "Foundations of Economic Welfare Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ECON510"
+        ]
+      },
+      "description": "How do we know which forms of economic organization are preferred to others? How do we evaluate who wins and loses within the economic sphere? How do we know when the allocation of goods and services by the economic system is societally optimal? How do we define what is societally optimal? When do government policies improve societal welfare and when do they worsen it? How do we measure societal welfare? When should governments intervene in the economic system and to what extent? How large should the economic system be relative to the natural system? How much should present generations consume relative to future ones? Welfare economics is a branch of economics that seeks to answer these questions. In this course we will develop the concepts and tools needed to do so. Our primary focus will be on evaluating the efficiency and equity implications of public policies using modern theory and empirical methods. In the first part of the course we review the ways in which we can and cannot quantify the welfare of economic agents. We begin by reviewing the foundations of microeconomic theory which we use to analyze how the welfare of economic agents is altered due to exogenous changes in prices and/or income. Using these welfare measures, in the second part of the course we examine how public policies affect the welfare of economic agents using tools from public finance. Since our ultimate goal is applying welfare theory to empirical questions we will also review in part the empirical methods and tools required for conducting state of the art research in this area."
+    },
+    {
+      "number": 530,
+      "title": "Applied Microeconometrics II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE512",
+          "EEFE510"
+        ]
+      },
+      "description": "This course is designed to: (1) expose students to the most common econometric and statistical techniques used in applied microeconomic research and (2) give students an overview of the different types of micro data and the most common methods used to manipulate these data to create additional data sets and variables. The course is divided into three broad parts. The first part of the course focuses on computational, data, and methodological issues. The second and third parts of the course are divided equally between reduced-form/treatment effects methods and structural choice models and methods and other nonlinear structural and quasi-structural models. Each of the topics in the second and third part make use of the methods learned in the first part."
+    },
+    {
+      "number": 531,
+      "title": "Applied Microeconometrics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE512",
+          "ECON502",
+          "EEFE510",
+          "ECON501",
+          "EEFE511",
+          "ECON510"
+        ]
+      },
+      "description": "In this course, we will study microeconometrics, a subfield that encompasses specification as well as a variety of estimation, computational, and simulation methods that allow us to pursue specification and parameterization of econometric models suitable for analyzing micro-level data. We will see that these methods support an enriched basis for examining the validity of microeconomic theory, and also extend the analytics feasibly tackled by microeconomics. At the micro-level of empirical analysis, we will see our theory predicts high frequencies of corner solutions, abrupt switching, and discontinuities. In each case, these predictions are also apparent in micro data. Together, these conditions call for methods that go beyond simple continuous choice functions and equilibria often found adequate for aggregate static and dynamic modeling. Knowledge of these new methods is essential to empirical learning in most areas of contemporary applied microeconomics. These methods evolved to support the active application of microeconomic theories of micro-level behavior (e.g. discrete choice, corner solutions, cusps in dynamic paths) as well as to address peculiar features of micro-level data such as error-in-measurement, availability of only binary or polychotomous indicators of continuous variables, and substantial heterogeneity. Theory is relied upon to specify models prior to estimation, to specify characteristics of data sets, and to interpret results."
+    },
+    {
+      "number": 532,
+      "title": "Applied Computational Economics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE512"
+        ]
+      },
+      "description": "Economists often find themselves in situations where closed-form solutions do not exist or econometric estimation is inappropriate due to data limitations or the nature of the problem. In these cases, numerical approaches, using computer-based methods, may be an economist's best option. In this course, we will explore four topics in the field of computational economics: computable general equilibrium modeling, growth modeling, uncertainty and formal monte carlo analysis, and agent-based modeling. The overall goal of this course is to provide students with an in-depth understanding of computational economics so that they are prepared to build unique mathematical models to address complex situations that have not yet been encountered. Students should have successfully completed a graduate-level course in microeconomic theory prior to enrolling in this course."
+    },
+    {
+      "number": 535,
+      "title": "Empirical Analysis in Food Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE512",
+          "EEFE510"
+        ]
+      },
+      "description": "This is the first course in the Ph.D. field sequence in Industrial Organization, including applications to food marketing. Industrial Organization is the applied study of firms and markets. IO typically focuses on differences across firms and markets, implying the need for a rich set of models. The course presents a series of models of increasing realism and complexity. At each stage, we review the relevant theory as a starting point and then do a detailed study of the empirical application of that theory to real world data with a discussion of the implications for economic policy in areas such as anti-trust, and environmental and food policy analysis."
+    },
+    {
+      "number": 536,
+      "title": "Economics of Food Behavior and Health",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE510",
+          "EEFE511",
+          "ECON521",
+          "EEFE512"
+        ]
+      },
+      "description": "A course in microeconomic consumer theory and estimation, and other economic approaches to consumer behavior, including applications to food and health. The core of the course will involve the microeconomic theory of the consumer and demand estimation. However, other topics relevant to consumer/household behavior may be discussed, such as Duality Theory, Integrability, Function Forms (Linear Expenditure System, Linear Demand, AIDS model, Translog Model, Rotterdam Model, EASI), Price Indices, Flexibility, Incorporating Demographics and Equivalence Scales, Separability, Intertemporal Choice, Household Production, Intrahousehold Allocations, Zeroes Problem, Aggregation, Savings Decisions, Behavioral/Neuroeconomics, Labor Supply, Hedonic Models, Useful Data Sets."
+    },
+    {
+      "number": 541,
+      "title": "Resource and Environmental Economics II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE511",
+          "EEFE512"
+        ]
+      },
+      "description": "This course is designed to give students an overview of the field of Environmental Economics. The objectives of this course are to provide students with a basic understanding of the theoretical and methodological foundations used in Environmental Economics, and to explore recent advances in areas of contemporary policy interest."
+    },
+    {
+      "number": 550,
+      "title": "International Economic Development and Agriculture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EEFE510",
+          "EEFE512"
+        ]
+      },
+      "description": "This course applies economic analysis to problems of economic development and growth. The course covers the economics of traditional (Malthusian) societies, transitions to modern economic growth, fertility and population growth, investments and intergenerational transmission in human capital, human capital and economic growth, and internal migration and structural transformation. Students who successfully complete this course will be able to demonstrate understanding of, articulate, and use in their own research economic models, theories, and applied research in these topics related to developing countries."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 600,
+      "title": "Thesis research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis research"
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Ph.D. Dissertation Full-Time"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "subject": "BUSAD",
+  "courses": [
+    {
+      "number": 523,
+      "title": "Prices and Markets",
+      "credits": 3,
+      "description": "A survey of analytical concepts and techniques essential to an understanding of the business environment."
+    },
+    {
+      "number": 525,
+      "title": "Quantitative Methods in Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BA831"
+        ]
+      },
+      "description": "Study of quantitative methods used in financial and investment analysis and modeling. BUSAD 525 BUSAD 525 Quantitative Methods in Finance (3) BUSAD 525 studies statistical and econometric methods to provide a quantitative foundation in financial and investment analysis. Students will be introduced to the statistical and econometric methods necessary in quantitative financial modeling. Students will acquire practical knowledge, skills and abilities in financial modeling, including sampling, estimation, and hypothesis testing, regression analysis and its application in finance, portfolio analysis methods, and time-series analysis and forecasting. Spreadsheet programs such as the Microsoft Excel program will be used extensively throughout the course."
+    },
+    {
+      "number": 542,
+      "title": "Global Intercultural Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MGMT501",
+              "LEAD501"
+            ]
+          }
+        ]
+      },
+      "description": "This course develops students' global cross-cultural competencies and cultural intelligence to enhance ability to manage global organizations and work interculturally."
+    },
+    {
+      "number": 545,
+      "title": "Negotiation Strategies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MGMT501"
+        ]
+      },
+      "description": "This course covers strategies and tactics for understanding conflicts, for negotiating effectively, and for dealing successfully with power in organizations. BUSAD 545BUSAD 545 Negotiation Strategies (3) Although situations involving international incidents, corporate acquisitions, or national collective bargaining contracts demonstrate the dramatic effects of the need for negotiation, it is something that most people do every day. Negotiation is not a process reserved for skilled diplomats, top salespeople, or leaders of labor unions. The structure and processes of negotiation at the interpersonal level are fundamentally the same as at the corporate or international level. For this reason, knowledge about and skill in negotiating is essential to anyone who works with and through other people to accomplish objectives. It is part of the normal \"give and take\" of any business situation, such as negotiating salaries, arranging deals with vendors, or allocating resources for a project. Unfortunately the ability to simply recognize conflict and the need for bargaining does not insure successful negotiating situations. Negotiation is a complex human activity, involving a dynamic interpersonal process. The skilled negotiator possesses a number of skills including: the intellectual ability to understand the key facts that shape and characterize different negotiation situations; the skills to diagnose problems and select appropriate strategies and approaches to address them; and the understanding of one's own personality and value system, which affect the perception of a situation and the choice of tactics and strategy. Negotiation is a learnable process. In this course students will learn how to recognize and resolve conflict through bargaining, what the bargaining process involves, and how to plan and carry out a successful negotiation."
+    },
+    {
+      "number": 551,
+      "title": "Business, Ethics, and Society",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "MGMT501"
+        ]
+      },
+      "description": "The course focuses upon the exploration and analysis of the ethical, political, technological, social, legal and regulatory environments of business. BUSAD 551 Business, Ethics, and Society (2-3) Students will explore and analyze the challenging issues that lie at the intersection of business, government, and society through a lens of business ethics. Topics covered include the importance of ethics in the business decision process and the types of ethical issues business practitioners face in the business environment; consequentialist and nonconsequentialist ethics principles and their application to business decision-making; the role of personal and organizational values in business decision-making and the impact that organizational culture has on the ethical dimension of decision making. Students will evaluate and analyze the ethical dimension of decision-making; become familiar with the stakeholder concept and utilize it in the business decision-making process; identify the constraints societal values place upon the firm; examine the role government plays in the marketplace; explore the social and ethical dilemmas that arise from the globalization of business; and understand and explain the process through which corporations attempt to influence societal and government institutions."
+    },
+    {
+      "number": 578,
+      "title": "Managing Business Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ACCTG800",
+              "BA810"
+            ]
+          }
+        ]
+      },
+      "description": "Develop and evaluate process models, performance metrics, and information flow to facilitate cross-functional business processes for 21st century organizations. BUSAD 578 Managing Business Processes (3) Twenty-first century executives cross-functional business processes rather than managing their organizations as independent functional silos. Consequently, the ability to design and implement process oriented organizations has considerably evolved over the past decades. More importantly, initiatives related to Service Oriented Architectures (SOA) and Business Process Management (BPM) systems are predicated on the existence of well-designed business processes. However, the task of designing processes has become harder due to the disappearance of boundaries both within and across enterprises. Managing Business Processes provides students with an understanding of the key aspects of business processes such as collaboration, information flow, people, and business rules. The main objective is to provide an overview of various techniques and tools for analyzing, improving, and implementing business processes and information system controls. The course will utilize cases, process modeling methodologies, and simulations to strengthen the students' understanding of business processes and their contribution to business performance."
+    },
+    {
+      "number": 801,
+      "title": "Statistical Analysis for Managerial Decision Making",
+      "credits": 3,
+      "description": "This course is designed to provide the M.B.A. students with an exposure to the most commonly used statistical concepts, methods, techniques, and their applications to business problems. This course covers the basic concepts of business statistics and data analysis integrated in a contemporary spreadsheet environment. The course emphasizes practical applications and business decision making."
+    },
+    {
+      "number": 802,
+      "title": "Cornerstone of Sustainability",
+      "credits": 3,
+      "description": "In-depth exploration of the social, environmental, and organizational sustainability challenges facing business leaders in the 21st Century. BUSAD 802 Cornerstones of Sustainability (3) BUSAD 802 provides students with an overview of the social, environmental, and organizational sustainability challenges facing 21st Century business leaders. The course seeks to develop students' critical capacities for reflection and action based upon a systems thinking framework. Topics to be explored include the history of the sustainability movement, an overview of pressing environmental and social issues, and alternative perspectives on the local and global economy. The course addresses local and global issues surrounding sustainable management and reviews the major frameworks of sustainability that provide the scientific foundations and economic principles of how sustainability can help organizational leaders to achieve natural competitive advantage. Students will apply theoretical and practitioner frameworks to real world cases."
+    },
+    {
+      "number": 809,
+      "title": "Triple Bottom Line Accounting",
+      "credits": 3,
+      "description": "In-depth exploration of the issues related to implementing measurement, reward and reporting systems for economic, social, and environmentl impacts. BUSAD 809 Triple Bottom Line Accounting (3) BUSAD809 expands the traditional financial and managerial accounting topics to encompass economic, social, and environmental impacts. Students will investigate the strategic linkages between sustainability and the value of the organization, define true costs and become familiar with alternative cost measurement systems, and assess the impact of social risk. Other topics include the design and implementation of management performance evaluation and reward systems that align with social and environmental as well as economic goals, and global reporting standards and best practices."
+    },
+    {
+      "number": 811,
+      "title": "New Ventures Ideation and Feasibility Analysis",
+      "credits": 3,
+      "description": "BUSAD 811 focuses on the ideation process and determining whether an idea has commercial potential in both an entrepreneurial and intrapreneurial setting. In order to see and evaluate opportunities, students learn about entrepreneur characteristics; develop skills such as marshaling resources (HR, legal, financial, operational, and technical) needed to introduce the product or service into the market place; and developing an entrepreneurial team."
+    },
+    {
+      "number": 819,
+      "title": "Developing Creative High Performance Organizations",
+      "credits": 3,
+      "internalEquivalents": [
+        "LEAD819"
+      ],
+      "description": "This course focuses on how to create high performing organizations based on models provided by business, science and the arts. We will examine the key assets that these disciplines bring and show how to apply them to business activities. For example, it has been shown that improvisational models from music are highly relevant to new product development. Course activities will include a discussion of the readings from relevant academic research in the business field. We will discuss the philosophy of aesthetics, analyze cases, and review original works. We will also listen to short lectures by practicing artists, musicians, actors, scientists, and writers. Together, these activities will help students to develop strategies to help their organizations attain higher levels of performance. This course is a graduate elective for MBA students and could also be taken by other students (such as Leadership students) if it meets their degree requirements. The way the course will run: This course will be run as a graduate seminar designed to maximize the learning of the members of the group including the instructor's. We will learn about each of the topics noted above through a variety of means. Our interaction will include general discussions, lectures, case discussions, exercises, small group meetings, and on-line chats. We will have invited speakers for the class representing the arts, music, science and business."
+    },
+    {
+      "number": 822,
+      "title": "New Venture Start-up",
+      "credits": 3,
+      "description": "Examines the financial and legal issues that are critical in the formation, development, and management of new ventures. The focus of the course is on the methods of funding and cash flow management for the new enterprise, as well as the underlying legal issues that impact new ventures. This course builds on the foundation of the required finance course to give students an overview of the various legal issues that are critical to new venture development."
+    },
+    {
+      "number": 824,
+      "title": "Finance and Investment for Sustainable Growth",
+      "credits": 3,
+      "description": "In-depth exploration of the methods of financing available for sustainable growth in developed and emerging markets. BUSAD 824 Finance and Investment for Sustainable Growth (3) BUSAD 824 provides students an in-depth exploration of the theories and the applications that financial professionals can leverage to simultaneously earn a profit and have a positive impact on society. The specific financial sectors students will examine are: Capital Markets (to address environmental issues), Commercial Banking (to create sustainable economic development), Project Finance (to reduce poverty and create infrastructure development), and Investment Management (to understand and employ socially responsible investing)."
+    },
+    {
+      "number": 826,
+      "title": "Current Issues in Corporate Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BA831",
+          "BUSAD525",
+          "ACCTG512"
+        ]
+      },
+      "description": "This course covers topics in advanced corporate finance and financial modeling, including capital structure, cost of capital, financial forecasting, and valuation. Estimating the firm's current market value and projecting its future performance requires one to build accurate and flexible financial models. The ability to understand and build financial models is one of the most essential skills in the finance field, including commercial banking, corporate financial management, investment management, and investment banking. This course bridges the gap between theory and real-world practice through a step by step hands-on approach in financial modeling."
+    },
+    {
+      "number": 827,
+      "title": "Fixed Income Securities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FIN813"
+        ]
+      },
+      "description": "This course focuses on the various fixed income securities including bonds (treasury, corporate, municipal), mortgage-backed securities, asset-backed securities, interest rate derivatives, and credit derivatives. It will build upon that knowledge in order to understand fixed income portfolio management, with focus on portfolio construction, managing versus a benchmark, and measuring and managing risks."
+    },
+    {
+      "number": 828,
+      "title": "Mergers and Acquisitions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG512"
+        ]
+      },
+      "description": "The mission of this course is to survey the drivers of success in mergers and acquisitions (M&A) and develop students' skills in the design and evaluation of these transactions. The course will combine a survey of mergers and acquisitions, an investment banking product-training class for associates, and a case study. We will focus on the type of merger most class participants will potentially be involved with - the acquisition of a modest-sized private company by a larger private company, or by a mid-size public company. At the same time, due to the availability of date, much of the case material relates to larger public-to-public transactions. We will use these cases to illustrate major points applicable across a range of transactions."
+    },
+    {
+      "number": 829,
+      "title": "Data Analysis in Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUSAD525"
+        ]
+      },
+      "description": "Financial markets produce huge amounts of data, which poses a big challenge for financial institutions. This course provides students with the necessary knowledge and skills to analyze financial data to extract valuable insights in order to facilitate financial decisions. This course focuses on how statistical methods and data mining techniques can be used to analyze real financial data."
+    },
+    {
+      "number": 830,
+      "title": "Biotechnology and Health Industry Overview",
+      "credits": 3,
+      "description": "The course explores current issues and trends in the biotechnology, pharmaceutical, medical device, and health care industries. The classic cost, quality, and access paradigm is applied from the perspective of multiple stakeholders. Organization of care, financing, policy, regulatory, and ethical problems and issues are emphasized."
+    },
+    {
+      "number": 834,
+      "title": "Ethical Dimensions of Management in the Biotechnology and Health Industry",
+      "credits": 3,
+      "description": "This course provides an overview of various ethical decision-making frameworks, which are then applied to critically examine issues within the biotechnology and health industries. Ethical decision-making frameworks include utilitarian principles, rights and justice theories, virtue ethics, feminist ethics, and various medical ethics models. Applications to cases involving genetic testing, stem cell research, euthanasia, organ retrieval and transplantation, and pharmaceutical development are among those to be explored. BUSAD 534 BUSAD 534. Ethical Dimensions of Management in the Biotechnology and Health Industry (3)BUSAD 534 introduces the students to various ethical decision-making frameworks, which are then applied to critically examine issues within the biotechnology and health industries. Ethical decision-making frameworks include utilitarian principles, rights and justice theories, virtue ethics, feminist ethics, and various medical ethics models. Applications to cases involving genetic testing, stem cell research, euthanasia, organ retrieval and transplantation, and pharmaceutical development are among those to be explored. Teaching methods include faculty lectures, case study analysis, small group and class discussions, and industry guest speaker presentations. Students will be evaluated on the quality of individual and team writing assignments as well as a team oral presentation. The course will be offered twice annually by the Penn State Great Valley School of Graduate Professional Studies' MBA program and is a required course in the Penn State Great Valley MBA program option biotechnology and health industry management."
+    },
+    {
+      "number": 835,
+      "title": "Commercialization of Biopharmacueticals",
+      "credits": 3,
+      "description": "Review organizational processes, regulatory, and environmental issues in the development and commercialization of biopharmaceuticals in the United States and globally. BUSAD 835 Commercialization of Biopharmaceuticals (3) This course reviews organizational processes, regulatory, and environmental issues in the development and commercialization of biopharmaceutical products in the United States and globally. Business development strategies and tactics that encourage innovation and enable biopharmaceutical organizations to prosper in changing business environments are emphasized. The regulatory environment globally and nationally is reviewed for its impact on biopharmaceutical discovery and commercialization, including the IND (investigational new drug) and NDA (new drug application) process and quality control/assurance. Organizational dynamics including culture, structure, ethical dimensions of management, and special considerations in global marketing are explored. Marketing and brand management, financial forecasting, and structuring sales and marketing are examined for their impact on successful commercialization of biopharmaceutical products."
+    },
+    {
+      "number": 837,
+      "title": "Managing Digital Enterprises",
+      "credits": 3,
+      "description": "This course addresses the ways digital technologies transform industry, business models, strategies, operations, and management, and create new markets and products. The competitive advantage module builds on how technological and organizational resources interact to create sustainable competitive advantage. The technology infrastructure and architecture module focus on understanding the core tenets of a digital enterprise and how technology decisions affect the different functional areas of the organization. The Implications of data module focuses on the collection, analysis, and use of massive amounts of data driven by digital technologies. The topics covered include big data, search and ad technologies, health, and current/emerging topics. The Transformational Impact module discusses how technology can create new platforms and marketplaces"
+    },
+    {
+      "number": 843,
+      "title": "People Analytics",
+      "credits": 3,
+      "description": "This course develops students' process modeling, data analytics, and decision-making skills regarding the management of people in an organization. Analytics includes data collection, organization, storage, analysis, and all the tools and techniques used to describe current processes, assess and address challenges, and plan for changes. Before managers can make use of people analytics, they must understand and describe human resource processes as well as the relevant databases, information systems, and other information and resources available. Students in this people analytics course will develop an understanding of traditional work processes, HR management requirements, and HR information system architectures in the context of data-driven approaches to decision-making about people in organizations. Students will learn to model HR processes, develop queries, analyze data, and generate reports to make strategic decisions in areas of HR practice such as selection, compensation, performance evaluation, productivity management and enhancement, training and development, and occupational health. Students will also learn to use process and outcome metrics to evaluate business outcomes and to assess diversity, equity, and inclusion goals as well as other strategic initiatives. Some hands-on work will be required. This will consist of a series of exercises to be used with an employee database. A series of managerial questions will be provided which can be answered utilizing this database. Students will develop approaches towards answering some of these questions and then seek answers in the database. Students will propose their own answers to at least two of these exercise questions. Students will also have the opportunity to model a real-world management challenge and evaluate the analytical techniques that would be used to reach an outcome or decision. Overall, students will cultivate a leadership perspective that values and practices evidence-based decision-making, develop a deeper understanding of how people data associated with HR processes can increase the likelihood of success for organizational change efforts, and enhance their analytical skills by evaluating people data and by interpreting and meaningfully communicating findings."
+    },
+    {
+      "number": 855,
+      "title": "Full Range Leadership Development",
+      "credits": 3,
+      "internalEquivalents": [
+        "LEAD855"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MGMT501",
+              "LEAD501"
+            ]
+          }
+        ]
+      },
+      "description": "Leadership is one of the world's oldest preoccupations. Since the beginning of civilization, prophets, kings, rulers and managers have struggled to find answers to an important question: Why do most leaders or managers elicit merely competent performance from their followers, while a select few inspire extraordinary achievement? Given increased globalization, diversity, restructuring, e-business and innovation in today's business environment, finding answers to this question is important for maintaining organizational competitiveness.The purpose of this course is to provide answers to this question by identifying traits and behaviors associated with outstanding leaders, explaining how they get results, and why their leadership often exceeds all expectable limits. This course is designed to introduce students to a) behaviors associated with outstanding leadership, b) social learning and cognition in organizations as a context to promote outstanding leadership, and c) leadership development as a strategic intervention to enhance individual, group, and organizational motivation and performance.The course will be run as a graduate seminar. We will interact through Web site technology, general group discussions, team projects, lecturettes, case discussions, exercises and videos. Class sessions will focus on issues raised by the readings, cases, and issues relevant to students' organizational experiences. A portion of the class time may be set aside for the coordination of team projects."
+    },
+    {
+      "number": 856,
+      "title": "Diversity Leadership",
+      "credits": 3,
+      "internalEquivalents": [
+        "LEAD856"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "LEAD501",
+              "MGMT501"
+            ]
+          }
+        ]
+      },
+      "description": "In this course students will explore the theory and practice of diversity leadership through experiential exercises, video and didactic presentations, small group and class discussions, and the analysis and application of models, theories, and strategies for managing an increasingly diverse workforce and customer base."
+    },
+    {
+      "number": 859,
+      "title": "Career Management",
+      "credits": 3,
+      "description": "This course is based on the expressed need of many adult graduate students to understand themselves and their careers, to develop the skills necessary to manage their careers effectively throughout their lifetimes, and to help subordinates manage their own careers. Many adult learners are at a critical stage in their careers, with significant decisions regarding job search, career change, managing work-family demands, and/or dual-career relationship concerns. This course is designed to help these students understand these and other career challenges. The Career Management course provides students with a conceptual understanding of careers and career decision-making through an examination and discussion of the literature in career management. Additionally, a significant focus is placed on application of the concepts to understand the student¿s own career, as well as the careers of supervisors, peers, and subordinates through various diversity, equity, and inclusion lens. This course will blend both conceptual analysis and experiential learning activities focused on helping adult learners understand 21st century careers."
+    },
+    {
+      "number": 875,
+      "title": "Applied Analytics and Artificial Intelligence (AI) for Managers",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUSAD801"
+        ]
+      },
+      "description": "This course is designed for business leaders who want to harness the power of analytics and artificial intelligence (AI) in decision-making, focusing on strategic implementation and business value creation. Students will learn to identify opportunities for AI/ML solutions, evaluate technologies, and lead data-driven initiatives using modern business tools. Through practical, hands-on experience with no-code tools, students will learn how to make data-driven decisions and implement AI solutions in their organizations. Students will develop proficiency in modern analytics tools while learning to identify opportunities for AI implementation in their organizations. The course combines theoretical understanding with practical application, ensuring that students not only grasp the concepts but can also execute analytics projects and lead digital transformation initiatives."
+    },
+    {
+      "number": 876,
+      "title": "Ethical Issues in Information Technology",
+      "credits": 3,
+      "description": "Computers are the technological foundation of the information age. Well over half of workers in the U.S. and around the globe make their living by collecting, storing, and manipulating data. Technology has improved our lives, but has also created some unpleasant situations that raise serious ethical questions. The course explores important ethical issues that are affected by information technology, such as privacy, free speech, computer crime, intellectual property, IT professionalism, and software product liability."
+    },
+    {
+      "number": 878,
+      "title": "Operations Analytics and Artificial Intelligence",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BUSAD801"
+        ]
+      },
+      "description": "This course covers how analytics and Artificial Intelligence (AI) can be applied to optimize operational processes across various industries. It aims to equip students with the skills needed to analyze data, build predictive models, and apply optimization techniques to improve decision-making in operations management. Students will learn to identify operational challenges, use advanced data analysis tools, and implement AI solutions that drive efficiency and innovation. Key topics include machine learning, simulation modeling, and AI-driven decision-making, with a strong focus on practical applications. Upon successful completion, students will demonstrate proficiency in using analytics and AI for operations and supply chain improvements, creating value in business settings."
+    },
+    {
+      "number": 879,
+      "title": "Sustainable Supply Chain Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BA810"
+        ]
+      },
+      "description": "In-depth exploration of sustainability of manufacturing and supply chain operations. BUSAD 879 Sustainable Supply Chain Management (3) BUSAD 879 provides students a set of tools and skills to identify, evaluate, and improve the sustainability of manufacturing and supply chain operations. This course enables students to understand the core concepts related to both supply chain and sustainability. After taking this course, students will be able to design sustainable manufacturing, transportation and supply chain operations. The emphasis in this course is on the design and operations of supply chains to minimize their environmental footprint. Students will also learn how to evaluate suppliers' sustainability to assign purchasing contracts to minimize the environmental impact. Other important concepts such as product remanufactureability design and techniques to reduce energy usage and raw materials will also be discussed."
+    },
+    {
+      "number": 882,
+      "title": "Social Entrepreneurship and Community Leadership",
+      "credits": 3,
+      "internalEquivalents": [
+        "LEAD882"
+      ],
+      "description": "This course uses entrepreneurial and leadership skills to craft innovative responses to social needs. Entrepreneurs are particularly good at recognizing opportunities, exploring innovative approaches, mobilizing resources, managing risks, and building viable, sustainable enterprises. Entrepreneurial skills are just as valuable in the social sector as they are in for-profit business. Social Entrepreneurship aims at social impact but does not exclude economic wealth creation. Therefore it is not limited to the non-profit sector. Despite a sustained economic boom in this country, numerous social problems remain and some seem to be getting worse. The course will provide an overview of business leadership and entrepreneurship principles for both profit and non-profit organizations whose products and services are designed to create social value."
+    },
+    {
+      "number": 885,
+      "title": "Research in Security Valuation",
+      "credits": 3,
+      "description": "This course focuses on the analysis and valuation of a firm's equity securities in the financial market using a fundamental analysis. Students will learn how to use different valuation techniques for different types of companies (e.g., companies in financial distress/bankruptcy, private companies, start-up companies with no earnings). The course integrates topics discussed in various finance courses to help students to develop their analytical ability to identify strategies that enhance value creation. The philosophical basis for this topical integration is that valuation of a firm's securities requires one to know not only the accounting issues involved in the preparation of financial statements and how to analyze financial statements, but also to understand the impact of monetary policy, the operation and regulation of financial markets on the value of the firm's equity securities. Moreover, because firm value depends on how well the company is managed, a good understanding of its operations in the global markets, its internal control and risk management strategy is also essential. Finally, because valuation is also based on quantitative models, knowledge of quantitative methods is paramount."
+    },
+    {
+      "number": 888,
+      "title": "Applications of Financial Data Analytics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BA831",
+          "ACCTG512",
+          "BUSAD525",
+          "FIN808",
+          "BUSAD826",
+          "FIN813",
+          "BUSAD829",
+          "IE575"
+        ]
+      },
+      "description": "This course is the capstone course for the financial data analytics option of the MFIN program. After students acquire different techniques and knowledge from other courses, including financial data processing, data cleanup, data mining, and other statistical analysis skills, they will apply these concepts in this course to do case analysis related to real-world applications."
+    }
+  ]
+}

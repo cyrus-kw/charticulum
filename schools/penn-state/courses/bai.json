@@ -1,0 +1,69 @@
+{
+  "subject": "BAI",
+  "courses": [
+    {
+      "number": 810,
+      "title": "Interaction with AI",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course provides a comprehensive overview of generative AI technologies, experience in prompt engineering, and their application in business contexts. Students will explore various generative AI platforms, understand their capabilities, and learn practical methods for leveraging these tools to solve business problems. The course emphasizes hands-on experience with different AI platforms, enabling students to develop skills that are directly applicable to their professional careers."
+    },
+    {
+      "number": 811,
+      "title": "Implications of AI on Organizations and Teams",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course explores the transformative role of AI in modern organizations, focusing on its impact on organizational structure, culture, roles, collaboration, and workforce dynamics. Students will gain a deep understanding of change management strategies for AI adoption, the evolution of teamwork and collaboration in AI-enhanced environments, human perceptions and attitudes towards AI in the workplace, and the reshaping of organizational structures and roles in the age of AI. With a keen understanding of balancing technical insights with human-centric approaches, students will master strategies for cultivating trust in AI systems, enhancing organizational AI literacy, creating effective communication of AI integration, and striking an optimal equilibrium between automation and human engagement through improved teamwork. This comprehensive skill set will empower students to drive successful AI adoption and navigate the complexities of digital transformation in diverse business environments."
+    },
+    {
+      "number": 812,
+      "title": "Understanding AI: Business-Specific Utilization and Trends to Watch",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course offers an in-depth exploration of AI from a \"state of play\" perspective, focusing on the maturity life cycle and its application across major functional areas of business. Students will gain practical, hands-on experience in assessing the current state of AI technologies and their strategic impact as well as understanding how to identify and assess evolving trends."
+    },
+    {
+      "number": 813,
+      "title": "AI Models and Platforms",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "This course provides a strategic overview of artificial intelligence (AI) and its role in modern business. Students will explore key AI technologies - including machine learning and deep learning - and how they are applied across various industries. Through real-world case studies and hands-on projects, students will learn how to develop AI strategies, implement solutions using leading platforms, and address the challenges of integrating AI into business environments. By the end of the course, students will be equipped to design, manage, and apply AI solutions to solve practical business problems."
+    },
+    {
+      "number": 814,
+      "title": "Customization of AI",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "requisites": {
+        "previous": [
+          "BAI810"
+        ]
+      },
+      "description": "This advanced course offers a deep dive into cutting-edge artificial intelligence (AI) techniques, with a specific focus on prompt engineering as a pivotal tool for driving AI-powered business transformation. Students will gain a comprehensive understanding of prompt engineering methodologies, enabling them to optimize and control the behavior of AI models across a variety of business contexts. The course blends theoretical understanding with hands-on application, equipping students with the practical skills needed to design, optimize, and implement AI-driven solutions in real-world business scenarios. Students will work with cutting-edge AI platforms and tools, applying the latest prompt engineering techniques to solve business challenges across industries. By the end of the course, students will be prepared to lead AI initiatives within their organizations, with the ability to leverage advanced AI technologies to drive innovation, efficiency, and decision-making."
+    },
+    {
+      "number": 815,
+      "title": "AI Integration in Business Workflows",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "requisites": {
+        "previous": [
+          "BAI812"
+        ]
+      },
+      "description": "This capstone course concludes the program by focusing on the strategic and analytical foundations of AI solution development. Students will engage in a comprehensive project that requires them to identify a real-world business problem, assess its suitability for AI integration, acquire relevant data, and create a detailed design specification for a potential AI solution. The course emphasizes problem definition, data strategy, ethical considerations, and solution architecture planning. Students will learn to translate business challenges into actionable AI opportunities, outlining the structure and requirements of a solution. Upon completion, students will have: · Experience conducting AI opportunity assessments · Developed data acquisition and evaluation plans · Designed solution specifications aligned with organizational needs and constraints · Considered ethical, operational, and workforce implications of AI adoption The final deliverable will be a professional-grade project proposal, showcasing students' ability to lead AI solution design initiatives in modern workflows."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "subject": "VSTUD",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Visual Culture Theory and History",
+      "credits": 3,
+      "description": "Visual Culture Theory and History examines foundational theoretical texts that have come to define Visual Studies as a historically delineated academic discipline. \"Visual Culture Theory and History\" provides a broad exploration of theories describing the aesthetic, psychological, and social significance of visual images, as well as the media processes inherent in creating visual experiences. The course will define Visual Studies as an academic field within the humanities. Topics will generally include the image in classical rhetoric, media theories about images, visuality and post-colonial theory, semiotic analysis of images, the cinematic image, gender and visuality, consumer culture's use of images, spectatorship and social identity, television history, images and the construction of space, the relationship between word and image in books, experimental manipulation of visual images in art, images in performance both theatrical and social, the history of photography, and technologies of image production. The class discussions will elucidate the interdisciplinary effects of image production, reception, and circulation in modern media environments. The course will provide students with a broad range of theoretical methods for analyzing visual images so that they may understand their importance and incorporate a theoretically sophisticated analysis of this visual component in their graduate research. The course is one of two required courses for the Visual Studies dual degree."
+    },
+    {
+      "number": 502,
+      "title": "Visual Digitality",
+      "credits": 3,
+      "description": "Study of historical, theoretical, and operational aspects of the consumption and production of digital technologies and associated cultures."
+    },
+    {
+      "number": 532,
+      "title": "Holocaust and Visual Culture",
+      "credits": 3,
+      "description": "This course studies how art, literature, film, and other media can provide a perspective on one of the most horrific events in human history, the Holocaust: the genocidal murder of more than six million men, women, and children (mostly Jewish) under the Nazi regime during World War II. The course examines the theoretical questions involved in any attempt to capture what appears to be beyond comprehension in terms of moral outrage and the sheer scale, inhumanity, and bureaucratic efficiency of the violence perpetrated by the Nazis. This course examines formal approaches of depicting the Holocaust in literature and film, as well as photography, museum installations, and memorials. Topics to be discussed include include memorialization (Holocaust museums and memorials), mass murder of the disabled, national guilt, survivor's guilt, stigmatization, and the ethics of historical representation. The course will analyze cinematic strategies for representing the unrepresentable, dark humor about the Holocaust, the persistence of the past, Nazi propaganda, Holocaust photography, trauma theories, graphic novels, the Nuremberg trials, survivor memoirs, representations of the Nuremberg Code and the International Bill of Norms, and possibilities for art after Auschwitz."
+    },
+    {
+      "number": 555,
+      "title": "Visualizing Gender",
+      "credits": 3,
+      "description": "This course analyzes how gender identities relate to the creation, use, and analysis of visual artifacts and bodily practices. Visual texts condition and are conditioned by intersectional embodiments of gender. In an attempt to understand and critically evaluate the role visual culture plays in our gendered lives as a dominant conduit of knowledge and identity production, this seminar examines visual processes and objects as they are informed and shaped by a nexus of gender, race, sexuality, class, nationality, and other forms of identity. The visualization of gendered forms of identity involves codes that produce bodies as signifiers of chaos, order, beauty, disease, nature, culture, evil, and virtue, including actions bisected according to binaries of masculinity and femininity. The seminar employs analytical approaches to these dynamics, including feminist, queer, and critical race theories of the visual as ways of interrogating a range of visual artifacts and bodily practices. After surveying key foundational texts, the course predominantly engages contemporary works and practices along complex gender matrices, including new directions in visual culture from the 1990s onward."
+    },
+    {
+      "number": 556,
+      "title": "Reading Film",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "A practical and historical approach to film theory and analysis. This seminar develops critical visual literacy by examining a range of practices in cinema study, with emphases on the relation of film to literature and the analysis of film meaning. The course asks how to read a film, and considers the multiple ways that films combine framing, movement, editing, narrative, character, and genre toward the production of culture, ideology, identity, desire, poetic imagery, and community. Students will explore a wide range of critical methods, and will view one to two films per week. Readings will range from novels to classic film theory, cultural studies, belles-lettres, film criticism, radical poetics, apparatus theory, media theory, and contemporary philosophy."
+    },
+    {
+      "number": 557,
+      "title": "Authors and Artists",
+      "credits": 3,
+      "description": "This course explores formal and historical links between literature and art in modernist movements. \"Ut pictura poesis\" (like painting [is] poetry). This statement, originally articulated by the ancient Roman poet Horace, has been quoted and debated ever since. Links between art and literature have exerted a formative influence on the development of modern fiction and poetry as authors and artists in various avant-garde groupings collaborated and competed to generate modes of artistic expression appropriate to modernity. This course examines those interactions. Course objectives are to bring together for comparative examination: - formal or generic relationships between texts and images at particular historical moments. - issues of creative collaboration and cross-pollination between writers and artists, which have been crucially important in the history of literature and poetry. - conceptions of creativity as these have been expressed by writers using the figure of the artist. This course allows students to explore the ways knowledge of literature and skills in critical reading can be rewardingly brought to bear on the visual arts, and to consider how visual art can illuminate the workings of literature both for individual readers and in the classroom."
+    },
+    {
+      "number": 580,
+      "title": "Comics and Graphic Novels",
+      "credits": 3,
+      "description": "A survey of comics and graphic novels, primarily in English. This seminar provides a survey of the comics medium and an introduction to the academic field of Comics Studies. Students acquire facility in the structural and formal analysis of comics and sequential narrative, as well as knowledge of significant critical theories and methodologies within the field of Comics Studies. Assigned primary texts may be targeted to a particular genre, mode, historical period, or creator(s). While the course has a general focus on North America, students may also read texts from European, Japanese, and/or South American traditions (all of which will be taught in translation), not to exceed 25% of the course. Discussion of assigned texts will be situated within relevant scholarship and criticism (current and historical)."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject."
+    }
+  ]
+}

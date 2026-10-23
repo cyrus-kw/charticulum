@@ -1,0 +1,24 @@
+{
+  "subject": "RISE",
+  "courses": [
+    {
+      "number": 500,
+      "suffix": "L",
+      "title": "Responsible Conduct of Research in Life and Health Sciences",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "Responsible conduct of research (RCR) is the foundation upon which science depends for rapid progress and appropriate allocation of credit for research accomplishments. In the life and health sciences there have been dramatic changes in the research environment over time that have led to high-stakes professional outcomes for research scientists: multi-million dollar research grants, high-visibility international awards, institutional prestige. Personal accomplishments are intricately tied up with these professional outcomes: career consequences (tenure, expanded research group, etc.), significant personal financial rewards (royalties, start-up companies, etc.), and personal prestige and recognition, among others. These increasing professional and personal pressures on research scientists can have very real impacts on the day-to-day decisions of scientists: appropriate data acquisition and management, proper allocation of credit, responsible use of animals, responsible work with human subjects, appropriate advising and mentoring of students, respect of intellectual property, and the avoidance of conflicts of interest and commitment. This course explores the ethical basis for the responsible conduct of research, and highlights the challenges faced by today's scientists. Students will learn about past failures in the responsible conduct of research that inform the current regulatory environment, understand the current expectations of biomedical scientists beyond the regulations, and, through the use of case studies, explore real ethical dilemmas for which there are not always easy answers. At the conclusion of this course, students will have both intellectual and practical resources to deal with ethical challenges they might face in their careers by making appropriate, ethical decisions."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    }
+  ]
+}

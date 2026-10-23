@@ -1,0 +1,93 @@
+{
+  "subject": "MNGT",
+  "courses": [
+    {
+      "number": 110,
+      "title": "Mining Administration and Law",
+      "credits": 3,
+      "description": "Introduction to mine organization and management structure, and government regulations regarding permitting, reporting and recordkeeping. MNG T 110 Mining Administration and Law (3) 'Mining Administration and Law' is a second semester course that provides a framework for the student to understand the mine organization and management structure and organization. It will also introduce the student to the state and federal regulations regarding permitting, and reporting, and record keeping. This course provides a background for and is a prerequisite for MNG T 216. Students who successfully complete this course will be able to: a. Explain the basic organization of a mining operation from the general superintendent to the laborer. b. Know and understand the basic concepts of a safety program. c. Use and apply accident analysis statistics to further improve a safety program. d. Discuss the development of rules and regulations with focus on those that impact the first line supervisor. e. Understand the process for promulgating new rules and regulations. f. Demonstrate basic management techniques that a first line supervisor will use in performance of his/her job."
+    },
+    {
+      "number": 204,
+      "title": "Mine Plant Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS150"
+        ]
+      },
+      "description": "Electrical, transportation, ventilation, and other systems required to operate underground coal mine, and to transport and process coal."
+    },
+    {
+      "number": 205,
+      "suffix": "W",
+      "title": "Mining Systems Technology",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Comparison of mining methods with focus on preventative maintenance, coal transport, and estimating production and manpower needs. MNG T 205W Mining Systems Technology (3) Review of the impact of various methods of room & pillar and longwall mining on the mining operation, the systems required to transport coal from the mine, and the needs for preventative maintenance for each. Quantitative methods for evaluating the production capabilities and manpower requirements of each will also be explored."
+    },
+    {
+      "number": 207,
+      "title": "Electric Mine Machine Circuits",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNGT204"
+        ]
+      },
+      "description": "Application of electric power and safety issues related to the installation and maintenance of circuits and various power control devices. MNG T 207 Electric Mine Machine Circuits (3) 'Electric Mine Machine Circuits' is a fourth semester course for students in the maintenance emphasis only and provides a basic foundation in the application of electric power and safety issues related to the installation and maintenance of circuits and various power control devices from the transformer to the mine face. MNG T 204 is a prerequisite to ensure students have a basic understanding of mine plant equipment. Students who successfully complete this course will be able to: a. Explain the application of AC and DC power in mining, their effect on motors, and the advantages and disadvantages of each. b. Use electrical equations to determine AC and DC power requirements, voltage, amperage, and power factor. c. Understand and use of electrical cables and battery power in the mining industry, the maintenance requirements of each, and the advantages and disadvantages of each. d. Read electrical wiring schematics and identify symbols. Be able to identify differences between schematic and actual wiring. e. Determine the maintenance and record keeping required for electrical face equipment to maintain permissible condition and regulatory compliance."
+    },
+    {
+      "number": 208,
+      "title": "Mine Power Distribution",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNGT204"
+        ]
+      },
+      "description": "Topics of high voltage curcuits, underground transmission, power stations, power conversion, safety regulations and power devices. MNG T 208 Mine Power Distribution (3) 'Mine Power Distribution' is a fourth semester course for students in the maintenance emphasis only and provides a background into how to distribute and adequately protect the high voltage electricity supply throughout the mining environment to serve the underground transformer for distribution to the variety of electrical systems used. MNG T 204 is a prerequisite to ensure students have a basic understanding of mine plant equipment. Students who successfully complete this course will be able to: a. Explain state and federal safety requirements in relation to high-voltage mine power systems. b. Calculate total power requirements for given section of connected equipment, including recommended sectionalizing equipment and overload settings. c. Demonstrate knowledge of typical mine power distribution systems, identify the key components and how they function. d. Examine the requirements for splicing and terminating high-voltage mine power cables, and effects of improperly made repairs."
+    },
+    {
+      "number": 210,
+      "title": "Mine Machine Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS150"
+        ]
+      },
+      "description": "Operation and interaction of mechanized equipment used at the coal face including common electrical, hydraulic and mechanical systems."
+    },
+    {
+      "number": 211,
+      "title": "Practicum in Mining Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNGT204"
+        ]
+      },
+      "description": "Field and shop techniques in procedures of electrical, mechanical and ventilation phases of mine maintenance MNG T 211 Practicum in Mining Technology (3) 'Practicum in Mining Technology' is a fourth semester course that provides students with the practical application of modern equipment and techniques used during the installation, relocation, and repair of complex mining equipment and systems as they are applied in the underground environment. MNG T 204 is a prerequisite to ensure students have a basic understanding of mine plant equipment. Students who successfully complete this course will be able to: a. Plan the installation of all equipment required to successfully install a complete continuous miner section. b. Plan the successful relocation of a modern long-wall mining section from a completed panel to a new panel. c. Demonstrate an ability to conduct or supervise the safe repair of low, medium, and high-voltage equipment in compliance with all regulatory requirements. d. Explain and demonstrate how to safely troubleshoot and/or repair high-pressure mine hydraulic systems. e. Discuss and demonstrate the steps required to conduct ox-acetylene and electric arc-welding repair of equipment in compliance with regulatory requirements. f. Practice the application and safe operation of manual lifting aides and devices used to facilitate the repair of large mining components."
+    },
+    {
+      "number": 214,
+      "title": "Mining Management I",
+      "credits": 3,
+      "description": "Leadership skill development for supervisors, managing change, tools to plan, organize, control, communicate and monitor effectively. MNG T 214 Mining Management I (3) 'Mine Management I' will provide students with the introductory skills for individual, group and one-on-one leadership skills to keep up with evolving management roles and responsibilities. This course will explore how supervisors can maintain technical expertise while demonstrating effective leadership. This process includes the tools supervisors use to plan, organize, control communicate and monitor effectively. This course serves as a prerequisite to MNG T 215. Students who successfully complete this course will be able to: a. Succeed in a rapidly changing environment b. Plan, organize, communicate and monitor c. Apply the most appropriate supervisory style to individuals and situations d. Apply appropriate motivational techniques e. Use delegation for effective employee performance and development, time management and motivation f. Create an action plan g. Develop interpersonal skills that help communicate, listen, and handle conflicts h. Analyze their own behavior style and recognize strengths and weaknesses i. Given a labor situation, describe a plan of action toward resolution j. Identify the characteristics of A & B personalities and explain how they might be managed differently k. Explain a given organizational chart and the focus and function at different management levels l. Given an emergency situation at a mining operation, recommend a hypothetical course of action to avoid loss of life and personal injury, and minimize impact on production capability and reserves"
+    },
+    {
+      "number": 216,
+      "title": "Mine Regulations and Laws",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MNGT110"
+        ]
+      },
+      "description": "State and federal mining regulations and application to underground coal mines. Relationship with company policies and consequences of non-compliance. MNG T 216 'Mine Regulations and Laws' (3) 'Mine Regulations and Laws' is a fourth semester course that builds on the knowledge gained in the prerequisite, MNG T 110, by providing more advanced study into state and federal regulations and company policies regarding equipment and electrical inspection, personnel safety and egress, and measurement of related environmental conditions within the mine. This class includes discussions on the interaction of state and federal regulation and the conflicts created by applying each. The consequences of non-compliance are also discussed. Students who successfully complete this course will be able to: a. This course is designed to familiarize the student with the applicable underground coal mining regulations and how they are interpreted and enforced. b. For a specified situation, find and interpret appropriate sections of PA Bituminous Coal Mining Act. c. Develop and evaluate alternative solutions to a proposed regulatory issue. d. Conduct a discussion with a mining inspector, in regards to a violation and potential monetary penalty."
+    }
+  ]
+}

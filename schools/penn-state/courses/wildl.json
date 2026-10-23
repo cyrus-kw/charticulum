@@ -1,0 +1,151 @@
+{
+  "subject": "WILDL",
+  "courses": [
+    {
+      "number": 101,
+      "title": "Introduction to Wildlife Management",
+      "credits": 3,
+      "description": "Basic principles of wildlife management. Introduction to general ecology and wildlife population dynamics."
+    },
+    {
+      "number": 103,
+      "title": "Animal Identification",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Identification of mammals, birds, reptiles, and amphibians; introduction to their life histories."
+    },
+    {
+      "number": 106,
+      "title": "Wildlife Management Techniques",
+      "credits": 4,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "This course is an overview of laboratory and field techniques for wildlife and natural resource research and management. The first third of the course prepares students to become proficient in land navigation by emphasizing topographical map, compass and Global Positioning System (GPS) use and basic surveying techniques and measurements. The second third of the course covers urban and suburban wildlife management, including techniques for encouraging native wildlife and discouraging human-wildlife conflict. The final third of the course addresses mark and recapture techniques, censusing methods and population estimation, and wildlife telemetry methods. In-field data collection, data entry, and management are emphasized throughout the course. This course satisfies the DuBois campus first year engagement (FYE) by introducing the student to campus, University, and professional resources."
+    },
+    {
+      "number": 106,
+      "suffix": "T",
+      "title": "Wildlife Management Techniques (Honors)",
+      "credits": 4,
+      "attributes": [
+        "FYS",
+        "HON"
+      ],
+      "description": "This course is an overview of laboratory and field techniques for wildlife and natural resource research and management. The first third of the course prepares students to become proficient in land navigation by emphasizing topographical map, compass and Global Positioning System (GPS) use and basic surveying techniques and measurements. The second third of the course covers urban and suburban wildlife management, including techniques for encouraging native wildlife and discouraging human-wildlife conflict. The final third of the course addresses mark and recapture techniques, censusing methods and population estimation, and wildlife telemetry methods. In-field data collection, data entry, and management are emphasized throughout the course. This course satisfies the DuBois campus first year engagement (FYE) by introducing the student to campus, University, and professional resources. The honors section of the course includes an in-depth exploration of a survey technique or method or additional field experience(s). The activities for the honors section vary by semester and are related to the interests of the students enrolled in the course. Previous activities have included participating in a night-time owl playback survey and generating transects for a deer pellet count."
+    },
+    {
+      "number": 207,
+      "title": "Outdoor Recreation",
+      "credits": 3,
+      "description": "Sociology, history, and economics of recreational demand; recreational areas and management procedures."
+    },
+    {
+      "number": 208,
+      "suffix": "M",
+      "title": "Terrestrial Wildlife Management (Honors)",
+      "credits": 3,
+      "attributes": [
+        "W",
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "FORT150",
+          "WILDL101",
+          "WILDL103",
+          "WILDL106"
+        ]
+      },
+      "description": "Ecological characteristics and manipulation of terrestrial habitats; control of wildlife populations. This course provides an overview of ecological characteristics of terrestrial habitats and the influence of those characteristics on wildlife populations. Course goals include (1) acquisition of knowledge related to how wildlife (at the individual and population level) interact with and are influenced by changes in their environment, (2) application of management and survey techniques (emphasized in the laboratory component of course), (3) understanding the application of techniques and principles learned in this class and others to wildlife management scenarios at the local, state, federal, and international level, (4) acquisition of critical thinking, reading, writing, and research skills, and (5) collecting and organizing data and presenting it in a professional format.Writing, editing, and peer review are emphasized. The honors section of the course includes an in-depth exploration of a survey technique or method or additional field experience(s). The activities for the honors section vary by semester and are related to the interests of the students enrolled in the course. Previous activities have included additional bird banding opportunities, a trip to a local workshop on disease, and preliminary analysis of saw-whet owl banding data."
+    },
+    {
+      "number": 208,
+      "suffix": "W",
+      "title": "Terrestrial Wildlife Management",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "WILDL101"
+        ]
+      },
+      "description": "This course provides an overview of ecological characteristics of terrestrial habitats and the influence of those characteristics on wildlife populations. Course goals include (1) acquisition of knowledge related to how wildlife (at the individual and population level) interact with and are influenced by changes in their environment, (2) application of management and survey techniques (emphasized in the laboratory component of course), (3) understanding the application of techniques and principles learned in this class and others to wildlife management scenarios at the local, state, federal, and international level, (4) acquisition of critical thinking, reading, writing, and research skills, and (5) collecting and organizing data and presenting it in a professional format. Writing, editing, and peer review are emphasized."
+    },
+    {
+      "number": 211,
+      "title": "GIS and Aerial Photo Interpretation in Wildlife Management",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "Use of Geographic Information Systems and aerial photo technology with applications in wildlife management and natural resources."
+    },
+    {
+      "number": 213,
+      "title": "Wetlands and Fisheries Management",
+      "credits": 4,
+      "description": "Introduction to basic limnology. Ecology and management of swamp, marsh, pond, and stream habitats and their animal populations."
+    },
+    {
+      "number": 231,
+      "title": "Hawk Identification",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "WILDL103"
+        ]
+      },
+      "description": "Identification of hawks in flight. Occurs during fall hawk migration and covers species frequently observed in Pennsylvania. Includes a weekend trip to a hawk watch."
+    },
+    {
+      "number": 294,
+      "title": "Undergraduate Research in Wildlife",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "In Undergraduate Research in Wildlife, students will be introduced to all aspects of wildlife research including study design, writing a research proposal, collection of data in the field, data entry, data analyses and statistical methods, and writing a scientific paper. Students will be responsible for managing all aspects of the selected research project including organizing data collection and field assistants. The professor will be available to advise on the writing of the research proposal (literature review and methods), field work, data entry and analyses, and the writing of the final paper. Students will be responsible for presenting their research in the future."
+    },
+    {
+      "number": 295,
+      "title": "Internship in Wildlife Technology",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised off-campus field experience related to student's major."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    }
+  ]
+}

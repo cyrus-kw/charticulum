@@ -1,0 +1,471 @@
+{
+  "subject": "ATHTR",
+  "courses": [
+    {
+      "number": 135,
+      "title": "Introduction to Athletic Training",
+      "credits": 3,
+      "internalEquivalents": [
+        "KINES135"
+      ],
+      "description": "Introduction to Athletic Training provides an overview of the field of athletic training exploring the breadth of athletic training terminology, issues, and injuries. After completing the course, the students will be able to describe the roles of the sports medicine team, understand the legal considerations for the athletic trainer as a health care provider, and identify the basics of physical conditioning and nutrition in reference to injury prevention. Students will be able to describe an emergency action plan for injuries, and environmental conditions. Students will be able to identify basic use of therapeutic modalities and principles of therapeutic exercise programs. Students will gain an understanding of acute vs. chronic injury conditions and be able to describe the related anatomy, etiologies, pathologies, signs and symptoms, and general treatment and management for injuries of the foot, ankle, lower leg, knee, hip/groin, shoulder, elbow, wrist, hand, cervical spine, and head. Rationale and demonstrations for a variety of taping techniques are included to address upper and lower extremity injuries. Students are also provided an overview of general medical conditions that may occur in the athletic arena."
+    },
+    {
+      "number": 202,
+      "title": "Functional Human Anatomy",
+      "credits": 3,
+      "internalEquivalents": [
+        "KINES202"
+      ],
+      "description": "This course is designed to provide students a didactic and laboratory experience in functional human anatomy. Upon course completion, students should be able to comprehend and apply standard anatomical nomenclature pertaining to human movement science; comprehend structure and function of the musculoskeletal, systems pertaining to human movements science; comprehend the classification, structure and function of human anatomical articulations (joints) pertaining to human movement science; and comprehend the classification, structure, and function of human biological tissues (epithelium, connective, muscle and nervous) pertaining to human movement science. In the laboratory portion of the course students will learn to identify bone and capsuloligamentous tissues as well as their respective landmarks pertaining to human movement science; identify origins, insertions, actions and innervations of skeletal muscles pertaining to human movement science; and identify biomechanical characteristics and neuromuscular activity of human anatomy during the execution of active, passive as well as resistive movements. The laboratory portion of this course will use three-dimensional bone models, joint models, ligament models and cadaveric models to apply concepts covered in lecture."
+    },
+    {
+      "number": 231,
+      "title": "Foundations of Clinical Practice I",
+      "credits": 3,
+      "description": "This course is designed to introduce students to basic skills required for the clinical practice of athletic training. The course will teach introductory content and skills related to injury and illness prevention and management. Specific topics include preventing environmental injuries and illnesses, taping and wrapping techniques, protective equipment, pre-participation physical examinations, preparing for emergencies in the athletic setting, and concepts of basic athletic injury management. The course requires both lecture and practical lab experiences each week. Demonstration of practical skills specific to the clinical proficiency are required to sit for the Board of Certification exam."
+    },
+    {
+      "number": 233,
+      "title": "Acute Care and Emergency Response",
+      "credits": 3,
+      "description": "This course prepares students pursuing the athletic training major in the Department of Kinesiology with the knowledge and skills to respond to medical emergencies. Basic skills including rescue breathing, cardiopulmonary resuscitation for health care providers, and first aid management of injury and illness emergencies are developed. These skills are supplemented with content related to blood borne pathogens and OSHA regulations needed for personal safety and effective management of athletic training services, the causes and prevention of sudden cardiac death in athletics, and training in the use of automated external defibrillators. The second part of the course focuses on the secondary survey and evaluation and management of central nervous system, musculoskeletal injuries, and shock. The final part of the course addresses conditions of the thorax, abdomen, and musculoskeletal system, environmental hazards encountered in athletics; and drug and alcohol overdoses and poisoning. The course will include the opportunity for professional certification in first aid and cardiopulmonary resuscitation. The course includes both lab and lecture components each week. CPR certification (written and practical), blood borne pathogens certification (practical), and demonstration of practical skills specific to the clinical proficiency required to sit for the Board of Certification exam are required in this course."
+    },
+    {
+      "number": 235,
+      "title": "Foundations of Clinical Practice II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR231",
+          "ATHTR233"
+        ],
+        "concurrent": [
+          "ATHTR334"
+        ]
+      },
+      "description": "Athletic Training Clinical Practice II provides instruction in supervised practice of the basic skills required in the practice of athletic training. Topics include documentation of medical records, postural screening, assessment and improvement of flexibility, assessment, and improvement of strength, use of functional rehabilitation protocols, use of common therapeutic modalities, and description of the use of medications in sports medicine. Students are introduced to the foundational components of evidence-based practice and methods for translation into clinical practice. Students practice skills specific to the clinical proficiencies required to sit for the Board of Certification exam. This course provides the student with the opportunity to learn and practice clinical athletic training skills before beginning practicum experiences."
+    },
+    {
+      "number": 334,
+      "title": "Examination of Injuries to the Lower Extremity, and Spine",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR231",
+          "ATHTR233"
+        ],
+        "concurrent": [
+          "ATHTR235"
+        ]
+      },
+      "description": "This course will focus on: 1) the etiology of athletic injuries to the lower extremity and lumbosacral spine, and 2) evaluation techniques for assessing athletic injuries to the lower extremity and lumbosacral spine. The objectives of this course include: understanding the mechanisms of athletic injuries to the lower body; demonstrating proficiency in the objective and subjective assessment procedures of lower body athletic injuries; recognizing orthopedic, neurovascular, and medical emergencies associated with lower body athletic injuries; recognizing the normal and abnormal mechanics of the lumbosacral spine and lower extremity including the walking and running gait cycles; and integration of injury mechanisms into the treatment and rehabilitation plan of care for the injured physically-active person. This course includes lectures as well as hands-on laboratory sessions."
+    },
+    {
+      "number": 335,
+      "title": "Examination of Injuries to the Head, Torso, and Upper Extremity",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR235",
+          "ATHTR334"
+        ]
+      },
+      "description": "This course will focus on: 1) the etiology of athletic injuries to the upper extremity, head, cervical spine, thorax, and abdomen, 2) evaluation techniques for assessing athletic injuries to the upper extremity, head, cervical spine, thorax, and abdomen, and 3) the application of evidence-based practice principles to be able to answer focused clinical questions. The objectives of this course include: understanding the mechanisms of athletic injuries to the upper body; demonstrating proficiency in the objective and subjective assessment procedures of upper body athletic injuries; recognizing orthopedic, neurovascular, and medical emergencies associated with upper body athletic injuries; recognizing the normal and abnormal mechanics of the cervical spine and upper extremity including the overhand throwing motion; and integration of injury mechanisms into the treatment and rehabilitation plan of care for the injured physically-active person. This course includes lectures as well as hands-on laboratory sessions."
+    },
+    {
+      "number": 336,
+      "title": "General Medical Principles of Clinical Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR335",
+          "ATHTR395A"
+        ]
+      },
+      "description": "This course is designed to instruct students in general medicine content and skills related to the clinical practice of athletic training. Specific topics include pathology; pharmacology; physical examination of head, ears, eyes, nose, throat, pulmonary, cardiovascular, gastrointestinal, renal, genitourinary, and dermatological conditions commonly seen in physically-active populations; exertional heat illness; diabetes and exercise; female athlete triad; injuries in populations with physical disabilities; and psychosocial aspects of patient-provider relationships. Several lectures will be made by physicians who specialize in sports medicine. Lab activities will include the instruction, practice, and assessment of psychomotor skills related to the course content. The course will include a balance of both lecture and laboratory activities. The course includes a balance of lecture-based and laboratory activities. Students practice skills specific to the clinical proficiencies required to sit for the Board of Certification exam."
+    },
+    {
+      "number": 395,
+      "suffix": "A",
+      "title": "Clinical Internship I",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "ATHTR235",
+          "ATHTR334"
+        ]
+      },
+      "description": "This course is designed to give students practical experiences in a variety of clinical settings in which certified athletic trainers are commonly employed. Students will participate in clinical education experiences under the supervision of certified athletic trainers in a variety of clinical settings. These settings include but are not limited to: intramural sports, club sports, outpatient sports medicine clinics, high schools, and intercollegiate athletic training facilities. In addition to clinical experiences there is also a didactic portion of this course which emphasizes students gaining proficiency in important clinical skills. The objectives of this course include demonstrating proficiency in: the evaluation of a unconscious person; the recognition of cerebral concussion and closed head injury; the recognition of acute injury to the cervical spine; the recognition of fractures and dislocations; the assessment of neurovascular function; the recognition, treatment, and prevention of lower extremity injuries, heat illnesses including heat cramps, heat exhaustion, and heat stroke; the use of splints, stretchers and spine boards in the management of injured persons; the application of taping and wrapping techniques commonly used in the prevention and management of common athletic injuries; and in obtaining a medical history."
+    },
+    {
+      "number": 434,
+      "title": "Rehabilitation of Injuries to the Lower Extremities, and Spine",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR235",
+          "ATHTR334"
+        ]
+      },
+      "description": "Rehabilitation of Injuries to the Lower Extremities is a 3-credit course offered each fall semester with an enrollment limit of 40 students. The course provides students who have been accepted into the undergraduate athletic training option in the Department of Kinesiology with the theoretical foundation for application of manual therapy techniques and therapeutic exercises in the treatment of musculoskeletal injuries sustained by physically active individuals. Laboratory instruction and guided practice in performing manual therapy techniques and therapeutic exercises will also be provided. At the end of this course students: 1) can identify five components of a comprehensive plan of care for an injured physically-active person; 2) have a working knowledge of the effects of therapeutic exercise on tissue repair and return to activity; 3) have a working knowledge of the impact of pain on programs and therapeutic exercise; 4) are able to perform selected manual therapy techniques and integrate them into a comprehensive plan of care; 5) understand the psychological response to injury and therapeutic exercise; 6) can develop a plan of rehabilitation utilizing principles of tissue healing, therapeutic exercise and manual therapy; and 7) instruct patients in home programs of therapeutic exercise. This course will focus on the basic principles of therapeutic exercise and rehabilitation of injuries to the lower extremities."
+    },
+    {
+      "number": 435,
+      "title": "Rehabilitation of Injuries to the Trunk and Upper Extremities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR335",
+          "ATHTR395A",
+          "ATHTR434"
+        ]
+      },
+      "description": "Rehabilitation of Injuries to the Trunk and Upper Extremities is a 3-credit course offered each fall semester with an enrollment limit of 40 students. The course provides students who have been accepted into the undergraduate athletic training option in the Department of Kinesiology with the theoretical foundation for application of manual therapy techniques and therapeutic exercises in the treatment of musculoskeletal injuries sustained by physically active individuals. Laboratory instruction and guided practice in performing manual therapy techniques and therapeutic exercises will also be provided. At the end of this course students: 1) can identify five components of a comprehensive plan of care for an injured person; 2) have a working knowledge of the effects of therapeutic exercise on tissue repair and return to activity; 3) have a working knowledge of the impact of pain on programs of therapeutic exercise; 4) are able to perform selected manual therapy techniques and integrate them into a comprehensive plan of care; 5) understand the psychological response to injury and therapeutic exercise; 6) can develop a plan of rehabilitation utilizing principles of tissue healing, therapeutic exercise and manual therapy; and 7) instruct patients in home programs of therapeutic exercise. This course will focus on review of the basic principles of therapeutic exercise and rehabilitation on injuries to the trunk and upper extremities."
+    },
+    {
+      "number": 436,
+      "title": "Physical Agents in Rehabilitation",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ATHTR335",
+          "ATHTR395A",
+          "ATHTR434"
+        ]
+      },
+      "description": "The course provides students with the theoretical foundation for the application of contemporary therapeutic modalities in the treatment of musculoskeletal injuries sustained by physically-active populations. At the end of this course students will: 1) have a working knowledge of the inflammatory response to tissue injury, pain perception and the body's analgesic mechanisms; 2) understand the physical principles of thermal, acoustic, electrical, light and mechanical modalities; 3) understand the physiological response to thermal, acoustic, electrical, light and mechanical modalities; 4) be able to search for and appraise clinically relevant trials involving modality application and; 5) apply these understandings and thermal, acoustic, electrical, light and mechanical modalities in the safe and effective manner."
+    },
+    {
+      "number": 438,
+      "suffix": "W",
+      "title": "Administrative and Professional Aspects of Sports Health Care",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "ATHTR336",
+          "ATHTR495A",
+          "ATHTR435",
+          "ATHTR436"
+        ]
+      },
+      "description": "Theoretical and practical aspects for management of an Athletic Training professional practice and identifying contemporary issues related to the profession. ATHTR 438W Administration and Issues in Athletic Training (3) This course is designed to instruct students in the concepts and skills required for successful administration of an athletic training program and to understand and discuss contemporary professional issues attendant to the Athletic Training profession. General topics to be covered include theoretical basis of management, program management, human resource management, financial resource management, facility design and planning, information management, athletic injury insurance, legal aspects of sports medicine, ethical considerations in sports medicine, pre participation physical and drug-testing, professional preparation issues, professional practice issues, and clinical practice issues. Experts from the community are brought in to lecture on several of the topics. This is a writing intensive course. Writing will be used to facilitate critical thinking about course material. Written assignments are based on the technical writing requirements of an athletic training administrator."
+    },
+    {
+      "number": 495,
+      "suffix": "A",
+      "title": "Clinical Internship II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR335",
+          "ATHTR395A",
+          "ATHTR434"
+        ]
+      },
+      "description": "This course is designed to provide students didactic and practical clinical experiences in a variety of practice settings in which certified athletic trainers are commonly employed. This is the second clinical assignment after a student is admitted to the Athletic Training option within the Kinesiology major. Students will complete clinical education experiences under the supervision of a certified athletic trainer in a variety of clinical settings. These settings include but are not limited to: intramural sports, club sports, outpatient sports medicine clinics, high schools, and intercollegiate athletic training facilities. The objectives of this course include demonstrating proficiency in: assisting lower level students in developing athletic training skills and mastering level-appropriate competencies; demonstrate proficiency in evaluation and documentation of common athletic injuries; assist in the development and documentation of a plan of care for common athletic injuries; demonstrate proficiency in the development and documentation of clinical progression through a plan of care; participate in the application of therapeutic modalities and therapeutic exercise under the supervision of a certified athletic trainer. In this practical experience, the student is required to demonstrate an understanding of the classroom experiences completed to date and as required by the program up to the current semester."
+    },
+    {
+      "number": 495,
+      "suffix": "B",
+      "title": "Clinical Internship III",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "ATHTR336",
+          "ATHTR495A",
+          "ATHTR435",
+          "ATHTR436"
+        ]
+      },
+      "description": "This course is designed to provide students didactic and practical clinical experiences in a variety of practice settings in which certified athletic trainers are commonly employed. This is the third clinical assignment after a student is admitted to the Athletic Training major. Students will complete clinical education experiences under the supervision of a certified athletic trainer in a variety of clinical settings. These settings include but are not limited to: intramural sports, club sports, outpatient sports medicine clinics, high schools, and intercollegiate athletic training facilities. The objectives of this course include demonstrating proficiency in: assisting lower level students in developing athletic training skills and mastering level-appropriate competencies; demonstrate proficiency in evaluation and documentation of common athletic injuries; assist in the development and documentation of a plan of care for common athletic injuries; demonstrate proficiency in the development and documentation of clinical progression through a plan of care; participate in the application of therapeutic modalities and therapeutic exercise under the supervision of a certified athletic trainer. In this practical experience, the student is required to demonstrate an understanding of the classroom experiences completed to date and as required by the program up to the current semester."
+    },
+    {
+      "number": 495,
+      "suffix": "C",
+      "title": "Clinical Internship IV",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR438W",
+          "ATHTR495B"
+        ]
+      },
+      "description": "This course is designed to provide students didactic and practical clinical experiences in a variety of practice settings in which certified athletic trainers are commonly employed. Students will complete clinical education experiences under the supervision of a certified athletic trainer. These settings include but are not limited to: outpatient sports medicine clinics, interscholastic athletic settings, and intercollegiate athletic settings. The main objectives of this course include demonstrating proficiency in: head, ears, eyes, nose and throat assessment; peak flow and urinalysis assessment; auscultation and palpation of the chest and abdomen. The objectives also include understanding the psychosocial competencies related to athletic training (substance abuse, eating disorders, response to injury, mental health issues, catastrophic injuries, psychosocial trends in adolescent sports). In addition, students will work closely with their peers by assisting lower-level students in developing athletic training skills and mastering level-appropriate competencies; demonstrate proficiency in evaluation and documentation of common athletic injuries; assist in the development and documentation of a plan of care for common athletic injuries; demonstrate proficiency in the development and documentation of clinical progression through a plan of care; participate in the application of therapeutic modalities and therapeutic exercise under the supervision of a certified athletic trainer. In this practical experience, the student is required to demonstrate an understanding of the classroom experiences completed to date in preparation for the national Board of Certification exam. This course also offers a culminating experience for athletic training students in the form of a capstone project."
+    },
+    {
+      "number": 500,
+      "title": "Theory and Application of Evidence-Based Practice",
+      "credits": 3,
+      "internalEquivalents": [
+        "KINES500"
+      ],
+      "description": "This course provides a foundational overview of evidence-based practice (EBP) in the health sciences, which includes an overview of the seven steps of the EBP process. Conceptual models that demystify the process of translating research into clinical practice will be presented; furthermore, common misconceptions of EBP will be explored. Students will be exposed to organizational cultures that foster a spirit of inquiry, and contemporary attitudes to identifying sources of evidence to be considered in answering a focused clinical (or researchable) question. An emphasis will be placed on developing core competencies in the gathering, and scrutiny of information to draw conclusions that are based on robust, inclusive, and meaningful evidence. Additional focus will consist of cultivating skill with implementing EBP in a manner that best fits the context of care/intervention, aligns with targeted goals, addresses priority problems as well as guides a systematic, and evaluative approach to collaborative practice change. Determinants of an EBP environment, and factors that lend to its sustainability or demise will also be discussed. Leveraging population health initiatives as a mechanism to move from silos to synergy will be highlighted given evidence to suggest an interdisciplinary paradigm to problem-solving yields improved health care processes, and patient/client-centered outcomes."
+    },
+    {
+      "number": 501,
+      "title": "Science and Ethics of Human Performance Optimization",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR500"
+        ],
+        "concurrent": [
+          "ATHTR813",
+          "ATHTR814"
+        ]
+      },
+      "description": "This course provides an overview of various biobehavioral factors that underpin the enhancement of human capabilities, including, but not limited to, kinesthesia, physical fitness, and motor coordination in diverse physically active populations. Using the clinician-scientist model, students are exposed to content that augments their skills in the discovery, appraisal, and dissemination of knowledge to benefit the species. Learning activities are structured to promote theory-practice nexus in the health sciences, and the advantages for doing so will be outlined. Gaining novice to advanced beginner competence with tests and measures employed in contemporary human performance science is emphasized. This will include becoming familiar with an array of related technological apparatuses, their utility, and viability in research, and practice settings. The intersections of human performance science, ethics, and regulation are also stressed to guide conscientious and legal practice. Competency in these domains facilitates appropriate application of contemporary theory and scientific findings in patient/client management to yield efficacious performance restoration and optimization of variables such as, but not limited to, postural control, rate of force development, and aerobic endurance. A key takeaway from this course will be the importance of integrating theory, research, and experiential practice to stimulate transformative and innovative environments."
+    },
+    {
+      "number": 800,
+      "title": "Foundations of Clinical Practice",
+      "credits": 4,
+      "requisites": {
+        "concurrent": [
+          "ATHTR801"
+        ]
+      },
+      "description": "This course provides a dedicated overview of athletic training using the most current Board of Certification Practice Analysis and Standards of Professional Practice as a framework for learning. Students will be exposed to regulatory determinants that govern athletic training as well as the cultural, ethical, psychosocial, and economical considerations that shape competent and compassionate health care. Factors related to maintaining contemporary expertise, meaningful professional development, and career advancement are also discussed. Emphasis is placed on fostering skill in information fluency/literacy to identify and appropriately use resources to guide safety and efficacy of services rendered. Content is structured to expand the student's knowledge base in health promotion and injury/illness prevention strategies as well as sharpen skills linked to basic evaluation and diagnosis, therapeutic interventions, and restoring or optimizing human performance."
+    },
+    {
+      "number": 801,
+      "title": "Principles of Acute Care and Emergency Response",
+      "credits": 4,
+      "description": "This course provides an opportunity for students to become proficient in the knowledge and skills related to contemporary prehospital emergency medical care provided by athletic trainers. Students will develop skills to evaluate, manage, and make referral decisions for a spectrum of injuries and conditions in patients across a lifespan as part of a comprehensive medical system. Students will develop critical thinking and clinical decision-making techniques in provision of patient care."
+    },
+    {
+      "number": 802,
+      "title": "Anatomical Basis of Musculoskeletal Injury",
+      "credits": 4,
+      "description": "This course uses a regional approach to study the gross anatomical structures of the human body. Emphasis is placed on the musculoskeletal system and its associated neurovascular elements. Synovial joint structure and supporting soft tissue systems will be covered in detail. The thoracic, abdominal, and pelvic cavities will also be explored. Aspects of structure and function as they relate to physical training performance and clinical correlates will be highlighted throughout the course. Experiences with dissection of human cadaveric specimens highlight spatial associations among structures and anatomical variation."
+    },
+    {
+      "number": 803,
+      "title": "Fundamentals of Musculoskeletal Evaluation",
+      "credits": 4,
+      "description": "This will be the first in a series of evaluation-based courses for the Master of Athletic Training degree program, and will cover key concepts of the evaluative process. Material covered in this course will be reinforced in more detail throughout the curricular progression. Content will focus on the World Health Organization's International Classification of Functioning, Disability, and Health (ICF) as a basis for delivery, and communication of patient care. This will be the framework for integrating evaluation findings, and developing a plan of care including referral to the appropriate provider when indicated. This course will establish ethical standards of the profession that are congruent with clinical practice, which will be consistent throughout the curriculum. While the course will center on developing foundational musculoskeletal evaluation techniques, emphasis will also be placed on the management of patients with acute conditions that are life threatening or otherwise emergent. Students will learn to perform an evaluation that formulates a diagnosis, and plan of care for patients with health conditions commonly seen in athletic training practice. This evaluation includes the following: obtaining a medical history from the patient or other individual; identifying comorbidities and patients with complex medical conditions; selecting an appropriate outcomes measurement tool; observing function (including gait, posture and tissue appearance); performing strength and range of motion testing for the upper and lower quarters and the spine, and being able to select appropriate tests for individual scenarios; determining end-feel, and somatic responses associated with special tests that selectively examine the integrity of capsuloligamentous, and musculotendinous structures; performing a neurologic screening exam including dermatomes, myotomes, deep tendon reflexes and cranial nerve testing; understanding contemporary pain theory and how to assess pain in a patient scenario; analyzing functional tasks specific to the individual, sport/activity and body part or injury. This course will also include an overview of the tissue healing cascade following injury as well as inflammatory response, swelling and dysfunction in the context of the ICF model."
+    },
+    {
+      "number": 804,
+      "title": "Evaluation and Treatment of the Lower Extremities",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ATHTR800",
+          "ATHTR801",
+          "ATHTR802",
+          "ATHTR803",
+          "ATHTR500",
+          "PHS809",
+          "ATHTR805"
+        ]
+      },
+      "description": "This course will focus on the etiology, evaluation and rehabilitation of injuries to the lower extremities typically encountered by physically active individuals. Injuries to the lower extremities from the hip to the foot will be covered. Evaluation techniques along with manual therapy and exercise interventions will be explored. Appropriate use of devices, braces and taping as they apply to rehabilitation will be discussed. Both isolated and integrated function of lower extremity joints and related tissues will be emphasized."
+    },
+    {
+      "number": 805,
+      "title": "Experiential Learning I",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "ATHTR800",
+          "ATHTR801",
+          "ATHTR802",
+          "ATHTR803"
+        ],
+        "concurrent": [
+          "PHS809",
+          "ATHTR804",
+          "ATHTR500"
+        ]
+      },
+      "description": "This represents the initial opportunity for athletic training students to engage in the application of theory and foundational athletic training, knowledge, and skills through hands-on patient/client care experiences for 10-to-15 hours per week (150-to-225 total hours for the semester). This clinical experience increases student awareness for the role of the athletic trainer as an allied health care professional. Students become familiar with the daily operating procedures of an athletic training facility while being exposed to the culture of the profession. Students at this level are able to apply clinical skills under the supervision of preceptors. These clinical techniques consist of neuromusculoskeletal injury prevention/screening strategies, prophylactic taping/wrapping practices, and fundamentals of injury examination, acute care, and emergency response. Application of therapeutic agents is limited to those categorized as infrared (e.g. cryotherapy and superficial thermotherapy). Rehabilitation techniques applied are limited in scope to basic interventions that consist of administering range of motion and progressive resistance exercises, as well as elementary neuromuscular control techniques as prescribed by supervising preceptors. Exposure to documentation and record-keeping is also characteristic of this experience. Patient/client populations for this level are student-athletes participating in collegiate or secondary school sports."
+    },
+    {
+      "number": 806,
+      "title": "Evaluation and Treatment of the Upper Extremities",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ATHTR804",
+          "ATHTR807",
+          "ATHTR808",
+          "ATHTR809"
+        ]
+      },
+      "description": "This course will focus on the etiology, evaluation and rehabilitation of injuries to the upper extremities typically encountered by physically active individuals. Injuries to the upper extremities from the shoulder to the hand will be covered. Examination techniques along with manual therapy and exercise interventions will be explored. Appropriate use of devices, braces and taping as they apply to rehabilitation will be discussed. Both isolated and integrated function of upper extremity joints and related tissues will be emphasized."
+    },
+    {
+      "number": 807,
+      "title": "Clinical Interventions and Implementation: General Treatment Strategies",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ATHTR500",
+          "ATHTR801"
+        ],
+        "concurrent": [
+          "ATHTR806",
+          "ATHTR808",
+          "ATHTR809"
+        ]
+      },
+      "description": "This course will provide athletic training students will the knowledge and skills necessary to effectively function as a versatile primary care service provider. This is accomplished by exposing students to an array of diagnostic and management strategies used across a broad range of health care services for diverse patient populations. Emphasis is placed on fostering critical thinking ability for guiding proper selection, and efficacious application of interventions with consideration to the unique parameters associated with a patient case and various practice settings. The breadth of knowledge acquired will prepare athletic trainers to function in a spectrum of clinical environments that span from sports medicine to ambulatory care."
+    },
+    {
+      "number": 808,
+      "title": "Therapeutic Interventions: Approaches and Techniques",
+      "credits": 4,
+      "description": "This course provides the theoretical underpinnings that drive clinical applications of therapeutic interventions in health care and human performance restoration practice settings. Bridging the gap between concepts and applications will be a cornerstone of this course as a means to promote knowledge translation that lends to efficacious use in the care of patient/client populations. An evidence-based practice approach is emphasized to account for and effectively balance the influence of scientific data, clinician expertise, and patient/client values in the critical decision-making process, which adheres to ethical standards, and recognizes financial implications. In this structure, students will be presented with problem-based learning activities aimed at developing critical thinking abilities when operating in diverse practice settings. The basis of such activities will serve to nurture the efficient identification of viable solutions, and their prioritization given available resources, and constraints associated with various simulated clinical scenarios. Students will be exposed to a wide array of contemporary interventions with a focus on implementation in the management of acute, persistent, and chronic neuromusculoskeletal pathology as well as human performance restoration for the physically active. Acquisition of knowledge will be complemented with activities that build clinical skills that foster practitioner awareness for proper use, which promotes sound habits in operational procedures."
+    },
+    {
+      "number": 809,
+      "title": "Experiential Learning II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR500",
+          "ATHTR804",
+          "ATHTR805"
+        ],
+        "concurrent": [
+          "ATHTR806",
+          "ATHTR807",
+          "ATHTR808"
+        ]
+      },
+      "description": "This reflects the second clinical education experience in the professional degree program. Students at this level build on the theory that underpins the psychomotor skills they were exposed to in preceding coursework. This is accomplished through patient/client encounters, and applicable simulation learning activities that range from 15-to-20. This reflects the second clinical education experience in the professional degree program. Students at this level build on the theory that underpins the psychomotor skills they were exposed to in preceding coursework. This is accomplished through patient/client encounters, and applicable simulation learning activities that range from 15-to-20 hours per week (225-to-300 total hours for the semester). In addition to the supervised application of clinical techniques in real-world practice or simulated settings, students are provided with opportunities to advance their skills in the evaluation and treatment of neuromusculoskeletal injuries to the lower extremity and lumbopelvic spine. In this capacity, students begin to link evidence-based practice principles with the selection of relevant health care and human performance restoration/optimization interventions. Patient/client populations for this level are student-athletes participating in collegiate or secondary school sports. hours per week (225-to-300 total hours for the semester). In addition to the supervised application of clinical techniques in real-world practice or simulated settings, students are provided with opportunities to advance their skills in the evaluation and treatment of neuromusculoskeletal injuries to the lower extremity and lumbopelvic spine. In this capacity, students begin to link evidence-based practice principles with the selection of relevant health care and human performance restoration/optimization interventions. Patient/client populations for this level are student-athletes participating in collegiate or secondary school sports."
+    },
+    {
+      "number": 810,
+      "title": "Evaluation and Treatment of the Spine and Thoracic Cage",
+      "credits": 4,
+      "description": "This course will focus on the etiology, evaluation and rehabilitation of injuries to the pelvic girdle, spine, thoracic cage and head typically encountered by physically active individuals. Evaluation techniques along with manual therapy and exercise interventions will be explored. Both isolated and integrated function of pelvic girdle, spine and thoracic cage and related tissues will be emphasized."
+    },
+    {
+      "number": 811,
+      "title": "Experiential Learning III",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "ATHTR806",
+          "ATHTR807",
+          "ATHTR808",
+          "ATHTR809"
+        ],
+        "concurrent": [
+          "NURS802",
+          "NURS802A"
+        ]
+      },
+      "description": "This reflects the third clinical education experience in the professional degree program. Students at this level build on the theory that underpins the psychomotor skills they were exposed to in preceding coursework. This is accomplished through patient/client encounters and applicable simulation learning activities that range from 20-to-30 hours per week (120-to-180 total hours for a six-week summer session). In addition to the supervised application of clinical techniques in real-world practice or simulated settings, students are provided with opportunities to advance their skills in the evaluation and treatment of neuromusculoskeletal injuries to the upper extremity and implementation of interventions for a broad spectrum of conditions encountered in the daily operation of a comprehensive sports health care enterprise. In this capacity, students enhance their proficiency in using evidence-based practice to guide selection of relevant health care and human performance restoration/optimization practices. Patient/client populations for this level are student-athletes participating in collegiate or secondary school sports. This course also provides students with exposure to the primary care of non-orthopaedic conditions and in the supervised application of practices with non-sport populations. Organized inter-professional education activities are designed to expand the scope of student awareness for criticality of interdisciplinary collaboration to prevent errors and improve patient experiences that yield efficient clinical outcomes."
+    },
+    {
+      "number": 812,
+      "title": "Elective Clerkship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "ATHTR809"
+        ]
+      },
+      "description": "This elective course offers students a broad array of potential clerkships that foster growth of professional knowledge, skills, attitude, and habits through direct patient/client care experiences, pedagogical, and/or research training opportunities. The engaged learning experiences that students may participate in are many and diverse. Students are assigned to a faculty member who provides direction in shaping objectives of the clerkship. Faculty will also be responsible for organizing individualized learning activities that contribute to the student achieving their identified goals for the experience. For clerkships that entail patient/client care, students will be assigned to a preceptor who supervises related duties. Students may also pursue pedagogical or research training opportunities to prepare them for a potential career as a clinician-educator or clinician-scientist through this clerkship. The course provides opportunities to augment critical thinking skills via deliberate active learning exercises, and hands-on activities. The role of the elective is to provide experiences that enrich and expand knowledge to help prepare students for choosing and succeeding in the professional practice setting or advanced training program of their choice."
+    },
+    {
+      "number": 813,
+      "title": "Administrative and Professional Aspects of Health Care",
+      "credits": 3,
+      "description": "This course is designed to provide students with professional knowledge of the administrative aspects of delivering athletic training services in healthcare systems. General topics include theory and application of management strategies, healthcare policies and procedures, law and ethics, and leadership evaluation and assessment."
+    },
+    {
+      "number": 814,
+      "title": "Experiential Learning IV",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ATHTR810",
+          "NURS802",
+          "NURS802A",
+          "ATHTR811"
+        ],
+        "concurrent": [
+          "ATHTR501",
+          "ATHTR813"
+        ]
+      },
+      "description": "This represents the fourth clinical education experience in the professional degree program. Students at this level are challenged to progress their professional knowledge and skills through graduated supervised clerkship activities that allow for autonomous experiences needed to prepare them to make clinical decisions. In order to maximize such opportunities through patient/client interactions, students are exposed to learning exercises that are carefully structured to elevate their competence from novice to advanced beginner. Along with connecting theory to practice across a spectrum of clinical conditions, students are presented with activities that accentuate biomedical and ethical considerations in human performance and optimization interventions. Corresponding links to health care administration and professional responsibility are also emphasized to ensure fluency/literacy in this practice domain."
+    },
+    {
+      "number": 815,
+      "title": "Seminars in Sports Health Care",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "ATHTR816",
+          "ATHTR817"
+        ]
+      },
+      "description": "This course is designed to provide students with knowledge that lends to their professional development through interactions with an array of personnel who operate in the broad spectrum of sports health care. Content spans domains and tasks linked to the most current edition of the practice analysis established by the Board of Certification for the Athletic Trainer. Examples include, but are not limited to: health conditions and occupational risks in novel groups, telehealth, and mass causality incident response. Potential benefits, limitations, and harms of clinical guidelines will also be explored. The significance of meaningful continuing education, lifelong learning, and developing leadership attributes to preserve contemporary expertise will be emphasized. Scholarship is structured to cultivate appreciation for diverse disciplines that contribute to evolving the art and science of the craft. The course will reinforce the criticality of integrating theory, research, and experiential practice to stimulate transformative and innovative environments in health care and human performance optimization industries."
+    },
+    {
+      "number": 816,
+      "title": "Experiential Learning V",
+      "credits": 6,
+      "requisites": {
+        "previous": [
+          "ATHTR814"
+        ],
+        "concurrent": [
+          "ATHTR815",
+          "ATHTR817"
+        ]
+      },
+      "description": "This final experiential learning course facilitates the graduating athletic training student's entry into the profession. Active learning centers on the ever-changing health care delivery system, human performance improvement industry, and the athletic trainer's evolving roles, responsibilities, and scope of practice within them. Legal, ethical, and socio-political considerations of the profession are also explored. Moreover, accountability for integrating sound quantitative evidence, and experience into clinical practice is stressed. Guidance in completing applications for the national board of certification exam and state credentialing to legally practice athletic training is provided."
+    },
+    {
+      "number": 817,
+      "title": "Creative Knowledge Translation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ATHTR501",
+          "ATHTR813",
+          "ATHTR814"
+        ],
+        "concurrent": [
+          "ATHTR815",
+          "ATHTR816"
+        ]
+      },
+      "description": "This course is designed to serve as a mechanism by which students engage in scholarly work through a series of guided, and self-directed knowledge translation activities that involve the integration of skills acquired throughout the academic plan. Project-based learning is tailored to yield a culminating experience in the professional degree program that prepares students for transition to practice. The outcome of these knowledge translation activities manifests through the completion of an independent project that demonstrates a student¿s aptitude for generating solutions to real-world challenges or problems in clinical, academic or administrative affairs linked to the profession. Projects may take various creative forms and are developed to be personally meaningful. Examples of projects may include, but are not limited to, a systematic review, meta-analysis, critically-appraised topic, case study or series, and original research. The course also serves to provide interactions that help shape a student¿s projected career trajectory as it pertains to post-graduate practice settings or pursuing advanced training programs."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal course given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    }
+  ]
+}

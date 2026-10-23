@@ -1,0 +1,462 @@
+{
+  "subject": "ENT",
+  "courses": [
+    {
+      "number": 202,
+      "suffix": "N",
+      "title": "Insect Connections: Insects, Globalization and Sustainability",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER",
+        "BA-N"
+      ],
+      "description": "An introduction to the diversity of insects and the ways in which they interact with humans and impact our world. ENT 202N is a Science course that will use an interdisciplinary approach to look at the biology and the interplay between nature and society. Major themes of the course will be illustrated by focusing on the world of Insects and the relationships between society and Insects. Emphasis will be placed on critical analysis of both the costs and the benefits of human activities that impact natural systems. Course Learning Goals : 1. Discuss, describe, and give examples of relevant ecological and evolutionary processes and / or phenomena. 2. Apply content knowledge and understanding in novel contexts and situations. 3. Recognize the implications of the two-way dynamic between human activities and insects and how these dynamics differ in different parts of the world. 4. Make predictions associated with likely impacts of human activities on natural systems, ecosystem services, and insect and human populations. 5. Conduct research of relevant literature and utilize empirical evidence to support claims made in a popular press news story about insects. 6. Discuss, describe, and give examples of the two-way relationship between social issues and scientific discovery. 7. Communicate scientific knowledge to a diverse audience."
+    },
+    {
+      "number": 216,
+      "suffix": "N",
+      "title": "Plagues Through the Ages",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GN",
+        "INTER"
+      ],
+      "description": "This interdomain, general education course examines the major plagues of human history from both a scientific and societal lens. The course will be co-taught by instructors with biology and political science backgrounds who will help the students to integrate across those disciplines. Each week during a single lecture, students will learn the etiology, mode of transmission and treatment/control measures of a different disease. In parallel, students will also read popular press articles on how these diseases had particular cultural, economic or political impacts. These readings, in conjunction with guide questions, will prepare students for a weekly discussion during the second lecture run by both instructors. During the course, students will develop their ability to think critically about diseases and society and demonstrate this skill by designing a novel response to an emerging pathogen in a particular cultural context. This course will develop student communication skills, both oral and written."
+    },
+    {
+      "number": 222,
+      "suffix": "N",
+      "title": "Honey Bees and Humans",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER"
+      ],
+      "description": "Among more than 1,000,000 known insect species, honey bees are truly unique. No other insect has been harnessed so effectively to benefit humankind: honey bees provide critical pollination services for agricultural crops, and the wax and honey they produce are valuable commodities. Furthermore, their fascinating social life-style has intrigued individuals from hobby beekeepers to scientists studying complex questions about the evolution of sociality. More recently, documented declines in populations of honey bees and wild bees have stimulated interest in many communities, including policymakers, in improving health outcomes for bees. This course will provide students with a strong understanding of (1) honey bee behavior (particularly their complex and sophisticated social systems), biology, and health, (2) the important contributions honey bees and their pollination services make to maintaining natural ecosystems and increasing productivity of many of our key agricultural crops; and (3) the global history of human interactions with honey bees, including how people from many cultures have managed bees to provide honey, wax, and pollination services (4) the social and political context of addressing bee health issues. The course material will be presented in a series of interactive lectures, videos, and discussions, and also include a field trip to the Pollinator Gardens at the Arboretum at Penn State, a field trip to one of the Penn State apiaries, tracking individual honey bees in an observation hive, and dissections of samples in a laboratory exercise."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 313,
+      "title": "Introduction to Entomology",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "This course is an introduction to entomology addressing issues of insect diversity, morphology and physiology, and identification of the most common groups of adult and immature insects. This course will highlight the beneficial and detrimental roles insects in human society along with responsible methods of pest management. Other topics such as insects as vectors of disease and the ecological and agricultural impact of exotic insect species introduction and climate change will be discussed."
+    },
+    {
+      "number": 314,
+      "title": "Management of Insect Pests of Ornamentals",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENT313"
+        ]
+      },
+      "description": "Diagnosis and management of insect pests on shrubs and trees in the landscape or production nursery."
+    },
+    {
+      "number": 316,
+      "title": "Field Crops Entomology",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ENT313"
+        ]
+      },
+      "description": "Laboratory-based approach to identification and management of insect pests of agronomic crops."
+    },
+    {
+      "number": 317,
+      "title": "Turfgrass Insect Pest Management",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "TURF235"
+        ]
+      },
+      "description": "This course will introduce students to a thorough understanding of insects and their relatives, IPM, and control strategies. The course will provide the students the opportunity to review EPA registered turfgrass insecticides and respective Material Safety Data Sheets, the effects of turfgrass insecticides on nontarget organisms, and the Food Quality Protection Act and how this legislation has altered public perception of insecticides. Students will be provided with a fundamental understanding of the ecology, ethology, life history and development of IPM plans for the key surface and subsurface pests of cool- and warm-season turfgrass. Students will be introduced to a wide array of commercial, educational and government web sites to strengthen their understanding of turfgrass entomology. Students also will be encouraged to develop a web based notebook which they can utilize upon completion of the course. Students will be invited to share their experiences with pest problems and methods they deployed to manage turfgrass insect species in the turfgrass environment. Students will be evaluated by the use of class assignments, quizzes, two hour exams and a final exam, refereed journal reading assignment, and an IPM class project."
+    },
+    {
+      "number": 320,
+      "title": "Insects and Natural History Collections",
+      "credits": 1,
+      "description": "This course focuses on the roles of natural history collections, with an emphasis on arthropods. Through hands-on activities and discussions, students explore insect preservation and collection management techniques, biodiversity data standards, data sharing, insect natural history, and effective exhibit design. Students gain a basic understanding of how research and policy decisions are informed by biodiversity data and natural history collections and how these resources can be used to educate and inspire non-experts."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 402,
+      "suffix": "W",
+      "title": "Biology of Animal Parasites",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "attributes": [
+        "W"
+      ],
+      "internalEquivalents": [
+        "VBSC402W"
+      ],
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "An introduction to animal parasitology. Emphasis placed on host/parasite interactions, parasites of zoonotic importance, control programs and taxonomy. VB SC 402W Biology of Animal Parasites (3) This course provides students an opportunity to obtain an introduction to the field of animal parasitology. Material presented emphasizes life cycle patterns of animal parasites, host-parasite interactions and pathology, disease patterns and zoonotic potential of parasites to human disease, economic importance of parasitic diseases, taxonomy and parasite control programs. Information presented in this course will be useful to students interested in pursuing a career in veterinary medicine or careers dealing with animal care and management. Evaluation of student performance is achieved by 6 quizzes, three examinations and 3 writing assignments. The course is offered each spring semester with an enrollment of 15 to 25 students."
+    },
+    {
+      "number": 410,
+      "title": "Insect Structure and Function",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110",
+          "BIOL220W",
+          "BIOL230W",
+          "BIOL240W"
+        ]
+      },
+      "description": "Integrated physiology and anatomy of insects; emphasis on unique adaptations, genetic regulation of development, insects as model systems, environmental physiology."
+    },
+    {
+      "number": 419,
+      "suffix": "W",
+      "title": "Pesticide Science",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "This interdisciplinary course explores the basic science of pesticides from biology, chemistry, and ecology perspectives. Students will learn the basic science of pesticides and their impacts on the environment. The first class meeting each week will be given in lecture format. Lectures will cover topics including an introduction to pesticides and integrated pest management (IPM), pesticide exposure and evaluation of toxicity, chemical classification of pesticides and their modes of action, toxicodynamics, pesticide residue, pesticide resistance, the major classes of synthetic pesticides and biopesticides, genetic engineering of pest resistant crops, environmental toxicology and pesticide regulation. The second class meeting each week will be an active learning paper discussion designed to develop their discussion and critical thinking abilities. Students will read classic and/or current literature papers relevant to that week's lecture. Starting from the first week. students will begin work on their class project by choosing their topic of interest associated with pesticides (due on the third week), writing a literature review paper (with clear guidance step by step), and presenting their review in class at the end of the semester (last 2 weeks or more time if enrolled student number is larger than 12), design to help students develop their oral and written communication skills."
+    },
+    {
+      "number": 420,
+      "title": "Introduction to Population Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110",
+          "BIOL220W"
+        ]
+      },
+      "description": "Principles of population regulation, demographic analysis, modeling of dynamic processes are discussed; laboratories involve the exploration of population growth models."
+    },
+    {
+      "number": 424,
+      "title": "Sensory Biology of Insects",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "This course provides students an understanding of insect sensory systems contributing to behaviors performed for survival and reproduction."
+    },
+    {
+      "number": 432,
+      "title": "Insect Biodiversity and Evolution",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "ENT313"
+        ]
+      },
+      "description": "In this course students learn insect taxonomy, evolutionary history, collection and preservation techniques, morphology, fossils, and natural history. ENT 432 Insect Biodiversity and Evolution (4) In this course students learn insect taxonomy, evolutionary history, collection and preservation techniques, morphology, fossils, and natural history. Lab work focuses on adult forms, especially of insects found in Pennsylvania. Students learn how to handle specimens, use diagnostic keys, and identify insects by sight. Collecting techniques will be honed during field trips. Upon completion of this course students should be able to: (1) teach others how to collect, preserve, and transport insect specimens, (2) name and sight-identify all insect orders and several common local families, (3) label a generalized insect diagram with external anatomy terms, (4) draw a phylogenetic tree of relationships between insect orders, (5) teach others how to read a phylogenetic tree, what kinds of data are used to estimate trees, how those data are analyzed, and what it means to be monophyletic, (6) describe key innovations and life history strategies of major insect lineages, (7) solve taxonomic problems and describe how species and other taxa are named and described, i.e., understand the fundamentals of taxonomic practice, (8) name and briefly describe the latest developments in insect biodiversity research, (9) describe how hexapods inform us about biodiversity and influence our conservation decisions."
+    },
+    {
+      "number": 440,
+      "title": "Plant-Insect Interactions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL110"
+        ]
+      },
+      "description": "This course is an introduction to and survey of the major areas of plant-insect interactions. This course explores how plant traits facilitate or deter insect behavior and development, chemical and structural counter-adaption and co-evolution, and how insects can benefit or adversely affect plant growth and survival. We will consider how plant-insect interactions influence insect population dynamics and plant community ecology. We will also investigate the effect of environmental quality on plant-insect interactions. Undergraduate and graduate students who complete the course will also be introduced to new tools and approaches in studying plant-insect interactions at the molecular level utilizing transcriptome data. Undergraduate students who complete the course will have a firm grounding in these areas. They will be prepared for other upper-division or graduate courses in plant biology and entomology. In addition, these students will gain enough knowledge in this area to be able to read and understand primary literature. Upon completion of this course, students will: (1) Demonstrate knowledge and understanding of plant morphology and chemistry as they relate to plant-insect interactions, including plant biochemistry and insect perception semiochemicals, plant protective phytohormone cascades, and plant-induced resistance. (2) Demonstrate intermediate knowledge and understanding of insect morphology, physiology, and behavior as it pertains to plant-insect interactions, including insect diversity, specialization, physiological adaptations, and protection against plant-induced defenses. (3) Demonstrate knowledge and understanding of interactions between plants, insects, microbial pathogens, parasites, and endophytes. (4) Recognize key evolutionary adaptations of plants and insects in co-evolutionary relationships. (5) Demonstrate knowledge and understanding of biotic and abiotic factors affecting plant-insect interactions, herbivore activity as it pertains to the recycling of nutrients in ecosystems, and how small and large scale geographic variability can affect herbivore diversity."
+    },
+    {
+      "number": 457,
+      "title": "Principles of Integrated Pest Management",
+      "credits": 3,
+      "description": "Integrated study of pest complexes and their management, emphasizing ecological principles drawing on examples from a range of agricultural, forestry and urban systems. This course is designed for sixth, seventh, and eighth semester students and graduate students. AGECO 457 / ENT 457 Principles of Integrated Pest Management (3) The goal of this course is to introduce upper level undergraduates and graduate students to the principles and practices of integrated pest management (IPM). This course addresses IPM issues concerning insects, plant diseases, and weeds in agriculture, natural systems and urban environments. Rooted in ecology, IPM also addresses the influence of human social, economic and regulatory systems in pest management. Emphasis is placed on the basic tactics and tools of IPM including biological, cultural, legal, mechanical and chemical controls, host plant resistance, pest monitoring and decision making. The overarching goals of environmental protection, economic viability and social welfare are considered throughout the course. In addition, students will learn about IPM program implementation both domestically and internationally, including pest population modeling and the use of internet resources to inform decision makers. Several projects will provide real-world examples. These may include field trips and a semester-long project where students research and solve an actual pest management problem."
+    },
+    {
+      "number": 484,
+      "title": "Insect Behavior",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL110",
+              "BIOL110H"
+            ]
+          },
+          {
+            "oneOf": [
+              "BIOL230W",
+              "BIOL230M",
+              "BIOL220W",
+              "BIOL220M"
+            ]
+          }
+        ]
+      },
+      "description": "Insects are one of the most ecologically successful and diverse taxonomic groups on the planet, and their success is attributed to the amazing range and complexity of the behaviors they exhibit. This course provides an introduction to fundamental concepts and processes in the study of animal behavior, with an emphasis on insect examples, insect diversity and a theoretical and empirical overview of insect behavior. The course is structured around four complementary categories to study behavior based on their development, adaptive value, function, and evolution. Students will learn how scientists study insect behavior, why insects behave the way they do, what functions these behaviors serve, and how behavior is shaped by the evolutionary forces of natural and sexual selection."
+    },
+    {
+      "number": 495,
+      "title": "Entomology Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised non-group instruction, including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Foreign travel, specific locations and activities will vary by instructor"
+    },
+    {
+      "number": 518,
+      "title": "Insect Natural History",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ENT402W",
+              "ENT410",
+              "BIOL436",
+              "BIOL446",
+              "ECLGY510"
+            ]
+          }
+        ]
+      },
+      "description": "Experiential learning in field ecology highlighting insect dynamics, diversity and adaptations in terrestrial and aquatic systems. ENT 518 Insect Natural History (2) This is an experiential learning course in field ecology highlighting insect dynamics, diversity and adaptations in terrestrial and aquatic habitats. On site sessions will introduce ecological processes and natural history from a variety of habitats. Students will gain experience in field sampling and collection techniques, field notebook documentation, GPS use, and specimen databasing. Course is designed for those with limited field experience with insects. The course is intended for new graduate students in Entomology and Ecology. Insect adaptations across multiple habitats are observed in natural, agricultural, and forestry settings and the underlying ecological processes, anthropogenic interactions, and agro/forestry ecosystem management approaches are introduced. A team of faculty and staff from Entomology, and various outside instructors accompany students to various field sites to characterize the attributes, problems, and solutions relative to insect abundance and diversity in each setting. Students learn a wide variety of field sampling and collection methods, sight and key identification to order and major family levels, and standard curation and databasing techniques for arthropods collected for scientific purposes. Methods taught include a variety of light and pheromone trapping, pit traps, sticky traps, malaise traps, sweep netting, and sequential sampling. Curation methods including spreading and pinning, and alcohol and other preservation liquids and drying for immature insects are covered. Community diversity and Shannon Index and advanced statistical characterization of community complexity methods are applied to differing community data that are gathered by teams of students during their chosen mini projects as well as the aquatic community sampling results for Spring Creek vs. Cherry Run. A student collection is required, and at the end of the week each collection is evaluated and graded. Student field notebooks are kept throughout the course and these too are evaluated on the last day and then returned to the students for their continued use.The course is offered over a 5-day period at the end of the insect \"active season\" with collection and sampling activities requiring natural light or darkness for a variety of the species studied. For example, aquatic insect stream sampling must be done in daylight and collecting for mosquitoes and other insects must be done at dusk or at night with specialized traps. It is essential that this course be completed prior to night temperatures in the 50's and before the first killing frost."
+    },
+    {
+      "number": 520,
+      "title": "Frontiers in Insect Science",
+      "credits": 4,
+      "description": "This graduate course is designed to provide an overview of the diversity of subjects that fall within the subject of entomology."
+    },
+    {
+      "number": 522,
+      "title": "Critical Thinking and Professional Development in Entomology",
+      "credits": 6,
+      "description": "This is a required coruse for Entomology graduate students focusing on developing the professional skills needed for a successful career in basic or applied research. ENT 522 Critical Thinking and Professional Development in Entomology (6) This required course for Entomology graduate students focuses on developing the professional skills needed for a successful career in basic or applied research. Major topics addressed include (i) effective scientific communication, (ii) the mechanisms of research funding and peer review, (iii) critical evaluation of scientific evidence and arguments, (iv) basic principles of study design, and (v) research ethics and effective collaboration. Students engage in a variety of classroom activities - including lectures, discussions, and peer review of written assignments - and interact with instructors possessing expertise in each of the particular subject areas addressed, as well as with guest instructors working on cutting-edge topics in insect science and related fields. The course emphasizes practical application of the material presented to students' own research. Over the course of the semester, each student reviews relevant literature and develops and refines a research proposal based on their own scientific interests."
+    },
+    {
+      "number": 530,
+      "title": "Seminar in Insect Science",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "requisites": {
+        "concurrent": [
+          "ENT520"
+        ]
+      },
+      "description": "Seminar in insect science. Topics range from insect phys & immunology to chemical ecology & epidemiology. ENT 530 Seminar in Insect Science (1 per semester/maximum of 4) This class will examine current issues in insect science. Topics for a semester will range from insect physiology, immunology and disease to population ecology, agroecology, and biodiversity. The intent is to generate useful discussions that will help participants advance their own understanding of the broader debate about various research topics in insect science. Specific topics will change each semester allowing students to choose those topics of the greatest interest. Topics will be proposed by faculty with expertise in specific areas. Seminal articles, peer-reviewed literature, government and industry reports, webpages and government regulatory documents will be selected by the faculty member proposing the topic to broaden and deepen student understanding of the topic area. Class participation is expected during discussions and oral presentations of topic areas will be expected."
+    },
+    {
+      "number": 532,
+      "title": "Insect Biodiversity and Evolution",
+      "credits": 4,
+      "description": "This course is designed to teach students about insect taxonomy, evolutionary history, collection and preservation techniques, morphology, fossils, and natural history. Lab work focuses on adult forms, especially of insects found in Pennsylvania. Students learn how to handle specimens, use diagnostic keys, and identify insects by sight. Collecting techniques will be honed during field trips. Upon completion of this course students will be able to: (1) teach others how to collect, preserve, and transport insect specimens; (2) name and sight-identify all insect orders and several common local families; (3) label a generalized insect diagram with external anatomy terms; (4) draw a phylogenetic tree of relationships between insect orders; (5) demonstrate understanding of how to read a phylogenetic tree, what kinds of data are used to estimate trees, how those data are analyzed, and what it means to be monophyletic; (6) describe key innovations and life history strategies of major insect lineages; (7) solve taxonomic problems and describe how species and other taxa are named and described, i.e., understand the fundamentals of taxonomic practice; (8) name and briefly describe the latest developments in insect biodiversity research; (9) explain how hexapods inform us about biodiversity and influence our conservation decisions."
+    },
+    {
+      "number": 535,
+      "title": "Statistical Techniques in Entomology",
+      "credits": 3,
+      "description": "Research methods course covering experimental design and analysis in entomology, ecology, and the agricultural science. ENT 535 Statistical Techniques in Entomology (3) This natural sciences study design, analysis and interpretation course is for graduate students in ecological and agricultural sciences. The goal of this course is to provide students with the tools needed to conduct quantitative studies. The course focuses on study design and methodology by covering topics such as the relationship between study design and data types and data collection, and interpretation of results."
+    },
+    {
+      "number": 539,
+      "title": "Chemical Ecology of Insects",
+      "credits": 3,
+      "description": "Interactions of insects with environmental chemicals, including natural and synthetic compounds; host finding and other behavior modifying cues."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses"
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in development of instructional materials, organizing and conducting lectures, laboratories, and evaluating students in Entomology courses (1-599)."
+    },
+    {
+      "number": 603,
+      "title": "Foreign Academic Experience",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Foreign study and/or research constituting progress toward the degree at a foreign university."
+    }
+  ]
+}

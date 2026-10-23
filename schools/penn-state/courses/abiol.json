@@ -1,0 +1,47 @@
+{
+  "subject": "ABIOL",
+  "courses": [
+    {
+      "number": 570,
+      "title": "Astrobiology Field Experience",
+      "credits": 2,
+      "description": "Geological field excursions to sites where the early evolution of life and the environment is revealed and to modern analogues. ABIOL 570 ABIOL 570 Astrobiology Field Experience (2)Astrobiology is a new, multidisciplinary field of science encompassing astronomy, biology, biochemistry, genomics, chemistry, atmospheric chemistry, geochemistry, paleontology, geology, and many other fields of science and technology. Astrobiology includes the study of the origin of life, the connections between the evolution of life and of environments, the potential for life and life's actual distribution in our solar system and beyond, and future of life on Earth and in space. This course is intended to expose students to a variety of rock units (paleosols, sedimentary rocks, glacier deposits, ore deposits, and igneous rocks) formed under a variety of environments during the period between 3 billion years and 400 million years ago in order to give them some ideas about the environments of the early Earth. Students will also be exposed to a variety of geochemical, paleontological, and geological methods to investigate these ancient rocks in order to obtain information about the biological and chemical environments of the early Earth.The field excursion will be held for about two weeks during the Summer semester. It will be preceded by a short series of seminar-style meetings late in Spring semester to discuss the objectives of the excursion and to outline the major features of the field sites to be examined. Possible sites for the excursion will be selected from the Precambrian rocks in Ontario - Quebec, Canada, Michigan, Minnesota, Wisconsin, New York, Virginia, West Virginia, and Maryland and modern microbial ecosystems in the Bahamas and Green Lake (NY). One to three days will be spent at each of the major sites.This is a required course for all students in Dual Title Degree Program in Astrobiology, but is open to any graduate student. This will also be a suitable course for undergraduate students, seniors preferred, with the permission of the instructor. There is no prerequisite. Grading will be based on a term paper submitted within one month after the excursion. The term paper will be based on literature review and field observations on a topic selected by each student."
+    },
+    {
+      "number": 574,
+      "title": "Planetary Habitability",
+      "credits": 3,
+      "description": "Aspects of star and planet formation, habitable zones, biospheric evolution, life in extreme environments, planet and life detection. ABIOL 574 ABIOL 574 Planetary Habitability (3)This course introduces graduate students to the foundations of the field of Astrobiology. Astrobiology is a new, multidisciplinary field of science encompassing astronomy, biology, microbiology, biochemistry, genomics, chemistry, atmospheric chemistry, geochemistry, paleontology, geology, and many other fields of science and technology. Astrobiology includes the study of the origin of habitable planets, origin of life, the connections between the evolution of life and of environments, the potential for life and life's actual distribution in our solar system and beyond, and future of life on Earth and in space. Students will expand their knowledge base beyond their discipline while considering such issues as the origins of stars and planets, environmental conditions of the prebiotic Earth, the origin of life on Earth, the nature of the universal \"tree of life\", the establishment of evolutionary patterns and rates, the causes of global glaciations and their use as analogues for life on planets or moons such as Europa, how life survives in extreme environments on Earth, what determines planetary habitability, how planets in other solar systems are detected, and how we might detect life on other planets. This is a required course for all students in Dual-Title Degree Program in Astrobiology, but is open to any qualified undergraduate or graduate student. There is no specific prerequisite. Grading will be based on participation and performance on a midterm and final examination, problem sets, and laboratory exercises."
+    },
+    {
+      "number": 576,
+      "title": "The Search for Extraterrestrial Intelligence",
+      "credits": 3,
+      "internalEquivalents": [
+        "ASTRO576"
+      ],
+      "description": "This course offers a broad exploration of the Search for Extraterrestrial Intelligence (SETI) as a subfield of astrobiology. It includes a survey of background astronomy and radio engineering concepts necessary to read and analyze the professional literature on the topic, including foundational works and the state-of-the-art. It takes a broad view of SETI, including communication SETI (i.e. radio and optical searches), artifact SETI (search for non-communicative evidence of engineering), and a critical analysis of the assumptions and potential biases inherent in past and current SETI efforts. It also includes discussion of SETI's place in the popular, political, and scientific landscapes."
+    },
+    {
+      "number": 590,
+      "title": "Astrobiology Seminar",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Astrobiology is a multidisciplinary field of science encompassing astronomy, biology, biochemistry, genomics, chemistry, atmospheric chemistry, geochemistry, paleontology, geology, and many other fields of science and technology. Astrobiology includes the study of the origin of life, the connections between the evolution of life and of environments, the potential for life and life's actual distribution in our solar system and beyond, and future of life on Earth and in space. The main focus of lectures, discussions, and projects will be on new and important research developments within the interdisciplinary field of Astrobiology. Additionally, classic literature relevant to each topic will be covered to provide students with important context and principles."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

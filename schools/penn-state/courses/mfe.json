@@ -1,0 +1,126 @@
+{
+  "subject": "MFE",
+  "courses": [
+    {
+      "number": 513,
+      "title": "Financial Risk Management",
+      "credits": 3,
+      "description": "This course covers the core concepts of risk management, allowing risk professionals and non-specialists to interpret risk management information and reports, make critical assessments, and evaluate the implications and the limitations of such results. In addition, they must commit to further uphold the highest professional and ethical standards. This course is directed toward students interested in understanding how large-scale complex risk can be quantified using the latest \"cutting edge\" techniques and case studies that generate \"new knowledge\" regarding how complex risk management situations might be managed. We identify the business and technical issues, regulatory requirements and techniques to measure and report risk across a major organization and to generate new ideas about how failures in risk management are resulting in new and improved procedures. The knowledge obtained in this course provides a theoretically-based approach that is necessary to effectively implement a superior risk management program. Successful candidates will be able to: 1. Acquire and analyze the techniques required to understand and incorporate corporate governance, compliance and risk management. 2. Implement integrated risk management based on sound theoretical underpinnings and new knowledge created by analyzing actual risk management failures. 3. Measure, manage and hedge market, credit (retail and corporate) and operational risk, with an emphasis towards improving existing \"best practices\" based on new knowledge. 4. Appraise the roles of board members and senior management in managing risk, cultivating potentially new solutions to risk management problems."
+    },
+    {
+      "number": 527,
+      "title": "Derivative Securities",
+      "credits": 3,
+      "description": "This course introduces the student to the major derivative securities that are the tools in the management of financial risk: futures, forwards, swaps and options. The course will expose students to potential critiques of traditional financial theory based on recent empirical results, including the global financial crisis of 2007 - 2009. While examining the characteristics and pricing of these instruments, students will also explore how corporations utilize these contracts to reduce their financial risk exposure. The course also explores the practical differences between hedging, speculation and arbitrage. The objective of this course is to examine the important financial characteristics of derivative securities such as swaps, forward, futures, and options contracts and their roles in managing individual and corporate financial risk. Students will apply these concepts in an effort to integrate a comprehensive risk management approach. Among the topics explored for each of these securities are the history and evolution of formalized exchanges, the mechanics of each contract, price relationships, and the theory and practice of hedging. Basic valuation concepts as well as applications and strategies will be emphasized, as well as extensions based on recent innovations in financial engineering and the financial literature."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 801,
+      "title": "Econometric Analysis",
+      "credits": 3,
+      "description": "The aim of this course is to develop basic econometric estimation and hypothesis testing tools necessary to analyze and interpret the empirical relevance of financial and other economic data. The focus will be on the theoretical foundations of econometric analysis and strategies for applying these basic econometric methods in empirical finance research. The course includes the following topics: multivariate regression; maximum likelihood estimation; hypothesis testing; omitted variables and misspecification; asymptotic theory; measurement error and instrumental variables; time-series modelling; predictability of asset returns; econometric tests of the Capital Asset Pricing Model and multifactor models, and volatility modelling."
+    },
+    {
+      "number": 816,
+      "title": "Financial Modeling",
+      "credits": 3,
+      "description": "The course focuses primarily on developing spreadsheet applications and using the case method to apply decision-making procedures to real-world problems in finance areas. Students will be exposed to spreadsheets throughout the course to develop models that can be used in the financial decision-making process. Important financial topics such as financial ratio analysis, financial forecast, regression analysis, portfolio management, asset valuation, risk management, and capital budgeting decisions will be covered. Students will access market data through the internet and proprietary providers. Students will apply advanced skills such as Data Analysis tools, Advanced reporting, Monte Carlo simulation, and user-defined functions and macros. An overview of a scripting programming language in financial analysis/research will also be included."
+    },
+    {
+      "number": 821,
+      "title": "Numerical Optimization for Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MFE513",
+          "MFE527"
+        ]
+      },
+      "description": "This course gives students an overview of the numerical optimization concepts and methods frequently used in financial engineering. Building upon students' knowledge of programming and calculus, this course explores computational finance applications. Many classes of optimization problems will be explored, including linear, non-linear, integer, and dynamic programming. This course will combine theory (optimality conditions, for example) and how to apply the methods to asset allocation, risk management, option pricing, and cash flow matching. Students will also be exposed to using current software tools to solve optimization problems."
+    },
+    {
+      "number": 822,
+      "title": "Stochastic Calculus in Finance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MFE513"
+        ]
+      },
+      "description": "This course is designed to give students an overview of the techniques of stochastic calculus. Building upon a student's calculus and statistical background, the course explores how to model systems that behave randomly. Applying the concepts to financial models, students will explore both discrete and continuous time processes. Major objectives in this course include covering the concepts of arbitrage and risk-neural pricing, discrete-time models, continuous time models, Markov processes, Brownian motion, and the Black-Scholes model. Throughout the course, students will apply the techniques learned to real world problems in areas such as stock prices, bond interest rates, and portfolio management."
+    },
+    {
+      "number": 830,
+      "title": "Financial Engineering Capstone Project",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MFE513",
+          "MFE527",
+          "MFE801",
+          "STAT805"
+        ]
+      },
+      "description": "This course will be an intensive/exploration/hands on course that will consist of two phases, Phase I will be a preparation phase in which the student will acquire on his/her own all the financial terminology to be used throughout the semester. Examples of the topics to be covered in this phase include asset pricing, statistical analysis of high-frequency data, merger and acquisitions, portfolio formation, assessment and traditional portfolio theory, and market anomalies. In Phase II students are required to select a topic from these areas and conduct a research project."
+    },
+    {
+      "number": 895,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, professionally oriented, off-campus, non-group instruction including field experiences, practicums, or internships. Written and oral critique of activity is required."
+    },
+    {
+      "number": 896,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects with a professional orientation , including non-thesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 899,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "description": "Courses with a professional orientation offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

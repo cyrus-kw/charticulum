@@ -1,0 +1,137 @@
+{
+  "subject": "HADM",
+  "courses": [
+    {
+      "number": 506,
+      "title": "Management Information Systems for Public and Health Administration",
+      "credits": 3,
+      "description": "The design, implementation, and purpose of computerized management information systems in health and non-profit organizations."
+    },
+    {
+      "number": 510,
+      "title": "Organization Behavior",
+      "credits": 3,
+      "internalEquivalents": [
+        "PADM510"
+      ],
+      "description": "Examines the concepts of human behavior in formal organizations, systems analysis, conceptual models, and decision processes."
+    },
+    {
+      "number": 539,
+      "title": "Health Systems Organization",
+      "credits": 3,
+      "description": "Health care delivery presented as a socio-technical systems focusing upon resources, policy issues, institutions, technology, and innovations."
+    },
+    {
+      "number": 540,
+      "title": "Health Administrative Policy Formulation",
+      "credits": 3,
+      "description": "Analysis of administrative problems from a total organization viewpoint. Case studies of actual organizations are used for analysis."
+    },
+    {
+      "number": 541,
+      "title": "Health Economics and Policy",
+      "credits": 3,
+      "description": "Public policy issues, health system components from economic perspective. Economic analysis of health sector, medical markets, health care regulation."
+    },
+    {
+      "number": 542,
+      "title": "Health Care Politics and Policy",
+      "credits": 3,
+      "description": "This course reviews political considerations and the policy process as they pertain to health care in the United States."
+    },
+    {
+      "number": 543,
+      "title": "Long-Term Care Administration and Policy",
+      "credits": 3,
+      "description": "This course reviews theory and practice related to long-term care administration and policy."
+    },
+    {
+      "number": 545,
+      "title": "Health Financial Management",
+      "credits": 3,
+      "description": "Theory and techniques of financial management applied to health organizations; forecasting, control systems, working capital, capital budgeting, and institutional financing."
+    },
+    {
+      "number": 546,
+      "title": "Health Planning for Public Administration",
+      "credits": 3,
+      "description": "Comprehensive planning and program planning for health services, facilities, and manpower; social, economic, and political considerations; methodological problems."
+    },
+    {
+      "number": 548,
+      "title": "Health Care Quality Assurance",
+      "credits": 3,
+      "description": "This course reviews theory, methods, outcomes, and management of quality assurance in health care organizations."
+    },
+    {
+      "number": 551,
+      "title": "Health Care Law",
+      "credits": 3,
+      "description": "Course on health law for administrators with coverage including hospital governance, taxation, licensure, liability, malpractice, patients' rights, anti-trust."
+    },
+    {
+      "number": 552,
+      "title": "Health Delivery Systems",
+      "credits": 3,
+      "description": "This course discusses design and implementation of health care delivery systems and the pressure and stakeholders which impact those systems. H ADM 552 Health Delivery Systems (3) This course covers the design and implementation of health care delivery systems. Beginning with policy and environmental pressures, the course considers the interests of diverse stakeholders such as regulators, purchasers, providers and consumers. The content of the course is organized in four areas: (1) traditional delivery systems; (2) managed care concepts and practices; (3) healthy communities approaches; and (4) reform and futures issues.The objective of the course is to increase students' knowledge of the evolving health care delivery systems. This course functions as an elective course in the MHA program. It builds on core courses that have presented the basics of health systems. Students will be required to take a mid-term and final exam and write a term paper (grade 1/3 each). The course will be offered every third semester with an expected enrollment of 20 students."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Supervised research-oriented off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 803,
+      "title": "Research Design",
+      "credits": 3,
+      "description": "This course will identify research methodologies relevant to administration, planning, and public policy. The students will distinguish and demonstrate qualitative and quantitative research approaches, demonstrate and employ various research designs and research methods, demonstrate the process of \"doing research,\" \"writing research,\" and \"presenting research\", and demonstrate an awareness of ethical issues in conducting research. This course is intended for health professionals."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

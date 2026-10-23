@@ -1,0 +1,243 @@
+{
+  "subject": "HLS",
+  "courses": [
+    {
+      "number": 201,
+      "title": "Introduction to Homeland Security",
+      "credits": 3,
+      "internalEquivalents": [
+        "PUBPL201"
+      ],
+      "description": "An introduction to homeland security, and defense, with a focus on policy, legal issues, organization, and administration. PUBPL 201 Introduction to Homeland Security (3) Introduction to Homeland Security provides a baseline of common knowledge for understanding the nature of homeland security. The course achieves this goal by focusing on homeland security, the motivation and nature of terrorists, the policies established by governments, pertinent governmental plans to meet homeland security goals, who the key players are in homeland security, and the relevant legal issues framing efforts to defend the nation's security. As an introduction to the broad area of study, this course serves as a basis for specialized study such as critical infrastructure protection, emergency response management (including natural disasters), border security, security administration, national security, and terrorism. Understanding key principles of homeland security will be expected from students who complete this course."
+    },
+    {
+      "number": 306,
+      "title": "Introduction to Crisis and Emergency Management",
+      "credits": 3,
+      "internalEquivalents": [
+        "PUBPL306"
+      ],
+      "description": "An introduction to emergency management in mitigating, preparing for, responding to and recovering from hazards. PUBPL 306 Introduction to Crisis and Emergency Management (3) The course offers an overview of the field of emergency management in dealing with routine emergencies, crises or disasters, and mega disasters. Specific topics emphasized include: the roles and interactions of the public, nonprofit, and private sectors in emergency management; the legal and organizational structure of the national emergency management system; and the problems and policy issues associated with emergency management. This is done by examining the four phases of emergency management: mitigation, preparedness, response and recovery as they relate to resilience, the attempt to; and an overview, including case studies, of various human-made and, technological disasters as well as disasters related to natural hazards. Emergency management as conducted within the U.S. integrated emergency management system (IEMS) by local state and national emergency management agencies, not terrorist incidents, is the course focus rather than the emerging field of homeland security and terrorist events."
+    },
+    {
+      "number": 475,
+      "title": "Critical Infrastructure Protection",
+      "credits": 3,
+      "internalEquivalents": [
+        "PUBPL475"
+      ],
+      "description": "This course provides knowledge about protection of critical infrastructure as an aspect of homeland security. PUBPL 475 Critical Infrastructure Protection (3) Critical Infrastructure Protection provides a definition of critical infrastructure and examines the importance of protecting it in the post-9/11 era. The course focuses on policies and programs designed to prevent catastrophic events and to protect and maintain the nation's critical infrastructure. It examines such activity through an understanding of the network of organizations at all levels of government and in the private sector responsible for protecting infrastructure. Case examples are provided of catastrophic events to provide an understanding of risks involved in infrastructure protection. Understanding key principles will be measured through preparation of a written analysis of a key homeland security/defense issue with alternative strategies consistent with current policy and legal constraints."
+    },
+    {
+      "number": 476,
+      "title": "Homeland Security Intelligence",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "PUBPL476"
+      ],
+      "description": "The Homeland Security Intelligence course provides a depth of knowledge of key intelligence issues for homeland security professionals."
+    },
+    {
+      "number": 483,
+      "title": "Seminar in National Security Policy",
+      "credits": 3,
+      "internalEquivalents": [
+        "PLSC483",
+        "PUBPL483"
+      ],
+      "description": "This course provides a comprehensive overview of the process of U.S. national security policy - the principles, practices, and participants in the development and implementation of security strategy and policy. It applies theories and models to the bureaucratic policy making structure of the Executive Branch, looks at the roles of other governmental participants, and evaluates the many factors that constrain decision making. It assesses the impact of non-governmental entities such as the media, interest groups, and public opinion, and considers the effect of changing domestic factors on the process. Finally, it prepares students to be knowledgeable and effective participants in the process and presents them with a practitioner's framework for policymaking. The main themes of this course are that the U.S. Constitution established a federal government of separate institutions sharing powers within an intentionally inefficient system of checks and balances that has evolved by virtue of a dynamic process of Constitutional Amendments, legislative statutes, judicial decisions, and executive actions; and, that national security decisions are best understood by considering the bureaucratic context in which they are made within the Executive Branch, and as a result of the interaction of other governmental and non-governmental participants."
+    },
+    {
+      "number": 495,
+      "title": "Homeland security internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, non-group instruction including field experiences, practica, or internships. Written and oral critique of activity required. A specific title may be used in each instance and will be entered on the student's transcript."
+    },
+    {
+      "number": 540,
+      "title": "Comparative Homeland Security and Related Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HLS811",
+          "HLS813",
+          "HLS801",
+          "HLS803",
+          "HLS805"
+        ]
+      },
+      "description": "The need for a coordinated, international response to security threats to citizens and societies since 9/11 has never been greater. Homeland security in the U.S. is a specific subset of national security that focuses on a risk-informed mission space, addressing it by law-enforcement - as opposed to defense - concepts and capabilities, and working across the country and around the world to keep the American nation safe and secure. Homeland security and civil security policies and strategies to make nations secure and resilient against terrorist as well as all-hazards threats were established not only in the U.S. but also in many other countries in the world, based on the need to work with international partners. This course provides students with information and skills to undertake international comparative analysis of civil security threats and ways to address those threats. Crucial aspects of this course will include a comparative examination of select topics, such as: critical infrastructure protection; cybersecurity; use of armies in homeland security; public-private partnerships; security governance; as well as the creation of \"security\" as public good and its \"delivery\" to the citizens in different countries, along with U.S. collaboration with other nations. The course is rooted in the research focus of civil security. This refers to an all-hazards approach to identifying and closing security gaps based on a mission-centered, comprehensive approach (prevention, preparedness, mitigation, response, recovery - plus transversal aspects such as resilience) that is tuned to end-user requirements, and speaks to technological and societal aspects (including ethical and legal issues). Civil security focuses on both 'all of government' and 'whole of community.' It includes dual-use aspects and civil-military interaction in crisis management, but excludes military-only aspects. The course places an emphasis on U.S.-European Union (EU) comparisons based on a related U.S.-EU implementing arrangement, and covers other world regions also. It will further scrutinize comparative analysis of emergent threats and challenges by focusing on risk cultures and security cultures in different countries. Moreover, the course will critically assess - across different countries - citizens perceptions of homeland security and public acceptance of the use of security technology for surveillance and other purposes, across different countries. The comparative perspective cannot be taught without investigating methods and analytical approaches. Lessons will therefore include comparative examination of research-related methods as well as practical methods - such as risk and vulnerability assessment - used in the policy sector, and how and why those differ across countries."
+    },
+    {
+      "number": 558,
+      "title": "Whole-Community Disaster Preparedness",
+      "credits": 3,
+      "internalEquivalents": [
+        "PSY558"
+      ],
+      "description": "Whole-community disaster preparedness describes a fairly wide range of issues of relevance to the homeland security mission space that essentially encompasses aspects of emergency management, such as \"ensuring resilience to disasters\" as one of the core missions of the U.S. Department of Homeland Security (DHS) - since after 9/11 and the creation of DHS, the Federal Emergency Management Agency (FEMA) came under the roof of DHS, forming one of its so-called department components. Academically and professionally, disaster psychology contributes an important perspective to emergency management within an all-hazards and a whole-of-community approach to homeland security: Based on a general civil security perspective, it addresses the way people perceive and experience disasters, the way they react to them, and the way they recover from them. Within this context, the course explores the psychological impact of disasters and terrorist attacks on victims, families, rescuers, and society and methods of reducing negative psychological effects. Topics covered include the perception and communication of risk, psychological effects of traumatic events, and psychological interventions to reduce harmful psychological effects of disasters."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HLS801",
+          "HLS803",
+          "HLS805",
+          "HLS811",
+          "HLS812",
+          "HLS813",
+          "HLS558"
+        ]
+      },
+      "description": "The course builds on the knowledge components and skills students have gained in prior courses in the program, and students should actively use and integrate those during their work in this capstone course. The purpose of this course is to provide a culminating study and research experience in order to develop additional competencies in problem identification; conducting, using, and interpreting research for problem solving; professional writing and oral presentation; as well as group research and presentation skills. During the course, students will work both individually and within one of several assigned groups.The course therefore requires students to demonstrate evidence of analytical ability and synthesis of material, as gained in the iMPS-HLS program. Students are also expected to actively use knowledge, analytical insight, and experience gained in previous classes and throughout the program as a whole."
+    },
+    {
+      "number": 595,
+      "suffix": "A",
+      "title": "Internship Experience in the Homeland Security Enterprise",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "HLS801",
+          "HLS803",
+          "HLS805"
+        ]
+      },
+      "description": "HLS 595A Internship Experience in the Homeland Security Enterprise (3 per semester/maximum of 6) This one-semester internship is offered in falls, spring, and summer. This one-semester internship is designed to provide real world experience in the Homeland Security Enterprise. The course is an elective for students in the Intercollege Master of Professional Studies in Homeland Security (iMPS-HLS) program. Internships can be part-time or full-time and paid or unpaid. Interns may earn 3-6 credits. The number of credits a student can earn will be based on the character of the actual work performed in the internship, in particular the site-specific research project. Interns must complete at least 300 hours on the internship. This is equivalent to working 20 hours per week, although internship schedules are flexible and may be determined on an individual basis. The course includes both an internship and accompanying academic supervision and discussion. It is available to students enrolled in all options related to the program. The course is an additional offering to specialized internship programs that are in place in some iMPS-HLS options. It focuses on a comprehensive real-world experience of the Homeland Security Enterprise: The internship provides real-world experience to enhance the educational experience and application of knowledge and skills acquired in the program. The accompanying academic supervision and discussion contribute to reaching the overall purpose of the course: to integrate academic and real world learning through an internship opportunity in a workplace setting. Internship activities and assignments are designed to: understand how research and studies are conducted, used, or interpreted in the Homeland Security Enterprise to inform real-world decision-making; to enhance professional development; gain career-related experiences and to provide the opportunity for real-world application of knowledge in a workplace setting; and to prepare for potential job placements. The course places students in numerous workplace and/or research settings that will allow students the opportunity to apply and integrate academic coursework within a professional setting to prepare for further job placement in the Homeland Security Enterprise. Additionally, internship activities and assignments are designed to meet individualized goals and skills, and to evaluate progress toward those competencies. Internship work will be evaluated on an on-going basis with the student intern, site supervisor, and faculty member involved in the process."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 801,
+      "title": "Homeland Security Administration: Policies and Programs",
+      "credits": 3,
+      "description": "Foundation for understanding homeland security history, the development of homeland security policies and organizations, and current management approaches."
+    },
+    {
+      "number": 803,
+      "title": "Homeland Security: Social and Ethical Issues",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHIL803"
+      ],
+      "description": "This course will examine the social, political, legal, and ethical issues that arise in the context of homeland security."
+    },
+    {
+      "number": 804,
+      "title": "Strategic Planning and Organizational Imperatives in Homeland Defense and Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HLS811"
+        ]
+      },
+      "description": "The course covers the essential concepts of planning for the response to all hazards incidents. The National Incident Management System (NIMS) and its companion policy guidance document, the National Response Framework (NRF), provide broad policy guidance for a comprehensive approach to domestic incident management to prevent, prepare for, respond to, and recover from all hazards incidents. Familiarity with the NIMS and the NRP are essential for individuals to integrate into and be a valuable member of destructive event mitigation and response, whether disasters are natural or human-caused. Critical infrastructure, key resources, and border protection provide the framework for the nation's homeland security and defense efforts. Over eighty percent of these resources reside in the private sector. This presents a challenge to the nation, particularly in the areas of policy guidance and information sharing between the public and the private sectors. These challenges will be presented and analyzed during this course. Participant's understanding of the principles presented will be measured through the preparation of an analysis of a key homeland security/defense issue related to the materials presented."
+    },
+    {
+      "number": 805,
+      "title": "Violence, Threats, Terror, and Insurgency",
+      "credits": 3,
+      "internalEquivalents": [
+        "PLSC805"
+      ],
+      "description": "This course examines political violence committed by non-state groups as it applies to homeland security from both a domestic and global perspective."
+    },
+    {
+      "number": 811,
+      "title": "Fundamentals of Homeland Security and Emergency Management",
+      "credits": 3,
+      "description": "In this course, students will come to understand the history of homeland security as it evolved from the traditional fields of civil defense and emergency management studies. Students will further come to appreciate the problems and prospects of establishing proactive homeland security and emergency management capabilities in a modern threat environment calling for a higher level of preparedness and significantly more awareness. Knowledge will be obtained about how to provide security against various hazards, natural or manmade (e.g., hurricanes, floods, bombings, chemical, biological, or cyber attacks), how to protect critical infrastructures (e.g., transportation, agriculture), and how to plan for effective response and recovery efforts (e.g., first responder, law enforcement, humanitarian relief efforts). The principles and practices of emergency planning and management (e.g., risk analysis, emergency preparedness, incident command) are also discussed in this and other courses throughout the curriculum. Instruction also focuses on new and emerging principles of operating in the interagency, multi-jurisdictional cooperation involving the private sector, law enforcement, academia, nonprofits, and private citizens."
+    },
+    {
+      "number": 812,
+      "title": "Homeland Security and Homeland Defense in Practice",
+      "credits": 3,
+      "description": "This course analyzes and evaluates current homeland security, homeland defense, and defense support of civil authorities, plans, and programs, as well as the constraints hindering the implementation of federal and state initiatives. This course has a major goal: to enable students to apply, evaluate, and think critically about homeland security enterprise plans and programs across tiers of government by applying professional as well as policy analysis methods and presenting results in mission space-typical as well as academic formats."
+    },
+    {
+      "number": 813,
+      "title": "Multifaceted Approaches to Homeland Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "HLS811",
+              "HLS812"
+            ]
+          }
+        ]
+      },
+      "description": "Preparedness and responsiveness have long been part of the law enforcement and military lexicon; however 9/11 expanded the terms' application and the number of people who hold responsibility for their implementation. The result is a growing interest surrounding the nature of the terrorist threat and how intelligence fusion is essential to prevention; the role of the military in civil society; cooperation among federal, state, and local agencies as well as the private sector in response to a catastrophic event; the importance of planning and exercises to improve the mitigation of such events. This course gives an overview of relevant perspectives and concepts related to these topics and develops a framework that demonstrates their interconnectivity. In addition to providing a conceptual understanding of key ideas, it familiarizes students with the roles played by various entities (e.g., law enforcement, intelligence organizations, the military, and federal, state, and local agencies) and the de facto framework in which they exercise their responsibilities. The course gives students an overview of intelligence and the importance of intelligence fusion as a counter-terrorism force as well as the need for collaboration among all relevant actors and the integration of actions and planning. Finally, it provides an opportunity for students to demonstrate their ability to apply knowledge and methodologies to real-world cases, practically assessing key components in mitigating the impact of future events."
+    },
+    {
+      "number": 820,
+      "title": "Emerging Threats to Homeland Security",
+      "credits": 3,
+      "description": "This course provides new insights of the emerging threats, disruptive technologies, and techniques for analyzing them to plan for the future of Homeland Security. Emerging threats and disruptive technology is a new field of study in the homeland security enterprise, whether in academia, public, or private sector. Thus, there is very little awareness or understanding of the needed policies, analytical methodologies, and strategic planning to guide homeland security practices over the next generation. In some ways, the homeland security enterprise is operating in a knowledge void, with the potential of being surprised as new and potentially devastating threats emerge. To adapt to this new learning environment we are compelled to take a multi-disciplinary approach to researching and understanding threats, societal context, and applications of advanced technologies."
+    },
+    {
+      "number": 821,
+      "title": "Transnational Criminal Organizations and HLS",
+      "credits": 3,
+      "description": "This course will provide an overview of transnational crime and its effects on homeland security. This course will focus on the proliferation and expanding influence of transnational criminal organizations (TCOs) and on the links and significance of TCOs to institutional corruption, trafficking, cybercrime, and terrorism. The class will examine the diverse dimensions of transnational crime in the context of increasing globalization and the exponential impact of technology advances. It will also examine and discuss recent developments in the US regarding TCOs and global efforts to counter narco and human trafficking, Intellectual Property Rights violations, cyber crime, illicit finance, and terrorist ties to TCOs."
+    },
+    {
+      "number": 832,
+      "title": "U.S. Military's Domestic Imperative: Homeland Defense and Defense Support of Civil Authorities",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "HLS801"
+        ]
+      },
+      "description": "Provides an overview of the homeland defense mission and defense support of civil authorities during disasters, and the distinctions between the two. HLS 832 U.S. Military's Domestic Imperative: Homeland Defense and Defense Support of Civil Authorities (3) The U.S. Military's Domestic Imperative: Homeland Defense (HD) and Defense Support of Civil Authorities (DSCA), will explain the military's HD mission and DSCA during disasters, and the distinctions between the two. Any prospective homeland security practitioner should understand the basics of the Department of Defense's (DOD) roles, missions, and functions in protecting the homeland, as well as how DOD provides support to civil authorities. This is especially true if Penn State graduates will be the future leaders of the homeland security enterprise.The course will provide students with the generally accepted body of knowledge in HD and DSCA required of the homeland security professional. The course focuses on: policies and procedures; roles, missions, and functions of DOD in a HD or DSCA environment; key players at the federal, state, and local levels; and critical legal issues. In addition to gaining a broad, general understanding of this wide range of subjects, students will also gain some experience in critical thinking in the disciplines of HD and DSCA."
+    },
+    {
+      "number": 875,
+      "title": "U.S. Homeland Security Law",
+      "credits": 3,
+      "description": "This course assesses the controlling authorities that pertain to homeland security, from the U.S. Constitution to major federal statutes, court decisions, and executive directives. Beyond an analysis of the universal relevance of law to homeland security, specific issues are considered in detail, based on their relationship to U.S. vital national interests. The course also emphasizes the compelling standard that government organizations, as well as the professional practitioner, perform competently in all situations. It provides current and future homeland security practitioners with established knowledge and methodologies in the field of the study of U.S. homeland security law, as applied to practice. It focuses on the essential role that law plays in providing practical solutions for homeland security problems across all preparedness capabilities, from prevention and protection to response and recovery. Beyond application of knowledge from the many dimensions of homeland security law in the context of providing pragmatic solutions for professionals, the course is designed to stimulate critical thinking and improve students' leadership attributes in order to support them in becoming accomplished practitioners, while reaffirming their commitment to the de facto and de jure requirement to preserve fundamental rights and freedoms."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently."
+    }
+  ]
+}

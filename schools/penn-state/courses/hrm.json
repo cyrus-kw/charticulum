@@ -1,0 +1,26 @@
+{
+  "subject": "HRM",
+  "courses": [
+    {
+      "number": 494,
+      "title": "Research Topics in HRM",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Internship in Human Capital Management",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    }
+  ]
+}

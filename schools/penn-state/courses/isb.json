@@ -1,0 +1,42 @@
+{
+  "subject": "ISB",
+  "courses": [
+    {
+      "number": 207,
+      "title": "Integrating Science and Business",
+      "credits": 1,
+      "description": "This course is designed to bring together second and third year ISB majors to discuss in-depth the Interdisciplinary Science and Business (ISB) major. ISB students are required to select one science module and one business module for the major. The first seven weeks will be used to explore the six different modules. Science modules currently include quantitative, lab sciences, and human health. Business modules currently include accounting and finance; technical sales; and operations and supply chain management. The modules covered may change to reflect changes in offering of the ISB program. Students will then explore how science and business have been integrated in industry by examining case studies. These case studies will be used to show students how business and science can be integrated to solve real world problems. Career opportunities and internships will then be explored by interacting with people whose jobs require integrating science and business and by bringing in employers who hire students with these skills, both as interns and as graduates. Finally, the last two weeks of the course will be spent exploring the future of these types of jobs, including what skills students might be interested in acquiring outside the curriculum and what future skills may be desirable."
+    },
+    {
+      "number": 475,
+      "suffix": "W",
+      "title": "Strategic Integration of Science & Business",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "FIN301",
+          "SCM301",
+          "MGMT301",
+          "MKTG301",
+          "ISB207"
+        ]
+      },
+      "description": "This course will provide a capstone experience for the Interdisciplinary Science and Business BS degree. The tools of strategic management and cross-functional collaboration will be introduced and serve as a background for the design, development, and implementation of a new product or process within an existing corporation. Student teams will be provided with an industry concept and work toward the objectives of a firm sponsoring the product concept. During the course, the evaluation of the product will include the feasibility of the product or process in terms of design, manufacture, and intellectual property. This evaluation will be presented to the firm by student teams. The final deliverable will include a complete written assessment of each of the components of feasibility."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised field experience related to the student's major."
+    }
+  ]
+}

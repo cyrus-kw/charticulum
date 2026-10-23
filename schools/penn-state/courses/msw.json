@@ -1,0 +1,488 @@
+{
+  "subject": "MSW",
+  "courses": [
+    {
+      "number": 510,
+      "title": "Research Methods in Clinical Social Work Practice",
+      "credits": 3,
+      "description": "This course is designed to introduce social research methods in the context of social work practice. Research and evaluation are critical components of professional social work practice, and this foundation course hones in on critical thinking skills and examines methods of inquiry for testing theory and evaluating the effectiveness of social work practice. This course covers research skills and covers how research is integrated into social work practice. Steps in this process are covered in depth, and students will receive practice in moving from problem identification to research design to analysis to writeup. These are the same steps students will use for their capstone experience project at the end of the program. Research skills will be integrated with other areas of the MSW curriculum, and this course will examine the relationship between theory and research, the conceptualization of research questions and hypotheses, and elements of research design and analysis. It will introduce both quantitative and qualitative methodologies to build knowledge for practice."
+    },
+    {
+      "number": 560,
+      "title": "Applied Research in Clinical Social Work Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW510"
+        ]
+      },
+      "description": "This advanced research course builds on material covered in the foundation research course about the design, development, and execution of sound scientific practices. Emphasis will be placed on areas of sampling, measurement, and proposal writing. Topics will include practical sampling design, question formation, questionnaire/interview construction and format, scaling, critiquing proposals, budget development, budget justification, timelines, etc. Special attention will be given to randomized clinical trials (RCT), with the understanding that this is often not feasible in social work practice for ethical and practical reasons. As a result, selection bias is of substantial concern and how results are written and interpreted need to consider the impacts of selection. This class will focus on the application of research methodology to increase student's understanding of the tradeoffs and limitations of various designs within the parameters of a naturalistic setting. The importance of balancing rigorous scientific methods with ethics, practicality and feasibility to answer important questions for social work practice will be emphasized. This course will also focus on preparing students for their capstone experience and assignments will be tailored to student's individual projects."
+    },
+    {
+      "number": 800,
+      "title": "Foundations of Field Education 1",
+      "credits": 3,
+      "description": "This course is taken at the same time MSW students are placed into their field experience placements. Topics will be introduced to students in class with their practical application being implemented in the concurrent field placement setting. Through guided supervision, the MSW student will be introduced to the role of a professional social worker and demonstrate clinical skills achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 800,
+      "suffix": "A",
+      "title": "Foundations of Field Education 1 Part A",
+      "credits": 1,
+      "description": "This is the first in a three-part series for students to complete Foundations of Field Experience 1 in a part-time format. This course is taken at the same time MSW students are placed into their field experience placements. Topics will be introduced to students in class with their practical application being implemented in the concurrent field placement setting. Through guided supervision, the MSW student will be introduced to the role of a professional social worker and demonstrate clinical skills achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 800,
+      "suffix": "B",
+      "title": "Foundations of Field Education 1 Part B",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "MSW800A"
+        ]
+      },
+      "description": "This is the second in a three-part series for students to complete Foundations of Field Experience 1 in a part-time format. This course is taken at the same time MSW students are placed into their field experience placements. Topics will be introduced to students in class with their practical application being implemented in the concurrent field placement setting. Through guided supervision, the MSW student will be introduced to the role of a professional social worker and demonstrate clinical skills achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 800,
+      "suffix": "C",
+      "title": "Foundations of Field Education 1 Part C",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "MSW800A",
+          "MSW800B"
+        ]
+      },
+      "description": "This is the third in a three-part series for students to complete Foundations of Field Experience 1 in a part-time format. This course is taken at the same time MSW students are placed into their field experience placements. Topics will be introduced to students in class with their practical application being implemented in the concurrent field placement setting. Through guided supervision, the MSW student will be introduced to the role of a professional social worker and demonstrate clinical skills achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 801,
+      "title": "Foundations of Field Education 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW800",
+              [
+                "MSW800A",
+                "MSW800B",
+                "MSW800C"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This course is the student's second social work field education experience in the four-part field education practicum sequence and provides the MSW student with continued direct clinical practice experience in a clinical agency setting. Through guided supervision, the MSW student continues in the role of a professional social worker demonstrating clinical skills and achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 801,
+      "suffix": "A",
+      "title": "Foundations of Field Education 2 Part A",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW800",
+              [
+                "MSW800A",
+                "MSW800B",
+                "MSW800C"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This is the first in a three-part series for students to complete Foundations of Field Experience 2 in a part-time format. This course is the student's second social work field education experience in the four-part field education practicum sequence and provides the MSW student with continued direct clinical practice experience in a clinical agency setting. Through guided supervision, the MSW student continues in the role of a professional social worker demonstrating clinical skills and achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 801,
+      "suffix": "B",
+      "title": "Foundations of Field Education 2 Part B",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW800",
+              [
+                "MSW800A",
+                "MSW800B",
+                "MSW800C"
+              ]
+            ]
+          }
+        ],
+        "concurrent": [
+          "MSW801A"
+        ]
+      },
+      "description": "This is the second in a three-part series for students to complete Foundations of Field Experience 2 in a part-time format. This course is the student's second social work field education experience in the four-part field education practicum sequence and provides the MSW student with continued direct clinical practice experience in a clinical agency setting. Through guided supervision, the MSW student continues in the role of a professional social worker demonstrating clinical skills and achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 801,
+      "suffix": "C",
+      "title": "Foundations of Field Education 2 Part C",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW800",
+              [
+                "MSW800A",
+                "MSW800B",
+                "MSW800C"
+              ]
+            ]
+          }
+        ],
+        "concurrent": [
+          "MSW801A",
+          "MSW801B"
+        ]
+      },
+      "description": "This is the third in a three-part series for students to complete Foundations of Field Experience 2 in a part-time format. This course is the student's second social work field education experience in the four-part field education practicum sequence and provides the MSW student with continued direct clinical practice experience in a clinical agency setting. Through guided supervision, the MSW student continues in the role of a professional social worker demonstrating clinical skills and achieving the integration of classroom knowledge with professional practice skills. This course will address the social work field education placement experience, including the Field Learning Plan, caring for self in the Field Education Experience, the values and ethics of social work practice, professional boundaries, malpractice issues , approaches to supervision in social work practice, common problems in field, legal & regulatory issues in field, termination, evaluation, licensing and the Educational Policy and Accreditation Standards (EPAS )Standards. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice settings applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 802,
+      "title": "Specialized Field Education 1",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW801",
+              [
+                "MSW801A",
+                "MSW801B",
+                "MSW801C"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This is the third course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part advanced practice second year sequence. Field education is the signature pedagogy for social work education. The Specialized Field Education I course is the student's advanced social work field education experience. The Specialized Field Education I course is the advanced field placement in the continuation of the MSW student's social work field education experience. This course builds upon the work completed in the foundation Field Education sequence by providing the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Additionally, the MSW student will begin work on their graduate Capstone Project during the Specilized Field Education I course. The student will continue to attend a weekly synchronous one-hour on-line seminar session for the continued integration of classroom knowledge with professional practice skills. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 802,
+      "suffix": "A",
+      "title": "Specialized Field Education 1 Part A",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW801",
+              [
+                "MSW801A",
+                "MSW801B",
+                "MSW801C"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This is the first in a three-part series for students to complete Specialized Field Education 1 in a part-time format. This is the third course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part advanced practice second year sequence. Field education is the signature pedagogy for social work education. The Specialized Field Education I course is the student's advanced social work field education experience. The Specialized Field Education I course is the advanced field placement in the continuation of the MSW student's social work field education experience. This course builds upon the work completed in the foundation Field Education sequence by providing the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Additionally, the MSW student will begin work on their graduate Capstone Project during the Specilized Field Education I course. The student will continue to attend a weekly synchronous one-hour on-line seminar session for the continued integration of classroom knowledge with professional practice skills. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 802,
+      "suffix": "B",
+      "title": "Specialized Field Education 1 Part B",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW801",
+              [
+                "MSW801A",
+                "MSW801B",
+                "MSW801C"
+              ]
+            ]
+          }
+        ],
+        "concurrent": [
+          "MSW802A"
+        ]
+      },
+      "description": "This is the second in a three-part series for students to complete Specialized Field Education 1 in a part-time format. This is the third course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part advanced practice second year sequence. Field education is the signature pedagogy for social work education. The Specialized Field Education I course is the student's advanced social work field education experience. The Specialized Field Education I course is the advanced field placement in the continuation of the MSW student's social work field education experience. This course builds upon the work completed in the foundation Field Education sequence by providing the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Additionally, the MSW student will begin work on their graduate Capstone Project during the Specilized Field Education I course. The student will continue to attend a weekly synchronous one-hour on-line seminar session for the continued integration of classroom knowledge with professional practice skills. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 802,
+      "suffix": "C",
+      "title": "Specialized Field Education 1 Part C",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW801",
+              [
+                "MSW801A",
+                "MSW801B",
+                "MSW801C"
+              ]
+            ]
+          }
+        ],
+        "concurrent": [
+          "MSW802A",
+          "MSW801B"
+        ]
+      },
+      "description": "This is the third in a three-part series for students to complete Specialized Field Education 1 in a part-time format. This is the third course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part advanced practice second year sequence. Field education is the signature pedagogy for social work education. The Specialized Field Education I course is the student's advanced social work field education experience. The Specialized Field Education I course is the advanced field placement in the continuation of the MSW student's social work field education experience. This course builds upon the work completed in the foundation Field Education sequence by providing the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Additionally, the MSW student will begin work on their graduate Capstone Project during the Specilized Field Education I course. The student will continue to attend a weekly synchronous one-hour on-line seminar session for the continued integration of classroom knowledge with professional practice skills. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision."
+    },
+    {
+      "number": 811,
+      "title": "Foundations in Clinical Social Work Practice 1",
+      "credits": 3,
+      "description": "This course is the first of two in the foundations of clinical social work practice sequence. This course will provide first year MSW students with foundational concepts, knowledge, values, and skills in clinical social work practice with individuals, families, groups, organizations, and communities. Particular attention is given to the needs of at-risk and vulnerable populations in the context of age, ability, culture, education, ethnicity, gender identity, identity, nationality/national origin, race, religion/spirituality, sexual identity, sexual orientation, socioeconomic status or any other distinguishing characteristics or traits in the delivery of competent and effective clinical social work practice. The classroom content of Foundations in Clinical Social Work Practice is integrated with the student's field experience as signature pedagogy of the social work curriculum."
+    },
+    {
+      "number": 812,
+      "title": "Foundation in Clinical Social Work Practice 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW811"
+        ]
+      },
+      "description": "This course is the second of two in the foundations of clinical social work practice sequence. This course will provide an in-depth exploration of the foundational concepts and knowledge of the ethics, values, techniques, skills, and roles in clinical social work practice with individuals, families, groups, organizations, and communities by generalist and clinical practitioners. Students will explore the application of foundational concepts, practice knowledge and competence for work with families, groups, organizations, and communities. Integral to both courses in the foundations sequence, is particular attention given to the needs of at-risk and vulnerable populations in the context of age, ability, culture, education, ethnicity, gender identity, identity, nationality/national origin, race, religion/spirituality, sexual identity, sexual orientation, socioeconomic status or any other distinguishing characteristics or traits in the delivery of competent and effective clinical social work practice."
+    },
+    {
+      "number": 813,
+      "title": "Human Development in the Social Environment",
+      "credits": 3,
+      "description": "This course explores conceptual frameworks in human development throughout the life span. An emphasis is placed on the social, cultural, political, historical, and economic forces that shape development. Major theoretical perspectives from sociology, psychology, anthropology, and economics will be covered to explain both internal dynamics and external forces that shape human behavior. In addition, this course examines the physical, cognitive, and emotional development of the individual from infancy through adolescence and focuses on the continuation of growth, change, and adaptation throughout young adulthood, middle age, and old age. This course is an essential foundation for social work practice with its person in environment orientation for understanding human behavior."
+    },
+    {
+      "number": 814,
+      "title": "Social Welfare Policy",
+      "credits": 3,
+      "description": "This course surveys the history of social welfare policy, services, and the social work profession in the United States. It explores current social welfare issues in the context of their history and analyzes the values and assumptions that support different approaches. Existing welfare programs and institutions are examined in the social, economic, political and cultural contexts in which they have evolved. The course examines the development of cash assistance and social service programs in light of the long legacy of poverty, racism, sexism, and other forms of structure oppression, and their enduring effects on U.S. society today. This examination provides perspective on the source of conflict and consensus in American history. The course also traces the roles that social workers have played in the formulation and implementation of social welfare policy-as well as their role in promoting social movements opposed to existing policy-and links these historical examples to contemporary policy practice."
+    },
+    {
+      "number": 815,
+      "title": "Clinical Social Work Practice Across the Lifespan 1",
+      "credits": 3,
+      "description": "This course will provide students with foundational concepts, knowledge, values, and skills in clinical social work practice with individuals, families, groups, organizations, and communities. In the first semester, the course emphasis is on the development of foundational concepts, practice knowledge, and competence for work with individuals. An introduction to generalist social work principles emphasizing a systems perspective, the continuum of service delivery levels and modalities, and a commitment to underserved and vulnerable populations. The course content is focused on teaching basic practice skills; students are exposed simultaneously to the theory, research, and necessary skills required to work with individuals, and families in the engagement, assessment, intervention, termination, and evaluation phases of treatment. The person-in-environment and systems approach to practice is emphasized, highlighting the necessity for multilevel intervention. Course content includes micro and mezzo social systems thinking applied to the assessment of socio-structural institutions and organizations as well as change strategies and fundamentals of group and community organizational practice, with an emphasis on multi-cultural and anti-oppression perspectives in clinical social work practice. The importance of research to social work practice is introduced as it applies to the understanding of client problems and the choice and effectiveness of an intervention. In addition, knowledge of professional identity, the profession's ethical standards, and the ethical dilemmas that occur as social work values and professional ethics are operationalized in practice."
+    },
+    {
+      "number": 816,
+      "title": "Clinical Social Work Practice Across the Lifespan 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW815"
+        ]
+      },
+      "description": "This foundation practice course is the second in a two-course sequence designed to provide M.S.W. students with foundational knowledge, values, and skills in social work practice with families, groups, organizations, and communities. In the first course, the emphasis was on the development of practice knowledge and skills in the areas of engagement, assessment, goal setting, contracting, intervention and evaluation with individuals. In the second course, students further develop this knowledge and skill base and learn about its use in working with families, groups, organizations, and communities. Attention to the implications of race, culture, ethnicity, gender, socioeconomic background, age, sexual orientation, religion, and disabilities in social work practice continues to be an integral part of foundation practice learning. Students learn about how core professional values, including a commitment to social change to meet socially recognized needs, respect and appreciation for individual and group differences, and promotion of social justice and economic, physical, and mental well-being of all in society, apply to practice with larger systems. Through the use of assigned readings and discussion posts, emphasis is placed on principles of ethical practice, cultural awareness in practice, and the promotion of access to services for people with the greatest social and economic needs. Throughout the course, the impact of inequality and oppression in the provision of services with families, groups, communities, and organizations and in the dynamics of practice settings is explored, and students develop an awareness of the impact of difference and diversity in assessment and ongoing social work practice with families, groups, organizations, and communities. Students learn the unique role that families, groups, organizations, and communities work to play in the continuum of social work practice methodologies. In addition, they learn to apply a strengths perspective in social work practice occurring in the family, group, organizational, and community settings, with an emphasis on vulnerable and marginalized populations. The themes of practicing from a person-in-environment and a strength-based perspective are continued in this course. Students study how practice with groups can, directly and indirectly, promote social and economic justice. Particular emphasis is placed on selecting interventions that have been shown, through empirical evidence, to be effective. Students also gain an understanding of how to provide culturally sensitive practice and critically analyze ethical dilemmas that arise in social work practice with groups."
+    },
+    {
+      "number": 819,
+      "title": "Diverse Populations in Clinical Social Work Practice",
+      "credits": 3,
+      "description": "This course will explore the origins and development of selected social variables characterizing the diversity dimensions (including race, ethnicity, class, gender identity, gender expression, geography and nationality) in contemporary U.S. society. Social and behavioral science theories and research findings on the allocation of different roles, status, and opportunities to these populations will be examined. Students will use a multicultural framework to examine power, privilege, discrimination, and oppression. This course will emphasize that effective social work practice with diverse groups involves understanding professional ethics in the context of the values of both the dominant society and the ethnic community."
+    },
+    {
+      "number": 850,
+      "title": "Diagnosis and Assessment in Clinical Social Work Practice",
+      "credits": 3,
+      "description": "The Diagnosis and Assessment in Clinical Social Work Practice course addresses the etiology, nature, course and treatment of mental health and substance use disorders across the life development cycle. Diagnosis and assessment will be examined through the diversity lenses of age, ability, color, culture, education, ethnicity, family structure, gender identity, gender expression, identity, marital/relationship status, nationality/national origin, race, religion/spirituality, sex, sexual identity, sexual orientation, socioeconomic status or other distinguishing characteristics or traits and other aspects of diversity and how they shape how symptoms of mental illness are experienced, interpreted and expressed. An extensive selection from the major categories of mental health and substance use disorders in the Diagnostic and Statistical Manual of Mental Disorders (DSM) will be addressed in the course, although it will not be possible to examine all disorders listed in the DSM in class. Understanding and applying the DSM manual as a clinical assessment tool, along with an overview to psychopharmacology, and the nature and role of risk and protective factors associated with suicidal and violent behavior will also be addressed. Particular emphasis will be placed on the role of culture in the diagnostic process."
+    },
+    {
+      "number": 855,
+      "title": "Essential Skills for Clinical Social Work Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW850"
+        ]
+      },
+      "description": "The Essential Skills for Clinical Social Work Practice course is an advanced graduate course intended for second-year MSW students to reflect, review and consolidate their graduate studies into a coherent and structured plan of practice as social work professionals. The Essential Skills of Clinical Social Work Practice course, reviews, connects and links together all the vital composite elements presented in the MSW graduate course of study, enabling the MSW student to formulate a deliberative plan of practice to guide their beginning social work career. The course covers the operationalization of specific elements into a plan of social work practice: values/ethics, people skills, practice skills, clinical skills and legal/regulatory issues. At the conclusion of the course, students will have prepared a coherent plan of practice."
+    },
+    {
+      "number": 865,
+      "title": "Clinical Social Work Practice in Urban and Rural Settings",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW560"
+        ]
+      },
+      "description": "This MSW course provides students with knowledge in clinical social work practice in the area of urban versus rural settings. The course provides a professional foundation in content related to rural and urban communities that impact clinical social work practice. Within this context, the course addresses rural and urban individuals and families, groups, organizations and communities, and social work practice related to these systems. An understanding of rural and urban clinical practice settings including content related to social research, social work values and ethics, cultural and ethnic diversity, and social and economic justice related to rural populations and communities. Social work practitioners must understand the unique needs of the local community they serve, and adjust their focus to address the specific needs of their locality. An in-depth overview of the key differences between urban and rural social work, and the unique social problems that each experience is needed to help professional social workers decide which practice area meets their professional goals and how to effectively meet the needs of their clients."
+    },
+    {
+      "number": 870,
+      "title": "Clinical Social Work Practice with Children and Families 1",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW816"
+        ]
+      },
+      "description": "This course will examine core theories, dynamics, functions, policies, and ethics associated with the management of private and public child welfare services are analyzed and examined with a particular focus on the knowledge, skills, and competencies necessary to successfully lead organizations providing such services in the environment of today and the future. Emphasis is on the adaptation of generic external (public and community relations, media, and legislative relations, etc.) skills to the child welfare setting and specific issues associated with the management of child welfare functions, such as foster care and adoption, residential care, family preservation, forensic investigations in interfamilial and institutional settings, legal affairs, programs treating the co-occurring disorder, and others."
+    },
+    {
+      "number": 871,
+      "title": "Clinical Social Work Practice with Children and Families 2",
+      "credits": 3,
+      "description": "This course covers the major problems of at-risk children and youth, including cognitive, communication, behavioral and emotional problems, attachment disorders, trauma, substance abuse, and developmental disabilities noted in the current DSM. Students learn about normal child and adolescent development in the context of the family life cycle, culture, and society. Students will examine generalist principles of social work intervention with children and adolescents, in the context of the uniqueness of children as clients, planning with parents and/or caregivers, and the centrality of the family. Utilizing bio-psycho-social-spiritual assessments, students will examine treatment models, develop and implement a treatment plan. Students also learn about evidence-informed models, examine social policy issues and helping systems serving children and adolescents, and discuss the social worker's role on treatment teams and advocacy."
+    },
+    {
+      "number": 875,
+      "title": "Policy Issues with Children and Families",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW814"
+        ]
+      },
+      "description": "The course examines state and federal laws that govern the funding and operation of child welfare systems; the history of child welfare policies; and, the legal, political, and social forces that influence the structure and function of child welfare systems in the United States. The course examines the knowledge base of child maltreatment- extent, incidence, causes, consequences, and the effectiveness of interventions and whether and how the knowledge base is applied to federal and state policies for children and families. Specifically, students will identify the features of child welfare laws that currently drive policies for children and families. Students will develop knowledge about the major challenges of providing safety, permanency, and well-being to children in foster care and the state and federal proposals designed to address those challenges."
+    },
+    {
+      "number": 876,
+      "title": "Trauma and Treatment with Children and Families",
+      "credits": 3,
+      "description": "This course will cover trauma theories and treatments, and conduct an in-depth critical examination of different populations affected by trauma including child abuse survivors, war veterans, and domestic violence survivors, victims of accidents or crimes, and communities and schools that are devastated by abuse, neglect, and addiction. Students will analyze theoretical frameworks for understanding trauma, including neurobiological aspects and types of trauma, the history of traumatology, and the impact of trauma on individuals, families, and communities. Trauma-informed care models and evidence-based trauma practice models with an emphasis on strengths, resiliency, coping, multicultural issues, and cultural competency will be examined. The overall purpose of the course is to examine relevant theories of trauma and recovery and relate them to social work practice."
+    },
+    {
+      "number": 880,
+      "title": "Clinical Social Work Practice in Mental Health and Substance Use 1",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW816"
+        ]
+      },
+      "description": "This course provides students with knowledge of assessment based on the current Diagnostic and Statistical Manual of Mental Disorders, published by the American Psychiatric Association; psychotropic medications; and social worker roles when interacting with people with mental health issues and interdisciplinary teams. This course will provide students with an understanding of the correlates of the physiological and psychological effects of drugs and mental health focusing on the significance of treatment planning in diverse settings. Clinical Social work skills and knowledge of the individual, group, and family counseling strategies as they are applied to behavior change and relapse prevention. Students learn about the diagnostic criteria of mental health, substance use and addictive behavior, models of etiology, and approaches to treatment. Clinical social work practice in Mental Health and Substance Use is a specialization track that will provide students with foundational concepts, knowledge, values, and skills in clinical social work practice with mental health and substance abuse. In the first semester, the course emphasis is on the development of practice knowledge and competency for working with mental health and substance use. In the second semester, the emphasis shifts to diagnosing, treatment planning, intervention, and evaluation. Integral to both course content and skills with a special emphasis on the identification of theories, practices and,/or policies that promote social justice, illuminate injustices and are consistent with scientific and professional knowledge. Through the use of a variety of instructional methods, this course will support students in developing a vision of social justice, learning to recognize and reduce mechanisms that support oppression and injustice, working toward social justice processes, applying intersectionality and intercultural frameworks and, strengthening critical consciousness, self-knowledge and self-awareness to facilitate learning. Consideration will be given to the ways in which diversity factors such as age, race, ethnicity, disadvantage, gender, sexual orientation, sexual identity, class, immigration status, ability, family status, geographic location, ethnicity and, culture interact with and impact health, mental health and, behavioral health impact assessment and screening. Culturally responsive engagement in the assessment process will be a focus."
+    },
+    {
+      "number": 881,
+      "title": "Clinical Social Work Practice in Mental Health and Substance Use 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW880"
+        ]
+      },
+      "description": "This course will provide students with foundational concepts, knowledge, values, and skills in clinical social work practice with mental health and substance abuse. Emphasis is on the development of practice knowledge and competency for working with mental health and substance use, and the diagnosing, treatment planning, intervention and evaluation. Particular attention is given to the needs of at-risk and vulnerable populations in the context of age, ability, culture, education, ethnicity, gender identity, identity, nationality/national origin, race, religion/spirituality, sexual identity, sexual orientation, socioeconomic status or any other distinguishing characteristics or traits in the delivery of competent and effective social worker."
+    },
+    {
+      "number": 885,
+      "title": "Policy Issues in Mental Health and Substance Use",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW814"
+        ]
+      },
+      "description": "Policy Issues in Mental Health and Substance Use course focuses on contemporary policy issues related to mental health and substance use including social determinants of mental health, treatment and access to care, rights and privacy, systems transformation, and disparities in care are examined in this course. The role of social workers in policy advocacy, the history and evolution of mental health and substance use policy, and recent policy proposals are discussed. Students will learn to analyze mental health and drug and alcohol policies and advocate for policies that advance human rights and social, economic, and environmental justice. The course also describes appropriate counseling strategies when working with clients with addiction and co-occurring disorders in a multicultural society."
+    },
+    {
+      "number": 886,
+      "title": "Trauma and Treatment in Mental Health and Substance Use",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MSW885"
+        ]
+      },
+      "description": "The course explores the multi-systemic impact of trauma and substance use on the functioning of individuals, families, and communities. Emphasizes the treatment of trauma and substance use across the lifespan with diverse populations utilizing trauma-informed approaches, including Motivational Interviewing and cognitive behavioral interventions will be focusing on enhancing awareness of trauma in mental health and substance use; assessing and responding to the needs of clients who encounter trauma; and changing systems to become more responsive to those impacted by life experiences. Exploration of factors known to promote resilience and well-being will be emphasized and examined throughout the course. Trauma-informed care models and evidence-based trauma practice models with an emphasis on strengths, resiliency, coping, multicultural issues, and cultural competency will also be explored."
+    },
+    {
+      "number": 894,
+      "title": "Specialized Field Education 2",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW802",
+              [
+                "MSW802A",
+                "MSW802B",
+                "MSW802C"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This is the fourth course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part specialized practice second year sequence. Field education is the signature pedagogy for social work education. This course builds upon the work initiated in prior field education courses by continuing to provide the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision. This course will also provide guidance and structure for the MSW student to complete their graduate Capstone Project. Students will identify a problem or service gap in their field practice setting. They will then analyze this problem or service gap and propose a solution or policy change. The student will produce a written analysis of their project and an oral presentation designed as a professional conference presentation."
+    },
+    {
+      "number": 894,
+      "suffix": "A",
+      "title": "Specialized Field Education 2 Part A",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW802",
+              [
+                "MSW802A",
+                "MSW802B",
+                "MSW802C"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This is first in a three part series for students to complete Specialized Field Education 2 in a part-time format. This is the fourth course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part specialized practice second year sequence. Field education is the signature pedagogy for social work education. This course builds upon the work initiated in prior field education courses by continuing to provide the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision. This course will also provide guidance and structure for the MSW student to complete their graduate Capstone Project. Students will identify a problem or service gap in their field practice setting. They will then analyze this problem or service gap and propose a solution or policy change. The student will produce a written analysis of their project and an oral presentation designed as a professional conference presentation."
+    },
+    {
+      "number": 894,
+      "suffix": "B",
+      "title": "Specialized Field Education 2 Part B",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW802",
+              [
+                "MSW802A",
+                "MSW802B",
+                "MSW802C"
+              ]
+            ]
+          }
+        ],
+        "concurrent": [
+          "MSW894A"
+        ]
+      },
+      "description": "This is second in a three part series for students to complete Specialized Field Education 2 in a part-time format. This is the fourth course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part specialized practice second year sequence. Field education is the signature pedagogy for social work education. This course builds upon the work initiated in prior field education courses by continuing to provide the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision. This course will also provide guidance and structure for the MSW student to complete their graduate Capstone Project. Students will identify a problem or service gap in their field practice setting. They will then analyze this problem or service gap and propose a solution or policy change. The student will produce a written analysis of their project and an oral presentation designed as a professional conference presentation."
+    },
+    {
+      "number": 894,
+      "suffix": "C",
+      "title": "Specialized Field Education 2 Part C",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MSW802",
+              [
+                "MSW802A",
+                "MSW802B",
+                "MSW802C"
+              ]
+            ]
+          }
+        ],
+        "concurrent": [
+          "MSW894A",
+          "MSW894B"
+        ]
+      },
+      "description": "This is third in a three part series for students to complete Specialized Field Education 2 in a part-time format. This is the fourth course in the four-part field education practicum sequence comprised of a two-part foundation first year sequence and a two-part specialized practice second year sequence. Field education is the signature pedagogy for social work education. This course builds upon the work initiated in prior field education courses by continuing to provide the MSW student with increased independent direct clinical practice experience in a clinical agency setting. The MSW student will directly fulfill the role of a professional social worker by utilizing skills in the maintenance of professional boundaries and ethics while managing a caseload of assigned clients. Field education provides MSW students the opportunity to work directly with field instructors, other professional colleagues, and client systems in micro, mezzo and macro practice applying the theories and concepts taught in the explicit curriculum of the program including various technologies supporting practice and service provision. This course will also provide guidance and structure for the MSW student to complete their graduate Capstone Project. Students will identify a problem or service gap in their field practice setting. They will then analyze this problem or service gap and propose a solution or policy change. The student will produce a written analysis of their project and an oral presentation designed as a professional conference presentation."
+    }
+  ]
+}

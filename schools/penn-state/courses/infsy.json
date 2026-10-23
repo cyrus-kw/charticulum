@@ -1,0 +1,218 @@
+{
+  "subject": "INFSY",
+  "courses": [
+    {
+      "number": 535,
+      "title": "Object-Oriented Design and Programming in Business",
+      "credits": 3,
+      "description": "Overview of key concepts in object design and the application of these concepts in business software development. INFSY 535 will be among the courses prescribed in the MSIS program and would normally be taken early in the Program. It is a prerequisite to several additional courses in the program. The course is intended to provide students with a foundation in object-oriented design and programming to understand the application of these concepts to business problems. Students will learn basic object concepts and develop skills to implement computer programs utilizing object tools. As managers in the technology environment, students need to have an understanding of how projects are implemented. To be successful, they also need to learn how to work together to design, implement, and manage technology projects. The goals of INFSY 535 are to: 1) Expose students to principles and concepts within the object oriented programming environment, 2) Teach students how to apply an object-oriented language in a business environment, and 3) Develop team skills when programming complex systems."
+    },
+    {
+      "number": 540,
+      "title": "Information Technology and Knowledge Management",
+      "credits": 3,
+      "description": "Information systems management, enterprise models of information technology, information technology and knowledge management. INFSY 540 Information Technology and Knowledge Management (3) INFSY 540 , Information Technology and Knowledge Management, is a required course for MBA and MSIS students. Students will be provided an understanding of enterprise resource planning and how it relates to information technology architecture and its impact on modern organizations. Students learn Information Technology and Knowledge Management concepts that may be applied to leverage the benefits, avoid the pitfalls, and overcome the limitations of using information technology in an organization.Although individual assignments and examinations will occur, INFSY 540 includes project- and team-based assignments where students will actively examine Information Technology and Knowledge Management and its effects on industries and specific organizations. Student performance will be evaluated using both individual and team assignments, individual examinations, case study analyses, and research papers."
+    },
+    {
+      "number": 543,
+      "title": "Electronic Commerce",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY540"
+        ]
+      },
+      "description": "Overview of key aspects of E-Commerce within an organizational context including coverage of managerial issues and supporting technology. INFSY 543 Introduction to E-Commerce (3) INFSY 543 provides a survey of E-Commerce topics, and serves as a foundation for further courses on E-commerce. The course is designed to appeal to both MBA and MSIS students. Upon successful completion of this course, the student will have an understanding of the various types of e-commerce, systems used to support e-commerce, applications of e-commerce, and associated managerial issues. INF SY 543 is an elective in the MBA and MSIS programs. INFSY 540 , Information Resources in Management, is a required course for MBA and MSIS students and is a prerequisite for INFSY 543 . In INFSY 543 , students will continue to explore the interrelationship between technology and organizational performance. Although individual assignments and examinations will occur, INFSY 543 includes project- and team-based assignments where students will actively examine e-commerce and its effects on industries and specific organizations. Student performance will be evaluated using both individual and team assignments, individual examinations, case study analyses, and c-commerce project(s). INFSY 543 will be offered once per academic year or more frequently, based on student enrollment and demand."
+    },
+    {
+      "number": 547,
+      "title": "WEB Enabled Technologies",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY535"
+        ]
+      },
+      "description": "Integrating design principles and applying technologies that support business related, web-based applications. INFSY 547 WEB Enabled Technologies (3) The objectives of this course are to: a) teach students how to manage large WEB projects b) teach students a programming language that is used to create complex business projects c) make students aware of research issues that apply to WEB development d) strengthen collaborative skills related to project development To accomplish these goals, students will study project management as applied to WEB applications, participate collaboratively in a business project where they apply management and design skills over the course of the semester. Additionally, the latest research will be explored as it relates to the above."
+    },
+    {
+      "number": 554,
+      "title": "Master's Project",
+      "credits": 3,
+      "description": "Development of an original master's project in the student's field of interest and preparation of a paper."
+    },
+    {
+      "number": 555,
+      "title": "Data Management Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY535"
+        ]
+      },
+      "description": "Concepts and theory of database management systems explored through data modeling and planning techniques. INFSY 555 Data Management systems (3) This course emphasizes the analysis, design and development of relational database management systems. Students will develop the analysis and design of a relational database for a business application through a series of assignments using ORACLE database software. Students also develop a research paper in database management."
+    },
+    {
+      "number": 556,
+      "title": "Data Warehousing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY555"
+        ]
+      },
+      "description": "The study of the requirements collection, design, and development of data warehouses. INFSY 556 Data Warehousing (3) This course deals with the collection of requirements, design, and development of data warehouses. Requirements gathering through query graphs, dimensional modeling, online analytical processing (OLAP) tools, metadata, and technical architecture of data warehouses will be the major focus of this course. End user applications pertaining to data warehousing is also included."
+    },
+    {
+      "number": 565,
+      "title": "Intelligent Systems in Business",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY535"
+        ]
+      },
+      "description": "This course will emphasize the analysis, design, and application of intelligent systems within organizational settings. INFSY 565 Intelligent Systems in Business (3) This course emphasizes the analysis, design and application of intelligent systems within organizational settings. Students will study the underlying concepts of intelligent systems such as expert systems and neural networks and learn how these systems support the business environment. A goal of the course is that students learn when and where intelligent systems will benefit an organization.Students will analyze cases related to intelligent system development, study the issues of knowledge acquisition, and learn about uncertainty in intelligent systems. Actual system applications will be integrated into the course."
+    },
+    {
+      "number": 566,
+      "title": "Data Mining and Knowledge Discovery",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY565"
+        ]
+      },
+      "description": "The study and application of data mining techniques used to mine patterns in large transactional databases. INFSY 566 Data Mining and Knowledge Discovery (3) This course deals with the advanced study of intelligent data mining tools that are used to mine patterns in very large databases. The focus is on theoretical, mathematical and statistical foundations of data mining as well as the applications of data mining to various business applications. Students taking this course will learn different data mining techniques that can be used to mine patterns in large corporate and transactional databases, will be capable of developing and applying data mining tools, and will be able to do independent research in data mining area.Specific topics include the process of and statistical perspectives on knowledge discovery in databases, graphical models for discovering knowledge, inductive logic programming and data mining, discovering informative patterns and data cleaning, fast mining of association rules, inductive and deductive reasoning for data mining, and mathematical foundations of data mining. Data mining applications in finance, direct marketing and medicine will be emphasized.Several projects and a research paper required."
+    },
+    {
+      "number": 570,
+      "title": "Software Engineering in the Analysis and Design of Information Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY535"
+        ]
+      },
+      "description": "Software engineering concepts, specifically the analysis and design of structured information systems using computer-aided software engineering (CASE)."
+    },
+    {
+      "number": 572,
+      "title": "Strategic Information Systems",
+      "credits": 3,
+      "description": "The survival and success of organizations in a highly competitive on-demand economy is dependent on strategic information technology alignment. Strategic Information Systems examines the strategic management and use of information resources, theoretical models, and practices. It examines the alignment of an organization's business strategy, organizational strategy and design, and information systems strategy in order to achieve a sustainable competitive advantage."
+    },
+    {
+      "number": 575,
+      "title": "Seminar in Information Technology Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "INFSY555",
+              "INFSY570"
+            ]
+          }
+        ]
+      },
+      "description": "Examination of selected topics relevant to current and future managerial and organizational issues of information technology."
+    },
+    {
+      "number": 587,
+      "title": "Global Information Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "INFSY555",
+              "INFSY570"
+            ]
+          }
+        ]
+      },
+      "description": "Comprehensive coverage of components, applications, and issues of global information technology management in organizations worldwide."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experience, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 860,
+      "title": "Data Communications Systems and Networks",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY540"
+        ]
+      },
+      "description": "The course covers the functional aspects and terminology of computer networks in order for the student to be competent as a manager of a network staff. The course reviews alternative technology solutions and helps implement effective solutions. The course provides an overview of network technology and future developments in the technology. Finally, through this course, students will gain an understanding of network technology and how it integrates with the other IT systems."
+    },
+    {
+      "number": 863,
+      "title": "Network Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INFSY535",
+          "INFSY860"
+        ]
+      },
+      "description": "This is a study of network security concepts, technology, and issues. Authentication, privacy, and integrity of messages are analyzed. INFSY 863 is a follow-up course to INFSY 860 , Data Communications and Networking. The objective of the course is that students gain a higher-level understanding of network security. Although the course is designed to appeal primarily to M.S.I.S. students, it is expected that the more technically minded M.B.A. will find the course valuable. Upon successful completion of this course, the student will have an in depth understanding of encryption techniques and the use of keys for encryption. Each student will study the appropriate applications to public keys, secret keys, and session keys. They will gain an understanding of the role of certificate authorities and the public key infrastructure. In addition, students will learn about the various architectures available to transmit information securely across the internet through virtual private networks."
+    },
+    {
+      "number": 890,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Continuing professionally oriented seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    }
+  ]
+}

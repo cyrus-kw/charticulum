@@ -1,0 +1,61 @@
+{
+  "subject": "EDTEC",
+  "courses": [
+    {
+      "number": 467,
+      "title": "Emerging Web Technologies and Learning",
+      "credits": 3,
+      "internalEquivalents": [
+        "LDT467"
+      ],
+      "description": "This course examines emerging Web technologies and explores their application to learning and education."
+    },
+    {
+      "number": 561,
+      "title": "Measuring the Impact of Technology on Learning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EDPSY421"
+        ]
+      },
+      "description": "Prepares teachers to evaluate the effects of technology use. EDTEC 561 Measuring the Impact of Technology on Learning (3) This course which will be offered online through Penn State's \"World Campus,\" is designed to prepare teachers and other educators to use basic quantitative methods to assess the effects of a variety of technology-related innovations in their own classrooms and schools. It begins with a focus on the various types of learning outcomes, then prepares students to develop the effective tests and scoring tools required to assess them. The course then introduces the basic statistical concepts and methods, reviews exemplary technology-related quantitative research, and prepares students to design quantitative research studies to be implemented in their own classrooms and schools."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships."
+    },
+    {
+      "number": 596,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis reseach, supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

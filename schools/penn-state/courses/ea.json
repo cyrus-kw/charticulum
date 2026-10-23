@@ -1,0 +1,72 @@
+{
+  "subject": "EA",
+  "courses": [
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 871,
+      "title": "Enterprise Architecture Foundations I",
+      "credits": 3,
+      "description": "Theoretical foundations and practice of enterprise architecture."
+    },
+    {
+      "number": 872,
+      "title": "Enterprise Architecture Foundations II",
+      "credits": 3,
+      "description": "Develops additional capabilities for justifying Enterprise Architecture decision making."
+    },
+    {
+      "number": 873,
+      "title": "Enterprise Modeling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EA871",
+          "BA809"
+        ]
+      },
+      "description": "EA 873 is intended to provide an exposure to the foundational concepts and practices of effective enterprise modeling for EA. It explores the general and specific uses and effectiveness of architectural modeling approaches to describe an organization, and examines model-based tools to support, influence, and enable organization planning and decision-making. Emphasis is placed on understanding different modeling approaches, standards, and styles and in the use and interpretation of the models. Students will use enterprise modeling approaches and technology tools to develop descriptive models and understand the use and role of the enterprise architecture repository relative to reusability of models."
+    },
+    {
+      "number": 874,
+      "title": "Enterprise Information Technology Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EA871"
+        ]
+      },
+      "description": "Enterprise Architecture (EA) is the analysis and design of an enterprise in its current and future states from a strategy, business, and technology perspective. It helps to integrate and manage IT resources from a strategic and business-driven viewpoint. This course is intended to provide an exposure to the foundational concepts associated with each of the three primary layers of the enterprise information technology architecture stack: the enterprise applications architecture, the enterprise data architecture, and the enterprise technology infrastructure architecture. The course provides a fundamental understanding of the major components and functions of these layers in order to have a comprehensive understanding of the enterprise. Students will acquire knowledge about the key foundational aspects of these three technical layers of the enterprise architecture, learn what decisions need to be made in each layer, and learn how the layers interrelate. The perspectives covered in the class can be organized roughly by their level of analysis: overview of the enterprise technology stack, the enterprise application architecture, the enterprise data architecture, the enterprise technology infrastructure architecture, the enterprise security architecture, and current issues surrounding the enterprise information technology architecture. Students will compare and contrast the different layers of the enterprise information technology architecture and describe the interrelationships between the different layers of the enterprise information technology architecture."
+    },
+    {
+      "number": 876,
+      "title": "Architecting Enterprise Security and Risk Analysis",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "requisites": {
+        "previous": [
+          "EA871"
+        ]
+      },
+      "description": "Analytical skills to produce credible, meaningful answers to critical risk management questions across enterprise architecture layers, including the supply chain. This course develops analytical skills to produce credible and meaningful answers to critical risk management questions across the enterprise architecture layers, including the supply chain. These extended enterprise risks originate from both natural and human-instigated hazards. Topics include critical thinking, enterprise analysis, risk assessment and associated analysis methods, risk communication, and risk control."
+    },
+    {
+      "number": 878,
+      "title": "Enterprise Architecture Leadership",
+      "credits": 3,
+      "description": "Develops additional capabilities for leading, communicating, and implementing Enterprise Architecture. EA 878 Enterprise Architecture Leadership (3) Enterprise Architecture is recognized as a key catalyst that organizations can use to make progress towards a state of optimal operational efficiency whereby integrated information maximizes interactions between all stakeholders, both internal and external. Poor leadership, decision-making, and management are often cited as top reasons for enterprise architecture failure. This course is intended to synthesize major concepts presented in prior courses under the broad umbrellas of leadership and decision making. One of the major goals of a well-constructed enterprise architecture program is to facilitate the design and implementation of enterprise processes and systems that support the effective and efficient movement and dissemination of timelyinformation across the enterprise. This information is critical to effective decision making and effective leadership. The course will deepen knowledge in the areas of effective EA leadership and management as well as in the areas of enterprise change management, effective communications, negotiation, organization political considerations, and interpersonal skills. An examination of research findings, the sharing of professional experiences, and the exploration of the characteristics of high-performing organizations and the kind of leadership that contributes to their performance will be core to the course.The perspectives covered in the class can be organized roughly by their level of analysis: EA leadership, EA decision making and strategic planning, and EA management and communication. For each general topic area, core readings are used to define standard vocabulary, concepts and relations, methods and criteria for evaluation, and implications for enterprise architecture. This course is designed to tie major concepts together and help the student understand how topics such as strategy, understanding organizations, enterprise modeling, enterprise technologies, etc. are interrelated and support effective decision making and leadership. Students will complete written assignments that focus on solidifying the understanding of the course content and participatein on-line discussions of EA topics with fellow students that will bring out real-world experiences in dealing with EA issues, challenges, and opportunities.Student teams will also participate in the analysis of case studies presented by industry experts, where students explore team dynamics, diagnostics, and management related to effective EA leadership. Students will also complete a semester long capstone team research project that is shaped by outcome discussions with respect to one or more areas covered in the course. The teams will present their final projects to the other members of the class at the end of the course.Key topic lectures will feature industry experts."
+    }
+  ]
+}

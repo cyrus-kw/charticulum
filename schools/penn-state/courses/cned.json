@@ -1,0 +1,680 @@
+{
+  "subject": "CNED",
+  "courses": [
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 100,
+      "title": "Effective Career Decision-Making",
+      "credits": 3,
+      "description": "Examination of internal and external factors that contribute to career development to assist students undecided about major or career. CN ED 100CN ED 100 Effective Career Decision-Making (3) CN ED 100 teaches students career decision-making skills by closely examining internal factors, the world of work, and decision-making styles and strategies. The premise of this course is that career decisions are greatly enhanced by: (1) considering personal traits such as interests, values, abilities, decision-making styles and other factors; (2) gathering information about the world of work and education; and (3) integrating knowledge about the self and the world through an on-going process. Learning the career decision-making process is empowering and skills learned in the course can be valuable throughout life as individuals encounter crossroads that may prompt career changes. CN ED 100 is intended for students who are undecided about their major and career selection. The course format consists of lectures, discussions, and experiential learning activities designed to help students analyze their personal traits and to relate their traits to career theories, occupational fields and work settings. Self-assessment activities include reflective writing, use of established career assessment inventories, and completion of various activities. Diverse information is shared on majors and occupations as well as information gathering strategies. Students more closely discuss their career development and progress in formal small group sessions, facilitated by career counseling professionals. Five classes of the semester are devoted to these meetings."
+    },
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 198,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 200,
+      "title": "Peer Mentoring",
+      "credits": 1,
+      "description": "This course will prepare students for the roles and responsibilities of being a Peer Mentor. CN ED 200 Peer Mentoring (1) \"Peer Mentoring\" is designed to present to the student the basic principles, characteristics, and benefits of a peer mentoring relationship. Peer Mentoring is a beneficial relationship to both the mentee and mentor and ultimately can aid in college retention rates. Once this knowledge is gained, students in the course will learn how to deal with the various situations that could occur during the transition process. This course offers the student the opportunity to develop intellectual relationships with faculty, current campus peer mentors, and fellow classmates who share similar academic interests in leadership, mentorship, and role modeling. In this course, students will be introduced and learn to apply active listening skills, the hidden rules of college, how to conduct mentee interactions both virtually and in person, intrinsic and extrinsic motivation, along with cultural and self-awareness. Once introduced to the multi-layer elements of the course, students will demonstrate their knowledge of these skills through their in class involvement. The course is delivered as an interactive learning environment where in class exercises and hands-on demonstrations help the student understand the principles and implications of peer mentoring. Additionally, students will work on a campus resource project outside of the classroom that will be presented to the entire campus community at the conclusion of the semester. The course is open to all students, however, students interested in taking the course must get course entry approval by the faculty member in charge to determine the student's true interest in peer mentoring."
+    },
+    {
+      "number": 280,
+      "title": "Job/Internship Search and Professional Skills",
+      "credits": 1,
+      "description": "This course will teach students how to implement a career strategy to effectively secure a job/internship."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 297,
+      "suffix": "G",
+      "title": "Special Topics - GenEd",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "GS"
+      ],
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
+    },
+    {
+      "number": 298,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 301,
+      "title": "Student Organization Management",
+      "credits": 2,
+      "description": "Exploration and development of leadership and group process skills necessary for effectively managing student organizations in higher education settings."
+    },
+    {
+      "number": 303,
+      "title": "Career Search Strategies for Educators",
+      "credits": 1,
+      "description": "An aid in preparing students with information helpful for entry into education and alternative job markets."
+    },
+    {
+      "number": 304,
+      "title": "Education of the Peer Assistant",
+      "credits": 3,
+      "description": "Student development theories: skill development in listening, informing, and referring culturally diverse peers in individual and group situations."
+    },
+    {
+      "number": 393,
+      "title": "Peer Support Counseling",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 8
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PSYCH100",
+              "RHS100"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "RHS301",
+              "HDFS301"
+            ]
+          }
+        ],
+        "minGrades": {
+          "PSYCH100": "B",
+          "RHS100": "B"
+        }
+      },
+      "description": "CNED 393 is a course that prepares and supports students in their role as a Peer Counselor (PC) on campus to help support fellow students as they navigate difficult decisions, points of crisis, or everyday aspects of student life. Student Peer Counselors approved to participate in this course will learn how to work cooperatively with their respective campus to respond to fellow student needs, promote student safety and personal wellness, meet individually with students to discuss any emotional concerns, facilitate support groups, and hold events that cater to student wellness and stress reduction. This 2-credit course consists of the CNED 393 seminar taught by a qualified faculty member, who has clinical counseling experience, along with clinical group supervision conducted by campus psychological and counseling services staff members."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 401,
+      "title": "Foundations of Chemical Dependency Counseling",
+      "credits": 3,
+      "description": "An overview of diagnosis and assessment, models for chemical dependency prevention, counseling, and recovery; contexts of chemical dependency treatment."
+    },
+    {
+      "number": 404,
+      "title": "Group Procedures in Guidance and Counseling",
+      "credits": 3,
+      "description": "The nature and functioning of groups in educational and agency settings. Provides prospective counselors with experience in the group process."
+    },
+    {
+      "number": 416,
+      "title": "Interpersonal Relationships and Alcohol and Other Drugs (AOD) Dependency",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CNED401",
+              "RHS301"
+            ]
+          }
+        ]
+      },
+      "description": "This course examines families with chemically dependent members, dynamics, appropriate interventions, and treatment."
+    },
+    {
+      "number": 420,
+      "title": "Chemical Dependency: Youth at Risk",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CNED401"
+        ]
+      },
+      "description": "Study of youth who are at-risk of developing chemical dependency including the characteristics and factors related to chemical dependency."
+    },
+    {
+      "number": 421,
+      "title": "Counseling Strategies for Preventing Chemical Dependency",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CNED401"
+        ]
+      },
+      "description": "Examines helping professional's role in primary and secondary prevention of substance abuse, and related problems like delinquency, suicide, and pregnancy."
+    },
+    {
+      "number": 422,
+      "title": "Foundations of Addictions Counseling",
+      "credits": 3,
+      "description": "Study of the fundamental principles of counseling individuals with a wide variety of addictions. CN ED 422 Foundations of Addictions Counseling (3)Students explore the fundamental principles of addictions counseling from a wide range of perspectives. These include the psychopharmacological aspects of alcohol and abusable drugs, along with theories and assessments of addictive disorders. Many treatment models are considered, and are examined in the context of individual, group, and family therapy perspectives. The course also addresses the research literature on codependence, COA's AA and other 12-step programs, dual diagnosis, relapse, prevention, and multicultural and gender issues."
+    },
+    {
+      "number": 424,
+      "title": "Facilitating Career Development",
+      "credits": 3,
+      "internalEquivalents": [
+        "WFED424"
+      ],
+      "description": "This course provides individuals with relevant skills and knowledge to assist others in planning careers and obtaining meaningful work. CN ED (WF ED) 424 Facilitating Career Development (3) This course provides individuals with relevant skills and knowledge to assist others in planning careers and obtaining meaningful work. This course addresses the following 12 Career Development Facilitator (CDF) competencies: 1) helping skills, 2) labor market information and resources, 3) assessment, 4) diverse populations, 5) ethical and legal issues, 6) career development models, 7) employability skills, 8) training clients and peers, 9) program management/implementation, 10) promotion and public relations, 11) technology, and 12) consultation. These 12 competencies are identified by the National Career Development Association (NCDA) for those who (will) deliver career development programs and services in a variety of settings. Potential job titles of CDFs include career group facilitator, job search trainer, career resource center coordinator, career coach, career development case manager, intake interviewer, occupational and labor market information resource person, human resource career development coordinator, employment/placement specialist, and workforce development staff. With certain years of work experience in career development, students who complete this course are eligible to apply for the Global Career Development Facilitator (GCDF) certification through the Center for Credentialing & Education (CCE), which is affiliated with the National Board for Certified Counselors (NBCC). A GCDF is a person who works in any career development setting or who incorporates career development information or skills in their work with students, adults, clients, employees, or the public. As of January 2011, about 18,000 individuals acquired the GCDF certification world-wide including Bulgaria, Canada, China, Germany, Japan, Romania, Turkey, South Korea, and New Zealand. The goal of the GCDF credential was to provide standards, training specifications, and credentialing for diverse career development practitioners. This GCDF credential differentiates two levels of career practice, which are 1) career counseling and 2) career facilitation that does not require a counseling degree. This differentiation reflected the reality where many individuals who are currently providing career assistance are not professional counselors. This course is taught by a nationally and internationally trained CDF Instructor (CDFI) who is certified by the NCDA. In addition, the CDF curriculum is updated every three years by the Career Development Leadership Alliance (CDLA) under the supervision of the NCDA CDF Advisory Council in order to keep up with recent changes in the field."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 500,
+      "title": "Professional Counseling Orientation and Ethical Practice",
+      "credits": 3,
+      "description": "This course provides an overview of the counseling profession and ethical practice, including a critical review of the counseling profession. Students learn the role of professional counselors as advocates for equitable access to counseling free of discrimination, systemic racism, ableism, and all forms of oppression. Topics such as professional counselor identity, areas of specialization, licensure and certification, ethical practice, responsibilities of counselors, cultural humility, and professional advocacy in counseling are addressed."
+    },
+    {
+      "number": 501,
+      "title": "Counseling Theory and Method",
+      "credits": 3,
+      "description": "Survey of psychodynamic, humanistic, behavioral and cognitive-behavioral approaches to counseling individuals."
+    },
+    {
+      "number": 502,
+      "title": "Advanced Counseling Theory and Method",
+      "credits": 3,
+      "internalEquivalents": [
+        "CNPSY502"
+      ],
+      "requisites": {
+        "previous": [
+          "CNED501"
+        ]
+      },
+      "description": "Assessment, intervention, and evaluation procedures for counseling problems frequently encountered in school, college, and rehabilitation settings. CN ED 502CN ED (CNPSY) 502 Advanced Counseling Theory and Method (3)This course is concerned with the exploration of ideas that are of theoretical and applied importance to thinking about counseling and psychotherapy. The course is not a skills course, per se, although many of the readings have clear implications for enhancing your therapeutic skills. Nor is the course meant to be a review of theories of personality or counseling typically covered in earlier courses. This course is open to CN ED and CNPSY students. The prerequisite is CN ED 501."
+    },
+    {
+      "number": 504,
+      "title": "Foundations and Practices of School Counseling",
+      "credits": 3,
+      "description": "This course in school counseling is a broad survey of the foundations, contextual dimensions, and practices of contemporary school counseling in Pre K-12 schools. Students develop knowledge of the roles of school counselors in addressing the developmental, personal-social, academic, and college-career needs of students in Pre K-12 schools. Students gain an understanding of the practices and interventions necessary for establishing and managing a comprehensive school counseling program. Students learn how current education reform and school contexts shape school counselors' roles. This course will provide the foundational knowledge necessary for additional school counseling courses."
+    },
+    {
+      "number": 505,
+      "title": "Foundations of Career Development and Counseling Information",
+      "credits": 3,
+      "description": "Accelerating change in economic, psychological, social, educational influences upon counselees. Utilization of information systems in effecting counselee change."
+    },
+    {
+      "number": 506,
+      "title": "Individual Counseling Procedures",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "CNED501"
+        ]
+      },
+      "description": "Training in listening, responding, challenging skills, and action-oriented techniques for individual counseling."
+    },
+    {
+      "number": 507,
+      "title": "Multicultural Counseling: Foundations",
+      "credits": 3,
+      "description": "Provide foundational information that controverts, complements and extends traditional psychology and counseling theory and practice."
+    },
+    {
+      "number": 508,
+      "title": "Organization and Administration of Pupil Services",
+      "credits": 3,
+      "description": "Principles, organization, personnel, functions, integration with school programs, evaluation."
+    },
+    {
+      "number": 509,
+      "title": "Introduction to Rehabilitation Counseling",
+      "credits": 3,
+      "description": "Provides information about rehabilitation history, legislation, philosophy, and agencies, as well as an overview of a variety of disabling conditions."
+    },
+    {
+      "number": 510,
+      "title": "Foundations of Clinical Mental Health and Rehabilitation Counseling in Schools and Communities",
+      "credits": 3,
+      "description": "This course provides an overview of the profession of clinical mental health and rehabilitation counseling. Course topics address professional identity, clinical mental health and rehabilitation settings and services, stigma and discrimination, psychosocial and cultural aspects of disability and mental health, public mental health and rehabilitation policy, and related client advocacy strategies, as well as current trends and issues affecting clinical mental health and rehabilitation counseling practice."
+    },
+    {
+      "number": 524,
+      "title": "Counseling Adolescents",
+      "credits": 3,
+      "description": "Provides approaches for school counselors and others working wtih a variety of adolescent obstacles and developmental needs"
+    },
+    {
+      "number": 525,
+      "title": "Applied Testing in Counseling",
+      "credits": 3,
+      "description": "Using counseling assessments effectively and ethically in applied settings, with an emphasis on test analysis and evaluation of psychometric properties."
+    },
+    {
+      "number": 526,
+      "title": "Research in Counselor Education",
+      "credits": 3,
+      "description": "Evaluating counselor education research from scientist-practitioner perspective; emphasis on how to develop and use research with an applied focus."
+    },
+    {
+      "number": 530,
+      "title": "Family Counseling: Theory and Practice",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CNED501"
+        ]
+      },
+      "description": "Conceptualization and application of family counseling frameworks to EC-12 school settings are learned in this course. CN ED 530CN ED 530 Family Counseling: Theory and Practice (3) Family functioning is paramount in the educational, personal/social, and career development of children and adolescents. This course prepares school counselors and other counselors for helping children and adolescents in the context of family. Several theories and models of family counseling are presented, focusing on application of these frameworks to work in EC-12 schools. Through experiential activities connected to the course, counselor-trainees are encouraged to relate experiences in their own families to their functioning as counselors. The course is required for a master's degree in elementary or secondary school counseling. Evaluation includes multiple-choice tests and a self-reflection project. The course objectives follow: Students will: 1 . know the terminology and basic concepts associated with systems thinking and family counseling. 2. adopt a family systems frame of reference and understand the family counseling perspective. 3. know the history and development of family counseling. 4. conceptualize the social constructionist perspective of family counseling and human functioning, including perspectives on substance use and abuse, gender, lifestyle, socioeconomic conditions, sociopolitical conditions, relations among diverse groups, and culture and identity. 5. understand and apply various frameworks of family counseling to the school counseling and school context, including Bowenian theory, attachment theory, experiential/humanistic approaches, structural and strategic approaches, cognitive-behavioral approaches, solution-focused therapy, narrative therapy, and integrative models. 6. grow in their own self-awareness with regard to their families of origin. 7. understand the use of self in counseling and learn and apply this knowledge in experiential activities and personal and professional functioning. 8. understand the wounded healer concept and attachment theory implications for counselor functioning. 9. comprehend and delineate the relationships among family systems, schools, and community systems. 10. understand racial-ethnic, gender, cultural, socioeconomic, and lifestyle issues in the context of family, school, and community and institutional systems. 11. know how families, schools, and communities interact to influence students' development. 12. understand strategies used to promote effective teamwork among counselors, educational professionals, students, parents, schools, and communities. 13. understand communication, collaboration, and consultation with parents, educational and mental health professionals, guardians, and community members for promoting students educational, career, and personal development. 14. know and understand the structure of parenting styles and outcomes associated with each parenting style. 15. understand research on parenting styles and contrast the traditional view of adolescent development with the contemporary view. 16. apply parenting styles for various prevention and intervention strategies. 17. know research support for various prevention and intervention strategies, understand measurement associated with various theories and models, and understand research traditions and methods associated with various theories and models."
+    },
+    {
+      "number": 531,
+      "title": "Grief and Loss Counseling",
+      "credits": 3,
+      "description": "Course focus is on counseling people with a variety of grief and loss issues."
+    },
+    {
+      "number": 532,
+      "title": "Diagnosis Counseling",
+      "credits": 3,
+      "description": "Course examines elements of counseling diagnosis, including identification and assessment of symptoms and behaviors in determining appropriate diagnoses."
+    },
+    {
+      "number": 554,
+      "title": "Cross-Cultural Counseling",
+      "credits": 3,
+      "internalEquivalents": [
+        "CNPSY554"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CNED507",
+              "CNED595A"
+            ]
+          }
+        ]
+      },
+      "description": "Examines theory, research, and models of counseling relationships between counselors and clients of different racial and sociocultural backgrounds. CNPSY 554CNPSY (CN ED) 554 Multicultural Counseling (3) This course is an advanced multicultural counseling course designed to help doctoral students: (a) develop mastery of the multicultural counseling literature, (b) promote self-awareness and self-knowledge, (c) facilitate the construction of cultural knowledge to increase awareness and sensitivity to issues affecting multicultural populations, (d) identify intervention strategies applicable to multicultural clients, and (e) promote development of a personal philosophy of multicultural counseling toward becoming a multiculturally competent counselor. The course is open to CN ED and CNPSY doctoral students who have successfully completed CN ED 507, CN ED 595A or CNPSY 595A, or equivalent courses."
+    },
+    {
+      "number": 555,
+      "title": "Career Counseling",
+      "credits": 3,
+      "internalEquivalents": [
+        "CNPSY555"
+      ],
+      "requisites": {
+        "previous": [
+          "CNED505"
+        ]
+      },
+      "description": "The examination of historical, legislative, and current models of career counseling and the development of pertinent individual and group techniques. CN ED 555CN ED (CNPSY) 555 Career Counseling (3) This course is an advanced extension of CN ED 505, Foundations of Counseling Infon-nation or its equivalent. In CN ED 501, students acquire a theoretical understanding of models of career development, decision-making, career education, information systems and information resources. In CN ED/ CNPSY 555 , students will have an opportunity to related such leaming to the place of work in human behavior, models of career counseling, the role-play of such models, the practice of career appraisal and the broad economic, social, and legislative contexts, including the global economy, stimulating current emphases on career counseling. This course is open to CN ED and CNTSY students. The prerequisite is CN ED 501."
+    },
+    {
+      "number": 560,
+      "title": "Medical and Psychosocial Aspects of Disability",
+      "credits": 3,
+      "description": "This course is a broad survey of health conditions, including chronic illness and mental, physical, and emotional disorders and the resulting psychosocial and psychological impact on the individual. Students will be exposed to and critique the sociocultural impact of systemic inequities in healthcare access, economic opportunities, and social domains as it relates to disability and health. Students will apply disability affirmative principles, practices, and models for conceptualizing clients. For each category of disability conditions reviewed, students will gain an understanding of diagnostic criteria, appropriate treatments and interventions, supports, assistive technology, and appropriate referrals. Students will apply content on health conditions and cultural context to case studies and reflective assignments to demonstrate their mastery of the material."
+    },
+    {
+      "number": 570,
+      "title": "Lifespan Human Growth and Development in Counseling",
+      "credits": 3,
+      "description": "Students will learn about lifespan development in counseling. Students increase knowledge and awareness of internal factors of development, such as neurobiology and physiology; and external factors, such as systemic privilege and oppression, disability, and cultural context. Students will apply developmental theories to case conceptualization and treatment planning in counseling. Students will also critically assess theories of human development and the interaction among psychological and social aspects of development for historically marginalized populations."
+    },
+    {
+      "number": 580,
+      "title": "Foundations: History and Trends in Counselor Education",
+      "credits": 3,
+      "description": "Overview of the foundations and issues relevant to the counseling profession and counselor education. Course available only to majors in CN ED."
+    },
+    {
+      "number": 581,
+      "title": "Professional Issues in Counselor Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CNED580"
+        ]
+      },
+      "description": "Forum for doctoral students to examine and analyze issues relevant for counselor educators. Available only to majors in CN ED."
+    },
+    {
+      "number": 582,
+      "title": "Advanced Group Psychotherapy",
+      "credits": 3,
+      "internalEquivalents": [
+        "CNPSY582"
+      ],
+      "description": "Study of group psychotherapy and interventions, with an experiential component. Available only to majors in CN ED and CNPSY."
+    },
+    {
+      "number": 589,
+      "title": "Seminar on Counseling Supervision",
+      "credits": 3,
+      "description": "Study research and theoretical models of clinical supervision of counselors. Includes experiential supervision component as preparation for counseling supervision practicum."
+    },
+    {
+      "number": 593,
+      "title": "Management of College and University Career Centers",
+      "credits": 3,
+      "description": "The course focuses on the design, management, implementation, and promotion of Career Services in higher education."
+    },
+    {
+      "number": 594,
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 594,
+      "suffix": "A",
+      "title": "Research Topics",
+      "credits": 3,
+      "description": "The design, implementation, and evaluation of counseling research projects."
+    },
+    {
+      "number": 595,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "internalEquivalents": [
+        "CNPSY595"
+      ]
+    },
+    {
+      "number": 595,
+      "suffix": "A",
+      "title": "Counseling Practicum",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "CNED505",
+          "CNED506",
+          "CNED525"
+        ]
+      },
+      "description": "Practice in the application of guidance principles and methods to cases counseled under supervision; case conferences; seminar in guidance techniques"
+    },
+    {
+      "number": 595,
+      "suffix": "D",
+      "title": "Supervision of Counselors",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "internalEquivalents": [
+        "CNPSY595D"
+      ],
+      "requisites": {
+        "previous": [
+          "CNED595A"
+        ]
+      },
+      "description": "Practical experience in supervising and evaluating work of counselors."
+    },
+    {
+      "number": 595,
+      "suffix": "E",
+      "title": "School Counseling Internship and Seminar",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "requisites": {
+        "concurrent": [
+          "CNED504"
+        ]
+      },
+      "description": "The School Counseling Internship provides a closely supervised field experience in involving the full range of duties involved with professional school counseling in Pre-K-12 schools. Students are expected to utilize every opportunity to become familiar with and participate in the services provided by the schools and related organizations with which they are associated. The expectation is that the Internship student should be providing the same range of services for the school district that the other school counselors provide. In this course, you are expected to engage in various counselor roles at your site, including (a) program development and evaluation: program assessment, planning, design, implementation, and evaluation; (b) counseling: individual, group, group guidance; (c) program administration and leadership; (c) collaboration, coordination, and consultation: work with parents, teachers, administrators, community members, and other appropriate stakeholders; and (d) assessment, career development, program coordination, and other important and appropriate roles."
+    },
+    {
+      "number": 595,
+      "suffix": "G",
+      "title": "Counseling Internship and Integrative Seminar",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "requisites": {
+        "previous": [
+          "CNED595A"
+        ]
+      },
+      "description": "CN ED 595G Counseling Internship and Integrative Seminar (3-6 per semester/maximum of 12) This course will provide students with opportunities to apply principles and techniques that facilitate the counseling process by completing a supervised 600-hour counseling internship experience. Students must have successfully passed CN ED 595A (Practicum) and gain permission from the Emphasis Coordinator before they can begin their counseling internship. Students are also required to have professional liability insurance as a prerequisite for the counseling internship."
+    },
+    {
+      "number": 595,
+      "suffix": "I",
+      "title": "Counselor Education Doctoral Internship",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Practical experience in professional counseling & higher education teaching under supervision available only to CN ED doctoral students. This course provides Counselor Education doctoral students with opportunities to apply principles and techniques that expand their counseling and higher education teaching experiences by completing an individual and group supervised internship. A minimum number of total hours required by accreditation must be acquired to meet the program required total 6 credit hours. This is a culmination course that provides for professional demonstration of information and skills developed in preceding courses in the doctoral program. Students in the course will meet the following objectives: a. Demonstrate a personal theoretical counseling orientation that is based on a critical review of existing counseling and teaching theories. b. Demonstrate effective application of theory and professional best practices. c. Demonstrate an understanding of counseling case conceptualization and effective interventions across diverse populations and settings. d. Develop and demonstrate a personal philosophy of teaching and learning. e. Demonstrate course design, delivery, and evaluation methods appropriate to course objectives. f. Demonstrate the ability to assess the needs of counselors in training and develop techniques to help students develop into competent counselors."
+    },
+    {
+      "number": 595,
+      "suffix": "P",
+      "title": "Counselor Education Doctoral Counseling Practicum",
+      "credits": 3,
+      "description": "Practice in the application of counselor education principles and methods to cases counseled under supervision; case conferences. Available only to CN ED doctoral students."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Thesis Preparation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Teaching of counselor education laboratory, clinical practice, and recitation classes under senior faculty supervision."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 843,
+      "title": "Prevention Strategies and Programming",
+      "credits": 3,
+      "internalEquivalents": [
+        "SPSY843"
+      ],
+      "description": "Addresses prevention program development, implementation, and evaluation, along with theoretical and empirical underpinnings, ethical and multicultural issues related to prevention."
+    }
+  ]
+}

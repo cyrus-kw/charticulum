@@ -1,0 +1,253 @@
+{
+  "subject": "BIOE",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Bioengineering Transport Phenomena",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHE501"
+      ],
+      "description": "Application of the equations of mass, energy, and momentum conservation to physiological phenomena and to the design of artificial organs."
+    },
+    {
+      "number": 503,
+      "title": "Fluid Mechanics of Bioengineering Systems",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHE503"
+      ],
+      "requisites": {
+        "previous": [
+          "BME409",
+          {
+            "oneOf": [
+              "ME320",
+              "CHE330",
+              "AERSP308"
+            ]
+          }
+        ]
+      },
+      "description": "Cardiovascular system and blood flow, non-Newtonian fluid description, vessel flows, unsteady flows and wave motion, windkessel theory, transmission line theory."
+    },
+    {
+      "number": 505,
+      "title": "Bioengineering Mechanics",
+      "credits": 3,
+      "description": "Passive and active mechanical properties of tissues, rheological materials, models of muscle contraction, pulmonary mechanics, forces in muscular- skeletal system."
+    },
+    {
+      "number": 506,
+      "title": "Medical Imaging",
+      "credits": 3,
+      "description": "Medical diagnostic imaging techniques, including generation and detection of ultrasound, x-ray, and nuclear radiation; instrumentation and biological effects."
+    },
+    {
+      "number": 507,
+      "title": "Technical Foundations in Functional Magnetic Resonance Imaging",
+      "credits": 3,
+      "description": "Theory and applications of functional magnetic resonance imaging. The advent of new neuroimaging techniques such as functional magnetic resonance imaging (fMRI) has symbolized a new era of neuroscience. A large amount of neuroscience research today involves utilizing fMRI given its high spatial resolution and whole-brain coverage. In order to gain an in-depth understanding of these research findings, it is important to know the principles of fMRI. In this class we will address questions such as: What signal do different fMRI methods measure? How to interpret the results from different fMRI techniques? How to apply these methods to solving real neuroscience problems?"
+    },
+    {
+      "number": 508,
+      "title": "Biomedical Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE508"
+      ],
+      "description": "Properties and methods of producing metallic, ceramic, and polymeric materials used for biomedical applications. BIOE 508 BIOE (MATSC) 508 Biomedical Materials (3) The topical content of this course will be grouped into 4 areas. A general introduction to selected aspects of physiology will be presented. This will provide the background necessary to appreciate the factors which govern the selection of biomedical materials. Specific emphases will be placed on the polymerization of biopolymers (polypeptides and polysaccharides) and the general relationships between conformation and biological function, the biochemistry of blood and blood surface interactions, the formation of teeth and bone and the relationships between microstructure, composition and function, the immune responses to implanted materials, the resorption of bone (osteoporosis),and the development of caries. The perspective placed on these topics will be that of materials science. The selection of ceramics for hard tissue prosthesis will be described. Orthopaedic and dental applications for ceramics will be discussed. Specific ceramic materials to be treated include dental porcelain, alumina- and zirconia-based ceramics, and bioglasses. Various classes of inorganic cements, gypsum, zinc phosphates, zinc carboxylates, silicates, and glass-ionomer cements will also be considered as ceramics. Hydroxyapatite, HAp-based composites and HAp-metal interactions will be discussed in particular. Relationships among physical properties, mechanical properties, and chemical interactions with biological fluids will be described.Dental and orthopaedic applications of metals will be described. The fracture toughness of metals, their electrochemical responses in vivo, and the nature of the interfacial interactions with hard tissues will be treated. Dental amalgams and the noble metals for dental applications will be considered. Metals and alloys, such as Ti, Co-Cr, and stainless steel used in prosthetic applications will be described and their properties and limitations discussed. The phenomenon of stress shielding and the immune responses associated with the accumulation of metallic and polymeric particulate debris in the vicinity of an implant will be discussed in particular.Polymeric materials are important in a broad range of biomedical applications. Among these are soft tissue prostheses, hemostatic agents, dental restoratives, bone replacement materials, and surgical adhesives. In some applications, it is desirable that a polymeric material biodegrade while in others property retention is desirable. Because of the spectrum of applications for polymers, the topics to be covered will be limited with the intent to concentrate on hemocompatible polymers, acrylics used as bone cements, polyethylene used as bearing surfaces in prostheses, and dental resins and bonding materials. Other relevant polymers and their applications will be discussed."
+    },
+    {
+      "number": 509,
+      "title": "Mechanobiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOE512",
+          "BIOE505"
+        ]
+      },
+      "description": "This course explores the molecular bases of cell mechanics and the role of mechanics in cell biology"
+    },
+    {
+      "number": 510,
+      "title": "Biomedical Applications of Microelectromechanical Systems (BioMEMS) and Bionanotechnology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE441",
+          "BME201"
+        ]
+      },
+      "description": "Introduction to BioMEMS and Bionanotechnology. Topics include: electromechanical and chemical biosensors, microfluidics microscale separations, and surface patterning for cellular engineering. BIOE 510BIOE 510 Biomedical Applications of Microelectromechanical Systems (BioMEMS) and Bionanotechnology (3) Microelectromechanical systems (MEMS) have been developed for a wide range of applications from automotive to medical devices. Nanoscale devices within MEMS have a particular usefulness in biological applications due to their small volumes, low energy sensing, and minimal force actuators. Increased efficacy of instruments and new areas of application are also emerging from specific and successful biomedical applications of MEMS (bioMEMS). Advanced development of nanotechnology and bioMEMS for biomedical and biotechnological applications requires basic foundations from biophysics, biochemistry, solid state devices, and polymer engineering.The objectives of this course are: to build a basic foundation for understanding of mechanisms on electrical, mechanical, chemical, and optical transducers in the context of biomedical applications; and, to teach critical thinking considering microengineering design and fabrication, material compatibility with biological systems, and cellular interaction at the interface. Finally current MEMS activities will be reviewed with emphasis on the examination of the viability of nanoscale devices and bioMEMS technology in particular biomedical applications."
+    },
+    {
+      "number": 512,
+      "title": "Cell and Molecular Bioengineering",
+      "credits": 3,
+      "description": "Graduate level cell and molecular biology course for engineers emphasizing molecular mechanisms. BIOE 512BIOE 512 Cell and Molecular Bioengineering (3) This course investigates the molecules and mechanisms underlying cellular function from an engineering perspective, utilizing physical, chemical and quantitative approaches. Material covered includes the structure and chemistry of biological molecules, enzyme kinetics, DNA replication and repair, gene expression, recombinant DNA technology, subcellular organization, cell motility, signaling and cell division. Applications in medicine, biotechnology, bionanotechnology and tissue engineering are addressed. This is a lecture course graded by means of exams, homework assignments, and a final paper. A general knowledge of physics, chemistry, and some physiology is required; the analytical approach of the course will also require an ability to work with mathematical equations and simple models. It is geared towards engineering students and is also suitable for physics, chemistry, and materials science graduate students. Previous molecular and cell biology knowledge is not required. Three credits, generally offered each fall semester. No formal prerequisites."
+    },
+    {
+      "number": 513,
+      "title": "Bioengineering Laboratory Techniques",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOE512"
+        ]
+      },
+      "description": "Laboratory techniques in cell molecular biology, protein biochemistry and cell culture with an emphasis on engineering analysis and quantification. BIOE 513 Bioengineering Laboratory Techniques (3) BIOE 513 is a three-credit laboratory course for engineering graduate students designed to introduce laboratory techniques used in bioengineering/biomedical research. The course objectives are to build a basic foundation for understanding biological assays in the context of biomedical engineering applications and to introduce the student to the integration of biology with design and fabrication of devices. Consideration is also given to compatibility between biological systems and medical devices, and cellular interactions at the interface between biology and engineering. Emphasis is placed on cell and molecular biology, protein biochemistry, bacterial transformations, and mammalian cell culture with particular attention to engineering analysis and quantification. This course requires a substantial amount of laboratory work outside of designated meeting periods."
+    },
+    {
+      "number": 514,
+      "title": "Quantitative Microscopy",
+      "credits": 3,
+      "description": "Application of advanced microscopy to quantification of cellular and molecular function."
+    },
+    {
+      "number": 515,
+      "title": "Cell Mechanics and Biophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOE505"
+        ]
+      },
+      "description": "Advanced topics and recent developments in cellular engineering; applications of engineering science to cell biology."
+    },
+    {
+      "number": 517,
+      "title": "Biomaterials Surface Science",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE507"
+      ],
+      "description": "Special properties of surfaces as an important causative and mediating agent in the biological response to materials. BIOE 517 BIOE 517 . (MATSC 517) Biomaterials Surface Science (3)This course will factor the classical picture of the biological response to materials into spatial and temporal components, identifying the special properties of surfaces as an important causative and mediating agent. Emphasis will be on biophysical mechanisms and the biological response to materials. Contact activation of blood plasma coagulation cascade, bioadhesion, and protein adsorption will be repeatedly used as example biological response to materials surfaces to illustrate concepts and principles. Leading theories attempting to correlate both kinds of intensity of biological responses to surface and interfacial energetics will be compared and contrasted through a process that will quantify important surface thermodynamic properties of materials. The hydrophobic effect and related phenomena, especially as this pertains to water solvent effects in biology, will receive special emphasis. A general background in chemistry and/or biology is required, but prerequisites are purposefully limited, reflecting the interdisciplinary aspects of the subject and to draw students from different specializations."
+    },
+    {
+      "number": 518,
+      "title": "Bioprinting",
+      "credits": 3,
+      "internalEquivalents": [
+        "ESC518"
+      ],
+      "description": "This course covers the principles of bioprinting in tissue engineering and regenerative medicine for use in fabrication of biomedical related products such as implants, tissue scaffolds, engineered tissues, organs and biological systems."
+    },
+    {
+      "number": 519,
+      "title": "Artificial Organs Design",
+      "credits": 3,
+      "description": "Basic techniques and principles of a multidiscipline approach to artificial organs design."
+    },
+    {
+      "number": 552,
+      "title": "Mechanics of the Musculoskeletal System",
+      "credits": 3,
+      "internalEquivalents": [
+        "IE552"
+      ],
+      "requisites": {
+        "concurrent": [
+          "BIOL472"
+        ]
+      },
+      "description": "Structure and biomechanics of bone, cartilage, and skeletal muscle; dynamics and control of musculoskeletal system models. BIOE 552 BIOE (I E) 552Mechanics of the Musculoskeletal System (3)The course focuses on the upper limbs and its musculoskeletal components, including mechanical properties and models; work-related musculoskeletal injuries, techniques, models, and instruments to measure and quantify the risks for developing such injuries. Specific topics covered in the first third of the course include an introduction to basic biomechanical principles, the anatomical structure of the musculoskeletal system including soft tissue, neuromuscular physiology, and motor control including muscle receptors. The second third covers various muscle models starting from basic mass/spring/dashpot viscoelastic models as in Hill's 3-element model and continuing on to Hatze's multi-element model, frequency analysis, control theory approaches. More complex models include static and dynamic aspects of tendon-pulley models and multiple muscle-tendon systems. The final third covers basic epidemiology as applied to musculoskeletal disorders and risk factors including instrumentation to measure them and various analysis tools (e.g., the PSU CTD Risk Index) to assess the not only the overall risk for injury but the reliability and validity of such assessments. Time permitting applications to hand tools and office environment with computer work stations are examined. Two exams and a modeling project are given. The course is typically offered Spring Semester."
+    },
+    {
+      "number": 553,
+      "title": "Engineering of Human Work",
+      "credits": 3,
+      "internalEquivalents": [
+        "IE553"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BIOL141",
+              "BIOL472"
+            ]
+          }
+        ]
+      },
+      "description": "Physics and physiology of humans at work; models of muscle strength, dynamic movements; neural control; physical work capacity; rest allocation."
+    },
+    {
+      "number": 576,
+      "title": "Bioengineering of the Cardiovascular System",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL472"
+        ]
+      },
+      "description": "Experimental and analytical studies of network branching patterns, regional blood flow, rheology and mechanics of blood cells and vessels."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "BME590"
+      ],
+      "requisites": {
+        "previous": [
+          "BME590"
+        ]
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "title": "Bioengineering Ethics and Professional Development",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "internalEquivalents": [
+        "BME591"
+      ],
+      "description": "Problem solving methods in ethical decision making, best practices in research communication, and strategies for professional development. This course will cover the main philosophical underpinnings of bioengineering ethics. It will then assist in developing methods for ethical decision making in the main areas of bioengineering professional practice. These areas include data collection, management and presentation, animal and human experimentation, peer review and authorship, and social implications of bioengineering research. The course will then assist in the professional development of students by instruction in tools for effective acquisition of discipline-specific conceptual knowledge, research skill development, communication, management, leadership."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

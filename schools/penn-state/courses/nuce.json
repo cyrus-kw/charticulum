@@ -1,0 +1,720 @@
+{
+  "subject": "NUCE",
+  "courses": [
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 301,
+      "title": "Fundamentals of Reactor Physics",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "MATH251"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          },
+          "PHYS214"
+        ]
+      },
+      "description": "Nuclear reactions and interactions relevant to nuclear engineering including fission, cross-sections, reaction rate calculations, energy depositions rates, and radioactive decay. This course is designed to acquaint junior-level undergraduate students with knowledge essential to the reactor physics and nuclear reactor systems. Students will learn nuclear reactions including radioactive decay, fission and fusion, reaction rates, energy deposition rates, various nuclear systems, and introductory diffusion theory."
+    },
+    {
+      "number": 302,
+      "title": "Introduction to Reactor Design",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NUCE301",
+          "NUCE309"
+        ]
+      },
+      "description": "Static and dynamic reactor theory applied to basic reactor design problems."
+    },
+    {
+      "number": 309,
+      "title": "Analytical Techniques for Nuclear Concept",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          }
+        ]
+      },
+      "description": "This course is structured to provide students with the necessary analytical techniques and terminology for radiation science, nuclear reactor design, and power system simulation. Students will be taught the basic mathematical methods needed for such topics as simplified reactor physics, fluid mechanics, heat and mass transfer, control theory, shielding, radiation detection, fission product decay, and risk assessment. The course will cover four general mathematical areas: partial differential equations, linear algebra, systems of ordinary differential equations, and probability and statistics. Linear ordinary differential equations are solved using Reduction to Separable Form, Superposition of Solutions, Laplace Transforms, and Numerical Methods. Linear partial differential equations are solved using Separation of Variables. Linear algebra is used to solve sets of linear equations, Least Squares Fit, and Finite Difference Methods. Eigenvalues and Eigenvectors found for a matrix are used to rotate a function to principle coordinates and to solve systems of ordinary differential equations. Probability and statistics includes sampling, permutations and combinations, binomial, Poisson, hypergeometric, and normal distributions. These statistical methods are then applied to radiation counting statistics."
+    },
+    {
+      "number": 310,
+      "suffix": "W",
+      "title": "Issues in Nuclear Engineering",
+      "credits": 2,
+      "attributes": [
+        "W"
+      ],
+      "description": "Societal and technical issues facing nuclear engineers, including safety, operations, waste, regulation, public acceptance, economics, ethics, and radiation."
+    },
+    {
+      "number": 321,
+      "title": "Introduction to Thermal-Fluid Sciences for Nuclear Engineers - I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ],
+        "concurrent": [
+          "EMCH212",
+          "MATH251",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ]
+      },
+      "description": "This course is intended to provide nuclear engineers with fundamentals in thermal-fluid sciences. This course is designed to develop an understanding of thermodynamic concepts and their application to nuclear thermal-fluid systems such as nuclear reactors and power plants. The course also emphasizes the study of fundamental principles of fluid mechanics including mass, energy and momentum conservation and their applications in nuclear engineering systems."
+    },
+    {
+      "number": 322,
+      "title": "Introduction to Thermal-Fluid Sciences for Nuclear Engineers - II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ME320",
+              "NUCE321"
+            ]
+          }
+        ]
+      },
+      "description": "This course is intended to provide nuclear engineers with fundamentals in thermal-fluids sciences. The course starts with an introduction of Similitude and Dimensional analysis (Buckingham Pi Theorem) and its application of fluid dynamics and heat transfer. Internal and external flows are reviewed, including the evaluation of friction losses. Finally, the course covers the fundamentals of heat transfer. While maintaining generality, throughout the course topics of greater importance in nuclear engineering are emphasized. These include in particular: pressure drop in internal flows, conduction in cylindrical geometries, convection heat transfer and heat exchanger design. Moreover, the connection to nuclear engineering applications is emphasized."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 401,
+      "title": "Introduction to Nuclear Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "Fundamental concepts of nuclear engineering, including fission, reactor theory, shielding, and radioisotopes; intended for other than nuclear engineering students."
+    },
+    {
+      "number": 403,
+      "title": "Advanced Reactor Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE302"
+        ]
+      },
+      "description": "Physical principles and computational methods for reactor analysis and design. Multigroup diffusion theory; determination of fast and thermal group constants; cell calculations for heterogeneous core lattices."
+    },
+    {
+      "number": 405,
+      "title": "Nuclear and Radiochemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM452",
+              "PHYS237",
+              "NUCE301"
+            ]
+          }
+        ]
+      },
+      "description": "Theory of radioactive decay processes, nuclear properties and structure, nuclear reactions, interactions of radiation with matter, biological effects of radiation. CHEM 406 Nuclear and Radiochemistry (3) CHEM 406 provides a basic introduction to many of the important physical phenomena in nuclear and radiochemistry and the theories that describe them. The exposition of both experimental phenomena and theory complements the content of other upper-level courses in physical chemistry such as CHEM 450 and 452 .Specifically, the types of radioactive decay are described, and, using this information, the equations that relate the growth and decay, i. e., the kinetics, of radioactive nuclei are derived. In parallel, a variety of types of nuclear reactions, such as neutron capture are introduced and used to develop the equations that governing the kinetics of nuclear reactions, including the concept of cross section. To describe the nature of nuclear matter, the relationships between energy, binding energy, and mass, are developed and augmented with the introduction of related quantities including the nuclear magnetic-dipole moment, total angular momentum of the nucleus, and Fermi-Dirac and Bose-Einstein statistics. A basic introduction to quantum mechanics, including several problems of increasing complexity, namely, the one-dimensional particle-in-a-box, the three-dimensional particle-in-a-cubic-box, and the particle-in-a-spherical box is then provided. The latter problem forms the basis for developing the single-particle shell-model of the nucleus, which is compared to the single-particle shell-model of the atom, namely, the hydrogen-atom problem. The barrier-penetration theory of alpha-decay, Fermi's phase-space theory of beta-decay, and the selection rules for gamma-ray decay are then presented. Final topics include the interactions of radiation with matter and the biological effects of radiation."
+    },
+    {
+      "number": 406,
+      "title": "Introduction to Statistical Thermodynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ME300",
+              "ME201"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          }
+        ]
+      },
+      "description": "Statistical description of systems composed of large numbers of particles in the context of classical and quantum mechanics; basic concepts of probability theory and thermodynamics as they relate to statistical mechanics. M E (NUC E) 406 Introduction to Statistical Thermodynamics (3) This course is an introduction to probabilistic and statistical concepts in the physical sciences, which we refer to as 'statistical thermodynamics.' In areas such as design and processing of electronic devices, materials engineering, chemical engineering, and combustion engineering, the science of statistical mechanics is a particularly necessary, powerful, and important tool for the engineer. The underlying foundation of statistical mechanics is developed by (1) reviewing the basic ideas from probability theory, (2) deriving the binomial, Poisson, and Gaussian probability distributions, and (3) using these models to analyze several examples taken from science and engineering. To make a connection between macroscopic quantities and the corresponding probabilistic representation, classical thermodynamics is reviewed using the internal energy, entropy, and free energy functions in the context of the first and second laws. Statistical mechanics for classical and quantum-mechanical systems is presented via the micro-canonical, canonical, and grand canonical ensembles using the associated partition functions. During the syntheses of ideas, applications from various branches of science are presented. Some examples of applications are the Einstein crystal, the Debye crystal, the ideal gas, and black body radiation.This course covers the following program objectives: 1. Demonstrate knowledge of basic chemistry and physics. 2. Demonstrate a knowledge of atomic and nuclear physics. 3. Demonstrate a knowledge of thermodynamics, heat transfer, and fluid flow. 4. Understand and apply the basic concepts of particle transport. 5, Understand and apply thermodynamics and heat transfer principles to the analysis of nuclear power components and systems."
+    },
+    {
+      "number": 408,
+      "title": "Radiation Shielding",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE301"
+        ]
+      },
+      "description": "Radiation sources in reactor systems; attenuation of gamma rays and neutrons; point kernel methods; deep penetration theories; Monte Carlo methods."
+    },
+    {
+      "number": 409,
+      "title": "Nuclear Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS214"
+        ]
+      },
+      "description": "Nuclear reactor materials: relationship between changes in material properties and microstructural evolution of nuclear cladding and fuel under irradiation. NUC E (MATSE) 409 Nuclear Materials (3) NUC E/ MATSE 409 provides a background on the types of materials used in nuclear reactors and their response to neutron irradiation. Most of the materials problems encountered in the operation of nuclear power reactors for energy production are discussed here. The objective of the course is to give nuclear engineering students a background in materials, so they understand the limitations put on reactor operations and reactor design by materials performance. In the first part of the course, we review basic concepts of physical metallurgy, to develop a mechanistic and microstructurally based view of material properties. In the second part of the course, we present the methods to calculate displacement damage to the material produced by exposure to neutron irradiation. The microstructural evolution that results from the reactor exposure (including radiation damage and defect cluster evolution, and changes) is described. The aim is to create a linkage between these changes at the atomistic level and the changes in macroscopic behavior of the material. Special attention is given to property changes that affect fuel performance and operational safety. Both mathematical methods and experimental techniques are emphasized so that theoretical modeling is instructed by experimental data. Students use the TRIM and SPECTER codes to quantitatively evaluate neutron damage, as well as learn simple analytical models that describe microstructural evolution and property changes under irradiation."
+    },
+    {
+      "number": 420,
+      "title": "Radiological Safety",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUCE301",
+              "NUCE405"
+            ]
+          }
+        ]
+      },
+      "description": "Ionizing radiation, biological effects, radiation measurement, dose computational techniques, local and federal regulations, exposure control."
+    },
+    {
+      "number": 428,
+      "title": "Radioactive Waste Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUCE301",
+              "NUCE405"
+            ]
+          }
+        ]
+      },
+      "description": "Nature, sources, and control of radioactive wastes; theory and practice of disposal processes."
+    },
+    {
+      "number": 430,
+      "title": "Design Principles of Reactor Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE302"
+        ],
+        "concurrent": [
+          "ME410"
+        ]
+      },
+      "description": "Nuclear power cycles; heat removal problems; kinetic behavior of nuclear systems; material and structural design problems. NUC E 430 Design Principles of Reactor Systems (3) This course is designed to provide students in Nuclear Engineering with sufficient background to (a) understand the design of nuclear power reactors, how they work and why, (b) understand and apply design criteria which determine the power level and system efficiency in power reactor cores, (c) become familiar with and understand appropriate power reactor terminology and use, (d) learn how to perform thermal/hydraulic analysis for various reactor operation conditions, (e) learn the different accident classifications and reactor operating limits, and (f) become familiar with basic concepts on the analysis of two-phase flow."
+    },
+    {
+      "number": 431,
+      "suffix": "W",
+      "title": "Nuclear Reactor Core Design Synthesis",
+      "credits": 4,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "NUCE403",
+          "NUCE430"
+        ],
+        "concurrent": [
+          "ENGL202C"
+        ]
+      },
+      "description": "Technical and economic optimization of nuclear systems. NUC E 431W Nuclear Reactor Core Design Synthesis (4) This course provides a capstone design experience that will give the student an understanding of the design methodology and considerations applied to systems or components used in nuclear power reactors and/or in nuclear science. Students will learn design principles, understand and apply design criteria to create a synthesized design product, become familiar with and understand appropriate technical and design terminology and its use, and learn how to prepare technical reports and make technical presentations."
+    },
+    {
+      "number": 441,
+      "title": "Nuclear Security Threat Analysis and Assessments",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE301"
+        ]
+      },
+      "description": "Nuclear threat assessment and analysis for non-state actors to nuclear and radiological facilities and supply lines. NUC E 441 Nuclear Security Threat Analysis and Assessments (3) The primary goal of this course is to educate the student in such a manner that on completion they are able to conduct a threat assessment and analysis for non-state actors (i.e., terrorist and criminal organizations) and the threat which they present to nuclear and radiological facilities and supply lines. Approaching the subject matter in this way forces a student to efficiently and effectively identify security threats and ultimately craft and articulate plausible policy responses to such threats. Specifically, students will focus on threats emanating from nuclear weapons, radiological material, and related technology. After completing this course, the student should be able to:- Analyze current and future nuclear threats from countries and nonstate or sub-state actors and provide recommendations on how to address these security issues.- Define and analyze the various types of transnational threats and targets in order to craft effective policy responses.- Describe nuclear weapons proliferation, including incentives and disincentives for proliferation.- Analyze smuggling methods and counter-proliferation strategies.- Identify materials of concern and the physical characteristics of these materials. Also prioritize these materials based on their attractiveness, location, and the threat they pose.- Understand the history of terrorism, including its causes, motivations, strategies, and tactics, particularly regarding nuclear terrorism.- Explain counterterrorism strategies and policies and the role of intelligence in counterterrorism, with a particular emphasis on the efforts of the United States Government."
+    },
+    {
+      "number": 442,
+      "title": "Nuclear Security System Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE302"
+        ]
+      },
+      "description": "Science and engineering associated with the design, evaluation, and implementation of systems to secure nuclear and radiological materials. NUC E 442 Nuclear Security System Design (3) The primary goal of this course is to educate the student to think with a security perspective such that they can design and evaluate systems to deter, detect, interdict, and respond to threats to the security of nuclear and radiological materials. After completing this course, the student should be able to: -Analyze motivations and capabilities of adversaries (terrorists, criminal groups, protesters, etc.) and be able to characterize a Design Basis Threat (DBT) that can be used to perform a threat-informed security evaluation. -Describe and explain the operation of detection, delay, and response technologies. Understand how to complete a performance evaluation of these technologies. -Evaluate insider threats to nuclear and radiological facilities and incorporate the insider threat in a DBT. -Formulate different response strategies (including deterrence, denial, containment, pursuit, and recapture) for different facilities and considering on-site and/or off-site response. -Use nuclear or radiological material facility characteristics and a DBT to design a performance-based security system for a facility that will be threat-informed, provide defense in depth, and achieve balanced protection while minimizing risk to an acceptable level. -Apply engineering principles to produce a cost benefit analysis for upgrade options for an existing nuclear facility. -Understand the unique security characteristics associated with transportation of nuclear materials, smuggling of nuclear materials, and protection of major public events and be able to apply a risk- and performance-based engineering approach to security systems for these scenarios. -Understand nuclear forensics as a component of a nuclear security system and be able to use nuclear forensics interpretation of measured data to predict infer actor involvement in a nuclear security incident. -Discuss and critique the deterrence characteristics of nuclear security systems."
+    },
+    {
+      "number": 450,
+      "title": "Radiation Detection and Measurement",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUCE301",
+              "NUCE405"
+            ]
+          },
+          "NUCE309"
+        ]
+      },
+      "description": "Theory and laboratory applications of radiation detectors, including proton, neutron, charged particle detectors, NIM devices, and pulse-height analysis."
+    },
+    {
+      "number": 451,
+      "title": "Experiments in Reactor Physics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE212",
+          "NUCE450"
+        ]
+      },
+      "description": "Acquisition and processing of nuclear and atomic data; application to nucleonic phenomena of importance in nuclear engineering."
+    },
+    {
+      "number": 480,
+      "title": "Foundations of Nuclear Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH232"
+            ]
+          },
+          "PHYS214"
+        ]
+      },
+      "description": "This course is designed as an intensive course providing an introduction to nuclear engineering for graduate students with a non-nuclear background. The course starts with an introduction to fundamental concepts of atomic and nuclear physics and the interaction of radiation with matter which are then used to develop static and dynamic reactor theory applied to basic reactor design problems."
+    },
+    {
+      "number": 490,
+      "title": "Introduction to Plasmas",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EE330",
+              "PHYS400"
+            ]
+          }
+        ],
+        "minGrades": {
+          "EE330": "C",
+          "PHYS400": "C"
+        }
+      },
+      "description": "This course provides the education on models that are used for description of plasma phenomena as applicable to plasma confinement, plasma assisted materials processing, astrophysical plasmas and plasmas in the near Earth's space environment. It provides practical training in solution of problems involving collisional and collisionless plasmas. In particular, it investigates dynamics of charged particles in specified uniform, non-uniform and time varying electric and magnetic fields. It explores collective behavior of plasmas, including various electrostatic and electromagnetic waves that can be excited and propagate in plasmas parallel and perpendicular to the externally applied magnetic field. The course considers non-linear effects in plasmas, as typically occurring in the sheath regions near the plasma confining walls. It discusses concepts of equilibrium and stability of plasmas, and various models of unstable plasma motions, especially in relation to plasma confinement."
+    },
+    {
+      "number": 494,
+      "title": "Senior Thesis",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Students must have approval of a thesis adviser before scheduling this course. NUC E 494H Senior Thesis (1-9) All Schreyer Scholars are required to complete an undergraduate honors thesis. This work represents the culmination of a student's honors experience. Through the thesis, the student demonstrates a command of relevant scholastic work and a personal contribution to that scholarship.The thesis project can take many forms - from laboratory experiments all the way to artistic creations. The thesis document captures the relevant background, methods and techniques, as well as describing the details of the completion of the individual project. Two Penn State faculty members judge the merits of this Scholar's honors thesis, the student's self-selected thesis supervisor and the department-selected honors adviser in the student's area of honors."
+    },
+    {
+      "number": 496,
+      "title": "Independent studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 501,
+      "title": "Reactor Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE430"
+        ]
+      },
+      "description": "Thermal hydraulic fundamentals applied to power reactors, thermal analysis of fuel elements and two-phase heat transfer in heated channels."
+    },
+    {
+      "number": 502,
+      "title": "Reactor Core Thermal-Hydraulics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE430"
+        ]
+      },
+      "description": "In-depth analysis of the reactor core thermal hydraulics; computational methods and practical applications. NUC E 502 Reactors Core Thermal-Hydraulics (3) This course provides students with a background in reactor core thermal hydraulics and enhances their understanding of the important phenomena in a nuclear reactor core, which can determine reactor safety performance. Students will obtain an overall view of reactor safety from the reactor thermal hydraulics perspective. This course examines the outcomes of research projects and international scientific activities in this area. Objectives are met by introducing course modules that utilize state-of-the-art computer codes to solve well established international thermal-hydraulics benchmark problems to demonstrate reactor performance during operational transients. One of the principal goals of the course is to provide students with a computationally intensive curriculum that is consistent with their capabilities and their expectations for a modern reactor thermal hydraulics course. This course discusses detailed thermal-hydraulic analysis of reactor systems with an emphasis on the application of conservation equations for single- and two-phase flow in detailed modeling of reactor cores using three-dimensional subchannel analysis methods and examines the reactor's core thermal-hydraulic design for core limit analysis. The governing sets of equations that form the basis for the three-dimensional thermal-hydraulic methods commonly used in the nuclear industry will be derived and discussed in addition to specific models that are used for closure. Hot assembly analysis will be performed, as well as core wide analysis, to determine the hot assembly and resulting hot subchannels in the core. Students will use state -of-the-art three-dimensional computer codes to model fuel assemblies and the reactor core to determine the most limiting fuel pin and hottest subchannel. Background on heat and mass transfer and fluid dynamics is the prerequisite to this course, which provides a basis for understanding reactor core thermal-hydraulic analysis."
+    },
+    {
+      "number": 505,
+      "title": "Reactor Instrumentation and Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUCE302",
+              "NUCE401"
+            ]
+          }
+        ]
+      },
+      "description": "Reactor control principles; classical control methods; operational control problems; control simulation using modern mainframe and microcomputer software packages; reactor instrumentation."
+    },
+    {
+      "number": 506,
+      "title": "Nuclear Chemistry",
+      "credits": 3,
+      "description": "Energetics, kinematics, and models of nuclear reactions; nuclear processes as chemical probes, mossbauer effect and perturbed angular correlation spectroscopy."
+    },
+    {
+      "number": 509,
+      "title": "Physics of Radiation Damage",
+      "credits": 3,
+      "description": "Radiation damage plays a pivotal role in materials design for radiation-intensive applications, such as in fission and fusion nuclear reactors. Atoms in solid materials can be displaced from their lattice sites due to interactions with energetic radiation particles, generating a variety of point defects and defect clusters that can profoundly modify the material properties, such as mechanical strength, dimensional stability, thermal conductivity, as well as electrical and optical properties. This course provides students with the fundamental theories and methodologies essential for the research of materials to be used in radiation-intensive environments. Key topics include: (1) theories for energy deposition from energetic particles into materials, (2) analytical models for atomic displacement and collision cascades, (3) kinetics of point defects and defect clusters, emphasizing rate theory and related models, and (4) defect-property relationship in materials."
+    },
+    {
+      "number": 511,
+      "title": "Nuclear Reactor Kinetics and Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE301",
+          "NUCE302"
+        ]
+      },
+      "description": "Analytical kinetics and dynamics modeling for reactivity-induced transients; reactor accident kinetics methods for simple and complex geometries; experimental methods. NUC E 511 Nuclear Reactor Kinetics and Dynamics (3) This course provides students with a background in the area of nuclear reactor kinetics and dynamics and enhances their understanding of the important multi-physics phenomena in a reactor, which can determine reactor safety performance. Students will obtain an overall view of nuclear reactor safety from the nuclear reactor dynamics perspective. This course examines the outcomes of research projects and international scientific activities in the area of reactor dynamics. Objectives are met by introducing course modules that utilize state-of-the-art computer codes to solve well established international coupled thermal-hydraulics and neutronics benchmark problems to demonstrate reactor performance during operational transients. The course will be based on modules that demonstrate the Light Water Reactor (LWR) behavior utilizing state-of-the-art computer codes to solve well established Organization for Economic Cooperation and Development (OECD) coupled code benchmark problems. A supplementary module will also be developed which focuses on the High Temperature Reactor (HTR) in order to demonstrate the dynamic and safety issues unique to an advanced next generation reactor. The course will provide students with a computationally intensive modular curriculum that the instructor can utilize as appropriate to complement the nuclear reactor kinetics and dynamics concepts. This course focuses on nuclear reactor kinetics and dynamics methods and techniques for multi-dimensional safety and transient analysis. It consists of five major topics: review of point nuclear reactor kinetics theory; reactivity feedback and nuclear reactor dynamics; methods for spatial kinetics; coupled and multi-dimensional thermal-hydraulics/neutron kinetics; and, experimental determination of reactor dynamics parameters. A computer project provides students with knowledge about state-of-the-art methods used to model reactor transients for safety evaluations.Background on basic reactor physics and analysis is the prerequisite content to this course, which provides a basis for understanding nuclear reactor kinetics theory and nuclear reactor dynamics phenomena."
+    },
+    {
+      "number": 512,
+      "title": "Nuclear Fuel Management",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE302"
+        ]
+      },
+      "description": "Nuclear fuel inventory determination and economic value through the fuel cycle. Emphasis on calculational techniques in reactor, optimization, and design."
+    },
+    {
+      "number": 518,
+      "title": "Computational Nuclear Materials",
+      "credits": 3,
+      "description": "This graduate course introduces computational methods for modeling the behavior and degradation of nuclear materials under irradiation and extreme environments. Students will learn multiscale approaches, including atomic collision theory, molecular dynamics, phase-field modeling, and fuel performance simulations. Emphasis is placed on understanding the theoretical foundations, capabilities, and limitations of each method. This course prepares students to critically evaluate modeling results, select appropriate methods for specific materials problems, and connect simulations with experimental or engineering data."
+    },
+    {
+      "number": 521,
+      "title": "Neutron Transport Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUCE403",
+              "PHYS406"
+            ]
+          }
+        ]
+      },
+      "description": "Derivation of Boltzmann equation for neutron transport; techniques of approximate and exact solution for the monoenergetic and spectrum regenerating cases."
+    },
+    {
+      "number": 523,
+      "title": "Environmental Degradation of Materials in Nuclear Power Plants",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE409"
+        ]
+      },
+      "description": "Degradation of materials performance when exposed to the combination of high temperature, neutron irradiation, and aggressive electrochemistry found in nuclear reactors."
+    },
+    {
+      "number": 525,
+      "title": "Monte Carlo Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "PHYS237",
+          "STAT401"
+        ]
+      },
+      "description": "Fundamentals of the probability theory and statistics, analog and non-analog Monte Carlo methods and their applications, random processes, and numbers."
+    },
+    {
+      "number": 530,
+      "title": "Parallel/Vector Algorithms for Scientific Applications",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "AERSP424",
+              "CMPSC450"
+            ]
+          }
+        ]
+      },
+      "description": "Development/analysis of parallel/vector algorithms (finite-differencing of PDEs and Monte Carlo methods) for engineering/scientific applications for shared and distributed memory architectures."
+    },
+    {
+      "number": 540,
+      "title": "Theory of Plasma Waves",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EE471"
+        ]
+      },
+      "description": "Solutions of the Boltzmann equation; waves in bounded and unbounded plasmas; radiation and scattering from plasmas."
+    },
+    {
+      "number": 542,
+      "title": "Source and Detector Technologies for Nuclear Security",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE450"
+        ]
+      },
+      "description": "Theory and Technology behind detectors, sensors, and source technologies including portal monitors and field depoloyable detection systems."
+    },
+    {
+      "number": 543,
+      "title": "Nuclear Security Education Laboratory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUCE450",
+          "NUCE542"
+        ]
+      },
+      "description": "Hands-on Experience with the radiation detection systems, sensors, devices, and source technologies for nuclear security applications."
+    },
+    {
+      "number": 544,
+      "title": "Global Nuclear Security Policies",
+      "credits": 3,
+      "description": "This course reviews the historical development and examines the current state of American and international policies and laws related to global nuclear security. U.S. policy has evolved over a period of more than sixty years since the Manhattan Project and has embraced the importance of both safeguards (applicable to weapons states and non-weapons states that commit to peaceful use of nuclear materials) and proliferation prevention (policies intended to deter and detect attempts to illicitly acquire nuclear weapons). Over this time improvements in technology have increased the potential for proliferation but have also increased the ability to detect proliferation. Recently, heightened danger of unauthorized proliferation by states and, more worrisome, transnational non-states, has led to increased emphasis on control and detection. Within this context students in this course will study U.S. national security strategy in the areas of counterterrorism and nonproliferation. We will discuss those policies aimed at enhancing nuclear security and examine the roles of various agencies, including the Department of Homeland Security, the Department of Energy (including the National Nuclear Security Administration), the Nuclear Regulatory Commission, the Department of Defense, and the Environmental Protection Agency. International treaties and conventions on nuclear safeguards, arms control, and terrorism will be covered. Regulations promulgated by the U.S. Nuclear Regulatory Commission and the International Atomic Energy Agency will also be studied. The course will consider how these policies are intended to control the actions of both state and non-state adversaries and applications to both government and private sector nuclear activities. The role of transnational and domestic groups will be discussed, especially with regard to motivation and potential capabilities."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Graduate assistants receive credit for teaching lower level courses while under the direct supervision of a graduate faculty member."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

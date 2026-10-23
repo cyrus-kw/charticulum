@@ -47,6 +47,9 @@ export const objectFields = z.object({
   title: z.string(),
   description: z.string().optional(),
   credits,
+  maxCredits: credits.optional(),
+  repeatable: z.object({ maxCredits: credits.optional() }).optional(),
+  attributes: z.array(id).optional(),
   requisites: z
     .object({
       previous: z.array(requiredItem).default([]),
@@ -74,7 +77,35 @@ const courseObject = objectFields
     return filled ? { ...object, code: filled } : object;
   });
 
-export const subjectSchema = z.object({ code: subjectCode, name: z.string().min(1) });
+export const subjectSchema = z.object({ code: subjectCode, name: z.string().min(1), department: id.optional() });
+
+export const attributeSchema = z.object({ id, name: z.string().min(1), group: id.optional() });
+export const attributeGroupSchema = z.object({ id, name: z.string().min(1), category: category.optional() });
+
+// How the school is organized (see SchoolStructure in types.ts).
+export const structureSchema = z.object({
+  levels: z
+    .array(
+      z.object({
+        id,
+        name: z.string().min(1),
+        numbers: z.array(z.tuple([z.number().int().min(0), z.number().int().min(0)])).optional(),
+      }),
+    )
+    .default([]),
+  credentials: z.array(z.object({ id, name: z.string().min(1), level: id })).default([]),
+  divisionTypes: z.array(z.object({ id, name: z.string().min(1) })).default([]),
+  divisions: z
+    .array(
+      z.object({
+        id,
+        type: id,
+        name: z.string().min(1),
+        departments: z.array(z.object({ id, name: z.string().min(1) })).optional(),
+      }),
+    )
+    .default([]),
+});
 
 const creditRule = z
   .object({
@@ -85,6 +116,9 @@ const creditRule = z
     notArea: z.union([z.string().min(1), z.array(z.string().min(1)).min(1)]).optional(),
     subjects: z.array(subjectCode).optional(),
     minNumber: z.number().int().min(0).optional(),
+    maxNumber: z.number().int().min(0).optional(),
+    attributes: z.array(id).min(1).optional(),
+    notAttributes: z.array(id).min(1).optional(),
     objectIds: z.array(id).optional(),
     minGrade: grade.optional(),
   })
@@ -126,7 +160,7 @@ const categorySet = requirementRules.omit({ creditRules: true, minTotalCredits: 
   rules: z.array(creditRule).optional(),
 });
 
-// A school-wide set, for every program of one type ("baccalaureate"),
+// A school-wide set, for every program of one type ("bachelors"),
 // named by its programType. Every one is global. Its
 // requirements by category (gen ed) are listed like a program's.
 const programRequirement = requirementRules.omit({ creditRules: true }).extend({
@@ -147,6 +181,8 @@ const template = z.object({
   version: z.string().regex(/^\d{4}-\d{2}$/, 'Use an academic year like "2026-27".'),
   title: z.string(),
   programType: id,
+  // The division (college) that runs it, if the school lists divisions.
+  division: id.optional(),
   // Credits the whole program needs (more than the degree's 120, say).
   minTotalCredits: credits.optional(),
   // Its own requirements by category (the degree's are global).
@@ -189,11 +225,17 @@ export const schoolDataSchema = z.object({
   // The subjects courses are taught in. Optional; when listed, every
   // course's subject must be one of them.
   subjects: z.array(subjectSchema).default([]),
+  // The labels courses carry (gen ed areas and the like), in the order
+  // they're shown, and the families they're in. Optional.
+  attributeGroups: z.array(attributeGroupSchema).default([]),
+  attributes: z.array(attributeSchema).default([]),
+  // Levels, credentials, and divisions. Optional.
+  structure: structureSchema.optional(),
   objects: z.array(courseObject).min(1),
-  // The kinds of program the school offers ("associate", "baccalaureate",
-  // "graduate"). Every requirement set and program names one of these.
-  // Left out, it's every type programRequirements names (parseSchoolData
-  // fills it in).
+  // The kinds of program the school offers ("associate", "bachelors",
+  // "masters"). Every requirement set and program names one of these.
+  // Left out, it's the structure's credentials, or else every type
+  // programRequirements names (parseSchoolData fills it in).
   programs: z.array(id).optional(),
   programRequirements: z.array(programRequirement).default([]),
   templates: z.array(template).default([]),
@@ -257,7 +299,37 @@ export function parseSchoolData(input: unknown): ParseResult {
   const check = (where: string, refs: string[]) => {
     for (const ref of refs) if (!ids.has(ref)) errors.push(`${where}: unknown object ${ref}`);
   };
+  // The same for any other list of ids: each must be one of `known`.
+  const checkIn = (where: string, refs: string[], known: Set<string>, what: string) => {
+    for (const ref of refs) if (!known.has(ref)) errors.push(`${where}: unknown ${what} ${ref}`);
+  };
 
+  // Attributes, and how the school is organized.
+  const groups = new Set(data.attributeGroups.map((g) => g.id));
+  const attributes = new Set(data.attributes.map((a) => a.id));
+  for (const attribute of data.attributes) {
+    checkIn(`attributes.${attribute.id}.group`, attribute.group ? [attribute.group] : [], groups, "attribute group");
+  }
+  const structure = data.structure;
+  const departments = new Set(structure?.divisions.flatMap((d) => (d.departments ?? []).map((dept) => dept.id)));
+  if (structure) {
+    const levels = new Set(structure.levels.map((l) => l.id));
+    const divisionTypes = new Set(structure.divisionTypes.map((t) => t.id));
+    for (const credential of structure.credentials) {
+      checkIn(`structure.credentials.${credential.id}.level`, [credential.level], levels, "level");
+    }
+    for (const division of structure.divisions) {
+      checkIn(`structure.divisions.${division.id}.type`, [division.type], divisionTypes, "division type");
+    }
+  }
+  for (const subject of data.subjects) {
+    if (subject.department) checkIn(`subjects.${subject.code}.department`, [subject.department], departments, "department");
+  }
+  // When levels give their course numbers, every course has to fit one,
+  // so each course has a level.
+  const numbered = structure?.levels.filter((l) => l.numbers) ?? [];
+  const levelOf = (number: number) =>
+    numbered.find((l) => l.numbers!.some(([low, high]) => number >= low && number <= high));
   for (const object of data.objects) {
     const where = `objects.${object.id}`;
     // A code and its id must agree, or the same course could show up
@@ -273,15 +345,26 @@ export function parseSchoolData(input: unknown): ParseResult {
       ...Object.keys(object.requisites.minGrades ?? {}),
     ]);
     check(`${where}.internalEquivalents`, object.internalEquivalents);
+    checkIn(`${where}.attributes`, object.attributes ?? [], attributes, "attribute");
+    if (object.maxCredits !== undefined && object.maxCredits < object.credits) {
+      errors.push(`${where}.maxCredits: less than its credits (${object.credits})`);
+    }
+    if (object.code && numbered.length > 0 && !levelOf(object.code.number)) {
+      errors.push(`${where}.code: ${object.code.number} isn't in any level's course numbers`);
+    }
   }
   for (const set of [...globalSets(data), ...data.templates.flatMap((t) => templateFromData(t).requirementSets)]) {
     check(`requirementSets.${set.id}`, requiredIds(set.requiredObjectIds ?? []));
     check(`requirementSets.${set.id}.minGrades`, Object.keys(set.minGrades ?? {}));
     for (const rule of (set.creditRules ?? []).flatMap((group) => group.rules)) {
       check(`requirementSets.${set.id}.creditRules.${rule.id}`, rule.objectIds ?? []);
+      checkIn(`requirementSets.${set.id}.creditRules.${rule.id}`, [...(rule.attributes ?? []), ...(rule.notAttributes ?? [])], attributes, "attribute");
     }
   }
-  data.programs ??= [...new Set(data.programRequirements.map((set) => set.programType))];
+  data.programs ??= structure?.credentials.length
+    ? structure.credentials.map((c) => c.id)
+    : [...new Set(data.programRequirements.map((set) => set.programType))];
+  const divisions = new Set(structure?.divisions.map((d) => d.id));
   const programTypes = new Set(data.programs);
   for (const set of data.programRequirements) {
     if (!programTypes.has(set.programType)) errors.push(`programRequirements.${set.programType}: ${set.programType} is not one of the school's programs`);
@@ -293,13 +376,28 @@ export function parseSchoolData(input: unknown): ParseResult {
     if (versions.has(key)) errors.push(`templates: ${key} appears twice`);
     versions.add(key);
     check(`templates.${t.code}`, t.terms.flatMap((term) => term.objectIds));
+    if (t.division) checkIn(`templates.${t.code}.division`, [t.division], divisions, "division");
   }
   data.equivalencyTable.forEach((row, i) => check(`equivalencyTable.${i}`, [row.objectId]));
   if (!data.calendar.seasons.includes(data.calendar.start.season)) {
     errors.push("calendar: start season is not one of the calendar's seasons");
   }
 
-  return errors.length > 0 ? { ok: false, errors } : { ok: true, data };
+  if (errors.length > 0) return { ok: false, errors };
+  return { ok: true, data: { ...data, objects: data.objects.map((object) => withAttributeAreas(data, object)) } };
+}
+
+// A course whose attributes are in a group tied to a category (gen ed)
+// counts toward that category, and those attributes' names are its
+// genEdAreas, in the school's order ("+H" on a card comes from the first).
+// A course that already lists its genEdAreas keeps them.
+function withAttributeAreas(data: SchoolData, object: SchoolData["objects"][number]): SchoolData["objects"][number] {
+  if (!object.attributes) return object;
+  const categoryOf = new Map(data.attributeGroups.filter((g) => g.category).map((g) => [g.id, g.category!]));
+  const own = data.attributes.filter((a) => a.group && categoryOf.has(a.group) && object.attributes!.includes(a.id));
+  if (own.length === 0) return object;
+  const categories = [...new Set([...object.categories, ...own.map((a) => categoryOf.get(a.group!)!)])];
+  return { ...object, categories, genEdAreas: object.genEdAreas ?? own.map((a) => a.name) };
 }
 
 // ---------------------------------------------------------------------------
@@ -310,8 +408,16 @@ export function parseSchoolData(input: unknown): ParseResult {
 // ---------------------------------------------------------------------------
 
 export function compactSchoolData(data: SchoolData): SchoolDataInput {
-  const objects = data.objects.map((object) => {
-    const { code, description, requisites, internalEquivalents, externalEquivalents, categories, availability, ...rest } =
+  const objects = data.objects.map((full) => {
+    // Gen ed areas and categories that its attributes fill in anyway.
+    const fromAttributes = withAttributeAreas(data, { ...full, categories: [], genEdAreas: undefined });
+    const sameAreas = JSON.stringify(fromAttributes.genEdAreas) === JSON.stringify(full.genEdAreas);
+    const object = {
+      ...full,
+      categories: full.categories.filter((c) => !fromAttributes.categories.includes(c)),
+      genEdAreas: sameAreas ? undefined : full.genEdAreas,
+    };
+    const { code, description, requisites, internalEquivalents, externalEquivalents, categories, availability, genEdAreas, ...rest } =
       object;
     const sameCode = code && JSON.stringify(parseCourseCode(object.id)) === JSON.stringify(code);
     const everyTerm =
@@ -327,6 +433,7 @@ export function compactSchoolData(data: SchoolData): SchoolDataInput {
       ...(internalEquivalents.length > 0 ? { internalEquivalents } : {}),
       ...(externalEquivalents.length > 0 ? { externalEquivalents } : {}),
       ...(categories.length > 0 ? { categories } : {}),
+      ...(genEdAreas ? { genEdAreas } : {}),
       ...(everyTerm ? {} : { availability }),
     };
   });

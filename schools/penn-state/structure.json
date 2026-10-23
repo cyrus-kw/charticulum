@@ -1,0 +1,43 @@
+{
+  "levels": [
+    { "id": "undergraduate", "name": "Undergraduate", "numbers": [[1, 499]] },
+    { "id": "graduate", "name": "Graduate", "numbers": [[500, 699], [800, 899]] },
+    { "id": "medicine", "name": "College of Medicine", "numbers": [[700, 799]] },
+    { "id": "law", "name": "Penn State Dickinson Law", "numbers": [[900, 999]] }
+  ],
+  "credentials": [
+    { "id": "associate", "name": "Associate", "level": "undergraduate" },
+    { "id": "bachelors", "name": "Bachelor's", "level": "undergraduate" },
+    { "id": "masters", "name": "Master's", "level": "graduate" },
+    { "id": "doctorate", "name": "Doctorate", "level": "graduate" },
+    { "id": "md", "name": "Doctor of Medicine", "level": "medicine" },
+    { "id": "jd", "name": "Juris Doctor", "level": "law" }
+  ],
+  "divisionTypes": [
+    { "id": "college", "name": "College" },
+    { "id": "campus-college", "name": "Campus College" },
+    { "id": "division", "name": "Division" }
+  ],
+  "divisions": [
+    { "id": "agricultural-sciences", "type": "college", "name": "College of Agricultural Sciences" },
+    { "id": "arts-architecture", "type": "college", "name": "College of Arts and Architecture" },
+    { "id": "bellisario-communications", "type": "college", "name": "Donald P. Bellisario College of Communications" },
+    { "id": "earth-mineral-sciences", "type": "college", "name": "College of Earth and Mineral Sciences" },
+    { "id": "eberly-science", "type": "college", "name": "Eberly College of Science" },
+    { "id": "education", "type": "college", "name": "College of Education" },
+    { "id": "engineering", "type": "college", "name": "College of Engineering" },
+    { "id": "health-human-development", "type": "college", "name": "College of Health and Human Development" },
+    { "id": "information-sciences-technology", "type": "college", "name": "College of Information Sciences and Technology" },
+    { "id": "intercollege", "type": "division", "name": "Intercollege" },
+    { "id": "liberal-arts", "type": "college", "name": "College of the Liberal Arts" },
+    { "id": "nursing", "type": "college", "name": "Ross and Carol Nese College of Nursing" },
+    { "id": "smeal-business", "type": "college", "name": "Smeal College of Business" },
+    { "id": "division-undergraduate-studies", "type": "division", "name": "Division of Undergraduate Studies" },
+    { "id": "abington", "type": "campus-college", "name": "Penn State Abington, The Abington College" },
+    { "id": "altoona", "type": "campus-college", "name": "Penn State Altoona, The Altoona College" },
+    { "id": "behrend", "type": "campus-college", "name": "Penn State Erie, The Behrend College" },
+    { "id": "berks", "type": "campus-college", "name": "Penn State Berks, The Berks College" },
+    { "id": "capital", "type": "campus-college", "name": "Penn State Harrisburg, The Capital College" },
+    { "id": "university-college", "type": "campus-college", "name": "University College" }
+  ]
+}

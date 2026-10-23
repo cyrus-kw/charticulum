@@ -1,0 +1,313 @@
+{
+  "subject": "AEE",
+  "courses": [
+    {
+      "number": 100,
+      "title": "Agricultural Education Orientation",
+      "credits": 3,
+      "description": "Examination of agricultural and extension education; exploration of aptitude and interest in teaching, including early clinical practicum. AEE 100 Agricultural Education Orientation (3) The purpose of the course is to allow students to explore the profession of teaching in both formal and non-formal settings. Students are provided opportunities, through class activities, projects, and on-site observation of teaching and learning situations, to explore the various aspects of teaching and learning. Through individual and group-work techniques students are provided the opportunity to investigate their potential interest in becoming a future educator of agriculture. Students study the history and philosophies associated with agricultural education within the state and nation. A cornerstone of the course includes instruction that allows students to understand the requirements to become certified in the state of Pennsylvania to teach Agricultural Education. This certification allows individuals to teach Agriculture in the public school system. Along with certification requirements for teaching, students investigate what it means to join the professional ranks of teachers, and the responsibilities associated with educating today's youth. Students also learn the many techniques for teaching in, and about, agriculture in today's society through actual teaching scenarios with their peers. Students plan and implement lessons related to the many areas of agriculture including, but not limited to horticulture, agricultural mechanics, animal science, plant science, forestry, wildlife, and biotechnology. During the course of the semester, students visit various agricultural education settings for observational purposes. The students investigate what is happening in the local agricultural education program related to the three major components of an agricultural education program; Classroom/laboratory instruction, FFA, and Supervised Agricultural Experience. These observation hours may be counted towards the Entrance to Major requirements for the Agricultural and Extension Education major certification requirements."
+    },
+    {
+      "number": 201,
+      "title": "Interpersonal Skills for Tomorrow's Leaders",
+      "credits": 3,
+      "attributes": [
+        "GS"
+      ],
+      "description": "Study of concepts of self identity, values and interpersonal relations as related to professional and personal life. The purpose of the course is to aid students in becoming competent in conducting interpersonal relationships in their daily life, and to help students acquire skills basic to becoming a leader in their personal life. The following topics will be addressed. A framework for interpersonal skill development sets the stage for improving one's interpersonal skill. Understanding individual differences addresses information that is the foundation of effective interpersonal relations. Interpersonal communications deals with skills in sending and receiving messages. Developing teamwork skills sensitizes the student to a vital set of skills in the workplace as well as organizations. Group problem-solving and decision making provides additional skill in collaborative efforts. Cross-cultural relations and diversity develops cross-cultural skills in the classroom, community organizations and the work place. Resolving conflicts develops skills in finding constructive solutions to differences of opinion and disputes with others. Becoming an effective leader addresses: 1) exercising effective leadership in clubs, organizations and the workplace, 2) motivating and helping others to develop and grow through coaching, counseling and teaching, 3) using power and influence for constructive purposes, and 4) translating ethical behaviors into usable skills. Each class meeting will focus on one or more concepts related to leadership and interpersonal skill development. Students will be provided a number of experiential activities that help them practice a particular set of skills. In addition, students will be required to complete a service learning project applying their leadership and interpersonal skills with individuals in the community who are in need of their help."
+    },
+    {
+      "number": 204,
+      "suffix": "N",
+      "title": "Science Literacy and Policy in the 21st Century",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER"
+      ],
+      "description": "The objective of this course is to explore the nexus of scientific discovery and societal understanding. Specifically, to review the consensus of expert scientists in regard to common controversial issues and outline how public perception shapes the agricultural industry. Although many scholars have put forth definitions for what it means to be scientifically literate, most agree it involves not only technical subject matter, but the ability to evaluate and interpret scientific evidence, and developing the capacity to engage civically in science matters. Accordingly, this course is designed to provide the foundational content knowledge necessary to understand scientific principles, as well as the experiences and discussion necessary to elicit the skills of a critical thinker and informed consumer. Scientific (e.g. genetic engineering, evolution, pesticides, climate change) and social science (e.g. human psychology, persuasion, critical thinking, policy making) subject matter will be explored through a variety of methods such as lecture, case study, discussion, and scholarly and popular press readings. In order to exercise skills in science literacy, students will engage in a variety of applied activities which include: conducting a critical analysis of a food advertising campaign, developing a policy recommendation concerning an agricultural issue, and interviewing the public on controversial agricultural topics. Students will come away from this course with an understanding of agricultural issues and honed critical thinking skills which will enable them to make better consumer decisions about food, fiber, and natural resources."
+    },
+    {
+      "number": 216,
+      "title": "Practical Parliamentary Procedure",
+      "credits": 3,
+      "internalEquivalents": [
+        "CAS216"
+      ],
+      "description": "Practice in presiding over and participating in meetings conducted under rules of order."
+    },
+    {
+      "number": 295,
+      "title": "Observation of Teaching in Agriculture and Environmental Science",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Supervised observation of teacher and student activities in a selected high school; appraisal of related responsibilities of teachers of agriculture."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 0.5,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 311,
+      "title": "Developing Youth Leadership through Organization and Program Structure",
+      "credits": 3,
+      "description": "An orientation on how adolescents develop and emerge as leaders in their families, schools, organizations, and communities. AEE 311 Developing Youth Leadership through Organization and Program Structure (3) An orientation on how adolescents develop and emerge as leaders in their families, schools, organizations, and communities. Content will focus on the FFA organization and supervised agricultural experiences as well as 4-H & other non-formal youth organizations. While the course will be grounded in traditional and contemporary youth leadership philosophies and practices it will emphasize youth leadership development in the food, agriculture, and natural resource sciences."
+    },
+    {
+      "number": 313,
+      "title": "School-Based Program Planning and Instructional Development",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "AEE100",
+          "AEE295",
+          "AEE311"
+        ]
+      },
+      "description": "Planning and developing courses of study, summer programs, advisory committees, and facilities for vocational agriculture."
+    },
+    {
+      "number": 330,
+      "suffix": "W",
+      "title": "Communication in Agricultural and Natural Resource Careers",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "ENGL15"
+        ]
+      },
+      "description": "The course explores the conventions of writing and speaking found in agricultural professions through the use of case studies."
+    },
+    {
+      "number": 349,
+      "title": "Shop Processes for Agricultural Educators",
+      "credits": 3,
+      "description": "Instruction in agricultural mechanics processes for teacher preparation in high school settings. AEE 349 Shop Processes for Agricultural Educators (3) This course is designed for teacher candidates who want to learn more about agriculture mechanics through an experiential learning opportunity. The teacher candidates will learn in a setting similar to those that the students will be expected to teach in during their student teaching experience, and potentially their future career. Students will be provided hands-on, constructivist learning approaches to agriculture mechanics. Students will be evaluated on various agriculture mechanics techniques. These techniques are related to small gasoline engines, concrete/masonry, electrical wiring, welding, and land measurement/building layout. In each unit students will complete projects that will allow them to practice introductory mechanics skills such as; tool selection, assembly/disassembly of engines, pouring concrete, building layout/wall construction, basic welding procedures, and electrical wiring basics. Students will also learn techniques in project development, implementation, and assessment. Each student will have opportunities to build projects for future application in their own teaching experiences."
+    },
+    {
+      "number": 350,
+      "title": "Teaching Methods for Agricultural and Environmental Laboratories",
+      "credits": 3,
+      "description": "An introductory course that prepares students to instruct and manage students in laboratory settings."
+    },
+    {
+      "number": 360,
+      "title": "Leadership Development for Small Groups",
+      "credits": 3,
+      "description": "Students will learn about leadership dynamics in small groups and how to be more influential in work settings. AEE 360 AEE 360 Leadership Development for Small Groups (3)This course is designed to teach students the dynamics of leadership in small groups. Specifically, students will learn to identify characteristics of leaders and understand their own personal leadership style. In addition, students will participate in team building activities and understand small group and motivational factors.Evaluation will be via a series of four examinations and two papers reflecting on impact and shadowing exercises. This course will be part of a series on leadership development offered through the Department of Agricultural and Extension Education."
+    },
+    {
+      "number": 395,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 13
+      },
+      "repeatable": {
+        "maxCredits": 13
+      },
+      "description": "Supervised off-campus, non-group instruction including individual field experiences, practicums or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 400,
+      "title": "Global Agriculture Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "INTAG100N"
+        ]
+      },
+      "description": "The purpose of this course is to develop the global competency of future change agents in agricultural education so that they, in turn, can guide future learners to gain knowledge, develop skills, and acquire dispositions for living in a globally interdependent and culturally diverse world. The course is designed for all learners who wish further their ability to engage in formal and non-formal systems of agricultural education in all settings. As the enduring understandings of this course, students will develop 1) a knowledge of global agricultural education programs, 2) critical and comparative thinking skills, including the ability to think creatively and integrate knowledge, rather than unquestioning acceptance of knowledge, and 3) an ongoing willingness to seek out international or intercultural opportunities. The course is organized around five essential themes: 1) education as innovation, 2) access to education and employment, 3) program planning and evaluation, 4) types of agricultural education and 5) spaces of innovation. Learners in the course will be encouraged to develop their 21st century learning skills of communication collaboration, critical thinking, and creativity through authentic, experiential assessments curated around dynamic world issues in education related to agriculture, food, fiber and natural resources."
+    },
+    {
+      "number": 412,
+      "title": "Methods of Teaching Agriculture and Environmental Science",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "AEE100",
+          "AEE295",
+          "AEE311"
+        ]
+      },
+      "description": "Instructional strategies and media; directing individual and group learning activities; assessing student performance and quality of instruction in vocational agriculture. AEE 412 Methods of Teaching Agriculture and Environmental Science (4) This course is designed to utilize various instructional strategies and media, which inform students in the directing of individual and group learning activities. Students also learn methods in which to assess student performance and quality of instruction in school-based agricultural education. The course allows students to analyze, and implement, how they best can design instruction to maximize student learning. A range of teaching methods are utilized throughout the course including, but not limited to; lectures, discussions, demonstrations, supervised study, and cooperative learning. The course prepares students to successfully develop engaging lessons and units of instruction in agricultural education. Additionally, students will learn how to modify instruction to allow each learner the opportunity to achieve total student success. A laboratory enables student to refine their skills in a peer setting, prior to the student teaching internship experience. The combination of lecture and laboratory allow students to become reflective practitioners that are capable of planning, organizing, and implementing effective teaching practices and learning experiences for their students. Also, this course will provide students the opportunity to develop the capacity to evaluate student learning utilizing both formative and summative evaluation techniques."
+    },
+    {
+      "number": 413,
+      "title": "Program Planning and Instructional Development",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "repeatable": {
+        "maxCredits": 4
+      },
+      "description": "A course in planning, developing, and organizing school-based curriculum, summer programs, advisory councils, and facilities for environmental/ agricultural education. AEE 413 AEE 413 Program Planning and Instructional Development (3-4)Organization and administration of secondary programs of education in and about agricultural/environmental sciences, including Ag In The Classroom (Elementary School Agriculture), marketing, summer programs, and state vocational finances. Topics will include discussion of instructional techniques for secondary educators in agriculture, with emphasis on classroom management, discipline and motivation, and teacher evaluation.The course is arranged in 10 units (for students who have completed AEE 100 as an undergraduate certification requirement) or 15 units (for returning adult students seeking certification who have already completed an Agricultural/Environmental Science undergraduate degree). Thus, this is a variable credit offering designed to meet the needs of these two groups of students.In each unit there are objectives that need to be met by the students. The students \"click\" on the objective to open the lessons. Within the lessons are research materials, articles, textbook references (all copyright permission), additional WWW links, and other supporting resources. At the end of the article is an opportunity for students to enter the Penn State Coursetalk electronic \"chat\" room to engage in discussions."
+    },
+    {
+      "number": 437,
+      "title": "Equine Facilitated Therapy",
+      "credits": 3,
+      "internalEquivalents": [
+        "ANSC437"
+      ],
+      "requisites": {
+        "previous": [
+          "ANSC327"
+        ]
+      },
+      "description": "Equine Facilitated Therapy uses equine-related activities to contribute positively to the well-being of people with disabilities. AEE 437 / ANSC 437 Equine Facilitated Therapy (3)The primary goal of this course is to acquaint the participant to equine facilitated therapy (therapeutic riding) and to introduce them to individuals who benefit/participate in such programs through lecture, audio-visual media, discussions, program visitation, independent research and via a practicum at a therapeutic riding program. Additionally, this course is designed to introduce the participant to various exceptional characteristics and conditions which may benefit from exposure/participation in equine facilitated therapy and other animal related therapy programs."
+    },
+    {
+      "number": 440,
+      "title": "Communication Methods and Media",
+      "credits": 3,
+      "description": "Mass media techniques for reporting and promoting extension and related programs, including message preparation, presentation, and strategy development."
+    },
+    {
+      "number": 460,
+      "title": "Foundations in Leadership Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "AEE360"
+        ]
+      },
+      "description": "This course explores historical and contemporary leadership theories, models and perspectives within social, cross-cultural, and political contexts. AEE 460 Foundations of Leadership Development (3)This course is designed to provide students with a philosophical and theoretical framework of leadership by examining historical and contemporary theories, models and leadership styles within a social, political and global context. Students will explore leadership effectiveness and its relationship to issues of power, influence, persuasion, motivation and ethical decision-making. The overall objective of this course is to help students learn specific leadership competencies that will make them a more effective leader when addressing problems and seeking solutions in public and private domains.Evaluation will be based upon quizzes, written projects, leader interview and a final paper in which students will be expected to demonstrate an integrated application of causes, barriers and key ingredients of successful leadership practices. This course will be part of a series on leadership development offered through the Department of Agricultural and Extension Education."
+    },
+    {
+      "number": 465,
+      "title": "Leadership Practices: Power, Influences, and Impact",
+      "credits": 3,
+      "description": "Explores the leader role as it relates to issues of purpose, social responsibility, political influences, and legal constraints. AEE 465 Leadership Practices: Power, Influences, and Impact (3) In this course, students will explore leadership roles as they relate to issues of purpose, social responsibility, political influences and legal constraints. It is designed to help students develop greater sensitivity to the variety of factors and forces impacting leadership processes and to acquire an increased understanding of key elements of successful leadership practices. The overall objective of this course is to help students learn specific leadership competencies that will make them a more effective leader when addressing problems and seeking solutions in public and/or private domains.Evaluation will be based upon unannounced quizzes, several short written projects, and a final paper in which students will be expected to demonstrate an integrated application of causes, barriers and key ingredients of a leader they consider to be successful. This course will be part of a series on leadership development offered through the Department of Agricultural and Extension Education."
+    },
+    {
+      "number": 494,
+      "title": "Undergraduate Research",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Thesis",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Independent study directed by a faculty supervisor that culminates in the production of Agricultural Extension Education honors thesis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "requisites": {
+        "previous": [
+          "AEE412",
+          "AEE413"
+        ]
+      }
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on topical or special interest subjects which may be offered infrequently."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    }
+  ]
+}

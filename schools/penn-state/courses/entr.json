@@ -1,0 +1,196 @@
+{
+  "subject": "ENTR",
+  "courses": [
+    {
+      "number": 300,
+      "title": "Principles of Entrepreneurship",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ACCTG211",
+          "ECON102"
+        ]
+      },
+      "description": "Overview of the fundamental principles and processes of entrepreneurship including idea generation and opportunity analysis."
+    },
+    {
+      "number": 320,
+      "title": "Entrepreneurship and New Venture Creation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENTR300"
+        ]
+      },
+      "description": "Explores the process for starting and growing a new venture including the development of a business plan."
+    },
+    {
+      "number": 400,
+      "title": "Financing Entrepreneurial Ventures",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "BA241",
+                "BA242"
+              ],
+              "BA243",
+              [
+                "BLAW243",
+                "ENTR320",
+                "FIN301"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "Overview of alternative forms of financing including seed capital, valuing a company, going public, partnerships, and acquisitions."
+    },
+    {
+      "number": 410,
+      "title": "Entrepreneurial Marketing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENTR320",
+          "MIS204",
+          "MKTG301"
+        ]
+      },
+      "description": "Principles of Internet marketing and strategies for marketing new ventures on the Web."
+    },
+    {
+      "number": 430,
+      "title": "Entrepreneurship and New Product Development",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENTR300"
+        ]
+      },
+      "description": "Examines the process of designing, testing and launching new products, and developing a strategy for commercialization of the technology."
+    },
+    {
+      "number": 440,
+      "title": "Entrepreneurship and Franchising",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENTR300"
+        ]
+      },
+      "description": "Overview of the entire franchising process with a focus on licensing and distributorship, trade marks, strategy, and growing the enterprise."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 500,
+      "title": "Innovation and Entrepreneurship",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "description": "Practical and theortical insights into analyzing a new business opportunity that you have created. ENTR 500 Innovation and Entrepreneurship (1-3)In this course, you will explore the individual, group, organizational, and inter-organizational levels of analysis. You will gain both practical and theoretical insights from the course as well as creativity, innovation, and entrepreneurship by focusing on the initial identification and quantification of an innovative opportunity and presentation to stakeholders."
+    },
+    {
+      "number": 502,
+      "title": "Business Modeling and New Venture Creation",
+      "credits": {
+        "min": 2,
+        "max": 3
+      },
+      "description": "ENTR 502 focuses on the process of launching a new venture, in a corporate setting or as a new startup, including identifying a problem or market opportunity, developing business models, forming a team, financing, analyzing markets, assessing the competitive environment, and planning to acquire leadership talent. A business model canvas framework is used as the primary tool for describing, analyzing, and designing business models. In essence, this course identifies and defines the key components necessary to develop a formal business plan. Concepts and techniques explore new venture creation business strategies, including different approaches for business model development. Students will gain insight into how to translate new ideas into viable projects and business ventures. Students will learn the importance of understanding markets, customer segments, and the competitive landscape, as well as how to obtain funding for new ventures. Lastly, the issue of how to acquire leadership and human resource talent to make a new venture viable over time is investigated."
+    },
+    {
+      "number": 503,
+      "title": "Garber Venture Capital Practicum",
+      "credits": {
+        "min": 1,
+        "max": 2
+      },
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "Structure investment opportunities, conduct due diligence, and potentially invest funds from the Smeal College of Business Garber Venture Capital Fund."
+    },
+    {
+      "number": 504,
+      "title": "Essentials of Business Planning",
+      "credits": 2,
+      "description": "Create a concise and coherent business plan for a start-up or a new corporate initiative."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 810,
+      "title": "Emerging Trends, Technology, and Corporate Innovation",
+      "credits": 3,
+      "description": "This course explores emerging trends and disruptors in technology and industry that create new markets and influence decision making, product development, business models, and business practices associated with innovation. This course covers the major areas of concern that affect disruptive innovation and examine the role of disruptive innovation in fostering new business ventures. Specific examples of disruptive innovation will be analyzed. Students will gain insight into how breakthroughs in technology, science, and business modeling play out in establishing new products and markets. Students will be exposed to, and investigate, the best practices of key industries (e.g., healthcare, manufacturing, banking, retail, etc.) and organization functions (e.g., marketing, finance, research and development, sales, etc.) as they relate to fostering and supporting innovation and entrepreneurship in a business enterprise. Students will learn the importance of taking an interdisciplinary approach to thinking about and planning innovation projects and programs, in terms of both internal and external forces."
+    },
+    {
+      "number": 820,
+      "title": "Corporate Innovation Strategies and Entrepreneurial Methods",
+      "credits": 3,
+      "description": "This course is designed to survey and explore the methods used to foster innovation and entrepreneurship in a corporate setting. Emphasis will be placed on the methods used in organizations to foster creativity, innovation, and new venture creation. This course covers both tactical and strategic approaches to innovation and entrepreneurship, and examines these in multiple contexts, including technology, business process, product, and strategy. Furthermore, the course will expand on widely accepted frameworks and perspectives for managing innovation, such as agile product development, and the lean startup approach. Students will also delve into the more abstract notion of how to create and enable an organizational culture of innovation, manage conflict, and negotiate agreements effectively. Lastly, a final objective of the class is to ensure students understand how to protect and manage intellectual property."
+    },
+    {
+      "number": 830,
+      "title": "Entrepreneurial Business Planning and Strategy Execution",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENTR810",
+          "ENTR502",
+          "ENTR820"
+        ]
+      },
+      "description": "This course is designed to allow students to integrate, synthesize, and apply what they have learned in prior courses, and gain further insight into two major drivers of business success, innovation and entrepreneurship. As such, this course will serve as a culminating experience in innovation and entrepreneurship learning. The strategic implications of innovation are examined, including an emphasis on how to be critically aware of factors which may inhibit or facilitate innovation in an organization or team. Students will gain insight into how to write a business case to clearly and effectively outline the pros and cons of taking a specific course of action. Business case development will also rely on how to perform cost-benefit analysis. The course will also teach students the key issues, elements, and approaches associated with translating a sound business model into a compelling business plan (preferably for a new venture). The key elements of a formal business plan will be explored in-depth, including how to write an executive summary, product description, market assessment, team formation plan, pricing models, sales forecasting, financial planning, and implementation planning. The course will emphasize the context and issues associated with developing a formal business plan, developing and understanding business models, and using the planning process to formulate and execute implementation strategies. Various implementation approaches will be compared and contrasted. The course will also enable students to construct business models and plans that present key points in a direct, clear, and appealing way."
+    }
+  ]
+}

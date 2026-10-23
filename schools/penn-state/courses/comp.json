@@ -1,0 +1,200 @@
+{
+  "subject": "COMP",
+  "courses": [
+    {
+      "number": 505,
+      "title": "Theory of Computation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC463"
+        ]
+      },
+      "description": "Topics in discrete mathematics, discrete probability, first order logic and models of computation."
+    },
+    {
+      "number": 511,
+      "title": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC463"
+        ]
+      },
+      "description": "Amortized analysis, graph algorithms, NP-complete problems, approximation algorithms, parallel algorithms."
+    },
+    {
+      "number": 512,
+      "title": "Advanced Operating Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC472"
+        ]
+      },
+      "description": "A study of the principles and practice of distributed system design, including communication, synchronization, processes, file systems, and memory management."
+    },
+    {
+      "number": 513,
+      "title": "Formal Methods for Software Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC487W",
+              "COMP511"
+            ]
+          }
+        ]
+      },
+      "description": "Object-oriented software development, formal specification techniques and related CASE tools, software re-use, verification and validation, transformational development."
+    },
+    {
+      "number": 516,
+      "title": "Advanced Programming Languages",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC460"
+        ]
+      },
+      "description": "Programming paradigms and styles, object-oriented programming, formal semantics, programming language design."
+    },
+    {
+      "number": 517,
+      "title": "Computer Security",
+      "credits": 3,
+      "description": "Introduction to the area of computer security and current issues associated with computer security."
+    },
+    {
+      "number": 519,
+      "title": "Advanced Topics in Database Management Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC430"
+        ]
+      },
+      "description": "Concurrency control, crash recovery, query processing, semantic data models, advanced file access, distributed database systems, performance, case studies, advanced applications."
+    },
+    {
+      "number": 520,
+      "title": "Artificial Intelligence",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC463"
+        ]
+      },
+      "description": "Problem solving, knowledge representation, language understanding, perception, learning, artificial neural networks."
+    },
+    {
+      "number": 521,
+      "title": "Artificial Neural Networks and Deep Learning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC463",
+              "EE456"
+            ]
+          }
+        ]
+      },
+      "description": "Deep learning, as a field of computer science study, is a branch of machine learning that focuses on the development and application of deep artificial neural networks. The computing model of an artificial neural network (ANN) consists of layers of nodes called perceptrons or artificial neurons, which can learn complex patterns in data. The deep learning model extracts layered data representations of complex data to maximize task performance. Deep learning has a wide range of applications, such as object recognition, classification, prediction, natural language processing, speech recognition, fraud detection, recommender systems, and other scientific and healthcare applications. This course covers the theory and problem-solving techniques relevant to the foundations and applications of deep learning and modern deep neural networks, the methodology of deep learning model development, evaluation, validation, and optimization. The course requires a strong foundation in algorithms, programming, and mathematics."
+    },
+    {
+      "number": 524,
+      "title": "Evolutionary Computation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "COMP511"
+        ]
+      },
+      "description": "Topics in evolutionary algorithms and genetic algorithms."
+    },
+    {
+      "number": 530,
+      "title": "Computational Structural Biology for Computer Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC122",
+              "CMPSC132"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH220",
+              "MATH230"
+            ]
+          },
+          "CMPSC462",
+          "CMPSC463"
+        ]
+      },
+      "description": "This course provides a fundamental background in computational structural biology and bioinformatics, algorithms and tools widely used in the field, and assists students in starting research in the field of computational structural biology. The course will cover topics regarding protein structures, functions, physical principles describing molecular structures of proteins and their dynamics, algorithms used in protein/DNA sequence analysis, and computational geometry algorithms useful for computational structural biology studies tailored for computer science students."
+    },
+    {
+      "number": 545,
+      "title": "Computer Architecture",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CMPSC312"
+        ]
+      },
+      "description": "Cache, pipelining, memory design, interconnection networks, multiprocessor systems."
+    },
+    {
+      "number": 594,
+      "title": "Master's Studies",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Presentation of various research techniques, in-depth study of a specific computer science problem, development of a written paper or project, and an oral defense."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Research into a specific computer science problem, development of a scholarly written paper, and an oral defense."
+    }
+  ]
+}

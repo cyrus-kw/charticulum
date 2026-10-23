@@ -1,0 +1,117 @@
+{
+  "subject": "BGEN",
+  "courses": [
+    {
+      "number": 541,
+      "title": "Critical Analysis of Bioinformatics and Genomics Research Topics",
+      "credits": 3,
+      "description": "Critical Analysis of Bioinformatics and Genomics Research Topics reviews the recent developments made in the understanding of basic genomics and bioinformatics research. This approach provides an insight into the topics that are shaping the current and future directions in a field that is rapidly evolving and literally transforming lives. Tutorials provide a comprehensive overview of the new and fundamental developments in genomics research and highlight the way in which genomic concepts are applied to basic biological processes. This course will provide insights into computational, evolutionary, and functional aspects of genomic sciences. Basic concepts that describe how life was organized and evolved and applications that promise huge advances in biomedical and biotechnological fields will be discussed. In addition to helping students develop critical oral and written presentation skills, this course is intended to kindle excitement about genomic research among students and provide an intellectual framework for identifying potentially challenging and interesting questions that may be pursued."
+    },
+    {
+      "number": 551,
+      "title": "Genomics",
+      "credits": 3,
+      "internalEquivalents": [
+        "BMMB551",
+        "MCIBS551"
+      ],
+      "description": "This course will deal with the structure and function of genomes including the use of some current web-based tools and resources for studies and research in genomics. The overall objective is to learn current information about the structure and function of genomes, to develop facility in the many web-based tools and resources for further studies and research in genomics, and to appreciate the power and limitations of current resources and knowledge."
+    },
+    {
+      "number": 556,
+      "title": "Computation, Bioinformatics, and Statistics Practicum",
+      "credits": 3,
+      "description": "Students will identify, plan and implement actual research projects involving high dimensional, complex \"omics\" data that are relevant to the biomedical sciences and of direct interest to the students enrolled and their mentors. Students will form teams and work on these projects throughout the semester, fostering interdisciplinary exchanges, the ability to work collaboratively in teams, and excellence in oral and written communication. Various types of computational tools and statistical techniques will be discussed, utilized and compared, based on students' background and choice of research projects."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, research-oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis Research"
+    },
+    {
+      "number": 601,
+      "title": "Thesis Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis Dissertation Full-Time"
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in teaching and orientation to other selected aspects of the profession at The Pennsylvania State University."
+    },
+    {
+      "number": 611,
+      "title": "PhD Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "PhD Dissertation Part-Time"
+    }
+  ]
+}

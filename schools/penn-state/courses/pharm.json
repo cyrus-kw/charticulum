@@ -1,0 +1,162 @@
+{
+  "subject": "PHARM",
+  "courses": [
+    {
+      "number": 520,
+      "title": "Principles of Drug Action",
+      "credits": 2,
+      "description": "Detailed analysis of basic parameters governing drug actions."
+    },
+    {
+      "number": 535,
+      "title": "Therapeutic Potential of Cannabis & Cannabinoids",
+      "credits": 3,
+      "description": "This course discusses the endocannabinoid system & focuses on receptors targeted by cannabinoids. The emphasis is on the pharmacology of not only the major cannabinoids found in cannabis, tetrahydrocannabinol (THC) and cannabidiol (CBD), but will also cover minor cannabinoids, synthetic cannabinoids, and endocannabinoids (molecules produced by the body). The established therapeutic uses, potential therapeutic use, and negative effects will also be discussed. Students will gain an understanding of the current research on the medicinal properties of cannabis & cannabinoids and also the gaps in the current knowledge."
+    },
+    {
+      "number": 536,
+      "title": "Therapeutic Use of Medicinal Plants",
+      "credits": 3,
+      "internalEquivalents": [
+        "VBSC536"
+      ],
+      "description": "This course is designed to provide insights and knowledge on medicinal plants. Topics will cover current usage of plants and plant-derived compounds in Western Medicine as well as discussions on ethnobotany and Traditional Medicine."
+    },
+    {
+      "number": 551,
+      "title": "Anti-infective Therapeutics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course covers general principles related to pharmacology of major classes of antimicrobial agents. PHARM 551 Anti-infective Therapeutics (1) This course focuses on the pharmacology of anti-microbial drugs. The overall goal of the course is to examine the mechanisms of action of these drugs as well as factors determining susceptibility, resistance, selection, host factors, pharmacokinetics, and adverse reactions."
+    },
+    {
+      "number": 552,
+      "title": "Integrated System Pharmacology",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503",
+          "PSIO504"
+        ]
+      },
+      "description": "This course covers principles related to pharmacology of major classes of drugs affecting the autonomic nervous, cardiovascular, pulmonary, and renal systems. PHARM 552 Integrated System Pharmacology (1) This course focuses on the pharmacology related to autonomic nervous, cardiovascular, pulmonary, and renal systems. The overall goal of the course is to present the mechanisms underlying the effects of drugs acting on these systems at various levels of biological organization (e.g., cell, tissue, and the whole body)."
+    },
+    {
+      "number": 553,
+      "title": "Gastrointestinal and Immunomodulatory Therapeutics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course focuses on pharmacology of drugs affecting gastrointestinal disorders, drugs used in therapy of inflammatory diseases, and immunomodulatory drugs for organ transplantation therapy. PHARM 553 Gastrointestinal and Immunomodulatory Therapeutics (1) This course covers the use of pharmacotherapies to treat gastrointestinal disorders, inflammation, and immune response. The emphasis is to examine the mechanisms underlying the effects of these drugs at various levels of biological organization (e.g., cell, tissue, and the whole body)."
+    },
+    {
+      "number": 554,
+      "title": "Anticancer Therapeutics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course provides an understanding of general principles of the induction, prevention and treatment of cancer. PHARM 554 Anticancer Therapeutics (1) This course introduces students to the concept of the multi-step process involved in carcinogenesis. Discussion of both synthetic drugs and naturally occurring compounds used in cancer prevention and cancer treatment is included. Potential future targets for cancer therapy are presented."
+    },
+    {
+      "number": 561,
+      "title": "Neuropharmacology",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course introduces basic principles of human neuropharmacology, with primary emphasis on drugs active in the central nervous system. PHARM 561 Neuropharmacology (2) This course covers the use of pharmacotherapies to treat a variety of neuropsychiatric disorders and other disorders of central nervous system function. Discussion includes: 1) normal neurophysiology; 2) the neuropathology of common disorders; 3) mechanisms of action of drugs affecting the central nervous system and of drugs used to treat disorders of this system; 4) the experimental bases for our knowledge of the actions of these drugs; 5) animal models useful for drug discovery; and 6) the mechanisms underlying drugs of abuse."
+    },
+    {
+      "number": 562,
+      "title": "Endocrine Pharmacology",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course presents basic principles of human endocrine pharmacology, emphasizing drugs active in the endocrine and reprodutive systems. PHARM 562 Endocrine Pharamcology (2) This course covers pharmacotherapies used to treat disorders of the endocrine and neuroendocrine systems and to modulate reproduction. Discussion includes: 1) the physiological basis for normal endocrine homeostasis; 2) the pathology of common disorders; 3) the mechanisms of action of drugs affecting these systems and of drugs used to treat disorders of these systems; 4) the experimental bases of these drugs and therapies; and 5) animal models useful for endocrine drug discovery."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

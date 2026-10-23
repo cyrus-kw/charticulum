@@ -1,0 +1,1131 @@
+{
+  "subject": "NUTR",
+  "courses": [
+    {
+      "number": 100,
+      "title": "Nutrition Applications for a Healthy Lifestyle",
+      "credits": 3,
+      "attributes": [
+        "GHW"
+      ],
+      "description": "This course introduces students to nutrition principles necessary to promote a healthy lifestyle through assessment and application. Students will be better prepared to evaluate nutrition-related issues presented in the media and to make informed choices about their diet in order to promote health throughout their lives. Information about nutrients (proteins, carbohydrates, fat, vitamins, water, and minerals) and the physiological processes used to digest, absorb, and utilize them is presented and related to such topics as maintenance of ideal body weight, improvement in physical performance, and the role of nutrients in various disease states such as heart disease, diabetes, cancer, and osteoporosis. Topical issues such as alcohol ingestion, food insecurity, and consumer concerns will be utilized to integrate and critically analyze information presented by various media outlets. This course is intended for non-nutrition major students."
+    },
+    {
+      "number": 119,
+      "title": "Elementary Foods",
+      "credits": 3,
+      "description": "Basic principles and fundamental processes underlying food preparation. For non-nutrition majors only."
+    },
+    {
+      "number": 123,
+      "suffix": "S",
+      "title": "First Year Seminar in Nutritional Sciences",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "requisites": {
+        "concurrent": [
+          "PSU14"
+        ]
+      },
+      "description": "The course will meet once weekly to provide first year students with a basic understanding of why nutrition is important and how to improve their own diet and that of their friends and families. The course will explain the 3 options in nutritional sciences, promote discussions and learning about popular diets that may or may not offer health benefits, and explore important discoveries and advances in the nutritional sciences that underpin the current state of knowledge."
+    },
+    {
+      "number": 144,
+      "title": "Our Plates: Exploring Food and Healthy Eating Patterns Through Cooking",
+      "credits": 3,
+      "attributes": [
+        "GHW"
+      ],
+      "description": "This class teaches students how to plan and prepare recipes and meals through the lens of the Dietary Guidelines for Americans (DGFA) and the dietary guidelines of other countries and cultures. Students will explore the relationship between diet and health, with an emphasis on the food groups that make up the MyPlate, Mediterranean diet and Vegetarian eating patterns, as well as other established eating patterns in the US and other countries. Current US eating practices will be evaluated and compared with the guidelines to understand how well Americans and students are meeting current recommendations. Students will also attend a cooking lab where they will learn basic cooking skills and apply the concepts covered in the course through recipe analysis, meal plan creation, and hands-on cooking sessions."
+    },
+    {
+      "number": 170,
+      "title": "Careers in Nutrition",
+      "credits": 1,
+      "description": "Nutrition professionals describe career paths and opportunities for graduates in applied and science options; strategies for making effective career decisions."
+    },
+    {
+      "number": 175,
+      "suffix": "N",
+      "title": "Healthy Food for All: Factors that Influence What we Eat in the US",
+      "credits": 3,
+      "attributes": [
+        "GS",
+        "GHW",
+        "INTER",
+        "US"
+      ],
+      "description": "This course explores factors that influence food intake, how individuals make food choices within their communities, and how these choices impact health and wellness. Topics include an overview of what Americans tend to eat, factors that influence food intake (e.g., economics, food environment, advertising/marketing), and the impact of poverty on food security, hunger, and health outcomes including obesity. This course also discusses how nutrition-policy influences food intake and health and food assistance programs. Students will be encouraged to examine their beliefs and understanding of how ethnic status, race, and socio-economic status, etc., affects individuals and their family's access to low-cost, healthy food. Students will enhance their understanding of the nature of social justice and equity by examining whether access to healthy food through federally funded programs is a right or a privilege and how a country capable of feeding the world has hungry citizens. This course includes hands-on interactive learning activities in the foods laboratory that teach food budgeting skills across income levels that provide perspective to eating healthy on a budget."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 211,
+      "suffix": "R",
+      "title": "Applying Biochemistry to Nutrition",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210",
+              "CHEM210H"
+            ]
+          }
+        ],
+        "concurrent": [
+          "BMB211"
+        ]
+      },
+      "description": "The course provides the student with a beginning understanding of how the biochemistry and metabolism under instruction applies to the human body. This includes the localization of biochemical processes within tissues and organs, the organ specific utilization of macronutrients as fuel sources, organ-specific specialization of macronutrient metabolism, and the anatomical features that accommodate and facilitate these functions. This course is supplemental to BMB 211 : Elementary Biochemistry, and helps the student apply the biochemical activities taught in BMB 211 in the context of human physiology and nutrition. The beginning level coverage offered in both BMB 211 and NUTR 211R will prepare students for NUTR 445 , Energy and Macronutrient Metabolism."
+    },
+    {
+      "number": 251,
+      "title": "Introductory Principles of Nutrition",
+      "credits": 3,
+      "attributes": [
+        "GHW"
+      ],
+      "description": "NUTR 251 Introductory Principles of Nutrition (GHW) is a 3-credit course. This course is designed for nutrition majors and non-majors to provide a broad understanding of general principles of nutrition. Concepts covered include the essential nutrients, digestion, absorption, transport, and food sources. Additionally, major health issues related to some nutrients that are of public health concern in the United States are discussed in more detail giving insight into cause, treatment and prevention. Of major importance to students' lives are health and nutrition implications of overweight and obesity, heart disease, diabetes, bone health, and energy balance as affected by diet and physical activity. Lastly, understanding of nutritional needs throughout the life span is introduced, with emphasis on pregnancy, lactation, and infant nutrition. All of these concepts at this introductory level are important for students in the major so that they are prepared for upper division courses."
+    },
+    {
+      "number": 251,
+      "suffix": "H",
+      "title": "Introd Prin Nutrition (honors)",
+      "credits": 3,
+      "attributes": [
+        "GHW",
+        "HON"
+      ],
+      "description": "NUTR 251H , Introductory Principles of Nutrition (GHW) is a 3-credit General Education honors course. This course is designed for honors-seeking nutrition majors and non-majors in the pre-health fields to provide a broad understanding of general principles of nutrition. Concepts covered include the essential nutrients, digestion, absorption, transport, and food sources. Additionally, major health issues related to some nutrients that are of public health concern in the United States are discussed in more detail giving insight into cause, treatment and prevention. Of major importance to students' lives are health and nutrition implications of overweight and obesity, heart disease, diabetes, bone health, and energy balance as affected by diet and physical activity. Lastly, understanding of nutritional needs throughout the life span is introduced, with emphasis on pregnancy, lactation, and infant nutrition. All of these concepts at this introductory level are important for students in the major so that they are prepared for upper division courses. All of these concepts at this introductory level are important for students in the major so that they are prepared for upper division courses and are relevant to preparation for medicine, dentistry, and other allied health fields."
+    },
+    {
+      "number": 291,
+      "suffix": "N",
+      "title": "Drugs and Nutrition: Social and Scientific Interactions",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GS",
+        "INTER"
+      ],
+      "description": "Drugs and Nutrition: Social and Scientific Interactions is a General Education Integrative Studies (N) course intended for all undergraduates looking to learn more about nutrition in the context of drugs. In this survey course, learners will explore relevant terminology and connections between nutrition and drugs, as well as, the historical context and cultural significance of plant medicines, drugs and nutrition. Learners will also acquire requisite knowledge about current perspectives surrounding plant medicines, harm reduction and health equity. Common themes across drug-nutrition interactions including historical context, cultural significance, nutritional impacts and concerns, harm reduction and health equity as well as considerations for special populations will be covered."
+    },
+    {
+      "number": 294,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 310,
+      "suffix": "N",
+      "title": "Diet Wars: Will there ever be a winner?",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "GHW",
+        "INTER"
+      ],
+      "description": "Virtually no discipline attracts more public attention or generates more controversies than nutrition. With more access to nutrition facts and diet plans now than ever before, why does the American diet contribute to obesity? Students will examine the roles of fats, proteins, and carbohydrates by examining current \"fad\" diets such as keto, paleo, 30/30 diet, and others. Students will explore the scientific basis of dietary patterns of the latest trends and alternative diets for nutrition and healthy weight. Past and present diet trends are examined, focusing on the overall impact on individual and population wellness. This course will also explore the deeper causes and hidden influences that often result in following the latest nutrition trends. Students will be able to research, evaluate, and present their findings on a nutrition-related topic."
+    },
+    {
+      "number": 320,
+      "title": "Science and Methods of Food Preparation",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "NUTR251",
+                "CHEM202"
+              ],
+              [
+                "NUTR251",
+                "CHEM210"
+              ],
+              [
+                "FDSC200",
+                "CHEM202",
+                "CHEM210"
+              ]
+            ]
+          }
+        ]
+      },
+      "description": "This course explores the science behind food preparation, equipping students with culinary skills, food safety knowledge, and techniques to preserve nutritional value. Students will gain an understanding of the roles of nutrients-carbohydrates, proteins, fats, vitamins, minerals, and water-in cooking applications and how they influence food texture, flavor, and stability. The course also examines current food trends and dietary guidelines, helping students adapt their culinary practices to evolving nutritional recommendations and consumer preferences. Through cooking labs, students will apply food chemical and physical principles to cooking methods, modify recipes to meet dietary restrictions and enhance their quality, and analyze prepared foods using sensory evaluation. Students will learn about food production methods and the role of food additives in manufacturing."
+    },
+    {
+      "number": 358,
+      "title": "Assessment of Nutritional Status",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR251"
+        ]
+      },
+      "description": "NUTR 358 is an introduction to the purpose, methods, and scientific basis for assessment of nutritional status in total health care for individuals and groups. Students will learn the role of nutritional assessment within the Nutrition Care Process model. Information is presented regarding current standards of food and nutrient intake adequacies and the use of these reference standards in nutritional assessment. Laboratory and case study assignments are included in the course to apply nutrition assessment principles and understand the role of anthropometric, biochemical, clinical, and dietary intake measurements as part of the nutritional assessment. Students will learn to measure, calculate, and interpret personal anthropometric and dietary intake variables. The course will teach students to collect and interpret personal nutritional assessment data and assess nutritional status."
+    },
+    {
+      "number": 360,
+      "title": "Nutrition Education and Behavior Change Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR251"
+        ]
+      },
+      "description": "This course covers a range of topics related to providing evidence-based nutrition information to individuals as well as population-level health. It is designed to be an introductory course in nutrition education and theory within the Nutritional Sciences major. Students will explore the tenets of communication, education, and behavioral theories and models pertinent to the development and dissemination of nutrition information. Exploration of the fundamentals of food behavior, basic communication strategies essential to the nutrition counseling relationship, group facilitation, and working with diverse population groups will be examined through didactic lecture, individual practice, and project-based learning. Using current technologies to locate and understand evidence-based research, guidelines and protocols will be emphasized. Students will apply information discussed to the development of culturally sensitive nutrition education materials that are appropropriate for the target population that is being addressed."
+    },
+    {
+      "number": 361,
+      "title": "Community and Public Health Nutrition",
+      "credits": 3,
+      "attributes": [
+        "US"
+      ],
+      "requisites": {
+        "previous": [
+          "NUTR251"
+        ],
+        "concurrent": [
+          "NUTR360"
+        ]
+      },
+      "description": "This course covers a range of topics around nutritional issues related to population-level health. Community or public health work appeals to many graduates of Nutritional Sciences because it allows them to directly affect the nutritional status of large groups of people. Many nutritionists are drawn to community and public health work because it allows them to practice a variety of skills, such as assessing the nutritional needs, planning interventions, designing educational programs, and conducting program evaluation. In this course, students learn the theory behind community assessment, policy development, intervention planning, and program management and will have an opportunity to practice the skills necessary to carry out these activities through in-class activities and assignments. By the end of this course, students will have a deeper understanding of which population groups in the US benefit from federal food and nutrition assistance programs; what these programs are; what laws and policies regulate them; and how they operate."
+    },
+    {
+      "number": 372,
+      "title": "Nutrient Metabolism",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR251",
+          {
+            "oneOf": [
+              "CHEM110",
+              "CHEM130"
+            ]
+          }
+        ]
+      },
+      "description": "NUTR 372 provides a foundation in principles involved in human nutrient metabolism. Particular focus will be placed on macronutrients (protein, carbohydrates, and fats) and relevant micronutrients (e.g., water- and fat-soluble vitamins, and minerals). Language around nutritional biochemistry and physiology: digestion, absorption, distribution, metabolism and excretion will be covered for all relevant nutrients. This course will prepare students for advanced courses in nutritional sciences."
+    },
+    {
+      "number": 386,
+      "title": "Managing Quality in Food and Nutrition Services",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "HM230"
+        ]
+      },
+      "description": "NUTR 386 Managing Quality in Food and Nutrition Services (3) This course is designed to foster the integration of management principles in the profession of nutrition and dietetics. Topics include strategic application of principles of management and systems in the provision of food and nutrition services to individuals and organizations, quality management, health care systems, leadership theory, corporate culture and communication, fiscal management in food and nutrition services, employee staffing, counseling and retention, and marketing. A business plan is also developed incorporating key operating indicators for organizational structure, marketing and financial objectives."
+    },
+    {
+      "number": 390,
+      "title": "Nutritional Biochemistry and Physiology",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "CHEM202",
+          "NUTR251"
+        ]
+      },
+      "description": "NUTR 390 is an upper-level undergraduate course that provides a solid foundation in principles of biochemistry, anatomy, physiology in the context of nutrition. Particular focus will be placed on macronutrients (protein, carbohydrate and fats), in conjunction with relevant micronutrients. Gene regulation related to nutrition will be covered. Concepts from pharmacology and toxicology are introduced as a way to build language around nutritional biochemistry. Absorption, distribution, metabolism and excretion will be covered for all relevant nutrients. NUTR 390 does not meet degree requirements for the Nutritional Sciences major or minor."
+    },
+    {
+      "number": 391,
+      "title": "Professional Preparation in Nutrition and Dietetics",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "NUTR360"
+        ],
+        "concurrent": [
+          "NUTR361",
+          "NUTR358"
+        ]
+      },
+      "description": "This course provides students with an introduction to current issues in public health, the healthcare industry, professional practice and consumer trends that impact nutrition and health careers. Students will participate in activities during class to explore current topics in public health and issues related to improving access, quality of care and affordability in health care. Ethics scenarios will be presented and discussed that are relevant to nutrition and other healthcare practitioners. This course also prepares students to develop a set of professional skills necessary to initiate a career in the field of dietetics and their required field experience. This course is designed to help students increase self-awareness, become cognizant of strengths and weaknesses, and develop more effective communication skills. Students will use these skills to obtain and successfully complete an advanced field experience in nutrition ( NUTR 495 )."
+    },
+    {
+      "number": 392,
+      "title": "Professional Preparation in Nutrition and Health Sciences",
+      "credits": 3,
+      "description": "This course prepares students for successful careers in nutrition and health sciences by integrating professional identity development, leadership skills, and foundational knowledge of healthcare systems and public policy. Students explore ethical principles and advocacy strategies essential to advancing health equity and promoting evidence-based practice. The course includes advanced application development tailored to students' career tracks, enabling them to translate academic knowledge into professional competencies. Emphasis is also placed on experiential learning planning, guiding students in identifying, preparing for, and maximizing supervised practice and career-oriented opportunities. Through reflective, applied, and skill-building activities, students gain the tools needed to transition confidently into the health workforce or advanced study."
+    },
+    {
+      "number": 393,
+      "title": "Dietetic Internship Application Development",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "NUTR391"
+        ]
+      },
+      "description": "This course is designed to assist students with the critical thinking skills required to prepare and implement post-graduate educational plans required to progress in the field of nutrition and dietetics. Students wishing to become a Registered Dietitian Nutritionist (RDN) must apply to and be selected for a post-baccalaureate professional supervised learning experience, also known as a dietetic internship, following graduation. The process is competitive, complex and requires self-awareness of professional strengths and weaknesses as well as knowledge of the individual characteristics and objectives of specific dietetic internships. This course will introduce students to this process and help them with the skills needed to clarify their goals and complete the materials needed for a dietetic internship application."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "title": "Introduction to Nutrition Counseling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR358"
+        ],
+        "concurrent": [
+          "NUTR446"
+        ]
+      },
+      "description": "This course introduces students to the principles and issues present in the nutrition counseling relationship. Topics will include techniques designed to promote and support nutrition behavior change such as motivational interviewing, cognitive behavior change, working with resistance, transference, countertransference, how to conduct a nutrition counseling session, ADIME charting, coding, and billing issues. Students will learn how to give advise effectively, improve their listening and self-reflection skills as they progress through the course. Challenging topics will be addressed, such as cultural competence and diversity, eating disorders, weight bias and obesity will be explored through role-playing and simulation. The dietitian's role within the healthcare team, skill development through practical application and an introduction to Interprofessional interactions will be emphasized."
+    },
+    {
+      "number": 407,
+      "title": "Nutrition for Exercise and Sports",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR251"
+        ]
+      },
+      "description": "Interactions between nutrition, food selection, and timing of eating as they apply to exercise training and recreational physical activity."
+    },
+    {
+      "number": 409,
+      "title": "Addressing and intervening on social determinants of nutrition inequity",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR251",
+          {
+            "oneOf": [
+              "NUTR360",
+              "BBH316"
+            ]
+          }
+        ]
+      },
+      "description": "This course will ask students to look above and beyond the individual level for societal factors influencing population- and individual-level nutritional status. It will discuss people's nutrition behaviors, dietary choices, and nutritional status in the context of the larger social environments wherein they live and work every day. Approaches that consider policy, systems, and environmental change for improving nutrition will be introduced using both domestic and international case studies. Students will be asked to understand, apply, and make connections among the social gradients that characterize health and nutrition in both clinical and public health programs or interventions. Students will be taught how to develop tailored nutrition programs or interventions using social and behavioral information underlying a nutrition situation, as well as evidence-based characteristics of effective campaigns."
+    },
+    {
+      "number": 410,
+      "title": "Eating and Weight Disorders",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR358"
+        ]
+      },
+      "description": "Eating behaviors vary widely across individuals, but only the extremes of these behaviors are considered pathological. This course provides an opportunity for students to attain a theoretical overview of eating and weight-related disorders, including anorexia nervosa, binge eating disorder, bulimia nervosa, obesity, and dieting. The course will discuss theories and current literature on the causes, diagnosis, symptoms, and treatment of eating and weight-related disorders. In addition, the course will also provide an overview of the differences in the prevalence, manifestations, and treatment of disordered eating in special populations, including men, children, athletes, and minorities. For each topic discussed, students will have related readings to provide insight on the history, theory, research and challenges related to this topic. At the end of this course, students will have an understanding of the history, definition, causes and controversies in eating and weight disorders. In addition, students will be able to define the various eating disorders and critically discuss research regarding their causes, consequences, treatment, and prevention."
+    },
+    {
+      "number": 421,
+      "title": "Biocultural Perspectives on Public Health Nutrition",
+      "credits": 3,
+      "attributes": [
+        "IL"
+      ],
+      "requisites": {
+        "previous": [
+          "NUTR251"
+        ]
+      },
+      "description": "NUTR 421 (3) (IL) takes a public health perspective whereby the bio-cultural influences on health and nutrition are examined across global contexts. It will challenge students to consider the extent to which social and cultural factors contribute to food behaviors and nutritional status, particularly among vulnerable populations in low- and middle-income settings. The application of the social sciences, including key principles from nutritional anthropology, are a critical yet often overlooked aspect of public health nutrition interventions; this course will ask students to critique both over- and under-nutrition interventions through both biomedical and ethnomedical lenses. Students will describe key considerations for culturally-appropriate nutrition intervention development, implementation, and evaluation within the public health sphere."
+    },
+    {
+      "number": 425,
+      "title": "Global Nutrition Problems: Health, Science, and Ethics",
+      "credits": 3,
+      "attributes": [
+        "IL"
+      ],
+      "requisites": {
+        "previous": [
+          "NUTR251"
+        ]
+      },
+      "description": "This course is a survey of topics with a focus on an examination of the underlying reasons for malnutrition in developing countries and the nutrition-related health problems facing developing world populations, particularly women and children. The topics will range from climate change, clean water supply, and health, to micronutrient deficiencies during pregnancy and child development. Identification of ethical issues and the underlying values/principles of situations relevant to the lives of poor people in developing countries will be discussed, including the right to food in the context of humanitarian aid. Discussion of interventions and current solutions involving multi-country cooperation and agencies meant to alleviate these problems will be explored."
+    },
+    {
+      "number": 445,
+      "title": "Energy and Macronutrient Metabolism",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BIOL161",
+          "BIOL162",
+          "BIOL163",
+          "BIOL164",
+          "BMB211",
+          "NUTR251"
+        ]
+      },
+      "description": "This course is designed to provide a foundation in the chemistry and metabolism of the macronutrients. Building on a knowledge base in biochemistry, physiology, and nutrition, this course will focus on the metabolism of proteins, carbohydrates, and lipids, and the integration of these metabolic pathways. The course provides the student with a sufficient application of biochemical processes, cellular molecules and their metabolism to serve as a basis for an advanced study of nutrition."
+    },
+    {
+      "number": 445,
+      "suffix": "H",
+      "title": "Nutrient Metabolism I",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "description": "Nutrients, their sources, metabolism, interrelationships and requirements with focus on carbohydrates, lipids, and proteins."
+    },
+    {
+      "number": 446,
+      "title": "Micronutrient Metabolism",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR445"
+        ]
+      },
+      "description": "Nutrition 446 is designed to provide a foundation in integrated metabolism, metabolic functions, biochemistry, as well as cellular and molecular biology of the micronutrients (vitamins and minerals). It is an advanced nutrition course that will build upon your basic knowledge in physiology, biology, chemistry and nutrition. Students need to have a solid understanding of macronutrient metabolism ( NUTR 445 ) in order to fully understand the micronutrient metabolism material presented in this course."
+    },
+    {
+      "number": 451,
+      "title": "Nutrition throughout the Life Cycle",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUTR445",
+              "NUTR372"
+            ]
+          }
+        ]
+      },
+      "description": "This course will take a lifecycle approach to the study of nutritional needs, status, conditions, and interventions. The same nutrients are needed from birth to older age, but the requirements change along with a plethora of other factors including food preferences, chewing ability, digestion, absorption, metabolism, growth, behaviors, and barriers to healthy eating. The course will be divided into nine life stages and will cover what is nutritionally important at each stage. The student will also learn how nutritional status at one stage can impact health in later stages. By the end of this course, the student will have in-depth knowledge of nutritional needs and issues at each stage of life."
+    },
+    {
+      "number": 452,
+      "title": "Nutritional Aspects of Disease",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUTR445",
+              "NUTR372"
+            ]
+          }
+        ]
+      },
+      "description": "This course will review the underlying nutritional components and pathophysiology of common human diseases/disorders. The focus is on the metabolic disturbances and nutritional interventions for the prevention of these diseases. Topics include nutritional aspects of obesity, diabetes, cardiovascular disease, gastrointestinal and renal diseases, immunity and viral diseases, and cancer. The overall goal of this course is to expose students to the integrated nature of the disease process with a focus on nutritionally based or related diseases."
+    },
+    {
+      "number": 453,
+      "title": "Medical Nutrition Therapy",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "NUTR452"
+        ]
+      },
+      "description": "This Medical Nutrition Therapy course provides students with a strong understanding of how to best prescribe diets for patients, depending on the specific disease profile of the individual. This understanding comes from integrating knowledge of disease pathophysiology with nutrient roles and requirements. This knowledge of disease process informs dietary recommendations. In each case, students use the Nutrition Care Process to assess individual patient needs to determine best practice. Strong assessment skills will allow students to prioritize treatment for best outcomes at an individual level. This course covers prescribed medical nutrition therapy for major disease states encountered in clinical practice. Background pathophysiology lays the foundation for interpreting research and prescribing best practice diets for diseases including obesity, diabetes mellitus, cardiovascular disease, renal failure, and liver disease among others. Additionally, planning and usage of enteral and parenteral nutrition is covered. In each unit, students use their understanding of disease states to provide nutrition recommendations in case study examples. Prescriptive diets must reflect physiological states as well as individual patient preferences."
+    },
+    {
+      "number": 460,
+      "title": "Nutritional Neuroscience",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUTR251",
+              "BIOL161"
+            ]
+          },
+          {
+            "oneOf": [
+              "BIOL163",
+              "BIOL141",
+              "PSYCH260",
+              "PSYCH260A"
+            ]
+          }
+        ]
+      },
+      "description": "This course explores how food affects behavior and the brain, and vice versa: how neural circuits and gut hormones control eating and other behaviors. Throughout the course we will dissect the proverb ¿You are what you eat¿, and examine the effect of diet and body weight on behavior and cognition. Links between pathology and dysfunction in the gut and neurological and psychiatric diseases, including addiction, autism or Alzheimer¿s will also be explored. This course will cover current nutritional neuroscience findings from both animal models and human studies. We will also emphasize critical evaluation of nutritional neuroscience topics."
+    },
+    {
+      "number": 487,
+      "title": "Advanced Performance Nutrition",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR407"
+        ]
+      },
+      "description": "This course will provide a review of metabolism as it relates to performance nutrition, and go greater in-depth on substrate utilization including supplements, hormones, and hydration during performance, recovery, and rest. Students will learn about the nutritional considerations for special populations (e.g., those with eating disorders, celiac disease/other autoimmune diseases, tactical groups, specific sports, etc). Students will be asked to apply the Nutrition Care Process to these populations. Students will have the opportunity to also apply nutrition timing, periodization, and menu planning for specific performance needs as they apply performance nutrition to specific populations. Students in this course may help provide meals, snacks, and/or taste tests to student athletes."
+    },
+    {
+      "number": 490,
+      "suffix": "W",
+      "title": "Nutrition Seminar",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "concurrent": [
+          "NUTR452"
+        ]
+      },
+      "description": "It is essential for nutrition professionals to keep up with the latest discoveries in the field. In this course, students will learn how to review published literature, integrate and evaluate the information, and disseminate their findings to others both verbally and in writing. A major focus of the course is the preparation of the paper in which students will critically evaluate original research papers and other evidenced-based documents, summarize the findings, and provide conclusions based on a careful analysis of the cited literature. From these exercises, students will acquire skills in interpreting research results and communicate their findings of a nutrition-related topic in a professional manner in both written and oral formats. The overall goal of this class is to empower students to sort fact from fiction in nutrition information and to be able to communicate their findings effectively."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research identified on an individual or small-group basis."
+    },
+    {
+      "number": 495,
+      "title": "Advanced Field Experience in Nutrition",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR391"
+        ]
+      },
+      "description": "NUTR 495 is intended for students to earn academic credit through a supervised field experience in a dietetics or nutrition-related field. Students will complete 240 hours at a site agreed upon between the student, the field experience preceptor, and NUTR faculty member as a result of the Field Experience Proposal developed in NUTR 391 . The primary focus of the field experience is both observational and participatory experiential learning accompanied by onsite supervision, as well as University-based instruction."
+    },
+    {
+      "number": 495,
+      "suffix": "B",
+      "title": "Advanced Field Experience in Nutrition",
+      "credits": 3,
+      "description": "NUTR 495B : Advanced Field Experience in Nutrition is intended for students to earn academic credit through a supervised field experience in a dietetics or nutrition-related field. Students will complete 120 to 160 supervised practice hours at a site agreed upon between the student, the field experience preceptor, and Nutritional Sciences faculty member. The primary focus of the field experience is both observational and participatory experiential learning accompanied by onsite supervision, as well as University-based instruction."
+    },
+    {
+      "number": 495,
+      "suffix": "C",
+      "title": "Advanced Field Experience in Nutrition Education and Counseling",
+      "credits": 3,
+      "description": "NUTR 495C : Advanced Field Experience in Nutrition Education and Counseling is intended for students to earn academic credit through a supervised nutrition education and counseling practicum experience. The primary focus of this course is participatory experiential learning accompanied by University-based instruction with oversight and instruction by a faculty member. Students will complete 120 to 160 supervised practice hours."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "title": "Independent Studies",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 501,
+      "title": "Regulation of Nutrient Metabolism I",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          "NUTR445"
+        ]
+      },
+      "description": "Integration of nutritional, biomedical, biochemical, physiological, and hormonal processes involved in carbohydrate, lipid, and protein metabolism."
+    },
+    {
+      "number": 502,
+      "title": "Regulation of Nutrient Metabolism II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR446"
+        ]
+      },
+      "description": "Complementary to NUTR 501 with an emphasis on metabolic roles of vitamin and mineral elements."
+    },
+    {
+      "number": 503,
+      "title": "Nutritional Epidemiology",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHS503"
+      ],
+      "requisites": {
+        "previous": [
+          "PHS554"
+        ]
+      },
+      "description": "This course will provide the foundation for understanding Nutritional Epidemiology with a particular focus on theroretical and practical consideration in the design of studies and analysis of dietary data. The material has a strong methodological emphasis, and students are expected to gain a critical understanding of the design, conduct, analysis and interpretation of nutritional epidemiologic studies. The relationship between diet and health outcomes will be thoroughly discussed."
+    },
+    {
+      "number": 504,
+      "title": "Behavioral Nutrition",
+      "credits": 3,
+      "description": "The world is experiencing a nutrition transition as an increasing number of countries rise from poverty. Globally, chronic disease rates continue to increase while rates of undernutrition, including micronutrient deficiencies, stunting, and wasting, remain persistently high. To attenuate all forms of malnutrition across contexts, we need to understand how and why people make choices about the foods they eat so that effective, theory-based interventions can be designed to improve diet and reduce malnutrition risk. This course in behavioral nutrition investigates the bidirectional relationship between eating behaviors and nutrition, with particular emphasis on developing theoretical foundations for how research is conducted and disseminated in this discipline. This course will build an awareness of the many social, environmental, and individual differences that influence the brain and related eating behaviors. At the end of this course, students will be able to recognize and identify the foundational principles of behavioral nutrition and apply these to the design of scientific experiments. They will also be able to apply the principles learned in this course to the design of interventions and programs to change nutrition behaviors."
+    },
+    {
+      "number": 506,
+      "title": "Ruminology",
+      "credits": 3,
+      "description": "Physiological, biochemical, and microbiological activities occurring within the rumen and the relation of rumen function to animal response."
+    },
+    {
+      "number": 508,
+      "title": "Critical Readings in Molecular Nutrition",
+      "credits": 1.5,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "concurrent": [
+          "NUTR446"
+        ]
+      },
+      "description": "Understanding of approaches, methods and current concepts in molecular biology and nutrition through critical readings of current primary literature."
+    },
+    {
+      "number": 511,
+      "title": "Maternal and Child Nutrition",
+      "credits": 3,
+      "description": "Role of nutrition in female fertility, during pregnancy and lactation, as well as during infancy and early childhood. NUTR 511 Maternal and Child Nutrition (3) This course is designed to provide an understanding of the nutritional recommendations during preconception, pregnancy, lactation, early infancy, and childhood. In this course, students will acquire a broad understanding of the role and regulation of nutrient metabolism and effects of genetic variation on nutritional needs during these unique physiological periods. These concepts will be discussed from molecular, clinical and applied perspectives that will guide further graduate-level inquiry. Lectures and readings will explicate 1) how nutrient metabolism affects pregnancy outcomes, lactation sufficiency and infant development; 2) how nutrition affects common early childhood conditions, such as obesity, allergy and autism; 3) how fetal/postnatal nutrition affects long-term health; and 4) the role of genetics in nutritional requirements during these times in the lifecycle. Students will gain an appreciation for the contribution of nutrition during the fetal/postnatal periods on long-term health and the incidence of disease through understanding the role of nutrients in a translational framework."
+    },
+    {
+      "number": 513,
+      "title": "Atherosclerosis and Nutrition",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "NUTR452"
+        ]
+      },
+      "description": "The etiology and pathophysiology of atherosclerotic cardiovascular disease, with emphasis on nutritionally-related aspects."
+    },
+    {
+      "number": 515,
+      "title": "Mathematical Modeling in Nutrition",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH140",
+              "MATH141"
+            ]
+          }
+        ]
+      },
+      "description": "Study of the theory and application of mathematical modeling of the tracer and tracee kinetics of nutrients and their metabolites in animals and man."
+    },
+    {
+      "number": 520,
+      "title": "Readings in Nutrition",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "Readings and reports of selected topics in nutrition."
+    },
+    {
+      "number": 532,
+      "title": "Childhood Obesity",
+      "credits": 3,
+      "description": "This course addresses how genetic predispositions, behavioral and environmental factors affect children's obesity risk and examines strategies for obesity prevention. HDFS (NUTR) 532 Childhood Obesity (3) This course will examine the epidemic of obesity, particularly childhood obesity, and how various behavioral and environmental factors place children at risk of becoming overweight. Sources of influence that will be examined include: children's nutrition and physical activity behaviors, the family environment, the school environment and community characteristics. Media, social policy and economic factors will also be addressed. In addition, the health and psychosocial consequences of obesity, ethnic and socioeconomic disparities in the prevalence and predictors of obesity among children and adolescents will be addressed. At its conclusion, this course will examine policy initiatives and obesity prevention programs."
+    },
+    {
+      "number": 533,
+      "title": "Adult Obesity",
+      "credits": 3,
+      "description": "Important current and emerging topics in obesity research relevant to government policy and general public education; emphasis on adult obesity. HD FS (NUTR) 533 Adult Obesity (3) This course will examine the epidemic of obesity, particularly adult obesity. Obesity: Causes, Consequences and Treatment will provide a forum to introduce and discuss current and emerging topics in adult obesity research, with emphasis on policy, prevention and treatment. Focus will be given to determinants of adult obesity and translation into government policy and efforts to educate the general public on the most effective strategies for body weight regulation, obesity prevention and treatment. Sources of influence that will be examined include: environment, genetics, neural, peripheral and sensory mechanisms, food properties and food supply, and therapies and treatment of adult obesity."
+    },
+    {
+      "number": 534,
+      "title": "Readings in Ingestive Behavior",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Students lead discussions of original research in the field of ingestive behavior; focus on food intake in particular. FDSC 534 / NUTR 534 Readings in Ingestive Behavior (1 per semester/maximum of 6) The class provides a forum for students to learn to lead a discussion focused on original research in the field of ingestive behavior. In addition, it provides the opportunity for students to become familiar with the broad range of topics relevant to this field of research. While the primary focus is on the consumption of food, other relevant topics (obesity, eating disorders, fluid intake) also are included. Research topics include both basic and applied areas."
+    },
+    {
+      "number": 540,
+      "title": "Research Methods",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "requisites": {
+        "previous": [
+          "NUTR850",
+          "STAT500"
+        ]
+      },
+      "description": "Review of different studies that utilize various nutrition research designs and data analyses. This course will provide information on how to evaluate the scientific literature and will promote the development of skills to enable students to identify the strengths and limitations of different types of experimental approaches (epidemiologic, etc.), individual studies, and a body of literature on a specific nutrition-related topic. The importance of generating hypotheses and testing them will be emphasized. The Bradford Hill criteria for evaluating a body of literature and making causal inferences will be utilized. In addition, development and use of the Evidence Analysis Library for making nutrition policy decisions will be discussed. The course will focus on major contemporary nutrition topics undergoing scientific inquiry. The review of a body of literature, as well as a single study in a practice setting will take place throughout the course. The knowledge gained in reviewing and critiquing the scientific literature will be applied to the preparation of a proposal for students' Capstone Project."
+    },
+    {
+      "number": 551,
+      "title": "Seminar in Nutrition",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Selected topics and recent advances in nutrition."
+    },
+    {
+      "number": 583,
+      "title": "Nutritional Epidemiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NUTR445",
+          "NUTR446"
+        ]
+      },
+      "description": "Epidemiological principles and methodology to study nutritional determinants of disease."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 595,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 6
+      }
+    },
+    {
+      "number": 595,
+      "suffix": "A",
+      "title": "Application of Community Nutrition -- Internship",
+      "credits": 3,
+      "description": "Application and integration of community nutrition theories in a practicum environment under the supervision of preceptors in community agencies."
+    },
+    {
+      "number": 595,
+      "suffix": "B",
+      "title": "Application of Food Service Management -- Internship",
+      "credits": 3,
+      "description": "Application and integration of food service management principles and motivation theories in a practicum environment under the supervision of preceptor."
+    },
+    {
+      "number": 595,
+      "suffix": "C",
+      "title": "Dietetic Enrichment Experience - Dietetic Internship",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "NUTR595A",
+              "NUTR595B",
+              "NUTR595D",
+              "NUTR595E"
+            ]
+          }
+        ]
+      },
+      "description": "The enrichment experience is designed for interns to plan and implement a rotation of interest in the nutrition field."
+    },
+    {
+      "number": 595,
+      "suffix": "D",
+      "title": "Application Clinical Nutrition -- Internship",
+      "credits": 6,
+      "description": "Application and integration of clinical nutrition theories in a practicum environment under the supervision of preceptor who is a registered dietitian."
+    },
+    {
+      "number": 595,
+      "suffix": "E",
+      "title": "Introduction to Nutrition Research -- Internship",
+      "credits": 1,
+      "description": "Introduction of nutrition research to assist in the understanding of planning and conducting research studies in a variety of nutrition research laboratories."
+    },
+    {
+      "number": 595,
+      "suffix": "F",
+      "title": "Professional Portfolio Internship",
+      "credits": 1,
+      "description": "Designing and completing a professional portfolio to assist in the employment process in the field of dietetics."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides an opportunity for a supervised and graded experience for graduate students in teaching undergraduate courses in nutrition."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 800,
+      "title": "Food Systems and Organization Management",
+      "credits": 3,
+      "description": "This course provides an opportunity to acquire an in-depth knowledge of food systems management and develop the skills necessary to guide practice in the management and leadership of food and nutrition service operations. Students will develop the skills to apply principles of organization management to achieve operational goals and manage financial, human, material, and physical resources in the area of food service and clinical management care. Skills that are emphasized include: collaboration, critical thinking, effective communication, professional conduct, decision-making, planning, time management, and training. Management and leadership are key components of quality food and nutrition services and effective practice in the field of nutrition and dietetics."
+    },
+    {
+      "number": 801,
+      "title": "Leadership in the Nutrition Profession",
+      "credits": 3,
+      "description": "This course provides an opportunity for students to become proficient in the skills essential for effective leadership within the nutrition field. We will utilize evidence-based tools designed for self-assessment of leadership traits and strengths. Students will practice and develop competency in the skills of negotiation, collaboration and persuasion, intercultural communication and motivation, visioning, and ethical decision-making. The importance of work-life balance and personal boundaries will be examined in the context of today's work environment."
+    },
+    {
+      "number": 805,
+      "title": "Advanced Nutrient Metabolism",
+      "credits": 3,
+      "description": "This course provides the student with both a review of the fundamentals of nutrient metabolism but also more advanced topics in the biochemistry, physiology, metabolism, and regulation of nutrients important in health and disease. At this advanced level, students develop an understanding of the integration and interdependency of many of these metabolic processes. There will be an initial review of cellular structure and function and the basics of organ systems, followed by the physiology and microbiology of the gastrointestinal (GI) tract related to nutrient processing, including the impact of dietary fibers on GI function. For each nutrient, the following topics will be covered: food sources and/or dietary considerations; chemical structure and characteristics; and regulation of digestion, absorption, and excretion. Water, macronutrient (carbohydrate, protein, and lipids), and micronutrient (vitamins and minerals) metabolism, function, and regulation will be presented. For some select nutrients of public health concern, the metabolic mechanisms of deficiency and/or toxicity will be discussed. Metabolic integration relevant to nutritional needs and biomedical applications will be highlighted in this course. Students will apply their knowledge to current biomedical situations relevant to nutrition and health professionals. This course prepares students for the advanced courses in assessment and clinical nutrition."
+    },
+    {
+      "number": 810,
+      "title": "Nutritional Assessment and Diagnosis",
+      "credits": 3,
+      "description": "Evaluation of assessment methods and interpretation of results to assess and diagnose nutritional status of individuals and groups. This course will offer a critical analysis of assessment methods used in clinical, community, and home-based settings to diagnose malnutrition and other nutrition-related problems. Students will become proficient at identifying appropriate current techniques and technologies for collecting assessment data, interpreting the results of the collected data, and diagnosing nutrition problems for specific populations. Specific skills such as nutrition-focused physical examination, identifying and applying appropriate assessment data collection methods, interpreting laboratory values and genetic tests, etc., will be integrated by the student through hands-on experience and case study development. The course focus will be on advanced skill development, critical analysis of assessment methods and interpretation of the data, and communicating the findings to health care professionals and patients/clients in a variety of workplace settings."
+    },
+    {
+      "number": 820,
+      "title": "Advanced Clinical Nutrition",
+      "credits": 3,
+      "description": "Advanced study of acute and chronic illnesses and conditions and how these events influence the nutritional needs of patients. This class provides an opportunity for students to become proficient in the skills essential to advanced clinical nutrition practice. We will examine the metabolic demands of acute and chronic illness and conditions and how these influence the nutritional needs of patients in various disease states. Interrelationships of nutrition with biochemical, physiological, and anatomical changes associated with acute illness or injury, chronic disease, terminal illness, surgery, and trauma will be covered. Students will utilize an evidence-based approach to assessing nutrient requirements and determine best methods of nutrient delivery in various disease states. The ultimate goal of the course is to develop the skills necessary for advanced clinical nutrition practice."
+    },
+    {
+      "number": 825,
+      "title": "Nutrient and Energy Assessment for Performance",
+      "credits": 3,
+      "description": "This course will provide an in-depth understanding of the assessment process for nutrient and energy availability and use for performance science. Students will practice using multiple tools to assess individual and group nutrient and energy needs for performance. Using the nutrition care process, students will practice reviewing biomarkers and acceptable values, and create diet interventions to improve performance. Students will share results and intervention plans with interprofessional teams."
+    },
+    {
+      "number": 826,
+      "title": "Maximizing Performance Through Nutrition and Other Supplements",
+      "credits": 3,
+      "description": "In this course, the students will learn how to interpret biomarkers and explain the results to student athletes and others in performance-based settings, provide intervention ideas through fueling and supplementation, and review vitamin compliance evidence. The students will also be able to explain how to review ergogenic aids, and how to recommend third-party tested supplementations and education around specific ergogenic aids. Lastly, students will be able to understand and compare the NCAA and other governing bodies' rules and regulations around permissible, impermissible, and banned supplements to a variety of rules and regulations of governing bodies."
+    },
+    {
+      "number": 827,
+      "title": "Performance Nutrition for Special Populations and Dietary Patterns",
+      "credits": 3,
+      "description": "This course will provide insight to performance nutrition fueling strategies covering special populations in athletics and performance (e.g., specific teams, those with special diets, and other groups). This course will provide the students with insights on a variety of special populations seen in the human performance space as well as practice implementing the nutrition care process to provide optimal fueling for performance that fall within special population parameters."
+    },
+    {
+      "number": 830,
+      "title": "Advanced Nutrition and Health Program Planning",
+      "credits": 3,
+      "description": "This course provides an opportunity for students to become proficient in the skills essential for successful nutrition education programming, dissemination, and evaluation through development and implementation of a nutrition education intervention with a target audience in their respective communities. We will examine current theories, models, and state-of-the-art strategies, and discuss how to apply them to a variety of settings including clinical, community, and other workplaces, as well as the home. Various behavioral and environmental factors, which may contribute to the maintenance of poor nutritional outcomes, will be critically assessed. Focus will be on how to plan interventions that address multiple components within the target populations environment. Students will gain proficiency by working in groups and using best practices to design, implement, and evaluate an educational program within their chosen community."
+    },
+    {
+      "number": 835,
+      "title": "Nutrition Promotion & Disease Prevention Across the Lifecycle",
+      "credits": 3,
+      "description": "This course is designed to address the population-level lifecycle health through the lens of health promotion and disease prevention. After completing this course, learners should be able to critically consider population-specific nutrition needs across the lifecycle and design health promotion strategies to promote nutrition and prevent nutrition-related disease. Evidence-based practice and cultural competencies and social determinants of health are a focus throughout the course. The course addresses the lifecycle stages: 1) preconception, pregnancy and lactation nutrition; 2) infant nutrition; 3) toddler, preschooler and school-age child nutrition; 4) adolescent nutrition; 5) young and middle adult nutrition; 6) older adult nutrition. Key topics and population trends are also discussed including food security, maternal and child health, pediatric overweight and obesity, chronic disease prevention, optimal aging, and emerging issues in lifecycle nutrition."
+    },
+    {
+      "number": 840,
+      "title": "Advanced Nutrition Counseling",
+      "credits": 3,
+      "description": "Application of theories and counseling techniques to the nutrition care process in different practice settings with diverse patients/clients. This class provides an opportunity for students to become proficient in the skills essential to successful nutrition counseling. We will examine current theories and state-of-the-art techniques of counseling, and apply them to a variety of settings including clinical, community, workplace, and home-based. Various behavioral and environmental factors, which may contribute to the maintenance of poor nutritional outcomes, will be critically assessed focusing on advanced skill development and the ability to handle challenging communication issues that arise within the nutrition care process. Students will gain proficiency through practicing techniques including client-centered counseling methods, motivational interviewing,and behavior change strategies, as well as principles of group counseling, facilitation, and effective team dynamics. Best practices for those with chronic diseases, obesity, eating disorders, lifespan counseling, and end of life issues will be discussed."
+    },
+    {
+      "number": 850,
+      "title": "Leadership Concepts and Application for the Nutrition Professional",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "requisites": {
+        "previous": [
+          "NUTR801"
+        ]
+      },
+      "description": "Exploration and application of concepts essential to effective leadership within the nutrition profession. This course will revisit and expand on the skills necessary for effective leadership within the field of nutrition introduced in NUTR 801 . Theories and concepts of leadership as they apply to the nutrition field will be examined. Students will have opportunities to interview leaders in their area of interest, and they will identify the topic of their Capstone Project, which is designed to promote individual leadership development. Promotion of leadership development specific to the field of nutrition will be emphasized in the selection of a project as well as in course content. Student projects will need to be of sufficient breadth and scope to promote the utilization of skills and concepts presented throughout the M.P.S. program and this particular course. Course topics will focus on the process of identifying and creating change within an organization. The ultimate goal of the course is to foster the development of a leadership mindset for innovation, empowerment, and risk-taking."
+    },
+    {
+      "number": 855,
+      "title": "Nutrition Policy, Systems, Environments: A Leadership Perspective",
+      "credits": 3,
+      "description": "This course will take an individual + policy, systems, and environmental (I+PSE) approach to examining nutrition-related public health issues. Students will learn to assess nutrition policies within the context of the nutrition assistance safety net with the I+PSE lens. Students will explore complex questions about how government has responded to diet-related health problems, the role of government in efforts to facilitate healthy eating, and how to develop and evaluate policy approaches to improve diet quality and reduce the burden of diet-related disease. Leadership competencies will be integrated throughout the course."
+    },
+    {
+      "number": 860,
+      "title": "Capstone Project in Nutritional Sciences",
+      "credits": {
+        "min": 2,
+        "max": 5
+      },
+      "repeatable": {
+        "maxCredits": 5
+      },
+      "requisites": {
+        "previous": [
+          "NUTR540",
+          "NUTR850"
+        ]
+      },
+      "description": "Completion of a Capstone Project involving research and application of leadership principles in nutrition practice. This course is the culminating course for the M.P.S. in Nutritional Sciences program. This course requires students to synthesize the research gathered from the leadership opportunity project, their literature review, and their Capstone Project results to prepare a paper and give a presentation of their findings to their fellow students and to a professional audience. Students will use the findings from their Capstone Project to formulate evidenced-based solutions that can be used in nutrition practice."
+    },
+    {
+      "number": 895,
+      "suffix": "A",
+      "title": "Internship-Clinical",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, professional oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 895,
+      "suffix": "B",
+      "title": "Internship-Food Systems and Organization Management",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, professionally oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique or activity required."
+    },
+    {
+      "number": 895,
+      "suffix": "C",
+      "title": "Internship-Community",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised, professionally oriented, off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "subject": "GREEK",
+  "courses": [
+    {
+      "number": 99,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "BA-H",
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 101,
+      "title": "Introductory Ancient Greek",
+      "credits": 4,
+      "attributes": [
+        "BA-H",
+        "BA-WL"
+      ],
+      "description": "GREEK 101 is the first course in a two-semester introduction to ancient Greek, the language of Homer, Sophocles, Plato, and the New Testament. Students will begin to learn the grammar and vocabulary necessary for reading Greek literature of different periods. Unlike a modern language, ancient Greek is not a spoken language. Consequently, the class will be devoted to honing reading skills through drills and the translation of short sentences and passages. Students will also be encouraged to compose ancient Greek sentences and passages as they develop their fluency in the language. By the end of the semester, students will be prepared to continue to GREEK 102 ."
+    },
+    {
+      "number": 102,
+      "title": "Intermediate Ancient Greek",
+      "credits": 4,
+      "attributes": [
+        "BA-H",
+        "BA-WL"
+      ],
+      "requisites": {
+        "previous": [
+          "GREEK101"
+        ]
+      },
+      "description": "GREEK 102 continues the work begun in GREEK101, which is prerequisite for enrollment. Students will continue to learn the grammar and vocabulary necessary for reading ancient Greek literature of different periods. During this course, students will begin to read extended, unadapted passages from Plato, Xenophon, the New Testament and other sources. GREEK 102 will prepare students for GREEK 203 ."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 203,
+      "title": "Greek Reading and Composition",
+      "credits": 4,
+      "attributes": [
+        "BA-H",
+        "BA-WL"
+      ],
+      "requisites": {
+        "previous": [
+          "GREEK102"
+        ]
+      },
+      "description": "GREEK 203 is the third course in the introductory ancient Greek language sequence. The aim of this course is to help students increase their familiarity with forms and vocabulary, as well as gain confidence in their ability to read, appreciate, and interpret ancient Greek literature. Students will be introduced to advanced grammar and syntax and will read extensive passages of ancient Greek prose. Greek prose composition will also comprise a significant component of this course. Possible authors covered in this course may include but are not limited to: Plato, Xenophon, Herodotus, Attic orators, and Lucian. The prerequisite for this course is GREEK 102 or the permission of the instructor."
+    },
+    {
+      "number": 420,
+      "title": "Greek Prose Authors",
+      "credits": {
+        "min": 3,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "BA-H",
+        "BA-WL12",
+        "BA-WL"
+      ],
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 420 is an advanced reading course in ancient Greek, which focuses on the writings of prose authors. The primary aim of the course will be to hone students¿ ability to read connected passages of Greek prose by a given author or on a particular theme. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible authors/ genres of focus include, but are not limited to: Plato, Xenophon, the Attic Orators, Aristotle, Plutarch, Lucian, the Greek Novel, and the New Testament. The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 425,
+      "title": "Greek Historians",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "BA-H",
+        "BA-WL12",
+        "BA-WL"
+      ],
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 425 is a reading course in ancient Greek focusing on one or more of the major ancient Greek historians. The course is designed to advance the student's fluency in reading Greek prose, while at the same time enriching their understanding of Greek civilization and history by a thematic choice of historical readings. The course may concentrate on one author or may address a thematic issue with readings from a variety of Greek historians (usually Herodotus, Thucydides, or Xenophon, or Polybius). The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 430,
+      "title": "Greek Poetry",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "BA-H",
+        "BA-WL12",
+        "BA-WL"
+      ],
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 430 is an advanced reading course in ancient Greek poetry. The primary aim of the course will be to hone students' ability to read and appreciate Greek poetry. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible poets include but are not limited to: Homer, Hesiod, Sappho & the Lyric poets, Callimachus, and Apollonius Rhodius. The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 440,
+      "title": "Greek Drama",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "BA-H",
+        "BA-WL12",
+        "BA-WL"
+      ],
+      "requisites": {
+        "previous": [
+          "GREEK203"
+        ]
+      },
+      "description": "GREEK 440 is an advanced reading course in ancient Greek Drama (tragedy and comedy). The primary aim of the course will be to hone students' ability to read and appreciate Greek drama. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible poets include: Aeschylus, Sophocles, Euripides, Aristophanes, and Menander. The prerequisite for this course is GREEK 203 or the permission of the instruction. This course may be repeated."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "BA-H"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "BA-H",
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "BA-H"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "title": "Independent Studies (Honors)",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "BA-H",
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 510,
+      "title": "Greek Seminar",
+      "credits": {
+        "min": 3,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "This seminar is a graduate-level reading course in Ancient Greek. The primary aim of the course will be to hone students' ability to read and appreciate selections of Greek poetry and prose. In addition, students will read and evaluate secondary scholarship in preparation for a final research project. Possible authors include but are not limited to: Homer, Hesiod, Sappho & the Lyric poets, Herodotus, Aeschylus, Sophocles, Euripides, Thucydides, Plato, Aristotle, Callimachus, Apollonius of Rhodes, the New Testament, Josephus, Plutarch, and Lucian."
+    },
+    {
+      "number": 520,
+      "title": "Greek Mythography",
+      "credits": 3,
+      "description": "This graduate seminar focuses on ancient Greek mythographic authors from the beginnings of the genre (6th C.B.C.E.) to the Roman period. GREEK 520 Greek Mythography (3) This graduate seminar focuses on the ancient Greek mythographic authors from the beginnings of the genre in the sixth century B.C.E. to the Roman period. We shall define \"mythography\" simply as the prose exposition of mythic narratives (the most well-known Greek mythographer is Apollodorus, whose first-century C.E. \"Bibliotheca\" is consulted regularly by students of myth; some of the earlier practitioners include Hellanicus and Pherecydes). The seminar will consider selected readings in the theory of myth, alongside which we will examine in detail and evaluate the content of sources of the mythographers' writings. Some of these provide quite outlandish variants on known myths or bizarre stories otherwise unknown. Through a series of case studies of particular mythic stories, we shall place these texts in literary and cultural relief by seeking to understand how they interact with the more well-known mythic genres of Greece such as epic, lyric, and tragedy. We will also probe the borders of what we call \"mythography\" by examining other prose texts not normally associated with the genre, such as Herodotus' Histories or even philosophical texts such as Plato or Aristotle. In addition, since much of the material we will treat is in a fragmentary state, we will try our hands at reconstructing both texts and myths that survive in only incomplete form. Some attention will also be given to the Latin mythographic tradition (e.g. Hyginus and others) which is mostly, or perhaps wholly, dependent upon earlier or contemporary Greek mythography."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

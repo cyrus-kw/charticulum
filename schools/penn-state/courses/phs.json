@@ -1,0 +1,844 @@
+{
+  "subject": "PHS",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Research Ethics for Clinical Investigators",
+      "credits": 1,
+      "description": "This course is designed for graduate students preparing for a career that will include clinical investigations."
+    },
+    {
+      "number": 501,
+      "title": "Artificial Intelligence in Healthcare",
+      "credits": 3,
+      "description": "This advanced course provides an in-depth exploration of the principles and methodologies of artificial intelligence (AI) and machine learning (ML) in healthcare. Topics include exploratory data analysis (EDA), electronic health record (EHR)-mining, machine learning algorithms, and natural language processing (NLP) techniques such as bag of words (BOW), part-of-speech (POS) tagging, and large language models (LLM). The course also covers advanced topics such as transfer learning (TL) and federated machine learning (FL), explainable AI (XAI), with a focus on their applications in healthcare systems. Students will engage with the AI lifecycle in healthcare, including EHR-based phenotype definition, data processing, model development, validation, and implementation, and monitoring. Ethical, legal, and privacy considerations, along with issues of diversity and inclusion, will be addressed, especially as they relate to the context of precision medicine and personalized care. Case studies and guest lectures will explore real-world applications and state-of-the-art solutions. Through research projects, presentations, and critical discussions, students will develop the skills to lead innovative AI research in healthcare. This course is designed to prepare students for advanced research roles in academia, industry, and healthcare policy. Grading will be based on tests, student presentations, and project milestones."
+    },
+    {
+      "number": 503,
+      "title": "Nutritional Epidemiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS554"
+        ]
+      },
+      "description": "This course will provide the foundation for understanding Nutritional Epidemiology with a particular focus on theroretical and practical consideration in the design of studies and analysis of dietary data. The material has a strong methodological emphasis, and students are expected to gain a critical understanding of the design, conduct, analysis and interpretation of nutritional epidemiologic studies. The relationship between diet and health outcomes will be thoroughly discussed."
+    },
+    {
+      "number": 505,
+      "title": "Public Health Program Planning and Evaluation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BBH504"
+        ]
+      },
+      "description": "Foundations in public health program planning and evaluation."
+    },
+    {
+      "number": 506,
+      "title": "Behavioral Health Intervention Strategies II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BBH504",
+          "PHS505"
+        ]
+      },
+      "description": "This course provides instruction on how to design theory-driven public health interventions."
+    },
+    {
+      "number": 507,
+      "title": "Public Health Surveillance",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS520",
+          "PHS550"
+        ]
+      },
+      "description": "Public health surveillance, through collecting and monitoring public health related data as they appear in the real world, plays an important role to ensure public health. This course provides an overview of the principles and practice of public health surveillance and will include design, data collection, and data analysis of the public health surveillance system in general. The skills that students learn from this course will help them better understand and analyze public health issues. Using existing public health surveillance data such as NHANES, NHIS, BRFSS, and SEER, this course provides hands-on experience with analyzing public health surveillance data."
+    },
+    {
+      "number": 510,
+      "title": "Grant Writing for Clinical Research",
+      "credits": 3,
+      "description": "To become independent researchers, students will need to write many grants for external funding. The primary purpose of this course will be for students to experience the full range of grant writing, from review of funding opportunities with a focus on patient- or population-based samples, to forming the research question, preparing, and submitting the grant. Most students are expected to write an F31 application to various NIH-institutions, but other training grant opportunities may be chosen according to the topic of interest. In addition, strategies to get involved in high dimensional or big data will be emphasized, such as human genome data, EMR data, and MARKETSCAN data."
+    },
+    {
+      "number": 511,
+      "title": "Methods Used in Translational Research",
+      "credits": 1,
+      "description": "This course is designed to familiarize clinicians with state-of-the-art laboratory techniques as they apply to translational research studies."
+    },
+    {
+      "number": 516,
+      "title": "Statistical Genetics",
+      "credits": 3,
+      "description": "Basic theory and methods for statistical analysis, introduction to bioinformatics, principles and methods of statistical genetics, case-control association studies."
+    },
+    {
+      "number": 518,
+      "title": "Scientific Communication",
+      "credits": 3,
+      "description": "Advancements in the fields of science, public health and medicine have always depended on effective means of communication. Likewise, so has the success of any individual scientist whether they are working in academia, government or private sectors. This is especially true today where the means of communication are changing rapidly based upon advances in technology and public health concerns. Despite the importance of communication in the sciences, graduate students have limited opportunity to learn the basic concepts of effective communication for which they can rely on and build upon as they continue with their career. Students will learn the importance of the different means of communication in their professions, and the basic concepts underlying becoming an effective communicator."
+    },
+    {
+      "number": 519,
+      "title": "Patient Centered Research",
+      "credits": 3,
+      "description": "A survey course designed to provide foundational information regarding 15 core clinical research topics presented in theory and with application. PHS 519 Patient Centered Research (3) Patient Centered Research, PHS 519 , is a three credit course specifically designed for physicians who have completed their medical training and are interested in learning about clinical research. Clinical research training is rarely offered in a typical medical school curriculum but is imperative for training academic physicians to perform high quality investigational research. This course covers the opportunities and the expected skills needed to become an independent clinical investigator. This is a survey course which is designed to provide an overview of clinical research along with an introduction to the methods used to conduct clinical research."
+    },
+    {
+      "number": 520,
+      "title": "Principles of Biostatistics",
+      "credits": 3,
+      "description": "Introduction to the application of techniques and interpretation of results that are commonly used to plan, analyze, and report clinical and health services research."
+    },
+    {
+      "number": 521,
+      "title": "Applied Biostatistics",
+      "credits": 3,
+      "description": "This course is a continuation of Principles of Biostatistics. It covers multi-variable regression methods for continuous, categorical, and time-to-event outcomes. Topics are multiple linear regression including ANOVA, ANCOVA, interaction and model selection, logistic and conditional logistic regression, logistic regression for ordinal data, and survival analysis including the log-rank test and Cox proportional hazards regression."
+    },
+    {
+      "number": 522,
+      "title": "Multivariate Biostatistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS520",
+          "STAT500",
+          "PHS521"
+        ]
+      },
+      "description": "This course focuses on advanced topics in biostatistics involving multivariate responses in biomedical research."
+    },
+    {
+      "number": 523,
+      "title": "Multivariate Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT511",
+          "STAT512",
+          "STAT513",
+          "STAT514"
+        ]
+      },
+      "description": "This course focuses on the theoretical and applied aspects of multivariate analyses that are relevant to biomedical research."
+    },
+    {
+      "number": 524,
+      "title": "Longitudinal Data Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS523"
+        ]
+      },
+      "description": "This course focuses on the theoretical and applied aspects of longitudinal data analyses that are relevant to biomedical resarch."
+    },
+    {
+      "number": 525,
+      "title": "Biostatistics for Lab Scientists",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH110"
+        ]
+      },
+      "description": "Basic theory and methods for statistical analysis, data presentation and experimental design, with a focus on biomedical applications."
+    },
+    {
+      "number": 526,
+      "title": "Categorical Data Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT511",
+          "STAT512",
+          "STAT513",
+          "STAT514"
+        ]
+      },
+      "description": "This course focuses on statistical theory and methods for analyzing categorical data."
+    },
+    {
+      "number": 527,
+      "title": "Survival Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT511",
+          "STAT512",
+          "STAT513",
+          "STAT514"
+        ]
+      },
+      "description": "This course focuses on the analysis of time-to-event data with a focus on biomedical research."
+    },
+    {
+      "number": 528,
+      "title": "Bayesian Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT511",
+          "STAT512",
+          "STAT513",
+          "STAT514"
+        ]
+      },
+      "description": "Approaches to Bayesian modeling and computation with application to medicine and biomedical research."
+    },
+    {
+      "number": 529,
+      "title": "Biostatistical Computing for Public Health",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "PHS520"
+        ]
+      },
+      "description": "Provides experience in intermediate and advanced usage of a biostatistical software package for public health data analyses. PHS 529 Biostatistical Computing for Public Health (1) The goal of this course is to provide students with the SAS skills to perform intermediate and advanced biostatistical analyses of public health data and associated data management tasks using the SAS system, so that in other public health and biostatistics courses they may focus on theoretical aspects rather than computing and programming issues. Upon completion, students will be able to use standard statistical software and to apply the fundamental concepts of information technology."
+    },
+    {
+      "number": 530,
+      "title": "Principles of Health Services Research",
+      "credits": 2,
+      "description": "A foundation course on the principles of health services research and the methods used to conduct health services research. This course gives students a foundation in the principles and methods of health services research, a multidisciplinary field that addresses health policy, health care delivery, health care financing and costs, and quality and outcomes of care. The student will learn about how health services research projects are designed, conducted, reported in the literature, and used by policymakers, providers, and public health practitioners. The general overview provided in this course is intended to increase students' awareness of health services research and to encourage students to continue to learn more about the field and to consider health services research for their capstone projects."
+    },
+    {
+      "number": 531,
+      "title": "Perspectives on Women's Health",
+      "credits": 3,
+      "description": "The Perspectives in Women's Health Seminar uses a seminar format and class discussion to address the public health issues facing women today. The course will start with an overview of women's health as a construct, and will then challenge students to consider how public health programs, health care delivery organizations, and public policy can respond to emerging needs in women's health. The course will examine women's health across the lifecourse, focusing on key issues that affect women domestically and internationally, including health problems that exhibit a gender disparity. The aims of this course include the education of public health leaders in women's health, including the sociocultural and historical factors contributing to conceptions of women's health in the U.S. and worldwide. Students will understand how public health perspectives on women's health are changing, and key issues that are debated in the context of that change. Students will be able to identify key health problems facing women across the lifespan, and be able to identify key biological, psychosocial, and cultural factors that influence women's health."
+    },
+    {
+      "number": 532,
+      "title": "Population Health Informatics and Analytics",
+      "credits": 3,
+      "description": "This course explores the principles of population health informatics and analytics, where learners will have practical experiences using data such as clinical, genomic, financial, publicly available secondary data, and other health-related data for analysis aimed at improving patient care across populations by reducing outcome variations, increasing quality and patient satisfaction, and reducing cost of care."
+    },
+    {
+      "number": 534,
+      "title": "Public Health Law Research and Practice",
+      "credits": 3,
+      "description": "Public health law research is the \"scientific study of the relation of law and legal practices to population health\" (Wagenaar & Burris, 2013, p.4). This course is concerned not with what is legal to include within the jurisdiction of public health law (the objective of health law), but with whether law can empirically be shown to affect the health of a population. This course is for M.P.H., Dr.P.H., Ph.D., and J.D. students who want to develop knowledge and skills in a distinct and trans-disciplinary field that combines both law and scientific methods. This course will be highly interactive and will give students an overview of the general concepts of the field of public health law research, the processes or mechanisms through which a law manages to have measurable effects on people's health, and the various study designs for evaluating public health laws."
+    },
+    {
+      "number": 535,
+      "title": "Quality of Care Measurement",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "PHS520",
+              [
+                "STAT500",
+                "PHS550"
+              ],
+              "STAT507"
+            ]
+          }
+        ]
+      },
+      "description": "Emphasizes the concept and measurement issues involved in assessing and improving the quality of health care. Students will become acquainted with definitions of quality of care and with a broad range of measures and methods used in public reporting and outcomes research. The policy dimensions of quality of care measurement and improvement will be discussed. Course content will be useful to those interested in outcomes research or research on quality of care, and to those who will assume responsibility for quality of care measurement and improvement programs in public health and/or health care organizations."
+    },
+    {
+      "number": 536,
+      "title": "Health Survey Research Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS520",
+          "PHS550"
+        ]
+      },
+      "description": "This course provides instruction on how to design health research survey questionnaires and how to conduct survey studies."
+    },
+    {
+      "number": 538,
+      "title": "Mixed Methods Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS520",
+          "STAT500",
+          "PHS550",
+          "STAT507"
+        ]
+      },
+      "description": "This course will emphasize the use of qualitative methods to complement quantitative data. The course will review the assumptions and mental models that inform both approaches, and the ways in which qualitative and quantitative goals, questions, methods, analysis strategies, and presentation styles can be integrated. Students will first learn the basics of question-making, interviewing, coding, and analyzing qualitative data through practice and examples in the literature. After this overview of qualitative research, the course will highlight the main five designs of mixed methods in the social, behavioral, and health sciences: (1) explanatory sequential; (2) exploratory sequential; (3) embedded; (4) convergent parallel; and (5) transformative. The class will review current literature and guidelines from the National Institutes of Health as primary resources."
+    },
+    {
+      "number": 539,
+      "title": "Qualitative Health Research Methods",
+      "credits": 3,
+      "description": "The course presents the assumptions, techniques, and practical aspects of conducting qualitative health research. Students will develop a good research question, interviewing techniques and guides, codes and coding dictionaries, and an analysis plan for qualitative research. Students will practice qualitative interviewing skills and coding in a health research-based project. The students will critique qualitative articles and learn what constitutes a rigorous methodological and analytic approach to this type of public health research."
+    },
+    {
+      "number": 540,
+      "title": "Decision Analysis for Public Health",
+      "credits": 3,
+      "description": "Decision analysis is a tool that uses an explicit, quantitative structure to describe and analyze complex health care decisions. This course analyzes the principles and practice of decision analysis in the context of public health. Students in this course will learn to evaluate decision analyses in different settings, construct simple decision trees, understand the basic mechanics of tree evaluation and sensitivity analysis, and acquire skill in the interpretation and evaluation of a published decision analysis. Extension of basic techniques, such as screening, cost-effectiveness analysis, and the assessment of patient preferences will be covered. We will also cover advanced sensitivity analysis, including probabilistic sensitivity analysis, cost-effectiveness acceptability, and Markov models for chronic diseases."
+    },
+    {
+      "number": 541,
+      "title": "Decision Analysis II",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "PHS540"
+        ]
+      },
+      "description": "This course provides an introduction to the methods and applications of decision analysis in clinical decision making."
+    },
+    {
+      "number": 542,
+      "title": "Environmental Health Sciences",
+      "credits": 3,
+      "description": "Overview of the impact that chemical, physical, and biologic agents in the environment have on human health."
+    },
+    {
+      "number": 550,
+      "title": "Principles of Epidemiology",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "PHS520",
+          "STAT500"
+        ]
+      },
+      "description": "Students will learn to utilize basic epidemiological methods, i.e., design, calculate, analyze, interpret, report, in the examination of public health problems or programs. Topics include measurements, surveillance, outbreak investigation, bias, and study design."
+    },
+    {
+      "number": 551,
+      "title": "Advanced Epidemiological Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "PHS520",
+                "PHS550"
+              ],
+              "PHS510"
+            ]
+          }
+        ]
+      },
+      "description": "Advanced methodological course providing in-depth discussions on applications of advanced methods to design, execution, data analysis, and epidemiological studies reporting."
+    },
+    {
+      "number": 552,
+      "title": "Molecular Epidemiology of Chronic Disease",
+      "credits": 3,
+      "description": "This course provides instruction on molecular epidemiologic study design and methods in the study of chronic disease."
+    },
+    {
+      "number": 553,
+      "title": "Infectious Disease Epidemiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS550"
+        ]
+      },
+      "description": "Principles of infectious disease epidemiology and the use of epidemiologic methods to address infectious diseases of national and international importance."
+    },
+    {
+      "number": 554,
+      "title": "Statistical Methods in Public Health I",
+      "credits": 3,
+      "description": "Biostatistical methods in the design and analysis of epidemiological (observational) studies. This is a course on biostatistical methods in the design and analysis of epidemiological studies. The course addresses design issues with respect to (1) basic epidemiological (observational) studies, such as case-control, cohort, and cross-sectional studies, and (2) more complex studies, such as nested case-control, case-cohort, and case-crossover designs. Next, the course develops basic statistical inference for risk measures according to the nature of the outcome variables (binary and ordinal, continuous, rate, time-to-event). Confounding and interaction issues are discussed, along with statistical methods for handling them, such as standardization, stratification, and matching. More advanced methods are described based on multiple regression models that are specific to the outcome variables, as well as mediation modeling and propensity scores. Finally, computer-intensive analyses are considered, such as bootstrapping, permutation tests, and multiple imputation for missing data."
+    },
+    {
+      "number": 555,
+      "title": "Statistical Methods for Public Health II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS554"
+        ]
+      },
+      "description": "The course provides in-depth information regarding the principles behind randomized and controlled clinical trials and then delves into topics that are specific to clinical trials. Study designs determine how the data are analyzed and how to avoid/minimize clinical biases, so study designs are investigated: (a) Phase I-IV trials, (b) non-inferiority designs, (c) factorial designs, and (d) crossover designs. Next, sample size calculations are investigated to optimize precision, and the biostatistical and logistical aspects of randomization methods are described. Adaptive designs provide more efficient approaches, especially two-stage approaches. Adaptive designs are investigated for Phase II-III clinical trials. Many clinical trials invoke time-to-event outcomes, so survival analysis methods are covered in detail. Systematic reviews and meta-analyses consist of summarizing and analyzing the data across a set of independent clinical trials. In particular, fixed-effects and random-effects models for meta-analyses are explored. The final topic is medical diagnostic testing, in which clinical researchers try to identify new testing procedures for distinguishing between healthy and diseased individuals."
+    },
+    {
+      "number": 556,
+      "title": "Cancer Epidemiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS520",
+          "PHS550"
+        ]
+      },
+      "description": "Cancer is the second leading cause of death in the U.S. Therefore, public health professionals need to know the basic principles and methods of cancer epidemiology. This course will provide a foundation in basic cancer biology, the frequency of disease for the most common cancers, study design, data analysis, and the interpretation of data for cancer epidemiologic studies. The goal is to provide students with the knowledge and skills to apply epidemiologic methods to design and conduct cancer studies, to know study limitations due to biases, and to critically evaluate epidemiologic studies."
+    },
+    {
+      "number": 557,
+      "title": "Global Impact of Infectious Diseases",
+      "credits": 3,
+      "description": "This course is designed to provide an understanding of the global and local perspectives of infectious disease. This course will provide a fundamental knowledge of several different infections including virus, bacterial, and parasitic types. The course will then expand on this knowledge and discuss the impact of these infectious diseases on the global community, then discuss, analyze, and design methods for prevention and control. Diseases of global importance will include: malaria, HIV, hepatitis, dengue, emerging viral hemorrhagic fevers, causes of diarrheal illness, tuberculosis, polio, smallpox, cholera, syphilis, select parasitic diseases, and other diseases as necessitated by current global disease trends."
+    },
+    {
+      "number": 558,
+      "title": "Cardiovascular Disease Epidemiology",
+      "credits": 3,
+      "description": "Cardiovascular disease (CVD) is the leading cause of death in the U.S. Therefore, understanding the public health burden of CVD and the basic concepts and principles of CVD epidemiology is important for public health professionals and CVD researchers. This course will provide a foundation in CVD epidemiology, with a particular focus on the distribution, time trend, and major risk factors of CVD. This course will use examples from cornerstone population-based CVD epidemiological studies to help students understand the study design, analysis, and interpretation of CVD epidemiological studies. Students will use the Atherosclerosis Risk in Communities (ARIC) study data to perform epidemiological investigations of acute myocardial infarction and stroke and their behavioral/lifestyle and demographic determinants (in the first half of the semester) and the biological determinants (in the second half of the semester). The overall goal is to provide students with the knowledge and skills to apply epidemiological methods to design and conduct their own CVD epidemiological studies."
+    },
+    {
+      "number": 559,
+      "title": "Advanced Qualitative Research Methods for Public Health",
+      "credits": 3,
+      "description": "The general purpose of this course is to provide an introduction to the design and conduct of qualitative health research. Students will explore the fundamental principles, techniques, and practical aspects of qualitative research design and implementation. Students will develop skills in (1) formulating research questions, (2) conducting interviews and focus groups, (3) developing coding schemes, and (4) analyzing qualitative data. Students will gain experience critiquing qualitative articles and will learn to identify rigorous methodological and analytic approaches to qualitative research in public health."
+    },
+    {
+      "number": 560,
+      "title": "Epidemiological Research Methods",
+      "credits": 3,
+      "description": "The course will provide a foundation in the application of special methods in epidemiological research. The methodology course will cover four major topics: (1) distinct observational study designs; (2) effect modification and interpretation; (3) the applications of propensity score; and (4) causal inference using mediation analysis."
+    },
+    {
+      "number": 562,
+      "title": "Environmental Epidemiology",
+      "credits": 3,
+      "description": "This course provides students with an understanding of the major topics in environmental epidemiology and involves the application of epidemiologic methods to environmental exposures. Environmental exposures discussed include environmental tobacco smoke, radon, ambient air pollution, and others. The course material covers 1) the statistical methods and software coding needed to analyze these data, as well as the interpretation of the results of these methods; and 2) geographic information system (GIS) software and coding needed to display epidemiologic data. Spatial statistical methods in environmental epidemiology will be discussed, including geostatistical exposure modeling and areal and point-process data analysis. Also, linear mixed effect (LME) models, generalized additive models (GAMs) and generalized additive mixed models (GAMMs) and their use in environmental epidemiology will be discussed."
+    },
+    {
+      "number": 563,
+      "title": "Infectious Disease Epidemiology II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS550",
+          "PHS553"
+        ]
+      },
+      "description": "The course is designed to help students gain expertise in modern infectious disease research and apply epidemiological methods to address infectious diseases of national and international importance. Emphasis is given to methods of infectious disease dynamics, designs and evaluation of infectious disease surveillance systems, mathematical models in infectious disease epidemiology, and epidemiological methods for infectious disease research. Specific infectious diseases to be covered include HIV/STD, vaccine-preventable diseases and vaccine safety, healthcare-associated infections, global antimicrobial resistance, infection-associated cancers, and emerging infectious disease."
+    },
+    {
+      "number": 564,
+      "title": "Causal Inference Methods in Epidemiologic Research",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS550",
+          "PHS551"
+        ]
+      },
+      "description": "The course will give an overview of the framework for causal inference and its application in epidemiologic research. This course will first familiarize students with causal inference frameworks, including the concept of causal diagrams and counterfactual theory. Then, the course will describe methods for estimating causal effects under a time-fixed exposure or treatment. By the end of the course, students will be able to articulate well-defined causal questions, describe conditions sufficient for identifying causal effects, and apply appropriate data analyses for estimating causal effects in epidemiologic studies."
+    },
+    {
+      "number": 565,
+      "title": "Statistical Models for Tobacco Research",
+      "credits": 1,
+      "description": "Provide statistical analytical methods in estimating potential or empirical effects of regulation of tobacco. This course will provide statistical analytical methods in estimating potential or empirical effects of regulation of tobacco (i.e., cigarette consumption, nicotine addiction, pathology, health states). This course will cover skills and tools to construct models for comparing effects under various model assumptions, and project health benefits or harms. This course will also discuss statistical methods of modeling smoking and nicotine dependence and developing cost effectiveness models varying tobacco use and nicotine dependence outcomes. Moreover this course will present models of carcinogenesis based on exposures to tobacco. The primary goal of this course is to enable students to gain an understanding of the potential or anticipated processes and effects by which tobacco regulation may be most effective and least effective in producing public health benefit."
+    },
+    {
+      "number": 566,
+      "title": "Deep Learning with Applications to Genomics and Health Informatics",
+      "credits": 3,
+      "description": "This course covers basic theory and applications for modern deep learning methods in genomics and health informatics. It emphasizes topics of neural networks in deep learning domain and includes coding lab sessions to reinforce the material covered in class. We will explore not only basic theory for deep neural networks but also a range of classic and contemporary learning algorithms and models, including deep feed-forward networks, optimization and computation theories, convolutional neural networks, recurrent neural networks, generative models like transformers (the backbone of ChatGPT), etc. Students will apply deep learning models to biomedical problems and gain hands-on experience using instructor-recommended programming languages and open-source frameworks."
+    },
+    {
+      "number": 567,
+      "title": "Machine Learning with Applications to Omics Data",
+      "credits": 3,
+      "description": "This course introduces fundamental theory and applications of machine learning methods in the context of omics data, including genomics and other complex biological datasets. Students will explore both the detailed theoretical foundations and practical applications of a range of supervised and unsupervised learning techniques. Key topics include linear models, discriminant analysis, support vector machines, tree-based methods, and model assessment techniques. The course also includes coding lab sessions that provide hands-on experience with instructor-recommended programming languages and prepare students to apply machine learning models to biomedical research challenges."
+    },
+    {
+      "number": 570,
+      "title": "Health Economics and Economic Evaluation",
+      "credits": 3,
+      "description": "An introductory course on applied economic evaluation, with emphasis on micro-economic theory, cost-effectiveness and economic modeling."
+    },
+    {
+      "number": 571,
+      "title": "Health Services Organization and Delivery",
+      "credits": 3,
+      "description": "Examination of health systems, organization, financing, and evaluation; trends, problems, and issues."
+    },
+    {
+      "number": 574,
+      "title": "Methods in Clinical and Public Health Intervention Design",
+      "credits": 3,
+      "description": "This course provides students with evidence-based guidelines for designing, adapting, implementing, and evaluating public health programs, clinical research studies, and public health policy. The course will expose students to best practices for developing programs and interventions, challenges faced in research and evaluation, and novel methodological approaches for engaging communities and populations. Classes will be divided into three sections, didactic instruction, case study critique, and interactive discussions with researchers. Didactic instruction will cover pertinent topics such as challenges faced when developing public health programs and interventions, conducting a needs assessment, research evaluation, working with under-served and vulnerable communities, and public health policy. During the case study critique the instructor or the students (individually or in dyads) will lead the class in a critical review and discussion of case studies related to the topics discussed in class. The research talk and discussion section of the course will consist of presentations and discussions led by academic researchers and individuals working in the private and public sector. Each speaker will describe a research program, project, or evaluation they led or are currently leading. The speaker will describe for the students the population or health topic of interest explored through the program or study, the analytical methods used, the duration of the study, and study challenges and successes. Students will be asked to consider the methods used by each speaker and determine if their approach would be applicable to and effective for their population of interest."
+    },
+    {
+      "number": 575,
+      "title": "Integrative Seminar in Public Health Leadership",
+      "credits": 3,
+      "description": "Provides the knowledge and skills necessary to understand the dynamic nature of leadership within the public health sector."
+    },
+    {
+      "number": 576,
+      "title": "Integrative Seminar in Public Health Policy",
+      "credits": 3,
+      "description": "Provides in-depth exploration of the development, implementation, and analysis of public health and health-related policy."
+    },
+    {
+      "number": 577,
+      "title": "Integrative Seminar in Social & Behavioral Determinants of Health",
+      "credits": 3,
+      "description": "Students examine the multiple determinants of population health and initiatives that could improve population health and reduce health disparities."
+    },
+    {
+      "number": 578,
+      "title": "Advanced Integrative Public Health Leadership",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS575"
+        ]
+      },
+      "description": "Provides the advanced knowledge and skills necessary to extend the understanding of leadership within public health venues. Advanced Integrative Public Health Leadership will extend the discipline and practice of leadership to prepare students for leading public health initiatives for diverse populations. The advanced concepts covered in this course bridge the foundational concepts learned in previous Dr.P.H. courses to these specialized areas of Leadership constructs. Students will learn advanced leadership theories such as transactional, transformational, servant, and authentic leadership, and how to apply these academic theories to the field of public health leadership, while being aware and culturally understanding of advanced ethical and moral issues, and be able to work effectively with people who have different cognitive styles for problem solving. This course will expose students to the importance of both having and being a mentor and sponsor for professional and personal growth within the public health discipline. Current and relevant social justice themes will be represented through case studies and media reports giving students the opportunities to face and make challenging decisions. This course will have a research and public speaking component to offer students experiential learning within the context of real world problems impacting the health of various populations."
+    },
+    {
+      "number": 580,
+      "title": "Clinical Trials: Design and Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS520",
+          "PHS521"
+        ]
+      },
+      "description": "This is a foundational course applying biostatistical principles to the design and conduct of randomized and controlled clinical trials; such as estimation of sample size requirements, analytic methods, ethical considerations, and reporting."
+    },
+    {
+      "number": 582,
+      "title": "Biostatistical Methods in Clinical Trials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT512",
+          "STAT514"
+        ]
+      },
+      "description": "Recommended Preparations: Ph.D. Biostatistics candidates must have completed a Master's degree that includes at least four graduate level Statistics courses. Dr.P.H. candidates must have completed a graduate (e.g., master's) or advanced professional (e.g., MD) degree. Dr.P.H. candidates may also be required to successfully complete PHS 520 , a core Biostatistics course, in their first semester. The background knowledge of these candidates provides sufficient preparation for PHS 582 . An in-depth course on biostatistical methods in the design and analysis of randomized and controlled clinical trials. PHS 582 Biostatistical Methods in Clinical Trials (3) This is an in-depth course on biostatistical methods in the design and analysis of randomized and controlled clinical trials. The course provides foundational information regarding the principles behind randomized and controlled clinical trials and then delves into topics that are specific to clinical trials. Study designs determine how the data are analyzed and how to avoid/minimize clinical biases, so study designs are investigated: (a) Phase I-IV trials, (b) non-inferiority designs, (c) factorial designs, and (d) crossover designs. Next, sample size calculations are investigated to optimize precision, and the biostatistical and logistical aspects of randomization methods are described. Adaptive designs can provide more efficient approaches, especially two-stage approaches. Adaptive designs are investigated for Phase II-III clinical trials. Many clinical trials invoke time-to-event outcomes, so survival analysis methods are covered in detail. Systematic reviews and meta-analyses consist of summarizing and analyzing the data across a set of independent clinical trials. In particular, fixed-effects and random-effects models for meta-analyses are explored. The final topic is medical diagnostic testing, in which clinical researchers try to identify new testing procedures for distinguishing between healthy and diseased individuals."
+    },
+    {
+      "number": 583,
+      "title": "Asymptotic Tools",
+      "credits": 3,
+      "description": "An advanced theoretical course on statistical large sample theory and its application in biomedical and public health research. This is an advanced theoretical course on statistical large sample theory and its application in biomedical and public health research. Students are expected to understand the theorems and proofs on large sample theory, and conduct statistical derivation and asymptotic inference by applying the knowledge from the course. Important asymptotic statistics ideas on basic probability theory, statistical large sample theory, and efficient estimation and testing are covered in this course. Specific topics include the modes of convergence, the law of large numbers, Taylor's theorem and delta method, order statistics, central limit theorem, U-statistics, likelihood inference, M-estimates, L-estimates, efficiency of test, goodness of fit, Bootstrap and Jackknife estimates, and permutation and rank tests. In addition, statistical computing is vital for understanding asymptotic theory so program techniques based on R/SAS software are learned and utilized during the course. Students are expected to have taken at least two graduate level courses in mathematical statistics."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "A closely monitored, clinical or population based research project that is conducted during the second year of the PHS MS curriculum."
+    },
+    {
+      "number": 595,
+      "title": "Public Health Practice Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "This course provides Master of Public Health degree students with hands-on, \"real-world\" experience in the practice of public health."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects including non-thesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be of topical or of special interest."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Research training provided to enable the student to advance his or her knowledge about a selected topic in public health sciences. PHS 600 Thesis Research (1-9 per semester/maximum of 9) Research training to enable the student to advance his/her knowledge about a selected topic in public health sciences."
+    },
+    {
+      "number": 801,
+      "title": "Data Management",
+      "credits": 1,
+      "description": "Development and implementation of plans for managing clinical research data, collection and processing data, and ensuring data quality."
+    },
+    {
+      "number": 802,
+      "title": "Practice of Public Health",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "PHS501"
+        ]
+      },
+      "description": "Provides knowledge and skills in methods and procedures used for the practice of public health. PHS 802 Practice of Public Health (2) Practice of Public Health will have two major components. The first is the presentation of core public health knowledge and skills (i.e., evidence-based practice, public health infrastructure, sources of public health data, the public health agenda, the profession of public health, funding public health, professional development for the public health professional, and professional communication) related to the practice of public health. This information will be presented to provide a thorough understanding of the public health system and how it functions in order to ensure good public health practice. This first component will be presented via lectures, discussions and course assignments. The second component of the course will include the examination and analysis of public health methodology and procedures of public health practice. This component of the course will be accomplished via students' analyses and presentations of public health case studies."
+    },
+    {
+      "number": 803,
+      "title": "Principles of Global Health",
+      "credits": 3,
+      "description": "This course provides an overview of the major issues and initiatives in contemporary global health. This course provides an overview of the major issues and initiatives in contemporary global health. Throughout the course we will explore the political, social, economic, cultural, and environmental determinants of health. We will review the role of global health players such as the World Health Organization, UN agencies, and governmental and nongovernmental organizations, as well as how they interact with health systems to improve health. This course will also discuss the major health issues worldwide and key factors associated with health inequalities. The course will take a public health approach, but will also touch upon global health frameworks from other disciplines such as anthropology and sociology."
+    },
+    {
+      "number": 804,
+      "title": "Integrating Systems Thinking in Global Health",
+      "credits": 3,
+      "description": "In this course, students will engage in case studies of global health programs and initiatives. A systems thinking framework will be applied to the cases and students will use the framework to anticipate unintended consequences related to international field work and to propose possible solutions. Cases will illustrate the complexity of global health work and the importance and implications related to the interconnectedness and complementary roles of critical public health systems. The cases used in this course will include a spectrum of small to large scale programs and short-term to long-term response efforts. The framework can be applied domestically and the course will consider domestic health issues. Cases will cover the major topics of the public health system, biosocial context, chronic disease, infectious disease, and systems failures."
+    },
+    {
+      "number": 805,
+      "title": "Public Health Policy Analysis",
+      "credits": 3,
+      "description": "This course takes a pragmatic approach to public health policy analysis that aims to provide an understanding of how to do policy analysis. The course uses a case study format to investigate both historical cases and contemporary issues, in parallel, to understand the real-life complexity and challenges in health policy analysis. Attention will be given to what theoretical, ethical, and analytic frameworks best inform policy analysis, what research designs and methods to use, and the historical, political, and contextual influences. Health policy issues are often high profile and demand a public response. By examining health policy cases, both retrospectively and prospectively, students will develop a thoughtful conceptualization of the policy process and a systematic approach to construct clear and testable propositions about the health policy topic they are studying. The case study approach will provide lessons on the evolution of policy implementation, successes, and failures, and provide tools to assist students, as future policy-makers, in evaluating and planning current and future health policy"
+    },
+    {
+      "number": 806,
+      "title": "Public Health Ethics",
+      "credits": 3,
+      "description": "Public Health Ethics will familiarize students with the tenets that apply to health care delivery, experimentation, research, and human behavior as guided by principles developed over time to apply to government oversight of public health. Many of these principles are the results of specific cases or phenomena that have arisen over time and led to social interventions as a result. The course will look at several seminal events and the ethical principles derived from them. In many cases, principles are still being debated and the lines between ethical and unethical behavior still being negotiated. We will examine the differences between morals, ethics, and laws. We will explore the consequences of violating them. As scientific research grows in size and complexity, new principles will be needed. Students will also demonstrate a sound sense of scholarship and research integrity (SARI) by participating in ongoing discussions about Responsible Conduct of Research (RCR). How should these be formulated by concerned and caring individuals? The course will give some answers. Major topics will include moral reasoning, ethical decision-making frameworks, research integrity, and numerous case studies that highlight the interplay between ethics, law, and public health issues past, present, and future. The aims of this course include the education of public health leaders in applying ethical principles to public health issues, and enhancing decision making skills and capabilities that are necessary for creating an ethical approach to public health practice and research."
+    },
+    {
+      "number": 807,
+      "title": "Public Health Education Methods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BBH504",
+              "PHS505"
+            ]
+          }
+        ]
+      },
+      "description": "Provides the knowledge and skills associated with the methods used to deliver successful public health education programs."
+    },
+    {
+      "number": 808,
+      "title": "Population Health Management",
+      "credits": 3,
+      "description": "This course is designed to provide students with a contextual understanding of the reasons for a renewed focus on population health as a clinical care-delivery model. An overview of the current state of the health of the U.S. population will set the stage for a brief examination of the Affordable Care Act. New care delivery models, such as Accountable Care Organizations, that are promoted in the ACA are discussed. The course provides an overview of the role Centers for Medicare and Medicaid Services (CMS), state governments, and payers play in creating new healthcare financing models that incentivize a shift from episodic to value-based care. Exploration of changes in reimbursements, the importance of quality measures, and implementation of evidence-based guidelines will be presented. With this foundation, the course focus turns to examine the many elements of population health management as a concept of broader public health goals. These elements include patient attribution models and risk identification and stratification into sub-populations, as well as care coordination - a key strategy in meeting the health needs of a population across the continuum of care. The specific intervention strategies of chronic condition management and transitions of care are described. The primary care setting, which is the focal point of population health management, is explored. The transformation of this care provider to a patient-centered medical home is described along with the evolution of interdisciplinary care teams, the use of extenders such as medical assistants, and the shifted emphasis to prevention and health promotion. The emphasis on the role of the patient in population health, the need for improvements in health literacy, consideration of the social determinants of health, and the need for health education are discussed. An overview of various technology and data analytical tools and processes used to support population health management care delivery models is provided. Discussion of the importance of using data to track, trend, and measure population health interventions will continue in the technology section of the course. The course will conclude with examinations of the multiple challenges and barriers that health care organizations, payers, and patients experience with value-based care and population health care delivery models. Lastly, a look forward at trends in policy and regulations, application of comparative effectiveness research, and the pervasiveness of `big data' will allow students to explore the future of health care delivery transformation."
+    },
+    {
+      "number": 809,
+      "title": "Principles of Public Health",
+      "credits": 3,
+      "description": "This course provides students with a foundation in public health principles and practice. Students will examine public health models and frameworks, determinants of health, indicators of health, and the etiology of disease. Students will learn about public health milestones and innovations, measures of health and well-being, issues surrounding health disparities, ethical issues in public health practice and research, and the role of state and county health departments in disease control and prevention. Students will examine today's priority health concerns using a public health framework."
+    },
+    {
+      "number": 810,
+      "title": "Health Behavior Interventions for Public Health",
+      "credits": 3,
+      "description": "Evaluation of intervention strategies from a biobehavioral health context; theories of change processes in health."
+    },
+    {
+      "number": 837,
+      "title": "Health Policy and Law",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS571"
+        ]
+      },
+      "description": "This course provides an overview of the American healthcare policy process as it operates at the federal, state, and local levels in both public and private organizations. Both theoretical and practical material will be utilized to examine the ways health policy is formulated in the political arena in the United States. The course will examine the mechanisms that come into play between stakeholders and elected and appointed officials in the formulation, passage and implication of health policy at the state and federal levels. Particular attention will be directed towards the legislative and regulatory processes that impact on the final enactment of law. This course will also examine those facets of the legal system that permit the implementation of policy."
+    },
+    {
+      "number": 863,
+      "title": "Applied Tobacco Research",
+      "credits": 3,
+      "description": "Provides knowledge and skills in methods for tobacco research, and the use of research to inform tobacco regulation and policy. Applied Tobacco Research will have two major components. The first is a seminar series, presenting topics within four substantive content areas in applied tobacco research: 1) Smoking epidemiology research models, 2) Smoking prevention and biobehavioral interventions, 3) Tobacco regulatory policy, ethics, and consumer influence, and 4) Comparative effectiveness research on tobacco and nicotine regulatory strategies. The second component of the course will include the examination and analysis of a topic area of interest to the student, within the domains of tobacco regulatory science and applied tobacco research."
+    },
+    {
+      "number": 864,
+      "title": "TCORS Tobacco-Related Biomarkers",
+      "credits": 2,
+      "description": "Provides knowledge and skills associated with using biomarkers in tobacco research and regulation. This course will provide students with the knowledge and skills associated with using biomarkers in tobacco research and regulation. Topics covered include types of tobacco biomarkers, the effect of smoking behaviors on exposure, biomarkers of smoking-related diseases and disorders, the use of biomarkers in clinical research, analysis and interpretation of biomarker data, and the use of biomarkers in regulatory science."
+    },
+    {
+      "number": 890,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing, professionally oriented seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 892,
+      "title": "Directed Studies in Public Health",
+      "credits": 3,
+      "description": "The Directed Studies course is intended to help prepare students for dissertation research and/or culimnating manuscript preparation."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHS501",
+          "PHS520",
+          "PHS550",
+          "PHS571"
+        ]
+      },
+      "description": "A culminating experience in which students create and present a scholarly project based on the competencies gained in previous courses."
+    },
+    {
+      "number": 895,
+      "suffix": "A",
+      "title": "Master of Public Health Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Provides Master of Public Health (MPH) degree students with hands-on, real- world experience in the practice of public health. Students are required to complete 20 hours of practice-based activities prior to enrollment in this course. These activities can include community-based volunteer opportunities, PSU COM career development training events, PHASE events, or other activities as approved by the Public Health Program."
+    },
+    {
+      "number": 895,
+      "suffix": "B",
+      "title": "Advanced Field Experience",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "This course provides DrPH degree students with advanced hands-on, practical experience in the practice of public health. Students are required to complete 20 hours of practice-based activities prior to enrollment in this course. These activities can include community-based volunteer opportunities, PSU COM career development training events, PHASE events, or other activities as approved by the Public Health Program."
+    },
+    {
+      "number": 895,
+      "suffix": "C",
+      "title": "MPH Global Health Internship",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides Master of Public Health (M.P.H.) students with real-world experience in the practice of public health in international or local settings. The Master of Public Health (M.P.H.) global health internship aims to provide M.P.H. students with hands-on experience in the practice of public health. The internship builds and reinforces public health practice skills by enabling students to apply what they have learned in the classroom to real-world public health problems and settings. As the M.P.H. is a professional degree, an internship in a real-world public health setting is critical to students' academic and professional development, and their ability to become competent in the practice of public health. Students complete their internships at public health agencies, organizations, and/or institutions, and work on substantive projects that contribute to the mission, goals, and objectives of the sites in which they are placed. Students are matched with public health internships based on their respective academic and professional interests and goals. Students may be matched with pre-approved internships, which have been identified by the M.P.H. program leadership. Students also may seek out internship opportunities on their own. Internships that are not pre-approved must be reviewed and approved by the M.P.H. program leadership before students can begin. At each internship site, students report to an on-site Preceptor. Preceptors are identified by the M.P.H. program leadership and generally are key decision-makers at their respective agencies, organizations, or institutions. Prior to beginning the internship, students will work with the course Director to develop individualized learning objectives. These learning objectives will shape a student's experience at the internship site and the types of projects the student will complete. The learning objectives also will provide students with a measure against which they can evaluate their efforts and the internship sites. Students are required to complete 20 hours of practice-based activities prior to enrollment in this course. These activities can include community-based volunteer opportunities, PSU COM career development training events, PHASE events, or other activities as approved by the Public Health Program."
+    },
+    {
+      "number": 895,
+      "suffix": "D",
+      "title": "Dr.P.H. Global Advanced Field Experience",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Provides Doctor of Public Health Students (Dr.P.H.) students with real-world experience in the practice of public health in international or local settings. The Doctor of Public Health Students (Dr.P.H.) Global Advanced Field Experience aims to provide Dr.P.H. students with hands-on experience in the practice of public health. The Global Advanced Field Experience builds and reinforces public health practice skills by enabling students to apply what they have learned in the classroom to real-world public health problems and settings. As the Dr.P.H. is a professional degree, gaining experience in a real-world public health setting through the Global Advanced Field Experience is critical to students' academic and professional development, and their ability to become competent in the practice of public health. Students may complete their Global Advanced Field Experience at public health agencies, organizations, and/or institutions, and work on substantive projects that contribute to the mission, goals, and objectives of the sites in which they are placed. Students are matched with sites based on their respective academic and professional interests and goals. Students may be matched with pre-approved sites, which have been identified by the Dr.P.H. program leadership. Students also may seek out Global Advanced Field Experience opportunities on their own. Global Advanced Field Experience sites that are not pre-approved must be reviewed and approved by the Dr.P.H. program leadership before students can begin. At each site, students report to an on-site Preceptor. Preceptors are identified by the Dr.P.H. student and approved by Dr.P.H. program leadership; they generally are key decision-makers at their respective agencies, organizations, or institutions. Prior to beginning the Global Advanced Field Experience, students will work with the course Director to develop individualized learning objectives linked with at least five Dr.P.H. competencies. These learning objectives will shape a student's experience at the internship site and the types of projects the student will complete. The learning objectives also will provide students with a measure against which they can evaluate their efforts and their ability to meet their competencies."
+    },
+    {
+      "number": 896,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects with a professional orientation, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 896,
+      "suffix": "A",
+      "title": "Integrative Doctoral Research I",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "requisites": {
+        "previous": [
+          "PHS892"
+        ]
+      },
+      "description": "This course provides Dr.P.H. degree students with opportunities to demonstrate knowledge and skills gained through doctoral research via manuscript development. Integrative Doctoral Research I is the first of two courses required for the integrative culminating experience for doctor of Public Health students delivered on an individualized basis. Dr.P.H. students will be required to develop two major components for their Dr.P.H. integrative experience that are linked conceptually: two publishable-quality manuscripts With individualized guidance from their doctoral adviser and doctoral committee, students will develop two manuscripts that comprehensively address, generate, and/or interpret and evaluate knowledge applicable to public health practice. Manuscripts are encouraged to be of an applied nature and must demonstrate students' abilities to conduct independent research on a contemporary public health issue. Students will demonstrate the application of advanced public health practice skills and knowledge in the design and execution of a scholarly project, the analysis and interpretation of the findings, and the application of the new knowledge to advance public health practice. This work should contribute to the evidence base of public health practice, be of publishable quality, be linked to the doctoral portfolio contents and demonstrate critical thinking and rigorous analytic strategies."
+    },
+    {
+      "number": 896,
+      "suffix": "B",
+      "title": "Integrative Doctoral Research II",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "requisites": {
+        "previous": [
+          "PHS892",
+          "PHS896A"
+        ]
+      },
+      "description": "Integrative Doctoral Research II is the second of two courses required for the integrative culminating experience for Doctor of Public Health students and is delivered on an individualized basis. Dr.P.H. students will be required to develop a major component for their Dr.P.H. integrative experience that is linked conceptually to two publishable-quality manuscripts - a doctoral portfolio. With individualized guidance from their doctoral adviser and doctoral committee, students will develop a doctoral portfolio that comprehensively addresses, generates, and/or interprets and evaluates knowledge applicable to public health practice. The portfolio will build upon work completed in prior coursework, the advanced field experience, and other related integrated doctoral research. Students will develop a doctoral portfolio throughout their program that will document how their advanced field experience and doctoral research has informed their leadership in advancing and integrating research into public health practice. The contents of the doctoral portfolio will be used to inform the development of the student¿s doctoral research and ultimately two publishable manuscripts that stem from this research. Components of the portfolio may include, but are not limited to, research (e.g., publications, conference presentations), teaching (academic and non-academic, community-based teaching), and field and other service learning experiences. Portfolios will require reflection on in-class and out-of class experiences and demonstrate students' broad public health knowledge, specialized knowledge, translation of this knowledge into evidence-based public health practice, and leadership style."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses offered infrequently on a comparatively narrow subject that may be topical or of special interest."
+    }
+  ]
+}

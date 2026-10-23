@@ -1,0 +1,959 @@
+{
+  "subject": "ASTRO",
+  "courses": [
+    {
+      "number": 1,
+      "title": "Astronomical Universe",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "ASTRO 1 Astronomical Universe (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Students who have passed ASTRO 5 , ASTRO 6 , ASTRO 7N or ASTRO 10 may not take this course for credit. Overview of modern understanding of the astronomical universe. ASTRO 1 is an introductory course for non-science majors. It provides a broad introduction to Astronomy with qualitative descriptions of the dazzling and varied contents of the universe including planets, the Sun and other stars, exoplanets, red giants, white dwarfs, neutron stars, black holes, supernovae, galaxies, dark matter, and more. The course will explore how these objects form and change and interact, how the whole whole universe formed and changes (cosmology), and where Earth fits in the vast scheme of things. Students will learn how our relative place, orientation, and motion in space dictate our changing view of the sky (daily and yearly sky motions, phases of the moon) and conditions on Earth (arctic, tropics, and seasonal changes). Descriptions will build upon the basic physics of gravity, light, and atoms, and will be discussed in the context of the process of science as a robust and self-correcting way of learning and knowing that relies on making and testing predictions by gathering evidence. The goal of this course is to cover most of the areas of modern astronomy at a level which requires only basic mathematics."
+    },
+    {
+      "number": 5,
+      "title": "The Sky and Planets",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "The development of our modern understanding of the visible sky and planetary systems. Students who have passed ASTRO 1 , ASTRO 7N , or ASTRO 10 may not take this course for credit. ASTRO 5 The Sky and Planets (3) (GN) will introduce students to the wonders of the universe and help them to understand how the universe works through the laws of physics. During the semester, they will learn about the different observed motions of objects in our sky, how astronomical objects influence our concepts of time, the nature of light and spectra, how planetary systems are formed and comparative details about our solar system and other planetary systems. Many colorful images and movies of the solar system have been collected by robotic satellite missions like Voyagers I & II, the Magellan mission to Venus, Mars rovers and orbiters, the Galileo and Juno missions to Jupiter, the Cassini and Huygens missions to Saturn, and the New Horizons mission to Pluto and the Kuiper Belt. These and other images will be used to convey the excitement of discovery and nature of astronomical study of the Solar System to our students."
+    },
+    {
+      "number": 6,
+      "title": "Stars, Galaxies, and the Universe",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "ASTRO 6 Astronomical Universe (3) (GN) This course meets the Bachelor of Arts degree requirements. Students who have passed ASTRO 1 , ASTRO 7N , or ASTRO 10 may not take this course for credit. Overview of modern understanding of stars, galaxies, and cosmology. ASTRO 6 is an introductory course for non-science majors. It provides a broad introduction to many areas of Astronomy with qualitative descriptions of the dazzling and varied contents of the universe including the Sun and other stars, red giants, white dwarfs, neutron stars, black holes, supernovae, galaxies, dark matter, and more. The course will explore how these objects form and change and interact, how the whole whole universe formed and changes (cosmology), and where Earth fits in the vast scheme of things. Descriptions will build upon the basic physics of gravity, light, and atoms, and will be discussed in the context of the process of science as a robust and self-correcting way of learning and knowing that relies on making and testing predictions by gathering evidence. The goal of this course is to cover most of the areas of modern astronomy at a level which requires only basic mathematics."
+    },
+    {
+      "number": 7,
+      "suffix": "N",
+      "title": "The Artistic Universe",
+      "credits": 3,
+      "attributes": [
+        "GA",
+        "GN",
+        "INTER"
+      ],
+      "description": "ASTRO 7N (GA/GN) is both an introductory course in astronomy for non-science majors and a creative space for those with science backgrounds interested in visual arts; it provides students the opportunity to demonstrate understanding and develop a personal connection to the subject by designing four art projects. Students will learn the broad concepts of astronomy by playing an immersive video game, which allows them to 1) explore seasons, phases of the Moon, light, gravity, and telescopes from a virtual colony on Mars; 2) fly from planet to planet in the Solar System and learn about their properties and formation; 3) visit the Sun and other stars, learn how they produce energy, and about their life cycles; 4) fly through the cosmos and construct their own universe, particle by particle. Students will also learn about the relationships and exchanges between arts and sciences, and explore inspiration and perspective on these topics by designing themed art projects using traditional and digital media. These projects include assembling a photo- journal of astronomically-relevant subjects, constructing their own video-game-like scene, interpreting data to inform a plausible depiction of an alien world, and producing three- color images using methods like those employed by astronomers to compose and display Hubble Space Telescope images. Students who have passed ASTRO 1 , ASTRO 5 , ASTRO 6 or ASTRO 10 may not take this course for credit."
+    },
+    {
+      "number": 10,
+      "title": "Elementary Astronomy",
+      "credits": 2,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "description": "ASTRO 10 Elementary Astronomy) (GN) (BA) This course meets the Bachelor of Arts degree requirements. Students who have passed ASTRO, 1, ASTRO 5 , ASTRO 6 , or ASTRO 7N may not take this course for credit. Students may not receive General Education credit for ASTRO 10 unless they also take ASTRO 11 . Overview of modern understanding of the astronomical universe. ASTRO 10 is an introductory course for non-science majors. It provides a broad introduction to Astronomy with qualitative descriptions of the dazzling and varied contents of the universe including planets, the Sun and other stars, exoplanets, red giants, white dwarfs, neutron stars, black holes, supernovae, galaxies, dark matter, and more. The course will explore how these objects form and change and interact, how the whole whole universe formed and changes (cosmology), and where Earth fits in the vast scheme of things. Students will learn how our relative place, orientation, and motion in space dictate our changing view of the sky (daily and yearly sky motions, phases of the moon) and conditions on Earth (arctic, tropics, and seasonal changes). Descriptions will build upon the basic physics of gravity, light, and atoms, and will be discussed in the context of the process of science as a robust and self-correcting way of learning and knowing that relies on making and testing predictions by gathering evidence. The goal of this course is to cover most of the areas of modern astronomy at a level which requires only basic mathematics."
+    },
+    {
+      "number": 11,
+      "title": "Elementary Astronomy Laboratory",
+      "credits": 1,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "concurrent": [
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO10"
+            ]
+          }
+        ]
+      },
+      "description": "Selected experiments and explorations to illustrate major astronomical principles and techniques. Telescopic observations of planets, stars and nebulae. ASTRO 11 Elementary Astronomy Laboratory (1) (GN)(BA) This course meets the Bachelor of Arts degree requirements. ASTRO 11 is the 1 credit laboratory component of this overview of astronomy and is intended to be taken in conjuction with ASTRO 10 . It covers material similar to the lecture component in ASTRO 10 , but the selected topics are covered in more depth and are focused on active learning components. Weekly two-hour labs may include investigating the habitable zone of a variety of stars, investigating the phases of the moon, analysis of the properties of stars in a color-magnitude diagram, analysis of the colorful spectra of different chemical elements, and exploration of one of the deepest images of space ever obtained. In addition, students will complete a semester nighttime observing project that typically involves learning some constellations, tracing phases of the moon, and sketching images seen through telescopes or binoculars at the student observatory."
+    },
+    {
+      "number": 19,
+      "suffix": "N",
+      "title": "Being in the Universe",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GN",
+        "INTER",
+        "BA-H",
+        "BA-N"
+      ],
+      "internalEquivalents": [
+        "CMLIT19N"
+      ],
+      "description": "\"Being in the Universe\" considers three fundamental questions of human existence from both humanistic and scientific perspectives: (1) What is the nature of our universe, and to what extent are creatures like ourselves a predictable consequence of it? (2) What is the nature of time, and what does it mean to be a conscious being living our lives through time? (3) What would it mean for humans to be alone in the Galaxy or the universe, or alternatively, not alone? \"Being in the Universe\" is an integrative GH+GN GenEd course. The course's three major units cover the following topics: (1) We discuss cosmology and religion as human enterprises, as well as the history of science; (2) We study the basic scientific theory of the Big Bang universe, and consider its implications for human life; (3) We address contemporary theories of the multiverse from scientific, philosophical, and literary perspectives; (4) We consider the thermodynamic and relativistic theories of time, and the basic philosophical approaches to time, and discuss the implications of these for our ordinary human experience of the past, present, and future; (5) We discuss the history of life in the universe, the possibility of life on other planets, and the social, religious, and imaginative reactions to those possibilities in literature and film."
+    },
+    {
+      "number": 20,
+      "title": "First-Year Astronomy Seminar",
+      "credits": 2,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "Introduction to the study of modern astronomy through discussions, activities, and writing."
+    },
+    {
+      "number": 21,
+      "title": "Introduction to Research in Astronomy",
+      "credits": 2,
+      "description": "The course is designed to provide first year undergraduate students in both the ASTRO and PASTR majors with necessary tools and techniques to perform research. Students will practice a variety of techniques on authentic astronomical data, which might include light curves from the Kepler mission, galaxy and stellar spectra from the Sloan Digital Sky Survey, or pulsar data from the Green Bank or Arecibo telescopes. An emphasis will be placed on using common tools for observational astronomy, such as viewing astronomical FITS images in SAOimage. Students will be introduced to the common programming languages and environments used by astronomers at the time the course is offered, which currently includes Python and IDL. Students will be given experience in calculating statistical information about a set of astronomical data using the R programming language and its built-in tools. Students will make plots to illustrate a pattern in their data using the tools in Python, IDL, or R, for example."
+    },
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 97,
+      "suffix": "G",
+      "title": "Special Topics - GenEd",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "GN"
+      ],
+      "description": "Formal course given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This is a Special Topics GenEd course."
+    },
+    {
+      "number": 116,
+      "title": "Introduction to Astronomy for Educators",
+      "credits": 3,
+      "internalEquivalents": [
+        "SCIED116"
+      ],
+      "description": "This course is designed to engage students with the big ideas of astronomy in ways that will help them understand both the content of astronomy, as well as the practices of science as carried out by astronomers. The course is designed for prospective elementary and middle school teachers (PK-4 and 4-8 majors), although it is available to other non-science majors. Throughout the course, students engage in a series of investigations that lead towards the development of evidence-based explanations for patterns observed in the current Solar System. Investigations will include computer-based simulations, night-sky observations, and use of simple laboratory equipment. These investigations lead students towards an understanding of how observations of the current Solar System can be explained by the model of its formation. The course is designed to build from students' own personal observations of the day and night sky towards developing increasingly sophisticated explanations for those phenomena and beyond. Conducting these astronomy investigations will help students understand fundamental aspects of physics, thus broadly preparing them for future science teaching in these domains. The course models evidence-based pedagogy, thus helping to prepare students for future teaching careers as they learn effective strategies for teaching science."
+    },
+    {
+      "number": 120,
+      "title": "The Big Bang Universe",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO6",
+              "ASTRO7N",
+              "ASTRO10"
+            ]
+          }
+        ]
+      },
+      "description": "This course meets the Bachelor of Arts degree requirements. Astronomical observations made during the last 70 years, combined with mathematical physical theory (Einstein's General Relativity), has led to a dramatic new view of the history of the Universe. Ten to twenty billion years ago, all the material that is now contained in stars, planets, and galaxies was then compressed into a region, smaller than a pinhead, and so hot that atoms could not survive. This fiery cauldron cooled and expanded, forming hydrogen and helium, and eventually all the materials and structures that we know today. This course will discuss the evidence, theories and controversies of this new scientific cosmology, commonly known as 'the Big Bang'. This class is designed for the non-science students who, after learning the fundamentals of astronomy in ASTRO 1 (GN), ASTRO 6 (GN), ASTRO 7N (GA/GN) or ASTRO 10 (GN), want to pursue further the questions of cosmology. The great success of the Big Bang theory in explaining the expansion of the Universe, the synthesis of the chemical elements, and the relic radiation leftover from the first moments are reviewed. Some of the questions discussed are still debated in the scientific community. For example: Why do some galaxies have stunning spiral structures, while others are relatively featureless ellipticals? What is the \"dark matter\" that may have emerged from the Big Bang, and seems to make a larger contribution to the mass of the universe than all of the material we are familiar with? What can the most distant and oldest objects we know of, the quasars, tell us about how galaxies formed? In presenting the development of this subject, the empirical and conceptual methods of modern physical science are conveyed. Students are assigned problems that exercise the use of elementary mathematics and physics to address real issues, and will confront discussions of interpretation and meaning in essays. A final project allows them to explore individual interests."
+    },
+    {
+      "number": 130,
+      "title": "Black Holes in the Universe",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO6",
+              "ASTRO10"
+            ]
+          }
+        ]
+      },
+      "description": "The predicted properties of black holes and the astronomical evidence for their existence are investigated in the context of modern ideas about space, time, and gravity. ASTRO 130 Black Holes in the Universe (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. Black Holes in the Universe introduces students to the predicted properties of black holes and the astronomical evidence for their existence. Modern ideas about the nature of space, time, and gravity are also covered. The key topics discussed in the course include Newton's and Einstein's theories of gravity, predicted properties of black holes, stars and their fates, how to detect a black hole, gamma-ray bursts, supermassive black holes in galactic nuclei, active galaxies, black hole spin, gravitational waves, Hawking radiation, singularities, and black hole child universes. The course is intended to be an attractive choice for students who are interested in enriching and broadening their understanding of modern physical science.The course is intended for students who have completed and enjoyed the one-semester survey of modern astronomy, ASTRO 1 , 6 , or 10 . It has an interdisciplinary flavor, combining basic physical concepts, astronomical observations, and philosophical ideas to present a complete picture of the current understanding of black holes. Time is also devoted to provide historical insight into the development of our ideas about gravity from Kepler and Newton through Einstein and modern ideas about quantum gravity. Students use mathematics at the level of high school algebra."
+    },
+    {
+      "number": 140,
+      "title": "Life in the Universe",
+      "credits": 3,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO5",
+              "ASTRO10"
+            ]
+          }
+        ]
+      },
+      "description": "The problem of the existence of life beyond Earth is investigated, drawing from recent research in astronomy and other fields. ASTRO 140 Life in the Universe (3) (GN)(BA) This course meets the Bachelor of Arts degree requirements. The possibility of life beyond Earth is one of the great unsolved puzzles of human thought and has been debated for millennia. An answer would fundamentally change the relationship between the human race to the rest of the Universe. Advances in modern physics and astrophysics have dramatically changed and enriched the understanding of our cosmic surroundings, but have not yet produced an unambiguous evidence concerning the extraterrestrial life. Yet, significant progress has been made on certain aspects of the problem. Recent observations of protoplanetary disks around young stars, planets around solar-type stars and a rapidly spinning pulsar (a Penn State discovery), and pervasive organic molecules throughout the Galaxy give tantalizing, albeit indirect, hints in favor of the existence of nonterrestrial life. \"Life in the Universe\" is envisioned to be an attractive choice for students who are interested in enriching and broadening their understanding of modern science. The course is highly interdisciplinary, combining evidence from several fields of science to describe our chances to encounter life beyond Earth and the Solar System. Selecting this course would be a logical choice for students who completed and enjoyed ASTRO 1 (GN), ASTRO 5 (GN), or ASTRO 10 (GN). The students are expected to reach the following goals from this course: - learn to appreciate limitations of human experience and a role of the interdisciplinary approach in solving scientific problems - gain understanding of a relationship between the physical Earth, its biosphere, and the rest of the observable Universe - examine in some detail a contemporary problem of scientific investigation: the astrophysical evidence for planets around stars other than the Sun - assess the scientific significance of searches for extraterrestrial life including technological civilizations. Lectures systematically cover the topics listed in the course outline at a level appropriate for non-science students, although students from the Planetary Science & Astronomy major, as well as other science and engineering majors, can take the course. While general understanding of astronomy from the prerequisite course is expected, the necessary physical and astrophysical concepts are reintroduced to assure a logical and coherent flow of information throughout the course. Videos are used to illustrate a number of topics, such as the search for extraterrestrial intelligence, physical conditions on planets of the Solar System, the detection of planets around a neutron star, and to evaluate the scientific content of science fiction movies."
+    },
+    {
+      "number": 141,
+      "suffix": "N",
+      "title": "Film and Extraterrestrial Life: Science Fact or Fiction?",
+      "credits": 3,
+      "attributes": [
+        "GA",
+        "GN",
+        "INTER"
+      ],
+      "internalEquivalents": [
+        "COMM151N"
+      ],
+      "description": "The search for life beyond planet Earth has been the subject of much interdisciplinary scientific search and has stimulated human imagination. Scientific discoveries of exoplanets (outside of our solar system), of extremophiles (life which can survive in extreme conditions) and the discoveries of conditions on other bodies in our solar system which might be able to support life, has provided progress in answering the question of the existence of extraterrestrial life. Not only have a plethora of fictional work appeared in the film media to depict scenarios of life beyond Earth, but there has also been an abundance of video media created to present the scientific ideas to the wider audience beyond the scientific community. This course intends a critical evaluation of both nonfiction and fictional media works in the educational dissemination of scientific ideas and the effective presentation of concepts. We will analyze techniques in photography, mise en scene, editing, sound, dramatization and writing as they are applied to topics in astrobiology."
+    },
+    {
+      "number": 150,
+      "title": "Sustainability in astronomy: Preserving dark and quiet skies",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "Have you seen the Milky Way with your own eyes? What used to be an everyday occurrence is now something you can do only if you purposely travel to a dark site or live in one of the very few remaining locations in the world where the Milky Way is visible. In this course, you will explore what has changed in recent decades to make the Milky Way and every object in the sky less easily visible. This course is a general education natural sciences (GN) course that focuses on the key sustainability issue in astronomy: light pollution. The course will explore the impacts of the growth of artificial lights on access to the night sky for enjoyment as well as for research in astronomy. Students will also consider how other artificial sources of light, including electronics that transmit radio signals and satellites that reflect sunlight are impacting our skies. The course will also examine the impacts of artificial light on public safety, human health, and ecosystems. Students will critically examine the issues and some proposed solutions promoted by advocacy organizations and legislators. Through analysis of readings and discussions, students will gain skill in reflective writing and in the design of an action plan for improving the lighting in their communities."
+    },
+    {
+      "number": 191,
+      "title": "Introduction to Astrophysics",
+      "credits": 3,
+      "requisites": {
+        "concurrent": [
+          "PHYS211",
+          "MATH140"
+        ]
+      },
+      "description": "This course is intended for students who are considering a major in astrophysics. In the course we will bring together ideas from mathematics and physics to help understand the nature of the Universe and the objects it contains. Concepts and mathematical expressions that are used in observational astronomy, such as flux, luminosity, and magnitude will be introduced, and several important derivations of ideas in star formation and stellar structure will be discussed. Students will practice quantitative problem solving and qualitative reasoning applied to astrophysical phenomena including planetary systems, stars, stellar systems, and galaxies as a bridge to upper division courses that will develop these ideas more deeply."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 237,
+      "suffix": "W",
+      "title": "Astronomy Communications",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ENGL15",
+              "ESL15",
+              "ENGL30H",
+              "ENGL15A",
+              "ENGL15S",
+              "ENGL15E",
+              "ENGL30T",
+              "ENGL137H",
+              "CAS137H"
+            ]
+          }
+        ]
+      },
+      "description": "The class is designed to build skills in communication modes that are used every day in academic and non-academic astronomy, industry, and related natural sciences: technical writing and reading, presenting to different audiences, using professional authoring tools and software, designing posters and slides, and creating and maintaining a strong professional presence online. There will be a strong focus on improving technical writing skills, practiced by submitting small-but-regular assignments inside and outside of class. By the end of this course, students will have gained practical experience producing many professional writing products with extensive feedback and opportunities for growth as a scientific writer. This course will satisfy the \"Writing Across the Curriculum\" requirement."
+    },
+    {
+      "number": 291,
+      "title": "Astronomical Methods and the Solar System",
+      "credits": 4,
+      "attributes": [
+        "GN",
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS212"
+        ],
+        "concurrent": [
+          "MATH230"
+        ]
+      },
+      "description": "This course and subsequent ASTRO 292 , are a two-semester sequence to overview our current knowledge of astronomy. They are designed for students with a solid grounding in math and physics who wish to obtain a more quantitative understanding of the universe than that presented in ASTRO 1 or the 100-level ASTRO series. These courses are required for students majoring in astronomy, generally taken in the sophomore year. ASTRO 291 starts with the appearance of the sky to the naked eye and the historical development of astronomy. It then turns to an introduction to physical processes relevant to the interpretation of astronomical findings: Newtonian gravity and its applications in celestial mechanics, electromagnetic radiation, and a simplified understanding of atoms. The principal tools of astronomy, telescopes and their instrumentation are described. The course proceeds with the survey of astronomy with the constituents of the solar system: sun, planets, natural satellites, planetary rings, asteroids, and comets. Physical processes are integrated with empirical findings to provide a profound and quantitative understanding of the phenomena; e.g. the role of angular momentum and tidal forces in establishing the orbits and spins of solar system bodies. After the development of these concepts, a survey of the properties of the constituents of the Solar System (planets, moons, rings, asteroids, comets, meteors, and the Sun) is conducted."
+    },
+    {
+      "number": 292,
+      "title": "Astronomy of the Distant Universe",
+      "credits": 4,
+      "attributes": [
+        "BA-N"
+      ],
+      "requisites": {
+        "previous": [
+          "ASTRO291"
+        ]
+      },
+      "description": "This course is the second part of the ASTRO 291 /292 sequence, a two-semester overview of our current knowledge of astronomy. They are designed for students with a solid grounding in math and physics who wish to obtain a more quantitative understanding of the universe than that presented in ASTRO 001 or the 100-level ASTRO series. These courses are required for students majoring in astronomy, generally taken in the sophomore year. ASTRO 292 continues the survey started in ASTRO 291 . The first half of the course is devoted to stellar astronomy and astrophysics. The class follows the successful application of physics to astronomical data in the 19th -20th centuries to understand distances, masses and energy sources of stars. The formation, structure and evolution of stars is treated in the context of physical processes developed in ASTRO 291 . The class studies the death of stars, including spectacular phenomena such as supernova explosions, pulsars and black holes, solutions to difficult problem of establishing distance scales (stellar, galactic, intergalactic) are presented. In the second half of the course, the students examine the Universe on progressive larger scales: our Milky Way galaxy, other galaxies, and massive black holes in galactic cores (e.g. quasars). Exotic phenomena such as gravitational lenses, gamma-ray bursts and cosmic rays are investigated. Finally, the class delves into the remarkable findings of modern cosmology: Hubble's discovery of the expansion of the Universe, the discovery of the cosmic microwave background and consequent dominance of Big Bang cosmology in the context of Newtonian and Einsteinian theories of gravity. Cosmological evolution is studied; e.g. formation of light elements during the first few minutes, and the growth of large-scale structure that continues to the present. Unsolved problems faced by today's scientists are emphasized."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 320,
+      "suffix": "W",
+      "title": "Observational Astronomy Laboratory",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "ASTRO291"
+        ]
+      },
+      "description": "Basic observational astronomy techniques are introduced through observational exercises, lab experiments, lectures on relevant statistical techniques, and scientific writing assignments and review. ASTRO 320W Observational Astronomy Laboratory (3) will provide students with practical experience in basic observational and laboratory aspects of astronomical data collection and analysis, including an introduction to associated statistical concepts. Observational techniques will be introduced through an observing project using a telescope with a CCD imaging camera. Lectures will introduce fundamental principles including Poisson and Gaussian statistics, measurement precision, propagation of errors, systematic uncertainties, and basic scientific writing techniques. These principles will be put into practice in the observing project and the associated written reports, as well as with laboratory experiments and written reports investigating the properties of light and cosmic rays. Experiments include: a cosmic ray telescope; a Michelson interferometer; a photodiode and monochromator; laser interference, diffraction and refraction; fluorescent gases; and a diffraction grating spectrometer."
+    },
+    {
+      "number": 401,
+      "title": "Fundamentals of Planetary Science and Astronomy",
+      "credits": 4,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ASTRO1",
+              "ASTRO5",
+              "ASTRO6",
+              "ASTRO10"
+            ]
+          },
+          "MATH140"
+        ]
+      },
+      "description": "Overview of the techniques used and results from studies of the Solar System, stars, and galaxies. ASTRO 401 Fundamentals of Planetary Science and Astronomy (3) This course will focus in core content areas in planetary science and astronomy. Students will explore the fundamentals in robotic exploration of the Solar System, how astronomers map and navigate the night sky, our understanding of the nature and evolution of stars, and the nature and evolution of galaxies. Students will engage with real data from Solar System missions as well as ground-based and space-based telescopes. Through the use of many databases and data archives from missions and observatories, the students will become familiar with the census of astronomical objects in various categories. A particular emphasis will be placed on examples of qualitative and quantitative problem solving in these content areas. In addition, students will explore how scientists communicate their results to the public, and they will get hands-on experience, such as planning and executing a planetarium show."
+    },
+    {
+      "number": 402,
+      "suffix": "W",
+      "title": "Astronomical Telescopes, Techniques, and Data Analysis",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "description": "Properties and use of optical telescopes, imaging and spectroscopy, multi-wavelength techniques, data analysis and statistics, practical research methods. ASTRO 402 Astronomical Telescopes, Techniques, and Data Analysis (3) This course will provide practical experience and understanding of the telescopes and techniques by which astronomers obtain data and conduct research. The study of telescopes will include optical, infrared, radio, ultraviolet, X-ray, and gamma ray observations, and students will learn to set up and use optical telescopes. In-depth coverage of the instruments used for imaging and spectroscopic observations of a variety of astronomical objects will be provided. Applications will include topics in planets, stars, galaxies, and cosmology. Detailed examples of data analysis will be given, including the relevant statistical techniques. Finally, the process by which research in astronomy is conducted will be reviewed, from proposing observations, to obtaining them, to analyzing and interpreting them, to writing up the results. This course is a requirement for students in the Planetary Science and Astronomy major and minor. It may be taken by any students with the needed pre-requisites, but cannot be counted towards the required 400 level courses for the Astronomy and Astrophysics major or minor."
+    },
+    {
+      "number": 410,
+      "title": "Computational Astrophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC201",
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC204"
+            ]
+          },
+          "PHYS212",
+          "PHYS213",
+          "PHYS214"
+        ]
+      },
+      "description": "This course offers a comprehensive introduction to common computational methods for data analysis and numerical simulations in astronomy and astrophysics. It covers a wide range of topics, such as solving equations and linear algebra systems, data analysis and modeling, numerical simulations, and machine learning. This course provides students with theoretical backgrounds in computational methods, active learning experience in class with hands-on activities implementing algorithms and running computer programs, and practical training with interesting assignments and projects solving real-world problems in astronomical data, gravitation, planetary and stellar systems, galaxy formation and evolution, large-scale structures, and cosmology."
+    },
+    {
+      "number": 414,
+      "title": "Stellar Structure and Evolution",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO292",
+          "MATH230",
+          "PHYS212",
+          "PHYS213",
+          "PHYS214",
+          "PHYS237"
+        ]
+      },
+      "description": "Theory of Stellar structure and evolution including energy generation and transport and an examination of stellar models. ASTRO 414 Stellar Structure and Evolution (3) ASTRO 414 covers the theory of stellar structure and evolution at an introductory level. It includes the basic physical processes that influence the structure of a star, such as energy generation in stellar cores, the transport of energy to the surface via photon diffusion and convection, equilibrium conditions, etc. It examines realistic stellar models as they apply to stars of different masses, for example, polytropes and other approximations. The treatment of stellar evolution includes gravitational collapse, stable stellar configurations on the main sequence, and the fast-paced late stages of evolution, leading up to the formation of compact objects. Realistic stellar models will be employed to illustrate the structures of different types of stars and the influence of various physical processes on these models."
+    },
+    {
+      "number": 415,
+      "title": "Introduction to Astrostatistics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "ASTRO292"
+        ]
+      },
+      "description": "Astronomical data are being produced at an unprecedented rate with large-scale telescopes, and thus data analytic skills to extract meaningful information from such massive astronomical datasets are important skills for astronomers. This course is designed to provide juniors or seniors in astronomy, who have no or little background in statistics, both theoretical background and practical experience on astronomical data analyses. For this purpose, the first half of the course will cover fundamental underpinnings of probability and statistical inference, and for the other half of the class, various statistical and machine learning tools will be introduced with hands-on coding experiences using a modern programming language, such as R."
+    },
+    {
+      "number": 416,
+      "title": "Data Science Applications to Astronomy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ASTRO291",
+              [
+                "ASTRO401",
+                "ASTRO402W"
+              ]
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC201",
+              "ASTRO21"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          "PHYS211"
+        ]
+      },
+      "description": "This course is designed to increase students' data acumen and experience in how building data science skills can benefit astronomy & astrophysics research. Students analyze data from astronomical surveys to detect and characterize astronomical objects and astronomical populations. Students will build practical data science skills (e.g., querying astronomical databases, efficient approaches for data storage and manipulation, exploratory and explanatory data analysis, Bayesian modeling workflows, effective data visualization, and reproducible research practices). Students will also gain a basic familiarity with core data science terms and concepts, so they can effectively communicate with data scientists, whether working in astronomy or in industry. Astro 478 is designed to be complementary to Astro 410, Astro 415, and Astro 451."
+    },
+    {
+      "number": 420,
+      "suffix": "W",
+      "title": "Planets and Planetary System Formation",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "ASTRO292"
+        ]
+      },
+      "description": "Solar system properties, star formation, protoplanetary disks and planet formation, solar system model, extrasolar planets, and astrobiology. ASTRO 420W Planets and Planetary System Formation (3) The course explores the wide variety of physical and chemical processes that govern the motions and properties of planets. Observations of the planets, moons, asteroids, comets and planetary rings in our Solar System are described. The properties of extrasolar planets are also emphasized. The process of planetary formation is discussed in the context of the solar system and in the context of extrasolar planets. The prospects of life and the effect of life on such planets will also be discussed.It will be taken by roughly half of the juniors and seniors majoring in Astronomy and Astrophysics (about 10 people). The course will include writing papers on current issues of debate in the areas of solar system and extrasolar planets and will satisfy the \"Writing Across the Curriculum\" requirement."
+    },
+    {
+      "number": 440,
+      "title": "Introduction to Astrophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "PHYS237"
+        ]
+      },
+      "description": "Theoretical investigation of physical processes in astronomical objects and systems; modern physical interpretation of astronomical phenomena."
+    },
+    {
+      "number": 441,
+      "title": "Radiative Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS237",
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          }
+        ]
+      },
+      "description": "This course covers astrophysical radiation processes, focusing on the physical mechanisms that produce, modify, and diagnose radiation from astrophysical plasmas, and develops a quantitative framework for continuum and line emission in environments such as interstellar gas, nebulae, accretion flows, and hot ionized media. The course begins with essential background in special relativity, statistical mechanics, and thermodynamic equilibrium, followed by the radiative transfer equation and its physical interpretation (emission, absorption, and scattering), and then examines major continuum processes including blackbody radiation, thermal bremsstrahlung, synchrotron and cyclotron emission, and Compton scattering. The second half focuses on atomic processes governing line emission and absorption, including atomic structure, selection rules, Einstein coefficients, collisional and radiative processes, and ionization balance, with applications to interpreting spectra from photoionized and collisionally ionized plasmas, absorption lines, optical depth effects, and the curve of growth. Emphasis is placed on analytic calculations and order-of-magnitude estimates connecting physical conditions to observable radiation, including the computation of emissivities, absorption coefficients, cooling rates, and characteristic timescales, and the inference of source properties from observed spectra."
+    },
+    {
+      "number": 442,
+      "title": "Astrophysical Fluid Dynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          "PHYS213",
+          "PHYS214",
+          {
+            "oneOf": [
+              "MATH230",
+              "MATH231"
+            ]
+          },
+          {
+            "oneOf": [
+              "MATH250",
+              "MATH251"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC121",
+              "CMPSC131",
+              "CMPSC200",
+              "CMPSC201",
+              "CMPSC101"
+            ]
+          }
+        ]
+      },
+      "description": "This course covers the equations of (magneto) hydrodynamics and applications to the modeling and interpretation of astronomical observations. Applications include star formation, stellar winds, waves in stratified and magnetized plasma, instabilities, shocks, blast waves, and accretion disks."
+    },
+    {
+      "number": 451,
+      "title": "Astronomical Techniques",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS212",
+          "PHYS213",
+          "PHYS214"
+        ]
+      },
+      "description": "Practical methods of modern observational astronomy, detectors, filters, instrumentation for both ground-based and space observations, and data analysis. ASTRO 451 Astronomical Techniques (3) ASTRO 451 will introduce students to the techniques and technologies for modern observational astronomy, emphasizing the development of practical skills as well as understanding through computer-based investigations integrated with traditional lecture content. Beginning with a summary of probability theory, the students will be introduced to standard techniques of statistical analysis including hypothesis testing and the characterization of uncertainties. Subsequent lectures and computer exercises will discuss the physics and design of astronomical detectors, the principles of telescope and spectroscope design, and the data analysis methods used in processing astronomical datasets. Significant emphasis will be placed on estimation of signal-to-noise ratios for various observing scenarios. The effects of the Earth's atmosphere, interstellar matter, and the expanding Universe on the propagation of astronomical signals will also be discussed."
+    },
+    {
+      "number": 475,
+      "suffix": "W",
+      "title": "Stars and Galaxies",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "ASTRO292"
+        ]
+      },
+      "description": "Astronomical studies concerning the distribution and evolution of stars and gas in our and other galaxies."
+    },
+    {
+      "number": 476,
+      "title": "The Search for Extraterrestrial Intelligence",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "ASTRO291",
+              "ASTRO401"
+            ]
+          }
+        ]
+      },
+      "description": "The Search for Extraterrestrial Intelligence is the hunt for technosignatures: signs of non-human technology beyond Earth. The search has many forms, with its targets spanning scales from small objects in the Solar System to galaxy-spanning industry, and is conducted in many ways, from the use of radio telescopes searching for communicative signals to infrared space telescopes searching for Dyson spheres. This course will offer a survey of the field as a subfield of astrobiology, and as an interdisciplinary endeavor that includes biology, astrophysics, game theory, anthropology, law, and many other fields. It begins with a history of the field and its jargon, then continues with a study of the theory of the field, including the Drake Equation and Fermi Paradox, and then the practice of the field, including a survey of the kinds of technosignatures we might search for. It concludes with a study of the social and ethical aspects of the field, and special topics that will vary by semester. The course includes a field trip to Green Bank Observatory to conduct real radio SETI observations and learn the history of SETI at NRAO."
+    },
+    {
+      "number": 480,
+      "title": "Galaxies and Cosmology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO292",
+          "PHYS212",
+          "PHYS213",
+          "PHYS214"
+        ]
+      },
+      "description": "Fundamental issues in extragalactic astronomy and modern cosmology, including the contents of the Universe, its origin and fate, and formation and evolution of cosmic structures. Topics covered include the basic properties of spiral, elliptical, and irregular galaxies and their quantitative classification, the extragalactic distance scale, the photometric and chemical evolution of galaxies, the physics and evolution of galaxy clusters, active galactic nuclei, the formation of large-scale structure, the physics of the early universe, and the basic equations of cosmology."
+    },
+    {
+      "number": 483,
+      "title": "Astrophysics of the Dark Universe",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS483"
+      ],
+      "requisites": {
+        "previous": [
+          "PHYS237"
+        ]
+      },
+      "description": "This course covers the astrophysics of the dark universe, including the gravitational framework used to describe astrophysical and cosmological systems and the observational evidence for dark matter, dark energy, and black holes. It introduces the Newtonian, special-relativistic, and general-relativistic concepts needed to study gravity on astrophysical and cosmological scales, and develops the physical basis for interpreting key observations that require dark components in the universe. Topics include Newtonian particle dynamics, the two-body and restricted three-body problems, evidence for dark matter from galactic rotation curves and galaxy clusters, special relativity and spacetime, black holes in Schwarzschild and Kerr spacetimes, the expansion history of the universe, the Friedmann equations, cosmological distance measures, observational evidence for cosmic acceleration, and gravitational waves from compact binaries. Emphasis is placed on connecting theory to observation through analytic calculations, physical interpretation, and quantitative estimates. Students learn how gravitational dynamics, cosmic expansion, black hole physics, and gravitational radiation provide evidence for the dark sector and how current observations constrain its nature. The course also introduces methods used to probe dark matter and dark energy through galaxy dynamics, cosmological observables, large-scale structure, and gravitational-wave sources."
+    },
+    {
+      "number": 485,
+      "title": "Introduction to High-Energy Astronomy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PHYS237"
+        ]
+      },
+      "description": "This course explores the study of celestial phenomena such as black holes, neutron stars, white dwarfs, supernova remnants, stars, galaxies, active galactic nuclei, and galaxy clusters through X-ray, gamma-ray, and multi-messenger (e.g., particles and gravitational waves) observations. The course covers the physics processes underpinning high-energy astrophysics, the tools and methods employed in this field, and the high-energy astrophysical sources both within our Galaxy and beyond. Additionally, it examines future prospects for advancements in high-energy astrophysics research."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Thesis",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Investigation of an original research problem, including a literature search. Preparation of a formal thesis is optional"
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 501,
+      "title": "Fundamental Astronomy",
+      "credits": 3,
+      "description": "Concepts, tools and techniques, and essential background in stellar, Galactic, extragalactic astronomy and cosmology."
+    },
+    {
+      "number": 502,
+      "title": "Fundamental Astrophysics",
+      "credits": 3,
+      "description": "Fundamental tools and results of modern astrophysical theory. Gravitation; gas dynamics; radiation processes; radiative transfer; atomic structure and transitions."
+    },
+    {
+      "number": 504,
+      "title": "Extragalactic Astronomy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO501",
+          "ASTRO502"
+        ]
+      },
+      "description": "Properties and evolution of galaxies including their stellar, interstellar, black hole and Dark Matter components."
+    },
+    {
+      "number": 513,
+      "title": "Observational Techniques in Astronomy",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO501",
+          "ASTRO502"
+        ]
+      },
+      "description": "Theoretical and practical aspects of modern multiwavelength observational astrophysics including detector physics, imaging techniques, spectroscopic techniques, and data analysis principles."
+    },
+    {
+      "number": 515,
+      "title": "Astrostatistics",
+      "credits": 3,
+      "description": "Modern astronomical research -- the study of planets, stars, galaxies and the Universe -- and the linking of observational data to astrophysical theory encounter a wide array of challenges falling under the rubric of statistical inference. Cosmology, for example, addresses spatial clustering of galaxies, nonlinear regression of Big Bang astrophysical models, supervised regression of galaxy photometric redshifts, multiple hypothesis tests for faint source detection in images, multivariate classification, and time series analysis of billion-object multi-epoch surveys. Big Data arising from large-scale astronomical surveys and Bayesian modeling of astrophysical models are propelling astrostatistics into greater importance than in the past. Yet the curriculum for young astronomers typically includes no courses in statistical methodology. This course is designed to fill this gap. The course progresses through three stages. First, basic principles in statistical inference are presented and discussed including elements of probability theory, point and interval estimation, and probability distributions. The techniques of least squares, maximum likelihood, and Bayesian inference are outlined here and exercised later in the course. Second, central fields of applied statistics are investigated including nonparametric statistics and density estimation, regression (including nonlinear models from astrophysical theory), and multivariate analysis (including unsupervised clustering and supervised classification). Specific statistical methods are linked to specific astronomical problems at each step. Third, the instructor and students choose topics for study, such as time series analysis, spatial point processes, censoring and truncation, Bayesian computation, and scientific visualization. Common characteristics of astronomical data that are not treated in standard statistical presentations are discussed in detail, including heteroscedastic measurement errors, irregularly-spaced time series, and nonlinear astrophysical models. A crucial element of the course is practical training in the implementation of these statistical methods using sophisticated public-domain software environments. Software tutorials in class and text help educate the student to a level where data and science analysis can proceed at a mature level."
+    },
+    {
+      "number": 527,
+      "title": "Computational Physics and Astrophysics",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS527"
+      ],
+      "description": "This course provides an advanced overview of applications of numerical methods and computer programming to physics and astrophysics. Numerical calculations provide a powerful tool for understanding physical phenomena, complementing laboratory experiment and analytical mathematics. The main objectives of the course are: to survey the computational methods used for modeling physical and astrophysical systems; to apply the computational methods to solve real world problems in physics and astrophysics; to assess the reliability of numerical results using convergence tests and error estimates; and to use scientific visualization as a tool for computer programming development and for physical understanding of numerical results. Strong programming skill in any of the common programming languages such as C, C++, or Python, is highly recommended."
+    },
+    {
+      "number": 528,
+      "title": "High-Performance Scientific Computing for Astrophysics",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Training in software development for performing astrophysical simulations and analyzing astronomical data, including attention to reproducibility, parallelization, and computing architectures."
+    },
+    {
+      "number": 530,
+      "title": "Stellar Atmospheres",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO501",
+          "ASTRO502"
+        ]
+      },
+      "description": "The structure, physics and observational manifestations of atmospheres of stars."
+    },
+    {
+      "number": 534,
+      "title": "Stellar Structure and Evolution",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO501",
+          "ASTRO502"
+        ]
+      },
+      "description": "Physics of stellar interiors, stellar structure, and evolutionary changes of stars from pre-main sequence through final states."
+    },
+    {
+      "number": 542,
+      "title": "Interstellar Medium and Star Formation",
+      "credits": 3,
+      "description": "Theory and observation of the interstellar medium of our Galaxy and the process of star and planet formation."
+    },
+    {
+      "number": 545,
+      "title": "Cosmology",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS545"
+      ],
+      "description": "Modern cosmology of the early universe, including inflation, the cosmic microwave background, nucleosynthesis, dark matter and energy. ASTRO (PHYS) 545 Cosmology (3)Cosmology is the scientific study of the universe as a whole: its physical contents, principal physical processes, and evolution through time. Modern cosmology, which began in the early 20th century, is undergoing a renaissance as a precision science as powerful ground- and space-based telescopes allow us to observe the formation of the first starts, galaxies and galaxy clusters; the echoes of the inflationary epoch as they are impressed upon the cosmic microwave background; and evidence for and clues to the nature of the mysterious dark energy, which is driving the accelerating expansion of the universe. This course will introduce students to the key observations and the theoretical framework through which we understand the physical cosmology of the early universe."
+    },
+    {
+      "number": 550,
+      "title": "High Energy Astrophysics",
+      "credits": 3,
+      "description": "Theory and observations of X-rays, gamma-rays and other high energy radiation from Galactic and extragalactic sources."
+    },
+    {
+      "number": 570,
+      "title": "Particle Astrophysics",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS570"
+      ],
+      "requisites": {
+        "previous": [
+          "ASTRO502",
+          "PHYS400",
+          "PHYS406",
+          "PHYS557"
+        ]
+      },
+      "description": "Particle astrophysics is a discipline at the interface between physics and astronomy, which has undergone tremendous growth in the 21st century, with the commissioning and exciting results from very large facilities detecting the highest energy cosmic rays, neutrinos, gravitational waves, and gamma-rays. There is a rapid and ongoing expansion of the understanding of these radiations, their physics and their sources, which include supernovae, gamma-ray bursts, and active galactic nuclei, and there are major new facilities aimed at characterizing particle properties of dark matter and its cosmological effects. Students will be given an overview of the basics of particle astrophysics and to the latest data and its interpretation, stressing issues currently discussed by the community, with particular attention on major projects in which Penn State faculty are involved. The course is designed for graduate students in physics and astronomy and astrophysics, being also appropriate for students in nuclear engineering or related disciplines."
+    },
+    {
+      "number": 576,
+      "title": "The Search for Extraterrestrial Intelligence",
+      "credits": 3,
+      "description": "This course offers a broad exploration of the Search for Extraterrestrial Intelligence (SETI) as a subfield of astrobiology. It includes a survey of background astronomy and radio engineering concepts necessary to read and analyze the professional literature on the topic, including foundational works and the state-of-the-art. It takes a broad view of SETI, including communication SETI (i.e. radio and optical searches), artifact SETI (search for non-communicative evidence of engineering), and a critical analysis of the assumptions and potential biases inherent in past and current SETI efforts. It also includes discussion of SETI's place in the popular, political, and scientific landscapes."
+    },
+    {
+      "number": 577,
+      "title": "Exoplanets",
+      "credits": 3,
+      "description": "Recommended Preparations: Some assignments will require programming in the student's programming language of choice. Since the early 1990s, thousands of exoplanets have been discovered orbiting other stars beyond our solar system. The properties of these planets have challenged our understanding of how planetary systems form and evolve. This course will cover theories of exoplanets' formation and evolution, the discovery and characterization of exoplanets via exoplanet signals, and the physical properties of exoplanets, including prospects for habitability."
+    },
+    {
+      "number": 585,
+      "title": "Topics in Astronomy and Astrophysics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ASTRO501",
+          "ASTRO502"
+        ]
+      },
+      "description": "Advanced study of issues in planetary, stellar, galactic, extragalactic and theoretical astronomy and astrophysics. ASTRO 585 Topics in Astronomy and Astrophysics (3)This 3-credit topics course will be offered as part of the regular sequence of graduate offerings, and can be used to fulfill the graduate degree course requirements on an equal basis with ASTRO 501 -580 3 credit courses. The purpose here is to provide a flexible environment for full courses on subjects that are not covered in the courses with fixed curricular content and are important to Penn State faculty, research Centers, and students."
+    },
+    {
+      "number": 588,
+      "title": "Seminar in Astronomical Research Development and Responsible Conduct",
+      "credits": 1,
+      "description": "The course includes a variety of topics related to ethics and professional development in Astronomy and Astrophysics. The course builds from the mandatory training students receive from Scholarship and Research Integrity. The content is geared toward providing students with \"survival skills\" that are not encountered in the typical course curriculum. Topics include research paper writing, proposal writing, postdoctoral job applications, career options in research/education and outreach/observatory support/data science/policy, professional networking, effective dissemination of research, funding landscape in the profession, etc."
+    },
+    {
+      "number": 589,
+      "title": "Seminar in Current Astronomical Research",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "ASTRO501",
+          "ASTRO502"
+        ]
+      },
+      "description": "Contemporary issues in instrumental, observational and theoretical astronomy and astrophysics. ASTRO 589 Seminar in Current Astronomical Research (1)This seminar will be offered as part of the regular sequence of graduate offerings, and is also used to fulfill the graduate degree course requirements for 1-credit seminars. Their purpose is to treat focused issues of current research interest. Examples are: Physics of Gamma-ray Bursts, Design of Precision Spectrographs, Quasar Surveys, Protoplanetary Disks. This course is taught by Department faculty, researchers and visitors."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. DIssertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 801,
+      "title": "Planets, Stars, Galaxies, and the Universe",
+      "credits": 3,
+      "description": "Overview of the structure, formation, and evolution of planets, stars, galaxies, and the universe. Topic: Observations by modem ground-based and space-based observatories have fueled significant changes in our understanding of the Universe. The Solar System contains only 8 planets but has many thousands of Kuiper Belt Objects, including Pluto. Large area sky surveys have taken inventory of the stars in the Milky Way Galaxy and galaxies in the Universe and determined that only 4% of the mass of the universe is found in luminous objects. Besides the mysterious \"dark matter,\" we now know that the energy budget of the universe is dominated by \"dark energy,\" which is causing the expansion of the Universe to accelerate. ASTRO 80 I: Planets, Stars, Galaxies, and the Universe will provide science educators with a strong foundation in astronomy, allowing them to critically evaluate the evidence for the most recent advances in our understanding of the Solar System, our Galaxy, and the Universe. Astronomers use observations of the light from distant sources to discover the nature of these objects and their environment. ASTRO 801 will lead students to an understanding of light and the instruments for its detection. They will see how careful analysis of these observational data and theoretical models are used to solve the mysteries of the Universe. ASTRO 801 will combine digital video, audio, simulation models, and the wealth of astronomical imagery from NASA's Hubble, Chandra, and Spitzer Great Observatories. Students will use highly detailed planetarium software and simulated observing experiences to directly explore the night sky to make the same observations that research astronomers perform in their work. ASTRO 801 students will be granted licenses to use the courseware developed for this course in their own secondary classrooms."
+    },
+    {
+      "number": 897,
+      "suffix": "A",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 2
+    },
+    {
+      "number": 897,
+      "suffix": "B",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 2
+    }
+  ]
+}

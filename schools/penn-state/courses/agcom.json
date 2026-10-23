@@ -1,0 +1,43 @@
+{
+  "subject": "AGCOM",
+  "courses": [
+    {
+      "number": 462,
+      "suffix": "W",
+      "title": "Advanced Agricultural Writing",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "COMM260W"
+        ],
+        "minGrades": {
+          "COMM260W": "C"
+        }
+      },
+      "description": "Practice in journalistic writing strategies to report scientific and technical information in the agricultural/environmental sciences to general audiences. AGCOM 462W Advanced Agricultural Writing (3) Advanced Agricultural Writing focuses on scientific and technical topics in the agricultural/environmental sciences and public policy issues related to such subjects for the print media. Instructional objectives include:To learn and practice diverse forms of writing for general audiences, including brief news articles and feature formats, such as process, human interest, policy, and news reporting in the agricultural/environmental sciences. To recognize and use standard journalistic conventions, including grammar, mechanics, usage, and style. To develop an understanding of a writer's responsibilities and obligations within the context of journalistic ethical standards. To analyze and evaluate situations that require writing in order to respond appropriately to the needs and interests of general as well as specialized audiences. To develop feature writing skills through extensive writing and revising exercises. Student evaluation is based on writing assignments and class participation, particularly contributions to the peer review process. Every writing assignment (with the exception of short in-class exercises) is critiqued in peer response groups in class. Before the first draft of a feature article or query letter is due, the class develops a criteria sheet that is specific to the diverse forms of writing students are doing. The day the first draft is due, the class divides into peer response groups and, using the criteria sheet, provide feedback for each writer. The instructor also offers feedback on drafts of each article. Only final drafts are evaluated and graded by the instructor."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "COMM260W"
+        ],
+        "minGrades": {
+          "COMM260W": "C"
+        }
+      },
+      "description": "Supervised field experiences related to student's professional interest in agricultural communications; limited to minors in agricultural communications."
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "subject": "MTHED",
+  "courses": [
+    {
+      "number": 197,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest"
+    },
+    {
+      "number": 240,
+      "title": "Mathematics in Elementary School",
+      "credits": 3,
+      "description": "This course focuses on the development of content and pedagogy for teaching mathematics to children in elementary school. In this course, future educators consider mathematics from the learner and teacher perspectives. It is intended to help them become knowledgeable of relevant mathematics concepts. Grounded in contemporary education research, the course will use a variety of instructional strategies, practices, methods, and models to teach and learn mathematics that is appropriate for diverse students with multiple and varied needs. Students engage in mathematical problem solving to support understandings of selected topics of arithmetic, algebra, and geometry, providing future educators the foundation for understanding current curricula and standards. This course is designed to improve mathematical thinking and understanding; make sense of student work and thinking; recognize the challenges diverse children face when learning mathematics; and foster an inquiry stance toward the learning and teaching of mathematics."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 298,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 411,
+      "title": "Teaching Secondary Mathematics I",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CI295",
+          "CMPSC101",
+          "MATH140",
+          "MATH141",
+          "MATH220",
+          "MATH311W"
+        ],
+        "concurrent": [
+          "MTHED427"
+        ]
+      },
+      "description": "Conditions for learning mathematics; problem solving; subject matter types; curriculum; learning goals; nature and history of mathematics at secondary level MTHED 411 Teaching Secondary Mathematics I (3) This is the first of two secondary mathematics methods courses. In this course, participants look at mathematics teaching and learning from a teacher's perspective as well as from a student's perspective. Course participants engage in mathematical problem solving and in the study of the history and nature of mathematics as the foundation for understanding current curriculum and standards. Lesson planning follows from the consideration of different types of mathematical content, including skills and concepts. Looking specifically at the learning of mathematics and questioning to promote higher-level thinking prepares students for field experiences in subsequent semesters.The goals for the course are: - To improve understanding of some of the mathematical concepts which are important in secondary school mathematics. - To improve understanding of the nature of mathematics: what is important, how it is practiced, how mathematical validity is determined. - To improve understanding of the historical development of selected topics from secondary school mathematics. - To develop a vision of good school mathematics. - To see mathematics, mathematics learning, and mathematics teaching as problematic and to develop an inquiry approach to and an ability to reflect on these domains. - To increase understanding of secondary school students' mathematical thinking and understanding. - To increase ability to specify subject matter involved in a specific mathematics topic and make distinctions among them. - To improve understanding of various teaching strategies and their strengths and weaknesses. - To increase ability to choose among lessons and curriculum materials based on the intended mathematical subject matter and the current understandings of the students. - To increase insight into creating a thriving, supportive mathematics classroom culture.Students are evaluated through written assignments, examinations, classroom performance, presentations, and lesson plans."
+    },
+    {
+      "number": 412,
+      "suffix": "W",
+      "title": "Teaching Secondary Mathematics II",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "MTHED411"
+        ],
+        "concurrent": [
+          "CI495C"
+        ]
+      },
+      "description": "Assessing learning and instruction; methods of evaluation and grading; long- term planning; accommodating needs of diverse learners; connecting theory and practice. MTHED 412 Teaching Secondary Mathematics II (3) MTHED 412 is an inherently cumulative experience. This course builds upon ideas developed in MTHED 411 and MTHED 427 . In particular, students continue to consider types of subject matter, problem solving, lesson planning, technology use, questioning, history and nature of mathematics, and curriculum and standards. MTHED 412 then links understanding of mathematics education with other education courses and with field experiences as well as with understanding of K-16 mathematics. Students focus on lesson and unit development and implementation, assessment and evaluation, classroom management and organization within school communities, and continued professional growth as reflective practitioners. Students are encouraged to draw whenever possible on education psychology, adolescent psychology, educational theory and policy, mathematics, and other bodies of knowledge. In other words, course participants live as teachers with a wealth of knowledge and responsibility to draw on that knowledge in the service of their students. Student goals are to: * Develop an expanded view of the process of teaching mathematics; * Develop a deeper understanding of what it means to learn mathematics and the processes by which mathematics is learned; * Be able to reflect on the instruction and one's learning in MTHED 412 and to relate it to students' learning of secondary mathematics; * Be able to plan and teach appropriate mathematics lessons and reflect on one's teaching; * Be familiar with and be able to draw on a variety of teaching resources; * Investigate current issues influencing evaluation in the secondary mathematics curriculum; * Choose goals and content for middle school and high school mathematics courses; * Develop strategies for assessing and evaluating what students have learned * Create and implement assessment instruments for middle school and high school mathematics courses; * Develop insights into student understanding, especially in relationship to exceptional students as well as to mathematically talented and challenged students; * Identify the needs of diverse learners and to develop strategies to address these needs; * Create classroom environments that are conducive to learning; and * Incorporate appropriate technology in the teaching and learning of mathematics. Students are evaluated through written assignments, examinations, classroom performance, unit lesson and evaluation plans. Throughout the course writing is a process to help students learn course content as well as to help students learn ways of writing needed in the work of the secondary mathematics teacher. The course is offered each Fall and Spring semester with typical enrollment of 20-25 students in each of 1 or 2 sections. Through co-requisite course, CI 495C , students spend approximately five full weeks in secondary school classrooms."
+    },
+    {
+      "number": 420,
+      "title": "Teaching Mathematics In The Elementary Schools",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH200"
+        ]
+      },
+      "description": "MTHED 420 is designed to help teacher candidates: 1) to come to see mathematics, mathematics learning, and mathematics teaching as complex and to develop an inquiry approach to these domains; 2) to improve their understanding of the mathematical concepts and procedures they will teach, and to improve their understanding of children's mathematical learning and thinking about these concepts and procedures; 3) to increase their ability to choose among tasks, lessons, and curriculum materials from a variety of print and electronic sources based on intended mathematical understandings; 4) to develop a productive mathematics culture in the classroom; and 5) to explore key educational issues, such as equity, assessment, and technology, with respect to mathematics teaching and learning. In the course, teacher candidates explore important mathematical ideas and their development. They will become familiar with important pedagogical principles and questions. To help candidates develop an inquiry approach toward teaching mathematics, course assignments engage them in reflecting on readings and class discussions, their previous experiences as a learner of mathematics, and their ongoing experiences observing and teaching in classroom settings. MTHED 420 is a part of a block of courses in a PSU teacher education program that is unified by a basic set of principles and a field experience component."
+    },
+    {
+      "number": 427,
+      "title": "Teaching Mathematics in Technology-Intensive Environments",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CI295",
+          "CMPSC101",
+          "MATH140",
+          "MATH141",
+          "MATH220"
+        ],
+        "concurrent": [
+          "MTHED411"
+        ]
+      },
+      "description": "Interaction among pedagogy, content, and technology in mathematics teaching and learning in technology-intensive environments; secondary, early college curricula; laboratory experience. MTHED 427 Teaching Mathematics in Technology-Intensive Environments (3) Students should expect to learn something about each of several common types of mathematics software, new things about secondary school mathematics, and a lot about how to make decisions about how to use technology as an effective mathematics teacher. Students will also use communication software (e.g., word processors, e-mail, PowerPoint) not as objects of our discussion but in simple ways to generate and share products, assignments, and ideas.The course has a significant lab component. Students will be assessed based on written assignments, lesson plans, oral presentations, class participation, and examinations. The course is offered each fall and spring semester with an approximate enrollment of 20 students per semester. Students must enroll concurrently in MTHED 411 ."
+    },
+    {
+      "number": 428,
+      "title": "Fundamentals of Middle Grades Mathematics 1",
+      "credits": 3,
+      "description": "This course develops essential understanding of number and algebra for teaching middle grades mathematics and builds on earlier mathematics courses. MTHED 428 Fundamentals of Middle Grades Mathematics 1 (3) MTHED 428 builds upon experiences in early undergraduate courses to enhance prospective and/or practicing teachers' mathematical knowledge by supporting them to build deep and connected understandings of rational number, ratio, proportion, variable, expressions, and equations and be able to call upon those understandings in order to interpret grades 4-8 students' mathematical understandings. In particular, students in this course will learn that rational number arise as an extension of whole numbers and can be represented in many forms and interpreted as ratios, measures, quotients, operators, and part-whole relationships. Students will also build understandings of equivalence and the mathematical concepts and relationships that underlie previously learned computational algorithms. Students will understand that ratios involve coordinating two quantities and multiplicative relationships, and that a proportion is a statement of equality between two ratios. Students will learn how number concepts in prekindergarten-grade 4 connect to algebra topics in grades 4-8. Topics in this area include different views and uses of variable, the nature of and use of algebraic expressions and how expressions and equations differ, multiple strategies for manipulating and representing algebraic expressions and equations, and how expressions and equations can be used to represent real-world situations. Students will also learn what research has documented about how the concepts of rational number, ratio, proportion, variable, expressions, and equations develop in grades 4-8; the challenges that grades 4-8 learners face in learning this content; connections to previously-learned mathematical content from grades PreK-3; and how grades 4-8 students' understandings of the targeted concepts form essential foundational understandings for mathematical learning in grades 9-12. Students will engage in mathematical reasoning and justification and utilize technological tools appropriate for use in grades 4-8 mathematics."
+    },
+    {
+      "number": 429,
+      "title": "Fundamentals of Middle Grades Mathematics 2",
+      "credits": 3,
+      "description": "This course develops essential understanding of geometry and probability for teaching middle grades mathematics and builds on earlier mathematics courses."
+    },
+    {
+      "number": 430,
+      "title": "Students' Mathematical Thinking",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "description": "Develop abilities in planning, conducting, and interpreting mathematics interviews to gain an understanding of students' thinking processes and current knowledge."
+    },
+    {
+      "number": 431,
+      "title": "Data Analysis in Secondary School Mathematics",
+      "credits": 3,
+      "description": "Intense development of foundations of data analysis for secondary mathematics as a process using statistical concepts for predictions and inferences. MTHED 431 Data Analysis in Secondary School Mathematics (3) As prospective secondary mathematics teachers, students will develop broad and deep understanding of measures of and representations for center, measures of spread, distribution, and correlation. They will become fluent in using dynamic statistics programs, various physical models, and representations to convey the essence of these statistical concepts to secondary school students. They will compare various statistical methods and measures and make and defend claims both in terms of the discipline and in terms of how these ideas unfold for learners in school mathematics. They will connect these statistical concepts to the broader study of secondary school mathematics.In particular, students will see data analysis as a process. It involves the systematic application of statistical techniques, as well as logical techniques, to summarize, interpret, and compare data. Although the emphasis of the course will be on statistical concepts, one of the main themes of the course will involve understandings the mathematical structure of these statistical concepts. For example, students should be able to answer, from a mathematical perspective, why some data analysis techniques are more useful than other techniques.Intended as an elective for students in Secondary Education/Mathematics Education, the course helps students both to enrich and apply the pedagogical ideas and technology uses from their methods courses and to connect their collegiate mathematics experiences to school curricula. In particular, it helps to build prospective teachers' understanding of statistics as a vital part of secondary mathematics. Class activities involve use of physical manipulatives and mathematics technology (e.g., spreadsheets, dynamic statistics environments, and graphing calculators), as appropriate.Students in this course would be expected to complete weekly assignments and exams and to participate in classroom investigations of statistical concepts. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 432,
+      "title": "Mathematical Modeling in Secondary School Mathematics",
+      "credits": 3,
+      "description": "Students work from teaching and curricular perspective to explore and apply school and undergraduate mathematics to model real-world phenomena. MTHED 432 Mathematical Modeling in Secondary School Mathematics (3) Given the attention to mathematical modeling and applications in secondary school mathematics, prospective teachers need to be able to recognize situations that allow secondary school students to use relevant mathematics to apply mathematics and to model real-world phenomena as a means to learn about various mathematical topics. This course provides experiences in generating, interpreting, and evaluating geometric, discrete, stochastic, and function models. The course also helps prospective teachers develop an understanding of how mathematical modeling arises in school mathematics and how students learn mathematics through modeling.Intended as an elective for students in Secondary Education/Mathematics Education, the course helps students both to enrich and apply the pedagogical ideas and technology uses from their methods courses and to connect their collegiate mathematics experiences to school curricula. Class activities involve use of physical manipulatives and mathematics technology (e.g., spreadsheets, geometry construction environments, and graphing calculators), as appropriate.Students in this course would be expected to complete a major modeling project and paper in addition to weekly assignments, exams, quizzes, and written reflections of classroom participation. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 433,
+      "title": "Function Concept in Secondary School Mathematics",
+      "credits": 3,
+      "description": "This course develops the concept of function as an essential topic that underlies and connects school and collegiate mathematics. MTHED 433 Function Concept in Secondary School Mathematics (3) Prospective teachers as students need to understand the concept of function deeply as an essential topic of school and collegiate mathematics. In this course, they develop greater facility in using multiple representations and encounter function ideas as they unfold in multiple areas of mathematics, thus extending their understanding of collegiate mathematics and its connection to school mathematics. The students become conversant in current state and national expectations about functions as a mathematical entity. They plan appropriate instruction to develop secondary school student's understanding of function.Intended as an elective for students in Secondary Education/Mathematics Education, the course helps students both to enrich and apply the pedagogical ideas and technology uses from their methods courses and to connect their collegiate mathematics experiences to school curricula. In particular, it helps to build prospective teacher's conceptual understanding of function so that they may draw more strongly on this understanding to engage secondary students in mathematics. Class activities involve use of physical manipulatives and mathematics technology (e.g., spreadsheets, geometry construction environments, and graphing calculators), as appropriate.Students in this course would be expected to complete a major project and paper in addition to weekly assignments, exams, quizzes, and written reflections of classroom participation. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 460,
+      "title": "Trends and Issues in Science, Technology, Engineering, and Mathematics (STEM) Education",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "internalEquivalents": [
+        "SCIED460"
+      ],
+      "description": "Develops understandings of Science, Technology, Engineering, and Mathematics (STEM) education research and practices for PreK-12 teaching and learning"
+    },
+    {
+      "number": 481,
+      "title": "Building Relationships and Resources to Address Inequities in Mathematics Teaching and Learning",
+      "credits": 1,
+      "description": "To teach mathematics in equitable ways requires teachers to value students' out-of-school life and be partners with families and communities in supporting students' identity development and mathematics learning. We start the course with acknowledging and challenging our own biases about communities and cultures. We then see how we can build caring relationships with students and enact care for students through effective and equitable mathematics pedagogy that values students' cultures and interests. We consider families and communities as partners with knowledge and resources that support students' learning and help students to build positive mathematics identities as learners. We learn ways to act beyond our classrooms to challenge a history of power, privilege, and oppression in mathematics education. Readings for this course integrate topics beyond mathematics teaching and learning. For example, we learn about the nuanced roles of community in rural and urban areas, the nature of caring relationships with adults that encourage and guide students, and the ways in which people in a community engage in democratic citizenship. The readings include both theory and lived examples from educators. To complement readings, we invite classroom teachers and other educators via virtual visits to share specific events or practices through which they have developed supportive relationships with parents and families. We also ask them to share how they engage in their local communities to form productive relationships as they come to see families and communities as resources and partners in supporting students. Drawing on theory, empirical findings, and practice, we work to answer such questions as: What do you do to communicate with your students in a way that shows you care about their lives both as mathematicians and as individuals outside the classroom? How do you engage with parents and families of your students in ways that support students' learning and well-being? How do you work as a member of your students' community? What are strategies and tools that teachers use to connect with parents and communities?"
+    },
+    {
+      "number": 482,
+      "title": "Using Content in Context to Address Inequities While Teaching Mathematics",
+      "credits": 1,
+      "description": "We start with a look at how context is used in developing course material, starting with mathematics word problems. We first draw attention to attempts to add context to content. We turn then to activities that are based on content in rich cultural contexts. The focus then moves to mathematical practices, especially justification and mathematical modeling. We end with using mathematical modeling as a tool by which students and we can explore social justice issues and formulate action. We will learn about authentic examples of both mathematics problems and projects for students. We will also consider what it means to have students join with us in choosing contexts and creating mathematics problems. Readings about actual examples created and used by educators in learning spaces are complemented by related research and opportunities to design materials. We call upon educators to share their practice as they write and talk about the activities that they developed and how they have used those activities with students. We will find opportunities to learn powerful ways of using real-world settings in mathematics teaching, to develop mathematics problems and activities that embrace local community and cultures, and to review or preview ideas that are elaborated in your other education and mathematics courses. This course will address key questions about curriculum materials to use in teaching mathematics, such as: How do seemingly uneventful curriculum materials embody cultural biases and give students the message they are not people who do math? How can each and every student see mathematics as relevant to their lives? How can mathematics be used as a tool to understand and address social injustices? How can problems such as these coexist with the prescribed content of school mathematics?"
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 496,
+      "suffix": "H",
+      "title": "Independent Studies (Honors)",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 1
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 501,
+      "title": "Foundations of Mathematics Education I: Learning",
+      "credits": 3,
+      "description": "This course focuses on understanding and application of theories of mathematical thinking and learning in research and practice. MTHED 501 Foundations of Mathematics Education I: Learning (3) An understanding of what it means to learn mathematics, knowledge of extant theories of learning mathematics, and knowledge of the nature of students' mathematical thinking at various grade levels are central to the work of mathematics educators. Research, curriculum development, classroom interactions with mathematics students, development of assessments, and many other activities in which mathematics educators engage all draw heavily on understanding and knowledge of mathematical thinking and learning.Students in this course will develop a deeper understanding of classical and contemporary theories of mathematical learning and thinking and comparisons among these theories. Assignments in the course support students' growth in applying these theories to frame research, to enhance instruction, to consider curriculum, to support teacher development, and to effect policy. A major project in the course builds students' skills in investigating mathematical thinking and learning.This course would be one of four required Mathematics Education courses for all doctoral students in the Mathematics Emphasis Area/Curriculum and Instruction Ph.D. program. [The other required courses are MTHED 502 Foundations of Mathematics Education II: Teaching; MTHED 503 Foundations of Mathematics Education III: Curriculum; and MTHED 504 Foundations of Mathematics Education IV: Teacher Development and Policy.]Students in this course would be expected to participate in class discussion, complete weekly assignments, conduct two major projects, and respond to a final examination. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 502,
+      "title": "Foundations of Mathematics Education II: Teaching",
+      "credits": 3,
+      "description": "Teaching is the object of study encountered through connections among classical and contemporary theories of teaching and research on teaching. MTHED 502 Foundations of Mathematics Education II: Teaching (3) Teaching mathematics and developing knowledge, skills, and dispositions of mathematics teachers are central tasks in the work of mathematics educators. Thus acquiring deeper theoretical knowledge and practical skills in teaching are fundamental objectives for doctoral students in mathematics education. The focus of this course is on teaching - and not the teacher - as an object of study.In this course, students explore and connect classic and contemporary research and theories of teaching, come to know the nature of mathematics teaching in tradition and vision, relate theories of teaching to theories of learning, develop ability and disposition to study and improve mathematics teaching and hone ability to evaluate and conduct research on teaching.This course would be one of four required Mathematics Education courses for all doctoral students in the Mathematics Emphasis Area/Curriculum and Instruction Ph.D. program. [The other required courses are MTHED 501 Foundations of Mathematics Education I: Learning; MTHED 503 Foundations of Mathematics Education III: Curriculum; and MTHED 504 Mathematics Education IV: Teacher Development and Policy. This course would typically follow MTHED 501 .]Students in this course would be expected to participate in weekly discussions, articulate their emerging philosophies of teaching, and analyze teaching episodes. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 503,
+      "title": "Foundations of Mathematics Education III: Curriculum",
+      "credits": 3,
+      "description": "Study of mathematics curriculum blends historical trends and current issues with research literature and techniques to study effects of innovations. MTHED 503 Foundations of Mathematics Education III: Curriculum (3) Mathematics educators who are active in leadership of school systems, teacher education, research and development projects, and formulation of education policy are frequently called on for analytic or creative work related to the school and collegiate curriculum. They are asked for advice on the content, organization, presentation, and evaluation of mathematics curricula and to conduct research directly related to curricula and the effects of their implementation.Students in this course will develop a connected current and historical view of the nature of K-16 mathematics curriculum materials, movements, and guidelines. They will develop skills and dispositions to critique, conceptualize, design, conduct and report research on curriculum development and implementation efforts.This course would be one of four required Mathematics Education courses for all doctoral students in the Mathematics Emphasis Area/Curriculum and Instruction Ph.D. program. [The other required courses are MTHED 501 Foundations of Mathematics Education I: Learning; MTHED 502 Foundations of Mathematics Education II: Teaching; and MTHED 504 Foundations of Mathematics Education IV: Teacher Development and Policy.]In addition to participation in class discussions, students in this course would be expected to conduct a historical analysis of the treatment of a mathematical theme or topic in K-16 curricula, analyze and synthesize research related to an important issue, analyze instruments used in curriculum research, and propose a research study in some aspect of the mathematics curriculum. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 504,
+      "title": "Foundations of Mathematics IV: Teacher Development and Policy",
+      "credits": 3,
+      "description": "Nature and study of teacher education and professional development programs and projects coupled with policy and impact in mathematics education. MTHED 504 Foundations of Mathematics IV: Teacher Development and Policy (3) One of the principal day-to-day responsibilities of mathematics educators is teaching of content and pedagogy courses for prospective teachers. This work often leads to opportunities for leadership through professional development courses and projects with in-service teachers and to consulting work with local, state, and national school, governmental, and professional organizations concerned about educational policy. Effective work in these arenas requires knowledge and practical skills about professional development and institutional change as well as awareness of policies and the role of policy in influencing practice.Students study research and practice in teacher education and professional development of mathematics teachers. They come to know the research and the issues that confront those who prepare teachers and support teachers' continued professional development. Students become familiar with governmental and professional organizations and the critical issues that impact the direction of mathematics education. They also learn how to study local, state, and national policies and publications.This course would be one of four required Mathematics Education courses for all doctoral students in the Mathematics Emphasis Area/Curriculum and Instruction Ph.D. program. [The other required courses are MTHED 501 Foundations of Mathematics Education I: Learning; MTHED 502 Foundations of Mathematics Education II: Teaching; and MTHED 503 Foundations of Mathematics Education III: Curriculum.]In addition to participation in class discussions, students in this course would be expected to articulate a policy regarding a critical issue in mathematics education, evaluate a teacher education or professional development program, propose a professional development or teacher education project, and complete a final examination. Course grades depend on students' performance on all of these measures."
+    },
+    {
+      "number": 511,
+      "title": "Connections Between Mathematics and Mathematics Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH435",
+          "MATH471",
+          "MTHED411",
+          "MTHED427"
+        ]
+      },
+      "description": "Course connects college-level mathematics with secondary school mathematics in terms of curriculum content and research on teaching and learning. MTHED 511 Connections Between Mathematics and Mathematics Education (3) The course is organized around key areas of college-level mathematics. In each area, the college-level mathematics focus is on critical ideas, such as fundamental concepts, powerful techniques, and important theorems. These ideas are then explored as abstractions of secondary school mathematics content and as justifications for procedures taught in secondary schools. Resulting new mathematics understandings will be used to understand research on learning and teaching mathematics and to apply research to secondary school mathematics instruction. Mathematics curriculum expectations will include both mathematics content topics and mathematical practices and processes."
+    },
+    {
+      "number": 520,
+      "title": "Analysis of Research in Mathematics Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MTHED412W",
+              "MTHED420"
+            ]
+          }
+        ]
+      },
+      "description": "Survey of the status of knowledge about mathematics learning and instruction, K-12; analysis of research procedures; instruments for evaluating research."
+    },
+    {
+      "number": 523,
+      "title": "Projects in Mathematics Education Research, Curriculum Development, and Evaluation",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 24
+      },
+      "description": "Conceptualizing, designing, conducting, and reporting mathematics education research, curriculum development and/or evaluation projects."
+    },
+    {
+      "number": 527,
+      "title": "Research on the Use of Technology in Mathematics Education",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MTHED427"
+        ]
+      },
+      "description": "Reviewing, critiquing, designing, and conducting research on mathematics learning and teaching in technology intensive environments."
+    },
+    {
+      "number": 530,
+      "title": "Mathematical Thinking at the Secondary and Early College Levels",
+      "credits": 3,
+      "description": "Exploring and applying theories of advanced mathematical thinking; reviewing, conducting research on mathematical thinking at secondary and early college levels."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "subject": "CMED",
+  "courses": [
+    {
+      "number": 501,
+      "title": "Biology and Care of Laboratory Animals",
+      "credits": 3,
+      "description": "Presentation of the anatomic and physiologic characteristics of the commonly used laboratory animal species and their relation to biomedical research."
+    },
+    {
+      "number": 503,
+      "title": "Laboratory Animal Genetics",
+      "credits": 3,
+      "description": "Genetic principles applied to laboratory animals used for investigations of diseases that may be controlled or influenced by genetic factors."
+    },
+    {
+      "number": 507,
+      "title": "Techniques of Laboratory Animal Experimentation",
+      "credits": 3,
+      "description": "Techniques of drug administration, infusion, and collection of body fluids and materials; gnotobiology; use of radioisotopes and bioinstrumentation."
+    },
+    {
+      "number": 515,
+      "title": "Experimental Surgery of Laboratory Animals",
+      "credits": 3,
+      "description": "Surgical techniques, including nephrectomy and Goldblatt clamp, bladder and gastric pouches, bile duct cannulation, intraventricular operation, cardiac and cerebrovascular catheterization."
+    },
+    {
+      "number": 530,
+      "title": "Diseases of Laboratory Animals I",
+      "credits": 3,
+      "description": "Physiological and pathological expressions of both infectious and metabolic- degenerative diseases of rodents, with emphasis on diagnostic and control methods."
+    },
+    {
+      "number": 531,
+      "title": "Diseases of Laboratory Animals II",
+      "credits": 3,
+      "description": "Physiological and pathological expressions of both infectious and metabolig- degenerative diseases of nonhuman primates and other species of animals."
+    },
+    {
+      "number": 535,
+      "title": "Comparative Pathology",
+      "credits": 3,
+      "description": "Comparative pathologic characteristics of infectious and metabolic diseases of animals and man."
+    },
+    {
+      "number": 590,
+      "suffix": "A",
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 590,
+      "suffix": "B",
+      "title": "Contemporary Topics in Laboratory Animal Science Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers. This colloquium is specifically focused on recent literature in the field of Laboratory Animal Medicine."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 801,
+      "title": "Foundations in Laboratory Animal Welfare Laws, Regulations, and Guidelines I",
+      "credits": 1,
+      "description": "This course uses a problem-based learning approach to develop the ability to interpret and apply laws and regulations that pertain to the humane care and use of laboratory animals. In particular, students will learn how to critically evaluate an Institutional Animal Care and Use Committee (IACUC) protocol for compliance with laws, regulations, guidelines and position statements that pertain to laboratory animal care and use. Licensed veterinarians enrolled in the Laboratory Animal Medicine Master's degree training program are the target audience"
+    },
+    {
+      "number": 810,
+      "title": "Management of Animal Care and Use Programs in Biomedical Research",
+      "credits": 1,
+      "description": "This course will provide opportunities for students to apply knowledge and skills needed for administration and management of an animal resources program in biomedical research. Using active learning practices, students will explore topics specific to housing and caring for research animals. Topics include animal facility design, disaster planning, personnel management, waste management, fiscal management, process management concepts (LEAN, Six Sigma, Systems Approaches), and strategic planning."
+    }
+  ]
+}

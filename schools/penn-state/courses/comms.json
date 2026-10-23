@@ -1,0 +1,101 @@
+{
+  "subject": "COMMS",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Communications and Cultural Theory",
+      "credits": 3,
+      "description": "This course is designed to provide students a broad background in communications and cultural theory. COMMS 500 Communications and Cultural Theory (3) This course is an advanced study of various interpretive approaches and methodological tools that are central to the analysis of media artifacts, including newspaper articles, magazines, films, advertising, and television programs. It begins with an overview of various interpretive traditions, including culturalism, psychoanalytic theory, structuralism, ethnic and racial critiques, poststructuralism, postmodernism, feminism, postcolonial studies, and queer theory. It prepares students to critically examine philosophical assumptions regarding the relationship between the nature of knowledge, expression, writing and creative production on one hand, and conceptions of personhood, community, social structures and authority, on the other. Students are required to do significant reading and writing in this course, and to propose and conduct analyses of communication artifacts."
+    },
+    {
+      "number": 503,
+      "title": "Research Methods in Communications",
+      "credits": 3,
+      "description": "This course prepares students to conduct research in communications using both qualitative and quantitative research methods. COMMS 503 Research Methods in Communications (3) This course prepares students to conduct research in communications. It begins with an overview of the different strategies and philosophies of research methodology including scientific method, inference, skepticism, hypothetico-deductive reasoning, critical, humanistic, and naturalistic inquiry. The course focuses on four major types of communications research methodology: experimental, survey, textual analysis and naturalistic inquiry. Students are required to do significant reading and writing in this course, as well as propose and conduct a research project of their own design. This course is a fundamental element of the masters program curriculum in that it prepares students to conduct their thesis projects."
+    },
+    {
+      "number": 519,
+      "title": "Communication Technology and Culture in History",
+      "credits": 3,
+      "description": "An advanced study of various interpretive approaches and methodological tools that are central to the analysis of cultural artifacts. COMMS 519 Communication Technology and Culture in History (3) This course is an advanced study of various theoretical approaches that are central to the analysis of communication technology and culture in historical context. It begins with an overview of various communication historiographies, including the works of Harold Innis, Walter Ong, Umberto Eco, Elizabeth Eisenstein, James M. Carey, Marshall McLuhan, Lewis Mumford, and others. It engages students in the critical examination of such critical issues as communication and public memory, discourse in historical context and the historical basis of identity. Students are required to do significant reading and writing in this course, and to propose and conduct historical research employing one of the theories discussed in this course."
+    },
+    {
+      "number": 525,
+      "title": "Advanced Writer's Seminar",
+      "credits": {
+        "min": 3,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "This course supports the development of advanced writing projects in a range of different genres. COMMS 525 Media Writer's Seminar (3-9 per semester/maximum of 9) This course is an advanced study of narrative styles and research techniques used in various forms of writing, including journalism and creative non-fiction, memoir, opinion pieces, cultural criticism, copy writing, writing for interactive media, and writing for performance media. Offerings in different semesters will focus on different topics in these writing genres. The course prepares students to create original material in a variety of writing genres, and for a variety of media. It is well-suited for the development of creative master's projects, and for extending the student's graduate research into a professional portfolio. The first portion of the course defines the elements of the genre through textual analysis and establishes a theoretical framework. Students will then submit for peer review a project proposal that addresses the appropriateness of the subject to the genre, outlines research methods, defines the intended audience, and provides examples of potential outlets. Students will then submit a first draft for peer review, and finally a finished draft for peer review and evaluation."
+    },
+    {
+      "number": 555,
+      "title": "Media Discourse Analysis",
+      "credits": 3,
+      "description": "This course provides students with advanced theoretical approaches and methodological tools to analyze a variety of media discourses. COMMS 555 Media Discourse Analysis (3) This course provides students with both theoretical approaches and methodological tools to analyze a variety of media discourses. It begins with an overview of linguistic theories, including structuralism, poststructuralism, semiotics, and critical discourse analysis. The course highlights the philosophical relationship between language, culture, identities, politics, and intercultural communications. It also prepares students to examine discourses from multiple angles, such as textually oriented analysis, critical analysis, linguistic analysis, ethnographic analysis, etc. The course then leads into a discussion of several common discursive models in media: ritual, myth, and social drama. It ends with case studies of discourse in films, television, news, advertisement, the Internet, and politics. Students are required to do significant reading and writing in this course, and to propose and conduct a project of discourse analysis of their own design."
+    },
+    {
+      "number": 560,
+      "title": "Seminar on Global Culture and Communication",
+      "credits": 3,
+      "description": "This course explores the globalization of communication and communication technologies within a broad political, economic and cultural context. COMMS 560 Seminar on Global Culture and Communication (3) Developments in technology have led to new levels of interaction and interdependency of human groups and processes across the boundaries that historically separated them - geography, national identity, state borders, and local community. In such a context, we must re-examine many of our assumptions about space, place, identity, and belonging, and about human social organization and human agency - the potential to purposefully transform ourselves and our surroundings. Globalization calls into question our assumptions about politics, economics, culture, and communication. In this course, students will consider the challenges and opportunities that globalization creates for human community and agency - that is, for the multiple ways in which human activity becomes socially organized and purposeful. They will survey the dominant theories of globalization and regionalization and examine the current trends in regionalization and globalization of politics, culture, communication, economic processes, and regulatory structures. They will focus on the challenges communication globalization poses to past forms of identity, the transformation of traditional understandings of space and place, and the opportunities for new forms of identity, community, and action."
+    },
+    {
+      "number": 568,
+      "title": "Media Production Workshop",
+      "credits": {
+        "min": 3,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "This course prepares students for the creation of advanced media projects in traditional and digital media. COMMS 568 Media Production Workshop (3-9 per semester/maximum of 9) This course is a workshop for the creation of advanced media projects in traditional and digital media. Workshop topics will alternate coverage of different media, and will include photography, graphic design, interactive media, video, audio, and other media to reflect the needs of the graduate program. Students will submit proposals that address their project objectives, production plans, and intended audiences. After submitting proposals for peer review and faculty evaluation, students will begin a three-stage process of pre-production, production, and post-production in the creation of their work. This process will require the organization of production elements, the acquisition of media, and the creation of the finished project. This seminar is intended for graduate students who wish to gain experience with new media technologies, pursue creative outlets for their research interests, or develop their professional portfolios. It is an intensive workshop with demanding writing and technology requirements."
+    },
+    {
+      "number": 580,
+      "title": "Communications Master's Project",
+      "credits": {
+        "min": 3,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "requisites": {
+        "previous": [
+          "COMMS500",
+          "COMMS503"
+        ]
+      },
+      "description": "An original master's paper or creative production with critical paper. COMMS 580 Communications Master's Project (3-6 per semester/maximum of 6) This course may be a scholarly master's paper or it might instead be by a creative production supplemented by a descriptive and analytical paper. The production should display integration in skills and knowledge grained in the program as well as depth within an area of concentration. A committee of Communications faculty, supplemented by outside consultants where appropriate, would be needed to judge the final project."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

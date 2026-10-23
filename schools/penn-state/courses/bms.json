@@ -1,0 +1,352 @@
+{
+  "subject": "BMS",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Foundations of Biomedical Research",
+      "credits": 4,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "This hands-on course teaches students a variety of fundamental skills required to successfully conduct independent biomedical research. The goals of this course include early exposure to important basic biomedical laboratory techniques and developing both written and oral scientific communication skills, with the broader goals of creating a sustainable peer group and fostering rapport with faculty members. The course will be 4 weeks in duration, and consist of hands-on laboratory time, daily literature discussions, a final written report documenting experimental results and data interpretation, and a journal club-style oral presentation. The first week of the course is spent on fundamentals such as searching the literature, using citation indexes, notebooking and basic analytical techniques, as well as exposure to databases manipulating nucleic acid and protein sequences with the goal of enhancing understanding of the experimentation performed in the following 3 weeks of the course. Weeks 2-4 are designed to include an authentic research experience. Rather than having all reagents ready for the students, it is more valuable to perform experiments in \"real time.\" The experimental design consists of the following: 1. Students will purify and identify unknown plasmids by restriction digestion based on plasmid maps created with available software. 2. Students will design and execute a transient transfection with proper controls, and assess the expression of both the plasmids of interest by PCR and their protein products by Western blot analysis. 3. Students will predict which downstream pathways will be altered based on their reading of the primary literature, and assess expression of proteins of interest. Each day will consist of lab assignments and presentations/discussion based on the current scientific literature. This will allow students to develop their own hypotheses that they can then test in a laboratory setting. The course will culminate in an independent report describing the experimental strategies, outcomes, interpretations, and alternative/subsequent hypotheses derived from the lab experience. Students will also give an oral presentation of an article reflecting their own research interests, which will be chosen and prepared in consultation with a faculty advisor."
+    },
+    {
+      "number": 501,
+      "title": "Regulation of Cellular & Systemic Energy Metabolism",
+      "credits": 3,
+      "description": "Teaches biochemical and signal transduction concepts while exploring the control of bioenergetic processes. BMS 501 BMS 501 Regulations of Cellular & Systemic Energy Metabolism (3) Energy is fundamental to life. The production, storage and utilization of energy by organisms are highly regulated processes that provide excellent examples of the principals that govern the control of cellular metabolism and hormonal signaling. In addition, future biomedical scientists must be prepared to study diseases associated with aberrant energy metabolism, such as diabetes, obesity, and malnutrition. Regulation of Cellular & Systemic Energy Metabolism is one of three thematic courses that comprise the fall semester. The course explores how energy is obtained, stored and utilized by cells, tissues and organisms. The biochemistry of energy metabolism is studied with a focus on mechanisms by which these pathways are controlled in order to maintain health and energy homeostasis. Principles of hormonal signaling and cellular signal transduction pathways are studied in the context of energy metabolism. In addition, knowledge of these subjects is applied to the study of pathologies involving abnormal energy metabolism, including diabetes, obesity and starvation. Course objectives include developing an understanding of metabolic pathways and the mechanisms by which they are regulated; understanding principals of receptor theory, signal transduction and hormonal control of cellular processes; and gaining an understanding and appreciation of diseases that involve abnormal energy metabolism. The course is taught in approximately four blocks, with review sessions and examinations following each block. Exams are designed to determine mastery of the subject matter and to evaluate the ability to solve problems and logically address research questions. The principles and skills learned through successful completion of the course help prepare students for advanced graduate courses and graduate research careers."
+    },
+    {
+      "number": 502,
+      "title": "Cell and Systems Biology",
+      "credits": 3,
+      "description": "This course will cover the cellular basis of physiological processes from a systemic perspective. The major emphasis will focus on the cellular, molecular, and biochemical basis of normal and abnormal (pathological) tissue function. A special emphasis will be placed on common themes applicable to all tissue and the integration of molecular, cellular, tissue and organ systems. Lectures will be followed by discussion of the primary literature that complements the lecture material. The course is designed to give students an appreciation of the cell and molecular mechanism underlying physiological processes as well as cell and molecular biology research techniques."
+    },
+    {
+      "number": 503,
+      "title": "Advanced Molecular Genetics",
+      "credits": 2,
+      "description": "This course will provide fundamental and applied knowledge in the broadly defined area of molecular genetics. The material is intended for graduate students entering biomedical research careers in disciplines represented by various College of Medicine graduate programs. Biomedical research training must incorporate an understanding of the central dogma that underlies all biological processes, together with an appreciation of how genetic differences impact complex cellular pathways and disease. This course provides students with a fundamental understanding of how DNA is inherited, mutated, transcribed into various types of RNA, and translated into proteins, in the context of single cells and multicellular model organisms. The goals of BMS 503 , are to develop a common knowledge base and organizational framework for biomedical researchers and critical skills for future success as professional scientists. These skills include efficient and critical reading of the primary literature, well organized and scientifically rigorous responses to written prompts, effective and scientifically rigorous oral presentation of concepts; and a thorough understanding of basic genetic approaches used in biomedical sciences. This course focuses on core concepts, one at a time, and encourages independent learning, active in-class participation, and integrated thinking across systems."
+    },
+    {
+      "number": 504,
+      "title": "Art of Scientific Communication I",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "Introduction to scientific analysis, writing, and oral presentation using primary literature sources. BMS 504 Art of Scientific Communication I (1) The overall goal of BMS 504 , and the sequential course BMS505 taken in the Spring semester, is to develop the students into scientific communicators who, in written and oral formats, can convey scientific concepts and the experimental support for these concepts. This includes the development of the knowledge base and communication skills required for effective scientific exchange and engagement. BMS 504 meets 90 minutes, once a week for 11 weeks from the first week of class until the Thanksgiving Recess, and focuses on reading and analyzing articles from the primary literature with brief presentations by students. The intent of this schedule is to support the students in developing the skills necessary to analyze the primary literature, begin to present components of scientific articles in a group setting, and complete these goals in a time frame that does not compete with end-of-semester examinations. The first meeting is a presentation by a course director on Effective Powerpoint Presentations. The following 10 meetings allow two weeks to cover each of five topics. Each topic focuses on a high quality article selected from a portfolio created by the instructors of the Fall first-year Core Curriculum for the Biomedical Sciences (BMS) Graduate Program ( BMS 501 , 502 , and 503 ). Topics vary from year to year. The first week of each topic examines the components of the chosen article (purpose and significance) and is led by one of the course directors. The second week includes short presentations by students on experimental design and data analysis from the articles and is facilitated by a content expert from one of the Core BMS Courses."
+    },
+    {
+      "number": 505,
+      "title": "Art of Scientific Communication II",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS504"
+        ]
+      },
+      "description": "Advanced topics in scientific analysis, writing, and oral presentation using primary literature sources. BMS 505 Art of Scientific Communication II (1) The overall goal of BMS505 is to further the development of students as scientific communicators that began in BMS 504 . This includes enhancement of the knowledge base and communication skills, in written and oral presentations, required for effective scientific exchange and engagement. BMS 505 meets 90 minutes, once a week for 10 weeks from the first week of class until the end of April, and focuses on reading and analyzing articles from primary literature with extended oral and written presentations by students. Topics vary from year to year and focus on research or curricular interests of students enrolled in the course."
+    },
+    {
+      "number": 506,
+      "suffix": "A",
+      "title": "Biological Basis of Human Health and Disease A",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "Cellular, molecular, genetic, and biochemical basis of organ function pathology."
+    },
+    {
+      "number": 506,
+      "suffix": "B",
+      "title": "Biological Basis of Human Health and Disease B",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "Cellular, molecular, genetic, and biochemical basis of organ function pathology."
+    },
+    {
+      "number": 507,
+      "title": "Form and Function of Macromolecular Machines",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "The focus of this course is on the architecture of biological macromolecules that constitute all living cells. Understanding how the conformations of biomolecules and macromolecular assemblies relate to their function is crucial to modern biomedical research. This course is designed for students entering the broad field of molecular and cellular biology and aims to provide a solid foundation to understand fundamental biological mechanisms through the lens of structural biology. Students will learn to understand the architectural features of nucleic acid and protein structures and the forces that shape and stabilize their structure as well as intermolecular interactions in nucleic acid-protein and protein-protein complexes. Students will also learn to utilize state-of-the-art graphics software to render and analyze atomic structures of proteins and nucleic acids. Modern experimental structure determination methods will be introduced. The goals of this course are to build a strong appreciation of the principle that the functional properties of all macromolecular assemblies are rooted in their 3D structure, to develop the technical skills needed to view and analyze atomic coordinates of nucleic acid/protein complexes and to integrate this knowledge framework to effectively read, discuss and critique emerging primary literature on the structure and function and macromolecular complexes. Emphasis will be on core concepts, independent learning as well as active in-class participation."
+    },
+    {
+      "number": 508,
+      "title": "Metabolism in Health and Disease",
+      "credits": 1,
+      "description": "This course will provide fundamental and applied knowledge in the broadly defined area of metabolism. The material is intended for graduate students entering biomedical research careers in disciplines represented by various College of Medicine graduate programs. It is pivotal for trainees in Biomedical Research to understand the key concepts of metabolism and metabolic regulation, and how they are actually implemented at the cellular level. This course provides students with a fundamental understanding of metabolic regulation strategies, how the key metabolic pathways are integrated, the key roles of cellular organelles in metabolism and how those organelles are generated and maintained and coordinated in the cell. While metabolism is traditionally studied only in homeostasis, this course will equip the students with the ability to recognize and explain metabolic adaptations related to diseases such as inborn errors of metabolism or cancer. The bibliography will predominantly be recent papers, including reviews to provide a theoretical basis for the students and research papers to bring them to the forefront of metabolic discovery. Some of the classes will be case studies of diseases of metabolism that illustrate key concepts (students address the case studies in groups)."
+    },
+    {
+      "number": 512,
+      "title": "Data Analysis For The Biomedical Laboratory Scientist, A Practical Approach",
+      "credits": 2,
+      "description": "Biology is becoming increasingly computational as new technologies are producing massive amounts of data. The quantitative data need to be organized, graphed, and interpreted. This course will teach students the theoretical and practical aspects of experimental design, hypothesis testing, statistical analysis, and linear and non-linear curve fitting. This course will pair lectures describing theory with applications involving problem solving. Students will learn to program so they can analyze complex data sets. The students will increase their understanding of statistics and have the wherewithal to analyze big data seta. The course will end with a final project involving image analysis in which the students will create scripts and functions to analyze the colocalization of fluorescent proteins in cells."
+    },
+    {
+      "number": 520,
+      "title": "Human Integrative Physiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course explores whole organ physiology emphasizing skeletal muscle and exercise physiology, cardiovascular, renal and urinary, respiratory, gastrointestinal, and endocrine. BMS 520 Human Integrative Physiology (3) Human Integrative Physiology considers the function of the mammalian organism with an emphasis on system physiology. This course builds upon the strong foundation of cellular processes, molecular interactions, and genetic regulation provided in BMS 501 , 502 , 503 and allows students to develop an appreciation of the integration of biological function. The course is organized into multiple sections that focus on different organ systems. Initially, the course reviews principles of excitable cells and discuss sensory transduction, the autonomic nervous system, and motor system physiology. Next, students learn the structure and function of skeletal muscle physiology including muscle contraction, force generation, and movement. The course then focuses on the structure and regulation of the cardiovascular, renal, and respiratory systems. Subsequent sections cover gastrointestinal and endocrine systems by building upon the cellular and molecular processes covered in BMS 501 , 502 , and 503 . Each section teaches the basic design of the system, explores the physiological principles of function, and examines how each system contributes to homeostasis and pathophysiological disease. Class material is covered through lectures and primary literature."
+    },
+    {
+      "number": 550,
+      "title": "Fundamentals of Cancer Biology",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "Tumorigenesis is a multistep process driven by genetic and molecular changes that occur over time. Although cancer is a heterogeneous disease, many human tumors exhibit similar acquired physiological features. This course employs an integrated approach to teach the fundamentals of cancer biology with focus on the role of growth factors, oncogenes, tumor suppressor genes, and signal transduction mechanisms in tumor formation. Building on this foundational knowledge, subsequent sessions address the multistep nature of tumorigenesis as well as the role played by the tumor microenvironment as tumors progress and spread. Current topics on bioinformatics and therapeutic management are covered in the last week of the course."
+    },
+    {
+      "number": 551,
+      "title": "Cancer Genetics",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS502",
+          "BMS503",
+          "BMS550"
+        ]
+      },
+      "description": "Genomic instability is a major hallmark of carcinogenesis. This course will examine how various forms of genome instability promote cellular transformation. The impact of both inherited and somatic mutations will be evaluated. Mechanisms of genomic instability will be explored, to understand how their dysregulation results in cancer. Epigenetic mechanisms of carcinogenesis will also be covered. Finally, novel therapeutic approaches that exploit tumor-specific mutations will be presented. As the part of this course, students will evaluate seminal research papers and the most recent findings in the literature, and learn the relevant experimental approaches employed in the field."
+    },
+    {
+      "number": 552,
+      "title": "Tumor Metabolism",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "BMS550"
+        ]
+      },
+      "description": "Cancer is a disease of dysregulation of cellular growth machinery leading to loss of growth suppressive mechanisms, increased growth promoting signaling, and other key hallmarks supporting the clonal expansion of malignant cells. As the cancer phenotype progresses the tumor requires increasing amounts of metabolic intermediates to continue to grow. This leads to dramatic changes in the use of glucose, fatty acids, nitrogen containing metabolites and sterols by the tumor. These cellular changes have cascading effects on the cells in the local tumor microenvironment as well as other more distant environments such as the bone and skeletal muscle which can lead to organism wide metabolic dysregulation. The objective of this course is to provide an overview of these processes at the cellular, organ, and organism levels with emphasis on the interactions of the metabolic pathways and the potential to intervene in this metabolic dysregulation for the treatment of cancers."
+    },
+    {
+      "number": 553,
+      "title": "Cancer Biology Colloquium",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "description": "Students will be exposed to a range of topics in cancer biology from the primary literature to expand their knowledge of current state-of-the art research in cancer biology, and to enhance their critical thinking skills and ability to critique the primary literature."
+    },
+    {
+      "number": 554,
+      "title": "Cancer Therapy and Immunology",
+      "credits": 2,
+      "description": "This course gives students an overview of the fundamental processes leading to cancer development but with a focus on using drugs, immunological approaches, or interventions to combat these processes. Specifically, the course will focus on drugs targeting the various processes that lead to cancer development. The objective is to impart an understanding of the concept of cancer and the use of drugs or immunological approaches, to combat it in the broadest sense. This will be accomplished by: 1. Imparting an understanding of the basics of cancer biology and how drugs or immunology can be used to combat this disease (e.g., be able to interpret data from the cancer literature involving this material). 2. Know the major processes leading to cancer development as well as current and future drugs that will target these processes. 3. Obtain an understanding of the challenges in cancer drug development and discovery of a cure for the disease. 4. Understand the process of drug discovery and development, the challenges and opportunities inherent in it, and its relation to cancer drug development and treatment. 5. Develop a clear overview of the theory and methods that are used in the overall process of drug discovery and development for the treatment of cancer."
+    },
+    {
+      "number": 562,
+      "title": "Principles of Immunology C: Dysfunction and Manipulation of the Immune System",
+      "credits": 1,
+      "description": "Investigation of diseases associated with immune system dysfunction and the manipulation of this system to prevent and treat disease. This course will investigate the basis for human diseases that are associated with deficiencies or dysregulation of the immune system. The content builds on foundational knowledge of the immune system to demonstrate the interplay of immune components during disease processes. Students will be able to recognize the types of immune deficiencies and mechanisms of immune dysregulation that contribute to disease. In addition, students will apply this knowledge toward an understanding of how manipulation of the immune system can be used both to prevent and treat disease."
+    },
+    {
+      "number": 564,
+      "title": "Concepts in Virology",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "MICRO550"
+        ]
+      },
+      "description": "The objective of the Concepts in Virology course is to describe the lifecycle of representative RNA and DNA viruses and the relationship between the virus and the host at the molecular level. Emphasis is placed on developing an understanding of the experimental systems used to elucidate individual steps in virus lifecycles and interactions with the host cells. Host cell-virus interactions leading to the production of progeny virus and interactions involved in establishing and maintaining long term interactions, such as latency and effects on cell growth, are discussed in detail. While some didactic lectures are provided, reading and discussion of the primary scientific literature is an integral component of the course. Students will gain a comprehensive view of the interaction between a virus and its host at the molecular level. In addition, students will gain an understanding of the experimental systems used to elucidate steps in the virus lifecycle."
+    },
+    {
+      "number": 566,
+      "title": "Viral Oncogenesis",
+      "credits": 1,
+      "description": "This course will provide an understanding of the role of viruses in the development of cancer in humans and the molecular mechanisms involved. The course will build on an understanding of normal growth control of cellular proliferation to determine the molecular mechanism through which oncogenic viruses exert their effects on cellular proliferation and survival. Students will gain an understanding of the contribution of an underlying human immunodeficiency virus infection and will be able to apply this knowledge to an understanding of the cooperative effect of HIV and other viruses."
+    },
+    {
+      "number": 567,
+      "title": "Viral Pathogenesis",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "This course addresses methodologies used to study viral pathogenesis and recent advances in the field. The Viral Pathogenesis course will cover multiple aspects of the study and implications of viral/host interactions at the extracellular or organismal level. The course will give introductions to each topic, and will then examine recent primary literature. The aim of the course is to provide students with foundational knowledge to be able to frame experimental questions, knowledge of recent experimental techniques, and the ability to analyze experimental data and develop firm conclusions from these data. The course will examine both the host response to the virus and the ability of the virus to evade mechanisms deployed by the host to enhance viral replication and subsequent transmission."
+    },
+    {
+      "number": 568,
+      "title": "Current Topics in Translational Cancer Research",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "BMS550"
+        ]
+      },
+      "description": "Current Topics in Translational Cancer Research is designed to prepare students to be the next generation of translational cancer researchers. The students are expected to have a basic knowledge of cancer biology and research techniques. The content will include cancer research that is currently being conducted as well as recently completed and will introduce both new technologies as well as new theories on cancer research. The course will offer students an opportunity to acquire skills in developing and implementing hypothesis-based research studies that can lead to clinical therapeutics. The students will learn how to identify potential targets for therapy of cancer at all stages of development, from tumor initiation through progression and metastasis. The development of drugs from design and testing to investigational new drug status and FDA approval for clinical use will be discussed."
+    },
+    {
+      "number": 571,
+      "title": "Graduate Clinical Rotation",
+      "credits": 3,
+      "description": "This course allows graduate students at Hershey and University Park to gain experience in the clinical arena. BMS 571 Graduate Clinical Rotation is designed to allow graduate students at Hershey and at University Park to gain intensive experience in the clinical arena in the area of their dissertation research. The site of the clinical rotation and specific responsibilities of the student are determined by the clinical mentor that is matched with the student. Clinical mentors will indicate their willingness to sponsor a student and will outline the associated opportunities and responsibilities of the specific clinical rotation. The specific rotation will be selected by the student and the dissertation mentor to complement the student's graduate studies. Opportunities during the clinical rotation: The rotation typically will last 6 - 8 weeks and the student will be in the clinic and/or engaged in clinical activities for about 4h/week. During this rotation, students will have a range of opportunities including: attending Grand Rounds, attending Resident and Department Seminars and lectures, shadowing physicians, attending clinical research meetings, attending relevant case conferences, and, if appropriate, observing surgery. Students also may engage in a practical hands-on analysis of the subject matter (e.g., via an analysis of data, histology, MRI, etc.) and they will be involved in the discussion of relevant cases and of potential treatment strategies. Requirements: Course-specific policies and expectations for all students (i.e., for all students from Hershey and from the University Park Campus).(1)all students must complete an Infectious Disease Summary; an Insurance Waiver and a Confidentiality form. The forms will be located at the CANVAS course site. All 3 forms must be received by Graduate Education Office before the start of the Graduate Clinical Rotation. (2) Orientation Meeting: All students are required to attend a 2 hour mandatory Orientation Meeting where issues will be discussed related to the course requirements, what to expect in the clinical setting, HIPAA regulations, what is and is not appropriate, how and when to interact with patients, how physicians collect data from patients, terminology, hierarchy, and differences in thinking styles between clinicians and scientists. Students will not be allowed to begin their rotation if they fail to attend this mandatory meeting."
+    },
+    {
+      "number": 581,
+      "title": "Molecular and Translational Approaches to Human Disease",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BMS501",
+          "BMS502",
+          "BMS503"
+        ]
+      },
+      "description": "This course teaches students the scientific process used to understand the molecular bases of diseases and the development of novel therapies. BMS 581 Molecular and Translational Approaches to Human Disease (3) The course utilizes clinically relevant diseases as specific examples of applying an integrated approach to elucidate a mechanistic understanding of disease pathophysiology and the development of novel therapies. Over the 15-week period of the course the students study five specific diseases or complications of diseases, each over a 3-week period. The diseases used represent areas of high impact on Western society or ones in which specific principles of mechanistic understanding or therapeutic development are clearly illustrated. The diseases also represent strengths of the research at the Penn State Hershey such as cancer, diabetes, cardiovascular disease, and infection and inflammation. The instructors use primary literature to demonstrate the scientific approach used to test specific hypotheses related to disease mechanism. At the end of the 3-week period, the students use team-based learning to develop experimental approaches to study novel aspects of the disease pathology or therapeutic development."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 591,
+      "title": "Biomedical Research Ethics",
+      "credits": 1,
+      "description": "Education in research ethics for biomedical scientists. Meets U.S. Public Health standards for education in responsible conduct of research."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 597,
+      "suffix": "B",
+      "title": "**SPECIAL TOPICS**",
+      "credits": 3
+    },
+    {
+      "number": 597,
+      "suffix": "I",
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or semester."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Laboratory work on thesis project."
+    },
+    {
+      "number": 601,
+      "title": "Thesis Preparation",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "BMS 601 is available to full-time Ph.D.-degree candidates who have passed the comprehensive examination and met the two-semester residence requirement."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Off-campus laboratory work on thesis project."
+    },
+    {
+      "number": 801,
+      "title": "Writing Grant Proposals for Biomedical Research",
+      "credits": 1,
+      "description": "This course will give students experience with the preparation of and submission process for grant proposals. BMS 801 Writing Grant Proposals for Biomedical Research (1) This course provides students with a hands-on learning approach to the process of submitting competitive grant proposals. It will inform students of the types of grants that exist, including training fellowships for which they may be eligible. Students will learn of the many different types of organizations, both public and private, that offer biomedical research funding. A majority of the course will focus on the proposal sections pertaining to the research plan emphasizing the purpose of each section along with strategies to create an effective, successful proposal. The proposal sections to be covered in detail are: specific aims, significance, innovation and approach. In-class discussions and team-based learning activities will be used to highlight the teaching objectives for each session. Using these in-class experiences as a guide, students will apply the key aspects of proposal writing by completing a proposal as part of a grant-writing team. The proposal review process will be discussed and a demonstration of the review process will allow students to understand who reviews proposals and how proposals are reviewed as well as to allow them to participate in the review process. In addition to these writing and review experiences, strategies for the oral presentation and defense of a proposal will be covered. By the end of the course, a student will be able to write an effective grant proposal and have the knowledge of how to present and defend that proposal orally, all skills required for a successful career in the biomedical sciences."
+    },
+    {
+      "number": 802,
+      "title": "Translational Research in Medicine (TRIM)",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 5
+      },
+      "description": "Translational Research in Medicine ( BMS 802 ) is a mentorship course that provides post-comprehensive MD/PhD graduate students with the opportunity to work one-on-one with a clinician scientist mentor that will allow students to build upon and hone their clinical skills (history taking, physical exams). The course will also allow students to explore different sub-specialties and develop their clinical network. The students will also become proficient in writing SOAP notes and in learning how to integrate their basic science knowledge with their clinical exposures. These opportunities will make it possible for students to integrate their clinical experiences with their PhD thesis projects. By the end of this course students will be expected to be able to: 1. Perform a detailed history using agenda-setting, open-ended questions, and Chronology, Onset, Description, Intensity, Exacerbating factors, Remitting factors, Symptoms (CODIERS) which are an important piece of the medical school's Patient Centered Interviewing Technique. 2. Perform a thorough physical exam 3. Apply basic science knowledge to clinical problem solving 4. Write a comprehensive SOAP note (A framework for writing progress reports about a patient) 5. Write a case report based on a patient seen in clinic (optional but highly suggested) This course is specifically designed for post-comprehensive MD/PhD students, to build upon and hone their clinical skills during the non-clinical years of training and to begin to develop a translational research project that will be further explored in the M3 medical course Advanced Translational Medicine."
+    }
+  ]
+}

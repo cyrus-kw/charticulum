@@ -1,0 +1,150 @@
+{
+  "subject": "FSC",
+  "courses": [
+    {
+      "number": 431,
+      "title": "The Chemistry of Fuels",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          },
+          "EGEE302"
+        ]
+      },
+      "description": "Nature and properties of fossil and other fuels, including aerospace, in relation to use; preparation of fuels; by-products; fuel analysis. The course deals with the formation, composition and properties of the principal naturally occurring fossil hydrocarbons (coal, petroleum, natural gas), and their refining, upgrading, and conversion chemistry. The objectives of this course are to equip students with a fundamental knowledge of the chemistry for the fossil hydrocarbon resources and their energy use for transportation and stationary fuels as well as their use as chemical feedstocks. It also helps to prepare students for the challenges, opportunities, and changes in the world of energy and resource-related enterprises. The primary emphasis is on petroleum, natural gas, coal, and liquid transportation fuels. This is a required course for the Energy Engineering Major."
+    },
+    {
+      "number": 432,
+      "title": "Petroleum Processing",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          }
+        ]
+      },
+      "description": "Transportation of people and goods in many parts of the world depend almost completely on petroleum fuels, such as gasoline, jet fuel, diesel fuel, and marine fuel. Apart from the fuels, materials that are necessary for operating the combustion engines of cars, trucks, planes, and trains also come from petroleum. These materials include lubricating oils (motor oils), greases, tires on the wheels of the vehicles, and asphalt to pave the roads for smooth rides in transportation vehicles. All petroleum fuels and many materials are produced by processing of crude oil in petroleum refineries. Petroleum refineries also supply feedstock to the petrochemicals and chemical industry for producing all consumer goods from rubber and plastics (polymers) to cosmetics and medicine. This course explains how physical processes and chemical reactions that take place in separate petroleum refinery units are integrated to convert crude oil into desired fuels and materials. Refinery processes are divided into four types that include separation, conversion, finishing, and support. The overall objective of petroleum refining is to convert crude oil into fuels and materials that comply with commercial specifications and environmental regulations. All refining processes and refinery operations are also subjected to the applicable environmental regulations. A historical evolution of process concepts is introduced to demonstrate how the refining efficiency has increased with significant reduction of pollutant emissions from individual refinery processes. The principal objectives of this course are to enable students to: 1. explain the market drivers for the refining industry (ABET student outcome 2). 2. indicate what crude oils consist of and how crude oils are characterized based on their physical properties (ABET 1, 2); 3. express the objectives of petroleum refining and classify the processes used in petroleum refining (ABET 1, 2, 7); 4. demonstrate how a petroleum refinery works and sketch a flow diagram that integrates all refining processes and the resulting refinery products (ABET 2); 5. examine how each refinery process works and how physical and chemical principles are applied to achieve the objectives of each refinery process (ABET 1, 2, 7); 6. assess implications of changing crude oil feedstocks on refinery configuration and propose strategies to resolve conflicts with degrading crude oil quality and increasingly stringent environmental regulations on petroleum fuels (ABET outcome 4, 7); 7. discuss different sources of natural gas and explain how natural gas is processed at well sites and in processing plants with application of selected refinery processes and other physical operations (ABET 1, 2)."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 503,
+      "title": "Analytical Methods in Fuel Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "EGEE430",
+              "FSC431"
+            ]
+          }
+        ]
+      },
+      "description": "Analytical and characterization methods used in fuel science and applied to fuel processing, combustion, and conversion are emphasized. F SC 503 Analytical Methods in Fuel Science (3)The course will focus on the analytical methods that are used in fuel science for the characterization of fuels and their products during combustion, conversion, processing, and utilization. Students will be exposed to the theory and practical applications of such analytical methods as chromatography and spectrometry. Methods for the analysis of the data obtained with these analytical techniques will be discussed. In particular, the potential for interference and confounding results and techniques for establishing reproducibility and error bars in the experimental data and results will be explored."
+    },
+    {
+      "number": 504,
+      "title": "Problems in Fuels Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "EGEE430",
+          "FSC431"
+        ]
+      },
+      "description": "A problem-based, active learning course on the utilization of fossil fuels and renewable energy."
+    },
+    {
+      "number": 506,
+      "title": "Carbon Reactions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM452"
+        ]
+      },
+      "description": "Current approaches to heterogeneous reactions in combustion and gasification of carbonaceous solids, including those derived from coal and petroleum sources."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

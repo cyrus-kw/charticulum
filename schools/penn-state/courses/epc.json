@@ -1,0 +1,23 @@
+{
+  "subject": "EPC",
+  "courses": [
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": 1,
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

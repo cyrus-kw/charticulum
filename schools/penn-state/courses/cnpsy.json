@@ -1,0 +1,144 @@
+{
+  "subject": "CNPSY",
+  "courses": [
+    {
+      "number": 502,
+      "title": "Advanced Counseling Theory and Method",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CNED501"
+        ]
+      },
+      "description": "Assessment, intervention, and evaluation procedures for counseling problems frequently encountered in school, college, and rehabilitation settings. CN ED 502CN ED (CNPSY) 502 Advanced Counseling Theory and Method (3)This course is concerned with the exploration of ideas that are of theoretical and applied importance to thinking about counseling and psychotherapy. The course is not a skills course, per se, although many of the readings have clear implications for enhancing your therapeutic skills. Nor is the course meant to be a review of theories of personality or counseling typically covered in earlier courses. This course is open to CN ED and CNPSY students. The prerequisite is CN ED 501."
+    },
+    {
+      "number": 554,
+      "title": "Cross-Cultural Counseling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CNED507",
+              "CNED595A"
+            ]
+          }
+        ]
+      },
+      "description": "Examines theory, research, and models of counseling relationships between counselors and clients of different racial and sociocultural backgrounds. CNPSY 554CNPSY (CN ED) 554 Multicultural Counseling (3) This course is an advanced multicultural counseling course designed to help doctoral students: (a) develop mastery of the multicultural counseling literature, (b) promote self-awareness and self-knowledge, (c) facilitate the construction of cultural knowledge to increase awareness and sensitivity to issues affecting multicultural populations, (d) identify intervention strategies applicable to multicultural clients, and (e) promote development of a personal philosophy of multicultural counseling toward becoming a multiculturally competent counselor. The course is open to CN ED and CNPSY doctoral students who have successfully completed CN ED 507, CN ED 595A or CNPSY 595A, or equivalent courses."
+    },
+    {
+      "number": 555,
+      "title": "Career Counseling",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CNED505"
+        ]
+      },
+      "description": "The examination of historical, legislative, and current models of career counseling and the development of pertinent individual and group techniques. CN ED 555CN ED (CNPSY) 555 Career Counseling (3) This course is an advanced extension of CN ED 505, Foundations of Counseling Infon-nation or its equivalent. In CN ED 501, students acquire a theoretical understanding of models of career development, decision-making, career education, information systems and information resources. In CN ED/ CNPSY 555 , students will have an opportunity to related such leaming to the place of work in human behavior, models of career counseling, the role-play of such models, the practice of career appraisal and the broad economic, social, and legislative contexts, including the global economy, stimulating current emphases on career counseling. This course is open to CN ED and CNTSY students. The prerequisite is CN ED 501."
+    },
+    {
+      "number": 582,
+      "title": "Advanced Group Psychotherapy",
+      "credits": 3,
+      "description": "Study of group psychotherapy and interventions, with an experiential component. Available only to majors in CN ED and CNPSY."
+    },
+    {
+      "number": 594,
+      "title": "Research in Counseling",
+      "credits": {
+        "min": 2,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "The design, implementation, and evaluation of counseling research projects."
+    },
+    {
+      "number": 595,
+      "title": "**SPECIAL TOPICS**",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      }
+    },
+    {
+      "number": 595,
+      "suffix": "D",
+      "title": "Supervision of Counselors",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "requisites": {
+        "previous": [
+          "CNED595A"
+        ]
+      },
+      "description": "Practical experience in supervising and evaluating work of counselors."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "NO DESCRIPTION."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "No description available."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

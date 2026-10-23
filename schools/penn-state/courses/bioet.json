@@ -1,0 +1,237 @@
+{
+  "subject": "BIOET",
+  "courses": [
+    {
+      "number": 100,
+      "title": "Bioethics",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "BA-H"
+      ],
+      "internalEquivalents": [
+        "PHIL132"
+      ],
+      "description": "This course surveys core topics in recent bioethics - the study of ethical problems issuing from the use and treatment of human and non-human animals in the research and practice of medicine and biotechnology. It aims to help students think more critically and argue from specific moral theories when evaluating issues concerning human body and its enhancement, the value of life and death, abortion and euthanasia, the distinction between biological and moral conceptions of human, the nature of health, illness and disabilities, the allocation of resources for health-care, doctor-patient relationships, and our moral conduct toward animals in medical and industrial contexts."
+    },
+    {
+      "number": 110,
+      "suffix": "N",
+      "title": "Health, Illness, and the Human Condition",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER"
+      ],
+      "internalEquivalents": [
+        "HHUM110N"
+      ],
+      "description": "This survey course explores the human experience of health and illness from a combined social/behavioral science and humanities perspective. Topics may include the following: the body in art, science, and history; models of normality and disease; family, patient, and practitioner stories; adaptation to illness; health care relationships; principles and psychology of health care ethics; cultural aspects of end-of-life; identity, meaning, and mental health in health care professionals. Reading, writing, and discussion will give students in all majors a set of skills and knowledge for understanding individuals and groups in the context of health and illness. Texts include fiction; poetry; graphic memoir; film; essays; and social science research and theory. Students will experiment with various writing genres to understand and challenge disciplinary boundaries, and creative projects will provide experience with diverse methods and types of knowledge. The arena of health and illness presents a valuable opportunity for integrating social/behavioral science and humanities in analyzing and solving real world problems. Despite technological advances, health care is essentially a human-to-human endeavor, so the humanities and social sciences are necessary to complement biomedical perspectives. This course provides transferable skills and a framework for addressing similar challenges and opportunities in a range of fields that students may encounter in the future."
+    },
+    {
+      "number": 220,
+      "suffix": "N",
+      "title": "Ethics, Society, and Science Fiction",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER"
+      ],
+      "internalEquivalents": [
+        "ESC220N",
+        "HHUM220N"
+      ],
+      "description": "This inter-domain (GH and GS) course will introduce students to the application of technology-ethics and bioethics, as well as the humanities (especially health and medical humanities) and the social sciences, through the lens of science fiction and speculative fiction. As an inter-domain course, it will: (1) develop foundational knowledges across the disciplines of the humanities and the social and behavioral sciences; and (2) encourage an appreciation for the plethora of stakeholders and often-competing values and interests underlying bioethical/technology-ethics concerns. By applying ethics-based, analytical arguments and counterarguments, students will engage in civil, reasoned debate on highly charged, challenging topics using ethical frameworks. In addition, given exposure to a wide range of non-canonical authors and other creators with varied intersectionalities, students will engage with the concepts of diversity, equity, and inclusion."
+    },
+    {
+      "number": 322,
+      "title": "Media Arts Pedagogies, Transcultural Dialogues, & Bioethics",
+      "credits": 3,
+      "attributes": [
+        "IL"
+      ],
+      "description": "The course explores how emerging technologies impact beliefs, practices, research, and communication regarding the nature of knowledge, learning, teaching, remix culture, visuality, materiality, self, and art. Engage with emerging technologies to learn about media arts and pedagogies that address bioethical issues of injustice, equity, diversity, and inclusion in which the borders of self are questioned. Course content considers the premise that humans are not discreet entities but connected through technologies in ways that are socio-cultural, geopolitical, and techno-biological. Through course experiential activities, gamification pedagogies, and a virtual fieldwork component in building and piloting ethical and accessible educational practices in online teaching, students explore identity formation encoded in social-technological practices. The Transcultural Dialogue project builds international relationships creating collaborative art and generating dialogue. The transcultural dialogue theme weaves, throughout the course, issues of contemporary visual culture, cultural practices in relation to particular places, and pedagogical approaches designed to erode assumptions, ignorance, and misunderstandings. Through media arts pedagogies, the course raises bioethical concerns such as systemic injustice and approaches creativity as a social process in developing curriculum and teaching with emergent technologies."
+    },
+    {
+      "number": 401,
+      "suffix": "Q",
+      "title": "Science, Ethics, Policy, and Law",
+      "credits": 3,
+      "attributes": [
+        "GH",
+        "GS",
+        "INTER",
+        "HON"
+      ],
+      "description": "This course explores the ethical, policy, and legal implications of science, and the implications of science for ethics, policy, and law. The course provides an introduction to scientific norms and practice; an introduction to the theories and methods employed in ethical analysis; an overview of ethics for scientists (including, but not limited, to falsification, fabrication, and plagiarism, and the protection of human and non-human animal participants); and an introduction to law and policy. In addition, the course will explore the use of science in the courts; the role of scientists in policy debates (whether they should be advocates or \"honest brokers\"); science education policy; science communication and scientific hype; the roles and responsibilities of professional scientists and citizen scientists; science in regulatory and policy processes; the assessment and management of risk; policymaking in the face of scientific uncertainty; and what ethics, policy, and law might learn from recent developments in social and behavioral science. In its examination of law and policy, the course will explore international and comparative perspectives. The course will also explore a variety of special topics (that may vary according to the expertise of the instructor and the interests of the students). These topics may be drawn from a variety of spheres: medicine and public health, food and nutrition science, neuroscience, agricultural science, climate science, and the social sciences. Special topics may include the ethical and policy implications of \"big data\"; the ethics of science in war and as a instrument of harm; climate science, climate change denial, and ethical decision-making in the face of scientific uncertainty; the promises and perils of forensic science; the role of food science in nutrition policy; the regulation of environmental toxins; the use of behavioral science and \"nudging\" in public health policy; gun violence and gun control policy; contemporary challenges related to transparency, reproducibility and replication in science; the commercialization of science, and an ethical and policy assessment of the so-called \"Triple Helix\" of government-academy-industry relations; and the neuroscience of moral and criminal responsibility."
+    },
+    {
+      "number": 432,
+      "title": "Medical and Health Care Ethics",
+      "credits": 3,
+      "attributes": [
+        "BA-H"
+      ],
+      "internalEquivalents": [
+        "PHIL432"
+      ],
+      "description": "This course examines ethical, social, legal, and policy issues related to the research, implementation, and practice of medicine, medical technologies, and healthcare. It uses secular ethical theories, frameworks, and concepts, as well as health/medical humanities methodologies."
+    },
+    {
+      "number": 496,
+      "title": "Bioethics Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics in Bioethics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 501,
+      "title": "Perspectives and Methods in Bioethics",
+      "credits": 3,
+      "description": "This course explores a variety of theories and methods in bioethics and applies them to a selection of current topics."
+    },
+    {
+      "number": 502,
+      "title": "Perspectives in Macro-Bioethics",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHIL572"
+      ],
+      "description": "This course explores systemic and structural issues in bioethics, and the theories and methodologies required to address them."
+    },
+    {
+      "number": 504,
+      "title": "Research Integrity in Science and Engineering",
+      "credits": 2,
+      "description": "This course will examine the complex ways ethical issues are a component of research in science and engineering. BIOET 504 Research Integrity in Science and Engineering (2) Research Integrity in Science and Engineering provides a foundation for understanding an expanded conception of research ethics that includes traditional responsible conduct of research (RCR) issues, but encompasses two additional domains in which ethical issues are relevant to the conduct of science, namely, the broader impacts of science and ethical issues that are embedded in scientific practice. Students in this course will develop a robust understanding of ethical responsibility and ethics spotting in their professional work as well as pedagogical training to support their becoming research integrity leaders in their home disciplines. In this course, students will: understand and identify instances of embedded ethics, broader impacts, and research integrity as they apply to work within their profession; develop the ability to apply ethical reasoning skills to examples of each domain of research ethics through case-based analyses; and acquire pedagogical skills in research ethics through developing, delivering, and assessing curricular materials on relevant research ethics topics drawn from their home disciplines. Students will also develop a research ethics teaching portfolio and will be encouraged to work with their departments to identify ways to develop peer mentoring on these important topics."
+    },
+    {
+      "number": 531,
+      "title": "Neuroethics: Science, Technology, and Society",
+      "credits": 3,
+      "internalEquivalents": [
+        "ESC531",
+        "NEURO531"
+      ],
+      "description": "This course provides a close examination into the field of neuroethics and the responsible application of advances in neuroscience research and neuroengineering. Neuroethics is a relatively young and interdisciplinary field of inquiry that aims to be a platform for different stakeholders, including neuroscientists, clinicians, lawyers, engineers, policy makers and the general public to discuss the future of neuroscience and the different applications of neurotechnologies. Neuroethics is a field that brings normative, descriptive, theoretical and practical considerations at the table. This course will cover topics such as different perspectives on neuroethics, its scope and role in recent brain initiatives, ethical and societal implications of brain imaging for medical and non-medical purposes, ethical and societal implications of the use of pharmacological and neuromodulation interventions on the brain, uses of neuromodifiers for enhancement purposes, issues around personhood and other emerging topics relevant to neuroethics. Among the ethical issues examined in the course are issues related to mental privacy, safety considerations, responsibility, agency, and social justice."
+    },
+    {
+      "number": 533,
+      "title": "Ethical Dimensions of Renewable Energy and Sustainability Systems",
+      "credits": 3,
+      "description": "BIOET 533 will provide students with an understanding of the ethical dimensions of renewable energy and sustainability systems and with skills to analyze related case studies. Case studies that will be considered are grounded in topics relevant to the sourcing and generation of energy across political-economic development contexts, including the use of sustainability indicators. Energy related topics include everything from traditional fossil fuels to renewables such as wind, solar, and biofuels. Students study responsible conduct of research (RCR) and professional ethics, in the commercial and academic context of applications in the area of renewable energy and sustainability systems, as well as examine the ethical dimensions of broader public and environmental impacts, and embedded values in research and analysis in this field. The course will provide for ethical analyses of knowledge generation and communication issues such as: selection of research questions; selection of datasets and parameters; determination of system boundaries; procedural considerations in decision making processes; methods of analysis; risk assessments and communication; influence of scientific research on policy outcomes; and, how to critically evaluate the use of scientific evidence and expertise when making and communicating arguments. Some lessons/modules will focus more on ethical issues encountered in practice, while other modules will provide examples that will impact overall ethical literacy and awareness of social and ethical impacts relevant to renewable energy and sustainability systems research and its numerous applications."
+    },
+    {
+      "number": 540,
+      "title": "Bioethics, Biopower, Biopolitics",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "This course will examine in a bioethical context a variety of ways relations of power and values intersect. Bioethics, Biopower, and Biopolitics will develop an understanding of bioethics by considering the ways people's lives interconnect and the relations of power that infuse and often control these interconnections. The goal is to expand the use of the term \"bioethics\" beyond the scope of medical practice and institutions and to bring it to bear on a much wider scope of life. We will consider options for understanding the meaning of \"bioethics\" by reference to the interplay of values and relations of power that more or less enhance human lives by the practices and policies that form, control, or liberate them."
+    },
+    {
+      "number": 590,
+      "title": "Bioethics Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 36
+      },
+      "description": "Continuing seminars in bioethics that consist of a series of individual presentations by faculty, students, or outside speakers."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 15
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 595,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised off-campus, nongroup instruction, including field experiences, practicums, or internships related to bioethics."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore a topic or topics in bioethics in depth."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis Research in Bioethics."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Students will teach lower-level undergraduate courses in bioethics, including courses on the undergraduate minor in bioethics and medical humanities."
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "subject": "AMD",
+  "courses": [
+    {
+      "number": 500,
+      "title": "Legal Issues in Additive Manufacturing",
+      "credits": 2,
+      "description": "This course explores the legal rules related to the ownership, enforcement and management of information related to additive manufacturing. It is directed primarily to students working in fields outside of the legal profession. Primary areas of focus include intellectual property (\"IP\") law (patents, trademarks, copyrights and trade secrets), product liability and cybersecurity law, as well as the legal rules for related industry practices such as licensing. In addition to understanding the legal framework, students will apply the course teachings to develop managerial skills such as: understanding legal contracts and license agreements; protecting company secrets; developing invention and design rights; branding distinctive products and services; designing products in light of tort liability rules; and adhering to best data protection practices."
+    },
+    {
+      "number": 501,
+      "title": "Statistical Methods for Additive Manufacturing",
+      "credits": 3,
+      "description": "This course explores the theoretical and practical underpinnings of statistical methods and tools for additive manufacturing (AM). It is primarily directed to engineering students working in fields outside of statistics and data science to design and develop statistical methods and tools for data analytics in AM. The primary areas of focus are statistical methodologies such as statistical process control, statistical design and analysis of experiments, predictive analytics, and reliability modeling. In addition to understanding statistical methodologies, students will apply the course teachings to design and implement the appropriate methodologies to model and analyze AM processes. Through this analysis, students will develop the skills for data-driven manufacturing informatics and decision making. Recommended preparation for the course includes basic concepts on probability and statistics, and the use of computing software (e.g., Matlab or Python)."
+    },
+    {
+      "number": 502,
+      "title": "Cybersecurity for Additive Manufacturing",
+      "credits": 2,
+      "description": "This course explores the intersection of cybersecurity and additive manufacturing (AM by examining information security, information assurance, design, fabrication, and industrial security to defend AM from emergent threats using current research literature, theory and practical analysis of data and analyses, and provides general methodologies to address cybersecurity principles across a digital manufacturing enterprise. Students will examine networks, quantify assets on the network, determine attack perimeters and vulnerabilities using commonly available network and cybersecurity tools, all while using the theme of advanced manufacturing technologies. Students will analyze current, known attacks and exfiltration of data and how best cyber practices can help secure and defend the relevant data. Students will recognize how different modalities of sensing and machine parameters can be manipulated to cause harm to the part, the printer, and the process. The course will follow issues concerning intellectual property of the digital manufacturing paradigm; case studies on techniques for attacking and defending design intent; and review recent literature on cyber security within the AM process."
+    },
+    {
+      "number": 516,
+      "title": "Solid State Phase Transformations in Metallic Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "ESC516",
+        "MATSE516"
+      ],
+      "description": "Metallic material systems or alloys are used across a wide range of applications. In order to obtain the desired properties, these materials are subjected to a range of thermo-mechanical processing steps and post-processing heat treatments which drive phase transformations while the material is in the solid state. The mechanisms of these solid-state phase transformations involve a wide range of fundamental materials science concepts, including crystallography, nucleation, grain growth, and diffusion. Practitioners must have knowledge across a range of materials disciplines, including thermodynamics, kinetics, and crystallography, in order to synthesize and capture the complex processes occurring over a wide range of spatial and temporal scales. Knowledge of these fundamental concepts along with their interactions over a range of length scales is applicable across a range of conventional and emerging materials processing fields, from primary steelmaking through heat treatment of nickel and aluminum-base alloys through the additive manufacturing of a wide range of advanced materials. In this course, a comprehensive study of solid state phase transformations in metallic materials will be undertaken. Beginning with the underlying crystal structures prominent in common alloy systems, the role of diffusion and nucleation and grain growth will be undertaken to describe the early stages of phase transformations. The resulting interfaces between different phases will be investigated along with the orientation relationships and the development of equilibrium precipitate morphologies. Building on solid state nucleation theory, microstructural development and precipitation and growth of secondary phases in both equilibrium and non-equilibrium conditions will be studied, to include common invariant transformations as well as spinodal decomposition, order-disorder transformations, and the formation of bainite and martensite. These fundamental materials processes will then be investigated for conditions prevalent in advanced manufacturing processes and correlated with advanced and emerging characterization tools."
+    },
+    {
+      "number": 518,
+      "title": "Bioprinting",
+      "credits": 3,
+      "internalEquivalents": [
+        "BIOE518",
+        "ESC518"
+      ],
+      "description": "This course covers the principles of bioprinting in tissue engineering and regenerative medicine for use in fabrication of biomedical related products such as implants, tissue scaffolds, engineered tissues, organs and biological systems."
+    },
+    {
+      "number": 527,
+      "title": "Additive Manufacturing Processes",
+      "credits": 4,
+      "internalEquivalents": [
+        "IE527"
+      ],
+      "description": "The course will cover the fundamentals of Additive Manufacturing (AM) processes. During the course the students will leverage their background in computer-aided manufacturing to learn the Digital Work Flow steps from Design to Manufactured AM parts. They will learn and gain experience in the various data representation, algorithms and software tools, processes, and techniques that enable advanced/additive manufacturing. Computational algorithms will be researched and evaluated. Detailed research investigations into the fundamental process models of various additive manufacturing (AM) processes using polymers, metals, and other material will provide insight into the operating principles, capabilities, and limitations of AM processes. In addition to theoretical knowledge, the students will gain hands-on experience with AM machines and understand the complete process steps through design, fabrication, and measurement of example parts. The students will study the range of applications of AM across a spectrum of industries (e.g., aerospace/automotive, medical devices, and consumer products) while developing an understanding of the requirements, constraints, and business case for the applications. After completing this course, students will have a fundamental understanding of the research in AM processes and prepare them for additional depth in follow on courses. Additionally the students will be able to appropriately utilize (e.g., evaluate, select, design) this developing technology in the future of manufacturing and digital transformation of manufacturing."
+    },
+    {
+      "number": 534,
+      "title": "Advanced Solidification Processes in Metallic Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "ESC534",
+        "MATSE534"
+      ],
+      "description": "The emergence of advanced manufacturing processes, such as additive manufacturing, has introduced high levels of uncertainty in well-established process - structure - property- performance relationships. A comprehensive understanding of solidification across spatial and temporal scales is needed in order to identify the underlying phenomena driving these unique structures and properties. In this course, the processes driving solidification and the properties of liquid metals will be covered to provide a framework for understanding more complex solidification processes in multi-component systems. Building on a fundamental understanding of both the thermodynamics and kinetics of solidification processes, the properties of interfaces and nucleation and growth will be studied across a range of material systems, including those exhibiting eutectic and peritectic transformations. With this basic knowledge, the role of complex processing conditions and their impact on multi-component alloy systems will be investigated for conditions prevalent in advanced manufacturing processes and correlated with advanced and emerging characterization tools."
+    },
+    {
+      "number": 545,
+      "title": "Engineering and Scientific Principles of Additive Manufacturing",
+      "credits": 4,
+      "internalEquivalents": [
+        "ESC545"
+      ],
+      "description": "In additive manufacturing (AM), components are fabricated via sequential joining using a bonding agent, curing, sintering, or fusing. AM fabrication of metals, ceramics, polymers, and organics has been demonstrated and is actively being used in industry and academia. ESC 545 / AMD 545 explores these processes with a focus on the fundamentals of sintering and fusion of metals, ceramics, and polymers. The topic is multi-disciplinary, requiring examination of individual AM system components, the physics of energy-material interactions, and the materials science at play during heat-reheat cycles. Opportunities for process sensing and real-time control are explored, as well as the role of post-process technologies in realizing serviceable components. These topics will lead to a discussion of methods and strategies to optimize component properties and characteristics. Current and potential impacts of AM on society are also covered."
+    },
+    {
+      "number": 546,
+      "title": "Advanced Metallic Material Feedstocks for Additive Manufacturing",
+      "credits": 4,
+      "internalEquivalents": [
+        "ESC546",
+        "MATSE546"
+      ],
+      "requisites": {
+        "previous": [
+          "ESC545",
+          "MATSE567",
+          "IE527"
+        ]
+      },
+      "description": "Additive manufacturing (AM) processes use a variety of metallic material forms to produce complex components. These material forms can vary from metallic powders with a rather wide range of size distributions to metal wire to sheet and other more complex composite material types. Knowledge of the processing of these different feedstock forms along with means to characterize them is needed to develop AM processes and procedures capable of being more widely used, particularly in critical applications. In this course, the production, handling, blending, and characterization of common metallic and composite feedstock materials will be covered. Feedstock forms to be addressed include metal and metal-ceramic composite powders, wire, and sheets, along with new product forms becoming available. A multi-disciplinary approach will be taken to elucidate the connections between production, characterization, and handling to develop an understanding of the role of feedstocks on the resulting process-structure-property relationships for AM processes and products."
+    },
+    {
+      "number": 562,
+      "title": "Design for Additive Manufacturing",
+      "credits": 4,
+      "internalEquivalents": [
+        "EDSGN562"
+      ],
+      "requisites": {
+        "concurrent": [
+          "IE527"
+        ]
+      },
+      "description": "Additive manufacturing (AM, colloquially 3D printing) is rapidly changing the face of modern manufacturing. This layer-by-layer manufacturing approach allows for parts to be created with significant levels of complexity and in cost-effective small batches, with reduced raw material waste when compared with traditional manufacturing processes. This technology has given rise to the need for Design for Additive Manufacturing (DfAM) techniques capable of accounting for both the possibilities and restrictions offered by AM in product design. However, due to the relative youth of the technology, understanding of how to properly establish and evaluate these design considerations is still evolving. In this course, students will be exposed to research in the field of DfAM that aims to establish an understanding of both opportunistic possibilities (e.g., lattice structures, topology optimization, and mass customization) and quantify restrictive limitations (e.g., minimum feature size and support material removal) when designing products for creation with additive manufacturing. The material will be presented through a combination of literature investigations and design exercises viewed through the lens of research in the DfAM field. The objectives of the course include describing the role that DfAM plays in the greater field of additive manufacturing, identifying similarities and differences between existing DfAM approaches and frameworks, synthesizing opportunistic DfAM approaches and how they improve product quality and novelty, identifying and quantifying restrictive DfAM considerations through experimentation, and identifying and discussing key areas of future research to advance the field of DfAM."
+    },
+    {
+      "number": 565,
+      "title": "Nondestructive Evaluation for Additive Manufacturing",
+      "credits": 4,
+      "internalEquivalents": [
+        "ESC565"
+      ],
+      "description": "This course provides a foundational introduction to nondestructive evaluation (NDE) techniques tailored for additively manufactured (AM) components. Students will explore the core principles behind methods such as ultrasound, resonance testing, and X-ray computed tomography (CT), with a focus on assessing the effectiveness and adaptability of traditional NDE approaches for AM parts."
+    },
+    {
+      "number": 566,
+      "title": "Metal Additive Manufacturing Laboratory",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME566"
+      ],
+      "description": "This course will provide in-depth and hands-on laboratory experience in metal-based additive manufacturing. The laboratory activities will expose students to all aspects of the additive manufacturing workflow for metal components, starting with conceptual design, proceeding through fabrication, post-processing, and part inspection. Laboratory activities will include part design and analysis, process simulation and modeling, build preparation and machine set up, fabrication and post-processing, and non-destructive inspection and measurement. Laboratories will include computational design tools and simulation models as well as fabrication and post-processing (e.g., heat treatment, machining). Finally, the laboratory activities will also stress safe powder handling, equipment, and laser safety, which is particularly important when working with metallic powders and feedstocks. The laboratory is intended for students that have a basic understanding of the different additive manufacturing processes and are gaining familiarity with the engineering and science of additive manufacturing. The laboratory activities will provide students with the scientific foundation and research skills necessary to rigorously ascertain the performance of additively manufacturing materials, processes, and parts. Upon completion of the laboratory, students should be able to describe the workflow for additive manufacturing, identify main cost drivers, and describe the differences when using metals versus polymers. They should also understand the key tradeoffs between design, manufacturing, and materials as it relates to the additive manufacturing processes utilized in the laboratory activities."
+    },
+    {
+      "number": 567,
+      "title": "Additive Manufacturing of Metallic Materials",
+      "credits": {
+        "min": 3,
+        "max": 4
+      },
+      "internalEquivalents": [
+        "MATSE567"
+      ],
+      "description": "This course will expose students to the state of the art in understanding processing, structure, and property relationships in materials fabricated using additive manufacturing (AM). There will be a strong focus on metallic alloys, but polymers, ceramics, and advanced materials will also be briefly discussed. The emphasis of the course will be on understanding the links between processing and the resulting structure, as well as the microstructure and the mechanics of the fabricated materials. Initially, we will discuss the types of AM and the feedstock materials required for these processes. We will then focus on metals, and discuss the energy sources used in AM (lasers, electron beams), and their interactions with the material. We will discuss the molten pool characteristics and the solidification microstructures. We will relate the microstructures seen in AM to the resulting mechanical properties (elastic deformation, plastic deformation, fracture, fatigue performance, and residual stress/distortion). Finally, we will discuss specific case studies for metals, polymers, ceramics, and advanced materials."
+    },
+    {
+      "number": 575,
+      "title": "Aerospace Materials",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "AERSP470",
+              "ME560"
+            ]
+          }
+        ]
+      },
+      "description": "Advanced materials are critical to improve performance, safety, and sustainability of air flight and space exploration in extreme environments. This course provides a survey of engineering knowledge on existing and future advanced materials for aerospace applications, and provides multiple opportunities for students to apply this knowledge and to analyze existing tailored aerospace materials of high performance. First, class participants will review the origins of the material properties: atomic bonding and packing, grains and boundaries, interfaces/interphases, and micro-structuring. Second, the participants will learn about common aerospace materials (metal alloys, ceramics, and polymer composites); how these materials satisfy the tight performance requirements and withstand extreme environments. Third, novel material design (nanocomposites and metamaterials), mostly in the nano and micro scales, and how their micro-structures drive their advanced properties will be discussed, together with their current challenges in applications (material design, scalable fabrication, and certification)."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including non-thesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Thesis Research"
+    }
+  ]
+}

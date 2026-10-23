@@ -1,0 +1,177 @@
+{
+  "subject": "REST",
+  "courses": [
+    {
+      "number": 550,
+      "title": "Contemporary Issues in Real Estate Markets",
+      "credits": 2,
+      "description": "This course surveys important issues in real estate markets, including special characteristics of real estate markets, valuation of real properties, mortgage mechanics and calculations, valuing investment opportunities, financing corporate real estate, financing project development, and the secondary mortgage market After taking this course, students will be able to: 1. Demonstrate understanding of basic features of real estate markets; 2. Value real estate using the sales comparison approach and the income approach; 3. Conduct mortgage-related calculations and make mortgage-financing decisions; 4. Calculate before and after tax cash flows from income properties; 5. Make investment decisions for income properties, and conduct sensitivity analysis; 6. Conduct sensitivity analysis, partition Internal Rate of Return (IRR), and apply the real option approach in making investment decisions; 7. Make real-estate-related decisions for non-real estate firms; 8. Demonstrate understanding of the financing of project development; 9. Know cash-flow mechanics and risk-sharing attributes of some mortgage-backed securities, 10. Demonstrate understanding of Real Estate Investment Trusts (REITs) and their role in real estate investment"
+    },
+    {
+      "number": 560,
+      "title": "Real Estate Financial Analysis",
+      "credits": 2,
+      "description": "This course provides a modern framework for the valuation and analysis of real property using both theoretical and empirical approaches."
+    },
+    {
+      "number": 570,
+      "title": "Institutional Real Estate Investment",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "REST830",
+          "BA831"
+        ]
+      },
+      "description": "This course covers the convergence of real estate and the capital markets. It is designed to expose students to the structure, analysis, and valuation of a variety of real estate securities including: residential mortgage backed securities (MBS), collateralized mortgage obligations (CMOs), commercial mortgage backed securities (CMBS), and real estate investment trusts (REITs). The course also focuses on the role of real estate as a specific asset class in modern portfolio theory. After successfully completing this course, students will have a practical foundation for applying rigorous empirical methods in research to topics related to project level valuation and investment, the role of debt (capital structure), analysis of mortgages, private and public equity investment in real estate, and the role of real estate in portfolio allocation models."
+    },
+    {
+      "number": 575,
+      "title": "Quantitative Analysis for Real Estate",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT500"
+        ]
+      },
+      "description": "The course provides students with working knowledge of some of the widely used quantitative methods and their applications in business, as well as using statistical analysis software to apply such methods for business analyses and decision-making. By the end of the course, students will understand the purposes of these methods and how to use them to solve real estate, financial, marketing, and risk management problems. - Students will be able to interpret results in ways that are correct, insightful, and useful. - Students will be aware of potential problems of each method and know how to make corrections if these problems are present. - Students will also have developed working knowledge of statistical analysis software widely used by quantitative analysts."
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall ouside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "No description."
+    },
+    {
+      "number": 830,
+      "title": "Real Estate Institutions and Markets Analysis",
+      "credits": 1,
+      "description": "This course has three objectives: a) provide an overview of modern real estate analysis, b) overview of risk management, and c) develop a series of analytical techniques associated with real estate risk analysis. The course begins with an overview of issues in real estate and risk management. Focus then shifts to a series of legal issues, including property rights and regulations. The remainder of the course deals with the economic and financial evaluation of real estate."
+    },
+    {
+      "number": 832,
+      "title": "Real Estate Negotiations",
+      "credits": 2,
+      "description": "This course covers principles, strategies and techniques on negotiation with multiple parties involved in commercial real estate transactions, along with fully understanding how to create financially viable agreements. The goal of the course is to give students the opportunity to learn and develop a win-win negotiation strategy, establish smart investment decisions, and implementing negotiations through real world scenarios to create smart investment decisions."
+    },
+    {
+      "number": 840,
+      "title": "Real Estate Analysis Software and Tools",
+      "credits": 1,
+      "description": "This course will provide a comprehensive overview of the leading real estate industry software used for financial and investment analysis. These software programs provide a platform for investment and valuation analysis of individual properties as well as portfolios. Students successfully completing this course will be prepared to sit for various industry certification exams. After successfully completing this course, students will be able to: - Accurately implement a discounted cash flow model - Perform real estate portfolio analysis - Perform real estate valuation analysis and conduct sensitivity analysis - Demonstrate understanding of the basic inputs to cash flow models. - Create standard industry investment and valuation reports - Conduct market analysis."
+    },
+    {
+      "number": 880,
+      "title": "Real Estate Development and Analysis",
+      "credits": 2,
+      "requisites": {
+        "previous": [
+          "REST560"
+        ]
+      },
+      "description": "This course exposes students to the real estate development process, emphasizing property analysis and deal execution, as well as marketing, management, zoning, and financing. Course lectures will include a variety of speakers that will cover various aspects of the development process. Material covered in their presentations will be critical to successful completion of the semester research project. The course will include discussions and presentations of development types including, but not limited to Office, Retail, Hotel, Residential, and Warehouse/industrial. Students will work in groups on a semester project to select a site, conduct research, and prepare an appropriate development plan. The project development plan will include a market analysis, project design (including construction costs and preliminary design), and a cash flow pro forma (including financing) to demonstrate the projects feasibility."
+    },
+    {
+      "number": 885,
+      "title": "Real Estate and Business Valuation",
+      "credits": 3,
+      "description": "This course covers economic theories of valuation applied to real estate as a guide to business decisions. The goal of the course is to give students an understanding of real estate value, how to measure it, and its application to the real estate marketplace."
+    },
+    {
+      "number": 890,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing, professionally oriented seminars that consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "REST890",
+          "REST880"
+        ]
+      },
+      "description": "Enrollment in the course requires concurrent enrollment in REST 880 and matriculation in the Master of Real Estate degree program. During the course, students will analyze an existing or proposed development project. In development teams, students will conduct a thorough analysis on the strengths and weaknesses of the project while considering other factors, such as financial viability, market demand, political requirements, social needs, and physical and environmental constraints. In addition, students may visit existing real estate projects and meet with principal participants in order to conduct an analysis and critique of the strength and weaknesses of the project and apply that knowledge to their final development analysis."
+    }
+  ]
+}

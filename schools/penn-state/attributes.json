@@ -1,0 +1,136 @@
+{
+  "groups": [
+    {
+      "id": "gen-ed",
+      "name": "General Education",
+      "category": "general-education"
+    },
+    {
+      "id": "bachelor-of-arts",
+      "name": "Bachelor of Arts"
+    },
+    {
+      "id": "cultural-diversity",
+      "name": "Cultural Diversity"
+    },
+    {
+      "id": "first-year",
+      "name": "First-Year Engagement"
+    },
+    {
+      "id": "writing",
+      "name": "Writing Across the Curriculum"
+    },
+    {
+      "id": "honors",
+      "name": "Honors"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "GWS",
+      "name": "Writing and Speaking",
+      "group": "gen-ed"
+    },
+    {
+      "id": "GQ",
+      "name": "Quantification",
+      "group": "gen-ed"
+    },
+    {
+      "id": "GA",
+      "name": "Arts",
+      "group": "gen-ed"
+    },
+    {
+      "id": "GH",
+      "name": "Humanities",
+      "group": "gen-ed"
+    },
+    {
+      "id": "GN",
+      "name": "Natural Sciences",
+      "group": "gen-ed"
+    },
+    {
+      "id": "GS",
+      "name": "Social and Behavioral Sciences",
+      "group": "gen-ed"
+    },
+    {
+      "id": "GHW",
+      "name": "Health and Wellness",
+      "group": "gen-ed"
+    },
+    {
+      "id": "INTER",
+      "name": "Inter-Domain",
+      "group": "gen-ed"
+    },
+    {
+      "id": "BA-A",
+      "name": "BA: Arts",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-H",
+      "name": "BA: Humanities",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-N",
+      "name": "BA: Natural Sciences",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-Q",
+      "name": "BA: Quantification",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-S",
+      "name": "BA: Social and Behavioral Sciences",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-WC",
+      "name": "BA: World Cultures",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-WL12",
+      "name": "BA: World Language (12th Unit)",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "BA-WL",
+      "name": "BA: World Language (All)",
+      "group": "bachelor-of-arts"
+    },
+    {
+      "id": "US",
+      "name": "United States Cultures",
+      "group": "cultural-diversity"
+    },
+    {
+      "id": "IL",
+      "name": "International Cultures",
+      "group": "cultural-diversity"
+    },
+    {
+      "id": "FYS",
+      "name": "First-Year Seminar",
+      "group": "first-year"
+    },
+    {
+      "id": "W",
+      "name": "Writing Across the Curriculum",
+      "group": "writing"
+    },
+    {
+      "id": "HON",
+      "name": "Honors",
+      "group": "honors"
+    }
+  ]
+}

@@ -104,6 +104,75 @@ export interface CourseCode {
 export interface Subject {
   code: string;
   name: string;
+  // The department that teaches it (an id from the school's divisions),
+  // if the school says.
+  department?: string;
+}
+
+// A label a school puts on courses to say what they count for, apart from
+// their subject and number: a gen ed area ("GQ", Quantification), United
+// States Cultures ("US"), Writing Across the Curriculum ("W"), Honors.
+// Courses list attributes by id; credit rules can ask for them.
+export interface Attribute {
+  // The school's own short code, used everywhere else in the data.
+  id: string;
+  // How it's written for people.
+  name: string;
+  // The family it belongs to (an AttributeGroup's id), e.g. "gen-ed".
+  group?: string;
+}
+
+// A family of attributes, e.g. General Education or Bachelor of Arts.
+export interface AttributeGroup {
+  id: string;
+  name: string;
+  // When a group's attributes are a requirement category's areas (Penn
+  // State's gen ed areas are "general-education"), a course with one of
+  // them counts toward that category, and their names are its genEdAreas.
+  category?: Category;
+}
+
+// ---------------------------------------------------------------------------
+// How a school is organized. Nothing in the engine checks plans against
+// these yet; they're kept with the school's data so programs and courses
+// can point at them.
+// ---------------------------------------------------------------------------
+
+// A level of study: undergraduate, graduate, medicine, law.
+export interface Level {
+  id: string;
+  name: string;
+  // The course numbers at this level, as [lowest, highest] ranges:
+  // Penn State's graduate courses are 500 to 699 and 800 to 899.
+  numbers?: [number, number][];
+}
+
+// What a student is awarded: associate, bachelor's, master's, doctorate.
+// A program's programType is one of these.
+export interface Credential {
+  id: string;
+  name: string;
+  // The Level it's at.
+  level: string;
+}
+
+// A part of the school that runs programs: a college, school, or faculty
+// (each school names its own kinds, divisionTypes). It can hold
+// departments.
+export interface Division {
+  id: string;
+  // One of the school's division types ("college").
+  type: string;
+  name: string;
+  departments?: { id: string; name: string }[];
+}
+
+export interface SchoolStructure {
+  levels: Level[];
+  credentials: Credential[];
+  // The school's names for its kinds of division: { id: "college", name: "College" }.
+  divisionTypes: { id: string; name: string }[];
+  divisions: Division[];
 }
 
 // One plannable thing: a course, internship, milestone, or proficiency.
@@ -117,7 +186,15 @@ export interface CurriculumObject {
   title: string;
   // What the course covers, in the school's words. Optional.
   description?: string;
+  // For a course with a range of credits ("1-9 Credits"), credits is the
+  // smallest and maxCredits the largest.
   credits: number;
+  maxCredits?: number;
+  // A course that can be taken more than once for credit, up to
+  // maxCredits in all if the school sets a limit ("Maximum of 6").
+  repeatable?: { maxCredits?: number };
+  // Its attributes, by id (see Attribute), e.g. ["GH", "US"].
+  attributes?: string[];
   requisites: Requisites;
   // Other objects at this school that count as this one.
   internalEquivalents: string[];
@@ -187,7 +264,7 @@ export interface ChartTemplate {
   version: string;
   // How it's written for people, e.g. "Computer Science, B.S.".
   title: string;
-  // Its program type ("baccalaureate"), which picks the school-wide
+  // Its program type, a credential ("bachelors"), which picks the school-wide
   // set its charts are checked against (the school's programRequirements).
   programType: string;
   // This program's local r-o-s.
@@ -307,8 +384,14 @@ export interface CreditRule {
   notArea?: string | string[];
   // Subject codes ("CMPSC").
   subjects?: string[];
-  // Course numbers at least this ("400-level" is 400).
+  // Course numbers at least this ("400-level" is 400), and at most this
+  // ("400-level" also has 499, so graduate courses stay out).
   minNumber?: number;
+  maxNumber?: number;
+  // Courses with any of these attributes (ids, e.g. ["GQ"]), and none of
+  // notAttributes (["INTER"] leaves out Inter-Domain courses).
+  attributes?: string[];
+  notAttributes?: string[];
   // Exactly these objects.
   objectIds?: string[];
   // Graded courses only count with at least this grade.
@@ -325,7 +408,7 @@ export interface RequirementSet extends Partial<Requirements> {
   id: string;
   name: string;
   scope: RequirementScope;
-  // For a global set, the program type it's for ("baccalaureate"): a chart
+  // For a global set, the program type it's for ("bachelors"): a chart
   // gets the global sets of its programs' program types.
   programType?: string;
 }

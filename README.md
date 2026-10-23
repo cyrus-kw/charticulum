@@ -77,26 +77,54 @@ A school can also be split into a folder of files
 together, with errors naming the file:
 
 ```
-school.json          id, name, calendar, program types ("programs"), AP/transfer table
-requirements.json    { "programRequirements": [...] }: school-wide rules per program type (optional)
+school.json          id, name, calendar (and an AP/transfer table)
+structure.json       levels (with their course numbers), credentials, divisions (optional)
+attributes.json      { "groups": [...], "attributes": [...] }: course labels (optional)
 subjects.json        { "subjects": [{ "code": "CMPSC", "name": "Computer Science" }] }
-objects/cmpsc.json   { "subject": "CMPSC", "objects": [{ "number": 121, "title": ..., "credits": 3 }] }
-programs/baccalaureate/cmpsc-bs.json
-                     program templates (optional), one folder per programType
+courses/cmpsc.json   { "subject": "CMPSC", "courses": [{ "number": 121, "title": ..., "credits": 3 }] }
+requirements/credentials/bachelors.json
+                     the rules every program of one credential follows (optional)
+programs/bachelors/cmpsc-bs.json
+                     program templates (optional), one folder per credential
 ```
 
 A subject's file only gives each course's number and letter; its id
-(`CMPSC121`) and code come from the file's subject.
+(`CMPSC121`) and code come from the file's subject. A course's `type`
+can be left out when it's a course, and its credits can be a range
+(`{ "min": 1, "max": 9 }`, which becomes `credits` and `maxCredits`);
+`repeatable` (`{ "maxCredits": 9 }`) says it can be taken again.
 
-`schools/penn-state/` is a real school in that layout: all of Penn State
-University Park's undergraduate subjects (274) and courses (about 9,500,
-with descriptions) and its school-wide rules (120 credits, 2.00 GPA,
-and the 45-credit General Education program), built from its
-[Undergraduate Bulletin](https://bulletins.psu.edu) by
-`scripts/penn-state.ts`. Its programs are written by hand in
-`programs/`, in a folder per program type (the script leaves them
-alone): so far the Computer Science B.S., in `programs/baccalaureate/`. `--save` also saves it to the database, with the folder's programs
-and any others already saved there.
+`structure.json` says how the school is organized: its `levels`
+(undergraduate, graduate; each with its course `numbers`, as `[lowest,
+highest]` ranges, and then every course has to fit one), its
+`credentials` (associate, bachelor's, master's; each at a level), and
+its `divisions` (colleges, schools, or faculties, of the `divisionTypes`
+it names, with their `departments`). A program's `programType` is a
+credential, and it can name its `division`. Without the file, the
+program types are the folders' names.
+
+`attributes.json` lists the labels courses carry (`"attributes": ["GH",
+"US"]` on a course), each `{ "id": "GH", "name": "Humanities", "group":
+"gen-ed" }`, in families (`groups`). A group with a `category`
+(`"general-education"`) makes its attributes that category's areas: a
+course with one counts toward the category, and their names are its
+`genEdAreas` (in the file's order). Credit rules can ask for attributes
+(below).
+
+`schools/penn-state/` is a real school in that layout: all of Penn State's
+undergraduate and graduate subjects (370) and courses (about 14,700:
+9,500 undergraduate and 5,100 graduate, with descriptions), every
+attribute the bulletin lists (gen ed, Bachelor of Arts, US/IL,
+First-Year Seminar, Writing Across the Curriculum, Honors), and its
+bachelor's degree rules (120 credits, 2.00 GPA, and the 45-credit
+General Education program), built from its
+[bulletins](https://bulletins.psu.edu) by `scripts/penn-state.ts`. A
+subject's undergraduate and graduate courses share one file
+(`courses/cmpsc.json` has CMPSC 121 and CMPSC 598); their numbers say
+their level. `structure.json` and the programs are written by hand
+(the script leaves them alone): so far the Computer Science B.S., in
+`programs/bachelors/`. `--save` also saves it to the database, with the
+folder's programs and any others already saved there.
 
 A program (a template in `programs/<its programType>/`; one in the wrong
 folder is an error) has the school's `code` for it
@@ -113,24 +141,27 @@ the category ("Electives", "Seminars"; `categoryHeading`). A requirement set has
 option of courses taken together); credit rules (`creditRules`), in
 groups (`{ "category", "name", "rules": [...] }`: General
 Education, Electives, Seminars), each rule "at least N credits from
-courses that match", by gen ed area (`area`: one, or a list of which
-any counts), subject, course number, or a list, optionally with a
-minimum grade (`{ "id": "Q", "area": "Quantification", "credits": 6,
-"minGrade": "C" }`; 18 credits from the electives list). A rule's
-`name` labels its meter; a rule with one area can leave it out and is
-named after the area; `notArea` leaves out courses in an area
-("Inter-Domain courses may not be used"). A group with
+courses that match", by attribute (`attributes`: any of them counts),
+gen ed area (`area`: one, or a list of which any counts), subject,
+course number (`minNumber`, `maxNumber`), or a list, optionally with a
+minimum grade (`{ "id": "Q", "name": "Quantification", "attributes":
+["GQ"], "credits": 6, "minGrade": "C" }`; 18 credits from the electives
+list). A rule's `name` labels its meter; a rule with one area can leave
+it out and is named after the area; `notAttributes` and `notArea` leave
+courses out ("Inter-Domain courses may not be used"). A group with
 `"eachCourseOnce": true` counts each course toward one of its rules
 only, the first in order that still needs it. A group whose category is
 one of the app's (`general-education`) counts that category's credit
 minimum in its heading when a set gives one, otherwise its rules added
 up. Rules shared by every program (Penn State's gen ed) go in the
 school's global set (`programRequirements`, at most one per program type,
-each one of the school's `programs`, e.g. `["associate", "baccalaureate", "graduate"]`:
-`{ "programType": "baccalaureate", "minTotalCredits": 120, ..., "globalRequirements":
+each one of the school's `programs`, e.g. `["associate", "bachelors", "masters"]`:
+`{ "programType": "bachelors", "minTotalCredits": 120, ..., "globalRequirements":
 [{ "category": "general-education", "eachCourseOnce": true, "rules": [...] }] }`,
-its categories listed like a program's; a program names its type, `"programType":
-"baccalaureate"`, and its charts get that set only), programs' own in theirs; and minimum grades in
+its categories listed like a program's; in a folder, it's
+`requirements/credentials/bachelors.json`, without the programType; a
+program names its type, `"programType": "bachelors"`, and its charts
+get that set only), programs' own in theirs; and minimum grades in
 required courses (`minGrades`, e.g. `{ "CMPSC221": "C" }`; one on a
 course of a choice applies to all its options).
 

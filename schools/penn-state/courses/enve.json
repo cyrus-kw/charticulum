@@ -1,0 +1,141 @@
+{
+  "subject": "ENVE",
+  "courses": [
+    {
+      "number": 411,
+      "title": "Water Supply and Pollution Control",
+      "credits": 3,
+      "description": "Water supply, wastewater characteristics, design of unit processes for water and wastewater treatment, sludge processing, and related new technologies. ENVE 411 Water Supply and Pollution Control (3) Providing safe drinking water to the public and decontamination of wastewater before discharge are the two main functions of municipal water system. Properly designing and operating municipal water and wastewater systems allows safe and sustainable use of this limited resource. This course introduces students to design concepts used in water and wastewater treatment processes. Concepts will be categorized into physical, chemical, and biological processes, and presented through a series of lectures, readings, and problem solving. Subjects covered include: water and wastewater characteristics and flows; unit processes for drinking water treatments, including coagulation, flocculation, sedimentation, water softening, filtration, and disinfection; and unit processes for wastewater treatments, including preliminary headwork, primary sedimentation, secondary treatment, tertiary nutrient removal, final clarifier, and residual digestion and management. After completion of this course, students should have the basic knowledge necessary to select and design water and wastewater treatment processes."
+    },
+    {
+      "number": 415,
+      "title": "Hydrology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT401",
+              "ENVE417"
+            ]
+          }
+        ]
+      },
+      "description": "Watershed response to rainfall events; hydrologic systems; ground water flow. ENVE 415 Hydrology (3) Hydrology is the study of water's movement over the earth and in the atmosphere, with a particular focus in the class on the processes of precipitation, infiltration and runoff. The general public focuses on hydrology when there either is too much water(flooding) or too little water (drought). Engineers working in the hydrology arena focus on evaluating the timing and location of potential floods,designing structures and sites to minimize the impacts of the site on the hydrologic behavior of an area, and evaluating potential sources of water supply during drought times so that the public impact of a drought is minimal.This course builds on concepts learned in the hydraulic design course in terms of conveyance system design. Course topics include determination of the safe yield of a water supply, calculation of hydrographs in ungaged watersheds, the hydraulics of groundwater wells, and the design of storm water management structures to minimize flooding. The students use currently available models from the U.S. Department of Agriculture, the U.S. EPA and the U.S. Army Corps of Engineers in their watershed evaluations and design of storm water control practices."
+    },
+    {
+      "number": 417,
+      "title": "Hydraulic Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE360"
+        ]
+      },
+      "description": "Design of water and waste water conveyance systems and storage facilities. ENVE 417 Hydraulic Design (3) The delivery of cleandrinking water and the collection of wastewater are two of the fundamentalactivities of municipal or regional governments. Installing new systems orrehabilitating old ones are expensive, large-scale infrastructure projects.Therefore, it is important that these projects be designed correctly andaddress both current population needs and growth projections for the designlife of the project, typically 25 or more years. This course builds on theconcepts learned in fluid mechanics and applies them to the design of municipalwater conveyance systems. Students learn to apply the appropriate pipe flowequation (Darcy-Weisbach, Hazen-Williams, or Chezy-Manning) to the design ofthe conveyance system,e.g ., drinkingwater supply, sanitary sewer collection and storm sewer collection systems.Their projects focus on the design of small conveyance systems and usecurrently available EPA models for water supply, sanitary sewer, and stormwaterpiping design. Students also learn to perform basic population projections,design water storage towers and design appurtenances such as manholes and stormsewer inlet s . Culvert, weir andorifice design also are covered in the class."
+    },
+    {
+      "number": 430,
+      "title": "Sustainable Engineering",
+      "credits": 3,
+      "description": "A course on engineering which uses ecological principles to minimize waste and maximally use input materials. ENVE 430"
+    },
+    {
+      "number": 470,
+      "title": "Air Quality",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE370"
+        ]
+      },
+      "description": "Overview of air quality issues with regard to the sources, measurements, effects, transport and control of potential air contaminants. ENVE 470 Air Quality (3) The protection of clean air is vital for the health of people. Air pollution has been linked to increased cases of asthma, lung cancer, and other lung diseases. This course, building on concepts covered in the Introduction to Environmental Engineering course, provides an overview of air quality issues with regard to the sources, measurements, effects, transport and control of potential air contaminants. Specifically, the students will learn the fundamental concepts of air pollution generation, modeling and control, plus the impacts of air pollution on human and environmental health and welfare. They will understand the fundamental concepts of acid rain and global climate change. They will learn/be updated on the current regulations that exist to address air quality concerns. Through homework and projects, they will examine and perform preliminary designs on common types of air pollution control equipment. They also will participate in discussions of contemporary air pollution issues (global warming, mobile and stationary air pollution source control, airshed issues in the Chesapeake Bay watershed)."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 540,
+      "title": "Biodegradation and Bioremediation",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "ENVE411"
+        ]
+      },
+      "description": "Microbial degradation and transformation of organic and inorganic contaminants. Principles of current bioremediation technologies for soil and groundwater contaminants."
+    },
+    {
+      "number": 550,
+      "title": "Chemical Fate and Transport",
+      "credits": 3,
+      "description": "Chemical fate and transport modeling of environmental systems as applied to ecological systems, treatment technologies, and human health exposure assessments. ENVE 550"
+    },
+    {
+      "number": 569,
+      "title": "Environmental Risk Assessment",
+      "credits": 3,
+      "description": "Overview of ecological and human risk, including hazard identification, dose response, exposure assessment, and risk characterization."
+    },
+    {
+      "number": 591,
+      "title": "Research Methods in Environmental Engineering",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "EPC590"
+        ]
+      },
+      "description": "Preparing a research proposal, critical reading of literature, understanding ethics in research, experimental design, data analysis and presentation. ENVE 591 Research Methods in Environmental Engineering (1) The goal of this course is to provide information for graduate students regarding the pertinent research methodology that applies to their research projects in environmental engineering and sciences. Understanding research methods is the key to generating valid research results which can be used to guide the design, operation, and evaluation of environmental treatment assessment, treatment, and control operations and facilities. Valid research results also require proper quality control and quality assurance plans and ethical research conduct and practices. This course will provide foundational information regarding how to conduct an effective literature review, set up research hypotheses, prepare research experiments, collect and analyze research data, discuss research results, and summarize research findings. For research result dissemination, this course will teach students how to prepare and submit research manuscripts for publication in scientific journals and technical conference proceedings. Patent application preparation also will be briefly introduced in the course instruction. The course also will provide two hours of instruction on research/professional ethics, focusing especially on plagiarism and data falsification/fabrication."
+    },
+    {
+      "number": 594,
+      "title": "Research Topics",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

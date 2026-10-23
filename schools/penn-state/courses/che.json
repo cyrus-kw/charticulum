@@ -1,0 +1,902 @@
+{
+  "subject": "CHE",
+  "courses": [
+    {
+      "number": 97,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 99,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 100,
+      "title": "Exploring Chemical Engineering First-Year Seminar",
+      "credits": 1,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "The exploration of Chemical Engineering and available career opportunities."
+    },
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 210,
+      "title": "Introduction to Material Balances",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "CHEM112"
+        ]
+      },
+      "description": "An integrated approach to the study of material balances and industrial chemical processes important in chemical engineering. The objective of this course is to present an introduction to chemical engineering calculations, establish mathematical methodologies for the computation of material balances and to present an overview of industrial chemical processes. It is the introductory course in the chemical engineering curriculum and is normally taken in the sophomore year. It is prerequisite for several junior-level courses in the curriculum, including courses in process fluid dynamics, heat transfer and phase equilibrium."
+    },
+    {
+      "number": 210,
+      "suffix": "H",
+      "title": "Introduction to Material Balances (Honors)",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "CHEM112"
+        ]
+      },
+      "description": "An integrated approach to the study of material balances and industrial chemical processes important in chemical engineering. The objective of this course is to present an introduction to chemical engineering calculations, establish mathematical methodologies for the computation of material balances and to present an overview of industrial chemical processes. It is the introductory course in the chemical engineering curriculum and is normally taken in the sophomore year. It is prerequisite for several junior-level courses in the curriculum, including courses in process fluid dynamics, heat transfer and phase equilibrium."
+    },
+    {
+      "number": 220,
+      "title": "Introduction to Chemical Engineering Thermodynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "CHEM112"
+        ]
+      },
+      "description": "This is the introductory course in chemical engineering thermodynamics and is normally scheduled in the sophomore year. It places emphasis in the development of the theory of thermodynamics of pure fluids with applications to small- and large-scale processes with multiple streams and energy exchanges, computation heat and work loads, and assessment of efficiency with respect to energy utilization. Starting from small units, such as pumps, compressors, turbines, and heat exchangers, examples grow to include large systems such as power plants and refrigeration cycle, that may involve many interconnected units and recycle streams. A parallel focus of the course is in the computation of thermodynamic properties through the use of charts, tables, and equations of state with emphasis on non-ideal systems."
+    },
+    {
+      "number": 220,
+      "suffix": "H",
+      "title": "Introduction to Chemical Engineering Thermodynamics (Honors)",
+      "credits": 3,
+      "attributes": [
+        "HON"
+      ],
+      "requisites": {
+        "previous": [
+          "MATH141",
+          "CHEM112"
+        ]
+      },
+      "description": "This is the introductory course in chemical engineering thermodynamics and is normally scheduled in the sophomore year. It places emphasis in the development of the theory of thermodynamics of pure fluids with applications to small- and large-scale processes with multiple streams and energy exchanges, computation heat and work loads, and assessment of efficiency with respect to energy utilization. Starting from small units, such as pumps, compressors, turbines, and heat exchangers, examples grow to include large systems such as power plants and refrigeration cycle, that may involve many interconnected units and recycle streams. A parallel focus of the course is in the computation of thermodynamic properties through the use of charts, tables, and equations of state with emphasis on non-ideal systems."
+    },
+    {
+      "number": 230,
+      "title": "Computational Tools for Chemical Engineering",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "MATH251"
+        ]
+      },
+      "description": "This 1-credit course will cover the key computational tools needed by Chemical Engineering students. CH E 230 Computational Tools for Chemical Engineering (1) This 1-credit course will cover the key computational tools needed by Chemical Engineering students. Specific topics of interest include: constructing high quality graphs, statistics and linear regression, solving coupled algebraic equations, solving ordinary and partial differential equations, and matrices."
+    },
+    {
+      "number": 294,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 296,
+      "suffix": "H",
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 300,
+      "title": "Professional Development Seminar",
+      "credits": 1,
+      "requisites": {
+        "previous": [
+          "CHE210"
+        ]
+      },
+      "description": "Lectures and discussion by visiting engineers and faculty on chemical engineering, job selection, patents, licensing, ethics, and other professional problems. The course objective is to offer an orientation to the chemical engineering profession and to promote professional attributes such as professional ethics, lifelong learning, and awareness of environmental and societal factors, and to highlight their importance in the career lives of chemical engineers. The course consists of a one-hour lecture each week by visiting speakers and Penn State faculty. For some lectures, reading material is distributed a week before the lecture and in some cases, the students must turn in the questionnaire in which they have to answer various questions related to the topic of that week. The topics vary from year to year, but several key topics are included each time the course is taught: ethics, environmental issues, process safety, patent law and intellectual property, graduate school, and job opportunities in various industries."
+    },
+    {
+      "number": 320,
+      "title": "Phase and Chemical Equilibria",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MATH231",
+              "MATH230"
+            ]
+          },
+          "CHE210",
+          "CHE220"
+        ],
+        "minGrades": {
+          "MATH231": "C",
+          "MATH230": "C",
+          "CHE210": "C",
+          "CHE220": "C"
+        }
+      },
+      "description": "The course covers the fundamentals of phase and chemical equilibrium with emphasis on vapor/liquid systems and their applications to separation processes. It is the second course in chemical engineering thermodynamics and leads to the study of separations and reacting systems. Computational methodologies are presented for the calculation of the properties of mixtures and the construction of phase diagrams (P-x-y, T-x-y) using activity coefficients or equations of state. The theory is applied to the analysis of equilibrium stage separation such as distillation and extraction, including the construction of McCabe-Thiele diagrams. In the last portion of the course the principles of equilibrium are further applied to chemically reacting systems."
+    },
+    {
+      "number": 330,
+      "title": "Process Fluid Mechanics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251",
+          "CHE210"
+        ],
+        "minGrades": {
+          "MATH251": "C",
+          "CHE210": "C"
+        }
+      },
+      "description": "This course introduces the principles of fluid mechanics that are of fundamental importance to chemical engineers. Students learn to perform scaling and dimensional analysis in physical systems. Student learn to apply microscopic and macroscopic mass, energy, and momentum balances in flowing systems, and apply them to determine flow patterns for Newtonian fluids in simple geometries. These principles are applied to design flow equipment."
+    },
+    {
+      "number": 340,
+      "title": "Introduction to Biomolecular Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM212",
+          "MATH251",
+          "CHE210"
+        ],
+        "minGrades": {
+          "CHEM212": "C",
+          "MATH251": "C",
+          "CHE210": "C"
+        }
+      },
+      "description": "This course introduces students to the concepts and principles needed to apply chemical engineering principles to the design, modification, and analysis of biological systems for biotechnology applications. Students will learn to use appropriate search engines to find genes and proteins with desired regulatory or biocatalytic properties. The course will cover: the similarities and differences between biological and chemical processes; statistical analyses of measurements and data; and estimation of enzymatic and growth kinetic parameters."
+    },
+    {
+      "number": 350,
+      "title": "Process Heat Transfer",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251",
+          "CHE230",
+          "CHE210"
+        ],
+        "minGrades": {
+          "MATH251": "C",
+          "CHE230": "C",
+          "CHE210": "C"
+        }
+      },
+      "description": "The objective of the course is to introduce to students heat transfer mechanisms in solids and fluids and their chemical process applications. At the conclusion of the course, the student should possess the ability to model steady and unsteady heat transfer in simple systems, and design heat exchangers and heat exchanger networks. The development of the material of this course requires use of thermodynamics and fluid mechanics, and sets the basis for the design of reactors and separation processes."
+    },
+    {
+      "number": 360,
+      "title": "Mathematical Modeling in Chemical Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH230",
+          "MATH251",
+          "CHE210"
+        ],
+        "minGrades": {
+          "MATH230": "C",
+          "MATH251": "C",
+          "CHE210": "C"
+        }
+      },
+      "description": "Mathematical model formulation for chemical and physical processes, including applications of ordinary differential equations and numerical methods. CH E 360 Mathematical Modeling in Chemical Engineering (3) This course covers the applied mathematical techniques necessary for the simulation of physical and chemical processes such as mass transfer and reacting systems, and the analysis of process dynamics. In the former area, the formulation of ordinary differential equations for a variety of situations of interest to chemical engineers is considered. Numerical methods and mathematical packages that form the basis for computer simulations are emphasized. In the latter area, the notions of steady-state, stability and controllability are introduced. The tools discussed in this course are used in subsequent courses on the analysis and design of chemical reactors and mass transfer processes."
+    },
+    {
+      "number": 396,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "CHE 396 is for creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses. CHE 396 is an \"Independent Studies\" course."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject that may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 410,
+      "title": "Mass Transfer Operations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE230",
+          "CHE320",
+          {
+            "oneOf": [
+              "CHE330",
+              "CHE350"
+            ]
+          }
+        ]
+      },
+      "description": "The objective of this course is to present the principles of mass transfer and their application to separation and purification processes. The course develops rate expressions for mass transfer in multiphase, multicomponent systems based on diffusion and convective processes. Starting with Fick's law and macroscopic balances the course moves to the design of large scale separation processes including equilibrium stage and continuous separations for the separation and purification of chemical compounds. Specific separation operations analyzed include distillation, absorption, extraction, membrane units, adsorption. The course also introduces the use of modern software tools in the design of such processes."
+    },
+    {
+      "number": 412,
+      "title": "CHE and the Environment",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE210",
+          "CHE220",
+          "CHE320",
+          "CHE330"
+        ]
+      },
+      "description": "In this course students will apply chemical engineering principles to important environmental problems. These chemical engineering principles include: Material balances, Thermodynamics, phase and chemical equilibrium, transport and chemical kinetics. These principles are critical to solve current environmental challenges such as access to safe drinking water, remediation of contaminated sites and sustainability of chemical processes in the field. In addition to the application of these principles, students will learn the history of the environmental field such as the first use of chlorine as a disinfection, the advent of an activated sludge tank and the development of the first environmental laws. Combining these will allow students to design solutions for current challenges such as emissions of carbon dioxide and excess waste."
+    },
+    {
+      "number": 418,
+      "title": "Experiments in Chemical Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE330",
+          "CHE220"
+        ]
+      },
+      "description": "This course is for upper level chemical engineering students who enjoy hands-on learning in a small class environment. The class will work closely together as a team to explore various areas within chemical engineering. Experiments will be performed in small teams and results and discussion will be presented via oral presentations. The class will build from more basic experiments towards more open-ended experiments where students may build on each other's data from week to week. Students get to choose the experiments they want to do and will also design their own experiments. Students will learn some statistics to aid in data analysis and experimental design, analyze data, and present technical reports."
+    },
+    {
+      "number": 423,
+      "title": "Chemical Energy Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE210"
+        ],
+        "concurrent": [
+          "CHE320"
+        ],
+        "minGrades": {
+          "CHE210": "C"
+        }
+      },
+      "description": "This course provides an overview of current and prospective chemical energy storage and conversion technologies. CHE 423 Chemical Energy Technology (3) This course provides an overview of chemical energy storage and conversion technologies. Current fossil fuel based conversion processes in power plants and transportation applications will be surveyed. The course will emphasize critical evaluation of alternative conversion technologies, with the goal of providing the skills for quantitative assessment of the potential of various storage and conversion technologies. Current conversion technologies surveyed will include coal power plants, petroleum refineries, and internal combustion engines. Alternative technologies will consider unconventional fossil fuel processing, electrochemical energy conversion, solar energy conversion, and agricultural/biological fuel conversion. A semester long student project will involve generation of a future energy scenario 25-50 years in the future. The class structure is interactive, with readings motivating class period discussions."
+    },
+    {
+      "number": 430,
+      "title": "Chemical Reaction Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE320"
+        ]
+      },
+      "description": "This course teaches the principles of reaction engineering and reactor design. It is one of the core subjects in the chemical engineering curriculum and it is normally scheduled in the senior year. Students learn how to apply stoichiometry in combination with a rate law to design a chemical reactor that produces the desired conversion of reactants and selectivity to products. Students will formulate rate laws from various sources, including experimental data and sequences of elementary reaction steps. The design of various types of chemical reactors is discussed at length, including continuous stirred-tank (CSTR), plug-flow (PFR), continuous-operation and batch-operation reactors, and isothermal vs non-isothermal reactors. Additional topics include heterogeneous reactors, catalytic systems, and the design and optimization of reactor networks. It leads to the capstone design course in which chemical reactors are integrated into a chemical plant."
+    },
+    {
+      "number": 432,
+      "title": "Petroleum Processing",
+      "credits": 3,
+      "internalEquivalents": [
+        "FSC432"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM202",
+              "CHEM210"
+            ]
+          }
+        ]
+      },
+      "description": "Transportation of people and goods in many parts of the world depend almost completely on petroleum fuels, such as gasoline, jet fuel, diesel fuel, and marine fuel. Apart from the fuels, materials that are necessary for operating the combustion engines of cars, trucks, planes, and trains also come from petroleum. These materials include lubricating oils (motor oils), greases, tires on the wheels of the vehicles, and asphalt to pave the roads for smooth rides in transportation vehicles. All petroleum fuels and many materials are produced by processing of crude oil in petroleum refineries. Petroleum refineries also supply feedstock to the petrochemicals and chemical industry for producing all consumer goods from rubber and plastics (polymers) to cosmetics and medicine. This course explains how physical processes and chemical reactions that take place in separate petroleum refinery units are integrated to convert crude oil into desired fuels and materials. Refinery processes are divided into four types that include separation, conversion, finishing, and support. The overall objective of petroleum refining is to convert crude oil into fuels and materials that comply with commercial specifications and environmental regulations. All refining processes and refinery operations are also subjected to the applicable environmental regulations. A historical evolution of process concepts is introduced to demonstrate how the refining efficiency has increased with significant reduction of pollutant emissions from individual refinery processes. The principal objectives of this course are to enable students to: 1. explain the market drivers for the refining industry (ABET student outcome 2). 2. indicate what crude oils consist of and how crude oils are characterized based on their physical properties (ABET 1, 2); 3. express the objectives of petroleum refining and classify the processes used in petroleum refining (ABET 1, 2, 7); 4. demonstrate how a petroleum refinery works and sketch a flow diagram that integrates all refining processes and the resulting refinery products (ABET 2); 5. examine how each refinery process works and how physical and chemical principles are applied to achieve the objectives of each refinery process (ABET 1, 2, 7); 6. assess implications of changing crude oil feedstocks on refinery configuration and propose strategies to resolve conflicts with degrading crude oil quality and increasingly stringent environmental regulations on petroleum fuels (ABET outcome 4, 7); 7. discuss different sources of natural gas and explain how natural gas is processed at well sites and in processing plants with application of selected refinery processes and other physical operations (ABET 1, 2)."
+    },
+    {
+      "number": 438,
+      "title": "Bioprocess Engineering",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM212"
+        ]
+      },
+      "description": "Introduction to the biotechnology field including consideration of upstream and downstream processing of biochemicals."
+    },
+    {
+      "number": 439,
+      "title": "Alternative Fuels from Biomass Sources",
+      "credits": 3,
+      "internalEquivalents": [
+        "EGEE439"
+      ],
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ]
+      },
+      "description": "This course will examine technologies of bio-based sources for power generation and transportation, the effect on the environment, and the viability of the use of bio-based energy sources to mitigate energy needs and minimize environmental effects. The course will include examination of a wide variety of biomass sources for use in industrial boilers, conversion into transportation fuel, and use of by-products for chemical and materials production, as would probably be incorporated into a bio-refining facility. The focus will be on the use of biomass or biomass products as fuels. The students will be asked to do a report on the development of a bio-refining facility (based on feedstock, type of chemistry, and location constraints), utilizing the information learned throughout the semester."
+    },
+    {
+      "number": 442,
+      "title": "Polymer Processing Technology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATSE447"
+        ]
+      },
+      "description": "Basic principles of polymer melt processing are reviewed and subsequently applied to the most important industrial processing operations. MATSE 448 (CH E 442) Polymer Processing Technology (3) MATSE 448 involves both lectures and laboratory experiments illustrating the interrelations between structure, processing conditions, and physical properties of industrial polymer products. Students apply engineering fundamentals and principles of polymer melt rheology to analyze industrial processing operations. Unlike typical polymer processing courses offered at most U.S. universities, MATSE 448 covers detailed analyses of individual processing operations, rather than dwelling on underlying polymer science fundamentals that are covered elsewhere in our curriculum. Students learn to optimize processing variables, given a particular set of materials and conditions, establishing how processing conditions impact the physical properties of finished polymer products. We explore the physics governing processing operations including extrusion, mixing, calendering, blow molding, thermoforming fiber spinning compression molding, injection molding, and nanolithography."
+    },
+    {
+      "number": 443,
+      "title": "Introduction to Polymer Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE320",
+          "CHEM210"
+        ]
+      },
+      "description": "Introduction to synthesis, structure, characterization and processing of polymers. Single molecule properties, polymer solutions, glasses, crystals and blends. CH E 443 Introduction to Polymer Science (3) The objective of this course is to introduce students to the synthesis, structure, characterization and processing of polymers. Emphasis is placed on the molecular origins of polymer properties. The course will provide an overview of single molecule properties and polymeric solutions, glasses, crystals and mixtures from a Chemical Engineering perspective. The course builds on CH E 320, Chemical and Phase Equilibria, to develop a more in-depth description of the thermodynamics of polymers. This course will also build on CHEM 210 , Organic Chemistry, to analyze more in-depth strategies for the synthesis of polymers. At the end of the course, the students will be able to evaluate the viability of synthetic pathways for various polymers, estimate the size of polymer chains in solution and in the melt, calculate thermodynamics phase diagrams of polymer blends and solutions, and compare and contrast different approaches to describe the physical properties of polymers."
+    },
+    {
+      "number": 444,
+      "title": "Chemical Game Theory",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE210",
+          "CHE320"
+        ]
+      },
+      "description": "\"Chemical Game Theory\" (CGT), uses well-known, rigorous principles from Chemistry and Chemical Engineering to solve strategic decision problems that could be analyzed using Traditional Game Theory (TGT). In strategic decisions, players each can choose from among two or more alternative possibilities, and the outcome depends upon the collective choices from all players. In this course we will analyze some of the premises of TGT as compared with CGT. In CGT, the players' choices are treated as metaphorical molecules, and outcomes are calculated according to chemical reaction methods. The important concept of entropic choices is introduced, and pre-bias effects are included naturally as initial concentrations of reactants. CGT is not a generalization of TGT; rather, it represents contested decision problems differently, and gives different solutions. In this article we use the formalism of Chemistry to provide a \"knowlecular approach\" to analyzing contested decisions. This approach has a rich capacity to represent decision-making scenarios and serve as a decision-making algorithm for contested decisions, where leadership power plays an important role."
+    },
+    {
+      "number": 445,
+      "title": "Bioremediation/Green Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE340"
+        ]
+      },
+      "description": "Man has polluted his environment but biotechnology holds great promise for cleansing it and for synthesizing the chemicals that we all need in a modern society in a manner that limits generating new pollution. The course focuses on the application of biological and engineering principles toward the remediation of hazardous wastes and for the synthesis of chemicals in a sustainable manner; i.e., in a manner that limits the production of unwanted compounds. The tools that will be explained for accomplishing this are metabolic engineering, systems biology, and protein engineering. Students will also gain knowledge related to the design of biological contacting devices for waste remediation and green chemistry. Emphasis will also be placed on the evolution of bacterial pathways for accomplishing engineering goals. Discussion will also ensue on societal issues such as the wisdom of the release of genetically-engineered microorganisms and the limitations of biotechnological approaches."
+    },
+    {
+      "number": 446,
+      "title": "Transport Phenomena",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE330",
+          "CHE350"
+        ],
+        "concurrent": [
+          "CHE410"
+        ]
+      },
+      "description": "Fundamental treatment of mass, heat, and momentum transfer; emphasis on transport properties and mathematical models of chemical engineering transport processes. CHE 446 Transport Phenomena (3) This is an intermediate course in transport phenomena intended to expand on the materials introduced in the required undergraduate courses on momentum, heat and mass transfer. It builds on the prerequisite material with a rigorous formulation of transport problems using the conservation principles and flux expressions, and identifies the similarities and differences among the transport processes for momentum, heat, and mass. The main focus of the course is on microscopic treatment of transport problems, with particular emphasis on proper use of dimensional analysis and scaling arguments. Transport phenomena is a rather mathematical subject and the student is assumed to be familiar with ordinary and partial differential equations, elementary vector analysis, and elementary numerical techniques. This course is intended to prepare the student for a graduate-level course in transport phenomena."
+    },
+    {
+      "number": 449,
+      "title": "Bioseparations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE410"
+        ]
+      },
+      "description": "Analysis and design of separation processes for the purification of biological molecules. CH E 449 Bioseparations (3) This course introduces students to the principles and applications of separation processes used for the purification of biological molecules, including fine chemicals, pharmaceuticals, and therapeutic proteins. By the end of the course students will be able to perform preliminary design calculations and scale-up of specific separation systems including centrifugation, filtration, chromatography, and membrane processes. Students will also be able to develop outlines of overall separation schemes appropriate for the purification of different biological products. This course is required for the Bioprocessing and Biomolecular Engineering Option in Chemical Engineering."
+    },
+    {
+      "number": 450,
+      "title": "Process Dynamics and Control",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH251",
+          "CHE210"
+        ],
+        "minGrades": {
+          "MATH251": "C",
+          "CHE210": "C"
+        }
+      },
+      "description": "Analysis of time-dependent variables in chemical process plants; reactor design and control; computer applications. CHE 450 Process Dynamics and Control (3) The course is an introduction to chemical process dynamics and control and is offered as a technical elective. The first part of the course is devoted on the dynamical behavior of systems and the mathematical tools (differential equations, Laplace transforms) used in their analysis. The second part of the course covers the design and operation of various types of controllers, including proportional, integral and differential and their combinations. The theoretical principles are demonstrated with applications to chemical engineering processes such as storage tanks, chemical reactors and separation processes."
+    },
+    {
+      "number": 452,
+      "title": "Chemical Process Safety",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE320"
+        ],
+        "concurrent": [
+          "CHE330",
+          "CHE350"
+        ]
+      },
+      "description": "This course provides an overview of Process Safety in the Chemical Industry, focusing on the nature of chemical plant accidents. CHE 452 Chemical Process Safety (3) The course will provide an overview of Process Safety in the Chemical Industry, focusing on the nature of chemical plant accidents, their causes, and steps to eliminate them, with emphasis on inherently safe designs. Chemical Plant accidents deal most often with Flammability and Toxicity issues and these are dealt with in great detail. The role of Human Error in accidents is also examined Actual case studies (including Bhopal, BP Texas City, Piper Alpha) will be examined to show the relevance in today's workplace. The course requires active student participation via discussions of system designs, their weakness and improvements. Guest lecturers will also be invited to supplement the material. This is offered as a senior elective in Chemical Engineering."
+    },
+    {
+      "number": 455,
+      "title": "Drug Delivery, Pharmacokinetics, and Artificial Organs",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHE350",
+              "BME409",
+              "BME413",
+              "BE302"
+            ]
+          }
+        ]
+      },
+      "description": "CHE 455 is an elective course that examines the application of chemical engineering principles (thermodynamics, transport, and kinetics) to the analysis of a number of medically related phenomena and devices. Specific topics include drug delivery systems, pharmacokinetics, artificial organs, biological transport phenomena, and temperature regulation. One of the important goals of the course is to understand how chemical engineers go about developing appropriate physical models for complex biological systems. Emphasis will be placed on identifying the key physical / biological phenomena governing the system behavior. Where appropriate, the course will also examine some of the social, political, and economic implications of medical technology in our society, e.g., the artificial kidney program. Students do not need a background in biology or physiology -- the key biological phenomena will be covered at appropriate places throughout the semester."
+    },
+    {
+      "number": 470,
+      "title": "Design of Chemical Plants",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE350",
+          "CHE410",
+          "CHE430"
+        ]
+      },
+      "description": "The chemical engineering capstone design course introduces the principles of process design and economic evaluation utilizing various industry computer tools, with special emphasis on process simulators. The student will develop critical design logic to evaluate a process, starting with block flow diagrams and simple material balances utilizing practical heuristics and then build the process flowsheet through computer simulation, flowsheet optimization, and detailed equipment design."
+    },
+    {
+      "number": 480,
+      "suffix": "W",
+      "title": "Chemical Engineering Laboratory",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "CHE230",
+          "CHE320",
+          "CHE330",
+          "CHE350"
+        ],
+        "concurrent": [
+          "CHE410"
+        ]
+      },
+      "description": "Data interpretation and correlation from student-operated experiments on pilot-plant equipment. Individual written and oral technical reports. CHE 480W Chemical Engineering Laboratory (3) This is the laboratory course in Chemical Engineering. Its objective is to provide hands-on experience with chemical engineering equipment and consists of a series of experiments that cover the major subjects in chemical engineering, namely, fluid flow, heat transfer, separations and reactions. The subject matter on which these experiments are based is taught in various junior- and senior-level classes. CHE 480W does not introduce new material but focuses instead on planning, execution and interpretation of experiments.The course is team-based and includes laboratory sessions as well as lectures. Evaluation is based on the written and oral reports given based on experiments performed. These reports undergo several drafts, in which at different times students or faculty evaluate the report, suggesting corrections. Course evaluation may also include a \"pre-exam\" to assure that the students understand technical material coming into the course. Peers assess each others' performance (contributing to the grade), as does the faculty."
+    },
+    {
+      "number": 494,
+      "title": "Research Projects in Chemical Engineering",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "An original problem, including a search of the literature, experimental investigation, and preparation in formal thesis form."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Projects in Chemical Engineering (Honors)",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "An original problem, including a search of the literature, experimental investigation, and preparation in formal thesis form. CH E 494H CH E 494H Research Projects in Chemical Engineering (1-6) Undergraduate research projects for honors students leading to the generation of a thesis for the Schreyer Honors College. The content of this course typically falls within the research interests of the chemical engineering faculty. The work can be computational, theoretical or experimental in nature and culminates with the writing of an honors thesis. Students should select a thesis advisor prior to enrolling in this course and file an honors thesis proposal report form with the Schreyer honors College. A student outside of chemical engineering can take the course if they are working towards an honors thesis in chemical engineering. A student in chemical engineering can take this course with a co-advisor outside of chemical engineering: however, the CH E"
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, that are supervised on an individual basis and that fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 501,
+      "title": "Bioengineering Transport Phenomena",
+      "credits": 3,
+      "description": "Application of the equations of mass, energy, and momentum conservation to physiological phenomena and to the design of artificial organs."
+    },
+    {
+      "number": 503,
+      "title": "Fluid Mechanics of Bioengineering Systems",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BME409",
+          {
+            "oneOf": [
+              "ME320",
+              "CHE330",
+              "AERSP308"
+            ]
+          }
+        ]
+      },
+      "description": "Cardiovascular system and blood flow, non-Newtonian fluid description, vessel flows, unsteady flows and wave motion, windkessel theory, transmission line theory."
+    },
+    {
+      "number": 505,
+      "title": "Atomistic Scale Simulations for Engineer",
+      "credits": 3,
+      "internalEquivalents": [
+        "ME505"
+      ],
+      "description": "This course aims to provide an overview of atomistic-scale methods - in particular, ab-initio based methods like Density Functional Theory and empirical force field methods - to an engineering audience. Due to the increasing availability of computers, atomistic-scale simulation methods are becoming increasingly relevant to engineers, as they can provide key thermodynamic and material properties necessary for the design and analysis of engineering material performance. The main aim of the course is to encourage students to integrate atomistic-scale concepts in their current research. As such, there is a strong emphasis on hands-on experience with various software codes, including commercial codes and academic codes. The students learn the basic concepts of quantum mechanics, statistical thermodynamics, crystallography, physics and chemistry as they relate to ab initio and empirical force field methods and their integration in energy minimization, molecular dynamics and Monte Carlo methods. These concepts are discussed on a conceptual level, enabling students to understand their application range and validity. Furthermore, we dedicate a significant amount of class time to engineer-relevant applications of these force engines and methods."
+    },
+    {
+      "number": 510,
+      "title": "Surface Characterization of Materials",
+      "credits": 3,
+      "internalEquivalents": [
+        "MATSE510"
+      ],
+      "description": "Physical and chemical principles of characterization techniques widely used in materials science, chemistry and engineering. CH E (MATSE) 510 Surface Characterization of Materials (3) Surface and interface characterization is an important subject in nanotechnology, heterogeneous catalysis, semiconductor processing, advanced functional materials, biomaterials, corrosion, environmental science, and tribology. This course will study the physical and chemical principles of representative characterization techniques widely used in these research areas. Topics covered in this course include surface chemistry and physics fundamentals, x-ray and electron-based spectroscopy, vibration spectroscopy, ellipsometry, microscopy with physical probes, and multivariate data analysis. Physical principles and practical applications will be studied through theoretical calculations, data analysis, and literature reviews."
+    },
+    {
+      "number": 512,
+      "title": "Optimization and Biological Networks",
+      "credits": 3,
+      "description": "Mathematical optimization, formulation and solution techniques for linear, nonlinear, and mixed-integer problems; optimization-based tools for reconstruction, analysis, and redesign of biological networks. CH E 512 Optimization and Biological Networks (3) This course focuses on the principles and applications of mathematical optimization in biological systems. The first part of the course addresses optimization theory, solution algorithms, and implementation software. Topics include nonlinear optimization, linear programming, mixed-integer linear and nonlinear optimization, and bi-level optimization. Emphasis will be placed on understanding the logic of the methodology, underlying key assumptions, comparative merits and shortcomings, and applications for solving engineering problems. Valuable hands-on experience will be provided on coding optimization models using GAMS (General Algebraic Modeling System) and specialized optimization solvers. The latter part of the course concentrates on applying the tools necessary to address the challenges arising in biological networks. Specifically, the use of optimization in reconstructing and analyzing genome-scale models of metabolism, protein library design strategies, regulatory network elucidation, and synthetic circuits design as well as optimal modifications in metabolic networks for various bioengineering tasks will be studied."
+    },
+    {
+      "number": 515,
+      "title": "Density Functional Theory and Practice",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHYS515"
+      ],
+      "description": "This course gives students an overview of the theory and practice of calculations performed with Density Functional Theory (DFT). DFT is a powerful tool to calculate the structural and electronic properties of collections of atoms. The course emphasizes the practical aspects of the calculations and the theory will be only described as necessary to understand and perform correct calculations. The target audience of the course is students of Physics, Chemistry, Materials Science, Chemical or Mechanical Engineering, and other science/engineering disciplines that need to learn to perform calculations based on DFT with a minimum of exposure to the theoretical details underlying this technique."
+    },
+    {
+      "number": 520,
+      "title": "Polymer Science and Engineering",
+      "credits": 3,
+      "internalEquivalents": [
+        "CHEM520",
+        "MATSE520"
+      ],
+      "description": "This course provides fundamental understanding of basic principles in polymer science and connects these to current research topics at Penn State as well as novel findings in soft material science at other institutions. Interdisciplinary in content, the curriculum spans from polymer synthesis (chemistry), to physical properties (physics), to characterization, to engineering (chemical engineering), to application of polymer materials (materials science). Two areas of focus will lie on (i) the environmental impact of commodity plastics and (ii) conductive polymers and their every-day use in display technology and energy harvesting. While polymers are versatile and broadly applicable, there lie significant dangers in their use for us as a society. For example, while the drive for flexible displays and solar cells is increasing, there is no clear pathway for efficient recycling of the resulting electronic polymeric materials. To this end, this course will engage students in discussions about industrial processing of polymers and the importance to find new pathways for their recycling."
+    },
+    {
+      "number": 524,
+      "title": "Chemical Engineering, Application of Thermodynamics",
+      "credits": 3,
+      "description": "Elements of thermochemistry and thermodynamics of greatest importance in chemical engineering."
+    },
+    {
+      "number": 528,
+      "title": "Colloidal Forces and Thermodynamics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CHEM450",
+              "CHE320"
+            ]
+          }
+        ]
+      },
+      "description": "Unified treatment of formation, growth and stability of colloids based on principles of intermolecular and colloidal forces and thermodynamics."
+    },
+    {
+      "number": 535,
+      "title": "Chemical Reaction Engineering",
+      "credits": 3,
+      "description": "Optimal design of batch and continuous chemical reactors and reactor batteries; effect of mixing on reactor operation."
+    },
+    {
+      "number": 536,
+      "title": "Heterogeneous Catalysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM450",
+          "CHEM452"
+        ]
+      },
+      "description": "Thermodynamics and kinetics of adsorption and reactions on solid surfaces, heat and mass transfer effects, theory and correlations in catalysis."
+    },
+    {
+      "number": 544,
+      "title": "General Transport Phenomena",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHE330",
+          "CHE350",
+          "CHE410"
+        ]
+      },
+      "description": "Formulation and solution of transport problems involving momentum, heat, and mass transfer, with chemical engineering applications."
+    },
+    {
+      "number": 546,
+      "title": "Transport Phenomena II",
+      "credits": 3,
+      "description": "Heat and mass transfer, steady and unsteady state, coupling, molecular diffusion, moving boundaries, transfer coefficients, chemical engineering applications."
+    },
+    {
+      "number": 555,
+      "title": "Engineering Soft Materials",
+      "credits": 3,
+      "description": "Soft materials are materials that can be easily deformed by thermal stresses or thermal fluctuations at about room temperature. In this course, the foundations of soft matter will be explained using numerous real-life examples. A comprehensive overview on different types of soft matter, such as polymers, colloids, gels, liquid crystals, amphiphiles, proteins, and/or cells will be provided, and the focus will be placed on engineering this burgeoning class of materials to address current challenges in the food-water-healthcare-energy nexus. During the semester, students will be guided to learn about various classes of soft materials and discover their emerging applications to address some of the quintessential challenges of the 21st century."
+    },
+    {
+      "number": 576,
+      "title": "Environmental Transport Processes",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CE475"
+        ]
+      },
+      "description": "Fundamentals of chemical transport in engineered environments, such as biofilm reactors, and natural systems including aquifers and rivers. C E 576C E 576 Environmental Transport Processes (3)Environmental Transport Processes covers the fundamental of mass transport of chemicals between air, water, soil, and biota. Material is divided into three subject areas: mass transfer theory, transport processes related to engineered reactors, and transport in the natural environment. The focus of the course is on chemical calculations particular to dilute systems, with emphasis on quantifying chemical transport rates and distributions in natural and engineered environments. Special topics of interest to environmental engineers include biofilm models, bioreators, chemical partitioning in thin fluid film bioreactors, and fate of anthropogenic chemicals from spills and discharges into the environment (i.e., rivers, lakes, and groundwaters).Faculty: Bruce E. Logan"
+    },
+    {
+      "number": 590,
+      "title": "Colloquium",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Continuing seminars which consist of a series of individual lectures by faculty, students, or outside speakers."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Opportunity for supervised and graded teaching experience for graduate students in chemical engineering."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

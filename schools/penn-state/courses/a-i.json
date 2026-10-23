@@ -1,0 +1,330 @@
+{
+  "subject": "A-I",
+  "courses": [
+    {
+      "number": 100,
+      "title": "Artificial Intelligence: Automated Thinking to Augment Human Intellect",
+      "credits": 3,
+      "attributes": [
+        "GS"
+      ],
+      "description": "This course introduces students to key artificial intelligence (AI) capabilities and their broad real-world applications. It first introduces students to the interdisciplinary intellectual underpinnings of artificial intelligence and the high-level computational architectures of intelligence. This foundational knowledge prepares the stage for introducing students to representative examples of artificial intelligence in action (from the lenses of \"what, why, and social and ethical implications\"), including playing games, learning from data, perception, language processing and question answering, making decisions, planning actions, interacting in multi-agent teams, and creative composition of text, music, and art/imagery. The course will also introduce ethical implications of AI and its impacts on society. Upon successful completion of the course, students will be able to articulate the big picture of AI, including basic understanding of AI's key capabilities such as natural language understanding, visual perception, prediction, learning, as well as ethics issues related to AI."
+    },
+    {
+      "number": 285,
+      "title": "Experiential Learning Skills Lab",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "This course offers students an immersive environment where they can hone their technical abilities, develop soft skills, and prepare for the multifaceted challenges they will face when they engage in experiential learning through internships, co-ops, research projects, challenges, and capstone projects. Students may collaborate in multidisciplinary teams to research, propose and implement solutions for problems in diverse fields such as healthcare, business, agriculture, media, and defense, using artificial intelligence and machine learning technologies. To enhance the learning experience, this course will incorporate interactions with AI professionals and alumni working in the field furthering professional communication skills. Students will be encouraged to submit their ideas and solutions developed in this course to a wider array of experiential learning initiatives and outreach programs within the artificial intelligence domain. Students will also receive guidance on securing internships, including participating in mock interviews, learning workplace etiquette, and setting learning goals for their internship experience."
+    },
+    {
+      "number": 305,
+      "title": "Algorithmic Foundations for Artificial Intelligence",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC132",
+              "CMPSC122"
+            ]
+          },
+          {
+            "oneOf": [
+              [
+                "MATH220",
+                "MATH231"
+              ],
+              "MATH225"
+            ]
+          },
+          {
+            "oneOf": [
+              "CMPSC360",
+              "MATH311W"
+            ]
+          },
+          {
+            "oneOf": [
+              "STAT414",
+              "STAT418",
+              "STAT318",
+              "STAT401",
+              "EE465"
+            ]
+          }
+        ]
+      },
+      "description": "This course introduces students to essential algorithm design and analysis techniques with a focus on application in data science and machine learning. The course introduces students to elementary and advanced data structures to store and manipulate data. The course teaches different algorithm design and analysis techniques including classical paradigms such as divide and conquer, greedy, and dynamic programming, and advanced techniques such as randomized methods and algorithm tailored to machine learning such as gradient descent and online decision making. The course explores these techniques in context of different data types used in machine learning such as matrices, graphs and sequences. Students' learning of these concepts, techniques, and methods will be facilitated by exemplary programming demonstrations and coding exercises so that the students can utilize these algorithmic solutions in practical applications."
+    },
+    {
+      "number": 341,
+      "suffix": "W",
+      "title": "Responsible Artificial Intelligence",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "A-I100"
+        ],
+        "concurrent": [
+          "A-I370",
+          {
+            "oneOf": [
+              "CMPSC448",
+              "DS310",
+              "CMPSC445"
+            ]
+          }
+        ]
+      },
+      "description": "This course aims to equip students with the necessary conceptual frameworks, best practices, and technical tools for addressing challenges of designing and deploying systems that maximize the benefits of AI while minimizing their potential for harm. By examining case studies, students will be introduced to real-world examples related to AI fairness, privacy protection in relation to AI, generative AI, and accountability of AI systems. In addition, students will learn relevant methods, approaches, and best practices that can address related ethical considerations. Through this course, students will develop an awareness and understanding of the key social and ethical challenges that AI poses-issues of fairness, privacy, autonomy, trust, and democratic accountability, as well as become equipped to play an active role in addressing and overcoming such challenges in their future work. As a Writing Across the Curriculum course, students will be given individual writing assignments that are spaced at regular intervals to encourage active, regular writing. The students will write a draft for each individual assignment, receive peer and instructor feedback, revise their drafts, and then get final feedback from the instructor."
+    },
+    {
+      "number": 370,
+      "title": "Problem Formulation and Automated Problem Solving",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I100",
+          "CMPSC132",
+          {
+            "oneOf": [
+              "STAT200",
+              "DS200"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "CMPSC465",
+              "DS305",
+              "CMPSC462"
+            ]
+          },
+          "STAT401"
+        ]
+      },
+      "description": "This course introduces students to methods for automated problem solving requiring intelligence by formulating and solving problems as search, optimization, or constraint satisfaction problems. Topics of the course include but are not limited to: Problem-solving as state space search, Basic search algorithms and their properties, Finding optimal solutions (Best first search, A* Search, Heuristic search); Problem Solving through Problem Reduction, Search in non-deterministic environments, Problem solving in partially observable environments, Problem solving as Constraint Satisfaction, and Adversarial problem solving (optimal decisions in games; minimax search; etc.). Laboratory assignments will be used to provide students with hands-on experience in implementing and experimenting with AI problem solving methods. Upon successful completion of the course, students will be able to formulate and solve real-world problems of moderate complexity using modern search algorithms."
+    },
+    {
+      "number": 375,
+      "title": "Knowledge Representation and Inference",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "A-I370",
+          "STAT401"
+        ]
+      },
+      "description": "This course is designed to introduce students to the principles and practice of representing and reasoning with knowledge for the design of AI systems. The course will cover logical, probabilistic, and decision-theoretic knowledge representations and their applications in query answering, decision making, and planning. Upon successful completion of the course, the students will be able to choose, design and apply appropriate modern knowledge representation and inference techniques to solve AI problems. Topics include logical knowledge representations, probabilistic knowledge representations, decision-theoretic knowledge representations, action representations and their use in planning, concept of ontologies, knowledge graphs, graph alignment and reasoning. Laboratory assignments will be used to provide hands-on experience with knowledge representation-based solutions to real-world AI problems of moderate complexity."
+    },
+    {
+      "number": 410,
+      "title": "AI Systems and Tools",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "CMPSC448",
+              "DS310"
+            ]
+          },
+          "A-I341W",
+          "EE456"
+        ]
+      },
+      "description": "The goal of this course is to provide students with an understanding and overview of practical hardware and software system considerations in reliable and scalable development and deployment of modern machine learning (ML) and artificial intelligence (AI) models. The course imparts the essential techniques for designing algorithms that are mindful of software and hardware constraints. It equips learners with the key techniques and best practices for seamlessly deploying AI models across the entire lifecycle, from training to deployment and monitoring. Through this comprehensive approach, students gain invaluable skills for efficiently translating AI models into real-world applications, ensuring optimal performance and resource utilization. By investigating the fundamental differences between AI/ML as a model versus AI/ML as a system deployed in production, students' learning of these practical concepts, techniques, and methods will be facilitated by exemplary programming demonstrations and coding exercises so that the students can translate AI system design principles into practical machine learning applications and understand the fundamental differences between AI/ML as a model versus AI/ML as a system deployed in production."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis"
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised on or off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of activity required."
+    },
+    {
+      "number": 500,
+      "title": "Quantitative Methods",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN500"
+      ],
+      "description": "This course aims to provide essential quantitative skills required for advanced studies and practical applications that are important in algorithm optimization, signal processing, data manipulation, analysis, and data-driven decision making under uncertainty. It covers a range of topics including vector and matrix operations, advanced calculus with a focus on differentiation and integration techniques, Fourier transformations, and basic statistics and probability."
+    },
+    {
+      "number": 501,
+      "title": "Interdisciplinary Research Design for Artificial Intelligence",
+      "credits": 3,
+      "description": "This course provides graduate students with the principles and practical skills necessary to conduct rigorous scientific research in artificial intelligence. Emphasizing interdisciplinary perspectives, the course introduces research design principles, methodologies, and evaluation strategies that prepare students to define and pursue novel research questions in AI disciplines. Students will learn how to critically engage with existing literature, design reproducible experiments, analyze results, and communicate findings in scholarly formats. The course is designed to support students in preparing for their master's thesis and to serve as a bridge toward doctoral-level research. By the end of the course, students will have produced a research proposal and gained hands-on experience in articulating, justifying, and refining AI-focused research that address academic and professional challenges."
+    },
+    {
+      "number": 570,
+      "title": "Deep Learning",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT500"
+        ]
+      },
+      "description": "Deep Learning has become a prevalent area and accomplished near-human level in image classification, speech recognition, and autonomous driving. This course will cover the foundations on Neural Networks and Deep Learning Networks and give students a practical understanding of the field of Deep Learning. It covers the core concepts of Deep Neural Networks, including the Convolutional Neural Networks for image recognition, Recurrent Neural Networks for sequence generation, and Generative Adversarial Networks for image generation, and more!"
+    },
+    {
+      "number": 572,
+      "title": "Reinforcement Learning",
+      "credits": 3,
+      "description": "Reinforcement learning, along with supervised learning and unsupervised learning, is one of the three basic types of machine learning. Applications of reinforcement learning span across medical intervention, robotics, game playing, autonomous driving, financial trading, and marketing, among many others. This course will cover the main theory and approaches of reinforcement learning, along with deep learning and common software libraries and packages."
+    },
+    {
+      "number": 574,
+      "title": "Natural Language Processing",
+      "credits": 3,
+      "description": "Natural Language Processing (NLP) is a subfield of Artificial Intelligence. This course covers basic as well as advanced concepts to gain a detailed understanding of NLP tasks such as language modeling, text to speech generation, natural language understanding, and natural language generation. Students will learn the necessary skills to design a range of applications, including sentiment analysis, translating between languages, and answering questions. Throughout the course, the practical implementation of these applications with deep neural networks is also discussed."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on an individual basis, and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 801,
+      "title": "Foundation of Artificial Intelligence",
+      "credits": 3,
+      "description": "Artificial Intelligence (AI) is the discipline that attempts to build and understand intelligent entities. Computers with human level intelligence would have a huge impact as intelligent systems with natural language processing, robotics, building networked assistants, speech recognition, and autonomous driving. This course will teach the foundations of AI and give students a practical understanding of the field. This course gives an overview of the core concepts of AI, including the intelligent agents, knowledge and reasoning, reinforcement learning, planning and acting, belief networks, computational learning, Markov decision process, and more!"
+    },
+    {
+      "number": 804,
+      "title": "Ethics of Artificial Intelligence",
+      "credits": 3,
+      "internalEquivalents": [
+        "PHIL804"
+      ],
+      "description": "Artificial Intelligence (AI) is the use of machines to do tasks that seem to require human intelligence and cognitive skills (thinking, natural language, inference, decision making etc.) The Ethics of Artificial Intelligence is the young branch of applied ethics that seeks to study the far-reaching and diverse ethical issues that arise with the widespread and rapid integration of AI technologies into various aspects of our lives. The challenge is that we are in an uncharted ethical territory with regard to AI: we need to radically adjust our existing ethical paradigms or introduce new ones as we experience and acquire a better grasp of the problems involved in AI-human interaction. A large portion of these issues reflect our concerns about the harm that the use and misuse of AI might cause for humanity. Such issues range from threats to individual privacy and freedom to wider social implications regarding economic justice and race and gender equality. However, as AI systems develop and attain higher levels of intelligence, questions about their moral status become more pressing. If these systems are capable of moral agency, then not only do they have responsibilities towards other moral agents like us, but they also have rights that we should respect in our conduct towards them. This course offers an overview of the nature and extent of the ethical issues arising from AI-human interaction as well as the philosophical background (particularly, in ethics and philosophy of mind) required to develop an informed methodology in approaching these issues, with the help of the flourishing literature on the subject."
+    },
+    {
+      "number": 810,
+      "title": "Artificial Intelligence in Practice",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN810"
+      ],
+      "description": "This course offers a comprehensive exploration of the foundational concepts, techniques, and applications of Artificial Intelligence (AI). Designed to cater to a wide range of learners, including those with limited programming experience, this course emphasizes practical hands-on learning. Students will delve into key AI topics such as search algorithms, multi-agent systems, data processing, machine learning, deep learning, natural language processing, computer vision, and reinforcement learning. The course also features a group project, enabling participants to collaborate on solving real-world problems using AI. The course is structured to be accessible for those without extensive programming experience, utilizing low-code/no-code tools to facilitate learning and hands-on case studies from accounting, finance, marketing, innovation, creative work and entrepreneurship."
+    },
+    {
+      "number": 820,
+      "title": "Generative Artificial Intelligence",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN820"
+      ],
+      "description": "Generative AI is a transformative technology that is reshaping industries such as healthcare, finance, education, and entertainment. Understanding its technical fundamentals and ethical implications is essential for any AI practitioner or leader. This comprehensive course is designed to provide students with in-depth knowledge of generative AI, from foundational models to advanced techniques, while emphasizing the importance of ethical considerations. Students will gain hands-on insights into the intricacies of building, training, and optimizing foundation models, exploring the diverse applications of generative AI, and understanding its broader impact on society. The course emphasizes a human-centric approach, ensuring that the development and deployment of AI technologies align with ethical standards and societal values. The course is structured to be accessible for those without extensive programming experience, utilizing low-code/no-code tools to facilitate learning and hands-on case studies from accounting, finance, marketing, innovation, creative work and entrepreneurship."
+    },
+    {
+      "number": 830,
+      "title": "Applied Machine Learning",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN830"
+      ],
+      "description": "This course covers practical knowledge and skills in supervised machine learning and data mining, emphasizing real-world business applications. Students will learn how to acquire, explore, and preprocess data, apply supervised and unsupervised learning techniques, and understand the importance of fairness and explainability in AI. Utilizing low-code/no-code tools, the course fosters hands-on experience through group projects, enabling students to make data-driven decisions and present actionable insights effectively with applications from accounting, finance, marketing, innovation, creative work and entrepreneurship."
+    },
+    {
+      "number": 840,
+      "title": "Responsible AI",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN840"
+      ],
+      "description": "Responsible AI involves developing, deploying, and utilizing artificial intelligence (AI) systems in ways that are ethical, transparent, accountable, and aligned with societal values. This course focuses on understanding and applying the principles and practices of Responsible AI, ensuring that AI technologies are developed and used in ways that are fair, unbiased, and beneficial to individuals, communities, and society. Through practical exercises and real-world scenarios, students will learn to conduct bias audits, implement governance frameworks, conduct stakeholder consultations, and form cross-disciplinary teams to tackle the multifaceted challenges associated with AI ethics. The course is structured to be accessible for those without extensive programming experience, utilizing low-code/no-code tools to facilitate learning and application."
+    },
+    {
+      "number": 850,
+      "title": "Autonomous AI Agents",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN850"
+      ],
+      "description": "This course delves into the theoretical underpinnings and practical implementation of intelligent agents and autonomous AI systems. Students will learn to design systems that can perceive complex environments, formulate long-horizon plans, and execute multi-step workflows with minimal human intervention. The course covers foundational agentic concepts, advanced transformer-based language models, sophisticated prompt engineering, hierarchical planning, memory systems, and robust tool integration. A significant focus will be placed on developing modular Large Language Models (LLM) based-agent systems and addressing the ethical and governance challenges inherent in autonomous AI. This course prepares students to be leaders in the design, implementation, and responsible deployment of AI Agent with cutting-edge platforms."
+    },
+    {
+      "number": 860,
+      "title": "AI-Driven Automation and Planning",
+      "credits": 3,
+      "internalEquivalents": [
+        "DAAN860"
+      ],
+      "requisites": {
+        "previous": [
+          "A-I850"
+        ]
+      },
+      "description": "This course examines the theoretical foundations and practical methodologies for automating complex workflows using both symbolic and data-driven AI techniques. Students will explore classical planning formalisms, Large Language Model (LLM)-guided task planning, and workflow orchestration and scheduling to design, implement, and govern end-to-end automated systems. The course also includes topics such as process mining, multimodal and IoT-driven automation. Ethical, security, and regulatory considerations are integrated throughout, preparing graduates to lead responsible AI automation initiatives across diverse sectors."
+    },
+    {
+      "number": 879,
+      "title": "Machine Vision",
+      "credits": 3,
+      "description": "This course will focus on the design of computer-based, machine vision systems using appropriate algorithms and best practices. Students will study various techniques for image representation and structuring, feature extraction and segmentation, information extraction, filtering and analysis."
+    },
+    {
+      "number": 894,
+      "title": "Capstone Experience",
+      "credits": 3,
+      "description": "The capstone course in the MPS in Artificial Intelligence program. A practical experience in which students, working in teams, employ contemporary methods, process, and tools in the design and implementation of an AI-enabled system including problem identification, methodology selection, data identification and gathering, implementation, training, and deployment. As the culminating experience in the AI program, students demonstrate their ability to design and implement a full AI-enabled systems using a real-world dataset applying the tools and techniques explored throughout their preceding studies."
+    },
+    {
+      "number": 897,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "description": "Formal courses given on a topical or special interest subject with a professional orientation that may be offered infrequently."
+    }
+  ]
+}

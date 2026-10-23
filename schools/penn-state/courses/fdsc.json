@@ -1,0 +1,774 @@
+{
+  "subject": "FDSC",
+  "courses": [
+    {
+      "number": 105,
+      "title": "Food Facts and Fads",
+      "credits": 3,
+      "attributes": [
+        "GHW",
+        "BA-S"
+      ],
+      "internalEquivalents": [
+        "STS105"
+      ],
+      "description": "This course is an introduction to the central role of food and food production in all areas of human life. The social and technological bases of various food systems are examined from the hunter-gatherer to the agrarian to the modern industrial system and its discontents. The course also considers how different types of food (e.g., meat, milk, cereals, chocolate) are preserved and distributed, examining both the effects of the development of the science and technology on society and vice versa. The roles of various food components (e.g., proteins, carbohydrates, fats, and vitamins) are examined both within the foods as determinants of quality, and also in terms of human nutrition and health. Finally, various other ways food may be considered appropriate or inappropriate will be studied including scientifically based reasons (e.g., safety, taste, adulteration) and non-scientifically based reasons (e.g., ethical, legal, religious)."
+    },
+    {
+      "number": 125,
+      "title": "The Gut Microbiome",
+      "credits": 3,
+      "attributes": [
+        "GHW"
+      ],
+      "description": "The gut microbiome is increasingly being recognized as critical to our health, but what is it? We host as many microbes in our gut as there are human cells in our body and the metabolic capabilities of these microbes vastly exceeds what is encoded by the human genome. These microbes influence everything from the digestion of our food to our metabolism to our immune system to perhaps even our mood. Learning about these microbes and the role they play in the human body is a necessary part of understanding many diseases as well as how to maintain health. In this General Education, Health and Wellness course we will explore all the way that the gut microbiome influences us and our health as well as how we influence it with our diet and lifestyle choices."
+    },
+    {
+      "number": 150,
+      "suffix": "S",
+      "title": "Food Science First Year Engagement",
+      "credits": 2,
+      "attributes": [
+        "FYS"
+      ],
+      "description": "This first year seminar course was designed to facilitate transition into college with a particular emphasis on food sciences. This course is structured into two main modules, (1) general academic requirements (such as expectations) and (2) the field of food science. Topics related to fulfilling academic requirements provides students with resources related to academic advising, time management, student support services, getting to know the college, and student affairs. In the first module, our aim is that (1) students will be able to identify and understand opportunities that exist within academic-related support services at Penn State and (2) become familiar with major requirements and understand as well as interpret degree audits. In the second module, our aim is that (1) students understand what food science is, (2) identify and understand extracurricular and curricular opportunities within food science, and (3) identify and understand career opportunities within the food science field. Specific examples of topics related to module two are faculty huddle assignments (series of faculty-driven guest speaker series), hands-on activities related to food microbiology and safety, food engineering, food chemistry, and food choice, and team building challenge tasks (e.g., Chef Microbe and The Food Waste Challenge)."
+    },
+    {
+      "number": 175,
+      "title": "Careers in Food Science",
+      "credits": 2,
+      "description": "Graduates in food science have the opportunity to pursue a range of careers in industry, academia or government. In this course students will interact with a range of food science professionals and explore their career paths. They will also develop professional skills relevant to applying for internships and permanent positions (e.g., resume development, interview techniques)."
+    },
+    {
+      "number": 197,
+      "suffix": "G",
+      "title": "Special Topics - GenEd",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "attributes": [
+        "GHW"
+      ],
+      "description": "Formal courses given on a topical or special interest subject offered infrequently; several different topics may be taught in one year or semester. This Special Topics is a GenEd course."
+    },
+    {
+      "number": 200,
+      "title": "Introductory Food Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "CHEM110"
+        ]
+      },
+      "description": "General overview and principles; food constituents and properties; quality and safety; preservation methods; processing animal and plant products."
+    },
+    {
+      "number": 201,
+      "title": "Introductory Food Science Practicum",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "FDSC200"
+        ]
+      },
+      "description": "Demonstration to illustrate actual chemical reactions in food systems and visits to campus and area food processing operations."
+    },
+    {
+      "number": 207,
+      "title": "Animal Products Technology",
+      "credits": 2,
+      "description": "Composition, safety, palatability, preservation, and processing of foods from animals, impact of animal production and handling practices on product properties. FDSC 207 / ANSC 207 Animal Products Technology (2) This course is intended to give students knowledge and understanding of production and processing of foods derived from animals (meat, milk, and eggs). Upon completion of this course students will be able to describe and explain the physical and biochemical characteristics of muscle foods, milk, and eggs. Students will be able to describe and compare harvesting, processing, and preservation procedures used in preparation of animal products for human consumption. Students will be prepared to predict the impact of variations in animal production, handling, harvesting, and product processing on meat, milk, and egg product characteristics. This is one of a group of courses dealing with foods from animals. Related courses offered in Animal Science covers animal growth and development and evaluation of animals and meat products. Related courses in Food Science cover food microbiology, food chemistry, and meat and dairy processing technology. The content of this course is intended to emphasize the connection between animal production and the resulting food products. FDSC 207 / ANSC 207 is intended to be of general interest to people who produce or eat animal products and thus is an integral part of the Animal Sciences major. This course will also be useful for strengthening meat industry knowledge for students in Food Science. FDSC 207 / ANSC 207 will be offered one semester per year. Student performance will be evaluated through written exams, quizzes, and written reports."
+    },
+    {
+      "number": 208,
+      "title": "Animal Products Technology Laboratory",
+      "credits": 1,
+      "requisites": {
+        "concurrent": [
+          "ANSC207"
+        ]
+      },
+      "description": "Harvesting and processing of foods from animals; hands-on and demonstration exercises; industry procedures for processing meat, milk, and egg products. FDSC 208 / ANSC 208 Animal Products Technology Laboratory (1) This laboratory is intended to be taken along with or following Animal Products Technology lecture. Providing students with an opportunity to experience the procedures involved in harvesting and processing foods from animals. Upon completion of this course students will be able to describe, demonstrate, and explain procedures commonly used in harvesting and processing of muscle food, milk, and egg products. Students will be able to recognize and predict the impact of incorrect procedures for harvesting and processing muscle food, milk, and egg products. The course includes hands-on exercises and demonstrations that allow students to experience the \"look and feel\" of industry procedures used in harvesting and processing meat, milk, and egg products for human consumption. Focus on issues related to food safety and food quality. Student performance is evaluated through weekly written reports, and a final lab exam."
+    },
+    {
+      "number": 223,
+      "title": "Understanding Science Through Wine Beer and Bread",
+      "credits": 3,
+      "attributes": [
+        "GN"
+      ],
+      "description": "Fermented beverage production has been a driving force for scientific discovery and as such is a wonderful way to introduce areas of scientific knowledge. This course will use beer, wine, and other fermented products, as well as their ingredients to teach core scientific concepts. These concepts will include the biology of fruit development, the microbiology of wine and beer production, the physics of carbonated beverages, and the flavor chemistry induced through fire. Through these areas, students will learn critical thinking skills, as well as apply what they have learned to practical problems including utilizing some of the key mathematical equations used in beer and wine production. Upon completion, students will be expected to be able to understand key elements of fermented beverage production, along with the science behind it, and to be able to apply that knowledge to practical problems."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 400,
+      "title": "Food Chemistry and Analysis (I)",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FDSC200",
+              "FDSC201",
+              "CHEM202"
+            ]
+          }
+        ],
+        "concurrent": [
+          "BMB211",
+          "BMB212"
+        ]
+      },
+      "description": "The focus of this course is food macro-components (water, proteins, lipids, carbohydrates) as well as food structure (phase behavior, dispersions). Food micro-components are covered in FDSC 410 . Students will enter the class with a basic knowledge of chemistry and leave understanding food as a chemical system. Students will learn the important molecules in foods and how their reactions are influenced by food processing and affect food quality. They will also learn how to select and implement appropriate methods to quantify the composition and reactions of food through chemical analysis. This course has a required laboratory component."
+    },
+    {
+      "number": 402,
+      "title": "Supervised Experience in Food Science Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 5
+      },
+      "description": "Theories and experiences of teaching and learning relevant to food science and to the work of a teaching assistant. This course provides an introduction to the ways topics in food science can be effectively taught to diverse populations. Students will serve as a teaching assistant in a food science course and in addition meet regularly as a group to reflect on their experience as learners and teachers in the context of readings from the educational literature. The focus on the class is on the teaching of food science topics, so special attention will be given on laboratory and project based learning as well as teaching to industry short courses and in the context of cooperative extension. This course is only available to students currently serving as undergraduate teaching assistants in food science and enrollment is by permission of the instructor."
+    },
+    {
+      "number": 403,
+      "title": "Sensory Data Collection & Analysis",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT200",
+              "STAT250",
+              "STAT240"
+            ]
+          }
+        ]
+      },
+      "description": "The field of Sensory and Consumer Science is primarily focused on responses of consumers to food products and non-food fast-moving consumer goods (e.g., shampoo). These responses may be sensory/perceptual (i.e., how sweet, how bitter, how smooth) or affective (i.e., liking / preference), with the assumption that the former generally drives the later. Numerous tools have been developed by sensory practitioners over the last 70 years, with additional influences from experimental psychology. The course also addresses contemporary research on pedagogy that indicate applied statistics are best taught in context to the field in which students will apply the statistical concepts. Here, students will gain practice applying introductory statistical topics (t-tests, Analysis of Variance, etc) to sensory and consumer data collected from human participants."
+    },
+    {
+      "number": 404,
+      "title": "Sensory Evaluation of Foods",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "STAT250"
+        ]
+      },
+      "description": "Sensory evaluation of food, methods of test analyses, panel selection and training, taste sensation theory, consumer testing methods. FD SC 404 Sensory Evaluation of Foods (2) This course is designed to demonstrate how the senses function in the perception of tastes, flavors, and textures of foods and how sensory tests are used to measure human perceptions. Students will have the opportunity to design sensory tests and apply statistical methods when interpreting sensory test results. The overall objective of this course is to learn the theories and practical applications of sensory evaluation that will enable students to conduct valid sensory tests and use the test results in the decision making process in food product development.Evaluation will be based on written essay exams, group reports, and written lab reports in which they will be expected to demonstrate their understanding of theoretical issues regarding sensory testing and how to use statistical procedures to effectively interpret the test results. This course is a support course for the Food Science major."
+    },
+    {
+      "number": 405,
+      "title": "Food Engineering Principles",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MATH110",
+          "PHYS250"
+        ],
+        "concurrent": [
+          "FDSC200",
+          "FDSC201"
+        ]
+      },
+      "description": "Engineering principles of importance to food manufacturing, including units, dimensions, mass and energy balance, fluid flow, rheology, heat transfer, and psychrometrics. FD SC 405 Food Engineering Principles (3)Food engineering will discuss the principles of the various unit operations used in the food processing and manufacturing industry. Topics covered will include: units, dimensions, mass and energy balance, fluid flow, rheology, heat transfer, psychrometrics. Through lectures, the student will learn the principles of fluid flow, heat transfer and mass transfer as applied to food processing and manufacturing operations. Through practicum sessions, the student will be exposed to practical applications in the above three areas. Additionally, they will learn to analyze experimental data, organize and communicate thoughts in a logical fashion through cooperative and collaborative learning strategies, and to write effective lab reports. Through practicum sessions, they will also learn numerical problem solving and to size and select equipment for fluid flow, heat transfer and drying operations within the food industry. Student evaluation within this course will be conducted through weekly quizzes, home works, lab write-ups and three exams. This is a required course for the food science major. This course serves as a prerequisite for several 4th year required courses within the food science major."
+    },
+    {
+      "number": 406,
+      "suffix": "W",
+      "title": "Physiology of Nutrition",
+      "credits": 3,
+      "attributes": [
+        "W"
+      ],
+      "requisites": {
+        "previous": [
+          "BMB211"
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "FDSC200",
+              "FDSC201"
+            ]
+          }
+        ]
+      },
+      "description": "Physiological mechanisms involved in thirst and appetite, digestion, absorption, utilization of nutrients, respiration, and body temperature regulation."
+    },
+    {
+      "number": 407,
+      "title": "Food Toxins",
+      "credits": 3,
+      "description": "Food Toxins focuses on natural and synthetic toxins that are relevant to the food system including those produced by food plants; those introduced by contamination of foods by microbes, non-food plants, or environmental/agricultural chemicals. The course provides an overview of basic principles of toxicology and the approaches used to study the potential toxicity of a compound. Using this foundational information, the course explores the sources, biological effects, and mechanisms of action of various classes of food-relevant toxins including: plant defense molecules, agricultural chemicals (pesticides/herbicides), industrial chemicals, environmental contaminants, microbial toxins, and process-induced toxins. Student knowledge will be assessed using a combination of exams, projects, and in-class discussion activities."
+    },
+    {
+      "number": 408,
+      "title": "Food Microbiology",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "MICRB201"
+        ],
+        "concurrent": [
+          "FDSC200",
+          "FDSC201"
+        ]
+      },
+      "description": "Food Microbiology focuses on the application of microbiological principles to foods and food ingredients. Topics covered include: potential for microbial growth in a particular food or food ingredient based on the following parameters - biological structure, nutrient composition, naturally occurring inhibitors, pH, water activity, oxidation reduction potential, temperature, atmosphere conditions and humidity; choice of appropriate microbial detection methods for groups of organisms and foodborne pathogens; identification of types and the consequence of growth of pathogens and non-pathogens associated with particular commodities; evaluation of the effect of different processing conditions on the destruction, survival and growth of spoilage and pathogenic microorganisms; identification of significant factors affecting the association of pathogens with food and food ingredients, events leading to infection and/or intoxication, and prevention and control of foodborne illness; comprehension of the importance of food microbiology in everyday living. Student knowledge will be evaluated through examinations and other class activities"
+    },
+    {
+      "number": 409,
+      "title": "Laboratory in Food Microbiology",
+      "credits": 2,
+      "repeatable": {
+        "maxCredits": 2
+      },
+      "requisites": {
+        "previous": [
+          "MICRB202"
+        ],
+        "concurrent": [
+          "FDSC200",
+          "FDSC201",
+          "FDSC408"
+        ]
+      },
+      "description": "Methods of isolation, detection of spoilage, pathogenic microorganisms in foods; effects of processing and preservation on survival of food microorganisms. FD SC 409W Laboratory in Food Microbiology (3) Food Microbiology Laboratory is intended to demonstrate microbiological concepts through the appropriate use of equipment and laboratory procedures. The laboratory focuses on the practical application of microbiological principles to foods and food ingredients based on the following experiences: development of proficiency in using selected microbiological techniques currently employed in regulatory, quality control and research laboratories; performance of specific microbiological analyses of foods to assess numbers and kinds of spoilage organisms or foodborne pathogens; evaluation of the effects of several processing methods on growth and survival of microorganisms. The course emphasizes problem solving and critical thinking as manifested by communication skills (such as writing); scientific analysis of data, including statistics where applicable; and usage of primary scientific sources in the food microbiology literature. Practical laboratory skills are assessed through measurement of proficiency Evaluation will be conducted via projects and examinations throughout the semester. this course is required for Food Science majors. Practical laboratory skills are assessed using written lab reports, projects, and examinations."
+    },
+    {
+      "number": 410,
+      "title": "Food Chemistry and Analysis (II)",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FDSC200",
+          "FDSC201",
+          "BMB212",
+          "FDSC400"
+        ]
+      },
+      "description": "The focus of this course is food micro-components (enzymes, allergens, secondary metabolites, contaminants, etc.) as well the major chemical reactions occurring in foods (lipid oxidation, thermal reactions). They will also learn how to select and implement appropriate methods to quantify the composition and reactions of food through chemical analysis. This course has a required laboratory component. This is the second part of a two-course sequence with food macro-components and structure being covered in the pre-requisite, FDSC 400 ."
+    },
+    {
+      "number": 411,
+      "title": "Managing Food Quality",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          "FDSC200",
+          "FDSC201",
+          "FDSC408",
+          "STAT250"
+        ]
+      },
+      "description": "Principles and applications of Hazard Analysis Critical Control Points. Statistical tools for the control and improvement of food quality. FD SC 411 is an introduction to organizational and HACCP concepts related to quality food production. FD SC 200 , FD SC 201 , STAT 250 and FD SC 408 are the prerequisite courses for FD SC 411. It is expected that students will have a understanding of the following statistical concepts: measures of central tendency and variability, use of histograms, discrete probability distributions (binomial, Poisson), random variables, continuous probability distributions (the normal distribution), the Central Limit Theorem, confidence interval estimation, means comparison, correlation, simple linear regression, use of scatter diagrams, intrinsic and extrinsic factors governing microbiological growth, the basis of food preservation techniques, knowledge of specific food-borne pathogens and the products they are commonly associated with, and basic microbial testing procedures. The course will include practice in the form of problem sets and \"mini-labs\" and provide time for recitation. In addition, it will allow the students to pursue the following topics: root cause analysis (1 period), design of experiments (5 periods), and shelf life determination (4 periods)."
+    },
+    {
+      "number": 413,
+      "title": "Science and Technology of Plant Foods",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "FDSC200",
+                "FDSC201"
+              ],
+              [
+                "FDSC400",
+                "FDSC405"
+              ],
+              "FDSC408",
+              "FDSC410"
+            ]
+          }
+        ]
+      },
+      "description": "Investigate the physical and chemical behavior of plant-based raw materials and ingredients, with emphasis on parameters influencing finished product quality. FD SC 413 Science and Technology of Plant Foods (3) This course focuses on the unique importance of foods produced from plants to human health and wellness. The influence of cultural practices, harvesting and handling methods and processing technology on quality and safety of whole, fresh and processed food products using minimal processing and fermentation to preserve food products from plant sources will be emphasized."
+    },
+    {
+      "number": 414,
+      "title": "Science and Technology of Dairy Foods",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "FDSC200",
+                "FDSC201"
+              ],
+              [
+                "FDSC400",
+                "FDSC405"
+              ],
+              "FDSC408",
+              "FDSC410"
+            ]
+          }
+        ]
+      },
+      "description": "Investigate the physical and chemical behavior of dairy-based raw materials and ingredients, with emphasis on parameters influencing finished product specifications. FD SC 414 Science and Technology of Dairy Foods (3)FD SC 414 provides students with information about the composition, properties and physiochemical aspects of milk and milk products and an understanding of the changes that occur in milk during processing into a variety of dairy products. Laboratory exercises are held weekly and complement the topic being addressed in lecture. A semester-long group project is conducted during the course to help students integrate knowledge gained throughout the Food Science Curriculum. The project focuses on a \"real life\" product development problem and requires students to develop problem statements, design experiments, design formula and processing schemes, obtain ingredients and actually manufacture a product. Time is allotted in the laboratory schedule for some group activities; other are scheduled outside of class."
+    },
+    {
+      "number": 415,
+      "title": "Science and Technology of Muscle Foods",
+      "credits": 3,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              [
+                "FDSC200",
+                "FDSC201"
+              ],
+              [
+                "FDSC400",
+                "FDSC405"
+              ],
+              "FDSC408",
+              "FDSC410"
+            ]
+          }
+        ]
+      },
+      "description": "Investigate the physical and chemical properties of muscle food commodities, with emphasis on muscle-based ingredients in formulated foods. FD SC 415 Science and Technology of Muscle Foods (3)This course applies food science and technology to the processing, storage and handling of red meat, poultry, and seafood products. The course includes two lectures and one lab session each week. The laboratory sessions are conducted in the Meat Laboratory located on Porter Road. Student performance is evaluated based on exams, lab reports, and homework exercises. Course objectives are set to: 1. help students understand the nature and importance of structure, compositional and quality differences among muscle food ingredients and their impact on product manufacturing, 2. inform students of the basic steps of primary processing for livestock, poultry and seafood species and their impact on meat properties, 3. give students first-hand experience with typical manufacturing steps and processes for fresh, cured, smoked, fermented, dried or cooked meats and help them understand how variations in processing will affect finished product properties, and 4. give students practice in applying the scientific method in answering questions or solving problems that may arise during the manufacture of muscle foods products. Course activities draw on the students' prior knowledge of food chemistry, food engineering, food microbiology and food analysis, applying concepts from those disciplines in the manufacture and evaluation of meat products. Course topics cover the range from meat science through technical and practical aspects of meat product manufacture including product quality, safety, profitability and regulatory issues. There is emphasis on meat industry practices including traditional and recent technology. Through laboratory exercises and independent group projects students gain experience in application of the scientific method for solving product development problems."
+    },
+    {
+      "number": 417,
+      "title": "Food Laws and Regulations",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FDSC200",
+          "FDSC201",
+          "FDSC400",
+          "FDSC404",
+          "FDSC405",
+          "FDSC408",
+          "FDSC409",
+          "FDSC410",
+          "FDSC411",
+          "FDSC413",
+          "FDSC414",
+          "FDSC415"
+        ]
+      },
+      "description": "This course provides a perspective to the principles and practice of food law and regulation as they impact the work of a food scientist. Food law will be discussed with reference to the roles of politics, culture, ethics (including social justice issues), science and business. The learning approach to this course uses case studies, problem solving, class discussions, and review of current topics. While some examples will be globally relevant, the focus of the course is on the regulation of food in the US."
+    },
+    {
+      "number": 422,
+      "title": "Communicating Research in Agricultural Sciences",
+      "credits": 1,
+      "description": "This course provides opportunities to develop effective communication skills within the context of scientific research. Students participating in independent studies with faculty mentors will use their independent research projects as the subject of a series of exercises that will enhance their abilities to share scientific ideals and findings with a variety of audiences including grant writing, poster presentations, and both technical and non-technical oral presentations about research topics. This course will prepare students for graduate school and, importantly, provide students with a set of skills that would be applicable to any career."
+    },
+    {
+      "number": 444,
+      "title": "Arguing about Food",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FDSC200"
+        ]
+      },
+      "description": "The food science major seeks to educate students in the sciences and technologies important in the industrial manufacture of food and food scientists tend to value foods in this context. Food is good if it can be manufactured at scale, distributed and sold at a profit. The qualities of the food can be defined in largely physical terms (e.g., price and costs, free from pathogens, certain levels of defined nutrients, good sensory scores, stability, and uniform and predictable properties). However, deservedly or not, food attracts more ethical attention than other goods. For food scientists to fail to appreciate the different values, theirs and others, that impact arguments about food is harmful for (i) the food scientists themselves who may feel conflicted if they cannot resolve their personal preferences for food (perhaps local and organic) with the value set of their profession. (ii) the quality of the public conversation around food if scientists and technicians cannot usefully contribute their perspectives and (iii) the food companies that employ the scientists and who seek to make and sell products acceptable to a set of consumers. The first part of the course will focus on some foundational ideas useful to all controversies. A background in toxicology (or, if most of the projects are around the healthfulness as opposed to the risks of food, nutrition), epistemology in science, critiques of sciences, science as a social construct, ethics. The second part of the course will use current controversies to examine the ways different values combine with empirical scientific facts to create arguments about foods. Students are not taught to 'win' arguments but rather examine how they are structured and why they are appealing to different people. Students will use concepts from social science and philosophy (ethics, epistemology) to critique the strong normative opinions of guest speakers and readings. Throughout the course they will work in groups around projects on specific current controversies related to the formulation or manufacture of foods. They will collect and critique the scientific facts available and then respond to the speakers/readings by generating multiple different arguments reflecting the different perspectives ('how might the speaker think about my case?')."
+    },
+    {
+      "number": 450,
+      "title": "Food Innovation and Product Design",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FDSC200",
+          "FDSC201",
+          "FDSC400",
+          "FDSC404",
+          "FDSC405",
+          "FDSC408",
+          "FDSC409",
+          "FDSC410",
+          "FDSC411",
+          "FDSC413",
+          "FDSC414",
+          "FDSC415",
+          "FDSC417"
+        ]
+      },
+      "description": "This course provides upper-level undergraduate students in the Food Science major with project-based learning experience in food innovation and product design. Working in small groups, students will use their foundational and technical knowledge in food science to address a new product challenge of interest to the food industry sponsor or an equivalent client. Student groups will complete their new product design experience based on one of the challenges provided. They will design and produce an actual new product prototype that will be evaluated by the course instructor, industry sponsor and qualified individuals as appropriate. While a large percentage of the work will be performed in a laboratory setting (students will spend an average of 3 hours/week in laboratory engaged in product design-focused projects assigned by company sponsors in the Department of Food Science Wet Pilot Plant), all students enrolled in FDSC 450 will also meet as a group with the course instructor each week. Weekly discussion topics will address themes such as project and team management, market trends, effective teamwork, concept and prototype development, experimental design, recipe management and shelf life as well as what it is like to work in product development in the food industry. Final project reports are due during finals week."
+    },
+    {
+      "number": 460,
+      "title": "International Food Production",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 3
+      },
+      "attributes": [
+        "IL"
+      ],
+      "internalEquivalents": [
+        "INTAG460"
+      ],
+      "requisites": {
+        "previous": [
+          "FDSC200"
+        ]
+      },
+      "description": "FDSC 460 / INTAG 460 is designed to give food science undergraduate and graduate students an appreciation of how food is produced and processed abroad. Students participate in a number of production facility tours, interact with local food scientists and food technologists, and gain valuable international experience. A major point of emphasis for the course is comparing and contrasting food production norms in the U.S. and the host country or region. The course consists of pre-trip lectures and meetings and culminates in a faculty-guided embedded study tour. Prior to the travel component of the course, students work in small groups to research a specific food product that is of economic and cultural importance to the country or region of interest, then write reports to be presented in-country before a tour of the related product's production facility. The course integrates and builds upon core concepts in food chemistry and food microbiology; as such, FDSC 460 / INTAG 460 is targeted towards upper-level food science undergraduate students, as well as food science graduate students."
+    },
+    {
+      "number": 494,
+      "title": "Undergraduate Research",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised research under the guidance of a food science faculty member. Students should confirm a research plan with their mentor (the course instructor) before enrolling. Students doing thesis research for the Schreyer honors college should enroll for FDSC 494H instead."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Honors Thesis",
+      "credits": {
+        "min": 1,
+        "max": 6
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Independent study directed by a faculty supervisor that culminates in the production of a Food Science honors thesis."
+    },
+    {
+      "number": 495,
+      "title": "Internship",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Supervised off-campus, nongroup instruction including field experiences, practica, or internships. Written and oral critique of acitvity required."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 500,
+      "suffix": "A",
+      "title": "Fundamentals of Food Science - Microbiology",
+      "credits": 1,
+      "description": "Overview of the field of Food Science with the focus on microbiology. FD SC 500A Fundamentals of Food Science - Microbiology (1) An overview of the field of food microbiology required of all entering graduate students majoring in food science. Students will acquire knowledge of the core concepts pertaining to the general topics of food microbiology. Upon completion, the student will be familiar with the primary sources of information related to the field. The course provides background material for more advanced and specialized graduate-level courses in food science and will be offered each fall semester."
+    },
+    {
+      "number": 500,
+      "suffix": "B",
+      "title": "Fundamentals of Food Science - Engineering",
+      "credits": 1,
+      "description": "Overview of the field of Food Science with the focus on engineering. FD SC 500B Fundamentals of Food Science - Engineering An overview of the field of food engineering required of all entering graduate students majoring in food science. Students will acquire knowledge of the core concepts pertaining to the general topics of food engineering. Upon completion, the student will be familiar with the primary sources of information related to the field. The course provides background material for more advanced and specialized graduate-level courses in food science and will be offered each fall semester."
+    },
+    {
+      "number": 500,
+      "suffix": "C",
+      "title": "Fundamentals of Food Science - Chemistry",
+      "credits": 1,
+      "description": "Overview of the field of Food Science with the focus on chemistry. FD SC 500C Fundamentals of Food Science - Chemistry (1) An overview of the chemistry underlying the properties of food. Students will be introduced to the major chemical components of food along with the reactions occurring during manufacturing and storage that can impact food quality and safety. The material will be taught through a combination of lectures and selected readings pertaining to the field of food chemistry. Upon completion, students will be able to explore how these topics can be practically addressed as research questions through the analysis of papers from recent guided readings. The course provides background material for more advanced and specialized graduate-level courses in food science and will be offered each spring semester."
+    },
+    {
+      "number": 500,
+      "suffix": "D",
+      "title": "Fundamentals of Food Science - Nutrition",
+      "credits": 1,
+      "description": "Overview of the applications of nutrition in the field of Food Science. FD SC 500D Fundamentals of Food Science - Nutrition An overview of the role that nutrition research and recommendations play in labeling regulations and product development of manufactured foods. The student will acquire a very basic understanding of human carbohydrate, protein and fat metabolism and how the public health concern about chronic disease has influenced the Nutrition Facts panel and the use of health claims. Case studies of several functional ingredients (including fat replacers) developed by the food industry in response to nutrition recommendations will be examined."
+    },
+    {
+      "number": 501,
+      "title": "Research Methods in Food Science",
+      "credits": 2,
+      "description": "Planning and conducting research in food science including: problem definition, experimental design, collecting and recording data, and effective communication. FD SC 501 Research Methods in Food Science (2) FD SC 501 is designed to develop and improve research skills and prepare students for professional careers. The course will guide the student from problem selection to a completed research report. Along the way the student will come to appreciate the philosophical underpinnings of the research enterprise and understand how a research project is conducted in a professional and acceptable manner. The course will provide an overview of statistical techniques used for data analyses and protocols necessary to conduct research using human and animal subjects. Emphasis will be given to learning and improving written and oral communication skills. Students will learn by identifying funding sources, writing a research grant proposal and presenting the same to an audience. Subtleties of writing skills for peer-reviewed journals and corporate reports will be highlighted. Performance in the course will be evaluated based on written and oral presentations and class participation. A variety of audio-visual tools will be available to make presentations in the class. The course will be offered every spring semester."
+    },
+    {
+      "number": 506,
+      "title": "Flavor Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "FDSC400"
+        ]
+      },
+      "description": "Formation, analysis and release of flavors in food systems."
+    },
+    {
+      "number": 507,
+      "title": "Advanced Food Microbiology",
+      "credits": 3,
+      "description": "Roles of microorganisms in food preservation, spoilage, health and disease. Recent advances in detection, tracking and control of foodborne pathogens. FD SC 507 Advanced Food Microbiology (3) FD SC507 is an intensive graduate course in food microbiology. Students will acquire knowledge of the core concepts pertaining to the roles of microorganisms in food preservation, spoilage, human health and disease. Special emphasis will be given to recent advances in molecular biology, genomics and bioinformatics that enhance the detection and tracking of foodborne pathogens. Upon completion of the course, students will be able to critically evaluate primary sources of information related to the field and be able to apply their knowledge to the development of effective risk assessment and risk management systems for ensuring food safety. Students will be able to critically analyze current food microbiology research publications and assess the quality of research publications in the field of food microbiology. Performance will be assessed through two exams, two quizzes, presenting and leading critical discussions of journal articles, and participating in class discussions. Resources will include an advanced-level text, other hardcopy and electronic resources and primary literature. The course will be offered every other year during the spring semester."
+    },
+    {
+      "number": 510,
+      "title": "Carbohydrate Hydrocolloids",
+      "credits": 3,
+      "description": "Physicochemical behavior of edible carbohydrate hydrocolloids, with emphasis on starch and selected exudates, extracts, flours, and fermentation products."
+    },
+    {
+      "number": 511,
+      "title": "Enzymes in Food",
+      "credits": 3,
+      "description": "The food enzymes market is currently worth billions of dollars while being projected to continue to experience robust growth rates for the foreseeable future. Enzymes are thus becoming an increasingly important part of the food industry, either allowing for new processes or replacing existing chemical catalysts. As consumers become more wary of chemicals added to their foods, enzymes are increasingly being viewed as a more natural solution to food processing challenges. Besides these added enzymes, many foods contain their own enzymes that contribute to and present challenges with food quality and stability. Furthermore, microorganisms responsible for food fermentations and spoilage of foods contain their own enzymes that are ultimately driving these processes. In this course students will learn about the use and manipulation of enzymes in the food industry during processing and fermentation as well as those enzymes naturally present in food and present in spoilage organisms and food borne pathogens. Students will come away from this course with knowledge about the chemistry catalyzed by these enzymes and how they can be exploited and controlled in the food industry to achieve the desired food quality and stability. This will include deeper investigations into both key enzymes in food processing and those of particular relevance to the students¿ research through paper discussions and student-led discussions of relevant enzymes. Thus, students will finish this course better prepared not only to tackle enzyme-related challenges in the food industry, but also aspects of their own research projects that involve enzymes."
+    },
+    {
+      "number": 514,
+      "title": "Food Physical Chemistry",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "FDSC400",
+              "FDSC500C"
+            ]
+          }
+        ]
+      },
+      "description": "Physical principles underlying food structure and quality. FD SC 514 Food Physical Chemistry (3) Food structure occurs over many scales ranging from the molecular to the macroscopic pieces consumed. We are interested in small scale behaviors as they determine larger scale structures and hence the bulk functionality of foods as materials (e.g., texture, physical stability). The structure of food arises from the molecular interactions of its ingredients as modified by the processing conditions applied. Food is rarely at a thermodynamic equilibrium so time-dependency and kinetics are particularly important. In this class, the students will develop an understanding of the structures occurring (e.g., crystals, gels, colloids), how they form, and how they affect the functional properties of foods.Students will gain knowledge and understanding of the relevant principles through a variety of guided readings and lectures. They will then apply this knowledge in critical discussions of primary research articles. Finally the students will use the knowledge gained in a research project where they will be asked to explain the physics associated with a specific food product or process.Students will be evaluated by a combination of in-class tests, a participation grade, examinations (mid-term and final) and a project.The course will be offered alternating spring semesters."
+    },
+    {
+      "number": 515,
+      "title": "Sensometrics - Applied Multivariate Analysis in Sensory & Food Science",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "STAT500",
+              "BBH505"
+            ]
+          }
+        ]
+      },
+      "description": "The main objective of this course is to allow each student to develop the necessary data analysis skills needed for analyzing and interpreting sensory and consumer data. Additionally, students will develop an understanding for experimental designs and statistical analyses to plan, analyze, and interpret data collected from sensory studies. Hands-on experiences in analyzing sensory data will be provided through homework assignments in each week, and discussions of appropriate literature where indicated. Topics covered in this course will include experimental design and data visualization, data analysis of discrimination tests, analysis methods for descriptive data, approaches for understanding consumer results and identifying drivers of liking, as well as novel statistical methods for alternative descriptive methods (sorting, napping, check-all-that-apply, etc.), ways of analyzing temporal sensory data, and correlating sensory data to other data, such as demographics or instrumental analyses. Discussion of current literature, where appropriate, will showcase how these methods are applied in the \"real world\", and further the understanding of how these methods are used, and interpreted. In addition, students will develop and further their critical thinking and communication skills."
+    },
+    {
+      "number": 516,
+      "title": "Consumer Insights",
+      "credits": 3,
+      "description": "This course aims to allow each student to develop and apply the fundamental dimensions and value of consumer insights to product development objectives; implement key qualitative, quantitative, and hybrid approaches for consumer insights; recognize, identify, and apply key consumer biases, and examine trade-offs in research and consumer behavior. Topics covered in the course start with understanding the consumer and key consumer biases and move to objective-based consumer research design including qualitative, quantitative, and hybrid approaches. In addition, research in the fuzzy front end, utilizing social listening as well as new technology in consumer research will be discussed. Throughout, an objective-based framework will be applied where the consumer is at the center and insights are developed related to how consumer interact with products. In addition, the real-world practical examples and assignments will be utilized extensively for real world application. Taken together, this will allow students to develop and further their critical thinking and communication skills."
+    },
+    {
+      "number": 517,
+      "title": "Microbial Genomic Epidemiology",
+      "credits": 3,
+      "description": "This course gives students an overview of the sequencing technologies and genomic sequence data analyses (e.g., sequence pre-processing, assembly) and demonstrates their application in the context of epidemiology (e.g., identification of single nucleotide polymorphisms and genes of interest). The course covers the concepts necessary to carry out comparative genomics analyses and interpret the results in the context of an outbreak investigation. These concepts are then applied in a practical sequence-analyses case study focused on the development of prokaryotic whole-genome sequence data analysis skills. Lastly, students are guided in the application of gained knowledge and skills through final projects."
+    },
+    {
+      "number": 521,
+      "title": "Food Defense: Prevention Planning for Food Processors",
+      "credits": 3,
+      "description": "Course prepares current and aspiring professionals to learn, recognize and apply measures to prevent intentional contamination of the food supply. FD SC (AGBIO) 521 Food Defense: Prevention Planning for Food Processors (3)This course will not only provide participants with knowledge of the domestic and international food industry, but it also provides tools for food industry and homeland security professionals to develop food defense programs to protect the food supply from terroristic activities leading to intentional contamination. The course will introduce and apply: examples where intentional contamination has been used in the food industry; biological, chemical and physical hazards of primary concern in the food industry; methods for detecting hazards in the food supply; systems employed to monitor foodborne illness in the general public; management practices employed in food production to deal with recalls and other crises; vulnerabilities and mitigation procedures unique to food production; as well as agencies, resources, and tools needed to protect, prepare, and respond to intentional contamination incidents. This course is a required course for the certificate program in Agricultural Biosecurity as well as the Master of Professional Studies in Homeland Security/Agricultural Biosecurity Option. These principles also will be incorporated into a food defense plan, recall plan, and emergency preparedness plan for an assigned food establishment."
+    },
+    {
+      "number": 525,
+      "title": "Culture Based Analysis of Microorganisms",
+      "credits": 3,
+      "description": "In a world where genomics/metagenomics techniques are becoming increasingly prevalent our knowledge about the genetic potential of organism is far outstripping our knowledge about how these organisms utilize this potential during growth. It is becoming more important than ever to design and execute culture-based experiments to test the hypotheses generated from our genetic knowledge of these bacteria. This course has been developed to teach students to design and execute culture-based experiments and to complement courses tailored to studying organisms from genetic and ecological perspectives. Additionally, there have been exciting developments in microbial culture that are allowing much of the diversity of microorganisms that are being discovered to be cultured for the first time. This course will explore the culture of microorganisms from both a theoretical and practical perspective with two lectures and one lab per week. Students will learn about culturing bacteria from diverse environments and with a variety of growth requirements using both traditional and cutting-edge methods. The design of experiments involving culturing bacteria will be a key focus and students will design their own culturebased experiment to explore a question of interest. Overall, the learning objectives for students taking the course are: 1) Be able to describe the key factors that determine the culturability of a microorganisms and methods for developing successful culture conditions, 2) Design experiments to isolate and or investigate bacteria of interest in a culture dependent manner, 3) Analyze data derived from bacterial cultures. These objectives will be explored in the context of monocultures, co-cultures and complex community cultures of microorganisms, which will leave students with the tools to answer a wide variety of questions using culture-based techniques."
+    },
+    {
+      "number": 526,
+      "title": "Microbial Physiology of Foodborne Organisms",
+      "credits": 3,
+      "description": "A current literature-based course investigating the mechanisms by which foodborne bacteraia (beneficial and pathogenic) grow, survive, and react to environments encountered in foods and during food processing."
+    },
+    {
+      "number": 534,
+      "title": "Readings in Ingestive Behavior",
+      "credits": 1,
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "internalEquivalents": [
+        "NUTR534"
+      ],
+      "description": "Students lead discussions of original research in the field of ingestive behavior; focus on food intake in particular. FDSC 534 / NUTR 534 Readings in Ingestive Behavior (1 per semester/maximum of 6) The class provides a forum for students to learn to lead a discussion focused on original research in the field of ingestive behavior. In addition, it provides the opportunity for students to become familiar with the broad range of topics relevant to this field of research. While the primary focus is on the consumption of food, other relevant topics (obesity, eating disorders, fluid intake) also are included. Research topics include both basic and applied areas."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, that are supervised on individual basis and fall outside the scope of formal courses."
+    },
+    {
+      "number": 597,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given on a topical or special interest subject which may be offered infrequently; several different topics may be taught in one year or term."
+    },
+    {
+      "number": 600,
+      "title": "Thesis Research",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 601,
+      "title": "Ph.D. Dissertation Full Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 602,
+      "title": "Supervised Experience in College Teaching",
+      "credits": {
+        "min": 1,
+        "max": 3
+      },
+      "repeatable": {
+        "maxCredits": 6
+      },
+      "description": "Supervised experience in the development of instructional materials, the organization and conduct of lectures/laboratories, the evaluation and counseling of students."
+    },
+    {
+      "number": 603,
+      "title": "Foreign Academic Experience",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "description": "Foreign study and/or research approved by the food science program constituting progress toward the degree."
+    },
+    {
+      "number": 610,
+      "title": "Thesis Research Off Campus",
+      "credits": {
+        "min": 1,
+        "max": 15
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    },
+    {
+      "number": 611,
+      "title": "Ph.D. Dissertation Part-Time",
+      "credits": 0,
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "No description."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "subject": "BAN",
+  "courses": [
+    {
+      "number": 830,
+      "title": "Descriptive Analytics for Business",
+      "credits": 3,
+      "description": "BAN 830 explores the use of descriptive analytics concepts, tools, and techniques throughout a wide range of business scenarios and problems. Initially focusing on the application of traditional descriptive analytics techniques to answer the question, \"What happened?,\" the course provides opportunities for students to perform spreadsheet- and programming-based data acquisition, cleaning, manipulation, and visualization using data derived from various business contexts to inform business leaders' decisions. Later, students progress to applying advanced statistical techniques and concepts including descriptive measures, sampling and estimation, and inference in both spreadsheet and programming environments. The course concludes with a bridge to predictive analytics as students apply linear and multiple linear regression to business-related data in search of relationships among input and output variables. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interests."
+    },
+    {
+      "number": 831,
+      "title": "Business Data Visualization for Decision Making",
+      "credits": 3,
+      "description": "Given society's ever-expanding ability to collect and store vast amounts of transactional, performance, and financial data, business analysts and leaders need the capability to recognize patterns in and transform raw data into actionable business intelligence. Designed for recent graduates with little to no professional experience, BAN 831 expands upon the data visualization concepts covered in BAN 830 by exploring a variety of advanced data visualization techniques focused on \"big data\" sets derived from marketing, finance, accounting, supply chain management, and other business-related scenarios. Using the latest data visualization software applications, business students will focus on the development of dashboards and scorecards useful for translating structured and unstructured business performance data into decision-ready knowledge. The course will prepare business analysts by exploring techniques for visualizing data from sales transactions, social media, marketing surveys, financial records, and other sources in support of fact-based decision making. An emphasis will be placed on the nuances specific to decision making in various business areas. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interest."
+    },
+    {
+      "number": 832,
+      "title": "Programming Skills for Business Analytics",
+      "credits": 3,
+      "description": "Designed specifically for recent graduates with 0-5 years of practical experience, BAN 832 gives business students the foundational programming skills they need to leverage the power of leading edge general purpose programming languages to acquire, clean, manipulate, query, visualize, and analyze large data sets typical of a variety of business environments. With a focus on developing solutions to business data problems, students will become conversant with a variety of software applications in the context of financial, marketing, supply chain management, and other data-rich business scenarios. Coursework includes individual assignments intended to develop dexterity with foundational programming skills, followed by case-based problems that challenge students' creativity and programming mastery in search of solutions to complex business problems. This course aims to put recent graduates on the same level as more experienced analysts with regard to applying programming skills and implementing widely used algorithms to solve business analytics challenges. Previous programming experience is helpful but not required, and students will have the opportunity to augment their learning with additional online tutorials. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interest."
+    },
+    {
+      "number": 840,
+      "title": "Predictive Analytics for Business",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BAN830"
+        ]
+      },
+      "description": "BAN 840 explores the use of predictive analytics tools and techniques throughout a wide range of business scenarios and problems. Initially focusing on the application of traditional predictive analytics techniques to answer the question, \"What will happen in the future?\", the course provides opportunities for students to apply regression and forecasting techniques to data from various business contexts to inform business leaders¿ decision. Later, students explore various software applications and techniques for acquiring, preparing, and analyzing \"big data\", recognizing and taking advantage of the exponential growth in the amount of structured and unstructured data generated by and available to businesses. The course next examines cutting-edge techniques gaining increased attention among analytics experts, including data mining, text analytics, and social media analytics. Finally, students will be given an overview of the future of predictive analytics, developing an awareness of artificial intelligence and machine learning concepts, such as neural networks, to help them advance their organizations¿ business analytics capabilities. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interests."
+    },
+    {
+      "number": 841,
+      "title": "Data Mining for Business",
+      "credits": 3,
+      "description": "Intended for recent graduates with little to no professional experience, BAN 841 develops business students¿ understanding of and ability to apply a variety of data mining tools and techniques for use in detecting and exploiting patterns and relationships in large structured and unstructured data sets derived from a variety of business scenarios. Students will explore the use of cluster analysis, classification, association, and cause-and-effect modeling techniques to explore and reduce data, classify new data elements, identify natural associations among variables, create rules for target marketing or buying recommendations, and describe relationships among data that motivate business performance. Specific techniques may include k-nearest neighbor, discriminant analysis, and association rule mining. Students will learn how to bridge descriptive and predictive analytics across a variety of business scenarios. Coursework includes individual assignments intended to develop confidence with basic data mining techniques, followed by case-based problems that challenge students¿ creativity and data mining mastery in search of patterns and data relationships leading to useful business insights. While underlying theory will be discussed, the course will prepare business analysts by focusing specifically on data mining applications in marketing, finance, supply chain management, and other business areas, with an emphasis on the unique aspects of decision making in a business environment. Software packages, concepts, and business applications will vary and evolve to keep pace with technology, theory, and instructor interest."
+    },
+    {
+      "number": 850,
+      "title": "Prescriptive Analytics for Business",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BAN830"
+        ]
+      },
+      "description": "Analytics, defined as the scientific process of using data and quantitative techniques to make better decisions, has permeated virtually all aspects of business. The widespread availability of large amounts of detailed data combined with analytics methods permits an extensive examination of the tradeoffs that inform business decision making, with the ultimate goal of choosing \"best\" courses of action. This course explores the use of prescriptive analytics methods in a variety of business contexts. In the early part of the course, the focus is on the tools and methods of prescriptive analytics. As the course progresses, the emphasis shifts to the effective integration and implementation of prescriptive analytics in supply-side decision making processes such as supply chain management, service management, operations, logistics and transportation. The applications areas within business will reflect the interests of the instructors and will evolve as new areas of theory and practice develop."
+    },
+    {
+      "number": 886,
+      "title": "Implementing Analytics for Business - Capstone I",
+      "credits": 3,
+      "description": "BAN 886 serves as the first of two courses ( BAN 886 and BAN 887 ) in the two-part capstone course sequence in the Master of Business Analytics program. This course applies graduate studies in business analytics to a hands-on use case that closely mimics real-world analytical consulting work. Students will apply skills in data management, stakeholder management, ethical use of data and analytics, business acumen, and professional communication with a nontechnical stakeholder. The student must work with a consulting team, manage the client relationship, frame a business problem, reframe the business question as an analytics question, and acquire and clean data in preparation for follow-on analysis."
+    },
+    {
+      "number": 887,
+      "title": "Implementing Analytics for Business - Capstone II",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BAN886"
+        ]
+      },
+      "description": "BAN 887 serves as the second of two courses ( BAN 886 and BAN 887 ) in the two-part capstone course sequence in the Master of Business Analytics program. This course is a continuation of BAN 886 , in which student teams propose and begin an analytical consulting project. Students' business analytics to a hands-on use case that closely mimics real-world analytical consulting work. Students will implement skills in stakeholder engagement and communication and predictive modeling techniques such as supervised and unsupervised machine learning techniques, optimization techniques, and forecasting. This semester emphasizes training models, implementing an analytical solution, deploying a model, and communicating results to nontechnical stakeholders."
+    },
+    {
+      "number": 888,
+      "title": "Implementing Analytics for Business",
+      "credits": 3,
+      "description": "Sets business analytics in real-world context. Explores project life cycle from business problem framing to model lifecycle management. BAN 888 Implementing Analytics for Business (3) The capstone course for the Business Analytics option in the Data Analytics MPS degree program, this course sets analytics problem solving in a real-world context, including communication to non-statistically trained executives. Key topical areas are derived from the common activities of the business analyst and include business problem framing, analytics problem framing, data sourcing, cleaning and integration, analysis methodology selection, model building, model deployment and model lifecycle management including benefit assessment. Topics align with the body of knowledge in the Institute for Operations Research and the Management Sciences (INFORMS) Certified Analytics Professional Study Guide. Students explore each topic in a real world context, by developing solutions to cases in a team setting. Each team selects a case and works through all elements of the analytics body of knowledge, with group presentations on problem framing, analytics model selection and development, and model lifecycle management in a business setting."
+    }
+  ]
+}

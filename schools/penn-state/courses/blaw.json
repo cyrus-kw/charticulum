@@ -1,0 +1,334 @@
+{
+  "subject": "BLAW",
+  "courses": [
+    {
+      "number": 199,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 243,
+      "title": "Legal Environment of Business",
+      "credits": 3,
+      "description": "Social control through law: courts, basic policies underlying individual and contractual rights in everyday society. May not be used to satisfy Smeal College baccalaureate degree requirements. Not available to students who have taken B A 243."
+    },
+    {
+      "number": 296,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 297,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 299,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 341,
+      "title": "Business Law I: Introduction to Contracts, Liability Issues, and Intellectual Property",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "MGMT301",
+              "MGMT301W",
+              "BA304"
+            ]
+          }
+        ],
+        "concurrent": [
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          },
+          {
+            "oneOf": [
+              "MKTG301",
+              "MKTG301W",
+              "BA303"
+            ]
+          },
+          {
+            "oneOf": [
+              "SCM301",
+              "BA302"
+            ]
+          }
+        ]
+      },
+      "description": "An introduction to the business environment emphasizing business contracts, liability issues arising from business relations, including those in the internet realm and intellectual property issues. Alternative dispute resolution and global perspectives will be integrated throughout. B LAW 341 Business Law I: Introduction to Contracts, Liability Issues, and Intellectual Property (3) Business decisions have legal consequences. Such decisions can represent both legal risks and opportunities. It is important for one entering business to have a fundamental understanding of the governing legal principles. This course will provide an introduction to the U.S. legal system, coverage of the major components of contract law, and an examination of business liability issues under tort law. In addition, the intellectual property issues of trade secrets, trademarks, patents, and copyrights will be covered. The impact of digital technology and business globalization will be integrated into each topic discussed. The course will be taught in a lecture-discussion format to encourage interaction and exploration of difficult issues. The course text and materials will include key business legal cases."
+    },
+    {
+      "number": 397,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 399,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 424,
+      "title": "Real Estate Law",
+      "credits": 3,
+      "internalEquivalents": [
+        "RM424"
+      ],
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BLAW341",
+              "BLAW243"
+            ]
+          }
+        ]
+      },
+      "description": "Analyze contemporary law applicable to various types of ownership interests and rights, methods of transferring ownership, and use of real property. B LAW 424 B LAW (R M) 424 Real Estate Law (3) Analysis of contemporary law applicable to various types of ownership interests and rights, methods of transferring ownership, and use of real property. The objectives for this course are: (1) to provide students with an understanding of essential U.S. real estate property law, including the rights private property owners may obtain, how ownership and transfer are handled in view of present and future interests, constitutional issues that impact real estate ownership, and the legal aspects of modern real estate contractual transactions; (2) to teach students the ability to spot the legal issues arising from the above as future business leaders and (3) to introduce students to the legal reasoning process necessary to address and avoid the legal dilemmas presented by such issues. Instructional methods for the course will include detailed lectures and classroom discussion of readings and other materials. Student progress and mastery of the material will be evaluated through periodic examinations."
+    },
+    {
+      "number": 428,
+      "title": "Insurance Law",
+      "credits": 3,
+      "internalEquivalents": [
+        "RM428"
+      ],
+      "requisites": {
+        "previous": [
+          "BLAW341"
+        ]
+      },
+      "description": "An introduction to the legal environment of insurance with an emphasis on insurance contracts, insurance and liability, insurance bad faith, and insurance regulation. Insurance affects almost every business and consumer in the United States. This course provides an introduction of the legal environment of insurance and covers topics ranging from civil dispute resolution and insurance, insurance contracts, insurance and real property, insurance and liability, insurance bad faith and insurance fraud, and state and federal insurance programs."
+    },
+    {
+      "number": 441,
+      "title": "Business Law II: Agency, Employment and Business Structure",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BLAW341",
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          }
+        ]
+      },
+      "description": "An examination of the laws governing agency relationships, employment, and the various structures of commercial enterprises."
+    },
+    {
+      "number": 444,
+      "title": "Advanced UCC and Commercial Transactions",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          {
+            "oneOf": [
+              "BLAW341",
+              "BA241",
+              "BA243"
+            ]
+          },
+          "ACCTG211",
+          {
+            "oneOf": [
+              "FIN301",
+              "BA301"
+            ]
+          }
+        ]
+      },
+      "description": "All articles of the Uniform Commercial Code, banking relationships, debtor- creditor law, and bankruptcy law. B LAW 444B LAW 444 Advanced UCC and Commercial Transactions (3) This course is designed to: (1) provide the student with a systematic study of the laws governing sales transactions, the instruments for financing those transactions and rights and liabilities of debtors and creditors (the Uniform Commercial Code governs these issues); (2) to explore current trends in the law affecting commercial transactions; (3) to develop further the student's legal reasoning processes; (4) to enhance the student's ability to identify legal issues from the business decision maker's and financial auditor's perspectives. Instructional methods will include lectures, readings, multimedia content, and class discussions. Student progress and mastery of the material will be evaluated through periodic examinations. Some state C.P.A. Boards require completion of this course as a prerequisite to obtaining certification as a public accountant. Completion of the course will be credited toward fulfillment of the requirements for the Legal Environment of Business Minor."
+    },
+    {
+      "number": 445,
+      "title": "Advanced Intellectual Property and Competition Law",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BLAW441"
+        ]
+      },
+      "description": "Copyrights, trademarks, patents, and trade secrets followed by related topics in the regulation of competition. B LAW 445 Intellectual Property & Competition Law (3) The objectives for this course are to (1) provide students with an understanding of U.S. and international law that supports the creation of beneficial information via intellectual property rights, allows government to regulate information property through antitrust and privacy statutes, and promotes business development by encouraging competitive uses of information; (2) teach students the ability to spot the legal issues arising from the above as future business leaders and (3) introduce students to the legal reasoning process necessary to address and avoid the legal dilemmas presented by such issues. Instructional methods for the course will include detailed lectures and classroom discussion of readings and other materials. The course builds on the introductory business law curriculum by providing an advanced and detailed study of specific areas of law that are highly valuable to modern, technology-driven businesses."
+    },
+    {
+      "number": 446,
+      "title": "Employment Law",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BLAW441"
+        ]
+      },
+      "description": "Examines the legal and regulatory environment of employment relationships. Topics include anti-discrimination; worker health and safety; and labor relations laws. B LAW 446 Employment Law (3) The course is designed for business students seeking a solid understanding of labor relations and employment law. It is not a general overview or introduction to law course for those seeking to enter law school. Labor and employment law has developed and changed over the past seven decades, and continues to evolve as the economic model and means of productions changes globally. With the passing of the National Labor Relations Act and subsequent amendments thereto, including development in the ability of public employees to engage in concerted activity, the understanding of the modifications in the employer-employee relationships is necessary for successful business executives and front-line managers. While a thorough understanding of the underpinnings of these laws is necessary, this is only a portion of the issues at hand. The ability to apply these laws in current working environments along with interpreting and critiquing these laws will assist in the preparation of future corporate managers. The course goes into detailed discussion regarding the employment at will doctrine, wrongful discharge, workplace torts, and employee privacy and monitoring. With this foundation, the course then covers civil rights and discrimination based on race, color, religion, gender, sexual orientation, family obligation, disability, and national origin are covered using Supreme Court cases that have tested the validity and soundness of our federal legislation. The closing part of the course focuses on organized labor through the process of unionizing and union membership, negotiations and economic pressure used to obtain concessions in collective agreements. Additionally, fair labor laws and occupational health and safety requirements to diminish workplace accidents and improve productivity is discussed. For each of the topics presented, detailed analysis of prominent cases will be discussed with the expectation that students can apply these case decisions to current employer/employee situations. Exposure to differing opinions, reversed rulings, and detailed legal processes will provide students with a broad understanding of the complex nature of legal proceedings and how these processes impact labor and employment relations in the United States. Content synthesis and critical analysis are the learning goals of the course."
+    },
+    {
+      "number": 447,
+      "title": "Entertainment Law",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "BLAW341"
+        ]
+      },
+      "description": "This course covers legal issues that arise in various entertainment industries through discussion of contemporary issues along with personality rights and intellectual property rights associated with entertainment assets. Issues will be covered within the context of business models, pervasive pop-culture influences affecting entrepreneurial activities, business transactions and contractual provisions unique to creative industries, commercialization of celebrity image, rights of privacy of public figures, defamation, related advanced copyright and trademark issues, ethics and fiduciary responsibilities, and other emerging topics. Students will be introduced to the legal reasoning process necessary to analyze these issues in context and compose creative solutions that both address and avoid the legal problems presented. Instructional methods for the course will include lecture and classroom discussion focused on readings and other materials. The course builds on the introductory business law curriculum by providing an advanced study of legal principles highly relevant to businesses that employ, promote, or monetize creative talent. Upon completion of the course, students should understand the legal concepts impacting the entertainment industry and the impact this has on talent, intellectual ownership, copyrights and trademarks."
+    },
+    {
+      "number": 494,
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 494,
+      "suffix": "H",
+      "title": "Research Project",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 999
+      },
+      "attributes": [
+        "HON"
+      ],
+      "description": "Supervised student activities on research projects identified on an individual or small-group basis."
+    },
+    {
+      "number": 496,
+      "title": "Independent Studies",
+      "credits": {
+        "min": 1,
+        "max": 18
+      },
+      "repeatable": {
+        "maxCredits": 18
+      },
+      "description": "Creative projects, including research and design, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    },
+    {
+      "number": 497,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to exlore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 498,
+      "title": "Special Topics",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Formal courses given infrequently to explore, in depth, a comparatively narrow subject which may be topical or of special interest."
+    },
+    {
+      "number": 499,
+      "title": "Foreign Studies",
+      "credits": {
+        "min": 1,
+        "max": 12
+      },
+      "repeatable": {
+        "maxCredits": 12
+      },
+      "attributes": [
+        "IL"
+      ],
+      "description": "Courses offered in foreign countries by individual or group instruction."
+    },
+    {
+      "number": 525,
+      "title": "Business Law for Innovation and Competition",
+      "credits": 2,
+      "description": "Nature of intellectual property rights, as well as process for obtaining and enforcing them. BLAW 525 Business Law for Innovation & Competition (2) Primary areas of focus include intellectual property (IP) law (patents, trademarks, copyrights and trade secrets) and antitrust law, as well as basic principles of U.S. law and the legal rules for related industry practices such as licensing. Students will also learn the legal rules designed to encourage competition (and punish anticompetitive behavior). Finally, the course will help students to better appreciate when professional legal counsel is necessary, and how to manage those interactions more cost effectively. Although the course will impart advanced legal concepts, prior coursework in business law is not required."
+    },
+    {
+      "number": 596,
+      "title": "Individual Studies",
+      "credits": {
+        "min": 1,
+        "max": 9
+      },
+      "repeatable": {
+        "maxCredits": 9
+      },
+      "description": "Creative projects, including nonthesis research, which are supervised on an individual basis and which fall outside the scope of formal courses."
+    }
+  ]
+}

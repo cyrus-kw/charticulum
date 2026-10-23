@@ -1,0 +1,67 @@
+{
+  "subject": "PUBH",
+  "courses": [
+    {
+      "number": 101,
+      "suffix": "N",
+      "title": "Introduction to Public Health",
+      "credits": 3,
+      "attributes": [
+        "GS",
+        "GHW",
+        "INTER"
+      ],
+      "description": "This introductory course in public health aims to provide students with a foundational understanding of the field of public health and its critical role in improving the health and well-being of populations and communities. The course will explore the core principles and essential services of public health. Students will learn where to locate public health information and data and the related social determinants of health, protective factors, disease prevention, health promotion strategies. Students will also learn how public health complements the field of medicine to improve health care equity, quality and accessibility. Additionally, students will develop an understanding of the role of public health within the US and in a global society. Through this course, students will develop the skills necessary to critically analyze the intersection of biological mechanisms, behaviors, and environment to develop interventions and policies to address public health issues and the resulting societal implications."
+    },
+    {
+      "number": 201,
+      "title": "Why We Die",
+      "credits": 3,
+      "attributes": [
+        "GHW"
+      ],
+      "description": "This course will provide an overview of the leading causes of death in the U.S. The course will explore the health conditions and underlying behavioral, biological, social, commercial, and environmental factors that contribute to these leading causes of death and public health approaches for the reduction and prevention of those causes. Students will learn about different sub-populations and age groups that are at heightened risk for certain causes of death, as well as the unique factors that contribute to risk in these populations. Brief comparisons will be made between leading causes of death in developed and developing countries. By the end of this course, students will understand the role of public health programs and policies in reducing the underlying risk factors and health conditions related to the leading causes of death."
+    },
+    {
+      "number": 301,
+      "title": "Public Health Surveillance Systems",
+      "credits": 3,
+      "description": "This course provides an introduction to the principles and practice of public health surveillance--the ongoing, systematic process of collecting, analyzing, and interpreting health-related data to identify, monitor, and assess health outcomes. The course will cover the history of public health surveillance systems and the guiding principles for the methods used in surveillance. Students will conceptually learn the different approaches to surveillance based on varying public health goals (e.g., to monitor infectious and chronic diseases, social and environmental determinants of health, emergency preparedness and response, healthcare quality and safety) and the theoretical steps required to plan and implement a surveillance system including how and when to collect and manage different types of data. Further, students will discuss emerging issues in surveillance and consider the ethical, legal, economic and political factors when planning a surveillance system with a special consideration of how to engage key stakeholders. Examples of surveillance systems at local, state, country and global levels will be illustrated. Through a combination of lectures, small group discussions, and hands-on exercises, students will be able to critically think through how to design and implement a surveillance program based on public health goals which will lay the groundwork for a subsequent course applying this knowledge."
+    },
+    {
+      "number": 390,
+      "title": "Public Health Professional Development",
+      "credits": 3,
+      "description": "This course provides public health students with the professional skills necessary to be successful in their internship and future career (or post-baccalaureate education) within the field of public health. Through guided activities and case studies, students will learn about their strengths and weaknesses in terms of building and establishing collaborations, understand their implicit biases and how that can influence their interactions and decision-making in the workplace, and learn and apply effective communication skills within the context of technology, problem solving, decision making, and relationship building. In addition, students will develop professional tools such as resumes, cover letters, and digital profiles, including best practices for engaging in social media platforms. Through this applied, practical course, students will gain the necessary proficiencies and awareness to secure an internship and be successful in different public health career settings and contexts."
+    },
+    {
+      "number": 401,
+      "title": "Public Health Surveillance: From Data Collection to Communication",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PUBH301",
+          "STAT250"
+        ]
+      },
+      "description": "This is an applied public health surveillance course, crossing the full continuum from data collection, to statistical analysis and interpretation, to effective communication and dissemination. Students will build on the foundational understanding of different surveillance systems (from PUBH 301 ) and learn how to practically design, implement, evaluate, communicate and disseminate surveillance information related to monitoring public health-related behaviors and outcomes at a population level. Through case studies and hands-on activities, students will use existing data from different surveillance systems to analyze the data, and interpretation the findings. In addition, students will develop the skills necessary for data visualization to effectively communicate findings to public health professionals, policymakers, and the general public. By the end of the course, students will be equipped with foundational skills to conducting, analyzing, interpreting, and communicating surveillance studies."
+    },
+    {
+      "number": 490,
+      "title": "Public Health Capstone",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "PUBH401"
+        ]
+      },
+      "description": "This public health capstone course provides a culminating experience for students by integrating and applying their knowledge and skills acquired throughout their undergraduate public health education. Students will conduct a research project where they identify a research question related to a public health topic, collect appropriate primary data, analyze the data and present the findings both in writing and orally. In addition, students will lead and participate in weekly seminar discussions related to current public health topics. This course provides an opportunity for students to demonstrate their critical thinking, research, and communication skills and prepares students for entry-level public health positions or post-baccalaureate education."
+    },
+    {
+      "number": 495,
+      "title": "Internship Experience in Public Health",
+      "credits": 3,
+      "description": "This internship course provides undergraduate public health students with supervised field experience in a public health-related setting such as departments of health, nonprofit organizations, community health centers, clinics, hospitals, and health management organizations. As part of this experiential learning opportunity, students will contribute to the organization's public health efforts, further develop their professional skills, and reflect on their potential future careers in public health. In addition to completing internship hours, students will provide bi-weekly reflections, engage in small group discussions, and give an oral presentation about the role of public health in promoting and protecting population health to a lay audience. This course provide students with an opportunity to bridge academic learning with real-world public health issues."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "subject": "NAVSC",
+  "courses": [
+    {
+      "number": 101,
+      "title": "Introduction to Naval Science",
+      "credits": 3,
+      "description": "Introduction to naval organization, customs, military law, ships, aircraft, and Marine Corps and Navy career paths. NAVSC 101 Introduction to Naval Science (3) The curriculum for Introduction to Naval Science is designed to provide midshipmen and interested university students a broad overview of the United States Navy and Marine Corps, their missions, organization, customs, traditions and the duties required of today's junior officers. It also provides each student with basic information concerning shipboard procedures, safety, damage control and organization. In addition, this course teaches Department of Defense and Navy policies providing students the start-point to succeed as future naval officers."
+    },
+    {
+      "number": 102,
+      "title": "Sea Power and Maritime Affairs",
+      "credits": 3,
+      "description": "Historical evolution of sea power and its effects on world history; current U.S. maritime strategy for employment of naval forces. NAVSC 201 Sea Power and Maritime Affairs (3) The curriculum for Sea Power and Maritime Affairs provides a U.S. Naval history survey emphasizing major developments in strategy, tactics, technology and the effects of political climate thereon. Primary topics include: significant naval engagements and milestones, prominent leaders and their contributions, the role of sea power in national policy and diplomacy in both peacetime and war through the present day. The course also studies Mahan's naval strategy along with the effects of maritime policy on global stability and the importance of Joint Warfare and power projection."
+    },
+    {
+      "number": 200,
+      "title": "Leadership and Management",
+      "credits": 3,
+      "description": "Managerial thought and behavioral theories, with emphasis on how they apply to the naval organization. NAVSC 103 Leadership and Management (3) The curriculum for Leadership and Management provides the basis for the development of effective leadership and managerial competence. Underscoring interactive learning and designed to be taught by experienced, commissioned officers of the U.S. Navy and Marine Corps in order to provide Fleet-based examples, this course examines fundamental tenets of leadership and management in the context of the theories and principles of individual and group leadership with emphasis on how they apply to naval forces. Topics include self-leadership, self-management and team leadership while students refine and further develop their understanding of personal strengths, values and growth opportunities in the context of team, group and organizational leadership, as well as through the creation of a leadership vision and professional development plan. Students will develop knowledge, abilities and skills that will assist them as future officers to successfully operate in the context of complex military environments around the globe"
+    },
+    {
+      "number": 202,
+      "title": "Naval Ships Systems I--Naval Engineering",
+      "credits": 3,
+      "description": "Principles and applications of engineering concepts to ship construction, stability, and propulsion and auxiliary systems. NAVSC 202 Naval Ships Systems I-Naval Engineering (3) The Naval Ships Systems I: Naval Engineering curriculum educates students on the construction and operation of naval ships, submarines, and aircraft exploring and discussing principles and applications of engineering concepts with regards to construction, stability, propulsion and auxiliary systems. Taught by an experienced naval officer, this course is designed to assist in the professional development of future leaders in the U.S. Navy. A background in calculus and physics is recommended as the student will perform various assignments in thermodynamics, fluid dynamics and nuclear fundamentals. Emphasis on theory-to-practice will be demonstrated throughout the curriculum and students will receive live demonstrations of engineering examples."
+    },
+    {
+      "number": 301,
+      "title": "Naval Ships Systems II--Weapons",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NAVSC202"
+        ]
+      },
+      "description": "An analysis of electromagnetic wave theory, principles of underwater sound propagation, electro-optic theory, and weapons control systems. NAVSC 301 Naval Ships Systems II-Weapons (3) A continuation of Naval Ships Systems I: Naval Engineering, Naval Ships Systems II: Weapons educates students on the employment and basic operation of military weaponry and fire control technology. An analysis of electromagnetic wave theory, principles of underwater sound propagation, electro-optic theory and weapons control systems establishes the student's basic understanding and prepares them for a future career as a naval officer. Students will routinely participate in small group discussions over practical application of weapon technology and trends in future design. The course will culminate with a final project of the student's choosing over a germane topic."
+    },
+    {
+      "number": 302,
+      "title": "Navigation",
+      "credits": 3,
+      "description": "Theory and principles of all types of piloting and navigation, including a practicum emphasizing correct documentation and plotting. NAVSC 302 Navigation (3) The curriculum for Navigation provides the basis for maritime focused ship piloting. Designed to be taught by a commissioned officer in the U.S. Navy with a Surface Warfare background, the course focuses on the theory and principles of various types of piloting and navigation while employing numerous practical exercises and case studies to aid learning. Primary topics of study include: Precision visual and electronic piloting, tides and currents, maneuvering boards and relative motion theory, international piloting laws and best practices."
+    },
+    {
+      "number": 313,
+      "title": "Fundamentals of Maneuver Warfare",
+      "credits": 3,
+      "description": "The purpose of this course is to introduce the student to the foundational concepts and history of the United States Marine Corps and its place in history as a Maneuver Warfighting Organization. It is a theoretical class that utilizes both historical examples from previous military operations as well as current doctrine, developing an individual who is both a critical thinker and scholar in the profession of arms. The goal is to educate the student to read military history analytically, not to memorize facts. The foundation for the course occurs in Module One - Fundamental concepts and Themes. Module Two lays out the doctrine of maneuver warfare and Module Three describes the future of the Marine Corps and how it will continue to apply and advance the maneuver warfare philosophy and concept. While it is important for the students to read and understand historical case studies, it is more important that they comprehend and be able to assess the foundational principles therein. The ultimate aim of this class is to bolster the student's professional development; creating officers that can think in a dynamic, rapidly deteriorating situation while maintaining a analytical approach to problem solving."
+    },
+    {
+      "number": 401,
+      "title": "Naval Operations and Seamanship",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NAVSC302"
+        ]
+      },
+      "description": "Introduction to naval operations; the theory and principles of the rules of the road; use of the maneuvering board. NAVSC 401 Naval Operations and Seamanship (3) The curriculum for Naval Operations and Seamanship provides for an in-depth study of shipboard procedures in the United States Navy. Designed to be taught by a warfare qualified commissioned officer in the U.S. Navy, the course focuses on advanced navigational practices, communications, naval warfare doctrine, joint operations and advanced shipboard evolutions. The course is primarily lecture based, but also employs practical laboratories and case studies to reinforce advanced topics."
+    },
+    {
+      "number": 402,
+      "title": "Leadership and Ethics",
+      "credits": 3,
+      "requisites": {
+        "previous": [
+          "NAVSC200",
+          {
+            "oneOf": [
+              "NAVSC401",
+              "NAVSC411"
+            ]
+          }
+        ]
+      },
+      "description": "The Navy's Resource Management Program (personnel management), counseling techniques, military justice, prevention of substance abuse, and naval correspondence and publications. NAVSC 402 Leadership and Ethics II (3) NAVSCI 402 Leadership and Ethics (3) - A capstone course building upon the foundation of previous Naval Science courses, Leadership and Ethics ensures students have a solid understanding of and an appreciation for ethical standards and decision making. It provides midshipmen with the ethical foundation and basic leadership tools needed to be effective junior officers and provide the high quality leadership our country and Department of Defense will need in the 21st Century. The curriculum is divided into two distinct but overlapping sections; the first focused on ethical theory and major Western ethical philosophy followed by the practical application of leadership as it pertains to a junior officer's duties and responsibilities. Ethical theory is introduced in an academic, discussion-oriented format in order to provide midshipmen with a solid foundation and understanding of various moral, ethical and leadership philosophies. This serves to guide, refine and strengthen a junior officer's character and increase one's awareness of different ethical decision-making tools. The latter portion of the course challenges the midshipmen to apply the first part of the course (i.e. ethical leadership theory) in discussions and practical application exercises of their future duties, responsibilities and expectations of a junior officer in the United States Navy or Marine Corps. Extensive use of case studies throughout the curriculum reinforces the importance of ethical decision-making by naval leaders."
+    },
+    {
+      "number": 411,
+      "title": "Evolution of Warfare",
+      "credits": 3,
+      "description": "The purpose of the Evolution of Warfare course is to provide the Marine student with a basic understanding of the art, science, and concepts of warfare. The flow of the course starts with USMC warfare theory foundations (MCDP-1 Warfighting) to ensure students are introduced to concepts that are integral to being a Marine Corps officer. Next, the course presents historical battles that present a notable progression in warfare. These periods illuminate the effects of both innovative and stale leadership and the resulting major transformations in warfare. Each battle study relates doctrine (tactics, techniques, and procedures - TTPs), organization, training, material (equipment), leadership, and personnel; to the leadership decisions made by the commanders. Each student will be challenged to view warfare not through the lens of a historian but as a military professional. Furthermore, the curriculum laces modern day shifts in warfare with sections for irregular and cyber warfare. The course then proceeds to relate these teachings to today's USMC doctrine, thus coming full circle with the introductory section. Moving forward, the courseware then shifts to cover the basics of Marine Corps amphibious doctrine. This doctrine is then used as a lens to analyze amphibious case studies from ancient through modern times. Finally, the course conducts an in-depth analysis of OIF bringing the course to a fitting, contemporary conclusion that uses everything learned in the course thus far thereby ensuring the student's mastery of the material."
+    }
+  ]
+}

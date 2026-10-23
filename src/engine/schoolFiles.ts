@@ -1,39 +1,69 @@
 // A school split across several JSON files, instead of one big one:
 //
-//   school.json          the school's id and name, calendar, program types
-//                        ("programs"), and AP/transfer table
-//   requirements.json    { "programRequirements": [...] }: the school-wide
-//                        rules for each program type (optional)
+//   school.json          the school's id and name, and its calendar
+//   structure.json       levels (with their course numbers), credentials,
+//                        and divisions (colleges) with their departments
+//                        (optional)
+//   attributes.json      { "groups": [...], "attributes": [...] }: the labels
+//                        courses carry, like gen ed areas (optional)
 //   subjects.json        { "subjects": [{ "code": "CMPSC", "name": "Computer Science" }, ...] }
-//   objects/cmpsc.json   { "subject": "CMPSC", "objects": [{ "number": 121, "type": "course", "title": ..., ... }] }
-//   programs/baccalaureate/cmpsc-bs.json
+//   courses/cmpsc.json   { "subject": "CMPSC", "courses": [{ "number": 121, "title": ..., ... }] }
+//   requirements/credentials/bachelors.json
+//                        the rules every program of one credential
+//                        follows (optional; the file's name is the credential)
+//   programs/bachelors/cmpsc-bs.json
 //                        program templates (one, or a list), in a folder
-//                        named for their programType
+//                        named for their programType (a credential)
 //
 // A subject's file names its subject (which must be in subjects.json),
-// and its objects only give their number and letter: CMPSC + 121 makes the
-// id CMPSC121. combineSchoolFiles puts the files back together into one
-// SchoolData and checks it like any import. This file does no reading from
-// disk (the engine never does); the caller passes in each file's contents.
+// and its courses only give their number and letter: CMPSC + 121 makes
+// the id CMPSC121. A course's type can be left out when it's "course",
+// and its credits can be a range ({ "min": 1, "max": 9 }).
+// combineSchoolFiles puts the files back together into one SchoolData and
+// checks it like any import. This file does no reading from disk (the
+// engine never does); the caller passes in each file's contents.
 import { z } from "zod";
 import { courseCodeId } from "./codes";
-import { objectFields, parseSchoolData, withOldNamesRenamed, schoolDataSchema, subjectSchema, type ParseResult, type SchoolDataInput } from "./school";
+import {
+  attributeGroupSchema,
+  attributeSchema,
+  objectFields,
+  parseSchoolData,
+  schoolDataSchema,
+  structureSchema,
+  subjectSchema,
+  type ParseResult,
+  type SchoolDataInput,
+} from "./school";
 
-const schoolFileSchema = schoolDataSchema.omit({ objects: true, subjects: true, templates: true, programRequirements: true });
+const schoolFileSchema = schoolDataSchema.pick({ formatVersion: true, school: true, calendar: true, equivalencyTable: true });
 
-const requirementsFileSchema = schoolDataSchema.pick({ programRequirements: true });
+const attributesFileSchema = z.object({
+  groups: z.array(attributeGroupSchema).default([]),
+  attributes: z.array(attributeSchema),
+});
 
 const subjectsFileSchema = z.object({ subjects: z.array(subjectSchema) });
 
-const subjectObjectsFileSchema = z.object({
+const credits = z.number().min(0);
+const subjectCoursesFileSchema = z.object({
   subject: subjectSchema.shape.code,
-  objects: z.array(
+  courses: z.array(
     objectFields.extend({
       number: z.number().int().min(0),
       suffix: z.string().regex(/^[A-Z]+$/, "Use capital letters only, e.g. A.").optional(),
+      type: objectFields.shape.type.default("course"),
+      credits: z.union([
+        credits,
+        z.object({ min: credits, max: credits }).refine((range) => range.max >= range.min, "max is less than min"),
+      ]),
     }),
   ),
 });
+
+// A credential's rules: a school-wide set (programRequirements) without
+// its programType, which is the file's name.
+const requirementsFileSchema = schoolDataSchema.shape.programRequirements.unwrap().element.omit({ programType: true });
 
 const programFileSchema = z.union([schoolDataSchema.shape.templates.unwrap().element, schoolDataSchema.shape.templates.unwrap()]);
 
@@ -43,17 +73,25 @@ export interface SchoolFile {
   json: unknown;
 }
 
+// A requirements file also names its credential, from its file name
+// (requirements/credentials/bachelors.json is "bachelors").
+export interface RequirementsFile extends SchoolFile {
+  credential: string;
+}
+
 // A program file also names the folder it's in, which is its programs'
-// type ("baccalaureate"), so a program in the wrong folder is caught.
+// type ("bachelors"), so a program in the wrong folder is caught.
 export interface ProgramFile extends SchoolFile {
   programType: string;
 }
 
 export interface SchoolFiles {
   school: SchoolFile;
+  structure?: SchoolFile;
+  attributes?: SchoolFile;
   subjects: SchoolFile;
-  requirements?: SchoolFile;
-  objects: SchoolFile[];
+  courses: SchoolFile[];
+  requirements?: RequirementsFile[];
   programs?: ProgramFile[];
 }
 
@@ -68,23 +106,30 @@ function read<T>(file: SchoolFile, schema: z.ZodType<T>, errors: string[]): T | 
 export function combineSchoolFiles(files: SchoolFiles): ParseResult {
   const errors: string[] = [];
   const school = read(files.school, schoolFileSchema, errors);
+  const structure = files.structure ? read(files.structure, structureSchema, errors) : undefined;
+  const attributes = files.attributes ? read(files.attributes, attributesFileSchema, errors) : undefined;
   const subjects = read(files.subjects, subjectsFileSchema, errors);
-  const requirements = files.requirements ? read(files.requirements, requirementsFileSchema, errors) : undefined;
 
-  // Which file each object came from, so later errors can name it.
+  // Which file each course came from, so later errors can name it.
   const fileOf = new Map<string, string>();
   const objects: SchoolDataInput["objects"] = [];
-  for (const file of files.objects) {
-    const data = read({ ...file, json: withOldNamesRenamed(file.json) }, subjectObjectsFileSchema, errors);
+  for (const file of files.courses) {
+    const data = read(file, subjectCoursesFileSchema, errors);
     if (!data) continue;
-    for (const { number, suffix, ...fields } of data.objects) {
+    for (const { number, suffix, credits, ...fields } of data.courses) {
       const code = { subject: data.subject, number, ...(suffix ? { suffix } : {}) };
       const id = courseCodeId(code);
       if (fileOf.has(id)) errors.push(`${file.name}: ${id} is also in ${fileOf.get(id)}`);
       fileOf.set(id, file.name);
-      objects.push({ id, code, ...fields });
+      const range = typeof credits === "number" ? { credits } : { credits: credits.min, maxCredits: credits.max };
+      objects.push({ id, code, ...fields, ...range });
     }
   }
+
+  const programRequirements = (files.requirements ?? []).flatMap((file) => {
+    const data = read(file, requirementsFileSchema, errors);
+    return data ? [{ ...data, programType: file.credential }] : [];
+  });
 
   const templates = (files.programs ?? []).flatMap((file) => {
     const data = read(file, programFileSchema, errors);
@@ -99,9 +144,20 @@ export function combineSchoolFiles(files: SchoolFiles): ParseResult {
 
   if (errors.length > 0 || !school || !subjects) return { ok: false, errors };
 
-  const result = parseSchoolData({ ...school, ...requirements, subjects: subjects.subjects, objects, templates });
+  const result = parseSchoolData({
+    ...school,
+    ...(structure ? { structure } : {}),
+    // Without structure.json, the program types are the ones the folders use.
+    ...(structure ? {} : { programs: [...new Set([...programRequirements, ...templates].map((p) => p.programType))] }),
+    attributeGroups: attributes?.groups ?? [],
+    attributes: attributes?.attributes ?? [],
+    subjects: subjects.subjects,
+    objects,
+    programRequirements,
+    templates,
+  });
   if (result.ok) return result;
-  // Errors about one object ("objects.CMPSC465.requisites: ...") also say
+  // Errors about one course ("objects.CMPSC465.requisites: ...") also say
   // which file it's in.
   return {
     ok: false,
