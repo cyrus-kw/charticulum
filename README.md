@@ -174,8 +174,9 @@ per course, so each is found straight away.
 ## Database
 
 Saving uses Postgres through [Prisma](https://www.prisma.io), at the address
-in `DATABASE_URL`. Charts and imported schools are stored there; the sample
-school is built in, so an empty database still has one school.
+in `DATABASE_URL`. Charts and imported schools are stored there; locally the sample
+school is built in, so an empty database still has one school (the live
+site, in production, lists only the schools saved in its database).
 
 **Locally** (no Docker needed):
 

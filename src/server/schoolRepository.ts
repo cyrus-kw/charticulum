@@ -134,8 +134,8 @@ export function memorySchoolRepository(): SchoolRepository {
 }
 
 // The sample school is always there, even in an empty database: it's
-// built into the app. If someone saves a school with the sample's id, the
-// saved copy wins.
+// built into the app. (Only locally: db.ts leaves it out in production.)
+// If someone saves a school with the sample's id, the saved copy wins.
 export function withSampleSchool(repo: SchoolRepository): SchoolRepository {
   const sample = sampleSchool();
   const sampleSummary: SchoolSummary = {

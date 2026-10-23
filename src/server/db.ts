@@ -31,9 +31,12 @@ export function requireDatabase(): { charts: ChartRepository; schools: SchoolRep
   if (!prisma) {
     throw new Error("No database is set up. Put a DATABASE_URL in .env (npm run db:local prints one).");
   }
+  // The sample school is only for trying things out locally: the live
+  // site lists just the schools saved in its database.
+  const saved = prismaSchoolRepository(prisma);
   return {
     charts: prismaChartRepository(prisma),
-    schools: withSampleSchool(prismaSchoolRepository(prisma)),
+    schools: process.env.NODE_ENV === "production" ? saved : withSampleSchool(saved),
     accounts: prismaAccountStore(prisma),
   };
 }
