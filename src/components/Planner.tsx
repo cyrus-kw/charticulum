@@ -199,16 +199,12 @@ export function Planner({
             // land at the far right, framing the wordmark with the side
             // panel button.
             <div className="flex min-w-0 flex-1 items-center justify-between gap-3">
-              {/* The wordmark leads to the dashboard too, like on the
-                  site's other pages. */}
-              <Link
-                href="/dashboard"
-                onClick={guardLeave}
-                data-tooltip="Open dashboard"
-              >
+              {/* The wordmark is just a name, not a link (the dashboard
+                  button beside it does that). */}
+              <div>
                 <h1 className="text-base leading-tight font-semibold">Charticulum</h1>
                 <p className="text-xs whitespace-nowrap text-zinc-500">Chart your curriculum</p>
-              </Link>
+              </div>
               {/* The light/dark button, then the dashboard button, 4px
                   apart like undo and redo. */}
               <div className="flex shrink-0 items-center gap-1">
