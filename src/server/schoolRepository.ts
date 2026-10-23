@@ -43,6 +43,9 @@ export function withoutDescriptions(school: SchoolData): SchoolData {
   return { ...school, objects: school.objects.map(({ description, ...object }) => object) };
 }
 
+// How many descriptions to insert per query when saving a school.
+const DESCRIPTION_BATCH = 5000;
+
 export function prismaSchoolRepository(prisma: PrismaClient): SchoolRepository {
   return {
     async list() {
@@ -78,18 +81,28 @@ export function prismaSchoolRepository(prisma: PrismaClient): SchoolRepository {
       // that passed schoolDataSchema is valid JSON.
       const json = withoutDescriptions(data) as unknown as Prisma.InputJsonValue;
       // A transaction: all of these happen, or (if one fails) none do, so
-      // a school is never left with half its descriptions.
-      const [row] = await prisma.$transaction([
-        // upsert: update the row if it exists, otherwise create it.
-        prisma.school.upsert({
-          where: { id },
-          update: { name, data: json },
-          create: { id, name, data: json },
-        }),
-        // The old descriptions are replaced by the new ones.
-        prisma.objectDescription.deleteMany({ where: { schoolId: id } }),
-        prisma.objectDescription.createMany({ data: descriptions }),
-      ]);
+      // a school is never left with half its descriptions. `tx` is the
+      // database inside the transaction.
+      const row = await prisma.$transaction(
+        async (tx) => {
+          // upsert: update the row if it exists, otherwise create it.
+          const saved = await tx.school.upsert({
+            where: { id },
+            update: { name, data: json },
+            create: { id, name, data: json },
+          });
+          // The old descriptions are replaced by the new ones, a batch at a
+          // time: one query can only carry 65,535 values (3 per row).
+          await tx.objectDescription.deleteMany({ where: { schoolId: id } });
+          for (let i = 0; i < descriptions.length; i += DESCRIPTION_BATCH) {
+            await tx.objectDescription.createMany({ data: descriptions.slice(i, i + DESCRIPTION_BATCH) });
+          }
+          return saved;
+        },
+        // A big school (Penn State's 14,000 descriptions) takes longer than
+        // the 5 seconds Prisma allows by default.
+        { timeout: 120_000 },
+      );
       return summary(row);
     },
   };
